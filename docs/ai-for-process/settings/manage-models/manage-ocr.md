@@ -24,17 +24,17 @@ Follow these steps to configure and deploy a new Docling model:
     * Maximum replicas
     * Auto-scaling threshold
     * Hardware type
-5. **Review:** Verify all the configuration details.
-6. Accept the **terms and conditions** and click **Deploy** to start the deployment process.
+5. Verify all the configuration details.
+6. Accept the terms and conditions and click **Deploy** to start the deployment process.
 
-Once deployment is complete, the model appears in the **Deployed** list and becomes available for use in the **Doc Intelligence Node**.
+Once deployment is complete, the model appears in the Deployed list and becomes available for use in the Doc Intelligence Node.
 
 ### Manage Existing Deployments
 
 You can view, undeploy, or delete Docling deployments directly from the list using the available actions.
 
-* **Viewing Deployment Details:** Click any deployment row to view its full configuration in the overview panel.
-* **Undeploy or Delete: **Open the deployment’s configuration page to undeploy it, then delete it if needed.
+* Viewing Deployment Details: Click any deployment row to view its full configuration in the overview panel.
+* Undeploy or Delete: Open the deployment’s configuration page to undeploy it, then delete it if needed.
 
 ## Configure Azure Doc Models
 
@@ -44,7 +44,7 @@ Azure must be configured here before it appears as an engine option in the Doc I
 
 ### Add a New Azure Doc Model
 
-**You can add multiple Azure Doc Intelligence connections to your workspace and switch between them as needed.**
+You can add multiple Azure Doc Intelligence connections to your workspace and switch between them as needed.
 
 Follow these steps to add an external Azure Doc Intelligence connection:
 

@@ -150,6 +150,7 @@ nav:
         - Loop Node: workflows/workflow-builder/types-of-nodes/loop-node.md  
         - Human Node: workflows/workflow-builder/types-of-nodes/human-node.md 
         - Agentic App Node: workflows/workflow-builder/types-of-nodes/agentic-app-node.md
+        - Doc Intelligence Node: workflows/workflow-builder/types-of-nodes/doc-intelligence-node.md       
         - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
       - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
@@ -227,6 +228,8 @@ nav:
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
+    - Manage Models:
+      - Manage OCR: settings/manage-models/manage-ocr.md   
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md

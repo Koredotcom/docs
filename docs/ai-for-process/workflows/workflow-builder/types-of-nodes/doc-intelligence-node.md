@@ -6,17 +6,17 @@ This capability is useful for workflows that involve invoices, receipts, identit
 
 ## Key Capabilities
 
-* **Engine Selection**: Choose between Docling, OpenAI, Anthropic, or Azure to process the document with the AI engine best suited for your use case.
-* **File Input Flexibility**: Input can be a static URL or a dynamic workflow context variable, allowing seamless integration with upstream steps.
-* **Async Processing**: Executes document processing asynchronously, allowing workflows to continue without waiting for the extraction to finish (engine support may vary).
-* **Structured Data Extraction**: For engines that support structured output, the node can generate structured data automatically for downstream consumption.
+* **Engine selection**: Choose between Docling, OpenAI, Anthropic, or Azure to process the document with the AI engine best suited for your use case.
+* **File input flexibility**: Input can be a static URL or a dynamic workflow context variable, allowing seamless integration with upstream steps.
+* **Async processing**: Executes document processing asynchronously, allowing workflows to continue without waiting for the extraction to finish (engine support may vary).
+* **Structured data extraction**: For engines that support structured output, the node can generate structured data automatically for downstream consumption.
 
 ## Common Use Cases
 
-* **Invoice and Receipt Processing**: Automatically extract key fields including amounts, dates, and vendor information from financial documents.
-* **Identity Document Verification**: Extract structured data from IDs, passports, or business cards to automate validation steps.
-* **Contract Analysis**: Identify key clauses, dates, or parties in contracts for automated tracking or review.
-* **Compliance Checks**: Ensure sensitive documents are correctly analyzed, and key information is captured for auditing.
+* **Invoice and receipt processing**: Automatically extract key fields including amounts, dates, and vendor information from financial documents.
+* **Identity document verification**: Extract structured data from IDs, passports, or business cards to automate validation steps.
+* **Contract analysis**: Identify key clauses, dates, or parties in contracts for automated tracking or review.
+* **Compliance checks**: Ensure sensitive documents are correctly analyzed, and key information is captured for auditing.
 
 ## How it Works
 
@@ -59,7 +59,7 @@ Begin by opening the Doc node’s properties panel and giving it a clear, descri
 
 Configure engine-specific options to control how the document is processed. 
 
-Options include **Async execution** — which processes the document in the background without blocking the workflow — and **Structured Data extraction** — which generates machine-readable outputs for downstream nodes.
+Options include Async execution, which processes the document in the background without blocking the workflow, and Structured Data extraction, which generates machine-readable outputs for downstream nodes.
 
 | Engine                 | Default settings                              | Structured data            | Notes |
 |------------------------|------------------------------------------------|-----------------------------|-------|
@@ -68,14 +68,14 @@ Options include **Async execution** — which processes the document in the back
 | **Anthropic**          | Async enabled, structured data disabled        | Can enable                 | Only configured Anthropic models are listed.<br>Model timeout: 30–360 sec (default 300). |
 | **Azure Doc Intelligence** | Async enabled, structured data always enabled | Cannot disable structured data | Prebuilt models are available by default. |
 
-For information about supported file types, file size limits, and available models by engine, see &lt;**Engine support and limits>**. 
-
 <img src="../images/doc_node_config.png" alt="Doc node panel" title="Doc node panel" style="border: 1px solid gray; zoom:80%;">
+
+For information about supported file types, file size limits, and available models by engine, see [Engine support and limits](../types-of-nodes/doc-intelligence-node.md#engine-support-and-limits).
+
 
 ### 4. Test the Flow
 
-* Click the run flow icon at the top-right of the builder.
-* Verify the flow behaves as expected and fix any errors.
+Run the flow and verify the flow behaves as expected and fix any errors.
 
 The Debug Panel displays logs, extracted text, structured data, and metadata based on your node configuration.
 
