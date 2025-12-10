@@ -58,8 +58,7 @@ To create  content variables,
     2. Display Name: Display name for the content
     3. Description: Brief description of the purpose of the content
     4. Contextual Information: Add key-value pairs that define the variables in this content. The value can be static strings or a dynamic values that reference memory stores or environment variables. 
-4. Click Create to save the content. This creates a content object containing all the specified key–value pairs. \
-
+4. Click Create to save the content. This creates a content object containing all the specified key–value pairs.
 
 
 ## Accessing Content Variables
