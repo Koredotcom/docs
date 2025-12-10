@@ -604,30 +604,31 @@ Here is the list of all the external models supported in Agent Platform:
    <td>
 <ul>
 
-<li> gpt-4o</li>
-<li> gpt-4o-mini</li>
-<li> gpt-3.5-turbo</li>
-<li> gpt-3.5-turbo-1106</li>
-<li> gpt-4-0613</li>
 <li> o1-preview</li>
 <li> o1-mini</li>
 <li> o3-mini</li>
+<li> gpt-3.5-turbo</li>
+<li> gpt-3.5-turbo-1106</li>
+<li> gpt-4o</li>
+<li> gpt-4o-mini</li>
+<li> gpt-4-0613</li>
 <li> gpt-4-0125-preview</li>
 <li> gpt-4-turbo-preview</li>
 <li> gpt-4-1106-preview</li>
-<li> gpt-5-2025-08-07</li>
-<li> gpt-5-nano-2025-08-07</li>
-<li> gpt-5-mini-2025-08-07</li>
-<li> gpt-5-chat-latest</li>
 <li> gpt-4</li>
-<li>whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
-<li>whisper-1</li>
 <li> gpt-4o-realtime-preview</li>
 <li> gpt-4o-mini-realtime-preview</li>
+<li> gpt-4o-search-preview</li>
 <li> gpt-4.1-2025-04-14</li>
 <li> gpt-4.1-mini-2025-04-14</li>
 <li> gpt-4.1-nano-2025-04-14</li>
 <li> gpt-4.5-preview-2025-02-27</li>
+<li> gpt-5-2025-08-07</li>
+<li> gpt-5-nano-2025-08-07</li>
+<li> gpt-5-mini-2025-08-07</li>
+<li> gpt-5-chat-latest</li>
+<li> whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
+<li> whisper-1</li>
 <li> dall-e-3</li>
 <li> dall-e-2</li>
 <li> text-embedding-3-small</li>

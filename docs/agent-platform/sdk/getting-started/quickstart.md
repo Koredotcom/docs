@@ -46,15 +46,6 @@ TRACING_ENABLED=True
 
 ## Step 2: Define Custom Tools
 
-```bash
-# .env/dev
-KORE_HOST=https://agent-platform.kore.ai
-APP_API_KEY=your_api_key_from_platform
-TRACING_ENABLED=True
-```
-
-## Step 2: Define Custom Tools
-
 Edit or create `workspace/src/tools/banking_tools.py`:
 
 ```python
