@@ -56,7 +56,7 @@ The Connect to API node now supports handling client (4xx) and server (5xx) erro
 
 **Campaign Suppression Behavior**
 
-The system now reevaluates suppressed campaigns as soon as the suppression condition expires. Campaigns become eligible again when cooldowns end, active chats close, or conflicting campaign templates no longer apply. Because this is an event-driven process, the system reconsiders a suppressed campaign for display only when a new event triggers evaluation. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
+The system now reevaluates suppressed campaigns as soon as the suppression condition expires. Campaigns become eligible again when cool downs end, active chats close, or conflicting campaign templates no longer apply. Because this is an event-driven process, the system reconsiders a suppressed campaign for display only when a new event triggers evaluation. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/proactive-web-campaigns.md#campaign-suppression-and-re-evaluation)
 
 **Global and Campaign-Specific DNCs Now Mandatory**
 
@@ -239,7 +239,7 @@ Voice campaigns can now be associated with experience flows that don't include p
 
 **Change Logs for Contact Center AI**
 
-The Contact Center AI logs are now integrated into the Change Logs under **App Settings** → **App Profile**. All CCAI log entries generated after the cutover date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutover date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
+The Contact Center AI logs are now integrated into the Change Logs under **App Settings** → **App Profile**. All CCAI log entries generated after the cutoff date are stored in this new repository and displayed in the proper format, including the app name. The Admin Console’s Audit Log will no longer capture CCAI activity after the cutoff date; older entries remain accessible there for reference. This ensures a clear separation between Admin Console operations and Contact Center AI change tracking. [Learn more :octicons-arrow-right-24:](../../app-settings/change-logs.md)
 
 **Latency Report (Beta)**
 
@@ -2284,7 +2284,7 @@ The key features and experience changes are summarized below.
         Deflect to Chat is no longer supported. This change is driven by the limited usage observed among customers, but we remain committed to addressing relevant needs and exploring adding support based on internal use cases.
 
     * **Centralized Publish Module**: To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.  
-    <img src="../images/xo-platform-Centralised-Publish-Module.png" alt="Centralized Publish Module" title="Centralized Publish Module" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/xo-platform-centralized-publish-module.png" alt="Centralized Publish Module" title="Centralized Publish Module" style="border: 1px solid gray; zoom:70%;">
 
 * **Channels**:
 
@@ -2312,7 +2312,7 @@ The key features and experience changes are summarized below.
 * **New Campaigns Module**: The new Campaigns module simplifies and enhances outbound efforts across voice and web channels. It offers tools for creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. This allows businesses to efficiently reach their audience, monitor campaign performance, and achieve their objectives with greater precision and effectiveness.
 
     * **Voice Campaigns** :Use the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new voice campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.  
-    <img src="../images/xo-platform-voicecampaign.png" alt="Voice Campaigns" title="Voice Campaigns" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/xo-platform-voice-campaign.png" alt="Voice Campaigns" title="Voice Campaigns" style="border: 1px solid gray; zoom:70%;">
 
     * **Proactive Web Campaigns**: Elevate your online presence with proactive web campaigns to promote your products, services, or brand. Utilizing digital channels, these campaigns are crafted to increase visibility, generate leads, and build brand awareness, ensuring measurable success.  
     <img src="../images/xo-platform-proactive-web-campaign.png" alt="Proactive Web Campaigns" title="Proactive Web Campaigns" style="border: 1px solid gray; zoom:70%;">
