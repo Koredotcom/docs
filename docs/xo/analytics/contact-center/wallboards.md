@@ -36,7 +36,7 @@ The following widgets on the wallboard show data related to the KPIs of the cont
     <img src="../images/ccai-wallboard-name.png" alt="Wallboard Name" title="Wallboard Name" style="border: 1px solid gray; zoom:80%;">
 
 * The top section of the wallboard shows the following widgets:  
-    <img src="../images/ccai-top-widets.png" alt="Top Widgets" title="Top Widgets" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/ccai-top-widgets.png" alt="Top Widgets" title="Top Widgets" style="border: 1px solid gray; zoom:80%;">
 
     | **Name**                      | **Live/Time based** | **Description**                                                                 |
     |------------------------------|---------------------|----------------------------------------------------------------------------------|
@@ -73,10 +73,10 @@ The following widgets on the wallboard show data related to the KPIs of the cont
     <img src="../images/multiple-insights-wallboard.png" alt="Multiple Insights" title="Multiple Insights" style="border: 1px solid gray; zoom:80%;">  
 
     **One Insight**  
-    <img src="../images/one-insight-wallbaord.png" alt="One Insight" title="One Insight" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/one-insight-wallboard.png" alt="One Insight" title="One Insight" style="border: 1px solid gray; zoom:80%;">  
 
-* The top left section of the wallboard shows the following widgets:  
-    <img src="../images/top-left-widgets.png" alt="Top Left Widgets" title="Top Left Widgets" style="border: 1px solid gray; zoom:80%;">  
+* The top section of the wallboard shows the following widgets:  
+    <img src="../images/top-left-widgets.png" alt="Top Widgets" title="Top Widgets" style="border: 1px solid gray; zoom:80%;">  
 
     | **Name**                      | **Description**                                                                                                                                                            |
     |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
