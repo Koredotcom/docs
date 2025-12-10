@@ -162,7 +162,7 @@ Agents can make outbound calls to the customers as follows:
         <img src="../images/global-dialpad.png" alt="Global Dialpad" title="Global Dialpad" style="border: 1px solid gray; zoom:60%;">
 
     2. Select the country code from the dropdown, enter the phone number without the country code, and select the Call option to place the outbound call.  
-        <img src="../images/country-code.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">  
+        <img src="../images/country-code.png" alt="Call" title="Call" style="border: 1px solid gray; zoom:60%;">  
 
         The following scenarios are possible:
 
@@ -180,7 +180,7 @@ Agents can make outbound calls to the customers as follows:
 
         3. User pastes/enters “+91987654321”: The system selects India as the country code and dials the call.
 
-        4. User pastes “+919876543”: The system displays a validation error and disables the call button.
+        4. User pastes “+919876543”: The system displays a validation error and disables the call icon.
 
     !!! Note
 
@@ -281,7 +281,7 @@ Following the consult or conference call, the initiating agent can proceed with 
 Steps to initiate a Call Transfer:
 
 1. Select the **Transfer** option to initiate the transfer.  
-<img src="../images/transfer-consult-call.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/transfer-consult-call.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:80%;">
 
     Recent transfer results appear.  
     <img src="../images/transfer-results.png" alt="Recent Transfer Results" title="Recent Transfer Results" style="border: 1px solid gray; zoom:80%;">
@@ -383,7 +383,7 @@ While interacting with a customer, if an agent needs to seek external consultati
         <img src="../images/call-history (2).png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
 
         2. Select the **🕻** option for the number to which you want to forward the call.  
-        <img src="../images/call-button (3).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/call-button (3).png" alt="Call" title="Call" style="border: 1px solid gray; zoom:60%;">
 
         3. The phone number appears on the dialer tab. Select the **🕻** option to dial the call.  
         <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:60%;">
@@ -664,7 +664,7 @@ Steps to resend an email:
     The email composer opens with the recipient details and original email content prefilled. (Optional) Update the email content.
 
 3. Select **Send**.  
-    <img src="../images/resend-email.png" alt="Resend Button" title="Resend Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/resend-email.png" alt="Resend" title="Resend" style="border: 1px solid gray; zoom:70%;">
 
     * The system sends the re-sent email as a new interaction while linking it to the original interaction. 
     * The interaction log marks the message as **Resent** for clarity.
@@ -724,7 +724,7 @@ To add a new note:
     <img src="../images/notes-icon.png" alt="Notes Icon" title="Notes Icon" style="border: 1px solid gray; zoom:80%;">
 
 2. Select **+ Add New Note**.  
-    <img src="../images/add-new-note.png" alt="Add New Note Button" title="Add New Note Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-note.png" alt="Add New Note" title="Add New Note" style="border: 1px solid gray; zoom:80%;">
 
 3. Type the message and select **Save**. A confirmation message appears  
     <img src="../images/notes-created-confirmation.png" alt="Note Added Confirmation" title="Note Added Confirmation" style="border: 1px solid gray; zoom:80%;">
@@ -755,7 +755,7 @@ Steps to send an outbound email:
     **Send**:
 
     * Select the **Send** option to send the email.  
-        <img src="../images/send-button.png" alt="Send Button" title="Send Button" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/send-button.png" alt="Send" title="Send" style="border: 1px solid gray; zoom:80%;">
 
         A confirmation appears, and sends the email.  
 
@@ -777,7 +777,7 @@ Steps to send an outbound email:
     **Draft**:
 
     Select the **X** on the right corner of the email editor window.  
-        <img src="../images/x-button.png" alt="X-Button" title="X-Button" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/x-button.png" alt="X-icon" title="X-icon" style="border: 1px solid gray; zoom:80%;">
 
     The editor window minimizes, and saves the mail as a draft.  
         <img src="../images/draft-mimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
@@ -830,7 +830,7 @@ To add a new note:
 Modify skills in a live interaction by selecting the Live Interaction option in [Skill Modification](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification):
 
 1. Select the **Add Skills** option on the Skills bar.  
-<img src="../images/add-skills-button.png" alt="Add Skills Button" title="Add Skills Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/add-skills-button.png" alt="Add Skills" title="Add Skills" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the necessary skills from the drop-down.  
 <img src="../images/skills.png" alt="Select Skills" title="Select Skills" style="border: 1px solid gray; zoom:80%;">
@@ -879,7 +879,7 @@ To transfer a conversation to another queue when the [Skill Modification](../con
 To transfer a conversation to another agent:
 
 1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
-    <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-shortcut.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an agent in the search bar on the **Transfer to** window.
 3. Select an available agent.
@@ -895,7 +895,7 @@ To transfer a conversation to another agent:
 An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to let external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
 1. Select **Transfer** at the top of the live interaction pane. You can also use the shortcut key **Alt + Shift + T** to open the transfer window.  
-    <img src="../images/transfer-shortcut.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/transfer-shortcut.png" alt="Transfer" title="Transfer" style="border: 1px solid gray; zoom:80%;">
 
 2. Search for an external contact in the search bar on the **Transfer to** window.
 3. Select an available contact.
@@ -932,12 +932,12 @@ The call transitions to After Call Work (ACW) at the end of the configured timeo
 
 ### After Call Work (ACW)
 
-If ACW is enabled, then the conversations are managed based on the ACW configuration:
+If ACW is enabled, then the system manages the conversations based on the ACW configuration:
 
 **Immediate Slot Release**
 
-* Slots are freed up, allowing other conversations to be accepted.
-* The close button is enabled when all the required disposition codes are selected.
+* Slots free up, and accepts other conversations.
+* The close option appears on selecting all the required disposition codes.
 * There is no time restriction for selecting the disposition codes and they're available until the agent manually closes them.  
 <img src="../images/immediate-slot-release.png" alt="Immediate Slot Release" title="Immediate Slot Release" style="border: 1px solid gray; zoom:80%;">
 
@@ -945,15 +945,15 @@ If ACW is enabled, then the conversations are managed based on the ACW configura
 
 * Agents can see a countdown timer when the conversation ends, indicating the time left to provide a disposition.
 * The slot becomes available if the agent submits a disposition or when the timer elapses.
-* Empty disposition fields are filled with a ‘system-generated disposition code’ if no disposition is provided within the allotted time.  
+* The system generates a disposition code and fills any empty disposition fields when agents do not provide dispositions within the allotted time.  
 <img src="../images/timed-slot-release.png" alt="Timed Slot Release" title="Timed Slot Release" style="border: 1px solid gray; zoom:80%;">
 
 * When the disposition timer expires, the system displays a message to the agent.  
 <img src="../images/time-expired-message.png" alt="Time Expired Message" title="Time Expired Message" style="border: 1px solid gray; zoom:80%;">
 
-* For conversations transferred to another queue, the final queue’s disposition mode is applied to determine the required dispositions.
+* For conversations transferred to another queue, the system applies the final queue’s disposition mode to determine the required dispositions.
 
-If ACW is disabled the conversation disappears from the agent console at the end of the conversation, freeing the slots for accepting other conversations. Agents do not receive any disposition sets or summary notes related to these conversations.
+If ACW is disabled the conversation disappears from the agent console at the end of the conversation, freeing the slots for accepting other conversations. Agents don't receive any disposition sets or summary notes related to these conversations.
 
 ### Dispositions
 
@@ -992,7 +992,7 @@ There are two ways to assign a disposition:
 
 #### Intelligent Disposition Code Suggestions
 
-When enabled, agents receive intelligent disposition code suggestions automatically at the end of customer conversations. The feature uses LLM analysis of the full conversation transcript and disposition set metadata to recommend the most appropriate wrap-up code. Suggestions appear prominently in the disposition bar and can be accepted with one click or overridden manually, ensuring higher accuracy and reduced wrap-up time. [Learn more](../contactcenter/configurations/settings/wrap-up-code-prediction.md).
+When enabled, agents receive intelligent disposition code suggestions automatically at the end of customer conversations. The feature uses LLM analysis of the full conversation transcript and disposition set metadata to recommend the most appropriate wrap-up code. Suggestions appear prominently in the disposition bar and accepted with one click or overridden manually, ensuring higher accuracy and reduced wrap-up time. [Learn more](../contactcenter/configurations/settings/wrap-up-code-prediction.md).
 
 Steps to receive intelligent disposition code suggestions:
 
@@ -1039,7 +1039,7 @@ Agents can translate conversations in real time on the live interaction pane. Ad
 Steps to translate real-time conversations:
 
 1. Select **Translate** on the live interaction pane.  
-    <img src="../images/translate-option.png" alt="Translate Button" title="Translate Button" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/translate-option.png" alt="Translate" title="Translate" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the language from the dropdown. Select **Mark as Default** to make it the default language for translation.  
     <img src="../images/select-language-dropdown.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:70%;">
@@ -1063,7 +1063,7 @@ This section displays the live interaction summary with the following details:
 
 * **Agent Name**: Identifies the agent who is handling the live interaction.
 * **SUMMARY**: Conversation Summary leading up to the transfer. For multiple transfers, the summary of all transfers appears.
-* **Queue**: Indicates the queue in which the conversation is placed.
+* **Queue**: Indicates the queue in which the system places the conversation.
 * **Wait Time**: This shows the time that the chat has been waiting for an agent to respond.
 * **Intent**: Shows the customer’s primary purpose for initiating the live interaction.
 * **Sentiment**: Captures the customer sentiments based on their responses.  
@@ -1086,7 +1086,7 @@ When the agent types a response during a chat conversation with a customer, the 
 
 Do the following to enable the typing indicator for chat conversations:
 
-1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1) for additional information on installing WebSDK 3.0.
+1. To integrate bots chat capability into custom applications, install WebSDK 3.0 on your server. WebSDK 3.0 is a set of libraries that offer a quick and convenient way to do this. Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.20.0) for additional information on installing WebSDK 3.0.
 2. To receive read receipts, and typing indicators, install the AgentDesktop plugin in WebSDK 3.0. The Agent Desktop plugin lets the user to interact with the human agent through the AI Agent and supports the following features:
 
     * Audio Calling
@@ -1094,7 +1094,7 @@ Do the following to enable the typing indicator for chat conversations:
     * Co-browse
     * Screen Sharing
 
-    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.16.1/docs/plugins/agent-desktop) for additional information on installing the plugin.
+    Refer to the [installation instructions](https://github.com/Koredotcom/web-kore-sdk/tree/v3/11.20.0/docs/plugins/agent-desktop) for additional information on installing the plugin.
 
 ## Request Supervisor Support
 
@@ -1102,16 +1102,16 @@ Agents can send requests to the appropriate supervisors for assistance. The supe
 
 Steps to request supervisor assistance:
 
-1. Click the ellipsis (**⋮**) at the top right corner of the Live Interaction pane, and click **Request Supervisor Support**.  
+1. Se;ect ⋮ at the corner of the Live Interaction pane, and select **Request Supervisor Support**.  
     <img src="../images/ellipsis-button.png" alt="Request Supervisor Support" title="Request Supervisor Support" style="border: 1px solid gray; zoom:70%;"> 
 
 2. The agent can request support from a specific supervisor or multiple supervisors. The supervisor list displays either all supervisors or only those assigned to the relevant skill.  
     <img src="../images/supervisor-select.png" alt="Select Supervisor" title="Select Supervisor" style="border: 1px solid gray; zoom:70%;">
 
-3. A notification is displayed, and the request is sent to supervisors who are logged in to the platform and have their status set to Available.  
+3. A notification displays, and sends the request to supervisors and have their status set to Available.  
     <img src="../images/success-message.png" alt="Success Message" title="Success Message" style="border: 1px solid gray; zoom:70%;">
 
-4. A notification is displayed to the supervisor. Supervisors can manage the notifications [Learn more](../console/manage-layout.md#notifications).  
+4. A notification displays to the supervisor. Supervisors can manage the notifications [Learn more](../console/manage-layout.md#notifications).  
     <img src="../images/agents-page.png" alt="Supervisor Notification" title="Supervisor Notification" style="border: 1px solid gray; zoom:70%;">
 
 5. The Internal Chat window appears after accepting the agent’s request. The supervisor can support the agent on the internal chat.  
@@ -1143,7 +1143,7 @@ When agents select the sentiment indicator, a graph appears, visually representi
 
 ## Behavior When Login Prep Status is Enabled
 
-A message appears on the console for the duration configured on the [Agent Status](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) page. This status allows an agent to prepare themselves before they start receiving interactions.  
+A message appears on the console for the duration configured on the [Agent Status](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) page. This status lets an agent to prepare themselves before they start receiving interactions.  
 <img src="../images/login-prep-status.png" alt="Login Prep Status Enabled" title="Login Prep Status Enabled" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/login-prep.png" alt="Login Prep Status" title="Login Prep Status" style="border: 1px solid gray; zoom:80%;">
@@ -1155,18 +1155,18 @@ Agents can choose the following options:
 
 **Mark as Available** - Selecting this option changes an agent’s status to Available.
 
-**Keep Away Status** - Selecting this option keeps the status as Away. If agents click Keep Away Status, they remain in the ‘Away’ state with a notification displayed for the ‘Away’ status. Agents can mark themselves as ‘Available’ when they're ready to receive conversations.
+**Keep Away Status** - Selecting this option keeps the status as Away. If agents select Keep Away Status, they remain in the ‘Away’ state with a notification displayed for the ‘Away’ status. Agents can mark themselves as ‘Available’ when they're ready to receive conversations.
 
 ## Behavior During Active Interactions
 
-### If Auto-Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response
+### If Auto Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response
 
 If the Auto Answer mode is enabled in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#voice), the Transfer/End buttons don't display on the Live Interaction pane until the assigned agent sends the first message.
 
-Below is what the Agent Console looks like **before the first message** from the agent:  
+This is what the Agent Console looks like **before the first message** from the agent:  
 <img src="../images/before-first-message-from-agent.png" alt="Before First Message From Agent" title="Marked as Away" style="border: 1px solid gray; zoom:80%;">
 
-Below is what the Agent Console looks like **after the first message** from the agent:  
+This is what the Agent Console looks like **after the first message** from the agent:  
 <img src="../images/after-first-message-from-agent.png" alt="After First Message From Agent" title="After First Message From Agent" style="border: 1px solid gray; zoom:80%;">
 
 ### Behavior When an Agent Changes Their Status
@@ -1176,11 +1176,11 @@ A warning message displays if an agent changes their status to **_Away_** or a c
 
 ### Behavior When an Agent Tries Logging Out
 
-Contact Center AI does not permit agents to log out during an ongoing conversation.
+Contact Center AI doesn't permit agents to log out during an ongoing conversation.
 
-If an agent tries to log out during an ongoing conversation, Contact Center AI prevents the agent from logging out without transferring or closing the conversation. A pop-up window is displayed along with the following message:
+If an agent tries to log out during an ongoing conversation, Contact Center AI prevents the agent from logging out without transferring or closing the conversation. A pop-up window displays along with the following message:
 
-If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.  
+If an agent logs out suddenly (the browser closes or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations get assigned to the Queue.  
 <img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:50%;">
 
 ### Behavior When an Agent Doesn't Accept or Send a Response Within a Specified Time
