@@ -101,7 +101,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/g
 
 ## Sample Response for Voice Campaign
 
-The response below lists all voice campaigns retrieved based on the set filter criteria.
+The response provides all voice campaigns matching the request criteria.
 
 ```
 {
@@ -271,7 +271,7 @@ The response below lists all voice campaigns retrieved based on the set filter c
 
 ## Sample Response for SMS Campaign
 
-The response below lists all sms campaigns retrieved based on the set filter criteria.
+The response provides all SMS campaigns matching the request criteria.
 
 ```
 {
