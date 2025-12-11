@@ -8,7 +8,7 @@ Use this API to start an active Voice campaign for a given stream ID and campaig
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/api/v2/public/{{streamID}}/campaign/trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=voice\&trigger=play` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters

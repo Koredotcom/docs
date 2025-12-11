@@ -6,9 +6,9 @@ Use this API to delete an existing contact list associated with a campaign.
 
 | **Method** | **DELETE** |
 | :---- | :---- |
-| **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}?accountId={{accountId}} |
+| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}?accountId={{accountId}}` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters

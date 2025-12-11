@@ -6,9 +6,9 @@ Use this API to stop an active voice campaign for a given stream ID and campaign
 
 | **Method** | **POST** |
 | :---- | :---- |
-| **Endpoint** | https://{{host}}/api/v2/public/{{streamId}}/campaign/trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=voice\&trigger=stop |
+| **Endpoint** | `https://{{host}}/api/v2/public/{{streamId}}/campaign/trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=voice\&trigger=stop` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters

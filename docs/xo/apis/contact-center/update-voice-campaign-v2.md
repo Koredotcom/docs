@@ -8,7 +8,7 @@ Use this API to update the configuration details of an existing voice campaign u
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}&campaignType=sms` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token). |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -108,7 +108,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in Kore.ai. The name must be a maximum of 48 characters | string, required |
 | `description` | Description of the campaign’s objective. The description must be a maximum of 256 characters | string, required |
-| `contactLists` | List of contact list names. These must already exist. At least one contact list name is required | array\[string\], required |
+| `contactLists` | List of contact list names. These must already exist. At least one contact list name is required | array[string], required |
 | `dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, required |
 | `dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, required |
 | `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5 | string, required |
@@ -117,7 +117,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 | `dialingStrategy.callerId.phoneNumber` | Caller ID number to display when calling. Must be a verified number. | string, required |
 | `dialingStrategy.callingHours.frequency` | Frequency of calling hours must be one of: 'WEEKLY', 'DAILY', or 'CUSTOM' | string, required |
 | `dialingStrategy.callingHours.timezone` | Timezone in which calling hours should be enforced, for example, "Asia/Kolkata". | string, required |
-| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: • day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' • start: "9:00 AM" • end: "6:00 PM" | array\[object\], required |
+| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: </br>• day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' </br>• start: "9:00 AM" </br>• end: "6:00 PM" | array[object], required |
 | `dialingStrategy.dialingOrder` | Order in which contacts are dialed: "FIFO" (First-In-First-Out) or "LIFO". | string, required |
 | `dialingStrategy.maxAttemptsPerRecord` | Maximum number of call attempts per contact. Minimum is 1 and maximum is 100 | number, required |
 | `dialingStrategy.defaultRetryPeriod` | Time (in minutes) to wait between retries. Must be between 1 and 1440 | number, required |
@@ -233,8 +233,8 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 | `data.dialingStrategy.maxRingTime` | Maximum ring time before hanging up. (seconds) | integer |
 | `data.status` | Current state of the campaign. Example: `"Ready"` | string |
 | `data.maxSkips` | Maximum allowed skips for contacts in the dialing list. | integer |
-| `data.createdAt` | Campaign creation timestamp. (ISO 8601\) | string |
-| `data.updatedAt` | Last updated timestamp. (ISO 8601\) | string |
+| `data.createdAt` | Campaign creation timestamp. (ISO 8601) | string |
+| `data.updatedAt` | Last updated timestamp. (ISO 8601) | string |
 | `data.schedule` | Schedule configuration for the campaign. | object |
 | `data.schedule.isSchedulingEnabled` | Indicates whether campaign scheduling is enabled. | boolean |
 | `data.schedule.isRecurrenceEnabled` | Indicates whether campaign recurrence is enabled. | boolean |

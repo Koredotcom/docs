@@ -8,7 +8,7 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 | :---- | :---- |
 | **Endpoint** | `https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=voice` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -106,19 +106,19 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in Kore.ai. The name must be a maximum of 48 characters. | string, required |
 | `description` | Description of the campaign’s objective. The description must be a maximum of 256 characters. | string, required |
-| `contactLists` | List of contact list names. These must already exist. At least one contact list name is required. | array\[string\], required |
+| `contactLists` | List of contact list names. These must already exist. At least one contact list name is required. | array[string], required |
 | `dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, required |
 | `dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, required |
 | `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5\. | string, required |
 | `dialingMode` | Dialing mode defines how calls are handled. Valid values are: Agentless, Progressive, or Preview. | string, required |
 | `dialingStrategy.callerId.phoneNumber` | Caller ID number to display when calling. Must be a verified number. | string, required |
 | `dialingStrategy.callingHours.frequency` | Frequency of calling hours must be one of: WEEKLY, DAILY, or CUSTOM. | string, required |
-| `dialingStrategy.callingHours.timezone` | Timezone in which calling hours should be enforced, e.g., "Asia/Kolkata". | string, required |
-| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: • day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' • start: "9:00 AM" • end: "6:00 PM" You can define multiple entries to cover different days and time slots. | array\[object\], required |
+| `dialingStrategy.callingHours.timezone` | Timezone in which calling hours should be enforced, example, "Asia/Kolkata". | string, required |
+| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: </br>• day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' </br>• start: "9:00 AM" </br>• end: "6:00 PM" You can define multiple entries to cover different days and time slots. | array[object], required |
 | `dialingStrategy.dialingOrder` | Order in which contacts are dialed: "FIFO" (First In First Out) or "LIFO" (Last In First Out). | string, required |
-| `dialingStrategy.maxAttemptsPerRecord` | Maximum number of call attempts per contact. Minimum is 1 and maximum is 100\. | number, required |
-| `dialingStrategy.defaultRetryPeriod` | Time (in minutes) to wait between retries. Must be between 1 and 1440\. | number, required |
-| `dialingStrategy.maxRingTime` | Max time (in seconds) the phone should ring before disconnecting. Must be between 5 and 120\. | number, required |
+| `dialingStrategy.maxAttemptsPerRecord` | Maximum number of call attempts per contact. Minimum is 1 and maximum is 100. | number, required |
+| `dialingStrategy.defaultRetryPeriod` | Time (in minutes) to wait between retries. Must be between 1 and 1440. | number, required |
+| `dialingStrategy.maxRingTime` | Max time (in seconds) the phone should ring before disconnecting. Must be between 5 and 120. | number, required |
 | `queue_name` | Name of the agent queue used for connecting calls in the campaign. | string, required |
 | `maxSkips` | Number of contact skips allowed for agents in preview mode before the record is flagged. | number, required |
 | `campaignType` | Type of campaign. Must be either 'voice' or 'sms'. | string, required |
@@ -227,7 +227,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | `data.status` | Current state of the campaign. Example: `"Preparing"` | string |
 | `data.maxSkips` | Maximum number of skips allowed before dropping a contact from the dialing list. | Integer |
 | `data.isFiltersEnabled` | Indicates whether campaign filters are enabled. | Boolean |
-| `data.createdAt` | Campaign creation timestamp. (ISO 8601\) | string |
-| `data.updatedAt` | Last updated timestamp. (ISO 8601\) | string |
+| `data.createdAt` | Campaign creation timestamp. (ISO 8601) | string |
+| `data.updatedAt` | Last updated timestamp. (ISO 8601) | string |
 | `data.id` | Unique identifier for the campaign. | string |
 | `data.contactLists` | Names of associated contact lists. | array of string  |

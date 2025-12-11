@@ -6,9 +6,9 @@ Use this API to fetch complete details of an existing voice campaign using the c
 
 | **Method** | **PUT** |
 | :---- | :---- |
-| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}`} |
+| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token.](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -136,8 +136,8 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 | `data.dialingStrategy.callingHours.days[].start` | Campaign start time for the day. (HH:MM AM/PM) | string |
 | `data.dialingStrategy.callingHours.days[].end` | Campaign end time for the day. (HH:MM AM/PM) | string |
 | `data.experienceFlow` | Associated experience flow ID used by the campaign. | string |
-| `data.createdAt` | Timestamp when the campaign was created. (ISO 8601\) | string |
-| `data.updatedAt` | Timestamp when the campaign was last updated. (ISO 8601\) | string |
+| `data.createdAt` | Timestamp when the campaign was created. (ISO 8601) | string |
+| `data.updatedAt` | Timestamp when the campaign was last updated. (ISO 8601) | string |
 | `data.schedule` | Scheduling configuration for the campaign. | object |
 | `data.schedule.isSchedulingEnabled` | Indicates whether the campaign has a scheduled start. | boolean |
 | `data.schedule.isRecurrenceEnabled` | Indicates whether recurrence is enabled. | boolean |

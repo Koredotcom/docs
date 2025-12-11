@@ -8,7 +8,7 @@ Use this API to retrieve all SMS campaign configurations associated with a speci
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/getAllCampaignDetails?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token). |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -95,9 +95,9 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/g
 | `sortBy.name` | Sort by campaign name. Allowed values: "asc", "desc". Must be included if any sort field is used. | string, optional |
 | `sortBy.createdAt` | Sort by campaign creation date. Allowed values: "asc", "desc". | string, optional |
 | `sortBy.updatedAt` | Sort by campaign update date. Allowed values: "asc", "desc". | string, optional |
-| `filters.status` | Filter by campaign status. Allowed values: \['Active', 'Completed', 'Ready', 'Paused', 'Preparing', 'Stopped', 'Scheduled', 'Rescheduled'\]. | array\[string\], optional |
-| `filters.priority` | Filter by campaign priority. Allowed values: \[1, 2, 3, 4, 5\]. | array\[number\], optional |
-| `filters.dialingMode` | Filter by dialing mode. Allowed values: \[‘`Progressive’`, ‘`Preview’]`. This parameter applies only to voice campaigns. | array\[number\], optional |
+| `filters.status` | Filter by campaign status. Allowed values: ['Active', 'Completed', 'Ready', 'Paused', 'Preparing', 'Stopped', 'Scheduled', 'Rescheduled']. | array[string], optional |
+| `filters.priority` | Filter by campaign priority. Allowed values: [1, 2, 3, 4, 5]. | array[number], optional |
+| `filters.dialingMode` | Filter by dialing mode. Allowed values: `[`Progressive’`, ‘`Preview’]`. This parameter applies only to voice campaigns. | array[number], optional |
 
 ## Sample Response for Voice Campaign
 

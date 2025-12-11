@@ -6,9 +6,9 @@ Use this API to stop an active SMS campaign for a given stream ID and campaign I
 
 | **Method** | **POST** |
 | :---- | :---- |
-| Endpoint | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign//trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=sms\&trigger=stop |
+| Endpoint | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign//trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=sms\&trigger=stop` |
 | Content-Type | application/json |
-| Authorization | auth: {{JWT}} See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| Authorization | auth: {{JWT}} See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | API Scope | Campaign Management |
 
 ## Path Parameters

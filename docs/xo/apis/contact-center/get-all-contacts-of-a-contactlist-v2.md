@@ -6,9 +6,9 @@ Use this API to fetch all contacts of a contact list.
 
 | **Method** | **GET** |
 | :---- | :---- |
-| **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}/getAllContacts?accountId={{accountId}} |
+| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}/getAllContacts?accountId={{accountId}}` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token). |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -22,6 +22,7 @@ Use this API to fetch all contacts of a contact list.
 ## Sample Request
 
 ```
+
 curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}/getAllContacts?accountId={{accountId}}' \
 --header 'auth: <token>'
 
@@ -71,6 +72,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
 }
 
 ```
+
 ## Response Parameters
 
 | **Parameter** | **Description** | **Type** |

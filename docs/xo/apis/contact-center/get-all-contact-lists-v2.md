@@ -6,9 +6,9 @@ Retrieves metadata for all contact lists associated with all voice campaigns.
 
 | **Method** | **POST** |
 | :---- | :---- |
-| **Endpoint** | `https://{url}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/getAllListDetails?accountId={{accountId}}&type=call` |
+| **Endpoint** | `https://{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/getAllListDetails?accountId={{accountId}}&type=call` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token). |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -27,7 +27,7 @@ Retrieves metadata for all contact lists associated with all voice campaigns.
 ## Sample Request
 
 ```
-curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/getAllListDetails?accountId={{accountId}}&type=call' \
+curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/getAllListDetails?accountId={{accountId}}&type=call' \
 --header 'iid: st-0603182c-7ffb-53c3-b307-47ca14bxxxxx' \
 --header 'accountId: 67777ce93e25326494exxxxx' \
 --header 'auth: <token>'

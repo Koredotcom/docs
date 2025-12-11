@@ -8,7 +8,7 @@ Use this API to create a voice campaign with Progressive dialing mode that route
 | :---- | :---- |
 | **Endpoint** | `https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=voice` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -108,16 +108,16 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | `contactLists` | List of contact list names to be dialed. Must exist in the system. At least one contact list name is required. | array[string], required |
 | `dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, required |
 | `dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, required |
-| `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5\. | string, required |
+| `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5. | string, required |
 | `dialingMode` | Dialing mode defines how calls are handled. Valid values are: Agentless, Progressive, or Preview. | string, required |
 | `dialingStrategy.callerId.phoneNumber` | Caller ID number shown to the recipient. Must be a verified number. | string, required |
 | `dialingStrategy.callingHours.frequency` | Frequency of calling hours must be one of: WEEKLY, DAILY, or CUSTOM. | string, required |
 | `dialingStrategy.callingHours.timezone` | Timezone in which calling hours are defined. | string, required |
-| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: • day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' • start: "9:00 AM" • end: "6:00 PM" You can define multiple entries to cover different days and time slots. | array\[object\], required |
+| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: • day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' • start: "9:00 AM" • end: "6:00 PM" You can define multiple entries to cover different days and time slots. | array[object], required |
 | `dialingStrategy.dialingOrder` | Order in which contacts are dialed: First In First Out (FIFO), Last In First Out (LIFO), etc. | string, required |
-| `dialingStrategy.maxAttemptsPerRecord` | Maximum number of call attempts per contact. Minimum is 1 and maximum is 100\. | number, required |
-| `dialingStrategy.defaultRetryPeriod` | Time (in minutes) to wait between retries. Must be between 1 and 1440\. | number, required |
-| `dialingStrategy.maxRingTime` | Max time (in seconds) the phone should ring before disconnecting. Must be between 5 and 120\. | number, required |
+| `dialingStrategy.maxAttemptsPerRecord` | Maximum number of call attempts per contact. Minimum is 1 and maximum is 100. | number, required |
+| `dialingStrategy.defaultRetryPeriod` | Time (in minutes) to wait between retries. Must be between 1 and 1440. | number, required |
+| `dialingStrategy.maxRingTime` | Max time (in seconds) the phone should ring before disconnecting. Must be between 5 and 120. | number, required |
 | `queue_name` | Name of the agent queue used to route calls when agents are needed. Required for Progressive dialing. | string, required |
 | `campaignType` | Type of campaign. Must be either voice or sms. | string, required |
 
@@ -220,7 +220,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | `data.dialingStrategy.defaultRetryPeriod` | Default wait time between retries. (minutes) | integer |
 | `data.dialingStrategy.maxRingTime` | Maximum ring time before hanging up. (seconds) | integer |
 | `data.status` | Current state of the campaign. Example: `"Preparing"` | string |
-| `data.createdAt` | Campaign creation timestamp. (ISO 8601\) | string |
-| `data.updatedAt` | Last updated timestamp. (ISO 8601\) | string |
+| `data.createdAt` | Campaign creation timestamp. (ISO 8601) | string |
+| `data.updatedAt` | Last updated timestamp. (ISO 8601) | string |
 | `data.id` | Unique identifier for the campaign. | string |
 | `data.contactLists` | Names of associated contact lists. | array of string  |

@@ -6,9 +6,9 @@ Use this API to delete an active voice campaign for a given stream ID and campai
 
 | **Method** | **DELETE** |
 | :---- | :---- |
-| **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}\&campaignType=voice |
+| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}\&campaignType=voice` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -141,8 +141,8 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 | `data.dialingStrategy.callingHours.days[].end` | End time for SMS campaign activity on the given day. (Time) | string |
 | `data.experienceFlow` | ID of the bot experience flow used in the SMS campaign. (UUID) | string |
 | `data.status` | Current status of the campaign (for example, `Ready`, `Stopped`). | String |
-| `data.createdAt` | ISO timestamp when the campaign was created. (ISO 8601\) | string |
-| `data.updatedAt` | ISO timestamp when the campaign was last updated. (ISO 8601\) | string |
+| `data.createdAt` | ISO timestamp when the campaign was created. (ISO 8601) | string |
+| `data.updatedAt` | ISO timestamp when the campaign was last updated. (ISO 8601) | string |
 | `data.schedule` | Object containing scheduling preferences. | object |
 | `data.schedule.isSchedulingEnabled` | Indicates whether scheduling is enabled. | boolean |
 | `data.schedule.isRecurrenceEnabled` | Indicates whether recurrence is enabled. | boolean |
