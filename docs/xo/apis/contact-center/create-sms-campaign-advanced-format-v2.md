@@ -6,9 +6,9 @@ Use this API to create an SMS campaign with advanced formatting using the specif
 
 | **Method** | **POST** |
 | :---- | :---- |
-| **Endpoint** | https://{{host}}/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=sms |
+| **Endpoint** | `https://{{host}}/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=sms` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token). |
+| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
