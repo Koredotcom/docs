@@ -174,11 +174,9 @@ This indicates the positive sentiment score (higher) and negative sentiment scor
 This shows the distribution of interactions across the score range in which the customer has responded to the feedback service, and is then drilled down accordingly.  
 <img src="../conversation-mining/images/experience-csat.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:80%;">  
 
-**Configured Intents**
+#### Configured Intents
 
 Select the configured topics or intents for each conversation across all levels (L1, L2, and L3) from the search bar. Child lists update automatically based on the parent level selection.
-
-Note: Select levels in order: L1 first, then L2, and finally L3. You must select at least one level to apply the filter. All topic levels update dynamically based on your selections.
 
 #### Generated Intents
 

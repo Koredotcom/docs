@@ -8,7 +8,7 @@ It offers a comprehensive suite of products, features, and services to help busi
 
 Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is'nt supported.
 
-## Accessing AI for Service (XO)
+## Access and Account Setup
 
 AI for Service is available in multiple regions. Click the URL to visit your region-specific login page.
 
@@ -20,7 +20,7 @@ AI for Service is available in multiple regions. Click the URL to visit your reg
 * **India**: [https://ind-platform.kore.ai](https://ind-platform.kore.ai/){:target="_blank"}
 * **UAE**: [https://uae-platform.kore.ai](https://uae-platform.kore.ai/){:target="_blank"}
 
-!!!Note
+!!! Note
     
     The USA URL is used as an example throughout the documentation. Replace it with the region-specific URL as appropriate.
 
@@ -45,7 +45,7 @@ You can sign up for AI for Service in any of the following two ways:
     * Users can start a trial of Automation AI or Contact Center AI to create an app. To try other products, users can follow the Contact Us option.
 
 
-## New Account Sign-up
+### New Account Sign-up
 
 To sign up for a new account on the Platform, follow these steps:
 
@@ -86,7 +86,7 @@ Alternatively, you can sign up to the Platform using the Google or Microsoft Off
 
 After signing up, users are guided through the onboarding process to create your first app. [Learn more](../getting-started/guided-onboarding.md).
 
-## Sign in to the Platform
+### Sign in to the Platform
 
 The Platform allows you to sign in to your account using your registered email ID and password.
 
@@ -165,7 +165,7 @@ Some common scenarios where you can join or sign up to a workspace include the f
 * If you are invited by someone to join their workspace.
 * If your enterprise administrator adds you to your enterprise workspace through SSO or API.
 * If you use a business email address to sign up, you can join any other workspace that matches your email domain. In such cases, the system only creates a User identity for you and adds you to the selected workspace.
-* If you sign up using Single Sign-On (SSO) options like Google or Office 365, the platform will use your email domain as the Workspace name. For example, if your email address is john@doe.com, your workspace will be created as ‘doe.com’. You can always change the Workspace name from the Profile menu.
+* If you sign up using Single Sign-On (SSO) options like Google or Office 365, the platform will use your email domain as the Workspace name. For example, if your email address is john.doe@example.com, your workspace will be created as ‘example.com’. You can always change the Workspace name from the Profile menu.
 * If you sign up using the email address verification option, you can define your workspace name during sign up.
 * If you are the first user of a workspace, i.e., if you have created the workspace, you will automatically become the Workspace Owner. The email address of the Workspace Owner is used as the workspace’s unique identifier.
 * Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant. A user can belong to multiple workspaces.

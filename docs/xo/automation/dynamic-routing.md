@@ -12,20 +12,14 @@ DialogGPT significantly improves the accuracy of intent detection and eliminates
 
 ## Key Concepts
 
-
 ### Autonomy Level for Automation AI
 
 The Automation Node has been enhanced with two levels of autonomy based on your automation needs. Following are the two options:
 
-
-
 * **Orchestrated Autonomy**: Structured conversation flows powered by DialogGPT’s intent identification expand the app’s Dynamic Routing capabilities, allowing you to link multiple automation apps to streamline orchestration. 
 * **Full Autonomy**: Agent Platform-powered automation that independently handles entire conversation flows, adapting to situations without predefined paths.
 
-
 ### Parent App and Linked Apps
-
-
 
 * The **Parent App** independently manages its own dialogs, FAQs, and Knowledge base and orchestrates the dialogs and FAQs of its linked apps. It uses DialogGPT to dynamically route user input to the appropriate linked app based on detected intents.
 * **Linked Apps** are the apps connected to the parent app. They contribute their dialogs and FAQs to support the parent app's intent resolution and orchestration.
@@ -36,7 +30,7 @@ When an app is linked, the parent app generates an index of the dialogs and FAQs
 
 Once you link apps in the Automation Node, they remain associated with other flows. As a result, each parent app supports only one specific combination of linked apps, ensuring consistent configuration and functionality.
 
-When a session is initiated through the Parent App, the API receives complete context, including details from both the Parent App and its Linked Apps. This is the expected and intended behaviour.  
+When a session is initiated through the Parent App, the API receives complete context, including details from both the Parent App and its Linked Apps. This is the expected and intended behavior.  
 
 However, if the session is initiated directly with a Linked App, the Parent App remains unaware of this session. Since the API in the Parent App does not have the context of the Linked App, these details cannot be extracted. APIs configured at the Parent App level do not automatically capture interactions that have been explicitly initiated at the Linked App level.
 

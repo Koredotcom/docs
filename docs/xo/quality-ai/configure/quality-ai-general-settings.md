@@ -140,6 +140,7 @@ Controls whether agents can view Sentiment Insights and Resolution Insights on t
 
 * **When Disabled (default)**: Agents cannot view sentiment charts, resolution metrics, or topic-level insights. Their dashboard shows only standard information such as coaching assignments, scorecards, and performance data. 
 
+
 * **When Enabled**: Agents gain access to additional insights, including:
 
     * Sentiment trends
