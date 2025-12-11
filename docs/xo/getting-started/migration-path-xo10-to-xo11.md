@@ -84,7 +84,7 @@ https://bots.kore.ai
 https://platform.kore.ai
 ```
 
-Refer to [Accessing AI for Service (XO)](accessing-the-platform.md#accessing-ai-for-service-xo) for region-specific endpoints.
+Refer to [Accessing AI for Service (XO)](accessing-the-platform.md) for region-specific endpoints.
 
 <hr>
 
