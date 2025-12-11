@@ -16,7 +16,7 @@ Use this API to delete an active SMS campaign for a given stream ID and campaign
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
 ## Query Parameter
@@ -39,9 +39,9 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 
 | **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
-| `auth` | JWT token for authentication. | required |
-| `iid` | The Application Id. | required |
-| `accountId` | The Account Id. | required |
+| `auth` | JWT token for authentication. | string, required |
+| `iid` | The Application Id. | string, required |
+| `accountId` | The Account Id. | string, required |
 
 ## Sample Response
 

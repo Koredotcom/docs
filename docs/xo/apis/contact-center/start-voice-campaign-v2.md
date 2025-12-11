@@ -16,7 +16,7 @@ Use this API to start an active Voice campaign for a given stream ID and campaig
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
 ## Query Parameters

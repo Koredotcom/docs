@@ -1,11 +1,12 @@
 --8<-- "includes/ccai-api-back-link.md"
 
 # Start SMS Campaign API-v2
+
 Use this API to start an active SMS campaign for a given stream ID and campaign ID.
 
 | **Method** | **POST** |
 | :---- | :---- |
-| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{IID}}/campaign/{{campaignId}}?campaignType=sms&trigger={{trigger}}` |
+| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamID}}/campaign/{{campaignId}}?campaignType=sms&trigger={{trigger}}` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
@@ -15,7 +16,7 @@ Use this API to start an active SMS campaign for a given stream ID and campaign 
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
 ## Query Parameters

@@ -16,7 +16,7 @@ Use this API to fetch all contacts of a contact list.
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `contactListId` | Unique identifier of the contact list to fetch the contacts. | string, required |
 
 ## Sample Request

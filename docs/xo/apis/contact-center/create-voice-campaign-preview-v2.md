@@ -16,7 +16,7 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 
 ## Query Parameter
 
@@ -96,25 +96,25 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 
 | **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
-| `auth` | JWT token for authentication. | required |
-| `iid` | The Application Id. | required |
-| `accountId` | The Account Id. | required |
+| `auth` | JWT token for authentication. | string, required |
+| `iid` | The application ID.| string, required |
+| `accountId` | The Account Id. | string, required |
 
 ## Body Parameters
 
 | **Parameters** | **Description** | **Type** |
 | :---- | :---- | :---- |
-| `name` | Name of the campaign. Used to identify it in Kore.ai. The name must be a maximum of 48 characters. | string, required |
+| `name` | Name of the campaign. The name must be a maximum of 48 characters. | string, required |
 | `description` | Description of the campaign’s objective. The description must be a maximum of 256 characters. | string, required |
 | `contactLists` | List of contact list names. These must already exist. At least one contact list name is required. | array[string], required |
 | `dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, required |
 | `dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, required |
-| `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5\. | string, required |
+| `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5 | string, required |
 | `dialingMode` | Dialing mode defines how calls are handled. Valid values are: Agentless, Progressive, or Preview. | string, required |
 | `dialingStrategy.callerId.phoneNumber` | Caller ID number to display when calling. Must be a verified number. | string, required |
 | `dialingStrategy.callingHours.frequency` | Frequency of calling hours must be one of: WEEKLY, DAILY, or CUSTOM. | string, required |
 | `dialingStrategy.callingHours.timezone` | Timezone in which calling hours should be enforced, example, "Asia/Kolkata". | string, required |
-| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: </br>• day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' </br>• start: "9:00 AM" </br>• end: "6:00 PM" You can define multiple entries to cover different days and time slots. | array[object], required |
+| `dialingStrategy.callingHours.days` | List of allowed calling time blocks. Each object should include: <br>• day: 'MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU' <br>• start: "9:00 AM" <br>• end: "6:00 PM" You can define multiple entries to cover different days and time slots. | array[object], required |
 | `dialingStrategy.dialingOrder` | Order in which contacts are dialed: "FIFO" (First In First Out) or "LIFO" (Last In First Out). | string, required |
 | `dialingStrategy.maxAttemptsPerRecord` | Maximum number of call attempts per contact. Minimum is 1 and maximum is 100. | number, required |
 | `dialingStrategy.defaultRetryPeriod` | Time (in minutes) to wait between retries. Must be between 1 and 1440. | number, required |

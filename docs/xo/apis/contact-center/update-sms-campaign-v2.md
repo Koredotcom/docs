@@ -16,8 +16,8 @@ Use this API to update an existing SMS campaign using the format, contact lists,
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL. For example: `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
-| `campaignId` | Unique ID of the campaign to be updated. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx` | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
+| `campaignId` | Unique ID of the campaign. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx` | string, required |
 
 ## Query Parameter
 
@@ -35,7 +35,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 --header 'accountId: 67777ce93e25326494exxxxx' \
 --data '{
     "name": "Interactive Support SMS Campaign",
-    "description": "Updated: This campaign sends an SMS with a link or instructions to interact with a Kore.ai bot. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
+    "description": "Updated: This campaign sends an SMS with a link or instructions to interact with a bot. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
     "contactLists": [
      "CL Only 2020 Dec 4"
     ],
