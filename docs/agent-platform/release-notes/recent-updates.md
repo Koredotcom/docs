@@ -28,9 +28,10 @@ Content Variables provide a centralized way for users to declare data used throu
 
 <font size="4">AI Engineering Tools</font>
 
-**New API Scopes for External Connections**
+**External Model Connection APIs**
 
-Two new API scopes now provide granular access control for external model connections: View connections for read-only access and Manage connections for full management capabilities.
+The platform now provides External Connection APIs that enable programmatic management of model connections in addition to the existing UI. These APIs support viewing existing connections, creating new connections for both easy and custom integrations, and rotating keys for supported providers. 
+Two new API scopes, View connections and Manage connections, have been added, offering more granular permission control for accessing and updating external model connections.
 
 **New Model Support**
 
