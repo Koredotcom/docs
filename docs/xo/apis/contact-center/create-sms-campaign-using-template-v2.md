@@ -103,7 +103,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 | :---- | :---- | :---- |
 | `name` | Name of the SMS campaign. Used for identification and reporting. Max 48 characters. | string, required |
 | `description` | Description of the campaign’s purpose. Helpful for internal reference. Max 256 characters. | string, required |
-| `contactLists` | List of contact list names that will receive the message. Must already exist. At least one required. | array\[string\], required |
+| `contactLists` | List of contact list names that will receive the message. Must already exist. At least one required. | array of strings, required |
 | `data.dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, optional |
 | `data.dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, optional |
 | `campaignType` | Type of campaign. Must be either `'voice'` or `'sms'`. | string, required |
@@ -114,7 +114,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 | `dialingStrategy.callerId.phoneNumber` | Sender phone number or ID used to send SMS. Must be approved and linked to your SMS provider. | string, required |
 | `dialingStrategy.callingHours.frequency` | Frequency of calling hours. Allowed values: `'WEEKLY'`, `'DAILY'`, `'CUSTOM'`. | string, required |
 | `dialingStrategy.callingHours.timezone` | Timezone used to interpret calling hours. Example: `"Asia/Kolkata"`. | string, required |
-| `dialingStrategy.callingHours.days` | List of day/time ranges when messaging is allowed. Each object includes: `day`, `start` (for example, "9:00 AM"), `end` (for example, "6:00 PM"). Multiple blocks allowed. | array\[object\], required |
+| `dialingStrategy.callingHours.days` | List of day/time ranges when messaging is allowed. Each object includes: `day`, `start` (for example, "9:00 AM"), `end` (for example, "6:00 PM"). Multiple blocks allowed. | array of objects, required |
 
 ## Sample Response
 
