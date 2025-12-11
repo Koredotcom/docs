@@ -43,8 +43,6 @@ In this document, you will learn how to add the node to your flows, configure it
 ### Step 1: Open Flow Builder
 
 * Log in → In Agent Platform Modules → Click **Tools**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 * Select your tool → Click **Go to Flow**.
 
 ### Step 2: Add the Node
