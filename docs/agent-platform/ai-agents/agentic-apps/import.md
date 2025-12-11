@@ -25,12 +25,14 @@ To import apps or agents into an Agentic app, follow these steps.
 
 * Review the app components before importing. Upon uploading the file, the page shows a summary of all the Agentic app components in the JSON file:
     * Agentic App Summary - Name and Description of the app. 
-    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page help differentiate between the three types of tools. Note that the workflow tools aren't exported with the app exports. You must export the workflow tools individually. Workflow tools must be explicitly linked to the corresponding tools after they're imported. 
+    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page help differentiate between the three types of tools. Note that the workflow tools aren't exported with the app exports. You must export the workflow tools individually. Workflow tools must be explicitly linked to the corresponding tools after they're imported.
     * Tools - List of tools not associated with any of the agents. 
     * Knowledge tools associated with an app.
     * MCP servers: Servers configured in the app. 
     * Events configured in the app.
     * User-defined Memory store configurations. 
+    * Environment variables and namespaces.
+    * Content Variables
 
 ![alt_text](images/import/import.png "image_tooltip")
 
