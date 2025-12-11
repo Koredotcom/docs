@@ -143,7 +143,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>language</strong>
    </td>
-   <td>The Bot language that is identified by the language acronym.For example, <em>en</em> for English and <em>de</em> for German.
+   <td>The Bot language that's identified by the language acronym. For example, <em>en</em> for English and <em>de</em> for German.
    </td>
    <td>Required
    </td>
@@ -173,7 +173,7 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
     "faqs": [
         {
             "_id": "673d8ec3c2c0874923ad8a7a",
-            "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f54e90e",
+            "streamId": "st-8b873b9c-15cc-5167-a04a-1c801fxxxxxx",
             "conditionalResp": false,
             "questionPayload": {
                 "question": "Dup AA Node1",
@@ -182,12 +182,12 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             "responseType": "message",
             "answerPayload": [
                 {
-                    "_id": "mt-979b11e9-7187-5d8a-918b-6b680113119c",
-                    "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f54e90e",
+                    "_id": "mt-979b11e9-7187-5d8a-918b-6b6801xxxxxx",
+                    "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f5xxxxx",
                     "channel": "default",
-                    "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+                    "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
                     "createdOn": "Wed Nov 20 2024 12:54:51 GMT+0530 (India Standard Time)",
-                    "lModBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+                    "lModBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
                     "lMod": "Wed Nov 20 2024 12:54:51 GMT+0530 (India Standard Time)",
                     "text": "Sample%20Ans",
                     "type": "basic"
@@ -195,20 +195,20 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             ],
             "subQuestions": [],
             "subAnswers": [],
-            "parent": "492e6eab-8da1-41b9-bc5a-09ccf2013caf",
+            "parent": "492e6eab-8da1-41b9-bc5a-09ccfxxxxxxx",
             "leafterm": "A",
             "createdOn": "2024-11-20T07:24:51.445Z",
-            "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+            "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
             "modifiedOn": "2024-11-20T07:24:51.445Z",
-            "lastModifiedBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+            "lastModifiedBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
             "botName": "Test5",
-            "knowledgeTaskId": "673d8c93c2c0874923ad7af1",
+            "knowledgeTaskId": "673d8c93c2c0874923xxxxxx",
             "sortId": 1732087491445,
             "language": "en",
             "faqStatus": true,
             "editLocked": false,
             "isPublished": true,
-            "refId": "74e7d27f-bcb1-5dab-a339-957a41582cb1",
+            "refId": "74e7d27f-bcb1-5dab-a339-957a415xxxxx",
             "label": "Dup A Node1",
             "faqLinkedBy": [],
             "__v": 0,
@@ -219,8 +219,8 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             ]
         },
         {
-            "_id": "673d8e98c2c0874923ad889a",
-            "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f54e90e",
+            "_id": "673d8e98c2c0874923ad889axxxxxx",
+            "streamId": "st-8b873b9c-15cc-5167-a04a-1c801fxxxxxx",
             "conditionalResp": false,
             "questionPayload": {
                 "question": "Dup A Node1",
@@ -229,33 +229,33 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             "responseType": "message",
             "answerPayload": [
                 {
-                    "_id": "mt-d0d70fb0-44fb-577d-99d4-1ffc147c5ce3",
-                    "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f54e90e",
+                    "_id": "mt-d0d70fb0-44fb-577d-99d4-1ffc14xxxxxx",
+                    "streamId": "st-8b873b9c-15cc-5167-a04a-1c801fxxxxxx",
                     "channel": "default",
-                    "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+                    "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
                     "createdOn": "Wed Nov 20 2024 12:54:08 GMT+0530 (India Standard Time)",
-                    "lModBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+                    "lModBy": "u-83c6112b-d759-5e13-8dcf-6995faxxxxxx",
                     "lMod": "Wed Nov 20 2024 12:54:08 GMT+0530 (India Standard Time)",
-                    "text": "sampke%20ans",
+                    "text": "sample%20ans",
                     "type": "basic"
                 }
             ],
             "subQuestions": [],
             "subAnswers": [],
-            "parent": "417634bb-33c6-4fb5-8311-177a4f340398",
+            "parent": "417634bb-33c6-4fb5-8311-177a4fxxxxxxx",
             "leafterm": "A",
             "createdOn": "2024-11-20T07:24:08.831Z",
-            "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+            "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
             "modifiedOn": "2024-11-20T07:24:08.831Z",
-            "lastModifiedBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+            "lastModifiedBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxxx",
             "botName": "Test5",
-            "knowledgeTaskId": "673d8c93c2c0874923ad7af1",
+            "knowledgeTaskId": "673d8c93c2c0874923xxxxxx",
             "sortId": 1732087448831,
             "language": "en",
             "faqStatus": true,
             "editLocked": false,
             "isPublished": true,
-            "refId": "24850e9f-d899-58d8-ab6f-a9c3a167cc69",
+            "refId": "24850e9f-d899-58d8-ab6f-a9c3a1xxxxxx",
             "label": "Dup A Node1",
             "faqLinkedBy": [],
             "__v": 0,
@@ -265,8 +265,8 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             ]
         },
         {
-            "_id": "673d8ce8c2c0874923ad7f04",
-            "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f54e90e",
+            "_id": "673d8ce8c2c0874923xxxxx",
+            "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f5xxxxx",
             "conditionalResp": false,
             "questionPayload": {
                 "question": "A Node1",
@@ -275,12 +275,12 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             "responseType": "message",
             "answerPayload": [
                 {
-                    "_id": "mt-abf1d001-d7a1-5ca0-bf1b-5c707d13c1a4",
-                    "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f54e90e",
+                    "_id": "mt-abf1d001-d7a1-5ca0-bf1b-5c707d1xxxxx",
+                    "streamId": "st-8b873b9c-15cc-5167-a04a-1c801f5xxxxx",
                     "channel": "default",
-                    "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+                    "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
                     "createdOn": "Wed Nov 20 2024 12:46:56 GMT+0530 (India Standard Time)",
-                    "lModBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+                    "lModBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxx",
                     "lMod": "Wed Nov 20 2024 12:46:56 GMT+0530 (India Standard Time)",
                     "text": "Sample%20Ans",
                     "type": "basic"
@@ -288,20 +288,20 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
             ],
             "subQuestions": [],
             "subAnswers": [],
-            "parent": "db9173d7-3611-4bd2-b206-011fe27fa31e",
+            "parent": "db9173d7-3611-4bd2-b206-011fe2xxxxxx",
             "leafterm": "A",
             "createdOn": "2024-11-20T07:16:56.712Z",
-            "createdBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+            "createdBy": "u-83c6112b-d759-5e13-8dcf-6995faxxxxxx",
             "modifiedOn": "2024-11-20T07:16:56.712Z",
-            "lastModifiedBy": "u-83c6112b-d759-5e13-8dcf-6995fabb20eb",
+            "lastModifiedBy": "u-83c6112b-d759-5e13-8dcf-6995fabxxxxx",
             "botName": "Test5",
-            "knowledgeTaskId": "673d8c93c2c0874923ad7af1",
+            "knowledgeTaskId": "673d8c93c2c0874923xxxxxx",
             "sortId": 1732087016712,
             "language": "en",
             "faqStatus": true,
             "editLocked": false,
             "isPublished": true,
-            "refId": "bce3ee09-c91e-5282-9aed-7cb96a2e2cd7",
+            "refId": "bce3ee09-c91e-5282-9aed-7cb96axxxxxx",
             "label": "A Node1",
             "faqLinkedBy": [],
             "__v": 0,
