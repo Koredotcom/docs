@@ -593,7 +593,7 @@ Allows the agent to manually redact selected portions of text during live conver
 <tr>
    <td><strong>Transfer/Close Multiple Conversations</strong>
    <br>
-Allow user to redistribute or terminate conversations more flexibly accross all channels
+Allow user to redistribute or terminate conversations more flexibly across all channels
    </td>
    <td>Yes
    </td>
@@ -653,7 +653,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
    </td>
    <td>Full
    </td>
@@ -1271,7 +1271,7 @@ Allows the agent to manually redact selected portions of text during live conver
 <tr>
    <td><strong>Transfer/Close Multiple Conversations</strong>
    <br>
-Allow user to redistribute or terminate conversations more flexibly accross all channels
+Allow user to redistribute or terminate conversations more flexibly across all channels
    </td>
    <td>Yes
    </td>
@@ -1331,7 +1331,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
    </td>
    <td>Full
    </td>
@@ -1917,7 +1917,7 @@ Allows the agent to manually redact selected portions of text during live conver
 <tr>
    <td><strong>Transfer/Close Multiple Conversations</strong>
    <br>
-Allow user to redistribute or terminate conversations more flexibly accross all channels
+Allow user to redistribute or terminate conversations more flexibly across all channels
    </td>
    <td>Yes
    </td>
@@ -1977,7 +1977,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
    </td>
    <td>None
    </td>
@@ -2575,7 +2575,7 @@ Allows the agent to manually redact selected portions of text during live conver
 <tr>
    <td><strong>Transfer/Close Multiple Conversations</strong>
    <br>
-Allow user to redistribute or terminate conversations more flexibly accross all channels
+Allow user to redistribute or terminate conversations more flexibly across all channels
    </td>
    <td>Yes
    </td>
@@ -2635,7 +2635,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
    </td>
    <td>Full
    </td>
@@ -3237,7 +3237,7 @@ Allows the agent to manually redact selected portions of text during live conver
 <tr>
    <td><strong>Transfer/Close Multiple Conversations</strong>
    <br>
-Allow user to redistribute or terminate conversations more flexibly accross all channels
+Allow user to redistribute or terminate conversations more flexibly across all channels
    </td>
    <td>No
    </td>
@@ -3297,7 +3297,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
    </td>
    <td>None
    </td>
@@ -4090,7 +4090,7 @@ Allows the agent to manually redact selected portions of text during live conver
 <tr>
    <td><strong>Transfer/Close Multiple Conversations</strong>
    <br>
-Allow user to redistribute or terminate conversations more flexibly accross all channels
+Allow user to redistribute or terminate conversations more flexibly across all channels
    </td>
    </td>
    <td>Yes
@@ -4164,7 +4164,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behaviour' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
    </td>
    </td>
    <td>View<br>
