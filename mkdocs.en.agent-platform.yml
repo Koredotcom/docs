@@ -158,6 +158,9 @@ nav:
       - Connect External Agents: ai-agents/external-agents.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
       - Manage Agents: ai-agents/agent-management.md
+      - Manage Agentic App:
+        - App Profile: ai-agents/agentic-apps/app-profile.md
+        - App Orchestrator: ai-agents/agentic-apps/orchestrator.md
     - Knowledge:
       - About Search AI: ai-agents/knowledge/overview.md
       - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
