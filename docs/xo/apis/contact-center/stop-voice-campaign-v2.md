@@ -23,8 +23,8 @@ Use this API to stop an active voice campaign for a given stream ID and campaign
 
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
-| `campaignType` | Type of campaign. Use `"sms"` for SMS campaign. | string, required |
-| `trigger` | Action to perform. Use `"stop"` to stop the campaign. | string, required |
+| `campaignType` | Type of campaign. Use `"sms"` for SMS campaign. | required |
+| `trigger` | Action to perform. Use `"stop"` to stop the campaign. |  required |
 
 ## Sample Request
 
