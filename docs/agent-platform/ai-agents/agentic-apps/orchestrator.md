@@ -1,4 +1,4 @@
-# Orchestrator 
+# App Orchestrator 
 
 This page allows you to select the orchestrator pattern for the app and make the required configurations for the same. 
 
