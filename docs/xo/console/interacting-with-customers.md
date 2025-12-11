@@ -194,7 +194,7 @@ Agents receive the Click-to-Call interaction in the Live Interaction pane, simil
 Agents also have access to the following call controls:  
 
 * Mute  
-* Unmute  
+* Un-mute  
 * Hold  
 * Resume  
 * Recording - Pause and Resume  
@@ -416,7 +416,7 @@ The Co-browse functionality lets agents and customers to collaborate in real tim
     <img src="../images/co-browse-button.png" alt="Chat Co-Browse" title="Chat Co-Browse" style="border: 1px solid gray; zoom:70%;">
 
     **Voice**  
-    <img src="../images/voice-cobrowse.png" alt="Voice Co-Browse" title="Voice Co-Browse" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/voice-co-browse-feature.png" alt="Voice Co-Browse" title="Voice Co-Browse" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **Start CoBrowse** on the pop-up window. The system sends a session request to the customer.  
     <img src="../images/start-co-browse.png" alt="Start Co-Browse" title="Start Co-Browse" style="border: 1px solid gray; zoom:70%;">
@@ -777,7 +777,7 @@ Steps to send an outbound email:
         <img src="../images/x-button.png" alt="X-icon" title="X-icon" style="border: 1px solid gray; zoom:80%;">
 
     The editor window minimizes, and saves the mail as a draft.  
-        <img src="../images/draft-mimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/draft-minimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
 
     Drafts are automatically saved and remain available in the following scenarios:
 
@@ -793,8 +793,7 @@ Steps to send an outbound email:
     Select the **Delete** icon on the left corner of the editor.  
         <img src="../images/delete-button.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:80%;">
 
-    A confirmation message displays. Select **Delete**.  
-        <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
+    A confirmation message displays. Select **Delete**. 
 
 ## Color Codes
 
