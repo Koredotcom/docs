@@ -105,7 +105,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in the Kore.ai platform. The name must be a maximum of 48 characters. | string, required |
 | `description` | Description of the campaign’s purpose. Helps teams understand the goal. The description must be a maximum of 256 characters. | string, required |
-| `contactLists` | List of contact list names to be dialed. Must exist in the system. At least one contact list name is required. | array\[string\], required |
+| `contactLists` | List of contact list names to be dialed. Must exist in the system. At least one contact list name is required. | array[string], required |
 | `dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, required |
 | `dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, required |
 | `priority` | Campaign priority. Higher values indicate higher execution priority. Priority must be one of the following: 1, 2, 3, 4, or 5\. | string, required |
@@ -224,4 +224,3 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | `data.updatedAt` | Last updated timestamp. (ISO 8601\) | string |
 | `data.id` | Unique identifier for the campaign. | string |
 | `data.contactLists` | Names of associated contact lists. | array of string  |
-
