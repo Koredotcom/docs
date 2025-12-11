@@ -17,11 +17,11 @@ In XO v10, we've two variants of Bots: Standard Bot and Universal Bot. The migra
 
 ## Upgrade Journey Steps for Standard Bots
 
-1. Log in to the [XO1O Platform](https://bots.kore.ai) and duplicate the Bot you intend to upgrade to the XO11 App.
+1. Sign in to the [XO1O Platform](https://bots.kore.ai) and duplicate the Bot you intend to upgrade to the XO11 App.
     * Click the Bot from the home page, and go to **Deploy > Bot Management > Export & Import Bot**. 
     * Export the latest version of the Bot.
     * Navigate back to the homepage, click **New Bot > Import Bot** and then upload the corresponding files from the exported copy. Name the duplicate Bot appropriately.
-2. Log in to the [XO11 Platform](https://platform.kore.ai).
+2. Sign in to the [XO11 Platform](https://platform.kore.ai).
 3. Check if the XO10 bots are available on the platform.
 4. Open the duplicate Bot and click **upgrade now** on the banner.  
 <img src="../images/upgrade-banner.png" alt="upgrade-banner" title="upgrade-banner"style="border: 1px solid gray; zoom:70%;">
@@ -84,7 +84,7 @@ https://bots.kore.ai
 https://platform.kore.ai
 ```
 
-Refer to [Accessing AI for Service (XO)](accessing-the-platform.md#accessing-ai-for-service-xo-1) for region-specific endpoints.
+Refer to [Accessing AI for Service (XO)](accessing-the-platform.md#accessing-ai-for-service-xo) for region-specific endpoints.
 
 <hr>
 
