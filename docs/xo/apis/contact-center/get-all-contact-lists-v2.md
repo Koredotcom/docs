@@ -4,7 +4,7 @@
 
 Retrieves metadata for all contact lists associated with all voice campaigns.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | `https://{url}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/getAllListDetails?accountId={{accountId}}&type=call` |
 | **Content-Type** | `application/json` |
@@ -13,14 +13,14 @@ Retrieves metadata for all contact lists associated with all voice campaigns.
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `type` | Value must be `call` to retrieve contact lists only. | string, optional |
 
@@ -36,7 +36,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign/co
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -270,9 +270,9 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign/co
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates whether the API call was successful. | string |
 | `message` | Optional message describing the result of the operation. | string |
@@ -296,7 +296,3 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign/co
 | `data[].apiConfigurations.dataSyncMode` | Mode for syncing data (for example, `allowDuplicates`). | string |
 | `data[].files` | List of uploaded files associated with the contact list. | array |
 | `data[].updatedAt` | Timestamp of the last update to the contact list (ISO 8601 format). | string |
-
-# 
-
-## 

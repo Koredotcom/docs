@@ -4,7 +4,7 @@
 
 Use this API to start an active Voice campaign for a given stream ID and campaign ID.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/api/v2/public/{{streamID}}/campaign/trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=voice\&trigger=play` |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to start an active Voice campaign for a given stream ID and campaig
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -21,7 +21,7 @@ Use this API to start an active Voice campaign for a given stream ID and campaig
 
 ## Query Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of campaign. Use `"voice"` for voice campaign. | string, required |
 | `trigger` | Action to perform. Use `"play"` to start. | string, required |
@@ -40,7 +40,7 @@ curl --location 'https://{{host}}/api/v2/public/{{streamID}}/campaign/trigger/{{
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -58,9 +58,9 @@ curl --location 'https://{{host}}/api/v2/public/{{streamID}}/campaign/trigger/{{
 }
 ```
 
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the current status of the campaign. For example, `Active` | string |
 | `message` | Success confirmation message. For example, `Campaign Started` | string |

@@ -4,7 +4,7 @@
 
 Use this API to update a specific contact list associated with a campaign.
 
-| Method | PUT |
+| **Method** | **PUT** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to update a specific contact list associated with a campaign.
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -34,7 +34,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -42,7 +42,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Updated name of the contact list. Maximum 48 characters. Used for identification and UI display. | string, optional |
 | `description` | Updated description of the contact list. Maximum 256 characters. Should explain the purpose or content of the list. | string, optional |
@@ -71,9 +71,9 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the success or failure of the API call. | string |
 | `message` | Message confirming the update operation. | string |

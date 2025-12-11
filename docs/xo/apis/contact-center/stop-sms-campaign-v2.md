@@ -4,7 +4,7 @@
 
 Use this API to stop an active SMS campaign for a given stream ID and campaign ID.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | Endpoint | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign//trigger/{{campaignId}}?accountId={{accountId}}\&campaignType=sms\&trigger=stop |
 | Content-Type | application/json |
@@ -13,7 +13,7 @@ Use this API to stop an active SMS campaign for a given stream ID and campaign I
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -21,7 +21,7 @@ Use this API to stop an active SMS campaign for a given stream ID and campaign I
 
 ## Query Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of campaign. Use `"sms"` for SMS campaign. | string, required |
 | `trigger` | Action to perform. Use `"stop"` to stop the campaign. | string, required |
@@ -40,7 +40,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign//
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -59,7 +59,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign//
 ```
 ## Response Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the current status of the campaign. For example, Stopped | string |
 | `message` | Success confirmation message. For example, Campaign Stopped | string |

@@ -1,10 +1,10 @@
 --8<-- "includes/ccai-api-back-link.md"
 
-# Get SMS Campaign API
+# Get SMS Campaign API-v2
 
 Use this API to fetch complete details of an existing SMS campaign using the campaign ID.
 
-| Method | GET |
+| **Method** | **GET** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to fetch complete details of an existing SMS campaign using the cam
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL. For example: `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -30,7 +30,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -107,7 +107,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 
 ## Response Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Overall status of the API response. Example: `"success"` | string |
 | `message` | Response message indicating the result of the request. | string |

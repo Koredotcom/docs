@@ -4,7 +4,7 @@
 
 Use this API to create a voice campaign that uses Preview dialing mode. In this mode, agents review contact information before initiating calls. The campaign routes answered calls to a specified agent queue.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | `https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=voice` |
 | **Content-Type** | `application/json` |
@@ -13,14 +13,14 @@ Use this API to create a voice campaign that uses Preview dialing mode. In this 
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of Campaign. Use `voice`. | string, required |
 
@@ -94,7 +94,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 ```
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -102,7 +102,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 
 ## Body Parameters
 
-| Parameters | Description | Type |
+| **Parameters** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in Kore.ai. The name must be a maximum of 48 characters. | string, required |
 | `description` | Description of the campaign’s objective. The description must be a maximum of 256 characters. | string, required |
@@ -194,9 +194,9 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the overall response status. Example: `"success"` | string |
 | `message` | Descriptive message about the result. | string |
@@ -205,8 +205,8 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 | `data.lname` | Lowercase name of the campaign, used internally. | string |
 | `data.description` | Description of the campaign purpose and functionality. | string |
 | `data.dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object |
-| data.dncLists.id | Unique identifier of the contact list in the DNC list. | string (UUID) |
-| data.dncLists.name | The name of the contact list included in the Do Not Call (DNC) list. | string |
+| `data.dncLists.id` | Unique identifier of the contact list in the DNC list. | string (UUID) |
+| `data.dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string |
 | `data.priority` | Campaign priority level. | String |
 | `data.dialingMode` | Dialing mode used for the campaign. Example: `"Progressive"` | string |
 | `data.dialingStrategy` | Defines dialing strategy configuration. | object |

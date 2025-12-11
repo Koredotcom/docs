@@ -4,7 +4,7 @@
 
 Use this API to update the configuration details of an existing voice campaign using the dialing mode. This operation allows you to modify metadata, dialing strategies, schedules, and other runtime parameters.
 
-| Method | PUT |
+| **Method** | **PUT** |
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}&campaignType=sms` |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to update the configuration details of an existing voice campaign u
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 |  `streamId` | The Application ID. | string, required |
@@ -21,7 +21,7 @@ Use this API to update the configuration details of an existing voice campaign u
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of Campaign. Use `"voice"` | string, required |
 
@@ -96,7 +96,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -104,7 +104,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in Kore.ai. The name must be a maximum of 48 characters | string, required |
 | `description` | Description of the campaign’s objective. The description must be a maximum of 256 characters | string, required |
@@ -202,9 +202,9 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the overall response status. Example: `"success"` | string |
 | `message` | Descriptive message about the result. | string |
@@ -214,8 +214,8 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 | `data.lname` | Lowercase name of the campaign, used internally. | string |
 | `data.description` | Description of the campaign purpose and functionality. | string |
 | `data.dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, required |
-| data.dncLists.id | Unique identifier of the contact list in the DNC list. | string (UUID) |
-| data.dncLists.name | The name of the contact list included in the Do Not Call (DNC) list. | string |
+| `data.dncLists.id` | Unique identifier of the contact list in the DNC list. | string (UUID) |
+| `data.dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string |
 | `data.priority` | Campaign priority level. | string |
 | `data.dialingMode` | Dialing mode used for the campaign. Example: `"Preview"` | string |
 | `data.dialingStrategy` | Defines dialing strategy configuration. | object |

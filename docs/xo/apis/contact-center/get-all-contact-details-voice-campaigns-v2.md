@@ -4,7 +4,7 @@
 
 Retrieves the current status and contact details of a voice campaign.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}/status?view=contacts |
 | **Content-Type** | `application/json` |
@@ -104,7 +104,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |

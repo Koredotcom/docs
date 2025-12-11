@@ -4,7 +4,7 @@
 
 Use this API to retrieve the full details of a specific contact list using its ID.
 
-| Method | GET |
+| **Method** | **GET** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactListId}}?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to retrieve the full details of a specific contact list using its I
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -30,7 +30,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
 ```
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -77,9 +77,9 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
 }
 
 ```
-## Response Body Parameters[¶](https://docs.kore.ai/xo/apis/contact-center/get-contact-list-details/#response-body-parameters)
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `_id` | Unique ID of the contact list. | string |
 | `name` | Name of the contact list. | string |
@@ -95,5 +95,3 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
 | `files` | List of files associated with this contact list. | array |
 | `createdAt` | ISO timestamp of when the contact list was created. | string |
 | `updatedAt` | ISO timestamp of the most recent update to the contact list. | string |
-
-## 

@@ -4,7 +4,7 @@
 
 Use this API to create a voice campaign with Progressive dialing mode that routes answered calls to live agents via a queue.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | `https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=voice` |
 | **Content-Type** | `application/json` |
@@ -13,14 +13,14 @@ Use this API to create a voice campaign with Progressive dialing mode that route
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of campaign. Use `“voice”` | string, required |
 
@@ -93,7 +93,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 ```
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -101,7 +101,7 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in the Kore.ai platform. The name must be a maximum of 48 characters. | string, required |
 | `description` | Description of the campaign’s purpose. Helps teams understand the goal. The description must be a maximum of 256 characters. | string, required |
@@ -191,9 +191,9 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 
 ```
 
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the overall response status. Example: `"success"` | string |
 | `message` | Descriptive message about the result. | string |

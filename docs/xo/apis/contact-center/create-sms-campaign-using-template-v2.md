@@ -4,7 +4,7 @@
 
 Use this API to create an SMS campaign using a predefined message template.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}\&campaignType=sms |
 | **Content-Type** | `application/json` |
@@ -13,14 +13,14 @@ Use this API to create an SMS campaign using a predefined message template.
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | the Application ID | string, required |
 
 ## Query Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of Campaign. Use `"sms"`. | string, required |
 
@@ -91,7 +91,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -99,7 +99,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the SMS campaign. Used for identification and reporting. Max 48 characters. | string, required |
 | `description` | Description of the campaign’s purpose. Helpful for internal reference. Max 256 characters. | string, required |
@@ -188,9 +188,9 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `_id` | Unique identifier for the campaign. | string |
 | `name` | Campaign name. | string |

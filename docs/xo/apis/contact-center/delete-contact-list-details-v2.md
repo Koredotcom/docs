@@ -4,7 +4,7 @@
 
 Use this API to delete an existing contact list associated with a campaign.
 
-| Method | DELETE |
+| **Method** | **DELETE** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/{{contactList}}?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to delete an existing contact list associated with a campaign.
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -32,7 +32,7 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -80,9 +80,9 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 
 ```
 
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates whether the API call was successful. | string |
 | `message` | Describes the outcome of the delete operation. | string |
@@ -114,5 +114,3 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 | `data.files` | List of file objects uploaded with the contact list. | array |
 | `data.createdAt` | ISO timestamp when the list was created. | string |
 | `data.updatedAt` | ISO timestamp of the last update made to the list. | string |
-
-## 

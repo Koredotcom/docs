@@ -4,7 +4,7 @@
 
 Use this API to create an SMS campaign with advanced formatting using the specified experience flow and contact list.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=sms |
 | **Content-Type** | `application/json` |
@@ -13,14 +13,14 @@ Use this API to create an SMS campaign with advanced formatting using the specif
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL. For example: `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
 
 ## Query Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of campaign. Use `"sms"`. | string, required |
 
@@ -89,7 +89,7 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -97,7 +97,7 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. | string, required |
 | `description` | Description of the campaign. | string, optional |
@@ -192,9 +192,9 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
 }
 ```
 
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `_id` | Unique identifier for the campaign. | string |
 | `name` | Campaign name. | string |

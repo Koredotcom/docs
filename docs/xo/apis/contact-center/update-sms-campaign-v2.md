@@ -4,7 +4,7 @@
 
 Use this API to update an existing SMS campaign using the format, contact lists, experience flow, and dialing strategy.
 
-| Method | PUT |
+| **Method** | **PUT** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}\&campaignType=sms |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to update an existing SMS campaign using the format, contact lists,
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL. For example: `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -21,7 +21,7 @@ Use this API to update an existing SMS campaign using the format, contact lists,
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of campaign. Use `"sms"`. | string, required |
 
@@ -87,7 +87,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -95,7 +95,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the SMS campaign. Used to identify the campaign across the platform. Max 48 characters. | string, required |
 | `description` | Description explaining the campaign’s objective (for example, enabling user interaction via SMS). Max 256 characters. | string, required |
@@ -175,9 +175,9 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `_id` | Unique identifier for the campaign. | string |
 | `name` | Campaign name. | string |

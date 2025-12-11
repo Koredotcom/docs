@@ -4,7 +4,7 @@
 
 Use this API to delete an active voice campaign for a given stream ID and campaign ID.
 
-| Method | DELETE |
+| **Method** | **DELETE** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}}\&campaignType=voice |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to delete an active voice campaign for a given stream ID and campai
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -21,7 +21,7 @@ Use this API to delete an active voice campaign for a given stream ID and campai
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of Campaign. Use `"sms"` | string, required |
 
@@ -36,7 +36,7 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -115,9 +115,9 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 }
 ```
 
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the success or failure of the request. | string |
 | `message` | Response message providing details about the result. | string |
@@ -148,4 +148,3 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 | `data.schedule.isRecurrenceEnabled` | Indicates whether recurrence is enabled. | boolean |
 | `data.campaignInstanceId` | Unique identifier for the specific instance of the campaign. (UUID) | string |
 | `data.contactLists` | List of contact group names associated with the campaign. | array |
-

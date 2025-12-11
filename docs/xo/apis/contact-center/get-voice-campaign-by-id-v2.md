@@ -4,7 +4,7 @@
 
 Use this API to fetch complete details of an existing voice campaign using the campaign ID.
 
-| Method | PUT |
+| **Method** | **PUT** |
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}?accountId={{accountId}`} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to fetch complete details of an existing voice campaign using the c
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -110,9 +110,9 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 }
 ```
 
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Overall status of the API response. Example: `"success"` | string |
 | `message` | Response message indicating the result of the request. | string |
@@ -122,8 +122,8 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 | `data.lname` | Lowercased campaign name. | string |
 | `data.description` | Detailed description of the campaign purpose and behavior. | string |
 | `data.dncLists` | Contains the contact lists added under the Do Not Call (DNC) list.. | object |
-| data.dncLists.id | Unique identifier of the contact list in the DNC list. | string (UUID) |
-| data.dncLists.name | The name of the contact list included in the Do Not Call (DNC) list. | string |
+| `data.dncLists.id` | Unique identifier of the contact list in the DNC list. | string (UUID) |
+| `data.dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string |
 | `data.status` | Current status of the campaign. Example: `"Ready"` | string |
 | `data.priority` | Priority level assigned to the campaign. | string |
 | `data.dialingStrategy` | Configuration for dialing or communication strategy. | object |

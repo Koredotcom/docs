@@ -4,7 +4,7 @@
 
 Use this API to create a new contact list for use in passive voice campaigns.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/contactList/createContactList?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to create a new contact list for use in passive voice campaigns.
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -44,7 +44,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
 
 ## Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `name` | Name of the contact list. Max 48 characters. Used to identify and display the list across the platform. | string, required |
 | `description` | Description of the contact list. Max 256 characters. Should briefly explain the list’s purpose and audience. | string, required |
@@ -91,9 +91,9 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
     }
 }
 ```
-## Response Body Parameters
+## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | status | Indicates the overall response status. Example: `"success"` | string |
 | message | Descriptive message about the result. | string |
@@ -119,8 +119,8 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/c
 | `data.campaignInUse` | List of campaigns (IDs) currently using this list (empty if unused) | array |
 | `data.source` | Source of list creation. For passive API, the value is `passiveApi` | string |
 | `data.apiConfigurations` | Contains passive API sync configuration (for example, `dataSyncMode`) | object |
-| data.apiConfigurations.dataSyncMode | Describes how the API handles duplicate entries (`allowDuplicates`) | string |
-| data.columns | User-defined column metadata for contacts  | array |
+| `data.apiConfigurations.dataSyncMode` | Describes how the API handles duplicate entries (`allowDuplicates`) | string |
+| `data.columns` | User-defined column metadata for contacts  | array |
 | `data.files` | List of file objects, if any uploaded via UI or API (empty for passive API) | array |
 | `data.createdBy` | Internal ID of the user who created the list | string |
 | `data.updatedBy` | Internal ID of the user who last updated the list | string |

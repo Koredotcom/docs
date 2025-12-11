@@ -3,7 +3,7 @@
 # Start SMS Campaign API-v2
 Use this API to start an active SMS campaign for a given stream ID and campaign ID.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{IID}}/campaign/{{campaignId}}?campaignType=sms&trigger={{trigger}}` |
 | **Content-Type** | `application/json` |
@@ -12,7 +12,7 @@ Use this API to start an active SMS campaign for a given stream ID and campaign 
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -20,7 +20,7 @@ Use this API to start an active SMS campaign for a given stream ID and campaign 
 
 ## Query Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `campaignType` | Type of campaign. Use `"sms"` for SMS. | string, required |
 | `trigger` | Action to perform. Use `"play"` to start. | string, required |
@@ -39,7 +39,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{IID}}/campaign/{{camp
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -57,7 +57,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{IID}}/campaign/{{camp
 ```
 ## Response Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the current status of the campaign. For example, Active | string |
 | `message` | Success confirmation message. For example, Campaign Started | string |

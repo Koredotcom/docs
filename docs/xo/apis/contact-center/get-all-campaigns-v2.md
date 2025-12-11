@@ -4,7 +4,7 @@
 
 Use this API to retrieve all SMS campaign configurations associated with a specific account.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/getAllCampaignDetails?accountId={{accountId}} |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Use this API to retrieve all SMS campaign configurations associated with a speci
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL. For example: `https://platform.kore.ai` | string, required |
 | `IId` | the Application ID. | string, required |
@@ -76,7 +76,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/g
 
 ## Headers
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `iid` | The Application Id. | required |
@@ -84,7 +84,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/g
 
 ## Request Body Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `skip` | Pagination offset. Number of records to skip. Can be a number or an empty string. | number, optional |
 | `page` | Page number for paginated results. Can be a number or an empty string. | number, optional |
@@ -239,7 +239,7 @@ The response provides all voice campaigns matching the request criteria.
 
 ## Response Body Parameters for Voice Campaign
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Status of the API response. Typically `success` or `error`. | string |
 | `message` | Response message providing context about the operation. | string |
@@ -470,7 +470,7 @@ The response provides all SMS campaigns matching the request criteria.
 
 ## Response Body Parameters for SMS Campaign
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Status of the API response. Typically `success` or `error`. | string |
 | `message` | Response message providing context about the operation. | string |
@@ -501,4 +501,3 @@ The response provides all SMS campaigns matching the request criteria.
 | `data.hasMore` | Flag indicating if more records are available. | boolean |
 | `data.totalPages` | Total number of pages available. | integer |
 | `data.totalResults` | Total number of records matching the query. | integer |
-

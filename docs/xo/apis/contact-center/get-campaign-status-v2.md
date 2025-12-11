@@ -4,7 +4,7 @@
 
 Retrieves the current status of a specific campaign using its campaign ID. Use this API to check whether a campaign is active, stopped, or in another state.
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{{campaignId}}/status?accountId={{accountId}}&view=status` |
 | **Content-Type** | `application/json` |
@@ -13,7 +13,7 @@ Retrieves the current status of a specific campaign using its campaign ID. Use t
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `IId` | The Application ID. | string, required |
@@ -21,7 +21,7 @@ Retrieves the current status of a specific campaign using its campaign ID. Use t
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `view` | Value must be `status` to retrieve status only. | string, optional |
 
@@ -58,7 +58,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/{
 }
 
 ```
-## Response Body Parameters
+## Response Parameters
 
 | Parameter | Description | Type |
 | :---- | :---- | :---- |

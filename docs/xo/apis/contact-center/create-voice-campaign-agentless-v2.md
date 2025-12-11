@@ -4,7 +4,7 @@
 
 Use this API to create a new outbound voice campaign with agentless dialing mode. 
 
-| Method | POST |
+| **Method** | **POST** |
 | :---- | :---- |
 | **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}\&campaignType=voice |
 | **Content-Type** | `application/json` |
@@ -13,14 +13,14 @@ Use this API to create a new outbound voice campaign with agentless dialing mode
 
 ## Path Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | `iid/streamId` | The Application ID. | string, required |
 
 ## Query Parameter
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `accountId` | Unique account identifier. | string, required |
 | `campaignType` | Type of Campaign. Use `"voice"` | string, required |
@@ -96,16 +96,16 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 
 ## Header Parameters
 
-| Header | Description | Required/Optional |
+| **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
 | `auth` | JWT token for authentication. | required |
 | `Content-Type` | application/json;charset=UTF-8 | required |
 | `accountId` | Unique account identifier. | required |
 | `iid` | The Application Id. | required |
 
-## Request Body Parameters
+## Request Parameters
 
-| Parameter | Description | Type/Required |
+| **Parameter** | **Description** | **Type/Required** |
 | :---- | :---- | :---- |
 | `name` | Name of the campaign. Used to identify it in the platform. The name must be a maximum of 48 characters. | string, required |
 | `description` | Description of the campaign's purpose. Helpful for internal context. The description must be a maximum of 256 characters. | string, required |
@@ -200,7 +200,7 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 
 ## Response Parameters
 
-| Parameter | Description | Type |
+| **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `status` | Indicates the overall response status. Example: `"success"` | string |
 | `message` | Descriptive message about the result. | string |
