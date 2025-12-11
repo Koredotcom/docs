@@ -16,7 +16,7 @@ Use this API to create a new outbound voice campaign with agentless dialing mode
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `iid/streamId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 
 ## Query Parameter
 
@@ -98,10 +98,9 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 
 | **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
-| `auth` | JWT token for authentication. | required |
-| `Content-Type` | application/json;charset=UTF-8 | required |
-| `accountId` | Unique account identifier. | required |
-| `iid` | The Application Id. | required |
+| `auth` | JWT token for authentication. | string, required |
+| `accountId` | Unique account identifier. | string, required |
+| `iid` | The Application Id. | string, required |
 
 ## Request Parameters
 

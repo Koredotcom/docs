@@ -16,7 +16,7 @@ Use this API to create a voice campaign with Progressive dialing mode that route
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 
 ## Query Parameter
 
@@ -95,8 +95,8 @@ curl --location 'https://{{url}}/campaign/api/v2/public/{{streamId}}/campaign?ac
 
 | **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
-| `auth` | JWT token for authentication. | required |
-| `iid` | The Application Id. | required |
+| `auth` | JWT token for authentication. | string, required |
+| `IId` | The application ID| string, required |
 | `accountId` | The Account Id. | required |
 
 ## Body Parameters

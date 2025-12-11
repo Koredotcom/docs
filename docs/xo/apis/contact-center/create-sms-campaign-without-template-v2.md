@@ -6,7 +6,7 @@ Use this API to create an SMS campaign without a template.
 
 | **Method** | POST |
 | :---- | :---- |
-| **Endpoint** | https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}\&campaignType=sms |
+| **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}\&campaignType=sms` |
 | **Content-Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | **API Scope** | Campaign Management |
@@ -16,7 +16,7 @@ Use this API to create an SMS campaign without a template.
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 
 ## Query Parameter
 

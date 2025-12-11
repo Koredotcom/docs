@@ -16,7 +16,7 @@ Use this API to delete an existing contact list associated with a campaign.
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `contactListId` | Unique identifier of the contact list to update. | string, required |
 
 ## Sample Request
@@ -34,9 +34,9 @@ curl --location --request DELETE 'https://{{host}}/campaign/api/v2/public/{{stre
 
 | **Header** | **Description** | **Required/Optional** |
 | :---- | :---- | :---- |
-| `auth` | JWT token for authentication. | required |
-| `iid` | The Application Id. | required |
-| `accountId` | The Account Id. | required |
+| `auth` | JWT token for authentication. | string, required |
+| `iid` | The Application Id. | string, required |
+| `accountId` | The Account Id. | string, required |
 
 ## Sample Response
 

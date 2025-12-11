@@ -17,7 +17,7 @@ Use this API to update the configuration details of an existing voice campaign u
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
 |  `streamId` | The Application ID. | string, required |
-| `campaignId` | Unique ID of the campaign to be updated. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx` | string, required |
+| `campaignId` | Unique ID of the campaign. For example: `cd-ed19e3c7-3682-5e72-a839-af9e0711xxxx` | string, required |
 
 ## Query Parameter
 

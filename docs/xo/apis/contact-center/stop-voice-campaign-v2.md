@@ -16,15 +16,15 @@ Use this API to stop an active voice campaign for a given stream ID and campaign
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `IId` | The Application ID. | string, required |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `campaignId` | Unique identifier of the campaign to trigger. | string, required |
 
 ## Query Parameters
 
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
-| `campaignType` | Type of campaign. Use `"sms"` for SMS campaign. | string, required |
-| `trigger` | Action to perform. Use `"stop"` to stop the campaign. | string, required |
+| `campaignType` | Type of campaign. Use `"sms"` for SMS campaign. | required |
+| `trigger` | Action to perform. Use `"stop"` to stop the campaign. |  required |
 
 ## Sample Request
 
