@@ -8,7 +8,7 @@ Use this API to create an SMS campaign with advanced formatting using the specif
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}&campaignType=sms` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -134,7 +134,7 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
         "_id": "cd-e7110489-a30a-5d1e-80ee-f246cc8xxxxx",
         "name": "Interactive Support SMS Campaign1212",
         "lname": "interactive support sms campaign1212",
-        "description": "This campaign sends an SMS with a link or instructions to interact with a Kore.ai bot. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
+        "description": "This campaign sends an SMS with a link or instructions to interact with the AI agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
         "status": "Ready",
         "dncLists": {
             "name": "testdnc"
@@ -223,4 +223,3 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
 | `schedule.isSchedulingEnabled` | Indicates if scheduling is enabled for the campaign. | boolean |
 | `contactLists` | List of contact list names used in the campaign. | array |
 | `data.format` | Specifies the message format (for example, `advanced`). | string |
-

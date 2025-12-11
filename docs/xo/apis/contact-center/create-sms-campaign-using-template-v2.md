@@ -8,7 +8,7 @@ Use this API to create an SMS campaign using a predefined message template.
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?accountId={{accountId}}\&campaignType=sms` |
 | **Content-Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | Campaign Management |
 
 ## Path Parameters
@@ -107,8 +107,8 @@ curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign?a
 | `data.dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, optional |
 | `data.dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, optional |
 | `campaignType` | Type of campaign. Must be either `'voice'` or `'sms'`. | string, required |
-| `priority` | Campaign priority. Higher values indicate higher execution priority. Allowed values: 1, 2, 3, 4, 5\. | string, required |
-| `format` | Format of the SMS. `'simple'` \= plain template without personalization logic. | string, required |
+| `priority` | Campaign priority. Higher values indicate higher execution priority. Allowed values: 1, 2, 3, 4, 5. | string, required |
+| `format` | Format of the SMS. `'simple'` = plain template without personalization logic. | string, required |
 | `message.template_name` | Name of the pre-approved message template to use. | string, required |
 | `message.message` | Base64-encoded message body to be sent. Should match the registered template body exactly. | string (Base64), required |
 | `dialingStrategy.callerId.phoneNumber` | Sender phone number or ID used to send SMS. Must be approved and linked to your SMS provider. | string, required |
