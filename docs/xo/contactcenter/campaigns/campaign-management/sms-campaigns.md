@@ -87,7 +87,7 @@ Steps to duplicate a Filter:
 
 Step to mark a filter as default:
 
-1. Click **Mark as Default**.  
+1. Select **Mark as Default**.  
     <img src="../images/mark-as-default-sms.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:70%;">
 
     A notification appears, and the filter is marked as default.  
@@ -101,34 +101,33 @@ Step to mark a filter as default:
 
 Steps to delete a filter:
 
-1. Click **Delete**.  
+1. Select **Delete**.  
     <img src="../images/delete-web.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **Delete** on the confirmation pop-up. The Filter is deleted.  
-    <img src="../images/confimation-delete-web.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:70%;">
+2. Select **Delete** on the confirmation pop-up.
 
 #### Edit a Filter
 
 Steps to edit a filter:
 
-1. Click **Edit**.  
+1. Select **Edit**.  
     <img src="../images/edit-web.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
 
-2. Make the necessary changes and click **Save & Apply**. A confirmation is displayed, and the filter is updated.  
+2. Make the necessary changes and select **Save & Apply**. A confirmation displays, and updates the filter.  
     <img src="../images/save-edited-filter-web.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:70%;">
 
 ## Create SMS Campaigns
 
 Steps to create an SMS campaign:
 
-1. Click **+ New Campaign**.  
+1. Select **+ New Campaign**.  
     <img src="../images/new-campaign-button-sms.png" alt="+ New Campaign" title="+ New Campaign" style="border: 1px solid gray; zoom:80%;">
 
-2. The **New SMS Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
+2. The **New SMS Campaign** dialog box displays. Under the **General** tab, enter the following details:
 
     * **Campaign Name**: Enter a name for the campaign.
     * **Description**: Enter a description of the campaign.
-    * **Contact Lists**: Select the contact lists that will be dialed, for the campaign from the drop-down list and then click **Done**. [Learn more](../list-management/list-management.md#contact-lists).
+    * **Contact Lists**: Select the contact lists that will be dialed, for the campaign from the drop-down list and then select **Done**. [Learn more](../list-management/list-management.md#contact-lists).
     * **DNC List**: Select the DNC List from the drop-down. [Learn more](../list-management/list-management.md#dnc-lists).
     * **Priority**: Select the priority for the campaign from the drop-down.  
     <img src="../images/general-tab-sms.png" alt="General Tab" title="General Tab" style="border: 1px solid gray; zoom:80%;">

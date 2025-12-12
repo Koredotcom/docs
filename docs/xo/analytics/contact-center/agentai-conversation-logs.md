@@ -130,7 +130,7 @@ Each conversation in the **Conversation Logs** has a unique **Conversation ID**.
 **Steps to search through the Conversation ID**:
 
 1. Go to **Conversation Logs**.
-2. Locate the **Search by Conv ID** search box in the upper-right corner of the page.
+2. Locate the **Search by Conversation ID** search box in the upper-right corner of the page.
 3. Enter the **Conversation ID** value in the search box.
 4. Press the **Enter** key.  
     <img src="../conversation_logs/conversation-id.png" alt="conversation-id" title="conversation-id" style="border: 1px solid gray; zoom:80%;">
@@ -146,7 +146,9 @@ Steps to create a new filter:
     <img src="../conversation_logs/logs-filter.png" alt="logs-filter" title="logs-filter" style="border: 1px solid gray; zoom:80%;">  
 
 3. In the **New Filter** page:
-    1. Select **Channel Type**—**Chat**, **Voice**, **Email**.
+
+    1. Select **Channel Type**-**Chat**, **Voice**, **Email**.
+
     2. Enter the first few letters of an agent’s email address—autocomplete displays the rest—and select it. To select multiple displayed addresses, click **Add Selected**.  
         <img src="../conversation_logs/agent-email-address.png" alt="agent-email-address" title="agent-email-address" style="border: 1px solid gray; zoom:80%;">  
 

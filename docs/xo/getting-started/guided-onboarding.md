@@ -8,8 +8,7 @@ After signing up, users are guided through the following onboarding process to c
 
 
 
-1. Log in to the Platform.
-2. On the app listing page, click **New App**.
+1. After logging in to the platform, click **New App** on the app listing page.
 3. Select the type of app you want to create. The available apps are AI Agents (Automation AI), Contact Center AI, Search AI, and Agent AI.  
 <img src="../images/service-app.png" alt="Onboarding - App Creation" title="Onboarding - App Creation" style="border: 1px solid gray; zoom:70%;">
 

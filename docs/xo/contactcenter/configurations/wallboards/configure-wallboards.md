@@ -11,8 +11,8 @@ Steps to create a wallboard:
 1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Wallboards**.  
     <img src="../images/ccai-wallboards-page.png" alt="Wallboards Page" title="Wallboards Page" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **+Add New Wallboard**. The Add New Wallboard dialog box is displayed.  
-    <img src="../images/ccai-add-newwallboard.png" alt="Add New Wallboard" title="Add New Wallboard" style="border: 1px solid gray; zoom:80%;">
+2. Select **+Add New Wallboard**. The Add New Wallboard dialog box displays.  
+    <img src="../images/ccai-add-new-wallboard.png" alt="Add New Wallboard" title="Add New Wallboard" style="border: 1px solid gray; zoom:80%;">
 
 3. Enter the following details to create the wallboard:
     1. **Name**: Enter the name of the wallboard.
@@ -22,9 +22,9 @@ Steps to create a wallboard:
 
 ### Center Wide
 
-1. **Display to**: Select the queues to which the data will be shown.
-2. **Queues**: Select the queues for which the data will be shown. If you do not select any queues, all queues will be displayed by default.
-3. **Channels**: Select the channels for which the data will be shown. If you do not select any channels, all channels will be selected by default.
+1. **Display to**: Select the queues to which the data displays.
+2. **Queues**: Select the queues for which the data displays. If you don't select any queues, all queues display by default.
+3. **Channels**: Select the channels for which the data displays. If you don't select any channels, the system selects all channels by default.
 4. **Time Period**: Select the duration to display data from the dropdown options.
     1. Last 15 minutes,
     2. Last 30 minutes,
@@ -38,12 +38,13 @@ Steps to create a wallboard:
     2. Medium,  
     3. Fast.  
 
-6. Click **Create**. A confirmation message is displayed, and the wallboard is created.  
+6. Select **Create**. A confirmation message displays, and creates the wallboard.  
     <img src="../images/add-wallboard.png" alt="Create Center Wide Wallboard" title="Create Center Wide Wallboard" style="border: 1px solid gray; zoom:80%;">
 
 ### Queue Specific
 
 1. **Display Top 3 Performers**: Select an option and choose the top three insights from the available categories.
+
     | **Multiple Insights**                                                                 | **One Insight**                                                                     |
     |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
     | Select the top 3 different metrics of agents displayed                                | Select the top 3 specific metrics of agents displayed                                |
@@ -54,9 +55,9 @@ Steps to create a wallboard:
     | **Top Occupancy Rate** <br> Agents with a higher occupancy rate                         | **Top Occupancy Rate**                                                               |
     | **Top Average First Response Time** <br> Agents with the best first response time       | **Top Average First Response Time**                                                  |
 
-2. **Display to**: Select the queues to which the data will be shown.
-3. **Queues**: Select the queues for which the data will be shown. If you do not select any queues, all queues will be displayed by default.
-4. **Channels**: Select the channels for which the data will be shown. If you do not select any channels, all channels will be selected by default.
+2. **Display to**: Select the queues to which the data displays.
+3. **Queues**: Select the queues for which the data displays. If you don't select any queues, all queues appear by default.
+4. **Channels**: Select the channels for which the data displays. If you don't select any channels, the system selects all channels by default.
 5. **Time Period**: Select the duration to display data from the dropdown options.
     1. Last 15 minutes,
     2. Last 30 minutes,
@@ -70,25 +71,25 @@ Steps to create a wallboard:
     2. Medium,  
     3. Fast.  
 
-7. Click **Create**. A confirmation message is displayed, and the wallboard is created.  
+7. Select **Create**. A confirmation message displays, and creates the wallboard.  
     <img src="../images/create-queue-specific-wallboard.png" alt="Create Queue Specific Wallboard" title="Create Queue Specific Wallboard" style="border: 1px solid gray; zoom:80%;">
 
 ## Edit a Wallboard
 
 Steps to edit a wallboard:
 
-1. Click the **Edit** button.  
-    <img src="../images/ccai-edit-button.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
+1. Select **Edit**.  
+    <img src="../images/ccai-edit-button.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:80%;">
 
-2. Make the required changes and click **Update**.  
+2. Make the required changes and select **Update**.  
 <img src="../images/edit-wallboard.png" alt="Edit Wallboard" title="Edit Wallboard" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete a Wallboard
 
 Steps to delete a wallboard:
 
-1. Click the **Delete** (bin) icon.  
-    <img src="../images/ccai-delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Delete** (bin) icon.  
+    <img src="../images/ccai-delete-button.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:80%;">
 
 2. A confirmation window is displayed. Click **Yes** to confirm.  
     <img src="../images/ccai-confirm-delete.png" alt="Confirm Delete" title="Confirm Delete" style="border: 1px solid gray; zoom:80%;">

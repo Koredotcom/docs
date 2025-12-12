@@ -37,7 +37,7 @@ To access the child bot’s userId,
 _Get the complete child bot’s context and assign it to a variable:_
 
 ```
-varcbCtx = getChildBotContextById("st-924bd71e-247e-58ec-bfe4-81e0f8b3xxxx")
+var cbCtx = getChildBotContextById("st-924bd71e-247e-58ec-bfe4-81e0f8b3xxxx")
 ```
 
 OR
@@ -110,7 +110,7 @@ Using the following Utils method/script inside the script node, you can set up v
 Syntax:
 ```
 userSessionUtils.setConversationType('voiceChat');
-userSessionUtils.setLanguageTranslationAPIKey("AIzaSyBnk4hBmHuLjeIzScNAxAdhy0RExxxx");
+userSessionUtils.setLanguageTranslationAPIKey("AIzaSyBnk4hBmHuLjeIzScNAx0RExxxx");
 userSessionUtils.setVoiceChatAgentLang("en");
 userSessionUtils.setVoiceChatUserLang("de");
 ```
@@ -157,7 +157,7 @@ agentUtils.setReferredBy("+1902323242424")
 
 ### Set User Info
 
-Using the following Agent Utils method/script, you can set or add additional information about the customer in the instance bot. You can add the script as part of the script node inside the connectToagent node in the instance bot.
+Using the following Agent Utils method/script, you can set or add additional information about the customer in the instance bot. You can add the script as part of the script node inside the `connectToagent` node in the instance bot.
 
 Syntax
 
@@ -168,7 +168,7 @@ agentUtils.setUserInfo(userInfo);
 
 Example 1
 
-In the below example, static data is used to set the user info.
+The following example uses static data to set the user info.
 
 ```
 const userInfo = {
@@ -178,14 +178,14 @@ const userInfo = {
 "phoneNumber": "407-876-8654",
 "country": "USA",
 "city": "Philadelphia",
-"Unit Address": "Unit 12 - Witherspoon Philadelphia"
+"Unit Address": "Unit 12 - Philadelphia"
 };
 agentUtils.setUserInfo(userInfo);
 ```
 
 Example 2
 
-In the below example, dynamic data based on context is used to set the user info.
+The following example uses context based dynamic data to set the user info.
 
 ```
 const userInfo = {
@@ -202,7 +202,7 @@ agentUtils.setUserInfo(userInfo);
 
 ### Set/Get Bot Languages
 
-Using the following Agent Utils method/script, you can set/get the bot languages for the agent desktop.
+Using the following Agent Utils method or script, you can set or get the bot languages for the agent desktop.
 
 Syntax
 
@@ -299,7 +299,7 @@ skillGroups: ["6390989f1d00e75d5df4xxxx"],
 
 ### Recording Control
 
-This function allows you to control the recording of the interactions. You can start, stop, pause, and resume recordings.
+This function lets you to control the recording of the interactions. You can start, stop, pause, and resume recordings.
 
 Syntax: `agentUtils.setExternalAgentRecordingControl({record: "state"})`
 

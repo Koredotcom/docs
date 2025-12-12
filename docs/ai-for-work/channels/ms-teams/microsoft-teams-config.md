@@ -181,8 +181,8 @@ You can decide how to distribute the AI for Work app in Microsoft Teams:
 
 * **Let Users Add App Themselves**
 
-    * The app will be available in the Microsoft Teams App Marketplace.
-    * Users will need to **search for the app** in Microsoft Teams and add it manually.
+    * The is available in the Microsoft Teams App Marketplace.
+    * Users need to **search for the app** in Microsoft Teams and add it manually.
     * No automatic notifications or installations occur. 
 
 !!!note

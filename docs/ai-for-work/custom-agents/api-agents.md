@@ -306,7 +306,7 @@ Follow these steps to create a URL:
 
 1. To configure the URL, click  **+ Create URL**.
 2. The Open URL pop-up is displayed.  
-3. Enter the Static URL. For example, https://team.atlassian.net/browse/.
+3. Enter the Static URL. For example, `https://team.atlassian.net/browse/`.
 
     !!! note
 

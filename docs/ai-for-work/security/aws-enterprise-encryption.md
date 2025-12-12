@@ -57,6 +57,7 @@ Set up an IAM role that our application can assume to access your KMS key.
 }
 
 ```
+
 ## Configure KMS permissions for the role
 
 Create and attach a permissions policy that allows the necessary KMS operations.
@@ -83,6 +84,7 @@ Create and attach a permissions policy that allows the necessary KMS operations.
   ]
 }
 ```
+
 3. **Name the policy** (e.g., `YourAppKMSAccessPolicy`) and create it.
 4. **Attach the policy to the role** by going to **IAM** > **Roles** > **Your role** > **Add permissions** > **Attach policies**.
 
@@ -111,6 +113,7 @@ Authorize the IAM role to access your CMK by updating the key policy.
   "Resource": "*"
 }
 ```
+
 4. **Save the updated key policy.**
 
 ## Share required information

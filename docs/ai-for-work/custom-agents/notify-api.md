@@ -18,7 +18,7 @@ The Notify API enables developers to send interactive notifications to the users
 
 | Parameter<br>    | Required/Optional<br>    | Description<br>                                                                                                                                                                                                                                                                                                         |
 |------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| host<br>         | Required<br>             | Environment URL, for example, https://work.example.ai<br>                                                                                                                                                                                                                                                                  |
+| host<br>         | Required<br>             | Environment URL, for example, `https://work.example`.ai<br>                                                                                                                                                                                                                                                                  |
 | agent ID<br>     | Required<br>             | This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> **Note**: Obtain the agent ID from the Post URL field while creating an agent. |
 
 ## Sample Request
@@ -174,7 +174,11 @@ curl --location --request POST 'https://work.example.ai/api/1.1/public/agents/ag
 ```
 
 ## Key Points
+
 * The email address of the receiver needs to be a valid users.
-* Custom payload data can be used for tracking and response handling.
-* The ***to*** key in the request payload must be a valid user email Id, and it should be singular in the initial implementation.
-* ***actions*** in the request payload will be transmitted to users as buttons for input.
+  
+* Use custom payload data for tracking and response handling.
+  
+* The ***to*** key in the request payload must be a valid user email Id, and it is singular in the initial implementation.
+  
+* Transmit ***actions*** in the request payload to users as buttons for input.
