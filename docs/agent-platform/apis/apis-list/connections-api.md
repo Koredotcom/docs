@@ -1,6 +1,6 @@
 [:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
 
-# Connections API
+# External Model Connection APIs
 
 Use the Connections API to programmatically manage external model connections for OpenAI, Azure OpenAI, Anthropic, custom API providers, and other integrations.
 
@@ -60,7 +60,7 @@ https://{host}/api/public
    </td>
   </tr>
   <tr>
-   <td>List All Connections
+   <td>[List All Connections](#list-all-connections)
    </td>
    <td>Retrieves all configured connections
    </td>
@@ -70,7 +70,7 @@ https://{host}/api/public
    </td>
   </tr>
   <tr>
-   <td>Get Connection by ID
+   <td>[Get Connection by ID](#get-connection-by-id)
    </td>
    <td>Retrieves a specific connection
    </td>
@@ -80,7 +80,7 @@ https://{host}/api/public
    </td>
   </tr>
   <tr>
-   <td>Create Connection
+   <td>[Create Connection](#create-connection)
    </td>
    <td>Creates a new connection
    </td>
@@ -90,7 +90,7 @@ https://{host}/api/public
    </td>
   </tr>
   <tr>
-   <td>Update Connection
+   <td>[Update Connection](#update-connection)
    </td>
    <td>Updates an existing connection
    </td>
@@ -620,7 +620,7 @@ curl --location 'https://{{host}}/api/public/connections' \
 
 ### Update Connection
 
-Updates the configuration of an existing connection. Supported only for external provider connections where `provider'` is't `API'`.
+Updates the configuration of an existing connection. Supported only for external provider connections where `provider` is not `API`.
 
 
 <table>

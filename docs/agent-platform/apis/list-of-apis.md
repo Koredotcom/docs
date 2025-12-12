@@ -41,7 +41,7 @@ The following APIs let users interact with agents and manage sessions.
 |  Export a trained AI model from the system.      |   [Export a Model API](apis-list/export-a-model.md)       |
 | Deploy a model into the environment in the Ready to Deploy state and configure its parameters. The initial deployment must be done manually in the Agent Platform account. Consecutive deployments must happen via the public API.       | [Deploy a Model API](apis-list/deploy-a-model.md)         |
 | Undeploy a model from the environment.      |   [Undeploy a Model API](apis-list/undeploy-a-model.md) |
-| Manage external model connections.      |   [Connections API](apis-list/connections-api.md) |
+| Manage external model connections.      |   [External Model Connection APIs](apis-list/connections-api.md) |
 
 ## Manage Guardrails APIs
 
