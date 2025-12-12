@@ -56,7 +56,7 @@ To sign up for a new account on the Platform, follow these steps:
 
         If the email address is already registered, the Platform prompts you to sign in and to enter the password.
   
-3. Enter the required details to create the account and click **Sign up**.  
+3. Enter the required details to create the account and select **Sign up**.  
     <img src="../images/create-an-account.png" alt="create-an-account" title="create-an-account" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -64,11 +64,11 @@ To sign up for a new account on the Platform, follow these steps:
             
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
 
-4. A confirmation email with a verification code is sent to the provided email address to complete the sign up.
+4. To complete the set up, you receive a verification code on your email address.
 
      <img src="../images/accplatform(2).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
    
-5. Enter the verification code and click **Verify**.
+5. Enter the verification code and select **Verify**.
 
 !!! note
 
@@ -83,7 +83,7 @@ Alternatively, you can sign up to the Platform using the Google or Microsoft Off
 
     The Platform uses SAML-based authentication for completing the sign up and sign in flows.
 
-After signing up, users are guided through the onboarding process to create your first app. [Learn more](../getting-started/guided-onboarding.md).
+After you sign up, the UI guides you through the [onboarding process](../getting-started/guided-onboarding.md) to create your first app.
 
 ### Sign in to the Platform
 
@@ -121,7 +121,7 @@ To invite users to your account, follow these steps:
 
 3. **Enter the email IDs** of the users whom you want to invite.
 
-4. Click **Send Invitations**, so that the users receive an email invite.
+4. Select **Send Invitations**, so that the users receive an email invite.
 
     <img src="../images/accplatform(9).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -140,7 +140,7 @@ To invite users to your account, follow these steps:
 
 ## Give Access to the Platform
 
-After a user is invited to an account, the administrator can enable the Platform access to these users. To give Platform access to an account user, follow these steps:
+After you receive an invite to an account, the administrator can enable the Platform access to these users. To give Platform access to an account user, follow these steps:
 
 1. Sign in to the Apps Admin portal at [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
 
@@ -159,7 +159,7 @@ After a user is invited to an account, the administrator can enable the Platform
 
 ## Using Workspace
 
-**Workspaces** are a way to organize people productively, while everyone is part of your wider team of AI Agent developers. In the Platform, Workspaces are created when setting up your Platform account, and if you choose to use SSO.
+**Workspaces** are a way to organize people productively, while everyone is part of your wider team of AI Agent developers. When setting your account, if you choose to use SSO, then the Platform creates workspaces.
 
 Team members can join one or multiple Workspaces, or they can create their own. It’s easy to browse Workspaces within the same organization and to switch between them. Here is how it works.
 
@@ -168,7 +168,7 @@ Some common scenarios where you can join or sign up to a workspace include the f
 * If a user invites you to join their workspace.
 * If your enterprise administrator adds you to your enterprise workspace through SSO or API.
 * If you use a business email address to sign up, you can join any other workspace that matches your email domain. In such cases, the system only creates a User identity for you and adds you to the selected workspace.
-* If you sign up using Single Sign-On (SSO) options like Google Workspace or Microsoft Office 365, the Platform uses your email domain as the Workspace name. For example, if your email address is `john.doe@example.com`, your workspace is created as `example.com`. You can change the Workspace name from the Profile menu.
+* If you sign up using Single Sign-On (SSO) options like Google Workspace or Microsoft Office 365, the Platform uses your email domain as the Workspace name. For example, if your email address is `john.doe@example.com`, the Platform creates your workspace as `example.com`. You can change the Workspace name from the Profile menu.
 * If you sign up using the email address verification option, you can define your workspace name during sign up.
 * If you are the first user of a workspace, that is, if you have created the workspace, you become the Workspace Owner. The workspace’s unique identifier is the email address of its owner.
 * Use the 'Invite Team' option to invite more users. You can also invite users to a specific assistant. A user can be part of multiple workspaces.
@@ -177,7 +177,7 @@ Some common scenarios where you can join or sign up to a workspace include the f
 
 Before setting up your Workspace, sign up on the Platform.
 
-If your email domain matches an existing Workspace within the Platform, then it means that your organization is already working on projects you may want to join. The Platform lists matching Workspaces and you can **Request Access** to them when you sign up. If you are part of a team, but you aren't managing it, then this is the recommended way to proceed.
+If your email domain matches an existing Workspace within the Platform, then it means that your organization is working on projects you may want to join. The Platform lists matching Workspaces and you can **Request Access** to them when you sign up. If you are part of a team, but you aren't managing it, then this is the recommended way to proceed.
 
 <img src="../images/accplatform(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -197,13 +197,13 @@ After creating the Workspace, Administrators can invite new members to their wor
 
 Steps to invite users:
 
-1. Click the **Invite** option from the top navigation menu on the Platform Landing Page.  
+1. Select the **Invite** option from the top navigation menu on the Platform Landing Page.  
     <img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 2. Provide the user's email address you want to invite and press enter. You can either invite individual users or multiple users.  
     <img src="../images/accplatform_invite_users.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Invite**. An invitation email is sent to the invited users.
+3. Select **Invite**. The invited users receive an invitation email.
 4. When the invited user accepts the invitation, they can access the workspace.
 
 !!! note
@@ -213,13 +213,13 @@ Steps to invite users:
 
 ### Switch Workspaces
 
-Team members can switch workspaces, using the switcher at the top right, next to the profile area. 
+Team members can switch workspaces, using the switcher in the upper-right corner.
 
 <img src="../images/accplatform(13)new.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Browse Workspaces
 
-Team members can also **Browse Workspaces** to see those that are active within your organization, and to which access can be requested. This option lists Workspaces based on the email domain.
+Team members can also **Browse Workspaces** to see those that are active within your organization and to which access can be requested. This option lists Workspaces based on the email domain.
 
 <img src="../images/accplatform(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -242,4 +242,4 @@ Steps to invite users:
 
 ##### Related Link
 
-[Accounts or Workspaces](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)
+* [Accounts or Workspaces](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)
