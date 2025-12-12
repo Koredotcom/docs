@@ -79,6 +79,7 @@ These documents are maintained for:
 ### User-Facing Documentation
 
 For user-facing documentation, see:
+
 - [Getting Started Guide](../getting-started/installation.md)
 - [API Reference](../api/index.md)
 - [User Guides](../guide/building-apps.md)
@@ -87,19 +88,14 @@ For user-facing documentation, see:
 ### Contributing
 
 For contribution guidelines, see:
+
 - [Contributing Guide](../contributing.md)
 
 ## Maintenance
 
 These documents should be updated when:
+
 - Major architectural changes are made
 - New components are added to the system
 - Design decisions are made that affect the overall architecture
 - Class structures are significantly modified
-
----
-
-**Author:** Lalit Kumar  
-**Email:** lalit.kumar@kore.com  
-**Last Updated:** October 23, 2025
-

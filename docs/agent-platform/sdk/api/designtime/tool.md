@@ -153,4 +153,3 @@ User-defined tools with custom logic.
 
 - [Agent](agent.md) - Agents use tools to perform actions
 - [App](app.md) - Tools are registered at the application level
-

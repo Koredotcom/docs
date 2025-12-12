@@ -111,7 +111,9 @@ For detailed usage patterns, see:
 - **[EnvironmentVariables](environment_variables.md)** - Environment variable access patterns
 - **[Memory](memory.md)** - Memory operations and examples
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Logger API](logger.md) - Structured logging with session context
 - [Tracer API](tracer.md) - Distributed tracing integration

@@ -317,7 +317,9 @@ app.start(
     - Monitor routing latency
     - Use tracing for optimization
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 <!--
 - [Custom Orchestrators in workspace](https://github.com/agenticai/workspace)

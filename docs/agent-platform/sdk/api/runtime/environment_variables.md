@@ -191,7 +191,9 @@ async def typed_config():
     return {"config": config}
 ```
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [RequestContext API](request_context.md) - Parent context class
 - [Memory API](memory.md) - Memory management operations

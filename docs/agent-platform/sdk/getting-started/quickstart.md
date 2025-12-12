@@ -455,4 +455,3 @@ from src.tools import banking_tools  # This registers the tools via @Tool.regist
 - [:octicons-arrow-right-24: Working with Tools](../guide/working-with-tools.md) - Advanced tool patterns
 - [:octicons-arrow-right-24: Custom Orchestration](../guide/orchestration.md) - Orchestration guide
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Full API documentation
-

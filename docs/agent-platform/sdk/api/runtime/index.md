@@ -67,7 +67,6 @@ Runtime APIs are used **inside your tools and orchestrators** during request pro
 | **[Logger](logger.md)** | Structured operational logging | Automatic session context, async logging, JSON format |
 | **[Tracer](tracer.md)** | Distributed tracing and monitoring | Performance tracking, error capture, analytics |
 
-
 ## Next Steps
 
 **Implementation:**
@@ -84,4 +83,3 @@ Runtime APIs are used **inside your tools and orchestrators** during request pro
 - [CLI Reference](../../cli/index.md) - Package and deploy applications
 - [Working with Tools Guide](../../guide/working-with-tools.md) - Advanced tool patterns
 - [Design-Time Models](../index.md) - Application structure and configuration
-

@@ -5,6 +5,7 @@ The AgenticAI Core SDK provides comprehensive APIs for building, configuring, an
 ## API Categories
 
 ### 📐 Design-Time Models
+
 **Define your application structure and configuration**
 
 Build your app blueprint using declarative models that specify agents, tools, memory stores, and environment configuration.
@@ -12,6 +13,7 @@ Build your app blueprint using declarative models that specify agents, tools, me
 [:octicons-arrow-right-24: Design-Time Overview](designtime/index.md)
 
 ### ⚡ Runtime APIs  
+
 **Execute and monitor your applications**
 
 Access runtime services during request processing including session context, logging, memory operations, and tracing.
@@ -19,6 +21,7 @@ Access runtime services during request processing including session context, log
 [:octicons-arrow-right-24: Runtime Overview](runtime/index.md)
 
 ### 🔧 CLI Tools
+
 **Deploy and manage applications**  
 
 Command-line interface for packaging, deploying, and managing your applications across environments.
@@ -52,6 +55,7 @@ graph LR
 ## Quick Start
 
 ### Define Your App
+
 ```python
 from agenticai_core.designtime.models import App, Agent, LlmModel
 
@@ -68,6 +72,7 @@ app = App(
 ```
 
 ### Implement Tools
+
 ```python
 from agenticai_core.designtime.models.tool import Tool
 from agenticai_core.runtime.sessions.request_context import RequestContext, Logger
@@ -82,6 +87,7 @@ async def my_tool():
 ```
 
 ### Deploy
+
 ```bash
 python run.py --archive my-app
 python run.py -c prod deploy -f bin/my-app.kar

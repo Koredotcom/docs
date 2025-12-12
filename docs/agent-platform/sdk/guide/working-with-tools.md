@@ -270,7 +270,9 @@ app.start(
     - Use async/await properly
     - Monitor execution times
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Tool API Reference](../api/designtime/tool.md)
 - [Memory Stores Guide](memory-stores.md)
