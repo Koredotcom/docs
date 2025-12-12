@@ -3,20 +3,24 @@
 
 ## Overview
 
-The Conversation Intelligence dashboard displays post-interaction analytics and is a powerful tool designed to provide insights and actionable information following customer interactions. This dashboard gathers and presents data derived from customer interactions, allowing admins and supervisors to gain valuable insights into agent performance, customer experience, and interaction details.
+The Conversation Intelligence dashboard displays post-interaction analytics and provides insights following customer interactions. It gathers and presents data from those interactions, helping admins and supervisors understand agent performance, customer experience, and key interaction details.
 
 The key sections of this dashboard include:
 
 * **Contact Center Efficiency**: Key Performance Indicators (Average Speed to Answer, Abandonment Rate, CSAT, and Transfer Rate).
+
 * **Agent Efficacy**: Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
+
 * **Customer Experience**: Avg. Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
-* **Insights Mining**:  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
+
+* **Insights Mining**: Topic vs. Sentiment Bubble, Keyword Cloud & Emotions.
+
 * **Interaction Details**: Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
 ## Access Conversation Intelligence 
 
 Navigate to **Quality AI** > **ANALYZE** > **Conversation Intelligence**.   
-<img src="../conversation-intelligence/images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/conversation-intelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelligence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters
 
@@ -26,30 +30,29 @@ You can use the filters to customize the **Conversation Intelligence** tab.
 
 Steps to create a filter:
 
-1. Click the **Filters** button on the upper-right corner.  
-<img src="../conversation-intelligence/images/dashboard-filter.png" alt="Filters Button" title="Filters Button" style="border: 1px solid gray; zoom:70%;">
+1. Select the **Filters**.  
+<img src="../conversation-intelligence/images/dashboard-filter.png" alt="Filters" title="Filters" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **+ Add New Filter**.  
+2. Select **+ Add New Filter**.  
 <img src="../conversation-intelligence/images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**.  
+3. On the **New Filter** window, choose the relevant **Queues** or **Agents**, and select **Apply**.  
 <img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
 
-        Clicking **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently. 
-
-    <img src="../conversation-intelligence/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:60%;">
-
+        Select **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently. 
+    
 4. Under the **Save Filter** section, enter the Filter Name.
-5. Enable the toggle switch **Make this the default view** for the newly added filter or save filter, and click **Save & Apply**.  
+
+5. Enable the toggle switch **Make this the default view** for the new filter added or save filter.
+
+6. Select **Save & Apply**. The system displays a confirmation message after it saves the filter. 
     <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
     
-A successful confirmation message is displayed.  
-
 ### Saved Filters
 
-You can view the saved filters by clicking the **Filters** tab.  
+You can view the saved filters by selecting the **Filters** tab.  
 <img src="../conversation-intelligence/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:90%;">
 
 Hovering over a saved filter displays the following options:
@@ -64,46 +67,44 @@ Hovering over a saved filter displays the following options:
 
 Steps to duplicate a filter:
 
-1. Click the **Duplicate** button on the filter that you want to copy.  
+1. Select **Duplicate** to copy a filter.  
 <img src="../conversation-intelligence/images/duplicate-filter.png" alt="Duplicate Filter" title="Duplicate Filter" style="border: 1px solid gray; zoom:90%;">
 
-2. Enter a name in the **Filter Name** field for the new filter, and click **SAVE**.  
+2. Enter a name in the **Filter Name** field for the new filter, and select **SAVE**.  
 <img src="../conversation-intelligence/images/rename-filter.png" alt="Save Renamed Filter" title="Save Renamed Filter" style="border: 1px solid gray; zoom:90%;">
 
-3. A confirmation message is displayed, and a copy of the filter is created.  
+3. The system displays a confirmation message and creates a copy of the filter.   
 <img src="../conversation-intelligence/images/filter-cloned-success.png" alt="Filter Cloned Success" title="Filter Cloned success" style="border: 1px solid gray; zoom:90%;">
 
 ### Mark as Default
 
-Click the **Mark as Default** button to set the filter as the default filter.  
+Select the **Mark as Default** to set the filter as the default filter.  
 <img src="../conversation-intelligence/images/mark-as-default.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:90%;">
 
-A confirmation message is displayed, and the filter is set as the default filter.  
+The system displays a confirmation message when the filter sets as the default filter.  
 <img src="../conversation-intelligence/images/filter-marked-default.png" alt="Filter Marked Default" title="Filter Marked Default" style="border: 1px solid gray; zoom:90%;">
 
 ### Delete Filter
 
 Steps to delete a filter:
 
-1. Click the **Delete** button.  
+1. Select the **Delete**.  
 <img src="../conversation-intelligence/images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:90%;">
 
-2. On the delete confirmation pop-up window, click **Delete**.  
+2. On the delete confirmation pop-up window, select **Delete**.  
     <img src="../conversation-intelligence/images/confirm-delete.png" alt="Confirm Delete Filter" title="Confirm Delete Filter" style="border: 1px solid gray; zoom:90%;">
 
-    A confirmation message is displayed, and the filter is deleted.
+    The system displays a confirmation message and deletes the filter.
 
 ### Edit Filter
 
 Steps to edit a filter:
 
-1. Click the **Edit** button.  
+1. Select the **Edit**.  
     <img src="../conversation-intelligence/images/edit-filter.png" alt="Edit Filter" title="Edit Filter" style="border: 1px solid gray; zoom:90%;">
 
-2. Make the necessary changes, and click **Save & Apply**.  
+2. Make the necessary changes, and select **Save & Apply**.  
     <img src="../conversation-intelligence/images/save-edit-filter.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:90%;">
-
-    A successful confirmation message is displayed.
 
 ## Clear Filters
 
@@ -113,23 +114,22 @@ This filter displays only the analytics data for the current day's agent perform
 
 ## Date and Time Range Selection
 
-In this section, you can filter data by date and time range. By default, data is displayed for the current day (Today). Select a specified date and time range, and click **Apply**.  
+Lets you filter data by date and time range. By default, the current day data displays. Select a specified date and time range, and select **Apply**.  
 
 <img src="../conversation-intelligence/images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
 ## Compare Functionality
 
-The Conversation Intelligence dashboard's compare functionality allows you to view a comparison of metrics between a selected date range and the previous date range. The compare toggle is enabled by default.
+The Conversation Intelligence dashboard lets you view a comparison of metrics between a selected date range and the previous date range. By default, the system enables the compare toggle. 
 
-The spike or dip indicators for playbook adherence are linked to this toggle and only display across stages and steps if enabled. These indicators are included for all fields. They can have different meanings based on an increase or decrease; an increase can be positive or negative depending on the metrics, resulting in either red badges (negative) or green badges (positive). 
+Spike and dip indicators for playbook adherence link to this toggle and appear across stages and steps only when enabled. The system includes these indicators for all fields. An increase or decrease can have different meanings depending on the metrics, resulting in either red badges (negative) or green badges (positive). 
 
-For example, if the selected date range is the last 7 days, all metrics, such as the Average Speed to Answer, will show a spike or dip indicating the percentage change for a selected period (June 5 - June 12) compared to the same duration in the previous period (May 29 - June 5).
-  
+For an example, if you select the last seven days as the date range, the system shows a spike or dip for all metrics, such as Average Speed to Answer, indicating the percentage change for the period (June 5 to June 12) compared with the same duration in the previous period (May 29 to June 5).    
 <img src="../conversation-intelligence/images/conv-intel-compare-functionality.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
 
 ## Channels
 
-You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
+You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy, and the since occupancy per channel is not tracked.  
 
 <img src="../conversation-intelligence/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
@@ -270,47 +270,52 @@ The sentiment monitor graph is a bar chart where each bar represents an intent o
 
 ### Customer Churn Monitor
 
-The Customer Churn Monitor is a pie chart representation of the customer churn risk. This chart indicates customer churn percentage compared with total calls and any observed escalations in the same period. It functions as an interactive graph, where hovering over the graph reveals the weightage of each section based on the hover placement, and clicking a specific section directs to the calls associated with either escalation or customer churn. The following details are displayed:
+The Customer Churn Monitor shows customer churn risk in a pie chart. It compares the churn percentage with total calls and any escalations in the same period. Hovering over a section shows its value, and selecting a section opens the calls linked to that escalation or churn category. The dashboard displays the following details:
 
-* **No Customer Churn/Escalation**: Number of interactions with no customer churn/escalation.
+* **No Customer Churn/Escalation**: Number of interactions with no customer churn or escalation.
+
 * **Customer Churn**: Count of interactions where there has been a customer churn.
-* **Escalation**: Number of interactions where the customer has requested assistance from a supervisor or a senior.  
 
+* **Escalation**: Number of interactions where the customer has requested assistance from a supervisor or a senior.  
 <img src="../conversation-intelligence/images/customer-churn-monitor.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ## Insights Mining
 
-Insights Mining displays the top 30 topics by volume and allows you to identify the topics associated with volume, sentiment, keywords and emotions for the selected date range and channel.  
+Insights Mining displays the top 30 topics by volume and lets you identify the topics associated with volume, sentiment, keywords and emotions for the selected date range and channel.  
 <img src="../conversation-intelligence/images/insights-mining-default-screen.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 By default, this widget displays a blank screen without any data. Based on the date range and topic selected from the calendar, it pulls the required sentiment scores for interactions in bubbles.
 
 #### All Languages
-This enables multi-selection of languages from the **All Languages** drop-down menu, corresponding to the languages chosen in the evaluation form. By default, all languages are selected. Only the metrics configured for the chosen languages are shown under this filter. 
+
+This lets you select multiple languages from the **All Languages** drop-down menu that match the languages in the evaluation form. By default, the system selects all languages. The filter shows only the metrics configured for the languages you choose.
 
  You can filter data by channel (All, Voice, Chat, Email). This filter affects the entire dashboard, except for agent occupancy, since occupancy per channel is not tracked.
-
- Upon selection of any language and channel filter, the corresponding interaction sentiment scores along with bubble plotting visual representations are populated in the **Topics** and **Keyword Cloud & Emotions** for all widgets. 
-
+ 
+ When you select any language or channel filter, the system updates the interaction sentiment scores and bubble-plot visuals in **Topics** and **Keyword Cloud & Emotions** across all widgets.
 
 ### Topics 
 
-This displays grades sentiment scores for interactions on a scale of 1 to 10. Each topic is represented by a bubble with indicators for different volumes associated with positive, neutral, or negative sentiment. This displays the Top 5 emotions including both positive and negative.
+This shows graded sentiment scores for interactions on a scale of 1 to 10. Each topic appears as a bubble that reflects the volume of positive, neutral, or negative sentiment. The widget also shows the top five emotions, including both positive and negative ones.
 
-Hovering over a topic (actionable insights via tooltips) displays the following associated average emotion index label (for example, angry or frustrated) instead of the topic name. 
+When you hover over a topic, the tooltip shows the average emotion label (for example, angry or frustrated) instead of the topic name.
 
 #### Bubble Color & Sentiment Logic
-The bubble plotting visual representation helps you to quickly identify sentiment distribution and volume for each topic. Hovering over a bubble displays a tooltip with sentiment distribution, total interactions, and average sentiment score.
+
+The bubble plotting visual representation helps you identify sentiment distribution and volume for each topic. Hovering over a bubble displays a tooltip with sentiment distribution, total interactions, and average sentiment score.
 
 **Sentiment Color**
 
 * **Green** (Positive): Indicates positive sentiment distribution and the Sentiment score is between 6 and 10.
+
 * **Grey** (Neutral): Indicates neutral sentiment distribution and the Sentiment score is between 4 and 6.
+
 * **Red** (Negative): Indicates negative sentiment distribution and the Sentiment score is between 1 and 4.
+
 * **No. of Interactions**: Total count of interactions for that topic.
 * **Sentiment Score**: Overall sentiment score for the topic.
 
-The bubble size reflects the volume of interactions for a topic. It is dynamically calculated within the selected date range, with the size scaled proportionally to show the topic's interaction volume relative to the minimum and maximum values. By default, all three sentiment colors are selected, showing a combined view of all topics with varying sentiments. By clicking on a specific sentiment color, you can view the most relevant topics within each sentiment category.
+The bubble size reflects the interaction volume for a topic. The system calculates this size dynamically within the selected date range and scales it to show the topic’s volume relative to the minimum and maximum values. By default, all the three selected sentiment colors, give you a combined view of all topics across sentiments. You can select a specific sentiment color to view the most relevant topics in that category.
 
 The color logic for sentiment:
 
@@ -320,12 +325,11 @@ The color logic for sentiment:
 
 * 6<=x<=10: Positive (Green)
 
-
     !!! Note
 
         By default, only the top most significant 30 topics (based on interaction volume) are displayed on the widget.
 
-For example, the **Payment** bubble indicates sentiment distribution as **Positive** 68% (green), **Neutral**  10% (grey), and **Negative** 22% (red). 
+For example, the **Payment** bubble indicates sentiment distribution as **Positive** 68% (green), **Neutral** 10% (gray), and **Negative** 22% (red). 
 
 These percentages are represented by the bubble’s circumference. Hovering over the Payment bubble shows the average emotion index, such as **Flexible**, **Accurate**, **Fast**, and so on (associated with the average sentiment score).  
 <img src="../conversation-intelligence/images/topics-percentage.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
@@ -360,7 +364,7 @@ When a specific semantic variation keyword is selected in the keyword cloud, the
 
 ## Interaction Details
 
-Interaction details display the relevant details based on default settings that you can configure. When you select specific topics or keywords, the widget presents the relevant information, or if no specific selection is made, it displays information based on the highest sentiment score or other user-configured settings.
+The Interaction Details widget shows information based on default settings, which you can configure. When you select specific topics or keywords, the widget displays the relevant information; if you make no selection, it shows data based on the highest sentiment score or other settings you configure.
 
 This section includes the following fields:
 
@@ -373,3 +377,13 @@ This section includes the following fields:
 * Dispositions  
 
 <img src="../conversation-intelligence/images/interaction-details.png" alt="Interaction Details" title="Interaction Details" style="border: 1px solid gray; zoom:90%;">
+
+
+
+
+
+
+
+
+
+
