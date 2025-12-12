@@ -35,7 +35,7 @@ To generate a new enterprise data encryption key:
 
 ## Bring Your Own Key (BYOK)
 
-Bring Your Own Key (BYOK) encryption for Kore's public cloud SaaS deployments allow enterprises to encrypt their data while retaining full control over their encryption keys. Enterprises can use their own Customer Master Keys (CMKs) for encrypting specific app or bot data. 
+Bring Your Own Key (BYOK) encryption for our public cloud SaaS deployments allow enterprises to encrypt their data while retaining full control over their encryption keys. Enterprises can use their own Customer Master Keys (CMKs) for encrypting specific app or bot data. 
 
 Key benefits 
 
@@ -67,7 +67,7 @@ Key benefits
    This date determines when your CMK will start encrypting data. Plan this date carefully to ensure a smooth transition.
 
 **4. Test Connection**: Click **TEST Connection** to verify the configuration. 
-    The system will validate Key accessibility, Proper permissions, and Authentication credentials.  If the test is successful, the **Next** button will be enabled.
+    The system will validate Key accessibility, Proper permissions, and Authentication credentials. If the test is successful, the **Next** button will be enabled.
 
 
 **5. Select Applications and Bots**
