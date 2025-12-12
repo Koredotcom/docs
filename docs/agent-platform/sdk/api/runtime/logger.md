@@ -95,7 +95,9 @@ await logger.error("Error affecting functionality")
        await logger.debug(expensive_debug_info())
    ```
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [RequestContext API](request_context.md) - Session context and environment variables
 - [Tracer API](tracer.md) - Distributed tracing and monitoring
