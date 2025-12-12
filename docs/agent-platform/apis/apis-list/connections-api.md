@@ -48,58 +48,12 @@ https://{host}/api/public
 
 ## API List
 
-<table>
-  <tr>
-   <td><strong>API</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Method</strong>
-   </td>
-   <td><strong>Endpoint</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>[List All Connections](#list-all-connections)
-   </td>
-   <td>Retrieves all configured connections
-   </td>
-   <td>GET
-   </td>
-   <td><code>/connections</code>
-   </td>
-  </tr>
-  <tr>
-   <td>[Get Connection by ID](#get-connection-by-id)
-   </td>
-   <td>Retrieves a specific connection
-   </td>
-   <td>GET
-   </td>
-   <td><code>/connections/{connectionId}</code>
-   </td>
-  </tr>
-  <tr>
-   <td>[Create Connection](#create-connection)
-   </td>
-   <td>Creates a new connection
-   </td>
-   <td>POST
-   </td>
-   <td><code>/connections</code>
-   </td>
-  </tr>
-  <tr>
-   <td>[Update Connection](#update-connection)
-   </td>
-   <td>Updates an existing connection
-   </td>
-   <td>PATCH
-   </td>
-   <td><code>/connections/{connectionId}</code>
-   </td>
-  </tr>
-</table>
+| API | Description | Method | Endpoint |
+| --- | ----------- | ------ | -------- |
+| [List All Connections](#list-all-connections) | Retrieves all configured connections | GET | `/connections` |
+| [Get Connection by ID](#get-connection-by-id) | Retrieves a specific connection | GET | `/connections/{connectionId}` |
+| [Create Connection](#create-connection) | Creates a new connection | POST | `/connections` |
+| [Update Connection](#update-connection) | Updates an existing connection | PATCH | `/connections/{connectionId}` |
 
 ### List All Connections
 
