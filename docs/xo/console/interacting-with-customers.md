@@ -742,7 +742,7 @@ Steps to send an outbound email:
 
 2. Select the **New Mail** option.
 
-3. The email panel appears, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as john.doe@example.com.  
+3. The email panel appears, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as `john.doe@example.com`.  
 
 4. Select a **Queue** from the dropdown.  
 

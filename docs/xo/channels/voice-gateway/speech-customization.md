@@ -27,9 +27,10 @@ The call control section is Available In [Entity Node](../../automation/use-case
 ## Channel Level Call Control
 
 ## Update/Modify Parameters
+
 When updating language settings or modifying Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) parameters in Call Control Parameters, users can specify the updated field along with a minimal set of required parameters.
 
-For example, if a user has already configured the STT provider and language in the call control parameters and wants to add a n../smart-assist-gateway.md#step-4-define-the-call-control-parameterse existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
+For example, if a user has already configured the STT provider and language in the call control parameters and wants to add existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
 
 This behavior applies to Session-Level Call Control Parameters.
 
@@ -297,7 +298,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `awsSecurityToken` | String | — | Temporary security token for requests using AWS Security Token Service (STS). Optional. | `"awsSecurityToken": "FQoGZXIvYXdzEDQaDJ..."` |
 | `awsRegion` | String | — | AWS region for the service requests (for example, `us-west-2`, `eu-central-1`). | `"awsRegion": "us-west-2"`|
 | `awsVocabularyFilterName` | String | — | Name of the vocabulary filter used to exclude specific words or phrases from transcription. | `"awsVocabularyFilterName": "BlockedWordsFilter"` |
-| `awsVocabularyFilterMethod` | String (enum) | — | Method for handling filtered words: <br>• `"remove"` – Removes the word from transcript<br>• `"mask"` – Replaces the word with asterisks<br>• `"tag"` – Tags the word for reference | `"awsVocabularyFilterMethod": "mask"` |
+| `awsVocabularyFilterMethod` | String (enum) | — | Method for handling filtered words: <br>• `"remove"`-Removes the word from transcript<br>• `"mask"`-Replaces the word with asterisks<br>• `"tag"`-Tags the word for reference | `"awsVocabularyFilterMethod": "mask"` |
 | `awsLanguageModelName` | String | — | Name of the custom language model to use for domain-specific transcription. | `"awsLanguageModelName": <br>"FinanceDomainModel"` |
 | `awsPiiEntityTypes` | Array | — | List of Personally Identifiable Information (PII) entity types to detect. | `"awsPiiEntityTypes": ["NAME", "EMAIL", "SSN"]` |
 | `awsPiiIdentifyEntities` | Boolean | — | Indicates whether to detect and highlight PII in the transcript. | `"awsPiiIdentifyEntities": true` |
@@ -467,23 +468,21 @@ The following table lists the bot parameters that are used to configure this fea
 | `botNoInputTimeoutMS`       | Number         | Defines the timeout (in milliseconds) before a prompt is played to the user. If no input is received from the bot, Voice Gateway plays a textual prompt (`botNoInputSpeech`) or an audio file (`botNoInputUrl`).     | Yes                    |
 | `botNoInputRetries`         | Number         | Specifies the number of times the bot will retry after a no-input timeout. For example, if set to `2`, and timeout is 1000 ms, the prompt will play two more times if no bot response is received.                   | Yes                    |
 | `botNoInputSpeech`          | String / Array | Defines the prompt to play when no input is received from the bot. Can include:<br>- **Plain text**<br>- **SSML**<br>- **Audio URL**<br><br>**Example:** `["https://audiourl", "This is second message"]`            | Yes                    |
-| `botNoInputUrl`             | String         | Specifies a URL from which an audio file is played to the user when the bot does not respond within the defined timeout.                                                                                             | Yes                    |
+| `botNoInputUrl`             | String         | Specifies a URL from which an audio file is played to the user when the bot doesn't respond within the defined timeout.                                                                                             | Yes                    |
 
 Example:  
-<img src="../images/message-node-paremeters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/message-node-parameters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
-      `botNoInputSpeech` can contain multiple messages, including audio URLs.
-../images/message-node-paremeters.png
-Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://thisdummy.wav)”,” this is third textual Message”].
+      `botNoInputSpeech` can contain multiple messages, including audio URLs. Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://thisdummy.wav)”,” this is third textual Message”].
 
 #### Handle Delay Between Two Message Nodes
 
 Voice Gateway can only handle delays when it sends a response to the bot and waits for the bot's reply. If a delay occurs, Voice Gateway can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Voice Gateway won’t be aware of the delay, and the bot developer must handle it manually.
 
 If a Service Node is placed between two Message nodes (delay observed between two Message nodes):
-This must be managed manually, as the gateway has already received a command to play a message and is not waiting for user input. The gateway will not initiate a delay timer and will wait for the next bot message.
+This must be managed manually, as the gateway has already received a command to play a message and isn't waiting for user input. The gateway won't initiate a delay timer and waits for the next bot message.
 
 To handle this scenario:
 
@@ -500,25 +499,25 @@ To handle this scenario:
 
 ### Barge-In Scenarios
 
-The Barge-In feature controls KoreVG behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
+The Barge-In feature controls Voice Gateway behavior in scenarios where the user starts speaking or dials DTMF digits while the bot is playing its response to the user. In other words, the user interrupts ("barges-in") the bot.
 
 | **Parameter**                    | **Type**                                                                             | **Supporting STT/TTS**                           | **Description**                                                                                                               |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| `listenDuringPrompt`             | Boolean (true or false)<br>Similar to Barge-In                                       | STT – Google and Microsoft<br>TTS – Not Required | If `false`, the bot does not listen for user speech until the response finishes playing.<br>**Default:** `true`.              |
-| `bargeInMinWordCount`            | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | If Barge-In is enabled, the bot only interrupts playback after the specified number of words are spoken.<br>**Default:** `1`. |
-| `bargeInOnDTMF`                  | Boolean                                                                              | STT – Google and Microsoft<br>TTS – Not Required | Allows users to press a key to interrupt the audio playback. After pressing a key, the user can speak their input.            |
-| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds)                                                                | STT – Google and Microsoft<br>TTS – Not Required | Time allowed between DTMF key presses before sending all digits to the bot.                                                   |
-| `dtmfCollectSubmitDigit`         | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Special digit that submits all collected DTMF input immediately, bypassing the timeout or max digit limit.                    |
-| `dtmfCollectMaxDigits`           | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Maximum number of DTMF digits to collect.<br>Example: If set to `5` and input is `1234567`, only `12345` is processed.        |
-| `dtmfCollectminDigits`           | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Minimum number of DTMF digits to collect. <br>**Default:** `1`.                                                               |
-| `dtmfCollectnumDigits`           | Number                                                                               | STT – Google and Microsoft<br>TTS – Not Required | Exact number of DTMF digits to collect.                                                                                       |
-| `input`                          | Array of strings<br>Valid values: `['digits']`, `['speech']`, `['digits', 'speech']` | STT – Google and Microsoft<br>TTS – Not Required | Specifies allowed input types. <br>**Default:** `['digits']`.                                                                 |
+| `listenDuringPrompt`             | Boolean (true or false)<br>Similar to Barge-In                                       | STT-Google and Microsoft<br>TTS-Not Required | If `false`, the bot doesn't listen for user speech until the response finishes playing.<br>**Default:** `true`.              |
+| `bargeInMinWordCount`            | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | If Barge-In is enabled, the bot only interrupts playback after the specified number of words are spoken.<br>**Default:** `1`. |
+| `bargeInOnDTMF`                  | Boolean                                                                              | STT-Google and Microsoft<br>TTS-Not Required | Lets users to press a key to interrupt the audio playback. After pressing a key, the user can speak their input.            |
+| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds)                                                                | STT-Google and Microsoft<br>TTS-Not Required | Time allowed between DTMF key presses before sending all digits to the bot.                                                   |
+| `dtmfCollectSubmitDigit`         | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Special digit that submits all collected DTMF input immediately, bypassing the timeout or max digit limit.                    |
+| `dtmfCollectMaxDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Maximum number of DTMF digits to collect.<br>Example: If set to `5` and input is `1234567`, only `12345` is processed.        |
+| `dtmfCollectminDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Minimum number of DTMF digits to collect. <br>**Default:** `1`.                                                               |
+| `dtmfCollectnumDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Exact number of DTMF digits to collect.                                                                                       |
+| `input`                          | Array of strings<br>Valid values: `['digits']`, `['speech']`, `['digits', 'speech']` | STT-Google and Microsoft<br>TTS-Not Required | Specifies allowed input types. <br>**Default:** `['digits']`.                                                                 |
 
 ### Language Detection
 
-In this setup, developers do not need to use DTMF or other methods to switch the bot's language. Instead, the bot will automatically detect the language based on the user's utterance.
+In this setup, developers don't need to use DTMF or other methods to switch the bot's language. Instead, the bot automatically detects the language based on the user's utterance.
 
-For example, if a user speaks in English, the conversation will continue in English. If the user switches to Spanish, the language will switch to Spanish. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-an-ai-agent).
+For example, if a user speaks in English, the conversation continues in English. If the user switches to Spanish, the language switches to Spanish. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-an-ai-agent).
 
 **Configuration Steps**:
 
@@ -540,7 +539,7 @@ For example, if a user speaks in English, the conversation will continue in Engl
 14. Update entity details in Spanish as well.
 15. Publish the bot.
 
-These steps will ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
+These steps ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
 
 ### Click-to-Call
 

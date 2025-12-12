@@ -161,7 +161,7 @@ Agent AI supports real-time audio streaming through two primary methods:
                 * Under **Domain Name**, provide the following:
                     * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
                     * **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
-            * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at Kore’s SBC level.
+            * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at our SBC level.
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API.
             * (Optional) By default, the **E.164 Syntax** is selected. Selecting this option prepends a + before the DID number.
             * **Siprec Identifier**: Enter Siprec identifier values.
@@ -185,7 +185,7 @@ Agent AI supports real-time audio streaming through two primary methods:
         * <span id="websocket">If you select **WebSocket**:</span>
 
             * **Connection URL (Generate URL)**: Copy the auto generated URL and paste it into your third-party desktop configuration settings.  
-            * **Agent AI Initiated transcription**: Turn on or turn off auto transcription. When turned off, transcription starts automatically when an RTP (Real-time Transport Protocol) stream is received at Kore’s SBC level. 
+            * **Agent AI Initiated transcription**: Turn on or turn off auto transcription. When turned off, transcription starts automatically when an RTP (Real-time Transport Protocol) stream is received at our SBC level. 
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API. 
             * **Call control parameters**: Define the parameters to control the call behavior. Select **Add Parameter**, enter the **Parameter Name** and **Value**, and select **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
 
@@ -253,7 +253,7 @@ Steps to delete a SIP number:
 
 **Overview**
 
-This document outlines the comprehensive failure handling and fallback mechanisms available for voice calls in the Kore platform. The system provides three distinct layers of failure handling to ensure robust call management and graceful degradation in the event of issues.
+This document outlines the comprehensive failure handling and fallback mechanisms available for voice calls in the platform. The system provides three distinct layers of failure handling to ensure robust call management and graceful degradation in the event of issues.
 
 The failure handling mechanisms are designed to address different types of failures at various stages of the call lifecycle, from initial call establishment to ongoing conversation management and error recovery.
 
