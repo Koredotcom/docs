@@ -174,7 +174,7 @@ The following usage information is displayed:
 
 Clicking each row on the **Custom scripts** tab opens a panel on the right that displays detailed information about the script’s hosting parameters, including:
 
-* **Hosting infrastructure**: The hardware configurations (VCPUs and memory) used by the script.
+* **Hosting infrastructure**: The hardware configurations (vCPUs and memory) used by the script.
 * Hosting time in hours and minutes.
 * Credits consumed by the components. Refer to the table [here](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} for pricing.
 * **Total** which represents the aggregate of all the credit components (when multiple components are involved).
