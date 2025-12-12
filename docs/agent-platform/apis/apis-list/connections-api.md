@@ -13,6 +13,10 @@ Before using these APIs, ensure your API App has the following scopes enabled:
 
 ### Base URL
 
+```
+https://{host}/api/public
+```
+
 ### Common Request Headers
 
 <table>
@@ -165,11 +169,11 @@ Retrieves a list of all configured connections with optional filtering.
 #### Sample Request
 
 ```
-curl --location `'https://{{host}}/api/public/connections?limit=10'` \
+curl --location 'https://{{host}}/api/public/connections?limit=10' \
 
---header` 'x-api-key: {{apiKey}}`' \
+--header 'x-api-key: {{apiKey}}` \
 
---header` 'Content-Type: application/json'`
+--header 'Content-Type: application/json'
 ```
 
 
@@ -182,25 +186,25 @@ curl --location `'https://{{host}}/api/public/connections?limit=10'` \
 
     {
 
-      "connectionId":` "cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"`,
+      "connectionId": "cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
 
-      "connectionName":` "OpenAI GPT-4o"`,
+      "connectionName": "OpenAI GPT-4o",
 
-      "provider":` "Open AI"`,
+      "provider": "Open AI",
 
-      "model": `"gpt-4o"`,
+      "model": "gpt-4o",
 
-      "status": "`ACTIVE`",
+      "status": "ACTIVE",
 
-      "createdOn": "`2024-01-15T10:30:00.000Z`",
+      "createdOn": "2024-01-15T10:30:00.000Z",
 
-      "modifiedOn": "`2024-01-15T10:30:00.000Z`"
+      "modifiedOn": "2024-01-15T10:30:00.000Z"
 
     }
 
   ],
 
-  "total"`: 1`
+  "total": 1
 
 }
 ```
@@ -260,11 +264,11 @@ Retrieves the details of a specific connection using its unique identifier.
 #### Sample Request
 
 ```
-curl --location `'https://{{host}}/api/public/connections/{{connectionId}}`' \
+curl --location 'https://{{host}}/api/public/connections/{{connectionId}}` \
 
---header` 'x-api-key: {{apiKey}}'` \
+--header 'x-api-key: {{apiKey}}' \
 
---header` 'Content-Type: application/json'`
+--header 'Content-Type: application/json'
 ```
 
 #### Sample Response
@@ -272,29 +276,28 @@ curl --location `'https://{{host}}/api/public/connections/{{connectionId}}`' \
 ```
 {
 
-  "connectionId":` "cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"`,
+  "connectionId": "cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
 
-  "connectionName": `"OpenAI GPT-4o"`,
+  "connectionName": "OpenAI GPT-4o",
 
-  "provider":` "Open AI"`,
+  "provider": "Open AI",
 
-  "model":` "gpt-4o"`,
+  "model": "gpt-4o",
 
-  "status":` "ACTIVE"`,
+  "status": "ACTIVE",
 
   "fields": {
 
-    "API_KEY":` "sk-***************"`
+    "API_KEY": "sk-***************"
 
   },
 
-  "createdOn": `"2024-01-15T10:30:00.000Z"`,
+  "createdOn": "2024-01-15T10:30:00.000Z",
 
-  "modifiedOn":` "2024-01-15T10:30:00.000Z"`
+  "modifiedOn": "2024-01-15T10:30:00.000Z"
 
 }
 ```
-
 
 ---
 
@@ -391,23 +394,23 @@ Creates a new connection to an external model provider. Supports creation of Cus
 ### Sample Request – Custom API Connection
 
 ```
-curl --location` 'https://{{host}}/api/public/connections`' \
+curl --location 'https://{{host}}/api/public/connections` \
 
---header `'x-api-key: {{apiKey}}`' \
+--header 'x-api-key: {{apiKey}}` \
 
---header `'Content-Type: application/json`' \
+--header 'Content-Type: application/json` \
 
 --data '{
 
-  "provider": "`API`",
+  "provider": "API",
 
-  "connectionName": "`My Custom API`",
+  "connectionName": "My Custom API",
 
   "fields": {
 
-    "BASE_URL": `"https://api.example.com`",
+    "BASE_URL": "https://api.example.com",
 
-    "API_KEY": `"sk-***************"`
+    "API_KEY": "sk-***************"
 
   }
 
@@ -458,23 +461,23 @@ curl --location` 'https://{{host}}/api/public/connections`' \
 ### Sample Request – OpenAI Connection
 
 ```
-curl --location '`https://{{host}}/api/public/connections`' \
+curl --location 'https://{{host}}/api/public/connections' \
 
---header `'x-api-key: {{apiKey}}`' \
+--header 'x-api-key: {{apiKey}}' \
 
---header `'Content-Type: application/json'` \
+--header 'Content-Type: application/json' \
 
 --data '{
 
-  "provider": "`Open AI`",
+  "provider": "Open AI",
 
-  "connectionName": "`OpenAI GPT-4o`",
+  "connectionName": "OpenAI GPT-4o",
 
-  "model": `"gpt-4o`",
+  "model": "gpt-4o",
 
   "fields": {
 
-    "API_KEY": `"sk-***************"`
+    "API_KEY": "sk-***************"
 
   }
 
@@ -516,33 +519,33 @@ curl --location '`https://{{host}}/api/public/connections`' \
 ### Sample Request – Azure OpenAI Connection
 
 ```
-curl --location '`https://{{host}}/api/public/connections`' \
+curl --location 'https://{{host}}/api/public/connections' \
 
---header `'x-api-key: {{apiKey}}`' \
+--header 'x-api-key: {{apiKey}}' \
 
---header '`Content-Type: application/json`' \
+--header 'Content-Type: application/json' \
 
 --data '{
 
-  "connectionName": "`Azure GPT-4`",
+  "connectionName": "Azure GPT-4",
 
-  "provider": "`Azure Open AI`",
+  "provider": "Azure Open AI",
 
-  "model": "`GPT-4`",
+  "model": "GPT-4",
 
   "fields": {
 
-    "API_KEY": `"***************`",
+    "API_KEY": "***************",
 
-    "api_version": "`2024-08-01-preview`",
+    "api_version": "2024-08-01-preview",
 
-    "your_resource_name": "`your-azure-resource`",
+    "your_resource_name": "your-azure-resource",
 
-    "deployment_id": "`your-deployment-id`"
+    "deployment_id": "your-deployment-id"
 
   },
 
-  "modelType": "`EASY_INTEGRATION`"
+  "modelType": "EASY_INTEGRATION"
 
 }'
 ```
@@ -611,27 +614,27 @@ curl --location '`https://{{host}}/api/public/connections`' \
 ### Sample Request – Anthropic Connection
 
 ```
-curl --location `'https://{{host}}/api/public/connections`' \
+curl --location 'https://{{host}}/api/public/connections' \
 
---header `'x-api-key: {{apiKey}}`' \
+--header 'x-api-key: {{apiKey}}' \
 
---header `'Content-Type: application/json'` \
+--header 'Content-Type: application/json' \
 
 --data '{
 
-  "connectionName": "`Anthropic Claude`",
+  "connectionName": "Anthropic Claude",
 
-  "provider": `"Anthropic`",
+  "provider": "Anthropic",
 
-  "model": `"claude-3-5-haiku-20241022`",
+  "model": "claude-3-5-haiku-20241022",
 
   "fields": {
 
-    "API_KEY":` "***************"`
+    "API_KEY": "***************"
 
   },
 
-  "modelType":` "EASY_INTEGRATION"`
+  "modelType": "EASY_INTEGRATION"
 
 }'
 ```
@@ -674,23 +677,23 @@ curl --location `'https://{{host}}/api/public/connections`' \
 
 {
 
-  "connectionId": "`cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`",
+  "connectionId": "cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
 
 "fields": {
 
-       "API_KEY": "`sk***************MQAA`"
+       "API_KEY": "sk***************MQAA"
 
    },
 
-  "connectionName": "`OpenAI GPT-4o`",
+  "connectionName": "OpenAI GPT-4o",
 
-  "provider": "`Open AI`",
+  "provider": "Open AI",
 
-  "model": `"gpt-4o`",
+  "model": "gpt-4o",
 
-  "status": "`ACTIVE`",
+  "status": "ACTIVE",
 
-  "createdOn": "`2024-01-15T10:30:00.000Z`"
+  "createdOn": "2024-01-15T10:30:00.000Z"
 
 }
 ```
@@ -700,7 +703,7 @@ curl --location `'https://{{host}}/api/public/connections`' \
 
 ## Update Connection
 
-Updates the configuration of an existing connection. Supported only for external provider connections where ‘`provider'` is not ‘`API'`.
+Updates the configuration of an existing connection. Supported only for external provider connections where `provider'` is't `API'`.
 
 
 <table>
@@ -750,17 +753,17 @@ Updates the configuration of an existing connection. Supported only for external
 #### Sample Request
 
 ```
-curl --location --request PATCH '`https://{{host}}/api/public/connections/{{connectionId}}'` \
+curl --location --request PATCH 'https://{{host}}/api/public/connections/{{connectionId}}' \
 
---header '`x-api-key: {{apiKey}}`' \
+--header 'x-api-key: {{apiKey}}' \
 
---header `'Content-Type: application/json'` \
+--header 'Content-Type: application/json' \
 
 --data '{
 
   "fields": {
 
-    "API_KEY": "`sk-***************************`"
+    "API_KEY": "sk-***************************"
 
   }
 
@@ -799,23 +802,23 @@ curl --location --request PATCH '`https://{{host}}/api/public/connections/{{conn
 ```
 {
 
-  "connectionId": "`cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`", 
+  "connectionId": "cn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
 
 "fields": {
 
-       "API_KEY": "`sk*****************MQAA`"
+       "API_KEY": "sk*****************MQAA"
 
    },
 
-  "connectionName": "`OpenAI GPT-4o`",
+  "connectionName": "OpenAI GPT-4o",
 
-  "provider": "`Open AI`",
+  "provider": "Open AI",
 
-  "model": "`gpt-4o`",
+  "model": "gpt-4o",
 
-  "status": "`ACTIVE`",
+  "status": "ACTIVE",
 
-  "modifiedOn": "`2024-01-16T14:45:00.000Z`"
+  "modifiedOn": "2024-01-16T14:45:00.000Z"
 
 }
 ```
