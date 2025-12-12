@@ -28,7 +28,7 @@ Content Variables provide a centralized way for users to declare data used throu
 **External Model Connection APIs**
 
 The platform now provides External Connection APIs that enable programmatic management of model connections in addition to the existing UI. These APIs support viewing existing connections, creating new connections for both easy and custom integrations, and rotating keys for supported providers. 
-Two new API scopes, View connections and Manage connections, have been added, offering more granular permission control for accessing and updating external model connections.
+Two new API scopes, View connections and Manage connections, have been added, offering more granular permission control for accessing and updating external model connections. [Learn more :octicons-arrow-right-24:](../settings/security-and-control/api-scopes.md)
 
 **New Model Support**
 
