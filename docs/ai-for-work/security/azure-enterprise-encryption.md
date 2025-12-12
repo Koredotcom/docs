@@ -13,6 +13,7 @@ To enable our application to operate within your Azure environment, you need to 
 
 1. **Sign in to the Azure portal** using an account with Global Administrator privileges for your tenant.
 2. **Grant admin consent** using one of the following methods: 
+
 *   **Option A: Admin Consent URL** Navigate to the following URL in your browser after logging in as Global Administrator, replacing `&lt;your-tenant-id>` with your tenant ID (found in **Microsoft Entra ID** > **Properties**): ``https://login.microsoftonline.com/<your-tenant-id>/adminconsent?client_id=<our-app-client-id>``
 *   **Option B: Azure CLI** Run the following command as Global Administrator, replacing `&lt;our-app-client-id>` with our application's client ID (provided by our team): ``az ad sp create --id '<our-app-client-id>'``
 
