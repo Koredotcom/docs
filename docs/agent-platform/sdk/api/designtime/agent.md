@@ -20,9 +20,9 @@
       show_root_heading: true
       show_source: false
 
-## AgentConfigBuilder
+## AgentBuilder
 
-::: agenticai_core.designtime.models.agent.AgentConfigBuilder
+::: agenticai_core.designtime.models.agent.AgentBuilder
     options:
       show_root_heading: true
       show_source: false
@@ -37,6 +37,24 @@
 ### Communication
 
 ::: agenticai_core.designtime.models.agent.Communication
+    options:
+      show_root_heading: true
+
+### AgentSubType
+
+::: agenticai_core.designtime.models.agent.AgentSubType
+    options:
+      show_root_heading: true
+
+### AgentType
+
+::: agenticai_core.designtime.models.agent.AgentType
+    options:
+      show_root_heading: true
+
+### AgentRole
+
+::: agenticai_core.designtime.models.agent.AgentRole
     options:
       show_root_heading: true
 
@@ -63,7 +81,7 @@
 ### Creating a Basic Agent
 
 ```python
-from agenticai_core.designtime.models.agent import Agent
+from agenticai_core.designtime.models.agent import Agent, AgentRole, AgentSubType, AgentType
 from agenticai_core.designtime.models.llm_model import LlmModel, LlmModelConfig
 from agenticai_core.designtime.models.prompt import Prompt
 from agenticai_core.designtime.models.tool import Tool
@@ -71,9 +89,9 @@ from agenticai_core.designtime.models.tool import Tool
 agent = Agent(
     name="FinanceAssist",
     description="Banking assistant for account management",
-    role="WORKER",
-    sub_type="REACT",
-    type="AUTONOMOUS",
+    role=AgentRole.WORKER,
+    sub_type=AgentSubType.REACT,
+    type=AgentType.AUTONOMOUS,
     llm_model=LlmModel(
         model="gpt-4o",
         provider="Open AI",
@@ -96,14 +114,14 @@ agent = Agent(
 ### Using Builder Pattern
 
 ```python
-from agenticai_core.designtime.models.agent import AgentConfigBuilder
+from agenticai_core.designtime.models.agent import AgentBuilder, AgentRole, AgentSubType, AgentType
 
-agent_dict = AgentConfigBuilder() \
+agent_dict = AgentBuilder() \
     .set_name("CustomerService") \
     .set_description("Customer service agent") \
-    .set_role("WORKER") \
-    .set_sub_type("REACT") \
-    .set_type("AUTONOMOUS") \
+    .set_role(AgentRole.WORKER) \
+    .set_sub_type(AgentSubType.REACT) \
+    .set_type(AgentType.AUTONOMOUS) \
     .set_llm_model(llm_model) \
     .set_prompt(prompt) \
     .set_tools([tool1, tool2]) \

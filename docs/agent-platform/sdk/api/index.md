@@ -1,149 +1,109 @@
 # API Reference
 
-Welcome to the AgenticAI Core SDK API reference documentation. This section provides detailed information about all classes, methods, and functions available in the SDK.
+The AgenticAI Core SDK provides comprehensive APIs for building, configuring, and running multi-agent AI applications.
 
-## Design-Time Models
+## API Categories
 
-Design-time models are used to define and configure your AI application structure.
+### 📐 Design-Time Models
 
-### Core Models
+**Define your application structure and configuration**
 
-| Model | Description |
-|-------|-------------|
-| [App](designtime/app.md) | Top-level application configuration |
-| [Agent](designtime/agent.md) | AI agent configuration and behavior |
-| [Tool](designtime/tool.md) | Tool definitions for agent capabilities |
-| [LlmModel](designtime/llm_model.md) | LLM provider and inference configuration |
-| [Prompt](designtime/prompt.md) | System and custom prompts |
-| [MemoryStore](designtime/memory_store.md) | Persistent data storage configuration |
-| [AppConfiguration](designtime/app_configuration.md) | Advanced application features |
-| [AppNamespace](designtime/app_namespace.md) | Environment and context namespaces |
-| [AppVariable](designtime/app_variable.md) | Application-level environment variables |
-| [Icon](designtime/icon.md) | Visual identifiers for entities |
+Build your app blueprint using declarative models that specify agents, tools, memory stores, and environment configuration.
 
-## Quick Navigation
+[:octicons-arrow-right-24: Design-Time Overview](designtime/index.md)
 
-### Building Applications
+### ⚡ Runtime APIs  
 
-```python
-from agenticai_core.designtime.models import App, Agent, AppNamespace, AppVariable
+**Execute and monitor your applications**
 
-# Create an application with environment support
-app = App(
-    name="My App", 
-    description="...",
-    app_namespaces=[AppNamespace(name="production")],
-    app_variables=[AppVariable(name="API_KEY", is_secured=True, value="$env.API_KEY", namespaces=["production"])]
-)
-```
-
-[:octicons-arrow-right-24: App API Reference](designtime/app.md)
-
-### Configuring Agents
-
-```python
-from agenticai_core.designtime.models import Agent, LlmModel
-
-# Create an agent
-agent = Agent(
-    name="MyAgent",
-    llm_model=LlmModel(...),
-    tools=[...]
-)
-```
-
-[:octicons-arrow-right-24: Agent API Reference](designtime/agent.md)
-
-### Defining Tools
-
-```python
-from agenticai_core.designtime.models.tool import Tool
-
-# Register a custom tool
-@Tool.register(name="my_tool", description="...")
-def my_tool(param: str):
-    return result
-```
-
-[:octicons-arrow-right-24: Tool API Reference](designtime/tool.md)
-
-### Environment Management
-
-```python
-from agenticai_core.designtime.models import AppNamespace, AppVariable
-
-# Create namespaces for different environments
-prod_ns = AppNamespace(name="production", description="Production environment")
-dev_ns = AppNamespace(name="development", description="Development environment")
-
-# Create environment-scoped variables
-api_key = AppVariable(
-    name="API_KEY",
-    is_secured=True,
-    value="$env.API_KEY",
-    namespaces=["production"]
-)
-```
-
-[:octicons-arrow-right-24: AppNamespace API Reference](designtime/app_namespace.md)
-[:octicons-arrow-right-24: AppVariable API Reference](designtime/app_variable.md)
-
-## Runtime APIs
-
-Runtime APIs are used during application execution.
-
-- **Agent Runtime** - Execute agents and handle requests
-- **Memory Manager** - Access and manage memory stores
-- **Request Context** - Session and context management
+Access runtime services during request processing including session context, logging, memory operations, and tracing.
 
 [:octicons-arrow-right-24: Runtime Overview](runtime/index.md)
 
-## Type Reference
+### 🔧 CLI Tools
 
-All models use Pydantic for validation and serialization. Key types include:
+**Deploy and manage applications**  
 
-- `StrictStr` - String with strict validation
-- `StrictInt` - Integer with strict validation
-- `StrictBool` - Boolean with strict validation
-- `StrictFloat` - Float with strict validation
+Command-line interface for packaging, deploying, and managing your applications across environments.
 
-## Serialization
+[:octicons-arrow-right-24: CLI Reference](../cli/index.md)
 
-All models support standard serialization methods:
+## Development Workflow
 
-```python
-# To dictionary
-model_dict = model.to_dict()
-
-# To JSON string
-json_str = model.to_json()
-
-# From dictionary
-model = ModelClass.from_dict(data)
-
-# From JSON string
-model = ModelClass.from_json(json_str)
+```mermaid
+graph LR
+    A[Define App] --> B[Configure Agents]
+    B --> C[Implement Tools] 
+    C --> D[Test Locally]
+    D --> E[Deploy]
+    
+    A1[Design-Time Models] -.-> A
+    A1 -.-> B
+    B1[Runtime APIs] -.-> C
+    B1 -.-> D
+    C1[CLI Tools] -.-> E
+    
+    style A1 fill:#e3f2fd
+    style B1 fill:#e8f5e8
+    style C1 fill:#fff3e0
 ```
 
-## Builder Pattern
+1. **Design-Time**: Define application structure using models
+2. **Runtime**: Implement tools with runtime services  
+3. **CLI**: Package and deploy to production
 
-Many models provide builder classes for fluent configuration:
+## Quick Start
+
+### Define Your App
 
 ```python
-from agenticai_core.designtime.models import AppConfigBuilder, AppNamespace, AppVariable
+from agenticai_core.designtime.models import App, Agent, LlmModel
 
-app_dict = AppConfigBuilder() \
-    .set_name("My App") \
-    .set_description("Description") \
-    .set_agents([agent1, agent2]) \
-    .set_app_namespace(AppNamespace(name="production")) \
-    .set_app_variable(AppVariable(name="API_KEY", is_secured=True, value="$env.API_KEY", namespaces=["production"])) \
-    .build()
+app = App(
+    name="My Assistant", 
+    agents=[
+        Agent(
+            name="HelperAgent",
+            llm_model=LlmModel(model="gpt-4o-mini", provider="Open AI"),
+            tools=[Tool(name="MyTool", type="MCP")]
+        )
+    ]
+)
+```
 
-app = App(**app_dict)
+### Implement Tools
+
+```python
+from agenticai_core.designtime.models.tool import Tool
+from agenticai_core.runtime.sessions.request_context import RequestContext, Logger
+
+@Tool.register(name="MyTool", description="Example tool")
+async def my_tool():
+    ctx = RequestContext()
+    logger = Logger('MyTool')
+    
+    await logger.info("Tool executed")
+    return {"success": True}
+```
+
+### Deploy
+
+```bash
+python run.py --archive my-app
+python run.py -c prod deploy -f bin/my-app.kar
 ```
 
 ## Next Steps
 
-- [:material-book-open: User Guide](../guide/building-apps.md) - Learn how to use these APIs
-- [:material-code-braces: Examples](../examples/banking-assistant.md) - See real-world usage
+**Start Building:**
+
+- [:material-book-open: User Guide](../guide/building-apps.md) - Step-by-step application development
+- [:material-rocket: Quick Start](../getting-started/quickstart.md) - Get up and running fast
+- [:material-code-braces: Examples](../examples/banking-assistant.md) - See real applications
+
+**Deep Dive:**  
+
+- [Design-Time Models](designtime/index.md) - Application structure and configuration
+- [Runtime APIs](runtime/index.md) - Execution environment and services
+- [CLI Tools](../cli/index.md) - Deployment and management commands
+

@@ -298,7 +298,9 @@ if __name__ == "__main__":
 - [Memory Stores](memory-stores.md) - Memory management guide
 - [Custom Orchestration](orchestration.md) - Advanced orchestration
 
-## Useful Resources
+<hr/>
+
+**Related resources**
 
 - 📖 [API Reference](../api/index.md)
 
