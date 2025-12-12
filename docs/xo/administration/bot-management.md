@@ -10,7 +10,7 @@ In the **Bots Management** module of the Admin Console, you can deploy the bots 
 
 ## Deploying Bots
 
-As the Bots Admin, you can manage the bots permission and consumption. After a developer publishes a custom bot from the Kore.ai Bot Builder tool to the Enterprise page at the Kore.ai Bot Store, the bot is displayed on the **Deployment Requests** page. Bots are not available to any users in your company until you approve the bot, and then assign that bot to one or more users, or customers for your company, depending on the bot deployment type defined as either for **Enterprise use** or **Consumer use**.
+As the Bots Admin, you can manage the bots permission and consumption. After a developer publishes a custom bot from the Kore.ai Bot Builder tool to the Enterprise page at the Kore.ai Bot Store, the bot is displayed on the **Deployment Requests** page. Bots are'nt available to any users in your company until you approve the bot, and then assign that bot to one or more users, or customers for your company, depending on the bot deployment type defined as either for **Enterprise use** or **Consumer use**.
 
 <img src="../images/bot-management-img1.png" alt="Deploying Bots" title="Deploying Bots" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -147,8 +147,8 @@ To enable users to access deployed Bots, the Bots Admin must assign users to the
 1. On the **Enterprise Bots** page in the **Bots Management** module, click the **Ellipses** icon for the Bot that you want to assign users to, and then click **Bot & Task Assignments**. The **Bot & task assignments** dialog is displayed as shown in the following illustration.  
 <img src="../images/bot-management-img8.png" alt="Bot and task assignments" title="Bot and task assignments" style="border: 1px solid gray;zoom:50%;"/>
 
-2. To disable the Bot for all users, click **No assignments**, otherwise, click **Assign Bot’s Tasks**. Approved tasks for the Bot are displayed. By default, tasks are not assigned to any users.
-3. To assing tasks, click the **Expand** <img src="../images/bot-management-img9.png"> icon for the task that you want to assign users to. The **< _Task Name_ >** dialog is displayed. Select one of:
+2. To disable the Bot for all users, click **No assignments**, otherwise, click **Assign Bot’s Tasks**. Approved tasks for the Bot are displayed. By default, tasks are'nt assigned to any users.
+3. To assign tasks, click the **Expand** <img src="../images/bot-management-img9.png"> icon for the task that you want to assign users to. The **< _Task Name_ >** dialog is displayed. Select one of:
     1. **All users in your enterprise** – All current users, and future users added will have access to this task for this Bot.
     2. **Assign user groups** – Click to open the **Assign to groups** dialog. Select the groups you want to add in the **Group Name** column, and then click **Done**. For more information, see.
     3. **Assign individual users** – Click to open the **Assign to users** dialog. Select the users you want to add in the **Name** column, and then click **Done**.

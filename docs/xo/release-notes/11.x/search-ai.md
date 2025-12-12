@@ -15,7 +15,9 @@ Search AI now automatically enforces RACL rules at design time for all new works
 
 **New Axero Connector**
 
-The Axero connector enables ingestion and management of content from the Axero knowledge base platform, including Pages, Wiki, Discussions, Documents, Articles, Announcements, Blogs, and associated comments. The connector also preserves hyperlinks within content for use in the answers. 
+The Axero connector enables ingestion and management of content from the Axero knowledge base platform, including Pages, Wiki, Discussions, Documents, Articles, Announcements, Blogs, and associated comments. The connector also preserves hyperlinks within content for use in the answers.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/axero.md)
 
 **GitHub Connector**
 
@@ -39,9 +41,9 @@ To improve platform performance and stability, Search AI is automatically upgrad
 * Re-rankers: MS MARCO Cross Encoder and Mixbread Large are upgraded to BGE Re-ranker. This change applies automatically with no user action required.
 * Legacy Web Crawler: The legacy web crawler is replaced with the AI-Powered Crawler. Users must trigger a re-crawl to extract content using the new crawler.
 
-After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. Learn more.
+After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. 
 
-[Learn more :octicons-arrow-right-24:](searchai-deprecations.md)
+[Learn more :octicons-arrow-right-24:](deprecations.md)
 
 
 <hr>

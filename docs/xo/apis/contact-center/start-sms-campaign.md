@@ -6,7 +6,7 @@ Use this API to start an active SMS campaign for a given stream ID and campaign 
 
 | **Method**        | POST                                                                                                                                                                                                                                               |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Endpoint**      | `https://{{host}}/campaign/api/v1/public/{{IID}}/campaign/{{campaignId}}?campaignType={{campaignType}}&trigger={{trigger}}`                                                                                          |
+| **Endpoint**      | `https://{{host}}/campaign/api/v1/public/{{streamID}}/campaign/{{campaignId}}?campaignType={{campaignType}}&trigger={{trigger}}`                                                                                          |
 | **Content-Type**  | `application/json`                                                                                                                                                                                                                                 |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                                                        |
 | **API Scope**     | Campaign Management                                                                                                                                                                                                                                |
@@ -16,7 +16,7 @@ Use this API to start an active SMS campaign for a given stream ID and campaign 
 | **Parameter** | **Description**                                                                                     | **Type**          |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL, for example, `https://platform.kore.ai`                                            | string, required  |
-| `IId`    | The Application ID.                    | string, required  |
+| `streamId` | Bot ID or Stream ID. You can get it from the general settings page.| string, required |
 | `campaignId`  | Unique identifier of the campaign to trigger.                                                      | string, required  |
 
 ## Query Parameters

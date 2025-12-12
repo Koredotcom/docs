@@ -15,13 +15,13 @@
 | AI Agents AHT | Analytics Dashboard (Handle Time section). | Export handle time data via analytics API. | NA | NA |
 | Client Experience Score | CSAT feedback module. | Fetch CSAT survey responses. | NA | NA |
 | Task Completion Rate | Task Analytics | Query successful task completions via Task Execution Metrics API. | NA | NA |
-| Average Handle Time (AHT)* | Agent analytics or reports. | Aggregate Talk Time, Hold Time, and After Call Work from session logs. | Total handle time of the conversation in seconds. | [Contact Volume API](../../apis/contact-center/contact-volume.md) — Parameter: CallVolumeUpdate.conversationHandleTime |
-| Talk Time | Interaction logs. | Extract agent-client conversation durations. | Total talk time during the conversation in seconds. | [Contact Volume API](../../apis/contact-center/contact-volume.md) — Parameter: CallVolumeUpdate.conversationTalkTime |
-| Hold Time | Interaction logs. | Query session logs for hold events. | Total hold duration in seconds during the call. | [Contact Volume API](../../apis/contact-center/contact-volume.md) — Parameter: CallVolumeUpdate.holdDuration |
-| After Call Work (ACW) | Agent interaction reports. | Extract ACW time from agent session logs. | After-call work duration in seconds. | [Contact Volume API](../../apis/contact-center/contact-volume.md) — Parameter: CallVolumeUpdate.acwDuration |
+| Average Handle Time (AHT)* | Agent analytics or reports. | Aggregate Talk Time, Hold Time, and After Call Work from session logs. | Total handle time of the conversation in seconds. | [Contact Volume API](../../apis/contact-center/contact-volume.md)-Parameter: CallVolumeUpdate.conversationHandleTime |
+| Talk Time | Interaction logs. | Extract agent-client conversation durations. | Total talk time during the conversation in seconds. | [Contact Volume API](../../apis/contact-center/contact-volume.md)-Parameter: CallVolumeUpdate.conversationTalkTime |
+| Hold Time | Interaction logs. | Query session logs for hold events. | Total hold duration in seconds during the call. | [Contact Volume API](../../apis/contact-center/contact-volume.md)-Parameter: CallVolumeUpdate.holdDuration |
+| After Call Work (ACW) | Agent interaction reports. | Extract ACW time from agent session logs. | After-call work duration in seconds. | [Contact Volume API](../../apis/contact-center/contact-volume.md)-Parameter: CallVolumeUpdate.acwDuration |
 | Net Calls Handled (NCH)* | Analytics Dashboard or custom agent reports. | Export total handled calls per agent. | NA | NA |
 | Sample size | Control/test group assignment in the analytics. | Export agent metadata and session data. | NA | NA |
-| Same Day Callback + 1 (SDCB) | Interaction logs with timestamps. | Identify callbacks using client IDs and timestamps. | NA | NA |
+| Same Day Callback (SDCB) + 1  | Interaction logs with timestamps. | Identify callbacks using client IDs and timestamps. | NA | NA |
 | Client Availability* | Agent activity logs. | Divide actual productive time by expected productive time. | NA | NA |
 | FCR | Session interaction logs. | Analyze client interactions within 7-day windows. | NA | NA |
 | Agent Satisfaction | Feedback from agent assist logs. | Extract agent feedback via Agent Assist Feedback API. | NA | NA |
@@ -35,8 +35,8 @@
 | Ongoing | Dashboard → Queues & Agents | NA | All calls/chats currently interacting with agents. | NA |
 | Idle | Dashboard → Queues & Agents | NA | All calls/chats where the customer has been silent for some time. | NA |
 | Expired | Dashboard → Queues & Agents | NA | All calls/chats ended but disposition not yet set. | NA |
-| Completed | Dashboard → Automations / Queues & Agents / Queue and Agent performance tables / Dashboard – Interactions / Interactions Report / Total Volumes Report / Queue Metrics Interval Report / Queue Metrics Summary Report / Agent Metrics Daily Report | NA | All calls/chats in completed state (closed by agent, abandoned, or terminated). | NA |
-| Abandon Rate | Dashboard → Queues & Agents / Monitor tab – SLA / Queue Metrics Summary Report | (Number of conversations abandoned / Number of conversations closed) × 100 | All calls/chats entered queue but dropped prematurely. | NA |
+| Completed | Dashboard → Automations / Queues & Agents / Queue and Agent performance tables / Dashboard-Interactions / Interactions Report / Total Volumes Report / Queue Metrics Interval Report / Queue Metrics Summary Report / Agent Metrics Daily Report | NA | All calls/chats in completed state (closed by agent, abandoned, or terminated). | NA |
+| Abandon Rate | Dashboard → Queues & Agents / Monitor tab-SLA / Queue Metrics Summary Report | (Number of conversations abandoned / Number of conversations closed) × 100 | All calls/chats entered queue but dropped prematurely. | NA |
 | Queue Load | Dashboard → Queues & Agents | (Voice + Chat/3 + Messaging/8 + Email/10) × 100 / Available Agents | NA | NA |
 | Resolved Rate | Dashboard → Queues & Agents | (Number of conversations closed with dispositions as Resolved / Number of conversations closed) × 100 | Calls/chats resolved successfully. | NA |
 | Average Pick-up Time | Dashboard → Queues & Agents / My Dashboard | Sum(Time from ringing start to pickup) / Number of conversations answered | Average pickup time. | NA |
@@ -59,7 +59,7 @@
 | Answered | Dashboard → Queues & Agents / Reports / APIs | NA | Conversations accepted by agent. | NA |
 | Average Response Time | NA | Sum(time taken by agent to respond to customer) / Responses (excluding first) | Average agent response time. | NA |
 | Unanswered | Agent chat metrics report / Dashboard → Queues & Agents | NA | Conversations assigned but not answered. | NA |
-| Abandoned (with Agent) | Dashboard → Queues & Agents / Agent performance tables | Chat – user idle scenario / Voice – user ended conversation while agent on hold | Conversations abandoned while with agent. | NA |
+| Abandoned (with Agent) | Dashboard → Queues & Agents / Agent performance tables | Chat-user idle scenario / Voice-user ended conversation while agent on hold | Conversations abandoned while with agent. | NA |
 | Transferred | Dashboard → Queues & Agents / Reports | NA | Conversations transferred to another agent/queue. | NA |
 | Logged in | Dashboard → Queues & Agents / Agent performance tables | NA | Agent logged-in time within chosen interval. | NA |
 | Closed / Hour | Dashboard → Queues & Agents / Reports | Number of conversations closed / Logged-in time | Conversations closed per hour. | NA |

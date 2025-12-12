@@ -19,7 +19,7 @@ Distinct icons for each communication channel verify clarity and better interact
 
 <img src="../images/voice-call.png" alt="Voice Call" title="Voice Call" style="border: 1px solid gray; zoom:70%;">  
 
-<img src="../images/courtsey-callback.png" alt="Courtesy Callback" title="Courtesy Callback" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/courtesy-callback.png" alt="Courtesy Callback" title="Courtesy Callback" style="border: 1px solid gray; zoom:70%;">  
 
 <img src="../images/voice-chat.png" alt="Voice Chat" title="Voice Chat" style="border: 1px solid gray; zoom:70%;">  
 

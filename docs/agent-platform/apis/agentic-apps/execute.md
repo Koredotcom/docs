@@ -66,165 +66,138 @@ Sends input to the Agentic app within a specific session and retrieves the respo
 
 ### Request Parameters
 
+**sessionIdentity**- Required
 
-<table>
-  <tr>
-   <td><strong>Fields</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td><strong>Mandatory</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>sessionIdentity
-   </td>
-   <td>An array of objects, each with a type and value, used to identify or create sessions and manage user session mappings. The three supported identifier types are: The objects can be of three types:
-<ol>
+An array of objects, each with a type and value, used to identify or create sessions and manage user session mappings. The three supported identifier types are: The objects can be of three types:
 
-<li>userReference (highest priority)</li>
+1. userReference (highest priority)
+2. sessionReference
+3. sessionIdentity(lowest priority)
 
-<li>sessionReference</li>
+[Refer to this for a detailed description.](overview.md#session-resolution-process)
 
-<li>sessionIdentity(lowest priority)</li>
+<hr/>
 
-Refer to <a href="../overview">this</a> for a detailed description.
-</ol>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>input
-   </td>
-   <td>An array of user inputs to the Agentic application. Each object includes:
-<p>- type: currently only "text" is supported.</p>
-<p>- content: the actual user input string.</p>
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>debug
-   </td>
-   <td>Controls debug info in the response, useful for troubleshooting, understanding agent behavior, and inspecting intermediate reasoning or function execution. The debug objects contain the following fields:
-<ul>
+**input**- Required
 
-<li>enable - set this to true to enable debug information in the response.</li>
+An array of user inputs to the Agentic application. This field can be used to pass the user query or the tool details when a tool is invoked directly. 
 
-<li>debugMode - this can take the following values:</li> 
-<ul>
- 
-<li><strong>function-call</strong> - Includes details about the function(s) triggered by the agent</li>
- 
-<li><strong>thoughts </strong>- Provides internal reasoning traces of the agent.</li>
- 
-<li><strong>all</strong>- Includes both function-call and thoughts
-<p>
+When passing the user input, provide the following fields.
 
-Currently, only thoughts are supported. </li> 
-</ul></li> 
-</ul>
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>stream
-   </td>
-   <td>Enable or disable streaming of the response from the agent. This object contains two fields:
-<ul>
+* type: Set this to "text". 
+* content: the actual user input string
 
-<li>enable - set it to true to enable the streaming of messages. </li>
+When using this API to invoke a tool directly, use the following to pass the tool's details.
 
-<li>streamMode - set the type of streaming. It can take the following values:</li> 
-<ul>
- 
-<li><strong>tokens</strong>: The response is sent token by token as the agent generates it. </li>
- 
-<li><strong>messages</strong>:  Each complete thought or output message is sent as a separate event as soon as it's available.</li>
- 
-<li>custom: Allows for custom streaming behavior
+*  type:  Set this to "tool_input".
+*  content: Use this object to pass the tool parameters.
 
-<p>
-If debug mode is enabled and set to thoughts, irrespective of streamMode, thoughts are always sent as complete messages. </li> 
-</ul></li> 
-</ul>
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>isAsync
-   </td>
-   <td>Indicates whether the API should execute asynchronously. 
-   <ul>
-    <li><b>false (default):</b> Executes synchronously and returns the result immediately.</li>
-    <li><b>true:</b> Executes asynchronously. If the callbackURL is provided, the response is shared on the URL else this API returns a runId that can be used to retrieve the status or result later.</li>
-   </ul>
-   </td>
-   <td>No
-   </td>
-  </tr>
-<tr>
-   <td>callbackUrl</td>
-   <td>The endpoint to which the asynchronous response should be sent. Must be a valid, publicly accessible URL.
-   <ul>
-    <li>If provided, the platform makes an HTTP POST request to the callbackURL with the result payload after the processing is complete.</li>
-    <li>If omitted in an async request, you must use the runId to fetch the result manually.</li>
-   </ul>
-   </td>
-   <td>No</td>
-  </tr>
-  <tr>
-   <td>callbackToken</td>
-   <td>An authentication token included when sending the asynchronous response to the specified callbackUrl. This ensures secure delivery of results to the given endpoint. 
-   <p>If callbackToken is provided, it is included in the HTTP request headers to the callbackURL using the standard Bearer token authentication format:
-   <p>
-   <code>Authorization: Bearer &lt;callbackToken&gt;</code>
-   </td>
-   <td>No</td>
-  </tr>
-  <tr>
-   <td>attachments
-   </td>
-   <td>Allows users to associate files with the session. This object takes the following fields:
-<ul>
+For example:
+  ```json
+  "type": "tool_input",
+  "content": {
+      "employeeId": "KI01642"
+   }
+  ```
 
-<li><strong>enable</strong>: Set to true to attach files to the session </li>
+<hr/>
 
-<li><strong>includeFiles </strong>: List of file IDs to include as contextual information in the session.</li>
+**debug**- Optional
 
-<li><strong>excludeFiles </strong>: List of file IDs to exclude from the session. </li>
-</ul>
+Controls debug info in the response, useful for troubleshooting, understanding agent behavior, and inspecting intermediate reasoning or function execution. The debug objects contain the following fields:
 
-Once a file is added to the includeFiles list, it remains associated with the session for its duration unless it is explicitly removed by listing it in excludeFiles.
+* Enable - set this to true to enable debug information in the response.
+* debugMode - this can take the following values:
+    * function-call - Includes details about the function(s) triggered by the agent
+    * thoughts - Provides internal reasoning traces of the agent.
+    * all - Includes both function-call and thoughts
 
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>metadata
-   </td>
-   <td>Allows users to pass metadata information. This data is set to the sessionMeta memory and is available for the duration of the session. 
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-  <td>invoke</td>
-  <td>This field allows direct invocation of a specific agent within the application, bypassing the orchestrator. It is particularly useful when the client knows exactly which agent should handle the request.
-  
-  The invoke field accepts an array of task objects. Each task object must include:
-  <ul>
-  <li><strong>type</strong>: Set this to "agent" to specify the task as an agent invocation.</li>
-  <li><strong>name</strong>: The name of the agent you want to invoke.</li>
-  </ul>
-  
-  Example - To invoke a ‘PolicyFinder’ Agent in the app, use the following.
-  <pre>
-  "invoke": {
+*Currently, only thoughts are supported.*
+
+<hr/>
+
+**stream**- Optional
+
+Enable or disable streaming of the agent's response. This object contains two fields:
+
+* enable - set it to true to enable message streaming. 
+* streamMode - set the streaming type. It can take the following values:
+    * **tokens**: The response is sent token by token as the agent generates it. 
+    * **messages**:  Each complete thought or output message is sent as a separate event as soon as it's available.
+    * custom: Allows for custom streaming behavior
+
+If debug mode is enabled and set to thoughts, irrespective of streamMode, thoughts are always sent as complete messages. 
+
+<hr/>
+
+**isAsync**- Optional
+
+Indicates whether the API should execute asynchronously.
+
+* false (default): Executes synchronously and returns the result immediately.
+* true: Executes asynchronously. If the callbackURL is provided, the response is shared on the URL else this API returns a <code>runId</code> that can be used to retrieve the status or result later.
+
+<hr/>
+
+**callbackUrl**- Optional 
+
+The endpoint to which the asynchronous response should be sent. Must be a valid, publicly accessible URL.
+
+* If provided, the platform makes an HTTP POST request to the `callbackURL` with the result payload after the processing is complete.
+* If omitted in an async request, you must use the `runId` to fetch the result manually.
+
+<hr/>
+
+**callbackToken**- Optional
+
+An authentication token included when sending the asynchronous response to the specified `callbackUrl`. This ensures secure delivery of results to the given endpoint. 
+
+If `callbackToken` is provided, it's included in the HTTP request headers to the `callbackURL` using the standard Bearer token authentication format:
+
+```
+`Authorization: Bearer <callbackToken>`
+```
+
+<hr/>
+
+**attachments**- Optional 
+
+Allows users to associate files with the session. This object takes the following fields:
+
+* enable (String): Set to "true" to attach files to the session 
+* includeFiles (Array): List of file IDs to include `as contextual information in the session.`
+* excludeFiles (Array): List of file IDs to exclude from the session. 
+
+Once a file is added to the includeFiles list, it remains associated with the session for its duration unless it's explicitly removed by listing it in excludeFiles.
+
+<hr/>
+
+**metadata**- Optional
+
+Allows users to pass metadata information. This data is stored in sessionMeta and remains available for the duration of the session. 
+
+<hr/>
+
+**invoke**- Optional 
+
+This field allows direct invocation of a specific agent or tool within the application, bypassing the orchestrator. It is particularly useful when the client knows exactly which agent or tool should handle the request. 
+
+The invoke field accepts an array of task objects. Each task object must include:
+
+* type: 
+    * Set this to "agent" to specify the task as an agent invocation. 
+    * Set this to “tool” for invoking a specific tool. 
+* name: The name of the agent or tool you want to invoke.
+
+When the type is set to `agent`, provide the following additional fields. 
+
+* toolType: This field is used only for tools. It can take one of the following values - `workflow`, `code` or `mcp`.
+* agentName : Name of the agent with which the tool is associated.
+
+Example - To invoke a ‘PolicyFinder’ Agent in the app, use the following. 
+
+```json
+"invoke": {
     "tasks": [
       {
         "type": "agent",
@@ -232,18 +205,33 @@ Once a file is added to the includeFiles list, it remains associated with the se
       }
     ]
   }
-  </pre>
-  Note: Currently, the first agent in the tasks array is used for handling the query. 
-  </td>
-  <td>No</td>
-  </tr>
-</table>
+```
 
+Example: To directly invoke the leaveBalanceById tool in a specific agent, set the invoke field as shown below. Additionally, send the tool's input parameters in the `input` field.
+
+```json
+"invoke": {
+        "tasks": [
+            {
+                "type": "tool",
+                "name": "leaveBalanceById",
+                "toolType": "code",
+                "agentName": "LeaveBalanceCalculator"
+            }
+        ]
+  }
+```
+
+!!!note
+    The first agent/tool in the tasks array is used for handling the query. If more than one agent/tool is given in this array, the first one is used, and the others are ignored. 
+
+
+<hr/>
 
 
 #### Sample Request
 
-```
+```json
 {
   "sessionIdentity": [
     {
@@ -329,7 +317,7 @@ Returns the agent's response to the query along with the session details.
 #### Sample Response
 
 
-```
+```json
 {
   "messageId": "msg-915be88a-0fe3-401a-856c-8aec9fa5f641",
   "output": [
@@ -355,7 +343,7 @@ Returns the agent's response to the query along with the session details.
 If debug is enabled, the response has additional information as shown below. 
 
 
-```
+```json
 {
   "messageId": "msg-ae69b37d-b699-4b2c-b2a6-643778d93607",
   "output": [
@@ -389,6 +377,7 @@ If debug is enabled, the response has additional information as shown below.
 }
 ```
 
+#### Sample Response when OAuth authorization is pending
 
 **Note**: If any tool used by an agent requires OAuth authorization, the API response for the initial request (when a new session starts) will include a special event of type `IDP_Redirect`. This event contains a URL that the user must visit to complete the authorization. If the required authorization is not completed, the associated tools will return an error upon invocation.
 
@@ -412,11 +401,9 @@ If debug is enabled, the response has additional information as shown below.
 }
 ```
 
-### Execution Modes
-
+### Specific Config Samples
 
 #### Synchronous Execution
-
 
 * Waits for the agent to respond. Best for real-time interactions.
 * **Key configuration:**
@@ -614,11 +601,6 @@ A runId is returned in response. Use this ID to check the status of the run. Ref
   "isLastEvent": true
 }
 ```
-
-
-
-### Additional Features 
-
 
 #### Thought Streaming
 
@@ -856,7 +838,154 @@ Sample Response
    }
 }
 ```
+#### Invoking an Agent
 
+
+
+* Use the invoke field to specify the agent to be invoked. 
+
+**Sample Request**
+
+```
+curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
+--header 'x-api-key: <your-api-key>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "sessionIdentity": [
+        {
+            "type": "sessionReference",
+            "value": "test-session-value"
+        }
+    ],
+    "invoke": {
+        "tasks": [ // invoke a code tool - check_balance_tool
+            {
+                "type": "tool",
+                "name": "check_balance_tool",
+                "toolType": "code",
+                "agentName" : "Balance_agent"
+            }
+        ]
+    },
+    "input": [ //input parameters of check_balance_tool
+        {
+            "type": "tool_input",
+            "content": {
+                "accountId": "123"
+            }
+        }
+    ],
+    "debug": {
+        "enable": true
+    },
+    "stream": {
+        "enable": false
+    }
+}'
+```
+
+
+
+**Sample Response**
+
+
+```
+{
+    "messageId": "msg-c954db38-xxxx-xxxx-b15d-2b81d91adb3a",
+    "output": [
+        {
+            "type": "text",
+            "content": "Your balance is 100$, {\"success\":true,\"data\":{\"key\":\"draft\",\"content\":{\"b\":1765271238787},\"createdAt\":1765271238996,\"updatedAt\":1765271238996,\"retention\":{\"ttl\":2592000,\"expiresAt\":\"2026-01-08T09:07:18.997Z\",\"isPermanent\":false}}}"
+        }
+    ],
+    "sessionInfo": {
+        "status": "idle",
+        "userReference": "test-session-dev5_01",
+        "sessionReference": "test-session-Dev5_01",
+        "userId": "u-798fd752-f5e7-5ffb-8924-b03241431686",
+        "sessionId": "s-4272145c-14f7-407f-a6db-26d006f7a2ba",
+        "runId": "r-c04a09b0-dbf8-411b-8a26-82931b8f83de",
+        "appId": "aa-0959e994-48c8-45b1-9217-45653a69772a",
+        "envId": "env-edfa5f46-2dbd-459f-9b51-c941f28de05c",
+        "envName": "draft",
+        "attachments": []
+    }
+}
+```
+
+#### Invoking a Tool
+
+* Use the invoke field to specify that it is for invoking a tool.
+* Use the inputs field to specify the parameters of the tool. 
+* The tool has read/write access to session-scoped memory.
+
+**Sample Request**
+
+
+```
+curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
+--header 'x-api-key: <your-api-key>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "sessionIdentity": [
+        {
+            "type": "sessionReference",
+            "value": "test-session-value"
+        }
+    ],
+    "invoke": {
+        "tasks": [ // invoke a code tool - check_balance_tool
+            {
+                "type": "tool",
+                "name": "check_balance_tool",
+                "toolType": "code",
+                "agentName" : "Balance_agent"
+            }
+        ]
+    },
+    "input": [ //input parameters of check_balance_tool
+        {
+            "type": "tool_input",
+            "content": {
+                "accountId": "123"
+            }
+        }
+    ],
+    "debug": {
+        "enable": true
+    },
+    "stream": {
+        "enable": false
+    }
+}'
+```
+
+
+**Sample Response**
+
+```
+{
+    "messageId": "msg-c954db38-xxxx-xxxx-b15d-2b81d91adb3a",
+    "output": [
+        {
+            "type": "text",
+            "content": "Your balance is 100$, {\"success\":true,\"data\":{\"key\":\"draft\",\"content\":{\"b\":1765271238787},\"createdAt\":1765271238996,\"updatedAt\":1765271238996,\"retention\":{\"ttl\":2592000,\"expiresAt\":\"2026-01-08T09:07:18.997Z\",\"isPermanent\":false}}}"
+        }
+    ],
+    "sessionInfo": {
+        "status": "idle",
+        "userReference": "test-session-dev5_01",
+        "sessionReference": "test-session-Dev5_01",
+        "userId": "u-798fd752-f5e7-5ffb-8924-b03241431686",
+        "sessionId": "s-4272145c-14f7-407f-a6db-26d006f7a2ba",
+        "runId": "r-c04a09b0-dbf8-411b-8a26-82931b8f83de",
+        "appId": "aa-0959e994-48c8-45b1-9217-45653a69772a",
+        "envId": "env-edfa5f46-2dbd-459f-9b51-c941f28de05c",
+        "envName": "draft",
+        "attachments": []
+    }
+}
+```
 
 
 ### Points to Notes

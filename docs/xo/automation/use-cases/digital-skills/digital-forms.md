@@ -950,7 +950,7 @@ formDef.formMsgMeta.FIELD_MANDATORY = context.entities.entName + ', this is a ma
 
 This is how it would look at run time:
 
-<img src="../../images/xop-8553-response-message-customized-using-variable.png" alt="Component - Field lelel response customized using context variable" title="Component - Field level response customized using context variable" style="border:1px solid gray; zoom:70%;">
+<img src="../../images/xop-8553-response-message-customized-using-variable.png" alt="Component - Field level response customized using context variable" title="Component - Field level response customized using context variable" style="border:1px solid gray; zoom:70%;">
 
 #### Use Case 3: Dynamically generating form data from external sources
 
@@ -3412,7 +3412,7 @@ Yes/No values
       "PhoneNumber": "+919999999999",
       "Email": "john.doe@example.com",
       "toggle": "Yes",
-      "Adress": "Address",
+      "Address": "Address",
       "Url": "test.com",
       "rangeSlider": 26.1
     }
@@ -3421,7 +3421,7 @@ Yes/No values
 
 ### Prefill Form
 
-You can specify data that can be used to pre-populate the form fields. Platform will check for the availability of any form prefill information before lauching the form. If any information is available, then the corresponding fields in the form are pre-populated before presenting the form to the user. The values can be static or from a context object.
+You can specify data that can be used to pre-populate the form fields. Platform will check for the availability of any form prefill information before launching the form. If any information is available, then the corresponding fields in the form are pre-populated before presenting the form to the user. The values can be static or from a context object.
 
 You can specify pre-fill form data using the following context object: `context.prefillForms`.
 
