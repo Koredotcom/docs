@@ -1,4 +1,15 @@
 {
+
+ "Related docs": {
+	"scope": "markdown",
+ 	"prefix": "kore-related-docs",
+ 	"body": [
+	   "<hr/> \n \n **Additional Resources** \n \n * [link1]() \n * [link2]() \n "
+ 	],
+ 	"description": "Related docs."
+},
+
+
  "Contact Support link": {
 	"scope": "markdown",
  	"prefix": "kore-support",
