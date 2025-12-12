@@ -324,7 +324,9 @@ banking-app/
 5. **Security** - Never request sensitive information
 6. **Testing** - Test locally before deploying
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Building Applications](../guide/building-apps.md)
 - [Working with Tools](../guide/working-with-tools.md)

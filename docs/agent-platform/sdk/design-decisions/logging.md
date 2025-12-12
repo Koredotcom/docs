@@ -1,73 +1,81 @@
 # Logging System Documentation
 
 ## Overview
+
 The logging system in the workspace provides a structured way to log messages at different severity levels (debug, info, warning, error) and track them through the platform. The system is built on top of a client-server architecture where tools can log messages that are then processed and displayed by the platform.
 
 ## Logger Implementation
 
 ### Basic Usage
+
 To use the logger in your tools, follow these steps:
 
 1. Import the Logger class:
-```python
-from agenticai_core.runtime.sessions.request_context import Logger
-```
 
-2. Initialize the logger with a name for your tool:
-```python
-logger = Logger('YourToolName')
-```
+   ```python
+    from agenticai_core.runtime.sessions.request_context import Logger
+   ```
 
-3. Use the logger methods to log messages:
-```python
-await logger.debug("Debug message")
-await logger.info("Info message")
-await logger.warning("Warning message")
-await logger.error("Error message")
-```
+1. Initialize the logger with a name for your tool:
+
+   ```python
+    logger = Logger('YourToolName')
+   ```
+
+1. Use the logger methods to log messages:
+
+   ```python
+   await logger.debug("Debug message")
+   await logger.info("Info message")
+   await logger.warning("Warning message")
+   await logger.error("Error message")
+   ```
 
 ### Log Message Structure
+
 Each log message is automatically structured with the following fields:
 
-```json
-{
-    "timestamp": "ISO-8601 formatted UTC timestamp",
-    "sessionId": "Unique session identifier",
-    "userId": "User identifier",
-    "message": "Your log message content"
-}
-```
+   ```json
+   {
+      "timestamp": "ISO-8601 formatted UTC timestamp",
+      "sessionId": "Unique session identifier",
+      "userId": "User identifier",
+      "message": "Your log message content"
+   }
+   ```
 
 The logger automatically includes:
+
 - Current UTC timestamp
 - Session ID from the request context
 - User ID from the request context
 - Your log message
 
 ### Example Implementation
+
 Here's a complete example of using the logger in a tool:
 
-```python
-from agenticai_core.designtime.models.tool import Tool
-from agenticai_core.runtime.sessions.request_context import Logger
+   ```python
+   from agenticai_core.designtime.models.tool import Tool
+   from agenticai_core.runtime.sessions.request_context import Logger
 
-@Tool.register(name="ExampleTool", description="Example tool with logging")
-async def example_tool(param1: str):
-    logger = Logger('ExampleTool')
-    
-    # Log the start of execution
-    await logger.info(f"########## ExampleTool Called ############# ARGS: {param1}")
-    
-    # Log debug information
-    await logger.debug(f"Processing parameter: {param1}")
-    
-    # Your tool logic here
-    
-    # Log the result
-    await logger.info("Tool execution completed successfully")
-    
-    return "Result"
-```
+   @Tool.register(name="ExampleTool", description="Example tool with logging")
+   async def example_tool(param1: str):
+      logger = Logger('ExampleTool')
+      
+      # Log the start of execution
+      await logger.info(f"########## ExampleTool Called ############# ARGS: {param1}")
+      
+      # Log debug information
+      await logger.debug(f"Processing parameter: {param1}")
+      
+      # Your tool logic here
+      
+      # Log the result
+      await logger.info("Tool execution completed successfully")
+      
+      return "Result"
+   ```
 
 ## Log Levels
 
@@ -92,6 +100,7 @@ The logger supports four severity levels:
 ## Platform Integration
 
 ### Raw SSE Client Implementation
+
 For direct SSE handling without MCP, you can use the EventSource API:
 
 ```typescript
@@ -112,6 +121,7 @@ eventSource.onerror = (error) => {
 ```
 
 ### MCP Client Implementation
+
 For MCP-based applications, use the MCP client's built-in logging callback:
 
 ```typescript
@@ -129,12 +139,14 @@ const session = new ClientSession(streams[0], streams[1], {
 ```
 
 The MCP client approach provides:
+
 1. Built-in session management
 2. Automatic reconnection handling
 3. Structured logging interface
 4. Integration with MCP's event system
 
 ### Log Processing
+
 The platform should:
 
 1. **Receive Logs**: Capture logs through the SSE connection
@@ -185,6 +197,7 @@ The platform should:
 ## Open Questions
 
 ### Langchain MCP Adapters
+
 The question of whether Langchain MCP adapters can be used for logger callback functions is still open. Two approaches are possible:
 
 1. **SSE Event Listener (Current Implementation)**
@@ -229,4 +242,4 @@ The current implementation uses SSE event listeners, but exploring Langchain MCP
 4. **Security**
    - Add log encryption
    - Implement access control for logs
-   - Add audit logging for sensitive operations 
+   - Add audit logging for sensitive operations

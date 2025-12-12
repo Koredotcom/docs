@@ -1,9 +1,11 @@
-#Memory Store Developer Guide
+# Memory Store Developer Guide
 
 ## Overview
+
 Memory stores in AgenticAI provide persistent data storage across different scopes (user, application, or session). This guide will walk you through how to configure memory stores during design-time and consume them in your tools.
 
 ## Table of Contents
+
 1. [Quick Start](#quick-start)
 2. [Design-Time Configuration](#design-time-configuration)
 3. [Runtime Usage in Tools](#runtime-usage-in-tools)
@@ -12,6 +14,7 @@ Memory stores in AgenticAI provide persistent data storage across different scop
 ## Quick Start
 
 ### Step 1: Define Your Memory Store
+
 ```python
 from agenticai_core.designtime.models.memory_store import MemoryStore, Scope, RetentionPolicy
 
@@ -35,6 +38,7 @@ user_preferences_store = MemoryStore(
 ```
 
 ### Step 2: Add to Your App Configuration
+
 ```python
 from agenticai_core.designtime.models.app import AppBuilder
 
@@ -46,6 +50,7 @@ app_config = (AppBuilder()
 ```
 
 ### Step 3: Use in Your Tools
+
 ```python
 from agenticai_core.designtime.models.tool import Tool
 from agenticai_core.runtime.sessions.request_context import RequestContext, Logger
@@ -228,18 +233,21 @@ app_config = (AppBuilder()
 Memory supports the basic CRUD operations.
 
 #### Reading Data from `Memory Store`
+
 ```python
  # Get data from memory store
 result = await memory.get_content(store_name, projections)
 ```
 
 #### Writing Data to `Memory Store`
+
 ```python
  # Write data to memory store
 result = await memory.set_content(store_name, content)
 ```
 
 #### Deleting `Memory Store`
+
 ```python
  # Delete entire content from memory store
 result = await memory.delete_content(store_name)
@@ -317,26 +325,31 @@ async def get_user_data():
 ## Best Practices
 
 ### 1. Schema Design
+
 - Define clear and specific schemas
 - Use `strict_schema=True` for production applications
 - Keep schemas simple and focused
 
 ### 2. Scope Selection
+
 - Use `USER_SPECIFIC` for personal data (recommended for most cases)
 - Use `APPLICATION_WIDE` for shared resources and settings
 - Use `SESSION_LEVEL` for temporary data that should be cleared
 
 ### 3. Retention Policy
+
 - Choose appropriate retention periods based on data sensitivity
 - Use `SESSION` for temporary data
 - Consider data privacy requirements when setting retention
 
 ### 4. Error Handling
+
 - Always handle potential memory access errors
 - Log memory operations for debugging
 - Provide fallback values when memory operations fail
 
 ### 5. Performance
+
 - Use projections to retrieve only needed fields
 - Minimize memory store operations
 - Clean up unnecessary data

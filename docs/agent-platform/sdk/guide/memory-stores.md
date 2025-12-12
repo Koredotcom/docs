@@ -332,7 +332,9 @@ memory_store = MemoryStore(
     - Validate data before storage
 
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Memory Store API Reference](../api/designtime/memory_store.md)
 - [Working with Tools](working-with-tools.md)

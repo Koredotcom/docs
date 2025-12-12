@@ -169,6 +169,7 @@ Add contextual information to spans for better observability:
 The tracer automatically captures and includes:
 
 ### Request Context
+
 - **User ID**: Current user identifier
 - **Session ID**: Current session identifier  
 - **App ID**: Application identifier
@@ -176,12 +177,14 @@ The tracer automatically captures and includes:
 - **Request ID**: Individual request identifier
 
 ### Function Information  
+
 - **Function arguments**: Input parameters (serialized safely)
 - **Function return values**: Output data (serialized safely)
 - **Execution time**: Automatic timing
 - **Success/failure status**: Exception handling
 
 ### Example Span Output
+
 ```json
 {
   "trace_id": "abc123...",
@@ -344,7 +347,9 @@ The platform provides:
 5. **Monitor Performance**: Regular check of span overhead
 6. **Organize by Environment**: Separate tracing configs for dev/staging/prod
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Logger API](logger.md) - Structured logging with tracer integration patterns
 - [RequestContext API](request_context.md) - Session context and environment variables

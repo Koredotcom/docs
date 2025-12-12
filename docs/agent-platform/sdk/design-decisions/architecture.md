@@ -15,6 +15,7 @@ The Agentic AI operations and processes can be categorized into configuration (d
 - **Runtime Phase**: Where agents are deployed and execute their functions
 
 The SDK eco-system consists of following (major) components:
+
 1. Agentic-Core (Library)
 2. Workspace
 3. Build scripts and process to dockerize Gvisor Image
@@ -25,7 +26,8 @@ The SDK eco-system consists of following (major) components:
 
 A foundational library for configuration (design) and the runtime needs.
 
-### Configuration:
+### Configuration
+
 - Entity Model implementations that provides builder pattern for configuring the entities.
     - The builder classes help capture the entity relationship and provide intuitive way to build these entities using any autocomplete editor.
     - Supports configuration of:
@@ -34,12 +36,13 @@ A foundational library for configuration (design) and the runtime needs.
         - Tools with various implementations
         - LLM models with configurable parameters
 
-### Runtime Components:
+### Runtime Components
+
 - Runtime interfaces for custom components like abstract_orchestrator
 - Runtime classes to parse request / response objects that contain and encapsulate agentic conversations.
 - Implements an SSE (Server-Sent Events) transport server for real-time communication.
     - The MCP server is tightly coupled with the application instance — it starts and stops alongside the app.
-    - Running the app (e.g., via app.start()) automatically starts the MCP server as part of the lifecycle.
+    - Running the app (for example, via `app.start()`) automatically starts the MCP server as part of the lifecycle.
 - Implements a rest client to perform operations on platform (to be integrated with workspace CLI).
 
 
@@ -131,6 +134,7 @@ options:
 Implements other supporting commands & subcommands for configuration management etc.
 
 ### Workspace Structure:
+
 ```
 ├── bin
 │   ├── application.config.json                         -- serialzed json
@@ -212,6 +216,7 @@ The platform exposes a unified deployment API that combines three operations:
 ### MCP Client Integration
 
 The platform implements an MCP client using the LangGraph framework to:
+
 - Connect with the MCP server
 - Handle tool discovery
 - Manage tool execution
@@ -222,15 +227,13 @@ The platform implements an MCP client using the LangGraph framework to:
 
 The gvisor service manages the container lifecycle in Kubernetes.
 
-*Key Responsibilities:*
+Key Responsibilities:
+
 - Deployment
 - Container provisioning in Kubernetes
 - Health monitoring
 
-Other supporting APIs
-
-
-# Deployment Workflow
+## Deployment Workflow
 
 1. **Development Phase**
    - Developer uses Workspace to create entity definitions and relationships (design time)
@@ -268,6 +271,7 @@ Other supporting APIs
 The AgenticAI platform provides an MCP (Message Control Protocol) client for local testing and development. This client allows you to interact with your application in real-time, test tool discovery, and verify tool calls.
 
 ### Features
+
 - Real-time message processing
 - Tool discovery and listing
 - Interactive testing interface
@@ -276,6 +280,7 @@ The AgenticAI platform provides an MCP (Message Control Protocol) client for loc
 - Error handling and reporting
 
 ### Setup and Usage
+
 1. **Environment Setup**
    - Install dependencies using uv package manager
    - Create virtual environment
@@ -308,6 +313,4 @@ The AgenticAI platform provides an MCP (Message Control Protocol) client for loc
 
     ```
 - Logging in the Workspace:
-    Any logs should be sent to the platform for debugging purposes.
-
-
+    Any logs should be sent to the Platform for debugging purposes.

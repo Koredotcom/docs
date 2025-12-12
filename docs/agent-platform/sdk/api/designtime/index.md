@@ -107,6 +107,7 @@ app = App(
 ## Model Relationships
 
 ### App → Agents → Tools
+
 ```python
 app = App(
     name="Multi-Agent System",
@@ -118,6 +119,7 @@ app = App(
 ```
 
 ### Memory Stores → Scoping
+
 ```python
 user_store = MemoryStore(
     name="user_data", 
@@ -131,6 +133,7 @@ session_store = MemoryStore(
 ```
 
 ### Environment → Namespaces
+
 ```python
 # Production namespace
 prod_ns = AppNamespace(name="production")
@@ -151,6 +154,7 @@ app = App(
 ## Common Patterns
 
 ### Multi-Agent Application
+
 ```python
 app = App(
     name="Customer Service",
@@ -164,6 +168,7 @@ app = App(
 ```
 
 ### Environment-Specific Configuration
+
 ```python
 app = App(
     app_namespaces=[

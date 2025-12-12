@@ -80,4 +80,3 @@ app = App(**app_dict)
 - [Agent](agent.md) - Configure agents for your application
 - [MemoryStore](memory_store.md) - Set up persistent storage
 - [AppConfiguration](app_configuration.md) - Configure advanced features
-

@@ -368,6 +368,7 @@ python run.py -c prod test
 ## Troubleshooting
 
 ### Archive Size Issues
+
 ```bash
 # Check archive contents
 unzip -l bin/myProject/application.kar
@@ -379,6 +380,7 @@ unzip -l bin/myProject/application.kar | grep -E "(venv|.venv|__pycache__|.git)"
 ```
 
 ### Deployment Failures
+
 ```bash
 # Verify environment variables
 python -c "import os; print(f'KORE_HOST: {os.getenv(\"KORE_HOST\")}'); print(f'APP_API_KEY: {os.getenv(\"APP_API_KEY\")}')"
@@ -391,6 +393,7 @@ python run.py -c dev deploy -f bin/myProject.kar
 ```
 
 ### Module Import Errors
+
 ```bash
 # Ensure virtual environment is activated
 source .venv/bin/activate
@@ -402,7 +405,9 @@ python -c "import src.app; print('Module OK')"
 cat run.py | grep "app_module"
 ```
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Getting Started](../getting-started/quickstart.md) - Complete tutorial with CLI usage
 - [Runtime APIs](../api/runtime/index.md) - Runtime context and services

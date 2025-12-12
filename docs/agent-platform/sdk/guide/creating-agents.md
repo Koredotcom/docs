@@ -288,7 +288,9 @@ orchestrator = CustomOrchestrator(agents=app_agents)
     - Check memory access
     - Validate prompt effectiveness
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Agent API Reference](../api/designtime/agent.md)
 - [Working with Tools](working-with-tools.md)
