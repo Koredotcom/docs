@@ -215,3 +215,4 @@ correct_namespaces = [
 - [App Variable](app_variable.md) - Variables are scoped to namespaces
 - [App](app.md) - Applications contain both namespaces and variables
 - [App Configuration](app_configuration.md) - Configuration settings may reference namespaced variables
+

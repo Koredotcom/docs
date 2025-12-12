@@ -115,7 +115,9 @@ graph TB
     E --> G[(Storage)]
 ```
 
-## Community and Support
+<hr/>
+
+**Related resources**
 
 - 📖 [Documentation](getting-started/installation.md)
 

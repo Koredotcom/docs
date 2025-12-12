@@ -100,6 +100,18 @@ The following API scopes are available for this feature.
    <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="../../../apis/apis-list/undeploy-guardrails" target="_blank" target="_blank"> Learn more</a>.
    </td>
   </tr>
+  <tr>
+   <td>View Connections
+   </td>
+   <td>Required for viewing connection details. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
+   </td>
+  </tr>
+  <tr>
+   <td>Manage Connections
+   </td>
+   <td>Required for creating and updating connections. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
+   </td>
+  </tr>
 </table>
 
 ## Access API Scopes

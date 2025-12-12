@@ -447,7 +447,7 @@ Here is the list of all the external models supported in AI for Process:
 <li>gemini-1.0-pro</li>
 <li>gemini-2.5-Pro</li>
 <li>gemini-2.0-flash</li>
-<li>gemini-2.0-flashlite</li>
+<li>gemini-2.0-flash-lite</li>
 <li>gemini-2.5-flash-preview-05-20</li>
 <li>gemini-2.5-flash</li>
 </ul>
