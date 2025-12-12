@@ -268,7 +268,7 @@ Conversation statuses apply under specific conditions for certain channels. The 
 | `Due Reminder for Auto Expiry`     | If the customer’s response time is under the set amount of time (in hours) before Auto Expiry.                                      | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 | `Auto Expire`                      | When the conversation turns idle if the customer doesn't respond for the set amount of time (in hours and minutes) the interaction expires. | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 |                                  |                                                                                                                                     |             | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| `On Close`                         | If the conversation is closed by the agent.                                                                                         | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| `On Close`                         | If the agent closes the conversation.                                                                                         | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 
 ### Conversation Status Configuration
 
@@ -305,10 +305,10 @@ When you configure your Conversation Statuses and Messaging, select `Save`.
 
 ### Allow Agent to Pause/Resume
 
-By default, the Allow Agent to Pause/Resume feature is disabled. However, admins can enable it for agents handling voice interactions, allowing them to pause the recording during the call.
+By default, the Allow Agent to Pause or Resume feature is disabled. However, admins can enable it for agents handling voice interactions, allowing them to pause the recording during the call.
 <img src="../images/allow-agent-to-pause-resume.png" alt="Allow Agents to Pause/Resume Call Recording" title="Allow Agents to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-### Allow Assistant Dialogs to Pause/Resume
+### Allow Assistant Dialogs to Pause or Resume
 
 By default, the Allow Assistant to Pause/Resume feature isn't available. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
@@ -321,7 +321,7 @@ The system logs the changes to the Call Recording Control settings on the [Admin
 
 ### Transfer to External Contacts
 
-If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
+If enabled, this option lets agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers
@@ -339,7 +339,7 @@ Supervisors can decide where agents can transfer interactions:
 
 ## Skill Modification
 
-If enabled, the system allows agents to modify skills attached to an interaction.
+If enabled, the system lets agents to modify skills attached to an interaction.
 
 You can select from the following options:
 
@@ -350,12 +350,12 @@ You can select from the following options:
 
 ## Auto Logout & Auto Close Conversation
 
-This feature allows administrators to specify the period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode. By default, auto logout & auto close conversation is disabled.
+This feature lets administrators to specify the period of inactivity for automatic agent logout and a conversation timeout to transition into ACW mode. By default, auto logout & auto close conversation is disabled.
 
 Auto Logout  
 <img src="../images/auto-logout-toggle.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
 
-Enabling the setting allows administrators to configure the following rules:
+Enabling the setting lets administrators to configure the following rules:
 
 `Auto Logout`: The period of inactivity after which auto logout occurs. The default setting is 8 hours.
 
@@ -410,16 +410,16 @@ Administrators can select from the following routing options that complement exi
 `Omit Language in Routing`: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
 
 When disabled (Default), the system includes language as a routing criterion along with skill, proficiency, availability, and other parameters.  
-<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Adiitional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Additional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ## Enable Dial Tone Until Agent Connects
 
-By default, the enable dial tone until agent connects functionality is disabled. Administrators can turn on the toggle and click Save to enable the functionality. When enabled, a dial tone is played to the customer until the connection with the agent is established after the user hears a connected tone.  
+By default, the enable dial tone until agent connects functionality is disabled. Administrators can turn on the toggle and select **Save** to enable the functionality. When enabled, a dial tone plays  until the connection with the agent establishes after the user hears a connected tone.  
 <img src="../images/enable-dial-tone.png" alt="Enable Dial Tone Until Agents Connect" title="Enable Dial Tone Until Agents Connect" style="border: 1px solid gray; zoom:80%;">
 
 ## Total Digital Conversation Limit
 
-This setting allows admins to configure a maximum total digital conversation limit for an agent while adhering to the per-channel limits that are configured. [Learn more](../../../user-management/manage-users.md).  
+This setting lets admins to configure a maximum total digital conversation limit for an agent while adhering to the configured per-channel limits. [Learn more](../../../user-management/manage-users.md).  
 
 !!! Note
 

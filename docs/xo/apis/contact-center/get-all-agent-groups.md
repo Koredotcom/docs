@@ -9,7 +9,7 @@ To retrieve the list of agent groups with the given `streamId`.
 | **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups` |
 | **Content Type** | `application/json`                          |
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
-| **API Scope** | SmartAssist Analytics                        |
+| **API Scope** | Configuration                        |
 
 ## Path Parameters
 

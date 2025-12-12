@@ -72,9 +72,9 @@ To create a campaign when Agentless Dialing Mode is selected:
 
 ### Progressive Dialer
 
-A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
+A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it initiates 10 calls simultaneously.
 
-A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.
+A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they're about to contact, although they can't control who they speak to or the time they have for review.
 
 The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.
 
@@ -89,7 +89,7 @@ To create a campaign when Progressive Dialing Mode is selected:
 
 #### Progressive Dialer Call Handling
 
-Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name.  
+When the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name.  
 <img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;">
 
 During the call the agent can Mute, place the call on Hold, or end the interaction.  
@@ -107,15 +107,15 @@ Dispositions are displayed to the agent when the call ends.
 
     * If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
 
-    * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
+    * Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer first randomly dials contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it dials contacts from the Priority 4 campaign.
 
 ### Preview Dialer
 
-A preview dialer is a dialing system used in outbound calling campaigns that provide agents with a call information preview. This allows agents to review recipient details, such as name, account history, etc., ensuring a more personalized and informed conversation. Unlike predictive dialers, preview dialers offer agents control over when to initiate the call, improving the quality of interactions. Preview dialers facilitate seamless access to customer data and efficient call management, making them ideal for campaigns requiring a personal touch.
+A preview dialer is a dialing system used in outbound calling campaigns that provide agents with a call information preview. This lets agents to review recipient details, such as name, account history, etc., ensuring a more personalized and informed conversation. Unlike predictive dialers, preview dialers offer agents control over when to initiate the call, improving the quality of interactions. Preview dialers facilitate seamless access to customer data and efficient call management, making them ideal for campaigns requiring a personal touch.
 
-The dialer is designed to efficiently manage outbound calling campaigns by assigning call records to available agents, ensuring optimal agent utilization, and adhering to defined dialing rules and compliance standards. Below are the details on the dialer logic, agent assignment, call handling, and skip logic.
+The dialer is designed to efficiently manage outbound calling campaigns by assigning call records to available agents, ensuring optimal agent utilization, and adhering to defined dialing rules and compliance standards. Following are the details on the dialer logic, agent assignment, call handling, and skip logic.
 
-The dialer app reads the records in the list and assigns them to an available agent. The dialer checks agent availability in the queue to assign the record list for a campaign. The dialer prioritizes agents based on their idle time, ensuring the most idle agents are assigned records first.
+The dialer app reads the records in the list and assigns them to an available agent. The dialer checks agent availability in the queue to assign the record list for a campaign. The dialer prioritizes agents based on their idle time, ensuring the most idle agents get assigned records first.
 
 To create a campaign when Preview Dialing Mode is selected:
 

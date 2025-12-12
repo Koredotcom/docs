@@ -4,10 +4,6 @@
 
 To get exported data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with account Id and orgId.
 
-!!! Note
-
-    This API is applicable post v11.13.0 release.
-
 | **Field**         | **Value**                                                                                                                                                                                                                                       |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Method**        | GET                                                                                                                                                                                                                                              |

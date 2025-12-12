@@ -253,6 +253,41 @@ Monitors anger, fear, confusion, sadness, happiness, escalation, and churn risk 
 * **Churn Risk**: Departure probability indicators.      
 <img src="../ai-assist-manual-edit/images/emotions.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
 
+#### Configured Topics and Resolution
+
+The AI Overview tab provides clear visibility into topics, sentiment, and resolution, enabling more effective QA and coaching with structured data and click-through navigation.
+
+The AI Overview tab includes:
+
+* **Configured Intents**: Intents detected based on your taxonomy.
+* **Generated Intents**: Intents detected by the AI.
+* **Overall Resolution**: The status of the conversation resolution.
+* **Topic Sentiment**: Sentiment detected for each topic.
+
+##### Interactive Intents and Sentiment
+
+* **Clickable Configured Intents:** Select an intent to jump to the exact point in the transcript where it was detected.
+* **Visual Sentiment Labels:** Each intent includes a color indicator (for example, green or red) to show positive, negative, or neutral sentiment.
+
+##### Resolution Tracking
+
+* **Clickable L3 Resolutions:** Select an L3 topic to view where and how its resolution was addressed in the transcript.   
+<img src="../ai-assist-manual-edit/images/configured-topics.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
+#### Generated Topics
+
+Uses taxonomy-based topic discovery to expand analytics on the Audit Screen.
+
+#### Enhanced Discovery
+
+* Supports topic discovery and topic-level sentiment detection.
+* Provides deeper insight into conversation details directly in the Audit Screen.
+
+#### Sentiment Detection
+
+* Displays sentiment for each discovered topic, showing positive, negative, or neutral tone.   
+<img src="../ai-assist-manual-edit/images/generated-topics.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
+
 ### Scoring Logic
 
 #### Resolution-Aware Scoring
@@ -648,7 +683,7 @@ The form is evaluated based on the agent's performance and actions taken during 
 
 * The requirement is fully met according to the standards specified.
 
-* Example: Agent said, "Good morning, how can I help you today?" → YES for greeting.
+* Example: Agent said, "Good morning, how can I help you?" → YES for greeting.
 
 “No” is marked when:
 

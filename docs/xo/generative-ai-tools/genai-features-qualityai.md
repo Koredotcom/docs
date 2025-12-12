@@ -112,4 +112,4 @@ Agents monitor customer sentiment dynamically during active chat conversations. 
 
 ### Topic Modelling
 
-Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs. [Learn more](../quality-ai/analyze/conversation-mining-interactions.md#intent).
+Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs. [Learn more](../quality-ai/analyze/conversation-mining-interactions.md#configured-intents).

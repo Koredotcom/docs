@@ -31,8 +31,6 @@ Once the import is complete, the tool flow canvas is updated with the latest con
 To initiate a tool creation journey through the import functionality, follow the steps below:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 2. Click the **Tools** tab on the top navigation bar.
 3. Do one of the following based on your requirements:
 

@@ -41,7 +41,7 @@ Latency reporting now captures ASR, Bot, and TTS delays at both node and call le
 
 **Outbound Dialing API - v2**
 
-The updated API now sends Answering Machine Detection (AMD) configurations during call creation instead of after call connection. This lets AMD to start earlier, improving detection speed and reducing overall latency.
+The updated API now sends Answering Machine Detection (AMD) configurations during call creation instead of after call connection. This lets AMD to start earlier, improving detection speed and reducing overall latency. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg-v2.md)
 
 <hr>
 
