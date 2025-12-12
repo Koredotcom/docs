@@ -138,7 +138,7 @@ curl --location --request PUT 'https://{{host}}/agentassist/api/v1/public/{{stre
 | `maxDigitalChatSupport`            | Maximum number of simultaneous digital chats supported.                    | integer, optional           |
 | `maxEmailChatSupport`              | Maximum number of simultaneous email chats supported.                      | integer, optional           |
 | `maxMessagingChatSupport`          | Maximum number of simultaneous messaging chats supported.                  | integer, optional           |
-| `markedAutoAway`                   | Indicates if the agent is auto-marked away.                                | boolean, optional           |
+| `markedAutoAway`                   | Indicates if the agent is auto marked away.                                | boolean, optional           |
 | `dAgentGroups`                     | Deprecated/unused agent groups.                                            | array, optional             |
 | `caseLanguageSupport`              | List of supported languages for case handling.                             | array, optional             |
 | `lastOnlineAt`                     | Timestamp of when the agent was last online (ISO 8601).                               | string, optional |
