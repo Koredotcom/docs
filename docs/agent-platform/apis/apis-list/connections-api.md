@@ -673,7 +673,7 @@ curl --location 'https://{{host}}/api/public/connections' \
 
 ### Sample Response
 
-```json
+```
 
 {
 
