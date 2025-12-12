@@ -2,6 +2,31 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent AI for Process releases.
 
+## v1.0.5 December 2, 2025
+
+<u> Minor Release </u>
+
+This release includes new features, enhancements, and general improvements across the platform. The key updates are listed below.
+
+**Improved Monitoring Experience in Workflows**
+
+The Monitoring section now includes dedicated pages for Triggers and Workflow runs, making it easier to track trigger configurations and workflow executions.
+
+The Triggers page shows structured information about trigger configurations and execution behavior:
+
+* Event-based triggers show provider, trigger name, description, setup time, and last run.
+* Schedule-based triggers show frequency, start/end times, time zone, setup time, last run, and next run.
+* Multiple cron configurations are numbered for easy identification.
+* Inactive triggers display an error message with the next steps.
+
+The Workflow Monitor page provides visibility into workflow runs:
+
+* Each trigger activation receives a unique run ID.
+* Run status is clearly displayed as Success, Failure, In Progress, or Waiting.
+* Trigger type (event-based, schedule-based, or API-based) and source shown for each run.
+
+<hr>
+
 ## v1.0.4 November 24, 2025
 
 <u> Minor Release </u>

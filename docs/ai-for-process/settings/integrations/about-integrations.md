@@ -1221,7 +1221,7 @@ The following third-party integrations are available on the AI for Process:
    </td>
   </tr>
   <tr>
-   <td>Posthog
+   <td>PostHog
    </td>
    <td>PostHog is an open-source product analytics platform tracking user interactions and behaviors to help teams refine features, improve funnels, and reduce churn.
    </td>
