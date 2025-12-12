@@ -101,9 +101,15 @@ The following API scopes are available for this feature.
    </td>
   </tr>
   <tr>
-   <td>Connect API
+   <td>View Connections
    </td>
-   <td>Manage external model connections. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
+   <td>Required for viewing connection details. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
+   </td>
+  </tr>
+  <tr>
+   <td>Manage Connections
+   </td>
+   <td>Required for creating and updating connections. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
    </td>
   </tr>
 </table>

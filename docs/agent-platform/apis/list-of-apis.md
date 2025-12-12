@@ -4,7 +4,7 @@
 
 The following APIs let users interact with agents and manage sessions.
 
-| Use cases   | APIs     |
+| Use Cases   | APIs     |
 |--------|----------|
 |  Create, retrieve, or end a session with an agent to maintain conversation context.     |     [Sessions API](agentic-apps/sessions.md)     |
 |  Send user input to an agent within a session and receive the agent's response.      |  [Runs API](agentic-apps/execute.md) |
@@ -13,19 +13,19 @@ The following APIs let users interact with agents and manage sessions.
 
 ## File Management API
 
-| Use cases   | API     |
+| Use Cases   | API     |
 |--------|----------|
 | Upload a small or large public file in the [supported formats](apis-list/upload-file-api.md). | [File Upload API](apis-list/upload-file-api.md) |
 
 ## View Process Status API
 
-| Use cases   | API     |
+| Use Cases   | API     |
 |--------|----------|
 | Check the status of an ongoing or completed job related to tools or models. | [Get Dock Status API](apis-list/get-dock-status.md) |
 
 ## Manage Tools APIs
 
-| Use cases   | APIs    |
+| Use Cases   | APIs    |
 |--------|----------|
 | Import a new tool into the system.       |  [Import a New Tool API](apis-list/import-a-new-tool.md) |
 | Import new configurations, datasets, or updates into an already existing tool within the system.      |   [Import to an Existing Tool API](apis-list/import-to-an-existing-tool.md) |
@@ -35,16 +35,17 @@ The following APIs let users interact with agents and manage sessions.
 
 ## Manage Models APIs
 
-| Use cases  | APIs     |
+| Use Cases  | APIs     |
 |--------|----------|
 |  Import a model in chunks into the system.      |    [Import a Model API](apis-list/import-a-model.md)      |
 |  Export a trained AI model from the system.      |   [Export a Model API](apis-list/export-a-model.md)       |
 | Deploy a model into the environment in the Ready to Deploy state and configure its parameters. The initial deployment must be done manually in the Agent Platform account. Consecutive deployments must happen via the public API.       | [Deploy a Model API](apis-list/deploy-a-model.md)         |
 | Undeploy a model from the environment.      |   [Undeploy a Model API](apis-list/undeploy-a-model.md) |
+| Manage external model connections.      |   [Connections API](apis-list/connections-api.md) |
 
 ## Manage Guardrails APIs
 
-| Use cases   | APIs     |
+| Use Cases   | APIs     |
 |--------|----------|
 |   Deploy predefined guardrails into the system.     |  [Deploy Guardrails API](apis-list/deploy-guardrails.md)        |
 | Undeploy predefined guardrails from the system.       |   [Undeploy Guardrails API](apis-list/undeploy-guardrails.md)       |
