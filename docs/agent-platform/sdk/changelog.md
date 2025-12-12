@@ -7,6 +7,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.3.0] - 2025-12-10
+
+**Major Release**: Enhanced Runtime Services, Comprehensive Documentation, and CLI Improvements
+
+### Added - Runtime Services (Dec 2025)
+- RequestContext with comprehensive runtime service access (Dec 9)
+- EnvironmentVariables accessor with attribute-style access (Dec 9) 
+- Enhanced memory management with MemoryStore integration
+- Structured Logger with automatic session context (Dec 9)
+- Distributed tracing with improved Langfuse integration (Dec 10)
+- Runtime API separation for better organization
+
+### Added - Documentation Overhaul (Dec 2025)
+- Complete API restructuring with dedicated Design-Time and Runtime sections (Dec 10)
+- CLI Reference documentation with comprehensive command coverage (Dec 10)
+- Runtime APIs documentation with proper separation of concerns (Dec 10)
+- mkdocstrings integration for auto-generated API documentation
+- Enhanced navigation with proper hierarchical structure
+- Memory, EnvironmentVariables, and Logger as separate documented components
+
+### Improved - CLI Interface (Nov-Dec 2025)
+- Fixed CLI command naming: `create-env` ? `publish` for environment creation (Nov 14)
+- Enhanced CLI argument handling with proper option names (Dec 10)
+- Improved error handling and user feedback in CLI commands
+- Better status command with `--name` parameter instead of `--env` (Nov 27)
+- Environment variable override support in publish command (Nov 14)
+
+### Fixed - Package Structure (Dec 2025)
+- Added missing `__init__.py` files in runtime modules (Dec 10)
+- Proper Python package structure for sessions and memory modules
+- Fixed import paths for runtime components
+- Enhanced module organization for better discoverability
+
+### Documentation Improvements
+- Consolidated API reference with clear Design-Time vs Runtime separation
+- Individual documentation pages for each runtime service
+- Comprehensive CLI command reference with examples
+- Fixed markdown list rendering issues across all documentation
+- Removed redundant content and improved content organization
+
 ### Added - Application Configuration (Nov 2025)
 
 - App Namespace support for logical grouping of variables (Nov 7)
@@ -232,6 +272,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+
 ## Contributing
 
 See [Contributing Guide](contributing.md) for details on how to contribute.
@@ -239,3 +280,4 @@ See [Contributing Guide](contributing.md) for details on how to contribute.
 ## Support
 
 For questions, issues, or feature requests, contact Support.
+

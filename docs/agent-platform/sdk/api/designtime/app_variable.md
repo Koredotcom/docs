@@ -309,3 +309,4 @@ variable = AppVariable.from_json(json_str)
 - [App](app.md) - Applications contain both namespaces and variables  
 - [Tool](tool.md) - Tools can reference variables in their code
 - [Agent](agent.md) - Agents may use variables in their configurations
+

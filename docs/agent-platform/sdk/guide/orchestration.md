@@ -292,30 +292,30 @@ app.start(
 ## Best Practices
 
 1. **Message Field**
-   - `message` is the most important field - it contains what gets sent
-   - For agents: include the task/question to process
-   - For route_to_user: include the response to show the user
+    - `message` is the most important field - it contains what gets sent
+    - For agents: include the task/question to process
+    - For route_to_user: include the response to show the user
 
 2. **Error Handling**
-   - Handle both success and error cases
-   - Return ErrorMessage for routing failures
-   - Implement fallback routing (route_to_user)
+    - Handle both success and error cases
+    - Return ErrorMessage for routing failures
+    - Implement fallback routing (route_to_user)
 
 3. **Logging**
-   - Use `thought` and `reason` for debugging
-   - Log routing decisions
-   - Track agent performance
+    - Use `thought` and `reason` for debugging
+    - Log routing decisions
+    - Track agent performance
 
 4. **State Management**
-   - Use memory stores for orchestrator state
-   - Track conversation context
-   - Maintain agent selection history
+    - Use memory stores for orchestrator state
+    - Track conversation context
+    - Maintain agent selection history
 
 5. **Performance**
-   - Keep routing logic lightweight
-   - Avoid blocking operations
-   - Monitor routing latency
-   - Use tracing for optimization
+    - Keep routing logic lightweight
+    - Avoid blocking operations
+    - Monitor routing latency
+    - Use tracing for optimization
 
 ## Related Documentation
 

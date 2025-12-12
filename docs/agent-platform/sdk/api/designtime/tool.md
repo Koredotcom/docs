@@ -13,9 +13,9 @@
       show_root_heading: true
       show_source: false
 
-## ToolConfigBuilder
+## ToolBuilder
 
-::: agenticai_core.designtime.models.tool.ToolConfigBuilder
+::: agenticai_core.designtime.models.tool.ToolBuilder
     options:
       show_root_heading: true
       show_source: false
@@ -102,9 +102,9 @@ tool = Tool(
 ### Using Builder Pattern
 
 ```python
-from agenticai_core.designtime.models.tool import ToolConfigBuilder
+from agenticai_core.designtime.models.tool import ToolBuilder
 
-tool_dict = ToolConfigBuilder() \
+tool_dict = ToolBuilder() \
     .set_name("Get_AccountInfo") \
     .set_description("Gets account information") \
     .set_type("inlineTool") \
@@ -153,3 +153,4 @@ User-defined tools with custom logic.
 
 - [Agent](agent.md) - Agents use tools to perform actions
 - [App](app.md) - Tools are registered at the application level
+

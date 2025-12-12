@@ -69,11 +69,11 @@ pip install ./lib/agenticai_core-0.1.0-py3-none-any.whl
 
 ## Platform Setup
 
-Before building applications, configure access to the Kore AgenticAI platform.
+Before building applications, configure access to the AgenticAI platform.
 
 ### 1. Access the Platform
 
-Visit [Kore AgenticAI Platform](https://agent-platform.kore.ai/) to:
+Visit [AgenticAI Platform](https://agent-platform.kore.ai/) to:
 
 1. **Configure LLM Models** - Set up your preferred models (GPT-4, Claude, etc.)
 2. **Create Application** - Create a new app on the platform
@@ -155,7 +155,7 @@ The workspace `requirements.txt` includes:
 Located in `lib/`:
 
 - `agenticai_core-0.1.0-py3-none-any.whl` - AgenticAI Core SDK
-- `kore_api-1.0.0-py3-none-any.whl` - Kore API client
+- `kore_api-1.0.0-py3-none-any.whl` - Platform API client
 
 ### Additional Dependencies
 
@@ -220,3 +220,4 @@ ls -la .env/
 - [:octicons-arrow-right-24: Quick Start](quickstart.md) - Build your first app
 - [:octicons-arrow-right-24: Core Concepts](concepts.md) - Understand the framework
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Explore the API
+

@@ -85,23 +85,6 @@ agent = Agent(
 - Interactive problem-solving
 - Tool-heavy workflows
 
-### PLAN_EXECUTE
-
-Creates a plan first, then executes steps:
-
-```python
-agent = Agent(
-    name="PlannerAgent",
-    sub_type="PLAN_EXECUTE",
-    ...
-)
-```
-
-**Best for:**
-
-- Complex multi-step tasks
-- Structured workflows
-- Tasks requiring upfront planning
 
 ## Agent Roles
 
@@ -136,7 +119,7 @@ agent = Agent(
 ### Using Builder Pattern
 
 ```python
-from agenticai_core.designtime.models.agent import AgentConfigBuilder
+from agenticai_core.designtime.models.agent import AgentBuilder
 from agenticai_core.designtime.models.tool import Tool
 
 # Define tools
@@ -144,7 +127,7 @@ tool1 = Tool(name="GetBalance", type="toolLibrary", ...)
 tool2 = Tool(name="Transfer", type="toolLibrary", ...)
 
 # Build agent with tools
-agent_config = AgentConfigBuilder() \
+agent_config = AgentBuilder() \
     .set_name("BankingAgent") \
     .set_description("Banking operations agent") \
     .set_role("WORKER") \
@@ -275,35 +258,35 @@ orchestrator = CustomOrchestrator(agents=app_agents)
 ## Best Practices
 
 1. **Naming**
-   - Use descriptive names that reflect the agent's purpose
-   - Keep names concise but meaningful
+    - Use descriptive names that reflect the agent's purpose
+    - Keep names concise but meaningful
 
 2. **Descriptions**
-   - Provide detailed capability descriptions
-   - Help the orchestrator understand when to use the agent
-   - Include limitations and constraints
+    - Provide detailed capability descriptions
+    - Help the orchestrator understand when to use the agent
+    - Include limitations and constraints
 
 3. **LLM Configuration**
-   - Match temperature to task type
-   - Set appropriate token limits
-   - Consider cost vs. quality
+    - Match temperature to task type
+    - Set appropriate token limits
+    - Consider cost vs. quality
 
 4. **Prompts**
-   - Be specific about the agent's role
-   - Include relevant context
-   - Provide clear guidelines
-   - Use memory template variables
+    - Be specific about the agent's role
+    - Include relevant context
+    - Provide clear guidelines
+    - Use memory template variables
 
 5. **Tools**
-   - Only include relevant tools
-   - Avoid tool overload
-   - Ensure tools align with agent's purpose
+    - Only include relevant tools
+    - Avoid tool overload
+    - Ensure tools align with agent's purpose
 
 6. **Testing**
-   - Test agents individually
-   - Verify tool integration
-   - Check memory access
-   - Validate prompt effectiveness
+    - Test agents individually
+    - Verify tool integration
+    - Check memory access
+    - Validate prompt effectiveness
 
 ## Related Documentation
 

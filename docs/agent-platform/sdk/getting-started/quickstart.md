@@ -274,7 +274,7 @@ This will:
 
 ```bash
 # Create app environment
-python run.py -c dev create-env --app <appId> --env development --desc "Development environment"
+python run.py -c dev publish --app <appId> --name development --desc "Development environment"
 ```
 
 ## Step 9: Test Deployment
@@ -283,14 +283,14 @@ python run.py -c dev create-env --app <appId> --env development --desc "Developm
 
 ```bash
 # Test the deployed application
-python run.py -c dev test --app <appId> --env development
+python run.py -c dev test
 ```
 
 ### Check Status
 
 ```bash
 # Monitor environment status
-python run.py -c dev status --app <appId> --env development
+python run.py -c dev status --app <appId> --name development
 ```
 
 ## Complete Workspace Structure
@@ -364,22 +364,24 @@ graph LR
 ### 6. Deploy
 
 - `python run.py -c dev deploy -f bin/myApp.kar`
-- Create environment: `python run.py -c dev create-env --app <appId> --env dev`
+- Create environment: `python run.py -c dev publish --app <appId> --name dev`
 
 ### 7. Test End-to-End
 
-- `python run.py -c dev test --app <appId> --env dev`
+- `python run.py -c dev test`
 - Verify deployed functionality
 
 ### 8. Monitor
 
-- Check status: `python run.py -c dev status --app <appId> --env dev`
+- Check status: `python run.py -c dev status --app <appId> --name dev`
 - Review logs and traces
 - Monitor performance
 
 ## CLI Commands Reference
 
-All commands are run from the workspace directory:
+For detailed CLI command documentation, see [CLI Reference](../cli/index.md).
+
+Quick commands for workspace development:
 
 ```bash
 # Activate virtual environment first
@@ -394,14 +396,9 @@ python run.py --archive myProject
 # Deploy (uses .env/<env> configuration)
 python run.py -c dev deploy -f bin/myProject.kar
 
-# Create environment
-python run.py -c dev create-env --app <appId> --env dev
-
-# Test deployment
-python run.py -c dev test --app <appId> --env dev
-
-# Check status
-python run.py -c dev status --app <appId> --env dev
+# Create and test environment
+python run.py -c dev publish --app <appId> --name dev
+python run.py -c dev test
 ```
 
 ## Tips for Success
@@ -458,3 +455,4 @@ from src.tools import banking_tools  # This registers the tools via @Tool.regist
 - [:octicons-arrow-right-24: Working with Tools](../guide/working-with-tools.md) - Advanced tool patterns
 - [:octicons-arrow-right-24: Custom Orchestration](../guide/orchestration.md) - Orchestration guide
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Full API documentation
+
