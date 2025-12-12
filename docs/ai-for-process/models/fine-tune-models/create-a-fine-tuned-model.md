@@ -60,7 +60,7 @@ Steps to fine-tune a model:
         1. **Use from training dataset (default)**: This enables you to allocate a percentage of the training dataset for model evaluation. By default, 15% of the training dataset is allocated for model evaluation.
         2. **Upload evaluation dataset**: Select or upload another dataset from the dropdown.
         3. **Skip the evaluation**: It will skip the model evaluation process.
-        <img src="../images/use-traning-dataset.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/use-training-dataset.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;">
 
 
 7. Select or upload the test dataset to test the fine-tuned model. Click **Next**.
