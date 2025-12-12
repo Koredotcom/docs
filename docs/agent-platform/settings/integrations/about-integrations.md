@@ -24,8 +24,6 @@ The Agent Platform supports 120+ integrations with different authorization types
 To access the feature, follow the steps below:
 
 1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
-   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
-
 2. Click **Settings** → On the left navigation menu → Click **Integrations**.
     <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
