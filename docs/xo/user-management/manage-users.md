@@ -19,22 +19,22 @@ The Users section includes the features in the table below.
 
 ## Add a User
 
-You can add a user to CCAI by following the steps below:
+You can add a user to CCAI by following the steps:
 
-1. Click **Invite Users**.  
+1. Select **Invite Users**.  
   <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:80%;">
 
 2. The Invite User window displays. Here, you can configure the following:
     1. **Email**: Enter the users email ID.
     2. **First Name**: Enter the First Name.
     3. **Last Name**: Enter the Last Name.
-    4. **Role**: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
-       * Users with “Change User Role”  and permission selected as “Yes” will be able to modify the role of an existing user.
-       * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](./role-management.md#permissions) for details.
+    4. **Role**: Select whether the new users are App Developer, App Tester, Agent, or Supervisor.
+       * Users with “Change User Role”  and permission selected as “Yes” can modify the role of an existing user.
+       * Users with “Change User Role”  and permission selected as “No” can't modify the role of an existing user. See [Role Management](./role-management.md#permissions) for details.
     5. **Attributes**: You can edit the user details or delete the users.
 
 Disabled users are displayed with a “Disabled” tag beside their name. Contact Center permissions are disabled when a new user invite is sent by a user whose Contact Center permission is disabled.  
-<img src="../images/user-page-diabled-user.png" alt="Disabled User" title="Disabled User" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/user-page-disabled-user.png" alt="Disabled User" title="Disabled User" style="border: 1px solid gray; zoom:80%;">
 
 ## Attributes
 

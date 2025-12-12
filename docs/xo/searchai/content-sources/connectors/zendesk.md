@@ -67,7 +67,7 @@ The first step is to set up an OAuth client in Zendesk and generate OAuth creden
 
 2. Under **Apps and Integrations**, go to the **Zendesk API** page.
 
-3. In the **OAuth Client** tab, register Search AI as an OAuth Client. Refer to [this documentation](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application#topic_s21_lfs_qk) for information about the fields required in the configuration.  Set the ***Redirect URLs*** field to point to one of the following callback URLs per your region or deployment.
+3. In the **OAuth Client** tab, register Search AI as an OAuth Client. Refer to [this documentation](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application#topic_s21_lfs_qk) for information about the fields required in the configuration. Set the ***Redirect URLs*** field to point to one of the following callback URLs per your region or deployment.
 
   * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
   * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
@@ -99,7 +99,7 @@ After successfully connecting the Search AI connector to the Zendesk app, go to 
 
 Upon sync, Search AI ingests **Knowledge Base Articles and Tickets** from the Zendesk account. 
 
-All properties of a ticket or knowledge article that are ingested into the `content` field can be readily utilized for search operations. The` type` field in the ingested content suggests whether it is an article or a ticket. 
+All properties of a ticket or knowledge article that are ingested into the `content` field can be readily utilized for search operations. The` type` field in the ingested content suggests whether it's an article or a ticket. 
 
 For **tickets**, the following properties are ingested into the `content` field. Other properties are stored in dedicated fields within the indexed content or as metadata fields. 
 
@@ -216,7 +216,7 @@ Similarly, for **articles**, the main textual content, along with the comments o
 
 ## RACL Support
 
-Search AI provides access control support for tickets and articles ingested from Zendesk. The **sys_racl** field is used to enforce access control by associating relevant identifiers (like email IDs, organization IDs, or group IDs) to the content, ensuring users can only access the content they are authorized to view.
+Search AI provides access control support for tickets and articles ingested from Zendesk. The **sys_racl** field is used to enforce access control by associating relevant identifiers (like email IDs, organization IDs, or group IDs) to the content, ensuring users can only access the content they're authorized to view.
 
 **Tickets**:
 

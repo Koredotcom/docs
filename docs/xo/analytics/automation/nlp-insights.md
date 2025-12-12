@@ -980,8 +980,6 @@ After the system qualifies relevant response chunks, the **Conversation Orchestr
 This section displays key details, including the model and prompt used, processing time, and matched intents. Users can also access the complete request and response logs for deeper analysis and troubleshooting.  
 <img src="../images/gpt-cononversation-orchestrator.png" alt="Conversation Orchestrator" title="Conversation Orchestrator" style="border: 1px solid gray; zoom:60%;">
 
-
-
 ### Chat History
 
 The Chat History tab allows you to access the exact message or conversation for which the record is logged. It also shows the entire chat history of the user session, as well as the intent and intent category.  
