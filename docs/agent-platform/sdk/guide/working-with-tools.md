@@ -41,9 +41,9 @@ async def add(x: int, y: int) -> int:
 Define tools directly in configuration with JavaScript code:
 
 ```python
-from agenticai_core.designtime.models.tool import Tool, ToolConfigBuilder
+from agenticai_core.designtime.models.tool import Tool, ToolBuilder
 
-tool_config = ToolConfigBuilder() \
+tool_config = ToolBuilder() \
     .set_name("InlineTool") \
     .set_code_type("javascript") \
     .set_type("inline") \
@@ -211,7 +211,7 @@ async def calculator(operation: str, x: str, y: str):
 Add tools to agents during configuration:
 
 ```python
-from agenticai_core.designtime.models.agent import AgentConfigBuilder
+from agenticai_core.designtime.models.agent import AgentBuilder
 from agenticai_core.designtime.models.tool import Tool, ToolsRegistry
 
 # Define custom tools
@@ -223,7 +223,7 @@ async def get_balance(account_id: str):
 inline_tool = Tool(name="ProcessData", type="inline", ...)
 
 # Add to agent
-agent_config = AgentConfigBuilder() \
+agent_config = AgentBuilder() \
     .set_name("BankingAgent") \
     .set_tools([inline_tool]) \
     .build()
@@ -241,36 +241,38 @@ app.start(
 ## Best Practices
 
 1. **Tool Design**
-   - Keep tools focused and single-purpose
-   - Provide clear, detailed descriptions
-   - Use meaningful parameter names
-   - Include proper error handling
+    - Keep tools focused and single-purpose
+    - Provide clear, detailed descriptions
+    - Use meaningful parameter names
+    - Include proper error handling
 
 2. **Logging**
-   - Log tool entry and exit
-   - Include parameter values
-   - Log errors with context
-   - Use appropriate log levels
+    - Log tool entry and exit
+    - Include parameter values
+    - Log errors with context
+    - Use appropriate log levels
 
 3. **Memory Operations**
-   - Always check `result.success`
-   - Provide fallback values
-   - Use projections for efficiency
-   - Handle missing data gracefully
+    - Always check `result.success`
+    - Provide fallback values
+    - Use projections for efficiency
+    - Handle missing data gracefully
 
 4. **Error Handling**
-   - Catch and log exceptions
-   - Provide meaningful error messages
-   - Return appropriate error responses
-   - Don't expose sensitive information
+    - Catch and log exceptions
+    - Provide meaningful error messages
+    - Return appropriate error responses
+    - Don't expose sensitive information
 
 5. **Performance**
-   - Keep tools lightweight
-   - Avoid blocking operations
-   - Use async/await properly
-   - Monitor execution times
+    - Keep tools lightweight
+    - Avoid blocking operations
+    - Use async/await properly
+    - Monitor execution times
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 - [Tool API Reference](../api/designtime/tool.md)
 - [Memory Stores Guide](memory-stores.md)

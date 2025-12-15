@@ -28,7 +28,7 @@ The Start node is the starting point of any flow and is available by default. Yo
    </td>
    <td>IVR Digit Input
    </td>
-   <td>Use this node to ask for digit input from callers – for example, a phone number or the last four digits of their credit card.
+   <td>Use this node to ask for digit input from callers-for example, a phone number or the last four digits of their credit card.
    </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Chat
    </td>
    <td>Check Agent Availability
    </td>
-   <td>This node lets you check agent availability based on skillset and decide the next node based on agent availability.
+   <td>This node lets you check agent availability based on skill set and decide the next node based on agent availability.
 
    <strong>Note</strong>: This is an experimental node and may be deprecated in future versions.
    </td>

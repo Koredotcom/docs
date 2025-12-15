@@ -2,7 +2,7 @@
 
 
 
-DialogGPT is now the default intent identification mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. App creation automatically enables the required XO GPT models for DialogGPT. You can view the DialogGPT configuration after creating your app.
+DialogGPT is now the default orchestration mode for AI for Service app creation. This reduces configuration effort and improves conversational accuracy for new AI Agents. App creation automatically enables the required XO GPT models for DialogGPT. You can view the DialogGPT configuration after creating your app.
 
 After signing up, users are guided through the following onboarding process to create their app.
 

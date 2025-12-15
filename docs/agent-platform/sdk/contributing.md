@@ -358,7 +358,3 @@ pytest -m "not slow"
 # Test with debugging
 pytest -s --pdb
 ```
-
-## Questions?
-
-If you have questions about contributing, contact Support.

@@ -6,7 +6,7 @@ The Text to Text node is part of the AI node family in the Workflow Builder, ena
 
 * **Custom Prompt Execution**: Define specific behavior through human and system prompts or select from reusable templates in the Prompt hub.
 * **LLM Model Selection**: Choose from pre-configured models with optional hyperparameter tuning (temperature, top-k, top-p, max tokens).
-* **Structured Output Support**: Define JSON schemas for predictable and parseable responses from the model.
+* **Structured Output Support**: Define JSON schemas for predictable and parsable responses from the model.
 * **Prompt Templates & Versioning**: Load and customize prompt versions, with support for variable mapping and editing.
 * **Workflow Calling Integration**: Enable the model to autonomously call external workflows during execution (if supported).
 * **Timeout Configuration**: Control the duration for which the model can run before triggering a timeout error.

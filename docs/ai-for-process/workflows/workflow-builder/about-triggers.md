@@ -25,15 +25,15 @@ For detailed configuration steps, see [Start Node – Automate Workflow Initiati
 ## Trigger Payload and Attachments
 
 * Triggers can pass contextual data, metadata, and event-specific IDs.
-* Attachments are provided as temporary URLs (valid for 24 hours).
+* Attachments are provided as temporary URLs (valid for 24 hours). Only one attachment is supported at a time.
 * Downstream nodes can reference trigger values as workflow variables.
 
 ## Best Practices
 
 * Use clearly defined events to avoid unnecessary workflow runs.
-* Regularly validate integration connections to keep triggers active.
+* Regularly validate integration connections to keep triggers active. 
 * Confirm payload fields before referencing them in conditions or expressions.
-* Avoid creating duplicate triggers for the same scenario.
+* Monitor trigger activity to quickly identify inactive or failing triggers and take corrective actions.
 
 ## Related Topics
 

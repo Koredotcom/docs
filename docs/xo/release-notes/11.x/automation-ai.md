@@ -11,9 +11,9 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">DialogGPT</font>  
 
-**DialogGPT Now Default for Intent Detection**
+**DialogGPT Now Default Orchestration**
 
-DialogGPT is now the default intent identification mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md) 
+DialogGPT is now the default orchestration mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md) 
 
 
 **Redesigned Navigation for DialogGPT and NLP-based App**

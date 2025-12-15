@@ -19,7 +19,7 @@ The Kore AI Agent integration with Talkdesk operates as follows:
 * **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
 * **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
 
-This streamlined process enhances Talkdesk's contact center capabilities with Kore's voice automation technology.
+This streamlined process enhances Talkdesk's contact center capabilities with our voice automation technology.
 
 ## Voice Automation Process
 

@@ -2,9 +2,9 @@
 
 ## Overview
 
-This feature provides a personalized dashboard for each agent, accessible by both the agent and their supervisor. It enables supervisors to evaluate performance metrics and pinpoint coaching opportunities at the individual level. 
+The Agent-Specific Dashboard provides detailed Sentiment and Resolution insights at the L3 topic level, giving supervisors and agents a deeper view into performance and coaching needs. Each agent receives a personalized dashboard that supervisors can use to assess key metrics, identify areas of improvement, and create targeted coaching plans. Supervisors can filter data by Language, [Date Range](../analyze/dashboard.md#date-range){:target="_blank"}, and [Channel](../analyze/dashboard.md#channel){:target="_blank"} (voice or chat) to analyze performance trends and focus on the most relevant interactions. 
 
-The dashboard displays key metrics relevant to the agent in the **Overview** section of the supervisor’s agent-specific dashboard, with data filtered by Language, [Date Range](../analyze/dashboard.md#date-range){:target="_blank"}, and [Channel](../analyze/dashboard.md#channel){:target="_blank"} (voice or chat). This enables supervisors to analyze agent performance, identify areas for improvement, and create targeted coaching assignments to enhance skills and overall performance.
+## Access Agent Dashboard
 
 A supervisor can access the agent-specific dashboard in the following ways:
 
@@ -13,7 +13,7 @@ A supervisor can access the agent-specific dashboard in the following ways:
 1. Navigate to **Quality AI** > **ANALYZE** > **Dashboard** > **Agent Leaderboard**.  
 <img src="../agent-leaderboard/images/dashboard-agent-leaderboard-view.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">  
 
-2. From the **Agent Leaderboard** section, click any agent to view the agent-specific dashboard **Overview** screen.  
+2. From the **Agent Leaderboard** section, select any agent to view the agent-specific dashboard **Overview** screen.  
 <img src="../agent-leaderboard/images/dashboad-supervisor-view.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
 
 **Approach 2:**
@@ -21,7 +21,7 @@ A supervisor can access the agent-specific dashboard in the following ways:
 1. Navigate to **Quality AI** > **ANALYZE** > **Agent Leaderboard**.   
 <img src="../agent-leaderboard/images/agent-leaderboard-agent-selection.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-2. From the **Agent Leaderboard** section, click any agent to view the following agent-specific dashboard **Overview** screen.   
+2. From the **Agent Leaderboard** section, select any agent to view the following agent-specific dashboard **Overview** screen.   
 <img src="../agent-leaderboard/images/agent-leaderboard-supervisor-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:100%;">
 
     !!! note
@@ -65,36 +65,89 @@ When a language filter is applied, the following widget metrics are updated to r
 
 The following metrics help evaluate agent performance and coaching progress, filtered by selected languages and date range:
 
-* **Total Interactions**: This displays the total interactions completed by the agent during the selected time.     
+* **Total Interactions**: Displays the total interactions completed by the agent during the selected time.     
     <img src="../agent-leaderboard/images/total-interactions.png" alt="Scorecard Trend" title="Scorecard Trend" style="border: 1px solid gray; zoom:100%;">
 
-* **Kore Evaluation Score**: This displays the average Kore evaluation score of the agent for the calls they have completed during the selected time period.    
+* **Kore Evaluation Score**: Displays the average Kore evaluation score of the agent for the calls they have completed during the selected time period.    
     <img src="../agent-leaderboard/images/kore-evaluation-score.png" alt="Kore Evaluation Score" title="Kore Evaluation Score" style="border: 1px solid gray; zoom:100%;">
 
-* **No. of Supervisor Audits**: This displays the total number of manual audits completed for the interactions completed by that agent for the selected time period.     
+* **No. of Supervisor Audits**: Displays the total number of manual audits completed for the interactions completed by that agent for the selected time period.     
     <img src="../agent-leaderboard/images/No-of-supervisor-audits.png" alt="No. of Supervisor Audits" title="No. of Supervisor Audits" style="border: 1px solid gray; zoom:100%;">
 
-* **Supervisor Audit Score**: This displays the Average manual audit score for the audited interactions for the selected time period.     
+* **Supervisor Audit Score**: Displays the Average manual audit score for the audited interactions for the selected time period.     
     <img src="../agent-leaderboard/images/supervisor-audit-score.png" alt="Supervisor Audit Score" title="Supervisor Audit Score" style="border: 1px solid gray; zoom:100%;">
 
-* **Total Coaching Assignments**: This displays the total number of coaching sessions assigned to the agent over a selected time period.     
+* **Total Coaching Assignments**: Displays the total number of coaching sessions assigned to the agent over a selected time period.     
     <img src="../agent-leaderboard/images/total-coaching-assignemnts.png" alt="Total Coaching Assignments" title="Total Coaching Assignments" style="border: 1px solid gray; zoom:100%;">
 
-* **No. of Fails**: This displays the total number of scorecard failures for the agent over a selected time period.   
+* **No. of Fails**: Displays the total number of scorecard failures for the agent over a selected time period.    
     <img src="../agent-leaderboard/images/No-of-fails.png" alt="No. of Fails" title="No. of Fails" style="border: 1px solid gray; zoom:100%;">
 
-* **Fatal Interactions**: This displays an agent’s interactions that failed critical compliance or quality checks during a selected time period, helping supervisors quickly identify and address high-risk cases.        
+* **Fatal Interactions**: Displays an agent’s interactions that failed critical compliance or quality checks during a selected time period, helping supervisors quickly identify and address high-risk cases.         
     <img src="..//agent-leaderboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:80%;">
 
 ### Coaching Insights
 
-* **Select Scorecard**: Based on the scorecard selected, it displays the top five attributes with the highest scores from the agent’s scorecards during the specified time period. Only attributes with scores above 80 are shown, listed in descending order.
+* **Select Scorecard**: Allows users to choose specific scorecard templates to filter the Coaching Insights analysis and populate metrics of that scorecard type. 
 
 * **Strongest Attributes**: Based on the scorecard selected, it displays the bottom five attributes with the lowest scores from the agent’s scorecards during the specified time period. Only attributes with scores below 80 are shown as areas for improvement.   
     <img src="../agent-leaderboard/images/strongest-attributes.png" alt="Coaching Insights" title="Coaching Insights" style="border: 1px solid gray; zoom:80%;">
 
 * **Opportunity Areas**: Displays the bottom five attributes with the lowest scores from the agent’s scorecards during the selected time period. Only attributes with scores below 80 are shown as areas for improvement.      
     <img src="../agent-dashboard/images/scorecard-selection-for-coaching-insights.png" alt="Opportunity Areas" title="Opportunity Areas" style="border: 1px solid gray; zoom:80%;">
+
+### Sentiment Insights
+
+This feature provides supervisors with a quick, visual understanding of agent sentiment across all assigned conversations. It highlights overall sentiment performance and identifies the best and worst customer experience areas using color-coded charts and topic-level breakdowns. This helps supervisors quickly spot issues, provide guided coaching, and improve service quality. 
+
+Supervisors can view:
+
+* **Average Sentiment Score**: Shows the agent’s average sentiment score across all topics, including positive and negative interaction counts and trend indicators.
+
+* **Top 5 Highest Sentiment L3 Topics**: Shows the agent’s top five L3 topics with the highest sentiment in descending order.
+
+* **Top 5 Lowest Sentiment L3 Topics**: Shows the agent’s top five L3 topics with the lowest-sentiment L3 topics in ascending order.
+
+* **Clear Visual Breakdowns**: Shows the topic-level counts, sentiment splits, and insights when you hover over the doughnut chart.
+
+* **Color-Coded Patterns**: Shows the visual patterns (green = positive, red = negative) for instant understanding of customer mood.
+ 
+* **Drill-Down Insights**:
+
+    * **View All Topics**: Opens the Topic Discovery page with all filters pre-applied.
+
+    * **View Conversations**: Opens the Conversation Mining page filtered to the exact topic selected. 
+
+    * **Identify Performance Gaps**: Provides a comparison view to identify the highest and the lowest sentiment.
+
+    * **Spot Coaching Opportunities**: Enables you to make informed decisions based on negative sentiment drivers or recurring customer frustrations.
+
+    * **Monitor Trends**: Allows you to track agent sentiment patterns in conversation.   
+    <img src="../dashboard/images/sentiment-insights.png" alt="Sentiment Insights" title="Sentiment Insights" style="border: 1px solid gray; zoom:80%;">
+
+### Resolution Insights
+
+This feature helps supervisors assess how effectively an agent resolves customer issues. It displays the agent’s average resolution rate and highlights the top 5 highest- and lowest-resolution L3 topics.
+
+Supervisors can view the following details:
+
+* **Average Resolution Rate**: Shows the agent’s overall average resolution rate across all conversations and topics.
+
+* **Top 5 Highest Resolution L3 Topics**: Displays the agent’s top 5 L3 topics with the highest resolution rates, in descending order.
+
+* **Top 5 Lowest Resolution L3 Topics**:  Displays the agent’s bottom 5 L3 topics with the lowest resolution rates in ascending order.
+
+* **Resolved/Unresolved Breakdown**: Provides conversation counts and percentages for resolved and unresolved conversations for each topic.
+
+* **Drill-Down Insights**:
+
+    * **View All Topics**: Navigates to Topic Discovery with the selected topic and automatically applied filters.
+
+    * **View Conversations**: Navigates to Conversation Mining with the exact topic and filters pre-applied.   
+    <img src="../dashboard/images/resolution-insights.png" alt="Resolution Insights" title="Resolution Insights" style="border: 1px solid gray; zoom:80%;">
+
+* **Identify Performance Gaps**: Provides a comparison view to identify the highest vs. the lowest resolution rates.
+
 
 ### Coaching Assignments
 
@@ -119,17 +172,17 @@ The Coaching Assignments include the following items:
             
             This option is only visible for agents.
        
-    * **Yet to start**: Interactions for an assignment are yet to start.
+    * **Yet to start**: Interactions for an assignment are to start.
 
         !!! note
             
             This option is only visible for supervisors.
 
-    * **In Progress**: This displays the total number of interactions that have been clicked through for that coaching assignment.
+    * **In Progress**: This displays the total number of interactions that are selected through for that coaching assignment.
 
-    * **Completed**: All interactions clicked through for that assignment.
+    * **Completed**: All interactions selected through for that assignment.
 
-For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md){:target="_blank"}.  
+For more information, see [Coaching Assignments - Supervisor View and Creation](../coach/coaching-assignments-supervisor-view-and-creation.md){:target="_blank"}. 
 
 #### Scorecard Trend
 
@@ -148,7 +201,7 @@ This functionality supports multilingual performance monitoring, enabling superv
 
 !!! Note
 
-    If the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its Supervisor will not be able to view this feature in the Dashboard. To enable this, the administrator or app owner has to enable it in the [**Settings**](../configure/quality-ai-general-settings.md){:target="_blank"}).
+    In the [**Settings**](../configure/quality-ai-general-settings.md){:target="_blank"}), if the administrator or app owner has disabled the Agent Scorecard for a particular agent, then that agent and its supervisor cannot view this feature in the Dashboard. 
 
 #### Avg. Scorecard Score
 

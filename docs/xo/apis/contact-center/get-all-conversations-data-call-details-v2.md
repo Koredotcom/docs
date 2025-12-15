@@ -1,6 +1,6 @@
 --8<-- "includes/ccai-api-back-link.md"
 
-# Get All Conversations Data – Call Details
+# Get All Conversations Data - Call Details-v2
 
 To retrieve the raw data for all conversations in a detailed view. The days’ range can't be more than seven days.
 
@@ -32,7 +32,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 --header 'accept: application/json, text/plain, /' \
 --header 'content-type: application/json;charset=UTF-8' \
 --header 'auth: <token>' \
---header 'iId: st-22af7012-341f-54b8-af49-afdcd6c12381' \
+--header 'iId: st-22af7012-341f-54b8-af49-afdcd6c1xxxx' \
 --data '{
 "startDate":"2025-09-30",
 "endDate":"2025-09-30",
@@ -69,7 +69,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | **startDate**    | The start date from which records are considered. <br> Format: `yyyy-mm-dd HH24:mm:ss` <br> Example: `2022-08-25 07:20:15`                                                                                                                                                                                                                                   | DateTime, required      |
 | **endDate**      | The end date up to which records are considered. <br> Format: `yyyy-mm-dd HH24:mm:ss` <br> Example: `2022-08-25 18:20:15`                                                                                                                                                                                                                                   | DateTime, required      |
 | **timeZoneOffset** | The time zone offset. <br> Examples: `-330`, `630`, `-500` <br> **Note:** For US/New York, the offset is `300`. Use a minus sign for time zones east of GMT; no sign for time zones west of GMT.                                                                                                                                                             | number, required        |
-| **selectedFields** | Specifies which data fields to include in the API response. <br> `skills` - Returns the agent’s areas of expertise or capabilities. <br> `customerinfo` – Includes key customer details such as email, first name, last name, phone number, and other details <br> `userleveltags` – Returns tags assigned at the individual user level for categorization or filtering <br> `sessionleveltags` – Returns tags associated with a specific session or conversation instance. | array[string], optional |
+| **selectedFields** | Specifies which data fields to include in the API response. <br> `skills` - Returns the agent’s areas of expertise or capabilities. <br> `customerinfo` - Includes key customer details such as email, first name, last name, phone number, and other details <br> `userleveltags` - Returns tags assigned at the individual user level for categorization or filtering <br> `sessionleveltags` - Returns tags associated with a specific session or conversation instance. | array[string], optional |
 | **channels**     | The channels to include. <br> Example: `['rtm', 'voice']`                                                                                                                                                                                                                                                                                                    | array[string], optional |
 | **queues**       | The list of queue IDs in the instance bots.                                                                                                                                                                                                                                                                                                                  | array[string], optional |
 
@@ -171,7 +171,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     },
                     "automationBotId": "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx",
                     "lastIntentName": "Pay Bill",
-                    "lastIntentuserInput": "Can you please pay my bill?",
+                    "lastIntentuserInput": "Can you pay my bill?",
                     "dialog_tone": [],
                     "accountId": "674daf4bc9d17f4dc070xxxx"
                 },
@@ -286,7 +286,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     },
                     "automationBotId": "st-e5c6ae6b-c388-5acd-93b7-bada87a7xxxx",
                     "lastIntentName": "Pay Bill",
-                    "lastIntentuserInput": "Can you please pay my bill?",
+                    "lastIntentuserInput": "Can you  pay my bill?",
                     "dialog_tone": [],
                     "accountId": "674daf4bc9d17f4dc070xxxx"
                 },
@@ -386,7 +386,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "phoneNumber": "150551xxxxx",
                 "identities": [
                     {
-                        "val": "cs-ddee2921-797d-5751-8786-bf060407f5a9/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb3xxxx",
+                        "val": "cs-ddee2921-797d-5751-8786-bf06xxxx/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb3xxxx",
                         "type": "mapped"
                     }
                 ],
@@ -416,7 +416,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             },
             "sessionStartTime": "2025-10-01T15:30:04",
             "sessionEndTime": "2025-10-01T15:31:01",
-            "channelSpecificUserId": "cs-ddee2921-797d-5751-8786-bf060407f5a9/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb3xxxx",
+            "channelSpecificUserId": "cs-ddee2921-797d-5751-8786-bf060407xxxx/22f2681a-23d9-420a-9852-5bdab917afd61f1ce2a8-b737-48ee-89b3-bfeeacb3xxxx",
             "userId": "u-fb8994f9-3a52-58ed-8f73-81204e7xxxx",
             "destinations": [
                 {
@@ -471,19 +471,19 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 |-----------------|-----------------|-------------|---------|
 | conversationId | type-prefixed-guid | An ID generated by SmartAssist for this conversation. | c-7b08889-539d-408d-a3e6-9e6ae059xxxx |
 | sessionId | internal value | A bot-generated ID for this conversation. | 63bd199c197b3646dadexxxx |
-| channel | character string | Name of the channel. Values – Web/Mobile Client, System Mail, or Voice. | Web / Mobile Client |
+| channel | character string | Name of the channel. Values-Web/Mobile Client, System Mail, or Voice. | Web / Mobile Client |
 | sessionStartTime | YYYY-MM-DDTHH SS | Start time of the session. | 2023-01-10 2:25:54 |
 | sessionEndTime | YYYY-MM-DDTHH SS | End time of the session. | 2023-01-10 2:25:54 |
 | botId | type-prefixed-guid | Identifier of the bot involved. | st-ae8470ab-8ecb-51fb-8e13-c87dc66fxxxx |
 | userId | type-prefixed-guid | SmartAssist’s own generated user ID. | u-8413fd99-4ded-5f6d-8c1a-176dc66xxxx |
 | channelSpecificUserId | no known format | User ID passed by the channel. | jane.doe@example.com |
-| orgId | type-prefixed-guid | The organization ID. | o-5a0da1e4-2df3-5cec-9ee4-af0b2efd3c4f |
+| orgId | type-prefixed-guid | The organization ID. | o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx |
 | smartStatus | String | The live status of the session. | CLOSED |
 | Reason | character string | The reason for the status. | NO AGENTS AVAILABLE |
 | disconnectingEvent | character string | The final event leading to the conversation ending. | System Hangup |
 | errorDetails | String | Details of any error that occurred. | — |
 | finalStatus | character string | Completion status of the conversation. | CLOSED or BotResolved |
-| automationBotIDs | Array | List of automation bots involved in the session. | [ "st-e5c6ae6b-c388-5acd-93b7-bada87a7363f" ] |
+| automationBotIDs | Array | List of automation bots involved in the session. | [ "st-e5c6ae6b-c388-5acd-93b7-bada87axxxx" ] |
 | isVoicemail | Boolean | Indicates if the session was a voicemail. | NO |
 | Direction | String | Direction of the call. Values: Inbound, Outbound. | Inbound |
 | dispositions | array of strings | Disposition assigned to the conversation. | [ "Requires Supervisor Attention" ] |
@@ -492,27 +492,27 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | metaInfo.caller | string | Phone number of the caller. | +132136xxxxx |
 | metaInfo.callee | string | Phone number of the callee. | +133434xxxxx |
 | metaInfo.callerHost | string | IP address of the caller. | 54.xxx.xx.2 |
-| metaInfo.userId | string | Unique identifier of the user. | u-4245d01e-6124-587a-85b2-939fe3cf27ab |
-| metaInfo.dialedNumber | string | Number dialed by the caller. | +13343445731 |
+| metaInfo.userId | string | Unique identifier of the user. | u-4245d01e-6124-587a-85b2-939fe3cfxxxx |
+| metaInfo.dialedNumber | string | Number dialed by the caller. | +1234567890 |
 | metaInfo.agentTransferConfig | object | Contains configuration for agent transfer including skills, bot, and last intent. | — |
-| metaInfo.agentTransferConfig.skillsIds | array | ID of each skill of the agent handling this conversation. | [ "6834045b2e9b90fa31c8bee7", "6834045b2e9b90fa31c8bee7" ] |
+| metaInfo.agentTransferConfig.skillsIds | array | ID of each skill of the agent handling this conversation. | [ "6834045b2e9b90fa31c8xxxx", "6834045b2e9b90fa31c8xxxx" ] |
 | metaInfo.agentTransferConfig.overrideAgents | boolean | Indicates whether agent override is enabled. | false |
 | metaInfo.agentTransferConfig.overrideValues | array | Custom override values for agent transfer. | — |
 | metaInfo.agentTransferConfig.assistEvents | object | Configuration for assist-related events. | — |
 | metaInfo.agentTransferConfig.assistEvents.startEvent | object | Configuration details for the assist start event. | — |
 | metaInfo.agentTransferConfig.assistEvents.startEvent.startEvent.isEnabled | boolean | Indicates whether the assist start event is enabled. | false |
 | metaInfo.agentTransferConfig.lastIntentName | string | Last intent posted to the bot by the user. | Pay Bill |
-| metaInfo.agentTransferConfig.lastIntentuserInput | string | Input posted by the user. | Can you please pay my bill? |
+| metaInfo.agentTransferConfig.lastIntentuserInput | string | Input posted by the user. | Can you pay my bill? |
 | metaInfo.agentTransferConfig.dialog_tone | array | Dialog tone settings. | — |
-| metaInfo.agentTransferConfig.accountId | string | Agent account ID for transfer configuration. | 674daf4bc9d17f4dc07034a4 |
+| metaInfo.agentTransferConfig.accountId | string | Agent account ID for transfer configuration. | 674daf4bc9d17f4dc070xxxx |
 | metaInfo.ipAddress | String | IP address from which the user accessed the session. | 103.xxx.xxx.xxx |
-| metaInfo.hostDomain | String | Domain of the platform instance handling the interaction. | https://eu-platform.kore.ai |
+| metaInfo.hostDomain | String | Domain of the platform instance handling the interaction. | `https://eu-platform.kore.ai` |
 | metaInfo.os | String | Operating system of the user’s device. | Windows |
 | metaInfo.customerinfo | Object | Contains customer details captured during the session. | — |
-| metaInfo.customerinfo.CustomerPhone | String | Customer’s phone number. | 15055150310 |
+| metaInfo.customerinfo.CustomerPhone | String | Customer’s phone number. | 1234567890 |
 | metaInfo.customerinfo.CenterPhone | String | Contact number of the service center. | "" |
 | metaInfo.customerinfo.CustomerFirstName | String | Customer’s first name. | Jimmy |
-| metaInfo.customerinfo.CustomerLastName | String | Customer’s last name. | Conroy |
+| metaInfo.customerinfo.CustomerLastName | String | Customer’s last name. | Doe |
 | metaInfo.customerinfo.CustomerEmail | String | Customer’s email address. | jane.doe@example.com |
 | metaInfo.workinghours | object | Defines the agent’s working days and hours. | — |
 | metaInfo.workinghours.workdays | String | The working days of the agent. | mon,tue,wed,thu,fri |
@@ -525,16 +525,16 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | metaInfo.activationStatus | String | The activation status of agent. | active |
 | metaInfo.firstName | String | The first name of the agent. | — |
 | metaInfo.lastName | String | The last name of the agent. | — |
-| metaInfo._id | String | Internal identifier for the user object. | u-c1ca58fb-2208-52f8-9f9c-d542316e8e78 |
+| metaInfo._id | String | Internal identifier for the user object. | u-c1ca58fb-2208-52f8-9f9c-d542316exxxx |
 | metaInfo.identities | Array of objects | Contains the list of mapped identities for the user. | — |
-| metaInfo.identities.val | string | Mapped identity value. | cs-259844d3-7827-5f33-ae7c-9d790e6d7548/c246a41e-91c1-418f-a4c3-a5d4ad599f43 |
+| metaInfo.identities.val | string | Mapped identity value. | cs-259844d3-7827-5f33-ae7c-9d790e6dxxxx/c246a41e-91c1-418f-a4c3-a5d4ad59xxxx |
 | metaInfo.identities.type | string | Type of identity mapping. | mapped |
 | metaInfo.transcribeConfig | object | Configuration for call transcription. | — |
 | metaInfo.transcribeConfig.transcribe | Boolean | Indicates whether transcription is enabled for the session. | true |
 | destinations | array of objects | One object for each Queue or Agent that the call was transferred to. | — |
-| destinations.destinationType | String | Destination for any transfer – distinguishes direct-to-agent vs. queue. | QueueEntry |
+| destinations.destinationType | String | Destination for any transfer-distinguishes direct-to-agent vs. queue. | QueueEntry |
 | destinations.queueId | type-prefixed-guid | SmartAssist’s internal ID for the Queue. | qu-123dbe9-c752-464d-a9be-1d0e43b6xxxx |
-| destinations.queueName | character string | Name of the queue. | Residential – Sales |
+| destinations.queueName | character string | Name of the queue. | Residential-Sales |
 | destinations.CallbackOpted | Boolean | Indicates whether the customer opted for a callback. | True |
 | destinations.CallbackOptedTime | String (ISO 8601 datetime) | Timestamp when the customer opted for the callback (only if CallbackOpted = true). | 2025-09-30T06:34:48.810Z |
 | destinations.userCallbackAcceptTime | String (ISO 8601 datetime) | Timestamp when the customer accepted the callback initiated by the agent (only if CallbackOpted = true). | 2025-09-30T06:35:00.589Z |
@@ -562,7 +562,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | destinations.respondingAgent.assignedAt | YYYY-MM-DDTHH SS | Time at which this contact was assigned to this Agent. | 2023-01-10 2:25:54 |
 | destinations.respondingAgent.acceptedTime | YYYY-MM-DDTHH SS | Time at which this Agent accepted the contact. | 2023-01-10 2:25:54 |
 | destinations.nonRespondingAgents | Array of objects | Details of agents assigned but didn't respond. | — |
-| destinations.nonRespondingAgents.agentId | String | Unique identifier of non-responding agent. | u-3ea001b4-664a-58b6-8108-b8bca375c166 |
+| destinations.nonRespondingAgents.agentId | String | Unique identifier of non-responding agent. | u-3ea001b4-664a-58b6-8108-b8bca375xxxx |
 | destinations.nonRespondingAgents.agentNotes | Array of Strings | Notes or remarks for the interaction. | The customer initiated a conversation with the bot for various requests, including connecting to an agent. |
 | destinations.nonRespondingAgents.destinationType | String | Segment type of the interaction. | AgentSegment |
 | destinations.nonRespondingAgents.email | String | Email address of the agent. | jane.doe@example.com |

@@ -15,7 +15,7 @@ You can configure a specific timeout for your model's endpoint. Enter the timeou
 
 ## Undeploy the Model 
 
-You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
+You can undeploy the model if it's no longer in use. Undeploying the model will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
 
 ## Delete the Model
 
