@@ -119,7 +119,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - AI for Process Overview: getting-started/introduction.md
+    - Introduction to AI for Process: getting-started/introduction.md
     - Accessing AI for Process: getting-started/accessing-ai-for-process.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
