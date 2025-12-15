@@ -15,13 +15,13 @@ In the response, search for SIPTRUNK as shown in the figure. If the SIPTRUNK sta
 
 ## Agent Transfer is Not Working
 
-If a request is not being assigned to an available agent and the app is responding with "No agents are available right now," even though agents are online, follow these steps:
+If a request isn't being assigned to an available agent and the app is responding with "No agents are available right now," even though agents are online, follow these steps:
 
 1. **Verify Voice Enablement**: First, ensure the current Administrator or Agent has "**Voice Enabled**" in the User Settings.
 2. **Access User Settings**: Open the **Users** section as shown in the image, then navigate to the settings of the currently logged-in user.  
    <img src="../images/users-page.png" alt="Users Page" title="Users Page" style="border: 1px solid gray; zoom:80%;">
 
-    Check if **Voice Experience** is enabled for the corresponding app language. If it is not enabled, turn on the "Enable Voice Settings" toggle and check the language settings to ensure the user is available for voice support in the selected language.  
+    Check if **Voice Experience** is enabled for the corresponding app language. If it's not enabled, turn on the "Enable Voice Settings" toggle and check the language settings to ensure the user is available for voice support in the selected language.  
       <img src="../images/voice-experience.png" alt="Enable Voice Settings" title="Enable Voice Settings" style="border: 1px solid gray; zoom:80%;">
 
     In **Outgoing Voice Agent Transfer** settings, ensure the transfer type is set to **SmartAssist** (3rd block). This will ensure the request is assigned to the SmartAssist agent desktop.  
@@ -32,12 +32,12 @@ If a request is not being assigned to an available agent and the app is respondi
     In case of issues, check the **WebSocket Connection** and **Registration** in the console (Agent Desktop) to ensure everything is properly connected and functioning.  
       <img src="../images/network-connection.png" alt="Websocket Connection" title="Websocket Connection" style="border: 1px solid gray; zoom:80%;">
 
-    In the WebSocket (WS), check if the URL **sbc1-korevg-np.kore.ai** (or the environment-specific URL) is used. Verify that both agent and Voice Gateway are connected.
+    In the WebSocket (WS), check if the URL `sbc1-korevg-np.kore.ai` (or the environment-specific URL) is used. Verify that both agent and Voice Gateway are connected.
 
-    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response is not received, it indicates an issue with Voice Gateway. You can report this to the Support team.
+    Check if the **REGISTER** request is responding with a **200 OK** status. If the 200 OK response isn't received, it indicates an issue with Voice Gateway. You can report this to the Support team.
 
 ## TTS Error During Voice Call
 
-If a “TTS ERROR” appears when making a Voice Call and executing the Start Flow tied to an automation, it indicates that the voice name was not properly selected in the configuration.
+If a “TTS ERROR” appears when making a Voice Call and executing the Start Flow tied to an automation, it indicates that the voice name wasn't properly selected in the configuration.
 
 Even if you select a voice and save the configuration, the system may not register the selection. To resolve this issue, reselect the desired voice and then make a minor edit in the flow description (for example, add or remove a character). This action prompts the system to recognize the change, ensuring that the TTS (Text-to-Speech) functions correctly and the audio plays as expected.

@@ -70,33 +70,33 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
     "data": [
         {
             "userId": "u-0572f8c7-970b-5c78-ab20-e9c1a10fxxxx",
-            "firstName": "Nick",
-            "lastName": "J",
-            "email": "nick.j@domain.com",
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "john.doe@example.com",
             "customId": "101010",
             "timeInterval": []
         },
         {
             "userId": "u-05ca6ec1-05d3-5915-b874-29f24aa4xxxx",
-            "firstName": "Charan",
-            "lastName": "0929",
-            "email": "charan951517@domain.com",
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "email": "jane.doe@example.com",
             "customId": "",
             "timeInterval": []
         },
         {
             "userId": "u-0dbab89e-b373-5dd2-8a9b-cf2d8e54xxxx",
             "firstName": "John",
-            "lastName": "Smith",
-            "email": "john.smith@domain.com",
+            "lastName": "Doe",
+            "email": "john.doe@example.com",
             "customId": "",
             "timeInterval": []
         },
         {
             "userId": "u-22948759-ced0-5cca-bbd3-abd91946xxxx",
-            "firstName": "test agent",
-            "lastName": "01",
-            "email": "testagent@domain.com",
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "email": "jane.doe@example.com",
             "customId": "12",
             "timeInterval": []
         },
@@ -104,7 +104,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "userId": "u-22ebdbd2-64b5-5ba9-9285-754276ecxxxx",
             "firstName": "John",
             "lastName": "Doe",
-            "email": "john.doe@domain.com",
+            "email": "john.doe@example.com",
             "customId": "",
             "timeInterval": []
         },
@@ -112,15 +112,15 @@ curl --location --request POST 'https://{{host}}/agentassist/api/public/analytic
             "userId": "u-29f05090-1440-5c80-8096-7eb47c07xxxx",
             "firstName": "Jane",
             "lastName": "Doe",
-            "email": "jane.doe@domain.com",
+            "email": "jane.doe@example.com",
             "customId": "065582",
             "timeInterval": []
         },
         {
             "userId": "u-2b991240-7f3e-53a1-a09c-aba82a4cxxxx",
-            "firstName": "Joce",
-            "lastName": "Tay",
-            "email": "joce.tay@domain.com",
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "john.doe@example.com",
             "customId": "505951",
             "timeInterval": [
                 {
