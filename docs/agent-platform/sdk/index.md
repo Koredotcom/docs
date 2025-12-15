@@ -60,7 +60,7 @@ app.start(
 ```
 
 ## Quick Links
-
+ 
 <div class="grid cards" markdown>
 
 - :material-clock-fast:{ .lg .middle } __Getting Started__
