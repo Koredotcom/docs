@@ -123,7 +123,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Platform Overview: getting-started/introduction.md
+    - Introduction to Agent Platform: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
     - Outbound IP Addresses: getting-started/outbound-ip-address.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
