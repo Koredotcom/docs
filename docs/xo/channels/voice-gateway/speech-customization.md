@@ -17,7 +17,7 @@ You can apply Call Control Parameters at either the Session or Node level, offer
 * **Session-Level Parameters**: Add the prefix `session.` to apply parameters throughout the session (for example, `session.ttsprovider`).
 * **Node-Level Parameters**: Add the prefix node. to apply parameters only at a specific node (for example, `node.ttsprovider`).
 * **Default Behavior**: Parameters without a prefix are considered session-level by default.
-* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties will be applied.
+* Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties apply.
 
 ## Node Level Call Control
 
@@ -30,7 +30,7 @@ The call control section is Available In [Entity Node](../../automation/use-case
 
 When updating language settings or modifying Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) parameters in Call Control Parameters, users can specify the updated field along with a minimal set of required parameters.
 
-For example, if a user has already configured the STT provider and language in the call control parameters and wants to add existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
+For example, if a user has configured the Speech-to-Text (STT) provider and language in the call control parameters and wants to add existing values. Users only need to provide the additional sttLanguage parameter without redefining the previously set values.
 
 This behavior applies to Session-Level Call Control Parameters.
 
@@ -53,7 +53,7 @@ This behavior applies to Session-Level Call Control Parameters.
 }
 ```
 
-In this scenario, the system retains the existing **sttProvider** and previously set **sttLanguage**, ensuring that only the new parameter is added without requiring users to re-enter unchanged values.
+In this scenario, the system retains the existing **sttProvider** and previously set **sttLanguage**, ensuring that only the new parameter adds without requiring users to re-enter unchanged values.
 
 ## Supported Speech Engines (ASR/TTS)
 
@@ -100,20 +100,17 @@ TTS services also use a selected voice (for example, female or male) to respond.
 | `ttsProvider`       | String   | All                   | Sets the text-to-speech provider, similar to `sttProvider`.                                                                                 | `"ttsProvider": "microsoft"`                                                                                                                                               |
 | `ttsLanguage`       | String   | All                   | Sets the language used for TTS. Ensure it matches the `voiceName`.                                                                          | `"ttsLanguage": "en-US"`                                                                                                                                                   |
 | `voiceName`         | String   | All                   | Required for TTS output. The voice must align with `ttsLanguage`.                                                                           | `"voiceName": "en-AU-NatashaNeural"`<br>Example:<br>`json<br>{<br>  "ttsProvider": "microsoft",<br>  "ttsLanguage": "en-AU",<br>  "voiceName": "en-AU-NatashaNeural"<br>}` |
-| `enableSpeechInput` | Boolean  | All                   | When set to `false`, disables speech input and allows only DTMF input. Default is `true`. Use this only through the Call Control Parameter. | `"enableSpeechInput": false`                                                                                                                                               |
+| `enableSpeechInput` | Boolean  | All                   | When set to `false`, disables speech input and lets only DTMF input. Default is `true`. Use this only through the Call Control Parameter. | `"enableSpeechInput": false`                                                                                                                                               |
 
 ### Labels and Fallback Provider Related Parameters
 
-Label – Assign/Create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your application to specify which service to use.
+Label-Assign/Create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your application to specify which service to use.
 
 **How to Configure Label**
 
-1. Add a speech service inside the Speech tab.
-
-2. Select a provider and add a label with a unique name.
-
-3. Use the same label in the call control parameter.
-
+1. Add a speech service inside the Speech tab.  
+2. Select a provider and add a label with a unique name.  
+3. Use the same label in the call control parameter.  
 4. At the same node where you use fallback call control parameters, you must also pass the primary Recognizer and Synthesizer.
 
 Examples:
@@ -177,7 +174,7 @@ Examples:
     * If the current provider fails, Voice Gateway switches to the fallback provider.
     * Fallback properties are applied at the session level.
 
-| Parameter              | Type   | Description                                                                            | Example Values      |
+| **Parameter**              | **Type**   | **Description**                                                                            | **Example Values**      |
 | ---------------------- | ------ | -------------------------------------------------------------------------------------- | ------------------- |
 | `sttLabel`             | String | Uniquely identifies the ASR engine in Voice Gateway.                                   | `my_azure-US`       |
 | `sttFallbackLabel`     | String | Fallback label for ASR; switch happens on error. Prefer same vendor, different region. | `my_azure_Europe`   |
@@ -191,7 +188,7 @@ Examples:
 
 ### Continuous ASR Related Parameters
 
-Continuous ASR (Automatic Speech Recognition) allows the speech-to-text engine to handle user inputs like phone numbers or customer IDs that may include pauses between utterances. This improves recognition accuracy for digit or character strings.
+Continuous ASR (Automatic Speech Recognition) lets the speech-to-text engine to handle user inputs like phone numbers or customer IDs that may include pauses between utterances. This improves recognition accuracy for digit or character strings.
 
 !!! Note
 
@@ -205,24 +202,24 @@ Microsoft Azure offers a property called AzureSegmentationSilenceTimeout that pe
 
 Both `continuousASRTimeoutInMS` and `AzureSegmentationSilenceTimeout` apply at the session level. They remain active for the entire call and can be updated at individual nodes as needed.
 
-| Parameter                  | Type                  | Scope | Description                                                                                                                                                                                | Example            |
+| **Parameter**                  | **Type**                  | **Scope** | **Description**                                                                                                                                                                                | **Example**            |
 | -------------------------- | --------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| `continuousASRTimeoutInMS` | Number (milliseconds) | ALL   | Specifies the silence duration to wait after receiving a transcript before returning the result. If another transcript is received within this timeout, the input is merged and continued. | `5000` (5 seconds) |
-| `continuousASRDigits`      | Character (DTMF key)  | ALL   | Specifies a DTMF key that, if pressed, immediately ends the speech recognition process and returns the gathered input.                                                                     | `&`                |
+| `continuousASRTimeoutInMS` | Number (milliseconds) | All   | Specifies the silence duration to wait after receiving a transcript before returning the result. If another transcript is received within this timeout, the input is merged and continued. | `5000` (5 seconds) |
+| `continuousASRDigits`      | Character (DTMF key)  | All   | Specifies a DTMF key that, if pressed, immediately ends the speech recognition process and returns the gathered input.                                                                     | `&`                |
 
 ### Barge-In Related Parameters
 
-Barge-In allows the Voice Gateway to detect and respond when a user interrupts the bot by speaking or entering DTMF digits while the bot is still responding. This enables quicker interactions by preventing users from waiting for the bot to finish speaking.
+Barge-In allows the Voice Gateway to detect and respond when a user interrupts the bot by speaking or entering DTMF digits while the bot responds. This enables quicker interactions by preventing users from waiting for the bot to finish speaking.
 
 !!! Note
 
     Barge-In applies at the node level.
 
-| Parameter             | Type                     | Scope | Description                                                                                                                     | Example |
+| **Parameter**             | **Type**                     | **Scope** | **Description**                                                                                                                     | **Example** |
 | --------------------- | ------------------------ | ----- | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| `listenDuringPrompt`  | Boolean (`true`/`false`) | ALL   | If set to `false`, the bot will **not** listen to user speech until it finishes playing the response. Defaults to `true`.       | `true`  |
-| `bargeInMinWordCount` | Number                   | ALL   | When barge-in is enabled, this defines the **minimum number of words** required to interrupt the bot's speech. Defaults to `1`. | `1`     |
-| `bargeInOnDTMF`       | Boolean (`true`/`false`) | ALL   | If `true`, DTMF input during bot speech interrupts playback, and the system starts collecting speech input.                     | `true`  |
+| `listenDuringPrompt`  | Boolean (`true` or `false`) | All   | If set to `false`, the bot won't listen to user speech until it finishes playing the response. Defaults to `true`.       | `true`  |
+| `bargeInMinWordCount` | Number                   | All   | When barge-in is enabled, this defines the **minimum number of words** required to interrupt the bot's speech. Defaults to `1`. | `1`     |
+| `bargeInOnDTMF`       | Boolean (`true` or `false`) | All   | If `true`, DTMF input during bot speech interrupts playback, and the system starts collecting speech input.                     | `true`  |
 
 ### Timeout Related Parameters
 
@@ -232,14 +229,14 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
     All timeout-related parameters apply at the node level.
 
-| Parameter                        | Type                  | Scope | Description                                                                                                                                       | Example                        |
+| **Parameter**                        | **Type**                  | **Scope** | Description                                                                                                                                       | **Example**                        |
 | -------------------------------- | --------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| `userNoInputTimeoutMS`           | Number (milliseconds) | ALL   | Maximum wait time to receive user input. If set to `0`, Voice Gateway waits indefinitely.                                                         | `"userNoInputTimeoutMS": 20000 → waits 20 seconds before timeout.` |
-| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds) | ALL   | Timeout between DTMF digit inputs. If the user doesn't enter another digit within this time, the gateway submits the collected digits to the bot. |               `"dtmfCollectInterDigitTimeoutMS": 3000 → waits up to 3 seconds between key presses.`                 |
-| `dtmfCollectSubmitDigit`         | Number                | ALL   | Defines a special DTMF digit that submits all collected digits immediately to the bot, bypassing timeout and max digit wait.                      |            `"dtmfCollectSubmitDigit": 9 → pressing 9 submits the digits entered so far.`                    |
-| `dtmfCollectMaxDigits`           | Number                | ALL   | Maximum number of DTMF digits to collect. If the user enters more than this number, only the first `maxDigits` are accepted.                      | `"dtmfCollectMaxDigits": 5 → only the first 5 digits are accepted.`     |
-| `dtmfCollectminDigits`           | Number                | ALL   | Minimum number of DTMF digits expected. Defaults to `1`.                                                                                          |                       `"dtmfCollectminDigits": 3 → requires at least 3 digits before submission.`         |
-| `dtmfCollectnumDigits`           | Number                | ALL   | Exact number of DTMF digits to collect. The bot waits until this number is reached before processing.                                             |           `"dtmfCollectnumDigits": 6 → system waits until exactly 6 digits are entered.`                     |
+| `userNoInputTimeoutMS`           | Number (milliseconds) | All   | Maximum wait time to receive user input. If set to `0`, Voice Gateway waits indefinitely.                                                         | `"userNoInputTimeoutMS": 20000 → waits 20 seconds before timeout.` |
+| `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds) | All   | Timeout between DTMF digit inputs. If the user doesn't enter another digit within this time, the gateway submits the collected digits to the bot. |               `"dtmfCollectInterDigitTimeoutMS": 3000 → waits up to 3 seconds between key presses.`                 |
+| `dtmfCollectSubmitDigit`         | Number                | All   | Defines a special DTMF digit that submits all collected digits immediately to the bot, bypassing timeout and max digit wait.                      |            `"dtmfCollectSubmitDigit": 9 → pressing 9 submits the digits entered so far.`                    |
+| `dtmfCollectMaxDigits`           | Number                | All   | Maximum number of DTMF digits to collect. If the user enters more than this number, only the first `maxDigits` are accepted.                      | `"dtmfCollectMaxDigits": 5 → only the first 5 digits are accepted.`     |
+| `dtmfCollectminDigits`           | Number                | All   | Minimum number of DTMF digits expected. Defaults to `1`.                                                                                          |                       `"dtmfCollectminDigits": 3 → requires at least 3 digits before submission.`         |
+| `dtmfCollectnumDigits`           | Number                | All   | Exact number of DTMF digits to collect. The bot waits until this number is reached before processing.                                             |           `"dtmfCollectnumDigits": 6 → system waits until exactly 6 digits are entered.`                     |
 
 ## Common ASR Parameters
 
@@ -247,13 +244,13 @@ These parameters control how long the Voice Gateway waits for user input (speech
 |------------------------------|----------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | `alternativeLanguages` (Session Level) | Array of Objects     | Google, Microsoft, Deepgram      | Array of alternative languages the user might speak. Based on the utterance, the ASR chooses from the defined options.                                        | `"alternativeLanguages": [ { "language": "de-DE", "voiceName": "de-DE-KatjaNeural" }, { "language": "fr-FR", "voiceName": "fr-FR-DeniseNeural" } ]` |
 | `alternativeLanguages` (Node Level)    | Array of Objects     | Google, Microsoft, Deepgram      | In addition to `voiceName` and `language`, this parameter supports `sttProvider`, `ttsProvider`, and `label`. If a label is configured initially, it updates automatically when the language changes. | `node.alternativeLanguages = [ { "language": "en-ES", "voiceName": "es-ES-ArabellaMultilingualNeural" }, { "language": "en-IN", "voiceName": "en-IN-PrabhatNeural", "ttsLabel": "microsoft2", "ttsProvider": "microsoft", "sttProvider": "microsoft2" } ]` |
-| `sttMinConfidence`           | Number (0.1–0.9)     | ALL                              | If the transcript's confidence score is below this threshold, the input is ignored and the timeout prompt is triggered. Ensures only high-confidence transcriptions are accepted. | `"sttMinConfidence": 0.5` |
+| `sttMinConfidence`           | Number (0.1–0.9)     | All                              | If the transcript's confidence score is below this threshold, the input is ignored and the timeout prompt is triggered. Ensures only high-confidence transcriptions are accepted. | `"sttMinConfidence": 0.5` |
 | `hints` with phrase-level boost | Array of Objects  | Google, Nvidia                   | Suggests specific phrases to the STT engine to improve accuracy. You can assign a boost value per phrase. Useful for distinguishing similar-sounding words.   | `"hints": [ { "phrase": "benign", "boost": 50 }, { "phrase": "malignant", "boost": 10 }, { "phrase": "biopsy", "boost": 20 } ]` |
 | `hints` with `hintsBoost`    | Array + Number       | Google, Microsoft, Nvidia        | Instead of boosting each phrase individually, apply a single boost value to the entire array of hints.                                                        | `"hints": ["benign", "malignant", "biopsy"], "hintsBoost": 50` |
 | `sttDisablePunctuation`      | Boolean              | Google, Microsoft                | Controls punctuation in ASR output. `false` enables punctuation (default); `true` disables it.                                                                | `"sttDisablePunctuation": true` |
-| `vadEnable`                  | Boolean              | ALL                              | If `true`, the system delays connecting to the cloud recognizer until voice activity is detected.                                                             | `"vadEnable": true` |
-| `vadVoiceMS`                 | Number (milliseconds)| ALL                              | Specifies how many milliseconds of detected speech are required before connecting to the cloud recognizer. Only applies if `vadEnable` is `true`.             | `"vadVoiceMS": 500` |
-| `vadMode`                    | Number (0–3)         | ALL                              | Determines the sensitivity of the voice activity detector. Lower values make it more sensitive. Only applies if `vadEnable` is `true`.                        | `"vadMode": 2` |
+| `vadEnable`                  | Boolean              | All                              | If `true`, the system delays connecting to the cloud recognizer until voice activity is detected.                                                             | `"vadEnable": true` |
+| `vadVoiceMS`                 | Number (milliseconds)| All                              | Specifies how many milliseconds of detected speech are required before connecting to the cloud recognizer. Only applies if `vadEnable` is `true`.             | `"vadVoiceMS": 500` |
+| `vadMode`                    | Number (0–3)         | All                              | Determines the sensitivity of the voice activity detector. Lower values make it more sensitive. Only applies if `vadEnable` is `true`.                        | `"vadMode": 2` |
 
 ### Microsoft ASR
 
@@ -353,17 +350,17 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `disableTtsCache`  | Boolean              | ALL                                   | Using cache for calling TTS engine if same statement or word found.                                                                                                                                                              |    `"disableTtsCache": true`                                            |
 | `ttsEnhancedVoice` | String               | AWS                                   | Amazon Polly has four voice engines that convert input text into life-like speech. These include Generative, Long-form, Neural, and Standard. To use an Amazon Polly voice                                                      | `"ttsEnhancedVoice": "neural"` |
 | `ttsGender`        | String (MALE, FEMALE, NEUTRAL) | Google                                |                                                                                                                                                                                                                                   |   `"ttsGender": "FEMALE"`                                             |
-| `ttsLoop`          | Number / String      | ALL                                   | The `ttsLoop` parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message will be played multiple times in a loop.       |`"ttsLoop": 2` |
+| `ttsLoop`          | Number / String      | ALL                                   | The `ttsLoop` parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message plays multiple times in a loop.       |`"ttsLoop": 2` |
 | `earlyMedia`       | Boolean              | ALL                                   | The **Early Media** parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected.                                                                             |        `"earlyMedia": true`                                        |
-| `ttsOptions`       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It is used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
+| `ttsOptions`       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It's used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
 
 ### TTS Options in Voice Gateway
 
-Voice Gateway now supports a `ttsOptions` parameter that allows bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
+Voice Gateway now supports a `ttsOptions` parameter that lets bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
 
 !!! Note
 
-    Each TTS provider will have its own set of customizable parameters. For more detailed information on the parameters they support, refer to their official websites.
+    Each TTS provider has its own set of customizable parameters. For more detailed information on the parameters they support, refer to their official websites.
 
 ### Structure of `ttsOptions`
 
@@ -372,14 +369,14 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 #### ElevenLabs
 
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
-* `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/speech-synthesis/voice-settings).
+* `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/creative-platform/playground/text-to-speech#voice-settings).
 * `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values below 1 will slow down the speech, while values above 1 will speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
 
 #### PlayHT
 
 * `quality`: Sets the quality of the audio output.
 * `speed`: Controls the playback speed.
-* `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Allow further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
+* `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Let further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
 * `Voice_engine`: The voice engine used to synthesize the voice. It defaults to PlayDialog.
 
 !!! Note
@@ -430,8 +427,8 @@ Continuous ASR (Automatic Speech Recognition) is a feature that allows Speech-to
 
 | **Parameter**              | **Type**                         | **Supporting STT/TTS**                        | **Description**                                                                                                                                                                                                                                                                                                                                     |
 | -------------------------- | -------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `continuousASRTimeoutInMS` | Number (milliseconds)            | STT – Google, Microsoft<br>TTS – Not Required | Duration of silence (in milliseconds) to wait after receiving a transcript from the STT vendor before returning the result. If another transcript is received before this timeout, transcripts are combined and recognition continues. The combined result is returned after silence exceeds the timeout. <br><br>**Example:** `5000` for 5 seconds |
-| `continuousASRDigits`      | Digit (for example, `*`, `%`, `&`, `#`) | STT – Google, Microsoft<br>TTS – Not Required | A DTMF key that terminates the gather operation and returns the collected results immediately.
+| `continuousASRTimeoutInMS` | Number (milliseconds)            | STT-Google, Microsoft<br>TTS-Not Required | Duration of silence (in milliseconds) to wait after receiving a transcript from the STT vendor before returning the result. If another transcript is received before this timeout, transcripts are combined and recognition continues. The combined result is returned after silence exceeds the timeout. <br><br>**Example:** `5000` for 5 seconds |
+| `continuousASRDigits`      | Digit (for example, `*`, `%`, `&`, `#`) | STT-Google, Microsoft<br>TTS-Not Required | A DTMF key that terminates the gather operation and returns the collected results immediately.
 
 ### Handling Bot Delay
 

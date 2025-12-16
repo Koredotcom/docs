@@ -118,27 +118,28 @@ Select the existing CMK in the console and copy its ARN.
 3. Enter the following policy:
 
 
-    ```
-    {
-    "Version": "2012-10-17",
-    "Statement": [
-    { "Sid": "AllowKMSOperations",
-        "Effect": "Allow"
-        "Action": [
-        "kms:Encrypt",
-        "kms:Decrypt",
-        "kms:ReEncrypt*",
-        "kms:GenerateDataKey*",
-        "kms:DescribeKey"
-        ],
-        "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
-    }
-    ]
-    }
+            ```
+            {
+            "Version": "2012-10-17",
+            "Statement": [
+            { "Sid": "AllowKMSOperations",
+                "Effect": "Allow"
+                "Action": [
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+                "kms:DescribeKey"
+                ],
+                "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
+            }
+            ]
+            }
 
-    ```
-4. Name the policy (for example, `KoreByokKmsPolicy`)  
-5. Create the policy And attach it to your IAM role.
+            ```
+
+3. Name the policy (for example, `KoreByokKmsPolicy`)  
+4. Create the policy and attach it to your IAM role.
 
 **Step 4: Update CMK Key Policy**
 
@@ -195,16 +196,8 @@ aws kms describe-key
 **Option 2: Azure CLI**
 
 1. Open Azure Cloud Shell or install Azure CLI locally.
-2. Login as Global Administrator:
-    
-    ```
-    az login
-    ```  
-3. Create service principal:
-
-    ```
-    az ad sp create --id '<KORE-CLIENT-ID>'
-    ```
+2. Login as Global Administrator:  ```az login```
+3. Create service principal: ```az ad sp create --id '<KORE-CLIENT-ID>'```
 
 **Step 2: Prepare Key Vault and Key**
 
@@ -230,13 +223,14 @@ Create RSA Key (if needed)
 **Step 3: Configure Key Vault Access**
 
 Assign Key Vault Permissions  
-1. Navigate to **Access control (IAM)** in your Key Vault.  
-2. Click **Add role assignment**.  
-3. Configure:  
-    * **Role**: Key Vault Crypto User    
-    * **Assign access to**: User, group, or service principal    
+
+1. Navigate to **Access control (IAM)** in your Key Vault.
+2. Click **Add role assignment**. 
+3. Configure:
+    * **Role**: Key Vault Crypto User
+    * **Assign access to**: User, group, or service principal 
     * **Members**: Search for Kore application name  
-4. Click **Review + assign**
+3. Click **Review + assign**
 
 **Step 4: Configure Network Access**
 
