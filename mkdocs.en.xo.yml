@@ -85,7 +85,7 @@ plugins:
         'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
         'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
         'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
-        
+        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/quality-ai-express.md'
 extra:
   version:
     provider: mike
@@ -581,7 +581,7 @@ nav:
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
           - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
-      - Quality AI Express: quality-ai/connectors/aws-s3-connector-setup-guide.md         
+      - Quality AI Express: quality-ai/configure/quality-ai-express.md      
       - Connectors: 
         - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md                  
       - Conversation Sources: quality-ai/configure/conversation-sources.md

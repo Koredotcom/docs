@@ -137,6 +137,41 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
     The Developer Portal view is only available on the **Microsoft Teams Desktop** client.
 
+
+
+
+1. Open the [Microsoft Teams Developer Portal](https://teams.microsoft.com/v2/).
+2. Click Create New App.  
+<img src="../images/teams-portal1.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+3. Enter the app name and select the version.  
+<img src="../images/teams-portal2.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+
+
+4. Enter the required App Details, ensuring the Microsoft App ID is identical across Azure, Platform, and the Developer Portal, and that all fields are completed to prevent errors during zip file creation.  
+<img src="../images/teams-portal3.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+
+5. Navigate to App Features → Bot Menu and select the Enter a bot ID. Enter the Microsoft App ID. Enable all required scopes.  
+<img src="../images/teams-portal4.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+
+6. Open App Package Editor. It displays manifest.json, color.png, and outline.png. Download the ZIP package.  
+<img src="../images/teams-portal5.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+
+7. **Upload the App into Teams**: Go to Teams → Apps → Manage your Apps → Upload a Custom App by clicking on the “Upload an app” option → Select the ZIP file.  
+<img src="../images/teams-portal6.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+
+8. **Add and Test the App**. Click Add, open the app, and test your app in Teams.  
+<img src="../images/teams-portal7.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
+
+
+
+
+
 ## Step 5: Approve the MS Teams App Publish Request
 
 The request to publish the MS Teams App must be approved by an MS Teams Admin. Log in to the [MS Teams Admin Portal](https://admin.teams.microsoft.com/) and proceed to **Teams apps > Manage apps**. Search for the app that you published in the earlier step. Select the app and change the Publishing status to **Published**. This completes the process for publishing your app for your Teams users.

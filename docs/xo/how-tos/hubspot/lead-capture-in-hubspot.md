@@ -56,7 +56,7 @@ Create your own custom authorization profile to obtain an access token and use i
     * Token Request URL
     * Scope
     * Refresh Token URL  
-    <img src="../images/new-authorisation-mechanism.png" alt="new-authorisation-mechanism" title="new-authorisation-mechanism" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/new-authorization-mechanism.png" alt="new-authorization-mechanism" title="new-authorization-mechanism" style="border: 1px solid gray; zoom:70%;">
 
 * Click **Save Auth** to save Authorization Profile
 * Select the new **Authorization Profile,** which you created to enable integration.
@@ -70,10 +70,10 @@ Create your own custom authorization profile to obtain an access token and use i
 ### Step 2: Install the Lead Capture Template for HubSpot CRM
 
 1. Go to the **Marketplace** and select **Lead Capture** for HubSpot CRM Dialog Template.  
-<img src="../images/marketplace_Leadcapture.png" alt="marketplace_Leadcapture" title="marketplace_Leadcapture" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/marketplace_Leadcapture.png" alt="marketplace_Lead capture" title="marketplace_Lead capture" style="border: 1px solid gray; zoom:70%;">
 
 2. The **Lead Capture** installation dialog box is displayed. Click **Install** to begin the installation.  
-<img src="../images/install_leadcapture.png" alt="install_leadcapture" title="install_leadcapture" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/install_leadcapture.png" alt="install_lead capture" title="install_lead capture" style="border: 1px solid gray; zoom:70%;">
  
 3. Enter the following details in the Lead Capture dialog task.
     1. **Name:** Name of the dialog.
@@ -92,7 +92,7 @@ Create your own custom authorization profile to obtain an access token and use i
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
 3. Click **Train** to complete the untrained utterances.
 4. Follow the prompts in the App console to create a lead, as shown below.  
-<img src="../images/appconsole.png" alt="appconsole" title="appconsole" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/appconsole.png" alt="app console" title="app console" style="border: 1px solid gray; zoom:70%;">
 5. Enter all lead details when prompted by the Chatbot, as shown below:  
 <img src="../images/lead_details.png" alt="lead_details" title="lead_details" style="border: 1px solid gray; zoom:70%;">
 
