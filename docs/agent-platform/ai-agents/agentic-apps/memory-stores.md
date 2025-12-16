@@ -202,18 +202,21 @@ Use the following format to create or update a record in the memory store. This 
 * data_object:  A JSON object representing the fields to write or update in the memory store.
 
 !!!note
+
   * Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
   * Fields not included in the update are retained as-is.
 
 **Javascript Examples**
 
   1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does't already exist, the following method will create a new record and set the firstname as John. 
+
   ``` 
   await memory.set_content("employee",{"firstname":"John"})
   ```
   If, however, a record exists but the firstname is different, this method will overwrite the first name in the same record.
 
   2. To update multiple fields, specify the fields to be updated in the data_object. 
+
   ```
   await memory.set_content("employee", {
     "firstname": "John",

@@ -45,7 +45,8 @@ Define the input parameters required by the tool to perform its task. For each p
     
 **Defining an object parameter** 
     
-When defining the object type of parameter, 
+When defining the object type of parameter,
+
 * use the *properties field* to list all the fields inside the object. This field is mandatory for an object type of parameter.
 * For each field in properties, specify the ***type (string, number, boolean, enum, or object)***, ***description***(optional), and ***required*** fields(optional).
 * Use the *required* array to list the mandatory fields of an object. 
