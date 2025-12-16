@@ -306,6 +306,5 @@ if __name__ == "__main__":
 
 <!--
 - 💬 [GitHub Discussions]
--->
-
 - 📧 [Support](../index.md#community-and-support)
+-->
