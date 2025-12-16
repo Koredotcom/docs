@@ -5,17 +5,19 @@
 
 The Conversation Intelligence dashboard displays post-interaction analytics and provides insights following customer interactions. It gathers and presents data from those interactions, helping admins and supervisors understand agent performance, customer experience, and key interaction details.
 
+You can filter data by date and time range and by communication type: **All**, **Voice**, or **Chat**. The **Compare** toggle highlights performance changes between the selected date range and the previous period.
+
 The key sections of this dashboard include:
 
-* **Contact Center Efficiency**: Key Performance Indicators (Average Speed to Answer, Abandonment Rate, Customer Satisfaction Score (CSAT), and Transfer Rate).
+* **Contact Center Efficiency**: Displays metrics such as Average Speed to Answer, Abandonment Rate, Customer Satisfaction Score (CSAT), and Transfer Rate.
 
-* **Agent Efficacy**: Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
+* **Agent Efficacy**: Shows Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy. The compare toggle applies here to show changes over time.
 
-* **Customer Experience**: Average Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
+* **Customer Experience**: Includes Average Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, and Customer Churn Monitor.
 
-* **Insights Mining**: Topic vs. Sentiment Bubble, Keyword Cloud & Emotions.
+* **Insights Mining**: Provides Topic vs. Sentiment bubbles, Keyword Cloud, and Emotions.
 
-* **Interaction Details**: Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
+* **Interaction Details**: Displays session details such as Date/Time, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
 
 ## Access Conversation Intelligence 
 
@@ -120,11 +122,15 @@ Lets you filter data by date and time range. The widget displays the current day
 
 ## Compare Functionality
 
-The Conversation Intelligence dashboard lets you view a comparison of metrics between a selected date range and the previous date range. By default, the system enables the compare toggle. The Conversation Intelligence dashboard lets you compare metrics between a selected date range and the previous date range. The compare toggle is enabled initially.
+The Conversation Intelligence dashboard lets you view a comparison of metrics between a selected date range and the previous date range. When you enable the **Compare** toggle, the dashboard highlights changes in metrics over time. The system enables the compare toggle by default.
 
-Spike and dip indicators for playbook adherence link to this toggle and appear across stages and steps only when enabled. The system includes these indicators for all fields. An increase or decrease can have different meanings depending on the metrics, resulting in either red badges (negative) or green badges (positive). 
+The dashboard displays spike and dip indicators for playbook adherence only when you enable the compare toggle. These indicators display across stages and steps for all relevant fields. An increase or decrease in a metric can have different meanings depending on context:
 
-If you select the last seven days, the system shows spikes or dips for all metrics, such as Average Speed to Answer, indicating percentage changes compared with the previous period (May 29 to June 5).   
+* Green badges indicate positive changes.
+
+* Red badges indicate negative changes.
+
+For example, if you select the last 7 days as the date range, metrics such as Average Speed to Answer shows a spike or dip representing the percentage change for June 5–12 compared to the previous period, May 29–June 5.   
 <img src="../conversation-intelligence/images/compare-functionality.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
 
 ## Channels
@@ -142,9 +148,9 @@ Effective contact centers rely on KPIs to help managers track productivity and e
 
 **Abandonment Rate (Voice** and **Chat channels**): The Abandonment Rate refers to the total number of customers who disconnect their calls while in the queue before reaching an agent.
 
-**CSAT (Voice** and **Chat channels**): Customer Satisfaction (CSAT) scores indicate the level of customer satisfaction with Support services that you can calculate from CSAT survey scores.
-
 **Transfer Rate (Voice**, **Chat**, and **Email channels**): Transfer Rate measures the percentage of customer interactions that agent or queue transfer to another resource to resolve the issue.
+
+**CSAT (Voice** and **Chat channels**): Customer Satisfaction (CSAT) scores indicate the level of customer satisfaction with Support services that you can calculate from CSAT survey scores.
 
 #### Default Zones for KPIs
 
@@ -164,9 +170,7 @@ Effective contact centers rely on KPIs to help managers track productivity and e
 
     * Green 8 and higher; Yellow 6 to 8; and Red 1 to 6.
 
-The dashboard presents the KPI average for the selected date range next to the line bar and shows the percentage increase or decrease compared with the previous period.
-
-Hovering over the color zones shows the percentage of calls and the actual number of calls for the represented percentage (volume).     
+The dashboard presents the KPI average for the selected date range next to the line bar and shows the percentage increase or decrease compared with the previous period. Hover over a color zone to view the call distribution by percentage and count.   
 <img src="../conversation-intelligence/images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Efficacy
@@ -204,7 +208,7 @@ Agent occupancy represents the time agents spend handling customer interactions 
 **Total logged-in time**: The total duration agents remain logged in to Agent AI, available to handle customer interactions.
 
 Agent statuses include `Available`, `Busy`, `Away`, `Break`, and any custom codes the administrator configures. A pie chart visualizes the distribution of agents across these statuses, helping admins and supervisors to assess occupancy and optimize agent utilization.   
-<img src="./conversation-intelligence/images/agent-occupancy.png" alt="Agent Occupancy" title="Delete Filter" style="border: 1px solid gray; zoom:70%;">
+<img src="../conversation-intelligence/images/agent-occupancy.png" alt="Agent Occupancy" title="Delete Filter" style="border: 1px solid gray; zoom:70%;">
 
 ### Script and Playbook Adherence
 
@@ -343,23 +347,23 @@ This widget shows relevant keywords for the selected Topic from the previous wid
 
 ### Keyword Search
 
-Supervisors can search for specific keywords across interactions related to a selected topic by using the Keyword Search option.
+Supervisors use Keyword Search to find and analyze keywords across interactions by topic.
 
-You can select one topic or all topics from the drop-down list and then search for a keyword. When you hover over a keyword, the system shows the total number of mentions and the number of unique interactions that include the keyword.
+* Select one topic or All Topics and enter a keyword to search interactions.
 
-When you select a topic bubble, the system automatically selects the corresponding topic in the drop-down list. The searched keyword then appears in the selected topic bubble or in the topic chosen from the drop-down.
+* Hover over a keyword to view total mentions and unique interactions.
 
-When you select All Topics from the drop-down list, the system deselects any topic bubble and displays keywords and interaction details across all topics.
+* Select a topic bubble or choose a topic from the drop-down list to filter related keywords.
 
-Selecting a specific topic from the dropdown list selects the relevant topic bubble, which shows only the pertinent keywords for that topic.
+* Select All Topics to view keywords and interaction details across all topics.
 
-If a keyword is present in multiple topics, the system reflects the topic-specific relevance in the keyword count and interaction mentions.
+* When a keyword appears in multiple topics, the system reflects topic-specific relevance.
 
-When you search for a keyword, the keyword cloud displays only that keyword. If semantic variants are available, the system also shows those related keywords in cloud.
+* The keyword cloud shows only the searched keyword and available semantic variations.
 
-The Interaction Details panel focuses on the main searched keyword. If semantic variants exist, the system shows their related interactions after it lists all interactions for the main keyword.
+* Select a semantic variation to view its related interactions in the Interaction Details panel.
 
-When you select a semantic variant in the keyword cloud, the system displays the interactions related to that specific keyword in the Interaction Details panel.  
+* When you select a semantic variant in the keyword cloud, the system displays the interactions related to that specific keyword in the Interaction Details panel.  
 <img src="../conversation-intelligence/images/selected-topic.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
 
 ## Interaction Details
