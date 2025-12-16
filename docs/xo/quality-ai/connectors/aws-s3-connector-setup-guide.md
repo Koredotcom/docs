@@ -3,7 +3,7 @@
 
 ## Overview
 
-The AWS S3 Connector allows you to ingest conversation recordings and chatscripts/transcripts from a configured S3 folder into Quality AI Express on a periodic schedule, enabling you to use the tool with 3rd-party Contact Center as a Service (CCaaS) solutions.
+The AWS S3 Connector lets you ingest conversation recordings and chatscripts or transcripts from a configured S3 folder into Quality AI Express on a periodic schedule, enabling you to use the tool with 3rd-party Contact Center as a Service (CCaaS) solutions.
 
 ### What You Require
 
@@ -138,7 +138,7 @@ Complete the following checklist before starting the configuration:
 
 * **Chat Scripts**: Uses `chatScriptUrl`.
 
-* **Provider Field**: All types use `asrProvider` (not `asProvider`).
+* **Provider Field**: All types use `asrProvider`.
 
 ### Authentication Methods
 
