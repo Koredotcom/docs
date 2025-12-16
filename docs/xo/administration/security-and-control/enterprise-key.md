@@ -139,7 +139,7 @@ Select the existing CMK in the console and copy its ARN.
             ```
 
 3. Name the policy (for example, `KoreByokKmsPolicy`)  
-4. Create the policy And attach it to your IAM role.
+4. Create the policy and attach it to your IAM role.
 
 **Step 4: Update CMK Key Policy**
 
