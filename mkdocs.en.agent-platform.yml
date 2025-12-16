@@ -123,7 +123,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Platform Overview: getting-started/introduction.md
+    - Introduction to Agent Platform: getting-started/introduction.md
     - Accessing Agent Platform: getting-started/sign-up-sign-in.md
     - Outbound IP Addresses: getting-started/outbound-ip-address.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
@@ -360,11 +360,12 @@ nav:
         - Creating Agents: sdk/guide/creating-agents.md
         - Working with Tools: sdk/guide/working-with-tools.md
         - Memory Stores: sdk/guide/memory-stores.md
-        - Prompts & LLM Config: sdk/guide/prompts-llm.md
+        - Prompts and LLM Config: sdk/guide/prompts-llm.md
         - Custom Orchestration: sdk/guide/orchestration.md
       - API Reference:
         - Overview: sdk/api/index.md
         - Design-Time Models:
+           - Overview: sdk/api/designtime/index.md
            - App: sdk/api/designtime/app.md
            - Agent: sdk/api/designtime/agent.md
            - Tool: sdk/api/designtime/tool.md
@@ -376,7 +377,14 @@ nav:
            - App Variable: sdk/api/designtime/app_variable.md
            - Icon: sdk/api/designtime/icon.md
         - Runtime:
-           - Overview: sdk/api/runtime/index.md 
+           - Overview: sdk/api/runtime/index.md
+           - RequestContext: sdk/api/runtime/request_context.md
+           - EnvironmentVariables: sdk/api/runtime/environment_variables.md
+           - Memory: sdk/api/runtime/memory.md
+           - Logger: sdk/api/runtime/logger.md
+           - Tracer: sdk/api/runtime/tracer.md
+      - CLI Reference:
+        - CLI Commands: sdk/cli/index.md
       - Examples:
         - Banking Assistant: sdk/examples/banking-assistant.md
         - Multi-Agent Workflow: sdk/examples/multi-agent.md
