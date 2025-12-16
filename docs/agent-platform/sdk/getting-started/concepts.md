@@ -48,7 +48,6 @@ AI agents that handle specific tasks or domains.
 **Sub-types:**
 
 - **REACT**: ReAct pattern (Reasoning + Acting)
-- **PLAN_EXECUTE**: Planning then execution
 - **PROXY**: External agent integration
 
 ```python
