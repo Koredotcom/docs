@@ -434,9 +434,9 @@ After successful domain verification, follow these steps:
 
 
 
-#### Test Your Configuration (recommended)
+#### Test Your Configuration
 
-You can test your app registration using a tool like:
+It's recommended to test your app registration using a tool like:
 
 
 
