@@ -158,7 +158,7 @@ To enable Slack on the Platform, follow the steps below:
 
 <li>(Optional) Enable <b>Proactive Notifications</b> to send notifications from your Process Apps to your AI Agent users via Slack. Please refer to Step 3.
 
-<img src="../images/proactive-notifications.png" alt="proactive notfications" title="proactive notfications" style="border: 1px solid gray; zoom:65%;"></li>
+<img src="../images/proactive-notifications.png" alt="proactive notifications" title="proactive notifications" style="border: 1px solid gray; zoom:65%;"></li>
  
 Once enabled, select the required Process Apps from the list for your AI Agent, and click <b>Authorize</b>.</ol>
 

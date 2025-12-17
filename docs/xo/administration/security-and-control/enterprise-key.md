@@ -1,6 +1,6 @@
 # Enterprise Key Management
 
-Enterprise Key Management is a crucial security feature on the platform designed to safeguard data through encryption. The feature provides organizations with extensive control over their data encryption strategies. Administrators can utilize the Enterprise Key page to manage data encryption keys, which protect sensitive information stored on Kore.ai servers. This encompasses all enterprise data, user information, and bot-related content. 
+Enterprise Key Management is a crucial security feature on the platform designed to safeguard data through encryption. The feature provides organizations with extensive control over their data encryption strategies. Administrators can utilize the Enterprise Key page to manage data encryption keys, which protect sensitive information stored on Kore.ai servers. This encompasses all enterprise data, user information, and app-related content. 
 
 The platform offers two primary approaches to key management:
 
@@ -85,7 +85,7 @@ Select the existing CMK in the console and copy its ARN.
 
 1. Navigate to **IAM** > **Roles** > **Create role.**
 2. Select **Another AWS account** and enter Kore’s AWS Account ID (shared by Kore).
-3. Click Next.
+3. Click **Next**.
 4. Name the role (for example, `KoreByokAccessRole`).
 5. Navigate to Trust relationships > Edit trust policy and replace with the following policy:
 
@@ -113,32 +113,33 @@ Select the existing CMK in the console and copy its ARN.
 
 **Create KMS Permissions Policy**
 
-1. Navigate to IAM > Policies > Create policy
-2. Select JSON tab
+1. Navigate to IAM > Policies > Create policy.
+2. Select JSON tab.
 3. Enter the following policy:
 
 
-    ```
-    {
-    "Version": "2012-10-17",
-    "Statement": [
-    { "Sid": "AllowKMSOperations",
-        "Effect": "Allow"
-        "Action": [
-        "kms:Encrypt",
-        "kms:Decrypt",
-        "kms:ReEncrypt*",
-        "kms:GenerateDataKey*",
-        "kms:DescribeKey"
-        ],
-        "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
-    }
-    ]
-    }
+            ```
+            {
+            "Version": "2012-10-17",
+            "Statement": [
+            { "Sid": "AllowKMSOperations",
+                "Effect": "Allow"
+                "Action": [
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+                "kms:DescribeKey"
+                ],
+                "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
+            }
+            ]
+            }
 
-    ```
+            ```
+
 3. Name the policy (for example, `KoreByokKmsPolicy`)  
-4. Create the policy And attach it to your IAM role.
+4. Create the policy and attach it to your IAM role.
 
 **Step 4: Update CMK Key Policy**
 
@@ -194,19 +195,9 @@ aws kms describe-key
 
 **Option 2: Azure CLI**
 
-1. Open Azure Cloud Shell or install Azure CLI locally
-2. Login as Global Administrator:
-
-    ```
-        az login
-
-    ```
-3. Create service principal:
-
-
-    ```
-         az ad sp create --id '<KORE-CLIENT-ID>'
-    ```
+1. Open Azure Cloud Shell or install Azure CLI locally.
+2. Login as Global Administrator:  ```az login```
+3. Create service principal: ```az ad sp create --id '<KORE-CLIENT-ID>'```
 
 **Step 2: Prepare Key Vault and Key**
 
@@ -229,17 +220,17 @@ Create RSA Key (if needed)
     * **RSA key size**: 2048 or 4096
 4. Note the Key Identifier URL.
 
-
 **Step 3: Configure Key Vault Access**
 
 Assign Key Vault Permissions  
-1. Navigate to **Access control (IAM) **in** **your Key Vault  
-2. Click **Add role assignment**  
-3. Configure:  
-    * **Role**: Key Vault Crypto User  
-    * **Assign access to**: User, group, or service principal  
+
+1. Navigate to **Access control (IAM)** in your Key Vault.
+2. Click **Add role assignment**. 
+3. Configure:
+    * **Role**: Key Vault Crypto User
+    * **Assign access to**: User, group, or service principal 
     * **Members**: Search for Kore application name  
-4. Click **Review + assign**
+3. Click **Review + assign**
 
 **Step 4: Configure Network Access**
 
@@ -268,9 +259,9 @@ Assign Key Vault Permissions
 
 **3. Set Enforcement Date**: Choose an **Enforcement Date** for when the encryption will begin. This date determines when your CMK will start encrypting data. Plan this date carefully to ensure a smooth transition.
 
-4. Click **Test Configuration** to validate connection
+**4. Click Test Configuration** to validate connection
 
-1. System will perform:
+1. System performs:
     * Connectivity test to your KMS/Key Vault
     * Authentication verification
     * Encryption/decryption round-trip test
@@ -287,7 +278,7 @@ Assign Key Vault Permissions
     * Optionally deselect specific apps/bots to keep them on the default Kore.ai encryption.
     * Consider your security requirements when making selections.
 
-**6. Complete Setup**: Click **Proceed** to finalize the configuration. Your CMK will be added to the enterprise keys list. Encryption will begin on the specified enforcement date.
+**6. Complete Setup**: Click **Proceed** to finalize the configuration. Your CMK is added to the enterprise keys list. Encryption begins on the specified enforcement date.
 
 !!! Note
     

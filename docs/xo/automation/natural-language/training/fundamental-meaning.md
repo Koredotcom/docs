@@ -52,7 +52,7 @@ This process helps identify sections of utterances and mark them as special. Thi
 
 ### Parts of Speech (POS) tagging
 
-This process marks up a word in a corpus to the corresponding part-of-speech tag based on the context and definition. Part-of-speech tags are useful in building parse trees which are used to extract the relationship between words. **POS Tagging** is also essential for building lemmatizers to reduce a word to its root form.  Each word is assigned a part of the speech tag, and possibly a role (subject/verb/object) from app definition data.
+This process marks up a word in a corpus to the corresponding part-of-speech tag based on the context and definition. Part-of-speech tags are useful in building parse trees which are used to extract the relationship between words. **POS Tagging** is also essential for building lemmatizer to reduce a word to its root form.  Each word is assigned a part of the speech tag, and possibly a role (subject/verb/object) from app definition data.
 
 ### Marking
 
@@ -174,7 +174,7 @@ For example, for a Make a Booking task in a Travel Assistant , if the user input
 
 #### Parallel Editing for Synonyms
 
-In the previous versions of the Platform, whenever a user added and saved a new app synonym, the server added it to the database and updated the entire synonym list. Concurrent usage caused data conflicts when multiple users worked parallelly on the same app. This also prevented team members from collaborating during app training. 
+In the previous versions of the Platform, whenever a user added and saved a new app synonym, the server added it to the database and updated the entire synonym list. Concurrent usage caused data conflicts when multiple users worked in-parallel on the same app. This also prevented team members from collaborating during app training. 
 
 Let’s consider the following scenario as an example:
 
@@ -189,7 +189,7 @@ We’ve introduced a workaround for this issue discussed below. This design flow
 
 #### Workaround with Parallel Editing
 
-Th Plaetform now supports **Parallel Editing**, where more than one user can add or delete a synonym for the same app without losing or overwriting data during app training. When a user updates an existing synonyms list, the system tracks whether it’s an add or delete operation and does the following:
+Th Platform now supports **Parallel Editing**, where more than one user can add or delete a synonym for the same app without losing or overwriting data during app training. When a user updates an existing synonyms list, the system tracks whether it’s an add or delete operation and does the following:
 
 **Add a Synonym**
 
@@ -470,7 +470,7 @@ The settings for the FM engine are discussed in detail in the following sections
 
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 
-1. Open the aapp for which you want to configure thresholds.
+1. Open the app for which you want to configure thresholds.
 2. From the left menu, click **Natural Language** > **NLU Config**.
 3. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
     * **Intent Detection using Task Name Words** can be disabled in case your use case requires it. This is particularly useful if you have too many tasks named – _place order_, _cancel order_, _request order_, _duplicate order_. All these tasks will be matched as intents if the user utterance has the word “_order_” in it. Instead of _trying_, _guessing_, and training for all possible utterances, disabling this option does the trick. Disabling it will not affect the intent detection using patterns. Also, an implicit pattern using the words in the Task Name will be automatically added. The implicit pattern identifies this intent only when the user input starts and ends with the exact task name. By default, it is enabled.

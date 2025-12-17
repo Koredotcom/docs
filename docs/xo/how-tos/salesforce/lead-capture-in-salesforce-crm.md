@@ -70,16 +70,16 @@ Create your own custom authorization profile to obtain an access token and use i
 * Once the authorization is successful, you will see a success message.
 * Click **Proceed**. When you configure the action for the first time, the **Integration Installed Successfully** pop-up is displayed. 
 
-<img src="../images/installation_installed_successfully.png" alt="successfull-message" title="successfull-message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/installation_installed_successfully.png" alt="successful-message" title="successful-message" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 2: Install the Lead Capture Template for Salesforce CRM
 
 1. Go to the **Marketplace** and select **Lead Capture** for Salesforce CRM Dialog Template. 
 
-<img src="../images/marketplace_leadcapture.png" alt="marketplace_leadcapture" title="marketplace_leadcapture" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/marketplace_leadcapture.png" alt="marketplace_lead capture" title="marketplace_lead capture" style="border: 1px solid gray; zoom:70%;">
 
 2. The **Lead Capture** installation dialog box is displayed. Click **Install** to begin the installation.  
-<img src="../images/lead_capture.png" alt="leadcapture" title="leadcapture" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/lead_capture.png" alt="lead capture" title="lead capture" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the following details in the Lead Capture dialog task.
     1. **Name:** Name of the dialog.

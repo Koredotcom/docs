@@ -1,6 +1,6 @@
 # Contact Center AI Migration from XO v10 to v11
 
-This document provides step-by-step instructions for upgrading your SmartAssist/Contact Center AI (CCAI) account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
+This document provides step-by-step instructions for upgrading your SmartAssist or Contact Center AI (CCAI) account to XO v11. The upgrade process ensures a streamlined transition to the new platform.
 
 **Prerequisites**
 
@@ -9,44 +9,44 @@ This document provides step-by-step instructions for upgrading your SmartAssist/
 
 **Pre-Upgrade Checklist**
 
-* Download reports that are not supported in the XO v11. 
-Agent Login Logout Details Report – If you need data from this report, go to SmartAssist, rerun the report before the upgrade, and download the reports. 
+* Download reports that aren't supported in the XO v11. 
+Agent Login Logout Details Report-If you need data from this report, go to SmartAssist, rerun the report before the upgrade, and download the reports. 
 * Learn about changes and enhanced features.
-* Inform your SmartAssist users of the new upgrade and downtime.
-* During the upgrade, they will be terminated if there are any active conversations on all channels (or wait for them to taper off).
-* All other data (in Reports, Dashboards, etc.) will be preserved.
+* Tell your SmartAssist users of the new upgrade and downtime.
+* During the upgrade, they're terminated if there are any active conversations on all channels (or wait for them to taper off).
+* The system preserves all other data (in Reports, Dashboards, etc.).
 
-## What Will Change
+## What Changes
 
 ### Bot to App Transition
 
-The bot system is transitioning to a consolidated app in the XO11 application. SmartAssist Instance bot and child bots will become individual Apps on XO v11.
+The bot system is transitioning to a consolidated app in the XO11 application. SmartAssist Instance bot and child bots become individual Apps on XO v11.
 
 ### Workflow Migration
 
-All existing workflows will be transferred to their current state. Flows containing deflection nodes will be maintained during the transfer, but with a renewed experience. Conversational Input and Run Automation have been combined.
+All existing workflows transfer to their current state. The system maintains flows containing deflection nodes during the transfer, but with a renewed experience. The system combines Conversational Input and Run Automation.
 
 ### User and Role Migration
 
-User migration will align with the user management framework. All current roles will be transferred directly. SmartAssist roles will be recreated as custom roles, maintaining identical permissions, with the naming convention: `{roleName}_{instanceBotName}`.
+User migration aligns with the user management framework. All current roles transfer directly. The system recreates SmartAssist roles as custom roles, maintaining identical permissions, with the naming convention: `{roleName}_{instanceBotName}`.
 
 ### Use Case Handling
 
-After the upgrade, configurations made in use cases in SmartAssist will work as before on XO v11, but the dialogs will not be visible. If you want to make any changes, contact the Kore support team.
+After the upgrade, configurations made in use cases in SmartAssist work as before on XO v11, but the dialogs won't be visible. If you want to make any changes [contact Support](https://support.kore.ai).
 
 ### Agent Transfer Settings
 
-Agent transfer configurations will be preserved and implemented at the application level.
+The system preserves agent transfer configurations implements them at the application level.
 
 ### Default Flow Changes
 
-The existing default flows (such as “no agents available” and “out of hours”) that were previously accessible from the left navigation menu are discontinued, as dedicated flow types have now been implemented for these scenarios.
+XO v11 discontinues the existing default flows, such as No Agents Available and Out of Hours, that were previously available from the left navigation menu because dedicated flow types now support these scenarios.
 
-### New/Changed Reports
+### New or Changed Reports
 
-* Agent Entry-Exit Summary Report (New Report): This report will not include login/logout events, but will track the Agent’s app entry and exit events.
-* Agent Activity Summary Report (Changed Report): This report will no longer contain the first login and last logout fields; instead, it will include the agent’s App Entry and Exit fields. 
-* If you need reports with previous columns, rerun them in SmartAssist before upgrading to XO v11. After the upgrade, these reports will be run with new columns.
+* Agent Entry-Exit Summary Report (New Report): This report won't include login or logout events, but tracks the Agent’s app entry and exit events.
+* Agent Activity Summary Report (Changed Report): This report no longer contains the first login and last logout fields; instead, it includes the agent’s App Entry and Exit fields. 
+* If you need reports with previous columns, rerun them in SmartAssist before upgrading to XO v11. The reports run with new columns after the upgrade.
 
 ### Billing Structure Change
 
@@ -58,15 +58,15 @@ Billing structure changes for different user categories:
 
 ### Updated Automation Node in Experience Flows
 
-The updated node features new transitions (“On Success” and “On Failure”) and expanded Default routing options that allow users to select linked apps along with the current app. During migration, existing “Let the bot handle” configurations are mapped to appropriate radio buttons in XO v11, and “Go to a node” selections are mapped to “Exit Automation and go to a selected node” under the respective success or failure categories, maintaining the same connections. For Agent Transfer functionality, the system will either utilize existing configurations from Conversational IVR (as these nodes are now merged in XO v11) or create new Agent Transfer nodes with the default “Connect to Agent” dialogs. This migration preserves the user experience from SmartAssist, ensuring the same behavior when configuring “Let the bot handle” options with no return path unless an Agent Transfer Node is encountered.
+The updated node features new transitions (`On Success` and `On Failure`) and expanded Default routing options that let users to select linked apps along with the current app. During migration, existing `Let the bot handle` configurations map to appropriate radio buttons in XO v11, and `Go to a node` selections map to `Exit Automation and go to a selected node` under the respective success or failure categories, maintaining the same connections. For Agent Transfer functionality, the system either uses existing configurations from Conversational IVR (as these nodes are now merged in XO v11) or create new Agent Transfer nodes with the default `Connect to Agent` dialogs. This migration preserves the SmartAssist user experience and maintains the same behavior when configuring `Let the bot handle` options, with no return path unless the flow encounters an Agent Transfer Node.
 
 ### Deflection Flow
 
-After migrating to XO v11, the Deflect to Chat node in SmartAssist experience flows continues to function as configured, preserving original use cases and behavior. Chat deflection triggers based on the selected configuration—Automation or Agent Transfer—are supported by a similar Deflection Flow node in XO v11.
+After migrating to XO v11, the Deflect to Chat node in SmartAssist experience flows continues to function as configured, preserving original use cases and behavior. XO v11 supports chat deflection triggers based on the selected configuration—Automation or Agent Transfer—through a similar Deflection Flow node.
 
 Within Agent Transfer selections, chat deflection remains available in both waiting and transfer contexts. XO v11 introduces a new Deflection Flow node for voice channels. Default flows (Default Conversational Input Voice Flow and Agent Deflection Flow) and custom flows using Deflect to Chat automatically upgrade to use this node.
 
-By default, the node uses “trigger using automation context.” Flow developers can override it by selecting “trigger using user selection,” which prompts a dropdown for Chat Automation or Agent Transfer. For “user selection,” validation ensures the “go to node” is set. If missing, an error appears. Chat Automation selections do not require this validation.
+By default, the node uses `trigger using automation context.` Flow developers can override it by selecting `trigger using user selection,` which prompts a dropdown for Chat Automation or Agent Transfer. The system validates that the `Go to node` is set for `User Selection`. If missing, an error appears. Chat Automation selections don't require this validation.
 
 Migrated flows appear under Start Flows. The Deflection Flow node is available in both Start and Conditional Voice flows, enabling testing and support for the Waiting experience in voice deflection.
 
@@ -78,23 +78,23 @@ Migrated flows appear under Start Flows. The Deflection Flow node is available i
 
 ### Upgrade Access Impact
 
-The upgrade process is irreversible, and accounts upgraded from SmartAssist to XO v11 cannot be reversed to their previous state. In case of an error during the upgrade, the process is reverted automatically, and users will continue to have access to SmartAssist.
+The upgrade process is irreversible, and the system can't revert accounts upgraded from SmartAssist to XO v11 to their previous state. If an error occurs during the upgrade, the system automatically reverts the process, and users continue to access SmartAssist.
 
 ### Localization
 
-The XO11 Contact Center UI only supports English, Japanese, and Korean. Following migration, users who have selected any other language as their App Language will automatically be switched to English.
+The XO11 Contact Center UI only supports English, Japanese, and Korean. After migration, the system automatically switches users who selected any other app language to English.
 
 ### Audit Trail Requirements
 
-* The system creates records in Audit Events when an upgrade is initiated.
-* Upgrade status updates are tracked throughout the process.
+* On Initiating an upgrade, the system creates Audit Events records.
+* The system tracks upgrade status updates throughout the process.
 
 ### Role-Based Access Control
 
-* Upgrade privileges are restricted to App owners only (for both SmartAssist Instance and child bots).
+* Only app owners have upgrade privileges for both the SmartAssist instance and child bots.
 * After the upgrade, agents and supervisors receive notifications about upgrades.
 * Users can use existing credentials to access the XO v11.
-* Agents and supervisors will be redirected to XO v11 for content center operations.
+* The system redirects agents and supervisors to XO v11 for content center operations.
 
 ## Upgrade Journey from SmartAssist to XO v11
 
@@ -102,13 +102,13 @@ The XO11 Contact Center UI only supports English, Japanese, and Korean. Followin
 
 Steps to initiate the upgrade to XO v11:
 
-1. Log in to **SmartAssist** > **Configurations**. A notification is displayed at the top of the screen.  
+1. Log in to **SmartAssist** > **Configurations**. A notification displays at the top of the screen.  
     <img src="../images/sa-migrate-banner.png" alt="Migrate Banner" title="Migrate Banner" style="border: 1px solid gray; zoom:70%;"> 
 
 2. The following options are available:
-    1. **Learn More**: Redirect to [XO v11 Documentation](https://docs.kore.ai/xo/home/).
-    2. **Go to new XO Platform**: Redirect to the [XO v11 Platform](https://platform.kore.ai/).
-3. Click **Go to new XO Platform** to initiate the upgrade. 
+    * **Learn More**: Redirect to [XO v11 Documentation](https://docs.kore.ai/xo/home/).
+    * **Go to new XO Platform**: Redirect to the [XO v11 Platform](https://platform.kore.ai/).
+3. Select **Go to new XO Platform** to initiate the upgrade. 
 
     !!! Note
 
@@ -117,58 +117,58 @@ Steps to initiate the upgrade to XO v11:
 4. Login to XO v11 using your SmartAssist credentials.  
     <img src="../images/xo-login-page.png" alt="Login Page" title="Login Page" style="border: 1px solid gray; zoom:70%;"> 
 
-5. All apps (SmartAssist and automation bots) are displayed. Click the **SmartAssist bot** to upgrade to an App in XO v11.  
-    <img src="../images/cust-success-app.png" alt="SA Bot" title="SA Bot" style="border: 1px solid gray; zoom:70%;"> 
+5. All apps (SmartAssist and automation bots) appear. Select the **SmartAssist bot** to upgrade to an App in XO v11.  
+    <img src="../images/customer-success-app.png" alt="SA AI Agent" title="SA AI Agent" style="border: 1px solid gray; zoom:70%;"> 
 
 6. A pop-up appears with the following options:  
-    1. Why Upgrade?  
-    2. Attention  
-    3. Upgrade  
-    Click **Continue**.  
-        <img src="../images/upgrade-screen.png" alt="SmartAssist Bot" title="SmartAssist Bot" style="border: 1px solid gray; zoom:70%;">
+    * Why Upgrade?  
+    * Attention  
+    * Upgrade  
+    Select **Continue**.  
+        <img src="../images/upgrade-screen.png" alt="SmartAssist AI Agent" title="SmartAssist AI Agent" style="border: 1px solid gray; zoom:70%;">
 
-7. The Include Agent Configuration checkbox is selected by default. It includes agent profile data, agent group assignments, agent-to-skill mappings, agent-to-experience flows, and agent-to-queue mappings.Click **Download & backup your bot**, and click **Start Upgrade**. The following configuration data is downloaded:  
-    1. Instance-bot configurations.
-    2. Agent-related information (for example, agent mapping to queues and agent groups).
-    3. Experience flow and channel configurations
-    4. All contact center settings, including:
-        1. Standard responses,
-        2. Digital forms,
-        3. Conversation status control configurations,
-        4. All other relevant SmartAssist configurations.  
+7. The system selects the Include Agent Configuration checkbox by default. It includes agent profile data, agent group assignments, agent-to-skill mappings, agent-to-experience flows, and agent-to-queue mappings. Select **Download & backup your bot**, and select **Start Upgrade**. The system downloads the following configuration data:  
+    * Instance-bot configurations.
+    * Agent-related information (for example, agent mapping to queues and agent groups).
+    * Experience flow and channel configurations
+    * All contact center settings, including:
+        * Standard responses,
+        * Digital forms,
+        * Conversation status control configurations,
+        * All other relevant SmartAssist configurations.  
         <img src="../images/include-agent-config.png" alt="Download Bot Config" title="Download Bot Config" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
         A complete backup of your SmartAssist configuration is downloaded. While this data can’t be imported into XO10 or XO v11, it serves as a reference for troubleshooting any issues that may arise during migration. 
 
-8. A progress bar is displayed. Click **Finish** on completion.  
+8. A progress bar displays. Select **Finish** on completion.  
     <img src="../images/upgrade-success.png" alt="Upgrade Successful" title="Upgrade Successful" style="border: 1px solid gray; zoom:70%;">
 
-    By default, the Send Email to SmartAssist users option is selected. When the app owner clicks Finish, an email informing users about the upgrade is sent to them. Clicking **Visit Documentation Portal** redirects the user to the [XO v11 documentation page](https://docs.kore.ai/xo/home/).  
+    The system selects the Send Email to SmartAssist users option by default. When the app owner selects Finish, the system sends an email to tell users about the upgrade. Selecting **Visit Documentation Portal** redirects the user to the [XO v11 documentation page](https://docs.kore.ai/xo/home/).  
     <img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
         Supervisors and agents cannot access XO11 during the upgrade. Users can log in to XO11 and see the app to which they have access only after the instance bot is upgraded to an app. They can log in using their SmartAssist credentials.
 
-9. A success message is displayed. In XO11, the SmartAssist instance bot is upgraded to an app.  
+9. A success message displays. In XO11, the SmartAssist instance bot upgrades to an app.  
     <img src="../images/explore-app.png" alt="Explore App" title="Explore App" style="border: 1px solid gray; zoom:70%;">
 
 ### Upgrade Failure
 
-If there is an error during the upgrade, the system stops the upgrade and instantly auto-reverts it. 
+If there is an error during the upgrade, the system stops the upgrade and instantly auto reverts it. 
 
 1. An error notification appears on the upgrade window.  
     <img src="../images/error-notification.png" alt="Error Notification" title="Error Notification" style="border: 1px solid gray; zoom:70%;">
 
-2. The upgrade process is auto-reverted, highlighting the steps where issues occurred during the upgrade.  
+2. The upgrade process is auto reverted, highlighting the steps where issues occurred during the upgrade.  
     <img src="../images/auto-revert.png" alt="Auto Revert" title="Auto Revert" style="border: 1px solid gray; zoom:70%;">
 
-3. Click the **Download Audit Log** to download the .CSV file, share it with Kore Support for further assistance, and click **Close**.  
+3. Select the **Download Audit Log** to download the .CSV file, share it with [Support](https://support.kore.ai) for further assistance, and select **Close**.  
     <img src="../images/download-audit-log.png" alt="Download Audit Log" title="Download Audit Log" style="border: 1px solid gray; zoom:70%;">
 
-    You will be redirected to the XO v11 home page.
+    The system redirects you to the XO v11 home page.
 
 ## Post Upgrade Journey
 
@@ -177,7 +177,7 @@ If there is an error during the upgrade, the system stops the upgrade and instan
 SmartAssist License is seamlessly migrated for existing SmartAssist Enterprise accounts to XO v11 by automatically provisioning predefined module-specific licenses. The License Migration specifically manages the automatic enablement of appropriate license tiers for Contact Center AI, Automation AI, Search AI, and Agent AI modules based on the customer’s existing SmartAssist configuration and usage patterns.  
 <img src="../images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
-The modules can be accessed on the XO11 platform by clicking the Product Switcher at the top left corner.
+Access the modules on the XO v11 platform by selecting the Product Switcher at the top-left corner.
 
 ### Upgrade of Instance Bot and Child Bot to XO v11
 
@@ -187,7 +187,7 @@ The modules can be accessed on the XO11 platform by clicking the Product Switche
     * Automation AI
     * Search AI
     * Agent AI
-* The license conversion process is integrated into the broader upgrade framework to ensure uninterrupted service access for customers during the transition.
+* The system integrates the license conversion process into the broader upgrade framework to maintain uninterrupted service access for customers during the transition.
 
 !!! note
 
@@ -208,14 +208,14 @@ The modules can be accessed on the XO11 platform by clicking the Product Switche
 
 **Supervisor_BotName**
 
-* Access is limited to CCAI.
+* The system limits access to CCAI.
 * No access to Automation AI, Search AI, or Agent AI.
-* Data Restrictions: Monitor access is limited to supervised queues.
+* Data Restrictions: The system limits monitor access to supervised queues.
 * Available features: Monitor dashboard without queue restrictions.
 
 **Agent_BotName**
 
-* Access is limited to CCAI.
+* The system limits access to CCAI.
 * No access to Automation AI, Search AI, or Agent AI.
 * **Landing page**: Agent Console.
 * **Data access**: Limited to own interactions.
@@ -223,7 +223,7 @@ The modules can be accessed on the XO11 platform by clicking the Product Switche
 
 **CustomRole_BotName**
 
-* Access is based on configured permissions.
+* The system grants access based on configured permissions.
 * If granted, include Automation AI access alongside CCAI.
 * Landing page determined by permissions:
     * Flow Management permission → Flows and Channels
@@ -244,7 +244,7 @@ The modules can be accessed on the XO11 platform by clicking the Product Switche
 **Other Non-Enterprise Roles**
 
 * Similar restrictions as Enterprise Standard, but in trial mode.
-* Supervisor and Agent roles are limited to CCAI trial access.
+* The system limits supervisor and agent roles to CCAI trial access.
 * Custom roles follow the permission-based access model.
 
 ### Automation Bots Upgrade
@@ -277,7 +277,7 @@ The modules can be accessed on the XO11 platform by clicking the Product Switche
 
 ### Roles and Permissions
 
-Roles in SmartAssist are mapped at the instance bot level. After the upgrade to XO11, these roles, which include default and custom roles, are mapped at the workspace level. 
+The system maps roles in SmartAssist at the instance bot level. After the upgrade to XO v11, the system maps these roles-including default and custom roles-at the workspace level. 
 
 | **SmartAssist Role**             | **XO v11 CCAI Role**         |
 |----------------------------------|-------------------------------|
@@ -286,7 +286,7 @@ Roles in SmartAssist are mapped at the instance bot level. After the upgrade to 
 | Supervisor                       | Supervisor + botName         |
 | Custom roles                     | Custom roles + botName       |
 
-Roles in Contact Center AI have additional access; for details, refer to [Role Management](../user-management/role-management.md).
+Roles in Contact Center AI have additional access see [Role Management](../user-management/role-management.md) for details.
 
 ## SmartAssist vs Contact Center AI Documentation Links
 

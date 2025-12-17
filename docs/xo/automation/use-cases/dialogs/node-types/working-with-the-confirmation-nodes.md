@@ -109,7 +109,7 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
 
 3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the AI Agent responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
     
-    <img src="../images/confirmation-node-img6-precedence.png" alt="Confirmaiton node - Precedence" title="Confirmaiton node - Precedence" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/confirmation-node-img6-precedence.png" alt="Confirmation node - Precedence" title="Confirmation node - Precedence" style="border:1px solid gray;zoom:70%;">
 
 4. Under the **Custom Tags** section, add tags to build custom profiles of your AI Agent conversations. [Learn more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
     
@@ -141,7 +141,7 @@ The Confirmation node’s conditional transitions go beyond the If-Else expressi
 
 For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../node-connections/nodes-conditions.md){:target="_blank"} article.
 
-<img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmaiton node - Connection properties" style="border:1px solid gray;zoom:70%;">
+<img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmation node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
 The Connection Path property offers three default variants:
 

@@ -19,7 +19,7 @@ To conduct a batch test, you can use predefined test suites available in the bui
 * An optimal approach to app NLP training is to first create a test suite of most of the use cases(user utterances) that the app needs to identify, run it against the model and start training for the ones that failed.
 * Create/update batch testing modules for high usage utterances.
 * Publish the trained model only after detailed testing.
-* When naming the intent, ensure that the name is relatively short (3-5 words) and does not have special characters or words from the Stop Wordlist. Try to ensure the intent name is close to what the users request in their utterance.
+* When naming the intent, ensure that the name is relatively short (3-5 words) and does not have special characters or words from the Stop Word list. Try to ensure the intent name is close to what the users request in their utterance.
 * Batch Test executions do not consider the context of the user. Hence you might see some False Negatives in the test results which in fact are True Positives in the actual app when the context is taken into consideration.
 * The **count** in Batch Test results refers to the **unique assertion** statements and not necessarily the number of the rows in the CSV file. Batch tests use a rule to validate the unique assertions based on the **utterance** in consecutive rows. If two consecutive rows have same utterances and different entity values, the Platform considers it as one assertion statement which accepts both the entity values.
 
@@ -855,8 +855,8 @@ The test execution is canceled, and a confirmation message is displayed.
 
 You cannot cancel a batch test run in the following scenarios:
 
-1. When another batch test execution/cancelation is in progress.  
-<img src="../images/batch-testing-cancel-img4.png" alt="Another batch test execution/cancelation is in progress" title="Another batch test execution/cancelation is in progress" style="border: 1px solid gray; zoom:50%;"/>  
+1. When another batch test execution/cancellation is in progress.  
+<img src="../images/batch-testing-cancel-img4.png" alt="Another batch test execution/cancellation is in progress" title="Another batch test execution/cancellation is in progress" style="border: 1px solid gray; zoom:50%;"/>  
   
     **Solution**: Wait for one test suite execution or cancellation to complete before initiating the process for another.
 

@@ -152,7 +152,7 @@ _We want to see only Success or Failed Tasks
     7. Set **Dimension** to _date_
     8. Set **Metrics** to _TotalTasks_
     9. Set **Overlay** to _metricType_
-<img src="./../images/task-fulfiment-trend.png" alt="Task Fulfiment Trend" title="Task Fulfiment Trend" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/task-fulfillment-trend.png" alt="Task Fulfillment Trend" title="Task Fulfillment Trend" style="border: 1px solid gray; zoom:80%;">
 
 
 4. See the **Preview** and then click **Update to Dashboard.**
@@ -220,13 +220,13 @@ This query uses a **Having** clause, to display the number of filtered messages 
     6. Select **Table chart**
     7. Set **Dimension** to _count(messageId),userId_
 4. The following results when you just retrieve the count of all messages, grouping by the userId.
-<img src="./../images/filter-the-mesage-using-having-clause%201.png" alt="Filter the Mesage Using Having Clause 1" title="Filter the Mesage Using Having Clause 1" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/filter-the-message-using-having-clause1.png" alt="Filter the Message Using Having Clause 1" title="Filter the Message Using Having Clause 1" style="border: 1px solid gray; zoom:80%;">
 
 5. The following results when you retrieve the count of messages, grouping by the userId, using the Having clause.
-<img src="./../images/filter-the-mesage-using-having-clause%202.png" alt="Filter the Mesage Using Having Clause 2" title="Filter the Mesage Using Having Clause 2" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/filter-the-message-using-having-clause2.png" alt="Filter the Message Using Having Clause 2" title="Filter the Message Using Having Clause 2" style="border: 1px solid gray; zoom:80%;">
 
 6. See the **Preview** and then click **Add to Dashboard**.
-<img src="./../images/filter-the-mesage-using-having-clause%203.png" alt="Filter the Mesage Using Having Clause 3" title="Filter the Mesage Using Having Clause 3" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/filter-the-message-using-having-clause3.png" alt="Filter the Message Using Having Clause 3" title="Filter the Message Using Having Clause 3" style="border: 1px solid gray; zoom:80%;">
 The Having clause widget is added to the dashboard as shown in the following screenshot.
-<img src="./../images/filter-the-mesage-using-having-clause%204.png" alt="Filter the Mesage Using Having Clause 4" title="Filter the Mesage Using Having Clause 4" style="border: 1px solid gray; zoom:80%;">
+<img src="./../images/filter-the-message-using-having-clause4.png" alt="Filter the Message Using Having Clause 4" title="Filter the Message Using Having Clause 4" style="border: 1px solid gray; zoom:80%;">
 

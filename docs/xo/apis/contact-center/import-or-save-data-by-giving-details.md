@@ -40,7 +40,7 @@ curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues' \
             "userId": "u-be1f62a6-1ea6-59eb-8cae-831edd25xxxx",
             "isPreferredAgent": true,
             "aId": "a-ee9919b-9343-48eb-a951-1085e06cxxxx",
-            "name": "kjhdkjhsddjk kjadksddjk",
+            "name": "John Doe",
             "id": ""
         }
     ],
@@ -468,7 +468,7 @@ curl --location 'http://{{host}}/agentassist/api/v1/public/{{botId}}/queues' \
             "initialMessageEnabled": true,
             "periodicMessageEnabled": true
         },
-        "lname": "customwaitingexperience",
+        "lname": "doe",
         "iId": "st-9a5e4e7d-f540-5cb3-83ed-639cdc4dxxxx",
         "createdByAId": "a-48e9755-03b2-4751-81a6-15382c4xxxx",
         "id": "we-d7bb728-54b3-4c5e-b982-bb31e06axxxx",

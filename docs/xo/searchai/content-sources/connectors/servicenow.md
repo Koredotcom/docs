@@ -122,7 +122,7 @@ By default, SearchAI grants access to the following:
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
 
-Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default. Users associated with other conditions (for example, department or role) aren't automatically included. Therefore, these users can't access articles unless they're explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledge base is John@example.com and the knowledge base can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. 
+Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default. Users associated with other conditions (for example, department or role) aren't automatically included. Therefore, these users can't access articles unless they're explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledge base is `John@example.com` and the knowledge base can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. 
 
 ```json
 "sourceAcl": [`

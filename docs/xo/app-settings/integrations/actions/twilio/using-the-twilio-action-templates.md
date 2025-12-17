@@ -140,7 +140,7 @@ Steps to start verification of a phone service using Twilio Verify integration:
 2. The _Start Verification_ dialog task is added with the following components:  
 <img src="../images/twilio-tem-img8.png" alt="Start Verification dialog task is added" title="Start Verification dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
-    1. **startVerifcation** – A user intent to start verification of the service.
+    1. **startVerification** – A user intent to start verification of the service.
     2. **serviceSid**, **receiverNumber**, and **channel** – Entity nodes to gather required details to start the verification process.
     3. **startVerificationService** – A bot action service to start verification in a Twilio integration. Click the **Plus** icon to expand to view the _startVerificationService_ bot action component properties.
     4. In the Component Properties window, click the **Edit Request** link to edit the request parameters as shown below:  

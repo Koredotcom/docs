@@ -4,7 +4,7 @@
 
 This Technical Design Document (TDD) presents a comprehensive overview of integrating a Bot platform with the NICE CXOne platform using Studio Script.
 
-This approach exclusively employs studio scripting to dispatch SIP headers, effectuate call transfer from the Bot, and seamlessly transition to NICE CXOne once the app flow concludes. A VAH (Virtual Agent Hub) license and proxy are not required to host a SIP Backchannel configuration.
+This approach exclusively employs studio scripting to dispatch SIP headers, effectuate call transfer from the Bot, and seamlessly transition to NICE CXOne once the app flow concludes. A VAH (Virtual Agent Hub) license and proxy are not required to host a SIP back channel configuration.
 
 This document provides a high-level solution design for the scripting-only approach, utilizing SIP actions from the studio.
 
