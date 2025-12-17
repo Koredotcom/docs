@@ -68,7 +68,7 @@ The following table describes the `Context` object keys. These can be classified
 <p>
 <code>  print("You have requested to transfer" +context.entities.Passenger + </code>
 <p>
-<code>        " from " +context.entities.FromFlightNumbere +</code>
+<code>        " from " +context.entities.FromFlightNumber +</code>
 <p>
 <code>        " to " +context.entities.ToFlightNumber+ ". Shall I go ahead? " +</code>
 <p>
