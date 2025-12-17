@@ -44,14 +44,14 @@ Search AI connects with Teamwork through its APIs.
 
 * Sign to the[ developer portal](https://developer.teamwork.com/). For example: [https://{yourTeamworkURL}.com/developer](https://{yourTeamworkURL}.com/developer)
 * Create an app and provide its details. 
-    * Name – The name of your app, which will show on your apps consent screen.
-    * Icon – Icon shown to users during authentication and installation.
-    * Description – Provide a brief description of the purpose of the app.
-    * Product – Select the Teamwork app. 
-    * Redirect URLs – Provide one of the following URLs depending on the Search AI deployment in use. 
-        * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-        * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-        * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+    * Name - The name of your app, which will show on your apps consent screen.
+    * Icon - Icon shown to users during authentication and installation.
+    * Description - Provide a brief description of the purpose of the app.
+    * Product - Select the Teamwork app. 
+    * Redirect URLs - Provide one of the following URLs depending on the Search AI deployment in use. 
+        * JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+        * DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+        * Prod Callback URLs: `https://idp.kore.com/workflows/callback`
 *  Click Create. 
 * Once the app is created, you will find the client credentials required to configure the connector in Search AI on the **Credentials** tab. 
 

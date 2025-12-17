@@ -56,9 +56,9 @@ Enable the following minimum permissions.
 
 Set the Redirect URIs under the Settings tab to one of the following URLs depending upon your region or deployment.
 
-* JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-* DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-* Prod Callback URL: https://idp.kore.com/workflows/callback
+* JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+* DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+* Prod Callback URL: `https://idp.kore.com/workflows/callback`
 
 ![Redirect URL](images/dropbox/redirect-url.png "Redirect URI")
 

@@ -48,9 +48,9 @@ Workday connector interacts with the Workday application via the REST APIs. To e
 * Select **Authorization Code Grant** for the grant type 
 * Select Bearer as the access token type.
 * Choose a Redirection URI based on your deployment or region. 
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 * Set scope or Functional Areas as the following. 
     * Jobs & Positions (Custom Object)
     * Organizations and Roles (Workday REST API)
@@ -89,4 +89,4 @@ Sample Content: Content corresponding to a worker in Workday is ingested as show
 
 ## RACL Support
 
-Currently, Search AI utilizes the tenant ID to identify users with access to information within the Workday account. As a result, the `sys_racl` field for all types of ingested content is set to the tenant ID, ensuring that access is properly restricted based on the user's assigned tenant.  The tenant ID is typically part of the URL in Workday and appears as a unique identifier following the initial /. For instance, if the workday URL is https://impl.wd12.myworkday.com/kore_dpt1/, the tenant id is `kore_dpt1`. 
+Currently, Search AI utilizes the tenant ID to identify users with access to information within the Workday account. As a result, the `sys_racl` field for all types of ingested content is set to the tenant ID, ensuring that access is properly restricted based on the user's assigned tenant. The tenant ID is typically part of the URL in Workday and appears as a unique identifier following the initial /. For instance, if the workday URL is `https://impl.wd12.myworkday.com/domain_dpt1/`, the tenant id is `domain_dpt1`. 
