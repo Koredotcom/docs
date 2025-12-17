@@ -29,7 +29,7 @@ Let us consider each of the following configuration scenarios:
 
 1. Dialog Task to display balance in a given account using Widget SDK channel.
 2. Widgets to trigger the above dialog task and a Panel set with the widgets.
-3. Panel to hold a widget displaying static JSON templace message.
+3. Panel to hold a widget displaying static JSON template message.
 
 ### Message Template
 
