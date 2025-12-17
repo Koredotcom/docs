@@ -1,6 +1,7 @@
 # View API Endpoint & Deployment History
 
 ## API Endpoint
+
 After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in AI for Process. 
 
 The API endpoint is available in 3 formats.
