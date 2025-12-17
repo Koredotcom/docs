@@ -41,7 +41,7 @@ The Kore.ai Knowledge Graph Generator is hosted on the Kore GitHub repository. T
 `pip install -r requirements.txt 
 `You can verify the installation by running the following command and ensuring that the list contains all the components mentioned in the _requirement.txt_ file. 
 `pip list`
-6. Download spacy English model: Run the following command to download spaCy, the NLP model. 
+6. Download spaCy English model: Run the following command to download spaCy, the NLP model. 
 `python -m spacy download en`
 
 ## Execution

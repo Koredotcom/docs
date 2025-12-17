@@ -330,7 +330,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 ### Step 3: Microsoft 365 Setup Instructions for Integration
 
 
-#### 1: Create a Microsoft 365 Group
+**1: Create a Microsoft 365 Group**
 
 
 
@@ -343,7 +343,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 7. After creation, **add users** (mailboxes you want to monitor, cloud-based inboxes) to this group as members.
 
 
-#### 2: Register an Azure AD Application
+**2: Register an Azure AD Application**
 
 
 
@@ -354,7 +354,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 5. Click **Register**.
 
 
-#### 3: API Permissions
+**3: API Permissions**
 
 
 
@@ -379,7 +379,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 7. Confirm by clicking **Yes** in the dialog box.
 
 
-#### 4: Generate Client Secret
+**4: Generate Client Secret**
 
 
 
@@ -391,7 +391,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 6. **Important**: Copy the **Value** of the client secret immediately and store it securely. This value will not be displayed again once you navigate away.
 
 
-#### 5: Retrieve Required Configuration Values
+**5: Retrieve Required Configuration Values**
 
 After completing the setup, you'll need the following values to complete the setup:
 
@@ -434,7 +434,7 @@ After successful domain verification, follow these steps:
 
 
 
-#### Test Your Configuration
+**Test Your Configuration**
 
 It's recommended to test your app registration using a tool like:
 

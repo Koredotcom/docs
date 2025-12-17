@@ -79,7 +79,7 @@ This property helps execute a script as the first step when the Agent Node is re
 
 To define a pre-processor script, click **Define Script**, add the script you want to execute, and click **Save**. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.
 
-<img src="../images/pre_prosessor.png" alt="Pre prosessor Script" title="Pre prosessor Script" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pre_processor.png" alt="Pre processor Script" title="Pre processor Script" style="border: 1px solid gray; zoom:70%;">
 
 
 ###### Entities
