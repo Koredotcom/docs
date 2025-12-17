@@ -435,7 +435,7 @@ var data = {
       "displayValue": "$ 120"
     },
     {
-      "title": "Inivestments",
+      "title": "Investments",
       "value": "320",
       "displayValue": "$ 320"
     },
