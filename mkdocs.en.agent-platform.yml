@@ -141,7 +141,7 @@ nav:
     - Business Solutions:
       - AI for Service: https://docs.kore.ai/xo/home/
       - AI for Work: https://docs.kore.ai/ai-for-work/home/ 
-      - AI for Process: https://kore.ai/ai-for-process/  
+      - AI for Process: https://docs.kore.ai/ai-for-process/home/
   - AI Agents: 
     - Multi-Agent System: ai-agents/multi-agent-system.md
     - Agentic Apps: ai-agents/agentic-apps/overview.md
