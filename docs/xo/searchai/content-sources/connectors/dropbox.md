@@ -69,7 +69,7 @@ Save the **App key** and **App secret** displayed on this page. These credential
 
 ## Step 2: Configuring the Dropbox connector in the Search AI application
 
-To complete the integration, log in to your Search AI application. Go to the **Connectors** under the **Sources** and select **Dropbox** connector.  Provide the following config parameters on the **Authorization** tab and click **Connect**. 
+To complete the integration, log in to your Search AI application. Go to the **Connectors** under the **Sources** and select **Dropbox** connector. Provide the following config parameters on the **Authorization** tab and click **Connect**. 
 
 * Name – Unique name for the connector 
 * Authorization Type - Set to OAuth 2.0

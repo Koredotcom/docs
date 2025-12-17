@@ -37,7 +37,7 @@ Integrating BitBucket with Search AI enhances search capabilities by enabling us
 
 ## Prerequisites
 
-To enable integration of Search AI and BitBucket, set up an **OAuth Consumer** in BitBucket.  The client credentials generated for the OAuth consumer are used to configure the BitBucket Connector in Search AI. 
+To enable integration of Search AI and BitBucket, set up an **OAuth Consumer** in BitBucket. The client credentials generated for the OAuth consumer are used to configure the BitBucket Connector in Search AI. 
 
 
 ## Set up OAuth Consumer in BitBucket
