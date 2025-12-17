@@ -205,7 +205,7 @@ Steps to find a deal by Id in HubSpot:
 
 1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Get Deal by Id_ dialog task is added with the following components:  
-<img src="../images/hubspot-tem-img11.png" alt="Get Detal ID dialog task added" title="Get Deal ID dialog task added" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/hubspot-tem-img11.png" alt="Get Deal ID dialog task added" title="Get Deal ID dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **getDeal by Id** - A user intent to get a deal by Id.
     2. **dealID** – Entity nodes for entering the deal Id.
@@ -242,7 +242,7 @@ Steps to find a deal by Id in HubSpot:
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the App console to get a deal by ID as shown below:  
-<img src="../images/hubspot-tem-img13.png" alt="VA promp to get deal by id" title="VA promp to get deal by id" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/hubspot-tem-img13.png" alt="VA prompt to get deal by id" title="VA prompt to get deal by id" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Click the **View Deal** button to view the deal details in HubSpot.
 
@@ -787,10 +787,10 @@ Steps to view all contacts in HubSpot:
         "properties": {
         "createdate": "2022-09-13T11:27:52.943Z",
         "email": "eurfh@meta.com",
-        "firstname": "Pavan",
+        "firstname": "John",
         "hs_object_id": "301",
         "lastmodifieddate": "2022-09-15T07:51:34.486Z",
-        "lastname": "Mamidi"
+        "lastname": "Doe"
         },
         "createdAt": "2022-09-13T11:27:52.943Z",
         "updatedAt": "2022-09-15T07:51:34.486Z",
@@ -861,7 +861,7 @@ Steps to search a contact using keywords in HubSpot:
 
 1. Refer to the [Install the HubSpot Action Templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} section for installing this action template.
 2. The _Search Contact by Keyword_ dialog task is added for the Hubspot with the following components:
-<img src="../images/hubspot-tem-img38.png" alt="Search Contact by Keyword_ dialog task is added" title="Search Contact by Keywor dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/hubspot-tem-img38.png" alt="Search Contact by Keyword_ dialog task is added" title="Search Contact by Keyword dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **Search Contact** - A user intent to search a contact.
     2. **Keyword** – Entity nodes for entering the keywords for the searching contacts.

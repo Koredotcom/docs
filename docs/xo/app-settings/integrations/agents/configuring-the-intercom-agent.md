@@ -87,7 +87,7 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
     <img src="../images/configuring-the-intercom-agent-img5.png" alt="Customize the channel mapping" title="Customize the channel mapping" style="border: 1px solid gray;">
 
-7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"} article.
+7. Once you click **Manage**, you can map the channels which you want to use Intercom agent to handover the conversations. To learn more about channel enablement, read the[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"} article.
 
     <img src="../images/configuring-the-intercom-agent-img6.png" alt="Map channels to intercom agent" title="Map channels to intercom agent" style="border: 1px solid gray;">
 
