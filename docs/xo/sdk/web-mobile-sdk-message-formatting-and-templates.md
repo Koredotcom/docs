@@ -623,7 +623,7 @@ print(JSON.stringify(message));
 
 ![Carousel template](images/web-mobile-message-templates/carousel-template.png "carousel template")
 
-### Piechart Template
+### Pie chart Template
 
 !!! note
 
@@ -665,7 +665,7 @@ var message = {
   }
 print(JSON.stringify(message));
 ```
-![Piechart template](images/web-mobile-message-templates/piechart-template.png "Piechart template")
+![Pie chart template](images/web-mobile-message-templates/pie-chart-template.png "Pie chart template")
 
 
 ### Line Chart Template
@@ -890,7 +890,7 @@ on_user_message: function(requestId, data, callback) {
 You can apply your formatting directly in JavaScript using the Platform markdown as described.
 
 * **Bold** – *text to be bolded* Do not add spaces after or before the ” * ” symbol. For example, `Here is *bold*.`
-* **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
+* **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceding and succeeding _ will also italicize the enclosed text, i.e. `Here is _italics_.`
 * **Link** – [Text for the link here](https://iana.org) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
 * **New Line** – \n One line indention.
 * **Multi Line** – \n\n\n Three line indentions.
@@ -973,7 +973,7 @@ var message =  {
                     "value":"CHF"
                 },
                 {
-                    "title": "Chinese Yuanr",
+                    "title": "Chinese Yuan",
                     "value":"CNY"
                 },
                 {
