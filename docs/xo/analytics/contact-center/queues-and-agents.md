@@ -10,7 +10,7 @@ The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performan
 
 2. Click **Queues & Agents** under the **Contact Center** section of the **Analytics** panel. The **Queues & Agents** dashboard is displayed on the right side of the page.
 
-# **Time Selection**
+## **Time Selection**
 
 You can filter Queues & Agents data for a specific time range. You can choose a particular time range and click Apply.
 
@@ -19,6 +19,7 @@ You can filter Queues & Agents data for a specific time range. You can choose a 
 ## Filters
 
 To avoid repeatedly filtering your choices, you can create and save multiple filters on the Queues & Agents tab.
+
 ### Create Filter
 
 1. Click the **Filter** button.
@@ -35,9 +36,9 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
    Select from the below available options:
 
-   1. Clear – Clears the selection.
-   2. Save & Apply – Saves the filter, and it appears when selected.
-   3. Apply – Applied for one instance and not saved.
+   * Clear: Clears the selection.
+   * Save & Apply: Saves the filter, and it appears when selected.
+   * Apply: Applied for one instance and not saved.
 
 4. Click **Save & Apply**.
 
@@ -99,46 +100,46 @@ A confirmation message is displayed and the filter is deleted.
 
 This section displays the metrics for all conversations (phone, chat, and email):
 
-* Total Conversations – Total conversation count for the selected time range.
-* In Queue – Count conversations in a queue.
-* Ongoing – Count of ongoing conversations.
-* Idle – Count of Idle conversations.
-* Expired – Count of expired conversations.
-* Closed – Count of closed conversations.
+* Total Conversations-Total conversation count for the selected time range.
+* In Queue-Count conversations in a queue.
+* Ongoing-Count of ongoing conversations.
+* Idle-Count of Idle conversations.
+* Expired-Count of expired conversations.
+* Closed-Count of closed conversations.
 
 COMPARE: The COMPARE toggle compares all historical metrics over a previous equal-sized time range. For example, if the Average Handle Time is 12m 2s for the last 30 days the previous Average Handle Time was 6m 1s. If you click Compare, an increase of 50% over the last 30 days will be displayed.
 
-Transfer Rate – Percentage of transferred conversations.
+Transfer Rate-Percentage of transferred conversations.
 
-Abandon Rate – Percentage of abandoned conversations.
+Abandon Rate-Percentage of abandoned conversations.
 
 Clicking the percentage value on the Abandon Rate widget shows the following information:
 
-* “Abandoned while in Queue” – Count of conversations (NNNN) that were abandoned while waiting in the queue.
-* “Abandoned while with Agent” – Count of conversations (NNNN) that where abandoned while being attended by an Agent.
+* `Abandoned while in Queue`-Count of conversations (NNNN) that were abandoned while waiting in the queue.
+* `Abandoned while with Agent`-Count of conversations (NNNN) that where abandoned while being attended by an Agent.
 
     <img src="../images/abandon-rate.png" alt="Abandon Rate" title="Abandon Rate" style="border: 1px solid gray; zoom:80%;">
 
 The formula for measuring the Abandon Count:
 
 * For Digital Channels:
-Abandon Count = User Abandons While Waiting in Queue + Conversations With Agent that went through the Idle-Expired Sequence.
+`Abandon Count` = User Abandons While Waiting in Queue + Conversations With Agent that went through the Idle-Expired Sequence.
 * For Voice Channels:
-Abandon Count = User Abandons While Waiting in Queue + Conversations With Agent where User Disconnects While Agent has put the call on hold.
+`Abandon Count` = User Abandons While Waiting in Queue + Conversations With Agent where User Disconnects While Agent has put the call on hold.
 
-Overdue – This live metric shows the number of conversations currently in the overdue state. It displays the number based on all the conversations currently associated with the selected queues and agents.
+Overdue-This live metric shows the number of conversations in the overdue state. It displays the number based on all the conversations associated with the selected queues and agents.
 
 System Terminations: Count of conversations that were terminated by the System. This metric is shown based on selected queues only. Clicking on the number displays the details of the system terminations.
 
 <img src="../images/system-terminations.png" alt="System Terminations" title="System Terminations" style="border: 1px solid gray; zoom:80%;">
 
-Average Speed to Answer – The average time it takes an agent to respond to a conversation assigned to them.
+Average Speed to Answer-The average time it takes an agent to respond to a conversation assigned to them.
 
-Average Handling Time – The average handling time of the conversations.
+Average Handling Time-The average handling time of the conversations.
 
-Queue Load – Displays the current load on the system as a percentage of its capacity. This is a live metric.
+Queue Load-Displays the current load on the system as a percentage of its capacity. This is a live metric.
 
-Resolved Rate – Percentage of resolved conversations.
+Resolved Rate-Percentage of resolved conversations.
 
 <img src="../images/resolved-rate.png" alt="Resolved Rate" title="Resolved Rate" style="border: 1px solid gray; zoom:80%;">
 
@@ -148,35 +149,35 @@ This section displays individual metrics for all conversations (call, chat, emai
 
 Voice Metrics: The following voice conversation metrics are displayed in this section:
 
-1. Average Speed to Answer
-2. Avg Handle Time
-3. Avg Pick-up Time
-4. Avg Engagement time
-5. Avg Talk Time
-6. Avg. Mute/Hold Time
+* Average Speed to Answer
+* Avg Handle Time
+* Avg Pick-up Time
+* Avg Engagement time
+* Avg Talk Time
+* Avg. Mute/Hold Time
 
    <img src="../images/voice-metrics.png" alt="Voice Metrics" title="Voice Metrics" style="border: 1px solid gray; zoom:80%;">
 
 Chat Metrics: The following chat conversation metrics are displayed in this section: 
 
-1. Average Speed to Answer
-2. Avg Handle Time
-3. Avg First Response Time
-4. Avg. Agent Response Time
-5. Avg Customer Response Time
+* Average Speed to Answer
+* Avg Handle Time
+* Avg First Response Time
+* Avg. Agent Response Time
+* Avg Customer Response Time
 
    <img src="../images/chat-metrics.png" alt="Chat Metrics" title="Chat Metrics" style="border: 1px solid gray; zoom:80%;">
 
 Transfers: The following transfer metrics are displayed in this section: 
 
-1. Transfer Rate
-2. Transfer Rate
-3. Call Transfers
-4. Chat Transfers
+* Transfer Rate
+* Transfer Rate
+* Call Transfers
+* Chat Transfers
 
    <img src="../images/transfers.png" alt="Transfers" title="Transfers" style="border: 1px solid gray; zoom:80%;">
 
-Skills In Queue: Displays counts per skill of all conversations currently in the queue (active or waiting).
+Skills In Queue: Displays counts per skill of all conversations in the queue (active or waiting).
 
    <img src="../images/skills-in-queue.png" alt="Skills in Queue" title="Skills in Queue" style="border: 1px solid gray; zoom:80%;">
 
@@ -184,7 +185,7 @@ Top Skills: Displays the number of conversations per skill for the selected time
 
    <img src="../images/top-skills.png" alt="Top Skills" title="Top Skills" style="border: 1px solid gray; zoom:80%;">
 
-Conversations by &lt; List-of-all-Disposition Sets>: Displays the Conversations by &lt;List-of-all-Disposition-Sets> to allow users to select a Disposition Set from the list.
+Conversations by &lt; List-of-all-Disposition Sets>: Displays the Conversations by &lt;List-of-all-Disposition-Sets> to let users to select a Disposition Set from the list.
 
    <img src="../images/conversations-by.png" alt="Conversations By" title="Conversations By" style="border: 1px solid gray; zoom:80%;">
 
@@ -309,13 +310,13 @@ This section displays queue performance metrics for all conversations (call, cha
 
 Completed = AbandonedInQueue + SystemTerminated + All-Conversations-With-Resolutions.
 
-**Note**: This formula is applicable when a call does not return to the same queue multiple times. If it does, it will be counted multiple times and does not add up correctly.
+**Note**: This formula is applicable when a call doesn't return to the same queue multiple times. If it does, it will be counted multiple times and doesn't add up correctly.
 
 **Question**. Does the Incoming count include Inbound and Outbound calls?<br>
 **Answer**: Yes, if the conversations (calls/chats) entered that queue.
 
 **Question**. Is the Incoming call count taken from the queue?<br>
-**Answer**: Yes. However, for “No-Filters”, the incoming call count includes conversations directly transferred from the AI Agents to the Agent, without entering a queue.
+**Answer**: Yes. However, for `No-Filters`, the incoming call count includes conversations directly transferred from the AI Agents to the Agent, without entering a queue.
    </td>
   </tr>
   <tr>
@@ -474,7 +475,7 @@ The agent ends the conversation, performs any After-call work, assigns dispositi
   <tr>
    <td>Average Speed to Answer
    </td>
-   <td>Formula = Sum of (Queue Wait time) / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
    <td>Formula = Sum of (Queue Wait time) / Closed Queue Wait time For each interaction = Accepted (by Agent) time <em>–</em> Queue Entry Time.
    </td>
@@ -524,9 +525,9 @@ ACW time = Time spent in post-call work by the Agent.
   <tr>
    <td>Average Speed to Answer
    </td>
-   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
-   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
   </tr>
   <tr>
@@ -544,9 +545,9 @@ Handle Time = Talk Time + Hold Time + ACW time
   <tr>
    <td>Average Pick-up Time
    </td>
-   <td>Formula: Pick-up time of each Interaction / Number of Closed Interactions. For interaction in a queue, Pick Up Time = Time when Agent Accepted – Time when Agent was Assigned the interaction.
+   <td>Formula: Pick-up time of each Interaction / Number of Closed Interactions. For interaction in a queue, Pick Up Time = Time when Agent Accepted-Time when Agent was Assigned the interaction.
    </td>
-   <td>Formula: Pick-up time of each Interaction / Number of Closed Interactions. For interaction in a queue, Pick Up Time = Time when Agent Accepted – Time when Agent was Assigned the interaction.
+   <td>Formula: Pick-up time of each Interaction / Number of Closed Interactions. For interaction in a queue, Pick Up Time = Time when Agent Accepted-Time when Agent was Assigned the interaction.
    </td>
   </tr>
   <tr>
@@ -572,9 +573,9 @@ Talk time = Time for which the agent and caller were in active conversation.
   <tr>
    <td>Average Speed to Answer
    </td>
-   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
-   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
   </tr>
   <tr>
@@ -592,9 +593,9 @@ Talk time = Time for which the agent and caller were in active conversation.
   <tr>
    <td>Average Speed to Answer
    </td>
-   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
-   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time – Queue Entry Time.
+   <td>Formula = Sum of (Queue Wait time) across all conversations / Closed Queue Wait time For each interaction = Accepted (by Agent) time-Queue Entry Time.
    </td>
   </tr>
   <tr>
@@ -652,7 +653,7 @@ When there is a continuous stream of messages from either party, the earliest me
   <tr>
    <td>Transfer Rate
    </td>
-   <td>The number of conversations transferred from the queue (even if it is to the same queue) / Total Conversations.
+   <td>The number of conversations transferred from the queue (even if it's to the same queue) / Total Conversations.
    </td>
    <td>The number of conversations transferred from the Agent / Total Conversations.
    </td>
@@ -660,7 +661,7 @@ When there is a continuous stream of messages from either party, the earliest me
   <tr>
    <td>Total Transfers
    </td>
-   <td>The number of conversations transferred from the queue (even if it is to the same queue).
+   <td>The number of conversations transferred from the queue (even if it's to the same queue).
    </td>
    <td>The number of conversations transferred from the Agent.
    </td>
