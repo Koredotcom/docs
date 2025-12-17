@@ -158,7 +158,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 <img src="../images/integrated_softphone_16.png" alt="integrated_softphone" title="integrated_softphone" style="border: 1px solid gray; zoom:80%;">
 
 4. Change the status to **Available**.  
-    <img src="../images/availabe_status_17.png" alt="availabe_status" title="availabe_status" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/available_status_17.png" alt="available_status" title="available_status" style="border: 1px solid gray; zoom:80%;">
 
 5. Go back to the **NICE** home page, and click **Application Launcher** > **ACD**.
 6. Click **Points of Contact**.

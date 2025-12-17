@@ -9,8 +9,6 @@ You can upload a dataset of your choice in CSV, JSON, or JSONL format.
 Steps to upload a dataset:
 
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
 2. Click **Data** on the top navigation bar. The **Data** page is displayed.  
 <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:50%;">
    

@@ -74,7 +74,7 @@ Configure the following settings:
 <img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
 
 2. Enter a descriptive **Name** for future reference of the metrics.
-<img src="../images/add-new-metrics-by-dialogtask.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">    
+<img src="../images/add-new-metrics-by-dialog-task.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">    
  
 3. Select a **Dialog Agent** from the dropdown.  
 
@@ -99,7 +99,7 @@ Configure the following settings:
 Steps to edit any existing **By Dialog Task** metrics:
 
 1. Right-click on a desired evaluation metric name **By Dialog Task** metrics category.       
-<img src="../images/by-dialogtask-edit.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">   
+<img src="../images/by-dialog-task-edit.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">   
 
 2. Choose an option:
 

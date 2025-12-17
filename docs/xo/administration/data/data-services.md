@@ -99,7 +99,7 @@ Following are the terms and their definitions as used by the platform
   <tr>
    <td>Index
    </td>
-   <td>An index is a pointer to data in a table and is used to speed up data retrieval. Assing a column that you think best identifies a row in the table.
+   <td>An index is a pointer to data in a table and is used to speed up data retrieval. Assign a column that you think best identifies a row in the table.
    </td>
   </tr>
   <tr>

@@ -61,7 +61,7 @@ This document provides detailed, step-by-step instructions for setting up the in
 
 ## Voice Setup
 * [(Optional) Install Audiohook for Voice Streaming](#optional-install-audiohook-for-voice-streaming)
-* [Create/Update an Architect Inbound Call Flow in Genesy for the Agent Queue](#createupdate-architect-inbound-call-flow-in-genesys-for-the-agent-queue)
+* [Create/Update an Architect Inbound Call Flow in Genesys for the Agent Queue](#createupdate-architect-inbound-call-flow-in-genesys-for-the-agent-queue)
 * [Steps to start a Voice Request Simulation](#steps-to-start-a-voice-request-simulation)
 
 ## Prerequisites
@@ -132,7 +132,7 @@ To change the values, you must click the gray box surrounding each Custom Field,
 
 [Third-Party Configuration](./../../configuration/third-party-configuration.md){:target="_blank"} is used to map Agent AI bots to specific queues. Within this configuration, you can define the bot's language, custom data configuration, or secure custom data configuration. 
 
-For example, if you want to associate Agent AI Bot1 with Queue1, and Agent AI Bot2 with Queuel2, you need to:  
+For example, if you want to associate Agent AI Bot1 with Queue1, and Agent AI Bot2 with Queue2, you need to:  
 
 * Create a record in Third Party Configuration for Agent AI Bot1, setting the Queue Identifier as Queue1.
 * Create a record in Third Party Configuration for Agent AI Bot2, setting the Queue Identifier as Queue2.
@@ -360,7 +360,7 @@ The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON objec
     3. Click **Apps**, and click one of the app names that has “read” access:  
         <img src="../kore-data-table/click-apps-read-access-20.png" alt="click-apps-read-access" title="click-apps-read-access" style="border: 1px solid gray; zoom:80%;"> 
     4. Copy the **Client ID** and **Client Secret** values.  
-        <img src="../kore-data-table/client-id-client-secret-values-21.png" alt="client-id-client-se../../../apis/automation/api-introduction.md#generating-the-jwt-tokenolid gray; zoom:80%;">
+        <img src="../kore-data-table/client-id-client-secret-values-21.png" alt="client-id-client-secret-values" title="client-id-client-secret-values" style="border:1px solid gray; zoom:80%;">
 
     5. Create a **JWT Token** using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token). 
 
@@ -426,7 +426,7 @@ You may also utilize Queue Filtering (optional).
 ## Create a Queue in Genesys
 
 1. Sign in to [Genesys Pure Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
-2. Go to **Adming** > **Contact Center** > **Queues**, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
+2. Go to **Admin** > **Contact Center** > **Queues**, or enter “queues” in the **search** bar under the **Admin** section and press the **Enter** key.
 3. Click **Create Queue**. An empty page to create a new queue appears on the right side of the page.  
 <img src="../kore-data-table/create-queue-25.png" alt="create-queue" title="create-queue" style="border: 1px solid gray; zoom:80%;">
 
@@ -478,7 +478,7 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Configurations**.  
 3. Click **New Configuration**.  
-<img src="../kore-data-table/messanger-new-configuration-31.png" alt="messanger-new-configuration" title="messanger-new-configuration" style="border: 1px solid gray; zoom:80%;">  
+<img src="../kore-data-table/messenger-new-configuration-31.png" alt="messenger-new-configuration" title="messenger-new-configuration" style="border: 1px solid gray; zoom:80%;">  
 4. Enter a name and description.  
 <img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
 
@@ -584,7 +584,7 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
     <img src="../images/advanced-configurations.png" alt="advanced-configurations" title="advanced-configurations" style="border: 1px solid gray; zoom:80%;">  
 
 9. Add credentials in the **Credentials** tab. 
-10. Use the **ClientID** and **ClientSecret** of the AI Agent you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
+10. Use the **ClientID** and **ClientSecret** of the AI Agent you have used while configuring the Audiohook. These credentials are used to validate the audio stream signature by Kore.  
 <img src="../kore-data-table/audiohook-credentials-44.png" alt="audiohook-credentials" title="audiohook-credentials" style="border: 1px solid gray; zoom:80%;">
 
 11. Click **Save**.

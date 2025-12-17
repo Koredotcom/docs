@@ -72,7 +72,7 @@ Steps to apply language-driven filter,
 
 ## View Agent-Specific Dashboard Details 
 
-This provies a personalized dashboard for each agent, accessible to both agents and supervisors. Supervisors can review key performance metrics filtered by language, date, and channel, identify coaching opportunities, and assign targeted coaching to improve individual agent performance.
+This provides a personalized dashboard for each agent, accessible to both agents and supervisors. Supervisors can review key performance metrics filtered by language, date, and channel, identify coaching opportunities, and assign targeted coaching to improve individual agent performance.
 
 Click an agent’s name on the leaderboard to view the **Agent Dashboard - Supervisor Overview**. This provides detailed performance insights and options to assign coaching sessions as needed.   
 <img src="../agent-leaderboard/images/agent-leaderboard-supervisor-overview.png" alt="Agent Dashboard" title="Agent Dashboard" style="border: 1px solid gray; zoom:60%;">

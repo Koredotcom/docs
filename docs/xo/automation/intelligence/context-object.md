@@ -335,7 +335,7 @@ For example, <code>context.customerId</code>
    </td>
    <td>Dialog
    </td>
-   <td>Repharse user query.
+   <td>Rephrase user query.
    </td>
    <td><strong>Syntax:</strong> <code>context.UserQuery : {
       	originalUserQuery : < original user input >,
@@ -480,7 +480,7 @@ The following is a payload response that contains a context object:
          "EnterpriseContext Summary":"TestingSpread",
          "enterprisecontext":"enterprisecontextvalue",
          "ec2":"Enterprise Context session variable from channel response",
-         "EC":"ec session variable from intializer",
+         "EC":"ec session variable from initializer",
          "enterprisepreprocessorkey":"enterprisepreprocessorvalue"
       },
       "BotContext":{

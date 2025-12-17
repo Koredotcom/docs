@@ -160,7 +160,7 @@ For example: "Did the agent inform the customer before placing them on hold?"
         * Set the **Similarity** threshold (0–100%) to determine how closely the agent’s actual utterance must match the sample list.
 
         * Set the **Resumption Behavior Evaluation Window** to define the timeframe after the hold ends for evaluating resumption behavior (range 1 – 120 seconds; default 10 seconds).   
-        <img src="../images/call-resumption-assessment-determinisic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/call-resumption-assessment-deterministic-ml.png" alt="Basic Configuration" title="Basic Configuration" style="border: 1px solid gray; zoom:70%;">
 
             * **Sub Criteria Weightage**:
  

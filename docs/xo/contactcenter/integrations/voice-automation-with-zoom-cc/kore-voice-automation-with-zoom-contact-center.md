@@ -35,7 +35,7 @@ The important steps to set up the ZCC channel are summarized below:
 
 ## Step 1: Associate an App within an experience flow. [Know more](../../../flows/create-flows.md){:target="_blank"}
 
-If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transfering the call from ZCC to Kore AI Agent. Read more [here](../../../flows/node-types/automation.md){:target="_blank"}.
+If you have your App ready with you then you can use “Automation” Node in the flow and attach that App with the flow that you want to trigger upon transferring the call from ZCC to Kore AI Agent. Read more [here](../../../flows/node-types/automation.md){:target="_blank"}.
 
 !!! note
     If you are using the older version “SmartAssist,” then use this [link](../../../flows/create-flows.md){:target="_blank"}.
@@ -214,7 +214,7 @@ Follow these steps to get the **botID**:
      16.1.1 Sign in to **AI for Service**.
     
      16.1.2 Go to **Contact Center AI** > **Flows & Channels** > **Digital**.  
-        <img src="../images/contact-center-flowsandchannels-digital-23.png" alt="contact-center-digital" title="contact-center-digital" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/contact-center-flows-and-channels-digital-23.png" alt="contact-center-digital" title="contact-center-digital" style="border: 1px solid gray; zoom:80%;">
 
      16.1.3 Click **Web/Mobile Client** under **Configured**.
     

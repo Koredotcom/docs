@@ -48,7 +48,7 @@ Steps to create new evaluation metric:
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 3. Configure your chosen measurement type metrics.    
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
+<img src="../evaluation-criteria/evaluation-metrics/images/metric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
 ## Metrics Configuration Elements

@@ -43,7 +43,7 @@ To improve platform performance and stability, Search AI is automatically upgrad
 
 After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. 
 
-[Learn more :octicons-arrow-right-24:](searchai-deprecations.md)
+[Learn more :octicons-arrow-right-24:](deprecations.md)
 
 
 <hr>

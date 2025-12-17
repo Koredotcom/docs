@@ -366,7 +366,7 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
         If you want to export one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not exported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
 8. You can also choose to **Include dependent tasks** or not for export. The existence of these are checked before import and the import fails if the dependent tasks are missing. These dependent tasks include the following:
-    * Linked Dialogs that is dialog nodes present in the definition of another dialog;
+    * Linked Dialogs that's dialog nodes present in the definition of another dialog;
     * Dialogs linked in defining ‘Behavior on Exceeding Retries’ for IVR Properties of any node of the dialog;
     * Dialog linked as part of sub-intent / interruption settings;
     * Any other scenario where a dialog execution could fail if a dependent task isn't included;

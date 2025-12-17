@@ -19,8 +19,8 @@ This API facilitates the downloading of voice call recordings. The API provides 
 
 | **PARAMETER** | **DESCRIPTION**                                                           | **TYPE**          |
 |-----------|-----------------------------------------------------------------------|---------------|
-| host      | Environment URL, for example, `https://platform.kore.ai`            | string, required |
-| botId     | botId or streamId. You can get it from the App Settings page. | string, required |
+| `host`      | Environment URL, for example, `https://platform.kore.ai`            | string, required |
+| `botId`     | botId or streamId. You can get it from the App Settings page. | string, required |
 
 ## Query Parameters
 

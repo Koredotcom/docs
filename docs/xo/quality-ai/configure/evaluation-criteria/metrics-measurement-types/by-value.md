@@ -202,7 +202,7 @@ Make sure that the following GenAI features are enabled:
 
     12. Click **Save**.
 
-6. Selct the custom **Conversation ID** to trigger sequential API calls and apply post-processing as needed.
+6. Select the custom **Conversation ID** to trigger sequential API calls and apply post-processing as needed.
 
     #### Conversation ID 
 
@@ -325,7 +325,7 @@ Make sure that the following GenAI features are enabled:
         * **Use Case**: Complex scenarios requiring custom handling.
 
         * **Example**: Use the value mentioned after the customer accepts terms, or use the value mentioned during the rate discussion phase. It uses the lowest number mentioned, that is 4.9%, as the best offer.  
-    <img src="../images/bussiness-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
+    <img src="../images/business-rules.png" alt="Business Rules" title="Business Rules" style="border: 1px solid gray; zoom:50%;">           
 
 9. Configure how to evaluate agent responses against backend data using AI or custom rules (Possible outcomes of Pass, Fail, or NA).
 

@@ -4,10 +4,6 @@
 
 To save/import data, which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience), by giving details with the `accountId` and `orgId`.
 
-!!! Note
-
-    This API is applicable post v11.13.0 release.
-
 | **Property**     | **Value**                                                                                                                                                                                                 |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Method**       | POST                                                                                                                                                                                                      |
