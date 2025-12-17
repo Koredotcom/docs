@@ -84,6 +84,7 @@ plugins:
         'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
         'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
         'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
+        'searchai/workbench.md': 'searchai/workbench/introduction.md'
 extra:
   version:
     provider: mike
