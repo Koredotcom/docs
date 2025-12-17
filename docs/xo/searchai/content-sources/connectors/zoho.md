@@ -46,9 +46,9 @@ Search AI interacts with Zoho CRM via its APIs. The Zoho CRM API uses the OAuth2
 1. Go to [Zoho Developer Console](https://api-console.zoho.com/).
 2. Select the client type as Server-based Applications.
 3. Set the Authorized Redirect URIs as one of the following as per your region or deployment. 
-    * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URLs: https://idp.kore.com/workflows/callback
+    * JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URLs: `https://idp.kore.com/workflows/callback`
 4. Click **Create**. This generates the client credentials, which can be found in the Client Secret tab. 
 
 Note that we uses the following scopes to access information from the Zoho CRM account. 

@@ -88,9 +88,9 @@ Once the application is created, you can update its name and description from th
 
 Next, configure Authorization code grants to allow Search AI to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
 
-* JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-* DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-* Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+* JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+* DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+* Prod Region Callback URLs: `https://idp.kore.com/workflows/callback`
 
 ![App Settings](images/confluencecloud/callback-url.png "App Settings")
 

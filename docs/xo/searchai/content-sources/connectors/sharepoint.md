@@ -68,9 +68,9 @@ App registrations are required to access resources programmatically. Registering
 ![App Registration](images/sharepoint/new-app-registration.png "Application Registration")
 
 * Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click **_Register_**. You can use one of the following URLs according to your region.
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
     
 ![Account Types](images/sharepoint/account-types.png "Account Types")
 
