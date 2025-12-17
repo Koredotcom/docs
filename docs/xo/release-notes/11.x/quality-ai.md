@@ -18,7 +18,7 @@ Import and Export support for Quality AI deployment enables seamless management 
 
 **QM Express Onboarding Supports AWS Assume Role Access**
 
-QM Express now supports IAM Role (Assume Role) authentication for secure, temporary credential access without storing long-term AWS keys. The update includes a new IAM auth type, Role ARN schema, enhanced validation, and S3 service initialization using STS AssumeRole with automatic credential rotation. This strengthens security, enables cross-account access, and aligns with AWS best practices for least-privilege access. [Learn more :octicons-arrow-right-24:](../../quality-ai/connectors/aws-s3-connector-setup-guide.md)
+QM Express now supports IAM Role (Assume Role) authentication for secure, temporary credential access without storing long-term AWS keys. The update includes a new IAM auth type, Role ARN schema, enhanced validation, and S3 service initialization using STS AssumeRole with automatic credential rotation. This strengthens security, enables cross-account access, and aligns with AWS best practices for least-privilege access. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/connectors/aws-s3-connector-setup-guide.md)
 
 <font size="4">Analyze</font>
 
