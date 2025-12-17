@@ -181,8 +181,8 @@ Steps to create a new deal in HubSpot:
         }
         ```
         
-    6. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.  
-    <img src="../images/hubspot-tem-img7.png" alt="getAccoutService" title="getAccoutService" style="border: 1px solid gray;zoom:50%;"/>
+    6. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.  
+    <img src="../images/hubspot-tem-img7.png" alt="getAccountService" title="getAccountService" style="border: 1px solid gray;zoom:50%;"/>
 
     7. **createDealMessage** – A message node with script to display responses for various scenarios. 
 
@@ -236,7 +236,7 @@ Steps to find a deal by Id in HubSpot:
         }
         ```
 
-    5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    5. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     6. **getDealMessage** – A message node with script to display responses for various scenarios.
 
 3. Click the **Train** tab to complete the Dialog task training.
@@ -444,7 +444,7 @@ Steps to update an existing deal in HubSpot:
         }
         ```
 
-    6. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    6. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     7. **getDealService** – A bot action service to get deal details in an external integration. Click the **Plus** icon to expand to view the getDealService bot action component properties.
     8. **updateDealMessage** – A message node with script to display responses for various scenarios. 
 
@@ -543,7 +543,7 @@ Steps to search a deal using keywords in HubSpot:
         ] }
         ```
 
-    5. **getAccoutService** – A bot action service to get account details in an external integration. Click the <strong>Plus </strong>icon to expand to view the getAccountService bot action component properties.
+    5. **getAccountService** – A bot action service to get account details in an external integration. Click the <strong>Plus </strong>icon to expand to view the getAccountService bot action component properties.
     6. **searchDealMessage** – A message node with script to display responses for various scenarios. 
 
 3. Click the **Train** tab to complete the Dialog task training.
@@ -564,7 +564,7 @@ Steps to delete a deal in HubSpot:
     3. **deleteDealService** – A bot action script to delete a deal in an external integration. Click the **Plus** icon to expand to view the deleteContactService bot action component properties.  
     <img src="../images/hubspot-tem-img25.png" alt="deleteDealService" title="deleteDealService" style="border: 1px solid gray;zoom:50%;"/>
 
-    4. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    4. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     5. **deleteDealMessage** – A message node with script to display responses for various scenarios. 
 
 3. Click the **Train** tab to complete the Dialog task training.
@@ -634,7 +634,7 @@ Steps to create a contact in HubSpot:
         }
         ```
 
-    5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    5. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     6. **createContactMessage** – A message node with script to display responses for various scenarios. 
 
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)and learn how to view the new contact.
@@ -673,7 +673,7 @@ Steps to find a contact by ID in HubSpot:
         }
         ```
 
-    6. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    6. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     7. **getContactMessage** – A message node with script to display responses for various scenarios. 
 
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to find the contact.   
@@ -799,7 +799,7 @@ Steps to view all contacts in HubSpot:
         ] }
         ```
 
-    4. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    4. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     5. **listAllContactsMessage** – A message node with script to display responses for various scenarios. 
     
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to view all contacts.   
@@ -848,7 +848,7 @@ Steps to update an existing contact in HubSpot:
         }
         ```
     
-    6. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    6. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     7. **getContactService** – A bot action service to get deal details in an external integration. Click the **Plus** icon to expand to view the getContactService bot action component properties.
     8. **updateContactMessage** – A message node with script to display responses for various scenarios.
 
@@ -904,7 +904,7 @@ Steps to search a contact using keywords in HubSpot:
         ] }
         ```
 
-    5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    5. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     6. **searchContactMessage** – A message node with script to display responses for various scenarios. 
 
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to search the contact with keyword.   
@@ -922,7 +922,7 @@ Steps to delete a contact in HubSpot:
     2. **ContactId** – Entity nodes for entering the Contact ID.
     3. **deleteContactService** – A bot action script to delete a deal in an external integration. Click the **Plus** icon to expand to view the deleteContactService bot action component properties.  
     <img src="../images/hubspot-tem-img41.png" alt="deleteContactService" title="deleteContactService" style="border: 1px solid gray;zoom:50%;"/>
-    4. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    4. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     5. **deleteContactMessage** – A message node with script to display responses for various scenarios.
 
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to delete the contact.

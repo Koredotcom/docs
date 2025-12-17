@@ -70,8 +70,6 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 
- 
-
 
 ## Sample Request
 
