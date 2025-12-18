@@ -26,9 +26,9 @@ Steps to generate the Evaluation Form Summary Report:
 
 1. Enter the **Configure** section fields and filters.
 
-    * Select one evaluation form to determine data scope and applicable interactions. At least one form selection is required. 
+    * Select one evaluation form to determine data scope and applicable interactions. At least one form selection you must select. 
 
-    * Select a **Date** or date range from the dropdown, such as Last 7 days, Last Week, Week to Date.
+    * Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
 
     * Select a **Timezone** (defaults to device local timezone) from the dropdown.
 
@@ -75,12 +75,12 @@ Steps to generate the Evaluation Form Summary Report:
 1. Select **Save** to confirm and activate the schedule.  
 <img src="../images/gen-start-date-and-timezone.png" alt="Save" title="Save" style="border: 1px solid gray; zoom:60%;">
 
-1. The saved report is displayed in the **My Reports - Reports** dashboard.  
+1. The saved report appears in the **Reports > My Reports** dashboard.  
 <img src="../images/sample-report.png" alt="My Reports" title="My Reports" style="border: 1px solid gray; zoom:100%;">
 
 1. Enable scheduling by switching on the **Schedule** toggle.
 
-1. Select the **Run** button to generate the report immediately.
+1. Select **Bulk Run** to generate the report immediately.
 
 ## Report Fields
 
@@ -105,9 +105,9 @@ Steps to view and download a report:
 
 1. Select **History** to view all generated reports.
 
-1. Select **Download** to save and view the required reports in CSV format.
+1. Select **Download** to save the required reports in CSV format.
 
-### Sample Report Format
+### Report Format
 
 * **Format**: CSV file
 
