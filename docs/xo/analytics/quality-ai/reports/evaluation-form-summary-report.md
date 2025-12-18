@@ -1,3 +1,5 @@
+--8<-- "includes/qualityai-reports-back-link.md"
+
 # Evaluation Form Summary Report 
 
 Summarizes evaluation metric adherence using selected forms, providing aggregated compliance statistics. This report focuses on metric-level performance across all interactions, highlighting adherence rates and fatal metric violations.

@@ -1,3 +1,5 @@
+--8<-- "includes/qualityai-reports-back-link.md"
+
 # Interaction Evaluation and Conversation Analytics Report 
 
 Exports comprehensive conversation data based on selected evaluation forms, with customizable field options. This report provides detailed insights into individual interactions, including sentiment analysis, topics discussed, agent performance metrics, and evaluation scores.

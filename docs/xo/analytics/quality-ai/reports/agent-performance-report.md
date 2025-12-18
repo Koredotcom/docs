@@ -1,3 +1,5 @@
+--8<-- "includes/qualityai-reports-back-link.md"
+
 # Agent Performance Report 
 
 Exports agent performance scorecard data based on selected scorecards, with optional agent attribute inclusion. This report provides comprehensive insights into individual agent performance, including scorecard scores, attribute ratings, metric adherence, and coaching assignments.
