@@ -176,7 +176,7 @@ Define how user input validation occurs for this node:
 
 Decide whether to use autocorrect to mitigate potential user input errors:
 
-* **Autocorrect user input**: The input will be autocorrected for spelling and other common errors.
+* **Autocorrect user input**: The system autocorrects the input for spelling and other common errors..
 * **Do not autocorrect user input**: The user input will be used without making any corrections.
 
 <img src="../images/genai-node(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
@@ -253,7 +253,7 @@ This node captures entities in the following structure:
         {
             "entities":
             {
-                "pizza":"margartia"
+                "pizza":"margarita"
                 "size":"large"
                 "crust":"thin"
                 }
