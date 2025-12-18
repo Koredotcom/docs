@@ -310,7 +310,7 @@ nav:
       - Dynamic Routing: automation/dynamic-routing.md 
       - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
-    - NLP-based App: nlp-topics.md
+    - Legacy NLP Topics: nlp-topics.md
     - How To:
         - New vs. Returning Users: kb/new-and-returning-users.md
         - Access Original PII Data: how-tos/access-original-pii-data.md

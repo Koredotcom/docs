@@ -4,7 +4,7 @@ hide:
 ---
 
 
-# NLP-based App Topics
+# Legacy NLP Topics
 
 
 The platform supports two engines for creating Automation AI app: **DialogGPT-based** and **NLP-based** engines.
@@ -15,6 +15,77 @@ Existing apps built with the **NLP-based** engine use traditional intent detecti
 
 The articles on this page focus on **NLP-based features** and help you understand, manage, and enhance apps built using the NLP engine.
 
+
+## Knowledge AI
+
+- [About Knowledge AI](automation/knowledge-ai/knowledge-ai-introduction.md)
+- Knowledge Graph (KG)
+    - [About KG](automation/knowledge-ai/knowledge-graph-overview.md)
+    - [Terminology](automation/knowledge-ai/knowledge-graph-terminology.md)
+    - [Build a KG](automation/knowledge-ai/build-a-knowledge-graph.md)
+    - [Manage KG](automation/knowledge-ai/manage-faqs.md)
+    - [Knowledge Extraction](automation/knowledge-ai/knowledge-extraction.md)
+    - Import or Export KG
+        - [Prepare Data for Import](automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md)
+        - [Import or Export KG](automation/knowledge-ai/import-and-export-knowledge-graph.md)
+        - [Auto-Generate KG](automation/knowledge-ai/generate-a-knowledge-graph.md)
+    - [KG Analysis](automation/knowledge-ai/knowledge-graph-analysis.md)
+
+
+
+## Natural Language
+
+- [About NLP](automation/natural-language/nlp-introduction.md)
+- [NLP Optimization](automation/natural-language/training/optimizing-bots.md)
+- [NLP Guidelines](automation/natural-language/nlp-guidelines.md)
+- Training
+    - [About NLP Training](automation/natural-language/training/nlp-training-overview.md)
+    - ML Engine
+        - [The ML Engine](automation/natural-language/training/machine-learning-engine.md)
+        - [Model Validation](automation/natural-language/training/model-validation.md)
+    - [FM Engine](automation/natural-language/training/fundamental-meaning.md)
+    - [KG Engine](automation/knowledge-ai/knowledge-graph-training.md)
+    - [Traits Engine](automation/natural-language/training/traits.md)
+    - [Ranking and Resolver](automation/natural-language/training/ranking-and-resolver.md)
+    - [Training Validations](automation/natural-language/training/training-validations.md)
+- NLU Configuration
+    - [NLP Engine Configurations](automation/natural-language/nlu-configurations/engine-tuning.md)
+    - [Multi Intent Detection](automation/natural-language/nlu-configurations/multi-intent-detection.md)
+    - [Amend Entities](automation/natural-language/nlu-configurations/amend-entities.md)
+
+## Conversation Intelligence
+
+- [About Intelligence](automation/intelligence/intelligence-overview.md)
+- [Context Management](automation/intelligence/context-management.md)
+
+- Conversation Management
+    - [Standard Responses](automation/intelligence/conversation-management/standard-responses.md)
+    - [Manage Interruptions](automation/intelligence/conversation-management/manage-interruptions.md)
+    - [Ignore Words and Field Memory](automation/intelligence/conversation-management/ignore-words-and-field-memory.md)
+
+## Testing
+
+- [About Test and Debug](automation/testing/test-and-debug-overview.md)
+- [Test](automation/testing/talk-to-bot.md)
+- [Playground](automation/testing/playground.md)
+    - [Utterance Testing - NLP](automation/testing/testing-your-bot-with-nlp.md)
+    - Regression Testing
+        - [Health and Monitoring - NLP](automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md)
+        - [Batch Testing - NLP](automation/testing/regression-testing/batch-testing.md)
+        - [Conversation Testing - NLP](automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md)
+
+## Advanced Topics
+
+- [Intent Discovery](automation/tools/intent-discovery.md)
+
+
+
+
+
+
+
+
+------------------------XXXXXXXXXXXXX-------------------------
 
 
 
@@ -132,8 +203,8 @@ The articles on this page focus on **NLP-based features** and help you understan
 ## Testing
 
 - [About Test and Debug](automation/testing/test-and-debug-overview.md)
-- [Playground](automation/testing/playground.md)
 - [Test](automation/testing/talk-to-bot.md)
+- [Playground](automation/testing/playground.md)
     - [Utterance Testing - NLP](automation/testing/testing-your-bot-with-nlp.md)
     - Regression Testing
         - [Health and Monitoring - NLP](automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md)
@@ -158,6 +229,5 @@ The articles on this page focus on **NLP-based features** and help you understan
     - [Create a Ticket in Zendesk](how-tos/zendesk/create-a-ticket-in-zendesk.md)
     - [Lead Capture in Salesforce](how-tos/salesforce/lead-capture-in-salesforce-crm.md)
     - [Lead Capture in HubSpot](how-tos/hubspot/lead-capture-in-hubspot.md)
-
 
 
