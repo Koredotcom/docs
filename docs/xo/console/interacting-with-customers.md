@@ -170,13 +170,13 @@ Agents can make outbound calls to the customers as follows:
 
         The following scenarios are possible:
 
-        * A user enters `123124`: By default, the system doesn't select or validate any country code. A call is directly placed to this number. If the user has dialed a call with a USA number, they can change the country code to unknown.
+        | Scenario | User Input | What Happens |
+        |----------|------------|--------------|
+        | Entering a number without a country code | `123124` | The system doesn't select or validate any country code by default and places the call directly. If the user intends to dial a US number, the user can change the country code to **Unknown**. |
+        | Pasting a number without a country code | `123121` | The system displays a validation error because the number doesn't match the default country format. The user can change the country code to **Unknown**, after which the system places the call directly. |
+        | Entering or pasting a valid international number | `+91987654321` | The system automatically detects and selects **India** as the country code and places the call. |
+        | Entering or pasting an invalid international number | `+919876543` | The system displays a validation error and disables the call icon and prevents placing the call. |
 
-        * A user pastes `123121`: Initially, a validation error appears if the number doesn't match the defined format for the default country. The user can change the country code to unknown and a call is directly dialed to this number.
-
-        * User pastes/enters `+91987654321`: The system selects India as the country code and dials the call.
-
-        * User pastes `+919876543`: The system displays a validation error and disables the call icon.
 
     !!! Note
 
