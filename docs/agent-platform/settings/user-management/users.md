@@ -106,9 +106,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
 
 Correct the highlighted values based on the reason, and upload the file again. Then, follow **Steps 4 and 5** above.
 
-The file takes a few minutes to import. You can see the progress in the dialog window. When completed, the following message is displayed.
-
-<img src="../images/file-imported-successfully.png" alt="file imported successfully" title="file imported successfully" style="border: 1px solid gray; zoom:75%;">
+The file may take a few minutes to import. You can track the progress in the dialog window. Once complete, a success message is displayed.
 
 Click **OK** to see the imported users on the dashboard. 
 
