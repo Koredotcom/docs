@@ -3,6 +3,7 @@
 The Sentiment chart provides real-time updates on the sentiment of a conversation. It visually tracks the sentiment trend throughout the interaction and enabling better insights into user sentiment.
 
 The Sentiment Chart helps agents and administrators:
+
 - Monitor the tone and direction of conversations.
 - Identify moments of dissatisfaction or positivity.
 - Gain insights for better customer engagement and conversation outcomes.

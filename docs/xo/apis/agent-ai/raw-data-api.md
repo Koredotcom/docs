@@ -79,6 +79,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8
   "channels": ["chat"],
   "agentIds": ["{{agentId}}"]}'
 ```
+
 ## Request Body Parameters
 
 | **PARAMETER** | **DESCRIPTION**                                                                 | **MANDATE** |

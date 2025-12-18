@@ -131,14 +131,15 @@ This section explains the post-installation steps of Agent AI integration with S
 <img src="../images/kore-agent-assist-feature-configuration-15.png" alt="kore-agent-assist-feature-configuration" title="kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;"> 
 3. Click the **New** button on the top-right, and select the features in the package you want to use. 
 
-* **Configuration Name**: Provide a name for the configuration you are creating.
-* **CTI Provider**: Skip this field.
-* **Salesforce OmniChannel Solution**: “Chat and Voice” or “Voice” (based on your license).
-* **Active**: Only one feature configuration will be active, and the active configuration will be considered at runtime.
+   * **Configuration Name**: Provide a name for the configuration you are creating.
+   * **CTI Provider**: Skip this field.
+   * **Salesforce OmniChannel Solution**: “Chat and Voice” or “Voice” (based on your license).
+   * **Active**: Only one feature configuration will be active, and the active configuration will be considered at runtime.
+
 4. Click **Save**.  
 <img src="../images/save-kore-agent-assist-feature-configuration-16.png" alt="save-kore-agent-assist-feature-configuration" title="save-kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;">  
 
-5. Click the **Edit** button, if you want to edit the existing feature configurations.  
+1. Click the **Edit** button, if you want to edit the existing feature configurations.  
 <img src="../images/edit-genesys-new-adapter-17.png" alt="edit-genesys-new-adapter" title="edit-genesys-new-adapter" style="border: 1px solid gray; zoom:80%;"> 
 
 ### Set up Widget Configuration

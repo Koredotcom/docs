@@ -110,9 +110,8 @@ or orgUserIds
 
 ## Sample Response
 
-
-
 * For success case:
+
 ```
 {
     "msg": "Users are removed Successfully"
