@@ -222,8 +222,7 @@ To edit an API app, follow the steps below:
 <ol start="3"><li>Click <b>Save</b>.</li>
 
 A success message is displayed once the app is edited. The changes are updated in the summary page.
-
-<img src="../images/edit-success-message-api-app.png" alt="edit success message" title="edit success message" style="border: 1px solid gray; zoom:75%;"></ol>
+</ol>
 
 ### Delete App
 

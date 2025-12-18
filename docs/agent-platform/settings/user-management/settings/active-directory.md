@@ -22,8 +22,6 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 2. Click **Settings** on the top navigation bar.
 3. Navigate to **Users Management** > **Settings** on the left menu.
 4. Click the **Configure Directory** button in the **Configure sync with directory** section.
-<img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
-
 5. Complete the setup by following the steps below in the **Configure Directory** window:
 
 <div class="admonition note">
@@ -218,13 +216,7 @@ When you set up Active Directory sync for the first time, the following options 
 
 ### Sync Status Email Notifications
 
-For a **successful** sync, you will receive the following email:    
-
-<img src="../images/success-sync.png" alt="success sync" title="success sync" style="border: 1px solid gray; zoom:75%;">
-
-For a **failed** sync, you will receive the following email:    
-
-<img src="../images/failed-sync.png" alt="failed sync" title="failed sync" style="border: 1px solid gray; zoom:75%;">
+For a successful or failed sync, a notification is sent to the registered email.  
 
 An alternative way to add users to your account (without using Active Directory sync) is to invite them via email. 
 

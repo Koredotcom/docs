@@ -37,9 +37,7 @@ You can test your connection after you provide the details to verify the accurac
 
 1. If the connection is successful, you can click **Confirm** and complete the connection process.
 2. If the connection fails, you can verify the details entered or cancel the set-up process.
-3. You can test the connection by clicking the **Play** button on the connections list.
-
-    <img src="../images/play-button-wandb.png" alt="Play Button WandB" title="Play Button WandB" style="border: 1px solid gray; zoom:80%;">
+3. You can test the connection by clicking the **▶** icon on the connections list.
 
     !!! note
 

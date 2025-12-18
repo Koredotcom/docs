@@ -436,7 +436,6 @@ You can either edit the configured values of an auth profile or delete it from t
 
 3. Modify the required fields in the **Update authorization mechanism** window.
 4. Click **Update new auth**.
-<img src="../images/update-new-auth.png" alt="update new auth" title="update new auth" style="border: 1px solid gray; zoom:75%;">  
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
