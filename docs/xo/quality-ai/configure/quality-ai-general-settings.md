@@ -67,8 +67,10 @@ This setting enables or disables the agent-level interaction scoring through age
 #### Enable Agent Score Card
 
 Steps to enable the Agent Score Card:  
-1. Expand the **Quality AI General Settings** collapse icon to view the **Agent Score Card**.   
-<img src="../settings/quality-ai-general-settings/images/sett-agent-scorecard.png" alt="Agent Scorecard Set" title="Agent Scorecard Set" style="border: 1px solid gray; zoom:60%;">
+
+1. Expand the **Quality AI General Settings** collapse icon to view the **Agent Score Card**.
+
+   <img src="../settings/quality-ai-general-settings/images/sett-agent-scorecard.png" alt="Agent Scorecard Set" title="Agent Scorecard Set" style="border: 1px solid gray; zoom:60%;">
 
 By enabling this Agent Score Card option, you can view features of Agent Leaderboard, Dashboard (Fail Statistics, Performance Monitor, Agent Leaderboard), Coaching Monitor, and Agent Scorecards.
 
@@ -78,6 +80,7 @@ When the **Agent Score Card** is enabled from the **Settings**, you can view the
 <img src="../settings/images/settings-enable-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
 #### Disable Agent Score Card
+
 Steps to disable the Agent Score Card:
 
 1. Turn off the **Agent Score Card** toggle to disable the Agent Scorecard.  
@@ -93,6 +96,7 @@ Steps to disable the Agent Score Card:
 This feature lets you use bookmark interactions (conversations, including calls or messages) in different collections (tags) for easy reference later. When created, these collections are added to Conversation Mining.
 
 #### Enable Bookmarks
+
 Steps to Add Bookmarks:
 
 1. Expand the **Quality AI General Settings** collapse icon to view the following **Bookmarks** option.  
@@ -108,6 +112,7 @@ Steps to Add Bookmarks:
 6. Select **Save** to save the settings.
 
 #### Disable Bookmarks
+
 Steps to disable Bookmarks:
 
 1. Turn off the **Bookmarks** toggle.   

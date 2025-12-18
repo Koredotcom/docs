@@ -43,4 +43,5 @@ Use this section to handle system errors during customer interactions.
     <img src="./../images/link-agent-availability.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
 
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.  
-<img src="./../images/go-to-node-agent-availability.png" alt="Go to Node" title="Go to Node" style="border: 1px solid gray; zoom:70%;">
+
+   <img src="./../images/go-to-node-agent-availability.png" alt="Go to Node" title="Go to Node" style="border: 1px solid gray; zoom:70%;">

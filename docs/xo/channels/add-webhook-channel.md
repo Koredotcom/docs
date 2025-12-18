@@ -1620,6 +1620,7 @@ Headers: {
 If your app has a form that needs user input, the synchronous WebHook channel gets the complete form definition in the response, and you need to send the _formData_ in the request when interacting with the app.
 
 #### Sample Request
+
 You can get the Webhook API URL on the WebHook channel **Configurations** tab. Learn more.
 
 !!! note
