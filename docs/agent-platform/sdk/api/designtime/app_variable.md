@@ -69,6 +69,7 @@ db_password = AppVariable(
 ## Variable Value Patterns
 
 ### Literal Values
+
 ```python
 # Direct string values
 app_name = AppVariable(
@@ -88,6 +89,7 @@ debug_mode = AppVariable(
 ```
 
 ### Environment Variable References
+
 ```python
 # Using $env.VARIABLE_NAME pattern
 port = AppVariable(
@@ -109,6 +111,7 @@ generic_env = AppVariable(
 ## Namespace Scoping
 
 ### Environment-Specific Variables
+
 ```python
 # Production-only variable
 prod_db = AppVariable(
@@ -136,6 +139,7 @@ shared_api = AppVariable(
 ```
 
 ### Global Variables
+
 ```python
 # Global variable (available in all namespaces)
 global_config = AppVariable(
@@ -149,6 +153,7 @@ global_config = AppVariable(
 ## Security Best Practices
 
 ### Secured Variables
+
 ```python
 # Always mark sensitive data as secured
 secrets = [
@@ -170,6 +175,7 @@ secrets = [
 ```
 
 ### Non-Secured Variables
+
 ```python
 # Public configuration that's safe to expose
 public_configs = [

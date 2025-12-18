@@ -52,9 +52,9 @@ user_preferences = MemoryStore(
 ### Add to Application
 
 ```python
-from agenticai_core.designtime.models.app import AppConfigBuilder
+from agenticai_core.designtime.models.app import AppBuilder
 
-app_config = AppConfigBuilder() \
+app_config = AppBuilder() \
     .set_name("My App") \
     .set_memory_store(user_preferences) \
     .build()
@@ -65,6 +65,7 @@ app = App(**app_config)
 ## Memory Store Scopes
 
 ### USER_SPECIFIC
+
 Data unique to each user (recommended for most use cases):
 
 ```python
@@ -76,6 +77,7 @@ MemoryStore(
 ```
 
 ### APPLICATION_WIDE
+
 Global data shared across all users:
 
 ```python
@@ -87,6 +89,7 @@ MemoryStore(
 ```
 
 ### SESSION_LEVEL
+
 Temporary session data cleared when session ends:
 
 ```python
@@ -100,6 +103,7 @@ MemoryStore(
 ## Retention Policies
 
 ### Session-Based
+
 Data cleared when session ends:
 
 ```python
@@ -110,6 +114,7 @@ RetentionPolicy(
 ```
 
 ### Time-Based
+
 Data retained for specified duration:
 
 ```python
@@ -293,40 +298,43 @@ memory_store = MemoryStore(
 ## Best Practices
 
 1. **Schema Design**
-   - Define clear, specific schemas
-   - Use `strict_schema=True` for production
-   - Include required fields
-   - Validate data types
+    - Define clear, specific schemas
+    - Use `strict_schema=True` for production
+    - Include required fields
+    - Validate data types
 
 2. **Scope Selection**
-   - Use `USER_SPECIFIC` for personal data
-   - Use `APPLICATION_WIDE` for shared resources
-   - Use `SESSION_LEVEL` for temporary data
+    - Use `USER_SPECIFIC` for personal data
+    - Use `APPLICATION_WIDE` for shared resources
+    - Use `SESSION_LEVEL` for temporary data
 
 3. **Retention Policies**
-   - Choose appropriate periods
-   - Consider data privacy requirements
-   - Clean up old data regularly
+    - Choose appropriate periods
+    - Consider data privacy requirements
+    - Clean up old data regularly
 
 4. **Error Handling**
-   - Always check `result.success`
-   - Provide fallback values
-   - Log errors appropriately
-   - Handle missing data gracefully
+    - Always check `result.success`
+    - Provide fallback values
+    - Log errors appropriately
+    - Handle missing data gracefully
 
 5. **Performance**
-   - Use projections to retrieve only needed fields
-   - Minimize operations in critical paths
-   - Cache frequently accessed data
-   - Monitor memory usage
+    - Use projections to retrieve only needed fields
+    - Minimize operations in critical paths
+    - Cache frequently accessed data
+    - Monitor memory usage
 
 6. **Security**
-   - Don't store sensitive data unencrypted
-   - Use appropriate scopes for data isolation
-   - Set reasonable retention policies
-   - Validate data before storage
+    - Don't store sensitive data unencrypted
+    - Use appropriate scopes for data isolation
+    - Set reasonable retention policies
+    - Validate data before storage
 
-## Related Documentation
+
+<hr/>
+
+**Related resources**
 
 - [Memory Store API Reference](../api/designtime/memory_store.md)
 - [Working with Tools](working-with-tools.md)

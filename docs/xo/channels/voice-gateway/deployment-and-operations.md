@@ -364,21 +364,21 @@ For enhanced resilience, ensure each Edge appliance is plugged into a separate p
 
 #### Installation Site Conditions
 
-Before installing office equipment, it is essential to verify that your office environment meets the necessary conditions for optimal operation.
+Before installing office equipment, it's essential to verify that your office environment meets the necessary conditions for optimal operation.
 
 ### End-User/Client and SIP provider Specifications
 
 #### End-User System Specifications
 
-Refer to the [Kore Cloud requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for the minimum technical requirements to run the application.
+Refer to the [Cloud requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for the minimum technical requirements to run the application.
 
 !!! Note
 
-    To ensure successful usage of Kore Cloud, please make sure to configure the necessary ports and services on your company firewall. Complete details can be found in the "Firewall Requirements" section within the above-provided link.
+    To ensure successful usage of our Cloud, please make sure to configure the necessary ports and services on your company firewall. Complete details can be found in the "Firewall Requirements" section within the above-provided link.
 
 #### End-User Safety Guidelines
 
-To maintain uninterrupted access to Kore Cloud, it is recommended to directly allow Kore Cloud connectivity on your device. This is due to security services, such as antivirus, firewalls, or intrusion protection, installed by some companies on users' computers that might block access to Kore Cloud. Your IT administrator can also allow the connectivity. For a list of the common Kore Cloud ports, protocols, and destinations, please refer to the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). 
+To maintain uninterrupted access to our Cloud, we recommended to directly let our Cloud connectivity on your device. This is due to security services, such as antivirus, firewalls, or intrusion protection, installed by some companies on users' computers that might block access to our Cloud. Your IT administrator can also allow the connectivity. For a list of our common Cloud ports, protocols, and destinations, refer to the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). 
 
 #### SIP Trunking Requirements
 
@@ -424,48 +424,49 @@ In addition to selecting a compatible SIP provider, customers are strongly advis
 * Does your SIP provider require outbound digest authentication?
 * Does your SIP provider support SIP diversion headers?
 
-## Connecting Your Network, Clients, and Appliances to Kore Cloud
+## Connecting Your Network, Clients, and Appliances to our Cloud
 
 ### Internet connectivity
 
-A dependable internet connection is necessary for Kore Cloud. Most internet connectivity issues are related to the "last mile," which is the physical link between your location and your carrier's network. If available, we suggest a "fully diverse" internet connection from your provider. Diversity means that your internet connection has multiple "last mile" paths to connect to various points on your internet service provider's network. Please note that Diversity and Redundancy are different concepts in the carrier world.
+A dependable internet connection is necessary for our Cloud. Most internet connectivity issues are related to the "last mile," which is the physical link between your location and your carrier's network. If available, we suggest a "fully diverse" internet connection from your provider. Diversity means that your internet connection has multiple "last mile" paths to connect to various points on your internet service provider's network. Diversity and Redundancy are different concepts in the carrier world.
 
 #### Network firewalls and security devices
 
-To maintain uninterrupted access to Kore Cloud, please ensure that your network firewalls and security devices permit Kore Cloud connectivity. Company firewalls may occasionally block network traffic between Kore Cloud and your users.
+To maintain uninterrupted access to our Cloud, ensure that your network firewalls and security devices permit our Cloud connectivity. Company firewalls may occasionally block network traffic between our Cloud and your users.
 
-For a list of the common Kore Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md).
+For a list of our common Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md).
 
 #### Wide Area Network (WAN)
 
 ##### Private Circuit Connectivity
 
-Many companies take advantage of private connectivity between their company offices. Private connectivity includes MPLS (Multi-Protocol Label Switching) and point-to-point connections. When using private circuit connectivity for voice and video services, the physical connection between your company office and your carrier’s network is a critical component. The industry refers to this connection as the “last mile.”
+Many companies take advantage of private connectivity between their company offices. Private connectivity includes Multi-Protocol Label Switching (MPLS) and point-to-point connections. When using private circuit connectivity for voice and video services, the physical connection between your company office and your carrier’s network is a critical component. The industry refers to this connection as the “last mile.”
 
 We suggest that you collaborate with your provider to obtain a “fully diverse” private circuit connection, if available in your area. Having diversity guarantees that your connectivity utilizes multiple “last mile” paths to reach different access points on your provider's network.
 
-To ensure a consistent user experience for voice and video communications over private circuit WAN connections, which typically have lower bandwidth than local office networks, it is recommended to enable Quality of Service (QoS). QoS prioritizes voice and video traffic over other network traffic. Contact your private circuit carrier to configure QoS on your circuits.
+To ensure a consistent user experience for voice and video communications over private circuit WAN connections, which typically have lower bandwidth than local office networks, it's recommended to enable Quality of Service (QoS). QoS prioritizes voice and video traffic over other network traffic. Contact your private circuit carrier to configure QoS on your circuits.
 
 #### VPN Connectivity
 
-If your organization utilizes VPNs to connect remote workers, ensure that all necessary Kore Cloud network ports and protocols are allowed on the VPN connections. Kore Cloud supports voice and video services over VPN.
+If your organization utilizes VPNs to connect remote workers, ensure that all necessary Cloud network ports and protocols are allowed on the VPN connections. Our Cloud supports voice and video services over VPN.
 
-For a list of the common Kore Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md/).
+For a list of our common Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md/).
 
 #### Local Area Network (LAN)
 
-Connectivity issues often arise when the speed and duplex of devices connected to your LAN are mismatched. Ensure that your network ports and trunks register the correct speed and duplex settings for each connected device. Most devices on a typical LAN have a speed/duplex of "100/full" or "1000/full".
+Connectivity issues often arise when the speed and duplex of devices connected to your LAN are mismatched. Ensure that your network ports and trunks register the correct speed and duplex settings for each connected device. Most devices on a typical LAN have a speed/duplex of `100/full` or `1000/full`.
 
 #### Wireless Local Area Network (WLAN)
 
-For optimal performance of Kore Cloud real-time communications services over WLAN, use 802.11n or superior wireless hardware, and operate your wireless network on the 5 GHz band to minimize signal interference.
+For optimal performance of the Cloud real-time communications services over WLAN, use 802.11n or superior wireless hardware, and operate your wireless network on the 5 GHz band to minimize signal interference.
 
-To identify areas with weak wireless signals ("dead spots") in your facility, consider using available Wi-Fi surveying tools or hiring a network services company to conduct a professional site survey of your wireless network.
+To identify areas with weak wireless signals (`dead spots`) in your facility, consider using available Wi-Fi surveying tools or hiring a network services company to conduct a professional site survey of your wireless network.
 
 #### Network bandwidth
+
 Ensure consistent bandwidth across your LAN and WAN to support voice calls. The required bandwidth is specified on this [page](../voice-gateway/minimum-system-requirements-and-supported-browsers.md ).
 
-Kore Cloud utilizes OPUS, an adaptive voice codec, for voice traffic to agent WebRTC phones. OPUS automatically adjusts sampling rates in response to varying network conditions. To ensure optimal call quality, we recommend allocating 32–128 Kbps of bi-directional network voice bandwidth per expected/supported concurrent call. Higher bandwidth allocation results in higher sampling rates and improved voice quality. Bandwidth must also be allocated for SIP control traffic. It is recommended that 5% of the high voice bandwidth value be allocated to SIP.
+Our Cloud utilizes OPUS, an adaptive voice codec, for voice traffic to agent WebRTC phones. OPUS automatically adjusts sampling rates in response to varying network conditions. To ensure optimal call quality, we recommend allocating 32–128 Kbps of bi-directional network voice bandwidth per expected/supported concurrent call. Higher bandwidth allocation results in higher sampling rates and improved voice quality. Bandwidth must also be allocated for SIP control traffic. It's recommended that 5% of the high voice bandwidth value be allocated to SIP.
 
 #### Network Quality of Service (QoS)
 
@@ -473,7 +474,7 @@ Kore Cloud utilizes OPUS, an adaptive voice codec, for voice traffic to agent We
 
 Prioritize voice and video traffic on all your network devices to maintain voice quality. This prioritization, also referred to as network Quality of Service (QoS), is crucial for managing network traffic and ensuring optimal performance for real-time communications.
 
-The manufacturer's documentation for your specific network hardware setup will detail the network QoS process, as it varies depending on the vendor and model.
+The manufacturer's documentation for your specific network hardware setup details the network QoS process, as it varies depending on the vendor and model.
 
 | **Traffic Description** | **Protocol** | **DSCP (Diffserv Code Point) Value** |
 | ----------------------- | ------------ | ------------------------------------ |
@@ -484,8 +485,8 @@ The manufacturer's documentation for your specific network hardware setup will d
 
 | **Connection**       | **Target Metric**                                                                                                                                                                                  |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Client connectivity  | Kore Cloud requires round-trip latency of less than 1 second and packet loss of less than 10%.                                                                                                     |
-| Edge connectivity    | Kore Cloud requires round-trip latency of less than 300 ms and packet loss of less than 5%.                                                                                                        |
+| Client connectivity  | Our Cloud requires round-trip latency of less than 1 second and packet loss of less than 10%.                                                                                                     |
+| Edge connectivity    | Our Cloud requires round-trip latency of less than 300 ms and packet loss of less than 5%.                                                                                                        |
 | External phone calls | When the agent is on WAN/Internet, the one-way latency between the agent and Edge should be less than 150 ms, with packet loss less than 1% and end-to-end latency less than 150 ms.               |
 | Internal phone calls | When the agent and Edge are on the same LAN, the one-way latency must be less than 75 ms, packet loss less than 1%, and the end-to-end latency between the agent and Edge must be less than 75 ms. |
 
@@ -494,7 +495,7 @@ The manufacturer's documentation for your specific network hardware setup will d
 * Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is called a pinhole).
     - [ ] Yes
     - [ ] No
-* If your firewall has a Pinhole feature, does it have the support of below modules:
+* If your firewall has a Pinhole feature, does it have the support of the following modules:
     - [ ] NAT hole punching
     - [ ] NAT traversal
     - [ ] TCP hole punching
@@ -541,7 +542,7 @@ The manufacturer's documentation for your specific network hardware setup will d
 
 ## Ports and services for WebRTC
 
-Kore.ai Cloud WebRTC (Agent Desktop) requires specific port and service configurations that must be considered before configuring a firewall in different network scenarios. The following diagrams show how to configure the ports and services for each scenario.
+Our Cloud WebRTC (Agent Desktop) requires specific port and service configurations that must be considered before configuring a firewall in different network scenarios. The following diagrams show how to configure the ports and services for each scenario.
 
 When reviewing the diagrams to identify the one that best matches the WebRTC (Agent Desktop) setup, consider the following questions:
 
@@ -554,12 +555,15 @@ When reviewing the diagrams to identify the one that best matches the WebRTC (Ag
 * Is the firewall configured as Endpoint Dependent (Symmetric) or Endpoint Independent (Asymmetric)?
 
 ### Call Flow
+
 <img src="../images/call-flow-diagram.png" alt="Call Flow Diagram" title="Call Flow Diagram" style="border: 1px solid gray; zoom:70%;">
 
 ### Agent Desktop Architecture (Client Inside Firewall-Asymmetric NAT)
+
 <img src="../images/agent-desktop-architecture.png" alt="Agent Desktop Architecture-Asymmetric" title="Agent Desktop Architecture-Asymmetric" style="border: 1px solid gray; zoom:70%;">
 
 ### Agent Desktop Architecture (Client Inside Firewall-Symmetric NAT)
+
 <img src="../images/agent-desktop-architecture-symmetric.png" alt="Agent Desktop Architecture-Symmetric" title="Agent Desktop Architecture-Symmetric" style="border: 1px solid gray; zoom:70%;">
 
 ### Firewall Requirements
@@ -573,17 +577,17 @@ When reviewing the diagrams to identify the one that best matches the WebRTC (Ag
 If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform the following troubleshooting steps: 
  
 * First, verify the network connection. This applies whether working in the office or remotely.  
-* Ensure the network strength meets Kore’s defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.  
+* Ensure the network strength meets our defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.  
 * After completing the above steps, run [User Diagnostics](../../console/manage-layout.md#user-diagnostics).
 
 ### Checklist
 
 | Sl. No. | Description | Impact | Yes/No |
 |---------|-------------|--------|--------|
-| 1 | Does your firewall support the Pinhole feature or not? | Firewalls performing a network address translation (NAT) function — the mapping between the external IP address, port socket, and the internal IP address, port socket — is called a pinhole. |  |  |
+| 1 | Does your firewall support the Pinhole feature or not? | Firewalls performing a network address translation (NAT) function — the mapping between the external IP address, port socket, and the internal IP address, port socket-is called a pinhole. |  |  |
 | 2 | If your firewall has a Pinhole feature, does it have the support of below modules:
 ||**NAT hole punching** | If No, unable to establish direct connection between two peers in which one or both are behind firewalls or behind routers that use NAT.<br>
-<br>|**NAT traversal** | If No, will not allow edges behind a NAT device to communicate with devices outside the NAT network. With NAT traversal, the edges located behind a router can communicate directly with each other without the need for port forwarding or any other manual configurations.<br><br>
+<br>|**NAT traversal** | If No, won't allow edges behind a NAT device to communicate with devices outside the NAT network. With NAT traversal, the edges located behind a router can communicate directly with each other without the need for port forwarding or any other manual configurations.<br><br>
 <br>|**TCP hole punching**| If No, unable to establish TCP connection between two peers using NAT traversal.<br><br>
 <br> |**UDP hole punching**| If No, unable to establish bidirectional UDP connection between two peers using NAT traversal. |  |  |
 | 3 | Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection?<br><br>|If No, unable to establish a WebSocket over an encrypted TLS connection to transmit the packets (data) in a secure way. |  |  |

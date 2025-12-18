@@ -41,12 +41,13 @@ app = App(
 AI agents that handle specific tasks or domains.
 
 **Types:**
+
 - **AUTONOMOUS**: AI-powered agents with LLM decision-making
 - **PROXY**: Delegates to external systems
 
 **Sub-types:**
+
 - **REACT**: ReAct pattern (Reasoning + Acting)
-- **PLAN_EXECUTE**: Planning then execution
 - **PROXY**: External agent integration
 
 ```python
@@ -65,6 +66,7 @@ agent = Agent(
 Capabilities that agents can use to perform actions.
 
 **Types:**
+
 - **inlineTool**: Custom code (JavaScript/Python)
 - **toolLibrary**: Pre-built platform tools
 - **KNOWLEDGE**: RAG/knowledge base access
@@ -111,6 +113,7 @@ prompt = Prompt(
 Persistent storage for data across conversations.
 
 **Scopes:**
+
 - **SESSION_LEVEL**: Session-specific data
 - **USER_SPECIFIC**: User-specific data
 - **APPLICATION_WIDE**: Shared across all users
@@ -131,6 +134,7 @@ memory_store = MemoryStore(
 Coordinates multiple agents to handle complex workflows.
 
 **Types:**
+
 - **SUPERVISOR**: Built-in orchestration
 - **CUSTOM_SUPERVISOR**: Your custom logic
 
@@ -204,26 +208,31 @@ sequenceDiagram
 ## Best Practices
 
 ### 1. Agent Design
+
 - Keep agents focused on specific domains
 - Use clear, descriptive names and descriptions
 - Provide comprehensive prompts
 
 ### 2. Tool Design
+
 - Make tools atomic and single-purpose
 - Provide detailed descriptions for LLM understanding
 - Handle errors gracefully
 
 ### 3. Orchestration
+
 - Route based on agent expertise
 - Handle edge cases (no match, errors)
 - Maintain conversation context
 
 ### 4. Memory Management
+
 - Use appropriate scopes for data
 - Set sensible retention policies
 - Define clear schemas
 
 ### 5. LLM Configuration
+
 - Match temperature to task (low for factual, high for creative)
 - Set appropriate token limits
 - Consider cost vs. quality tradeoffs
@@ -233,4 +242,3 @@ sequenceDiagram
 - [:octicons-arrow-right-24: Building Apps](../guide/building-apps.md) - Detailed guide
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Complete API docs
 - [:octicons-arrow-right-24: Examples](../examples/banking-assistant.md) - Real examples
-

@@ -1,6 +1,7 @@
 # View API Endpoint & Deployment History
 
 ## API Endpoint
+
 After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in AI for Process. 
 
 The API endpoint is available in 3 formats.
@@ -15,7 +16,7 @@ To view the API Endpoint, follow these steps:
 
 1. To use this model as a service, the generated code is helpful. Click the **Copy** icon to copy and share the API Endpoint.
 
-    <img src="../images/new_endpoint.png" alt="Deplyed Model API Endpoint" title="Deplyed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new_endpoint.png" alt="Deployed Model API Endpoint" title="Deployed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 

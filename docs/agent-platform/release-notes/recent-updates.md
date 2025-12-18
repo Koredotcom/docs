@@ -2,6 +2,40 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.4.0 December 6, 2025
+
+<u> Minor Release </u>
+
+This release enhances multi-agent orchestration with a unified Orchestrator interface, direct tool invocation via Agent Protocol, and Content Variables for centralized data management.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Unified Orchestration Management**
+
+The platform now supports creating Agentic Apps with a single AI Agent, making it easy to deploy use cases that do not require sophisticated multi-agent orchestration. The Adaptive Network Pattern is now generally available for all users. The new Behavioral Guidelines let you centrally manage safety, branding, and other instructions. Along with these updates, a dedicated Orchestrator section makes it easy to switch between the patterns. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md)
+
+
+**Direct Tool Invocation via Agent Protocol**
+
+Agent Protocol now supports direct invocation of tools (workflow, code, and MCP tools) while maintaining full access to application context, including memory and environment variables. This enhancement enables developers to execute specific tools programmatically when they know exactly what action is needed, bypassing agent reasoning for faster, more cost-effective, and deterministic execution. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
+
+**Introducing Content Variables**
+
+Content Variables provide a centralized way for users to declare data used throughout the application—such as user profiles, customer IDs, and employee IDs. This data becomes automatically accessible to all components, including supervisor prompts, agent definitions, tools, events, and knowledge. It helps streamline context management during execution and eliminates the need for manual configuration. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/content.md)
+
+<font size="4">AI Engineering Tools</font>
+
+**External Model Connection APIs**
+
+The platform now provides External Connection APIs that enable programmatic management of model connections in addition to the existing UI. These APIs support viewing existing connections, creating new connections for both easy and custom integrations, and rotating keys for supported providers. 
+Two new API scopes, View connections and Manage connections, have been added, offering more granular permission control for accessing and updating external model connections. [Learn more :octicons-arrow-right-24:](../apis/apis-list/connections-api.md)
+
+**New Model Support**
+
+The OpenAI gpt-4o-search-preview model is now supported in Prompts and Workflow tools. The model is optimized for search and RAG workflows, and features multi-chunk document retrieval and grounded response generation. [Learn more :octicons-arrow-right-24:](../models/supported-models.md#supported-external-models-for-easy-integration)
+
+<hr>
+
 ## v1.3.1 November 21, 2025
 
 <u> Minor Release </u>

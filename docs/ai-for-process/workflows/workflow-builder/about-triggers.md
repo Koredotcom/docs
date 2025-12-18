@@ -4,12 +4,6 @@ Triggers are an advanced automation feature in AI for Process that allows workfl
 
 Triggers are configured in the Start node. You can use triggers alone or together with the Scheduler.
 
-Examples of Event Triggers
-
-* A customer’s balance drops below the required minimum → the workflow sends an automated email via Gmail.
-* A new document is uploaded → the workflow launches a review process.
-* A support ticket is updated to a *critical* status → the workflow notifies or routes it to the appropriate team.
-
 ## How Triggers Work
 
 * A trigger listens for real-time events from an integrated third-party app.
@@ -31,15 +25,15 @@ For detailed configuration steps, see [Start Node – Automate Workflow Initiati
 ## Trigger Payload and Attachments
 
 * Triggers can pass contextual data, metadata, and event-specific IDs.
-* Attachments are provided as temporary URLs (valid for 24 hours).
+* Attachments are provided as temporary URLs (valid for 24 hours). Only one attachment is supported at a time.
 * Downstream nodes can reference trigger values as workflow variables.
 
 ## Best Practices
 
 * Use clearly defined events to avoid unnecessary workflow runs.
-* Regularly validate integration connections to keep triggers active.
+* Regularly validate integration connections to keep triggers active. 
 * Confirm payload fields before referencing them in conditions or expressions.
-* Avoid creating duplicate triggers for the same scenario.
+* Monitor trigger activity to quickly identify inactive or failing triggers and take corrective actions.
 
 ## Related Topics
 

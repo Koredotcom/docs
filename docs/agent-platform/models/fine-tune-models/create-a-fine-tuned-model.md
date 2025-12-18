@@ -13,7 +13,6 @@ You can fine-tune a Platform-hosted model or import one from Hugging Face. The f
 Steps to fine-tune a model:
 
 1. Log in to your account and click **Model Hub** under Agent Platform Modules.
-<img src="../images/model_hub.png" alt="access model hub" title="access model hub" style="border: 1px solid gray; zoom:75%;">
 
 2. On the **Fine-tuned models** tab, click **Start fine-tuning**.<img src="../images/start-fine-tuning.png" alt="Start Fine-Tune Model" title="Start Fine-Tune Model" style="border: 1px solid gray; zoom:80%;">
 
@@ -26,7 +25,7 @@ Steps to fine-tune a model:
 4. In the **Base** **model** section, choose the model to be fine-tuned.
     * If you choose hosted models, select the **model** from the dropdown list and click **Next**.  
     **Note**: Imported models are also included in the list of models.  
-    <img src="../images/base-model-kore hosted.png" alt="Platform hosted models" title="Platform hosted models" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/base-model-platform-hosted.png" alt="Platform-hosted models" title="Platform-hosted models" style="border: 1px solid gray; zoom:80%;">
 
     * If you choose to **Import from Hugging Face**, select the **Hugging Face connection** type from the dropdown, and paste the **model name**. Click **Next**. For more information about how to connect to your Hugging Face account, see[ How to Connect to your Hugging Face Account](../../settings/integrations/enable-hugging-face.md){:target="_blank"}.
     <img src="../images/import-hugging-face.png" alt="Import from Hugging Face" title="Import from Hugging Face" style="border: 1px solid gray; zoom:80%;"> 

@@ -1,6 +1,52 @@
 # Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>
+
+<font size="4">Access Control Enhancements</font>
+
+Search AI now automatically enforces RACL rules at design time for all new workspaces, protecting sensitive content. Access is based on the permission settings defined in the connector. Existing workspaces retain full design-time access for backward compatibility, with runtime access following source-system RACL rules. When design-time RACL is enabled, queries made through the public API return only public content. To enable design-time RACL for existing workspaces, contact support. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/racl-support.md)
+
+<font size="4">Connector Enhancements</font>
+
+**New Axero Connector**
+
+The Axero connector enables ingestion and management of content from the Axero knowledge base platform, including Pages, Wiki, Discussions, Documents, Articles, Announcements, Blogs, and associated comments. The connector also preserves hyperlinks within content for use in the answers.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/axero.md)
+
+**GitHub Connector**
+
+The GitHub Connector now supports additional content types, including the conversations on pull requests,  issue threads, file names, and wiki pages. It also improves incremental synchronization of ingested content, ensuring that any new, updated, or deleted content is processed incrementally.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/github-onprem.md)
+
+
+**Custom Connector**
+
+Search AI enhances the Custom Connector configuration by introducing a new per-header Encoding Format option. Developers can choose whether a header value should be Base64-encoded or sent as plain text, providing greater flexibility for integrations and removing the previous limitation that forced Base64 encoding for all headers. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/custom-connector.md)
+
+
+<font size="4">Deprecation and Automatic Migration Notice</font>
+
+To improve platform performance and stability, Search AI is automatically upgrading legacy embedding models, legacy re-ranker models, and the legacy web crawler. Starting December 7, 2025, the following components will be automatically upgraded in applications where they're in use:
+
+* Embedding Models: MPNet, LaBSE, E5, and BGE-M3 V1 are upgraded to BGE-M3 V2. Users must trigger training to apply the changes to their index.
+* Re-rankers: MS MARCO Cross Encoder and Mixbread Large are upgraded to BGE Re-ranker. This change applies automatically with no user action required.
+* Legacy Web Crawler: The legacy web crawler is replaced with the AI-Powered Crawler. Users must trigger a re-crawl to extract content using the new crawler.
+
+After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. 
+
+[Learn more :octicons-arrow-right-24:](deprecations.md)
+
+
+<hr>
 
 ## v11.19.1 November 19, 2025
 

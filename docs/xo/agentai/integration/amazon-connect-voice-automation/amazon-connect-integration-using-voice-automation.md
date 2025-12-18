@@ -81,7 +81,7 @@ The following steps describe the call flow after this integration:
 4. After interaction with Kore, the call is transferred back to Amazon Connect.  
 <img src="../images/transfer-back-to-amazon-11.png" alt="transfer-back-to-amazon" title="transfer-back-to-amazon" style="border: 1px solid gray; zoom:80%;">  
 
-This setup provides a robust solution for leveraging Kore's voice automation capabilities within your Amazon Connect Contact Center environment.
+This setup provides a robust solution for leveraging our voice automation capabilities within your Amazon Connect Contact Center environment.
 
 ## Metadata Passing from Kore to Amazon Connect (Additional Feature)
 Currently, Amazon Connect does not support SIP header extraction. To pass metadata from Kore to Amazon Connect, use the following alternative AWS components: 

@@ -15,9 +15,9 @@ To create bulk contact from a CSV file with the given stream Id.
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE**     |
 |-----------|-------------|----------|
-| host      | Environment URL, for example, https://platform.kore.ai | string, required |
-| botId     | botId or streamId. You can get it from the App Settings page. | string, required |
-| contacts  | Contact details. For example, firstName, salutation, cellPhoneNumber, cellPhoneCountryCode, cellPhoneExtension. | string, required |
+| `host`      | Environment URL, for example, `https://platform.kore.ai` | string, required |
+| `botId`     | botId or streamId. You can get it from the App Settings page. | string, required |
+| `contacts`  | Contact details. For example, firstName, salutation, cellPhoneNumber, cellPhoneCountryCode, cellPhoneExtension. | string, required |
 
 ## Sample CSV File
 

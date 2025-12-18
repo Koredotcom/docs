@@ -2,6 +2,7 @@ site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
 docs_dir: 'docs/ai-for-process/'
 site_dir: 'site/ai-for-process/'
+site_url: https://docs.kore.ai/ai-for-process/
 repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
@@ -118,7 +119,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - AI for Process Overview: getting-started/introduction.md
+    - Introduction to AI for Process: getting-started/introduction.md
     - Accessing AI for Process: getting-started/accessing-ai-for-process.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
@@ -150,6 +151,7 @@ nav:
         - Loop Node: workflows/workflow-builder/types-of-nodes/loop-node.md  
         - Human Node: workflows/workflow-builder/types-of-nodes/human-node.md 
         - Agentic App Node: workflows/workflow-builder/types-of-nodes/agentic-app-node.md
+        - Doc Intelligence Node: workflows/workflow-builder/types-of-nodes/doc-intelligence-node.md       
         - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
       - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
@@ -206,7 +208,7 @@ nav:
         - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
     - Supported Models: models/supported-models.md        
   - Prompts:
-    - About Prompt Studio: prompts/overview.md
+    - About Prompt Studio: prompts/about-prompt-studio.md
     - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
     - Using Prompt Studio: prompts/using-prompt-studio.md
     - Advanced Features: prompts/advanced-features.md
@@ -227,6 +229,8 @@ nav:
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
+    - Manage Models:
+      - Manage OCR Models: settings/manage-models/manage-ocr.md   
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md

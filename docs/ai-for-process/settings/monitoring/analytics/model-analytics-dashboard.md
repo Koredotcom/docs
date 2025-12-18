@@ -175,7 +175,7 @@ You can do the following to analyze the model’s performance:
 
 ### Model Scaling and Usage
 
-This widget is available for **Fine-tuned** and **Open-source** models. It features a step graph illustrating the usage and scaling, meaning the number of replicas (with a specific [hardware configuration](../../../models/hardware-pricing.md){:target="_blank"} deployed for the selected model version in the [Model Performance Filter](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} and the period in the [Global Timeline Filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Replicas**, and the X-axis indicates the selected **Date**.
+This widget is available for **Fine-tuned** and **Open-source** models. It features a step graph illustrating the usage and scaling, meaning the number of replicas with a specific hardware configuration deployed for the selected model version in the [Model Performance Filter](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} and the period in the [Global Timeline Filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Replicas**, and the X-axis indicates the selected **Date**.
 
 **Key Features**
 

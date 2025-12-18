@@ -22,6 +22,7 @@ AgenticAI Core is a Python SDK to create, configure, and deploy multi-agent AI a
 ## Key Features
 
 ### Design-Time Models
+
 Define your application structure using intuitive Python models:
 
 ```python
@@ -41,6 +42,7 @@ app = App(
 ```
 
 ### Runtime Execution
+
 Start your application with custom orchestration:
 
 ```python
@@ -58,7 +60,7 @@ app.start(
 ```
 
 ## Quick Links
-
+ 
 <div class="grid cards" markdown>
 
 - :material-clock-fast:{ .lg .middle } __Getting Started__
@@ -113,7 +115,9 @@ graph TB
     E --> G[(Storage)]
 ```
 
-## Community and Support
+<hr/>
+
+**Related resources**
 
 - 📖 [Documentation](getting-started/installation.md)
 

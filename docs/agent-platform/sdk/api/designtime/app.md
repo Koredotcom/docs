@@ -17,9 +17,9 @@
       show_root_heading: true
       show_source: false
 
-## AppConfigBuilder
+## AppBuilder
 
-::: agenticai_core.designtime.models.app.AppConfigBuilder
+::: agenticai_core.designtime.models.app.AppBuilder
     options:
       show_root_heading: true
       show_source: false
@@ -62,9 +62,9 @@ app = App(
 ### Using Builder Pattern
 
 ```python
-from agenticai_core.designtime.models.app import AppConfigBuilder
+from agenticai_core.designtime.models.app import AppBuilder
 
-app_dict = AppConfigBuilder() \
+app_dict = AppBuilder() \
     .set_name("My Banking App") \
     .set_description("Comprehensive banking services") \
     .set_orchestrator_type(OrchestratorType.CUSTOM_SUPERVISOR) \
@@ -80,4 +80,3 @@ app = App(**app_dict)
 - [Agent](agent.md) - Configure agents for your application
 - [MemoryStore](memory_store.md) - Set up persistent storage
 - [AppConfiguration](app_configuration.md) - Configure advanced features
-

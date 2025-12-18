@@ -29,4 +29,4 @@ To configure this node, set up the following:
 
 !!! Note
 
-    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
+    This feature is only available when using our Twilio account. It's not supported for SIP trunk setups.

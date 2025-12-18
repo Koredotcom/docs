@@ -55,6 +55,19 @@ plugins:
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'agentai/integration/AgentAI-webSDK/internal-transfer-process.md': 'agentai/integration/websdk/internal-transfer-process.md'
+        'agentai/integration/AgentAI-webSDK/error-codes.md': 'agentai/integration/websdk/error-codes.md'
+        'agentai/integration/AgentAI-webSDK/customize-your-sdk.md': 'agentai/integration/websdk/customize-your-sdk.md'
+        'agentai/integration/AgentAI-webSDK/introduction.md': 'agentai/integration/websdk/introduction.md'
+        'agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md': 'agentai/integration/websdk/sdk-fields-and-details.md'
+        'agentai/integration/AgentAI-webSDK/view-customized-events.md': 'agentai/integration/websdk/view-customized-events.md'
+        'agentai/integration/AgentAI-webSDK/mybot-tabs.md': 'agentai/integration/websdk/mybot-tabs.md'
+        'agentai/integration/AgentAI-webSDK/dialog.md': 'agentai/integration/websdk/dialog.md'
+        'agentai/integration/AgentAI-webSDK/transcript-events.md': 'agentai/integration/websdk/transcript-events.md'
+        'agentai/integration/AgentAI-webSDK/searchtab-events.md': 'agentai/integration/websdk/searchtab-events.md'
+        'agentai/integration/AgentAI-webSDK/coaching-events.md': 'agentai/integration/websdk/coaching-events.md'
+        'agentai/integration/AgentAI-webSDK/sdk-Playbooks.md': 'agentai/integration/websdk/sdk-Playbooks.md'
+        'agentai/integration/AgentAI-webSDK/sentiment-charts.md': 'agentai/integration/websdk/sentiment-charts.md'
+        'agentai/integration/AgentAI-webSDK/other-events.md': 'agentai/integration/websdk/other-events.md'
         'contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
@@ -65,7 +78,13 @@ plugins:
         'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
         'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
         'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
+        'apis/contact-center/get-all-conversations-data-call-details.md': 'apis/contact-center/get-all-conversations-data-call-details-v1.md'
         'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
+        'quality-ai/coach/coaching-assignments-supervisor-creation.md': 'quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md'
+        'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
+        'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
+        'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
+        'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
         
 extra:
   version:
@@ -146,7 +165,8 @@ nav:
   - Platform:
     - About AI for Service: getting-started/about-xo-platform.md    
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Accessing the Platform: getting-started/accessing-the-platform.md
+      - Outbound IP Addresses: getting-started/outbound-ip-address.md 
       - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Navigating the Platform: getting-started/navigating-the-platform.md  
@@ -209,7 +229,7 @@ nav:
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
         - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
         - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md    
-      - Deprecations: release-notes/11.x/searchai-deprecations.md 
+      - Deprecations: release-notes/11.x/deprecations.md 
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
@@ -311,6 +331,7 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
+      - Playground: automation/testing/playground.md
       - Test: automation/testing/talk-to-bot.md
       - DialogGPT based Apps:
         - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
@@ -353,6 +374,7 @@ nav:
           - Airtable: searchai/content-sources/connectors/airtable.md
           - Amazon S3: searchai/content-sources/connectors/amazons3.md
           - Asana: searchai/content-sources/connectors/asana.md
+          - Axero: searchai/content-sources/connectors/axero.md
           - Azure Storage: searchai/content-sources/connectors/azure.md
           - BitBucket: searchai/content-sources/connectors/bitbucket.md
           - Box: searchai/content-sources/connectors/box.md
@@ -470,6 +492,8 @@ nav:
           - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
           - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Email Settings: contactcenter/configurations/settings/email-settings.md
+          - Active Console Configuration: contactcenter/configurations/settings/active-console-configuration.md
+          - Queue Level Outbound Numbers or Emails: contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
@@ -557,18 +581,14 @@ nav:
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
           - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
-      - Quality Express:     
-        - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
-        - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
+      - Quality AI Express: quality-ai/connectors/aws-s3-connector-setup-guide.md         
       - Connectors: 
-          - Introduction: quality-ai/connectors/connector-intro.md
-          - Amazon S3: quality-ai/connectors/amazon-s3.md
+        - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md                  
       - Conversation Sources: quality-ai/configure/conversation-sources.md
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
-        - Language Settings: quality-ai/configure/language-settings.md
-         
+        - Language Settings: quality-ai/configure/language-settings.md         
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:

@@ -11,12 +11,14 @@ The orchestrator acts as the traffic director between the platform and your agen
 ### Incoming Messages
 
 The orchestrator receives:
+
 - **User Query** (`MessageItem` with `role='user'`) - When a user sends a message
 - **Agent Response** (`MessageItem` with `role='tool'`) - When an agent completes its task
 
 ### Outgoing Messages
 
 The orchestrator must return:
+
 - **ToolCall** - Specifies the next agent to invoke
   - `tool_name`: Which agent to invoke (or "route_to_user")
   - `message`: **The actual content sent to the agent/user** ⭐
@@ -251,18 +253,21 @@ class TracedOrchestrator(AbstractOrchestrator):
 ## Common Orchestration Flows
 
 ### 1. User → Agent → User
+
 ```python
 # User query → select agent → agent processes → return to user
 role='user' → route to agent → role='tool' → route_to_user
 ```
 
 ### 2. User → Agent → Agent → User
+
 ```python
 # Chain multiple agents before returning
 role='user' → Agent1 → Agent2 → route_to_user
 ```
 
 ### 3. User → User
+
 ```python
 # Direct clarification request
 role='user' → route_to_user (no suitable agent)
@@ -287,32 +292,34 @@ app.start(
 ## Best Practices
 
 1. **Message Field**
-   - `message` is the most important field - it contains what gets sent
-   - For agents: include the task/question to process
-   - For route_to_user: include the response to show the user
+    - `message` is the most important field - it contains what gets sent
+    - For agents: include the task/question to process
+    - For route_to_user: include the response to show the user
 
 2. **Error Handling**
-   - Handle both success and error cases
-   - Return ErrorMessage for routing failures
-   - Implement fallback routing (route_to_user)
+    - Handle both success and error cases
+    - Return ErrorMessage for routing failures
+    - Implement fallback routing (route_to_user)
 
 3. **Logging**
-   - Use `thought` and `reason` for debugging
-   - Log routing decisions
-   - Track agent performance
+    - Use `thought` and `reason` for debugging
+    - Log routing decisions
+    - Track agent performance
 
 4. **State Management**
-   - Use memory stores for orchestrator state
-   - Track conversation context
-   - Maintain agent selection history
+    - Use memory stores for orchestrator state
+    - Track conversation context
+    - Maintain agent selection history
 
 5. **Performance**
-   - Keep routing logic lightweight
-   - Avoid blocking operations
-   - Monitor routing latency
-   - Use tracing for optimization
+    - Keep routing logic lightweight
+    - Avoid blocking operations
+    - Monitor routing latency
+    - Use tracing for optimization
 
-## Related Documentation
+<hr/>
+
+**Related resources**
 
 <!--
 - [Custom Orchestrators in workspace](https://github.com/agenticai/workspace)

@@ -27,6 +27,7 @@ chmod +x .setup.sh
 ```
 
 The setup script will:
+
 - Create a `.venv` virtual environment
 - Install `agenticai-core` from `lib/agenticai_core-0.1.0-py3-none-any.whl`
 - Install all dependencies from `requirements.txt`
@@ -68,11 +69,11 @@ pip install ./lib/agenticai_core-0.1.0-py3-none-any.whl
 
 ## Platform Setup
 
-Before building applications, configure access to the Kore AgenticAI platform.
+Before building applications, configure access to the AgenticAI platform.
 
 ### 1. Access the Platform
 
-Visit [Kore AgenticAI Platform](https://agent-platform.kore.ai/) to:
+Visit [AgenticAI Platform](https://agent-platform.kore.ai/) to:
 
 1. **Configure LLM Models** - Set up your preferred models (GPT-4, Claude, etc.)
 2. **Create Application** - Create a new app on the platform
@@ -84,7 +85,7 @@ Create environment configuration files in `.env/` directory:
 
 ```bash
 # .env/dev
-KORE_HOST=https://staging-agent-platform.kore.ai
+KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_generated_api_key_here
 
 # Optional: Enable distributed tracing
@@ -92,6 +93,7 @@ TRACING_ENABLED=True
 ```
 
 Create separate configs for different environments:
+
 - `.env/dev` - Development configuration
 - `.env/staging` - Staging configuration
 - `.env/prod` - Production configuration
@@ -151,12 +153,14 @@ The workspace `requirements.txt` includes:
 ### Pre-installed Libraries
 
 Located in `lib/`:
+
 - `agenticai_core-0.1.0-py3-none-any.whl` - AgenticAI Core SDK
-- `kore_api-1.0.0-py3-none-any.whl` - Kore API client
+- `kore_api-1.0.0-py3-none-any.whl` - Platform API client
 
 ### Additional Dependencies
 
 Installed from PyPI:
+
 - `numpy` - Numerical computing
 - `langchain-core` - LangChain framework
 - `langchain-openai` - OpenAI integration
@@ -178,6 +182,7 @@ your-package==1.0.0
 ```
 
 Then reinstall:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -215,4 +220,3 @@ ls -la .env/
 - [:octicons-arrow-right-24: Quick Start](quickstart.md) - Build your first app
 - [:octicons-arrow-right-24: Core Concepts](concepts.md) - Understand the framework
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Explore the API
-

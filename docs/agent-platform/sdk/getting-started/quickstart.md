@@ -9,6 +9,7 @@ This guide walks you through the full lifecycle from development to deployment w
 ## Prerequisites
 
 Complete the [Installation](installation.md) steps first:
+
 - ✅ Cloned the workspace repository
 - ✅ Ran `.setup.sh` to create `.venv` and install dependencies
 - ✅ Configured platform access and API key
@@ -38,15 +39,6 @@ Create `.env/dev`:
 
 ```bash
 # workspace/.env/dev
-KORE_HOST=https://agent-platform.kore.ai
-APP_API_KEY=your_api_key_from_platform
-TRACING_ENABLED=True
-```
-
-## Step 2: Define Custom Tools
-
-```bash
-# .env/dev
 KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_api_key_from_platform
 TRACING_ENABLED=True
@@ -258,6 +250,7 @@ This creates:
 - `bin/banking-app/application.config.json` - Configuration file
 
 Verify archive size:
+
 ```bash
 ls -lh bin/banking-app/application.kar
 # Should be under 1MB
@@ -281,7 +274,7 @@ This will:
 
 ```bash
 # Create app environment
-python run.py -c dev create-env --app <appId> --env development --desc "Development environment"
+python run.py -c dev publish --app <appId> --name development --desc "Development environment"
 ```
 
 ## Step 9: Test Deployment
@@ -290,14 +283,14 @@ python run.py -c dev create-env --app <appId> --env development --desc "Developm
 
 ```bash
 # Test the deployed application
-python run.py -c dev test --app <appId> --env development
+python run.py -c dev test
 ```
 
 ### Check Status
 
 ```bash
 # Monitor environment status
-python run.py -c dev status --app <appId> --env development
+python run.py -c dev status --app <appId> --name development
 ```
 
 ## Complete Workspace Structure
@@ -371,22 +364,24 @@ graph LR
 ### 6. Deploy
 
 - `python run.py -c dev deploy -f bin/myApp.kar`
-- Create environment: `python run.py -c dev create-env --app <appId> --env dev`
+- Create environment: `python run.py -c dev publish --app <appId> --name dev`
 
 ### 7. Test End-to-End
 
-- `python run.py -c dev test --app <appId> --env dev`
+- `python run.py -c dev test`
 - Verify deployed functionality
 
 ### 8. Monitor
 
-- Check status: `python run.py -c dev status --app <appId> --env dev`
+- Check status: `python run.py -c dev status --app <appId> --name dev`
 - Review logs and traces
 - Monitor performance
 
 ## CLI Commands Reference
 
-All commands are run from the workspace directory:
+For detailed CLI command documentation, see [CLI Reference](../cli/index.md).
+
+Quick commands for workspace development:
 
 ```bash
 # Activate virtual environment first
@@ -401,14 +396,9 @@ python run.py --archive myProject
 # Deploy (uses .env/<env> configuration)
 python run.py -c dev deploy -f bin/myProject.kar
 
-# Create environment
-python run.py -c dev create-env --app <appId> --env dev
-
-# Test deployment
-python run.py -c dev test --app <appId> --env dev
-
-# Check status
-python run.py -c dev status --app <appId> --env dev
+# Create and test environment
+python run.py -c dev publish --app <appId> --name dev
+python run.py -c dev test
 ```
 
 ## Tips for Success

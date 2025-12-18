@@ -118,6 +118,8 @@ Use this option to automatically map known API formats for supported providers. 
 
 Each option determines how your model communicates with the platform and how responses are parsed. For more details, see [**Default**](../external-models/add-an-external-model-using-api-integration.md#option-a-default) and [**Existing Provider Structures**](../external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).
 
+<img src="../images/existing-provider-structures.png" alt="Existing Provider Structures" title="Existing Provider Structures" style="border: 1px solid gray; zoom:50%;">
+
 <font size="4">**4. Finalize the Configuration**</font> 
 
 * Click **Save as draft** to store the configuration without activating it.
