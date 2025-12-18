@@ -14,8 +14,8 @@ To enable our application to operate within your Azure environment, you need to 
 1. **Sign in to the Azure portal** using an account with Global Administrator privileges for your tenant.
 2. **Grant admin consent** using one of the following methods: 
 
-*   **Option A: Admin Consent URL** Navigate to the following URL in your browser after logging in as Global Administrator, replacing `&lt;your-tenant-id>` with your tenant ID (found in **Microsoft Entra ID** > **Properties**): ``https://login.microsoftonline.com/<your-tenant-id>/adminconsent?client_id=<our-app-client-id>``
-*   **Option B: Azure CLI** Run the following command as Global Administrator, replacing `&lt;our-app-client-id>` with our application's client ID (provided by our team): ``az ad sp create --id '<our-app-client-id>'``
+*   **Option A: Admin Consent URL** Navigate to the following URL in your browser after logging in as Global Administrator, replacing `<your-tenant-id>` with your tenant ID (found in **Microsoft Entra ID** > **Properties**): ``https://login.microsoftonline.com/<your-tenant-id>/adminconsent?client_id=<our-app-client-id>``
+*   **Option B: Azure CLI** Run the following command as Global Administrator, replacing `<our-app-client-id>` with our application's client ID (provided by our team): ``az ad sp create --id '<our-app-client-id>'``
 
 This step registers our application in your tenant, enabling it to interact with your Key Vault securely.
 
@@ -25,8 +25,8 @@ Set up or select an existing Azure Key Vault to store the encryption key for BYO
 
 1. **Ensure you have a Key Vault and RSA Key** prepared in your Azure subscription.
 2. **Note the following details** that you'll share with our team:
-    * **Key Vault URI**: The vault's URI (e.g., `https://&lt;your-vault-name>.vault.azure.net/`)
-    * **Key Identifier**: The full URI of the key, including its name and optional version (e.g., `https://&lt;your-vault-name>.vault.azure.net/keys/&lt;key-name>/&lt;key-version>`)
+    * **Key Vault URI**: The vault's URI (e.g., `https://<your-vault-name>.vault.azure.net/`)
+    * **Key Identifier**: The full URI of the key, including its name and optional version (e.g., `https://<your-vault-name>.vault.azure.net/keys/<key-name>/<key-version>`)
 
 ## Grant access permissions to our application
 
