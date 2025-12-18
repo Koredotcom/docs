@@ -181,8 +181,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 - [**Prerequisites**](#prerequisites)
 - [**Definitions**](#definitions)
 - [Configuration Steps](#configuration-steps)
-  - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs--add-agent-assist-hub)
-  - [Step 2: NICE CX Studio \> Import Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio--import-outbound-voice-script-and-configure-parameters)
+  - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
+  - [Step 2: NICE CX Studio \> Import Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-outbound-voice-script-and-configure-parameters)
   - [Step 3: NICE CX Account Setup for Outbound Call](#step-3-nice-cx-account-setup-for-outbound-call)
 - [Outbound Call Simulation](#outbound-call-simulation)
 
@@ -242,7 +242,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         3. Bot ID
         4. Agent AI Widget URL
         5. Bot Language Code - “en” is set as the default language. Refer to this [doc](./../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent's language.
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"}”* for instructions on how to access customdata in the AI Agent. 
+    2. Custom Data: The **customdata** object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"}”* for instructions on how to access customdata in the AI Agent. 
     Include your data in the customdata object (one key-value pair per line). For example:
         1. `customdata.agentName="Agent"`
         2. `customdata.agentID="1234"`
