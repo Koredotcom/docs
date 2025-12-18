@@ -7,9 +7,6 @@ DialogGPT is an intelligent, agentic orchestration engine that powers natural co
 
     DialogGPT is now the default intent identification mode for AI for Service app creation. The redesigned navigation experience for DialogGPT-based apps enhances discoverability and streamlines the AI Agent creation process for users. The new [Playground](../automation/testing/playground.md) feature provides an integrated side-by-side view of Debug Logs and Talk to Bot for streamlined testing and debugging. [Learn more](../getting-started/dialoggpt-based-navigation.md).
 
-Refer to [DialogGPT based Orchestration](../automation/dialog-gpt-based-orchestration.md)
-
-
 ## Key Features
 
 * **Autonomous Decision Making**: Independently analyzes user inputs and identifies intents and execution order. 
@@ -57,7 +54,7 @@ DialogGPT triggers the resolved intent with the appropriate fulfillment action. 
 
 ## How to Enable DialogGPT
 
-Before proceeding, ensure that the LLM powering the DialogGPT is successfully integrated. For more details on supported models, refer to the [Model Configurations](dgpt-conversation-orchestration.md#model-configurations) and see the [LLM Integration](models-library.md) documentation.
+Before proceeding, ensure that the LLM powering the DialogGPT is successfully integrated. For more details on supported models, refer to the [Model Configurations](../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations) and see the [LLM Integration](../generative-ai-tools/models-library.md) documentation.
 
 Steps:
 
