@@ -77,9 +77,7 @@ If you’re using this feature for the first time, the following screen appears.
 
 <img src="../images/access-single-sign-on.png" alt="access sso" title="access sso" style="border: 1px solid gray; zoom:75%;">
 
-If SSO is already configured, the **Single sign-on** setup page is displayed, as shown below.
-
-<img src="../images/sso-set-up.png" alt="sso setup" title="sso setup" style="border: 1px solid gray; zoom:75%;">
+If SSO is already configured, the **Single sign-on** setup page is displayed.
 
 ## Enable SSO
 
@@ -195,8 +193,6 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 1. Access the **Single sign on** page.
 2. If no SSO is enabled, click **Enable SSO**.
-<img src="../images/enable-sso.png" alt="enable sso" title="enable sso" style="border: 1px solid gray; zoom:75%;">
-
 3. If SSO is already enabled for a provider, click the **Enable SSO** tab and do one of the following:
 
 * Change and save the existing [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for the enabled SSO provider.
@@ -287,15 +283,13 @@ To configure SSO using SAML and Okta, follow the steps below:
 <li>Once the app is created, go to the <b>Sign On</b> tab and click <b>View Setup Instructions</b>.</li>
 <li>On the <b>How to Configure SAML 2.0 for <app-name> Application</b> page, do the following from Okta into Agent Platform:</li>
 <ul><li>Copy the <b>Identity Provider Single Sign-On URL</b> value and paste it into the <b>Okta Single Sign-On URL</b>.</li>
-<li>Copy the <b>Identity Provider Issuer</b> value into the <b>Identity provider issuer</b>.</li>
-    <img src="../images/copy-Identity-Provider-Issuer.png" alt="copy identity provider issuer" title="copy identity provider issuer" style="border: 1px solid gray; zoom:75%;"></ul>
+<li>Copy the <b>Identity Provider Issuer</b> value into the <b>Identity provider issuer</b>.</li></ul>
 <li>Go to <b>Sign On</b> > <b>SAML Signing Certificates</b> on your Okta app.</li>
 <li>Click <b>Download certificate</b> under <b>Actions</b> for the required certificate.
 <img src="../images/download-certificate-saml.png" alt="download certificate" title="download certificate" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Once the certificate is downloaded, open it in Notepad and copy the data between the <b>BEGIN CERTIFICATE</b> header and <b>END CERTIFICATE</b> footer.
 <img src="../images/okta-certificate-notepad.png" alt="okta certificate" title="okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Paste the value into the <b>Certificate</b> field on Agent Platform’s SSO setup page.
-<img src="../images/paste-okta-certificate.png" alt="paste okta certificate" title="paste okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Paste the value into the <b>Certificate</b> field on Agent Platform’s SSO setup page.</li>
 
 To add a new certificate, click <b>+ Add new</b>.</ol>
 
@@ -304,8 +298,7 @@ To add a new certificate, click <b>+ Add new</b>.</ol>
 <p>When multiple certificates are provided, the system uses the latest one. If the latest certificate is invalid, it automatically switches to other available certificates.</p></div>
 
 <ol start="18"><li>Click <b>Save</b>.
-Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</b> page for Agent Platform account authentication.</li>
-<img src="../images/okta-sign-in-page.png" alt="okta sign in page" title="okta sign in page" style="border: 1px solid gray; zoom:75%;"></ol>
+Once SSO for Okta is complete, the system will redirect to the <b>Okta Sign in</b> page for Agent Platform account authentication.</li></ol>
 
 ### Onelogin Configuration
 
@@ -480,11 +473,8 @@ The **Manage Users** feature on the **Single Sign-On** page allows the account o
 To exclude a user from the SSO requirement, follow the steps below:
 
 1. [Navigate](../security-and-control/single-sign-on.md/#access-single-sign-on){:target="_blank"} to the **Single Sign-on** page.
-2. Type and add an email address or select from the dropdown in the **Manage Users** textbox.
-
-You can add multiple users by entering an email address and pressing Tab.
-
-<ol start="3"><li>Click <b>Save</b>.</li></ol>
+2. Type and add an email address or select from the dropdown in the **Manage Users** textbox. You can add multiple users by entering an email address and pressing Tab.
+3. Click <b>Save</b>.
 
 A success message is displayed, and the SSO sign-in is made optional for the user.
 
@@ -500,9 +490,7 @@ When **SSO is enabled**, the following page is displayed.
 
 The user can do one of the following:
 
-* Click **Continue** to log in using the configured SSO provider service's sign-in page, for example, OKTA, as shown below:
-
-<img src="../images/connect-to-okta.png" alt="connect to okta" title="connect to okta" style="border: 1px solid gray; zoom:75%;">
+* Click **Continue** to log in using the configured SSO provider service's sign-in page.
 
 * Click “**Having trouble logging in with SSO?**” to sign in using the default option (email and password, Google, Windows, etc.) set during Agent Platform sign-up.
 
