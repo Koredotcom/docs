@@ -310,7 +310,6 @@ nav:
       - Dynamic Routing: automation/dynamic-routing.md 
       - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
-    - Legacy NLP Topics: nlp-topics.md
     - How To:
         - New vs. Returning Users: kb/new-and-returning-users.md
         - Access Original PII Data: how-tos/access-original-pii-data.md
@@ -321,6 +320,8 @@ nav:
           - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
           - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
           - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md  
+    - NLP: 
+      - Legacy NLP Topics: nlp-topics.md
   - Search AI:
     - About Search AI: searchai/about-search-ai.md
     - Getting Started:
