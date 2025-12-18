@@ -78,9 +78,9 @@ The following table lists scenarios with expected results if a network fails whi
 
 | **Scenario**                             | **Result**                                                                                                                      |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| When an agent sends a message            | “Sending” appears on the chat window.                                                                                           |
-| If the system sends the message      | “Sent” appears on the chat window.                                                                                              |
-| When network disrupts              | Disables the chat window. Undelivered messages appear as “Not Delivered” with the Resend icon in the compose bar’s left corner. |
+| When an agent sends a message            | `Sending` appears on the chat window.                                                                                           |
+| If the system sends the message      | `Sent` appears on the chat window.                                                                                              |
+| When network disrupts              | Disables the chat window. Undelivered messages appear as `Not Delivered` with the Resend icon in the compose bar’s left corner. |
 | When the network restores            | Enables the chat window.                                                                                                     |
 | Selecting the re-send option            | Sends the message again.                                                                                                      |
 | If the conversation terminates       | The Resend icon doesn't appear.                                                                                                |
@@ -88,13 +88,13 @@ The following table lists scenarios with expected results if a network fails whi
 
 ## Audio and Video Calls with Customers
 
-Agents can request the customer for an audio or video call during the chat conversation if required. Clicking the **Audio** or **Video Call** icon initiates a call.  
+Agents can request the customer for an audio or video call during the chat conversation if required. Selecting the **Audio** or **Video Call** icon initiates a call.  
 <img src="../images/audio-video-icons.png" alt="Audio and Video Call Icons" title="Audio and Video Call Icons" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
     * Accounts using Voice Gateway and AudioCodes can access the video call option. 
-    * Agents must close the chat interaction and the audio/video call separately, each with its own disposition.
+    * Agents must close the chat interaction and the audio or video call separately, each with its own disposition.
 
 ### Manual Outbound Call
 
@@ -105,11 +105,11 @@ Agents can initiate manual outbound calls from the agent console. Following are 
 1. **Initiating Outbound Calls from Any Status**  
     * Agents can initiate outbound calls from any status within the agent interface.
     * Exceptions:  
-        * Agents can't initiate outbound calls when their status is "System Away" for both Chat and Voice interactions.
-        * Agents can't initiate outbound calls when their status is "System Busy" for voice interactions.
+        * Agents can't initiate outbound calls when their status is `System Away` for both Chat and Voice interactions.
+        * Agents can't initiate outbound calls when their status is `System Busy` for voice interactions.
 2. **Outbound Calls During Digital Interactions**
     * Agents can initiate an outbound call even when handling digital interactions.
-    * If an agent's slots are full and their status is "System Busy," they can initiate an outbound call.
+    * If an agent's slots are full and their status is `System Busy`, they can initiate an outbound call.
 3. **Inbound Voice Interaction Restriction**
     * Agents can't initiate an outbound call if they're handling an existing inbound voice call.
 
@@ -170,21 +170,13 @@ Agents can make outbound calls to the customers as follows:
 
         The following scenarios are possible:
 
-        1. A user enters “123124”:
+        * A user enters `123124`: By default, the system doesn't select or validate any country code. A call is directly placed to this number. If the user has dialed a call with a USA number, they can change the country code to unknown.
 
-            * By default, the system doesn't select or validate any country code. A call is directly placed to this number.
+        * A user pastes `123121`: Initially, a validation error appears if the number doesn't match the defined format for the default country. The user can change the country code to unknown and a call is directly dialed to this number.
 
-            * If the user has dialed a call with a USA number, they can change the country code to unknown.
+        * User pastes/enters `+91987654321`: The system selects India as the country code and dials the call.
 
-        2. A user pastes “123121”:
-
-            * Initially, a validation error appears if the number doesn't match the defined format for the default country.
-
-            * The user can change the country code to unknown and a call is directly dialed to this number.
-
-        3. User pastes/enters “+91987654321”: The system selects India as the country code and dials the call.
-
-        4. User pastes “+919876543”: The system displays a validation error and disables the call icon.
+        * User pastes `+919876543`: The system displays a validation error and disables the call icon.
 
     !!! Note
 
