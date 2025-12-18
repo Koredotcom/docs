@@ -63,11 +63,11 @@ Go to **Flows & Channels** > **Channels** > **Voice Gateway**, and select **SIP 
         Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
 10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md/#attach-flow){:target="_blank"}.  
-<img src="../images/koreai-voice-gateway-4.png" alt="koreai-voice-gateway" title="koreai-voice-gateway" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/koreai-voice-gateway-4.png" alt="voice-gateway" title="voice-gateway" style="border: 1px solid gray; zoom:80%;">
 
 ## Step 3: Agent Transfer Configuration
 
-After the customer interacts with Kore’s AI Agent, you can perform agent transfer from Kore AI Agent to ZCC through one of the following two approaches:
+After the customer interacts with the AI Agent, you can perform agent transfer from Kore AI Agent to ZCC through one of the following two approaches:
 
 * Agent Transfer Node in Flow. [Read here ](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}
 * Agent Transfer Node in a Dialog Task

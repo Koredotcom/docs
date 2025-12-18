@@ -76,7 +76,7 @@ When agents are reviewing earlier parts of a conversation, and a new message arr
 
 The following table lists scenarios with expected results if a network fails while an agent attempts to send a response.
 
-| **SCENARIO**                             | **RESULT**                                                                                                                      |
+| **Scenario**                             | **Result**                                                                                                                      |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | When an agent sends a message            | “Sending” appears on the chat window.                                                                                           |
 | If the system sends the message      | “Sent” appears on the chat window.                                                                                              |
@@ -127,6 +127,10 @@ Agents can initiate a secondary outbound voice call only after completing the on
 **Status Updates**
 
 When an agent initiates an outbound call, the system automatically changes the agent's status to `System Busy`. This automatic status update helps manage agent availability and workload distribution, ensuring efficient call handling and resource allocation.
+
+!!! note "Outbound Calling"
+ 
+    Outbound calls connect an agent to a customer using a number provisioned by Kore or an external provider. When the number is provisioned by Kore, the platform routes calls through the Twilio-based telephony. When the number is provisioned externally, for example through Verizon, the platform routes calls using SIP Trunk integration. To place outbound calls, the calling number must be a valid Twilio number associated with the same account. After the number is registered and permissions are enabled, outbound calling works as expected.
 
 #### Contacts
 
@@ -941,7 +945,7 @@ If ACW is enabled, then the system manages the conversations based on the ACW co
 
 * Agents can see a countdown timer when the conversation ends, indicating the time left to provide a disposition.
 * The slot becomes available if the agent submits a disposition or when the timer elapses.
-* The system generates a disposition code and fills any empty disposition fields when agents do not provide dispositions within the allotted time.  
+* The system generates a disposition code and fills any empty disposition fields when agents don't provide dispositions within the allotted time.  
     <img src="../images/timed-slot-release.png" alt="Timed Slot Release" title="Timed Slot Release" style="border: 1px solid gray; zoom:80%;">
 
 * When the disposition timer expires, the system displays a message to the agent.  

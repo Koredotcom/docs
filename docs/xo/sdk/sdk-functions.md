@@ -608,7 +608,7 @@ sdk.startAgentSession(requestData, callback)
 // the bot detects the Agent transfer in progress
 function connectToAgent(requestId, data, cb) {
     var formdata = {};
-    formdata.licence_id = config.liveagentlicense;
+    formdata.license_id = config.liveagentlicense;
     formdata.welcome_message = "";
     var visitorId = _.get(data, 'channel.channelInfos.from');
     if (!visitorId) {

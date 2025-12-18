@@ -61,7 +61,7 @@ The platform supports Synchronous and Asynchronous modes of integrations for the
 
 
 
-* **Synchronous Mode**: Thapp responses are directly delivered as a response to the incoming requests. The app will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
+* **Synchronous Mode**: The app responses are directly delivered as a response to the incoming requests. The app will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
 
     !!! note
 
