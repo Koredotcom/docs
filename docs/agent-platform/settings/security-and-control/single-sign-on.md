@@ -208,15 +208,11 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 <ul><li><b>SAML</b>: <a href="#okta-configuration" target="_blank">Okta</a>, <a href="#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="#other-configuration" target="_blank">Other</a>. <a href="#saml" target="_blank">Learn more</a>.</li>
 <li><b>WS-Federation</b>: <a href="#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="#other-configuration" target="_blank">Other</a>. <a href="#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="#google-configuration" target="_blank">Google</a>. <a [Learn more](#openid-connect-configuration) target="_blank"></a>.</li></ul>
+<li><b>OpenId connect</b>: <a href="#google-configuration" target="_blank">Google</a>. <a href="#openid-connect-configuration" target="_blank">Learn more</a></li></ul>
 
 <ol start="9"><li>Click <b>Save</b>.</li></ol>
 
-A success message is displayed once the SSO setup is complete.
-<img src="../images/sso-configuration-updated-successfully.png" alt="sso updated successfully message" title="sso updated successfully message" style="border: 1px solid gray; zoom:75%;">
-
-Additionally, the timestamp of when you enabled SSO is displayed as shown below:
-<img src="../images/sso-timestamp.png" alt="sso timestamp" title="sso timestamp" style="border: 1px solid gray; zoom:75%;">
+A success message is displayed once the SSO setup is complete along with the timestamp of when you enabled SSO.
 
 ## SAML
 
@@ -246,7 +242,6 @@ To configure SSO using SAML and Okta, follow the steps below:
 1. Go to Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Okta** for **SSO provider**.
-<img src="../images/saml-okta-selection.png" alt="saml-okta-selection" title="saml-okta-selection" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -332,8 +327,7 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 <li>Click your app to view the <b>Add App</b> page. Optionally, change the display name or the icons displayed to your users in the <i>OneLogin</i> portal, and then click <b>SAVE</b>. The Agent Platform app has been added to your company apps for <i>OneLogin</i> and is listed on the app page.</li>
 <li>Copy the following values from <b>SSO</b> > <b>Enable SAML2.0</b> on Onelogin and paste them into the relevant fields on Agent Platform’s SSO setup page:</li>
     <ul><li><b>OneLogin SAML 2.0 Endpoint (HTTP)</b>: Paste into <b>SAML 2.0 endpoint</b>.</li>
-    <li><b>OneLogin Issuer URL</b>: Paste into <b>Issuer URL</b>.</li>
-    <img src="../images/paste-onelogin-issuer-url.png" alt="paste one login issuer url" title="paste one login issuer url" style="border: 1px solid gray; zoom:75%;"></ul>
+    <li><b>OneLogin Issuer URL</b>: Paste into <b>Issuer URL</b>.</li></ul>
 
 <li>In the <b>OneLogin X.509 Certificate</b> field, click <b>View Details</b>. The <b>Standard Strength Certificate (2048-bit)</b> page is displayed.
 <img src="../images/onelogin-view-details.png" alt="one login view details" title="one login view details" style="border: 1px solid gray; zoom:75%;"></li>
@@ -353,14 +347,11 @@ To add a new certificate, click <b>+Add new</b>.
 <ol start="11"><li>Copy the following field values from Agent Platform’s SSO setup page into the relevant fields in Onelogin:</li>
 
 <ul><li>ACS URL for SP Initiated SAML Flow.</li>
-<li>ACS URL for IDP Initiated SAML Flow.</li>
-<img src="../images/copy-acs-urls.png" alt="copy acs urls" title="copy acs urls" style="border: 1px solid gray; zoom:75%;"></ul>
+<li>ACS URL for IDP Initiated SAML Flow.</li></ul>
 
 <li>Click <b>Save</b> on Agent Platform and Onelogin.</li></ol>
 
 Once SSO for Onelogin is complete, the system redirects to the **Onelogin Sign in** page for Agent Platform account authentication.
-
-<img src="../images/onelogin-sign-in-page.png" alt="one login sign in page" title="one login sign in page" style="border: 1px solid gray; zoom:75%;">
 
 ### Other Configuration
 
@@ -369,13 +360,10 @@ To configure and enable SSO using SAML for other IDPs of your choice, follow the
 1. Go to Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Other** for **SSO provider**.
-<img src="../images/other-sso-provider.png" alt="other sso provider" title="other sso provider" style="border: 1px solid gray; zoom:75%;">
-
 4. Fetch the necessary SSO configuration parameters listed in [this](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} table from your app's **Settings** page within the IDP developer portal. 
 5. Paste them into the relevant fields on Agent Platform’s SSO setup page.
 
 To add a new certificate, click **+Add new**.
-<img src="../images/paste-parameters-other-configuration.png" alt="paste parameters for other provider" title="paste parameters for other provider" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -414,8 +402,6 @@ To configure SSO using WS-Federation and Windows Azure, follow the steps below:
 
 6. Paste this value into the **Azure AD sign-on end point url** field on Agent Platform’s SSO setup page.
 7. Copy and paste [this](https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml){:target="_blank"} URL link into the **Azure AD federation metadata document** field on Agent Platform’s SSO setup page.
-<img src="../images/paste-azure-parameters.png" alt="paste azure parameters" title="paste azure parameters"  style="border: 1px solid gray; zoom:75%;">
-
 8. Click **Save**.
 
 ### Other Configuration
@@ -427,8 +413,6 @@ To configure and enable SSO using WS-Federation and other IDPs of your choice, f
 3. Select **WS-Federation** for **Sign-on protocol** and **Other** to **Configure SSO for WS-Federation**.
 4. Copy and paste the SSO endpoint URL from the IDP’s portal into **AD sign-on end point url** on Agent Platform’s SSO setup page.
 5. Then, copy and paste the URL for the WS-Federation metadata document from the IDP’s portal into the **AD federation metadata document url** on Agent Platform’s SSO setup page.
-<img src="../images/paste-ws-federation-data.png" alt="paste ws federation data" title="paste ws federation data"  style="border: 1px solid gray; zoom:75%;">
-
 6. Click **Save**.
 
 ## OpenID Connect Configuration
@@ -453,8 +437,6 @@ To configure SSO using OpenId Connect and Google, follow the steps below:
 1. Go to Agent Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **OpenId Connect** for **Sign-on protocol** and **Sign in with Google** to **Configure SSO for OpenId connect**.
-<img src="../images/sign-in-with-google.png" alt="sign in with google" title="sign in with google"  style="border: 1px solid gray; zoom:75%;">
-
 4. Click **Save**.
 
 <div class="admonition note">
@@ -471,13 +453,9 @@ However, you can still view the previously configured SSO parameters for a speci
 
 1. [Access](../security-and-control/single-sign-on.md/#access-single-sign-on){:target="_blank"} the **Single sign on** page.
 2. Click the **Disable SSO** tab.
-<img src="../images/click-disable-sso.png" alt="click disable sso" title="click disable sso" style="border: 1px solid gray; zoom:75%;">
+3. In the confirmation window, click **Yes**.
 
-3. In the **Disable SSO** confirmation window, click **Yes**.
-<img src="../images/disable-sso-screen.png" alt="disable sso screen" title="disable sso screen" style="border: 1px solid gray; zoom:75%;">
-
-The following screen is displayed after SSO is disabled.
-<img src="../images/enable-sso-screen.png" alt="enable sso screen" title="enable sso screen" style="border: 1px solid gray; zoom:75%;">
+You can enable SSO again by clicking the **Enable SSO** button.
 
 ## Exclude Users from the SSO Requirement
 
@@ -503,10 +481,8 @@ To exclude a user from the SSO requirement, follow the steps below:
 
 1. [Navigate](../security-and-control/single-sign-on.md/#access-single-sign-on){:target="_blank"} to the **Single Sign-on** page.
 2. Type and add an email address or select from the dropdown in the **Manage Users** textbox.
-<img src="../images/manage-users-sso.png" alt="manage sso users" title="manage sso users" style="border: 1px solid gray; zoom:75%;">
 
-You can add multiple users to the list, as shown below:
-<img src="../images/add-multiple-users-to-exclude.png" alt="exclude multiple users" title="exclude multiple users" style="border: 1px solid gray; zoom:75%;">
+You can add multiple users by entering an email address and pressing Tab.
 
 <ol start="3"><li>Click <b>Save</b>.</li></ol>
 
