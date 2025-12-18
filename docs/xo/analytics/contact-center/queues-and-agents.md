@@ -10,7 +10,7 @@ The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performan
 
 2. Click **Queues & Agents** under the **Contact Center** section of the **Analytics** panel. The **Queues & Agents** dashboard is displayed on the right side of the page.
 
-## **Time Selection**
+## Time Selection
 
 You can filter Queues & Agents data for a specific time range. You can choose a particular time range and click Apply.
 
