@@ -4,22 +4,26 @@ Search AI uses LLM to generate answers from the ingested chunks. The efficacy of
 
 ![Answer Configuration](images/answer-configuration.png "Answer Configuration")
 
-## Chunk Retrieval 
+## Chunk Retrieval
+
 This section allows you to configure the chunk retrieval strategy and the corresponding thresholds. 
 
 ### Chunk Retrieval Strategy
+
 Choose the preferred chunk retrieval strategy for retrieving answer chunks from the answer index for a given query. Search AI supports **vector retrieval**, which uses cosine similarity scores, and **hybrid retrieval**, which considers patterns and structures in the text. The choice between using vector retrieval and hybrid retrieval depends on various factors, including the nature of the data, the specific requirements of the application, and the available resources. 
 
 1. **Vector Retrieval**: In this type of retrieval, at the time of query, we compute the cosine similarity between the query vector, and each chunk vector, and the resulting scores are used to filter and sort the results. The score ranges from 0 to 1, where 0 indicates no match and 1 represents a complete match. 
 2. **Hybrid Retrieval**: In this type of retrieval, multiple approaches are used to find the most relevant chunk corresponding to the query. 
 
-### Thresholds 
+### Thresholds
+
 This section defines the thresholds for filtering retrieved answer chunks based on similarity scores and proximity. 
 
 * **Similarity Score Threshold**: This setting allows users to specify the minimum similarity score required for an answer chunk to be considered relevant. Chunks with scores below this threshold are discarded. This parameter can take any value between 0 and 100. The greater the value of this field, more is the similarity score required. 
 * **Proximity Threshold:**  This parameter can be used to determine how closely retrieved chunks should be located to the highest-ranking chunk. Chunks beyond this threshold are discarded. This parameter can take any value between 0 and 50. The lower the value of the proximity threshold, the closer the chunks are.
 
 ### Top Chunks
+
 This field specifies the maximum number of qualified answer chunks to be considered for generating answers. In the case of generative answers, these number of top chunks are sent to the LLM as the context for generating an answer to the user query. 
 
 

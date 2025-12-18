@@ -95,6 +95,7 @@ Note:
 ## RACL Support
 
 ### Knowledge Articles
+
 SearchAI offers access control for content ingested from ServiceNow Knowledge bases. Currently, **SearchAI enforces access control at the knowledge base level.**
 
 To learn the basics of RACL in SearchAI, refer to this. 
@@ -262,4 +263,3 @@ The **sys_racl** field for a catalog item includes the following:
    </td>
   </tr>
 </table>
-
