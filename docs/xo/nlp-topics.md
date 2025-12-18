@@ -16,7 +16,7 @@ For reference documentation on legacy NLP concepts and functionality, see:
 
 
 
-## Knowledge AI
+### Knowledge AI
 
 - [About Knowledge AI](automation/knowledge-ai/knowledge-ai-introduction.md)
 - Knowledge Graph (KG)
@@ -33,7 +33,7 @@ For reference documentation on legacy NLP concepts and functionality, see:
 
 
 
-## Natural Language
+### Natural Language
 
 - [About NLP](automation/natural-language/nlp-introduction.md)
 - [NLP Optimization](automation/natural-language/training/optimizing-bots.md)
@@ -53,7 +53,7 @@ For reference documentation on legacy NLP concepts and functionality, see:
     - [Multi Intent Detection](automation/natural-language/nlu-configurations/multi-intent-detection.md)
     - [Amend Entities](automation/natural-language/nlu-configurations/amend-entities.md)
 
-## Conversation Intelligence
+### Conversation Intelligence
 
 - [About Intelligence](automation/intelligence/intelligence-overview.md)
 - [Context Management](automation/intelligence/context-management.md)
@@ -63,7 +63,7 @@ For reference documentation on legacy NLP concepts and functionality, see:
     - [Manage Interruptions](automation/intelligence/conversation-management/manage-interruptions.md)
     - [Ignore Words and Field Memory](automation/intelligence/conversation-management/ignore-words-and-field-memory.md)
 
-## Testing
+### Testing
 
 - [About Test and Debug](automation/testing/test-and-debug-overview.md)
 - [Test](automation/testing/talk-to-bot.md)
@@ -74,7 +74,7 @@ For reference documentation on legacy NLP concepts and functionality, see:
         - [Batch Testing - NLP](automation/testing/regression-testing/batch-testing.md)
         - [Conversation Testing - NLP](automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md)
 
-## Advanced Topics
+### Advanced Topics
 
 - [Intent Discovery](automation/tools/intent-discovery.md)
 
