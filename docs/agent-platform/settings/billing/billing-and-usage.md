@@ -10,10 +10,6 @@ Steps to access the Usage page:
 2. Click **Settings** on the top navigation bar.
 3. On the left navigation pane, click **Billing** > **Usage**.
 
-The **Usage** dashboard appears as shown below.
-
- <img src="../images/access-usage.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
-
 The Usage page displays the following tabs for billing and usage:
 
 * **Overview**: Provides a high-level summary of your resource consumption including:

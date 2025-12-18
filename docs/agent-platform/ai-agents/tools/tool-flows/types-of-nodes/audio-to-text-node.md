@@ -18,7 +18,7 @@ The **Audio to Text** node is a powerful AI component that enables you to conver
 
 * **Meeting and Lecture Transcription**: Automatically convert meetings, interviews, or classroom sessions into searchable text. 
 
-* **Customer Support Automation**: Transcribe voice interactions to feed into chatbots or help desk workflows. 
+* **Customer Support Automation**: Transcribe voice interactions to feed into chat bots or help desk workflows. 
 
 * **Subtitle and Caption Generation**: Generate accurate subtitles for video content across platforms. 
 
@@ -88,7 +88,7 @@ The **Agent Platform** uses **OpenAI Whisper-1** for transcription.
 This node is commonly used for:
 
 * Transcribing meetings, interviews, or lectures.
-* Automating customer service chatbots.
+* Automating customer service chat bots.
 * Generating subtitles for videos.
 * Voice command processing for applications.
 * Audio translation.
