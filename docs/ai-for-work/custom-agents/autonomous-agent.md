@@ -50,7 +50,7 @@ Follow these steps to create a new Autonomous Agent:
   
      * **Content Type**: Enter a specific label that tells the API what kind of data you are sending.
 
-     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment.md#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.
+     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.
 
      1. Click **Curl Import** to open the import interface.
      2. Paste your CURL command into the text box.
@@ -87,7 +87,7 @@ To import an existing Autonomous Agent:
 
 !!!note
 
-    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from AI for Work can be imported using this feature.
+    You cannot directly import agents exported from the Agent Platform. Only Autonomous Agents that were originally created and exported from application can be imported using this feature.
 
 ## Usage
 
