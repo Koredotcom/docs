@@ -7,7 +7,15 @@ hide:
 # NLP-based App Topics
 
 
-This article provides a unified reference for **NLP-based apps** on the platform. It brings together core concepts, configuration guides, tutorials, and advanced topics to help you navigate the NLP ecosystem, build conversational flows, configure intelligence features, and test and optimize apps from a single place.
+The platform supports two engines for creating Automation AI app: **DialogGPT-based** and **NLP-based** engines.
+
+By default, new apps use the **DialogGPT-based** approach, which applies a generative AI–driven intent detection mechanism while using the same automation framework.
+
+Existing apps built with the **NLP-based** engine use traditional intent detection and training workflows. Except for the intent detection engine, both approaches share the same core capabilities, including dialog tasks, node types, conversation intelligence, testing, and optimization.
+
+The articles on this page focus on **NLP-based features** and help you understand, manage, and enhance apps built using the NLP engine.
+
+
 
 
 
