@@ -79,6 +79,7 @@ The Guardrails are available for the following features and will gradually becom
 * Rephrase Responses
 
 ### Search AI Features
+
 <ul>
   <li>Answer Generation</li>
   <li>Enriching Chunks with LLM</li>

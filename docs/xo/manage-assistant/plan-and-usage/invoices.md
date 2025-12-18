@@ -3,7 +3,7 @@
 
 The Invoice module provides access to all the invoices associated with the AI Agents for the Standard Accounts. This includes subscriptions for both Usage Plans and Support Plans. However, it does not display invoices for Enterprise Accounts.
 
-# Viewing Invoices
+## Viewing Invoices
 
 To view the invoices, follow these steps:
 
@@ -19,4 +19,3 @@ To view the invoices, follow these steps:
 4. You can download any invoice as a PDF format by clicking  <img src="../images/download.png" alt="download" title="download" style="border:1px solid gray; zoom:70%;">. You can also export the  billing report as a .csv file.  
 
  <img src="../images/invoices1.png" alt="invoices" title="invoices" style="border:1px solid gray; zoom:70%;">
-

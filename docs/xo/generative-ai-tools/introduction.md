@@ -69,8 +69,8 @@ LLMs can now generate responses in app languages that LLMs also support. To lear
 
 LLM and Generative AI features involve data sharing with third-party LLM providers, such as OpenAI, Azure OpenAI, Claude, and others.
 
-
 ## Next Steps
+
 1. Integrate a [pre-built or custom LLM or XO GPT](models-library.md) in models library. 
 2. Create [ New Prompts](prompts-library.md) in the prompts library.
 3. Enable[ GenAI Features](genai-features.md).
