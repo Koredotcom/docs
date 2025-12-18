@@ -26,6 +26,7 @@ To retrieve the raw data for all conversations in a detailed view. The days’ r
 | `offset` | Defines the number of pages to skip or retrieve. Defaults to 0 if unspecified, with a maximum value of 10. For example, 10 | integer, optional |
 
 ## Sample Request
+
 ``` 
 curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{accountId}}/calldetails?limit=100&offset=0' \
 --header 'authority: {{domain}}' \
@@ -669,7 +670,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `sessionEndTime` | YYYY-MM-DDTHH SS | End time of the session. | 2023-01-10 2:25:54 |
 | `botId` | type-prefixed-guid | Identifier of the bot involved. | st-ae8470ab-8ecb-51fb-8e13-c87dc66fxxxx |
 | `userId` | type-prefixed-guid | A unique identifier for the user involved in the conversation. | u-8413fd99-4ded-5f6d-8c1a-176dc66xxxx |
-| `channelSpecificUserId` | no known format | User ID passed by the channel. | jane.doe@example.com |
+| `channelSpecificUserId` | no known format | User ID passed by the channel. | `jane.doe@example.com` |
 | `orgId` | type-prefixed-guid | The organization ID. | o-5a0da1e4-2df3-5cec-9ee4-af0b2efdxxxx |
 | `disconnectingEvent` | character string | The final event leading to the conversation ending. | System Hangup |
 | `finalStatus` | character string | Completion status of the conversation. | CLOSED or BotResolved |
@@ -706,7 +707,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `metaInfo.customerinfo.CenterPhone` | string | Contact number of the service center. | "" |
 | `metaInfo.customerinfo.CustomerFirstName` | string | Customer’s first name. | John |
 | `metaInfo.customerinfo.CustomerLastName` | string | Customer’s last name. | Doe |
-| `metaInfo.customerinfo.CustomerEmail` | string | Customer’s email address. | john.doe@example.com |
+| `metaInfo.customerinfo.CustomerEmail` | string | Customer’s email address. | `john.doe@example.com` |
 | `metaInfo.customerinfo.Direction` | string | Specifies the call direction. | Inbound |
 | `metaInfo.workinghours` | object | Defines the agent’s working days and hours. | — |
 | `metaInfo.workinghours.workdays` | string | The working days of the agent. | mon,tue,wed,thu,fri |
@@ -745,7 +746,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `destinations.respondingAgent.interactionDuration` | integer | Duration in seconds from Agent acceptance to last utterance. | 51 |
 | `destinations.respondingAgent.afterCallWorkDuration` | integer | Duration in seconds of post-call work of this agent. | 8 |
 | `destinations.respondingAgent.afterCallWorkEndTime` | YYYY-MM-DDTHH SS | Time when this agent completed post-call work. | 2023-01-10 2:25:54 |
-| `destinations.respondingAgent.email` | string | Agent’s email address. | jane.doe@example.com |
+| `destinations.respondingAgent.email` | string | Agent’s email address. | `jane.doe@example.com` |
 | `destinations.respondingAgent.name`| character string | Agent’s name. | jane doe |
 | `destinations.respondingAgent.assignedAt` | YYYY-MM-DDTHH SS | Time at which this contact was assigned to this Agent. | 2023-01-10 2:25:54 |
 | `destinations.respondingAgent.acceptedTime` | YYYY-MM-DDTHH SS | Time at which this Agent accepted the contact. | 2023-01-10 2:25:54 |
@@ -753,7 +754,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `destinations.nonRespondingAgents.agentId` | String | Unique identifier ofa  non-responding agent. | u-3ea001b4-664a-58b6-8108-b8bca375xxxx |
 | `destinations.nonRespondingAgents.agentNotes` | array of Strings | Notes or remarks for the interaction. | The customer initiated a conversation with the bot for various requests, including connecting to an agent. |
 | `destinations.nonRespondingAgents.destinationType` | string | Segment type of the interaction. | AgentSegment |
-| `destinations.nonRespondingAgents.email` | string | Email address of the agent. | jane.doe@example.com |
+| `destinations.nonRespondingAgents.email` | string | Email address of the agent. | `jane.doe@example.com` |
 | `destinations.nonRespondingAgents.name` | string | Full name of the assigned agent. | Jane doe |
 | `destinations.nonRespondingAgents.assignedAt` | string (ISO 8601 datetime) | Timestamp when the agent was assigned. | 2025-10-01T13:08:55 |
 | `destinations.nonRespondingAgents.nonResponseEvent` | string | The reason the agent didn't respond. | Ignored |

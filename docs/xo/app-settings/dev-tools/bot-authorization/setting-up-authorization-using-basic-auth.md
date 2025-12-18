@@ -141,18 +141,11 @@ By default, authorization fields are configured as part of the header of the req
 
 In the **Authorization Check URL** field, optionally define a URL that can be used to test the authorization settings from the XO Platform before you deploy the assistant with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL.
 
-For example
-
-https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
-
-or
-
-https://{tenant}.service-now.com/api/now/v1/table/incident
+For example, `https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json` or `https://{tenant}.service-now.com/api/now/v1/table/incident`.
 
 For more information, see [Using Session and Context Variables in Tasks](../../../automation/use-cases/using-session-and-context-variables.md){:target="_blank"}.
 
 Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
-
 
 ## Testing the Authorization 
 

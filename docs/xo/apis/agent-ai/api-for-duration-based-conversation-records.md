@@ -151,6 +151,4 @@ curl --location '[https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconvers
 | `results.messages.components.data` | Object | Data of the component, e.g., `{ "text": "hi" }`. |
 | `results.messages.components.thumbnails` | Array | List of thumbnails (if any) associated with the component. |
 | `results.messages.sT` | Integer | (Optional) Step or sequence number of the message. |
-| `results.messages.author.type` | String |
-
-
+| `results.messages.author.type` | String | |

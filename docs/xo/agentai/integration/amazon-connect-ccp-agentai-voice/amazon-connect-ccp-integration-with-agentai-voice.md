@@ -87,7 +87,7 @@ This function is responsible for returning all the credentials required to rende
 
 1. Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KoreAgentAssistCCP.zip){:target="_blank"} and upload it to the function once you create a new Lambda function.
 2. **Environment variable List**:
-    * **agentassistUrl**: https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+    * **agentassistUrl**: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html`
     * **botId**: [Agent AI Bot Id]
     * **clientId**: [Agent AI Client Id]
     * **clientSecret**: [Agent AI Client Secret]

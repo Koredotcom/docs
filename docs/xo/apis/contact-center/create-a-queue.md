@@ -15,7 +15,7 @@ To create a queue with the given `streamId`.
 
 | **PARAMETER** | **DESCRIPTION**                                                         | **TYPE**         |
 |---------------|--------------------------------------------------------------------------|------------------|
-| host          | Environment URL, for example, https://platform.kore.ai                | string, required |
+| host          | Environment URL, for example, `https://platform.kore.ai`                | string, required |
 | streamId      | You can access it from the App Settings page of the bot.             | string, required |
 
 ## Sample Request
