@@ -232,16 +232,16 @@ Steps to edit dispositions:
 
 1. Select a completed interaction for which the disposition has to be revised.
 2. Select the **DETAILS** tab in the Insights to Logs window.
-3. Click **Edit Disposition**.  
+3. Select **Edit Disposition**.  
     <img src="../images/edit-disposition-button.png" alt="Edit Disposition" title="Edit Disposition" style="border: 1px solid gray; zoom:70%;">
 
-4. Make the necessary changes to the dispositions and click **Save**.  
+4. Make the necessary changes to the dispositions and select **Save**.  
     <img src="../images/edit-disposition-pop-up.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:70%;">
 
-5. Click **View Logs**.  
+5. Select **View Logs**.  
     <img src="../images/view-logs.png" alt="View Logs" title="View Logs" style="border: 1px solid gray; zoom:70%;">  
 
-    The disposition logs are displayed.
+    The disposition logs appear.
 
     <img src="../images/disposition-log-details.png" alt="Disposition Log Details" title="Disposition Log Details" style="border: 1px solid gray; zoom:70%;">  
 
@@ -294,9 +294,7 @@ The following Custom Tag fields appear:
 3. Select the values for the second clause and select Apply.  
 <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
 
-A confirmation appears.
-
-Selecting (-) deletes a clause.
+A confirmation appears. Selecting (-) deletes a clause.
 
 !!! note
 
@@ -353,7 +351,7 @@ Icons beside the Insights to Logs header show the following details:
 * Language
 * Sentiment (Positive, Neutral, etc.)
 * Channel (Voice, Chat, or Email)  
-<img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 **Transcript**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
 <img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
@@ -622,6 +620,7 @@ The interface also shows RTCP media packets exchanged between endpoints:
 5. **Export Data**: Use the export options to save the communication flow for further analysis.
 
 ### QoS (Quality of Service) 
+
 The QoS tab provides detailed network metrics for call monitoring and troubleshooting. It offers comprehensive data visualization of network performance indicators to help Agents and Supervisors analyze call quality.  
 <img src="../images/qos-tab.png" alt="QoS Tab" title="QoS Tab" style="border: 1px solid gray; zoom:70%;">  
 
@@ -877,7 +876,7 @@ The Agents tab provides comprehensive call information for agents and supervisor
   <tr>
    <td>Call Exit Reason
    </td>
-   <td>Categorized reason why the participant left the call (for example, "Disconnected", "Transfer", "Call Ended").
+   <td>Categorized reason why the participant left the call (for example, `Disconnected`, `Transfer`, `Call Ended`).
    </td>
   </tr>
   <tr>
