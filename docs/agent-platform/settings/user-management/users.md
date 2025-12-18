@@ -81,14 +81,19 @@ The steps mentioned below, allow you to import users' data from a designated fil
 **Key Suggestions**
 
 * Click and download the sample ._csv_ file for reference.
+* The fields are pre-defined in the sample file, as shown below.
 
-    <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
 
-* The fields are pre-defined in the sample file, and the data requirements are shown below:
-<img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
+  <div class="admonition note">
+  <p class="admonition-title">Important</p>
+  <p><ul><li>Mandatory fields are marked with an asterisk (*).</li>
+  <li>The column header names and order must match the fields in the uploaded file.</li>
+  <li>Only <i>New</i>, <i>Update</i>, and <i>Delete</i> user statuses are accepted.</li>
+  <li>Invalid email IDs are not accepted.</li></ul></p> 
+</div>
 
-* Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
-<img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;">
+* Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error.
 
 4. A preview window displays the file’s data with a file uploaded success message. Click **Continue** to import the file.
 <img src="../images/success-import.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
