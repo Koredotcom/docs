@@ -51,9 +51,9 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 - [Prerequisites](#prerequisites)
 - [Definitions](#definitions)
 - [Configuration Steps](#configuration-steps)
-  - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs--add-agent-assist-hub)
-  - [Step 2: NICE CX Studio \> Import the Voice Script and Configure Parameters](#step-2-nice-cx-studio--import-the-voice-script-and-configure-parameters)
-  - [Step 3: NICE CX Setup \> Attach Point of Contact with Voice Script](#step-3-nice-cx-setup--attach-point-of-contact-with-voice-script)
+  - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
+  - [Step 2: NICE CX Studio \> Import the Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-the-voice-script-and-configure-parameters)
+  - [Step 3: NICE CX Setup \> Attach Point of Contact with Voice Script](#step-3-nice-cx-setup-attach-point-of-contact-with-voice-script)
 - [Voice Simulation](#voice-simulation)
 
 ### Step 1: Nice CX Integration Hubs > Add Agent Assist Hub
