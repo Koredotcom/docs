@@ -4,7 +4,7 @@ This section covers the infrastructure requirements and operational aspects of t
 
 ## IPs, Ports, and Protocols
 
-This document contains all the region wise IPs, ports, and protocols for Voice Gateway. It is useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](./configure-voice-gateway.md#sip-trunk-setup).
+This document contains all the region wise IPs, ports, and protocols for Voice Gateway. It's useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](./configure-voice-gateway.md#sip-trunk-setup).
 
 ### Regions
 
@@ -563,13 +563,13 @@ The manufacturer's documentation for your specific network hardware setup detail
 * Will you be able to allocate and configure one test number to us?
     - [ ] Yes
     - [ ] No
-* Will you allow and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports?
+* Will you let and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports?
     - [ ] Yes
     - [ ] No
-* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and allow the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?
+* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and let the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?
     - [ ] Yes
     - [ ] No
-* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to allow all mentioned UDP ports in a bi-directional way?
+* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to let all mentioned UDP ports in a bi-directional way?
     - [ ] Yes
     - [ ] No
 * Are you using any anti-virus software?

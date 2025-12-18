@@ -13,7 +13,7 @@ To retrieve the recording of a specific call using either the `userId` or `sessi
 
 ## Path Parameters
 
-| **PARAMETER** | **DESCRIPTION**                                                                            | **TYPE**            |
+| **Parameter** | **Description**                                                                            | **Type**            |
 |-----------|----------------------------------------------------------------------------------------|-----------------|
 | host      | Environment URL, for example, `https://platform.kore.ai`                              | string, required|
 | streamId  | botId or streamId. You can get it from the App Settings page.       | string, required|
@@ -60,6 +60,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/assign-
 "botSessionId": "66c2f6939489bfffc791xxxx"
 }'
 ```
+
 ## Sample Responses
 
 **Transfer to Agent**:
