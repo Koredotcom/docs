@@ -146,6 +146,7 @@ Follow this example to set up and run an API call inside Evaluation Studio:
 
 7. **Configure the API body:** Click the **Body** tab. Under the `"input"` key, replace `{{example_text}}` with your input column name. For example, `{{Input}}`.
 <img src="../../images/example_text.png" alt="Body tab" title="Body tab" style="border: 1px solid gray; zoom:50%;">
+
 <img src="../../images/test_button.png" alt="Test button" title="Test button" style="border: 1px solid gray; zoom:50%;">
 
 

@@ -44,21 +44,21 @@ Workflow Tools can be created either through the Agentic App or directly under t
 
 When workflow tools are created under the **Tools** menu, they function as universal tools that, once deployed, are accessible across multiple apps. These tools act as templates, and when imported into an app, they generate a local copy that can be further customized without altering the original. Importing is restricted to tools that have been deployed from the Tools library.
 
-In contrast, when workflow tools are created within the Agentic App, they are scoped exclusively to that app. You can also import a workflow tool from the library into the Agentic App. Any modifications or updates made to these imported tools apply only to the local copy and do not affect the version available in the Tools library. To ensure that changes take effect, the tool must be deployed within the app. 
+In contrast, when workflow tools are created within the Agentic App, they're scoped exclusively to that app. You can also import a workflow tool from the library into the Agentic App. Any modifications or updates made to these imported tools apply only to the local copy and don't affect the version available in the Tools library. To ensure that changes take effect, the tool must be deployed within the app. 
 
 For more information on Workflow tools, see [Workflow Tools](../tools/workflow-tools.md).
 
 
 ### Code Tools
 
-Code Tools provide maximum flexibility by enabling agents to run custom JavaScript or Python code. These tools are ideal for handling dynamic logic, conditional processing, or integrations that cannot be captured through pre-defined workflows. Code Tools support synchronous execution and are ideal when precision, extensibility, or complex algorithms are required.
+Code Tools provide maximum flexibility by enabling agents to run custom JavaScript or Python code. These tools are ideal for handling dynamic logic, conditional processing, or integrations that can't be captured through pre-defined workflows. Code Tools support synchronous execution and are ideal when precision, extensibility, or complex algorithms are required.
 
 **Best suited for:** Advanced use cases involving business-specific logic, data transformation, or interaction with complex systems.
 
 Examples:
 
-* SQL Query Processor – Executes SQL queries on a specified database.
-* Custom Validator – Validates inputs using custom logic before proceeding.
+* SQL Query Processor: Executes SQL queries on a specified database.
+* Custom Validator: Validates inputs using custom logic before proceeding.
 
 For more information, see [Code Tools](../tools/code-tools.md).
 
@@ -75,8 +75,8 @@ Because MCP Tools are centrally managed, they support versioning, cross-feature 
 
 Examples:
 
-* Enterprise HR Toolset (MCP) – A suite of HR tools exposed via MCP.
-* Remote Invoice Processor – Executes billing operations through a secure MCP endpoint.
+* Enterprise HR Toolset (MCP): A suite of HR tools exposed via MCP.
+* Remote Invoice Processor: Executes billing operations through a secure MCP endpoint.
 
 For more information, see [MCP Tools](../tools/mcp-tools.md).
 
