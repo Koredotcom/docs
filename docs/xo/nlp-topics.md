@@ -3,12 +3,11 @@ hide:
   - feedback
 ---
 
-
 # Legacy NLP Topics
 
-DialogGPT and the Agent Node are now the standard approach for building agentic conversational experiences on the platform. We recommend migrating your existing NLP-based apps to DialogGPT to leverage AI agents and agentic capabilities.
+Legacy NLP methods for creating conversation experiences are no longer supported. DialogGPT and the Agent Node are now the standard approach for building agentic conversational experiences on the platform. We recommend migrating your existing NLP-based apps to DialogGPT to leverage AI agents and agentic capabilities.
 
-Legacy NLP methods for creating conversation experiences are no longer supported. However, you can still maintain your old NLP-based apps migrated from previous versions. For reference documentation on legacy NLP concepts and functionality, see:
+ However, you can still maintain your old NLP-based apps migrated from previous versions. For reference documentation on legacy NLP concepts and functionality, see:
 
 
 | Feature | Document  |
