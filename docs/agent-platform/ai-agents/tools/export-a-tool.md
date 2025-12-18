@@ -52,15 +52,7 @@ The exported package includes the following JSON files encapsulating the tool’
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
 * ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
 
-<img src="../images/exported-files.png" alt="exported files" title="exported files" style="border: 1px solid gray; zoom:75%;">
-
-To view the files, right-click and select **View file**.
-
-<img src="../images/view-exported-file.png" alt="view exported file" title="view exported file" style="border: 1px solid gray; zoom:75%;">
-
-The file information is displayed as follows:
-
-<img src="../images/app-definition-file-example.png" alt="file example" title="file example" style="border: 1px solid gray; zoom:75%;">
+You can view the file name in the archive.
 
 <hr>
 
