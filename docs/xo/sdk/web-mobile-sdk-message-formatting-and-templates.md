@@ -641,8 +641,8 @@ var message = {
   "type": "template",
   "payload":
     {
-     "text": "Travelling expenses report chart",
-     "template_type": "piechart",
+     "text": "Traveling expenses report chart",
+     "template_type": "pie chart",
      "pie_type": "regular",
      "elements":
        [{
