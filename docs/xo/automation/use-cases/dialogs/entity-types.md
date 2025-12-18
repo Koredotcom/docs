@@ -983,7 +983,7 @@ The following table lists how the entity works in different scenarios:
   <tr>
    <td><strong>INPUT TYPE</strong>
    </td>
-   <td><strong>AI Agent BEHAVIOUR</strong>
+   <td><strong>AI Agent Behavior</strong>
    </td>
   </tr>
   <tr>
@@ -1299,7 +1299,7 @@ For example, for capturing volumes, select **Volume** as the **Unity Type** and 
 ```
 "Quantity":
 {
-"unit": "millilitre",
+"unit": "milliliter",
 "amount": 500,
 "type": "volume",
 "source": "500 ml"

@@ -998,7 +998,7 @@ Onboarding and Setup Guide:
 
 Email Signup Process:
 
-* New signups are restricted to business email addresses.
+* New signup are restricted to business email addresses.
 * Personal emails can join invited workspaces but can't create new ones.
 * Existing users are unaffected.
 
@@ -1130,7 +1130,7 @@ Specific error messages:
 
 **App Deletion Feature Update** 
 
-The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycles while maintaining data security and user accountability.
+The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycle while maintaining data security and user accountability.
 
 Key updates:
 
@@ -1438,7 +1438,7 @@ Key updates:
 * Public API for SSO configuration management:
     * Fetch the SSO Meta API: Returns the existing SSO configuration along with the URLs.
     * Enable SSO API: Enables the SSO configuration for an account.
-    * Disable SSO API: Dsables the SSO configuration for an account.
+    * Disable SSO API: Disables the SSO configuration for an account.
     * Update the SSO Configuration API: Updates the SSO configuration for an account.
 * Support for SAML protocol.
 
@@ -1555,7 +1555,7 @@ In addition to pre-built commercial LLMs, the Answer Generation now supports Cus
 
 **Kore.ai XO GPT Supports Vector Generation and Answer Generation**
 
-Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
+Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, LaBSE, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
 
 <font size="4">Flows & Channels</font>
 

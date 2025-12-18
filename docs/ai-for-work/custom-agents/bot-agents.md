@@ -35,16 +35,13 @@ more.](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/)
 
 To create a new Bot Agent, follow these steps:
 
-1. In the **Admin Console**, click **AI Agents** from the left pane, and then
-    select **Bot Agents**. Displays a list of available bot agents.
+1. In the **Admin Console**, click **AI Agents** from the left pane, and then select **Bot Agents**. Displays a list of available bot agents.
     <img src="../images/bot-agent.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-2. On the Bot Agents page, click **+Create
-    Agent**.
+2. On the Bot Agents page, click **+Create Agent**.
     <img src="../images/create-agent.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-3. You must link your Bot built on the AI for Service Platform with **AI for Work** and
-    create a webhook channel. [Learn
+3. You must link your Bot built on the AI for Service Platform and create a webhook channel. [Learn
     more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
 
 To create a webhook channel on the Bot and complete the integration process, follow these steps:
@@ -54,10 +51,10 @@ To create a webhook channel on the Bot and complete the integration process, fol
 2. Select your required app from the **Webhook** dialog.
 <img src="../images/webhook_select_app.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-1. Copy the **Bot client ID** and **Bot secret ID** to use in the **AI for Work** platform to complete the integration.
+1. Copy the **Bot client ID** and **Bot secret ID** to use in the platform to complete the integration.
 <img src="../images/webhook_botID.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-1. Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate with **AI for Work**, enables the channel.
+1. Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate, enables the channel.
 
 !!! note
 

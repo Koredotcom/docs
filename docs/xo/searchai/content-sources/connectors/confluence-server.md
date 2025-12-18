@@ -1,6 +1,6 @@
 # Confluence Server
 
-If you are using Confluence Data Center to store and manage your content, you can easily search through that content using the out-of-box connector provided by Search AI.
+If you use Confluence Server to store knowledge content, the Search AI Confluence Server Connector lets you securely index, filter, and search your Confluence data with expanded coverage and improved indexing controls. The connector provides enhanced ingestion capabilities, space-based filters, advanced filtering, and optional incremental sync with webhook-based deletion.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -14,7 +14,7 @@ If you are using Confluence Data Center to store and manage your content, you ca
   <tr>
    <td>Content Supported
    </td>
-   <td>Knowledge Articles
+   <td>Knowledge Articles, Spaces, Blogs, and Comments
    </td>
   </tr>
   <tr>
@@ -37,6 +37,7 @@ The connector provides two authorization mechanisms:
 
 * Basic Authentication
 * OAuth 2.0
+* Header Based Authorization
 
 For more information on auth types, refer to [this](../connectors.md). 
 
@@ -48,6 +49,11 @@ When you use basic authentication, no server‑side configuration is required. G
 
 1. Register Search AI as an OAuth client in Confluence Server.
 2. Configure the connector with the generated OAuth credentials.
+
+**Header Based Authorization**
+
+Configure the required authorization headers (for example: Authorization: Bearer <token> or X-API-Key) within the Search AI connector settings.
+Ensure the external application or system you are connecting to is configured to accept and validate these specific headers. Go to step 2 to configure the connector in Search AI.
 
 ## Step 1: Register the Search AI app in the Confluence Server
 
@@ -67,6 +73,24 @@ After creating the link, you will receive:
 
 These values are required in Search AI. For more information, refer to [this](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html). 
 
+**Deletion Handling**
+
+SearchAI uses Confluence webhook notifications to manage deletion events. When configured, these callbacks automatically remove deleted content (pages and blog posts) from the SearchAI index.  
+
+This ensures search results remain accurate and reduces indexing time and system load.
+
+Configure a Confluence Webhook for SearchAI
+Perform the following steps in your Confluence server to set up the webhook:
+
+1. Go to Settings > General configuration.  
+2. In the search field, type Webhook. From the left navigation under Configuration, select Webhooks.  
+3. Click Create webhook.  
+4. Enter the details:  Name, URL, Secret
+5. Click Test connection to verify Confluence can reach the endpoint.  
+6. From the Events dropdown, select attachment_created, blog_removed, page_removed, etc  
+7. Ensure Active is selected, then click Save. 
+
+
 ## Step 2: Configure the Confluence (Server) Connector
 
 In Search AI:
@@ -78,14 +102,20 @@ In Search AI:
     * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Data Center, Search AI supports two types: Authorization Code grant type and Client Credentials grant type. For more details, refer to [this](../connectors.md).
     * For Basic Auth, provide the connector name, username, password, and Confluence Data Center host URL.
     * For OAuth 2.0 Authentication, enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence Data Center base URL and domain name.
+    * Header Based Authorization fields: Header, Token, and Host URL. Click Connect to initiate authorization.
 
 Click **Connect** to initiate authorization.
 
 ### Content Ingestion
 
-Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Data Center or select specific content. Note that if there are any attachments to the pages being ingested into the application, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
+Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes: **Ingest all content**, which syncs all available content from Confluence, or **Ingest filtered content**, which lets you specify only the content you want to sync. Select **Ingest filtered** content and click **Edit configuration** to open the **Ingestion Filters** page.
+Click **Browse & Select**, then mark the spaces or content types you want to sync. Use the search box to quickly locate spaces, check or uncheck items to include or exclude, and click **View More** to load additional spaces and save the configuration. The connector ingests only the items you select.
 
 ![Content Synchronization](images/confluenceserver/content-synchronization.png "Content Synchronization")
+
+### Incremental Sync
+
+The Confluence Server connector supports incremental synchronization to ensure efficient content updates. During each sync cycle, only newly created or modified Pages, Blogs, Spaces, and Comments are fetched and updated in SearchAI.
 
 ### Content Filters
 
@@ -150,6 +180,13 @@ Confluence Server supports a two-level permission model:
 **Space Permissions**
 
 Each space defines its own set of permissions, managed by space administrators. These permissions control who can view, edit, or administer the content in that space. SearchAI requires at least **view** access to ingest and apply access control correctly.
+
+**Blog Restrictions**
+
+Blog posts inherit permissions from their parent space but can also have their own view or edit restrictions.
+Blog permissions follow the same model as page permissions in Confluence.
+For blog posts, the Blog Post ID must be set in the sys_racl field.
+Permissions inherited from the parent space apply unless overridden by blog-specific restrictions.
 
 **Page Restrictions**
 

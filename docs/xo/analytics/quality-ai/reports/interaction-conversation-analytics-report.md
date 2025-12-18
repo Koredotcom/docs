@@ -6,12 +6,12 @@ Exports comprehensive conversation data based on selected evaluation forms, with
 
 Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
-1. On the **Reports** tab, click **New Report**.
+1. On the **Reports** tab, Select **New Report**.
 
 1. From the **Create New Report** list, select the **Interaction Evaluations and Conversation Analytics Report**.  
 <img src="../images/interaction-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
 
-1. Click **Next** to proceed.
+1. Select **Next** to proceed.
 
 1. Configure the **General** section.
 
@@ -19,33 +19,34 @@ Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
     * Enter a meaningful **Description** explaining the report's purpose and intended audience.
  
-    * Click **Next** to proceed.        
+    * Select **Next** to proceed.        
     <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
 
 1. Enter the **Configure** section fields and filters.
 
     * Select one evaluation form to determine data scope and applicable interactions. 
 
-    * Select a **Date** or date range from the dropdown, such as Today, Yesterday, Last 7 days, Last Week, Week to Date.
+    * Select a **Date** or date range from the dropdown, such as Last 7 days, Last Week, Week to Date.
 
-    * Select a **Timezone**  (defaulting to the device's local timezone) from the dropdown.
+    * Select a **Timezone** (defaulting to the device's local timezone) from the dropdown.
 
     * Configure the required **Filter**.
 
-        * Click **+Add Filter** to  to add Channel, Queue, Language, Agents, Agent Groups.
+        * Select **+Add Filter** to add Channel, Queue, Language, Agents, Agent Groups.
 
-        * Set the values against the selected/added filters. 
+        * Set the values vs. the selected/added filters. 
 
     * Add **Optional Fields** to include additional metrics or attributes.
 
-    * Enter recipient addresses in **Send Email to** to send the automated reports (minimum one required). 
+    * Enter recipient addresses in **Send Email to** send the automated reports (minimum one required). 
 
-    * Click **Next** to proceed.  
-    <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
+    * Select **Next** to proceed.  
+
+        <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
 1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
  
-    * Select **Run on Demand**, and click **Save** to generate the report immediately with the current configuration.
+    * Select **Run on Demand**, and select **Save** to generate the report immediately with the current configuration.
 
     * Select **Schedule** to set up automated recurring report generation.  
     <img src="../images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
@@ -57,9 +58,9 @@ Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
 1. Select a **Timezone** (defaults to your device's local timezone).
 
-1. Click **Instant Run** to generate the report immediately.
+1. Select **Instant Run** to generate the report immediately.
 
-1. Click **Save** to confirm and activate the schedule.  
+1. Select **Save** to confirm and activate the schedule.  
 <img src="../images/gen-start-date-and-timezone.png" alt="Save" title="Save" style="border: 1px solid gray; zoom:60%;">
 
 1. The saved report is displayed in the **My Reports - Reports** dashboard.  
@@ -67,7 +68,7 @@ Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
 1. Enable scheduling by switching on the **Schedule** toggle.
 
-1. Click the **Run** button to generate the report immediately.
+1. Select the **Run** button to generate the report immediately.
 
 ## Report Fields
 
@@ -89,11 +90,11 @@ Steps to view and download a report:
 
 1. On the **Reports** tab, navigate to the **Actions** column.
 
-1. Click the vertical **Ellipsis** button. 
+1. Select the vertical **Ellipsis** button. 
 
 1. Select **History** to view all generated reports.
 
-1. Click **Download** to save and view the required reports in CSV format.
+1. Select **Download** to save and view the required reports in CSV format.
 
 ### Sample Report Format
 

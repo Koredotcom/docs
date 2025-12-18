@@ -14,7 +14,7 @@ This document provides detailed, step-by-step instructions for setting up the mu
 
 * [Step 5: (Optional) Install Audiohook for voice streaming](#step-5-optional-install-audiohook-for-voice-streaming)
 
-* [Step 6: Create an architect flow in Genesy for the queue](#step-6-create-an-architect-flow-in-genesys-for-the-queue)
+* [Step 6: Create an architect flow in Genesys for the queue](#step-6-create-an-architect-flow-in-genesys-for-the-queue)
 
 ## **Prerequisites**
 
@@ -45,7 +45,7 @@ App credentials are fetched based on Genesys desktop queue names. If the Genesys
 
 Create a Data Table to store app credentials on the XO Platform.
 
-1. Sign in to Kore.ai [appbuilder](https://platform.kore.ai){:target="_blank"}. 
+1. Sign in to Kore.ai [App Builder](https://platform.kore.ai){:target="_blank"}. 
 2. Click **Data** > **Data Tables**. 
 3. Click **New Table**.  
 <img src="../images/data-table-new-table-1.png" alt="new-table" title="new-table" style="border: 1px solid gray; zoom:80%;">

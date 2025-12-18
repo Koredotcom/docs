@@ -70,9 +70,9 @@ Search AI interacts with Zeplin via APIs. To use the Zeplin API and authenticate
     * Summary - Provide a brief description of the purpose of the app. 
     * Website - Provide the website url. 
     * Redirect URIs - Use one of the following URLs based on your region or deployment. 
-        * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-        * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-        * Prod Callback URL: https://idp.kore.com/workflows/callback
+        * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+        * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+        * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 1. Select **CREATE**. A client ID and client secret are generated. Use these credentials when configuring the Zeplin connector in Search AI. 
 
 

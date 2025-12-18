@@ -229,7 +229,7 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
 * **Display Options** (<img src="../images/using-dialog-tasks-tool-set-right-display.png">) - Use **Display Options** to utilize screen real estate better.
 
-    <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray;zoom:60%;">
+    <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display settings" style="border:1px solid gray;zoom:60%;">
 
     Display Options are used to:
     
@@ -238,7 +238,7 @@ For the convenience of comprehension and demonstration, let’s visualize the To
     * **Zoom to Last Edited** – This takes you to the zoom level you have used to edit the dialog.
     * **Hide/Show Mini Map** – To show or hide the mini-map of the dialog.
 
-* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and View Comments. [Learn more](#the-more-options-menu).
+* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Amend behavior and View Comments. [Learn more](#the-more-options-menu).
 
     <img src="../images/using-dialog-builder-right-more-settings.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
 
@@ -296,7 +296,7 @@ Node type groups in the panel:
 * **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
 * **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
 * **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
-* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, Agen Node and Prompt Node.
+* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, Agent Node and Prompt Node.
 
 ### The Canvas
 
@@ -500,7 +500,7 @@ The platform provides the following options for customizing notes and bookmarks:
 
 * **Edit:** To edit the contents.
 * **Delete:** To delete the bookmark or the note from the canvas
-* **Color Change:** To change the color of the bookmark or note. You can use custom colours to improve visibility and collaboration.
+* **Color Change:** To change the color of the bookmark or note. You can use custom colors to improve visibility and collaboration.
 
 <img src="../images/using-dialog-builder-visual-customization-notes-bookmarks.png" alt="Visual customization of Notes and Bookmarks" title="Visual customization of Notes and Bookmarks" style="border:1px solid gray;zoom:60%;">
 
@@ -598,11 +598,11 @@ The **Manage Interruptions** options allow you to select if and how a user can s
 Click here to [learn more](../../intelligence/conversation-management/manage-interruptions.md#dialog-level-settings){:target="_blank"}.
 
 
-### Manage Ammend Behavior
+### Manage Amend Behavior
 
 Using **Amend Entity,** you can allow the users to amend entity values and control post-amendment dialog behavior.
 
-<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
+<img src="../images/using-dialog-builder-img28-manage-amend-behavior.png" alt="Manage Amend behavior" title="Manage Amend behavior" style="border:1px solid gray;zoom:60%;">
 
 Click here to [learn more.](../../natural-language/nlu-configurations/amend-entities.md#task-level)
 

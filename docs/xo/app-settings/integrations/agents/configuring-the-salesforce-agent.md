@@ -19,9 +19,7 @@ The Platform supports the following Salesforce integration methods for agent tra
 
 
 
-Before configuring a Salesforce agent, users must be enabled with the **Service Cloud User** licence to ensure all options are displaying for them in the customize section of the left navigation.
-
-
+Before configuring a Salesforce agent, users must be enabled with the **Service Cloud User** license to ensure all options are displaying for them in the customize section of the left navigation.
 
 ### Configure Live Chat
 
@@ -335,7 +333,7 @@ Follow these steps:
 
         !!! note
 
-            If your base URL is `koreaiinc.my.salesforce.com`, enter it as `https://koreaiinc.my.salesforce-srct.com`.
+            If your base URL is `example.my.salesforce.com`, enter it as `https://example.my.salesforce-srct.com`.
 
     * **Developer Name**: The developer's name, copied before.  
     <img src="../images/miaw-metadata9.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
@@ -406,7 +404,7 @@ Follow these steps:
 <img src="../images/miaw-metadata5.png" alt="Salesforce" title="Salesforce Metadata" style="border: 1px solid gray;zoom:80%;"/>
 
 5. Once the field is added in the Visible Pre-Chat Fields section, you can optionally mark it as required. Scroll down and click Save.
-6. Click Pushish in the top right corner.
+6. Click Publish in the top right corner.
 
 
 #### Step 5: Create a Flow to Update Messaging Session in Salesforce

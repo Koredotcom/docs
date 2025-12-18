@@ -115,7 +115,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual app responses.
 * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
 * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
-* **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
+* **Few-shot ML Model**: Uses the Platform hosted embeddings for intent identification during run time based on semantic similarity.
 * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple integrations of the dialog.
 * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
 * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the an AI Agent or human agent. This API leverages an open-source LLM to summarize conversations.

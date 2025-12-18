@@ -145,7 +145,7 @@ The platform has set up a check on loop limit and if the dialog conditions resul
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>Server returned authorisation failure and the user needs to re-authorize
+   <td>Server returned authorization failure and the user needs to re-authorize
    </td>
    <td>This message is displayed for a Server Authorization failure during the execution of the script node or making an API call.
    </td>
@@ -177,7 +177,7 @@ This AI Agent message is displayed to request the user to specify the Alert time
    </td>
    <td>Applicable to Alert Task Only
 <p>
-During the setup of the Alert, the AI Agentt will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
+During the setup of the Alert, the AI Agent will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
 <p>
 This message is displayed to request the user to specify the Alert time interval if the Trigger interval option is set to Every X mins.
    </td>
@@ -1078,7 +1078,7 @@ This message is displayed when an API call fails due to the expiry of user crede
    </td>
   </tr>
   <tr>
-   <td>Task is discarded when user exceeds maximum number of alowed attempts.
+   <td>Task is discarded when user exceeds maximum number of allowed attempts.
    </td>
    <td>Shown when the user enters an invalid format for an entity type 5 times. For example, the entity is of type <em>number</em> and the user enters an email 5 times.
    </td>

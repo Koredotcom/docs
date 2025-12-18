@@ -93,7 +93,7 @@ Steps to publish email addresses in the Kore domain:
 
 ## Custom Email Domain
 
-Custom email domains add a professional look to your email communications, reinforcing your brand identity with every email you send or receive. Customers perceive custom emails as established, reliable, and legitimate compared to generic email addresses. For example, You can create [help@yourbusiness.com](mailto:help@yourbusiness.com), a branded email account that uses your organization's domain name instead of a domain provided by Kore.ai. You can add up to three email accounts (sales@, support@, info@, etc.) in each custom domain for better organization and delegation. By granting access to your email accounts within the domain, you can track the activity of the configured accounts, respond to incoming emails, and send outbound emails. Email filters are less likely to flag emails from custom domains as spam, ensuring better deliverability rates.
+Custom email domains add a professional look to your email communications, reinforcing your brand identity with every email you send or receive. Customers perceive custom emails as established, reliable, and legitimate compared to generic email addresses. For example, You can create [help@yourbusiness.com](mailto:help@yourbusiness.com), a branded email account that uses your organization's domain name instead of a domain provided platform. You can add up to three email accounts (sales@, support@, info@, etc.) in each custom domain for better organization and delegation. By granting access to your email accounts within the domain, you can track the activity of the configured accounts, respond to incoming emails, and send outbound emails. Email filters are less likely to flag emails from custom domains as spam, ensuring better deliverability rates.
 
 Currently, we support two types of custom domains: Standard and Advanced. The Standard has a limitation of 5 domains and 5 emails per domain, whereas the Advanced supports 50 domains and 50 emails per domain.
 
@@ -269,3 +269,177 @@ After successful DKIM verification, follow these steps:
 2. Click **+ New Email ID** to add an email to the domain. 
 3. Enter the **Display Name**, add the **Email ID**  from which emails have to be forwarded or sent, and select the **Usage**.
 4. Click **Save**. The configuration saved message is displayed.
+
+
+
+
+
+
+## Microsoft Exchange
+
+Follow these steps to set up a Custom Microsoft Exchange domain and add an email ID to it.
+
+
+### Step 1: Generate DKIM
+
+Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer[ Generating DKIM keys using OpenSSL](generate-dkim.md).
+
+
+
+1. Generate RSA key pair (2048-bit recommended).
+2. Extract the public key in the proper format.
+3. Enter the private key in the DKIM Key field in the Verification screen.
+4. Configure the public key in DNS.
+
+
+### Step 2: Domain Verification
+
+
+
+1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
+2. Click **+ New Domain** and select **Microsoft Exchange**.
+3. On the verification tab, enter the following details and then click  **Verify Domain**.
+    * **Domain Name**: This is the domain for which you want to subscribe to the mailboxes using the Graph API.
+    * **DKIM Private Key**: The DKIM key generated before.
+    * **Selector Name**: A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
+
+        **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](http://domain.com)]</code>
+
+
+        **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com](http://.example.com)</code>  
+        
+        
+        <img src="../images/msexchange1.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+4. The Verification in Progress message is displayed.  
+<img src="../images/msexchange2.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+5. Click **Confirm**. You can navigate to the Email Channels page to check the latest status. This might take up to 72 hours. The status can be one of the following:
+    * **Pending**: DNS records not yet detected.
+    * **Success**: DKIM successfully verified.
+    * **Failed**: DNS records are incorrect or missing.
+    * **Temporary Failure**: DNS issues, will retry automatically.  
+    <img src="../images/msexchange3.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+### Step 3: Microsoft 365 Setup Instructions for Integration
+
+
+**1: Create a Microsoft 365 Group**
+
+
+
+1. Sign in to the[ Microsoft 365 Admin Center](https://admin.microsoft.com).
+2. Navigate to **Groups > Active groups**.
+3. Click on **Add a group**.
+4. Choose **Microsoft 365 or security** as the group type.
+5. Provide a **Group Name** (for example, `BotMailboxGroup`).
+6. Complete the required fields and click **Create**.
+7. After creation, **add users** (mailboxes you want to monitor, cloud-based inboxes) to this group as members.
+
+
+**2: Register an Azure AD Application**
+
+
+
+1. Go to the[ Azure Portal](https://portal.azure.com) and navigate to **Azure Active Directory > App registrations**.
+2. Click **New registration**.
+3. Enter a name for the app (e.g., `KoreAI Email Integration`).
+4. Select **Accounts in this organizational directory only**.
+5. Click **Register**.
+
+
+**3: API Permissions**
+
+
+
+1. After registration, you'll be redirected to the app's overview page
+2. Navigate to **API Permissions > Add a permission**.
+3. Select **Microsoft Graph > Application permissions**.
+4. Add the following permissions:
+
+    * `Group.Read.All`
+    * `Mail.Read`
+    * `Mail.ReadWrite`
+    * `Mail.Send`
+    * `MailboxSettings.Read`
+    * `User.Read`
+    * `User.Read.All`
+
+    <img src="../images/msexchange4.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+5. Click **Add permissions**.
+6. **Important**: Click **Grant admin consent for [Your Organization]**.
+7. Confirm by clicking **Yes** in the dialog box.
+
+
+**4: Generate Client Secret**
+
+
+
+1. Navigate to **Certificates & secrets** in your registered app.
+2. Under the **Client secrets** section, click **+ New client secret**.
+3. Provide a description for the secret (for example, Graph API Secret).
+4. Select an expiration period (recommended: 24 months or less for security)
+5. Click **Add**.
+6. **Important**: Copy the **Value** of the client secret immediately and store it securely. This value will not be displayed again once you navigate away.
+
+
+**5: Retrieve Required Configuration Values**
+
+After completing the setup, you'll need the following values to complete the setup:
+
+
+
+* **Group Name(s)** created
+* **Client ID** (Application ID)
+* **Client Secret** (value)
+* **Tenant ID** 
+
+
+### Step 4: Complete Configuration and Subscribe to Groups
+
+After successful domain verification, follow these steps:
+
+
+
+1. On the Email Channel page, click **Complete Configuration** for a domain.
+2. On the Configuration tab, enter **Client ID**, **Client Secret Key**, **Tenant ID, **and enable the channel.  
+<img src="../images/msexchange5.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+3. Click **+New Group** and enter the **Group Name** that you would like to subscribe to via the Graph API. You can add up to 50 domains and 50 email addresses per domain.  
+<img src="../images/msexchange6.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+4. Click **Sync** to fetch all the email id of the group.  
+<img src="../images/msexchange7.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+5. Click **Save**. The configuration saved message is displayed.  
+<img src="../images/msexchange8.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+6. Click **Edit** to sync up the emails of a group or to add.  
+<img src="../images/msexchange9.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+**Test Your Configuration**
+
+It's recommended to test your app registration using a tool like:
+
+
+
+* Microsoft Graph Explorer:[ https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+* Postman with Microsoft Graph API collections
+* Custom application code
