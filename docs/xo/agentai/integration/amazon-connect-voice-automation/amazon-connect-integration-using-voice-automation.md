@@ -3,6 +3,7 @@
 This document outlines the steps for Kore users to integrate Kore Voice Automation with Amazon Connect, leveraging Amazon's external voice transfer capabilities. This setup enables voice transfers from Amazon Connect to a Voice Gateway and back, facilitating a seamless call experience through the Amazon Connect desktop.
 
 ## Architecture Diagram
+
 <img src="../images/architecture-diagram.png" alt="architecture-diagram" title="architecture-diagram" style="border: 1px solid gray; zoom:80%;">  
 
 ## Prerequisites
@@ -84,6 +85,7 @@ The following steps describe the call flow after this integration:
 This setup provides a robust solution for leveraging our voice automation capabilities within your Amazon Connect Contact Center environment.
 
 ## Metadata Passing from Kore to Amazon Connect (Additional Feature)
+
 Currently, Amazon Connect does not support SIP header extraction. To pass metadata from Kore to Amazon Connect, use the following alternative AWS components: 
 
 * API Gateway
@@ -262,7 +264,7 @@ Ensure the Automation bot used in the CCAI Conditional Flow includes an Agent Tr
 **Add the Request URL**: Add the **API Gateway URL** with **contactId** as query parameter. Get this by accessing your first lambda function (“koreStoreSessionMetadata”) > **Configuration** > **Trigger**.  
 <img src="../images/core-store-session-metadata-25.png" alt="core-store-session-metadata" title="core-store-session-metadata" style="border: 1px solid gray; zoom:80%;">   
 
-**Example**: https://ubpl0dxgq1.execute-api.us-east-1.amazonaws.com/dev/kore-metadata?contactId={{context.session.BotUserSession.ContactId}}  
+**Example**: `https://ubpl0dxgq1.execute-api.us-east-1.amazonaws.com/dev/kore-metadata?contactId={{context.session.BotUserSession.ContactId}}`  
 
 * **Method**: POST  
 * **Headers**:  

@@ -125,14 +125,14 @@ Steps to delete the agent scorecard:
 
         If the user tries to delete the default scorecard, a warning pop-up dialog box appears stating that the default scorecard cannot be deleted. To do this, you have to assign another scorecard as default before deleting this scorecard. If you delete the scorecard, the associated data will be lost, which is associated with this scorecard.
 
-# Agent Attributes
+## Agent Attributes
 
 This feature enables the creation of agent attributes by combining existing evaluation metrics. This calculates the Agent Attribute Score using data from evaluation metric results. Agent attributes are specific areas of performance relevant to an agent's role like Professionalism, Product Knowledge, Problem-solving skills, and Customer service skills. 
 
 Users can view **Agent Attributes** by navigating to **Quality AI** > **Configure** > **Agent Attributes**. 
 <img src="../agent-scorecards/images/agent-attributes-default-screen.png" alt="Agent Attributes" title="Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
 
-## Create a New Agent Attribute
+### Create a New Agent Attribute
 
 Steps to create **New Agent Attribute**:
 
@@ -157,7 +157,7 @@ The Agent Attributes include the following:
 * **Description**: This shows the optional description added for the agent attribute.
 * **Score Card**: This shows the status of all scorecards.
 
-## Edit Agent Attributes
+### Edit Agent Attributes
 
 Steps to edit or update the agent attributes:
 
@@ -170,7 +170,7 @@ Steps to edit or update the agent attributes:
 3. Modify the required field details in the **Add Evaluation Metrics**.
 4. Select **Update** to assign and update the evaluation metrics that will service this new attribute added.
 
-## Delete Agent Attribute
+### Delete Agent Attribute
 
 Steps to delete the agent scorecard:
 
@@ -182,4 +182,4 @@ Steps to delete the agent scorecard:
 
     !!! note
             
-        The agent cannot delete any of the existing attributes, which is already assigned for an agent scorecard. To delete this attribute, the agent has to remove it from the assigned agent scorecard before deletion. Only the unassigned agent attribute can be deleted. Once you delete the agent attribute, the associated date will be lost.
+        The agent cannot delete any of the existing attributes, which is already assigned for an agent scorecard. To delete this attribute, the agent has to remove it from the assigned agent scorecard before deletion. Only the unassigned agent attribute can be deleted. When you delete the agent attribute, the associated date will be lost.

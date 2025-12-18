@@ -39,11 +39,8 @@ On the **Reports** page, you can view all your reports organized by type.
 | **Last Run** | Shows the most recently executed or generated timestamp of the report. |
 | **Next Run** | Shows the scheduled run timestamp for the next automatic run of the report if scheduling is enabled. If scheduling is turned off, it shows **Schedule Disabled**. |
 | **Schedule Toggle** | Shows the toggle switch to enable or disable automation directly from the list. <br><br>**Off (gray)**: Scheduled execution is disabled. <br>**On (blue)**: Scheduled execution is enabled. |
-| **Actions** | - **Play/Run** (<img src="../images/run-icon.png" alt="Run icon" width="18">): Enables you to run or generate the report immediately. <br> - **Edit** (<img src="../images/edit-icon.png" alt="Run icon" width="18">): Enables you to edit the report settings to modify its details (parameters). <br> - **Menu Option** (<img src="../images/ellipsis-icon.png" alt="Run icon" width="18">): Click the vertical ellipsis menu button to view and execute more options, such as view history, clone, favorite/unfavorite, switch to public/private, and delete.   
-|    
-
-<img src="../images/reports-list-column.png" alt="Reports List Column" title="Reports List Column" style="border: 1px solid gray; zoom:60%;">
-                              
+| **Actions** | - **Play/Run** (<img src="../images/run-icon.png" alt="Run icon" width="18">): Enables you to run or generate the report immediately. <br> - **Edit** (<img src="../images/edit-icon.png" alt="Run icon" width="18">): Enables you to edit the report settings to modify its details (parameters). <br> - **Menu Option** (<img src="../images/ellipsis-icon.png" alt="Run icon" width="18">): Click the vertical ellipsis menu button to view and execute more options, such as view history, clone, favorite/unfavorite, switch to public/private, and delete. |   
+<img src="../images/reports-list-column.png" alt="Reports List Column" title="Reports List Column" style="border: 1px solid gray; zoom:60%;">                              
 
 ### Bulk Actions (Search and Filter)
 

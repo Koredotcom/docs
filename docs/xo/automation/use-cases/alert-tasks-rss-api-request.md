@@ -740,7 +740,7 @@ Follow these steps to add a standard postprocessor:
 1. On the **API Request** tab, expand the **Request** tab, and then click **Add Processor**.
 2. Kore.ai also provides a set of standard post-processors that you can use instead of creating custom code for a post-processor. In **Type of Process** field, select one of the following four types of standard processors:
 
-    **Resolve**: You can use the results of one payload response as input for a second request. For example, click **Add Processor**, enter a **Name** for your processor, set **Type of Process** to **resolve**, and **Key** to the name of the variable, and then define the **Post URL** using a variable from the first API Request. For example, https://app.asana.com/api/1.0/projects/**{project_id}** that returns the id field in the payload response as: 
+    **Resolve**: You can use the results of one payload response as input for a second request. For example, click **Add Processor**, enter a **Name** for your processor, set **Type of Process** to **resolve**, and **Key** to the name of the variable, and then define the **Post URL** using a variable from the first API Request. For example, `https://app.asana.com/api/1.0/projects/{project_id}` that returns the id field in the payload response as: 
 
 ```js
 "id":80468818418144, <br/>
