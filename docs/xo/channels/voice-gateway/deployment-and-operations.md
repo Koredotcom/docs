@@ -540,51 +540,65 @@ The manufacturer's documentation for your specific network hardware setup detail
 
 ### Check List
 
-* Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is called a pinhole).
+* Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is called a pinhole). 
     - [ ] Yes
     - [ ] No
-* If your firewall has a Pinhole feature, does it have the support of the following modules:
+
+* If your firewall has a Pinhole feature, does it have the support of the following modules: 
     - [ ] NAT hole punching
     - [ ] NAT traversal
     - [ ] TCP hole punching
     - [ ] UDP hole punching
-* Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection?
+
+* Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection? 
     - [ ] Yes
     - [ ] No
-* Are you connecting to the internet through the router?
+
+* Are you connecting to the internet through the router? 
     - [ ] Yes
     - [ ] No
-* Are you using any proxy server to connect to the internet?
+
+* Are you using any proxy server to connect to the internet? 
     - [ ] Yes
     - [ ] No
-* If you are using a proxy server, will you be able to remove or skip (bypass) your proxy server from our Kore configuration environment?
+
+* If you are using a proxy server, will you be able to remove or skip (bypass) your proxy server from our Kore configuration environment? 
     - [ ] Yes
     - [ ] No
-* Will you be able to allocate and configure one test number to us?
+
+* Will you be able to allocate and configure one test number to us? 
     - [ ] Yes
     - [ ] No
-* Will you let and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports?
+
+* Will you let and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports? 
     - [ ] Yes
     - [ ] No
-* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and let the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?
+
+* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and let the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)? 
     - [ ] Yes
     - [ ] No
-* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to let all mentioned UDP ports in a bi-directional way?
+
+* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to let all mentioned UDP ports in a bi-directional way? 
     - [ ] Yes
     - [ ] No
-* Are you using any anti-virus software?
+
+* Are you using any anti-virus software? 
     - [ ] Yes
     - [ ] No
-* If you are using any anti-virus software, does it need to follow any federation rules?
+
+* If you are using any anti-virus software, does it need to follow any federation rules? 
     - [ ] Yes
     - [ ] No
-* Can you run the latency test using the [AWS latency test](https://aws-latency-test.com/) from your Agent's office premises and share the latency test results with Kore?
+
+* Can you run the latency test using the [AWS latency test](https://aws-latency-test.com/) from your Agent's office premises and share the latency test results with Kore? 
     - [ ] Yes
     - [ ] No
-* Are you using any internal firewall for each and every agent in their systems, like ZScaler?
+
+* Are you using any internal firewall for each and every agent in their systems, like ZScaler? 
     - [ ] Yes
     - [ ] No
-* If you are using any internal firewall like ZScaler, will you be able to allow all mentioned UDP ports in a bi-directional way?
+
+* If you are using any internal firewall like ZScaler, will you be able to allow all mentioned UDP ports in a bi-directional way? 
     - [ ] Yes
     - [ ] No
 
