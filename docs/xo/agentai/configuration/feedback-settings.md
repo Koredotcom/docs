@@ -24,6 +24,7 @@ The Feedback Settings section has five subsections–Dialog Task Feedback, Answe
     <img src="../feedback-settings-images/feedback-messages-editing-2.png" alt="feedback-messages-editing" title="feedback-messages-editing" style="border: 1px solid gray; zoom:80%;">
 6. Configure the required feedback message, and press **Enter** to save it.
     <img src="../feedback-settings-images/configuring-a-feedback-message-3.png" alt="configuring-a-feedback-message" title="configuring-a-feedback-message" style="border: 1px solid gray; zoom:80%;">
+
 ## **Enable or Disable Feedback Messages**
 
 Only **Enabled** feedback messages appear in the Agent AI widget for agents to select. You can enable or disable any five messages out of the default six at any given time. To enable or disable a feedback message:
