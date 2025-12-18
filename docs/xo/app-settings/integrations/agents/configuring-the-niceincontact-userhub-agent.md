@@ -113,7 +113,7 @@ Steps to verify the data exchange between Kore.ai’s agent and NiceInContact Us
 
 4. Click **Connect** to start exchanging the conversation from the Kore.ai XO platform and the NiceInContact User Hub.
 
-    <img src="../images/configuring-the-niceincontact-userhub-img7.png" alt="Start conversaton" title="Start conversation" style="border: 1px solid gray;">
+    <img src="../images/configuring-the-niceincontact-userhub-img7.png" alt="Start conversation" title="Start conversation" style="border: 1px solid gray;">
 
 5. Open an AI Agent for which you have enabled the NiceInContact User Hub agent.
 6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.

@@ -31,7 +31,7 @@ The Interface displays the following elements:
 
 * **Evaluation Forms**: Shows all associated evaluation forms for configuration and assignment.
 
-* **Ellipsis Icon**: Provides edit and delete an options. 
+* **Ellipsis Icon**: Provides edit and delete options. 
 
 * **Search**: Quick search to view and modify metrics.	
 
@@ -48,7 +48,7 @@ Steps to create new evaluation metric:
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 3. Configure your chosen measurement type metrics.    
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
+<img src="../evaluation-criteria/evaluation-metrics/images/metric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
 ## Metrics Configuration Elements
@@ -112,7 +112,7 @@ The following measurement types are:
 
     * **Dead Air**: Tracks unproductive silence periods with configurable thresholds (30-300 seconds). 
 
-    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring words per minute (WPM).
+    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring Words Per Minute (WPM).
 
     **Use Cases**: 
     
@@ -130,7 +130,7 @@ The following measurement types are:
 
     **Key Features**:
 
-    * **API Integration**: Real-time verification with CRM and external systems.
+    * **API Integration**: Real-time verification with Customer Relationship Management (CRM) and external systems.
 
     * **Business Rules Engine**: Five rule types, including first or last value, negotiated value, and strict matching.
 
@@ -196,7 +196,7 @@ The following measurement types are:
 
 1. **By AI Agent**
 
-    Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
+    Enables sophisticated evaluations using AI agents capable of multistep reasoning and autonomous decision-making.
 
     **Key Features**:
 

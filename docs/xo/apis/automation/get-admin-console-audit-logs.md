@@ -71,7 +71,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>size
    </td>
-   <td>Number of records to be fetched upto a maximum of 100
+   <td>Number of records to be fetched up to a maximum of 100
    </td>
   </tr>
   <tr>

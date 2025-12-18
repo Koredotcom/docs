@@ -18,7 +18,7 @@ Click **Save** to save the API request settings.
 
 1. On the **API Request** tab, expand the **WSDL URL** section.
 2. To begin the task configuration for a SOAP request, enter the URL for your SOAP WSDL in the **WSDL URL** field.
-<img src="../images/define-wsdl-url.png" alt="define wsdl url" title="efine wsdl url" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/define-wsdl-url.png" alt="define wsdl url" title="define wsdl url" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Get WSDL Description**. A list of the available operators defined in the WSDL is displayed.
 4. Click **Select** for the SOAP request that you want to use for your task. Kore.ai automatically populates one or more Alert Task Fields if necessary for user input.
@@ -32,7 +32,7 @@ To customize the default **Alert Task Fields**, click **Edit** for the **Alert T
 <img src="../images/soap-alert-task-fields.png" alt="soap alert task fields" title="soap alert task fields" style="border: 1px solid gray; zoom:75%;">
 
 The **Set up Alert Task Field** dialog is displayed as shown in the following illustration.
-<img src="../images/set-up-alert-task-soap.png" alt="set up alert task" title="sset up alert task" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/set-up-alert-task-soap.png" alt="set up alert task" title="set up alert task" style="border: 1px solid gray; zoom:75%;">
 
 To define end-user fields for a task, follow the steps below:
 

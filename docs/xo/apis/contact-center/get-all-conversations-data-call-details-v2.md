@@ -502,17 +502,17 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | metaInfo.agentTransferConfig.assistEvents.startEvent | object | Configuration details for the assist start event. | — |
 | metaInfo.agentTransferConfig.assistEvents.startEvent.startEvent.isEnabled | boolean | Indicates whether the assist start event is enabled. | false |
 | metaInfo.agentTransferConfig.lastIntentName | string | Last intent posted to the bot by the user. | Pay Bill |
-| metaInfo.agentTransferConfig.lastIntentuserInput | string | Input posted by the user. | Can you please pay my bill? |
+| metaInfo.agentTransferConfig.lastIntentuserInput | string | Input posted by the user. | Can you pay my bill? |
 | metaInfo.agentTransferConfig.dialog_tone | array | Dialog tone settings. | — |
 | metaInfo.agentTransferConfig.accountId | string | Agent account ID for transfer configuration. | 674daf4bc9d17f4dc070xxxx |
 | metaInfo.ipAddress | String | IP address from which the user accessed the session. | 103.xxx.xxx.xxx |
-| metaInfo.hostDomain | String | Domain of the platform instance handling the interaction. | https://eu-platform.kore.ai |
+| metaInfo.hostDomain | String | Domain of the platform instance handling the interaction. | `https://eu-platform.kore.ai` |
 | metaInfo.os | String | Operating system of the user’s device. | Windows |
 | metaInfo.customerinfo | Object | Contains customer details captured during the session. | — |
 | metaInfo.customerinfo.CustomerPhone | String | Customer’s phone number. | 1234567890 |
 | metaInfo.customerinfo.CenterPhone | String | Contact number of the service center. | "" |
 | metaInfo.customerinfo.CustomerFirstName | String | Customer’s first name. | Jimmy |
-| metaInfo.customerinfo.CustomerLastName | String | Customer’s last name. | Conroy |
+| metaInfo.customerinfo.CustomerLastName | String | Customer’s last name. | Doe |
 | metaInfo.customerinfo.CustomerEmail | String | Customer’s email address. | jane.doe@example.com |
 | metaInfo.workinghours | object | Defines the agent’s working days and hours. | — |
 | metaInfo.workinghours.workdays | String | The working days of the agent. | mon,tue,wed,thu,fri |

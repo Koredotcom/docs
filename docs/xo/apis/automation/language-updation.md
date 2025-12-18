@@ -70,19 +70,16 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 
- 
-
 
 ## Sample Request
 
 
 ```json
 curl -X PUT \
-https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language \
--H 'Content-Type: application/json' \
--H 'auth: YOUR_JWT_ACCESS_TOKEN' \
--d '[
-{
+https://'{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language' \
+--header 'Content-Type: application/json' \
+--header 'auth: YOUR_JWT_ACCESS_TOKEN' \
+--data '{
 "updateLanguage" : "",
 "fileId":"",
 "multiLingualConfigurations":{
@@ -90,12 +87,8 @@ https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language \
 "inputTranslation": true/false,
 "responseTranslation": true/false
 }
-}
-]'
+}'
 ```
-
-
- 
 
 
 ## Body Parameters

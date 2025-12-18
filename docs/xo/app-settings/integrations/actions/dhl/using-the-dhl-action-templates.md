@@ -91,12 +91,12 @@ Steps to track the shipment using the DHL tracking ID:
         "timestamp": "2023-05-23T12:30:00",
         "location": {
         "address": {
-        "addressLocality": "NUERNBERG - GERMANY"
+        "addressLocality": "NUREMBERG - GERMANY"
         }
         },
         "statusCode": "transit",
         "status": "transit",
-        "description": "Arrived at DHL Delivery Facility NUERNBERG - GERMANY"
+        "description": "Arrived at DHL Delivery Facility NUREMBERG - GERMANY"
         },
         "details": {
         "proofOfDelivery": {
@@ -110,10 +110,10 @@ Steps to track the shipment using the DHL tracking ID:
         "timestamp": "2023-05-23T12:30:00",
         "location": {
         "address": {
-        "addressLocality": "NUERNBERG - GERMANY"
+        "addressLocality": "NUREMBERG - GERMANY"
         }
         },
-        "description": "Arrived at DHL Delivery Facility NUERNBERG - GERMANY"
+        "description": "Arrived at DHL Delivery Facility NUREMBERG - GERMANY"
         },
         {
         "description": "Shipment picked up"

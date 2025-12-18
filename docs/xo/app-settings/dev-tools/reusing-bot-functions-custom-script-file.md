@@ -18,7 +18,7 @@ var message = {
 "payload": {
 "template_type": "button",
 "text": "Select an option",
-"subText": "3utton Template
+"subText": "button Template
 "buttons": []}
 };
 for (i = 0; i < info.length; i++)

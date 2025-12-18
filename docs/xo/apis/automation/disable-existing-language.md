@@ -70,18 +70,16 @@ To disable an existing language for an AI Agent.
 ## Sample Request
 
 ```json
-https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
--H 'Content-Type: application/json' \
--H 'auth: YOUR_JWT_ACCESS_TOKEN' \
--d '[
-{
-"language" : ,
-"enable": false
-}]'
+'https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status' \
+--header 'Content-Type: application/json' \
+--header 'auth: YOUR_JWT_ACCESS_TOKEN' \
+--data '{
+  "language" : "",
+  "enable": false
+  }'
 ```
 
 ## Body Parameters
-
 
 <table>
   <tr>
