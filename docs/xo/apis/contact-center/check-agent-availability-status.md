@@ -15,7 +15,7 @@ To check the availability of agents based on specified skill IDs, queue IDs, and
 
 | **Parameter** | **Description** | **Type** |
 |------------|---------------|------------|
-| host | Environment URL, for example, https://platform.kore.ai | string, required |
+| host | Environment URL, for example, `https://platform.kore.ai` | string, required |
 | botId | BotId or StreamId. You can access it from the App Settings page. | string, required |
 
 ## Sample Request

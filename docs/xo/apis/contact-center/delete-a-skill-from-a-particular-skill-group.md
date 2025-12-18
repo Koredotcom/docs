@@ -15,7 +15,7 @@ To delete the particular skill with the given `botId` and `agentId`.
 
 | **PARAMETER**   | **DESCRIPTION**                                                                                           | **TYPE**        |
 |----------------|-----------------------------------------------------------------------------------------------------------|-----------------|
-| host           | Environment URL, for example, https://platform.kore.ai                                                 | string, required |
+| host           | Environment URL, for example, `https://platform.kore.ai`                                                 | string, required |
 | streamId          | botId or streamId. You can get it from the App Settings page.                           | string, required |
 | skillGroupId   | Id of the Skill Group.                                                                                     | string, required |
 | skillId        | Id of the Skill.                                                                                           | string, required |

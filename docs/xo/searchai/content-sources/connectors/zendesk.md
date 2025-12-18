@@ -69,9 +69,9 @@ The first step is to set up an OAuth client in Zendesk and generate OAuth creden
 
 3. In the **OAuth Client** tab, register Search AI as an OAuth Client. Refer to [this documentation](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application#topic_s21_lfs_qk) for information about the fields required in the configuration. Set the ***Redirect URLs*** field to point to one of the following callback URLs per your region or deployment.
 
-  * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-  * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-  * Prod Callback URLs: https://idp.kore.com/workflows/callback
+  * JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+  * DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+  * Prod Callback URLs: `https://idp.kore.com/workflows/callback`
 
 On saving the details, a pre-populated Secret field appears on the page. This is the **client secret** required to configure the Zendesk Connector in Search AI. 
 
@@ -220,7 +220,7 @@ Search AI provides access control support for tickets and articles ingested from
 
 **Tickets**:
 
-For Tickets ingested from Zendesk, the **sys_racl** field includes the following entities to manage content access. 
+For Tickets ingested from Zendesk, the *sys_racl* field includes the following entities to manage content access. 
 
 * Assignee - The email ID of the assignee is added to the sys_racl field.
 * Requester - The email ID of the requester of the ticket is added to the sys_racl field in the ingested content. 

@@ -1037,7 +1037,7 @@ Captures statements or paragraphs of text from the user utterance. The value for
 
 ### Email
 
-Captures email address from the utterance. For example, “_Send an email to help@koremessenger.com”_ returns the value of **Email** as a string.
+Captures email address from the utterance. For example, _Send an email to `help@koremessenger.com`_ returns the value of **Email** as a string.
 
 ```
 "entities":
@@ -1568,7 +1568,7 @@ A time zone. _Eastern Standard Time_ converts the timezone into GMT and stores t
 
 ### URL
 
-Captures a web URL from the utterance. The AI Agent recognizes all standard formats of URLs. For example, _Visit our website: www.kore.ai_. The value for the URL is returned as a string.
+Captures a web URL from the utterance. The AI Agent recognizes all standard formats of URLs. For example, _Visit our website `www.example.com`. The value for the URL is returned as a string.
 
 ```
 "entities":

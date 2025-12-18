@@ -37,7 +37,7 @@ Integrating BitBucket with Search AI enhances search capabilities by enabling us
 
 ## Prerequisites
 
-To enable integration of Search AI and BitBucket, set up an **OAuth Consumer** in BitBucket.  The client credentials generated for the OAuth consumer are used to configure the BitBucket Connector in Search AI. 
+To enable integration of Search AI and BitBucket, set up an **OAuth Consumer** in BitBucket. The client credentials generated for the OAuth consumer are used to configure the BitBucket Connector in Search AI. 
 
 
 ## Set up OAuth Consumer in BitBucket
@@ -51,9 +51,9 @@ OAuth Consumers are specific to the workspaces in BitBucket. [To create a new co
    * **Name**: The display name for your consumer. This must be unique within your account.
    * **Description**: An optional description of what the consumer does.
    * **Callback URL**: Set the callback to one of the following, depending upon your region or deployment.
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 5. Under **Permissions**, enable the permissions as shown in the following image. 
 ![Permissions](images/bitbucket/permissions.png "Permissions")
 

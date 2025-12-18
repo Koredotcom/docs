@@ -23,32 +23,38 @@ This document provides detailed instructions on the integration process of the K
 
 ## Definitions
 
-| **Section** | **Key** | **Definition** | **Reference** |
-|--------------|----------|----------------|----------------|
-| NICE CX Integration Hubs > Add Agent Assist App | <span id="AAurl">Agent AI URL</span> | The domain of Agent AI. | - If it is legacy Agent AI, the URL is [https://agentassist.kore.ai](https://agentassist.kore.ai).<br>- If it is UXO, the URL is [https://platform.kore.ai](https://platform.kore.ai).<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
-| NICE CX Studio > Import the Voice Script and Configure Parameters | AgentAssistWidgetURL | URL that points to the Agent AI widget.<br>For example: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html` | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
-| NICE CX Studio > Import the Voice Script and Configure Parameters | BotId | A unique identifier assigned to an AI Agent. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
-| NICE CX Studio > Import the Voice Script and Configure Parameters | ClientId | An identifier provided to a client application. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
-| NICE CX Studio > Import the Voice Script and Configure Parameters | ClientSecret | A secret key or password associated with the ClientId. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
-| NICE CX Integration Hubs > Add Agent Assist Hub | AccountID | A unique identifier assigned to an account. | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal. |
-| NICE CX Integration Hubs > Add Agent Assist Hub | <span id="KVG">Kore Voice Gateway (KVG)</span> | For SaaS in the US region, the value is `wss://savg-webserver.kore.ai`.<br>For on-prem, refer to the corresponding host. |  |
+| **Section**                                                       | **Key**                                        | **Definition**                                                                                                                          | **Reference**                                                                                                                                                                                                                                                      |
+|-------------------------------------------------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NICE CX Integration Hubs > Add Agent Assist App                   | <span id="AAurl">Agent AI URL</span>           | The domain of Agent AI.                                                                                                                 | - If it is legacy Agent AI, the URL is [https://agentassist.kore.ai](https://agentassist.kore.ai).<br>- If it is UXO, the URL is [https://platform.kore.ai](https://platform.kore.ai).<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | AgentAssistWidgetURL                           | URL that points to the Agent AI widget.<br>For example: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html` | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal.                                                                                                                                                                         |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | BotId                                          | A unique identifier assigned to an AI Agent.                                                                                            | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal.                                                                                                                                                                         |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | ClientId                                       | An identifier provided to a client application.                                                                                         | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal.                                                                                                                                                                         |
+| NICE CX Studio > Import the Voice Script and Configure Parameters | ClientSecret                                   | A secret key or password associated with the ClientId.                                                                                  | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal.                                                                                                                                                                         |
+| NICE CX Integration Hubs > Add Agent Assist Hub                   | AccountID                                      | A unique identifier assigned to an account.                                                                                             | Channels > Chat section of the [Agent AI](https://platform.kore.ai/) configuration portal.                                                                                                                                                                         |
+| NICE CX Integration Hubs > Add Agent Assist Hub                   | <span id="KVG">Kore Voice Gateway (KVG)</span> | For SaaS in the US region, the value is `wss://savg-webserver.kore.ai`.<br>For on-prem, refer to the corresponding host.                |                                                                                                                                                                                                                                                                    |
 
 **Region Specific URLs**
 
-|            |                                |                             |                                   |                                                                         |
-|------------|--------------------------------|-----------------------------|-----------------------------------|-------------------------------------------------------------------------|
-| **Region** | **Agent AI URL**               | **UXO URL**                 | **WSS URL**                       | **DNS**                                                                 |
-| US         | https://agentassist.kore.ai    | https://platform.kore.ai    | wss://savg-webserver.kore.ai      | @savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com   |
-| JP         | https://agentassist-jp.kore.ai | https://jp-platform.kore.ai | wss://jp-savg-audiosocket.kore.ai | @savg-jp-prod-int-nlb-3989d946fc1ced3b.elb.ap-northeast-1.amazonaws.com | 
+|            |                                  |                               |                                     |                                                                           |
+|------------|----------------------------------|-------------------------------|-------------------------------------|---------------------------------------------------------------------------|
+| **Region** | **Agent AI URL**                 | **UXO URL**                   | **WSS URL**                         | **DNS**                                                                   |
+| US         | `https://agentassist.kore.ai`    | `https://platform.kore.ai`    | `wss://savg-webserver.kore.ai`      | `@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com`   |
+| JP         | `https://agentassist-jp.kore.ai` | `https://jp-platform.kore.ai` | `wss://jp-savg-audiosocket.kore.ai` | `@savg-jp-prod-int-nlb-3989d946fc1ced3b.elb.ap-northeast-1.amazonaws.com` |
 
 ## Configuration Steps
 
 This section explains the configuration steps needed to integrate Kore Agent AI with NICE MAX Desktop.
 
-* [NICE CX Integration Hubs, Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
-* [NICE CX Studio, Import the Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-the-voice-script-and-configure-parameters)
-* [NICE CX Setup, Attach Point of Contact with Voice Script](#step-3-nice-cx-setup-attach-point-of-contact-with-voice-script)
-* [Voice Simulation](#voice-simulation)
+- [Shared Responsibilities](#shared-responsibilities)
+  - [NICE CXOne Admin](#nice-cxone-admin)
+  - [Kore.ai Admin](#koreai-admin)
+- [Prerequisites](#prerequisites)
+- [Definitions](#definitions)
+- [Configuration Steps](#configuration-steps)
+  - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs--add-agent-assist-hub)
+  - [Step 2: NICE CX Studio \> Import the Voice Script and Configure Parameters](#step-2-nice-cx-studio--import-the-voice-script-and-configure-parameters)
+  - [Step 3: NICE CX Setup \> Attach Point of Contact with Voice Script](#step-3-nice-cx-setup--attach-point-of-contact-with-voice-script)
+- [Voice Simulation](#voice-simulation)
 
 ### Step 1: Nice CX Integration Hubs > Add Agent Assist Hub
 

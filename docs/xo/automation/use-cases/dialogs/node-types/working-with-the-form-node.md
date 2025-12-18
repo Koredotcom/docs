@@ -25,7 +25,7 @@ To add a form node to the dialog task, follow the below steps:
         
         <img src="../images/form-node-img2-choose-experience.png" alt="Choose form experience" title="Choose form experience" style="border:1px solid gray; zoom:70%;">
 
-4. **Choose the channels** on which you want to offer the form experience. Note that you would get this option only if you select **Both Digital Form and Conversational Experience** as form exprience.
+4. **Choose the channels** on which you want to offer the form experience. Note that you would get this option only if you select **Both Digital Form and Conversational Experience** as form experience.
 
     <img src="../images/form-node-img3-channels.png" alt="Choose channels to offer form experience" title="Choose channels to offer form experience" style="border:1px solid gray;zoom:70%;">
 
