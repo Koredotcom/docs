@@ -49,6 +49,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
 * Click **Integration** > **+ New Integration** in the **Assets** panel. Alternatively, drag the node from the panel onto the canvas. You can also click **Integration** in the pop-up menu.
   <img src="../images/add-int-node.png" alt="add node" title="add node" style="border: 1px solid gray; zoom:75%;">
+
 ### Step 3: Configure the Node
 
 * In the **Integration** window, either search for the required service or select from the listed options. [See](../../../../settings/integrations/about-integrations.md/#supported-integrations){:target="_blank"} the list of supported pre-built integrations.
