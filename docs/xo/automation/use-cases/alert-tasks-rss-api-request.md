@@ -748,7 +748,7 @@ Follow these steps to add a standard postprocessor:
 "modified_at":"2016-01-20T04:29:52.505Z",
 "owner":{
 "id":73114591129714,
-"name":"jaganmohan.evuri" },
+"name":"john.doe" },
 ```
 
 <ol start="3"><li><p>It is then used as a variable input as shown in the following <b>Post URL:</b></p> 
@@ -819,10 +819,10 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 "created_time": "1453964684",
 "text": "49th",
 "from": {
-"username": "venkataphani.ailavarapu",
+"username": "john.doe",
 "profile_picture": "https://www.example.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
 "id": "2679234818",
-"full_name": "Phani"
+"full_name": "John"
 },
 "id": "1172263199715314941"
 }, {

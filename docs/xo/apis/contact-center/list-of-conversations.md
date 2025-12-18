@@ -104,7 +104,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "Jane Doe",
                     "startTime": "2023-05-25T06:56:38.734Z"
                 }
             ],
@@ -245,7 +245,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "John Doe",
                     "startTime": "2023-05-25T06:54:31.499Z"
                 }
             ],
@@ -367,7 +367,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
             "surveyRequired": "NO",
             "isDeveloper": false,
             "accountId": "637368b4a1d039e34ba6xxxx",
-            "phoneNumber": "+18448735673",
+            "phoneNumber": "+1234567890",
             "conversationId": "58af75ba-3c73-475d-bb42-ca1adbc6xxxx",
             "language": "en",
             "botSIPURI": "sip:+12056064378@audiocodes-sbc-prod.kore.ai:5060",
@@ -386,7 +386,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "Jane Doe",
                     "startTime": "2023-05-25T06:52:38.866Z"
                 }
             ],
@@ -523,7 +523,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "John Doe",
                     "startTime": "2023-05-25T06:24:07.099Z"
                 }
             ],
@@ -673,7 +673,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "John Doe",
                     "startTime": "2023-05-25T06:21:46.859Z"
                 }
             ],
@@ -822,7 +822,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "Jane Doe",
                     "startTime": "2023-05-25T05:31:25.785Z"
                 }
             ],
@@ -963,7 +963,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "Jane Doe",
                     "startTime": "2023-05-25T05:30:19.984Z"
                 }
             ],
@@ -1119,7 +1119,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-8238450xxxx",
-                    "name": "Default Queue",
+                    "name": "Jane Doe",
                     "startTime": "2023-05-25T05:27:10.793Z"
                 }
             ],
@@ -1261,7 +1261,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "Jane Doe",
                     "startTime": "2023-05-25T05:03:30.106Z"
                 }
             ],
@@ -1396,7 +1396,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
                     "status": "ACTIVE",
                     "isPreferredAgentTimeoutExpired": true,
                     "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
-                    "name": "Default Queue",
+                    "name": "John Doe",
                     "startTime": "2023-05-24T10:15:35.946Z"
                 }
             ],

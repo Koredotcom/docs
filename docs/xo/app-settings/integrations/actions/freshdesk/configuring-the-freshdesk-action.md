@@ -105,4 +105,4 @@ Steps to install action templates:
 <img src="../images/freshdesk-action-img10-tem-img2.png" alt="Select dialog task and proceed" title="Select dialog task and proceed" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click Proceed, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/freshdesk-action-img11.png" alt="Dialog task canvas opens" title="Dialogt task canvas opens" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/freshdesk-action-img11.png" alt="Dialog task canvas opens" title="Dialog task canvas opens" style="border: 1px solid gray;zoom:50%;"/>

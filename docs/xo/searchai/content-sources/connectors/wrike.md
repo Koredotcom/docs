@@ -48,9 +48,9 @@ Follow the steps listed below to create an app.
 1. Enter the App name and click Create new. 
 1. This generates a client id and secret for the app. 
 1. Add one of the following REdirect URI based on your region or deployment. 
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 1. The client credentials generated above are used to identify the app and are used during connector configuration in Search AI. 
 
 

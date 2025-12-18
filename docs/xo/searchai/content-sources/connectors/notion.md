@@ -38,9 +38,9 @@ Notion is a productivity and collaboration application that combines features fo
 SearchAI enables interaction with **Notion** through two authentication mechanisms: [**Internal Integration Token and OAuth 2.0.**](https://developers.notion.com/docs/authorization?_gl=1*1lxqhtn*_gcl_au*MzgzMDU4OTQ1LjE3MjcyNjA5Mzc.*_ga*MTUxOTU0MzMzNy4xNzI3MjYwOTM4*_ga_9ZJ8CB186L*MTcyNzI2MDkzNy4xLjEuMTcyNzI2MTAxMS40OC4wLjA.#what-is-authorization)
 
 * **Public Integration**: Public integrations leverage the OAuth 2.0 protocol, ensuring secure and streamlined authentication for user accounts. For detailed instructions on configuring this integration type, refer to the setup guide [here](https://developers.notion.com/docs/authorization?_gl=1*1lxqhtn*_gcl_au*MzgzMDU4OTQ1LjE3MjcyNjA5Mzc.*_ga*MTUxOTU0MzMzNy4xNzI3MjYwOTM4*_ga_9ZJ8CB186L*MTcyNzI2MDkzNy4xLjEuMTcyNzI2MTAxMS40OC4wLjA.). Use one of the following redirect URLs while configuring this type of public integration. 
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 
     Generate the client credentials and an access token for this integration.  
 

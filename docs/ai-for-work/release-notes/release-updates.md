@@ -91,6 +91,7 @@ Enhanced Personal Workspace support agent sharing across all published users. Sh
 
 <hr>
 
+
 ## v1.10.0 Sept 8, 2025
 
 <u>Major Release</u>
@@ -502,7 +503,7 @@ Key Benefits:
 * Timezone Optimization: Resolved timezone inconsistencies in logs. The system now properly displays logs based on your local system time, ensuring accurate and relevant time-based analytics.
 
 * Template Rendering Fix:  Fixed an issue where bot templates used to render duplicates when selected or clicked. The fix results in a cleaner and more predictable user interface.
-  
+
 <hr>
 
 ## v1.7.0 February 14, 2025

@@ -93,12 +93,12 @@ To enable the NiceInContact, follow these steps:
 
 6. You can customize the channel mapping by clicking the Manage link, as shown below:
 
-    <img src="../images/configuring-the-niceincontact-img8.png" alt="Customizing channel mapping" title="Customizing Channle mapping" style="border: 1px solid gray;">
+    <img src="../images/configuring-the-niceincontact-img8.png" alt="Customizing channel mapping" title="Customizing Channel mapping" style="border: 1px solid gray;">
 
-7. Click Manage to map the channels you want to use to the NiceInConact agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
+7. Click Manage to map the channels you want to use to the NiceInContact agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your app](../../../channels/adding-channels-to-your-bot.md){:target="_blank"}.
 8. After mapping channels, click **Done**.
 
-    <img src="../images/configuring-the-niceincontact-img9.png" alt="Customizing channel mapping - Done" title="Customizing Channle mapping - Done" style="border: 1px solid gray;">
+    <img src="../images/configuring-the-niceincontact-img9.png" alt="Customizing channel mapping - Done" title="Customizing Channel mapping - Done" style="border: 1px solid gray;">
 
 9. Click **Save** to enable the NiceInContact agent.
 10. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
@@ -126,7 +126,7 @@ To verify the data exchange between Kore.ai’s agent and NiceInContact agent, f
 5. Open an AI Agent for which you have enabled the NiceInContact agent.
 6. Create a new Agent Transfer Node task. For example, create a Talk to Live Agent task with the LiveChats node and configure it to use the Nice agent. For more information, see [Agent Transfer Node](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
 
-    <img src="../images/configuring-the-niceincontact-img13.png" alt="Create new Agent Transter Node task" title="Create new Agent Transter Node task" style="border: 1px solid gray;">
+    <img src="../images/configuring-the-niceincontact-img13.png" alt="Create new Agent Transfer Node task" title="Create new Agent Transfer Node task" style="border: 1px solid gray;">
 
 7. Click the **Talk to Bot** icon to launch the app and enter **Help**.
 8. Once you invoke the agent transfer dialog, the NiceInContact Chat receives a notification alert.

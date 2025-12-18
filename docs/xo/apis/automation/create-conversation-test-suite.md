@@ -87,7 +87,7 @@ curl --location --request POST 'https://{{host}}/api/public/stream/{{streamId}}/
           "fileName": "6721ff68208caa4dffe35be4",
           "name": "platinum",
           "tags" : [],
-          "description" : "NewTesteCase",
+          "description" : "NewTestCase",
            "userEmailId" : "botowner@domain.com"
 }'
 ```

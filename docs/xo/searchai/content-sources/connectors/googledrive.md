@@ -61,9 +61,9 @@ Follow the steps listed below to set up and enable access to the content on your
 If the publishing status is set to Testing, you can add your test users by clicking on _ADD USERS_ on the same page. 
 ![Add Users](images/googledrive/add-users.png "Add Users")
 9. Navigate to Clients page and create a new client. Enter the _Application type_ as _Web Application_ and give it a name. Add the URL of your  Search AI deployment as _Authorized redirect URIs_ and click _CREATE_. You can use one of the following URLs as per your region.
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Region Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Region Callback URL: `https://idp.kore.com/workflows/callback`
 10. This will generate the client ID. Download your credentials. The downloaded file is in JSON format and has *client id and client secret* amongst other fields. 
 
 ## Step 2: Configuring the Google Drive connector in SearchAI
@@ -162,7 +162,7 @@ When a file access is given to a user group or a domain, the group name or domai
 
 To correctly associate users with the relevant permission entity, use the Permission Entity APIs.
 
-Example: Suppose a file is shared with a user group, hr-kore@example.com. This group is stored as a permission entity within Search AI. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to add the user IDs of these five team members to the corresponding permission entity.
+Example: Suppose a file is shared with a user group, `hr-domain@example.com`. This group is stored as a permission entity within Search AI. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to add the user IDs of these five team members to the corresponding permission entity.
 
 
 ### **Enabling RACL**

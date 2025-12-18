@@ -47,9 +47,9 @@ curl --location --request GET \
             "createdAt": "2021-04-09T12:20:51.246Z",
             "updatedAt": "2021-04-09T12:20:51.246Z",
             "id": "607046a3630c9f077af51803",
-            "firstName": "Ravi",
-            "lastName": "Kumar",
-            "emailId": "ravi2@domain.com"
+            "firstName": "John",
+            "lastName": "Doe",
+            "emailId": "john.doe@example.com"
         }
     ],
     "createdBy": "u-c7b23565-7e83-5099-8f26-f0a41a96xxxx",

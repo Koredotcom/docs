@@ -12,7 +12,7 @@ This section explains the process of configuring a third party integration.
 4. Enter values as per the following:
     * **Name**: Name of the record.
     * **Description**: A brief description about the record.
-    * **Queue Idenitifer**: Queue or skill name. You can enter multiple queue or skill names by pressing the **Enter** key. 
+    * **Queue Identifier**: Queue or skill name. You can enter multiple queue or skill names by pressing the **Enter** key. 
 
         !!! note 
             The Queue Identifier value must be unique at the account level, and it’s a string.  
