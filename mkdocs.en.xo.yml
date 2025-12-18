@@ -320,7 +320,7 @@ nav:
           - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
           - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
           - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md  
-    - NLP: 
+    - Natural Language: 
       - Legacy NLP Topics: nlp-topics.md
   - Search AI:
     - About Search AI: searchai/about-search-ai.md
