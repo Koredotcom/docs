@@ -147,10 +147,12 @@ To promote a user to owner, follow these steps:
 To change the app owner, follow these steps:
 
 1. On the Manage Users page, click the **Ellipsis** icon (**⋮**) corresponding to the App Owner.
-  <img src="../images/change-owner-button.png" alt="Change Owner Button" title="Change Owner Button" style="border: 1px solid gray; zoom:70%;">
+
+   <img src="../images/change-owner-button.png" alt="Change Owner Button" title="Change Owner Button" style="border: 1px solid gray; zoom:70%;">
 
 2. On the Promote app owner pop-up window, select the role and click **Save**.  
-  <img src="../images/change-app-owner.png" alt="Change App Owner" title="Change App Owner" style="border: 1px solid gray; zoom:70%;">
+
+   <img src="../images/change-app-owner.png" alt="Change App Owner" title="Change App Owner" style="border: 1px solid gray; zoom:70%;">
 
 ## Delete a User
 
@@ -181,4 +183,5 @@ You can add a group by following the steps below:
     2. **Role**: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
 
 3. Click the **Share Invites** button at the bottom of the New Groups window.
+
   <img src="../images/share-group-invite.png" alt="Share Invites" title="Share Invites" style="border: 1px solid gray; zoom:70%;">

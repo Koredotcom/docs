@@ -1,4 +1,5 @@
 # Set up your Search AI application
+
 Search AI empowers you to efficiently manage and utilize vast amounts of data from various sources to provide the users a seamless experience in locating and accessing relevant information. This documentation will guide you through the various steps involved in setting up your Search AI experience.
 
 ## Step-by-step Guide
