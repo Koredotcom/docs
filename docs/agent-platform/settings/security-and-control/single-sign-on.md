@@ -73,11 +73,10 @@ To access the SSO feature, follow the steps below:
 2. Click **Settings** on the top navigation bar.
 3. Go to **Security & Control** > **Single Sign On** on the left menu.
 
-If you’re using this feature for the first time, the following screen appears.
+   If you’re using this feature for the first time, the following screen appears.
+     <img src="../images/access-single-sign-on.png" alt="access sso" title="access sso" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../images/access-single-sign-on.png" alt="access sso" title="access sso" style="border: 1px solid gray; zoom:75%;">
-
-If SSO is already configured, the **Single sign-on** setup page is displayed.
+    If SSO is already configured, the **Single sign-on** setup page is displayed.
 
 ## Enable SSO
 
@@ -195,9 +194,9 @@ To enable SSO on the **Settings** console, follow the steps below:
 2. If no SSO is enabled, click **Enable SSO**.
 3. If SSO is already enabled for a provider, click the **Enable SSO** tab and do one of the following:
 
-* Change and save the existing [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for the enabled SSO provider.
-* Disable the enabled SSO and set up a new configuration.
-* Select a different protocol/provider and complete the configuration.
+    * Change and save the existing [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for the enabled SSO provider.
+    * Disable the enabled SSO and set up a new configuration.
+    * Select a different protocol/provider and complete the configuration.
 
 4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
 5. Configure the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
@@ -290,7 +289,6 @@ To configure SSO using SAML and Okta, follow the steps below:
 <li>Once the certificate is downloaded, open it in Notepad and copy the data between the <b>BEGIN CERTIFICATE</b> header and <b>END CERTIFICATE</b> footer.
 <img src="../images/okta-certificate-notepad.png" alt="okta certificate" title="okta certificate" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Paste the value into the <b>Certificate</b> field on Agent Platform’s SSO setup page.</li>
-
 To add a new certificate, click <b>+ Add new</b>.</ol>
 
 <div class="admonition note">
