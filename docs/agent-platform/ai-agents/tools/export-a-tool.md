@@ -48,7 +48,7 @@ The export process begins, and a success message is displayed after the tool val
 
 The exported package includes the following JSON files encapsulating the tool’s configuration data:
 
-* ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
+* ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyper parameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
 * ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
 
