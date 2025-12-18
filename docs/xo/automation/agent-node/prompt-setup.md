@@ -1,4 +1,3 @@
-
 # Agent Node Prompt Setup
 
 
@@ -378,6 +377,7 @@ Let’s review a sample prompt written in Javascript and follow the step-by-step
 
 
 ### Add Custom Prompt
+
 The process involves creating a new prompt in the Prompts Library and writing the JavaScript code to generate the desired JSON object. Users can preview and test the prompt to ensure it generates the expected JSON object. After the custom prompt is created, users can select it in the Agent Node configuration to leverage its functionality.
 
 
@@ -413,8 +413,9 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 <img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
     You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
-<img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
-<img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
+
+   <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
+   <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
 10. The LLM's response is displayed.  
 <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
@@ -481,8 +482,9 @@ To add an Agent Node V2 streaming prompt, follow the steps:
 <img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
     You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
-<img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
-<img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
+
+   <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
+   <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
 10. The Actual Response is displayed.
 

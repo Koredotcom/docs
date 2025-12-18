@@ -200,6 +200,7 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 
 
 #### Ranking and Resolver v2
+
 [Version 2 of the Ranking and Resolver](../natural-language/training/ranking-and-resolver.md){:target="_blank"} only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
