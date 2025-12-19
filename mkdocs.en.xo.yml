@@ -282,7 +282,6 @@ nav:
         - Model Configuration: automation/agent-node/tutorials/model-configuration.md
         - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
         - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
-    - FAQs: automation/knowledge-ai/manage-faqs.md
     - Evaluation:
       - Playground: automation/testing/playground.md
       - Batch Testing: automation/testing/batch-testing-dialoggpt.md
@@ -308,6 +307,7 @@ nav:
       - Feedback Survey: manage-assistant/feedbacksurvey.md                 
     - Advanced Topics:
       - Dynamic Routing: automation/dynamic-routing.md 
+      - Managing Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
       - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
     - How To:

@@ -102,7 +102,7 @@ To define oAuth v1, define the fields described in the following table.
 
 ## Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as ```www.**_kore_**.someCompany.com.```
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 <img src="../images/set-tenancy.png" alt="set tenancy" title="set tenancy" style="border: 1px solid gray; zoom:75%;">

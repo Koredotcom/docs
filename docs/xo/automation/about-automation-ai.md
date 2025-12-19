@@ -9,6 +9,12 @@ hide:
 Automation AI offers AI-powered sophisticated tools for creating AI Agents that handle customer interactions through intelligent automation. Define specific use cases and utilize AI/LLM to handle complex interactions. Empower AI Agents to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
 
 <kr-grid type="g2">
+        <kr-grid-item>
+        <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
+        <kr-grid-title>DialogGPT</kr-grid-title>
+        <kr-grid-desc>Agentic Orchestrator, managing the entire conversation flow from intent identification to fulfillment</kr-grid-desc>
+        [Learn more :octicons-arrow-right-24:](dialog-gpt-based-orchestration.md)
+    </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
         <kr-grid-title>Define Use Cases</kr-grid-title>
@@ -22,21 +28,15 @@ Automation AI offers AI-powered sophisticated tools for creating AI Agents that 
         [Learn more :octicons-arrow-right-24:](./knowledge-ai/knowledge-ai-introduction.md)
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/xop-sm-nl.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Natural Language</kr-grid-title>
-        <kr-grid-desc>Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./natural-language/nlp-introduction.md)
-    </kr-grid-item>
-    <kr-grid-item>
         <img src="../images/xop-sm-inteligence.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Intelligence Management</kr-grid-title>
+        <kr-grid-title>Conversation Management</kr-grid-title>
         <kr-grid-desc>Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./intelligence/intelligence-overview.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Test Workflows</kr-grid-title>
+        <kr-grid-title>Playground</kr-grid-title>
         <kr-grid-desc>Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./testing/test-and-debug-overview.md)
+        [Learn more :octicons-arrow-right-24:](./testing/playground.md)
     </kr-grid-item>      
 </kr-grid>
