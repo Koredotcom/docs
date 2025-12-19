@@ -89,7 +89,6 @@ The embeddings model settings applies only to Dialogs and FAQs. For Knowledge fr
         Disabling the DialogGPT reverts the intent detection to the traditional NLU.
 
 
-
 ## Debug Logs
 
 The Debug Logs offer detailed insights into the DialogGPT model's behavior and execution flow. They allow you to observe each step of the DialogGPT process and its outcomes. Logs include complete request and response details for every LLM call, clearly showing what happens at each stage. This information helps understand and analyze the DialogGPT’s decision-making and execution for better debugging and optimization.
