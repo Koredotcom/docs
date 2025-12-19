@@ -172,7 +172,7 @@ The app summary page displays the following information:
 <ul><li><b>Name</b>: The API app name.</li>
 <li><b>Scopes</b>: The selected API scopes.</li>
 <li><b>Created by</b>: The name of the user who created the app.</li>
-<li><b>Created on</b>: The date when the app was created.</li></ul>
+<li><b>Created on</b>: The date when the app was created.</li></ul></ol>
 
 ## Manage API App and Key
 
@@ -220,3 +220,4 @@ To delete an API app, follow the steps below:
 2. Click **Delete** in the confirmation window.
 
 A success message is displayed, and the app is removed from the list.
+
