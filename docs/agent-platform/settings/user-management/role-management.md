@@ -6,7 +6,7 @@ User roles can be classified based on the role types. [Learn more](./role-manage
 
 When you invite/add a user to your account, you must assign a default role to them to define their module-wise permissions and access levels. You can later reassign a different role to the user, including a default/system-defined or custom role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
-**Key Points**
+Here are some key points to consider:
 
 1. **App Owner**: When you create an Agentic App, you automatically become the app owner and are assigned this role which provides administrative access on all features and configurations across the Platform.
 
