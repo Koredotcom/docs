@@ -465,6 +465,7 @@ The system uses a two-step approach:
 
 1. Primary Detection: The Langdetect module analyzes the input to determine if it's Tagalog. If Tagalog is detected, the utterance is processed accordingly.
 2. Secondary Verification: If the Langdetect module doesn't identify the utterance as Tagalog, the system performs dictionary-based verification:
+
   * Short utterances (1–3 words): All words must exist in the Tagalog dictionary for the utterance to be classified as Tagalog.
   * Longer utterances (4+ words): At least 60% of the words must match entries in the Tagalog dictionary.
 

@@ -179,6 +179,7 @@ User: What about the interest rates of both loans?
 The co-reference and the query have to be completed as “What's the interest rate of personal loan and home loan?
 
 ### Conversation History Length
+
 This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and an AI Agent messages. The default value is 5. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. 
 You can access the Conversation History Length from **Rephrase User Query** > **Advanced Settings**.  
 

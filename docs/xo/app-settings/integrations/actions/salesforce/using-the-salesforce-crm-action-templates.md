@@ -269,21 +269,21 @@ Steps to view all leads in Salesforce CRM:
         "undeletable": true,
         "updateable": true,
         "urls": {
-        "compactLayouts": "/services/data/v52.0/sobjects/Lead/describe/compactLayouts",
-        "rowTemplate": "/services/data/v52.0/sobjects/Lead/{ID}",
-        "approvalLayouts": "/services/data/v52.0/sobjects/Lead/describe/approvalLayouts",
-        "listviews": "/services/data/v52.0/sobjects/Lead/listviews",
-        "describe": "/services/data/v52.0/sobjects/Lead/describe",
-        "quickActions": "/services/data/v52.0/sobjects/Lead/quickActions",
-        "layouts": "/services/data/v52.0/sobjects/Lead/describe/layouts",
-        "sobject": "/services/data/v52.0/sobjects/Lead"
+        "compactLayouts": "/services/data/v52.0/subjects/Lead/describe/compactLayouts",
+        "rowTemplate": "/services/data/v52.0/subjects/Lead/{ID}",
+        "approvalLayouts": "/services/data/v52.0/subjects/Lead/describe/approvalLayouts",
+        "listviews": "/services/data/v52.0/subjects/Lead/listviews",
+        "describe": "/services/data/v52.0/subjects/Lead/describe",
+        "quickActions": "/services/data/v52.0/subjects/Lead/quickActions",
+        "layouts": "/services/data/v52.0/subjects/Lead/describe/layouts",
+        "sobject": "/services/data/v52.0/subjects/Lead"
         }
         },
         "recentItems": [
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000DYz3xxxx"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000DYz3xxxx"
         },
         "Id": "00Q5g00000DYz3xxxD",
         "Name": "John, Jane"
@@ -291,7 +291,7 @@ Steps to view all leads in Salesforce CRM:
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENUBxxxx"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENUBxxxx"
         },
         "Id": "00Q5g00000ENUBxxxx",
         "Name": "Smith, Steve"
@@ -299,7 +299,7 @@ Steps to view all leads in Salesforce CRM:
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000DZ5xxxT"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000DZ5xxxT"
         },
         "Id": "00Q5g00000DZ5xxxxT",
         "Name": "Doe, John"
@@ -335,7 +335,7 @@ Steps to view all leads in Salesforce CRM:
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000DYz3mEAD"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000DYz3mEAD"
         },
         "Id": "00Q5g00000DYz3mEAD",
         "IsDeleted": false,
@@ -428,63 +428,63 @@ Steps to search all leads in Salesforce CRM:
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENk9xxxxT"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENk9xxxxT"
         },
         "Id": "00Q5g00000ENk9xxxT"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000DZ52HEAT"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000DZ52HEAT"
         },
         "Id": "00Q5g00000DZ52HEAT"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENnKlEAL"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENnKlEAL"
         },
         "Id": "00Q5g00000ENnKlEAL"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENnKgEAL"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENnKgEAL"
         },
         "Id": "00Q5g00000ENnKgEAL"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENcKqEAL"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENcKqEAL"
         },
         "Id": "00Q5g00000ENcKqEAL"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENcKlEAL"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENcKlEAL"
         },
         "Id": "00Q5g00000ENcKlEAL"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENcKgEAL"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENcKgEAL"
         },
         "Id": "00Q5g00000ENcKgEAL"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENcHDEA1"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENcHDEA1"
         },
         "Id": "00Q5g00000ENcHDEA1"
         },
         {
         "attributes": {
         "type": "Lead",
-        "url": "/services/data/v52.0/sobjects/Lead/00Q5g00000ENXzXEAX"
+        "url": "/services/data/v52.0/subjects/Lead/00Q5g00000ENXzXEAX"
         },
         "Id": "00Q5g00000ENXzXEAX"
         }

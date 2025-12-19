@@ -15,9 +15,9 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 
 ## Path Parameters
 
-| **Parameter** | **Description**                                                                 | **Type**          |
-|---------------|----------------------------------------------------------------------------------|-------------------|
-| `host`        | Environment URL, for example, `https://platform.kore.ai`                      | String, Required  |
+| **Parameter** | **Description**                                               | **Type**          |
+|---------------|---------------------------------------------------------------|-------------------|
+| `host`        | Environment URL, for example, `https://platform.kore.ai`      | String, Required  |
 | `botId`       | botId or streamId. You can get it from the App Settings page. | String, Required  |
 
 ## Query Parameters
@@ -82,16 +82,16 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/analytics/{{IId}}/st
 
 ## Body Parameters
 
-| **Parameter**                     | **Description**                                                | **Type**          |
+| **Parameter**                     | **Description**                                               | **Type**          |
 |----------------------------------|----------------------------------------------------------------|-------------------|
-| `data`                           | The data that is to be imported.                               | Array, Required   |
+| `data`                           | The data that's imported.                                      | Array, Required   |
 | `data[]->_id`                    | Unique identifier for the SkillGroup.                          | String, Required  |
 | `data[]->name`                   | Display name of the SkillGroup.                                | String, Required  |
 | `data[]->description`            | Description of the SkillGroup.                                 | String, Optional  |
 | `data[]->status`                 | Status of the SkillGroup. Example: `ACTIVE`.                   | String, Required  |
 | `data[]->color`                  | Hex color code for UI representation.                          | String, Optional  |
 | `data[]->lname`                  | Lowercase name of the SkillGroup.                              | String, Optional  |
-| `data[]->isDefault`              | Indicates if it is the default SkillGroup.                     | Boolean, Required |
+| `data[]->isDefault`              | Indicates if it's the default SkillGroup.                      | Boolean, Required |
 | `data[]->iId`                    | Stream or application ID associated with the SkillGroup.       | String, Required  |
 | `data[]->createdByAId`           | ID of the agent who created the SkillGroup.                    | String, Required  |
 | `data[]->agentGroups`            | List of associated agent group IDs.                            | Array, Optional   |

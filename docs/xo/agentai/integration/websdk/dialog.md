@@ -84,9 +84,9 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 This event displays a popup with options **Yes, Terminate**, **No, Cancel**, or **Continue with Override Mode**.
 
-# INTERRUPT DIALOG
+## INTERRUPT DIALOG
 
-## INTERRUPT_POPUP_TEMPLATE
+### INTERRUPT_POPUP_TEMPLATE
 
 It displays an interrupt popup with options when an automation is running and another dialog suggestion is selected.
 
@@ -94,11 +94,11 @@ It displays an interrupt popup with options when an automation is running and an
 * **Accept and Run**, **Run Later**, or **Cancel** options to manage active automation.
 
 
-## INTERRUPT_DROPDOWN_ITEM_TEMPLATE
+### INTERRUPT_DROPDOWN_ITEM_TEMPLATE
 
 **Run Later**: Add the dialog to the interrupt list.
 
-## LIST_VIEW_TEMPLATE
+### LIST_VIEW_TEMPLATE
 
 **List View** on the assist banner displays previously filled entity nodes.
 

@@ -201,8 +201,8 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
 | `lname` | Lowercase version of campaign name. | string |
 | `description` | Campaign description. | string |
 | `status` | Current campaign status. For example: `Ready`. | string |
-| `data.dncLists` | Contains the names of people who are in DND mode. | object, optional |
-| `data.dncLists.name` | The name of the person who is in the DNC list | string, optional |
+| `data.dncLists` | Contains the contact lists added under the Do Not Call (DNC) list. | object, optional |
+| `data.dncLists.name` | The name of the contact list included in the Do Not Call (DNC) list. | string, optional |
 | `priority` | Campaign priority. For example: `5`. | string |
 | `dialingStrategy` | Dialing configuration for the campaign. | object |
 | `dialingStrategy.callerId` | Caller ID configuration. | object |

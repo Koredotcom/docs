@@ -24,6 +24,7 @@
   "MD039": false, //Spaces inside link text. Turn it on later
   "MD056": true, //Table column count. Some incorrectly-formatted table rows can have less or more cells than the rest of the table. The information in such cells is lost in the output that we don't want.
   "MD058": true, //Tables should be surrounded by blank lines.
-  "MD059": false //Link text should be descriptive. Turn it on later after we edit link texts.
+  "MD059": false, //Link text should be descriptive. Turn it on later after we edit link texts.
+  "MD041": true //All articles start with a heading in the first line in the MD file.
 
 }

@@ -328,10 +328,13 @@ For on-prem, refer to the corresponding host.<strong> </strong>
 </table>
 
 ## Architecture Diagrams
+
 ### Chat
+
 <img src="../images/chat-architecture.png" alt="chat-architecture" title="chat-architecture" style="border: 1px solid gray; zoom:80%;">
 
 ### Voice
+
 <img src="../images/voice-architecture.png" alt="voice-architecture" title="voice-architecture" style="border: 1px solid gray; zoom:80%;">
 
 ## Set up Salesforce-NICE CTI package
@@ -420,15 +423,20 @@ This app will be used in the studio script.
 ### Set up the AgentAssist Configuration
 
 1. Click the **app launcher**.
-2. Type **config** in the search box, and select **Kore AgentAssist Configuration** from the displayed list.  
-<img src="../images/kore-agentassist-configuration-15.png" alt="kore-agentassist-configuration" title="kore-agentassist-configuration" style="border: 1px solid gray; zoom:80%;">
+2. Type **config** in the search box, and select **Kore AgentAssist Configuration** from the displayed list.
+
+   <img src="../images/kore-agentassist-configuration-15.png" alt="kore-agentassist-configuration" title="kore-agentassist-configuration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the top-right corner of the page.
+
 4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
 <img src="../images/configuration-portal-17.png" alt="configuration-portal" title="configuration-portal" style="border: 1px solid gray; zoom:80%;"> 
-      * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the AI Agent.  
- <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
- 5. Select **Active** and click **Save**.
+
+   * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the AI Agent.  
+  
+      <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
+
+5. Select **Active** and click **Save**.
 
 ### Configure NICE CTI Data in Salesforce
 
@@ -556,17 +564,22 @@ The **Access Key Manager** page allows you to view all the access keys in your s
 
 1. Click the **app launcher**.
 2. Type **nice** in the search box, and select **Nice Signal Credentials** from the displayed list.  
-<img src="../images/nice-signal-22.png" alt="nice-signal" title="nice-signal" style="border: 1px solid gray; zoom:80%;">
+
+   <img src="../images/nice-signal-22.png" alt="nice-signal" title="nice-signal" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the top-right corner of the page.  
+
 4. Add the required parameters:
-    * **Credentials Set Name**: NICE CX credentials (change as needed)
-    * **Proxy Tunnel Endpoint**: {<a href="#AI URL">Agent AI URL</a>}/integrations/nice/relay/toNice
-    * **NICE CX Credentials**:
-        * Nice Token Base URL: NICE Token Base URL is the Host URL of the login page.
-        * Nice API URL: If the URL for ACD is https://home-abc.nice-incontact.com, then the API URL would be https://api-abc.nice-incontact.com . Also, it is necessary to use the URL without the trailing slash.
-        * NiceCX Signal API Access Key (generated in the above step)
-        * NiceCX Signal API Access Key Secret (generated in the above step)
+
+   * **Credentials Set Name**: NICE CX credentials (change as needed)
+   * **Proxy Tunnel Endpoint**: {<a href="#AI URL">Agent AI URL</a>}/integrations/nice/relay/toNice
+   * **NICE CX Credentials**:
+
+      * Nice Token Base URL: NICE Token Base URL is the Host URL of the login page.
+      * Nice API URL: If the URL for ACD is `https://home-abc.nice-incontact.com`, then the API URL would be `https://api-abc.nice-incontact.com`. Also, it is necessary to use the URL without the trailing slash.
+      * NiceCX Signal API Access Key (generated in the above step)
+      * NiceCX Signal API Access Key Secret (generated in the above step)
+
 5. Click **Save**.
 
 ## NICE CTI Studio Script for Salesforce

@@ -84,8 +84,10 @@ plugins:
         'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
         'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
         'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
+        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
         'searchai/workbench.md': 'searchai/workbench/introduction.md'
         'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
+        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/quality-ai-express.md'
 extra:
   version:
     provider: mike
@@ -235,21 +237,15 @@ nav:
     - Getting Started:
         - Build an AI Agent: getting-started/building-a-virtual-assistant.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
-    - Agent Node:
-        - Agent Node Overview and Configuration: automation/agent-node/working-with-agent-node.md
-        - Prompt Setup: automation/agent-node/prompt-setup.md
-        - Quick Start Tutorials:
-          - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
-          - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
-          - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
-          - Model Configuration: automation/agent-node/tutorials/model-configuration.md
-          - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
-          - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
-    - Use Cases:
-      - Dialog Tasks:
-        - About Dialog Tasks: automation/use-cases/dialogs/dialog-tasks-overview.md 
-        - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
-        - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
+    - DialogGPT:
+      - About DialogGPT: automation/dialog-gpt-based-orchestration.md
+      - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
+      - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md
+    - Agentic Flows:
+      - Dialogs:
+        - About Dialogs: automation/use-cases/dialogs/dialog-tasks-overview.md 
+        - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
+        - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
         - Node Types:
           - About Nodes: automation/use-cases/dialogs/node-types/nodes-transitions.md
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
@@ -273,90 +269,59 @@ nav:
         - Entity Types: automation/use-cases/dialogs/entity-types.md
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
-        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md      
-      - Alert Tasks: automation/use-cases/alert-tasks.md
-      - Small Talk: automation/use-cases/small-talk.md
-      - Digital Skills: 
-        - About Digital Skills: automation/use-cases/digital-skills/digital-skills-overview.md
-        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
-        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
-        - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md     
-      - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
-      - Context Object: automation/intelligence/context-object.md  
-    - Knowledge AI:
-        - About Knowledge AI: automation/knowledge-ai/knowledge-ai-introduction.md
-        - Knowledge Graph (KG):
-          - About KG: automation/knowledge-ai/knowledge-graph-overview.md
-          - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
-          - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
-          - Manage KG: automation/knowledge-ai/manage-faqs.md
-          - Knowledge Extraction: automation/knowledge-ai/knowledge-extraction.md
-          - Import or Export KG:
-            - Prepare Data for Import: automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import or Export KG: automation/knowledge-ai/import-and-export-knowledge-graph.md
-            - Auto-Generate KG: automation/knowledge-ai/generate-a-knowledge-graph.md
-          - KG Analysis: automation/knowledge-ai/knowledge-graph-analysis.md    
-    - Natural Language:
-      - About NLP: automation/natural-language/nlp-introduction.md
-      - NLP Optimization: automation/natural-language/training/optimizing-bots.md
-      - NLP Guidelines: automation/natural-language/nlp-guidelines.md   
-      - Training:
-        - About NLP Training: automation/natural-language/training/nlp-training-overview.md
-        - ML Engine:
-          - The ML Engine: automation/natural-language/training/machine-learning-engine.md
-          - Model Validation: automation/natural-language/training/model-validation.md
-        - FM Engine: automation/natural-language/training/fundamental-meaning.md
-        - KG Engine: automation/knowledge-ai/knowledge-graph-training.md
-        - Traits Engine: automation/natural-language/training/traits.md
-        - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
-        - Training Validations: automation/natural-language/training/training-validations.md      
-      - NLU Configuration:
-        - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
-        - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
-        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
-    - Conversation Intelligence:
-      - About Intelligence: automation/intelligence/intelligence-overview.md
-      - Context Management: automation/intelligence/context-management.md
-      - Events: 
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md
+        - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
+        - Context Object: automation/intelligence/context-object.md 
+    - AI Agents:
+      - Agent Node: automation/agent-node/working-with-agent-node.md
+      - Prompt Setup: automation/agent-node/prompt-setup.md
+      - Quick Start Tutorials:
+        - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
+        - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
+        - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
+        - Model Configuration: automation/agent-node/tutorials/model-configuration.md
+        - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
+        - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
+    - FAQs: automation/knowledge-ai/manage-faqs.md
+    - Evaluation:
+      - Playground: automation/testing/playground.md
+      - Batch Testing: automation/testing/batch-testing-dialoggpt.md
+    - Conversation Management:
+      - Events:
         - About Events: automation/intelligence/event-overview.md
         - Intent Events: automation/intelligence/event-handling.md
         - Conversation Events: automation/intelligence/conversation-management/conversation-events.md 
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
-      - Conversation Management: 
+      - Settings:
         - Standard Responses: automation/intelligence/conversation-management/standard-responses.md 
         - Manage Interruptions: automation/intelligence/conversation-management/manage-interruptions.md
-        - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
-    - Testing:
-      - About Test and Debug: automation/testing/test-and-debug-overview.md
-      - Playground: automation/testing/playground.md
-      - Test: automation/testing/talk-to-bot.md
-      - DialogGPT based Apps:
-        - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
-      - NLP based Apps:
-        - Utterance Testing - NLP: automation/testing/testing-your-bot-with-nlp.md 
-        - Regression Testing: 
-          - Health and Monitoring - NLP: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-          - Batch Testing - NLP: automation/testing/regression-testing/batch-testing.md
-          - Conversation Testing - NLP: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - About Digital Skills: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+        - Alert Tasks: automation/use-cases/alert-tasks.md
+      - Feedback Survey: manage-assistant/feedbacksurvey.md                 
     - Advanced Topics:
-      - Intent Discovery: automation/tools/intent-discovery.md
+      - Dynamic Routing: automation/dynamic-routing.md 
       - Manage App:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md
-      - Dynamic Routing: automation/dynamic-routing.md     
     - How To:
-      - New vs. Returning Users: kb/new-and-returning-users.md
-      - Access Original PII Data: how-tos/access-original-pii-data.md
-      - Share Metadata from AI for Service to Agent Platform: how-tos/share-metadata-ais-to-agent-platform.md
-      - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
-      - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
-      - Marketplace Integration:
-        - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
-        - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
-        - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
+        - New vs. Returning Users: kb/new-and-returning-users.md
+        - Access Original PII Data: how-tos/access-original-pii-data.md
+        - Share Metadata from AI for Service to Agent Platform: how-tos/share-metadata-ais-to-agent-platform.md
+        - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
+        - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
+        - Marketplace Integration:
+          - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
+          - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
+          - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md  
+    - Natural Language: 
+      - Legacy NLP Topics: nlp-topics.md
   - Search AI:
     - About Search AI: searchai/about-search-ai.md
     - Getting Started:
@@ -679,8 +644,6 @@ nav:
       - Quality AI - GenAI Features: generative-ai-tools/genai-features-qualityai.md
     - DialogGPT:
       - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
-      - Conversation Orchestration: generative-ai-tools/dgpt-conversation-orchestration.md
-      - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md  
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       

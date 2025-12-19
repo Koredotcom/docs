@@ -3,7 +3,9 @@ hide:
   - toc
   - feedback
 ---
+
 # About Automation AI
+
 Automation AI offers AI-powered sophisticated tools for creating AI Agents that handle customer interactions through intelligent automation. Define specific use cases and utilize AI/LLM to handle complex interactions. Empower AI Agents to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
 
 <kr-grid type="g2">

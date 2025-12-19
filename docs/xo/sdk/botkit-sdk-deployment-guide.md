@@ -27,12 +27,14 @@ By following the guidelines and best practices outlined in this guide, you can c
 * Typical starting server spec: 2 vCPU, 4GB memory
 
 ## Performance
+
 * Load test the BotKit API to ensure it provides the required throughput.
 * Use tools like Apache Bench or JMeter to simulate request load and benchmark the BotKit instance.
 * Ensure all code within BotKit handlers uses asynchronous processing to avoid blocking the event loop.
 * Any synchronous, long-running code will negatively impact the overall responsiveness and throughput.
 
 ## High Availability
+
 * Deploy multiple BotKit instances behind a load balancer in an active-active, highly available configuration.
 * Ensure the BotKit process is monitored and automatically restarted on failure.
 

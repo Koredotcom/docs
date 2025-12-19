@@ -60,7 +60,7 @@ function onUserMessage(requestId, payload, callback){
         //route to live agent
         var formdata = {};
         formdata.secured_session_id = entry.secured_session_id;
-        formdata.licence_id = config.liveagentlicense;
+        formdata.license_id = config.liveagentlicense;
         formdata.message = payload.message;
         return api.sendMsg(visitorId, formdata)
             .catch(function(e){
@@ -240,7 +240,7 @@ Example: The following code snippet onAgentTransfer event connects the user to a
 function connectToAgent(requestId, data, cb) {
     var formdata = {};
     console.log("userlog", JSON.stringify(data.context.session.UserContext._id));
-    formdata.licence_id = config.liveagentlicense;
+    formdata.license_id = config.liveagentlicense;
     formdata.welcome_message = "";
     var visitorId = _.get(data, 'channel.channelInfos.from');
     if (!visitorId) {
@@ -295,6 +295,7 @@ The event adds the following code in the Data object sent to kit:
 "event Type": "endDialog"/ "endFAQ"
 }
 ```
+
 ### Contact Center Events
 
  The platform emits a set of real-time **Contact Center Events** to the **BotKit channel** using the `onEventNode`. These events provide timely updates on key agent actions and conversation lifecycle changes (for example, agent acceptance, transfer, termination, etc.). 

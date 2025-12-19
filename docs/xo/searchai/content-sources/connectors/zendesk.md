@@ -60,6 +60,7 @@ To configure Zendesk as a content source, complete the following steps.
 
 
 ## Step 1: Setup an OAuth client in Zendesk 
+
 The first step is to set up an OAuth client in Zendesk and generate OAuth credentials that SearchAI can use to authenticate the requests sent to Zendesk.  
 
 1. Go to the **Admin Center** in your Zendesk application. 

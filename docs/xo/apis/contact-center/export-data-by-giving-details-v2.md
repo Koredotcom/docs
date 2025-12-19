@@ -15,10 +15,10 @@ See [How to generate the JWT Token](../automation/api-introduction.md#generating
 
 ## Path Parameters
 
-| **Parameter** | **Description**                                                                                     | **Type**          |
-|---------------|-----------------------------------------------------------------------------------------------------|-------------------|
-| `host`        | Environment URL, for example, `https://platform.kore.ai`                                         | String, Required  |
-| `botId`       | botId or streamId. You can get it from the App Settings page.                 | String, Required  |
+| **Parameter** | **Description**                                              | **Type**          |
+|---------------|--------------------------------------------------------------|-------------------|
+| `host`        | Environment URL, for example, `https://platform.kore.ai`     | String, Required  |
+| `botId`       | botId or streamId. You can get it from the App Settings page.| String, Required  |
 
 ## Query Parameters
 
@@ -39,9 +39,9 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/analytics/{{botId}}/
 ## Request Header Parameters
 
 | **Header**   | **Description**                                 | **Required/Optional** |
-|--------------|-------------------------------------------------|------------------------|
-| `auth`       | JWT token for authentication.                   | Required               |
-| `accountId`  | The account ID associated with the API request. | Required               |
+|--------------|-------------------------------------------------|-----------------------|
+| `auth`       | JWT token for authentication.                   | Required              |
+| `accountId`  | The account ID associated with the API request. | Required              |
 
 ## Sample Response
 

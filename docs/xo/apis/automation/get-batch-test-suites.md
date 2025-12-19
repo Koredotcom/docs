@@ -93,12 +93,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
-
 
 ```json
 curl -X GET \
@@ -106,6 +101,7 @@ curl -X GET \
   --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
   --header 'bot-language: {language-code}'
 ```
+
 ## Body Parameters
 
 No body parameters are passed.
