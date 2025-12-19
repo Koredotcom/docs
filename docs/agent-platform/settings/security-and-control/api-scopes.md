@@ -172,7 +172,7 @@ The app summary page displays the following information:
 <ul><li><b>Name</b>: The API app name.</li>
 <li><b>Scopes</b>: The selected API scopes.</li>
 <li><b>Created by</b>: The name of the user who created the app.</li>
-<li><b>Created on</b>: The date when the app was created.</li>
+<li><b>Created on</b>: The date when the app was created.</li></ul>
 
 ## Manage API App and Key
 
