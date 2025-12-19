@@ -368,7 +368,7 @@ This can happen when no agents are available, outside of working hours, voice ga
    </td>
    <td>Conversations (calls/chats) that an agent has properly closed.
 
-The agent ends the conversation, performs any After-call work, assigns dispositions, writes any notes, and clicks “Close”.
+The agent ends the conversation, performs any After-call work, assigns dispositions, writes any notes, and clicks “Close."
    </td>
   </tr>
   <tr>
