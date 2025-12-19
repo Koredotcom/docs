@@ -101,7 +101,7 @@ To integrate with the GBM channel, you need to register as a partner for Google 
 
 1. Open the [Business Communications Developer Console](https://business-communications.cloud.google.com/?utm_source=/business-communications/business-messages/guides/how-to/register&utm_medium=devsite&utm_campaign=business-messages).
 2. Under **Business Messages**, click **Create partner account**.
-<img src="../images/GBM-1.png" alt="gooogle business " title="gooogle business " style="border: 1px solid gray; zoom:70%;">
+<img src="../images/GBM-1.png" alt="Google business " title="Google business " style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the values for the following fields in the **Create a Business Messages partner account** window:
     * **Your Name**: Your full name.

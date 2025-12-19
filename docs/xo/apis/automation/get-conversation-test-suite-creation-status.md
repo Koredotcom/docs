@@ -172,7 +172,7 @@ No body parameters are passed.
                 "input": "Start_Flow",
                 "outputs": [
                     {
-                        "text": "asdasd",
+                        "text": "test",
                         "nodeId": "",
                         "componentType": "",
                         "intentId": "",
@@ -192,7 +192,7 @@ No body parameters are passed.
                                 "enabled": true,
                                 "contains": [
                                     {
-                                        "text": "asdasd"
+                                        "text": "test"
                                     }
                                 ]
                             },

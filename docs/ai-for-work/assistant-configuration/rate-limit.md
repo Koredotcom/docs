@@ -8,6 +8,7 @@ This documentation outlines the point consumption system for user queries, detai
 * **Advanced Queries**: These consume **3 points** each. For example, queries that utilize GPT with knowledge, those containing context, and follow-up queries.
 
 ## User Categories
+
 Users are classified into two sets of rate limits:
 
 **Moderate Users**: This set is the default and applies to all users within the account unless a specific user is added to the power user list.

@@ -13,7 +13,7 @@ Before integrating Agent AI with Salesforce Genesys CTI, the following prerequis
     * Install [CX Cloud from Genesys and Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=7f59a36f-86c0-4cac-b8af-2c1722ede4d1){:target="_blank"} package.
     * Install [Kore Agent AI Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"} package.
 * In Genesys
-    * Install [Genesys AudioHook](https://appfoundry.genesys.com/filter/genesyscloud/listing/a3ff6a99-d866-4734-ab7a-16cff2e4308c){:target="_blank"} from Appfoundry.
+    * Install [Genesys AudioHook](https://appfoundry.genesys.com/filter/genesyscloud/listing/a3ff6a99-d866-4734-ab7a-16cff2e4308c){:target="_blank"} from AppFoundry.
 * Browser Compatibility Check
     * Supports Chrome
 
@@ -211,16 +211,16 @@ This section explains the post-installation steps of Agent AI integration with S
 7. Save the **Client ID** and **Client Secret** values.
 8. Follow this [documentation](https://help.mypurecloud.com/articles/configure-oauth-settings/){:target="_blank"} for the rest of the steps related to configuring OAuth settings.
 
-### Configure Audiohook
+### Configure AudioHook
 
-If you are using Kore-managed transcriptions, the final step is to install Audiohook for voice streaming. The Audiohook integration requires specific configuration values to support Agent Ai configuration.
+If you are using Kore-managed transcriptions, the final step is to install AudioHook for voice streaming. The AudioHook integration requires specific configuration values to support Agent Ai configuration.
 
 1. Sign in to **Genesys Cloud**.
 2. Go to **Admin** > **Integrations** > **Integrations**.
-3. Enter “audiohook” in the search box to check for any existing instances of audiohooks.  
+3. Enter **audiohook** in the search box to check for any existing instances of AudioHooks.  
 <img src="../images/genesys-cloud-integrations-audiohook-31.png" alt="genesys-cloud-integrations-audiohook" title="genesys-cloud-integrations-audiohook" style="border: 1px solid gray; zoom:80%;">  
 
-4. Click the **Integrations** button on the top-right corner to install a new audiohook app.  
+4. Click the **Integrations** button on the top-right corner to install a new AudioHook app.  
 <img src="../images/genesys-cloud-audiohook-integrations-32.png" alt="genesys-cloud-audiohook-integrations-32" title="genesys-cloud-audiohook-integrations-32" style="border: 1px solid gray; zoom:80%;">  
 
 5. Enter “audio” in the search box.  
@@ -243,7 +243,7 @@ If you are using Kore-managed transcriptions, the final step is to install Audio
 7. Add credentials in the **Credentials** tab.  
 <img src="../images/credentials-tab-37.png" alt="credentials-tab" title="credentials-tab" style="border: 1px solid gray; zoom:80%;">  
 
-    1. Refer to Step-6, and enter the **Client ID** and **Client Secret** credentials in the **API Key** and **Client Secret** fields respectively. These credentials are used to validate the audiostream signature by Kore.
+    1. Refer to Step-6, and enter the **Client ID** and **Client Secret** credentials in the **API Key** and **Client Secret** fields respectively. These credentials are used to validate the audio stream signature by Kore.
     2. Click **OK**. 
 
 8. Click **Save**.

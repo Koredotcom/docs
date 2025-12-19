@@ -13,7 +13,7 @@ Agentic Copilot blends automation with human judgment, delivering fast, accurate
     * Prompt users for inputs  
     * Extract entities from messages  
     * Dynamically adapt responses using tool calling—triggering external APIs or business systems for up-to-date information (for example, pricing, availability, customer status).  
-* [Personalised and Empathetic Responses](#empathetic-and-personalized-responses): Understands the conversation context and responds in a natural, empathetic tone—creating a more human-like experience. 
+* [Personalized and Empathetic Responses](#empathetic-and-personalized-responses): Understands the conversation context and responds in a natural, empathetic tone—creating a more human-like experience. 
 * [Robust Fail-Safes](#robust-fail-safes): In case of data delays or message generation issues, agents can intervene using pause-to-send controls. The system disables auto-send if a response fails.  
 
 ### Proactive Engagement 

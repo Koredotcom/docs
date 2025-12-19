@@ -440,7 +440,7 @@ Triggered when a conversation ends (by user, agent, or timeout).
   "orgId": "o-cf84dff6-199e-5dd5-ad55-95d70510xxxx",
   "source": "rtm",
   "agentId": "a-81b9991-1b19-4c38-b881-8513a4a2xxxx",
-  "dispostionSummary":"The agent has closed the conversation as user didnot respond.",
+  "dispositionSummary":"The agent has closed the conversation as user did not respond.",
   "dispositionSets": [<set, code> pairs]
 }
 ```

@@ -75,13 +75,13 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 ```json
 curl -X POST \
-https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
--H 'Content-Type: application/json' \
--H 'auth: YOUR_JWT_ACCESS_TOKEN' \
--d '[{
-  "language" : ,
+'https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status' \
+--header 'Content-Type: application/json' \
+--header 'auth: YOUR_JWT_ACCESS_TOKEN' \
+--data '{
+  "language" : "",
   "enable": true
-  }]'
+  }'
 ```
 
 ## Body Parameters

@@ -644,7 +644,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                         "afterCallWorkDuration": 18,
                         "afterCallWorkEndTime": "2025-10-01T02:03:02",
                         "email": "john.doe@example.com",
-                        "name": "uatxouser2",
+                        "name": "John Doe",
                         "acceptedTime": "2025-10-01T02:02:11",
                         "assignedAt": "2025-10-01T02:02:10"
                     }
@@ -727,9 +727,9 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `metaInfo.transcribeConfig` | object | Configuration for call transcription. | — |
 | `metaInfo.transcribeConfig.transcribe` | boolean | Indicates whether transcription is enabled for the session. | true |
 | `destinations` | array of objects | One object for each Queue or Agent that the call was transferred to. | — |
-| `destinations.destinationType` | string | Destination for any transfer – distinguishes direct-to-agent vs. queue. | QueueEntry |
+| `destinations.destinationType` | string | Destination for any transfer-distinguishes direct-to-agent vs. queue. | QueueEntry |
 | `destinations.queueId` | type-prefixed-guid | The internal ID for the Queue. | qu-123dbe9-c752-464d-a9be-1d0e43b6xxxx |
-| `destinations.queueName` | character string | Name of the queue. | Residential – Sales |
+| `destinations.queueName` | character string | Name of the queue. | Residential-Sales |
 | `destinations.CallbackOpted` | boolean | Indicates whether the customer opted for a callback. | True |
 | `destinations.CallbackOptedTime` | string (ISO 8601 datetime) | Timestamp when the customer opted for the callback  (only if CallbackOpted = true). | 2025-09-30T06:34:48.810Z |
 | `destinations.userCallbackAcceptTime` | string (ISO 8601 datetime) | Timestamp when the customer accepted the callback initiated by the agent  (only if CallbackOpted = true). | 2025-09-30T06:35:00.589Z |

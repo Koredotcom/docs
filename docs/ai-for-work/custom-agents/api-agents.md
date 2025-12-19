@@ -59,7 +59,7 @@ The API agent creation process consists of the following steps:
 
 Prerequisites:
 
-* Administrator access to AI for Work and the system you want to integrate.
+* Administrator access and the system you want to integrate.
 * API documentation for Schema API and Action API of the system.
 * Curl commands for the ID resolver and the meta resolver of the system.
 
@@ -80,11 +80,9 @@ Enter a name for the **Agent** **Name**, select an appropriate **Logo**, and cli
 
 <img src="../images/image10.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
-
 ## Step 3: Connection Setup
 
 Connection Setup currently uses admin-provided profiles. The system accesses data using these profiles and admin tokens for all retrieval operations. End users cannot create new connection profiles, meaning all data is fetched using admin credentials.
-
 
 ## Step 4: Actions
 
@@ -308,7 +306,7 @@ Follow these steps to create a URL:
 
 1. To configure the URL, click  **+ Create URL**.
 2. The Open URL pop-up is displayed.  
-3. Enter the Static URL. For example, https://team.atlassian.net/browse/.
+3. Enter the Static URL. For example, `https://team.atlassian.net/browse/`.
 
     !!! note
 

@@ -61,7 +61,7 @@ Select this option to allow restricted search capabilities for the targeted user
 
 Linking the Search AI application with Agent AI is a two-step process:
 
-1. **Enable the communication channel in Search AI**: First, create client credentials in Search AI with these API scopes – Ingest Data, Live Search, Full Search, Advanced Search, and Auto Suggestions. Then, enable a communication channel. For more information, refer to [this guide](https://docs.kore.ai/searchassist/administration/integrate-searchassist-with-third-party-applications/){:target="_blank"}.
+1. **Enable the communication channel in Search AI**: First, create client credentials in Search AI with these API scopes–Ingest Data, Live Search, Full Search, Advanced Search, and Auto Suggestions. Then, enable a communication channel. For more information, refer to [this guide](https://docs.kore.ai/searchassist/administration/integrate-searchassist-with-third-party-applications/){:target="_blank"}.
 2. **Use the client credentials to link the Search AI apps with Agent AI**: See the following steps:
 
 #### Steps to link the Search AI apps with Agent AI
