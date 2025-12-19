@@ -441,7 +441,7 @@ Configure the following recording settings:
 
 * Volume: Adjust the volume slider to increase or decrease the volume.  
 
-* Mute: Select Mute to mute the audio.  
+* Mute: Select Mute to silence the audio.  
 
 * Rewind Audio: To rewind the audio by 10 seconds, select the Backward icon.
 * Forward Audio: To fast forward the audio by 10 seconds, select the Forward icon.
@@ -511,10 +511,10 @@ The different status messages you may notice and what they mean:
 
 | **Status message**                                                                                                      | **What it means**                                                                                                            | **What you can do**                                                                                                            |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is processing the call audio.                                                                     | No action needed - wait for 10 minutes and refresh the page.                                                            |
-| **We couldn’t load the call recording. Please try again.**                                                              | There was a temporary issue fetching the recording.                                                                          | Select **Retry** to try fetching the recording again.                                                                           |
-| **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but  couldn’t get the recording.                                                                     | Wait for about 15 minutes and select **Retry** again.                                                                           |
-| **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. The team reviews the logs and attempts to recover the recording manually. |
+| Generating your call recording... This may take a few minutes.                                                      | The recording server is processing the call audio.                                                                     | No action needed - wait for 10 minutes and refresh the page.                                                            |
+| We couldn’t load the call recording. Please try again.                                                              | There was a temporary issue fetching the recording.                                                                          | Select **Retry** to try fetching the recording again.                                                                           |
+| Still unable to fetch the recording. Please try again after 15 minutes.                                             | The system retried but  couldn’t get the recording.                                                                     | Wait for about 15 minutes and select **Retry** again.                                                                           |
+| We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. The team reviews the logs and attempts to recover the recording manually. |
 
 Behind the Scenes
 
@@ -582,16 +582,19 @@ The interface shows SIP signaling messages exchanged between endpoints:
     * Port: 5060 → 5060
     * Details: INVITE sip: +12513254563@domain...
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 2. **100 (Trying)**
     * Direction: 172.31.11.64 to 50.19.12.248
     * Port: 5060 ← 5060
     * Details: INVITE sip: +12513254563@domain...
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 3. **200 (OK)**
     * Direction: 172.31.11.64 to 50.19.12.248
     * Port: 5060 ← 5060
     * Details: INVITE sip: +12513254563@domain...
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 4. **ACK**
     * Direction: 50.19.12.248 to 172.31.11.64
     * Port: 5060 → 5060
@@ -605,13 +608,15 @@ The interface also shows RTCP media packets exchanged between endpoints:
     * Port: 5060 → 5060
     * Details: INVITE sip: +12513254563@domain...
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 2. **RTCP (Second packet)**
+
     * Direction: 172.31.11.62 to 172.31.11.64
     * Port: 5060 → 5060
     * Details: INVITE sip: +12513254563@domain...
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
-**How to Use**
+**How to Use?**
 
 1. **Track Call Setup**: Follow the initial INVITE, 100 Trying, 200 OK, and ACK sequence to verify proper call establishment.
 2. **Analyze Response Times**: Note the timestamps to identify any delays in message processing.
