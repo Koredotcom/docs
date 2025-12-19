@@ -6,7 +6,7 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 
     This integration process also works for Genesys Desktop App.
 
-## Definitions
+## Definitions 
 
 | **Section/Group** | **Key** | **Definition** | **Reference** |
 |--------------------|---------|---------------|---------------|
@@ -98,8 +98,8 @@ This step involves creating a Genesys Data Table with Agent AI bot details.
 
         **Reference Key** label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.  
 
-    5. Click the “pencil” icon to edit a data table.  
-    <img src="../images/pencil-icon.png" alt="pencil-icon" title="pencil-icon" style="border: 1px solid gray; zoom:80%;">   
+    5. Click the 'pencil' icon to edit a data table.  
+        <img src="../images/pencil-icon.png" alt="pencil-icon" title="pencil-icon" style="border: 1px solid gray; zoom:80%;">   
 
         !!! note 
             Do not click on the data table name.  
@@ -468,9 +468,9 @@ This step is essential for managing incoming messages to the Genesys platform. W
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/directory/#/login-oauth){:target="_blank"}.
 2. Go to **Admin** > **Architect** > **Architect**.
 3. Click the **three dots** next to **Flows: Inbound Call**, and select **Inbound Message**.  
-<img src="../kore-data-table/inbound-message-28.png" alt="inbound-message" title="inbound-message" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/inbound-message-28.png" alt="inbound-message" title="inbound-message" style="border: 1px solid gray; zoom:80%;">  
 4. Click the **+Add** button to create an **Inbound Message Flow**.  
-<img src="../kore-data-table/create-inbound-message-flow-29.png" alt="create-inbound-message-flow" title="create-inbound-message-flow" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/create-inbound-message-flow-29.png" alt="create-inbound-message-flow" title="create-inbound-message-flow" style="border: 1px solid gray; zoom:80%;">  
 5. Click **Create Flow**. The final architect flow looks like the following screenshot:  
 <img src="../kore-data-table/create-flow-30.png" alt="create-flow" title="create-flow" style="border: 1px solid gray; zoom:80%;">
 
@@ -483,29 +483,31 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Configurations**.  
 3. Click **New Configuration**.  
-<img src="../kore-data-table/messenger-new-configuration-31.png" alt="messenger-new-configuration" title="messenger-new-configuration" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/messenger-new-configuration-31.png" alt="messenger-new-configuration" title="messenger-new-configuration" style="border: 1px solid gray; zoom:80%;">  
 4. Enter a name and description.  
-<img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
 
 5. Click the **Appearance** tab and complete the following information:
 
-* Under **Select your Supported Languages**, click the **Select language(s)** list and choose the languages that you want to support in the Messenger interface.
+    * Under **Select your Supported Languages**, click the **Select language(s)** list and choose the languages that you want to support in the Messenger interface.
 
-    !!! note
+        !!! note
 
-        The same language should be configured in the **Kore AI Agent**.  
+            The same language should be configured in the **Kore AI Agent**.  
 
-    <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;"> 
+        <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;"> 
 
-* Under **Select Default Language**, click the **Select language** list and choose the default language.  
-<img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
+    * Under **Select Default Language**, click the **Select language** list and choose the default language.  
+    <img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
 
-* Adjust the other settings according to your preferences.
-1. Click the **Apps** tab and complete the following steps: 
-* Under **Clear Conversation**, turn on the toggle button. This is required for the **Agent AI Conversation Summary** feature to work.  
-<img src="../kore-data-table/clear-conversation-toggle-35.png" alt="clear-conversation-toggle" title="clear-conversation-toggle" style="border: 1px solid gray; zoom:80%;">
+    * Adjust the other settings according to your preferences.
 
-* Adjust the other settings according to your preferences.
+6. Click the **Apps** tab and complete the following steps: 
+    * Under **Clear Conversation**, turn on the toggle button. This is required for the **Agent AI Conversation Summary** feature to work.  
+        <img src="../kore-data-table/clear-conversation-toggle-35.png" alt="clear-conversation-toggle" title="clear-conversation-toggle" style="border: 1px solid gray; zoom:80%;">
+
+    * Adjust the other settings according to your preferences.
+
 7. Click **Save New Version** to create a new version.
 
 ### Create Messenger Deployment
@@ -515,17 +517,19 @@ To deploy the Messenger snippet to your website, follow these steps:
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Deployment**. 
 3. Click **New Deployment**.  
-<img src="../kore-data-table/new-messenger-deployment-36.png" alt="new-messenger-deployment" title="new-messenger-deployment" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/new-messenger-deployment-36.png" alt="new-messenger-deployment" title="new-messenger-deployment" style="border: 1px solid gray; zoom:80%;">  
 4. Enter a name and description.  
-<img src="../kore-data-table/messenger-deployment-details-37.png" alt="messenger-deployment-details" title="messenger-deployment-details" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../kore-data-table/messenger-deployment-details-37.png" alt="messenger-deployment-details" title="messenger-deployment-details" style="border: 1px solid gray; zoom:80%;"> 
 
 5. Under **Select your Configuration**, click **Select Configuration** to select a version of a Messenger configuration created in the previous step to assign to this deployment.
-* In the **Assignment** pane, navigate to the Messenger configuration you want to assign to the configuration, and click the name of the Messenger configuration.
-* Select the version that you want to assign.
-* Click **Save**.
+    * In the **Assignment** pane, navigate to the Messenger configuration you want to assign to the configuration, and click the name of the Messenger configuration.
+    * Select the version that you want to assign.
+    * Click **Save**. 
+
 6. Under **Restrict domain access**, determine whether to allow all domains or restrict the domains on which you want to deploy the snippet.  
-* To allow all domains, select the **Allow all domains** option. Use this option for testing and development purposes.
-* To restrict domains, enter a domain and click **Add Domain**. You can add multiple domains to the list. Restrict domains to prevent unauthorized usage of your snippet from unknown domains. If you restrict a domain, Messenger does not run on that website and rejects API requests from that domain.
+    * To allow all domains, select the **Allow all domains** option. Use this option for testing and development purposes.
+    * To restrict domains, enter a domain and click **Add Domain**. You can add multiple domains to the list. Restrict domains to prevent unauthorized usage of your snippet from unknown domains. If you restrict a domain, Messenger does not run on that website and rejects API requests from that domain. 
+
 7. Under **Select your Architect Flow**, select the inbound message flow created in the previous steps.
 8. Click **Save.** The **Messenger Deployments** page now displays the snippet and the deployment key.
 9. Copy the Messenger snippet and deploy the Messenger snippet to your website.
@@ -544,7 +548,7 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
 1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}**.
 2. Go to **Admin** > **Integrations** > **Integrations**.  
 3. Enter “audiohook” in the search bar.  
-<img src="../kore-data-table/audiohook-39.png" alt="audiohook" title="audiohook" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/audiohook-39.png" alt="audiohook" title="audiohook" style="border: 1px solid gray; zoom:80%;">
 
     Audiohook integration requires specific configuration values to support Agent AI configuration. 
 
