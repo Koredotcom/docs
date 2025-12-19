@@ -7,6 +7,7 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
     This integration process also works for Genesys Desktop App.
 
 ## Definitions
+
 | **Section/Group** | **Key** | **Definition** | **Reference** |
 |--------------------|---------|---------------|---------------|
 | Generate Oauth ID to enable Kore Services to Connect with Genesys<br>+<br>Create an Interaction Widget in Genesys for Agent AI | <span id="AAI">Agent AI URL</span> | The domain of the Agent AI. | - If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}<br>- If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
@@ -44,22 +45,26 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 This document provides detailed, step-by-step instructions for setting up the integration of the Agent AI widget in the Genesys environment.
 
 ## Activities on Kore Platform
+
 * [Capture AI Agent information in Kore Data Table](#capture-ai-agent-information) 
 * [Access Custom Data and Secure Custom Data in AI Agent](#access-custom-data-and-secure-custom-data-in-ai-agent)
 
 ## Activities on Genesys Cloud
+
 * [Generate Oauth ID to enable Kore Services to Connect with Genesys](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys)
 * [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai)
 * [Provide Interaction Widget Access to Agents](#provide-interaction-widget-access-to-agents)
 * [Create a Queue in Genesys](#create-a-queue-in-genesys)
 
 ## Chat Setup
+
 * [Create/Update Architect Inbound Message Flow in Genesys for the Agent Queue](#createupdate-architect-inbound-message-flow-in-genesys-for-the-agent-queue)
 * [Create Messenger Configuration](#create-messenger-configuration)
 * [Create Messenger Deployment](#create-messenger-deployment)
 * [Steps to start a Chat Request Simulation](#steps-to-start-a-chat-request-simulation)
 
 ## Voice Setup
+
 * [(Optional) Install Audiohook for Voice Streaming](#optional-install-audiohook-for-voice-streaming)
 * [Create/Update an Architect Inbound Call Flow in Genesys for the Agent Queue](#createupdate-architect-inbound-call-flow-in-genesys-for-the-agent-queue)
 * [Steps to start a Voice Request Simulation](#steps-to-start-a-voice-request-simulation)
@@ -483,6 +488,7 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 <img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
 
 5. Click the **Appearance** tab and complete the following information:
+
 * Under **Select your Supported Languages**, click the **Select language(s)** list and choose the languages that you want to support in the Messenger interface.
 
     !!! note
@@ -495,7 +501,7 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 <img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
 
 * Adjust the other settings according to your preferences.
-6. Click the **Apps** tab and complete the following steps: 
+1. Click the **Apps** tab and complete the following steps: 
 * Under **Clear Conversation**, turn on the toggle button. This is required for the **Agent AI Conversation Summary** feature to work.  
 <img src="../kore-data-table/clear-conversation-toggle-35.png" alt="clear-conversation-toggle" title="clear-conversation-toggle" style="border: 1px solid gray; zoom:80%;">
 
@@ -725,6 +731,7 @@ For first time users, use the POST API and for existing users, use the PUT API t
         }
     }
 ```
+
 ## XO 11 Configuration Notes
 
 For the configured App, ensure at least one Dialog Task has been configured for Agent AI use.

@@ -73,6 +73,7 @@ Product specific features and Common features applicable to each products are sh
 <img src="../images/ntp(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
 #### Product Specific Options
+
 The left navigation of Products of the XO Platform are as follows.
 
 | AUTOMATION AI | SEARCH AI | CONTACT CENTER AI | AGENT AI | QUALITY AI
@@ -81,9 +82,10 @@ The left navigation of Products of the XO Platform are as follows.
 | [Learn about Automation AI](./../automation/about-automation-ai.md) | [Learn about Search AI](./../searchai/about-search-ai.md) | [Learn about Contact Center AI](./../contactcenter/about-contact-center-ai.md) | [Learn about Agent AI](./../agentai/about-agent-ai.md) | [Learn about Quality AI](./../quality-ai/about-quality-ai.md) |
 
 #### Common Features
+
 The left navigation of common features of the XO Platform are as follows.
 
 | User Management | Deploy | Billing | Settings |
-| --- | --- | --- | --- |
-| ![image_tooltip](./images/ntp(14).png "image_tooltip") | ![image_tooltip](./images/ntp(15).png "image_tooltip") | ![image_tooltip](./images/ntp(16).png "image_tooltip") | ![image_tooltip](./images/ntp(17).png "image_tooltip") | ![image_tooltip](./images/ntp(18).png "image_tooltip") |
-| [Learn about User Management ](./../user-management/manage-users.md) | [Learn about Deployment](./../deploy/bot-versioning.md) | [Learn about Billing](./../administration/billing.md) | [Learn about Settings](./../app-settings/app-profile.md) |
+| --- | --- | --- | --- | --- |
+| ![image_tooltip](./images/ntp(14).png "image_tooltip")               | ![image_tooltip](./images/ntp(15).png "image_tooltip")  | ![image_tooltip](./images/ntp(16).png "image_tooltip") | ![image_tooltip](./images/ntp(17).png "image_tooltip")   | ![image_tooltip](./images/ntp(18).png "image_tooltip") |
+| [Learn about User Management ](./../user-management/manage-users.md) | [Learn about Deployment](./../deploy/bot-versioning.md) | [Learn about Billing](./../administration/billing.md)  | [Learn about Settings](./../app-settings/app-profile.md) |                                                        |

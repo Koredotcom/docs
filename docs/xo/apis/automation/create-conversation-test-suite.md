@@ -91,6 +91,7 @@ curl --location --request POST 'https://{{host}}/api/public/stream/{{streamId}}/
            "userEmailId" : "botowner@domain.com"
 }'
 ```
+
 ## Body Parameters
 
 <table>

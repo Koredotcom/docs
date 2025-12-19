@@ -5,7 +5,8 @@ You can implement custom authentication for your AI Agent by providing a URL fro
 Implementing custom authentication involves the following steps:
 
 
-## Generate the Custom Authentication URL from the Service Node  
+## Generate the Custom Authentication URL from the Service Node
+
 To implement custom authentication, you first need to configure a dialog tasks’ service node with the URL of the authenticating service. When you do so, the platform internally appends the authentication URL you entered with the AI Agent’s webhook and creates a custom authentication URL. It performs to facilitate the authentication service to send back the necessary details to the Platform after completing the authentication process.
 
 

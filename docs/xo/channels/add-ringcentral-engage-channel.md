@@ -22,8 +22,10 @@ To set up **RingCentral Engage** as a channel, you must complete the following s
 
 
 4. If there are any tokens present already, you can use them or click **ADD** to generate a new _API Token_.
-<img src="../images/ringcentral1.png" alt="RingCentral access token" title="RinCentral access token" style="border: 1px solid gray; zoom:90%;">
-<img src="../images/ringcentral2.png" alt="RingCentral api token" title="RinCentral api token" style="border: 1px solid gray; zoom:90%;">
+
+   <img src="../images/ringcentral1.png" alt="RingCentral access token" title="RinCentral access token" style="border: 1px solid gray; zoom:90%;">
+
+   <img src="../images/ringcentral2.png" alt="RingCentral api token" title="RinCentral api token" style="border: 1px solid gray; zoom:90%;">
 
 5. Provide a **Name** for your API Token.
 6. Select **Agent** from the drop-down list.
@@ -34,19 +36,17 @@ To set up **RingCentral Engage** as a channel, you must complete the following s
 
 9. Copy and provide the generated **API Access Token** under **Channels & Flows** > **Channels** > **Digital** > **All** > **RingCentral Engage** > **Configurations** on the Kore.ai platform.
 
-
 ## Setup Webhook Configuration
-
-
 
 1. Once the _API Token_ has been generated, navigate to **Admin > Webhooks**. Click the **code snippet** icon on the left navigation menu, and select **Webhooks**.
 <img src="../images/ringcentral4.png" alt="webhook " title="webhook" style="border: 1px solid gray; zoom:90%;">
 
 2. If any webhook configurations are present already, you can use them or click **ADD** to generate a new webhook configuration.
-<img src="../images/ringcentral5.png" alt="webhook configuration" title="webhook configuration" style="border: 1px solid gray; zoom:90%;">
-<img src="../images/ringcentral6.png" alt="new webhook configuration" title="new webhook configuration" style="border: 1px solid gray; zoom:90%;">
+   <img src="../images/ringcentral5.png" alt="webhook configuration" title="webhook configuration" style="border: 1px solid gray; zoom:90%;">
 
-3.  Select the **API Access Token** generated.
+   <img src="../images/ringcentral6.png" alt="new webhook configuration" title="new webhook configuration" style="border: 1px solid gray; zoom:90%;">
+
+3. Select the **API Access Token** generated.
 4. Copy the **URL** from the Kore.ai platform under the **RingCentral Engage** channel and paste it to the above webhook configuration screen.
 5. Provide a **Name** for the configuration.
 6. The _Verification Token_ will be generated automatically.

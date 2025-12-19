@@ -3,10 +3,12 @@
 This document provides instructions on connecting your messaging channel to a website with a new embedded deployment on the Salesforce Omni-Channel Service Cloud with Agent AI.
 
 ## Prerequisites
+
 * Developer or a Production Salesforce org
 * Basic knowledge of Salesforce terminology
 
 ## Enable Omni-Channel
+
 1. Sign in to your organization.
 2. Go to **Salesforce Service Setup**.
 3. In the **quick find** box, search **Omni-Channel Settings**.
@@ -14,10 +16,12 @@ This document provides instructions on connecting your messaging channel to a we
 <img src="../images/enable-omnichannel-and-save-1.png" alt="enable-omnichannel-and-save" title="enable-omnichannel-and-save" style="border: 1px solid gray; zoom:80%;">
 
 ## Configure a Messaging Channel for Web Deployment
+
 1. Sign in to your organization–if you are in **Salesforce Classic**, switch to **Lightning Experience**.
 2. Follow this Salesforce documentation to configure your Embedded Service Deployment, [https://help.salesforce.com/configure_web_deployment](https://help.salesforce.com/s/articleView?id=service.miaw_configure_web_deployment_1.htm&type=5){:target="_blank"}.
 
 ## Add the Omni-Channel Utility to your Lightning Application
+
 1. Go to **Lightning Experience** > **Setup**.
 2. Enter “App” in the **quick find** box.
 3. Select **App Manager**.
@@ -28,6 +32,7 @@ This document provides instructions on connecting your messaging channel to a we
 8. Click **Done**.
 
 ## Enable Service Presence Status Access
+
 1. Enter **Profile** in the **quick find** box, and then select **Profiles**.
 2. Select **System Administrator**.
 3. Edit **Enable Service Presence Status Access**, and assign **Presence Status Available** – **Chat**, **On Break**, and **Busy**.  
@@ -36,6 +41,7 @@ This document provides instructions on connecting your messaging channel to a we
 **Assign Permission Set License Agreement**
 
 Users must have the following Permissions Set License Agreement to be configured to attend the incoming chat request as an agent:  
+
 1. Go to **Setup** > **Users**, and click **Users**. 
 <img src="../images/setup-users-3.png" alt="setup-users" title="setup-users" style="border: 1px solid gray; zoom:80%;">
 2. Click a user name, and it opens up the **User Details** page.  
@@ -45,6 +51,7 @@ Users must have the following Permissions Set License Agreement to be configured
 <img src="../images/permission-set-license-assignments-5.png" alt="permission-set-license-assignments" title="permission-set-license-assignments" style="border: 1px solid gray; zoom:80%;">  
 
 ## Configuring the App
+
 1. Select **App Launcher**.
 2. Click the **tile** for the app that you want (**Service Console**, in this case).  
 <img src="../images/app-tile-6.png" alt="app-tile" title="app-tile" style="border: 1px solid gray; zoom:80%;">
@@ -53,6 +60,7 @@ Users must have the following Permissions Set License Agreement to be configured
 <img src="../images/omni-channel-widget-online-7.png" alt="omni-channel-widget-online-7.png" title="omni-channel-widget-online-7.png" style="border: 1px solid gray; zoom:80%;">
 
 ## Testing the Chat
+
 1. Go to **Service Console**, open the **Omni-Channel** widget, and set **Presence Status** to **Available – Chat**.  
 <img src="../images/presence-status-available-chat-8.png" alt="presence-status-available-chat" title="presence-status-available-chat" style="border: 1px solid gray; zoom:80%;">
 

@@ -6,10 +6,7 @@ This topic describes how to create an app and generate registration credentials 
 
 To access webhooks and messages in Dialog tasks, you need to subscribe to an app for your bots. All messages from the bots and user are sent to the SDK as message events. When a Webhook node is defined in a Dialog task, the Webhook event is sent to the SDK at runtime. You must install, host, and configure the Platform SDK in your network to allow communications between the bots event messages and webhooks, and your application.
 
-
 ## To create an app
-
-
 
 1. Navigate to **Settings > Dev Tools > BotKit**.
 
@@ -26,9 +23,10 @@ To access webhooks and messages in Dialog tasks, you need to subscribe to an app
     <img src="../images/sdk-config-img3-jwt-app-client-id-secret.png" alt="Client ID and Client Secret" title="Client ID and Client Secret" style="border:1px solid gray;zoom:70%;">
 
 4. The following fields appear:
+   
     1. The names of **App** and **VA**.
     2. The **Client ID** and **Client Secret**.
-    3. The **Callback URL** field. Enter the URL for the application to which you want the Platform to push data. For example,  https://koremessenger.com/postURL.
+    3. The **Callback URL** field. Enter the URL for the application to which you want the Platform to push data. For example, `https://koremessenger.com/postURL`.
     4. The **Events** section. Select one or more of:
         1. **OnMessage** – Triggers an event when a message from a user is received.
         2. **OnHookNode** – Triggers an event when a WebHook node is encountered in the Dialog task flow.

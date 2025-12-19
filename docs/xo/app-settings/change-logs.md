@@ -3,6 +3,7 @@
 Change Logs keep record of all the modifications made to the application. They are essential for tracking changes and are particularly useful for debugging, identifying configuration updates, and understanding their impact on application performance.
 
 ## Accessing Change Logs
+
 To access the changelogs, follow the below steps:
 
 1. Navigate to **App Settings**.
