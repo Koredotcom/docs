@@ -31,4 +31,4 @@ To connect Amazon Q, follow these steps:
 8. Mark this new source as **Active** to enable it for Enterprise Knowledge queries.
 
 !!! note
-     AI for Work integrates with Amazon Q Index for enterprise search. If configured as the primary knowledge source, non-agent queries route to Q Index, which is recommended when it's your main search index in AI for Work. ***Enterprise Workspace*** is the default for Amazon Q access for all users, controlled by role-based access. A different workspace can be chosen during setup.
+     Application integrates with Amazon Q Index for enterprise search. If configured as the primary knowledge source, non-agent queries route to Q Index, which is recommended when it's your main search index. ***Enterprise Workspace*** is the default for Amazon Q access for all users, controlled by role-based access. A different workspace can be chosen during setup.

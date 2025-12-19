@@ -134,6 +134,7 @@ This API lists all the permission entities associated with a connector.
 </table>
 
 ### **Sample Response**
+
 ```
 [
     {
@@ -233,6 +234,7 @@ This API returns the details of the request permission entity. It lists the user
 </table>
 
 ### **Sample Response**
+
 ```
 {
     "_id": "fpe-82e99097-7532-506b-af42-363cbe5bb59c",
@@ -244,6 +246,7 @@ This API returns the details of the request permission entity. It lists the user
     "type": "googleGroup"
 }
 ```  
+
 ## Update Permission Entity by ID
 
 This API is used to associate users to a Permission Entity. You can add new users to the entity using this API.

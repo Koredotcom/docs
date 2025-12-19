@@ -70,7 +70,7 @@ OAuth Consumers are specific to the workspaces in BitBucket. [To create a new co
     * **Grant Type**: Set this to Client Credentials.
     * **Client ID**: Provide the client credentials generated for the OAuth Consumer above. 
     * **Client Secret**: Provide the client credentials generated for the OAuth Consumer above. 
-    * **Workspace Name**: Name of the workspace in Bitbucket from where content will be ingested. 
+    * **Workspace Name**: Name of the workspace in Bitbucket from which the system ingests content. 
 4. Click **Connect** to authenticate and establish the connection.
 
 
@@ -81,7 +81,7 @@ After successfully connecting the Search AI connector to the BitBucket account, 
 Upon synchronization, Search AI ingests **Pull Requests and the comments on the pull requests** from all repositories across all Projects in the workspace.
 
 !!! note
-    Only content added or updated in the last 30 days will be ingested into the Search AI application during sync. Existing content in Search AI remains unchanged.
+    Only content added or updated in the last 90 days is ingested into the Search AI application during sync. Existing content in Search AI remains unchanged.
 
 
 ## RACL Support

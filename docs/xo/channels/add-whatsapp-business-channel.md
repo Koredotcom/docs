@@ -315,6 +315,7 @@ The following sample shows a success payload:
   "timestamp": "1687160320000"
 }
 ```
+
 ### Error Response Codes
 
 The table below outlines the various error status codes that may occur when receiving incoming requests through the Gupshup Whatsapp channel:

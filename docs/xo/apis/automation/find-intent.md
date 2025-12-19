@@ -81,12 +81,12 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 ### Bot Language
 
-Optionally, if multi-language is enabled for the Bot, you need to pass the bot-language header with the language code, such as en, zh_cn, etc. If the language code is not passed for a multilingual Bot, the Bot's default language will be considered.
-
+Optionally, if multi-language is enabled for the Bot, you need to pass the bot-language header with the language code, such as `en`, `zh_cn`, etc. If the language code is not passed for a multilingual Bot, the Bot's default language will be considered.
 
 ```json
 bot-header: {{lang-code}}
 ```
+
 ## Query Parameters
 
 <table>

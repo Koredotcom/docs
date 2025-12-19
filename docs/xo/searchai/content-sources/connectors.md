@@ -57,6 +57,7 @@ Currently, SearchAI supports the following grant types:
     For this type of authorization, provide the **client credentials** as well as **user credentials** with access to the required resources. 
 
 ## Managing Connectors
+
 The Connectors are available under the Content Section. There are two tabs that list the configured connectors and the list of all supported connectors. On the UI, supported connectors are organized by the application type for easy navigation. Additionally, configured connectors are marked with a green indicator.
 ![Connector Home](images/home.png "connector home")
 

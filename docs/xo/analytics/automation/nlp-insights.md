@@ -246,8 +246,10 @@ User: 12434
 AI Agents: Enter number of seats required
 User: 3 
 AI Agents: Your flight is booked. Would you like to:
+
 1. Book a Hotel 
 2. Book a sightseeing tour
+
 User: I want to Cancel the Flight
 AI Agents: I’m sorry, I don’t understand. Please enter again._
 

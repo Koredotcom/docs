@@ -94,6 +94,7 @@ After successfully connecting to Google Drive, the next step is to do the Synchr
 ### Content Filtering Rules
 
 Each rule gives you the option to choose the location on the drive from where the content is to be ingested. It can take the following values:
+
 * **User Drive** includes only the locations owned by the account for which the Google Drive connector is configured. 
 * **Shared Drive** includes only the locations shared with the account for which the Google Drive connector is configured. 
 * **All Drives** include all the locations from the user drive as well as the shared drive. 

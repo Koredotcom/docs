@@ -180,6 +180,7 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 ### Theme Persistence
 
 There are two type of themes available to select:
+
 - Dark theme
 - Light theme
 

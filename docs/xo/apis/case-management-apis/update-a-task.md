@@ -11,9 +11,8 @@ This API lets you to update an existing task in the case management system.
 | **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).                                          |
 | **[API Scope](../automation/api-introduction.md#associating-api-scopes)**     | Case Management Configuration.                                                                                                                                                       |
 
-
-
 ## Path parameters
+
 | **Parameter** | **Description**                                                                                          | **Type**           |
 | ------------- | -------------------------------------------------------------------------------------------------------- | ------------------ |
 | `host`        | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/)                     | `string`, required |
@@ -51,6 +50,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
     "name": "Task Testing"
 }'
 ```
+
 ## Request body parameters
 
 | **Parameter**        | **Description**                               | **Type**            |

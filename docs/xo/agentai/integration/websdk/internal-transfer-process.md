@@ -4,6 +4,7 @@ This document explains how to use the `internalTransfer` method from the Agent A
 It includes **context, rationale, and payload examples** for all scenarios: **Initial Request**, **Cold Transfers**, **Warm Transfers**, and **Redial Scenarios**.
 
 ## When to trigger
+
 * For all types of **entry** events, such as cold, warm, or no-transfer scenarios, the `internalTransfer` method should be invoked when the SDK emits the **ON_SOCKET_CONNECTION** event.
 * The desktop application must listen for this event and call the method with the appropriate data.
 * For exit events, the desktop can directly invoke the `internalTransfer` method when an agent leaves the conversation.
@@ -23,6 +24,7 @@ chatWindowInstance.on('ON_SOCKET_CONNECTION', (data) => {
   aaWindowInstance.internalTransfer(transferData);
 });
 ```
+
 ## Background and Context
 
 In a typical contact center environment:  
@@ -202,7 +204,9 @@ const data = {
 }
 aaWindowInstance.internalTransfer(data);
 ```
-#### **Previous Agent Leaves**
+
+#### Previous Agent Leaves
+
 ```
 const data = {
   "transfertype": "cold",
@@ -223,6 +227,7 @@ This occurs when **one or more additional agents join** while others remain in t
 Multiple agents can be active at once.
 
 #### Agent Joins
+
 ```
 const data = {
   "transfertype": "warm",
@@ -235,7 +240,9 @@ const data = {
 }
 aaWindowInstance.internalTransfer(data);
 ```
+
 #### Agent Leaves (Not the Last Agent)
+
 ```
 const data = {
   "transfertype": "warm",
@@ -248,7 +255,9 @@ const data = {
 }
 aaWindowInstance.internalTransfer(data);
 ```
+
 #### Final Agent Leaves at End of Conversation
+
 ```
 const data = {
   "transfertype": "NA",
@@ -261,6 +270,7 @@ const data = {
 }
 aaWindowInstance.internalTransfer(data);
 ```
+
 ### Redial Scenario
 
 Sometimes a conversation session ends abruptly due to technical issues (like network drop), but later **reconnects to the same ongoing conversation**.  
@@ -316,6 +326,7 @@ In this scenario, Agent 1 accepts the call and redirects it to Agent 2 and later
 ### **Redial Scenario**
 
 * Customer connects to **Agent 1** → `NA` + `entry`
+
 1. Conversation drops unexpectedly
     * Agent reconnects to the same conversation → `redial` + `entry`
 2. Conversation continues without creating a new segment

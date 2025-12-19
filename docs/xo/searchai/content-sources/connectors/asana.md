@@ -52,9 +52,11 @@ This requires creating a client application on the Asana application. Follow the
 1. Go to the [Asana developer console](https://app.asana.com/). 
 1. Create a new app and enter the basic details.  
 1. Go to the OAuth page and enter the Redirect URL. Depending upon your region or the deployment, you can use one of the following URLs as the Redirect URL.
+
   * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
   * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
   * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+
 1. Copy the client credentials for the app. These credentials are used to configure the Asana connector in Search AI.
 1. Go to the Manage Distribution page and set the distribution method to ‘Any Workspace’ and select **Changes**. 
 
