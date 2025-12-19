@@ -80,21 +80,20 @@ To access a tool template, follow the steps below:
 
       <img src="../images/tools-template-nav.png" alt="tools template section" title="tools template section" style="border: 1px solid gray; zoom:60%;">
 
-<ol start="4"><li>Scroll down to the <b>Tools</b> section.</li>
-<li>Select the required <b>Categories</b> and <b>Tasks</b> from the left filter to view the relevant templates.
-<img src="../images/select-category-tasks.png" alt="select category and task" title="select category and task" style="border: 1px solid gray; zoom:60%;"></li>
-<li>Click the required template to view its information window.
+4. Scroll down to the **Tools** section.
+5. Select the required **Categories** and **Tasks** from the left filter to view the relevant templates.
 
-   The window includes the following details:</li></ol>
-
-   * Tool Template Name 
-   * Template description
-   * Categories the tool belongs to and the compatible LLM model.
-   * Configuration status
-   * Prebuilt tool flow preview
-   * Related or similar templates.
-   * Developer, last updated timestamp, the language used, and the number of installations.
-   * Install button
+    <img src="../images/select-category-tasks.png" alt="select category and task" title="select category and task" style="border: 1px solid gray; zoom:60%;"></li>
+6. Click the required template to view its information window.
+    The window includes the following details:
+    * Tool Template Name 
+    * Template description
+    * Categories the tool belongs to and the compatible LLM model.
+    * Configuration status
+    * Prebuilt tool flow preview
+    * Related or similar templates.
+    * Developer, last updated timestamp, the language used, and the number of installations.
+    * Install button
 
 <ol start="7"><li>Click <b>Install</b> to connect to the Marketplace and import the tool template, including its pre-configured flow.</li>
 <img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
