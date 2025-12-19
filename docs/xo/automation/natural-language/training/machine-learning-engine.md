@@ -341,7 +341,7 @@ Set the threshold score for definite matches between 80-100%. The default value 
 
 To enable the **ZSM** model, follow the steps below:
 
-1. Navigate to **Virtual Assitance** > **Natural Language** > **NLU Config** > **Engine Tuning** >  **Machine Learning**.
+1. Navigate to **Virtual Assistance** > **Natural Language** > **NLU Config** > **Engine Tuning** >  **Machine Learning**.
 2. Select **Zero-Shot Model** in the dropdown list for **Network Type**, and click **Save**.  
 <img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
 

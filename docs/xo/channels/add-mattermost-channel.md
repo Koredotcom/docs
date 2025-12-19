@@ -24,7 +24,7 @@ Before you begin, ensure that you have access to the administrative functions of
 <img src="../images/mattermost.png" alt="main menu" title="main menu" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the **Outgoing Webhooks** menu and click **Add Outgoing Webhook**.
-<img src="../images/mattermost1.png" alt="add outgoing webhook" title="add outoging webhook" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost1.png" alt="add outgoing webhook" title="add outgoing webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Provide required information as per the below image.
     * Enter your preferred values for **Title**, **Description** and **Bot Name fields**.
@@ -37,7 +37,7 @@ Before you begin, ensure that you have access to the administrative functions of
 
     * You will be redirected to the confirmation page with the Token displayed.
     * Copy this Token and provide it in the ‘Outgoing Webhook Token’ field present in the XO Platform Channel Configurations section.
-    <img src="../images/mattermost3.png" alt="copy outgoing webhook token" title="copy outoging webhook token" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/mattermost3.png" alt="copy outgoing webhook token" title="copy outgoing webhook token" style="border: 1px solid gray; zoom:70%;">
 
 
 

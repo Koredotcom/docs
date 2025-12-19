@@ -17,7 +17,7 @@ There are three types of available conditions:
 * **Else**– This condition allows you to set the node connection that will occur when the criteria configured within the _If_ condition are not met. The _Else_ condition only allows you to configure the next node to connect to.
 * **Else If** – This condition allows you to configure another set of criteria to be met by the conversation path when the criteria in the initial _If_ condition are not met. The _If_ condition lets you configure Entity, Context and Intent criteria.
 
-For example, in the travel app, you might want to present a group promotion if more than 5 passengers are travelling together, but if not, you may want to show a destination-specific package, based on the arrival city. If neither of these criteria are met, then you may want to continue with the standard flight booking procedure. Here is what such a use case could look like as node connection conditions:
+For example, in the travel app, you might want to present a group promotion if more than 5 passengers are traveling together, but if not, you may want to show a destination-specific package, based on the arrival city. If neither of these criteria are met, then you may want to continue with the standard flight booking procedure. Here is what such a use case could look like as node connection conditions:
 
 * **IF** _PassengerCount_ is greater than _5_, connect to the Group _Promotion_ node, (So, if there are more than 5 passengers, show the Group Promotion.)
 * **ELSE IF** ArrivalCity equals to _London_, connect to _London Destination Package_ node. (If there are not more than 5 passengers, but the arrival city is London, then show the London Destination Package.)

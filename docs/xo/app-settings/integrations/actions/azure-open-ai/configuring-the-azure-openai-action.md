@@ -37,7 +37,7 @@ Steps to create an Azure OpenAI service:
 3. Fill in the following required details:
     1. Select an existing **Resource Group** or create a new one.
     2. Select the **Region**. For example, select the _South Central US_ region.
-    3. Enter the **Name** of the Azure OpenAI service. For example, enter _PlatformInegration_.
+    3. Enter the **Name** of the Azure OpenAI service. For example, enter _PlatformIntegration_.
     4. Select the **Pricing Tier** option. For example, select the _Standard_ option.  
     <img src="../images/configure-azure-img3-create-azure-app.png" alt="Create Azure OpenAI service - provide required details" title="Create Azure OpenAI service - provide required details" style="border: 1px solid gray;zoom:50%;"/>
 

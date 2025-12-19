@@ -728,7 +728,7 @@ Steps to update an existing request in ServiceNow:
     2. **SysId**, **updateRecordFields**, **updatedShortDescription**, and **updatedDescription** – Entity nodes for updating the request details.
     3. **prepareUpdatePayloadScript** – A bot action script to update an incident in an external integration. Click the **Plus** icon to expand to view the prepareUpdatePayloadScript bot action component properties.
     4. **updateRequestService** – A bot action service to update a request in an external integration. Click the **Plus** icon to expand to view the updateRequestService bot action component properties.  
-    <img src="../images/servicenow-tem-img28.png" alt="updateRequestScript bot action component properties" title="pupdateRequestScript bot action component properties" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/servicenow-tem-img28.png" alt="updateRequestScript bot action component properties" title="updateRequestScript bot action component properties" style="border: 1px solid gray;zoom:50%;"/>
 
     5.  **updateRequestMessage** – A message node with script to display responses for various scenarios. 
 

@@ -217,6 +217,7 @@ For technical stakeholders and a detailed evaluation, you can click to expand th
 </table>
 
 ### Partial Agent Performance KPIs Exclude: 
+
 CSAT integration, agent occupancy monitoring, agent state distribution, and playbook adherence tracking.
 
 ### Bottom Line for Decision Making

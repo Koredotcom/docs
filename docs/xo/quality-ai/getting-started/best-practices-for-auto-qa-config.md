@@ -50,7 +50,7 @@ The following table describes the best practices that are based on - By Question
 
 <li>Minimize the use of specific agent names in configurations.</li>
 
-<li>Use [Agent Name] as a placeholder where the agent references themself or any other agents.
+<li>Use [Agent Name] as a placeholder where the agent references themselves or any other agents.
 <p>
 <strong>Product Names and Model IDs</strong> </li>
 

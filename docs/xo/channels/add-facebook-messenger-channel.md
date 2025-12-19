@@ -100,7 +100,7 @@ To set up the webhook URL, follow the steps below:
 
 
 6. Select **_messages_**, **_messaging_postbacks_**, **_messaging_optins_**, **_message_deliveries_**, and **_message_reads_** in the **Edit Page Subscriptions** window to select the webhook services.
-<img src="../images/fbm18.png" alt="Facebook details" title="Facebook details" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/fbm18.png" alt="Facebook details" title="Facebook details" style="border: 1px solid gray; zoom:70%;">
 
 
 

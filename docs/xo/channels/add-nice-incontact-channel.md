@@ -121,7 +121,7 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 <img src="../images/nice-in-contact-img17.png" alt="AI Agent page" title="AI Agent page" style="border: 1px solid gray; zoom:60%;">
 
 12. Click the right tick mark next to the created bot. The “Select this bot for this Studio action?” pop-up is displayed.  
-<img src="../images/nice-in-contact-img18.png" alt="Select bot for studio action" title="Select bot for studion action" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/nice-in-contact-img18.png" alt="Select bot for studio action" title="Select bot for studio action" style="border: 1px solid gray; zoom:60%;">
 
 13. Click **Yes** and then click **Close**.
 14. In the Nice inContact Studio, go to file and **Save** the script.  
@@ -143,7 +143,7 @@ To Interact with the AI Agent in Nice Channel, create a chat POC.
 <img src="../images/nice-in-contact-img22.png" alt="My Channels" title="My Channels" style="border: 1px solid gray; zoom:60%;">
 
 5. Click **Create Messaging Channel**, type in the channel name, and click **Create**.  
-<img src="../images/nice-in-contact-img23.png" alt="Create mesaging channel" title="Create messaging channel" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/nice-in-contact-img23.png" alt="Create messaging channel" title="Create messaging channel" style="border: 1px solid gray; zoom:60%;">
 
 6. The created channel is displayed.  
 <img src="../images/nice-in-contact-img24.png" alt="Channel displayed" title="Channel displayed" style="border: 1px solid gray; zoom:60%;">
@@ -239,7 +239,7 @@ You can use the generated **Point of Contact** link to test the AI Agent.
 ### Step 4 (for Legacy Chat): Enabling the Agent Transfer
 
 1. In the Nice Studio > Chat Script, right-click the **Reqagent** action.  
-<img src="../images/nice-in-contact-img40.png" alt="Chat script - Reqagent" title="Chat script - Reqagent" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/nice-in-contact-img40.png" alt="Chat script" title="Chat script" style="border: 1px solid gray; zoom:60%;">
 
 2. Under the **Properties** section, in the **TargetAgent** dropdown, select the user/group to route the agent request.  
 <img src="../images/nice-in-contact-img41.png" alt="Select user/group to route request" title="Select user/group to route request" style="border: 1px solid gray; zoom:60%;">

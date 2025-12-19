@@ -781,7 +781,7 @@ Output:
 {
 "category": "Category 2",
 "fulfillment_type": "system_intent",
-"winning_intents": ["NoIntent_Indentified"]
+"winning_intents": ["NoIntent_Identified"]
 }
 ```
 
@@ -884,7 +884,7 @@ Output:
 
 !!! note
 
-    When an AI Agenthas PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input isn't available for intent identification, which may impact the model's ability to recognize user intents accurately.
+    When an AI Agent has PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input isn't available for intent identification, which may impact the model's ability to recognize user intents accurately.
 
 ## XO GPT - Model Building Process
 
@@ -951,7 +951,7 @@ We evaluate various community models that are suitable for response generation a
   <tr>
    <td><strong>Fine Tuning type</strong>
    </td>
-   <td>How the finetuning is done.
+   <td>How the fine-tuning is done.
    </td>
    <td>PEFT-QLoRA
    </td>

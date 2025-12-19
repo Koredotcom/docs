@@ -134,7 +134,7 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
   "lname": "this is demo case",
   "userInfo": {
     "_id": "u-fd371c0a-3168-5a02-83dd-f4ba5597xxxx",
-    "name": "shravan",
+    "name": "john",
     "emailId": "uxoloacl@mailinator.com"
   },
   "accountId": "{{accountId}}",

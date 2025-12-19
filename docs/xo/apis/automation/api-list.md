@@ -25,7 +25,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Install Sample Bot](./install-sample-bot.md) | To install a sample agent. | NA  | Bot Definition > Bot Create |
 | [Bot Export](./bot-export.md) | To export a bot definition and all associated components. | Bot Export | Bot Definition > Bot Export |
 | [Bot Export – Status](./bot-export-status.md) | To get the status of the Bot Export request and also provides the download link of the export copy after the export is completed. | Bot Export | Bot Definition > Bot Export |
-| [Enable Channel](./channel-enablement.md) | To enable or update a channel for an AI Agent. | NA  | Channel Manasagement |
+| [Enable Channel](./channel-enablement.md) | To enable or update a channel for an AI Agent. | NA  | Channel Management |
 | [Add and Enable a New Language](./add-enable-new-language.md) | To add and enable a new language for an AI Agent. | Languages Configuration. | API Scopes > Language Settings |
 | [Enable an existing Language](./enable-existing-language.md) | To enable an [existing language](../../app-settings/language-management/building-multi-language-bots.md) for an AI Agent. | Languages Configuration. | API Scopes > Language Settings |
 | [Disable an existing Language](./disable-existing-language.md) | To disable an existing language for an AI Agent that is currently enabled. | Languages Configuration. | API Scopes > Language Settings |

@@ -134,6 +134,7 @@ Returns details of the newly created session, which are required for managing an
 
 
 #### Sample Response 
+
 ```json
 {
   "session": {

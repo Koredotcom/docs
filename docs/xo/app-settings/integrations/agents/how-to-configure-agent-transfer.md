@@ -127,11 +127,11 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 5. Agent receives a notification about this on the livechat.
 
-    <img src="../images/configure agent-transfer-img9-at-chat2.png" alt="agent recieves chat notification" title="agent recieves chat notification" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/configure agent-transfer-img9-at-chat2.png" alt="agent receives chat notification" title="agent receives chat notification" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Now, the connection between the agent and the user has been established, and the conversation continues.
 
-    <img src="../images/configure agent-transfer-img10-at-chat3.png" alt="conneciton established and conversation continues" title="conneciton established and conversation continues" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/configure agent-transfer-img10-at-chat3.png" alt="connection established and conversation continues" title="connection established and conversation continues" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## Events

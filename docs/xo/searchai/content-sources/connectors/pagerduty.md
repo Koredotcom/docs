@@ -67,9 +67,9 @@ To enable OAuth authentication, register an app with PagerDuty.
     * Description - Brief description of the app. 
     * Functionality - Select OAuth 2.0.
     * Redirect URL - Select one of the following URLs. 
-        * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-        * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-        * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+        * JP Region Callback URL:`https://jp-bots-idp.kore.ai/workflows/callback`
+        * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+        * Prod Callback URL: `https://idp.kore.com/workflows/callback`
     * Permission Scope - Enable **Read Access** for the following.
         * Escalation Policies
         * Schedules
