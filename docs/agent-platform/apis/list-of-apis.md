@@ -28,8 +28,8 @@ The following APIs let users interact with agents and manage sessions.
 | Use Cases   | APIs    |
 |--------|----------|
 | Import a new tool.     |  [Import a New Tool API](apis-list/import-a-new-tool.md){:target="_blank"} |
-| Import new configurations, datasets, or updates into an existing tool.      |   [Import to an Existing Tool API](apis-list/import-to-an-existing-tool.md){:target="_blank"} |
-| Export an existing tool's configuration and associated data, including its flow, for backup, sharing, or reuse.      | [Export a Tool API](apis-list/export-a-tool.md){:target="_blank"} |
+| Import new configurations, datasets, or updates into a tool.      |   [Import to an Existing Tool API](apis-list/import-to-an-existing-tool.md){:target="_blank"} |
+| Export a tool's configuration and associated data, including its flow, for backup, sharing, or reuse.      | [Export a Tool API](apis-list/export-a-tool.md){:target="_blank"} |
 | Deploy a specific tool into an environment. | [Deploy a Tool API](apis-list/deploy-a-tool.md){:target="_blank"} |
 | Undeploy a specific tool from an environment. | [Undeploy a Tool API](apis-list/undeploy-a-tool.md){:target="_blank"} |
 
