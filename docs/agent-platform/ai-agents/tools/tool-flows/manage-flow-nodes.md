@@ -421,7 +421,3 @@ When a flow includes parallel branches, the Debug Logs panel helps you trace eac
 * All branches run at the same time, but logs help you follow what happened in each path.
 * The flow waits for all parallel branches to complete before moving to the next step.
 * End nodes from all branches are tracked, and their outputs are combined before passing to the next node. 
-
-
-
-

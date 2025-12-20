@@ -32,9 +32,8 @@ To view the list of guardrails:
 
 2. In the left menu, select **Manage guardrails**. The list of all pre-deployed guardrails is displayed.
 
+<hr/> 
 
-## Related Links
+ **Related resource**
 
 * [Enable Scanners](./enable-a-scanner.md) - Enable guardrails in your Agentic app or Tool.
-
-

@@ -54,9 +54,9 @@ The exported package includes the following JSON files encapsulating the tool’
 
 You can view the file name in the archive.
 
-<hr>
-
-## Related Links
+<hr/> 
+ 
+ **Related resources** 
 
 * [Import a tool](./import-a-tool.md){:target="_blank"} - Create a tool by importing configurations or add it as a version to an existing tool.
 * [Deploy a tool](./deploy-a-tool.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for tool integration.

@@ -185,10 +185,3 @@ Clicking each row on the **Custom scripts** tab opens a panel on the right that 
 ### Email Notifications
 
 Billing and credit calculation emails for custom scripts notify users about credit usage, negative credits threshold breaches, and deployment or undeployment events. Deployment notifications also include the API endpoint access details.
-
-
-
-
-
-
-

@@ -20,4 +20,3 @@ You can undeploy the model if it's no longer in use. Undeploying the model will 
 ## Delete the Model
 
 You can delete an undeployed model. Deleting the model will remove all the associated data. Click **Proceed to delete** on the Configurations page and follow the on-screen instructions.
-

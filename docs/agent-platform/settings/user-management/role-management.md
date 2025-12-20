@@ -2114,8 +2114,10 @@ Deleting the assigned users removes their association with the role you want to 
 Like a system role, you can duplicate a custom role, which copies the name, role type, and configurations for permissions and access. Follow the steps mentioned [here](../user-management/role-management.md/#duplicate-system-role){:target="_blank"} to complete the process for a custom role.
 <img src="../images/duplicate-custom-role.png" alt="duplicate custom role" title="duplicate custom role" style="border: 1px solid gray; zoom:80%;">
 
-## Related Information
+<hr/> 
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-* **Users Management** - [Learn more](../user-management/users.md){:target="_blank"} about managing users in your account.
-* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
+ **Related resource**
+
+* [Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Users Management](../user-management/users.md){:target="_blank"} - about managing users in your account.
+* [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} - about tracking events and user activity in your account.

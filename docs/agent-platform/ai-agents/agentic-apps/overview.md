@@ -92,9 +92,9 @@ A Banking Assistant built as an Agentic App demonstrates how multiple specialize
 
 This approach ensures an organized, automated, and scalable banking solution.
 
-<hr>
-
-### Related Links
+<hr/> 
+ 
+ **Related resources** 
 
 * [About AI Agents](../overview.md)
 * [Supervisor Pattern](../supervisor.md)

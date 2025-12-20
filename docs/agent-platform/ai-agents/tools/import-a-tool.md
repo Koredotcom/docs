@@ -77,7 +77,9 @@ The import may fail due to an incompatible tool version, a corrupt file, an inte
 
 You can also import a tool as a version of the parent tool to create and test different in-development versions. [Learn more](../tools/import-a-tool-as-a-version.md){:target="_blank"}.
 
-## Related Links
+<hr/> 
+ 
+ **Related resources** 
 
 * [Create a Tool](../tools/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
 * [Export a Tool](../tools/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.

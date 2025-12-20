@@ -498,6 +498,8 @@ When **SSO is disabled**, the user is taken through the default sign-in flow (em
 
 As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-party provider. However, if your SSO security system fails or you forget your SSO credentials for your IDP, you can log into Agent Platform using either email sign-in or your default SSO provider. 
 
-## Related Information
+<hr/> 
+
+ **Related resource**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.

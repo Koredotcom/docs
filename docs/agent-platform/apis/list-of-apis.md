@@ -49,4 +49,3 @@ The following APIs let users interact with agents and manage sessions.
 |--------|----------|
 |   Deploy predefined guardrails.     |  [Deploy Guardrails API](apis-list/deploy-guardrails.md){:target="_blank"}       |
 | Undeploy predefined guardrails.     |   [Undeploy Guardrails API](apis-list/undeploy-guardrails.md){:target="_blank"}       |
-
