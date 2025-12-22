@@ -1,4 +1,4 @@
-# Nodes Overview
+# About Nodes
 
 Nodes are the building blocks of a workflow. Each node performs a specific action—processing data, making decisions, or integrating with external systems. By connecting nodes, you can design automated flows that handle complex tasks from start to finish.
 
