@@ -89,8 +89,8 @@ To register your BotKit SDK with the Kore.ai XO Platform, you will need to creat
 
 To configure the BotKit SDK settings, you will need to:
 
-* Copy the **Client ID**, for example, cs-6e5eb411-XXXX-XXXX-9ba2-ccc748d4f719.
-* View, and then copy the **Client Secret**, for example, dTTmuTOgs8SOXXXXXXXXouE0EPy28fXojOJWedOEF6s=.
+* Copy the **Client ID**, for example, `cs-6e5eb411-XXXX-XXXX-9ba2-ccc748d4f719`.
+* View, and then copy the **Client Secret**, for example, `dTTmuTOgs8SOXXXXXXXXouE0EPy28fXojOJWedOEF6s=`.
 
 ## Publishing the Assistant
 
