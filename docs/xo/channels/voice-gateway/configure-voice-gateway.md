@@ -20,8 +20,7 @@ Steps to buy a new phone number:
     2. Select either the **Local** or **Toll-Free Number** option.
     3. Select the **State**.
     4. Enter the **Area Code**.
-    5. After configuring the fields, Contact Center AI displays the monthly fee and the operational charge per minute.  
-        <img src="../images/get-new-phone-number-details.png" alt="Get New Phone Number Details" title="Get New Phone Number Details" style="border: 1px solid gray; zoom:70%;">
+    5. After configuring the fields, Contact Center AI displays the monthly fee and the operational charge per minute. 
 
 2. Configure an available number with the following steps:
 
@@ -41,24 +40,19 @@ Steps to buy a new phone number:
 
 Steps to attach a flow to the phone number:
 
-1. Select **+ Attach Flow**. Hovering over the pie icon displays **No Flow Attached**.  
-    <img src="../images/attach-a-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:80%;">
+1. Select **+ Attach Flow**. Hovering over the pie icon displays **No Flow Attached**.
 
-2. Select a **Start Flow** you want to add to this number and select **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).  
-    <img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:80%;">
+2. Select a **Start Flow** you want to add to this number and select **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 
-3. The attached flow appears. Hovering over the pie icon displays **Configured**.  
-    <img src="../images/flow-is-attached.png" alt="Voice Flow Configured" title="Voice Flow Configured" style="border: 1px solid gray; zoom:80%;">
+3. The attached flow appears. Hovering over the pie icon displays **Configured**.
 
 ### Edit a Phone Number
 
 Steps to edit a previously added phone number:
 
-1. Select **︙** and then select **Update**.  
-    <img src="../images/update-phone-number.png" alt="Update Phone Number" title="Update Phone Number" style="border: 1px solid gray; zoom:80%;">
+1. Select **︙** and then select **Update**.
 
-2. On the **Forward to Phone Number** page, select **Change**.  
-    <img src="../images/change-button.png" alt="Change Button" title="Change Button" style="border: 1px solid gray; zoom:70%;">
+2. On the **Forward to Phone Number** page, select **Change**.
 
 3. Make the necessary edits, and select **Done**. A success confirmation message appears.
 
@@ -68,13 +62,11 @@ Deleting a phone number means stopping all services associated with it. If you r
 
 Steps to delete an existing phone number:
 
-1. Select the **︙**, and select **Delete**.  
-    <img src="../images/delete-phone-number.png" alt="Delete Phone Number" title="Delete Phone Number" style="border: 1px solid gray; zoom:80%;">
+1. Select the **︙**, and select **Delete**.
 
 2. Select **Delete** to confirm your choice.  
 
-3. Alternatively, select **Update**, go to the **Forward to Phone Number** window, and select **Remove**. A success confirmation message appears.  
-    <img src="../images/remove-phone-number.png" alt="Remove Phone Number" title="Remove Phone Number" style="border: 1px solid gray; zoom:80%;">
+3. Alternatively, select **Update**, go to the **Forward to Phone Number** window, and select **Remove**. A success confirmation message appears.
 
     !!! Note
 
@@ -94,8 +86,7 @@ Agent AI supports real-time audio streaming through two primary methods:
 
 ### Steps to configure SIP Trunk
 
-1. Select **Configure SIP Trunk**.  
-    <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;"> 
+1. Select **Configure SIP Trunk**. 
 
 2. On the **Configure SIP Trunk** page, configure the following:  
     1. **Product Selection**: Select the product for SIP Trunk configuration. You can select from the following options:
@@ -118,7 +109,6 @@ Agent AI supports real-time audio streaming through two primary methods:
             <img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;">  
 
         * (Optional) By default, the **E.164 Syntax** is selected. Selecting this option prepends a + before the DID number.  
-        <img src="../images/e-164.png" alt="E-164 Syntax" title="E-164-Syntax" style="border: 1px solid gray; zoom:80%;">  
 
         * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) that route calls to your existing telephone lines. You can configure SIP trunks by entering DID numbers using wildcard patterns (for example, `123*`) to automatically handle multiple similar DIDs without listing each one individually. If two wildcard patterns are configured for different experience flows within an application, and a caller dials a number that matches both patterns, the system triggers the experience flow associated with the pattern that matches the most digits.  
         Example:  
@@ -132,8 +122,7 @@ Agent AI supports real-time audio streaming through two primary methods:
 
             Configure the termination URL on your SIP trunk to enable outbound calls.
 
-        * **Option Ping**: If selected, the system checks whether the IP addresses are accessible. This option is selected by default.  
-        <img src="../images/option-ping.png" alt="Option Ping" title="Option Ping" style="border: 1px solid gray; zoom:80%;">  
+        * **Option Ping**: If selected, the system checks whether the IP addresses are accessible. This option is selected by default.   
 
         * Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
             * X-AgentName: {{agentName}}
@@ -155,7 +144,7 @@ Agent AI supports real-time audio streaming through two primary methods:
         **Select the SIP Trunk connection method**: Select the method based on your third-party vendor’s requirements (<a href="#siprec">SIPREC</a> or <a href="#websocket">WebSocket</a>). 
 
         * <span id="siprec">If you select **SIPREC**</span>:
-            * **SIP URI**: This is a pre-configured field. A copy button allows you to copy the SIP URIs.
+            * **SIP URI**: This is a pre-configured field. A copy option lets you to copy the SIP URIs.
             * **Network**: To configure the Network, you can select one of the following:
                 * Under **List of IP Address**, type the values for **Incoming IP Address** in the textbox.
                 * Under **Domain Name**, provide the following:
@@ -189,30 +178,24 @@ Agent AI supports real-time audio streaming through two primary methods:
             * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API. 
             * **Call control parameters**: Define the parameters to control the call behavior. Select **Add Parameter**, enter the **Parameter Name** and **Value**, and select **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
 
-3. Select **Next**.  
-    <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:70%;">
+3. Select **Next**.
 
 4. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options. 
 5. Select **Save**.  
-    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:70%;">  
 
     Wait for up to 10 minutes after saving for the IPs to be whitelisted.  
-    <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
-6. The selected information appears on the SIP Numbers tab.  
-<img src="../images/sip-trunk-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
+6. The selected information appears on the SIP Numbers tab.
 
 ### Attach a Flow
 
 Steps to attach a flow to the SIP Number:
 
 1. Select **+ Attach Flow**. Hovering over the link icon displays **No Flow Attached**.  
-    <img src="../images/attach-sip-flow.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:80%;">
 
 2. Select a **Start Flow** to add to individual numbers and select **Done**. You can add a start flow by selecting **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 
 3. The attached flows appear. A pie icon appears under the attached flows. Hovering over the pie icon displays **Configured**.  
-    <img src="../images/sip-flow-attached.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
@@ -223,15 +206,10 @@ Steps to attach a flow to the SIP Number:
 Steps to edit a previously added SIP number:
 
 1. Select **︙** and then select **Update**.  
-    <img src="../images/update-sip-number.png" alt="Update Button SIP Number" title="Update Button SIP Number" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the necessary changes on the Transfer from IVR page, and select **Next**.  
-    <img src="../images/edit-sip-transfer.png" alt="Edit SIP Number" title="Edit Button SIP Number" style="border: 1px solid gray; zoom:70%;">
 
-3. Make the necessary changes on the Forward to Phone Number page, and select **Save**.  
-    <img src="../images/edit-forward-to-phone-number-page.png" alt="Edit Forward to Phone Number" title="Edit Forward to Phone Number" style="border: 1px solid gray; zoom:70%;">
-
-4. A success confirmation message appears.
+3. Make the necessary changes on the Forward to Phone Number page, and select **Save**. A success confirmation message appears.
 
 ### Delete a SIP Number
 
@@ -240,12 +218,8 @@ Deleting a SIP number means stopping all services associated with it.
 Steps to delete a SIP number:
 
 1. Select **︙** and then select **Delete**.  
-    <img src="../images/delete-sip-number.png" alt="Delete Button SIP" title="Delete Button SIP" style="border: 1px solid gray; zoom:80%;">
 
 2. On the pop-up, select **Delete** to confirm your choice.  
-    <img src="../images/delete-confirmation-sip.png" alt="Delete SIP Number" title="Delete SIP Number" style="border: 1px solid gray; zoom:80%;">  
-    
-    The sip number is deleted.
 
 ### Best Practices
 
@@ -269,8 +243,7 @@ The "Answer Call on Bot Response" functionality controls the timing of call answ
 
 **Location**: App-level settings
 
-AI for Service > App Settings > Advanced Settings > System Settings  
-<img src="../images/delayed-first-response.png" alt="System Settings" title="System Settings" style="border: 1px solid gray; zoom:70%;">
+AI for Service > App Settings > Advanced Settings > System Settings.  
 
 * **Default Value**: `false` (disabled)
 
@@ -340,8 +313,7 @@ Provides explicit error handling for various types of system failures that can o
 
 **Location**: Experience Flow → Automation Node → OnError Path
 
-AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Error Handling  
-<img src="../images/error-handling.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
+AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Error Handling.  
 
 * **Trigger Events**: System-detected errors and exceptions.  
 * **Response Actions**: Configurable error handling workflows.
@@ -471,7 +443,7 @@ Steps to configure Voice Preferences:
         3. Fallback TTS Configuration (Advanced Setting)
 2. Select **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.  
 
-    <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
@@ -541,7 +513,7 @@ The following languages and dialects are supported:
 
 #### Multi-Language App Setup
 
-This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call is routed) and the **Dialog Flow** (how the AI Agent responds).
+This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call routes) and the **Dialog Flow** (how the AI Agent responds).
 
 **Understanding the Use Case**
 
@@ -556,7 +528,6 @@ Before you can use a language in an APP, you need to enable it on the platform.
 1. Log to AI for Service and select the **Product Switcher**.
 2. Go to **Settings** > **Language Management**.
 3. Select **+ Add Language** and select the languages your AI Agent supports, such as English, Hindi, and Telugu.  
-    <img src="../images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
 
 **Step 2: Configure the Flow**
 
