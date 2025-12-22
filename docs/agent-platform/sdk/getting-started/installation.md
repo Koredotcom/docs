@@ -73,7 +73,7 @@ Before building applications, configure access to the AgenticAI platform.
 
 ### 1. Access the Platform
 
-Visit [AgenticAI Platform](https://agent-platform.kore.ai/) to:
+Visit AgenticAI Platform to:
 
 1. **Configure LLM Models** - Set up your preferred models (GPT-4, Claude, etc.)
 2. **Create Application** - Create a new app on the platform
