@@ -1,6 +1,6 @@
-# Real-time Voice Interaction between AI for Service and Agent Platform
+# Real-time Voice Interaction between (In)Business Customer Experience and (In)Agent Platform
 
-When integrating a voice channel with the Agent Platform through the Automation Node in AI for Service, two modes of voice interaction are available:
+When integrating a voice channel with the (In)Agent Platform through the Automation Node in (In)Business Customer Experience, two modes of voice interaction are available:
 
 * Real-Time Voice
 * ASR/TTS 
@@ -16,48 +16,48 @@ Real-Time Voice enables natural, conversational interaction using multi-modal la
 ### How It Works
 
 
-* When Real-Time Voice is enabled in AI for Service, it must also be enabled in the Agent Platform for the selected Agentic App. 
-* The Agent Platform will use the configured real-time voice model to process user audio and generate audio responses.
-* If Real-Time Voice isn't enabled on the Agent Platform side, the system can't process audio requests correctly and will return errors.
-* When Real-Time Voice is disabled in the Automation Node on the AI for Service side, ASR/TTS will be used by default for audio responses. 
+* When Real-Time Voice is enabled in (In)Business Customer Experience, it must also be enabled in the (In)Agent Platform for the selected Agentic App. 
+* The (In)Agent Platform will use the configured real-time voice model to process user audio and generate audio responses.
+* If Real-Time Voice isn't enabled on the (In)Agent Platform side, the system can't process audio requests correctly and will return errors.
+* When Real-Time Voice is disabled in the Automation Node on the (In)Business Customer Experience side, ASR/TTS will be used by default for audio responses. 
 
 
 ## TTS Streaming
 
-TTS Streaming provides a hybrid approach in which the agent’s text output is streamed back progressively, and AI for Service converts it to speech using ASR/TTS.
+TTS Streaming provides a hybrid approach in which the agent’s text output is streamed back progressively, and (In)Business Customer Experience converts it to speech using ASR/TTS.
 
 
 ### How It Works
 
 * If real-time voice is disabled, the system defaults to ASR-TTS, that converts text to speech. 
-* Agent Platform uses the text based LLM model to generate the answer and sends it back to the AI for Service Platform, which uses ASR/TTS to convert it to audio and present it to user. 
+* (In)Agent Platform uses the text based LLM model to generate the answer and sends it back to the (In)Business Customer Experience Platform, which uses ASR/TTS to convert it to audio and present it to user. 
 * If TTS streaming is disabled, the system delivers the audio response to the user only after the complete output is generated.
-* When TTS Streaming is turned on, the text output is streamed back to AI for Service as soon as it's generated. This reduces the latency involved in answering user queries. 
-* AI for Service converts streamed text to speech in real time using TTS engines (Deepgram, ElevenLabs).
+* When TTS Streaming is turned on, the text output is streamed back to (In)Business Customer Experience as soon as it's generated. This reduces the latency involved in answering user queries. 
+* (In)Business Customer Experience converts streamed text to speech in real time using TTS engines (Deepgram, ElevenLabs).
 
 
-## Effect of Wait-time Experience Configured in Agent Platform
+## Effect of Wait-time Experience Configured in (In)Agent Platform
 
-The agent platform allows admins to configure the wait-time experience to provide a better experience for users when processing responses is delayed. Note that it's not applicable to real time voice. Learn More.  
+The Platform allows admins to configure the wait-time experience to provide a better experience for users when processing responses is delayed. Note that it's not applicable to real time voice. Learn More.  
 
 
 
-* The wait-time experience configured in Agent Platform is triggered.
-* After the threshold is reached, the Agent Platform sends a filler or system-generated message, as configured.
-* The message is presented to the user via TTS as it's received by AI for Service. (if streaming is enabled).
+* The wait-time experience configured in (In)Agent Platform is triggered.
+* After the threshold is reached, the (In)Agent Platform sends a filler or system-generated message, as configured.
+* The message is presented to the user via TTS as it's received by (In)Business Customer Experience. (if streaming is enabled).
 
 
 ## Configurations
 
 **For real-time voice interactions**: 
 
-1. Enable Real Time Voice in the AI for Service Automation node. ![Enable Real Time Voice](images/voice/real-time-voice.png "Enable Real time voice")
+1. Enable Real Time Voice in the (In)Business Customer Experience Automation node. ![Enable Real Time Voice](images/voice/real-time-voice.png "Enable Real time voice")
 2. Ensure real-time voice is enabled in the Agentic App, and that an AI model supporting real-time voice is configured for it. ![Enable Real Time Voice](images/voice/enable-voice-ap.png "Enable Real Time Voice")
 
-Note: [Wait Time Experience](../settings/app-configurations.md#waiting-experience) in Agent Platform isn't available for real-time voice interactions. 
+Note: [Wait Time Experience](../settings/app-configurations.md#waiting-experience) in (In)Agent Platform isn't available for real-time voice interactions. 
 
 **For TTS:**
 
-1. Disable real-time voice in AI for Service. 
+1. Disable real-time voice in (In)Business Customer Experience. 
 2. Additionally, for streaming the response, enable the TTS Streaming option. ![alt_text](images/voice/tts-streaming.png "image_tooltip")
-3. No special configuration is required on the Agent Platform side.
+3. No special configuration is required on the (In)Agent Platform side.

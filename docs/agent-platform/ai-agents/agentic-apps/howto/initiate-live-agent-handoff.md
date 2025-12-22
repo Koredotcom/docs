@@ -2,7 +2,7 @@
 
 The Agent Handoff Event in Agentic Apps enables smooth transfer of conversations from an AI agent to a live agent when required. This feature is particularly useful in scenarios where user queries require personalized support or the user explicitly asks for assistance.
 
-The Agent Handoff event can initiate live agent handoff only via the (In)Business Customer Experience platform. This event-driven handoff is managed through the Automation Node in AI for Service, which facilitates the integration between the two platforms. When the Agent Handoff Event is triggered, the (In)Agent Platform sends required information to the specified automation node within the (In)Business Customer Experience platform's flows. The automation node subsequently processes the agent transfer request in accordance with the transfer connection rules established for the node.
+The Agent Handoff event can initiate live agent handoff only via the (In)Business Customer Experience platform. This event-driven handoff is managed through the Automation Node in (In)Business Customer Experience, which facilitates the integration between the two platforms. When the Agent Handoff Event is triggered, the (In)Agent Platform sends required information to the specified automation node within the (In)Business Customer Experience platform's flows. The automation node subsequently processes the agent transfer request in accordance with the transfer connection rules established for the node.
 
 This document provides step-by-step instructions for configuring and invoking a live-agent handoff using the Automation Node in the (In)Business Customer Experience app. 
 

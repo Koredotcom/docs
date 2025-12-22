@@ -1,6 +1,6 @@
 # Managing Knowledge Tools
 
-A Knowledge Tool connects your Agentic application to a **Search AI application(AI for Service)** within the **same workspace.** This integration enables the agent to retrieve accurate, context-aware responses by leveraging indexed content.
+A Knowledge Tool connects your Agentic application to a **Search AI application** within the **same workspace.** This integration enables the agent to retrieve accurate, context-aware responses by leveraging indexed content.
 
 To manage these tools, go to the *Knowledge* page of your Agentic App. This page offers a structured view of all knowledge bases connected to the app, providing clear visibility into their total count, associated agents, and easy access from one central location.
 

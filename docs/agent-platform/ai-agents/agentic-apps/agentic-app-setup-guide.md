@@ -9,7 +9,7 @@ The Agentic App setup process consists of the following phases:
 1. **[Foundation Phase](#1-foundation-phase)**: Essential setup steps to get your workspace and core components ready.
 2. **[Configuration Phase](#2-configuration-phase)**: Customize your app with agents, knowledge, and tools.
 3. **[Quality Assurance Phase](#3-quality-assurance-phase)**: Ensure your app is safe, reliable, and performs well.
-4. **[Deployment Phase](#4-deployment-phase)**: Deploy your app and take it live by integrating it with other products, such as AI for Service and AI for Work.
+4. **[Deployment Phase](#4-deployment-phase)**: Deploy your app and take it live by integrating it with other products, such as (In)Business Customer Experience and (In)Business Productivity.
 
 ### 1. Foundation Phase
 

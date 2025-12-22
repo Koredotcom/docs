@@ -34,7 +34,7 @@ Configure the delegation rules for all the agents in the app:
     
     For example, the following agent can delegate tasks to three specialized agents—Finance Assistant, HR Assistant, and IT Assistant, depending on the nature of the task.  ![Delegation Rules](images/network/example.png "Delegation Rules")
 
-    **Note**: When an event is selected as the delegation rule, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent through AI for Service, the delegation will trigger that specific behavior.
+    **Note**: When an event is selected as the delegation rule, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent through (In)Business Customer Experience, the delegation will trigger that specific behavior.
 
 ## Passing Information Between Agents
 
