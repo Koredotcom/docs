@@ -607,7 +607,7 @@ Key Updates:
 * Supports transitions to both orphan nodes and sub-dialogs.
 * Ensures full backward compatibility with existing tool configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md){:target="_blank"}
 
 <font size="4">Agent Transfer</font>
 
@@ -669,7 +669,7 @@ Key changes
 * Scripts execution order in a defined flow: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
 * Support for app functions in addition to content, context, and environment variables in the node level pre and post-processor scripts.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md)
 
 
 <hr>
