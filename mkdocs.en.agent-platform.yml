@@ -123,7 +123,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Introduction to Agent Platform: getting-started/introduction.md
+    - Introduction to (In)Agent Platform: getting-started/introduction.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
@@ -225,12 +225,12 @@ nav:
         - Export App and Agents: ai-agents/agentic-apps/export.md    
       - Audit Logs: ai-agents/agentic-apps/audit-logs.md
     - How Tos:
-      - Share Contextual Metadata with AI for Service: ai-agents/agentic-apps/howto/share-context-with-AIforService.md
-      - Pass Contextual Data from AI for Service to Agent Platform: ai-agents/agentic-apps/howto/pass-data-from-AIforService-AgentPlatform.md
+      - Share Contextual Metadata with (In)Business Customer Experience: ai-agents/agentic-apps/howto/share-context.md
+      - Pass Contextual Data from (In)Business Customer Experience to (In)Agent Platform: ai-agents/agentic-apps/howto/pass-data.md
       - Pass Attachments to External Systems: ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems.md
       - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
       - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
-      - Real-time Voice Interaction between AI for Service and Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
+      - Real-time Voice Interaction between (In)Business Customer Experience and (In)Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
 
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
@@ -335,7 +335,7 @@ nav:
       - About Tools APIs: apis/overview.md
       - APIs List: apis/list-of-apis.md
   - SDK:
-      - About Agent Platform SDK: sdk/index.md
+      - About (In)Agent Platform SDK: sdk/index.md
       - Installation: sdk/getting-started/installation.md
       - Quick Start: sdk/getting-started/quickstart.md
       - Core Concepts: sdk/getting-started/concepts.md
