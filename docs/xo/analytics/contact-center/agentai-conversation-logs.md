@@ -1,3 +1,6 @@
+
+# Conversation Logs
+
 The **Conversation Logs** is a library of all conversations agents have with their customers. It lets you access and review past interactions, view agent names, copy conversation identifiers, view the overall sentiment, access voice call recordings, and view the overall widget feedback. You can also compare edited conversation summaries with their original versions. Additionally, you can create, edit, delete, and save search filters, and set a default filter.
 
 ## Accessing the Conversation Logs

@@ -67,8 +67,7 @@ DialogGPT enables:
 
 #### **What models are supported by DialogGPT?**
 
-DialogGPT supports Open AI GPT-4o and Azure OpenAI GPT-4o models. Future updates plan to include models like Kore.ai XO GPT, Commercial, and Custom models.
-
+DialogGPT supports Pre-built, custom, and XO GPT models. For the latest supported models, see [Model Configurations](dgpt-conversation-orchestration.md).
 
 #### **Is DialogGPT secure for enterprise use?**
 
@@ -90,9 +89,7 @@ Rephrasing is crucial in DialogGPT's ability to understand and respond to ambigu
 Yes, small talk is treated as conversational intent. DialogGPT seamlessly integrates small talk, making the Apps feel less robotic and more human-like, enhancing the user experience.
 
 
-#### **What are the limitations of DialogGPT?**
 
-DialogGPT is evolving, with some features like entity extraction and enhanced response generation planned for Phase 2. Additionally, contextual embeddings for complex scenarios may require domain-specific tuning.
 
 
 #### **Can existing Apps be migrated to DialogGPT?**

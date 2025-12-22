@@ -313,7 +313,22 @@ By default, website preview links are disabled. The following illustration is an
 
 When enabled, define the path to the preview links in the payload in the **Path to the Link (toPreview)** field, if the path is not in the root of the payload. 
 
-For example, in the following code example from an RSS payload, the path to the preview is… “item”: “title”: “U.S. to Boost Refugee Intake by 30,000 by 2017”, “guid”: { “-isPermaLink”: “false”, “#text”: “SB12418904751422433479504581245034032986752” }, “link”: “https://www.wsj.com/articles/john-kerry-says-u-s-to-admit-30-000-more-refugees-in-next-2-years-1442768498?mod=fox_australian”
+
+
+The following example shows an RSS payload where the preview link is nested under `item.link.` 
+
+``` json
+{
+  "item": {
+    "title": "Sample article title",
+    "guid": {
+      "-isPermaLink": "false",
+      "#text": "1234567890"
+    },
+    "link": "https://www.example.com/articles/sample-article"
+  }
+}
+```
 
 When **Preview website link content in Post** is enabled, select preview objects such as:
 

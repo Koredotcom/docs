@@ -22,7 +22,8 @@ To define a custom authorization, select **oAuth v2 password grant** in the **Au
 
 ## Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 
@@ -116,7 +117,7 @@ By default, authorization fields are configured as part of the header of the tas
 To define the token URL, follow the below steps:
 
 1. In the **Token URL** field, optionally define a URL that can be used to test the authentication settings from the XO Platform  before you deploy the task with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example, 
-<code>http://{tenant}.someCompany.com/test/{{tokenId}}</code>
+<code>http://{tenant}.example.com/test/{{tokenId}}</code>
 
 2. In the **Token URL Method** field, select the HTTP request method type for the **Token URL**. One of **PUT**, **POST**, **PATCH**, **DELETE,** and **GET**.
 3. In the **Token URL Content Type** field, select the content type expected from the **Token URL**. One of: **JSON, RSS, XML, URL Encoded JSON, CSV, Text, Twitter Encoded JSON, Multipart/Form-data,Multipart/Related**, or **Oracle ADF**.

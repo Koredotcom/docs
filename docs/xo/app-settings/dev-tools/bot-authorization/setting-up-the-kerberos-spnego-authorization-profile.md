@@ -79,7 +79,7 @@ To configure the Kerberos SPNEGO authorization profile, define the fields descri
    </td>
    <td>This is the URL used to obtain end-user authorization for the XO Platform to access the web application or web service using the access token. The XO Platform accepts a valid URL with a maximum length of 3000 characters. This field is required. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the Authorization URL, for example,
     <br>
-     https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
+     https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
     <br>
     or
     <br>
