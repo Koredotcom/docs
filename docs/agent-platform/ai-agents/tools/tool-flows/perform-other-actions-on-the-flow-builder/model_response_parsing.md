@@ -23,7 +23,7 @@ For example, let's say you're asking for the scientific name of a flower. You ca
 
 This schema guides the model to return its response in a structured JSON format that matches these keys.
 
-<img src="../images/define_response_schema.png" alt="Ddefine response schema Variables" title="Define response schema" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/define_response_schema.png" alt="Define response schema Variables" title="Define response schema" style="border: 1px solid gray; zoom:80%;">
 
 #### **Step 2: Automatic Parsing of the Model Response**
 
@@ -46,7 +46,7 @@ The stored context values can now be used in any subsequent nodes. For example: 
 
 You no longer need to re-parse the response or write custom code to extract these values—these values are already accessible and ready for use.
 
-<img src="../images/resuse_keys.png" alt="resuse keys" title="resuse keys" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/reuse_keys.png" alt="reuse keys" title="reuse keys" style="border: 1px solid gray; zoom:80%;">
 
 #### **Step 5: View Structured Output During Execution**
 

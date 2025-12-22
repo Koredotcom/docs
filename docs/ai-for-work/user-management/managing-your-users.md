@@ -1,12 +1,12 @@
 # Managing Your Users
 
-You can manage users in (In)Business Productivity **Admin Console** from the **User Management > Users section**.
+You can manage users in **Admin Console** from the **User Management > Users section**.
 
 All users across your network accounts are listed here.  
 
 <img src="../images/users.png" alt="users" title="users" style="border: 1px solid gray; zoom:80%;"> 
 
-The following list describes the columns displayed for each (In)Business Productivity user.
+The following list describes the columns displayed for each user.
 
 <table>
   <tr>
@@ -33,15 +33,15 @@ The following list describes the columns displayed for each (In)Business Product
    <td>Displays the user status. 
 <ul>
 
-<li>Active – The user is active and can interact with other users.</li>
+<li>Active: The user is active and can interact with other users.</li>
 
-<li>Invited – Users invited by the Admin, but who are yet to join or accept the invitation.</li>
+<li>Invited: Users invited by the Admin, but who are yet to join or accept the invitation.</li>
 
-<li>Suspended – The user is suspended by an administrator. The user cannot log on to (In)Business Productivity. The status of a Suspended user can be Activated anytime by admin.</li>
+<li>Suspended: The user is suspended by an administrator. The user cannot log in. The status of a Suspended user can be Activated anytime by admin.</li>
 
-<li>Removed – A user deleted by an admin enters a "soft delete" state for 60 days, after which they are permanently deleted. During this period, the user's status can be changed back to "Active."</li>
+<li>Removed: A user deleted by an admin enters a "soft delete" state for 60 days, after which they are permanently deleted. During this period, the user's status can be changed back to "Active."</li>
 
-<li>Remove Permanently – Available only for users in the "Removed" state, this action deletes them permanently from the list.
+<li>Remove Permanently: Available only for users in the "Removed" state, this action deletes them permanently from the list.
 </li>
 </ul>
    </td>
@@ -74,17 +74,18 @@ From the user details page, you can access the following fields:
 
 <img src="../images/user-details.png" alt="user-details" title="user-details" style="border: 1px solid gray; zoom:80%;"> 
 
-## **User Roles Management**
+## User Roles Management
 
 The User Roles feature allows administrators to control user access through predefined and custom role assignments. The system includes two default roles (Admin and Member) and supports the creation of custom roles with specific permissions and visual identifiers.
 
-### **Modifying Existing Roles**
+### *Modifying Existing Roles
 
 1. Click on the existing role you want to modify.
 2. Select the desired role.
 3. Confirm changes.
 
-### **Creating Custom Roles**
+### Creating Custom Roles
+
 1. Click **Manage role** from the user management interface.
 2. Select **Add Role** or equivalent option to create a new role.
 3. **Role name**: Enter a descriptive name for the custom role. Use clear, meaningful names that reflect the role's purpose 

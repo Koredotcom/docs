@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Large Language Models (LLMs) have revolutionized conversation summarization by leveraging deep learning to extract key details from dialogues, generating concise, context-aware summaries. These models integrate techniques like abstractive summarization, context analysis, and sentiment detection to transform lengthy interactions into actionable insights, proving invaluable in domains such as customer service, healthcare, and IT support. However, challenges like ambiguous language, privacy concerns, and balancing brevity with completeness remain. Kore.ai's XO GPT addresses these by fine-tuning LLMs to produce accurate, secure, and domain-specific summaries that align with conversational flow and industry needs.
+Large Language Models (LLMs) have revolutionized conversation summarization by leveraging deep learning to extract key details from dialogues, generating concise, context-aware summaries. These models integrate techniques like abstractive summarization, context analysis, and sentiment detection to transform lengthy interactions into actionable insights, proving invaluable in domains such as customer service, healthcare, and IT support. However, challenges like ambiguous language, privacy concerns, and balancing brevity with completeness remain. The XO GPT addresses these by fine-tuning LLMs to produce accurate, secure, and domain-specific summaries that align with conversational flow and industry needs.
 
 ### Challenges with Commercial Models
 
@@ -320,7 +320,7 @@ We evaluate various community models that are suitable for the objective of resp
   <tr>
    <td><strong>Fine Tuning type</strong>
    </td>
-   <td>How the finetuning is done.
+   <td>How the fine-tuning is done.
    </td>
    <td>peft-qlora
    </td>
@@ -721,7 +721,7 @@ We evaluate various community models that are suitable for the objective of resp
   <tr>
    <td><strong>Fine Tuning type</strong>
    </td>
-   <td>How the finetuning is done.
+   <td>How the fine-tuning is done.
    </td>
    <td>peft-qlora
    </td>

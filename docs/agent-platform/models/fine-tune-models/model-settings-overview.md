@@ -3,7 +3,6 @@
 The model overview page displays real-time progress of the Fine-tuned models. 
 
 To access the model’s overview page, log in to your account and click **Model Hub** under (In)Agent Platform Modules.
-<img src="../images/model_hub.png" alt="access model hub" title="access model hub" style="border: 1px solid gray; zoom:75%;">
 
 On the Fine-tuned models tab, click the desired model to view the following information:  
 <img src="../images/model-overview.png" alt="Model Overview" title="Model Overview" style="border: 1px solid gray; zoom:60%;">
@@ -22,7 +21,7 @@ On the Fine-tuned models tab, click the desired model to view the following info
 
 * **Training information**: This shows important details like training type, number of training steps, training loss, percentage of validation data, validation loss, training start time, and duration. Click the downward arrows next to the training loss and validation loss fields to see their graphical trends.
 
-* **Test data information**: It indicates the model performance on the test dataset using the BLEU score.
+* **Test data information**: It indicates the model performance on the test dataset using the BiLingual Evaluation Understudy (BLEU) score.
 
 * **Hardware information**: This displays CPU and GPU utilization during fine-tuning.
 

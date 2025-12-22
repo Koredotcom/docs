@@ -5,7 +5,7 @@ Connecting with Weights and Biases (WandB) allows users to link to the platform,
 **To integrate with your Weights and Biases (WandB) account, follow these steps**:
 
 
-1. Click the **Settings** icon on the top navigation bar of the application. The **Integrations** page is displayed.
+1. Click the **Settings** icon on the top navigation bar. The **Integrations** page is displayed.
 
     <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
 

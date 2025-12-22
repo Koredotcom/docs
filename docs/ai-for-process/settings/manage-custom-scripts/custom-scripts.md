@@ -1,25 +1,25 @@
-# Deploy, Execute, and Manage Custom Scripts for Tool Automation
+# Deploy, Execute, and Manage Custom Scripts for workflow Automation
 
-The Agent Platform now allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
+The AI for Process now allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
 
 A powerful script deployment wizard enables users to easily upload, configure, and deploy custom scripts in isolated containers. By leveraging container isolation, this feature enhances security while providing flexibility in configuring runtime and scaling settings.
 
-Once deployed, these scripts can be run via the [API node’s](../../ai-agents//tools//tool-flows/types-of-nodes/api-node.md){:target="_blank"} endpoint when building the tool flow. Additionally, the custom scripts can be embedded in the [Function node](){:target="_blank"} of the tool automation flow and executed when the node flow is run.
+Once deployed, these scripts can be run via the [API node’s](../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"} endpoint when building the workflow. Additionally, the custom scripts can be embedded in the [Function node](){:target="_blank"} of the workflow automation flow and executed when the node flow is run.
 
 
 On the **Manage Custom Scripts** page, admins can upload a complete script project file, including all definitions and logic, without writing any code in the function node. This allows them to seamlessly port their code or project from a local system into the product and start using it immediately.
 
-You can import a custom script with reusable functions and invoke it from anywhere within the platform using a secure API key at the endpoint. This adds flexibility and offers the following benefits to the tools' automation flow:
+You can import a custom script with reusable functions and invoke it from anywhere within the platform using a secure API key at the endpoint. This adds flexibility and offers the following benefits to the workflows' automation flow:
 
-* **Task Automation** – Automate repetitive or complex tasks that would otherwise require manual intervention. 
+* **Task Automation**: Automate repetitive or complex tasks that would otherwise require manual intervention. 
 
-* **Secure API Integration** – Integrate custom scripts into the apps using API endpoints and secure authentication. 
+* **Secure API Integration**: Integrate custom scripts into the apps using API endpoints and secure authentication. 
 
-* **Customization** – Implement custom logic or workflows tailored to unique business needs. 
+* **Customization**: Implement custom logic or workflows tailored to unique business needs. 
 
-* **Data Processing** – Transform, filter, or validate data in a way that aligns with specific operational requirements. 
+* **Data Processing**: Transform, filter, or validate data in a way that aligns with specific operational requirements. 
 
-* **Error Handling** – Create tailored error-checking and fallback mechanisms beyond standard system behavior. 
+* **Error Handling**: Create tailored error-checking and fallback mechanisms beyond standard system behavior. 
 
 
 You can import a script by uploading the file in one of the supported formats, validating it, configuring runtime settings and system resources, and deploying scripts after reviewing errors. 
@@ -41,13 +41,11 @@ The key steps in managing custom scripts are:
 
 To access the custom scripts wizard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Manage Custom Scripts** on the left menu.
-   <img src="../images/access-manage-custom-scripts.png" alt="manage custom scripts" title="manage custom scripts" style="border: 1px solid gray; zoom:75%;">
-
+2. Click **Manage Custom Scripts** on the left menu.
+   
 ## Import and Deploy a Custom Script
 
 To import and add a custom script, follow the steps below:
@@ -112,7 +110,7 @@ To ensure your custom script runs correctly within the platform, follow these gu
 
 **Main Entry Point Required**
 
-Your project must include a `main.py` (for Python) or `main.js` (for JavaScript) at the root directory of the archive file. This file serves as the main entrypoint for the service. Only the functions defined in this file will be exposed for execution via API endpoints or tool integrations.
+Your project must include a `main.py` (for Python) or `main.js` (for JavaScript) at the root directory of the archive file. This file serves as the main entrypoint for the service. Only the functions defined in this file will be exposed for execution via API endpoints or workflow integrations.
 
 **Support for Modular Code**
 
@@ -249,8 +247,7 @@ The next step is to review all the configuration details before deploying the sc
 The following message is displayed when the script deployment progresses, and the status changes to “*Deploying*”.
 <img src="../images/initiated-deployment.png" alt="initiated deployment" title="initiated deployment" style="border: 1px solid gray; zoom:75%;">
  
-Once the script is deployed successfully, the following message is displayed, and the status changes to “*Deployed*”. 
-<img src="../images/deployed-success.png" alt="deployed success" title="deployed success" style="border: 1px solid gray; zoom:75%;">
+Once the script is deployed successfully, a success message is displayed, and the status changes to “*Deployed*”. 
 
 **Email Notification**
 
@@ -560,8 +557,6 @@ To delete, follow the steps below on the **Manage Custom Scripts** page:
 
 A success message is displayed, and the script is permanently removed. 
 
-<img src="../images/delete-script-confirmation.png" alt="script deletion" title="script deletion" style="border: 1px solid gray; zoom:75%;">
- 
 To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
 
 
@@ -721,7 +716,7 @@ To [deploy the script](../manage-custom-scripts/custom-scripts.md/#import-and-de
 
 ## API Keys
 
-Agent Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
+AI for Process provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -797,7 +792,7 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     * In the **Auth Profiles** section, select the required option from the list of configured profiles to enable user authentication for the node. [Learn more](../security-and-control/authorization-profile.md){:target="_blank"} about Auth Profiles. 
     
-    If authentication is not required, select **None** (the default option).
+    If authentication isn't required, select **None** (the default option).
 
     * In the **Headers** tab, specify the Key and Value pair details. For example, **Key**: *Content-Type* **Value**: *application/json*.
     * The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
@@ -808,10 +803,10 @@ To add a deployed custom script via the endpoint into the API node, follow the s
     * Click the **Test** button at the top-right corner of the dialog. The API response is displayed on the **Response** tab.
     * Click **Save** at the top-right corner of the dialog.
 
-    Please refer to the [API node](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} for more information.
+    Please refer to the [API node](../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"} for more information.
 
     ## Related Links
     
-    * **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-    * **API Node** - [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
+    * **Settings Console** - [Learn more](../../settings/overview.md){:target="_blank"} about other AI for Process admin features.
+    * **API Node** - [Learn more](../../workflows/workflow-builder/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
 

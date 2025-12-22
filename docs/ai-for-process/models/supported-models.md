@@ -1,148 +1,10 @@
-# Supported AI Models on Agent Platform
+# Supported AI Models on AI for Process
 
-The Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
-
-## Supported AI Models for Agents and Supervisors
-
-### External Models
-
-Agentic Apps supports Agent and Supervisor orchestration with the most widely used models from providers such as OpenAI, Azure OpenAI, Anthropic, and Google.
-
-
-<table>
-  <tr>
-   <td>Model Provider
-   </td>
-   <td>Model Variant
-   </td>
-  </tr>
-  <tr>
-   <td>OpenAI</td>
-   <td>
-  <ul>
-    <li>gpt-4o</li>
-    <li>gpt-4o-mini</li>
-    <li>gpt-3.5-turbo</li>
-    <li>gpt-3.5-turbo-1106</li>
-    <li>gpt-4</li>
-    <li>gpt-4-0125-preview</li>
-    <li>gpt-4-1106-preview</li>
-    <li>gpt-4-turbo-preview</li>
-    <li>gpt-4-0613</li>
-    <li>gpt-4.1-2025-04-14</li>
-    <li>gpt-4.1-mini-2025-04-14</li>
-    <li>gpt-4.1-nano-2025-04-14</li>
-    <li>gpt-4.5-preview-2025-02-27</li>
-    <li>o3-mini</li>
-    <li>gpt-5-2025-08-07</li>
-    <li>gpt-5-mini-2025-08-07</li>
-    <li>gpt-5-nano-2025-08-07</li>
-    <li>gpt-5-chat-latest</li>
-  </ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Azure OpenAI
-   </td>
-   <td>
-   <ul>
-    <li>GPT-3.5-Turbo</li>
-    <li>GPT-4</li>
-    <li>GPT-4o</li>
-    <li>GPT-4o-Mini</li>
-    <li>GPT-4.1</li>
-    <li>GPT-4.1-Nano</li>
-    <li>GPT-4.1-Mini</li>
-    <li>O1</li>
-    <li>O1-Mini</li>
-    <li>O3-Mini</li>
-  </ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Anthropic</td>
-   <td>
-    <ul>
-    <li>claude-3-5-sonnet</li>
-    <li>claude-3-haiku</li>
-    <li>claude-3-sonnet</li>
-    <li>claude-3-opus</li>
-    <li>claude-3-7-sonnet-20250219</li>
-    <li>claude-3-5-sonnet-20241022</li>
-    <li>claude-3-5-haiku-20241022</li>
-    <li>claude-sonnet-4-20250514</li>
-    <li>claude-opus-4-20250514</li>
-    <li>claude-opus-4-1-20250805</li>   
-  </ul>
-   </td>
-  </tr>
- 
-  <tr>
-   <td>Google
-   </td>
-   <td>
-   <ul>
-    <li>gemini-1.5-flash-latest</li>
-    <li>gemini-2.0-flash</li>
-    <li>gemini-2.0-flash-lite</li>
-    <li>gemini-2.5-flash-preview-05-20</li>  
-    <li>gemini-2.5-flash</li>
-    <li>gemini-2.5-pro</li>
-  </ul>
-   </td>
-  </tr>
-</table>
-
-
-
-### Models with Real-Time Voice Support
-
-While Agent and Supervisor Orchestration is supported for most commonly used LLMs, Real-Time Voice is currently available only with selected models that offer advanced voice capabilities.
-
-<table>
-  <tr>
-   <td>Model Provider
-   </td>
-   <td>Model Variant
-   </td>
-  </tr>
-  <tr>
-   <td >OpenAI
-   </td>
-   <td >
-    <ul>
-    <li>open ai-gpt-4o-realtime-preview</li>
-    <li>open ai-gpt-4o-mini-realtime-preview</li>
-    </ul>
-   </td>
-  </tr>
-    <tr>
-   <td >Google Gemini
-   </td>
-   <td >
-    <ul>
-    <li>gemini-live-2.5-flash-preview</li>
-    <li>gemini-2.0-flash-live-001</li>
-    </ul>
-   </td>
-  </tr>
-</table>
-
-### Custom Model Support in Agentic Apps
-
-Agentic Apps also support integrating with custom third party models via API Integration. 
-
-To use a custom model in Agentic Apps
-
-* The model must support **Tool Calling** functionality.
-* The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
-
-
-For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).
+The AI for Process offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs.
 
 ## Supported Open-Source Models
 
-Agent Platform currently supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
+AI for Process supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
 
 The supported models and their variants are given below:
 
@@ -492,9 +354,9 @@ The following table lists the models that support structured JSON output:
 
 ## Supported External Models for Easy Integration
 
-With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models within flows, tools, or agents.
+With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models.
 
-Here is the list of all the external models supported in Agent Platform:
+Here is the list of all the external models supported in AI for Process:
 
 
 <table>
@@ -585,7 +447,7 @@ Here is the list of all the external models supported in Agent Platform:
 <li>gemini-1.0-pro</li>
 <li>gemini-2.5-Pro</li>
 <li>gemini-2.0-flash</li>
-<li>gemini-2.0-flashlite</li>
+<li>gemini-2.0-flash-lite</li>
 <li>gemini-2.5-flash-preview-05-20</li>
 <li>gemini-2.5-flash</li>
 </ul>

@@ -555,7 +555,7 @@ Steps to create a to-do list in the Microsoft Graph integration:
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the App console to create a todo list as shown below.  
-<img src="../images/ms-graph-tem-img15.png" alt="VA prompt to create todo list" title="VA prompt to create todo list" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/ms-graph-tem-img15.png" alt="prompt to create todo list" title="prompt to create todo list" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You can now view this todo list in the Microsoft Graph system.
 
@@ -569,7 +569,7 @@ Steps to send email from the Microsoft Graph integration:
 <img src="../images/ms-graph-tem-img16.png" alt="Send EMail dialog task is added" title="Send EMail dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **sendEmail**: A user intent to send an email.
-    2. **mailSubject**, **mailContent**, and **receipentsEmailAddresses**: Entity nodes for sending the email to users.
+    2. **mailSubject**, **mailContent**, and **recipientsEmailAddresses**: Entity nodes for sending the email to users.
     3. **prepareEmailIdsScript**: A bot action service to fetch email ID in an external integration.
     4. **sendEmailService**: A bot action service to send email from an external integration. Click the Plus icon to expand to view the sendEmailService bot action component properties.
     5. In the Component Properties window, click the **Edit Request** link to modify the request parameters as shown below:  

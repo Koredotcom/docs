@@ -62,7 +62,7 @@ To configure the Component Properties tab, please follow the steps below:
 
     * **Client Certificate Exchange**: Enable to enforce mutual authentication with client and server certificates, adding a strong security layer against unauthorized access.
 
-    <img src="../images/service-node-img12-advanced-options.png" alt="Advaced Options" title="Advaced Options" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/service-node-img12-advanced-options.png" alt="Advanced Options" title="Advanced Options" style="border:1px solid gray;zoom:70%;">
  
 9. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
 10. Add the sample response(s) you want the Service Node to return.

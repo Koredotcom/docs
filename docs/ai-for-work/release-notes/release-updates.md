@@ -2,6 +2,46 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of (In)Business Productivity.
 
+## v1.12.0 Nov 13, 2025
+
+<u>Major Release</u>
+
+This update includes new feature and feature enhancements summarized below.
+
+</font></p><font size="4">New Feature</font>
+
+**Enterprise Directory**
+
+Introducing the Enterprise Directory, a centralized employee contact management system that allows users to easily search, filter, and view colleague information across your organization.
+
+Admins can configure the directory by feeding data through the Push API source. The platform is now enabled with Enterprise Directory capabilities, featuring intelligent search with customizable filters (Department, Designation, First Name, Location), rich contact cards with profile details, and streamlined contact management for enhanced organizational connectivity.
+
+[Learn more :octicons-arrow-right-24:](../user-management/enterprise-directory.md)
+
+<font size="4">Feature Enhancements</font>
+
+**Agent Selection UI/UX Improvements**
+
+Redesigned the agent selection interface for better usability and clearer navigation, making it easier to choose and configure agents for your workflows.
+
+**Product-Specific Email Templates**
+
+You can now customize email communications with product-specific templates, allowing for more branded and contextually relevant messaging across different products within the platform.
+
+**Work Orchestrator Improvements (Formerly OmniSearch)**
+
+Work Orchestrator now provides improved sources and citations for better content traceability. Additionally, the platform now supports PDF/PPT generation, enabling you to create professional reports and presentations directly from your search results.
+
+**Message Timestamps on Hover**
+
+Message timestamps are now visible when hovering over messages, providing better context for conversation history without cluttering the interface.
+
+**Partner Domain Onboarding**
+
+Onboard partner domains without creating an enterprise account of their own. This feature resolves the issue where they need a primary account of their own to be added as a partner in an account.
+
+<hr>
+
 ## v1.11.0 Sept 24, 2025
 
 <u>Major Release</u>
@@ -50,6 +90,7 @@ Enhanced Personal Workspace support agent sharing across all published users. Sh
 [Learn more :octicons-arrow-right-24:](../workspace-management/personal-workspace.md#collaboration-and-sharing)
 
 <hr>
+
 
 ## v1.10.0 Sept 8, 2025
 
@@ -225,7 +266,7 @@ The **Do not store conversation data** setting is upgraded with three flexible c
 
 **Agent Layout Enhancements**
 
-The agent creation and management interface has been redesigned for a more intuitive user experience and improved version control.
+The agent creation and management interface is redesigned for a more intuitive user experience and improved version control.
 
 Key enhancements
 
@@ -311,13 +352,13 @@ This update includes new features, feature enhancements, and bug fixes summarize
 
 **New Homepage Experience**
 
-(In)Business Productivity home page has been redesigned with a focus on visual and navigational enhancements. The new layout prioritizes recently used agents, aiming to boost efficiency and minimize time spent on workflow management.
+(In)Business Productivity home page is redesigned with a focus on visual and navigational enhancements. The new layout prioritizes recently used agents, aiming to boost efficiency and minimize time spent on workflow management.
 
 The user interface includes: a left panel that can be toggled, a top-right section for **Help**, **Notifications**, and **User Profiles**. Panels adjust automatically based on search queries and browsing history.
 
 Key features
 
-* The left panel has been redesigned to optimize efficiency:
+* The left panel is redesigned to optimize efficiency:
     * Direct access to the Agent Store through the dedicated **Agents and Flows** section.
     * **History** section that automatically categorizes conversations by:
          * Today
@@ -462,7 +503,7 @@ Key Benefits:
 * Timezone Optimization: Resolved timezone inconsistencies in logs. The system now properly displays logs based on your local system time, ensuring accurate and relevant time-based analytics.
 
 * Template Rendering Fix:  Fixed an issue where bot templates used to render duplicates when selected or clicked. The fix results in a cleaner and more predictable user interface.
-  
+
 <hr>
 
 ## v1.7.0 February 14, 2025
@@ -485,7 +526,7 @@ You can now leverage non-deterministic AI algorithms to autonomously manage comp
 
 <font size="4">Features Enhancements</font>
 
-* Bot Response Notification System: Bot agent interaction experience has been enhanced with an intelligent notification system for improved user engagement.
+* Bot Response Notification System: Bot agent interaction experience is enhanced with an intelligent notification system for improved user engagement.
 
     - Users receive immediate visual feedback when responses require additional computation time. [Learn more :octicons-arrow-right-24:](./../custom-agents/alert-task.md)
   

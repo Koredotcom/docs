@@ -1,10 +1,7 @@
 # View API Endpoint & Deployment History
 
-
-
-
 ## API Endpoint
-After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in Agent Platform. 
+After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in AI for Process. 
 
 The API endpoint is available in 3 formats.
 
@@ -18,7 +15,7 @@ To view the API Endpoint, follow these steps:
 
 1. To use this model as a service, the generated code is helpful. Click the **Copy** icon to copy and share the API Endpoint.
 
-    <img src="../images/new_endpoint.png" alt="Deplyed Model API Endpoint" title="Deplyed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new_endpoint.png" alt="Deployed Model API Endpoint" title="Deployed Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -34,9 +31,9 @@ Open-source models can return responses in a structured JSON format using the `r
 You can use this capability in two ways:
 
 * Through API calls: Add the response_format parameter to the model endpoint when calling the deployed model externally.
-* Within the Tool builder canvas: Define the schema directly in the builder. The platform automatically attaches it as the response_format parameter for structured output.
+* Within the Workflow builder canvas: Define the schema directly in the builder. The AI for Process automatically attaches it as the response_format parameter for structured output.
 
-This capability is supported on v2/chat/completions endpoints for selected open-source models. Older endpoints (v1/completions) do not support structured output. For the list of models that support structured output, see [Supported Models for Structured Output](../supported-models.md#supported-models-for-structured-output).
+This capability is supported on v2/chat/completions endpoints for selected open-source models. Older endpoints (v1/completions) don't support structured output. For the list of models that support structured output, see [Supported Models for Structured Output](../supported-models.md#supported-models-for-structured-output).
 
 Supported schema data types include: string, number, boolean, integer, object, array, enum, and anyOf.
 
@@ -69,10 +66,3 @@ The most recent deployment is marked with a green ticket next to the model name.
 **Deployment details**: This section includes who deployed the model, the start and end timestamps of deployment, the deployment duration, and its status (Success, Failed, or Deploying). In case of a failed deployment, hover over “Status” to view the reason for the failure.
 
 **Un-deployment details**: This section appears only if the model is undeployed either automatically by the system or manually. In the case of manual un-deployment, the person who initiated the un-deployment, along with the start and end timestamps of the process, is displayed.
-
-
-
-
-
-
-

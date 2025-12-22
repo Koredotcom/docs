@@ -1,6 +1,60 @@
-# Platform Services Updates
+# Platform Services Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
+
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+
+<font size="4">LLM & Generative AI</font>
+
+**Prompts Library: Search and Filter**
+
+The Prompt Library now offers enhanced search, sorting, and multi-select filtering by name, feature, model, type, status, or usage, with a Quick Filter for instant access to system and custom prompts. 
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#search-and-filter-prompts)
+
+<font size="4">Channels</font>
+
+**Enhanced Session Management for Email Channel**
+
+The Email Channel now supports more accurate session handling through two new app-level configurations. These improvements prevent unintended session merging, preserve context, and provide a clearer experience across automation and agent workflows.
+
+
+* Channel-Based Sessions: Creates a new session based on the "To" email address. Emails sent to different support addresses always start new sessions, keeping unrelated issues separate.
+
+* Thread-Based Sessions: Creates a new session based on the email thread's Reference ID. Replies within the same thread continue the session, while new threads start new sessions. Available only when Channel-Based Sessions are enabled.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+
+
+<font size="4">App Settings</font>
+
+
+
+**Unified Interface for Locale-specific Responses**
+
+A new ‘Locale-specific Responses’ section in Languages Management provides a consolidated view of all language-dependent components - Dialog Components, Standard Responses, Content Variables, and Small Talk, streamlining multilingual app development. Developers can now update prompts and messages for all enabled languages from this single interface. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#localization-configurations)
+
+
+<hr>
+
+
+## v11.19.1 November 19, 2025
+
+<u> Patch Release </u>
+
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Channels</font>
+
+**New Channel Integration: Amazon Connect Chat**
+
+Amazon Connect Chat is now available as a communication channel, enabling real-time user interactions with AI agents. The integration supports both hosted and custom widget configurations. [Learn more :octicons-arrow-right-24:](../../channels/add-amazon-connect-chat-channel.md)
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 
@@ -944,7 +998,7 @@ Onboarding and Setup Guide:
 
 Email Signup Process:
 
-* New signups are restricted to business email addresses.
+* New signup are restricted to business email addresses.
 * Personal emails can join invited workspaces but can't create new ones.
 * Existing users are unaffected.
 
@@ -1076,7 +1130,7 @@ Specific error messages:
 
 **App Deletion Feature Update** 
 
-The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycles while maintaining data security and user accountability.
+The platform now allows the deletion of published apps. It provides more flexible app management, improving control over app lifecycle while maintaining data security and user accountability.
 
 Key updates:
 
@@ -1384,7 +1438,7 @@ Key updates:
 * Public API for SSO configuration management:
     * Fetch the SSO Meta API: Returns the existing SSO configuration along with the URLs.
     * Enable SSO API: Enables the SSO configuration for an account.
-    * Disable SSO API: Dsables the SSO configuration for an account.
+    * Disable SSO API: Disables the SSO configuration for an account.
     * Update the SSO Configuration API: Updates the SSO configuration for an account.
 * Support for SAML protocol.
 
@@ -1501,7 +1555,7 @@ In addition to pre-built commercial LLMs, the Answer Generation now supports Cus
 
 **Kore.ai XO GPT Supports Vector Generation and Answer Generation**
 
-Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
+Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, LaBSE, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md){:target="_blank"}
 
 <font size="4">Flows & Channels</font>
 

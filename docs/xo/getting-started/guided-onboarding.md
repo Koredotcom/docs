@@ -1,28 +1,33 @@
 # Guided Onboarding
 
-After signing up, users are guided through the onboarding process as follows:
 
-1. To initiate the onboarding journey, select one of the following options:
-    * Build an AI Chatbot
-    * Setup a Contact Center  
 
-    <img src="../images/accplatform(19).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+DialogGPT is now the default orchestration mode for AI for Service app creation. This reduces configuration effort and improves conversational accuracy for new AI Agents. App creation automatically enables the required XO GPT models for DialogGPT. You can view the DialogGPT configuration after creating your app.
 
-2. Select the relevant option that best applies to you and click **Start building AI chatbot**.
-<img src="../images/accplatform(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+After signing up, users are guided through the following onboarding process to create their app.
 
-3. **Name Your AI Chatbot** manually by entering a name or using AI-generated suggestions. Click **Next** to proceed. 
 
-6. Complete the training process for your AI Chatbot and click **Next** to proceed.
 
-    !!! note 
+1. After logging in to the platform, click **New App** on the app listing page.
+3. Select the type of app you want to create. The available apps are AI Agents (Automation AI), Contact Center AI, Search AI, and Agent AI.  
+<img src="../images/service-app.png" alt="Onboarding - App Creation" title="Onboarding - App Creation" style="border: 1px solid gray; zoom:70%;">
 
-        If you want to add FAQs and upload documents for Answers generation, see the [best practices guide](./best-practices-faq-and-answer.md).        
 
-6. At the end of the journey, your app will be ready. **Launch Platform**.  
-<img src="../images/accplatform(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+4. Enter your **App's Name** and provide a brief **Description** of what it does. Select the **Language** and **App Icon** from the dropdown.  
+<img src="../images/create-new-app.png" alt="Onboarding - App Creation" title="Onboarding - App Creation" style="border: 1px solid gray; zoom:70%;">
 
-**Related Links**
+5. Click **Proceed**.
+6. The confirmation pop-up is displayed. You can choose to review the [DialogGPT](../generative-ai-tools/dialog-gpt.md) configuration or proceed to create dialogs. 
 
-   [Setup Guide](../getting-started/setup-guide.md)  
-   [Quick Start Guide](../getting-started/quick-start-guide.md) 
+
+
+
+
+
+
+
+
+
+
+
+

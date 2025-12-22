@@ -28,6 +28,7 @@ jobs:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.agent-platform.yml
 
+
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
 

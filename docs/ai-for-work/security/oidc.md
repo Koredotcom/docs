@@ -73,14 +73,14 @@ Google's OpenID Connect implementation provides enterprise-grade authentication 
 
 #### Setting up Google for (In)Business Productivity SSO
 
-To set up the (In)Business Productivity application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.
+To set up the application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.
 
-**Prerequisites**: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the (In)Business Productivity Admin Console.
+**Prerequisites**: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the Admin Console.
 
 **Steps to configure Google**:
 
 1. **Create Service Account**:
-    * Log in to[ Google Cloud Console](https://console.cloud.google.com/).
+    * Log in to[Google Cloud Console](https://console.cloud.google.com/).
     * Navigate to **IAM & Admin > Service Accounts**.
     * Click **Create Service Account**.
     * Provide a service account name and description.
@@ -96,19 +96,18 @@ To set up the (In)Business Productivity application in your Google Workspace env
     * Click **Save**.
     * Note the **Client ID** for the next steps.
 4. **Configure G Suite Admin Console**:
-    * Log in to[ Google Admin Console](https://admin.google.com/).
+    * Log in to[Google Admin Console](https://admin.google.com/).
     * Go to **Security > API Controls > Domain-wide Delegation**.
     * Click **Add new**.
     * Enter the **Client ID** from the service account.
     * Add required OAuth scopes (e.g., `https://www.googleapis.com/auth/admin.directory.user.readonly`).
     * Click **Authorize**.
 5. **Copy Configuration Details**:
-    * From the downloaded JSON key file, copy the following to (In)Business Productivity:
+    * From the downloaded JSON key file, copy the following to the platform:
         * **client_email** → **Client Email** field
         * **private_key** → **Private Key** field
     * Enter your G Suite admin email in the **Admin Email** field.
-6. **Save** the configuration in (In)Business Productivity.
-
+6. **Save** the configuration.
 
 ### Microsoft Azure Configuration
 
@@ -118,19 +117,27 @@ Microsoft Azure Active Directory (now Microsoft Entra ID) provides comprehensive
 
 #### Configuration Steps
 
-1. **Select Identity Provider**:
-    * In the **Configure** section, select **Microsoft Azure**.
-2. **Configure Custom Application**:
-    * **Use Your Microsoft Entra ID App for SSO Login**: Instead of approving the default system-provided app in Microsoft Admin, you can create and configure your own app. Once set up, this app will be used for SSO login for users in your account.
-3. **Save Configuration**:
-    * Click **Save**.
-    * The *Identity Provider information successfully updated* message is displayed at the top of the page.
+1.  **Select Identity Provider**:
+
+    -   In the **Configure** section, select **Microsoft Azure**.
+
+2.  **Configure Custom Application**:
+
+    -   **Use Your Microsoft Entra ID App for SSO Login**: Instead of approving the default system-provided app in Microsoft Admin, you can create and configure your own app. Once set up, this app will be used for SSO login for users in your account.
+    
+    -   **Redirect URL**: The system displays the Redirect URL required for creating your Microsoft Entra ID App. Copy this URL using the copy icon and use it when configuring your app in the Microsoft Azure portal.
+
+3.  **Save Configuration**:
+
+    -   Click **Save**.
+
+    -   The *Identity Provider information successfully updated* message is displayed at the top of the page.
 
 #### Setting up Microsoft Azure for (In)Business Productivity SSO
 
-To set up the (In)Business Productivity application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.
+To set up the application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.
 
-**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the (In)Business Productivity Admin Console.
+**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the Admin Console.
 
 **Steps to configure Microsoft Azure**:
 
@@ -138,13 +145,13 @@ To set up the (In)Business Productivity application in your Microsoft Entra ID (
     * Log in to [Azure Portal](https://portal.azure.com/).
     * Navigate to **Microsoft Entra ID > App registrations**.
     * Click **New registration**.
-    * Provide an application name (e.g., "(In)Business Productivity SSO").
+    * Provide an application name.
     * Select the appropriate supported account types.
-    * Configure the redirect URI (this will be provided by (In)Business Productivity).
+    * Configure the redirect URI.
     * Click **Register**.
 2. **Configure Authentication**:
     * In the registered app, go to **Authentication**.
-    * Add the redirect URI provided by (In)Business Productivity.
+    * Add the redirect URI provided by the platform.
     * Configure token configuration settings as required.
     * Enable **ID tokens** under the Implicit grant and hybrid flows.
     * Click **Save**.
@@ -164,6 +171,6 @@ To set up the (In)Business Productivity application in your Microsoft Entra ID (
     * From the app overview page, note the following:
         * **Application (client) ID**
         * **Directory (tenant) ID**
-    * Copy these values along with the client secret to configure in (In)Business Productivity.
-6. **Complete Configuration in (In)Business Productivity**: Create and Register App in Microsoft Entra ID.
-7. **Save** the configuration in (In)Business Productivity.
+    * Copy these values along with the client secret to configure in the platform.
+6. **Complete Configuration**: Create and Register App in Microsoft Entra ID.
+7. **Save** the configuration.

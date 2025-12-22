@@ -5,7 +5,7 @@ Setting up an agent involves defining its intended purpose, configuring its core
 
 <img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 1px solid gray; zoom:65%;">
 
-## Agents Page
+<!-- ## Agents Page
 
 The **Agents** page displays all agents associated with the Agentic app as individual cards, providing clear visibility into each agent's connected tools and configuration status. It shows the total number of agents in the app.
 
@@ -17,14 +17,11 @@ Key highlights
 * Displays the total agent count in the page header, with **Explore Marketplace** and **New Agent** options always visible.
 
 <img src="../images/agents-listing-page.png" alt="Agent Listing Page" title="Agent Listing Page" style="zoom:70%; border: 1px solid gray;">
+-->
 
 ## Create an Agent
 
-To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. 
-
-![Add Agent](images/new-agent-pw1.png "Add Agent")
-
-You can also set up the agent during the app creation process. 
+To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. You can also set up the agent during the app creation process. 
 
 ![Add Agent](images/new-agent-pw.png "Add Agent")
 
@@ -124,11 +121,12 @@ You can link to one or more Search AI applications in the same workspace and acc
 [Learn more](./knowledge/overview.md){:target="_blank"} about Knowledge integration with agents. 
 
 ---
+
 ## Tools
 
 **Tools** are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments.
 
-In an agentic architecture, **Actions** represent the discrete tasks an agent can execute. These actions are made possible by **Tools**, which encapsulate the domain-specific logic and capabilities needed to accomplish specific objectives. Tools serve as the operational backbone of actions, providing the necessary interfaces and execution that translate an agent’s intent into meaningful outcomes.
+In an Agentic architecture, **Actions** represent the discrete tasks an agent can execute. These actions are made possible by **Tools**, which encapsulate the domain-specific logic and capabilities needed to accomplish specific objectives. Tools serve as the operational foundation of actions, providing the necessary interfaces and execution that translate an agent’s intent into meaningful outcomes.
 
 Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
 
@@ -159,7 +157,7 @@ For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.m
 
     For more information, see [Code Tools](tools/code-tools.md){:target="_blank"}.
 
-* **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.  Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they're centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They're best suited for seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
+* **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform. Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they're centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They're best suited for seamless integration with external APIs, proprietary platforms, or shared tool sets across teams or organizations.
 
     For more information, see [MCP Tools](tools/mcp-tools.md){:target="_blank"}.
 
@@ -170,7 +168,7 @@ You can enhance an agent's capabilities by **creating a new tool** or **importin
 * **New tools** are custom-built within the context of a specific app and aren't shared across other apps.
 * **Imported tools** act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.
 
-To add a new tool, click **New Tool** and choose the desired tool type—**Workflow Tool**, **Code Tool** or **MCP Tool**.
+To add a new tool, click **New Tool** and choose the desired tool type - **Workflow Tool**, **Code Tool** or **MCP Tool**.
 
 For a **Workflow Tool**, enter the tool's **name** and **description**, then click **Create**. The tool will be added to your app. Next, go to the **Agent's Tools** page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool.
 

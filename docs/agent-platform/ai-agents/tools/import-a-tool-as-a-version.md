@@ -16,9 +16,7 @@ When you import an tool as a version, you must upload all the following files:
 
 To import a tool as a version, follow the steps below:
 
-1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
 2. Click the **Tools** tab on the top navigation bar, and select the tool you want to import. 
 3. Click **Configurations** on the left menu.
 4. Scroll down to the **Import tool** section and click **Import**.

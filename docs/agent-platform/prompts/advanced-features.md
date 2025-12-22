@@ -187,11 +187,11 @@ Steps to bookmark a model:
  
     Once you select a preferred model, your version is committed successfully, and the number of committed versions is displayed.
 
-    <img src="../images/commited_version.png" alt="Versions committed" title="Versions committed" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/committed_version.png" alt="Versions committed" title="Versions committed" style="border: 1px solid gray; zoom:70%;">
 
 3. If you click Versions, the **Versions** dialog opens. You can see the model you bookmarked as the **Preferred model**.
 
-    <img src="../images/versions_dialog_prefered_model.png" alt="Versions dialog" title="Versions dialog" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/versions_dialog_preferred_model.png" alt="Versions dialog" title="Versions dialog" style="border: 1px solid gray; zoom:70%;">
 
 
 

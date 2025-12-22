@@ -1,6 +1,6 @@
 # Monitoring Custom Script Runs and Logs
 
-**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the Agent Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
+**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the AI for Process. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
 
 **Key Benefits**
 
@@ -68,10 +68,10 @@
 
 To access the feature, follow the steps below:
 
-1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
-2. On the left menu, select **Monitoring** > **Custom scripts**.
-   <img src="../images/access-custom-script-monitoring.png" alt="custom scripts monitoring" title="custom scripts monitoring" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
+2. On the left menu, select **Monitoring** > **Custom scripts**.
 3. For first-time access, select a script from the dropdown menu.
     
     <img src="../images/select-script.png" alt="select script" title="select script" style="border: 1px solid gray; zoom:75%;">
@@ -177,7 +177,7 @@ This section displays a dynamic table with the following data indicating the run
   <tr>
    <td><strong>Source Type</strong>
    </td>
-   <td>Tool (from tool flow) or API (from endpoint).
+   <td>Workflow or API (from endpoint).
    </td>
   </tr>
   <tr>
@@ -328,7 +328,7 @@ The record view offers log-specific insights at the script run level after each 
 
 ## Enhanced Logging for gVisor Monitoring
 
-The Agent Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*korelogger*).
+The AI for Process offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*korelogger*).
 
 **Key Considerations**
 
@@ -438,7 +438,7 @@ ERROR :: Error log using korelogger
         "attributes": {
             "service.name": "gvisor-py-normal",
             "service.instance.id": "4XXXXXX1-9XX9-4XXb-9XXc-aXXXXXXXXXX1",
-            "deployment.environment": "rnd-gxxe.kxxe.ai"
+            "deployment.environment": "rnd-xxx.example.com"
         },
         "schema_url": ""
     }

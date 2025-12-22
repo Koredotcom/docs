@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Agent Status Detail Report
 
 ## Generating the Agent Status Detail Report

@@ -26,9 +26,9 @@ The evaluation form includes chosen metrics with customizable weights totaling 1
 
         You can assign only one evaluation form per queue in the **Chat** and **Voice** channels. 
 
-## Accessing Evaluation Forms
+## Access Evaluation Forms
 
-Access the Evaluation Forms by navigating to **Quality AI** > **Configure** > **Evaluation Forms**.    
+Navigate to **Quality AI** > **CONFIGURE** > **Evaluation Forms**.    
 <img src="../evaluation-criteria/evaluation-forms/images/evaluation-forms.png" alt="Evaluation Forms Tab" title="Evaluation Forms Tab" style="border: 1px solid gray; zoom:80%;">
 
 ## Creating and Configuring Evaluation Forms
@@ -157,7 +157,7 @@ This section lets you add and create evaluation metrics for each attribute confi
 
 * For **Quality AI Express** queues (alone or in combination with **CCAI** or **Agent AI**), only **By Question** and **By Speech** metrics are allowed. 
 
-3. Click **Edit** to assign weightage to each agent attribute based on importance.    
+3. Click **Edit** to assign weight to each agent attribute based on importance.    
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
 
 **Metric Type Validations by Conversation Source**
@@ -172,26 +172,26 @@ This section lets you add and create evaluation metrics for each attribute confi
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
-   * Enable validation of assigned weightage based on the expected response:
+   * Enable validation of assigned weight based on the expected response:
 
       * If **Yes** is the correct response; only positive weight is allowed.
       
       * If **No** is the correct response; only zero or negative weight is allowed.    
-      <img src="../evaluation-criteria/evaluation-forms/images/outcome-weightage-response.png" alt="Correct Response" title="Correct Response" style="border: 1px solid gray; zoom:80%;">
+      <img src="../evaluation-criteria/evaluation-forms/images/outcome-weight-response.png" alt="Correct Response" title="Correct Response" style="border: 1px solid gray; zoom:80%;">
 
 5. Assign the **Weightage** percentage based on the correct response validation.
 
-   * **Total Positive Weightage**: The sum of all positive metric weightages. 
+   * **Total Positive Weightage**: The sum of all positive metric weight. 
 
-   * **Total Negative Weightage**: The sum of all negative metric weightages. 
+   * **Total Negative Weightage**: The sum of all negative metric weight. 
 
-6. Indicates whether the agent’s response or behaviour matches the expected standard defined by each metric. 
+6. Indicates whether the agent’s response or behavior matches the expected standard defined by each metric. 
 
     * **Outcome**:
 
-        * **Yes**: When the agent’s response (such as greeting a customer) matches the correct response, the system assigns positive weightage to that metric. 
+        * **Yes**: When the agent’s response (such as greeting a customer) matches the correct response, the system assigns positive weight to that metric. 
 
-        * **No**: When the agent’s response (such as a rude response) does not match the correct response, the system assigns zero or negative weightage accordingly.	
+        * **No**: When the agent’s response (such as a rude response) does not match the correct response, the system assigns zero or negative weight accordingly.	
 
 7. Toggle the **Fatal Error** if the metric is fatal and considered a critical failure in the response.    
    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-fatal-error.png" alt="Fatal Error" title="Fatal Error" style="border: 1px solid gray; zoom:80%;">
@@ -206,7 +206,7 @@ Forms are evaluated using weighted metrics assigned to agents. If the total scor
 
 ### Configuration Logic 
 
-Configuration logic is defined at the form level and directly influences how weightage validation is applied. It supports both training-based and generation-based adherence detection methods. Validation is automatically enforced based on the designated Correct Response setting.
+Configuration logic is defined at the form level and directly influences how weight validation is applied. It supports both training-based and generation-based adherence detection methods. Validation is automatically enforced based on the designated Correct Response setting.
 
 #### Logic Rules
 
@@ -216,7 +216,7 @@ Configuration logic is defined at the form level and directly influences how wei
 
 * **Example**: Did the agent greet the customer?
 
-* **Validation**: Only positive weightages allowed for "Yes" responses
+* **Validation**: Only positive weights allowed for "Yes" responses
 
 * **Scoring**: When agent greets customer = positive contribution to score
 
@@ -226,13 +226,13 @@ Configuration logic is defined at the form level and directly influences how wei
 
 * **Example**: Was the agent rude to the customer?
 
-* **Validation**: Only positive weightages allowed for **No** responses; zero or negative weightages for **Yes** responses
+* **Validation**: Only positive weights allowed for **No** responses; zero or negative weights for **Yes** responses
 
 * **Scoring**: When agent is not rude = positive contribution to score
 
 #### Correct Response
 
-The Correct Response configuration enables flexible scoring logic for metrics with both positive and negative connotations. This setting defines what constitutes the expected or desired outcome for each metric, which determines how weightages are validated and applied.
+The Correct Response configuration enables flexible scoring logic for metrics with both positive and negative connotations. This setting defines what constitutes the expected or desired outcome for each metric, which determines how weights are validated and applied.
 
 **Purpose**: Training-based adherence detection is only checked if agents followed. Correct Response allows flexible scoring for both cases. This setup makes sure scoring matches business goals, whether tracking good or bad behavior.
 
@@ -250,7 +250,7 @@ When editing evaluation metrics, you can assign weights based on how important e
 
 **Positive Weightage Requirements**
 
-* Total positive weightages across all metrics must equal 100%.
+* Total positive weights across all metrics must equal 100%.
 
 * Individual metrics can have positive values up to 100%.
 
@@ -262,7 +262,7 @@ When editing evaluation metrics, you can assign weights based on how important e
 
 * Individual metrics can exceed -100 in setup.
 
-* Negative weightages can collectively exceed -100 across all metrics.
+* Negative weights can collectively exceed -100 across all metrics.
 
 * Final conversation scores are automatically capped at -100 minimum.
 
@@ -303,13 +303,13 @@ This section guides you through the process of updating (editing or deleting) an
 Steps to edit the existing evaluation forms:
 
 1. Select a target evaluation form, and right-click on any existing forms.   
-   <img src="../evaluation-criteria/evaluation-forms/images/update-evaluation-form.png" alt="Update Evaluation Fomrs" title="Update Evaluation Fomrs" style="border: 1px solid gray; zoom:80%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/update-evaluation-form.png" alt="Update Evaluation Form" title="Update Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
 2. Click **Edit** to modify the selected form details.   
-      <img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Fomrs" title="Edit Evaluation Fomrs" style="border: 1px solid gray; zoom:80%;">
+      <img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
 3. Modify the required fields.   
-   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Fomrs" title="Modify Evaluation Fomrs" style="border: 1px solid gray; zoom:50%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Form" title="Modify Evaluation Form" style="border: 1px solid gray; zoom:50%;">
 
 4. Click **Next** to update the required evaluation metrics fields.
 

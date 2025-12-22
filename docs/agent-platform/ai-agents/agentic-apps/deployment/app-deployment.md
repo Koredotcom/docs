@@ -1,13 +1,13 @@
 # App Deployment
 
-App deployment is the process of moving an application version from development to live environments in a controlled and repeatable manner. It ensures that tested and stable versions of your app are accessible to users in the appropriate environments, such as development, staging, or production.
+App deployment is the process of moving an application version from development to live environments in a controlled and repeatable manner. It ensures that tested and stable versions of the app are accessible to users in the appropriate environments, such as development, staging, or production.
 
 **Deployment Lifecycle**
 
 Versioning, environments, and the deployment process are critical to managing application releases. This process typically involves the following steps:
 
 1. **Creating an Application Version** - Building and packaging the application code into a deployable version. Versioning is the practice of assigning unique names or numbers to each iteration of an application.
-1. **Creating an Environment** - Environments help isolate configurations, ensuring that updates and tests do not impact end users while maintaining separate app configurations across the various stages of development.
+1. **Creating an Environment** - Environments help isolate configurations, ensuring that updates and tests don't impact end users while maintaining separate app configurations across the various stages of development.
 1. **Deploying App to an Environment** - Releasing a selected version to a chosen environment. 
 1. **Accessing the deployed app** via a unique URL or API for integration or user interaction.
 
@@ -15,7 +15,7 @@ Versioning, environments, and the deployment process are critical to managing ap
 
 !!! note
  
-    Only authorized users can access version control and environment management features. Refer to this for more information on access permissions and the roles required to make these changes.
+    Only authorized users can access version control and environment management features. Refer to [this](../settings/sharing-permissions.md) for more information on access permissions and the roles required to make these changes.
 
 ## App Versioning
 
@@ -23,46 +23,40 @@ The app versioning system ensures version consistency, stable releases, and stre
 
 ### Key Benefits
 
-Enhanced Stability and Consistency:
+**Enhanced Stability and Consistency**
 
-* **Immutable Releases**: Once deployed, versions remain unchanged, guaranteeing stability and preventing inconsistencies.
-* **Controlled Deployments**: Implement updates and new features smoothly without disrupting services through well-defined procedures.
-* **Dependency Protection**: Tools linked to active versions cannot be deleted, safeguarding the integrity of existing deployments.
-* **Environment Isolation**: Deploy different application versions to separate environments for varied testing and production needs.
+* Immutable Releases: Once deployed, versions remain unchanged, guaranteeing stability and preventing inconsistencies.
+* Controlled Deployments: Implement updates and new features smoothly without disrupting services through well-defined procedures.
+* Dependency Protection: Tools linked to active versions can't be deleted, safeguarding the integrity of existing deployments.
+* Environment Isolation: Deploy different application versions to separate environments for varied testing and production needs.
 
-Streamlined Management and Tracking:
+**Streamlined Management and Tracking**
 
-* **Coordinated Agent Management**: Maintain system stability by synchronizing multiple AI agents.
-* **Version Alignment**: Easily track which agent versions are associated with specific application versions.
-* **Selective Versioning**: Utilize the precise versions of agents and tools required for each application.
+* Coordinated Agent Management: Maintain system stability by synchronizing multiple AI agents.
+* Version Alignment: Easily track which agent versions are associated with specific application versions.
+* Selective Versioning: Use the precise versions of agents and tools required for each application.
 
-Improved Development and Deployment Processes:
+**Improved Development and Deployment Processes**
 
-* **Draft Testing**: Thoroughly test versions in a draft environment before finalizing them to ensure optimal performance.
-* **Rollback Support**: Revert to previous versions in a draft state if necessary, while retaining the complete version history.
-* **Pre-Deployment Validation**: Automatically verify agents, tools, and configurations before creating a new version.
+* Draft Testing: Test versions in a draft environment before finalizing them for optimal performance.
+* Rollback Support: Revert to previous versions in a draft state if necessary, while retaining the complete version history.
+* Pre-Deployment Validation: Automatically verify agents, tools, and configurations before creating a new version.
 
-Security and Control:
+**Security and Control**
 
-**Role-Based Access**: Limit version control actions to authorized personnel, enhancing security and governance.
+Role-Based Access: Limit version control actions to authorized personnel, enhancing security and governance.
 
-### Version Management
+### Create an App Version
 
-Create an App Version
+To create a new app version, follow the steps listed below.
 
-To create a new app version, follow the steps listed below:
-
-1. Go to the **Versions** page and click **+ New Version**.
+1. Go to the Versions page and click + New Version.
   <img src="../images/new-version.png" alt="New version" title="New version" style="border: 1px solid gray; zoom:70%;">
-
-1. Enter the **Name** and **Description** for the application version. Select appropriate versions of the agents and the tools to be included in the app. Click then click **Create**.
+2. Enter the Name and Description for the application version. Select appropriate versions of the agents and the tools to be included in the app. Click Create.
   <img src="../images/new-app-version.png" alt="New app version" title="New app version" style="border: 1px solid gray; zoom:70%;">
-
-
-1. Once the version is created, a dialog appears with **Deploy** and **Preview** options:  
+3. Once the version is created, preview the version to review its configuration and functionality and then Deploy the version.  
   <img src="../images/version-created-successfully.png" alt="Version created successfully" title="Version created successfully" style="border: 1px solid gray; zoom:70%;">
 
- Before deploying the app, you can preview the version to review its configuration and functionality.
 
 ### Deploy the App Version
 
@@ -71,13 +65,13 @@ Select the app version and environment from the dropdown, then click **Proceed**
 
 ### Restore to a Version
 
-Restoring a version reverts the current draft to a previously saved state. This action **overwrites the entire draft**, including all configurations, tools, and agent settings, with those from the selected version. If the restored version contains MCP server configurations, they are also automatically applied to the draft, ensuring consistency with the selected version.
+Restoring a version reverts the current draft to a previously saved state. This action **overwrites the entire draft**, including all configurations, tools, and agent settings, with those from the selected version. If the restored version contains MCP server configurations, they're also automatically applied to the draft, ensuring consistency with the selected version.
 
 Use this feature to revert to a known working state after experimentation, undo recent changes that introduced errors, or to compare previous configurations by restoring and reviewing.
 
 !!! note
  
-    Restoring a version replaces the current draft and **cannot be undone**. To preserve your current work, consider saving it as a new version before restoring another.
+    Restoring a version replaces the current draft and cannot be undone. To preserve your current work, consider saving it as a new version before restoring another.
 
 <img src="../images/restore-version.png" alt="Restore version" title="Restore version" style="border: 1px solid gray; zoom:70%;">
 

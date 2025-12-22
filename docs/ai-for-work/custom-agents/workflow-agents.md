@@ -44,15 +44,9 @@ To create a Workflow Agent, follow the steps outlined below:
 
 ### Step 1: Details and Purpose
 
-Provide a suitable and unique name for the agent and describe the purpose of the
-agent. Defining the agent’s purpose enables “(In)Business Productivity” to accurately
-recognize the agent’s capabilities and effectively utilize them to respond to
-user queries aligned with the specified intent. It is essential to clearly
-outline the specific use cases for which the agent is designed.
+Provide a suitable and unique name for the agent and describe the purpose of the agent. Defining the agent’s purpose enables to accurately recognize the agent’s capabilities and effectively utilize them to respond to user queries aligned with the specified intent. It is essential to clearly outline the specific use cases for which the agent is designed.
 
-For instance, if an agent called "Sales Buddy" is created to handle user
-queries, specifying its purpose helps this agent whenever a user sends a query
-related to any cross-sell or upsell product.
+For instance, if an agent called "Sales Buddy" is created to handle user queries, specifying its purpose helps this agent whenever a user sends a query related to any cross-sell or upsell product.
 
 <img src="../images/detail_and_purpose_workflow.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 

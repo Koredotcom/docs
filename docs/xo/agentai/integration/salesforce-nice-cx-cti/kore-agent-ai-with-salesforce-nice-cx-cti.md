@@ -1,10 +1,10 @@
 # Kore Agent AI with Salesforce NICE CX-CTI 
 
-This document provides an overview of the setup and configuration process of the Kore Agent AI widget with NICE CX Telephony using the Salesforce NICE CX CTI package.
+This document provides an overview of the setup and configuration process of the Agent AI widget with NICE CX Telephony using the Salesforce NICE CX CTI package.
 
-**Use Case**: Show voice transcripts and provide next best actions from a configured AI Agent, on the Kore Agent AI widget to agents when they receive a phone call from a customer.
+**Use Case**: Show voice transcripts and provide next-best actions from a configured AI Agent, on the Agent AI widget, to agents when they receive a phone call from a customer.
 
-When a customer calls a NICE CX phone number, the call is received on the Salesforce NICE CTI interface. Based on the customer’s phone number, CTI rule matches the corresponding Salesforce object (Account/Contact/Case etc) and displays to the agents. The incoming voice stream is shared with Kore Voice Gateway, which in turn generates transcripts of the voice stream and displays on the Agent AI widget embedded into the matched Salesforce object.
+When a customer calls a NICE CX phone number, the call is received on the Salesforce NICE CTI interface. Based on the customer’s phone number, the CTI rule matches the corresponding Salesforce object (such as Account/Contact/Case) and displays it to the agents. The incoming voice stream is shared with Voice Gateway, which in turn generates transcripts of the voice stream and displays them in the Agent AI widget embedded in the matched Salesforce object.
 
 ## Prerequisites
 
@@ -12,8 +12,8 @@ When a customer calls a NICE CX phone number, the call is received on the Salesf
 * **NICE CX** account set up and can receive calls on the **Salesforce Service Console** softphone.
 * **NICE CX Studio** installed on your device.
 * **Agent Assist Hub** enabled for your NICE CX account.
-* [Kore AgentAssist](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"} for Salesforce installed on your Salesforce account. (Salesforce AppExchange > Search for “Agent AI By Kore.ai, Inc.”)
-* Have the Kore AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Voice Gateway](../../../channels/voice-gateway/configure-voice-gateway.md/#steps-to-configure-sip-trunk){:target="_blank"} and [Chat](../../../channels/add-web-mobile-client.md){:target="_blank"} for a walkthrough. 
+* [AgentAssist](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"} for Salesforce installed on your Salesforce account. (Salesforce AppExchange > Search for “Agent AI By Kore.ai, Inc.”)
+* Have the AI Agent credentials saved separately. You need the Widget URL, Bot ID, Client ID, Client Secret, Account ID, and SIP URI. Read [Voice Gateway](../../../channels/voice-gateway/configure-voice-gateway.md/#steps-to-configure-sip-trunk){:target="_blank"} and [Chat](../../../channels/add-web-mobile-client.md){:target="_blank"} for a walkthrough. 
 * Ensure that Voice Interaction Streams are enabled via NICE. 
 
 ## Shared Responsibilities
@@ -83,7 +83,7 @@ When a customer calls a NICE CX phone number, the call is received on the Salesf
    <td>
 <ul>
 
-<li>Configure CXOne Authentication for accessing CXOne Signal API from Kore AI Agent. 
+<li>Configure CXOne Authentication for accessing the CXOne Signal API from the AI Agent. 
 Need signaling API key and secret.</li>
 </ul>
    </td>
@@ -103,7 +103,7 @@ Need signaling API key and secret.</li>
    </td>
   </tr>
   <tr>
-   <td><strong>Kore AI Agent Configuration</strong>
+   <td><strong>AI Agent Configuration</strong>
    </td>
    <td>
 <ul>
@@ -117,10 +117,10 @@ Need signaling API key and secret.</li>
    </td>
   </tr>
   <tr>
-   <td><strong>Kore AI Agent Configuration</strong>
+   <td><strong>AI Agent Configuration</strong>
    </td>
    <td>
-    AI Agent creation
+    AI Agent creation,
     AI Agent Credentials generation
    </td>
    <td>
@@ -147,7 +147,7 @@ Need signaling API key and secret.</li>
    </td>
   </tr>
   <tr>
-   <td>Installing Kore Agent AI Package
+   <td>Installing the Agent AI Package
    </td>
    <td>
 <ul>
@@ -163,7 +163,7 @@ Need signaling API key and secret.</li>
    </td>
   </tr>
   <tr>
-   <td>Configuring Kore Agent AI Package
+   <td>Configuring the Agent AI Package
    </td>
    <td>
 <ul>
@@ -182,7 +182,7 @@ Need signaling API key and secret.</li>
    <td>NICE CX
    </td>
    <td>
-    Configure Salesforce Agent Settings, select Salesforce Object to embed Kore Agent AI widget.
+    Configure Salesforce Agent Settings, select Salesforce Object to embed the Agent AI widget.
    </td>
    <td>
    </td>
@@ -203,7 +203,7 @@ Need signaling API key and secret.</li>
    </td>
   </tr>
   <tr>
-   <td>Set up NICE AgentAssist Hub to stream voice to Kore Agent AI
+   <td>Set up NICE AgentAssist Hub to stream voice to Agent AI
    </td>
    <td><span id="AI URL">Agent AI URL</span>
    </td>
@@ -212,7 +212,7 @@ Need signaling API key and secret.</li>
    <td>
 <ul>
 
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai">https://agentassist.kore.ai</a>.</li>
+<li>If it is legacy Agent AI, the URL is <a href="https://agentassist.kore.ai">https://agentassist.kore.ai</a>.</li>
 
 <li>If it is UXO, URL is <a href="https://platform.kore.ai">https://platform.kore.ai</a>.</li>
 
@@ -221,7 +221,7 @@ Need signaling API key and secret.</li>
    </td>
   </tr>
   <tr>
-   <td>Kore Agent AI  package setup and configuration
+   <td>Agent AI  package setup and configuration
    </td>
    <td>AgentAssist Widget URL
    </td>
@@ -233,7 +233,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Kore Agent AI package setup and configuration
+   <td>Agent AI package setup and configuration
    </td>
    <td>BotId
    </td>
@@ -243,7 +243,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Kore Agent AI package setup and configuration
+   <td>Agent AI package setup and configuration
    </td>
    <td>ClientId
    </td>
@@ -253,7 +253,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Kore Agent AI package setup and configuration
+   <td>Agent AI package setup and configuration
    </td>
    <td>ClientSecret
    </td>
@@ -263,7 +263,7 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Set up NICE AgentAssist Hub to stream voice to Kore Agent AI
+   <td>Set up NICE AgentAssist Hub to stream voice to Agent AI
    </td>
    <td>AccountID
    </td>
@@ -273,11 +273,11 @@ For example, https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-i
    </td>
   </tr>
   <tr>
-   <td>Set up NICE AgentAssist Hub to stream voice to Kore Agent AI
+   <td>Set up NICE AgentAssist Hub to stream voice to Agent AI
    </td>
-   <td><span id="KVG">Kore Voice Gateway(KVG)</span>
+   <td><span id="KVG">Voice Gateway(VG)</span>
    </td>
-   <td>For Saas in US region, value is savg-webserver.kore.ai
+   <td>For Saas in the US region, the value is savg-webserver.kore.ai
 <p>
 For on-prem, refer to the corresponding host.<strong> </strong>
    </td>
@@ -352,9 +352,9 @@ Topics included in the above article:
 * Assign Profiles to the Softphone Layout
 * Enable Click2Jack
 
-## Set up NICE AgentAssist Hub to stream voice to Kore Agent AI
+## Set up NICE AgentAssist Hub to stream voice to Agent AI
 
-This app will be used in studio script.
+This app will be used in the studio script.
 
 1. Sign in to your **NICE account** with the username and password provided by the NICE customer support.
 2. Click the **applications launcher** button. A menu opens from the left side of the page.  
@@ -371,16 +371,16 @@ This app will be used in studio script.
 7. Click **Next**.  
 <img src="../images/next-4.png" alt="next" title="next" style="border: 1px solid gray; zoom:80%;">
 
-8. Add the following settings with config parameters provided by the Kore.ai representative:
+8. Add the following settings with config parameters provided by the Support team:
     * **Agent UI Option**: Available by default
     * **App URL**: <span style="text-decoration:underline;">{<a href="#AI URL">Agent AI URL</a>}</span>/integrations/nice/iframe/?params={scriptparams}
     * **App Title**: Kore Agent AI (change as needed)
     * **Participants**: Both
     * **Text Relay Endpoint**: (only for chat) {<a href="#AI URL">Agent AI URL</a>}/integrations/nice/relay/toKore  
     <img src="../images/configurations-5.png" alt="configurations" title="configurations" style="border: 1px solid gray; zoom:80%;">
-    * **Audio Relay Endpoint**: {<a href="#KVG">Kore Voice Gateway(KVG)</a>}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true  
+    * **Audio Relay Endpoint**: {<a href="#KVG">Voice Gateway(VG)</a>}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true  
     
-        * **Bot SIP URI** : **Channels** > **Voice** section of the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
+        * **Bot SIP URI**: **Channels** > **Voice** section of the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
         <img src="../images/channels_voice-6.png" alt="channels_voice" title="channels_voice" style="border: 1px solid gray; zoom:80%;">
         * **Bot ID and Account ID**: **Channels** > **Chat** section of the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
         <img src="../images/channels-chat-7.png" alt="channels-chat" title="channels-chat" style="border: 1px solid gray; zoom:80%;">
@@ -393,16 +393,16 @@ This app will be used in studio script.
 
 9. Click **Create**
 
-## Kore Agent AI package setup and configuration
+## Agent AI package setup and configuration
 
-* Install **[Kore Agent AI](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"}** on your Salesforce account.
+* Install **[Agent AI](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"}** on your Salesforce account.
 
-### Set up AgentAssist feature
+### Set up the AgentAssist feature
 
 1. Click the **app launcher**.  
 <img src="../images/app-launcher-9.png" alt="app-launcher" title="app-launcher" style="border: 1px solid gray; zoom:80%;">
 
-2. Type “kore” in the search box and select **Kore AgentAssist Feature Configuration** from the displayed list.  
+2. Type **kore** in the search box and select **Kore AgentAssist Feature Configuration** from the displayed list.  
 <img src="../images/kore-agentassist-feature-configuration-10.png" alt="kore-agentassist-feature-configuration" title="kore-agentassist-feature-configuration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the top-right corner of the page.  
@@ -417,15 +417,15 @@ This app will be used in studio script.
 6. Select **Active**, and click **Save**.  
 <img src="../images/active-save-14.png" alt="active-save" title="active-save" style="border: 1px solid gray; zoom:80%;">
 
-### Set up AgentAssist Configuration
+### Set up the AgentAssist Configuration
 
 1. Click the **app launcher**.
-2. Type “config” in the search box and select **Kore AgentAssist Configuration** from the displayed list.  
+2. Type **config** in the search box, and select **Kore AgentAssist Configuration** from the displayed list.  
 <img src="../images/kore-agentassist-configuration-15.png" alt="kore-agentassist-configuration" title="kore-agentassist-configuration" style="border: 1px solid gray; zoom:80%;">
 
-3. Click **New** from the right-top corner of the page.
+3. Click **New** from the top-right corner of the page.
 4. Enter the required details. Note that you can fetch the **AgentAssist URL**, **Bot ID**, **Client ID**, and **Client Secret** details from the **[Agent AI](https://agentassist.kore.ai){:target="_blank"}** configuration portal.  
-<img src="../images/configurationp-portal-17.png" alt="configurationp-portal" title="configurationp-portal" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/configuration-portal-17.png" alt="configuration-portal" title="configuration-portal" style="border: 1px solid gray; zoom:80%;"> 
       * Select a language in the **Language** dropdown list. The selected language corresponds to the language configured in the AI Agent.  
  <img src="../images/configuration-details-16.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
  5. Select **Active** and click **Save**.
@@ -438,14 +438,14 @@ This app will be used in studio script.
 4. In the dropdown list, select a Salesforce object against which the Agent AI widget needs to be configured in its page layout.  
 <img src="../images/salesforce-object-selection-18.png" alt="salesforce-object-selection" title="salesforce-object-selection" style="border: 1px solid gray; zoom:80%;">
 
-### Configure Page layout to embed Kore Agent AI Widget to Salesforce object
+### Configure Page layout to embed the Agent AI Widget to Salesforce object
 
 Assuming the Account Object is mapped above, open the page layout for Account Object.
 
-In the filter field, type “NiceCTI” and drag and drop the object onto the **Account Object** layout page.  
+In the filter field, type **NiceCTI** and drag and drop the object onto the **Account Object** layout page.  
 <img src="../images/nice-cti-19.png" alt="nice-cti" title="nice-cti" style="border: 1px solid gray; zoom:80%;">
 
-### Configure a Visualforce Page to embed Kore Agent AI Widget (If Applicable)
+### Configure a Visualforce Page to embed the Agent AI Widget (If Applicable)
 
 #### Step-1: Create a Lightning Out App
 
@@ -482,7 +482,7 @@ Create a Lightning Out app, a special type of standalone Aura app:
       ```
     !!! note
 
-        Replace “LightningApplication” with the name of the Lightning Out app you created in [Step-1](#step-1-create-a-lightning-out-app). Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference - these are the height and width of the Agent AI widget.
+        Replace **LightningApplication** with the name of the Lightning Out app you created in [Step-1](#step-1-create-a-lightning-out-app). Modify the **height** and **width** of the **niceCTIAgentAssistVoice** component according to your preference - these are the height and width of the Agent AI widget.
 
 5. Click **Save**.
 
@@ -504,9 +504,9 @@ Create a Lightning Out app, a special type of standalone Aura app:
 </apex:page>
 ```
 
-Set this Visualforce page as the screen pop in the Softphone layouts of your Salesforce org, or create a Visualforce tab by following the instructions in this [document](https://help.salesforce.com/s/articleView?id=platform.pages_tabs_create.htm&type=5){:target="_blank"}.
+Set this Visualforce page as the screen pop-up in the Softphone layouts of your Salesforce org, or create a Visualforce tab by following the instructions in this [document](https://help.salesforce.com/s/articleView?id=platform.pages_tabs_create.htm&type=5){:target="_blank"}.
 
-### Configure an Aura Component to embed Kore Agent AI widget (If Applicable)
+### Configure an Aura Component to embed the Agent AI widget (If Applicable)
 
 1. Either create a new Aura Component or open an existing one.
 2. To create a new Aura Component, open **Developer Console** from your Salesforce org.
@@ -555,19 +555,17 @@ The **Access Key Manager** page allows you to view all the access keys in your s
 ### Configure NICE API Credentials (Only for Chat)
 
 1. Click the **app launcher**.
-2. Type “nice” in the search box, and select **Nice Signal Credentials** from the displayed list.  
+2. Type **nice** in the search box, and select **Nice Signal Credentials** from the displayed list.  
 <img src="../images/nice-signal-22.png" alt="nice-signal" title="nice-signal" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **New** from the top-right corner of the page.  
-<img src="../images/nice-signal-configuration-23.png" alt="nice-signal-configuration" title="nice-signal-configuration" style="border: 1px solid gray; zoom:80%;">
-
 4. Add the required parameters:
     * **Credentials Set Name**: NICE CX credentials (change as needed)
     * **Proxy Tunnel Endpoint**: {<a href="#AI URL">Agent AI URL</a>}/integrations/nice/relay/toNice
     * **NICE CX Credentials**:
         * Nice Token Base URL: NICE Token Base URL is the Host URL of the login page.
         * Nice API URL: If the URL for ACD is https://home-abc.nice-incontact.com, then the API URL would be https://api-abc.nice-incontact.com . Also, it is necessary to use the URL without the trailing slash.
-        * NiceCX Signal API Access Key (generated in above step)
+        * NiceCX Signal API Access Key (generated in the above step)
         * NiceCX Signal API Access Key Secret (generated in the above step)
 5. Click **Save**.
 
@@ -584,10 +582,10 @@ Open the Studio, import the above script, and customize as per the following tab
 
 | **Node**       | **Activity**                                                    | **Fields Updated**                                                                                                      |
 |----------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| **Set Credentials**  | Update the credentials to connect to Salesforce Org           | Salesforce_key (created in step [“Enabling OAuth”](#OAuth))<br>Salesforce_secret (created in step [“Enabling OAuth”](#OAuth))<br>Salesforce_username<br>Salesforce_password<br>Kore AI Agent credentials (botid, clientid, clientsecret, baseurl, language)<br>**Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5){:target="_blank"} for help. |
-| **User Auth**        | Configure Salesforce org credentials and generate oauth Token | salesforceBaseURI<br>**Note:** You can get it by running the following curl:<br><br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’` |
+| **Set Credentials**  | Update the credentials to connect to the Salesforce Org           | Salesforce_key (created in the [Enabling OAuth](#OAuth) step)<br>Salesforce_secret (created in the [Enabling OAuth](#OAuth) step)<br>Salesforce_username<br>Salesforce_password<br>AI Agent credentials (botid, clientid, clientsecret, baseurl, language)<br>**Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5){:target="_blank"} for help. |
+| **User Auth**        | Configure Salesforce org credentials and generate Oauth Token | salesforceBaseURI<br>**Note:** You can get it by running the following curl:<br><br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’` |
 | **ReqAgent**         | Update Skill for Agent Routing                                 | Skill and other attributes as needed                                                                                      |
-| **Custom Data**      | The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent.<br>Refer to [Access Custom Data in Kore AI Agent](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"` |
+| **Custom Data**      | The **customdata** object in the script can be used to pass information to the AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent.<br>Refer to [Access Custom Data in Kore AI Agent](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"` |
 | **AgentAssist**      | Map the AgentAssist Hub Instance                                | Select the AgentAssist Hub app created in the above step.                                                                  |
 
 **AgentAssist Hub Reference**:
@@ -595,9 +593,9 @@ Open the Studio, import the above script, and customize as per the following tab
 Click the checkbox on the specific instance. Only one can be active.  
 <img src="../images/agent-assist-hub-reference-25.png" alt="agent-assist-hub-reference" title="agent-assist-hub-reference" style="border: 1px solid gray; zoom:80%;">
 
-After selecting the AgentAssist app, click the **Close** button on the bottom-right corner of the page.  
+After selecting the AgentAssist app, click the **Close** button in the bottom-right corner of the page.  
 !!! note
-    Do not click the “X” button to close the window as this will not save the changes.
+    Do not click the **X** button to close the window, as this will not save the changes.
 
 Save the **Studio Script** and make sure there are no errors on Save.
 
@@ -614,9 +612,9 @@ Open the Studio, import the above script, and customize as per the following tab
 
 | **Node**            | **Activity**                                                    | **Fields Updated**                                                                                                                                                                                                                                                                         |
 |---------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Salesforce Auth**  | Update the credentials to connect to Salesforce Org              | - salesforceBaseURI<br>  **Note:** You can get it by running the following curl:<br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’`<br>- salesforcekey (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforcesecret (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforceusername<br>- salesforcepassword<br>-Kore AI Agent credentials (botid, clientid, clientsecret, baseurl, language)<br>**Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5) for help. |
+| **Salesforce Auth**  | Update the credentials to connect to the Salesforce Org              | - salesforceBaseURI<br>  **Note:** You can get it by running the following curl:<br> `curl –location –request POST ‘https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=<Salesforce Client ID>&client_secret=<Salesforce Client_Secret>&username=<Salesforce_Username>&password=<Salesforce Password + Salesforce Security Token>’`<br>- salesforcekey (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforcesecret (created in the step [“Enabling OAuth”](#OAuth))<br>- salesforceusername<br>- salesforcepassword<br>-AI Agent credentials (botid, clientid, clientsecret, baseurl, language)<br>**Note:** The password is your Salesforce password appended with your Security Token. Refer to [this guide](https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm&type=5) for help. |
 | **ReqAgent**         | Update Skill for Agent Routing                                  | Skill and other attributes as needed                                                                                                                                                                                                                                                        |
-| **Custom Data**      | The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent.<br> Refer to [Access Custom Data in Kore AI Agent](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"`                                                                                                            |
+| **Custom Data**      | The **customdata** object in the script can be used to pass information to the AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent.<br> Refer to [Access Custom Data in Kore AI Agent](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. | Include your data in the customdata object (one key-value pair per line). For example:<br> `customdata.agentName="Agent"`<br> `customdata.agentID="{agentid}"`                                                                                                            |
 | **AgentAssist**      | Map the AgentAssist Hub Instance                                 | Select the AgentAssist Hub App created in the above step.                                                                                                                                                                          |
 
 
@@ -641,7 +639,7 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 * **Skill** - Select a predefined skill, else create one and select here.
 * **Script** - From the dropdown list, select the **studio script** created for Salesforce-NICE CTI above.
 * **IVR Reporting Enabled** - Select the **checkbox**.
-* Click **Create Point of Contact** button to save it.  
+* Click the **Create Point of Contact** button to save it.  
 <img src="../images/create-point-of-contact-31.png" alt="create-point-of-contact" title="create-point-of-contact" style="border: 1px solid gray; zoom:80%;">
 
 **Create a new single Point of Contact (For Chat)**
@@ -651,22 +649,20 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 * **Skill** - Select a predefined skill, else create one and select here.
 * **Script** - From the dropdown list, select the studio script created for Salesforce-NICE CTI above.
 * **IVR Reporting Enabled** - Select the **checkbox**.
-* Click **Create Point of Contact** button to save it.  
+* Click the **Create Point of Contact** button to save it.  
 <img src="../images/create-point-of-contact2-32.png" alt="create-point-of-contact2" title="create-point-of-contact2" style="border: 1px solid gray; zoom:80%;">
 
 ## Make a Test Call / Chat
 
-1. Sign in to the **Kore Agent AI** account and prepare an AI Agent to handle agents’ queries.
+1. Sign in to the **Agent AI** account and prepare an AI Agent to handle agents’ queries.
 2. Validate the AI Agent credentials are correctly mapped in the above settings.
 3. Validate the AgentAssist URL is correctly mapped in the above settings.
-4. Sign in to the **NICE-Incontact** account, and check if the point of contact is properly configured.
+4. Sign in to the **NICE-InContact** account, and check if the point of contact is properly configured.
 5. Sign in to your **Salesforce** org.
 6. From the **app launcher,** select **Service Console**.
-7. Sign in with **NICE CX** credentials for the agent.  
-<img src="../images/install-softphone-33.png" alt="install-softphone" title="install-softphone" style="border: 1px solid gray; zoom:40%;">
-
+7. Sign in with **NICE CX** credentials for the agent.   
 8. Install the softphone: [https://help.nice-incontact.com/content/agent/cxoneagent/addcxawebrtcext.htm](https://help.nice-incontact.com/content/agent/cxoneagent/addcxawebrtcext.htm){:target="_blank"}  
-<img src="../images/cx-one-agent-webrtc-extension-34.png" alt="cx-one-agent-webrtc-extension" title="cx-one-agent-webrtc-extension" style="border: 1px solid gray; zoom:60%;">
+   <img src="../images/install-softphone-33.png" alt="install-softphone" title="install-softphone" style="border: 1px solid gray; zoom:40%;">  
 
 9. Refresh the screen, and click the **phone** icon on the status bar.
 10. Select **Integrated Softphone**, and click **Connect**.  
@@ -679,17 +675,17 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 
 **For Call**:
 
-1. Make a call to the **Point of Contact** phone number.
+1. Dial the **Point of Contact** phone number.
 2. Accept the call.  
 <img src="../images/accept-a-call-38.png" alt="accept-a-call" title="accept-a-call" style="border: 1px solid gray; zoom:50%;">
 
     1. The **Contact** page appears.  
     <img src="../images/contact-page-39.png" alt="contact-page" title="contact-page" style="border: 1px solid gray; zoom:80%;">
 
-3. When the **End** button is clicked, **Summary** is generated and displayed on the Agent AI widget.  
+3. When the **End** button is clicked, the **Summary** is generated and displayed on the Agent AI widget.  
 <img src="../images/summary-generation-40.png" alt="summary-generation" title="summary-generation" style="border: 1px solid gray; zoom:80%;">
 
-4. Upon clicking the **Submit** button on the Agent AI widget, Summary is stored in the Kore Agent AI Conversation Summaries.  
+4. Upon clicking the **Submit** button on the Agent AI widget, the Summary is stored in the Agent AI Conversation Summaries.  
 <img src="../images/kore-agentai-conversation-summary-41.png" alt="kore-agentai-conversation-summary" title="kore-agentai-conversation-summary" style="border: 1px solid gray; zoom:80%;">
 
 **For Chat:**
@@ -703,7 +699,7 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 2. Make a chat request by opening the **Point of Contact** link in the browser.  
 <img src="../images/point-of-contact-chat-44.png" alt="point-of-contact-chat" title="point-of-contact-chat" style="border: 1px solid gray; zoom:80%;">
 
-3. Send a message and the chat request is sent to the agent.  
+3. Send a message, and the chat request is sent to the agent.  
 <img src="../images/chat-request-45.png" alt="chat-request" title="chat-request" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Accept**.  
@@ -712,13 +708,13 @@ On the **NICE Incontact** home page, click the **application launcher** button a
 5. The Agent AI widget opens for the ongoing chat conversation.  
 <img src="../images/chat-conversation-page-47.png" alt="chat-conversation-page" title="chat-conversation-page" style="border: 1px solid gray; zoom:80%;">
 
-6. When the **End** button is clicked, Summary is generated and displayed on the Agent AI widget.  
+6. When the **End** button is clicked, the Summary is generated and displayed on the Agent AI widget.  
 <img src="../images/chat-summary-48.png" alt="chat-summary" title="chat-summary" style="border: 1px solid gray; zoom:80%;">
 
-7. Upon clicking the **Submit** button in the Agent AI widget, Summary is stored in the Kore Agent AI Conversation Summaries.  
+7. Upon clicking the **Submit** button in the Agent AI widget, the Summary is stored in the Agent AI Conversation Summaries.  
 <img src="../images/chat-summary-in-agentai-49.png" alt="chat-summary-in-agentai" title="chat-summary-in-agentai" style="border: 1px solid gray; zoom:80%;">
 
-8. When **Disposition** is selected and clicked **Save**, Chat transcript is stored in Salesforce.  
+8. When **Disposition** is selected and clicked **Save**, the Chat transcript is stored in Salesforce.  
 <img src="../images/chat-transcript-in-salesforce-50.png" alt="chat-transcript-in-salesforce" title="chat-transcript-in-salesforce" style="border: 1px solid gray; zoom:80%;">  
 
       <img src="../images/chat-summary-in-salesforce-51.png" alt="chat-summary-in-salesforce" title="chat-summary-in-salesforce" style="border: 1px solid gray; zoom:80%;">

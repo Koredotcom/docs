@@ -13,7 +13,7 @@ Current capabilities include Answer Generation, Conversation Summarization, User
 
 The XO GPT module offers fast, accurate AI responses with built-in security:
 
-* **Better Accuracy**: The module leverages smaller foundation models, typically under 10 billion parameters, that have been explicitly fine-tuned for conversational AI agents. The models achieve better accuracy, relevance, and interpretability for production deployment by tuning smaller models rather than directly prompting larger generative models.
+* **Better Accuracy**: The module leverages smaller foundation models, typically under 10 billion parameters, that have been explicitly fine-tuned for conversational AI agents. The models achieve better accuracy, relevance, and Interpretability for production deployment by tuning smaller models rather than directly prompting larger generative models.
 
 * **Faster Responses**: The models are relatively smaller and hosted along with the Platform. This results in faster response times, making them suitable for production use cases for digital and voice interactions.
 

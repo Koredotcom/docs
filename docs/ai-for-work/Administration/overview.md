@@ -1,6 +1,6 @@
 # Admin Console Overview
 
-The  Admin Console of **(In)Business Productivity** is a centralized management interface for administrators to configure, monitor, and manage system settings, including:
+The  Admin Console is a centralized management interface for administrators to configure, monitor, and manage system settings, including:
 
 * [Workspace](./workspace.md)
 * [Account Hub](./account-hub.md)
@@ -15,7 +15,7 @@ To sign up for an Admin account, you must meet the following requirements:
 
 ## Access Admin Console
 
-To access the **Admin Console** on **(In)Business Productivity**, follow the steps below:
+To access the **Admin Console**, follow the steps below:
 
 1. Log in to [(In)Business Productivity](https://dev-productivity.inceptionai.app/login) using your credentials.
 2. Click **Admin Console** under your user account menu.  

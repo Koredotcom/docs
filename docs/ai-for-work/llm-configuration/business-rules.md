@@ -1,26 +1,22 @@
-
 # Business Rules
 
-(In)Business Productivity enables users to define business rules by setting rules for entity selection and responses based on keywords. Business Rules are guidelines or policies that ensure that the generated answers meet the specific criteria and align with the organization's goals.
+Define business rules by setting rules for entity selection and responses based on keywords. Business rules serve as guidelines or policies that ensure generated answers meet specific criteria and align with organizational goals.
 
-Users can find the Business Rules section in the Admin Console, where all the business rules of published custom integrations in the account will be listed. Users have two options for creating business rules:
+Access the Business Rules section in the Admin Console, where all business rules of published custom integrations in the account appear. Create business rules using two options:
 
-1. **Answering Rule**
-
-2. **Entity Rule**
+1. Answering Rule
+2. Entity Rule
 
 ## Answering Rule
 
-Answering rules allow you to specify the response to display when a query relates to a particular topic. These rules rely on keywords; when specific keywords are detected in a user's input, users can customize the answer displayed accordingly. This section contains two fields:
+Answering rules let you specify the response to display when a query relates to a particular topic. These rules rely on keywords—when the system detects specific keywords in a user's input, you can customize the answer displayed accordingly. This section contains two fields:
 
-* **Connection**: The toggle option allows users to specify whether a rule is connection-specific or independent: when toggled on, the rule requires a custom connection selection and triggers only if both the bot connection and keyword match; when toggled off, it remains keyword-specific and independent of any connection.
-
-* **Rule:** Users can type a rule that includes a question and specify how it should be answered.
+* **Connection**: Use the toggle option to specify whether a rule is connection-specific or independent. Toggle on to require a custom connection selection—the rule triggers only if both the bot connection and keyword match. Toggle off to keep the rule keyword-specific and independent of any connection.
+* **Rule**: Type a rule that includes a question and specify how the system should answer it.
 
 ## Entity Rule
 
-Entity rules rely on connections and keywords to define which entities are filled in a query when specific keywords are detected in the user's input. When connection intents match and contain these keywords, certain entities are prefilled based on user-defined rules. This section includes two fields that allow users to specify criteria for entity selection.
+Entity rules rely on connections and keywords to define which entities the system fills in a query when it detects specific keywords in the user's input. When connection intents match and contain these keywords, the system prefills certain entities based on user-defined rules. This section includes two fields that let you specify criteria for entity selection.
 
-* **Connection**: Users can select any available custom connection.
-
-* **Rule**: Write the rule in detail, then click the **Build Flow** to proceed.
+* **Connection**: Select any available custom connection.
+* **Rule**: Write the rule in detail, then click **Build Flow** to proceed.

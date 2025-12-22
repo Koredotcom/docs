@@ -1,94 +1,21 @@
-# About Tools
+# About Workflow
 
-Tools are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments.
+Workflow can automate processes, streamline workflows, generate insights, and produce outputs such as deal summaries or emails. The workflow builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
 
-Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
+### Key Features
 
-For example, a ‘Leave Managing Agent’ might include tools like:
+* **Workflow**: A visual no-code/low-code builder for creating and managing workflows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code. To build a flow, you can either [create a workflow](./create-a-workflow.md){target="_blank"} from scratch or [import an existing workflow](import-a-workflow.md){target="_blank"}.
 
-* Get Leave Balance tool - Invokes an external API to retrieve leave details.
-* Leave Application tool - Gathers necessary information and applies leaves in the backend system. 
+* **Sharing & Permissions**: Account owners can invite users to collaborate on specific workflows. Invited users can access the Models and Data modules for the invited account and see only the workflows to which they're invited. [Learn more](./manage-user-roles-and-permissions.md).
 
-Similarly, a ‘Credit Card Assistant’ might include tools like:
+* **Workflow Endpoint**: After building and testing your workflow, you can deploy it. Once deployed, you'll receive an API endpoint for your workflow, which you can use to integrate it with other systems. [Learn more](deploy-a-workflow.md).
 
-* Retrieve Outstanding Amount tool - Fetches the current due amount.
-* Fetch Credit Limit tool - Retrieves the user's maximum credit limit.
-* Initiate Bill Payment tool - Initiates the bill payment process.
-* Find Recent Transactions tool - Displays recent user transactions, often by retrieving data from a database.
+* **API Keys**: Create API keys for your deployed workflows to access them from external systems securely. Share these keys only with trusted users. [Learn more](./create-a-new-api-key.md).
 
-## Types of Tools
+* **Workflow Monitor**: Track and analyze your workflows' performance across multiple runs, gaining a comprehensive, time-based view of workflow activities to optimize your AI operations. [Learn more](./workflow-monitor/about-workflow-monitor.md).
 
-The Agent Platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
+* **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](guardrails/add-a-scanner.md){:target="_blank"}.
 
-!!! info
+* **Audit Logs**: Track the audit logs of all activities within your workflows and quickly troubleshoot issues with real-time event tracking. [Learn more](./workflow-audit-log.md){:target="_blank"}.
 
-    * Workflow Tools - Visual tools that let you design, configure, and automate conversational flows involving multiple steps. 
-    * Code Tools - Developer-defined tools implemented in code for custom logic and integrations.
-    * MCP Tools - Tools exposed via the Model Context Protocol.
-    
-    Tools can be created and managed via the Tools Page in the Agentic App. 
-
-### Workflow Tools
-
-Workflow Tools provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. They support both synchronous and asynchronous execution modes, enabling rapid development and reliable task automation without writing any code.
-
-**Best suited for:** Scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
-
-Examples:
-
-* Weather API tool: Retrieves live weather updates.
-* Stock Market tool: Fetches real-time stock prices.
-* Database Query tool: Accesses structured data from a company’s database.
-
-Workflow Tools can be created either through the Agentic App or directly under the Tools section.
-
-When workflow tools are created under the **Tools** menu, they function as universal tools that, once deployed, are accessible across multiple apps. These tools act as templates, and when imported into an app, they generate a local copy that can be further customized without altering the original. Importing is restricted to tools that have been deployed from the Tools library.
-
-In contrast, when workflow tools are created within the Agentic App, they are scoped exclusively to that app. You can also import a workflow tool from the library into the Agentic App. Any modifications or updates made to these imported tools apply only to the local copy and do not affect the version available in the Tools library. To ensure that changes take effect, the tool must be deployed within the app. 
-
-For more information on Workflow tools, see [Workflow Tools](../tools/workflow-tools.md).
-
-
-### Code Tools
-
-Code Tools provide maximum flexibility by enabling agents to run custom JavaScript or Python code. These tools are ideal for handling dynamic logic, conditional processing, or integrations that cannot be captured through pre-defined workflows. Code Tools support synchronous execution and are ideal when precision, extensibility, or complex algorithms are required.
-
-**Best suited for:** Advanced use cases involving business-specific logic, data transformation, or interaction with complex systems.
-
-Examples:
-
-* SQL Query Processor – Executes SQL queries on a specified database.
-* Custom Validator – Validates inputs using custom logic before proceeding.
-
-For more information, see [Code Tools](../tools/code-tools.md).
-
-
-### MCP Tools
-
-MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform.
-
-Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code.  Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. 
-
-Because MCP Tools are centrally managed, they support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents.
-
-**Best suited for:** Seamless integration with external APIs, proprietary platforms, or shared toolsets across teams or organizations.
-
-Examples:
-
-* Enterprise HR Toolset (MCP) – A suite of HR tools exposed via MCP.
-* Remote Invoice Processor – Executes billing operations through a secure MCP endpoint.
-
-For more information, see [MCP Tools](../tools/mcp-tools.md).
-
-## Tools Page
-
-The **Tools** page provides a structured view of available tools with clear visibility into their types, statuses, and linked agents. It shows the total number of tools in the app.
-
-Key highlights
-
-* Displays total count categorized under **Workflow**, **Code**, and **MCP.**
-* Displays the **Workflow tool status** as **Draft** or **Deployed.**
-* Provide empty-state CTAs: **Import** and **New Tool** for Workflow tools, **New Tool** for Code tools, **Import** and **Link Tool** for MCP tools.
-* **Import Tool** and **New Tool** CTAs are located at the top right for easy access.
-
-<img src="../images/tools-listing-page.png" alt="Tools Listing Page" title="Tools Listing Page" style="zoom:70%; border: 1px solid gray;">
+* **Configurations**: Manage your workflow's general details, define reusable values and configurations using environment variables, and undeploy the workflow. [Learn more](configure-a-workflow.md){:target="_blank"}.

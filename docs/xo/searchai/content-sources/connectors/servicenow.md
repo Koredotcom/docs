@@ -63,7 +63,11 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
 
 * **Host URL**: Host of your ServiceNow instance
 
-Click the **Connect** button to initiate authorization with the application. After the connection is established, go to the **Configurations** tab and click **Sync Now** to ingest content to the application. By default, upon sync, the connector ingests **published knowledge articles, incidents and catalog items** from the ServiceNow instance. 
+Click the *Connect* button to initiate authorization with the application. After the connection is established, go to the *Configurations* tab and click *Sync Now* to ingest content to the application. By default, upon sync, the connector ingests *published knowledge articles, incidents and catalog items* from the ServiceNow instance. 
+
+!!!note
+  
+  Only the articles within their validity date are ingested. Any article that's expired(beyond its Valid To date) isn't ingested.
 
 ## Advanced Filters
 
@@ -84,7 +88,7 @@ Note:
 
 ![Example](images/servicenow/example2.png "Example")
 
-* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied.  For instance, the following filter can be used to select published articles with a given Sys Id.
+* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied. For instance, the following filter can be used to select published articles with a given Sys Id.
 
 ![Example](images/servicenow/example3.png "Example")
 
@@ -112,13 +116,13 @@ User Criteria in ServiceNow is a method to group users based on specific conditi
 
 By default, SearchAI grants access to the following:
 
-* **Owners** of the Knowledgebase - This list of owners will be added directly in the racl field in the indexed content.
-* **Managers** of the Knowledgebase - This list of managers will be added directly in the racl field of the indexed content.
+* **Owners** of the Knowledge base - This list of owners will be added directly in the racl field in the indexed content.
+* **Managers** of the Knowledge base - This list of managers will be added directly in the racl field of the indexed content.
 * **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.  
 
 ![Individual Users](images/servicenow/racl/individual-users.png "Individual Users")
 
-Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default. Users associated with other conditions (for example, department or role) aren't automatically included. Therefore, these users can't access articles unless they're explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledge base is John@example.com and the knowledge base can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. 
+Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default. Users associated with other conditions (for example, department or role) aren't automatically included. Therefore, these users can't access articles unless they're explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledge base is `John@example.com` and the knowledge base can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. 
 
 ```json
 "sourceAcl": [`
@@ -130,7 +134,7 @@ Each User Criteria is retrieved as a Permission Entity. The permission entity ID
 
 The alphanumeric field “25431493ff4221009b20ffffffffffe0” in the indexed content refers to the Permission Entity corresponding to the user criteria for the article.
 
-If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to associate them with the permission entity.
+If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the [Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to associate them with the permission entity.
 
 ### Incidents
 
@@ -157,7 +161,7 @@ For each incident in ServiceNow, **Search AI** enforces access control based on 
 * Users associated with the incident through specific incident fields, such as: Creator, Caller, Watch List Users.
 * These users are added to the sys_racl field using their email ID.
 
-**Summary – <code>sys_racl</code> Contents for an Incident Record**
+**Summary - <code>sys_racl</code> Contents for an Incident Record**
 
 To summarize, the **sys_racl** field for an incident record contains:
 

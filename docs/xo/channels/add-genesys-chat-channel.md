@@ -42,8 +42,6 @@ The steps to add the channel are summarized below:
 
 A **Bot Connector integration** enables your bot to exchange messages with the _Genesys Agent System_ configured on the Platform by using industry-standard _REST_ and _JSON_ over HTTPS.
 
-
-
 1. Log in to the [Genesys Developer Portal](https://login.mypurecloud.com/).
 2. Create a Bot Connector with the steps below:
 3. **On the Genesys Cloud CX Admin portal**

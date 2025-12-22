@@ -4,9 +4,7 @@
 
 **To integrate with your hugging face account, follow these steps**:
 
-1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
 2. Click **Settings** on the top navigation bar.
 2. Click **Integrations** on the left menu.
 

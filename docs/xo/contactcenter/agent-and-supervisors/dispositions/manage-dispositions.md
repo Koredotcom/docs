@@ -128,7 +128,7 @@ Below are a couple of examples of disposition sets to help you create your own:
 
 ## Disposition Codes
 
-A Disposition Code is a short label assigned to the outcome of an interaction. Disposition Codes are required to build Disposition Sets and cannot be assigned to Queues or Agent Groups on their own.  
+A Disposition Code is a short label assigned to the outcome of an interaction. Disposition Codes are required to build Disposition Sets and can't be assigned to Queues or Agent Groups on their own.  
 
 ### Default Disposition Codes
 
@@ -140,38 +140,38 @@ Contact Center provides three pre-defined disposition codes:
 
 ### Custom Disposition Codes
 
-Contact center also allows you to create custom codes and makes them available to agents once enabled and included within a Disposition Set. You can find and create Disposition Codes by going to **Contact Center > AGENT & SUPERVISORS > Dispositions > Disposition Codes**. Here, you can find a list of existing Disposition Codes and create new ones. You can also perform a name-level keyword search.
+Contact center also lets you to create custom codes and makes them available to agents once enabled and included within a Disposition Set. You can find and create Disposition Codes by going to **Contact Center > AGENT & SUPERVISORS > Dispositions > Disposition Codes**. Here, you can find a list of existing Disposition Codes and create new ones. You can also perform a name-level keyword search.
 
 #### Add a Custom Disposition Code
 
 To add a Disposition Code:
 
-1. Click **+ Add Code**.
-<img src="../images/add-code.png" alt="Add Code Button" title="Add Code" style="border: 1px solid gray; zoom:80%;">
+1. Select **+ Add Code**.
+<img src="../images/add-code.png" alt="Add Code" title="Add Code" style="border: 1px solid gray; zoom:80%;">
 
-2. A _New Disposition Code_ page opens. Click **Enable** at the top right to activate the Code.
+2. A _New Disposition Code_ page opens. Select **Enable** to activate the Code.
 3. Enter the disposition **Code Name** and **Description**.
-4. **Assign** a color and check the preview to make sure it looks good.
-5. Click **Create**.
-<img src="../images/new-disposition-code-window.png" alt="New Custom Disposition Code Window" title="New Custom Disposition Code Window" style="border: 1px solid gray; zoom:100%;">
+4. **Assign** a color and check the preview.
+5. Turn on the **Show campaign-specific types** toggle to display the dispositions that the system associates with the selected campaign.
+5. Select **Create**.
+    <img src="../images/create-new-disposition-code.png" alt="New Custom Disposition Code Window" title="New Custom Disposition Code Window" style="border: 1px solid gray; zoom:70%;">
 
 #### Edit a Custom Disposition Code
 
 To edit a custom Disposition Code, follow these steps:
 
 1. Find it in the list of Disposition Codes,
-2. Click the **Edit** button under the Actions column,
+2. Select **Edit** under the Actions column,
 3. Make your changes in the _Edit Disposition Code_ window, then **Save**.
-<img src="../images/edit-disposition.png" alt="Edit Custom Disposition Code" title="Edit Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-disposition.png" alt="Edit Custom Disposition Code" title="Edit Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
 
 #### Delete a Custom Disposition Code
 
 To delete a custom Disposition Code, follow these steps:
 
 1. Find it in the list of Disposition Codes.
-2. Click the **Delete** button under the Actions column.
+2. Select **Delete** under the Actions column.
 3. **Confirm** your choice.
-<img src="../images/delete-disposition.png" alt="Delete Custom Disposition Code" title="Delete Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
 
 !!! Notes
 

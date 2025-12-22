@@ -1,14 +1,17 @@
 # Streaming Responses
 
-Streaming responses in large language models (LLMs) enable real-time, incremental output generation. Instead of waiting for the entire response to be computed, the model starts transmitting pieces of the output as they become available. This approach not only reduces latency and enhances user interaction but also fosters a sense of immediate connection, mirroring real-time communication. Streaming is particularly beneficial in applications requiring dynamic updates, such as conversational AI Agent, speech-to-text systems, and real-time content-generation tools.
+Streaming responses in large language models (LLMs) enable real-time, incremental output generation. The model transmits pieces of the output as they become available, instead of waiting for the entire response to compute. This approach not only reduces latency and enhances user interaction but also fosters a sense of immediate connection, mirroring real-time communication. Streaming is particularly beneficial in applications requiring dynamic updates, such as conversational AI Agent, speech-to-text systems, and real-time content-generation tools.
 
 ## Current Capabilities
 
 The Platform support the voice-based channel [Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md) for GenAI features, including Agent Node, with Deepgram as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
 
-The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when a streaming prompt is selected at the node level, even if the feature-level prompt doesn't use streaming.
+The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when you select a streaming prompt at the node level, even if the feature-level prompt doesn't use streaming.
 
-The streaming capability is available only for [V1 prompts](../automation/agent-node/prompt-setup.md) in Agent Nodes and doesn't support tool calling.
+!!! Note "Agent Node Tool Calling and Streaming Support"
+
+    * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
+    * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.
 
 
 ### Benefits of Streaming
@@ -22,8 +25,8 @@ The streaming capability is available only for [V1 prompts](../automation/agent-
 
 Streaming responses unlocks significant benefits across various industries, enhancing real-time interactions and delivering incremental updates that improve user experience and operational efficiency.
 
-| **Domain**           | **Use Cases**                                                                                                                               |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Domain**           | **Use Cases**  |
+|------------------|-------|
 | Healthcare        | Streaming comprehensive summaries of patient history or medical guidelines.                                                            |
 |                  | Delivering in-depth analysis of clinical studies or medical research in real time.                                                     |
 | Finance           | Streaming detailed breakdowns of investment portfolios or market analysis.                                                            |
@@ -43,7 +46,7 @@ The Platform provides Default-Streaming prompts in addition to default (non-stre
 
 Go to **Generative AI Tools** > **GenAI Features** and select the default-streaming prompt for Agent Node. You can also create custom streaming prompts for this model.  
 <img src="../images/default-streaming.png" alt="default-streaming" title="Default Streaming Prompt" style="border: 1px solid gray; zoom:70%;">
-
+automation
 ### Create Custom Streaming Prompts
 
 To create a custom streaming prompt, see [How to add Prompts and Requests](prompts-library.md) and enable the streaming response toggle.
@@ -51,26 +54,26 @@ To create a custom streaming prompt, see [How to add Prompts and Requests](promp
 Ensure that the streamed response follows the Platform's required format:
 
 * conv_status: Indicates whether the conversation has **ended** or is **ongoing**.
-*AI Agent response: The generated response sent to the end user.
+* AI Agent response: The generated response sent to the end user.
 * collected entities: A stringified JSON object containing extracted entities.
 
 !!! note
 
     * When enabled, add the required stream parameter to the custom prompt for the model to recognize streaming. For example, "stream": true for OpenAI and Azure OpenAI.
-    * The saved prompt will appear with a stream tag in the prompts library. 
+    * The saved prompt appears with a stream tag in the prompts library. 
     * Enabling streaming disables the “Exit Scenario”, “AI Agent Response”, “Collected Entities”, and “Tool Call Request” (for Agent Node) fields.
 
 ## Benchmarking
 
 | Task             | Mode         | Input Tokens | Output Tokens | Time Taken (seconds) | Reduction (%)                      |
 |------------------|--------------|--------------|----------------|----------------|------------------------------------|
-| Agent Node       | Non-streaming| 777          | 90             | 2.59           | Output: -30%, Time: 83%           |
+| Agent Node       | Non-streaming| 777          | 90             | 2.59           | Output: - 30%, Time: 83%           |
 |                  | Streaming    | 676          | 62             | 0.44           |                                    |
 | 50-word Joke     | Non-streaming| 95           | 54             | 2.4            | Output: +10%, Time: 80%           |
 |                  | Streaming    | 68           | 60             | 0.47           |                                    |
 | 500-word Joke    | Non-streaming| 95           | 595            | 22.39          | Output: +10%, Time: 98%           |
 |                  | Streaming    | 68           | 649            | 0.41           |                                    |
-| 500-word Joke    | Non-streaming| 68           | 642            | 30.11          | Output: -0.05%, Time: 97%         |
+| 500-word Joke    | Non-streaming| 68           | 642            | 30.11          | Output: - 0.05%, Time: 97%         |
 |                  | Streaming    | 68           | 641            | 0.88           |                                    |
 | 500-word Story   | Non-streaming| 68           | 616            | 16.86          | Output: +2.27%, Time: 97.5%       |
 |                  | Streaming    | 68           | 630            | 0.44           |                                    |
@@ -95,13 +98,13 @@ Key Insights:
 
 ## Analytics
 
-As part of the Platform's Analytics module updates, enhancements have been introduced to better track and differentiate streaming and non-streaming responses. In the LLM Usage Logs main screen, a new column called "TTFT" (Time to First Token) has been added, applicable only to streaming responses. Additionally, the Detailed Log page now includes a Response Type field to indicate whether a response is streaming or non-streaming, offering more precise insights into response behavior.
+As part of the Platform's Analytics module updates, the enhancements better tracks and differentiate streaming and non-streaming responses. The LLM Usage Logs main screen now includes a new column called "TTFT" (Time to First Token), which applies only to streaming responses. Additionally, the Detailed Log page now includes a Response Type field to indicate whether a response is streaming or non-streaming, offering more precise insights into response behavior.
 
-* **TTFT (Time to First Token)**: Reflects the time taken for the first token to appear in the response. For the final chunk of a response volley, TTFT is blank, as no further messages are sent to the user.
+* **TTFT (Time to First Token)**: This metric reflects the time it takes for the first token to appear in the response. For the final chunk of a response volley, the system leaves TTFT blank because it doesn't send any further messages to the user.
 
 * **Response Duration**: Indicates the time taken by the LLM from generating the first chunk to the final chunk.
 
-This detailed analytics data can be found under **Usage Logs** in the Platform.
+This detailed analytics data is available at the **Usage Logs** in the Platform.
 
 <img src="../images/streaming-logs.png" alt="Usage Logs" title="Default Streaming Usage Logs" style="border: 1px solid gray; zoom:70%;">
 
@@ -109,12 +112,13 @@ This detailed analytics data can be found under **Usage Logs** in the Platform.
 
 ## Considerations for Streaming
 
-While streaming enhances real-time interactions and user experience, certain limitations should be considered.
+While streaming enhances real-time interactions and user experience, certain limitations applies.
 
 * Post-processing operations aren't possible, as they require the complete response, which conflicts with the nature of streaming.
 * Guardrails aren't supported in streaming mode, as content moderation typically requires full-context evaluation, which is incompatible with token-by-token streaming.
 * The effectiveness of voice-based streaming also depends on the TTS engine’s support for bi-directional streaming, limiting compatibility to specific engines that offer this capability, such as Deepgram.
 * When BotKit is enabled, interception of streamed response messages isn't supported due to the real-time delivery process.
+
 
 !!! note
 

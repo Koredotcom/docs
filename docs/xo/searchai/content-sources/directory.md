@@ -1,4 +1,4 @@
-# Documents
+# Upload Documents
 
 Business information is available in a variety of formats and at various locations. This information is also available as documents and files on internal servers. Search AI allows uploading and indexing files or directories hosted on local machines or remote servers. This functionality streamlines the process of locating information, eliminating the need to manually locate specific documents and sift through their contents, thus reducing manual efforts and enabling efficient information retrieval, saving users time and resources.
 

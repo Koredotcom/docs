@@ -108,7 +108,7 @@ print(response); \
 
 #### Displaying the Hold Template
 
-Upon receiving the hold template, the user interface in the (In)Business Productivity application:
+Upon receiving the hold template, the user interface in the application:
 
 * Pauses the ongoing conversation.
 * Displays the hold template to the user, including the customized title and description.

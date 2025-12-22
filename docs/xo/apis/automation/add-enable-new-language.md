@@ -69,18 +69,17 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 
 ```json
 curl -X POST 'https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language' \
--H 'Content-Type: application/json' \
--H 'auth: YOUR_JWT_ACCESS_TOKEN' \
--d '[
-{
+--header 'Content-Type: application/json' \
+--header 'auth: YOUR_JWT_ACCESS_TOKEN' \
+--data '{
 "enableLanguage" : "",
 "langDefinitionMode": {
 "baseLanguage": "language_code",
-"Type": "advancedConfig/fileUpload",
+"type": "advancedConfig/fileUpload",
 "fileId":"",
 "preferredData":{
-"Training": true/false,
-"Faqs": true/false,
+"training": true/false,
+"faqs": true/false,
 "ontology": true/false,
 "smalltalk": true/false,
 "traits": true/false
@@ -91,7 +90,7 @@ curl -X POST 'https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language'
 "inputTranslation": true/false,
 "responseTranslation": true/false
 }
-}]'
+}'
 ```
 
 ## Body Parameters

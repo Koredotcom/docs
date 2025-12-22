@@ -14,7 +14,7 @@ Below is a complete example demonstrating how metadata is passed, stored, and ac
 
 ### 1. API Call with Metadata
 
-A typical request to the execute API includes a metadata field as shown below. In the example shown below, additional user information is passed to the app via the metadata field.
+A typical request to the execute API includes a metadata field as shown below. In the following example, additional user information is passed to the app via the metadata field.
 
 
 ```json
@@ -47,7 +47,7 @@ A typical request to the execute API includes a metadata field as shown below. I
 }
 ```
 
-[Learn More about the Execute API.](../../../apis/agentic-apps/execute.md).
+[Learn More about the Execute API.](../../../apis/agentic-apps/execute.md)
 
 
 ### 2. How This Appears in Session Memory

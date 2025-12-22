@@ -65,9 +65,7 @@ The import feature allows administrators to add multiple users at once using .tx
 
 The steps mentioned below, allow you to import users' data from a designated file into (In)Agent Platform.
 
-1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
-
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
 2. Click **Settings** on the navigation bar.
 3. Navigate to **Users Management** > **Users** on the left menu.
 4. Click **Add New User**, and select **Import**.

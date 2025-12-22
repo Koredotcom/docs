@@ -417,7 +417,7 @@ Steps to find orders by customer Id in Shopify:
         }
         },
         "current_total_discounts": "0.00",
-        "current_total_discunts_set": {
+        "current_total_discounts_set": {
         "shop_money": {
         "amount": "0.00",
         "currency_code": "INR"
@@ -899,7 +899,7 @@ Steps to find products using the collection ID in Shopify:
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the App console to fetch products by collection ID as shown below.  
-<img src="../images/shopify-tem-img23.png" alt="VA promot to Get Products by Collection ID" title="VA promot to Get Products by Collection ID" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/shopify-tem-img23.png" alt="VA prompt to Get Products by Collection ID" title="VA prompt to Get Products by Collection ID" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Get variants by Product ID
 
@@ -919,4 +919,4 @@ Steps to get variants by product ID in Shopify:
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the App console to fetch variants using the product ID as shown below.  
-<img src="../images/shopify-tem-img26.png" alt="VA promot to Get Variants by Product ID" title="VA prompt to Get Variants by Product ID" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/shopify-tem-img26.png" alt="VA prompt to Get Variants by Product ID" title="VA prompt to Get Variants by Product ID" style="border: 1px solid gray;zoom:50%;"/>

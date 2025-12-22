@@ -6,7 +6,7 @@ To invite a user, follow the steps below:
 
 1. Click **Settings** on the top navigation bar.
 2. Click **Users Management** > **Users** > **Add New User**.
-    <img src="../images/invite-user.png" alt="invite user" title="invite user" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/add-new-user-aip.png" alt="invite user" title="invite user" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Invite**.
 4. Enter a valid email address of the user you want to invite. 

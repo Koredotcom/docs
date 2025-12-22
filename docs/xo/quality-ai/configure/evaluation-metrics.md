@@ -18,7 +18,7 @@ Evaluation Metrics is a key component of the Quality AI module that enables supe
 
 ## Access Evaluation Metrics
 
-Access the Evaluation Metrics by navigating to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.    
+Navigate to **Quality AI** > **CONFIGURE** > **Evaluation Forms** > **Evaluation Metrics**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/common-eva-tab-for-metrics-type.png" alt="Evaluation Metrics" title="Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 ## Interface Elements
@@ -31,15 +31,15 @@ The Interface displays the following elements:
 
 * **Evaluation Forms**: Shows all associated evaluation forms for configuration and assignment.
 
-* **Ellipsis Icon**: Provides edit and delete an options. 
+* **Ellipsis Icon**: Provides edit and delete options. 
 
 * **Search**: Quick search to view and modify metrics.	
 
 * **New Evaluation Metrics**: Button to configure new metrics. 
 
-## Create New Evaluation Metrics
+## Create New Evaluation Metric
 
-Steps to create new evaluation metrics:
+Steps to create new evaluation metric:
 
 1. Select the **Evaluation Metrics** tab.    
 <img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
@@ -48,7 +48,7 @@ Steps to create new evaluation metrics:
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
 3. Configure your chosen measurement type metrics.    
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
+<img src="../evaluation-criteria/evaluation-metrics/images/metric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
 ## Metrics Configuration Elements
@@ -112,7 +112,7 @@ The following measurement types are:
 
     * **Dead Air**: Tracks unproductive silence periods with configurable thresholds (30-300 seconds). 
 
-    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring words per minute (WPM).
+    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring Words Per Minute (WPM).
 
     **Use Cases**: 
     
@@ -130,7 +130,7 @@ The following measurement types are:
 
     **Key Features**:
 
-    * **API Integration**: Real-time verification with CRM and external systems.
+    * **API Integration**: Real-time verification with Customer Relationship Management (CRM) and external systems.
 
     * **Business Rules Engine**: Five rule types, including first or last value, negotiated value, and strict matching.
 
@@ -170,7 +170,7 @@ The following measurement types are:
 
     * **Dialog flow optimization**
 
-    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md).
+    For the detailed configuration, see [By Dialog Task](../configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md).
 
 1. **By Playbook Adherence**
 
@@ -196,7 +196,7 @@ The following measurement types are:
 
 1. **By AI Agent**
 
-    Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
+    Enables sophisticated evaluations using AI agents capable of multistep reasoning and autonomous decision-making.
 
     **Key Features**:
 
@@ -208,7 +208,7 @@ The following measurement types are:
 
     * **Advanced Decision-Making**: Sophisticated judgment calls beyond pattern matching.
 
-    **Used Cases**: 
+    **Use Cases**: 
     
     * **Complex compliance assessments**
     
@@ -246,7 +246,7 @@ The process of managing evaluation metrics includes the following sections:
 
 Steps to edit or delete existing evaluation metrics types:
 
-1. Right-click on any of the existing **Evaluation Metrics Type**.   
+1. Right-click on any of the existing **Evaluation Metrics Type**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update measurement type fields or **Delete** to remove.   

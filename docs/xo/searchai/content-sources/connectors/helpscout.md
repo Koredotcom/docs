@@ -66,11 +66,11 @@ Note: You need “Docs: Create new, edit settings & Collections" permission to g
 
 To create a new client app:
 
-* Go to your Profile > My Apps and click **Create My App**. 
+* Go to your Profile > My Apps and click *Create My App*. 
 * Provide one of the following as the Redirection URL, depending on your region or deployment. 
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 * Click Save. It will generate an App ID and App Secret. These are required during the configuration of the HelpScout connector in Search AI. 
 
 

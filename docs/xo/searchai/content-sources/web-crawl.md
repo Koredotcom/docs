@@ -1,25 +1,26 @@
-# Web Crawl
+# Configure Web Crawl for Websites
 
 Websites usually provide detailed information about an organization's products and services but have numerous pages and links. Finding a particular piece of information on a website can be a time-consuming task. Search AI simplifies this process by indexing the content of websites, enabling the data and information on the web pages to be readily available as answers to the user's queries. 
 
-## Features
+## Key Features
 
-* You can ingest web content through web crawling at regular intervals, allowing you to access the most recent data for efficient searches.
-* Web crawler only needs a base web URL. It automatically discovers the pages on the site using its navigation plan and hyperlinks found on the page. 
-* You can define crawl rules to enable or disable specific pages to be crawled. 
-* There is authentication support to allow a crawler to access restricted content. 
+* **Scheduled crawling**: Automatically ingest web content at regular intervals to ensure search results reflect the latest information.
 
-To manage the data ingested through web pages or to add new web sources, go to the **Websites** page under the **Content** section.
+* **Automatic discovery**: Simply provide a base URL—the crawler automatically discovers pages using site navigation and hyperlinks.
+
+* **Crawl rules**: Define which pages to include or exclude from crawling.
+
+* **Authentication support**: Access restricted content with proper credentials.
+
+To manage ingested web data or add new web sources, navigate to **Content** > **Websites**.
 
 ![Web Crawl](images/web-crawl-home.png "Web Crawl")
 
-## Adding a new web crawler for a web source
+## Adding a New Web Crawler for a Web Source
 
 To add a new web source, click **+Web Crawl**.
 
-![Adding Web Source](images/add-web-crawl.png "Add Web Source")
-
-Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click **+Web Crawl** on the top right to add a new web domain for crawling.
+Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click **+Add Web Crawl** on the top right to add a new web domain for crawling.
 
 ![Add new web source](images/existing-webcrawls.png "add a new web source")
 
@@ -45,7 +46,7 @@ You can choose to run the crawl in the background, which allows you to perform o
 2. **Upload Sitemap** - Provide a list of sitemaps as a CSV file and a Base URL. The base URL is used to validate the URLs in the sitemaps. It crawls through all the web pages listed in each sitemap in the CSV file, for which the URL matches the Base URL. If a URL in the sitemap doesn't match the base URL, the crawler skips that URL and doesn't crawl it. The crawl options are used to refine the URLs further for crawling. You can use the [sample sitemap CSV](assets/sample_sitemap.csv "download") to learn the format of the CSV file. 
 3. **Upload URL** - Provide a list of URLs to crawl in the form of a CSV file and a base URL. The base URL is used to validate the URLs in the CSV file. In this case, the crawler goes through all the pages listed in the CSV file that match the Base URL. The URLs that match the base URL are crawled, and those that don't match are skipped. The crawl options are used to refine the URLs further for crawling. In this case, crawl depth and max URL crawl options aren't required. Use the [Sample URL CSV](assets/sample_url.csv "download") to learn about the format of the CSV file.
 
-**Crawl depth** - Each website contains multiple levels of the hierarchy of pages and sub-pages. The source URL is considered at the top of the hierarchy, and other pages linked to the URL create nested layers. Crawl depth refers to the maximum number of nested levels the crawler should reach. This field can take values between 1 and 5. If no value is provided for the field, the default crawl depth is set to 5. 
+**Crawl Depth** - Each website contains multiple levels of the hierarchy of pages and sub-pages. The source URL is considered at the top of the hierarchy, and other pages linked to the URL create nested layers. Crawl depth refers to the maximum number of nested levels the crawler should reach. This field can take values between 1 and 10. If no value is provided for the field, the default crawl depth is set to 5. 
 
 
 **Max URL Limit** - This field refers to the maximum number of URLs to crawl. This field can take any integer value between 1 and 10,000. If no value is provided, the default value is 10. 
@@ -73,39 +74,30 @@ When the **JavaScript Rendered** option is enabled, specify the **Crawl Delay fi
 
 * **Crawl Options** - This field can be used to further filter the web pages to crawl from the list of URLs defined using the crawl source. You can choose to crawl and index all the URLs in the crawl source or allow or block specific URLs from being crawled. This configuration can be used to avoid crawling unnecessary web pages from the source, thereby, optimizing indexing for efficient searches. The field can take one of the following values:
     * **Crawl everything** - Use this option when all the URLs in the domain specified by the Crawl Source are to be crawled. By default, when a new domain is added, this option is used, and all the URLs in the domain are used.
-    * **Crawl everything except specific URLs** - Use this option when all the URLs except the blocked URLs are to be crawled. You can add rules to identify the blocked URLs, like _block if URL_ _contains or doesn’t contain _a specific term or if the_ URL is equal to_ a specific URL, as shown below. Select the condition from the drop-down list and specify its values in the text box on the right. 
+    * **Crawl everything except specific URLs** - Use this option when all the URLs except the blocked URLs are to be crawled. You can add rules to identify the blocked URLs, like _block if URL contains or doesn’t contain a specific term or if the URL is equal to a specific URL_, as shown below. Select the condition from the drop-down list and specify its values in the text box on the right. 
         
     ![Crawl Everything except specific URL](images/URL-exclude-conditions.png "Crawl specific URLs")
 
-    * **Crawl only specific URLs** - Use this option when only selected URLs that satisfy a given condition are to be crawled. For example, if only the blog section is to be crawled, you can set the rule as _Allow if URL contains “blog”_.
-        
-    ![Crawl Only Specific URLs](images/URL-include-conditions.png "crawl only specific URLs")
-        
-    You can use any of the following types of conditions to choose the URLs:
-    * **Equals to** - when the URL exactly matches the given value.
-    * **Not equal to** - when the URL doesn't match the given value.
-    * **Contains** - when a given string is found in the URL.
-    * **Does not contain** - When a given string value isn't found in the URL.
-    * **Begins with** - when a given string is found at the beginning of the URL.
-    * **Ends with** - when a given string is found at the end of the URL.
+    * **Crawl only specific URLs** - Use this option when only selected URLs that satisfy a given condition are to be crawled. For example, if only the blog section is to be crawled, you can set the rule as _Allow if URL contains “blog”_. ![Crawl Only Specific URLs](images/URL-include-conditions.png "crawl only specific URLs") You can use any of the following types of conditions to choose the URLs:
+           * **Equals to** - when the URL exactly matches the given value.
+           * **Not equal to** - when the URL doesn't match the given value.
+           * **Contains** - when a given string is found in the URL.
+           * **Does not contain** - When a given string value isn't found in the URL.
+           * **Begins with** - when a given string is found at the beginning of the URL.
+           * **Ends with** - when a given string is found at the end of the URL.
             
     You can **add any number of rules** to selectively choose the URLs from the web domain in the above two options. 
         
     ![Number of rules](images/multiple-include-conditions.png "number of rules")
 
-* **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for recrawling the web domain at regular intervals.  
-
-To set a schedule, enter the following:
+* **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for crawling the web domain at regular intervals. To set a schedule, enter the following:
     * **Date**: The date you want to schedule the first crawl of the web source.
     * **Time**: When you want to schedule the first crawling of the web source. Specify the hours and minutes in a 12-hour format along with the timezone. 
-    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the frequency of recrawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
+    * **Frequency**: Crawling at regular intervals ensures users have up-to-date information. Use this field to specify the frequency of crawling the website. If you want to crawl it only once, set it to ‘Does not repeat’. You can choose daily, weekly, monthly, annual, or custom values for this field.
 
-* **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. 
+* **Is this an Authenticated website?** - Enable this field if an authentication mechanism protects the source website. If the website requires authentication, provide relevant information to access the website depending on the authentication method. Search AI web crawling supports the two types of authentication - **Basic Authentication** and **Form-based Authentication**. Both are simple authentication schemes built into the HTTP protocol that are used to protect web resources. Although both mechanisms use a username and password to authenticate the client, the difference is in the way both are implemented. Basic Authentication uses an HTTP header to provide the username and password when making a request to the server. Whereas Form-based authentication uses standard HTML form fields to pass the username and password values to the server via a POST request. Depending on the authentication mechanism supported by the web domain, choose the authentication method from the drop-down menu. 
 
-Search AI web crawling supports the two types of authentication - **Basic Authentication** and **Form-based Authentication**. Both are simple authentication schemes built into the HTTP protocol that are used to protect web resources. Although both mechanisms use a username and password to authenticate the client, the difference is in the way both are implemented. Basic Authentication uses an HTTP header to provide the username and password when making a request to the server. Whereas Form-based authentication uses standard HTML form fields to pass the username and password values to the server via a POST request. Depending on the authentication mechanism supported by the web domain, choose the authentication method from the drop-down menu. 
-
-**Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields.
-    ![Basic Auth](images/basic-auth.png "Basic Auth")
+**Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields. ![Basic Auth](images/basic-auth.png "Basic Auth")
     <table>
     <tr>
     <td><strong>Field</strong>
@@ -219,7 +211,7 @@ You can edit the configuration for any crawl source at any time. This can be use
 !!!Note
     We can use all the properties of the web crawler except the crawl source. 
 
-Any changes made to the configuration become effective either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  
+Any changes made to the configuration become effective either when you manually crawl the domain after making the changes or at the next scheduled crawl time.  
 
 To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the **Configuration** tab. ![Update a web source](images/update-websource.png "Updating a web source")
 
@@ -317,7 +309,7 @@ This issue occurs when the crawler is unable to start or complete the crawl. It 
    </td>
   </tr>
   <tr>
-   <td>The base URL lacks crawlable links, and the sitemap is missing.
+   <td>The base URL lacks any links to crawl, and the sitemap is missing.
    </td>
    <td>Add webpage URLs to a CSV manually or using an external script, and provide the CSV as a crawl source.
    </td>

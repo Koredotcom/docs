@@ -86,11 +86,11 @@ Once the application is created, you can update its name and description from th
 
 ![App Settings](images/confluencecloud/app-settings.png "App Settings")
 
-Next, configure Authorization code grants to allow SearchAssist to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
+Next, configure Authorization code grants to allow Search AI to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
 
-* JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-* DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-* Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+* JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+* DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+* Prod Region Callback URLs: `https://idp.kore.com/workflows/callback`
 
 ![App Settings](images/confluencecloud/callback-url.png "App Settings")
 
@@ -98,32 +98,54 @@ The next step is to grant the necessary permissions. Go to the **Permissions** t
 
 * User Identity API
 * Confluence API
+* Jira API
 
 ![App Permissions](images/confluencecloud/app-permissions.png "App Permissions")
 
-To add permissions to the User Identity API, click the **config** link.
+To add permissions to the **User Identity API**, click the **config** link.
 
 ![App Permissions](images/confluencecloud/permission-config.png "App Permissions")
 
-On the following page, click the Edit Scopes button.
+On the following page, select **Edit Scopes**.
 
 ![API Scope](images/confluencecloud/api-scope.png "API Scope")
 
 Grant the following permissions and click **Save**.
 
-* Read:me
-* Read:account
+* `read:me`
+* `read:account`
 
 ![API Scope](images/confluencecloud/useridentityapi-scope.png "API Scope")
 
-Similarly, for **Confluence API**, go to the **Granular Scopes** and click **Edit Scopes**. Add a read operation filter, select all the filtered permissions, and click **Save**.  
+To add permissions to the **Confluence API**:
+
+* Go to **Granular Scopes** and select **Edit Scopes**.
+* Add the following permissions:
+
+    * `read:analytics.content:confluence`
+    * `read:attachment:confluence`
+    * `read:content-details:confluence`
+    * `read:content.permission:confluence`
+    * `read:content:confluence`
+    * `read:page:confluence`
+    * `read:space-details:confluence`
+    * `read:space.permission:confluence`
+    * `read:space:confluence`
+    * `read:user.property:confluence`
+
+* Click **Save**.
+* For **Classic Scopes** add `read:confluence-groups` and click **Save**.
 
 ![API Scope](images/confluencecloud/confluenceapi-scope.png "API Scope")
+
+To add permissions to the **Jira API**, go to **Classic Scopes**, select **Edit Scopes**, add `read:jira-user`, and click **Save**.
+
+![API Scope](images/confluencecloud/jiraapi-scope.png "API Scope")
 
 After adding permissions, go to **Settings** and find the **Client ID** and **Secret** at the end of the page. Save these fields as these will be used for configuring the SearchAI connector in the next step.
 ![Settings](images/confluencecloud/settings.png "Settings")
 
-You also need the Host URL in Confluence to configure the SearchAI Connector.  To fetch this field, go to the [Confluence home page](https://www.atlassian.com/software/confluence) and click on Profile. 
+You also need the Host URL in Confluence to configure the SearchAI Connector. To fetch this field, go to the [Confluence home page](https://www.atlassian.com/software/confluence) and click on Profile. 
 
 ![Profile](images/confluencecloud/profile-page.png "Profile")
 
@@ -253,7 +275,7 @@ SearchAI supports access control for content ingested using Confluence Cloud Con
 
 #### Prerequisites
 
-Access control in SearchAI relies on fetching user’s email address as their unique identity. To ensure proper user identity management in SearchAssist, it is mandatory that the account used for configuring SearchAI must be able to view user email addresses. This typically requires using an admin account or ensuring users have enabled the following necessary settings in their Confluence profiles. 
+Access control in SearchAI relies on fetching user’s email address as their unique identity. To ensure proper user identity management in Search AI, it's mandatory that the account used for configuring SearchAI must be able to view user email addresses. This typically requires using an admin account or ensuring users have enabled the following necessary settings in their Confluence profiles. 
 
 ![Prerequisite](images/confluencecloud/racl/prerequisite.png "image_tooltip")
 
@@ -276,10 +298,10 @@ Pages inherit the space permissions. However, a page can define its own restrict
 
 #### Handling Confluence Cloud Permissions in SearchAI
 
-* **Individual Access**: Users who are added to a space or a specific page within that space are listed in the racl (user identity – email address) field of the indexed content in SearchAssist. Based on their permissions, these users can directly access the content.
+* **Individual Access**: Users who are added to a space or a specific page within that space are listed in the racl (user identity – email address) field of the indexed content in Search AI. Based on their permissions, these users can directly access the content.
 * **Group Access**: If access permissions are granted to user groups, SearchAI creates a corresponding permission entity for the group. In this case, the racl fields in the indexed content will have the permission entity IDs for the groups. To enable access for all users within a group, add the users to the respective permission entity using the Permission Entity APIs. 
 
 
 #### Limitation
 
-* Anonymous Access: SearchAssist does not support anonymous access to content. If a page is publicly accessible or allows anonymous access in Confluence Cloud, SearchAssist will not currently permit viewing of the file content.
+* Anonymous Access: Search AI doesn't support anonymous access to content. If a page is publicly accessible or allows anonymous access in Confluence Cloud, Search AI doesn't permit viewing of the file content.

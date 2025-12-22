@@ -277,26 +277,26 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 ```
 {
     "Version": "2019-10-30",
-    "StartAction": "368dcb0e-e4c5-4301-bad0-6ec9cb422783",
+    "StartAction": "368dcb0e-e4c5-4301-bad0-6ec9cb4xxxxx",
     "Metadata": {
         "entryPointPosition": {
             "x": 48,
             "y": 99
         },
         "ActionMetadata": {
-            "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce": {
+            "f8cb2217-5e95-4ca4-a2d1-1cfdc3exxxxx": {
                 "position": {
                     "x": 1186,
                     "y": 287
                 }
             },
-            "06ffce3e-77e0-42c7-b872-8fa73b820cf5": {
+            "06ffce3e-77e0-42c7-b872-8fa73b8xxxxx": {
                 "position": {
                     "x": 910,
                     "y": 96
                 }
             },
-            "368dcb0e-e4c5-4301-bad0-6ec9cb422783": {
+            "368dcb0e-e4c5-4301-bad0-6ec9cb4xxxxx": {
                 "position": {
                     "x": 186,
                     "y": 93
@@ -310,7 +310,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
                     "text": "BasicQueue"
                 }
             },
-            "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6": {
+            "6992aaaf-4140-4f3f-beb5-a638d7fxxxxx": {
                 "position": {
                     "x": 520,
                     "y": 79
@@ -334,23 +334,23 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
     "Actions": [
         {
             "Parameters": {},
-            "Identifier": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+            "Identifier": "f8cb2217-5e95-4ca4-a2d1-xxxxx3e02dce",
             "Type": "DisconnectParticipant",
             "Transitions": {}
         },
         {
             "Parameters": {},
-            "Identifier": "06ffce3e-77e0-42c7-b872-8fa73b820cf5",
+            "Identifier": "06ffce3e-77e0-42c7-b872-8fa73b8xxxxx",
             "Type": "TransferContactToQueue",
             "Transitions": {
-                "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+                "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3exxxxx",
                 "Errors": [
                     {
-                        "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+                        "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3exxxxx",
                         "ErrorType": "QueueAtCapacity"
                     },
                     {
-                        "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+                        "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3exxxxx",
                         "ErrorType": "NoMatchingError"
                     }
                 ]
@@ -358,15 +358,15 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
         },
         {
             "Parameters": {
-                "QueueId": "arn:aws:connect:us-east-1:274863560648:instance/97c94b3a-7d46-4680-b2ee-ae23086d6251/queue/e7c6d05e-b7f2-43d6-abe9-aa861e2b1bf4"
+                "QueueId": "arn:aws:connect:us-east-1:2748635xxxxx:instance/97c94b3a-7d46-4680-b2ee-ae23086xxxxx/queue/e7c6d05e-b7f2-43d6-abe9-aa861e2xxxxx"
             },
-            "Identifier": "368dcb0e-e4c5-4301-bad0-6ec9cb422783",
+            "Identifier": "368dcb0e-e4c5-4301-bad0-6ec9cb4xxxxx",
             "Type": "UpdateContactTargetQueue",
             "Transitions": {
-                "NextAction": "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6",
+                "NextAction": "6992aaaf-4140-4f3f-beb5-a638d7fxxxxx",
                 "Errors": [
                     {
-                        "NextAction": "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6",
+                        "NextAction": "6992aaaf-4140-4f3f-beb5-a638d7fxxxxx",
                         "ErrorType": "NoMatchingError"
                     }
                 ]
@@ -375,16 +375,16 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
         {
             "Parameters": {
                 "EventHooks": {
-                    "DisconnectAgentUI": "arn:aws:connect:us-east-1:274863560648:instance/97c94b3a-7d46-4680-b2ee-ae23086d6251/contact-flow/2649a757-5612-4e81-8794-56c760b16ef9"
+                    "DisconnectAgentUI": "arn:aws:connect:us-east-1:2748635xxxxx:instance/97c94b3a-7d46-4680-b2ee-ae23086xxxxx/contact-flow/2649a757-5612-4e81-8794-56c760bxxxxx"
                 }
             },
-            "Identifier": "6992aaaf-4140-4f3f-beb5-a638d7f7d0f6",
+            "Identifier": "6992aaaf-4140-4f3f-beb5-a638d7fxxxxx",
             "Type": "UpdateContactEventHooks",
             "Transitions": {
-                "NextAction": "06ffce3e-77e0-42c7-b872-8fa73b820cf5",
+                "NextAction": "06ffce3e-77e0-42c7-b872-8fa73b8xxxxx",
                 "Errors": [
                     {
-                        "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3e02dce",
+                        "NextAction": "f8cb2217-5e95-4ca4-a2d1-1cfdc3exxxxx",
                         "ErrorType": "NoMatchingError"
                     }
                 ]

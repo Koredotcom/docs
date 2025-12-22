@@ -2,23 +2,11 @@
 
 ## Overview
 
-**My Dashboard** is a personalized agent dashboard that shows performance insights through supervisor-assigned scorecards. It supports global language settings, with Scorecard widgets offering independent language selection. Agents can track trends, coaching insights, and areas for improvement, such as voice attributes, using Calendar and Channel filters for focused analysis.
-
-### Key Functionalites
-
-* **Real-time Performance Monitoring**: Access real-time feedback through supervisor scorecards and automated Quality Assurance (QA) scoring.
-
-* **Data-driven Decision Making**: Utilize concrete metrics including evaluation scores, audit results, and coaching assignments to guide professional development.
-
-* **Coaching Insights Analysis**: Track coaching assignments and identify improvement areas.
-
-* **Multi-channel Analysis**: Compare performance across voice, chat, and combined channels.
-
-* **Historical Tracking**: Monitor improvement trends through daily, weekly, and monthly views.
+My Dashboard is a personalized workspace for agents that provides a focused view of their own performance. It displays supervisor-assigned scorecards and key insights, such as sentiment trends and resolution effectiveness, based on their conversations. This supports global language selection, and individual Scorecard widgets allow agents to choose their preferred languages independently. Agents can monitor their performance trends, identify coaching opportunities, and track areas for improvement (including voice attributes) using Calendar and Channel filters for targeted analysis.
 
 ### Access My Dashboard 
 
-Access **My Dashboard** by navigating to **Quality AI** > **ANALYZE** > **My Dashboard**.  
+Navigate to **Quality AI** > **ANALYZE** > **My Dashboard**.  
 <img src="../agent-dashboard/images/my-dashboard-view.png" alt="My Dashboard-Agent View" title="My Dashboard-Agent View" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
@@ -47,13 +35,13 @@ Language metrics are based on a configuration set at the evaluation metric level
 
 To filter by language, 
 
-1. Click the **All Languages** filter at the top right corner of the dashboard.
-2. Search or select one or more languages from the dropdown.   
+1. Select the **All Languages** filter.
+2. Select one or more languages from the dropdown.   
 <img src="../agent-dashboard/images/all-langs.png" alt="All Languages" title="All Languages" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+    !!! Note
 
-    By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level.
+        By default, all languages are selected when the **All Languages** filter is applied. Metrics are only displayed for languages configured at the evaluation metric level.
 
 When a specific language is selected, the following widgets reflect language-specific data:
 
@@ -77,11 +65,9 @@ By default, the dashboard shows combined data from Voice, Chat, or both. You can
 
 To filter by channel, 
 
-1. Click **All Channels** in the top-right corner of the dashboard.
+1. Select  **All Channels** to choose your preferred channel (Voice, Chat, or both).
 
-2. Choose your preferred channel (Voice, Chat, or both).
-
-3. Data updates based on the channel-specific performance trends.
+1. Data gets update based on the channel-specific performance trends.
 
 ### Agent Performance Metrics
 
@@ -143,6 +129,53 @@ To configure the scorecard,
 * **Update Frequency**: Real-time based on scorecard selection.  
     <img src="../agent-dashboard/images/scorecard-selection-for-coaching-insights.png" alt="Coaching Insights" title="Coaching Insights" style="border: 1px solid gray; zoom:80%;">
 
+### Sentiment Insights
+
+Shows agents a clear view of customer sentiment in their own conversations. It highlights how customers feel across topics, helping agents recognize strengths, identify recurring issues, and improve interaction quality.
+
+Agents can view:
+
+* **Average Sentiment Score**: Shows the agent’s average sentiment score across all topics, including positive and negative interaction counts and trend indicators.
+
+* **Top 5 Highest Sentiment L3 Topics**: Lists the five L3 topics with the highest sentiment scores in descending order.
+
+* **Top 5 Lowest Sentiment L3 Topics**: Lists the five L3 topics with the lowest sentiment scores in ascending order.
+
+* **Clear Visual Breakdowns**: Provides topic-wise counts, positive/negative sentiment splits, and hover details in the doughnut charts.
+
+* **Color-Coded Patterns**: Green indicates positive sentiment; red indicates negative sentiment for quick interpretation.
+ 
+* **Drill-Down Insights (Agent View)**:
+    * **View All Topics**: Opens Topic Discovery with filters applied to show only the agent’s conversations.
+
+    * **View Conversations**: Opens Conversation Mining filtered to the selected topic. 
+
+    * **Identify Performance Gaps**: Helps agents compare their highest and lowest sentiment areas. 
+
+    * **Monitor Trends**: Lets agents track how sentiment performance over time.  
+    <img src="../agent-dashboard/images/sentiment-insights.png" alt="Sentiment Insights" title="Sentiment Insights" style="border: 1px solid gray; zoom:80%;">
+
+### Resolution Insights
+
+Helps agents understand how effectively they resolve customer issues by showing their resolution rate and performance across topics.
+
+The agents can view:
+
+* **Average Resolution Rate**: Shows the agent’s overall average resolution rate across all conversations.
+
+* **Top 5 Highest Resolution L3 Topics**: Lists the five L3 topics with the highest resolution rates in descending order.
+
+* **Top 5 Lowest Resolution L3 Topics**: Lists the five L3 topics with the lowest resolution rates in ascending order.
+
+* **Resolved/Unresolved Breakdown**: Provides counts and percentages of resolved and unresolved conversations for each topic.
+
+* **Drill-Down Insights (Agents View)**:
+
+    * **View All Topics**: Opens Topic Discovery with filters applied so agents see only their own conversations.
+
+    * **View Conversations**: Opens Conversation Mining filtered to the selected L3 topic.
+    <img src="../agent-dashboard/images/resolution-insights.png" alt="Resolution Insights" title="Resolution Insights" style="border: 1px solid gray; zoom:80%;">
+    
 ## Scorecard Trend
 
 Helps agents track their performance over time based on selected scorecards and language preferences. 
@@ -197,7 +230,7 @@ The tab displays conversations based on the selected language. By default, all l
 
 ### Access the Evaluation Tab
 
-Access **Evaluation** by navigating to **Quality AI** > **ANALYZE** > **My Dashboard** > **Evaluation**.  
+Navigate to **Quality AI** > **ANALYZE** > **My Dashboard** > **Evaluation**.  
 <img src="../agent-dashboard/images/my-dashboard-evaluation.png" alt="Evaluation" title="Evaluation" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
@@ -212,7 +245,7 @@ Access **Evaluation** by navigating to **Quality AI** > **ANALYZE** > **My Dashb
 
 The interactions displayed in the Evaluation tab depend on the **Agent Access to Scored Interactions** configuration.
 
-##### Manually Audited Interactions Only
+##### Only Manually Audited Interactions 
 
 Displays only supervisor-audited scores, including:
 

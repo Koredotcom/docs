@@ -1,3 +1,6 @@
+[:octicons-arrow-left-24: Back to Add an External Model](../external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-amazon-bedrock)
+
+
 # Configuring Amazon Bedrock Models
 
 To ensure secure cross-account access, this setup follows the principle of least privilege. You must create an IAM Role that grants only the required permissions to invoke Bedrock models and explicitly trusts the platform to assume this role via AWS STS.
@@ -88,7 +91,9 @@ To complete the registration:
 1. Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.
 2. Wait for confirmation from Support that the role has been registered.
 
-**Note**: Without this step, the platform cannot assume your IAM role. Both your AWS account and Inception's environment must explicitly trust each other for secure cross-account access.
+**Note**: Without this step, the platform can't assume your IAM role. Both your AWS account and domain’s environment must explicitly trust each other for secure cross-account access.
+
+
 
 ## Step 2. Finding the Right Model ID and Region
 

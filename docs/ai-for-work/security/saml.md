@@ -74,11 +74,11 @@ Okta provides enterprise-grade identity management with robust security features
   </tr>
 </table>
 
-**Setting up Okta for (In)Business Productivity SSO**
+**Setting up Okta for SSO**
 
-To set up the (In)Business Productivity application in your Okta environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
+To set up the application in your Okta environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
 
-**Prerequisites**: You must have already selected Okta as a SAML provider in the (In)Business Productivity Admin Console.
+**Prerequisites**: You must have already selected Okta as a SAML provider in the Admin Console.
 
 **Steps to configure Okta**:
 
@@ -87,8 +87,8 @@ To set up the (In)Business Productivity application in your Okta environment, yo
     * Go to **Applications > Add Application > Create Application**.
     * Provide an **App name** and click **Next**.
 3. **Configure SAML Settings**:
-    * In **Configure SAML**, provide the **Single Sign-On URL** from (In)Business Productivity:
-        * Log in to (In)Business Productivity Admin Console.
+    * In **Configure SAML**, provide the **Single Sign-On URL** from the platform:
+        * Log in to Admin Console.
         * Go to **Security > Single Sign-On.**
         * After enabling SAML and selecting Okta.
         * Copy the **ACS URL for SP-Initiated SAML Flow.**
@@ -102,11 +102,11 @@ To set up the (In)Business Productivity application in your Okta environment, yo
     * Click **Finish.**
 5. **Copy Configuration Details**:
     * Go to **Sign On** tab > **Settings** > **View Setup Instructions.**
-    * Copy the following to (In)Business Productivity:
+    * Copy the following:
         * **Identity Provider Single Sign-On URL** → **Okta Single Sign-On URL**
         * **Identity Provider Issuer** → **Identity Provider Issuer**
         * **X.509 Certificate** → **Certificate** field
-6. **Save** the configuration in (In)Business Productivity.
+6. **Save** the configuration.
 
 ### OneLogin Configuration
 
@@ -163,20 +163,20 @@ OneLogin offers a comprehensive identity platform with advanced user provisionin
   </tr>
 </table>
 
-**Setting up OneLogin for (In)Business Productivity SSO**
+**Setting up OneLogin for SSO**
 
-To set up the (In)Business Productivity application in your OneLogin environment, you need to create and configure the application, configure SAML settings, and transfer authentication details. 
+To set up the application in your OneLogin environment, you need to create and configure the application, configure SAML settings, and transfer authentication details. 
 
 1. **Configure SSO Settings**:
     * Go to the **SSO** tab
-    * Copy the following to (In)Business Productivity:
+    * Copy the following:
         * **OneLogin SAML 2.0 Endpoint (HTTP)** → **SAML 2.0 Endpoint**
         * **OneLogin Issuer URL** → **Issuer URL**
 2. **Copy Certificate**:
     * Click **View Details** for the X.509 Certificate.
     * Copy only the certificate data (exclude headers and footers).
-    * Paste into (In)Business Productivity **X.509 Certificate** field.
-3. **Save** the configuration in (In)Business Productivity.
+    * Paste into platform's **X.509 Certificate** field.
+3. **Save** the configuration.
 
 
 ### Bitium Configuration
@@ -234,18 +234,18 @@ Bitium specializes in cloud-based identity and access management with a focus on
   </tr>
 </table>
 
-**Setting up Bitium for (In)Business Productivity SSO**
+**Setting up Bitium for SSO**
 
-To set up the (In)Business Productivity application in your Bitium environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
+To set up the application in your Bitium environment, you need to create and configure the application, configure SAML settings, and transfer authentication details.
 
 1. **Configure SAML Authentication**:
     * Go to **Manage Organization > Manage Apps > App.**
     * On the **Single Sign-On** tab, select **SAML Authentication.**
-    * Copy the following to (In)Business Productivity:
+    * Copy the following:
         * **Bitium Login URL** → **Single Sign-On URL**
         * **Bitium Logout URL** → **Issuer URL**
         * **X.509 Certificate** → **Certificate** field
-2. **Save** the configuration in (In)Business Productivity.
+2. **Save** the configuration.
 
 ### Other (Generic SAML Provider)
 

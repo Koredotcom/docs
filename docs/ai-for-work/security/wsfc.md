@@ -37,7 +37,7 @@ Windows Azure Active Directory (now Microsoft Entra ID) provides comprehensive i
   <tr>
    <td>Azure AD Sign-On Endpoint URL
    </td>
-   <td>The URL that (In)Business Productivity must use for sign-on and sign-off/out requests using Azure. This is the WS-Federation passive endpoint. (e.g., https://login.microsoftonline.com/&lt;tenant-id>/wsfed)
+   <td>The URL that platform must use for sign-on and sign-off/out requests using Azure. This is the WS-Federation passive endpoint. (e.g., https://login.microsoftonline.com/&lt;tenant-id>/wsfed)
    </td>
    <td>Yes
    </td>
@@ -63,11 +63,11 @@ Windows Azure Active Directory (now Microsoft Entra ID) provides comprehensive i
     * Click **Save**.
     * The *Identity Provider information successfully updated* message is displayed at the top of the page.
 
-#### Setting up Windows Azure for (In)Business Productivity SSO
+#### Setting up Windows Azure for SSO
 
-To set up the (In)Business Productivity application in your Microsoft Entra ID (formerly Azure AD) environment using WS-Federation, you need to register a relying party trust and configure federation settings.
+To set up the application in your Microsoft Entra ID (formerly Azure AD) environment using WS-Federation, you need to register a relying party trust and configure federation settings.
 
-**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Windows Azure as a WS-Federation provider in the (In)Business Productivity Admin Console.
+**Prerequisites**: You must have Microsoft Entra ID administrator privileges and have already selected Windows Azure as a WS-Federation provider in the Admin Console.
 
 **Steps to configure Windows Azure**:
 
@@ -83,28 +83,28 @@ To set up the (In)Business Productivity application in your Microsoft Entra ID (
     * Navigate to **Enterprise applications > New application**.
     * Select **Create your own application**.
     * Choose **Integrate any other application you don't find in the gallery**.
-    * Enter "(In)Business Productivity" as the application name.
+    * Enter the application name.
     * Click **Create**.
 4. **Set Up Single Sign-On**:
     * In the application overview, go to **Single sign-on**.
     * Select **WS-Fed** as the single sign-on method.
     * Configure the following:
-        * **Identifier (Entity ID)**: Provided by (In)Business Productivity
-        * **Reply URL**: Provided by (In)Business Productivity
-        * **Sign-on URL**: Your (In)Business Productivity instance URL
+        * **Identifier (Entity ID)**: Provided by the application
+        * **Reply URL**: Provided by the application
+        * **Sign-on URL**: Your application's instance URL
 5. **Configure User Assignment**:
     * Go to **Users and groups**.
     * Click **Add user/group**.
-    * Select users or groups that should have access to (In)Business Productivity.
+    * Select users or groups that should have access to the application.
     * Click **Assign**.
 6. **Copy Configuration Details**:
-    * From the endpoints page, copy the following to (In)Business Productivity:
+    * From the endpoints page, copy the following to the application:
         * **WS-Federation Sign-On Endpoint** → **Azure AD Sign-On Endpoint URL**
         * **Federation Metadata Document** URL → **Azure AD Federation Metadata Document**
 7. **Test Configuration**:
     * Verify that the metadata document URL is accessible.
     * Ensure all users assigned to the application can authenticate.
-8. **Save** the configuration in (In)Business Productivity.
+8. **Save** the configuration.
 
 ### Other (Generic WS-Federation Provider)
 
@@ -127,7 +127,7 @@ Use this option for any WS-Federation compliant identity provider not specifical
   <tr>
    <td>AD Sign-On Endpoint URL
    </td>
-   <td>The URL that (In)Business Productivity must use for sign-on and sign-off/out requests using the WS-Federation identity provider. This is the WS-Federation passive endpoint. (e.g., <code>https://adfs.yourcompany.com/adfs/ls/</code>)
+   <td>The URL that application must use for sign-on and sign-off/out requests using the WS-Federation identity provider. This is the WS-Federation passive endpoint. (e.g., <code>https://adfs.yourcompany.com/adfs/ls/</code>)
    </td>
    <td>Yes
    </td>
@@ -153,11 +153,11 @@ Use this option for any WS-Federation compliant identity provider not specifical
     * Click **Save**.
     * The *Identity Provider information successfully updated* message is displayed at the top of the page.
 
-#### Setting up ADFS for (In)Business Productivity SSO
+#### Setting up ADFS for SSO
 
-To set up the (In)Business Productivity application with Active Directory Federation Services (ADFS), you need to add a relying party trust and configure claim rules.
+To set up the application with Active Directory Federation Services (ADFS), you need to add a relying party trust and configure claim rules.
 
-**Prerequisites**: You must have ADFS administrator access and have already selected Other as a WS-Federation provider in the (In)Business Productivity Admin Console.
+**Prerequisites**: You must have ADFS administrator access and have already selected Other as a WS-Federation provider in the Admin Console.
 
 **Steps to configure ADFS**:
 
@@ -170,7 +170,7 @@ To set up the (In)Business Productivity application with Active Directory Federa
     * Select **Enter data about the relying party manually**.
     * Click **Next**.
 3. **Configure Display Name**:
-    * Enter "(In)Business Productivity" as the display name.
+    * Enter the display name.
     * Optionally add notes about the application.
     * Click **Next**.
 4. **Select Profile**:
@@ -181,10 +181,10 @@ To set up the (In)Business Productivity application with Active Directory Federa
     * Click **Next**.
 6. **Configure URLs**:
     * Check **Enable support for the WS-Federation Passive protocol**.
-    * Enter the **Relying party WS-Federation Passive protocol URL** (provided by (In)Business Productivity).
+    * Enter the **Relying party WS-Federation Passive protocol URL** (provided by the application).
     * Click **Next**.
 7. **Add Relying Party Trust Identifier**:
-    * Enter the relying party trust identifier (provided by (In)Business Productivity).
+    * Enter the relying party trust identifier (provided by the application).
     * Click **Add**.
     * Click **Next**.
 8. **Configure Multi-factor Authentication**:
@@ -220,11 +220,11 @@ To set up the (In)Business Productivity application with Active Directory Federa
         * **WS-Federation Passive Endpoint**: `/adfs/ls/`
         * **Federation Metadata URL**: `/FederationMetadata/2007-06/FederationMetadata.xml`
 14. **Copy Configuration Details**:
-    * Copy the following to (In)Business Productivity:
+    * Copy the following to the application:
         * Full WS-Federation endpoint URL → **AD Sign-On Endpoint URL**
         * Full federation metadata URL → **AD Federation Metadata Document URL**
 15. **Test Metadata Accessibility**:
     * Open the federation metadata URL in a browser.
     * Verify that the XML document loads correctly.
-    * Ensure it's accessible from the network where (In)Business Productivity is hosted.
-16. **Save** the configuration in (In)Business Productivity.
+    * Ensure it's accessible from the network where the application is hosted.
+16. **Save** the configuration in the application.

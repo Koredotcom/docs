@@ -1,6 +1,74 @@
-# Automation AI Updates
+# Automation AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
+
+
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font>  
+
+**DialogGPT Now Default Orchestration**
+
+DialogGPT is now the default orchestration mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. [Learn more :octicons-arrow-right-24:](../../getting-started/guided-onboarding.md) 
+
+
+**Redesigned Navigation for DialogGPT and NLP-based App**
+
+The platform now provides tailored navigation experiences for DialogGPT and NLP-based apps. By aligning navigation with the app type, the update improves discoverability and helps users navigate the AI Agent creation process with greater clarity and efficiency. [Learn more :octicons-arrow-right-24:](../../getting-started/dialoggpt-based-navigation.md) 
+
+
+**New Playground Option in Evaluation**
+
+A new Playground section in the Evaluation menu, purpose-built for developers, combines Debug Logs and Talk to Bot in a side-by-side view, providing an integrated testing and debugging experience with synchronized session control and status management. [Learn more :octicons-arrow-right-24:](../../automation/testing/playground.md) 
+
+**Embedding Model Deprecation and Automatic Upgrade**
+
+The legacy embedding models (MPNet, LaBSE, E5, and BGE-M3 V1) are deprecated to improve system performance. Any application that uses one of these models will be automatically upgraded to use BGE-M3 V2. [Learn more :octicons-arrow-right-24:](deprecations.md)
+
+<hr>
+
+
+## v11.19.1 November 19, 2025
+
+<u> Patch Release </u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Agent Node</font>
+
+
+**Tool Calling with Streaming Responses**
+
+The Agent Node now supports tool calling with streaming, enabling models to deliver responses in real time as they're generated, resulting in faster, more fluid user interactions.
+
+Key features:
+
+* Simplified V2 Prompt Setup: The Custom Prompt page now features a Response Payload Format control (OpenAI, Azure OpenAI, or Custom) for automatic parsing, eliminating the need for manual Post-Processor setup in streaming configurations.
+* Prompt-Level Control: Use the new Streaming Toggle on the V2 prompt page to enable/disable incremental responses.
+
+Backward Compatibility 
+
+All existing V1 and V2 prompts remain unchanged; streaming is disabled by default, preserving existing configurations.
+
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tool-definition) 
+
+
+
+<font size="4">API</font>
+
+**New Lightweight Conversation History API**  
+
+The new lightweight Conversation History (`getMessages`) API is optimized for high-volume conversation summarization, delivering improved performance, reliability, and scalability. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history-lightweight.md)
+
+**Mandatory API Response Encryption Based on App Settings**  
+
+The Public API endpoints no longer support the `encrypt=true` query parameter. Response payload encryption is now enforced only through app-level settings, ensuring consistent encryption behavior without parameter-based overrides.
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 
@@ -162,7 +230,7 @@ This update includes enhancement and bug fixes. The key enhancement included in 
 
 **Sub-Intent Scoping Enhancement**
 
-DialogGPT has been optimised to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
+DialogGPT has been optimized to manage sub-intents using dialog context, moving away from indexing. This change provides a clear separation between top-level intents and sub-intents, thereby improving the accuracy of the intent qualification and also providing developers with greater control. [Learn more :octicons-arrow-right-24:](../../automation/intelligence/sub-intents-and-follow-up-intents.md)
 
 <hr>
 
@@ -177,7 +245,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Configurable Search AI Retrieval Settings**
 
-DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimises token consumption, while providing precise control over the balance between context depth and performance. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
+DialogGPT now allows users to configure chunk limits for Search AI retrieval, enabling them to control the number of chunks retrieved from knowledge sources. This feature improves the response times, contributes to improved intent identification, and optimizes token consumption, while providing precise control over the balance between context depth and performance. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations)
 
 **Enhanced Discoverability for Automation Node Settings**
 
@@ -488,7 +556,7 @@ In this update, Agent Node introduces a new version to fully take advantage of t
 **Suppressing "Intent Not Found" Event When Dialog Ends as "Fulfilled"**
 
 The platform incorrectly used to trigger "Intent Not Found" events after successfully completed dialogs, specifically when dialogs ended with Entity or Confirmation nodes, followed by Script or Service nodes.
-A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfilment) has been added that prevents unwanted events when the "End of Task" event is disabled and the Dialog has ended with a "fulfilled" status. This ensures smooth conversation flows for BotKit implementations, handles dialog completion, and prevents disruptions in multi-assistant routing scenarios. 
+A new Advanced NLP Configuration key (Suppress_Fallback_On_TaskFulfillment) has been added that prevents unwanted events when the "End of Task" event is disabled and the Dialog has ended with a "fulfilled" status. This ensures smooth conversation flows for BotKit implementations, handles dialog completion, and prevents disruptions in multi-assistant routing scenarios. 
 [Learn more :octicons-arrow-right-24:](../../automation/natural-language/nlu-configurations/engine-tuning.md#suppress_fallback_on_taskfulfilment)
 
 <font size="4">Channels</font>

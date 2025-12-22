@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Add an External Model](../external-models/add-an-external-model-using-easy-integration.md)
+
 # Configuring Amazon Bedrock Models
 
 To ensure secure cross-account access, this setup follows the principle of least privilege. You must create an IAM Role that grants only the required permissions to invoke Bedrock models and explicitly trusts the platform to assume this role via AWS STS.

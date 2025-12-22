@@ -7,15 +7,15 @@ On the Configurations page, you can view the model name, edit the description, a
 
 ## Model Endpoint Timeout
 
-You can configure a specific timeout for your model's endpoint. Enter the timeout duration from the allowed range - 30 to 180 seconds (3 minutes). The default is 60 Seconds (1 minute). If the request is not completed within the specified time frame, a timeout error will be triggered for the endpoint.
+You can configure a specific timeout for your model's endpoint. Enter the timeout duration from the allowed range - 30 to 180 seconds (3 minutes). The default is 60 Seconds (1 minute). If the request isn't completed within the specified time frame, a timeout error will be triggered for the endpoint.
 
 !!! note 
 
-    Timeout precedence: Tool > Node timeout > Model timeout.    
+    Timeout precedence: WOrkflow > Node timeout > Model timeout.    
 
 ## Undeploy the Model 
 
-You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
+You can undeploy the model if it's no longer in use. Undeploying the model will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
 
 ## Delete the Model
 

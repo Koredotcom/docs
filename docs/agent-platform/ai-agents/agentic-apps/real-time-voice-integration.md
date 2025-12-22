@@ -12,10 +12,10 @@ Click the settings icon to customize the configuration of the AI model.
 
 * Voice AI Model: This model is responsible for interpreting user queries and generating spoken responses. Currently, (In)Agent Platform supports only OpenAI models. Refer to[ this to learn more about adding an external model to (In)Agent Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
 * Temperature: This config controls the randomness and creativity of the responses. The value for this field can range from 0 to 1.2
-    * Lower values (e.g., 0.2–0.6) produce more focused, deterministic answers.
-    * Higher values (e.g., 1–1.2) make responses more creative and varied.
+    * Lower values (for example, 0.2–0.6) produce more focused, deterministic answers.
+    * Higher values (for example, 1–1.2) make responses more creative and varied.
 * Max Tokens: The maximum length of the model's response in tokens. This config can take values from 1 to 32000. Consider the following while setting this value.
-    * A **low token limit** (e.g., 100–300) ensures short, concise answers, ideal for real-time voice interactions, whereas a **higher token limit** (e.g., 500–1000+) allows for more detailed and elaborate responses, more suited for multistep instructions. 
+    * A low token limit (for example, 100–300) ensures short, concise answers, ideal for real-time voice interactions, whereas a higher token limit (for example, 500–1000+) allows for more detailed and elaborate responses, more suited for multi-step instructions. 
     * The size of the response token directly affects the response time. 
     * For natural interactions, it's recommended to keep the token size small.
 * Voice: Select the voice used by the AI to deliver audio responses.

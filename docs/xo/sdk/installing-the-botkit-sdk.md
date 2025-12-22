@@ -4,9 +4,9 @@ The Platform BotKit SDK runs as a Node.js application. You can add your own reve
 
 This section provides a high-level overview of BotKit SDK installation and configuration.
 
-For a detailed end-to-end tutorial on installation and setup using our Platform Sample bots, see this [BotKit SDK Tutorial](./tutorials/flight-search-sample-bot.md).
+For a detailed end-to-end tutorial on installation and setup using Platform Sample bots, see this [BotKit SDK Tutorial](./tutorials/flight-search-sample-bot.md).
 
-To install the BotKit SDK, you will need to:
+To install the BotKit SDK, you need to:
 
 * Register your application on the Platform by creating an app, and then configuring it for the Web/Mobile channel.
 * Download and deploy the BotKit SDK libraries.
@@ -21,10 +21,10 @@ In the Platform, you need to create a bot, and then from API Extensions -> BotKi
 * Go to **Deploy > Integrations > BotKit.**
 * Register/create an app for that bots to generate the **ClientID** and **Client Secret** security credentials used for mutual SSL authentication for communication between your app and the Platform and to authorize API calls from your SDK to the Platform. 
 
-In the config.json file in the SDK, you will need to copy the following authentication keys from the Platform.
+In the config.json file in the SDK, you need to copy the following authentication keys from the Platform.
 
-* appId = ClientID
-* appKey – Client Secret
+* appId: ClientID
+* appKey: Client Secret
 
 For more information, see [SDK App Registration](app-registration.md).
 
@@ -59,11 +59,11 @@ To configure your SDK, you must define the following keys in your config.json fi
     <td>leastNodeVersion: The minimum required version of Node.js on which the application must run. Ensure the version is 10 or higher.</td>
   </tr>
   <tr>
-    <td>"credentials": {<br>"apikey": "tz4fhIiIPg6c1JHnP7tiZBtGfeCtCydlv6rxxxxxxxx=",<br>"appId": "cs-9a909c58-c5a9-569d-aa7c-1f36f94b23ad",<br>"st-67890":{<br>"apikey": "test_api_key2",<br>"appId": "test_app_id2"<br>}<br>}</td>
+    <td>"credentials": {<br>"apikey": "tz4fhIiIPg6c1JHnP7tiZBtGfeCtCydlv6rxxxxxxxx=",<br>"appId": "cs-9a909c58-c5a9-xxxx-xxxx-1f36f94b23ad",<br>"st-67890":{<br>"apikey": "test_api_key2",<br>"appId": "test_app_id2"<br>}<br>}</td>
     <td>
       apikey: The Client Secret value generated on the Platform when registering your SDK app.<br>
       appId: The Client ID value generated on the Platform when registering your SDK app.<br>
-      st-ID: This sub-section allows users to configure the credentials for a specific bot. If no bot/st-ID block is available, this will fall back to the parent credentials.
+      st-ID: This sub-section allows users to configure the credentials for a specific bot. If no bot/st-ID block is available, this falls back to the parent credentials.
     </td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@ To configure your SDK, you must define the following keys in your config.json fi
       jwtAlgorithm: The type of algorithm used for JWT signing.<br>
       jwt-expiry: JWT expiration time in seconds; the JWT token expires in 60 seconds by default. You can change this using the following KoreConfig setting:<br>
       "botkit": { "jwt_expiry": 300 //seconds }<br>
-      st-ID: This sub-section allows users to configure these algorithms for a specific bot. If no bot/st-ID block is available, this will fall back to the parent JWT configurations.
+      st-ID: This sub-section allows users to configure these algorithms for a specific bot. If no bot/st-ID block is available, this falls back to the parent JWT configurations.
     </td>
   </tr>
   <tr>
@@ -81,7 +81,7 @@ To configure your SDK, you must define the following keys in your config.json fi
     <td>
       host: The hostname where the Redis server is running. Here, it's configured to run on the local machine.<br>
       port: The port number on which Redis is running. By default, Redis uses port 6379.<br>
-      available: Indicates whether Redis is available or not. It's set to false here, meaning Redis is not in use.
+      available: Indicates whether Redis is available or not. It's set to false here, meaning Redis isn't an use.
     </td>
   </tr>
   <tr>
@@ -120,4 +120,4 @@ To configure your SDK, you must define the following keys in your config.json fi
 
 ## Run BotKit SDK
 
-To run BotKit SDK, in a **Terminal** window, enter: <code> node app.js</code>. Ensure that the node.js version is 10 or higher.
+To run BotKit SDK, in a **Terminal** window, enter: <code> node app.js</code>. Make sure that the node.js version is 10 or higher.

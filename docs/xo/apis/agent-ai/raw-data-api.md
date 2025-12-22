@@ -17,9 +17,10 @@ This updated version of the Raw Data API offers the following additional convers
 * Total number of words or phrases accepted by the agent
 * Total number of words or phrases entered by the agent
 * Total number of words suggested for correction by the agent
-* Total number of auto-corrected words accepted by the agent
+* Total number of autocorrected words accepted by the agent
 * Conversation Summary existence and agents reading or scrolling through it.
 * Filters such as Agent ID, Channel, Session ID, and Conversation ID. 
+* Custom and Assist tab details.
 
 | **Field**        | **Value**                                                                                                                                                                                                                       |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -29,18 +30,43 @@ This updated version of the Raw Data API offers the following additional convers
 | Authorization    | auth: {{JWT}}<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} {:target="_blank"}                                                                                                              |
 | API Scope        | AgentAssist Analytics<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"}                                                                                                                                                                                                           |
 
-## **Query Parameters**
+## Query Parameters
 
 | **PARAMETER** | **DESCRIPTION**                                                                 | **MANDATE** |
 |---------------|----------------------------------------------------------------------------------|-------------|
 | `from`        | Start date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.      | Required    |
 | `to`          | End date and time of the interactions in `YYYY-MM-DD HH24:mm:SS` format.        | Required    |
-|`conversationIds`|Array of conversation IDs to filter specific interactions.|Optional|
-|`sessionIds`|Array of session IDs to filter specific AI Agent sessions.|Optional|
-|`channels`| Array of communication channels (e.g., `chat`, `voice`).|Optional|
-|`agentIds`|Array of agent IDs to filter interactions handled by specific agents.|Optional|
 
-## **Sample Request**
+## Headers Parameters
+
+<table>
+  <tr>
+   <td><strong>PARAMETER</strong>
+   </td>
+   <td><strong>DESCRIPTION</strong>
+   </td>
+   <td><strong>MANDATE</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>accountId
+   </td>
+   <td>The account ID associated with the API request.
+   </td>
+   <td>Required
+   </td>
+  </tr>
+  <tr>
+   <td>auth
+   </td>
+   <td>Authentication token in the format Bearer &lt;token>.
+   </td>
+   <td>Required
+   </td>
+  </tr>
+</table>
+
+## Sample Request
 
 ```
 curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8e-82d8-dcbbc63xxxxx/v2/agentassistinteractions?from=2024-07-10T06%3A49%3A45&to=2024-07-10T07%3A06%3A25' \
@@ -51,15 +77,18 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8
   "conversationIds": ["{{conversationId}}"],
   "sessionIds": ["{{sessionId}}"],
   "channels": ["chat"],
-  "agentIds": ["{{agentId}}"]
+  "agentIds": ["{{agentId}}"]}'
 ```
+## Request Body Parameters
 
-### **Headers**
+| **PARAMETER** | **DESCRIPTION**                                                                 | **MANDATE** |
+|---------------|----------------------------------------------------------------------------------|-------------|
+|`conversationIds`|Array of conversation IDs to filter specific interactions.|Optional|
+|`sessionIds`|Array of session IDs to filter specific AI Agent sessions.|Optional|
+|`channels`| Array of communication channels (for example, `chat`, `voice`).|Optional|
+|`agentIds`|Array of agent IDs to filter interactions handled by specific agents.|Optional|
 
-* accountId (required): The account ID associated with the API request.
-* auth (required): Authentication token in the format Bearer &lt;token>.
-
-## **Sample Response**
+## Sample Response
 
 ```
 {
@@ -585,7 +614,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/st-f6ea0c31-f910-5b8
 
 ```
 
-## **Response Body Parameters**
+## Response Body Parameters
 
 <table>
   <tr>
@@ -1149,7 +1178,7 @@ Example: "Cancel account"
    </td>
    <td>How did the agent run it? Using the "Run" button, or the "Run with Agent input" button.
 <p>
-Example: one of "RunAssist", "RunWithAgentInput"
+Example: one of "RunAssist", "RunCustom", or "RunWithAgentInput"
    </td>
   </tr>
   <tr>

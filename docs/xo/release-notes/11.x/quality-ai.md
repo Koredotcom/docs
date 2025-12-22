@@ -1,6 +1,68 @@
-# Quality AI Updates
+# Quality AI Release Notes
+
+This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases. 
+
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Deploy</font>
+
+**Enhanced Import/Export for Taxonomy Builder with Saved Filters**
+
+Import and Export support for Quality AI deployment enables seamless management and transfer of Quality AI configurations across AI for Service (XO) environments. Users can export the latest taxonomy version with topic hierarchy and resolution settings, then import using Full (overwrite) or Incremental (add-only) modes—maintaining configuration consistency without manual rebuilding. Also, the Advanced Topic Discovery now supports saved slide-out filters for quick reuse of standard filters. [Learn more :octicons-arrow-right-24:](../../deploy/bot-management.md)
+
+<font size="4">Configure</font>
+
+**QM Express Onboarding Supports AWS Assume Role Access**
+
+QM Express now supports IAM Role (Assume Role) authentication for secure, temporary credential access without storing long-term AWS keys. The update includes a new IAM auth type, Role ARN schema, enhanced validation, and S3 service initialization using STS AssumeRole with automatic credential rotation. This strengthens security, enables cross-account access, and aligns with AWS best practices for least-privilege access. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/connectors/aws-s3-connector-setup-guide.md)
+
+<font size="4">Analyze</font>
+
+**Enhanced Topic, Intent, and Resolution Analytics Across Quality AI**
+
+Analytics visibility is enhanced across Conversation Mining, Audit workflows, and Agent Dashboards:
+
+* Conversation Mining includes optional columns for Configured Intents, Generated Intents, and Overall Resolution, with color-coded topic sentiment and advanced filters for L1–L3 topics, intents, sentiment, emotion, and resolution. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md)
+
+* The Audit Screen provides deeper topic-level insights with click-through intents and detailed L3 resolution mapping, helping auditors quickly locate where each topic or resolution appears in the transcript. [Learn more :octicons-arrow-right-24:](../../quality-ai/ai-assisted-manual-audit.md)
+
+* The Agent Dashboard includes scrollable Sentiment and Resolution Insights, with averages, trend indicators, and top or bottom-performing topics. App-level controls enable admins to manage agent access to sentiment and resolution data for flexible team visibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/my-dashboard-agent-view.md)
+
+<font size="4">API Enhancements</font>
+
+**Raw Data API Supports Generated Intents**
+
+The enhanced Raw Data API now uses generated intents. [Learn more :octicons-arrow-right-24:](../../apis/quality-ai/raw-data-api.md) 
+
+<hr>
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
+
+## v11.19.1 November 19, 2025
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Configure</font>
+
+**New AI-Powered Etiquette Evaluation Metrics**
+
+New AI-powered evaluation metrics automatically assess agent etiquette across different interaction scenarios, ensuring consistent service quality and providing actionable coaching insights:
+
+* **By Transfer Etiquette Evaluation**: It assesses agent conduct during customer transfers, verifying agents inform customers, explain the reason, and confirm understanding before the handoff. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md)
+
+* **By Hold Etiquette Evaluation**: It assesses agent adherence to best practices for managing voice interaction hold scenarios, including notification, appropriate hold time, and clear conversation resumption. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md)
+
+**Enhanced AI Agent Metric**
+
+The enhanced AI Agent metric reduces the number of agent calls, supports weight-based breakdowns across multiple evaluation aspects, and improves the design-time configuration experience. It uses a two-level structure (parent metric and weighted sub-metrics with defined criteria/adherence logic) to analyze multiple conversation aspects in one evaluation, providing structured scores and justifications. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md)
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 
@@ -19,7 +81,7 @@ The new Keyword Search Filter feature lets users easily locate and analyze conve
 **Scheduled Reporting for Quality AI**
 
 The Quality AI Reporting feature provides comprehensive data export capabilities for AutoQA and Conversation Intelligence insights. This enables QA Managers, Supervisors, and authorized users to generate, schedule, and download detailed reports covering interaction details, agent performance metrics, and adherence to evaluation metrics.
-[Learn more :octicons-arrow-right-24:](../../quality-ai/analytics/scheduled-reporting-for-quality-ai.md) 
+[Learn more :octicons-arrow-right-24:](../../analytics/quality-ai/reports/scheduled-reports.md) 
 
 **New Generative AI Features**
 
@@ -29,7 +91,6 @@ This release introduces the following two new generative AI features powered by 
 
 * By Value Metric Extraction: Extract metric values from messages by users, AI agents, or humans. 
 [Learn more :octicons-arrow-right-24:](./../../generative-ai-tools/genai-features-qualityai.md)
-
 
 <hr>
 
@@ -69,7 +130,7 @@ Supervisors and QA users can now add comments directly on individual messages, w
 
 **Conversation Mining Processing Status**
 
-In Conversation Mining, the Processing Status now displays a status icon: green (pass) when all processes have succeeded and metrics are being captured; red (fail) when any process fails, and metric tracking is interrupted. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-elements)
+In Conversation Mining, the Processing Status now displays a status icon: green (pass) when all processes have succeeded and metrics are being captured; red (fail) when any process fails, and metric tracking is interrupted. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-columns)
 
 
 <font size="4">Conversation Sources</font>

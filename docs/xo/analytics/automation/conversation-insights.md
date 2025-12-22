@@ -75,8 +75,6 @@ On clicking any cluster, you navigate to the **Cluster View** page and view all 
 
 <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
 
-
-
 #### Display More Intents and Clusters
 
 On the Conversation Insights page, the number of intents to be displayed is adjusted using pagination,  in the **Intents per page** drop-down in the treemap view. You can select the intents that can be viewed per page here as per the requirement. Click **Next** to view the intents on the next page.
@@ -160,7 +158,6 @@ The **Intent View** page displays all the available clusters, utterances, and ot
 The utterances grouped in the clusters can be validated and trained for an existing intent or a new intent, based on the requirements. Training the utterances and discovering new intents improves the performance of your AI Agents.
 
 
-
 * Click any Utterance displayed in the grid on the **Intent View** or **Cluster View** pages.
 
 The utterance details, NLP Analysis, and Chat History with user profile and conversation sessions are displayed the same as in NLP Insights.
@@ -183,7 +180,7 @@ This section describes the steps to be followed, to train the utterances grouped
     All the utterances that are part of the clicked Cluster-Intent pair are displayed. You can select one or all the utterances of the cluster, to initiate the training. You can also go to the intent view by clicking View Details across the intent name from the grid view of the clusters. See Grid View for more information.
 
 
-<img src="../images/train-the-utterance.png" alt="Train The Utterance" title="rain The Utterance" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/train-the-utterance.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:60%;">
 
 
 The identified utterances belong to any of the following categories:
@@ -225,7 +222,8 @@ You can also add Intent synonyms, patterns, and traits as required. The followin
 
 A message, **Utterance Uploaded Successfully** is displayed.
 
-    !!! note
+!!! note
+    
     You can also click Re-Run Utterance if you want to train the utterance again.
 
 
@@ -245,17 +243,17 @@ The following steps explain how to add an existing intent to an utterance or mul
 1. To map an existing Dialog Task or FAQ, click the **Train** drop-down. (See step 2 under Train the Utterances).
 2. Click the **Dialog Task** option to choose the matching intent for the selected utterance.
 
-    <img src="../images/add-exisitng-intent.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../automation/images/add-existing-intent.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 
 3. Click the button **Add Utterances** to add the intent for the utterances. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**. 
 
-    <img src="../images/add-exisitng-intent-1.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../automation/images/add-existing-intent-1.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 
 4. Click the **FAQ** option from the **Train** drop-down to add the matching FAQ for the selected utterance. 
 
-    <img src="../images/add-exisitng-intent-2.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../automation/images/add-existing-intent-2.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 5. Upon adding the FAQ successfully, a message is displayed as shown below. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
  
@@ -343,7 +341,7 @@ True Negatives (TN) refer to instances where the AI Agents correctly identifies 
 In the following example, the user utterance “Extremely Likely” did not match with any defined intent and is categorized as Unidentified intent.
 
 
-<img src="../images/true-negative.png" alt="True Negatve" title="True Negatve" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/true-negative.png" alt="True Negative" title="True Negative" style="border: 1px solid gray; zoom:80%;">
 
 
 

@@ -22,11 +22,11 @@ Create and configure the Azure Bot that will serve as the communication bridge.
 2. Click **+ Create a resource** → Search for **Azure Bot**.
 3. Select **Azure Bot** and configure the following: 
 
-    * **Bot Handle** - Choose a unique name.
-    * **Subscription** – Select your active subscription.
-    * **Resource Group** – Create or reuse an existing group.
-    * **Pricing Tier** – Select based on expected usage.
-    * **App Type** – Select **Multi-Tenant** or **Single-Tenant** based on organizational needs.
+    * **Bot Handle**: Choose a unique name.
+    * **Subscription**: Select your active subscription.
+    * **Resource Group**: Create or reuse an existing group.
+    * **Pricing Tier**: Select based on expected usage.
+    * **App Type**: Select **Multi-Tenant** or **Single-Tenant** based on organizational needs.
 
 **Configure Bot Resource**
 
@@ -181,8 +181,8 @@ You can decide how to distribute the (In)Business Productivity app in Microsoft 
 
 * **Let Users Add App Themselves**
 
-    * The app will be available in the Microsoft Teams App Marketplace.
-    * Users will need to **search for the app** in Microsoft Teams and add it manually.
+    * The is available in the Microsoft Teams App Marketplace.
+    * Users need to **search for the app** in Microsoft Teams and add it manually.
     * No automatic notifications or installations occur. 
 
 !!!note

@@ -24,9 +24,7 @@ To maintain security, sensitive information such as **API keys**, **sharing perm
 
 To export an tool’s version, follow the steps below:
 
-1. Log in to your account and click **Tools** under **(In)Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
+1. Log in to your account and click **Tools** under **Agent Platform Modules**.
 2. Click the **Tools** tab on the top navigation bar, and select the tool you want to export. The Tool flow page is displayed. 
 3. Click **Configurations** on the left navigation menu.
 4. Scroll down to the **Export tool** section. By default, the currently deployed version is selected in the dropdown.

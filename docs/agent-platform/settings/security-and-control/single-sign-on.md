@@ -69,9 +69,7 @@ SSO is a powerful option for organizations looking to balance convenience and se
 
 To access the SSO feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
 2. Click **Settings** on the top navigation bar.
 3. Go to **Security & Control** > **Single Sign On** on the left menu.
 

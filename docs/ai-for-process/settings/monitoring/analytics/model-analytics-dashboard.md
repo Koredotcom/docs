@@ -34,10 +34,11 @@ The **Model Analytics Dashboard** is a comprehensive analysis and monitoring sol
 
 To access the **Model Analytics** dashboard, follow the steps below:
 
-1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
+
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Model Analytics** tab on the right-hand side screen.
-<img src="../images/model-analysis-dashboard-access.png" alt="model analytics dashboard" title="model analytics dashboard" style="border: 1px solid gray; zoom:75%;">
 
 The system loads the **Model Analytics** dashboard with data for the last 7 days, which is the default time range selection. You can select the required period to generate data.
 
@@ -79,11 +80,11 @@ To view the required data, use the [Global Timeline Filters](../analytics/model-
 
 ## Global Timeline Filters
 
-Use the options on the top panel to generate account-level and model-level data for a specific period. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+Use the options on the top panel to generate account-level and model-level data for a specific period. [Learn more](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 
 ## Model Performance Filters
 
-The following widget-level filters apply exclusively to model-specific metrics, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The available filters depend on the selected  model type.
+The following widget-level filters apply exclusively to model-specific metrics, providing real-time analytics when used with a [Global Timeline filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The available filters depend on the selected  model type.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -111,7 +112,7 @@ The following widget-level filters apply exclusively to model-specific metrics, 
 
 ## How it Works
 
-1. Select the required date/date range in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+1. Select the required date/date range in the [Global Timeline Filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
 2. Select the tab for the required model type, like *Fine-tuned*, *Open-source*, or *External*.
 3. For Fine-tuned or Open-source models, choose the *model name* and optionally the *deployment name* and *version*. Alternatively, for External Models, select the *model name* and *connection name* from the dropdown lists.
 4. The widgets display an hourly graph for 24 hours per day and a daily graph for the respective metrics for a date range.
@@ -174,7 +175,7 @@ You can do the following to analyze the model’s performance:
 
 ### Model Scaling and Usage
 
-This widget is available for **Fine-tuned** and **Open-source** models. It features a step graph illustrating the usage and scaling, meaning the number of replicas (with a specific [hardware configuration](../../../models/hardware-pricing.md){:target="_blank"} deployed for the selected model version in the [Model Performance Filter](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} and the period in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Replicas**, and the X-axis indicates the selected **Date**.
+This widget is available for **Fine-tuned** and **Open-source** models. It features a step graph illustrating the usage and scaling, meaning the number of replicas with a specific hardware configuration deployed for the selected model version in the [Model Performance Filter](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} and the period in the [Global Timeline Filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Replicas**, and the X-axis indicates the selected **Date**.
 
 **Key Features**
 
@@ -207,7 +208,7 @@ The **Model Scaling and Usage** widget displays the graph with the Y axis set up
 
 ### Tokens
 
-This widget is available exclusively for external models. It displays bar graphs showing the input tokens sent to the selected provider’s model for processing requests and the output tokens generated during the period selected using the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Tokens** (in *K* or thousands), and the X-axis indicates the selected **Date**.
+This widget is available exclusively for external models. It displays bar graphs showing the input tokens sent to the selected provider’s model for processing requests and the output tokens generated during the period selected using the [Global Timeline Filter](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Tokens** (in *K* or thousands), and the X-axis indicates the selected **Date**.
 
 **Key Features**
 
@@ -235,7 +236,7 @@ You can expand any widget on the **Model Analytics Dashboard** for a drill-down 
 
 The widget-level filters include the following:
 
-* [Global Timeline Filters](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} for all the model types.
+* [Global Timeline Filters](../analytics/workflows-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} for all the model types.
 
 * [Model Performance Filters](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} for Open-source and Fine-tuned models.
 
@@ -270,7 +271,7 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 
 ## Related Links
 
-* **Settings Console** - [Learn more](../../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../../overview.md){:target="_blank"} about other AI for Process admin features.
 * **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
-* **Monitoring: Tools Analytics Dashboard** - [Learn more](../analytics/tools-analytics-dashboard.md){:target="_blank"} about getting actionable insights into tools’ performance.
+* **Monitoring: Workflows Analytics Dashboard** - [Learn more](../analytics/workflows-analytics-dashboard.md){:target="_blank"} about getting actionable insights into workflows’ performance.
 

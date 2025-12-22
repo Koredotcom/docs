@@ -2,8 +2,7 @@
 
 Steps to access Prompts:
 
-1. Log in to your (In)Agent Platform account and click **Prompt Studio** under **(In)Agent Platform Modules**.
-   <img src="../images/prompt_studio.png" alt="access prompt studio" title="access prompt studio" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your Platform account and click **Prompt Studio** under **Agent Platform Modules**.
  
 2. On the **Prompts** dashboard, you can see the following tabs:
     * **All prompts**: Displays all available prompts.

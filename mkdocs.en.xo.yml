@@ -24,6 +24,7 @@ theme:
     - content.code.annotation
     - content.code.copy
     - header.autohide
+    - announce.dismiss 
   language: en
   palette:
     - scheme: default
@@ -53,6 +54,21 @@ plugins:
         'generative-ai-tools/dgpt-upcoming-features.md': 'generative-ai-tools/dialog-gpt.md'
         'administration/kore-ai-connector.md': 'administration/adminconsole.md'
         'agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
+        'agentai/integration/AgentAI-webSDK/internal-transfer-process.md': 'agentai/integration/websdk/internal-transfer-process.md'
+        'agentai/integration/AgentAI-webSDK/error-codes.md': 'agentai/integration/websdk/error-codes.md'
+        'agentai/integration/AgentAI-webSDK/customize-your-sdk.md': 'agentai/integration/websdk/customize-your-sdk.md'
+        'agentai/integration/AgentAI-webSDK/introduction.md': 'agentai/integration/websdk/introduction.md'
+        'agentai/integration/AgentAI-webSDK/sdk-fields-and-details.md': 'agentai/integration/websdk/sdk-fields-and-details.md'
+        'agentai/integration/AgentAI-webSDK/view-customized-events.md': 'agentai/integration/websdk/view-customized-events.md'
+        'agentai/integration/AgentAI-webSDK/mybot-tabs.md': 'agentai/integration/websdk/mybot-tabs.md'
+        'agentai/integration/AgentAI-webSDK/dialog.md': 'agentai/integration/websdk/dialog.md'
+        'agentai/integration/AgentAI-webSDK/transcript-events.md': 'agentai/integration/websdk/transcript-events.md'
+        'agentai/integration/AgentAI-webSDK/searchtab-events.md': 'agentai/integration/websdk/searchtab-events.md'
+        'agentai/integration/AgentAI-webSDK/coaching-events.md': 'agentai/integration/websdk/coaching-events.md'
+        'agentai/integration/AgentAI-webSDK/sdk-Playbooks.md': 'agentai/integration/websdk/sdk-Playbooks.md'
+        'agentai/integration/AgentAI-webSDK/sentiment-charts.md': 'agentai/integration/websdk/sentiment-charts.md'
+        'agentai/integration/AgentAI-webSDK/other-events.md': 'agentai/integration/websdk/other-events.md'
+        'contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
@@ -62,7 +78,15 @@ plugins:
         'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
         'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
         'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
-
+        'apis/contact-center/get-all-conversations-data-call-details.md': 'apis/contact-center/get-all-conversations-data-call-details-v1.md'
+        'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
+        'quality-ai/coach/coaching-assignments-supervisor-creation.md': 'quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md'
+        'quality-ai/coach/coaching-assignments.md': 'quality-ai/coach/coaching-assignments-agent-view.md'
+        'quality-ai/getting-started/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
+        'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
+        'searchai/workbench.md': 'searchai/workbench/introduction.md'
+        'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
+        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/quality-ai-express.md'
 extra:
   version:
     provider: mike
@@ -142,7 +166,8 @@ nav:
   - Platform:
     - About AI for Service: getting-started/about-xo-platform.md    
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Accessing the Platform: getting-started/accessing-the-platform.md
+      - Outbound IP Addresses: getting-started/outbound-ip-address.md 
       - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Navigating the Platform: getting-started/navigating-the-platform.md  
@@ -205,7 +230,7 @@ nav:
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
         - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
         - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md    
-      - Deprecations: release-notes/11.x/searchai-deprecations.md 
+      - Deprecations: release-notes/11.x/deprecations.md 
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
@@ -307,6 +332,7 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - About Test and Debug: automation/testing/test-and-debug-overview.md
+      - Playground: automation/testing/playground.md
       - Test: automation/testing/talk-to-bot.md
       - DialogGPT based Apps:
         - Batch Testing - DialogGPT: automation/testing/batch-testing-dialoggpt.md
@@ -333,82 +359,82 @@ nav:
         - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
         - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
   - Search AI:
-    - Overview: searchai/about-search-ai.md
+    - About Search AI: searchai/about-search-ai.md
     - Getting Started:
       - About Answers in Search AI: searchai/introduction-to-answers.md
       - Setup Search AI: searchai/setup-search-ai.md
     - Content:
-        - Sources:
-            - Overview: searchai/content-sources/introduction.md
-            - Web Crawl: searchai/content-sources/web-crawl.md
-            - Directory: searchai/content-sources/directory.md
-            - Connectors:
-                - Introduction: searchai/content-sources/connectors.md
-                - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
-                - RACL Overview: searchai/content-sources/racl-support.md
-                - Aha: searchai/content-sources/connectors/aha.md
-                - Airtable: searchai/content-sources/connectors/airtable.md
-                - Amazon S3: searchai/content-sources/connectors/amazons3.md
-                - Asana: searchai/content-sources/connectors/asana.md
-                - Azure Storage: searchai/content-sources/connectors/azure.md
-                - BitBucket: searchai/content-sources/connectors/bitbucket.md
-                - Box: searchai/content-sources/connectors/box.md
-                - ClickUp: searchai/content-sources/connectors/clickup.md
-                - Coda: searchai/content-sources/connectors/coda.md
-                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
-                - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
-                - Custom Connector: searchai/content-sources/connectors/custom-connector.md
-                - Datadog: searchai/content-sources/connectors/datadog.md
-                - DotCMS: searchai/content-sources/connectors/dotcms.md
-                - Dropbox: searchai/content-sources/connectors/dropbox.md
-                - Egnyte: searchai/content-sources/connectors/egnyte.md
-                - Figma: searchai/content-sources/connectors/figma.md
-                - Freshdesk: searchai/content-sources/connectors/freshdesk.md
-                - Freshservice: searchai/content-sources/connectors/freshservice.md
-                - Front: searchai/content-sources/connectors/front.md
-                - GitHub: searchai/content-sources/connectors/github.md
-                - GitHub On-Prem: searchai/content-sources/connectors/github-onprem.md
-                - GitLab: searchai/content-sources/connectors/gitlab.md
-                - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - Guru: searchai/content-sources/connectors/guru.md
-                - HelpScout: searchai/content-sources/connectors/helpscout.md
-                - Hive: searchai/content-sources/connectors/hive.md
-                - HubSpot: searchai/content-sources/connectors/hubspot.md
-                - Jenkins: searchai/content-sources/connectors/jenkins.md
-                - Jfrog: searchai/content-sources/connectors/jfrog.md
-                - Jira: searchai/content-sources/connectors/jira.md
-                - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
-                - JSON Connector: searchai/content-sources/connectors/json.md
-                - LumApps: searchai/content-sources/connectors/lumapps.md
-                - Miro: searchai/content-sources/connectors/miro.md
-                - Monday: searchai/content-sources/connectors/monday.md
-                - MS Teams: searchai/content-sources/connectors/msteams.md
-                - Notion: searchai/content-sources/connectors/notion.md
-                - OneDrive: searchai/content-sources/connectors/onedrive.md
-                - OpsGenie: searchai/content-sources/connectors/opsgenie.md
-                - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
-                - PagerDuty: searchai/content-sources/connectors/pagerduty.md
-                - Re:amaze: searchai/content-sources/connectors/reamaze.md
-                - Salesforce: searchai/content-sources/connectors/salesforce.md
-                - ServiceNow: searchai/content-sources/connectors/servicenow.md     
-                - SharePoint: searchai/content-sources/connectors/sharepoint.md
-                - Shopify: searchai/content-sources/connectors/shopify.md
-                - Shortcut: searchai/content-sources/connectors/shortcut.md
-                - Slab: searchai/content-sources/connectors/slab.md
-                - Slack: searchai/content-sources/connectors/slack.md
-                - Teamwork: searchai/content-sources/connectors/teamwork.md
-                - TestRail: searchai/content-sources/connectors/testrail.md
-                - Trello: searchai/content-sources/connectors/trello.md
-                - WordPress: searchai/content-sources/connectors/wordpress.md
-                - Workday: searchai/content-sources/connectors/workday.md
-                - Wrike: searchai/content-sources/connectors/wrike.md
-                - xMatters: searchai/content-sources/connectors/xmatters.md
-                - YouTrack:  searchai/content-sources/connectors/youtrack.md
-                - Zendesk: searchai/content-sources/connectors/zendesk.md 
-                - Zeplin: searchai/content-sources/connectors/zeplin.md
-                - Zoho: searchai/content-sources/connectors/zoho.md
-                - Zoom: searchai/content-sources/connectors/zoom.md
-                - Zulip: searchai/content-sources/connectors/zulip.md
+        - About Content Sources: searchai/content-sources/introduction.md
+        - Websites: searchai/content-sources/web-crawl.md
+        - Documents: searchai/content-sources/directory.md
+        - Connectors:
+          - About Connectors: searchai/content-sources/connectors.md
+          - Supported Connectors: searchai/content-sources/connectors/connector-directory.md
+          - RACL Overview: searchai/content-sources/racl-support.md
+          - Aha: searchai/content-sources/connectors/aha.md
+          - Airtable: searchai/content-sources/connectors/airtable.md
+          - Amazon S3: searchai/content-sources/connectors/amazons3.md
+          - Asana: searchai/content-sources/connectors/asana.md
+          - Axero: searchai/content-sources/connectors/axero.md
+          - Azure Storage: searchai/content-sources/connectors/azure.md
+          - BitBucket: searchai/content-sources/connectors/bitbucket.md
+          - Box: searchai/content-sources/connectors/box.md
+          - ClickUp: searchai/content-sources/connectors/clickup.md
+          - Coda: searchai/content-sources/connectors/coda.md
+          - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
+          - Confluence Data Center: searchai/content-sources/connectors/confluence-server.md
+          - Custom Connector: searchai/content-sources/connectors/custom-connector.md
+          - Datadog: searchai/content-sources/connectors/datadog.md
+          - DotCMS: searchai/content-sources/connectors/dotcms.md
+          - Dropbox: searchai/content-sources/connectors/dropbox.md
+          - Egnyte: searchai/content-sources/connectors/egnyte.md
+          - Figma: searchai/content-sources/connectors/figma.md
+          - Freshdesk: searchai/content-sources/connectors/freshdesk.md
+          - Freshservice: searchai/content-sources/connectors/freshservice.md
+          - Front: searchai/content-sources/connectors/front.md
+          - GitHub: searchai/content-sources/connectors/github.md
+          - GitHub On-Prem: searchai/content-sources/connectors/github-onprem.md
+          - GitLab: searchai/content-sources/connectors/gitlab.md
+          - Google Drive: searchai/content-sources/connectors/googledrive.md
+          - Guru: searchai/content-sources/connectors/guru.md
+          - HelpScout: searchai/content-sources/connectors/helpscout.md
+          - Hive: searchai/content-sources/connectors/hive.md
+          - HubSpot: searchai/content-sources/connectors/hubspot.md
+          - Jenkins: searchai/content-sources/connectors/jenkins.md
+          - Jfrog: searchai/content-sources/connectors/jfrog.md
+          - Jira: searchai/content-sources/connectors/jira.md
+          - Jira On-Prem: searchai/content-sources/connectors/jira-onprem.md
+          - JSON Connector: searchai/content-sources/connectors/json.md
+          - LumApps: searchai/content-sources/connectors/lumapps.md
+          - Miro: searchai/content-sources/connectors/miro.md
+          - Monday: searchai/content-sources/connectors/monday.md
+          - MS Teams: searchai/content-sources/connectors/msteams.md
+          - Notion: searchai/content-sources/connectors/notion.md
+          - OneDrive: searchai/content-sources/connectors/onedrive.md
+          - OpsGenie: searchai/content-sources/connectors/opsgenie.md
+          - Oracle Knowledge: searchai/content-sources/connectors/oracle.md
+          - PagerDuty: searchai/content-sources/connectors/pagerduty.md
+          - Re:amaze: searchai/content-sources/connectors/reamaze.md
+          - Salesforce: searchai/content-sources/connectors/salesforce.md
+          - ServiceNow: searchai/content-sources/connectors/servicenow.md     
+          - SharePoint: searchai/content-sources/connectors/sharepoint.md
+          - Shopify: searchai/content-sources/connectors/shopify.md
+          - Shortcut: searchai/content-sources/connectors/shortcut.md
+          - Slab: searchai/content-sources/connectors/slab.md
+          - Slack: searchai/content-sources/connectors/slack.md
+          - Teamwork: searchai/content-sources/connectors/teamwork.md
+          - TestRail: searchai/content-sources/connectors/testrail.md
+          - Trello: searchai/content-sources/connectors/trello.md
+          - WordPress: searchai/content-sources/connectors/wordpress.md
+          - Workday: searchai/content-sources/connectors/workday.md
+          - Wrike: searchai/content-sources/connectors/wrike.md
+          - xMatters: searchai/content-sources/connectors/xmatters.md
+          - YouTrack:  searchai/content-sources/connectors/youtrack.md
+          - Zendesk: searchai/content-sources/connectors/zendesk.md 
+          - Zeplin: searchai/content-sources/connectors/zeplin.md
+          - Zoho: searchai/content-sources/connectors/zoho.md
+          - Zoom: searchai/content-sources/connectors/zoom.md
+          - Zulip: searchai/content-sources/connectors/zulip.md
     - Index:               
         - Extraction:
             - ETL Tool: searchai/content-extraction/etl.md
@@ -416,7 +442,7 @@ nav:
             - Content Transformation: searchai/content-extraction/transformation.md
         - Content Browser: searchai/chunk-browser.md
         - Workbench:
-            - Introduction: searchai/workbench/introduction.md
+            - About Workbench: searchai/workbench/introduction.md
             - Field Mapping Stage: searchai/workbench/field-mapping.md
             - Custom Script: searchai/workbench/custom-script.md
             - Exclude Document: searchai/workbench/exclude-document.md
@@ -440,6 +466,7 @@ nav:
         - User Feedback Handling: searchai/feedback.md
     - How Tos:
         - Integrate Custom Embedding Model: searchai/howto/integrate-custom-embedding-model.md
+        - Use information in Images to Generate Answers: searchai/howto/customize-response-by-channel.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md
@@ -466,6 +493,8 @@ nav:
           - Automatic Away Status for Agent Inactivity: contactcenter/configurations/settings/automatic-away-status-for-agent-inactivity.md
           - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Email Settings: contactcenter/configurations/settings/email-settings.md
+          - Active Console Configuration: contactcenter/configurations/settings/active-console-configuration.md
+          - Queue Level Outbound Numbers or Emails: contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
@@ -498,7 +527,7 @@ nav:
         - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
         - SMS Campaigns: contactcenter/campaigns/campaign-management/sms-campaigns.md
         - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
-        - Logs: contactcenter/campaigns/campaign-management/logs.md
+        - Campaign Logs: contactcenter/campaigns/campaign-management/logs.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Templates: contactcenter/campaigns/templates/sms-templates.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
@@ -545,24 +574,22 @@ nav:
             - By Speech: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-speech.md 
             - By Value: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-value.md
             - By AI Agent: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md
-            - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md
-            - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md              
+            - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md
+            - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md
+            - By Hold: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md 
+            - By Transfer: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md             
       - Agent Scorecards: quality-ai/configure/agent-scorecards.md
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
           - Taxonomy Setup: quality-ai/configure/taxonomy-builder/setup-taxonomy.md
-      - Quality Express:     
-        - Quality AI Express: quality-ai/getting-started/quality-ai-express.md
-        - AWS S3 Connector Setup Guide: quality-ai/getting-started/aws-s3-connector-setup-guide.md   
+      - Quality AI Express: quality-ai/configure/quality-ai-express.md      
       - Connectors: 
-          - Introduction: quality-ai/connectors/connector-intro.md
-          - Amazon S3: quality-ai/connectors/amazon-s3.md
+        - AWS S3 Connector Setup Guide: quality-ai/configure/connectors/aws-s3-connector-setup-guide.md                  
       - Conversation Sources: quality-ai/configure/conversation-sources.md
       - Settings: 
         - Conversation Intelligence: quality-ai/configure/conversation-intelligence.md
         - Quality AI General Settings: quality-ai/configure/quality-ai-general-settings.md
-        - Language Settings: quality-ai/configure/language-settings.md
-      - Analytics: quality-ai/analytics/scheduled-reporting-for-quality-ai.md        
+        - Language Settings: quality-ai/configure/language-settings.md         
   - Agent AI:
     - About Agent AI: agentai/about-agent-ai.md
     - Set up Agent AI:
@@ -586,22 +613,29 @@ nav:
       - Access Custom Data in Agent AI: agentai/agent-experience/access-custom-data-in-agent-ai.md
       - Agentic Copilot: agentai/agent-experience/agentic-copilot/agentic-copilot.md
     - Integrations:
-      - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
+      - Cloud CX: 
+        - Genesys Cloud CX: agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md
+        - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
       - NICE CX:
         - NICE MAX Desktop (Chat and Voice): agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
         - NICE MAX Desktop for Outbound Calls: agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md
         - NICE Agent Desktop Voice: agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md
-      - Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
-      - Salesforce NICE CX-CTI for Outbound Calls: agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md
-      - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
-      - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
-      - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md
-      - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md 
-      - Voice Integration with CX Cloud from Genesys and Salesforce: agentai/integration/cx-cloud-genesys-salesforce/agent-ai-voice-integration-with-cx-cloud-from-genesys-and-salesforce.md
-      - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
-      - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
-      - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
-      - Amazon Connect CCP Integration with Agent AI Chat: agentai/integration/amazon-connect-ccp-agentai-chat/amazon-connect-ccp-integration-agentai-chat.md
+      - Salesforce NICE CX-CTI:
+        - Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
+        - Salesforce NICE CX-CTI for Outbound Calls: agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md
+      - Salesforce:
+        - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
+        - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
+        - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md
+      - ServiceNow:
+        - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md 
+      - FIVE9:
+        - Chat Integration with Five9: agentai/integration/five9/agentai-chat-integration-with-five9.md
+      - AWS Third Party Applications:
+        - Amazon Connect with Agent AI Voice Via AWS Third Party Applications: agentai/integration/amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md
+      - Amazon Connect CCP:
+        - Amazon Connect CCP Integration with Agent AI Voice: agentai/integration/amazon-connect-ccp-agentai-voice/amazon-connect-ccp-integration-with-agentai-voice.md 
+        - Amazon Connect CCP Integration with Agent AI Chat: agentai/integration/amazon-connect-ccp-agentai-chat/amazon-connect-ccp-integration-agentai-chat.md
     - Agent AI Web SDK:
       - Introduction: agentai/integration/websdk/introduction.md
       - SDK Fields and Details: agentai/integration/websdk/sdk-fields-and-details.md
@@ -616,7 +650,7 @@ nav:
       - Internal Transfer: agentai/integration/websdk/internal-transfer-process.md
       - Sentiment Chart: agentai/integration/websdk/sentiment-charts.md
       - Other Events: agentai/integration/websdk/other-events.md
-      - Error Codes: agentai/integration/websdk/error-codes.md
+      - Error Codes: agentai/integration/websdk/error-codes.md 
   - GenAI Tools:
     - About GenAI Tools: generative-ai-tools/introduction.md
     - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
@@ -635,7 +669,8 @@ nav:
         - XO GPT Feedback Submission: generative-ai-tools/xogpt-feedback-submission.md
     - Prompts Library: 
       - Add Custom Prompts: generative-ai-tools/prompts-library.md
-      - Streaming Responses: generative-ai-tools/streaming-responses.md 
+      - Streaming Responses: generative-ai-tools/streaming-responses.md
+      - LLM Response Format: generative-ai-tools/llm-response-format.md
     - GenAI Features: 
       - About GenAI Features: generative-ai-tools/genai-features.md
       - Automation AI - GenAI Features: generative-ai-tools/genai-features-automationai.md
@@ -738,8 +773,6 @@ nav:
             - NiceCX (CXOne): contactcenter/integrations/voice-automation-nice-cxone-sip-integration/nice-cxone-sip-integration.md
             - Amazon Connect Integration using Voice Automation: agentai/integration/amazon-connect-voice-automation/amazon-connect-integration-using-voice-automation.md
             - Voice Automation with Genesys Agent Desktop using SIP Invite Protocol: contactcenter/integrations/voice-automation-using-sip-invite-protocol/genesys-agent-desktop.md
-          - Multibot:
-            - Multibot Integration with Genesys: contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
@@ -808,6 +841,10 @@ nav:
         - Introduction to Reports: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
       - Wallboards: analytics/contact-center/wallboards.md 
+    - Quality AI:  
+      - Reports:
+        - Scheduled Reports: analytics/quality-ai/reports/scheduled-reports.md
+        - Reports List: analytics/quality-ai/reports/qm-reports-list.md      
   - Administration:
     - Accounts or Workspaces: manage-assistant/plan-and-usage/accounts-or-workspace-overview.md
     - Users:

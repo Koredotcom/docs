@@ -15,7 +15,7 @@ To deploy your fine-tuned model, follow these steps:
 
     Or
 
-    * Click **Model Endpoint** in the left mavigation and then click **Deploy model** at the top-right corner of the page.  
+    * Click **Model Endpoint** in the left navigation and then click **Deploy model** at the top-right corner of the page.  
     <img src="../images/deploy-fine-tuned-model-from-overview.png" alt="Deploy Fine-Tuned Model from Overview" title="Deploy Fine-Tuned Model from Overview" style="border: 1px solid gray; zoom:80%;">
 
 2. The **Deploy** dialog is displayed. In the **General details** section:
@@ -63,6 +63,6 @@ To deploy your fine-tuned model, follow these steps:
 
 7. Click **Deploy**.
 
-    After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across Agent Platform and externally. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your fine-tuned model.
+    After the deployment process is complete the status is changed to Deployed. You can now infer this model across AI for Process and externally. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your fine-tuned model.
 
 

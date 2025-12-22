@@ -1,6 +1,6 @@
 # Topic Discovery
 
-Topic Discovery is an advanced analytics dashboard that transforms conversation data into actionable insights through intelligent visualization. This feature empowers QA managers, supervisors, business managers, and CX teams to identify conversation trends, analyze performance metrics, and make data-driven decisions for agent coaching and process improvement.   
+Topic Discovery is an advanced analytics dashboard that transforms conversation data into operational insights through intelligent visualization. This feature empowers QA managers, supervisors, business managers, and CX teams to identify conversation trends, analyze performance metrics, and make data-driven decisions for agent coaching and process improvement.   
 <img src="../topic-discovery/images/topic-discovery.png" alt="Topic Discovery" title="Topic Discovery" style="border: 1px solid gray; zoom:100%;">  
 
 ## Why Topic Discovery?
@@ -13,19 +13,19 @@ Modern contact centers face significant challenges in managing and analyzing the
 
 * **Reactive Issue Management**: Spotting emerging issues before they escalate into major customer experience problems.
 
-* **Resource Allocation Inefficiencies**: Allocating coaching resources effectively without clear visibility into problem areas.
+* **Resource Allocation Inefficiencies**: Allocating coaching resources when problem areas lack clear visibility.
 
 * **Sentiment Analysis Complexity**: Understanding customer sentiment patterns across different conversation categories.
 
 * **Resolution Tracking Challenges**: Monitoring success rates across various topic categories and identifying improvement opportunities.
 
-Topic Discovery addresses these challenges by providing a unified, visual approach to conversation analytics that reveals both pre-configured conversation categories and AI-discovered conversation patterns that may not be captured in existing taxonomies.
+Topic Discovery addresses these challenges by providing a unified, visual approach to conversation analytics, showing both pre-configured conversation categories and AI-discovered conversation patterns that existing taxonomies may not capture.
 
 ## How Does Topic Discovery Help?
 
 The Topic Discovery feature delivers value through several key capabilities:
 
-* **Trend Identification**: Quickly identify high-volume conversation topics and their associated performance metrics, enabling a rapid assessment of operational health.
+* **Trend Identification**: Identify high-volume conversation topics and their associated performance metrics, enabling a rapid assessment of operational health.
 
 * **Coaching Focus**: Pinpoint topics with poor sentiment scores or low resolution rates, allowing for targeted training interventions that address specific skill gaps.
 
@@ -45,9 +45,11 @@ Topic Discovery operates on a three-level hierarchical structure:
 
 ## User Interface Elements
 
-The Topic Discovery interface consists of powerful filtering controls, interactive visualizations, and detailed analytics views that work together to help you explore conversation data efficiently. Each component is designed to provide immediate insights while allowing you to drill down into specific areas of interest.
+The Topic Discovery interface consists of powerful filtering controls, interactive visualizations, and detailed analytics views that work together to help you explore conversation data efficiently. Each designed component provides immediate insights while allowing you to drill down into specific areas of interest.
 
-Navigation path: **Quality AI** > **ANALYZE** > **Topic Discovery**
+## Access Topic Discovery
+
+Navigate to **Quality AI** > **ANALYZE** > **Topic Discovery**
 
 ### Filters
 
@@ -74,9 +76,9 @@ The following table depicts the bot behavior for the end of the conversation eve
   <tr>
    <td><strong>Search Topic Names</strong>
    </td>
-   <td>Quickly locate topics within the visualization.
+   <td>Locate topics within the visualization.
    </td>
-   <td>Start typing a keyword, and matching topics are highlighted instantly. 
+   <td>Start typing a keyword, and the system instantly highlights matching topics.
    </td>
    <td>Use this when looking for a specific customer issue (for example, “Payment Failure”).
    </td>
@@ -86,9 +88,9 @@ The following table depicts the bot behavior for the end of the conversation eve
    </td>
    <td>Switches between taxonomy-based topics and AI-discovered themes.
    </td>
-   <td>Choose <strong>Configured Intents</strong> if your taxonomy is set. Choose <strong>Generated Intents</strong> to surface blind spots.
+   <td>Choose <strong>Configured Intents</strong> to set your taxonomy. Choose <strong>Generated Intents</strong> to surface blind spots.
    </td>
-   <td>Use Generated Intents to uncover new themes not yet in your taxonomy.
+   <td>Use Generated Intents to identify new themes outside your taxonomy.
    </td>
   </tr>
   <tr>
@@ -125,7 +127,8 @@ The following table depicts the bot behavior for the end of the conversation eve
 
 
 ### Topics Filter
-Advanced filtering options provide granular control over your data view, allowing you to layer multiple criteria and progressively narrow your analysis. Click the **Filters** button to reveal these options, which work together to help you focus on specific channels, languages, queues, agents, or performance thresholds.
+
+Advanced filtering options provide granular control over your data view, allowing you Select **Filters** to reveal these options, which work together to help you focus on specific channels, languages, queues, agents, or performance thresholds.
 
 * **Channel Filter**: Choose between Voice, Chat, or both.
 * **Language Filter**: Multi-select dropdown with search, selectively remove, or **Clear All**.
@@ -137,7 +140,7 @@ Advanced filtering options provide granular control over your data view, allowin
 
 ### Bubble Visualization Canvas
 
-The central visualization displays topics as interactive bubbles with meaningful visual encoding, providing an at-a-glance view of conversation volumes, performance metrics, and relationships between topics. This intuitive interface allows you to explore your conversation data spatially, with visual cues guiding you to areas that need attention.
+The central visualization displays topics as interactive bubbles with meaningful visual encoding, providing an at-a-glance view of conversation volumes, performance metrics, and relationships between topics. This intuitive interface lets you explore your conversation data spatially, with visual cues guiding you to areas that need attention.
 
 * **Bubble Size**: Conversation volume (larger = more conversations).
 * **Positioning**: Related topics cluster together.
@@ -167,7 +170,7 @@ Configured Intents display topics based on your organization's pre-defined taxon
 When to use Configured Intents:
 
 * Monitoring known business categories and established conversation types.
-* Tracking performance against your documented taxonomy.
+* Tracking performance on your documented taxonomy.
 * Comparing results to historical data using consistent categorization.
 * Analyzing conversations within your existing framework.
 
@@ -175,7 +178,7 @@ To set up or modify your taxonomy structure, refer to the [Setup Taxonomy](../co
 
 **Generated Intents**
 
-Generated Intents leverage AI to automatically discover and surface conversation themes that may not be captured in your configured taxonomy. The system analyzes conversation patterns and creates topic groupings based on actual customer language and emerging trends.
+Generated Intents use AI to discover and surface conversation themes that your configured taxonomy may not capture. The system analyzes conversation patterns and creates topic groupings based on actual customer language and emerging trends.
 
 When to use Generated Intents:
 
@@ -185,10 +188,10 @@ When to use Generated Intents:
 * Validating and expanding your taxonomy structure.
 * Uncovering new product issues or customer needs.
 
-## Topic Detail Slideout
+## Topic Detail Pane
 
-The detail slideout provides comprehensive analytics for individual topics, combining historical trends, performance metrics, and qualitative insights. Access this detailed view through **View Details** from any bubble tooltip to understand the full context behind the numbers.   
-<img src="../topic-discovery/images/topic-detail-slideout.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;">
+The detail pane provides comprehensive analytics for individual topics, combining historical trends, performance metrics, and qualitative insights. Access this detailed view through **View Details** from any bubble tooltip to understand the full context behind the numbers.   
+<img src="../topic-discovery/images/topic-detail-pane.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;">
 
 
 ### Overview
@@ -203,10 +206,9 @@ The Overview tab delivers comprehensive performance analytics for the selected t
 * **Top Keywords**: Most frequent terms in topic conversations.
 * **Emotion Detection**: Top 6 emotions identified in conversations.
 
-
 ### Conversations
 
-The conversation analysis section allows you to move from aggregate metrics to individual interactions, helping you understand the real customer experiences behind your data. This section provides both list views for scanning multiple conversations and detailed views for in-depth analysis.  
+The conversation analysis section lets you move from aggregate metrics to individual interactions, helping you understand the real customer experiences behind your data. This section provides both list views for scanning multiple conversations and detailed views for in-depth analysis.  
 <img src="../topic-discovery/images/conversations.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;">
 
 **Conversation List Structure**
@@ -255,27 +257,25 @@ Comprehensive table displaying conversations containing the selected topic:
   </tr>
 </table>
 
-
 **Navigation and Access**
 
-The conversation list view serves as your gateway to individual customer interactions, providing essential information at a glance while offering multiple ways to sort, search, and filter results. This organized approach helps you quickly locate conversations of interest and assess patterns across multiple interactions.
+The conversation list view serves as your gateway to individual customer interactions, providing essential information at a glance while offering multiple ways to sort, search, and filter results. This organized approach helps you to locate conversations of interest and assess patterns across multiple interactions.
 
 * **Sorting**: Most recent conversations first.
 * **Pagination**: 10 conversations per page with standard navigation controls.
 * **Page jumping**: Direct access to specific pages.
-* **All Conversations** Button: Opens full [Conversation Mining - Interactions](../analyze/conversation-mining-interactions.md) view with pre-applied topic filters.     
+* **All Conversations**: Opens full [Conversation Mining - Interactions](../analyze/conversation-mining-interactions.md) view with pre-applied topic filters.     
 <img src="../topic-discovery/images/conversation-mining-interactions.png" alt="Conversation Mining" title="Conversation Mining" style="border: 1px solid gray; zoom:100%;">  
 
+**Full Conversation View Pane**
 
-**Full Conversation View Slideout**
-
-The full conversation view slideout provides a comprehensive, immersive experience for analyzing individual customer interactions. This detailed interface combines the complete conversation thread with contextual metadata, analytical insights, and visual indicators to help you understand what happened, why, and how it can inform future improvements.    
+The full conversation view pane provides a comprehensive, immersive experience for analyzing individual customer interactions. This detailed interface combines the complete conversation thread with contextual metadata, analytical insights, and visual indicators to help you understand what happened, why, and how it can tell future improvements.    
 <img src="../topic-discovery/images/full-conversation-view.png" alt="Hovering Tooltips" title="Hovering Tooltips" style="border: 1px solid gray; zoom:100%;"> 
 
 **Conversation Details**
 
 * **Complete Thread**: Full customer-agent interaction.
-* **Topic Highlighting**: Visual indicators where topics were identified.
+* **Topic Highlighting**: Visual indicators for the topics identified.
 * **Metadata Display**: Channel, duration, resolution status, sentiment scores.
 * **Timeline View**: Chronological flow of conversation.
 * **Context Information**: Queue, agent, and channel details.
@@ -298,33 +298,30 @@ The full conversation view slideout provides a comprehensive, immersive experien
     * Scan L1 topics for large bubbles with negative sentiment.
     * Identify "Technical Support" as a high-volume, low-sentiment topic.
 
-2. **Drilldown Investigation**
+2. **Drill-Down Investigation**
 
-    * Click the "Technical Support" bubble to reveal L2 topics.
+    * Select the "Technical Support" bubble to reveal L2 topics.
     * Notice "Software Installation" shows poor resolution rates.
-    * Click into "Software Installation" to see L3 subtopics.
+    * Select into "Software Installation" to see L3 subtopics.
     * Identify "Driver Installation" as the primary problem area.
 
 3. **Detailed Analysis**
 
-    * Open "Driver Installation" detail slideout.
+    * Open "Driver Installation" detail pane.
     * Review metrics: 150 conversations, 45% resolution rate, average sentiment: 2.
-    * Check top keywords: "error", "crash", "incompatible", "frustrated".
+    * Check top keywords: `error`, `crash`, `incompatible`, `frustrated`.
     * Note top emotions: Anger (40%), Frustration (35%), Confusion (25%).
-
 
 4. **Conversation Review**
 
-    * Click "View Conversations" to see individual interactions.
+    * Select "View Conversations" to see individual interactions.
     * Review 3-4 representative conversations to understand common failure patterns.
     * Identify knowledge gaps in driver troubleshooting procedures.
-
 
 5. **Action Planning**
 
     * Use insights to develop a targeted training module on driver installation.
     * Create job aids for common driver compatibility issues.
     * Schedule coaching sessions with agents handling technical support.
-
 
 **Outcome**: Focused coaching intervention based on data-driven insights, resulting in improved resolution rates and customer satisfaction.

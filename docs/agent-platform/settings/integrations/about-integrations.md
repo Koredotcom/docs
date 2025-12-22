@@ -23,9 +23,7 @@ The (In)Agent Platform supports 120+ integrations with different authorization t
 
 To access the feature, follow the steps below:
 
-1. Log in → In (In)Agent Platform Modules → Click **Autonomous Agents**.
-   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
-
+1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
 2. Click **Settings** → On the left navigation menu → Click **Integrations**.
     <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
@@ -912,7 +910,7 @@ The following third-party integrations are available on the (In)Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>Junglescout
+   <td>Jungle Scout
    </td>
    <td>Jungle Scout assists Amazon sellers with product research, sales estimates, and competitive insights to optimize inventory, pricing, and listing strategies.
    </td>
@@ -1704,7 +1702,7 @@ To add a connection and configure an integration, follow the steps below:
 </div>
 
 1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations**.
-2. The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection.
+2. The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection. <br>
     **Case 1**: For a first-time connection, follow these steps:
     
     * (Optional) In the **All Integrations** tab, select the **Category** and **Authorization** from the respective lists to filter the integration options.
@@ -1714,6 +1712,7 @@ To add a connection and configure an integration, follow the steps below:
 
 3. Click **Add Connection** on the next page or the integrations listing page.
 <img src="../images/add-new-conn.png" alt="add connection" title="add connection" style="border: 1px solid gray; zoom:75%;">
+
 <img src="../images/connected-integration-add.png" alt="connected integration" title="connected integration" style="border: 1px solid gray; zoom:75%;">
 
 4. The Configuration window is displayed, where you must enter the following information:
@@ -1806,6 +1805,7 @@ You will be redirected to the following page, where all the connections for the 
 
 You can view, edit, delete, and perform additional actions with connected integrations to your account in the **Connected** section.
 <img src="../images/click-connected-tab.png" alt="click connected tab" title="click connected tab" style="border: 1px solid gray; zoom:75%;">
+
 ### View Summary
 
 Once you click the integration in the **Connected** section, the list of configured connections is displayed with the following information:

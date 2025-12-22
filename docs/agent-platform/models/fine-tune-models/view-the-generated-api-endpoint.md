@@ -1,6 +1,7 @@
 # View API Endpoint & Deployment History
 
 ## API Endpoint
+
 After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in (In)Agent Platform.
 
 !!! note
@@ -16,7 +17,7 @@ Steps to view the API Endpoint:
 
 The API endpoint is available in 3 formats. You can copy and use the same as required.
 
-### API Endpoint Usecase
+### API Endpoint
 
 You can use the deployed fine-tuned model in (In)Agent Platform for the following use cases:
 

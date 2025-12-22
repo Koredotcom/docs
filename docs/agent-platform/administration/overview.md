@@ -4,10 +4,10 @@
 
 1. [Users](../settings/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
-3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
+3. [Automated synchronization](../settings/user-management/settings/active-directory.md){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
-6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
+6. [Manage Guardrails](../guardrails/overview.md){:target="_blank"} 
 7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
 8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
@@ -100,12 +100,14 @@ Other capabilities include:
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../guardrails/manage-guardrails.md){:target="_blank"}.
+View pre-deployed guardrail models that apply scanners to prompt input and output text across all tools. [Learn more](../guardrails/overview.md){:target="_blank"}.
 
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
+
 - Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}.
+
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 * Track custom script executions across runs and logs for deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
@@ -176,7 +178,7 @@ The following modules and features are supported on the **Settings** Console:
 <li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to (In)Agent Platform seamlessly. Enable automatic data sync between the AD and (In)Agent Platform daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across (In)Agent Platform. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
+<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they're added to your account.
 </li>
 </ul>
    </td>
@@ -209,7 +211,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><a href="../../guardrails/overview" target="_blank">Manage Guardrails</a></td>
-   <td>Deploy models to make them available for anomaly scanners in all the tools. 
+   <td>View the list of pre-deployed guardrail models available across the platform. 
    </td>
    <td>
 <ul>
@@ -301,7 +303,3 @@ The following modules and features are supported on the **Settings** Console:
 <li>Edit or delete the app as required.</li></ul></td>
   </tr>
 </table>
-
-
-
-

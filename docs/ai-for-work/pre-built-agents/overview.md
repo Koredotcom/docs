@@ -46,4 +46,4 @@ Steps to publish a pre-built agent:
 2. Click **Publish.** The agent is now available for the users to use in the Agent Store.
  
 Users can open the Agent Store, click **Connect** for the Agent, and follow the on-screen instructions to **Add Connection**.
-Once the connection is added successfully, the agent can take users’ questions or queries using the Ask or Search Anything box on the (In)Business Productivity homepage.
+Once the connection is added successfully, the agent can take users’ questions or queries using the Ask or Search Anything box on the homepage.

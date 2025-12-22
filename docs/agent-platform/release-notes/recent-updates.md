@@ -2,6 +2,111 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent (In)Agent Platform releases.
 
+## v1.4.0 December 6, 2025
+
+<u> Minor Release </u>
+
+This release enhances multi-agent orchestration with a unified Orchestrator interface, direct tool invocation via Agent Protocol, and Content Variables for centralized data management.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Unified Orchestration Management**
+
+The platform now supports creating Agentic Apps with a single AI Agent, making it easy to deploy use cases that do not require sophisticated multi-agent orchestration. The Adaptive Network Pattern is now generally available for all users. The new Behavioral Guidelines let you centrally manage safety, branding, and other instructions. Along with these updates, a dedicated Orchestrator section makes it easy to switch between the patterns. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md)
+
+
+**Direct Tool Invocation via Agent Protocol**
+
+Agent Protocol now supports direct invocation of tools (workflow, code, and MCP tools) while maintaining full access to application context, including memory and environment variables. This enhancement enables developers to execute specific tools programmatically when they know exactly what action is needed, bypassing agent reasoning for faster, more cost-effective, and deterministic execution. [Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
+
+**Introducing Content Variables**
+
+Content Variables provide a centralized way for users to declare data used throughout the application—such as user profiles, customer IDs, and employee IDs. This data becomes automatically accessible to all components, including supervisor prompts, agent definitions, tools, events, and knowledge. It helps streamline context management during execution and eliminates the need for manual configuration. [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/content.md)
+
+<font size="4">AI Engineering Tools</font>
+
+**External Model Connection APIs**
+
+The platform now provides External Connection APIs that enable programmatic management of model connections in addition to the existing UI. These APIs support viewing existing connections, creating new connections for both easy and custom integrations, and rotating keys for supported providers. 
+Two new API scopes, View connections and Manage connections, have been added, offering more granular permission control for accessing and updating external model connections. [Learn more :octicons-arrow-right-24:](../apis/apis-list/connections-api.md)
+
+**New Model Support**
+
+The OpenAI gpt-4o-search-preview model is now supported in Prompts and Workflow tools. The model is optimized for search and RAG workflows, and features multi-chunk document retrieval and grounded response generation. [Learn more :octicons-arrow-right-24:](../models/supported-models.md#supported-external-models-for-easy-integration)
+
+<hr>
+
+## v1.3.1 November 21, 2025
+
+<u> Minor Release </u>
+
+This release enables you to expedite your AI agent deployments by running evals at scale with AI-powered simulations that use personas and scenarios. Other key features in this release include global availability of guardrails without the need to deploy per-workspace preprocessors to effectively manage the agent's context, and global PII redaction with selective unmasking support.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Environment Variables & Namespace Support**
+
+Environment Variables with namespace support enable secure, reusable, and environment-specific configuration management across the application. Developers can centrally define and manage variables and access them seamlessly in Code Tools. These variables are automatically resolved at runtime, eliminating the need to hardcode sensitive information such as API keys, endpoints, and tokens. This enhancement simplifies multi-environment deployments and ensures consistent, dynamic configuration across all environments.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/variables.md)
+
+**Pre-Processor for Agent Execution**
+
+Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
+
+**Note**: This feature is currently in preview and can be enabled upon request.
+
+**API Key Permissions and Access Control**
+
+Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/api-keys.md)
+
+**Agent Invocation Error Handling**
+
+Agent Platform introduces a new error-handling framework that provides configurable timeouts, retry logic, fallback models, and recovery actions for model invocation failures. These enhancements ensure a predictable handling of failures, and improved user experience during model outages.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#error-handling)
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Agentic Evaluation: Introducing Simulations for Agentic Apps**
+
+Evaluation Studio now supports Simulations, enabling teams to generate realistic mock interaction sessions before deploying agentic apps to production. The feature helps validate agent behavior early, detect issues quickly, and assess quality across diverse conditions. Simulation sessions can be reviewed directly and imported into Evaluations, just like production data.
+
+Key capabilities
+
+* Reusable Personas: Create personas representing different communication styles and behaviors.
+* Test Scenarios: Define scenarios to simulate specific tasks, intents, and edge cases.
+* Mock Conversations: Generate realistic conversations (using personas and test scenarios) based on the agentic app's current configuration.
+* Transcript Review: Review transcripts to validate agent behavior and reliability before your agentic app goes live.
+
+[Learn more :octicons-arrow-right-24:](../evaluation/agentic-evaluation/create-simulation.md)
+
+
+
+**Gemini Format Support in External Model Integrations**
+
+Custom external model integrations now support the Gemini request–response format, in addition to OpenAI Completions and Anthropic Messages. When configuring external models, users can select Google (Gemini) as the provider, with automatic request routing and response parsing for Gemini-formatted requests handled by the Model Hub.
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**New PII Protection Framework**
+
+Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data. Developers can selectively unmask and use original values in tools when needed.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/guardrails.md)
+
+**Guardrails Now Available by Default for Built-in AI Safety**
+
+System input and output scanners are now automatically deployed and available by default without consuming credits. Users can review, test, and enable them without manual deployment, ensuring safer, more compliant AI responses. 
+
+[Learn more :octicons-arrow-right-24:](../guardrails/overview.md)
+
+<hr>
+
+
 ## v1.3.0 November 3, 2025
 
 <u> Minor Release </u>
@@ -66,7 +171,7 @@ The (In)Agent Platform now provides enhanced context handling for conversations 
 
 **Improved Workflow Tool Testing Experience**
 
-The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
+The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardized output format.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#test-a-workflow-tool)
 
@@ -82,7 +187,7 @@ The Platform now supports seamless integration of custom models in Agentic Apps 
 
 **Structured Output Support for Open-Source Models**
 
-Inception-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
+Open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
 
 * Supported on the v2/chat/completions endpoint (default for new deployments).
 * Works with most open-source models (see the documentation for the full [list of supported models](../models/supported-models.md#supported-models-for-structured-output).
@@ -250,7 +355,7 @@ This update introduces support for a new set of AI models in the (In)Agent Platf
     * Azure OpenAI - GPT-4.1, GPT-4.1-Nano, GPT-4.1-Mini, O1, O1-Mini, O3-Mini
 
 * Text to Image Node (External models)
-    * OpenAI - dall-e-2 and dall-e-3
+    * OpenAI - DALL·E 2 and DALL·E 3
 
 * Open-source Model
     * Xiaomi Mimo-7B--VL-RL
@@ -1091,7 +1196,7 @@ Platform users can now set up an Authorization Profile using OAuth v2 in the Set
 
 <font size="4">Feature Enhancements</font>
 
-* Upgraded the TRL version of ml-training-service to support DPO RLHF fine-tuning, ensuring seamless functionality with custom parameters.
+* Upgraded the TRL version of ml-training-service to support DPO Reinforcement Learning from Human Feedback (RLHF) fine-tuning, ensuring seamless functionality with custom parameters.
 
 
 <font size="4">Bug Fixes</font>

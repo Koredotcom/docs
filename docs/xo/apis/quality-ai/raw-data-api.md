@@ -2,14 +2,25 @@
 
 # Raw Data API
 
-This API provides detailed Quality AI and Conversation Intelligence related data at an interaction level, including interaction quality metrics and interaction analytics attributes.
+The Raw Data API now provides detailed Quality AI and Conversation Intelligence data at the interaction level, including quality metrics and analytics attributes. It also supports generated intents, offering L1–L3 topics with confidence scores, and sentiment and resolution for L3, replacing the previous intents and topics fields.
 
 | **METHOD**     | **POST**                                                                                                                                       |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Endpoint       | [`https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/RawData`](https://{{host}}//api/public/QualityManagement/account/{{accountId}}/v1/RawData) |
+| Endpoint       |`https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata`|
 | Content Type     | `application/json` |
-| Authorization    | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
-| API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |                                                                    |
+| Authorization    | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). 
+| API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |                                                                    || API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |                                                                    |
+
+## Header Parameters
+
+
+| **PARAMETER** | **DESCRIPTION**                                                                 | **OPTIONAL/REQUIRED**          |
+|---------------|----------------------------------------------------------------------------------|-------------------|
+| `Content-Type`        | `application/json`| required |
+| `accountId`   | The Account Id. For example, `67a9ca06cf0e510a8632xxxx`                         | required |
+| `orgId`   | The unique identifier of the organization.                         | required |
+| `auth`   | JWT token used for authentication.                         |required |
+
 
 ## Path Parameters
 
@@ -17,53 +28,36 @@ This API provides detailed Quality AI and Conversation Intelligence related data
 | **PARAMETER** | **DESCRIPTION**                                                                 | **TYPE**          |
 |---------------|----------------------------------------------------------------------------------|-------------------|
 | `host`        | Environment URL. For example, [https://platform.kore.ai/](https://platform.kore.ai/) | `string`, required |
-| `accountId`   | The Account Id. For example, `6639f8cc882f9068043fxxxx`                         | `string`, required |
+| `streamId`   | `botId` or `streamId`. You can get it from the App Settings page.                         | `string`, required |
 
 
 ## Sample Request
 
 ```
-curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/app/st-5ceb332e-d21a-5675-8b45-7707f37bxxxx/rawdata' \
---header 'Accept: application/json, text/plain, /' \
---header 'Accept-Language: en-US,en;q=0.9' \
---header 'AccountId: {{accountid}}' \
---header 'Connection: keep-alive' \
---header 'Content-Type: application/json;charset=UTF-8' \
---header 'Iid: {{Iid}}' \
---header 'Referer: https://sit-xo.kore.ai/builder/app/setupguide' \
---header 'Sec-Fetch-Dest: empty' \
---header 'Sec-Fetch-Mode: cors' \
---header 'Sec-Fetch-Site: same-origin' \
---header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' \
---header 'X-Timezone-Offset: -330' \
---header 'app-language: en' \
---header 'bot-language: en' \
---header 'client-app: unified' \
---header 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
---header 'sec-ch-ua-mobile: ?0' \
---header 'sec-ch-ua-platform: "Windows"' \
---header 'state: configured' \
---header 'accountId: {{accountid}}' \
---header 'auth: {{authToken}}' \
---data '{
-    "startDate": "2024-07-18 00:17:54",
-    "endDate": "2024-07-19 13:36:35",
-    "limit": 100,
-    "page": 2
-    }
-'
+curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{accountId}}/v1/RawData` \
+  --header 'accountId: {{accountId}}' \
+  --header 'auth: {{authToken}}' \
+  --header 'Content-Type: application/json' \
+  --header 'orgId: o-da5be4e0-8fbb-5229-ac20-9b1384ebxxxx' \
+  --body '{
+    "offset": 0,
+    "startDate": "2025-11-10 10:17:54",
+    "endDate": "2025-11-10 23:00:35",
+    "limit": 1,
+    "page": 1
+    }'
+
 ```
 
 ## Body Parameters
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |---------------|-----------------|----------|
-| `startDate` | The start date from which the records need to be considered. <br><br>The date format with UTC based time: <br>`YYYY-MM-DDTHH24:MM:SS.NNNZ`<br>For example: `2024-07-18T11:31:14.722Z` | `string`, required |
-| `endtDate` | The end date until which the records need to be considered. <br><br>The date format with UTC based time: <br>`YYYY-MM-DDTHH24:MM:SS.NNNZ`<br>For example: `2024-07-18T11:33:12.904Z` | `string`, required |
-| `limit` | The number of records to be shown on each page. The default is 100. | `integer`, optional |
+| `offset` | The number of responses the documents need to skip before starting to return results. The default value is 0. For example, 10. | `integer`, required |
+| `startDate` | Specify the start date to include records. Use the UTC-based date format: <br>`YYYY-MM-DDTHH24:MM:SS.NNNZ`<br>For example: `2025-12-18T11:31:14.722Z` | `string`, required |
+| `endDate` | Specify the end date to include records. Use the UTC-based date format: <br>`YYYY-MM-DDTHH24:MM:SS.NNNZ`<br>For example: `2025-12-18T11:33:12.904Z` | `string`, required |
+| `limit` | This sets the number of conversation records returned in the response. The default is 100. For example, 70. | `integer`, optional |
 | `page` | Indicates the number of pages in the response; it is used for pagination. The default value is 1. | `integer`, optional |
-| `channel` | Option to filter interactions by channel. | `array`, optional |
-| `queues` | Options to filter interactions by queue. | `array`, optional |
 
 
 ## Sample Response	
@@ -72,188 +66,130 @@ curl --location 'https://<host_url>/agentassist/api/v1/public/qualitymanagement/
 {
     "results": [
         {
-            "src": "korevg",
-            "Conversation Start Time": "2024-07-18T11:31:14.722Z",
-            "Conversation End Time": "2024-07-18T11:33:12.904Z",
-            "Duration": "118182 milliseconds",
-            "Conversation ID": "c-<conversation_id>",
-            "Sentiment Score": 5,
-            "Intents": [
-                {
-                    "intent": "authorization assistance",
-                    "keywords": [
-                        "account authorization assistance",
-                        "code intent request"
-                    ]
-                },
-                {
-                    "intent": "intent",
-                    "keywords": [
-                        "intent",
-                        "code intent request"
-                    ]
-                }
-            ],
-            "Topics": [
-                {
-                    "topic": "intent",
-                    "keywords": [
-                        "intent name inquiry",
-                        "account authorization assistance",
-                        "code intent request"
-                    ]
-                }
-            ],
-            "Kore Evaluation Score": 40,
-            "IsChurnRiskObserved": false,
-            "IsEscalationObserved": false,
-            "Pass Score": 70,
-            "IsPassed": false,
+            "src": "audiocodes",
+            "speechSpeed": null,
+            "customConversationId": "S3nov10Stereo9xx",
+            "Conversation ID": "c-8797b6f6-960e-5efb-8352-6a6b27d7xxxx",
+            "Conversation Start Time": "2025-11-10T10:32:34.887Z",
+            "Conversation End Time": "2025-11-10T10:35:08.887Z",
+            "Language": "English",
+            "Duration": "154000 milliseconds",
             "Queues": [
                 {
-                    "Queue ID": "{{queueId}} ",
-                    "Queue Name": "Technical Support "
+                    "Queue ID": "qu-d1fb0122-440c-58e8-b59d-11cd2481xxxx",
+                    "Queue Name": "sep25connectors"
                 }
             ],
             "Agents": [
                 {
-                    "agentId": "{{agentId}}",
-                    "Agent Name": "Demo",
-                    "Agent Start Time": "2024-07-18T11:31:18.703Z",
-                    "Agent Email": "demo@mailinator.com"
+                    "agentId": "a-3114fe85-b7e2-5c44-9a6c-780d8ebdxxxx",
+                    "Agent Name": "Peter Parker",
+                    "Agent Start Time": "2025-11-10T10:32:36.127Z",
+                    "Agent Email": "peter.parker@yopmail.com"
                 }
             ],
-            "Metrics": [
-                {
-                    "Metric ID": "{{metricId}}",
-                    "Metric Name": "Customer Verification",
-                    "Metric Weight": 25,
-                    "Qualification": "NA"
-                },
-                {
-                    "Metric Name": "Recommend/explain other options",
-                    "Metric Weight": 30,
-                    "Qualification": "NO"
-                },
-                {
-                    "Metric Name": "Policy",
-                    "Metric Weight": 15,
-                    "Qualification": "NO"
-                },
-		  {
-                    "Metric Name": "playbook",
-                    "Metric Weight": 10,
-                    "Qualification": "NA"
-            	},
-                {
-                    "Metric ID": "{{metricId}}",
-                    "Metric Name": "QQQQQq",
-                    "Metric Weight": 30,
-                    "Qualification": "YES"
-                }
-            ]
-        },
-        {
-            "src": "korevg",
-            "Conversation Start Time": "2024-07-19T13:30:20.347Z",
-            "Conversation End Time": "2024-07-19T13:31:08.370Z",
-            "Duration": "48023 milliseconds",
-            "Conversation ID": "c-<conversation_id>",
-            "Sentiment Score": 7,
-            "Intents": [
-                {
-                    "emotions": [],
-                    "intent": "intent",
-                    "keywords": [
-                        "intent"
-                    ],
-                    "Sentiment": "positive",
-                    "Sentiment Score": 7
-                }
-            ],
-            "Kore Evaluation Score": 40,
+            "Kore Evaluation Score": -12,
             "IsChurnRiskObserved": false,
             "IsEscalationObserved": false,
-            "Pass Score": 70,
-            "IsPassed": false,
-            "Queues": [
+            "Fatal Errors": 0,
+            "Taxonomy Resolution": false,
+            "Sentiment Pattern": {
+                "start": "neutral",
+                "end": "neutral"
+            },
+            "Customer emotions": [],
+            "Agent emotions": [
                 {
-                    "Queue ID": "{{queueId}}",
-                    "Queue Name": "Technical Support "
+                    "emotion": "Patience",
+                    "duration": 0,
+                    "proportion": 100
                 }
             ],
-            "Agents": [
-                {
-                    "agentId": "{{agentId}}",
-                    "Agent Name": "Demo",
-                    "Agent Start Time": "2024-07-19T13:30:39.279Z",
-                    "Agent Email": "demo@mailinator.com"
-                }
-            ],
+            "Sentiment Ratio": {
+                "positive": 0,
+                "neutral": 100,
+                "negative": 0
+            },
             "Metrics": [
                 {
-                    "Metric ID": "{{metricId}}",
-                    "Metric Name": "Customer Verification",
-                    "Metric Weight": 25,
-                    "Qualification": "NA"
-                },
-		  {
-                    "Metric ID": "{{metricId}}",
-                    "Metric Name": "Customer Price",
-                    "Metric Weight": 30,
-                    "Qualification": "NA"
+                    "Metric ID": "em-134e3916-1d7b-580c-afa9-279886d5xxxx",
+                    "Metric Name": "COMMON AU - Agent response back with information GEN & DET v2",
+                    "Metric Weight": 13,
+                    "Metric Negative Weight": 13,
+                    "Qualification": "NA",
+                    "isFatalError": false,
+                    "triggerJustification": [],
+                    "justification": []
                 },
                 {
-                    "Metric Name": "Recommend/explain other options",
-                    "Metric Weight": 30,
-                    "Qualification": "NO"
-                },
-                {
-                    "Metric Name": "Policy",
-                    "Metric Weight": 15,
-                    "Qualification": "NO"
-                },
-                {
-                    "Metric ID": "{{metricId}}",
-                    "Metric Name": "Cross talk check",
-                    "Metric Weight": 30,
-                    "Qualification": "YES"
+                    "Metric ID": "em-fb380cf0-2bf4-5ddd-bfe6-99d1a82axxxx",
+                    "Metric Name": "Test By value 1st - Base Rate",
+                    "Metric Weight": 0,
+                    "Metric Negative Weight": 0,
+                    "Qualification": "NA",
+                    "isFatalError": false,
+                    "triggerJustification": [],
+                    "justification": []
                 }
-            ]
+            ],
+            "Pass Score": 40,
+            "IsPassed": false
         }
     ],
-    "totalResults": 9,
-    "totalPages": 1,
-    "hasMore": false
+    "totalResults": 25,
+    "hasMore": true,
+    "totalPages": 25
 }
 
 ```
 
-
 ## Response Body Parameters
 
-| **PARAMETER**              | **DESCRIPTION**                                                        | **TYPE**                  |
-|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| `src`                      | The channel in which the conversation is initiated.                                                                                                                                                                                                           | `array`                   |
-| `conversation start time`  | The start time of the conversation to be considered.                                                                                                                                                                                                          | `string`                  |
-| `conversation end time`    | The end time of the conversation to be considered.                                                                                                                                   | `string`                  |
-| `duration`                 | The duration of the conversation.                                                                                                                                 | `string`                  |
-| `conversation id`          | The conversation id of the record.                                                                                                                                       | `string`                  |
-| `sentiment score`          | A numerical representation of the sentiment expressed in a piece of text. It is used to gauge the overall emotional tone, such as positive, negative, or neutral.                                                                                                                                      | `integer`                 |
-| `intents`                  | The goals or purposes behind user interactions. For example, “Book a flight to New York”.                                                                                                                                        | `array`                   |
-| `topics`                   | *(No description provided)*                                                                                                                                             | `array`                   |
-| `kore evaluation score`    | The score returned by NLP for that conversation.                                                                                                                              | `integer`                 |
-| `isChurnRiskObserved`      | The likelihood that a customer will stop using a product or service.                                                                | `boolean`                 |
-| `isEscalationObserved`     | Instances where an issue or situation has been elevated to a higher level of authority or expertise due to its complexity, severity, or the initial resolution attempts being unsuccessful.                                                                                                                                | `boolean`                 |
-| `isPassed`                 | Boolean field which checks if the core evaluation score is greater than the form pass score defined.                                                                                                                                      | `boolean`                 |
-| `Pass score`               | Configure pass score for the relevant form.                                                                                                                                   | `integer`                 |
-| `queues`                   | Queue details for the conversation.                                                                                                                                 | `Optional (array[string])` |
-| `Queue ID`                 | Queue id of the conversation.                                                                                                                                 | `string`                  |
-| `Queue Name`               | Queue name of the conversation.                                                                                                                                 | `string`                  |
-| `agents`                   | Array of agents who have participated in the conversation.                                                                                                                                 | `array`                   |
-| `metrics`                  | Array of evaluation metrics with which scores are calculated.                                                                                                                 | `array`                   |
-| `Metric ID`                | Unique identifier for the metric.                                                                                                                                             | `string`                  |
-| `Metric Weight`            | A numerical value indicating how much influence or impact that metric has in an overall evaluation or scoring system.                                                                                                                               | `integer`                 |
-| `empathy score`            | Measures the level of empathy conveyed in communication. <br>**High Empathy Score:** Indicates effective empathetic communication, with the communicator successfully understanding and addressing the emotions of others. <br><br>**Low Empathy Score:** Suggests a need for improvement in empathetic engagement and understanding.                                                                                                                                                                                                               | `integer`                 |
-| `crutch word score`        | Measures the frequency and impact of using crutch words in speech or writing. Crutch words are filler words or phrases that people often use unconsciously, for example, "um," "uh," "like," "you know," and "basically." A lower crutch word score indicates clearer, more concise communication, while a higher score suggests a need for improvement.                                                                                                              | `integer`                 |
-| `hasMore`                  | To identify if there are more interactions for the specified date range apart from the ones already sent.                                                                                                                                                                                                                 | `boolean`                 |
+| **PARAMETER**           | **DESCRIPTION**                                           | **TYPE** |
+| ----------------------- | --------------------------------------------------------- | -------- |
+| src                     | Source platform of the conversation.                      | string   |
+| speechSpeed             | Speech speed detected (if available).                     | integer  |
+| customConversationId    | User-defined or external conversation ID.                 | string   |
+| conversationId          | System-generated unique conversation ID of the record.    | string   |
+| Conversation Start Time | UTC timestamp of when the conversation started.           | string   |
+| Conversation End Time   | UTC timestamp of when the conversation ended.             | string   |
+| Language                | Detected language.                                        | string   |
+| Duration                | Duration of the conversation in milliseconds.             | string   |
+| queues                  | Queue details for the conversation.                       | string   |
+| Queue ID                | Queue ID of the conversation.                             | string   |
+| Queue Name              | Queue name assigned to the conversation.                  | string   |
+| agents                  | Array of agents who participated in the conversation.     | string   |
+| Agent ID                | Agent ID of the conversation.                             | string   |
+| Agent Name              | Names of agents who participated in the conversation.     | string   |
+| Agent Start Time        | Timestamp when the agent joined the interaction.          | string   |
+| Agent Email             | Email address of the agent.                               | string   |
+| Kore Evaluation Score   | AI-calculated evaluation score for the conversation.      | integer  |
+| IsChurnRiskObserved     | Indicates if churn risk was detected.                     | boolean  |
+| IsEscalationObserved    | Indicates if escalation was observed.                     | boolean  |
+| Fatal Errors            | Number of fatal errors detected.                          | integer  |
+| Taxonomy Resolution     | Indicates if taxonomy-based resolution was achieved.      | boolean  |
+| Sentiment Pattern       | Shows sentiment at the start and end of the conversation. | object   |
+| start                   | Sentiment at the beginning of the conversation.           | string   |
+| end                     | Sentiment at the end of the conversation.                 | string   |
+| Customer emotions       | Captures customer emotions with duration and proportion.  | array    |
+| emotion                 | Detected emotion (e.g., *Patience*).                      | string   |
+| duration                | Duration of detected emotion.                             | boolean  |
+| proportion              | Emotion’s percentage share of the conversation.           | boolean  |
+| Sentiment Ratio         | Sentiment distribution across the conversation.           | object   |
+| positive                | Percentage of positive sentiment.                         | boolean  |
+| neutral                 | Percentage of neutral sentiment.                          | boolean  |
+| negative                | Percentage of negative sentiment.                         | boolean  |
+| Metrics                 | Array of evaluation metrics used for scoring.             | array    |
+| Metric ID               | Identifier for the metric.                                | string   |
+| Metric Name             | Name of the metric.                                       | string   |
+| Metric Weight           | Weightage for meeting the metric.                         | integer  |
+| Metric Negative Weight  | Penalty weight for failing the metric.                    | integer  |
+| Qualification           | Evaluation result (YES/NO/NA).                            | string   |
+| isFatalError            | Indicates if this metric is a fatal error.                | boolean  |
+| triggerJustification    | Trigger-based justifications.                             | array    |
+| justification           | Evaluator-provided justifications.                        | array    |
+| Pass Score              | Minimum score required to pass.                           | integer  |
+| IsPassed                | Indicates whether the conversation passed.                | boolean  |
+| totalResults            | Total number of records available for the query.          | integer  |
+| hasMore                 | Indicates if more pages of results exist.                 | boolean  |
+| totalPages              | Total number of pages based on the limit.                 | integer  |

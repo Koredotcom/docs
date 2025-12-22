@@ -55,15 +55,15 @@ App registrations are required to access resources programmatically. Registering
 
 **Register an app in Azure**
 
-1. Sign in to the [Azure Portal](https://portal.azure.com/#home) and go to **Azure Active Directory**.
-1. Select **App Registrations** > **New Registration**.
+1. Sign in to the [Azure Portal](https://portal.azure.com/#home) and go to *Azure Active Directory*.
+1. Select *App Registrations* > *New Registration*.
 1. Enter the app name.
-1. Under **Supported account types**, select **Accounts in any organizational directory (multi-tenant)**.
+1. Under *Supported account types*, select *Accounts in any organizational directory (multi-tenant)*.
 1. Enter the Redirect URL. Use the appropriate URL for your region or deployment:
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
-1. Select **Register**.
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
+1. Select *Register*.
 
 The registration generates a **Client ID** and **Tenant ID**. Save both values from the Overview page.
 

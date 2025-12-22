@@ -1,6 +1,6 @@
 # Benefits of AI for Service (XO v11)
 
-XO v11 represents a significant evolution in the Kore.ai platform, offering transformative benefits that address the limitations of fragmented conversational experiences while introducing cutting-edge AI capabilities. This major upgrade delivers a unified, intelligent, and collaborative platform that fundamentally enhances how organizations build, manage, and deploy conversational AI solutions.
+AI for Service represents a significant evolution in the Kore.ai platform, offering transformative benefits that address the limitations of fragmented conversational experiences while introducing cutting-edge AI capabilities. This major upgrade delivers a unified, intelligent, and collaborative platform that fundamentally enhances how organizations build, manage, and deploy conversational AI solutions.
 
 ## Automation AI
 
@@ -8,7 +8,7 @@ XO v11 represents a significant evolution in the Kore.ai platform, offering tran
 
 Earlier, integration with individual Kore.ai products like Platform, SmartAssist, Search Assist, and Agent Assist relied on APIs or Webhooks. This resulted in disjointed conversations without a central session to track complete interactions.
 
-With XO11, conversations are now unified across modules, enabling seamless tracking of an end-to-end customer interaction within a single session. This streamlined approach enhances analytics, simplifies cross-module data retrieval, and improves workflow efficiency. 
+With AI for Service, conversations are now unified across modules, enabling seamless tracking of an end-to-end customer interaction within a single session. This streamlined approach enhances analytics, simplifies cross-module data retrieval, and improves workflow efficiency. 
 
 <font size="4">Improved Dialog Builder Experience</font>
 
@@ -36,7 +36,7 @@ DialogGPT and enhanced RAG (Retrieval-Augmented Generation) capabilities enable 
 
 DialogGPT introduces a new paradigm shift in Intent Detection and  Conversation Management. It addresses these challenges by leveraging advanced techniques like embedding-based retrieval combined with Generative AI models and improving intent detection and conversation handling with zero training.
 
-Key Capabilities:
+Key Capabilities
 
 * Contextual Intent detection without the need for training utterances
 * Identification and Fulfillment of Ambiguous Intents and Multi-intents. 
@@ -71,6 +71,16 @@ Key Capabilities
 * **Configuration Flexibility**: The Agent Node can be configured like any other node in the XO Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 * **Interaction with External Systems**: The introduction of tool calling expands the Agent Node's capabilities beyond text generation. It enables interaction with external systems and databases, facilitating real-time data retrieval, calculations, and system-specific operations. This integration allows for more dynamic and data-driven conversational experiences.
 * **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. The language model can dynamically decide whether to generate text or call a tool based on user input and ongoing conversation. The dynamic prompt adaptation ensures that the agent provides the most appropriate response or action at each step of the interaction.
+
+<font size="4">Seamless Integration with Agentic Apps for Multi-agent Orchestration</font>
+
+The fully autonomous Agentic Apps can be easily integrated with the Platform. The integration simplifies the creation of highly contextual, self-service automation experiences using multi-agent orchestration powered by Agentic Apps.
+
+Key Features
+
+* Choice between **Orchestrated Autonomy** or **Full Autonomy** based automation capabilities.
+* Agentic Apps provide full support for digital and voice channels.
+
 
 <font size="4">Operational Efficiency</font>
 

@@ -1,6 +1,57 @@
-# Voice Gateway Updates
+# Voice Gateway Release Notes
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
+
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Utils</font>
+
+**Call Transfer Utility**
+
+A new utility function, voiceUtils.transfer enables seamless call transfers between experience flows within the platform or to external phone numbers, maintaining the same session ID and conversation continuity. Transcripts now reflect internal flow transfers for improved tracking and auditing. 
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/utility-functions-in-voice-gateway.md#transfer-calls)
+
+<font size="4">Call Transfer</font>
+
+**Support DTMF Input for Caller After External Call Transfer**
+
+The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI agent, preserving the intended automated experience.
+
+<font size="4">Inbound and Outbound Calls</font>
+
+**CSAT Survey Enhancements for Inbound and Outbound Voice Calls**
+
+The Voice Gateway now delivers consistent CSAT survey behavior across all inbound and outbound call scenarios, honoring the last agent’s survey settings and callback rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#supported-scenarios-for-csat-in-voice-channels)
+
+<font size="4">ASR and TTS</font>
+
+**Global IVR Property Support for TTS Streaming**
+
+TTS streaming now uses global IVR settings for barge-in, timeouts, prompts, and speech parameters. The update ensures consistent behavior across configuration levels.
+
+**ASR, Bot, and TTS Latency Reporting (Beta)**
+
+Latency reporting now captures ASR, Bot, and TTS delays at both node and call levels. The report includes end-to-end metrics, detailed call information, and highlights unsupported scenarios with clear notifications when data is unavailable. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/latency-report.md)
+
+<font size="4">API</font>
+
+**Outbound Dialing API - v2**
+
+The updated API now sends Answering Machine Detection (AMD) configurations during call creation instead of after call connection. This lets AMD to start earlier, improving detection speed and reducing overall latency. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg-v2.md)
+
+<hr>
+
+## v11.19.1 November 19, 2025
+
+<u> Patch Release </u>
+
+This update includes only bug fixes.
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 
@@ -10,7 +61,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Call Recording</font>
 
-**Voice Call Recording – Failure Scenario Handling**
+**Voice Call Recording - Failure Scenario Handling**
 
 When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
 
@@ -51,13 +102,13 @@ The node.alternate call control parameter supports additional parameters, includ
 **Play Dial Tone Until AI Agent First Response**
 
 A new configuration option, Answer call on AI Agent first response, is available in  **Automation AI** → **App Settings** → **Advanced Settings** → **System Settings** → **Answer Call on First Bot Response**. When enabled, callers hear a dial tone if the AI Agent’s first response is delayed, preventing silence and reassuring them that the call is connected. The call remains active until the AI Agent responds, with duration controlled on the Session Border Controller (SBC) side. When disabled, the existing behavior continues, where callers hear silence until the AI Agent’s first response. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/system-settings.md#answer-call-on-first-botai-agent-response)  
-<img src="../images/answer-call-rn.png" alt="Play Dial Tone until AI Agent Reponse" title="Play Dial Tone until AI Agent Reponse" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/answer-call-rn.png" alt="Play Dial Tone until AI Agent Response" title="Play Dial Tone until AI Agent Response" style="border: 1px solid gray; zoom:70%;">
 
 <font size="4">API</font>
 
 **API to Start, Pause, Resume, and End/Stop Transcriptions and Call Recordings**
 
-The enhanced version of the Control Transcription API (v2) now supports managing call recordings, in addition to transcriptions, for third-party agent desktops. This API provides enhanced flexibility and control during live interactions, allowing agent desktops outside of Kore's ecosystem to manage transcriptions and recordings in accordance with business and regulatory requirements. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/control-transcription-api-2.md)
+The enhanced version of the Control Transcription API (v2) now supports managing call recordings, in addition to transcriptions, for third-party agent desktops. This API provides enhanced flexibility and control during live interactions, allowing agent desktops outside of our ecosystem to manage transcriptions and recordings in accordance with business and regulatory requirements. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/control-transcription-api-2.md)
 
 <hr>
 
@@ -258,7 +309,7 @@ This enhancement ensures greater flexibility and consistency in voice experience
 
 **LLM Streaming Support for Additional TTS Providers**
 
-LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/llm-streaming.md#llm-streaming-for-text-to-speech-tts-providers)
+LLM Streaming is now supported for ElevenLabs and Deepgram TTS. This enhancement enables faster and more natural audio generation across a broader range of text-to-speech (TTS) engines, improving real-time responsiveness and user experience in voice interactions.
 
 <font size="4">Phone Numbers</font>
 

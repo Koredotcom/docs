@@ -1,6 +1,6 @@
 # Workspace
 
-Workspaces provide dedicated environments where teams can collaborate on AI initiatives while maintaining robust security and governance. This fundamental shift in AI management enables your organization to:
+Workspace provides dedicated environments where teams can collaborate on AI initiatives while maintaining robust security and governance. This fundamental shift in AI management enables your organization to:
 
 * Protect valuable information with granular access controls and secure boundaries between departments.
 * Assign resources strategically by designating workspaces for particular teams, projects, or functional areas.
@@ -27,7 +27,7 @@ Ready-to-Use Default Workspace
 * Universal publishing capabilities.
 * Essential analytics and performance monitoring.
 
-Workspaces in (In)Business Productivity deliver the perfect balance of innovation and governance, enabling your organization to deploy specialized AI capabilities while maintaining enterprise-grade security and control.
+Workspace delivers the perfect balance of innovation and governance, enabling your organization to deploy specialized AI capabilities while maintaining enterprise-grade security and control.
 
 For more information on Workspace Creation, refer
 [Create a Workspace](../workspace-management/account-workspace.md).

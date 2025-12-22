@@ -21,13 +21,14 @@ At the top of the Dashboard view, you can also see the total queries, total toke
 This dashboard presents a graphical representation of token usage trends across various models. Users can view and analyze data across different periods, with options to display trends by **Day**, **Week**, or **Month**.  
 <img src="../images/token-used.png" alt="token-used" title="token-used" style="border: 1px solid gray; zoom:80%;">
 
+
 Metrics displayed for each model include:
 
 * Model Name
 * Total Tokens Used
 * Context Tokens
 * Generation Tokens
-* Timestamp (Date & Time)
+* Timestamp (Date and Time)
 
 <img src="../images/token-used-2.png" alt="token-used" title="token-used" style="border: 1px solid gray; zoom:80%;">
 

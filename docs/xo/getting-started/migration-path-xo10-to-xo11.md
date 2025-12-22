@@ -1,10 +1,10 @@
 # Automation AI Migration from XO v10 to v11
 
-Users will see a banner on the current "bots.kore.ai" platform prompting them to try the new XO v11 platform at "platform.kore.ai", which is the new home for existing bots and creating XO v11 apps with enhanced capabilities. Existing bots open in the old UI on platform.kore.ai and have the same functionality, such as creating dialogs, configurations, publishing, etc. Also, a banner appears inside the bot, allowing users to upgrade it to an XO v11 app.
+Users see a banner on the current "bots.kore.ai" platform prompting them to try the new XO v11 platform at "platform.kore.ai", which is the new home for existing bots and creating XO v11 apps with enhanced capabilities. Existing bots open in the old UI on platform.kore.ai and have the same functionality, such as creating dialogs, configurations, publishing, etc. Also, a banner appears inside the bot, allowing users to upgrade it to an XO v11 app.
 
-The upgrade journey involves user consent, downloading a bot backup, a multi-step process to add new capabilities, and a success/failure output with a retry option if needed. Upgrades are currently not allowed for paid bots on standard accounts. For the Standard account Workspaces that are in Trial, the remaining trial period is transferred to the new app with updated trial conditions.
+The upgrade journey involves user consent, downloading a bot back up, a multi-step process to add new capabilities, and a success/failure output with a retry option if needed. Upgrades are currently not allowed for paid bots on standard accounts. For the Standard account Workspaces that are in Trial, the remaining trial period is transferred to the new app with updated trial conditions.
 
-In XO v10, we have two variants of Bots: Standard Bot and Universal Bot. The migration process for both involves different steps.
+In XO v10, we've two variants of Bots: Standard Bot and Universal Bot. The migration process for both involves different steps.
 
 ## Prerequisites
 
@@ -17,11 +17,11 @@ In XO v10, we have two variants of Bots: Standard Bot and Universal Bot. The mig
 
 ## Upgrade Journey Steps for Standard Bots
 
-1. Log in to the [XO1O Platform](https://bots.kore.ai) and duplicate the Bot you intend to upgrade to the XO11 App.
+1. Sign in to the [XO1O Platform](https://bots.kore.ai) and duplicate the Bot you intend to upgrade to the XO11 App.
     * Click the Bot from the home page, and go to **Deploy > Bot Management > Export & Import Bot**. 
     * Export the latest version of the Bot.
     * Navigate back to the homepage, click **New Bot > Import Bot** and then upload the corresponding files from the exported copy. Name the duplicate Bot appropriately.
-2. Log in to the [XO11 Platform](https://platform.kore.ai).
+2. Sign in to the [XO11 Platform](https://platform.kore.ai).
 3. Check if the XO10 bots are available on the platform.
 4. Open the duplicate Bot and click **upgrade now** on the banner.  
 <img src="../images/upgrade-banner.png" alt="upgrade-banner" title="upgrade-banner"style="border: 1px solid gray; zoom:70%;">
@@ -47,8 +47,8 @@ The migration process for a **Universal Bot** follows the same steps as a standa
 
 **Configure DialogGPT**
 
- An embedding model, BGEM3, is selected by default.  
- <img src="../images/univeral-bot-migration.png" alt="univeral-bot-migration" title="univeral-bot-migration"style="border: 1px solid gray; zoom:50%;">
+ An embedding model, BGE M3, is selected by default.  
+ <img src="../images/univeral-bot-migration.png" alt="universal-bot-migration" title="universal-bot-migration"style="border: 1px solid gray; zoom:50%;">
 
 When the user initiates migration, the key components being migrated are:
 
@@ -60,7 +60,7 @@ When the user initiates migration, the key components being migrated are:
 
 !!!Note
     
-    Training Utterances in the Universal Bot will no longer be relevant.
+    Training Utterances in the Universal Bot is no longer relevant.
 
 **Best Practices**
 
@@ -69,6 +69,22 @@ When the user initiates migration, the key components being migrated are:
     * Use either manual descriptions or **GenAI** for automated description generation.
 
     Refining descriptions is crucial, as the Conversation Orchestration model relies on them for accurate intent identification.
+
+## API Endpoint Change
+
+With the XO v11 release, it's recommended to update the API host for all major APIs.
+
+For example, for the US region, the API endpoint must be updated from:
+
+```
+https://bots.kore.ai
+```
+**to:**
+```
+https://platform.kore.ai
+```
+
+Refer to [Accessing AI for Service (XO)](accessing-the-platform.md) for region-specific endpoints.
 
 <hr>
 

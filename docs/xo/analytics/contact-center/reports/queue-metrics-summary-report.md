@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Queue Metrics Summary Report
 
 ## Generating the Queue Metrics Summary Report

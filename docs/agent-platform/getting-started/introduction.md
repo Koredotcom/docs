@@ -20,7 +20,7 @@ The Platform's key components provide comprehensive capabilities that empower or
 
 ### Multi-Agent Orchestration
 
-It enables users to define agent behaviors, skills, and integrations through low-code, declarative programming. This enables both technical and non-technical users to easily create and manage intelligent agents. It gives agents advanced reasoning and planning skills, enabling them to analyze their environment, act effectively, and learn from the outcomes to operate autonomously and adaptably. 
+It enables users to define agent behaviors, skills, and integrations through low-code, declarative programming. This enables both technical and non-technical users to easily create and manage intelligent agents. It gives agents advanced reasoning and planning skills, enabling them to analyze their environment, act effectively, and learn from the outcomes to operate autonomously and flexibly. 
 
 It also provides real-time streaming of agent interactions across voice and chat channels, enabling seamless user experiences and dynamic agent-based applications.
 
@@ -40,9 +40,9 @@ Tools are reusable components that agents can invoke to perform specific tasks o
 
 ### Search / RAG 
 
-It enables agents to retrieve relevant information from connected enterprise data sources and knowledge bases to enhance their responses and decision-making. It uses a hybrid approach to retrieval, combining multiple methods to deliver the most relevant and comprehensive results. It supports agentic retrieval, where multiple agents collaborate and coordinate their efforts to efficiently find and retrieve information. 
+It enables agents to retrieve relevant information from connected enterprise data sources and knowledge bases to enhance their responses and decision-making. It uses a hybrid approach to retrieval, combining multiple methods to deliver the most relevant and comprehensive results. It supports Agentic retrieval, where multiple agents collaborate and coordinate their efforts to efficiently find and retrieve information. 
 
-Additionally, it is context-aware, taking into account the specific context and requirements of each retrieval request. By considering factors such as user preferences, current tasks, and previous interactions, the retrieved data can be tailored to the specific needs of the user or application.
+Additionally, it's context-aware, taking into account the specific context and requirements of each retrieval request. By considering factors such as user preferences, current tasks, and previous interactions, the retrieved data can be tailored to the specific needs of the user or application.
 
 
 ### Interaction Context
@@ -73,12 +73,12 @@ The platform offers deep insights into agent performance and usage through detai
 * Session logs, conversation histories, and usage metrics.
 * Intuitive dashboards and visualizations for monitoring KPIs.
 * End-to-end tracing of agent orchestration for debugging and optimization.
-* Explainability features for understanding agent decision-making.
+* Built-in features to trace and understand agent decision-making.
 * Streaming of agent thoughts for transparency and human collaboration.
 
 ### Agent Protocol
 
-The platform provides a standardized Agent Protocol for seamless communication and integration between agents, tools, and external systems. The protocol supports multimodal content, real-time streaming, and flexible API design. This enables agents to comprehend and generate various data types, process information in real-time, and seamlessly integrate with external systems.
+The platform provides a standardized Agent Protocol for seamless communication and integration between agents, tools, and external systems. The protocol supports multi-modal content, real-time streaming, and flexible API design. This enables agents to comprehend and generate various data types, process information in real-time, and seamlessly integrate with external systems.
 
 ### SDKs
 
@@ -86,7 +86,7 @@ Comprehensive SDKs are available for developers to efficiently build and integra
 
 ### Enterprise Grade CI/CD
 
-The platform offers granular versioning and multi-stage deployment capabilities to support a rigorous software development lifecycle for agent-based solutions. It allows organizations to establish separate environments (e.g., QA, UAT, Prod) for thorough testing and validation, ensures consistent deployments, and streamlines the development process to deliver high-quality, reliable solutions.
+The platform offers granular versioning and multi-stage deployment capabilities to support a rigorous software development lifecycle for agent-based solutions. It allows organizations to establish separate environments (for example, QA, UAT, Prod) for thorough testing and validation, ensures consistent deployments, and streamlines the development process to deliver high-quality, reliable solutions.
 
 ### Collaboration and Audit
 

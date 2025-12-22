@@ -59,7 +59,7 @@ The API agent creation process consists of the following steps:
 
 Prerequisites:
 
-* Administrator access to (In)Business Productivity and the system you want to integrate.
+* Administrator access and the system you want to integrate.
 * API documentation for Schema API and Action API of the system.
 * Curl commands for the ID resolver and the meta resolver of the system.
 
@@ -80,11 +80,9 @@ Enter a name for the **Agent** **Name**, select an appropriate **Logo**, and cli
 
 <img src="../images/image10.png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
 
-
 ## Step 3: Connection Setup
 
 Connection Setup currently uses admin-provided profiles. The system accesses data using these profiles and admin tokens for all retrieval operations. End users cannot create new connection profiles, meaning all data is fetched using admin credentials.
-
 
 ## Step 4: Actions
 
@@ -221,7 +219,7 @@ Follow these steps to add a field value resolver:
 
 Each option includes a label, value, display order, and visibility status. This structure allows for flexible and customizable presentation of choices to the user.
 
-**A crucial feature of Field Options is the mapping between user-friendly labels and technical keys required for API requests**. For example, while a user might see a "Priority" field with options like "High," "Medium," and "Low," the API might use corresponding numerical or string values. This mapping ensures accurate data retrieval by configuring what is displayed to the user and what is sent in API requests.
+A crucial feature of Field Options is the mapping between user-friendly labels and technical keys required for API requests. For example, while a user might see a "Priority" field with options like "High," "Medium," and "Low," the API might use corresponding numerical or string values. This mapping ensures accurate data retrieval by configuring what is displayed to the user and what is sent in API requests.
 
 !!! note
 
@@ -294,8 +292,6 @@ Follow these steps to create a dictionary:
 
 6. Click **Pool data into the dictionary**. The preview tab is displayed.
 7. On the Preview tab, the pooled data is displayed.
-<img src="../images/agent(18).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
-
 8. Click **Done**. The dictionary is saved.
 
 #### Preview
@@ -310,7 +306,7 @@ Follow these steps to create a URL:
 
 1. To configure the URL, click  **+ Create URL**.
 2. The Open URL pop-up is displayed.  
-3. Enter the Static URL. For example, https://team.atlassian.net/browse/.
+3. Enter the Static URL. For example, `https://team.atlassian.net/browse/`.
 
     !!! note
 

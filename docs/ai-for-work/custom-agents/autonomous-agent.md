@@ -21,7 +21,22 @@ Follow these steps to create a new Autonomous Agent:
     * **Purpose of agent**: Define the intended functionality of the agent for query routing and training. This field specifies both the default prompt and sample queries that help the system in correctly routing user queries to the appropriate agent.
 4. Configure Autonomous Agent: The configuration step establishes the technical foundation of your agent through API integration.  
 
-     Define API fields as per the details below:
+     Define API fields as per the details below: In the Define Autonomous API section, select between **Sync Mode** and **Async Mode**, depending on the requirements of your interactions.
+
+       1.  **Sync Mode**: In sync mode, users receive immediate responses. This
+        mode doesn’t require a POST URL or access token, making it simple for
+        quick interactions. However, sync mode includes a 60-second timeout, so
+        it’s best suited for autonomous that can be completed within that
+        timeframe.
+
+       2.  **Async Mode:** In async mode, the setup is more flexible and is ideal
+        for cases that may take longer than 60 seconds. This mode requires a
+        POST URL and the agent’s access token to be specified in the Autonomous agent
+        endpoint. Once the agent completes its process, Autonomous posts the response
+        back to the specified endpoint.
+
+     For Async Mode, enter the **POST URL** and **Access token**.
+     <img src="../images/async.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
      * **URL**: Enter the endpoint URL of the agent obtained from the Agentic Platform.
   
@@ -35,7 +50,7 @@ Follow these steps to create a new Autonomous Agent:
   
      * **Content Type**: Enter a specific label that tells the API what kind of data you are sending.
 
-     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment.md#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from (In)Agent Platform.
+     Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.
 
      1. Click **Curl Import** to open the import interface.
      2. Paste your CURL command into the text box.
@@ -72,7 +87,7 @@ To import an existing Autonomous Agent:
 
 !!!note
 
-    You cannot directly import agents exported from the (In)Agent Platform. Only Autonomous Agents that were originally created and exported from (In)Business Productivity can be imported using this feature.
+    You cannot directly import agents exported from the (In)Agent Platform. Only Autonomous Agents that were originally created and exported from application can be imported using this feature.
 
 ## Usage
 

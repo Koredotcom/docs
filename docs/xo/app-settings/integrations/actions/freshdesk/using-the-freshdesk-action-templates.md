@@ -305,7 +305,7 @@ Steps to view all tickets in the Freshdesk integration:
         "custom_fields": {}
         },
         {
-        "subject": "freshh",
+        "subject": "fresh",
         "group_id": null,
         "department_id": null,
         "category": null,

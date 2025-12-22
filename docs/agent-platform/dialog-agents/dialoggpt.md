@@ -8,7 +8,7 @@ DialogGPT intelligently recognizes and processes tasks based on their names and 
 
 * **Autonomous Decision Making**: Independently analyzes inputs and determines execution paths.
 * **Zero-Shot Intent Detection**: Utilizes RAG and LLMs to accurately identify intents without requiring training data.
-* **Ambiguity Resolution**: Efficiently resolves unclear intents through real-time clarification
+* **Ambiguity Resolution**: Efficiently resolves unclear intents through real-time clarification.
 * **Multi-Intent Processing**: Recognizes and manages multiple intents within a single query.
 * **Conversational Nuance Management**: Handles pauses, repetitions, and restarts naturally.
 * **Dynamic Response Generation**: Creates contextually appropriate responses based on user data and history.
