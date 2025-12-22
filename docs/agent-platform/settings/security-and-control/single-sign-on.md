@@ -76,7 +76,7 @@ To access the SSO feature, follow the steps below:
    If you’re using this feature for the first time, the following screen appears.
      <img src="../images/access-single-sign-on.png" alt="access sso" title="access sso" style="border: 1px solid gray; zoom:75%;">
 
-    If SSO is already configured, the **Single sign-on** setup page is displayed.
+If SSO is already configured, the **Single sign-on** setup page is displayed.
 
 ## Enable SSO
 
