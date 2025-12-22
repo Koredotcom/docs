@@ -440,10 +440,11 @@ In addition to the above metadata (excluding *Deployment name* and *Deployment v
 
 **Model Traces** empowers users to identify time-based trends, troubleshoot issues, and make informed decisions by offering detailed and targeted insights into run-based metrics. This capability ensures that organizations uphold high efficiency, reliability, and compliance standards in their model deployments.
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
-* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
-* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
+ **Related resources**
 
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Agent Platform admin features.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - Track activities and events in your account.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"} - Manage resource consumption for tools, set limits, and track usage trends.

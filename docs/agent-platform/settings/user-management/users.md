@@ -236,13 +236,10 @@ To perform bulk role change, follow the steps below:
 The role is updated for the selected users.
 <img src="../images/bulk-role-changed.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;">
 
-## Related Information
+<hr/> 
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-* **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
-* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
+ **Related resources**
 
-
-
-
-
+* [Settings Console](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+* [Role Management](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
+* [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

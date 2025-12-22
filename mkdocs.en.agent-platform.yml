@@ -172,6 +172,7 @@ nav:
         - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
         - Tool Templates: ai-agents/tools/tool-templates.md
         - Import a Tool: ai-agents/tools/import-a-tool.md
+        - Nodes Overview: ai-agents/tools/nodes-overview.md
         - Tool Flows:
           - About Flows: ai-agents/tools/tool-flows/flows-overview.md
           - About Tool Calling: ai-agents/tools/tool-flows/tool-calling.md

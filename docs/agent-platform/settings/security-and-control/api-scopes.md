@@ -220,4 +220,3 @@ To delete an API app, follow the steps below:
 2. Click **Delete** in the confirmation window.
 
 A success message is displayed, and the app is removed from the list.
-

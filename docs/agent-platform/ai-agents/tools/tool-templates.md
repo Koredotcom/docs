@@ -173,4 +173,3 @@ To delete a tool template, follow the steps below:
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Deleting the tool is irreversible and removes all the associated data.</p></div>
-

@@ -491,6 +491,3 @@ The export schema files include the dashboard data organized in the following fo
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Each user’s export process is implemented separately, ensuring that one user's cancellations or adjustments do not interfere with another user’s export pipeline.</p></div>
-
-
-

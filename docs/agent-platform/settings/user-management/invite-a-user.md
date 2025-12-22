@@ -48,8 +48,3 @@ You’ll see a success message when the invite is sent. If it fails, check the h
 <p class="admonition-title">Note</p>
 <p><ul><li>Users receive an email invitation to join your account, which expires 15 days after it's sent.</li>
 <li>Until the recipient accepts your invitation to join, the user status is set to <b><i>Inactive</i></b>. Once the invitation is accepted, the status changes to <b><i>Active</i></b>.</li></ul></p></div>
-
-
-
-
-

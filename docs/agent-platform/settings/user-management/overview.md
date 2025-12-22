@@ -26,8 +26,10 @@ For example, a *Master Admin* role is assigned by default to the account owner. 
 
 Once you invite a user or import users data, you can change their roles, assign/unassign permissions, delete users. and do more using the [Roles Management](../../settings/user-management/role-management.md){:target="_blank"} and [Users](./users.md){:target="_blank"} features on the **Settings** console.
 
-## Related Information
+<hr/> 
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other admin features.
-* **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
-* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
+ **Related resources**
+
+* [Settings Console](../../administration/overview.md){:target="_blank"} - about other admin features.
+* [Role Management](../user-management/role-management.md){:target="_blank"} - about managing default and custom roles in your account.
+* [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} - about tracking events and user activity in your account.

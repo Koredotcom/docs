@@ -1224,12 +1224,11 @@ Agent Platform’s Audit Logs promotes transparency and accountability in AI ope
 
 You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
-* [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
-* [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+**Related resources**
 
-
-
+* [Settings Console](../../administration/overview.md){:target="_blank"} - Other admin features of the Platform.
+* [Users Management](../user-management/overview.md){:target="_blank"} - Manage users linked to your account.
+* [Role Management](../user-management/role-management.md){:target="_blank"} - View and manage system and custom roles for your account.
+* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"} - Track, audit, and review changes made to a tool's flow.

@@ -793,8 +793,9 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     Please refer to the [API node](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} for more information.
 
-    ## Related Links
-    
-    * **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-    * **API Node** - [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
+<hr/> 
 
+**Related resources**
+
+* *[Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [API Node](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} - about configuring the API node via endpoint.
