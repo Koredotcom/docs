@@ -48,6 +48,7 @@ plugins:
   - redirects:
       redirect_maps:
         'getting-started/ip-addresses.md': 'getting-started/outbound-ip-address.md'
+        'ai-agents/tools/tool-flows/tool-calling.md': 'ai-agents/tools/tool-calling.md' 
 extra:
   version:
     provider: mike
@@ -167,21 +168,21 @@ nav:
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
+      - About Tool Calling: ai-agents/tools/tool-calling.md
       - Workflow Tools: 
         - About Workflow Tools: ai-agents/tools/workflow-tools.md
         - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
         - Tool Templates: ai-agents/tools/tool-templates.md
         - Import a Tool: ai-agents/tools/import-a-tool.md
-        - Nodes Overview: ai-agents/tools/nodes-overview.md
         - Tool Flows:
-          - About Flows: ai-agents/tools/tool-flows/flows-overview.md
-          - About Tool Calling: ai-agents/tools/tool-flows/tool-calling.md
+          - About Flows: ai-agents/tools/tool-flows/flows-overview.md          
           - Manage Flows: 
             - Manage Nodes in Flows: ai-agents/tools/tool-flows/manage-flow-nodes.md
             - Manage Input and Output: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
             - Run the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
             - Create a Version of the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
           - Types of Nodes: 
+            - About Nodes: ai-agents/tools/tool-flows/types-of-nodes/nodes-overview.md
             - AI Node: 
               - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
               - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
