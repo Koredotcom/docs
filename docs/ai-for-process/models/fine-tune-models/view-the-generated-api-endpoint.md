@@ -1,7 +1,7 @@
 # View API Endpoint & Deployment History
 
 ## API Endpoint
-After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in Agent Platform.
+After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in AI for Process.
 
 !!! note
 
@@ -16,13 +16,13 @@ Steps to view the API Endpoint:
 
 The API endpoint is available in 3 formats. You can copy and use the same as required.
 
-### API Endpoint Usecase
+### API Endpoint Use Case
 
-You can use the deployed fine-tuned model in Agent Platform for the following use cases:
+You can use the deployed fine-tuned model in AI for Process for the following use cases:
 
 * In the Prompt Playground to compare prompts against commercial, open-source, or any other fine-tune model.
 
-* In a tool in the tool flow builder via the AI Node.
+* In a workflow in the workflow builder via the AI Node.
 
 ## Deployment History
 

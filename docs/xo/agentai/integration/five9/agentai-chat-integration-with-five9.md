@@ -92,8 +92,8 @@ You have a skill named **Chat_Skill**, that handles incoming chat requests, and 
     <img src="../images/add-field-ok_16.png" alt="add-field-ok" title="add-field-ok" style="border: 1px solid gray; zoom:80%;"> 
 
 10. Click the **Edit** icon against the parameters and change as per the following:
-    * domain_id -> domainid
-    * id -> agentid
+    * domain_id -> Domain ID
+    * id -> Agent ID
     * session_id -> conversationid
     * skill_name/campaign_name -> identifiers 
         <img src="../images/changing-parameters_17.png" alt="changing-parameters" title="changing-parameters" style="border: 1px solid gray; zoom:80%;"> 

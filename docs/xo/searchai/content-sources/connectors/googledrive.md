@@ -22,7 +22,7 @@ By setting up the Google Drive connector in Search AI, you can extend the search
    <td>File type Support
    </td>
    <td>.doc, .docx, .ppt, .pptx, .pdf, .txt, .html 
-    <p> Note: Password-protected files in any format aren't supported
+    <p> Note: Password-protected files aren't supported.
    </td>
   </tr>
     <tr>
@@ -61,53 +61,53 @@ Follow the steps listed below to set up and enable access to the content on your
 If the publishing status is set to Testing, you can add your test users by clicking on _ADD USERS_ on the same page. 
 ![Add Users](images/googledrive/add-users.png "Add Users")
 9. Navigate to Clients page and create a new client. Enter the _Application type_ as _Web Application_ and give it a name. Add the URL of your  Search AI deployment as _Authorized redirect URIs_ and click _CREATE_. You can use one of the following URLs as per your region.
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Region Callback URL: https://idp.kore.com/workflows/callback
-10. This will generate the client ID. Download your credentials. The downloaded file is in JSON format and has **client id and client secret** amongst other fields. 
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Region Callback URL: `https://idp.kore.com/workflows/callback`
+10. This will generate the client ID. Download your credentials. The downloaded file is in JSON format and has *client id and client secret* amongst other fields. 
 
 ## Step 2: Configuring the Google Drive connector in SearchAI
 
 1. To configure the Google Drive connector, go to the Connectors under Sources and select Google Drive.
 2. Configure the authorization parameters for the connector and click Connect.
     * Name- Unique name for the connector.
-    * Authorization Type - Search AI supports **OAuth 2.0 for Google Drive.** Set this field accordingly.
+    * Authorization Type - Search AI supports *OAuth 2.0 for Google Drive.* Set this field accordingly.
     * Grant Type - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports Authorization Code Grant Type for Google Drive. Refer to [this for more information on Grant types](../connectors.md).
     * Client ID - The client ID generated after registering SearchAI for OAuth authentication.
     * Client Secret - The secret generated after registering SearchAI for OAuth authentication.  
-3. Once the connection is successfully established, to synchronize the content at any time, go to the **Configurations** tab and click **Sync Now.** Go to the **Content** tab to view the content ingested into the application. 
+3. Once the connection is successfully established, to synchronize the content at any time, go to the *Configurations* tab and click *Sync Now.* Go to the *Content* tab to view the content ingested into the application. 
 
 ![Content](images/googledrive/content-tab.png "Content")
 
 ### Content Ingestion 
 
-After successfully connecting to Google Drive, the next step is to do the Synchronization configuration. This allows the connector to know what content is to be ingested from the drive. To do so, go to the **Configurations** tab and do the following configurations. 
+After successfully connecting to Google Drive, the next step is to do the Synchronization configuration. This allows the connector to know what content is to be ingested from the drive. To do so, go to the *Configurations* tab and do the following configurations. 
 
 * **Schedule Sync**- Enable this option if you want to set up a scheduler to automatically sync content with Google Drive at regular intervals. When enabled, set the time and frequency of the sync operation. The sync job runs at scheduled intervals in the background and ingests any updated content from the application. 
 
 * **Synchronization** - This field allows you to select the content to be ingested from the drive. You can choose to:
     1. Sync All Content - This option ingests all the data from Google Drive. 
-    2. Sync Specific Content - This option allows you to select the content to be ingested into the SearchAI application. Click on the **Configure** option. The following widget allows you to set up rules for filtering content. Set up rules and click **Save and Test**.
+    2. Sync Specific Content - This option allows you to select the content to be ingested into the SearchAI application. Click on the *Configure* option. The following widget allows you to set up rules for filtering content. Set up rules and click *Save and Test*.
 
 ![Configuration](images/googledrive/config-tab.png "Configuration")
 
 ### Content Filtering Rules
 
 Each rule gives you the option to choose the location on the drive from where the content is to be ingested. It can take the following values:
-    * **User Drive** includes only the locations owned by the account for which the Google Drive connector is configured. 
-    * **Shared Drive** includes only the locations shared with the account for which the Google Drive connector is configured. 
-    * **All Drives** include all the locations from the user drive as well as the shared drive. 
-    * **User Domain** 
+* **User Drive** includes only the locations owned by the account for which the Google Drive connector is configured. 
+* **Shared Drive** includes only the locations shared with the account for which the Google Drive connector is configured. 
+* **All Drives** include all the locations from the user drive as well as the shared drive. 
+* **User Domain** 
 
-Next, define conditions to choose the content from the selected location. To define a condition, specify a parameter, operator, and the value for the parameter.  For example, if you want to ingest all the files in a given folder set up a filter as shown below:
+Next, define conditions to choose the content from the selected location. To define a condition, specify a parameter, operator, and the value for the parameter. For example, if you want to ingest all the files in a given folder set up a filter as shown below:
 
 ![Example](images/googledrive/example1.png "Example")
 
 You can define conditions based on the following parameters or add your parameters too. Refer to [this](https://developers.google.com/drive/api/guides/ref-search-terms) for more information on the query parameters and the values that the parameters can take. 
 
-* **Folder Id** - Ingest data specifically from one or more folders.  Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is “[https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g](https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g)”, then the Folder ID would be “1dyUEebJaFnWa3Z4n0BFMVAXQ7mfUH11g”.
+* **Folder Id** - Ingest data specifically from one or more folders. Provide the folder IDs as value. To find the folder ID, navigate to your folder in Google Drive, the unique ID that comes after “folder/” in the URL is the folder ID. For example, if the URL is `https://drive.google.com/drive/folders/1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g`, then the Folder ID is `1dyUEebJaFnWa3Z4nXXXXAXQ7mfUH11g`.
 
-* **Mime Type** - Ingest a specific type of data. For example, use ‘application/pdf’ to ingest only pdf files from the drive.  Supported MIME types include:
+* **Mime Type** - Ingest a specific type of data. For example, use ‘application/pdf’ to ingest only pdf files from the drive. Supported MIME types include:
     * application/msword
     * application/pdf
     * text/plain
@@ -135,7 +135,7 @@ Google Drive Connector allows you to import user permissions and access lists fr
 
 ### **Handling Google Drive File Permissions**
 
-SearchAI application supports **file-level** permissions through Google Drive Connector. SearchAssist supports the following access types in GDrive. 
+SearchAI application supports **file-level** permissions through Google Drive Connector. Search AI supports the following access types in GDrive. 
 
 * **People with access**: SearchAI reads user information for the files and allows users to view them if they have permission to do so. Any user with view or read access to a file can access generated answers.
 
@@ -158,11 +158,11 @@ Similarly, if the files are accessible to a user and a user group in Google Driv
 
 ### **Handling User Groups or Domain level access in Google Drive**
 
-When a file access is given to a user group or a domain, the group name or domain name is stored as a Permission Entity in SearchAssist. In this case, SearchAssist requires additional information to identify and resolve user identities. You need to associate individual users within the group or the domain to the Permission Entity to enable those users access to the file. 
+When a file access is given to a user group or a domain, the group name or domain name is stored as a Permission Entity in Search AI. In this case, Search AI requires additional information to identify and resolve user identities. You need to associate individual users within the group or the domain to the Permission Entity to enable those users access to the file. 
 
 To correctly associate users with the relevant permission entity, use the Permission Entity APIs.
 
-Example: Suppose a file is shared with a user group, hr-kore@example.com. This group is stored as a permission entity within SearchAssist. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/) to add the user IDs of these five team members to the corresponding permission entity.
+Example: Suppose a file is shared with a user group, `hr-domain@example.com`. This group is stored as a permission entity within Search AI. If the HR team consists of five members who need access to this file, you should use the[ Permission Entity API](../../../apis/searchai/permission-entity-apis.md) to add the user IDs of these five team members to the corresponding permission entity.
 
 
 ### **Enabling RACL**

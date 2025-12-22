@@ -12,8 +12,7 @@ You can fine-tune a Platform-hosted model or import one from Hugging Face. The f
 
 Steps to fine-tune a model:
 
-1. Log in to your account and click **Model Hub** under Agent Platform Modules.
-<img src="../images/model_hub.png" alt="access model hub" title="access model hub" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account and click **Model Hub** under AI for Process.
 
 2. On the **Fine-tuned models** tab, click **Start fine-tuning**.<img src="../images/start-fine-tuning.png" alt="Start Fine-Tune Model" title="Start Fine-Tune Model" style="border: 1px solid gray; zoom:80%;">
 
@@ -61,7 +60,7 @@ Steps to fine-tune a model:
         1. **Use from training dataset (default)**: This enables you to allocate a percentage of the training dataset for model evaluation. By default, 15% of the training dataset is allocated for model evaluation.
         2. **Upload evaluation dataset**: Select or upload another dataset from the dropdown.
         3. **Skip the evaluation**: It will skip the model evaluation process.
-        <img src="../images/use-traning-dataset.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/use-training-dataset.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;">
 
 
 7. Select or upload the test dataset to test the fine-tuned model. Click **Next**.
@@ -93,5 +92,5 @@ The model **Overview** page displays real-time progress. You can also view the m
 
 Once testing is completed, you can download the training file, test results, and test data for your reference.
 
-After fine-tuning, deploy the model in Agent Platform or externally via the generated API endpoint. You can also create another fine-tuned model on top of this one.
+After fine-tuning, deploy the model in AI for Process or externally via the generated API endpoint. You can also create another fine-tuned model on top of this one.
 

@@ -1,3 +1,5 @@
+--8<-- "includes/ccai-reports-back-link.md"
+
 # Total Volumes Report
 
 ## Generating the Total Volumes Report
@@ -24,7 +26,7 @@ Steps to generate the Total Volumes Report:
 <img src="../images/total-volumes-report-created.png" alt="Total Volumes Report Created" title="Total Volumes Report Created" style="border: 1px solid gray; zoom:70%;">
 
 8. Click the **Run** icon next to the instance of the report.  
-<img src="../images/run-total-volumes-report.png" alt="Run Total Voumes Report" title="Run Total Volumes Report" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/run-total-volumes-report.png" alt="Run Total Volumes Report" title="Run Total Volumes Report" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **CSV** icon and generate the output of that report.  
 <img src="../images/csv-total-volumes-report.png" alt="Total Volumes Report CSV" title="Total Volumes Report CSV" style="border: 1px solid gray; zoom:100%;">

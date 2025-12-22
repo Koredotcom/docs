@@ -1,13 +1,13 @@
 # Configuring the ServiceNow Agent – Utah and Higher versions
 
-ServiceNow helps you build digital workflows on a single, unified platform. Kore.ai XO Platform’s ServiceNow Agent integration allows you to seamlessly hand off the AI Agent  conversations to your live agents on ServiceNow. 
+ServiceNow helps you build digital workflows on a single, unified platform. The Platform’s ServiceNow Agent integration allows you to seamlessly hand off the AI Agent  conversations to your live agents on ServiceNow. 
 
 This post provides the configuration steps to enable the ServiceNow Agent integration for **Utah**, **Vancouver**, and higher versions of the ServiceNow system. Use the configurations provided below as general guidelines, as there could be some differences based on the release and the specific version of the ServiceNow that you are using.
 
 
 ## Overview
 
-Kore.ai’s AI Agent serves as the central point of interaction for the users. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the ServiceNow agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the ServiceNow platform. The AI Agent facilitates communication and interaction between the user and the ServiceNow agent using the chat module.
+The AI Agent serves as the central point of interaction for the users. In addition to its regular capabilities, the AI Agent acts as a proxy or intermediary between the users and the ServiceNow agents to hand over conversations seamlessly. The AI Agent also allows you to integrate with the ServiceNow platform. The AI Agent facilitates communication and interaction between the user and the ServiceNow agent using the chat module.
 
 
 ## Configuration
@@ -24,13 +24,13 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
 ### Step 1: Retrieve the ServiceNow Instance URL
 
-1. Log in to your ServiceNow account with admin user credentials. The ServiceNow account will have a unique URL for each developer instance in their Service Management or App Engine Studio, for example:[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/){:target="_blank"}.
+1. Log in to your ServiceNow account with admin user credentials. The ServiceNow account will have a unique URL for each developer instance in their Service Management or App Engine Studio, for example: `https://devXXX67.service-now.com`.
 2. Copy the Instance ID from the URL and paste it into the **Configurations** tab of the ServiceNow Agent  page. Refer to step 2.
 
 
 ### Step 2: Enable the ServiceNow Agent
 
-1. Log in to the Kore.ai XO Platform: [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}
+1. Log in to the Platform.
 2. Select an AI Agent  for which you want to configure the ServiceNow agent. 
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **ServiceNow**.
 
@@ -43,7 +43,7 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
     1. Select the **Agent Chat (Supported for Utah and higher versions)** option.
     2. Select the **Basic Auth** option for enabling ServiceNow Agent with the Basic Authentication.
-    3. **Instance URL**: The company’s URL where the ServiceNow instance is hosted, for example,[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/).
+    3. **Instance URL**: The company’s URL where the ServiceNow instance is hosted, for example, `https://devXXX67.service-now.com`.
     4. **User Name**: The username of your ServiceNow account.
     5. **Password**: The password of your ServiceNow account.
     6. **Queue ID**: The unique queue identification number.
@@ -55,13 +55,13 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
     1. Select the **Agent Chat (Supported for Utah and higher versions)** option.
     2. Select the **OAuth with Refresh Token** option for enabling ServiceNow Agent with the Refresh Token Authentication.
-    3. **Instance URL**: The company’s URL where the ServiceNow instance is hosted, for example,[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/).
+    3. **Instance URL**: The company’s URL where the ServiceNow instance is hosted, for example, `https://devXXX67.service-now.com`.
     4. **Client ID**: The client ID of your ServiceNow application copied in Step 2.
     5. **Client Secret**: The client secret of your ServiceNow application copied in Step 2.
     6. **Refresh Token**: The unique refresh token that you generated in Step 2.
     7. **Webhook URL**: The web URL for custom application function callbacks.
 
-5. Click **Authorize** to authenticate and allow the XO platform to handover conversations to ServiceNow agent.
+5. Click **Authorize** to authenticate and allow the platform to handover conversations to ServiceNow agent.
 6. If you want to make ServiceNow as the default agent, enable the **Default Agent System for all AI Agent channels** option.
 
     !!! Note
@@ -171,9 +171,9 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
 ### Step 6: Testing Configuration
 
-This section helps you verify how the conversations from the Kore.ai XO Platform are handed over to the ServiceNow agent after enabling it. 
+This section helps you verify how the conversations from the Platform are handed over to the ServiceNow agent after enabling it. 
 
-To verify the data exchange between Kore.ai’s AI Agent and ServiceNow agent, follow these steps:
+To verify the data exchange between AI Agent and ServiceNow agent, follow these steps:
 
 1. Open an AI Agent for which you have enabled the ServiceNow agent.
 2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}.
@@ -299,10 +299,10 @@ Follow these steps:
 
 ### Agent Transfer Status
 
-The XO platform now records the status of the agent transfer in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
+The platform now records the status of the agent transfer in both Debug Logs and Analytics. This information helps to analyze whether the agent transfer is successful or not. Thus, it facilitates improved tracking and troubleshooting of transfer-related issues.
 
 ### Failed Agent Transfer Notification
 
-The XO platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
+The platform now displays a default, non-editable message to users when a ServiceNow agent transfer fails due to agent unavailability, improving user clarity and reducing the need for repeated transfer attempts.
 
 Default message: *No agents are available to handle your request. Please try again later*.

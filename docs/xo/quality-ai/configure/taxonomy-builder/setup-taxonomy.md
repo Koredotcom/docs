@@ -259,7 +259,7 @@ Implement a taxonomy structure for financial services using real-world banking s
 
 * **Successful**: "Customer completed payment, or payment issue was resolved during the call. Payment processing error was fixed, an alternative payment method was set up, or a technical issue preventing payment was corrected."
 
-* **Unsuccessful**: "Customer unable to complete payment or payment issue remains unresolved. Technical problems persist, payment method cannot be updated, or the issue requires escalation or a follow-up call."
+* **Unsuccessful**: "Customer unable to complete payment or payment issue remains unresolved. Technical problems persist, payment method cann't be updated, or the issue requires escalation or a follow-up call."
 
 ### Phase 4: Version Management and Deployment
 

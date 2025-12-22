@@ -39,7 +39,6 @@ Key Advantages
 
 * **Avoid Misuse of API Keys**: The system minimizes the risk of unauthorized access by utilizing secure environment variables for API keys. Properly configured permissions restrict visibility and usage to authorized applications or personnel only.
 
-* **Track Team-Wise Consumption**: Implementing tracking mechanisms for API key usage allows teams to monitor their consumption, enabling better resource allocation and identifying potential inefficiencies.
 
 * **Rotate Your API Keys**: Regularly rotating API keys enhances security by limiting the risk associated with compromised keys. A well-defined rotation schedule ensures that even if a key is leaked, it becomes useless after a predetermined period.
 
@@ -111,15 +110,19 @@ Usage limits can be set during initial LLM integration or anytime after it's com
 
 To track token consumption, enable the Token Usage Limit toggle and configure the required settings. Usage limits can be set during initial model setup or anytime after configuration completion from more options.
 
-    
+### Set Token Limit 
+
 * **Maximum Tokens**: Set the token usage limit for notification purposes. Exceeding this limit won't block usage but will trigger an alert.
 * **Duration**: Set duration in days after which the token limit resets automatically. You can set a maximum duration of 90 days.
 * **Schedule Start Date**: Set the date today onwards for the usage cycle.
+
+### Enable Usage Notification
+
 * **Usage Notification**: Enable the toggle to receive usage alert notifications when your usage reaches the defined threshold.
   
-  * **Send Notification at**: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
-  * **Send to Users**: Enter the email addresses of users who should receive the usage notification email.  
-  <img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
+* **Send Notification at**: Set the threshold in percentage from the predefined or custom threshold. You can set a maximum of 5 alerts.
+* **Send to Users**: Enter the email addresses of users who should receive the usage notification email.  
+<img src="../images/token-usage-limit1.png" alt="token consumption" title="token consumption " style="border: 1px solid gray; zoom:70%;">
 
 
 

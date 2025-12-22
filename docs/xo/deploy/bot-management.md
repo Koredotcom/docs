@@ -7,24 +7,23 @@ To learn more about Variables and how to use them, see [Using Bot Variables](../
 
 ## Importing and Exporting an AI Agent
 
-Kore.ai allows you to export and import agent tasks and associated configurations into another agent. This feature helps you in the migration of agent definitions, cloning of agents, or maintaining a periodic backup of agent definitions.
+AI for Service allows you to export and import agent tasks and associated configurations into another agent. This feature helps you in the migration of agent definitions, cloning of agents, or maintaining a periodic backup of agent definitions.
 
-This feature is particularly helpful to test various versions of your agent at different stages of the development process before it is released for end users. The articles in this section help you understand how the _Export_ and _Import_ features work and how to perform them.
+This feature is particularly helpful to test various versions of your agent at different stages of the development process before it's released for end users. The articles in this section help you understand how the _Export_ and _Import_ features work and how to perform them.
 
 
-Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported agent definitions and ‘Bot Setting’ under ‘Setting’ in the exported agent definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of an agent from an export file generated before v8.0.
 
 ### Importing an AI Agent
 
 You can import tasks and configurations of a specific agent into a new or existing agent using one of these import types:
 
-* **Full import**: Replaces the existing agent with the imported configurations. Any additional configurations in the target agent that are not present in the import definition will be deleted. An exception to this rule is the webhook channel, which will be retained even if not present in the import agent definition.
+* **Full import**: Replaces the existing agent with the imported configurations. The system deletes any additional configurations in the target agent that aren't present in the import definition. The system retains the webhook channel even if it's not present in the import agent definition.
 
     !!! note
 
         We strongly recommend you exercise caution and take a backup of the target agent before importing using this option. 
 
-* **Incremental import**: Upgrades the current agent with the configurations available in the import file. Any additional configurations available in the target or imported agent are retained. You can select specific agent components to import from the agent tasks, NLP data, and agent settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported agent items replace the target agent’s items in incremental import.
+* **Incremental import**: Upgrades the current agent with the configurations available in the import file. The system retains any additional configurations available in the target or imported agent.. You can select specific agent components to import from the agent tasks, NLP data, and agent settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported agent items replace the target agent’s items in incremental import.
 
 **Before you Begin** The _config.json_ file consists of variables that need values for the target agent. Share the file with the relevant developers or enter suitable values yourself for the variables before importing the agent definition into a new AI Agent.
 
@@ -47,7 +46,7 @@ To import an AI Agent, follow these steps:
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
         2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** fields, and upload the _appDefinition.json_ and _config.json_ files, respectively.
-        3. Optionally, upload the custom script file from the imported agent, if any. The file size is limited to 500kb.
+        3. Optionally, upload the custom script file from the imported agent, if any. The file size limit is 500kb.
         
         <img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;">
 
@@ -57,10 +56,10 @@ To import an AI Agent, follow these steps:
 
         <img src="../images/bot-import-zip-file.png" alt="App import - ZIP file" title="App import - ZIP file" style="border:1px solid gray; zoom:70%;">
 
-6. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to back up your agent before performing the import.
-7. If you select **Full import**, the agent definition in the in-development copy will be overwritten with the definition in the import file.
+6. Select one of these import options: **Full Import** or **Incremental Import**. You get a warning to back up your agent before performing the import.
+7. If you select **Full import**, the agent definition in the in-development copy is overwritten with the definition in the import file.
 
-    * If the agent contains one or more additional tasks or languages that are not present in the import definition, these tasks will be marked as deleted and removed when the agent is published.
+    * If the agent contains one or more additional tasks or languages that aren't present in the import definition, When you publish the agent, the system marks the tasks as deleted and removes them.
     * For Generative AI and LLM features, **Full import**:  
 
         * Deletes existing models and prompts in the target app.
@@ -76,24 +75,24 @@ To import an AI Agent, follow these steps:
 
     <img src="../images/bm(4).png" alt="Incremental import" title="Incremental import" style="border:1px solid gray; zoom:60%;">
 
-    * **Flows**: Here you can select the flows to be imported. 
+    * **Flows**: Here you can select the flows you want to import. 
     * **Automation Tasks**: Here, you can select to import Tasks only (with or without comments), Dialog tasks, Digital Forms, Small Talk, or FAQs.
 
         !!! Note
 
             If you want to import one or more Automation Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-    * **NLP Data**: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+    * **NLP Data**: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. You can choose to either append or replace the ML Utterances and Patterns..
             
-        1. **Append** can be used when the utterances in the file should be imported into the agent, and any additional utterances in the agent should be retained (this is the default behavior).
-        2. **Replace** can be used when the utterances in the file should be imported into the agent. Any additional utterances will be removed.
+        1. **Append** You can use this when the utterances in the file must be imported into the agent, and any additional utterances in the agent must be retained (this is the default behavior).
+        2. **Replace** You can use this when when the utterances in the file must be imported into the agent. Any additional utterances are removed.
         
-            If you are also importing Tasks, the additional utterances related to tasks being imported will be removed. 
+            If you are also importing Tasks, the additional utterances related to tasks being imported are removed. 
 
             <img src="../images/bm(1).png" alt="App import" title="App import" style="border:1px solid gray; zoom:60%;">
 
 
-        3. The imported Traits, Synonyms, and Concepts will replace those in the target agent. Rules can be imported along with their tagged dialog tasks.
+        3. The imported Traits, Synonyms, and Concepts replace those in the target agent. Rules can be imported along with their tagged dialog tasks.
 
     * **Settings**: App Settings, App Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:  
 
@@ -140,7 +139,7 @@ To import an AI Agent while creating it, follow these steps:
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
         2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
-        3. Optionally, upload the custom script file from the imported agent if any. The file size is limited to 500kb.
+        3. Optionally, upload the custom script file from the imported agent if any. The file size limit is 500kb.
 
     * Import by uploading **ZIP file**:
         1. Choose the **Zip File** radio button.
@@ -199,7 +198,7 @@ To import an AI Agent while creating it, follow these steps:
   <tr>
    <td>Rules
    </td>
-   <td>Rules will be imported only if their tagged dialog tasks are imported.<br><br>
+   <td>Rules are imported only if their tagged dialog tasks are imported.<br><br>
     <strong>Note</strong>: On-Prem customers can import the NLP components (Synonyms, Concepts, Rules, Traits) from a source agent of a higher version to a target agent of a lower version by checking the <strong>NLP Settings</strong> checkbox. However, Rules won’t import unless the tagged dialog tasks are also imported.
    </td>
   </tr>
@@ -229,7 +228,7 @@ You can export an agent’s definition and configuration using the Export option
 
 When you export an agent, it downloads a zipped file with the following parameters:
 
-* **appDefinition.json**: Includes metadata, tasks, agent and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – agent settings, variables, IVR settings- while exporting the agent.
+* **appDefinition.json**: Includes metadata, tasks, agent and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data: NLP settings, utterances, standard responses–and Settings–agent settings, variables, IVR settings- while exporting the agent.
 * **config.json**: Includes App settings, App variables, and IVR settings.
 * **Icon.png**: Includes the agent icon.
 * **&lt;_Custom ScriptFile Name_.js> (if available)**: Includes a script file with JavaScript functions. When you upload this file, you can access the functions in the file from anywhere in the agent.
@@ -240,7 +239,7 @@ When you export an agent, it downloads a zipped file with the following paramete
 
 ### Export Modes
 
-You can export agents in two modes: **Published** and **Latest Version**. Depending on the mode that is selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and agent settings in both modes. Further individual Tasks can also be selected.
+You can export agents in two modes: **Published** and **Latest Version**. Depending on the mode that's selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and agent settings in both modes. Further individual Tasks can also be selected.
 
 #### Published Mode
 
@@ -274,19 +273,19 @@ When you export a agent in the Published mode, only the published versions of th
   <tr>
    <td><strong>Upgrade in Progress</strong>
    </td>
-   <td>Not exported Task upgrade configurations that are in progress do not get exported. Only the published configurations get exported.
+   <td>Not exported Task upgrade configurations that are in progress don't get exported. Only the published configurations get exported.
    </td>
   </tr>
   <tr>
    <td><strong>Rejected</strong>
    </td>
-   <td>Not exported Task configurations rejected by admins do not get exported.
+   <td>Not exported Task configurations rejected by admins don't get exported.
    </td>
   </tr>
   <tr>
    <td><strong>Suspended</strong>
    </td>
-   <td>Not exported Suspended tasks do not get exported.
+   <td>Not exported Suspended tasks don't get exported.
    </td>
   </tr>
 </table>
@@ -297,7 +296,7 @@ When you export a agent in the Published mode, only the published versions of th
 
 #### Latest Version
 
-When you export an AI Agent in the Latest mode, the latest versions of the  tasks get exported, regardless of their publishing status. For example, if an agent consists of a published version of a task and also the version in Upgrade in Progress, the Upgrade in Progress version gets exported, whereas if it just has a Configured version, the configured version is exported. Refer to the table below to understand which versions of the tasks are exported in the Latest mode:
+When you export an AI Agent in the Latest mode, the latest versions of the  tasks get exported, regardless of their publishing status. For example, if an agent consists of a published version of a task and also the version in Upgrade in Progress, the Upgrade in Progress version gets exported, whereas if it has a Configured version, the configured version is exported. Refer to the table below to understand which versions of the tasks are exported in the Latest mode:
 
 <table>
   <tr>
@@ -309,19 +308,19 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
   <tr>
    <td><strong>In Progress</strong>
    </td>
-   <td>Exported if it is the only available version Not Exported if a later version exists
+   <td>Exported if it's the only available version Not Exported if a later version exists
    </td>
   </tr>
   <tr>
    <td><strong>Configured</strong>
    </td>
-   <td>Exported if it is the only available version Not Exported if a later version exists
+   <td>Exported if it's the only available version Not Exported if a later version exists
    </td>
   </tr>
   <tr>
    <td><strong>Published</strong>
    </td>
-   <td>Exported if it is the only available version Not Exported if a later version exists
+   <td>Exported if it's the only available version Not Exported if a later version exists
    </td>
   </tr>
   <tr>
@@ -333,13 +332,13 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
   <tr>
    <td><strong>Rejected</strong>
    </td>
-   <td>Not exported Task configurations rejected by admins do not get exported
+   <td>Not exported Task configurations rejected by admins don't get exported
    </td>
   </tr>
   <tr>
    <td><strong>Suspended</strong>
    </td>
-   <td>Not exported Suspended tasks do not get exported
+   <td>Not exported Suspended tasks don't get exported
    </td>
   </tr>
 </table>
@@ -357,7 +356,7 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
      
     !!! note
 
-        If your app has events linked to specific Dialog tasks and those tasks are not included in the export, the associated bot events will be disabled by default in the exported copy. To avoid this, include all tasks referenced in bot events during export.
+        If your app has events linked to specific Dialog tasks and those tasks are not included in the export, the associated bot events are disabled by default in the exported copy. To avoid this, include all tasks referenced in bot events during export.
 
 
 7. For Automation Tasks, you can further choose to export only selected tasks. By default All Tasks are selected. 
@@ -366,15 +365,15 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
 
         If you want to export one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not exported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-8. You can also choose to **Include dependent tasks** or not for export. The existence of these will be checked before import and the import will fail if the dependent tasks are missing. These dependent tasks include the following:
-    * Linked Dialogs i.e. dialog nodes present in the definition of another dialog;
+8. You can also choose to **Include dependent tasks** or not for export. The existence of these are checked before import and the import fails if the dependent tasks are missing. These dependent tasks include the following:
+    * Linked Dialogs that's dialog nodes present in the definition of another dialog;
     * Dialogs linked in defining ‘Behavior on Exceeding Retries’ for IVR Properties of any node of the dialog;
     * Dialog linked as part of sub-intent / interruption settings;
-    * Any other scenario where a dialog execution could fail if a dependent task is not included;
+    * Any other scenario where a dialog execution could fail if a dependent task isn't included;
 
         <img src="../images/bm(12).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
 
-9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
+9. Click **Export**. The export happens in the background and the **Download** button gets activated after it's complete. Click **Download** to download the file to your local computer.
 
 ### Exported App Components
 

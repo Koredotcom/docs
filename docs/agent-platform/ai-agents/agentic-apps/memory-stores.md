@@ -7,13 +7,6 @@ Agentic Apps support two main types of memory:
 * **Session Meta Memory**: Default temporary memory for contextual data within a session. This is a default read-only system memory and can't be directly updated by users. 
 * **Custom Memory Stores**: Persistent, user-defined stores that can be read and written to using code tools. The lifetime of the memory store varies as per the access type assigned to the store during creation. 
 
-## Memory Page
-
-The Memory page displays session meta memory and custom memory stores as individual cards, offering clear visibility into each store’s details and access type. It integrates the new memory functionality into existing workflows and shows the total number of memory stores in the app.
-
-<img src="../images/memory-page.png" alt="Memory Interface" title="Memory Interface" style="border: 1px solid gray; style=zoom:70%;">
-
-
 ## Creating Memory Stores
 
 To create a new memory store, go to the Memory page in the app and click on **Create new**.  
@@ -28,7 +21,7 @@ To set up Memory store, provide the following details.
 
 **Name**: Provide a user-friendly name for the store. Once a store is created, this name can be updated but it does't change the technical name of the store. 
 
-**Technical Name**: Provide a unique name for the store. This name **cannot be modified** after the store is created. Note that this name should't have any special characters or spaces. This is the name that's used within prompts and code tools to refer to the memory store. 
+**Technical Name**: Provide a unique name for the store. This name **can't be modified** once the memory store is created. Note that this name should't have any special characters or spaces. This is the name that's used within prompts and code tools to refer to the memory store. 
 
 **Description**: Provide a brief summary describing the intended usage or purpose of this memory store.
 
@@ -133,7 +126,7 @@ This section is used to control data access and retention.
 </table>
 
 
-**Review** and **save** the configuration to create the memory store. 
+Review and Save the configuration to create the memory store. 
 
 
 ## Accessing Memory Stores from Prompts
@@ -148,18 +141,18 @@ Field-name: name of the field as defined in the schema of the memory store.
 
 ## Accessing Memory Stores from Code Tools
 
-Agentic Apps provide **Memory Stores** to persist data across interactions. These stores can be **read from within prompts, workflow tools, and code tools**, but can be **updated or deleted via code tools or workflow tools**.
+Agentic Apps provide Memory Stores to persist data across interactions. These stores can be *read from within prompts, workflow tools, and code tools*, but can be *updated or deleted via code tools or workflow tools*.
 
-* A Memory store can be **referenced in tools using its technical name only.**
+* A Memory store can be *referenced in tools using its technical name only.*
 * *sessionMeta* can't be manipulated via code tools. 
 
 ### Supported Languages
 
-Memory operations can be performed using **JavaScript** or **Python** in code tools.
+Memory operations can be performed using JavaScript or Python in code tools.
 
 
-* In **JavaScript**, memory methods are **async** and return a **Promise**. Use them with **await** keyword. 
-* In **Python**, methods are **synchronous** and return values directly. 
+* In JavaScript, memory methods are *async* and return a *Promise*. Use them with *await* keyword. 
+* In Python, methods are *synchronous* and return values directly. 
 
 
 ### Reading from Memory Store
@@ -172,8 +165,8 @@ memory.get_content(<store_name>,<projections>)
 
 **Parameters:**
 
-* **store_name**: *(string)* The technical name of the memory store.
-* **projections** *(optional)*: JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
+* store_name(string): The technical name of the memory store.
+* projections(optional): JSON object specifying the fields to retrieve. If omitted, the entire record is returned.
 
 **Javascript Examples**:
 
@@ -190,7 +183,7 @@ memory.get_content(<store_name>,<projections>)
 
   3. To fetch both first name and location (subset of the complete record), use:
     ```
-    await memory.get_content("employee", {"name": 1, "preflanguage": 1})
+    await memory.get_content("employee", {"name": 1, "location": 1})
     ```
 
 ### Writing to Memory Store
@@ -199,36 +192,35 @@ Use the following format to create or update a record in the memory store. This 
 
 * Creates a new record if none exists.
 * Updates the existing record if one is found (based on sessionID, userId, or applicationId, depending on the store’s access type).
-
-```
-memory.set_content(<store_name>,<data_object>)
-```
+  ```json
+  memory.set_content(<store_name>,<data_object>)
+  ```
 
 **Parameters:**
 
 * store_name(string): the technical name of the store. 
 * data_object:  A JSON object representing the fields to write or update in the memory store.
 
-**Note**
+!!!note
 
-* Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
-* Fields not included in the update are retained as-is.
+    * Records are stored based on the memory store’s access context: **session**, **user**, or **application**.
+    * Fields not included in the update are retained as-is.
 
 **Javascript Examples**
 
-  1. To update the name in a record. Based on the access type of the memory store, if the corresponding record does't already exist, the following method will create a new record and set the firstname as John. 
-  ``` 
-  await memory.set_content("employee",{"firstname":"John"})
-  ```
-  If, however, a record exists but the firstname is different, this method will overwrite the first name in the same record.
+  1. To update the name in a record. Based on the access type of the memory store, if the corresponding record doesn't already exist, the following method will create a new record and set the firstname as John. 
+        ``` 
+        await memory.set_content("employee",{"firstname":"John"})
+        ```
+        If, however, a record exists but the firstname is different, this method will overwrite the first name in the same record.
 
   2. To update multiple fields, specify the fields to be updated in the data_object. 
-  ```
-  await memory.set_content("employee", {
-    "firstname": "John",
-    "preflanguage": "English"
-  })
-  ```
+          ```
+          await memory.set_content("employee", {
+            "firstname": "John",
+            "preflanguage": "English"
+          })
+          ```
 
 ### Deleting Content from Memory Store
 
@@ -298,7 +290,7 @@ The **sessionInfo** is a system-populated object that contains metadata about th
 * userReference - Reference string associated with the user in the session.
 * userId - Unique identifier for the user.
 * runId - Identifier for the specific execution run within the session.
-* timestamp – The date and time when the session information was recorded.
+* timestamp - The date and time when the session information was recorded.
 
 **Scope and Identification**
 

@@ -2,7 +2,7 @@
 
 List Management section consist of essential contact details for the campaigns. There are two subsections:
 
-1. **Contact Lists**: Contact lists contain vital information about individuals, enabling targeted and effective communication. It is a collection of names, and contact numbers necessary for running a campaign.
+1. **Contact Lists**: Contact lists contain vital information about individuals, enabling targeted and effective communication. It's a collection of names, and contact numbers necessary for running a campaign.
 2. **DNC (Do Not Contact) Lists**: These are contacts who have opted for "Do Not Contact" (DNC) or have registered on the national DNC facility, indicating their preference not to receive unsolicited calls. The DNC Lists Contacts count comprises contacts from both uploaded CSV files and contacts added directly through the AI Agent or Human Agent.
 
 You can view the lists by going to **Contact Center** > **Campaigns** > **List Management**.  
@@ -10,7 +10,7 @@ You can view the lists by going to **Contact Center** > **Campaigns** > **List M
 
 ## Contact Lists
 
-To view the Contact Lists, click the **Contact Lists** tab.
+To view the Contact Lists, select the **Contact Lists** tab.
 
 The following details are displayed in Contact Lists:  
 <img src="../images/contact-list-page-updated.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:80%;">
@@ -20,11 +20,11 @@ The following details are displayed in Contact Lists:
 * **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
 * **Contacts** - Shows the total count of contacts in the list. For example, 288.
 * **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
-* **Last Updated** - The date when the contact list was last updated. Default sorting is based on the last updated date.
+* **Last Updated** - The date when the contact list was last updated. The system sorts items by default based on the last updated date.
 
 ### Create a Contact List
 
-Contacts can be uploaded in two ways:
+There are two ways to upload contacts:
 
 * Local Drive
 * API Integration
@@ -33,26 +33,21 @@ Contacts can be uploaded in two ways:
 
 Steps to add a contact list from the local drive:
 
-1. Click **+ New Contact List**.  
-    <img src="../images/new-contact-list-button.png" alt="New Contact List Button" title="New Contact List Button" style="border: 1px solid gray; zoom:80%;">
+1. Select **+ New Contact List**.
 
-2. On the **New Contact List** pop-up window, enter the **Name**, **Description** and select **Local Drive** from the Source dropdown.  
-    <img src="../images/localdrive.png" alt="Name and Description of Contact List" title="Name and Description of Contact List" style="border: 1px solid gray; zoom:80%;">
+2. On the **New Contact List** pop-up window, enter the **Name**, **Description** and select **Local Drive** from the Source dropdown.
 
 3. Select a CSV file from the local drive and upload the CSV file.
 
     !!! Note
 
-        Phone numbers in the CSV should be in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
+        Phone numbers in the CSV must be in E.164 format with Country Code, Area Code, Subscriber Number and within double inverted quotes.
 
-4. Select the **Mapping Fields** and click **Save**.  
-    <img src="../images/mapping-fields-contact-list.png" alt="Mapping Fields" title="Mapping Fields" style="border: 1px solid gray; zoom:80%;">
+4. Select the **Mapping Fields** and select **Save**.
 
     !!! Note
 
         Phone Number is mandatory for voice campaigns.
-
-    The Contact List is created.
 
 #### Dynamic Retrieval and Reflection of CSV Column Values
 
@@ -94,56 +89,50 @@ hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on
     <img src="../images/csv.png" alt="CSV Fields" title="CSV Fields" style="border: 1px solid gray; zoom:80%;">  
 
 #### Time Zone
-* The "**Timezone**" field of the CSV is validated against the Calling Hours Timezone.
-* The time zone mentioned against a contact in the CSV is given preference over Calling Hours.
+* The **Timezone** field of the CSV is validated against the Calling Hours Timezone.
+* The time zone mentioned for a contact in the CSV gets preference over Calling Hours.
 * When setting up the time zones for an Outbound campaign's contact list or specifying contactable timings, use the format mentioned in the Tz database. [Tz Identifiers](./tz-identifiers.md).
-* Each location is identified in the Tz database by its continent or ocean, followed by the largest city in that area. For example,
+* Each location identifies in the Tz database by its continent or ocean, followed by the largest city in that area. For example,
     * America/Phoenix
     * Asia/Hong_Kong
     * Pacific/Fiji
-* If a contact has a timezone mentioned, the timezone will be validated or converted before dialing. If the contact’s timezone doesn’t fall under calling hours then the contact will be skipped.
-* If a contact is skipped, then it is considered a check and the Campaign is "**Completed**" once all other contacts are dialed successfully.
-* Contacts skipped due to timezone mismatch will appear as "**Unconnected Calls**" on the Campaign Dashboard.
+* If a contact has a timezone mentioned, the system validates the timezone or converts before dialing. If the contact’s timezone doesn’t fall under calling hours then skips the contacts.
+* If a the system skips a contact, then it's considered a check and the Campaign is "**Completed**" and dials all other contacts successfully.
+* Contacts skipped due to timezone mismatch appear as "**Unconnected Calls**" on the Campaign Dashboard.
 
 #### API Integration
 
 Steps to pull  the contacts using API Integration:
 
-1. Click **+ New Contact List**.  
-    <img src="../images/new-contact-list-button.png" alt="New Contact List Button" title="New Contact List Button" style="border: 1px solid gray; zoom:80%;"> 
+1. Select **+ New Contact List**.
 
-2. On the **New Contact List** pop-up window, enter the **Name**, **Description**, and select **API Integration** from the Source dropdown.  
-    <img src="../images/apiintegration.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+2. On the **New Contact List** pop-up window, enter the **Name**, **Description**, and select **API Integration** from the Source dropdown.
 
-3. Click **API Integration** to select to configure the API and add records to the contact list.  
-    <img src="../images/newlist.png" alt="New List" title="New List" style="border: 1px solid gray; zoom:80%;">
-
+3. Select **API Integration** to select to configure the API and add records to the contact list. 
 4. Select the Method and enter the URL.  
     <img src="../images/get-url.png" alt="Get URL" title="Get URL" style="border: 1px solid gray; zoom:80%;">
 
-5. Select the **Data Sync Interval** from the dropdown. Sync intervals ensure that updates in the database are reflected in the contact lists without a manual refresh. You can select an interval of up to 24 hours.  
-    <img src="../images/data-sync-interval.png" alt="Sync Interval" title="Sync Interval" style="border: 1px solid gray; zoom:80%;">
+5. Select the **Data Sync Interval** from the dropdown. The system uses the interval to automatically update contact lists with database changes, eliminating the need for a manual refresh. You can choose an interval of up to 24 hours.
 
 6. Select the **Data Sync Mode**. You can choose from the following options:
-    1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they will not be contacted again.
-    2. **Append contacts and allow duplicates**: Selecting this option allows duplicate contacts in the list and they will be contacted again.  
-        <img src="../images/apisyncmodenew.png" alt="Sync Mode" title="Sync Mode" style="border: 1px solid gray; zoom:80%;">
+    1. **Append contacts and don’t show duplicates**: Selecting this option removes duplicate contacts from the list, and they're not contacted again.
+    2. **Append contacts and allow duplicates**: Selecting this option lets duplicate contacts in the list and they're contacted again.
 
 7. Configure the authorization profile for the request.  
     <img src="../images/authorization.png" alt="Authorization" title="Authorization" style="border: 1px solid gray; zoom:80%;">
 
-8. If the header is selected in the Add to field, click the **Headers** tab and click the box “**Click here to add headers**”.  
+8. If you select Header in the Add to field, go to the Headers tab and select **Click here to add headers**. 
     <img src="../images/header.png" alt="Headers" title="Headers" style="border: 1px solid gray; zoom:80%;">
 
-9. Enter the **Key-Value** pairs and click **Next**.  
-    <img src="../images/keyvalue-pairs.png" alt="Key-Value Pairs" title="Key-Value Pairs" style="border: 1px solid gray; zoom:80%;">
+9. Enter the **Key-Value** pairs and select **Next**.  
+    <img src="../images/key-value-pairs.png" alt="Key-Value Pairs" title="Key-Value Pairs" style="border: 1px solid gray; zoom:80%;">
 
-10. Click **Validate**. The response is displayed.  
+10. Select **Validate**. The response displays.  
     <img src="../images/validate.png" alt="Validate" title="Validate" style="border: 1px solid gray; zoom:70%;">
 
 11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
-    * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John", you would enter "firstName" in the field mapping.
-    * If the data is nested, specify the full path to traverse the JSON hierarchy. Use dot notation to drill down into nested objects. For example, if the name data is located like:
+    * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John," you would enter "firstName" in the field mapping.
+    * Specify the full path to navigate the JSON hierarchy when the data is nested. Use dot notation to access nested objects. For example, if the name data is located as follows:
         ``` json
             {
             "contact": {
@@ -155,14 +144,14 @@ Steps to pull  the contacts using API Integration:
             }
         ```
         You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields.  
-            <img src="../images/fieldmapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/field-mapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
     * Ensure that the phone numbers are in E.164 format with Country Code, Area Code, Subscriber Number, and within double inverted quotes.
 
     !!! Note
 
         You can get the API key value from environment variables (plain or encrypted) when adding contacts.
 
-12. Click **Save**. The contact list is fetched from the third-party database.
+12. Select **Save**. The system fetches the contact-list from the third-party database.
 
 #### Accessing Contact List Field Labels and Values
 
@@ -234,10 +223,10 @@ context.campaignUserInfoNumber=number;
 
 Steps to edit a contact list from the local drive:
 
-1. Click the **Edit** icon beside the contact list name.  
-    <img src="../images/edit-call-list-button.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Edit** icon beside the contact list name.  
+    <img src="../images/edit-call-list-button.png" alt="Edit Contact List" title="Edit Contact List" style="border: 1px solid gray; zoom:80%;">
 
-2. Upload the call list and click **Save** when the list is appended.  
+2. Upload the call list and select **Save**.  
     <img src="../images/append-contact-list.png" alt="Append Contact List" title="Append Contact List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -248,17 +237,17 @@ Steps to edit a contact list from the local drive:
 
 Steps to  edit an API-integrated contact list:
 
-1. Click the **Edit** icon beside the contact list name.  
-    <img src="../images/editapi.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Edit** icon beside the contact list name.  
+    <img src="../images/edit-api.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click the **Edit** icon (🖉)at the right corner of the URL.  
-    <img src="../images/editapinewlist.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+2. Select the 🖉 at the right corner of the URL.  
+    <img src="../images/edit-api-new-list.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-3. Do the changes and click **Next**.  
-    <img src="../images/editapisyncmode.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+3. Do the changes and select **Next**.  
+    <img src="../images/edit-api-sync-mode.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-4. Make changes to the mapping fields (if required) and click **Save**.  
-    <img src="../images/editapimapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">  
+4. Make changes to the mapping fields (if required) and select **Save**.  
+    <img src="../images/edit-api-mapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">  
 
 ### Delete a Contact List
 
@@ -266,106 +255,146 @@ Steps to  edit an API-integrated contact list:
 
 Steps to delete a contact list from the local drive:
 
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
+1. Select the **Edit** icon beside the contact list name and select the **Delete** icon at the left corner of the edit window.  
     <img src="../images/delete-call-list.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         You cannot delete a contact list if it is associated with any campaign.
 
-2. A confirmation message is displayed. Click **Delete**.  
+2. A confirmation message displays. Select **Delete**.  
     <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">  
-
-    The contact list is deleted.
 
 #### API Integration
 
 Steps to delete an API-integrated contact list:
 
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
-    <img src="../images/deleteapilist.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Edit** icon beside the contact list name and select the **Delete** icon at the left corner of the edit window.  
+    <img src="../images/delete-api-list.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
-2. A confirmation message is displayed. Click **Delete**.  
-    <img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
-    The contact list is deleted.
+2. A confirmation message displays. Select **Delete**.
 
 ## DNC Lists
 
-To view the DNC Lists, click the **DNC Lists** tab.
+To view the Do Not Call (DNC) Lists, select the **DNC Lists** tab.
 
-The following details are displayed in DNC Lists:
-<img src="../images/dnc-list-page.png" alt="DNC List Page" title="DNC List Page" style="border: 1px solid gray; zoom:80%;">
+The system displays the following details:
+<img src="../images/dnc-lists-tab.png" alt="DNC List Page" title="DNC List Page" style="border: 1px solid gray; zoom:80%;">
 
 * **DNC Lists** - Name of the list. For example, DNC List 1.
-* **Actions** - Edit and Delete lists.
 * **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
 * **Contacts** - Shows the total count of contacts in the list. For example, 288.
 * **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
-* **Last Updated** - The date when the contact list was last updated. Default sorting is based on the last updated date.
+* **Last Updated** - Shows the date when the list was last updated. The system sorts the lists by this date by default.
+* **Actions** - Allows you to view, edit, delete, or mark a list as global.
 
 ### Create a DNC List
 
 Steps to create a new DNC list:
 
-1. Click **+ New DNC List**.  
-    <img src="../images/new-dnc-list.png" alt="New DNC List" title="New DNC List" style="border: 1px solid gray; zoom:80%;">
-
-2. On the **New DNC List** pop-up window, enter the **Name** and **Description** of the list.
-    <img src="../images/dnc-list-name-description.png" alt="Name and Description DNC List" title="Name and Description DNC List" style="border: 1px solid gray; zoom:80%;">
+1. Select **+ New DNC List**.
+2. On the **New DNC List** pop-up window, enter the **Name** and **Description**.
 
     !!! Note
 
         As of now, the default DNC List Type is Internal.
 
-3. Click **Select a CSV file to upload** a CSV file.  
-<img src="../images/upload-dnc-call-list.png" alt="Upload DNC List" title="DeUpload DNC List" style="border: 1px solid gray; zoom:80%;">
+3. Select **Select a CSV file to upload**. 
 
     !!! Note
 
         You can download the template for the CSV file by clicking the CSV Template.
 
-4. The file upload progress is displayed.  
-<img src="../images/dnc-list-progress.png" alt="DNC List Upload Progress" title="DNC List Upload Progress" style="border: 1px solid gray; zoom:80%;">
+4. The file upload progress appears.
+5. Choose the Mapping Fields and select **Next**. The system creates the DNC List.
 
-5. Select the **Mapping Fields** and click **Next**.  
-<img src="../images/dnc-list-mapping-fields.png" alt="DNC List Mapping Fields" title="DNC List Mapping Fields" style="border: 1px solid gray; zoom:80%;">
+### View a DNC List
 
-    The DNC List is created.
+Select the 👁 icon. The DNC list appears with the phone numbers, validity, and options to edit or delete the phone numbers. Campaign managers can add new contacts to the DNC list.
 
 ### Edit a DNC List
 
 Steps to edit a DNC list:
 
-1. Click the **Edit** button.  
-    <img src="../images/edit-dnc-list-button.png" alt="Edit DNC List Button" title="Edit DNC List Button" style="border: 1px solid gray; zoom:80%;">
+1. Select 🖉.
 
     !!! Note
 
         You cannot delete a DNC list when it is "In use".
 
-2. Upload the DNC list and click **Save** when the list is appended.  
-    <img src="../images/edit-dnc-list.png" alt="Edit DNC List" title="Edit DNC List" style="border: 1px solid gray; zoom:80%;">
+2. Upload the DNC list and select Save after the system appends the list.
 
 ### Delete a DNC List
 
 Steps to delete a DNC list:
 
-1. Click the **Edit** icon beside the DNC list name and click the **Delete** icon at the bottom left corner of the edit window.  
-    <img src="../images/delete-dnc-list.png" alt="Delete DNC List" title="Delete DNC List" style="border: 1px solid gray; zoom:80%;">
+1. Select the 🖉 icon next to the DNC list name, and then select the Delete icon in the left corner of the edit window. 
 
     !!! Note
 
         You cannot delete a DNC list when it is "In use".
 
-2. A confirmation message is displayed. Click **Delete**.  
-    <img src="../images/delete-dnc-list-confirmation.png" alt="Delete DNC List Confirmation" title="Delete DNC List Confirmation" style="border: 1px solid gray; zoom:80%;">
+2. A confirmation message appears. Select **Delete** to remove the DNC list.
 
-    The DNC list is deleted.
+### Mark as Global
+
+Steps to Mark as Global:
+
+1. Select ⋮ and then select Mark as Global.
+2. Select Confirm on the pop-up. The system marks a Global DNC list by changing its color and adding the label Global.
+
+!!! note 
+ 
+    * The platform creates a default Global DNC list when Campaigns is enabled. The list contains no phone numbers and is named Default Global DNC.
+    * A DNC list can only be marked as Global. After it is marked, it cannot be unmarked until another DNC list is marked as Global. When this happens, the previous Global list is automatically unmarked.
+    * A DNC list is mandatory during Voice Campaign creation through both the UI and the API.
+
+## Handling of DNCs-Global and Non-Global
+
+* Global DNC lists automatically apply to Voice campaigns and don't need to be explicitly added.  
+* For any Voice campaign:  
+    1. The campaign contact list is first scrubbed against the Global DNC list.  
+    2. The contact list is then scrubbed against any DNC lists explicitly associated with the campaign.  
+* The system scrubs other campaign types (SMS, Proactive) only against DNC lists explicitly linked to them; it doesn't apply the Global DNC list.  
+* Editing a DNC list or marking it non-global doesn't require Active or Paused campaigns to modify their current call lists.
+
+## Agent Mapping
+
+The Contact Lists support assigning each customer to a corresponding agent and defining Customer Priority. Adding an Agent Key to each contact ensures that the system can route or connect the correct agent to the customer when required. Customer Priority lets campaigns to focus on high-value or high-importance customers first. This helps manage customer communication during voice campaigns.
+
+### Add a Mapping List
+
+Steps to add a mapping list:
+
+1. Select + New Mapping List.  
+2. Enter the name and description, and select Upload CSV from local drive.  
+3. Choose the file to upload.  
+4. Select Save.
+
+### View a Mapping List
+
+Steps to view a mapping list:
+
+1. Select the 👁 icon to display a mapping list.  
+2. Select + Add New Contact Mapping to add a contact to the list.
+
+### Edit a Mapping List
+
+Steps to edit a mapping list:
+
+1. Select the 🖉 icon to edit a mapping list.
+2. Make the required changes and select Save.
+
+### Delete a Mapping List
+
+Steps to delete a mapping list:
+
+1. Select the 🗑 icon to delete a mapping list.  
+2. Select Delete to confirm.
 
 ## Logs
 
-When contact logs are fetched using API, the information is stored in the logs.
+When the system fetches contact logs through the API, it stores the information in the logs.
 
 ### Accessing the Logs
 

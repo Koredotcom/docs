@@ -9,8 +9,6 @@ You can set the sync/async mode configuration for the tool endpoint. If you chan
 Steps to enable and configure the asynchronous mode:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 2. Click the **Tools** tab on the top navigation bar, and select the tool to modify its configuration. The Tool Flow page is displayed.
 3. Click **Configurations** in the left navigation and then click **Setup sync/async**.  
 <img src="../images/setup-sync-async.png" alt="Setup sync/async" title="Setup sync/async" style="border: 1px solid gray; zoom:60%;">
@@ -52,7 +50,7 @@ Steps to add an environment variable:
 3. The **Create environment variable** dialog box is displayed. Click **Add** or **Add variable**.
 
 4. Specify the following information on the **Add variable** dialog box:  
-<img src="../images/add-varaible.png" alt="Add a variable" title="Add a variable" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/add-variable.png" alt="Add a variable" title="Add a variable" style="border: 1px solid gray; zoom:50%;">
 
     * **Variable name**: Provide a descriptive name for the variable.
     * **Secure variable**: Use the toggle to enable security for the variable. (If you are enabling the security, read the onscreen information carefully to understand the impact.)
@@ -67,7 +65,7 @@ Steps to add an environment variable:
 
 Click the three dots icon corresponding to the Name of the variable to edit the details of the variable or Delete to delete a variable.
 
-<img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/manage-a-variable.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;">
 
 ## Undeploy the Tool
 

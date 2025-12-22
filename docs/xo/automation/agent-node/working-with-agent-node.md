@@ -11,6 +11,8 @@ The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to
 * **Multilingual Support**: The Agent Node supports both English and non-English AI Agent languages, enabling platform users to create AI Agents that cater to a diverse user base and facilitate multilingual interactions.
 * **Configuration Flexibility**: The Agent Node can be configured like any other node in the Platform, providing flexibility in its integration within dialog tasks. This allows platform users to seamlessly incorporate the Agent Node into their existing conversational flows.
 * **Tool Calling**: Tool calling is the ability to identify when external functions are needed, select appropriate ones, invoke them with correct parameters, process their outputs, and incorporate the results into responses.
+* **Tool Calling with Streaming Responses**: Tool calling with streaming, allowing the model to generate responses progressively for faster, more fluid user interactions.
+* **Simplified V2 Prompt Setup**: The Custom Prompt page now features a Response Payload Format control (OpenAI, Azure OpenAI, or Custom) for automatic parsing, eliminating the need for manual Post-Processor setup in streaming configurations.
 
 ## Quick Start Guide
 
@@ -25,7 +27,7 @@ The Agent Node supports variants of LLM, including OpenAI, Azure OpenAI, Amazon 
 
 #### Prompt Setup
 
-To learn more, see [Agen Node Prompt Setup](prompt-setup.md).
+To learn more, see [Agent Node Prompt Setup](prompt-setup.md).
 
 
 
@@ -40,7 +42,7 @@ Add the node to a dialog task and configure the node's properties and tool calli
 Steps to add an Agent Node to a Dialog Task:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with. 
-2. You can add the **Agent Node** just like any other node. You can find it in the main list of nodes.  
+2. You can add the **Agent Node** like any other node. You can find it in the main list of nodes.  
 <img src="../images/canvas-agentnode.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -77,7 +79,7 @@ This property helps execute a script as the first step when the Agent Node is re
 
 To define a pre-processor script, click **Define Script**, add the script you want to execute, and click **Save**. Enable **Auto Save** to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.
 
-<img src="../images/pre_prosessor.png" alt="Pre prosessor Script" title="Pre prosessor Script" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pre_processor.png" alt="Pre processor Script" title="Pre processor Script" style="border: 1px solid gray; zoom:70%;">
 
 
 ###### Entities
@@ -100,9 +102,11 @@ Add a brief description of the use case context to guide the model.
 
 Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.
 
-!!! note
+!!! Note "Agent Node Tool Calling and Streaming Support"
 
-    The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.
+    * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
+    * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.
+
 
 Click **+ Add** to open the **New Tool** creation window.  
 
@@ -279,7 +283,12 @@ Tool calling is the ability to identify when external functions are needed, sele
 
 * **Interaction with External Systems**: The introduction of tool calling expands the Agent Node's capabilities beyond text generation. It enables interaction with external systems and databases, facilitating real-time data retrieval, calculations, and system-specific operations. This integration allows for more dynamic and data-driven conversational experiences.
 * **Dynamic Prompt Enhancement**: The Agent Node's prompt is enhanced to include tool definitions and contextual information. Based on user input and ongoing conversation, the language model can dynamically decide whether to generate text or call a tool. The dynamic prompt adaptation ensures that the AI Agent provides the most appropriate response or action at each step of the interaction.
+* **Tool Calling with Streaming Responses**: The Agent Node supports tool calling with streaming, allowing the model to generate responses progressively for faster, more fluid user interactions. The Agent Node supports both tool calling and prompt streaming in custom JavaScript V2 prompts using the OpenAI or Azure OpenAI response format.
 
+!!! Note "Agent Node Tool Calling and Streaming Support"
+
+    * V1 Custom JavaScript Prompts: Supports tool calling and streaming as separate capabilities, but not simultaneously.
+    * V2 Custom JavaScript Prompts: Supports both tool calling and streaming together using OpenAI/Azure OpenAI response format.
 
 ## Agent Node Execution
 
@@ -327,7 +336,7 @@ Here's a step-by-step explanation of the execution captured in the debug logs:
 4. The Agent Node is initiated (`Agent node initiated`).
 5. The Agent Node Request Response Details are captured in JSON format and contain the conversation history up to this point.
 6. The tool execution (`FundsTransfer`) is initiated. This indicates that the AI Agent has determined that the tool needs to be called based on the user's request.
-7. The AI Agent checks if the person (Raj Kumar) is already registered as a payee in the user's account. To verify this, it calls the `PayeesAvailableCheck` tool.
+7. The AI Agent checks if the person (John Doe) is already registered as a payee in the user's account. To verify this, it calls the `PayeesAvailableCheck` tool.
 8. The `PayeesAvailableCheck` tool completes execution, and the result is captured in the debug logs. The AI Agent determines that the person is registered as a payee.
 9. The AI Agent informs the user that the person is registered as a payee and requests additional details to proceed with the fund transfer. It asks the user to select the transfer type (NEFT/IMPS/RTGS), provide the transfer amount, and confirm their account ID.
 10. The user provides the requested information.

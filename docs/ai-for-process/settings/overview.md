@@ -1,23 +1,22 @@
 # Settings Console for Account Admins
 
-Agent Platform’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage Agent Platform’s system configurations to manage the following:
+AI for Process' **Settings** console is a centralized management interface that provides administrators with the workflows and functionalities to configure, monitor, and manage AI for Process’ system configurations to manage the following:
 
 1. [Users](../settings/user-management/users.md){:target="_blank"}
 2. [Roles and permissions](../settings/user-management/role-management.md){:target="_blank"}
 3. [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 4. [Integrations](../settings/integrations/about-integrations.md){:target="_blank"} 
 5. [Manage Custom Scripts](../settings/manage-custom-scripts/custom-scripts.md){:target="_blank"}
-6. [Manage Guardrails](../guardrails/manage-guardrails.md){:target="_blank"} 
-7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Tools Analytics Dashboard](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
-8. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
+6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](../settings/monitoring/audit-logs.md){:target="_blank"}, [Workflows Analytics Dashboard](../settings/monitoring/analytics/workflows-analytics-dashboard.md){:target="_blank"}, [Model Analytics Dashboard](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}, [Model Traces](../settings/monitoring/analytics/model-traces.md){:target="_blank"}, and [Monitoring Custom Scripts](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
+7. Security and Control: [Single Sign On](../settings/security-and-control/single-sign-on.md){:target="_blank"}, [Authorization Profile](../settings/security-and-control/authorization-profile.md){:target="_blank"}, and [API Scopes](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Levels of Users Management 
 
 The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.
 
-* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
+* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire AI for Process account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including workflow creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
-* **Tool level**: User management within the Agent Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API apps and keys.
+* **Workflow level**: User management within the AI for Process is focused on workflow management, emphasizing individual workflow deployments and configurations. Each workflow's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting workflows, assigning roles, overseeing deployments, configuring guardrails, and managing API apps and keys.
 
 This post describes how to access the **Settings** Console and summarizes the modules and features available.
 
@@ -43,10 +42,10 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Roles and Permissions**
 
-* View system-generated roles for <b>account</b> and <b>tool</b> role types.
+* View system-generated roles for <b>account</b> and <b>workflow</b> role types.
 * Duplicate the roles and make custom changes.
 * View the enabled/disabled access controls for various modules and permissions for system roles.
-* Add new custom roles for tool and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
+* Add new custom roles for workflow and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles. 
 
 [Learn more](../settings/user-management/role-management.md){:target="_blank"} about this feature.
 
@@ -57,7 +56,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 * Configuring the connection to your AD.
 * Importing user data from all or specific organization units.
 * Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
-* Configuring AD auto sync schedules to ensure user data on Agent Platform remains up-to-date.
+* Configuring AD auto sync schedules to ensure user data on AI for Process remains up-to-date.
 
 Additionally, you can do the following:
 
@@ -70,7 +69,7 @@ Additionally, you can do the following:
 
 **Integrations**
 
-Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} in the Tools automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
+Connect to third-party services using prebuilt, secure, and configurable integrations. These connections can be used to access the linked services via the [Integration node](../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"} in the workflows automation flow. [Learn more](../settings/integrations/about-integrations.md){:target="_blank"}.
 
 **Manage Custom Scripts**
 
@@ -82,7 +81,7 @@ You can also:
 
 - Re-deploy the script after updates or changes.
 
-- Use the script in multiple locations across the Agent Platform, such as in the **Function node** of a tool automation flow.
+- Use the script in multiple locations across the AI for Process, such as in the **Function node** of a workflow automation flow.
 
 Other capabilities include:
 
@@ -100,12 +99,12 @@ Other capabilities include:
 
 **Guardrails**
 
-Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all tools. [Learn more](../guardrails/manage-guardrails.md){:target="_blank"}.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all workflows. 
 
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}.
+- Review workflow performance metrics and take informed decisions on the **Workflows Analytics** dashboard. [Learn more](../settings/monitoring/analytics/workflows-analytics-dashboard.md){:target="_blank"}.
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 * Track custom script executions across runs and logs for deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
@@ -113,21 +112,19 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Security and Control**
 
 - Enable or disable **Single Sign-On (SSO)** for your account and other users to streamline authentication and enhance password security. [Learn more](../settings/security-and-control/single-sign-on.md){:target="_blank"}.
-- Set up authorization profiles that enable your tools, models, and AI agents to access external web services securely. [Learn more](../settings/security-and-control/authorization-profile.md){:target="_blank"}.
+- Set up authorization profiles that enable your workflows, models, and AI agents to access external web services securely. [Learn more](../settings/security-and-control/authorization-profile.md){:target="_blank"}.
 - Create and manage API-scoped apps and keys to securely authenticate and authorize access to specific endpoints based on selected scopes. [Learn more](../settings/security-and-control/api-scopes.md){:target="_blank"}.
 
 ## Access Settings Console
 
-To access the **Settings** Console on Agent Platform, follow the steps below:
+To access the **Settings** Console on AI for Process, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
-2. Click **Settings** on the top navigation bar.
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
    The system redirects to the **Users** page under **Users Management**.
 
-   <img src="../images/access-settings-menu.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/access-settings-menu-aip.png" alt="access settings menu" title="access settings menu" style="border: 1px solid gray; zoom:75%;">
 
 ## Modules and Features
 
@@ -144,13 +141,13 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><a href="../../settings/user-management/overview" target="_blank">Users Management</a></td>
-   <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, tools, and models.</p>
+   <td><p>Helps add, remove, and manage admin, member, and viewer users, roles, and permissions for accounts, workflows, and models.</p>
 <p>Manage user settings for AD sync, profile visibility and configuration, and email notifications to users.</p></td>
 <td><p><a href="../../settings/user-management/users" target="_blank">Users</a></p>
 <ul>
 <li>All users across your enterprise network accounts are listed here.</li> 
 <li>A summarized view of the total invited users, active, inactive, and locked users is displayed.</li>
-<li>The user listing with information on all the users across the Agent Platform accounts is displayed with the Name, Email ID, Account Role, and Status is displayed. The account owner is highlighted.</li>
+<li>The user listing with information on all the users across the AI for Process accounts is displayed with the Name, Email ID, Account Role, and Status is displayed. The account owner is highlighted.</li>
 <li>You can add a new user by sending bulk or individual email invites. Alternatively,  import the user information file directly to the console.</li>
 <li>Set user role when sending the email invite to one of the following:
 <ul>
@@ -161,22 +158,22 @@ The following modules and features are supported on the **Settings** Console:
 <li>Custom roles</li>
 </li>
 <li>Select one or multiple users to change access permissions or delete a user.</li>
-<li>Click a user entry to manage their profile, models, and tools, including modifying and deleting roles within each model or tool. A model or tool can be added for a specific role.</li></ul></ul>
+<li>Click a user entry to manage their profile, models, and workflows, including modifying and deleting roles within each model or workflow. A model or workflow can be added for a specific role.</li></ul></ul>
 <p><a href="../../settings/user-management/role-management" target="_blank">Role Management</a></p>
 <ul>
 <li>A summarized view of the total roles available in the system and the number of system and custom roles are displayed.</li>
-<li>View, assign, and reassign system/ default or custom roles. <strong>You cannot edit or delete system roles.</strong></li>
+<li>View, assign, and reassign system/ default or custom roles. <strong>You can't edit or delete system roles.</strong></li>
 <li>Create a copy or duplicate of a system role as a custom role and manage its permissions and access levels.</li>
 <li>Add, delete, edit permissions’ access for, and duplicate custom roles.</li>
-<li>For tool and account role types, assign/unassign permissions and set access levels for various module aspects like tools, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
+<li>For workflow and account role types, assign/unassign permissions and set access levels for various module aspects like workflows, models, prompts, billing, integrations, guardrails, security and control settings, and user management tasks.</li>
 </ul>
 
 <p><a href="../../settings/user-management/settings/active-directory" target="_blank">Settings</a></p>
 <ul>
-<li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to Agent Platform seamlessly. Enable automatic data sync between the AD and Agent Platform daily, weekly, or monthly.</li>
-<li><strong>User Settings</strong>: Set up the visibility of user profile information across Agent Platform. Select profile fields and allow edits by the end user.
+<li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to AI for Process seamlessly. Enable automatic data sync between the AD and AI for Process daily, weekly, or monthly.</li>
+<li><strong>User Settings</strong>: Set up the visibility of user profile information across AI for Process. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
+<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they're added to your account.
 </li>
 </ul>
    </td>
@@ -188,8 +185,8 @@ The following modules and features are supported on the **Settings** Console:
 <ul>
 <li>Create and configure secure connections across multiple categories like marketing, AI, sales, and more.</li>
 <li>Pre-authorize the connection using the required auth method.</li>
-<li>Add authorization credentials to secure the connection when users interact with the tool.</li>
-<li>Use the configured connection in the <a href="../../ai-agents/tools/tool-flows/types-of-nodes/integration-node" target="_blank">Integration node</a> to seamlessly access third-party services while building the Tool flow.</li>
+<li>Add authorization credentials to secure the connection when users interact with the workflow.</li>
+<li>Use the configured connection in the <a href="../../workflow-builder/types-of-nodes/integration-node.md" target="_blank">Integration node</a> to seamlessly access third-party services while building the workflow.</li>
 </ul>
    </td>
   </tr>
@@ -203,13 +200,13 @@ The following modules and features are supported on the **Settings** Console:
 <li>Review and deploy the custom script into the platform.</li>
 <li>Perform actions like re-deploy, delete, export and more on the deployed scripts based on the current status.</li>
 <li>View and manage the Overview, Deployment history, Endpoint, and API Keys pages for the script.</li>
-<li>Select and execute the configured custom script through the <a href="../../ai-agents/tools/tool-flows/types-of-nodes/function-node" target="_blank">Function node</a> of the Tools flow.</li>
+<li>Select and execute the configured custom script through the <a href="../../workflow-builder/types-of-nodes/function-node" target="_blank">Function node</a> of the workflows flow.</li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td><a href="../../guardrails/overview" target="_blank">Manage Guardrails</a></td>
-   <td>Deploy models to make them available for anomaly scanners in all the tools. 
+   <td>[Manage Guardrails](../../agent-platform/guardrails/overview.md){:target="_blank"}</td>
+   <td>Deploy models to make them available for anomaly scanners in all the workflows. 
    </td>
    <td>
 <ul>
@@ -218,7 +215,7 @@ The following modules and features are supported on the **Settings** Console:
 <li><strong>Ban Topics</strong>: Restricts sensitive and controversial topics like religion or corporate politics in prompts to maintain content moderation, enforce community guidelines, and ensure compliance with organizational policies.</li>
 <li><strong>Prompt Injection</strong>: Guards against attacks where malicious input is crafted to influence the behavior of a language model, causing it to generate harmful, misleading, or unintended responses using input sanitization, context control, role-based access, instruction clarity, and more.</li>
 <li><strong>Toxicity</strong>: Set up mechanisms to detect and manage toxic content, such as harmful, offensive, or abusive language. Implement warnings, content removal, or user-banning actions to prevent the dissemination of harmful content and maintain a safe and positive user environment.</li>
-<li><strong>Bias Detection</strong>: Ensure fairness and equality by AI tools towards users through output evaluation for systematic prejudices or pre-defined biases and behavior and automatic neutralization of responses.</li>
+<li><strong>Bias Detection</strong>: Ensure fairness and equality by AI workflows towards users through output evaluation for systematic prejudices or pre-defined biases and behavior and automatic neutralization of responses.</li>
 <li><strong>Relevance</strong>: Ensure that prompt outputs are accurate to the input context, meet the user’s intent, and satisfy their query or need. The scanner provides a confidence score to indicate the degree of context relevance.
 </li>
 </ul>
@@ -226,13 +223,13 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><a href="../../settings/monitoring/audit-logs" target="_blank">Monitoring - Audit Logs</a></td>
-   <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and tool-level event logs.</td>
+   <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and workflow-level event logs.</td>
    <td><ul><li>Select the date range and view periodic, event-based logs related to the following categories:</li>
    <ul><li>Login/Logout</li>
    <li>Roles</li>
    <li>Integrations</li>
    <li>Models</li>
-   <li>Tools</li>
+   <li>workflows</li>
    <li>Users Management</li>
    <li>Prompts</li>
    <li>Dataset</li>
@@ -241,14 +238,14 @@ The following modules and features are supported on the **Settings** Console:
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
     <tr>
-   <td><a href="../../settings/monitoring/analytics/tools-analytics-dashboard" target="_blank">Monitoring - Tools Analytics Dashboard</a></td>
-   <td>Get actionable insights into successful and failed tool runs, average tool response time, and drill down into nodes execution data to enable informed decisions on tool deployments, optimize their performance, and accelerate system efficiency.</td>
-   <td><ul><li>Select a single date or date range to view periodic tool performance metrics.</li>
-   <li>Make performance comparison between different tool versions.</li>
+   <td><a href="../../settings/monitoring/analytics/workflows-analytics-dashboard" target="_blank">Monitoring - Workflows Analytics Dashboard</a></td>
+   <td>Get actionable insights into successful and failed workflow runs, average workflow response time, and drill down into nodes execution data to enable informed decisions on workflow deployments, optimize their performance, and accelerate system efficiency.</td>
+   <td><ul><li>Select a single date or date range to view periodic workflow performance metrics.</li>
+   <li>Make performance comparison between different workflow versions.</li>
    <li>Keep track of failed execution runs and investigate the reason for the same.</li>
-   <li>Monitor the average response times of tools for various requests.</li>
-   <li>Monitor node executions across different types and ensure tool flow runs stay within your account's rate limits.</li>
-   <li>Optimize tool performance with real-time metrics.</li></ul></td>
+   <li>Monitor the average response times of workflows for various requests.</li>
+   <li>Monitor node executions across different types and ensure workflow flow runs stay within your account's rate limits.</li>
+   <li>Optimize workflow performance with real-time metrics.</li></ul></td>
   </tr>
       <tr>
    <td><a href="../../settings/monitoring/analytics/model-analytics-dashboard" target="_blank">Monitoring - Model Analytics Dashboard</a></td>
@@ -270,7 +267,7 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
           <tr>
    <td><a href="../../settings/monitoring/monitoring-custom-scripts" target="_blank">Monitoring - Custom Scripts</a></td>
-   <td>Review and monitor key performance indicators for each internal or external script run that is executed on the Agent Platform via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
+   <td>Review and monitor key performance indicators for each internal or external script run that's executed on AI for Process via API endpoint, or Function/API node. View and trace default and Korelogger-based execution logs from input and output editors, as configured in your script. Apply time-based and column filters to get a custom view of run-level and log-specific metrics and metadata.</td>
       <td><ul><li>Select a single date or date range to view specific, time-based script performance metrics.</li>
       <li>Analyze failed runs and identify failure patterns.</li>
 <li>Analyze each successful/failed run to ensure optimal usage.</li>
@@ -286,14 +283,14 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
      <tr>
    <td><a href="../../settings/security-and-control/authorization-profile" target="_blank">Security and Control - Authorization Profile</a></td>
-   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the Agent Platform, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
+   <td>Allows users to configure authorization profiles using the <b>OAuth2</b> industry standard. With auth profiles, users can efficiently manage and reuse authentication and permission settings across the AI for Process, eliminating the need to create new authentication mechanisms each time secure access is required.</td>
       <td><ul><li>Set up new authorization field for your authorization profiles.</li>
 <li>Configure the required auth parameters, including additional auth fields.</li>
 <li>Edit or delete existing auth profiles.</li></ul></td>
   </tr>
   <tr>
    <td><a href="../../settings/security-and-control/api-scopes" target="_blank">Security and Control - API Scopes</a></td>
-   <td>Create and manage API-scoped apps, assign API keys, and select scopes to control access to specific endpoints. Restrict access to authorized users and prevent unauthorized use across the Agent Platform.</td>
+   <td>Create and manage API-scoped apps, assign API keys, and select scopes to control access to specific endpoints. Restrict access to authorized users and prevent unauthorized use across the AI for Process.</td>
       <td><ul><li>Create an API app.</li>
       <li>Select the required API scopes while configuring the app.</li>
 <li>Generate one or more API keys to provide secure access for authorized users.</li>
@@ -301,7 +298,3 @@ The following modules and features are supported on the **Settings** Console:
 <li>Edit or delete the app as required.</li></ul></td>
   </tr>
 </table>
-
-
-
-

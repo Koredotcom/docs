@@ -1,4 +1,6 @@
-# Latency Report
+--8<-- "includes/ccai-reports-back-link.md"
+
+# Latency Report [Beta]
 
 ## Generating the Latency Report
 
@@ -13,10 +15,10 @@ The Latency Report highlights calls exceeding a defined latency threshold. For e
 
 To generate a Latency Report:
 
-1. On the Reports tab, click **New Report**.
+1. On the Reports tab, Select **New Report**.
 2. In the list of reports, choose the **Latency Report**.
 3. Enter the **Report Name** and **Report Description**.
-4. Select a **Time Period**.
+4. Select a **Duration**.
 5. Select **Data Filters** from the following.
 
     | **P90 Values**         | **Threshold Values (ms)** |
@@ -40,25 +42,25 @@ To generate a Latency Report:
     * Select Format
         * CSV
     * Send To (single email address or mailing list)
-7. Click **Create**.  
+7. Select **Create**.  
     <img src="../images/create-latency-report.png" alt="Create Report" title="Create Report" style="border: 1px solid gray; zoom:70%;">
 8. An instance of the Latency Report is generated.  
     <img src="../images/latency-report-created.png" alt="Report Created" title="Report Created" style="border: 1px solid gray; zoom:70%;">
-9. Click the **Run** icon next to the instance of the report.  
+9. Select the **Run** icon next to the instance of the report.  
     <img src="../images/run-latency-report.png" alt="Run Report" title="Run Report" style="border: 1px solid gray; zoom:70%;">
 
     While generating reports, you have two options: Run On Demand and Schedule.  
 
-    * **Run On Demand**: While creating a new report or editing an existing report, the schedule of the report can be set to run on demand.
-    * **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later, then it will automatically be generated on the scheduled day and time without the need to click Run.
-10. Click the CSV icon and generate the output of that report, as shown below.  
+    * **Run On Demand**: When you create a new report or edit an existing one, you can set the report schedule to run on demand.
+    * **Schedule**: If you schedule the report for a later time, the system automatically generates it on the scheduled day and time without requiring you to select Run.
+10. Select the CSV icon and generate the output of that report, as follows.  
     <img src="../images/latency-report-csv.png" alt="Generate Output" title="Generate Output" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
     The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in CSV format.
 
-11. The Latency Report is generated.  
+11. The system generates the Latency Report.  
     <img src="../images/latency-report-csv-output.png" alt="Report Output" title="Report Output" style="border: 1px solid gray; zoom:70%;">
 
 ### About Report Fields
@@ -69,7 +71,7 @@ To generate a Latency Report:
 | Start Time                  | Timestamp when the session started.                                                                       | `2025-09-24 10:56:34`     |
 | Agent                       | Name of the agent handling the session.                                                                  | `John Doe`                |
 | Agent Email                 | Email address of the agent.                                                                              | `john.doe@example.com`    |
-| Queue Name                  | Name of the queue the interaction was routed through.                                                     | `Support_Queue`           |
+| Queue Name                  | Name of the queue the interaction routes through.                                                     | `Support_Queue`           |
 | Customer                    | Identifier or name of the customer involved in the session.                                               | `Jane Doe`                |
 | Duration                    | Total time the session lasted.                                                                            | `00:12:45`                |
 | P90 ASR Latency (ms)        | 90th percentile latency of Automatic Speech Recognition, in milliseconds. Indicates how long speech-to-text processing takes. | `250`                     |

@@ -131,7 +131,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
     * If a model's P90 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
     * If a model's P99 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
 * **Failure Rate**: Indicates the number of requests/runs that failed with an error code or were not serviced by the model out of the total requests sent since deployment. For example, if 5 requests failed out of 100, the failure rate displayed is 5%.
-* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage. Please see the pricing details [here](../../../models/hardware-pricing.md){:target="_blank"}. This metric allows for a comparison of credit consumption against actual model usage.
+* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage. Please see the pricing details [here](../../../settings/billing/managing-usage-limits.md){:target="_blank"}. This metric allows for a comparison of credit consumption against actual model usage.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -432,6 +432,7 @@ The following model run metadata helps analyze the model’s performance.
 * **Base model**: The Inception-hosted or imported model that executes the request.
 * **Deployment name**: The deployment name of the model.
 * **Deployment version**: Version of the model deployed for the run.
+* **Streaming**: Streams the model’s response token by token in real time.
 * **Response time**: Time taken by the model to generate a response.
 * **Input tokens**: Number of tokens in the request input.
 * **Output tokens**: Number of tokens in the model’s response.

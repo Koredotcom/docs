@@ -35,7 +35,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 ## Best Practices
 
-* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on Agent Platform to optimize usage.
+* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on AI for Process to optimize usage.
 * Analyze successful versus failed runs to compare model performance over time and identify failure patterns using failure rates for all model types.
 * Identify model runs with low or high response times using P90 and P99 thresholds and isolate under-performing runs for further investigation.
 * Apply time-based and record filters for focused and accurate analysis.
@@ -47,10 +47,12 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 To access the **Model Traces**, follow the steps below:
 
-1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
+
 2. On the left menu, select **Monitoring** > **Model Traces**.
 3. If this is your first time accessing the feature, select the desired model from the dropdown menu shown below.
-<img src="../images/get-started-model-traces.png" alt="get started with model traces" title="get started with model traces" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/get-started-model-traces.png" alt="get started with model traces" title="get started with model traces" style="border: 1px solid gray; zoom:75%;">
 
 The system loads the **Model Traces** feature with data for the last 30 days, which is the default time range selection. 
 
@@ -131,11 +133,11 @@ The UI summarizes key metrics for the selected period, offering actionable insig
     * If a model's P90 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
     * If a model's P99 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
 * **Failure Rate**: Indicates the number of requests/runs that failed with an error code or were not serviced by the model out of the total requests sent since deployment. For example, if 5 requests failed out of 100, the failure rate displayed is 5%.
-* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage. Please see the pricing details [here](../../../models/hardware-pricing.md){:target="_blank"}. This metric allows for a comparison of credit consumption against actual model usage.
+* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage.  This metric allows for a comparison of credit consumption against actual model usage.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Hosting Credits apply only to Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
+<p>Hosting Credits apply only to AI for Process’ open-source and fine-tuned models and are not displayed for external models.</p></div>
 
 <img src="../images/hosting-credits.png" alt="hosting credits" title="hosting credits" style="border: 1px solid gray; zoom:75%;">
 
@@ -325,7 +327,7 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="../../../../ai-agents/tools/overview" target="_blank">Learn more</a>.</li>
+<li><strong>Workflow</strong>: The request was sent to the model from a workflow. [Learn more](../../../workflows/overview.md){:target="_blank"}.</li>
 
 <li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio" target="_blank">Learn more</a>.</li>
 
@@ -454,8 +456,8 @@ In addition to the above metadata (excluding *Deployment name* and *Deployment v
 
 ## Related Information
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../overview.md){:target="_blank"}- Learn more about other AI for Process admin features.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for workflows, set limits, and track usage trends.
 

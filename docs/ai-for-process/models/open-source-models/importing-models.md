@@ -1,14 +1,14 @@
 # Importing a Model
 
-Agent Platform enables users to import base and adapter model files from their local machines into the platform. For **base** models, users can directly upload model files and import them into Agent Platform for further use. For **adapter** models, users must first select a compatible base model and then upload and import the adapter model file. Once imported, these models become available for deployment within Agent Platform.
+AI for Process enables users to import base and adapter model files from their local machines into the platform. For **base** models, users can directly upload model files and import them into AI for Process for further use. For **adapter** models, users must first select a compatible base model and then upload and import the adapter model file. Once imported, these models become available for deployment within AI for Process.
 
-This process enables users to seamlessly integrate local models into Agent Platform, ensuring compatibility and readiness for deployment. It facilitates efficient management and configuration,  just like other open-source models, and streamlines workflows within the platform.
+This process enables users to seamlessly integrate local models into AI for Process, ensuring compatibility and readiness for deployment. It facilitates efficient management and configuration,  just like other open-source models, and streamlines workflows within the platform.
 
 !!! note
 
     **Base Model**: A base model is a pre-trained model that can be used for general tasks. It’s already trained on a large dataset and can be used as-is or fine-tuned for specific tasks.  
     
-    **Adapter Model**: An adapter model is a smaller model that works with a base model to make it more suited for a specific task or dataset. It doesn’t need to retrain the entire base model but adjusts it for new purposes. To import an adapter model in Agent Platform, it is necessary to specify the related base model.
+    **Adapter Model**: An adapter model is a smaller model that works with a base model to make it more suited for a specific task or dataset. It doesn’t need to retrain the entire base model but adjusts it for new purposes. To import an adapter model in AI for Process, it is necessary to specify the related base model.
 
 
 ### Best Practices
@@ -23,13 +23,13 @@ This process enables users to seamlessly integrate local models into Agent Platf
 
 ### Prerequisites
 
-* The user must be logged in to Agent Platform and have the necessary permissions to import models.
+* The user must be logged in to AI for Process and have the necessary permissions to import models.
 * The model file to be imported must be available on the user’s local machine.
 
 
-## Importing Base Models into Agent Platform
+## Importing Base Models into AI for Process
 
-**Steps to import a base model into Agent Platform:**
+**Steps to import a base model into AI for Process:**
 
 1. Go to **Models** > **Open-source models** and click the **Import model** button.
 2. On the **Import model** dialog, choose the **Base Model** tab.  
@@ -56,9 +56,9 @@ Click ‘Instructions’ to view the detailed guidelines for the supported forma
     * **Model Endpoint**: Start the deployment.
 
 
-## Importing Adapter Models into Agent Platform
+## Importing Adapter Models into AI for Process
 
-**Steps to import an adapter model into Agent Platform:**
+**Steps to import an adapter model into AI for Process:**
 
 1. Go to **Models** > **Open-source models** and click the **Import model** button.
 2. On the **Import model** dialog, choose the **Adapter Model** tab.  
@@ -97,6 +97,4 @@ Click ‘Instructions’ to view the detailed guidelines for the supported forma
 
 !!! note
 
-    The deployconfig.json file is added to the model export. If the same model is later imported into Agent Platform, the deployment details from this file will be automatically retrieved and pre-filled in the deployment wizard. This includes the previously selected optimization techniques, hyperparameters, hardware settings, and scaling configuration.
-
-
+    The deployconfig.json file is added to the model export. If the same model is later imported into AI for Process, the deployment details from this file will be automatically retrieved and pre-filled in the deployment wizard. This includes the previously selected optimization techniques, hyperparameters, hardware settings, and scaling configuration.

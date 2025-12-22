@@ -28,7 +28,7 @@ In this section, you can select a pre-configured dialog task and channel and cho
 4. Click **CONFIGURATION** > **Conversation Events** > **Welcome Events**.
 5. Click to expand the **Configure On-Connect Dialog Task** section.
 6. Click the **toggle** button to enable it (if it’s in **Disabled** status).
-7. Select a channel – **Chat**, **Voice**, or **Email**.
+7. Select a channel—**Chat**, **Voice**, or **Email**.
 8. Select a configured dialog task from the **Select Dialog** list.
 9. Select the **Extract intents from On Connect Dialog task** radio button. 
 
@@ -132,12 +132,21 @@ This section lets you select a dialog task to run automatically when an exit eve
 
 ### Conversation Summary
 
-This section lets you configure how to autogenerate a conversation summary at the end of a conversation. You can select either the out-of-the-box (OOTB) Kore Summarization or the Custom Dialog Task model. To use the Custom Dialog Task option, you must disable the **Configure End of Conversation Dialog Task** setting. 
+This section lets you configure how to autogenerate a conversation summary at the end of a conversation. Agents can copy the summary and save it into the **Notes** or **Remark** field while closing the conversation. To use the Custom Dialog Task option, you must disable the **Configure End of Conversation Dialog Task** setting. You can select one of the following options:
+
+* **OOTB Kore Summarization**: Kore’s default auto summarization.  
+* **Custom Dialog Task**: Lets you select a custom dialog task to customize the Conversation Summary. Click [here](../configuration/configure-auto-summarization-with-custom-dialog-tasks.md){:target="_blank"} to learn more about customizing the summarization process. This field displays a list of dialog tasks or child apps based on app selection at the app level. At the app level, if you have selected:  
+   * **Universal App**: The backend logic detects it and populates its associated Child Apps. You can expand each Child App to view and select its dialog task.  
+   * **Child App/Normal/Singular App**: The Dialog Tasks list displays dialogs linked to the selected app, and you can select any from the displayed list.  
+
+!!! note
+
+    Conversation Summary configuration is applicable only for third-party agent desktops.
 
 #### Steps to set Conversation Summary 
 
 1. Sign in to **AI for Service** > **Agent AI**.
-2. Go to **Configurations**> **Conversation Events**.
+2. Go to **Configurations** > **Conversation Events**.
 3. Click **Exit Events**.
 4. Select a channel—**Chat**, **Voice**, or **Email**.
 5. Click the toggle to enable **Conversation Summary**.

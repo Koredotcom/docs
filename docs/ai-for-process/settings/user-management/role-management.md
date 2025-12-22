@@ -1,10 +1,10 @@
 # Manage Roles, Permissions and Access Levels
 
-Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
+AI for Process’ **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, workflow, and agentic app features on the platform. 
 
 Thus, the roles can be classified based on the role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
 
-When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
+When you invite or add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
 **Key Points**
 
@@ -12,7 +12,7 @@ When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/ad
 
 2. **Master Admin Role**
 
-    * When you [create an account](../../getting-started/sign-up-sign-in.md){:target="_blank"}, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
+    * When you create an account, you automatically become the account owner and are assigned the **Master Admin** role. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
     * As the Master Admin, you have the highest level of access, allowing you to create, modify, and delete permissions for custom roles and manage users in your account.
 
@@ -24,7 +24,7 @@ When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/ad
 
     * Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. [Learn more](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. 
 
-    Agent Platform supports the following roles in the **Settings** console:
+    AI for Process supports the following roles in the **Settings** console:
 
     * **Default Role**: A system-generated role with internally defined set of permissions and access levels. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
 
@@ -41,14 +41,14 @@ When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/ad
 The modules for which permissions and access levels can be defined for a role include the following:
 
 * Agentic Apps
-* Tools
+* workflows
 * Models
 * Prompts
 * Data
 * Evaluations/Evaluators
 * Settings including Integrations, User Management, Security and Control, Monitoring, Guardrails, and Billing.
 
-**Tool Level**
+**workflow Level**
 
 To learn more about permissions and access levels around features, click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}.
 
@@ -60,25 +60,25 @@ A Role groups users according to their job functions, streamlining permission ma
 
 *Example*
 
-A **Master Admin** has complete control over the account's core functionalities such as models, tools, integrations, users, etc.
+A **Master Admin** has complete control over the account's core functionalities such as models, workflows, integrations, users, etc.
 
-A **Tool Admin** has complete control over the core functionalities of tools, such as deployment, configuration, sharing, deletion, monitoring, etc.
+A **tool admin** has complete control over the core functionalities of workflows, such as deployment, configuration, sharing, deletion, monitoring, etc.
 
 An **App Admin** has full access to almost all the core Platform features relating to Agentic Apps.
 
-Agent Platform supports the following roles:
+AI for Process supports the following roles:
 
 #### System-defined Roles
 
-Also called **Default** roles, these are inbuilt in the system at the agentic app, account and tool levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and **cannot be modified** in the application. Also, system roles cannot be deleted.
+Also called **Default** roles, these are inbuilt in the system at the agentic app, account and workflow levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and **cannot be modified** in the application. Also, system roles cannot be deleted.
 
-To modify a user's scope and permissions, you must add a [custom](./role-management.md/#custom-roles){:target="_blank"} agentic app/account/tool-type role. [Learn more](./role-management.md/#add-a-role){:target="_blank"}.
+To modify a user's scope and permissions, you must add a [custom](./role-management.md/#custom-roles){:target="_blank"} agentic app/account/workflow-type role. [Learn more](./role-management.md/#add-a-role){:target="_blank"}.
 
 System-defined, system-generated, or default roles provide baseline control over the core features and functionalities and streamline the user management process for administrators. 
 
-For example, The **Admin** role typically has full access to all tool/account features and functionalities within the system. Administrators have the highest privileges and can manage other users, configure settings, and perform administrative tasks.
+For example, The **Admin** role typically has full access to all workflow/account features and functionalities within the system. Administrators have the highest privileges and can manage other users, configure settings, and perform administrative tasks.
 
-The following table summarizes the scope for different system roles supported for Account, Tool, and Agentic App types:
+The following table summarizes the scope for different system roles supported for Account, workflow, and Agentic App types:
 
 <table>
   <tr>
@@ -94,7 +94,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Master Admin</strong>
    </td>
-   <td>Users have complete control over tool and model management, and access to all the core features and functionalities of the Settings console.</td>
+   <td>Users have complete control over workflow and model management, and access to all the core features and functionalities of the Settings console.</td>
   </tr>
   <tr>
    <td><strong>Admin</strong>
@@ -105,7 +105,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create tools, add external models, and modify only specific integrations.</td>
+   <td>Users can create workflows, add external models, and modify only specific integrations.</td>
   </tr>
   <tr>
    <td><strong>Viewer</strong>
@@ -117,7 +117,7 @@ The following table summarizes the scope for different system roles supported fo
 
 <table>
   <tr>
-   <td colspan="2" ><strong>Tool</strong>
+   <td colspan="2" ><strong>workflow</strong>
    </td>
   </tr>
   <tr>
@@ -127,27 +127,27 @@ The following table summarizes the scope for different system roles supported fo
    </td>
   </tr>
   <tr>
-   <td><strong>Tool Admin</strong>
+   <td><strong>tool admin</strong>
    </td>
-   <td>Users have complete control over tool management, versioning, sharing, deployment, deletion, configuration, monitoring, and API key creation.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tool Manager</strong>
-   </td>
-   <td>Users have access to all the permissions except for tool deletion.
+   <td>Users have complete control over workflow management, versioning, sharing, deployment, deletion, configuration, monitoring, and API key creation.
    </td>
   </tr>
   <tr>
-   <td><strong>Tool Editor</strong>
+   <td><strong>tool manager</strong>
    </td>
-   <td>Users can create new versions and deploy, monitor, and export tools.
+   <td>Users have access to all the permissions except for workflow deletion.
    </td>
   </tr>
   <tr>
-   <td><strong>Tool Viewer</strong>
+   <td><strong>tool editor</strong>
    </td>
-   <td>Users can only view the node details and generate output in the tool.
+   <td>Users can create new versions and deploy, monitor, and export workflows.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>tool viewer</strong>
+   </td>
+   <td>Users can only view the node details and generate output in the workflow.
    </td>
   </tr>
     <tr>
@@ -174,13 +174,13 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>App Developer</strong>
    </td>
-   <td>Users have full access to core development features of Agentic Apps including configurations, tools, guardrails, and data. There is limited access to the admin features.
+   <td>Users have full access to core development features of Agentic Apps including configurations, workflows, guardrails, and data. There is limited access to the admin features.
    </td>
   </tr>
     <tr>
    <td><strong>App Viewer</strong>
    </td>
-   <td>Users have basic view-only access to specific and essential features of Agentic Apps including configurations, tools, guardrails, and simulation capabilities.
+   <td>Users have basic view-only access to specific and essential features of Agentic Apps including configurations, workflows, guardrails, and simulation capabilities.
    </td>
   </tr>
       <tr>
@@ -193,11 +193,11 @@ The following table summarizes the scope for different system roles supported fo
 
 #### Custom Roles 
 
-The admin can assign only **Account** and **Tool** role types to custom roles. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and tool levels.
+The admin can assign only **Account** and **Workflow** role types to custom roles. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and workflow levels.
 
 Organizations can tailor access levels to their specific needs and organizational structure. This customization helps assign only the required permissions to specific users and improve security through role-based access. 
 
-For example, a custom role, “_Banking Tool Conversation Moderator_,” can be customized for full access to a tool guardrail configuration permission and no access to create and deploy a tool.
+For example, a custom role, “_Banking workflow Conversation Moderator_,” can be customized for full access to a workflow guardrail configuration permission and no access to create and deploy a workflow.
 
 #### Key Considerations
 
@@ -211,11 +211,11 @@ To proceed, you must first unassign the role or assign an alternative role to th
 
 ### Permissions
 
-A **Permission** is a specific action or a set of actions the user can perform for a module i.e., **Admin**, **Tool**, or **Evaluation** based on the defined access level (*Full*, *Edit*, or *View*), assigned role type (*Account*, *Tools*, or *Agentic Apps*) and role category (*Admin*, or *Tools*). An example includes the system providing *full* access to *create a tool version* to the *Tool Admin* role of the *tool* role type.
+A **Permission** is a specific action or a set of actions the user can perform for a module i.e., **Admin**, **Workflow**, or **Evaluation** based on the defined access level (*Full*, *Edit*, or *View*), assigned role type (*Account*, *workflows*, or *Agentic Apps*) and role category (*Admin*, or *workflows*). An example includes the system providing *full* access to *create a workflow version* to the *tool admin* role of the *workflow* role type.
 
 ### Access Levels
 
-The **Settings** console supports two types of access: “_Yes_” indicates the user role has access to a module’s permission, and “_No_” means the user has no access. When the system/custom user role has access, the extent/level of access at the account or tool level is defined by the following presets: 
+The **Settings** console supports two types of access: “_Yes_” indicates the user role has access to a module’s permission, and “_No_” means the user has no access. When the system/custom user role has access, the extent/level of access at the account or workflow level is defined by the following presets: 
 
 * **View**: The user can only view the module feature but does not have the permission to edit or delete it.
 * **Custom**: The user can view, add, and edit the module data, but not delete it.
@@ -231,18 +231,18 @@ A **Role Type** defines the module-wise scope and access level for the defined p
 Roles are auto-assigned by the system based on the following Role Types. Please refer to [this](./role-management.md/#system-defined-roles){:target="_blank"} table for more information on the roles.
 
 * **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
-* **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
-* **App**: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
+* **Workflow**:  When a user is invited to a workflow, they receive a workflow role. The role type manages access to workflow configurations and deployments.
+* **App**: When a user is invited to the AI for Process at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
 
 **Account Role**
 
-* The user who creates an Agent Platform account is assigned the *Master Admin* role by default.
+* The user who creates an AI for Process account is assigned the *Master Admin* role by default.
 * The *Master Admin* can assign other account roles to users added to their account.
 
-**Tool Role**
+**workflow Role**
 
-* The user who creates a tool is assigned the *Tool Admin* role by default.
-* The *Tool Admin* can assign other tool roles to users they invite to their tool.
+* The user who creates a workflow is assigned the *tool admin* role by default.
+* The *tool admin* can assign other workflow roles to users they invite to their workflow.
 
 **App Role**
 
@@ -251,7 +251,7 @@ Roles are auto-assigned by the system based on the following Role Types. Please 
 
 ### Module-wise Permissions and Access Levels
 
-The following table summarizes the module-wise permissions and access levels for default admin, tool, and evaluation roles.
+The following table summarizes the module-wise permissions and access levels for default admin, workflow, and evaluation roles.
 
 <b>Admin Role</b>
 
@@ -279,11 +279,11 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="2"><strong>Tools</strong>
+   <td rowspan="2"><strong>workflows</strong>
 <p>
 <strong> </strong>
    </td>
-   <td>Create a Tool
+   <td>Create a workflow
    </td>
    <td>Yes
 <p>
@@ -301,7 +301,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-     <td>Tool Import
+     <td>Workflow Import
    </td>
    <td>Yes
 <p>
@@ -653,7 +653,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Manage Tool Roles (Create and edit Custom roles), assign/revoke users
+   <td>Manage Workflow Roles (Create and edit Custom roles), assign/revoke users
    </td>
    <td>Yes
    </td>
@@ -788,7 +788,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td><b>Tool Management</b>
+   <td><b>Workflow Management</b>
    </td>
    <td>All actions</td>
    <td>Yes
@@ -951,7 +951,7 @@ The following table summarizes the module-wise permissions and access levels for
    </tr>
   </table>
 
-<b>Tool Role</b>
+<b>Workflow Role</b>
 
 <table>
   <tr bgcolor="#ECECEC">
@@ -959,17 +959,17 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td rowspan="3" ><strong>Permission</strong>
    </td>
-   <td colspan="4" ><strong>Default Tool Role</strong>
+   <td colspan="4" ><strong>Default workflow Role</strong>
    </td>
   </tr>
   <tr>
-   <td><strong>Tool Admin</strong>
+   <td><strong>tool admin</strong>
    </td>
-   <td><strong>Tool Manager</strong>
+   <td><strong>tool manager</strong>
    </td>
-   <td><strong>Tool Editor</strong>
+   <td><strong>tool editor</strong>
    </td>
-   <td><strong>Tool Viewer</strong>
+   <td><strong>tool viewer</strong>
    </td>
   </tr>
   <tr bgcolor="#ECECEC">
@@ -977,9 +977,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="10" ><strong>Tools</strong>
+   <td rowspan="10" ><strong>workflows</strong>
    </td>
-   <td><strong>Access to Tool </strong>(“Custom” is the default access for a custom role)
+   <td><strong>Access to workflow </strong>(“Custom” is the default access for a custom role)
    </td>
    <td>Full
    </td>
@@ -991,7 +991,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Create a Tool Version
+   <td>Create a workflow Version
    </td>
    <td>Yes
    </td>
@@ -1015,7 +1015,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Share Tools/ Unshare Tools/ Assign Tool Roles/ Remove users
+   <td>Share workflows/ Unshare workflows/ Assign workflow Roles/ Remove users
    </td>
    <td>Yes
    </td>
@@ -1027,7 +1027,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Delete Tool
+   <td>Delete workflow
    </td>
    <td>Yes
    </td>
@@ -1039,7 +1039,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Export Tool
+   <td>Export workflow
    </td>
    <td>Yes
    </td>
@@ -1051,7 +1051,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Monitoring Trace of a Tool
+   <td>Monitoring Trace of a workflow
    </td>
    <td>Yes
    </td>
@@ -1063,8 +1063,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Editing Tool Workflow
-   </td>
+   <td>Editing Workflow</td>
    <td>Yes
    </td>
    <td>Yes
@@ -1075,7 +1074,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Tool configurations
+   <td>workflow configurations
    </td>
    <td>Yes
    </td>
@@ -1197,7 +1196,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Code Tools
+   <td>Code workflows
    </td>
    <td>Full
    </td>
@@ -1323,7 +1322,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Tools Library
+   <td>workflows Library
    </td>
    <td>Full
    </td>
@@ -1337,7 +1336,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Export Tool
+   <td>Export workflow
    </td>
    <td>Full
    </td>
@@ -1426,7 +1425,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Add Agent, Edit Agent, Link Tools, Unlink Tools, Restore Agent Version, Restore App Version, Create Agent Version
+   <td>Add Agent, Edit Agent, Link workflows, Unlink workflows, Restore Agent Version, Restore App Version, Create Agent Version
    </td>
    <td>Yes
    </td>
@@ -1440,9 +1439,9 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Tools
+   <td rowspan="2" >workflows
    </td>
-   <td>View Tool
+   <td>View workflow
    </td>
    <td>Yes
    </td>
@@ -1456,7 +1455,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
-   <td>Add Tool, Edit Tool, Create In-line tool, Edit Inline Tool, Delete Inline Tool
+   <td>Add workflow, Edit workflow, Create In-line workflow, Edit Inline workflow, Delete Inline workflow
    </td>
    <td>Yes
    </td>
@@ -1818,16 +1817,14 @@ The following table summarizes the module-wise permissions and access levels for
 
 ### Role Management Dashboard
 
-The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the Agent Platform.
+The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the AI for Process.
 
 To access the dashboard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Users Management** > **Role Management** on the left menu.
-<img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;">
+2. In the **Users Management** section on the left menu, click **Role Management**.
 
 The **Role Management** dashboard displays the following:
 
@@ -1841,7 +1838,7 @@ The **Role Management** dashboard displays the following:
 2. A Table view of the following system and custom role details:
 
     * **Role**: The name of the system-generated role or the custom role you have created.
-    * **Role Type**: The role type defines its scope, including **Account**, **Tool**, and **Agentic App**.
+    * **Role Type**: The role type defines its scope, including **Account**, **Workflow**, and **Agentic App**.
     * **Description**: This is the description of the role. System roles are pre-defined, while you must provide custom role descriptions. Hover over the description text to view the entire description.
     * **Created by**: For system-generated roles, _System_ is displayed. For custom roles, the name of the user who created the role is displayed, as shown in the image below. This user can be the account owner or another user in the admin’s account.
     <img src="../images/custom-and-system-roles.png" alt="custom and system roles" title="custom and system roles" style="border: 1px solid gray; zoom:80%;">
@@ -1883,7 +1880,7 @@ The following information is displayed:
 * Role Title along with Role Type.
 * Role Name
 * Role Description
-* Configuration panel to enable/disable access and set access levels for the listed permissions at the account/tool level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
+* Configuration panel to enable/disable access and set access levels for the listed permissions at the account/workflow level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
 <img src="../images/module-wise-permissions-new.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;">
 
 #### Duplicate System Role
@@ -1928,10 +1925,10 @@ To add a custom role, follow the steps below:
     * Select the **Role Type** from the dropdown.
     <img src="../images/select-role-type.png" alt="select role type" title="select role type" style="border: 1px solid gray; zoom:80%;">
     * Follow the steps below if you select **Role Type** as **_Account_**.
-        * Enable/select the access level for module-wise permissions in the **Enable/Disable tool access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
+        * Enable/select the access level for module-wise permissions in the **Enable/Disable workflow access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
         * If you select *Custom*, Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
-            * Create and Import Tool
+            * Create and Import workflow
             * Create agentic apps
             * Models
                 * Add External models
@@ -1952,7 +1949,7 @@ To add a custom role, follow the steps below:
                   * Assign roles to users
                   * Directory Sync
                   * Manage admin roles
-                  * Manage tool roles
+                  * Manage workflow roles
                   * Remove users
                   * Manage user settings
             * Security and Control Settings
@@ -2022,17 +2019,17 @@ Selecting **_Custom_** for **Settings** automatically sets the **Integrations** 
 You can change **_Custom_** to **_Full_** or **_View_** for **Integrations** and **_Full_** or **_No Access_** for **User Management**.
 
 
-If you select **Role Type** as **_Tool_**, follow the steps below:
+If you select **Role Type** as **_workflow_**, follow the steps below:
 
 * Select **_Custom_**, **_View_**, or **_Full_** for **Access**. [Learn more](../user-management/role-management.md/#access-levels){:target="_blank"}. 
 
 **_Custom_** is the default selection.
 <img src="../images/access-options.png" alt="access options" title="access options" style="border: 1px solid gray; zoom:80%;">
                      
-* Set up the tool permissions as follows in the **Enable/Disable tool access** section:
+* Set up the workflow permissions as follows in the **Enable/Disable workflow access** section:
 * If you select **_View_** for **Access**, all the permissions are automatically disabled.
 * If you select **_Full_** for **Access**, all the permissions are automatically enabled.
-* If you select **_Custom_** for **Access**, you can select the required tool permissions to enable them and customize the role.                 
+* If you select **_Custom_** for **Access**, you can select the required workflow permissions to enable them and customize the role.                 
 
 4. Click **Create**.
 
@@ -2042,7 +2039,7 @@ The new custom role is created and listed on the **Role Management** dashboard.
 
 #### Edit a Custom Role
 
-You can modify the role name, description, and access levels for account type or tool type roles’ permissions on the Settings console.
+You can modify the role name, description, and access levels for account type or workflow type roles’ permissions on the Settings console.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2065,7 +2062,7 @@ To update a role, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You cannot reset the access levels for module-wise Permissions in the <b>Enable/disable tool access</b> section.</p>
+<p>You cannot reset the access levels for module-wise Permissions in the <b>Enable/disable workflow access</b> section.</p>
 </div> 
 
 <ol start="5"><li>Click <b>Update</b>.</li>
@@ -2136,6 +2133,6 @@ Like a system role, you can duplicate a custom role, which copies the name, role
 
 ## Related Information
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+* **Settings Console** - [Learn more](../overview.md){:target="_blank"} about other AI for Process admin features.
 * **Users Management** - [Learn more](../user-management/users.md){:target="_blank"} about managing users in your account.
 * **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

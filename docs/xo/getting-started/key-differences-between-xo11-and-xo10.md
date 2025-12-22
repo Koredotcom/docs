@@ -110,7 +110,7 @@ The Analytics module is logically regrouped to address various audience needs. A
 ## Automation vs. Search (Answers) Fallback Behavior
 
 We have a new setting where users can configure where every user utterance should go first: Automation AI or Search AI (Answers) to get the response.  
-<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback BehaviourI" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback Behaviour" style="border: 1px solid gray; zoom:70%;">
 
 ## New Marketplace
 

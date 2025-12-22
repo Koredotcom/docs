@@ -40,7 +40,7 @@ Configure the SharePoint connector if you're using SharePoint to manage your con
 Configuring SharePoint as a content source requires:
 
 * **Registering a multi-tenant app in SharePoint**
-* **Configuration of the SharePoint connector in SearchAssist**
+* **Configuration of the SharePoint connector in Search AI**
 
 ## Authorization Support
 
@@ -68,9 +68,9 @@ App registrations are required to access resources programmatically. Registering
 ![App Registration](images/sharepoint/new-app-registration.png "Application Registration")
 
 * Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click **_Register_**. You can use one of the following URLs according to your region.
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
     
 ![Account Types](images/sharepoint/account-types.png "Account Types")
 
@@ -119,7 +119,7 @@ App registrations are required to access resources programmatically. Registering
 
 ![Grant Permissions](images/sharepoint/grant-permissions.png "Grant Permissions")
 
-* To configure the SharePoint connector in SearchAssist, use the client ID, client secret, and tenant ID generated above. For more details, refer to [this](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+* To configure the SharePoint connector in Search AI, use the client ID, client secret, and tenant ID generated above. For more details, refer to [this](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 
 ## Configuration of the SharePoint connector 

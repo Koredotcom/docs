@@ -1,6 +1,100 @@
-# Search AI Updates
+# Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+## v11.20.0 December 07, 2025
+
+<u>Minor Release</u>
+
+<font size="4">Access Control Enhancements</font>
+
+Search AI now automatically enforces RACL rules at design time for all new workspaces, protecting sensitive content. Access is based on the permission settings defined in the connector. Existing workspaces retain full design-time access for backward compatibility, with runtime access following source-system RACL rules. When design-time RACL is enabled, queries made through the public API return only public content. To enable design-time RACL for existing workspaces, contact support. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/racl-support.md)
+
+<font size="4">Connector Enhancements</font>
+
+**New Axero Connector**
+
+The Axero connector enables ingestion and management of content from the Axero knowledge base platform, including Pages, Wiki, Discussions, Documents, Articles, Announcements, Blogs, and associated comments. The connector also preserves hyperlinks within content for use in the answers.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/axero.md)
+
+**GitHub Connector**
+
+The GitHub Connector now supports additional content types, including the conversations on pull requests,  issue threads, file names, and wiki pages. It also improves incremental synchronization of ingested content, ensuring that any new, updated, or deleted content is processed incrementally.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/github-onprem.md)
+
+
+**Custom Connector**
+
+Search AI enhances the Custom Connector configuration by introducing a new per-header Encoding Format option. Developers can choose whether a header value should be Base64-encoded or sent as plain text, providing greater flexibility for integrations and removing the previous limitation that forced Base64 encoding for all headers. 
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/custom-connector.md)
+
+
+<font size="4">Deprecation and Automatic Migration Notice</font>
+
+To improve platform performance and stability, Search AI is automatically upgrading legacy embedding models, legacy re-ranker models, and the legacy web crawler. Starting December 7, 2025, the following components will be automatically upgraded in applications where they're in use:
+
+* Embedding Models: MPNet, LaBSE, E5, and BGE-M3 V1 are upgraded to BGE-M3 V2. Users must trigger training to apply the changes to their index.
+* Re-rankers: MS MARCO Cross Encoder and Mixbread Large are upgraded to BGE Re-ranker. This change applies automatically with no user action required.
+* Legacy Web Crawler: The legacy web crawler is replaced with the AI-Powered Crawler. Users must trigger a re-crawl to extract content using the new crawler.
+
+After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. 
+
+[Learn more :octicons-arrow-right-24:](deprecations.md)
+
+
+<hr>
+
+## v11.19.1 November 19, 2025
+
+<u>Patch Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Enhanced Default Extraction Strategies</font>
+
+Search AI now offers optimized default extraction and chunking strategies tailored to each content type and source, enabling more accurate, efficient data processing automatically. These enhanced defaults are automatically applied to new apps.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/extraction.md#default-extraction-strategies)
+
+<font size="4">View Document Access Controls</font>
+
+Search AI introduces new UI capabilities to provide greater visibility into RACL implementations. These enhancements are currently available only for the following connectors: Google Drive, HubSpot, Jira, Confluence Cloud, Confluence Server, Bitbucket, SharePoint, ServiceNow, Asana, Guru, and JFrog.
+
+* Permission Entity Viewer: View the groups, sub-groups, and users assigned to each permission entity.
+* Document Permissions: Lists and displays the users and groups who have access to each document.
+
+These features help admins and developers validate that permissions are correctly enforced across the platform.
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors.md#permission-entities)
+
+<font size="4">Connector Enhancements</font>
+
+**Slack Connector**
+
+The Slack Connector now offers enhanced flexibility and control for data ingestion:
+
+* API key–based authentication, eliminating the need for channel invitations (required earlier with OAuth) to retrieve channel content.
+* Channel-based standard filtering option and advanced date-range based filtering for targeted ingestion.
+* Support for crawling message history from the past six months.
+
+**Confluence Data Center Connector**
+
+The Confluence Data Center connector now includes several enhancements to broaden content coverage and improve indexing control.
+
+* Expanded ingestion support for blogs and spaces, in addition to pages, and comments from both pages and blogs.
+* Space-based standard filters for targeted content selection.
+* Advanced filtering options for more precise indexing.
+* Incremental sync capability and webhook-based deletion handling are available upon request.
+
+**ServiceNow Connector**
+
+Expired articles are now automatically excluded from indexing, ensuring that only valid and up-to-date content is ingested into Search AI.
+
+
+<hr>
 
 ## v11.19.0 October 25, 2025
 

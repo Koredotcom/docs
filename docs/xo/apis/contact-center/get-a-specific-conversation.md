@@ -128,7 +128,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
     "dispositions": {
         "metaStatus": "SYSTEM_DROP_OFF",
         "status": "DROP-OFF",
-        "remarks": "I'm sorry. It seems like there are no agents that can help you at this time. Please reach out us a bit later.",
+        "remarks": "I'm sorry. It seems like there are no agents that can help you at this time. Reach out us a bit later.",
         "dispositionSets": null
     },
     "userInfo": {
@@ -187,7 +187,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
 |----------------------------|------------------------------------------------------------------|----------|
 | transferDetails            | Transfer details of the conversation.                            | array    |
 | waitTime                   | The wait time for the conversation in milliseconds.             | integer  |
-| isProactiveAgentAssistEnabled | Whether proactive AgentAssist is enabled for the conversation. | boolean  |
+| isProactiveAgentAssistEnabled | Whether proactive AgentAI is enabled for the conversation. | boolean  |
 | callbackOpted              | Whether callback is opted for the conversation.                  | boolean  |
 | contactFlow                | Contact flow information for the conversation.                  | array    |
 | surveyRequired             | Whether a survey is required for the conversation.               | boolean  |

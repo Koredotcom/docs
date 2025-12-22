@@ -164,7 +164,7 @@ For instance, if the value of the filter field is set as shown below, then a log
        {
            "_id": "chk-fffb8f28-29c2-4afe-8d2c-9379dad4446c",
            "chunkTitle": "",
-           "chunkText": "191 agreement of trial balance. Only the total of the trial balance would be short by Rs. 100. But if posting is not done in one of the accounts, this will affect the agreement of trial balance.    b) Errors of Commission Errors of commission take place when some transactions are incorrectly recorded in the books of accounts. Such errors include errors on account of wrong balancing of an account, wrong posting, wrong totalling, wrong carry forwards, etc. For example, if a sum of Rs. 255    received from Hari is credited to his account as Rs. 525, this is an error of commission.",
+           "chunkText": "191 agreement of trial balance. Only the total of the trial balance would be short by Rs. 100. But if posting is not done in one of the accounts, this will affect the agreement of trial balance.    b) Errors of Commission Errors of commission take place when some transactions are incorrectly recorded in the books of accounts. Such errors include errors on account of wrong balancing of an account, wrong posting, wrong totalling, wrong carry forwards, etc. For example, if a sum of Rs. 255    received from John is credited to his account as Rs. 525, this is an error of commission.",
            "sourceType": "file",
            "sourceName": "Default Directory",
            "extractionMethod": "text",

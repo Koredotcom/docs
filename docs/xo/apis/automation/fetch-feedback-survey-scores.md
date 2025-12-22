@@ -182,7 +182,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{botId}}/saveFeedback' \
 
 ```json
 {
-"botId": "st-053cd130-f983-577a-8aad-2504aebd60b9",
+"botId": "st-053cd130-f983-577a-8aad-2504xxxxxxxx",
 "channel": "rtm",
 "language": "en",
 "score": 0,
@@ -192,14 +192,13 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{botId}}/saveFeedback' \
 "type": "THUMB",
 "name": "Thumb",
 "channelUId": "qatesting@vomoto.com",
-"orgId": "o-89b0abd5-19af-5017-a80a-6fc6bfc7a638",
+"orgId": "o-89b0abd5-19af-5017-a80a-xxxxxxc7a6xx",
 "accountId": "60dbef1bc2f5c25106cdb57d",
-"userId": "u-f5d97fb8-8767-5b6c-a28d-09e9ac281e12",
-"_id": "641bfabf0353f52d915f7a87",
+"userId": "u-f5d97fb8-8767-5b6c-a28d-xxxxxx281exx",
+"_id": "641bfabf0353f52d9xxxxxxx",
 "__v": 0
 }
 ```
-
 
 
 ## Response Body Parameters

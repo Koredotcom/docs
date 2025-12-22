@@ -708,7 +708,7 @@ For example, click **Add Processor**, enter a **Name** for your processor, set *
 "modified_at":"2016-01-20T04:29:52.505Z",
 "owner":{
 "id":73114591129714,
-"name":"jaganmohan.evuri" },
+"name":"john.doe" },
 ```
 
 This is then used as a variable input as shown in the following **Post URL**: 
@@ -783,10 +783,10 @@ For example, click **Add Processor**, enter a **Name** for your processor, set t
              "created_time": "1453964684",
              "text": "49th",
              "from": {
-                 "username": "venkataphani.ailavarapu",
+                 "username": "john.doe",
                  "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
                  "id": "2679234818",
-                 "full_name": "Phani"
+                 "full_name": "John"
              },
              "id": "1172263199715314941"
          }, {

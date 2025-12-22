@@ -7,12 +7,12 @@ To view the Interactions dashboard, follow the steps:
 1. Go to **CONTACT CENTER AI** > **Analytics** > **Interactions**.  
     <img src="../images/interactions-page.png" alt="Interactions Page" title="Interactions Page" style="border: 1px solid gray; zoom:80%;">
 
-2. On this page, the following details of the logs are displayed in a table:
+2. On this page, the following details of the logs appear in a table:
 
   * CUSTOMER: The contact who initiated the conversation.
-     * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
-    * LANGUAGE (Icon): The language of the conversation.
-    * CHANNEL (Icon): The Channel of the conversation – Voice, Chat, or Email.
+     * Direction (Icon): The direction of the conversation -  Inbound or Outbound.
+    * Language (Icon): The language of the conversation.
+    * Channel (Icon): The Channel of the conversation - Voice, Chat, or Email.
 
     Administrators can configure the system to hide customer Email IDs and Phone Numbers in the Interactions dashboard, Details slider, and Export file. Instead, the system displays the internal User ID. [Learn more](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md).
 
@@ -23,19 +23,19 @@ To view the Interactions dashboard, follow the steps:
     * Agent Conversation ID  
     <img src="../images/agent-conversation-id.png" alt="Agent Conversation ID" title="Agent Conversation ID" style="border: 1px solid gray; zoom:80%;">
 
-* SUPPORT: The agent who handled the conversation.
-* START TIME: The date and time when the conversation was logged. This field can be rearranged to display newest to oldest or oldest to newest by clicking the arrow icon.
-* DURATION: The duration of the inbound conversation.
-* AGENTS: The profile pictures of the agents who handled the conversation are displayed in the order in which they participated. Hovering over the profile pictures shows the names of the agents.
-* QUEUES: The last queue name is displayed with a +N for more queues. Hovering on the queues shows the order in which the conversation entered the queues.
-* SKILLS: One skill is displayed with a +N for more skills. Hovering over the skills shows all skills associated with the conversation.
-* STATUS: The statuses of the conversation are displayed:
-    * In Progress: In Progress refers to an ongoing conversation. The interactions tab immediately displays a conversation that is in progress.
+* Support: The agent who handled the conversation.
+* Start Time: The date and time of logging the conversation. Select the arrow icon to rearrange this field to display newest to oldest or oldest to newest.
+* Duration: The duration of the inbound conversation.
+* Agents: The profile pictures of the agents who handled the conversation appears in the order in which they participated. Hovering over the profile pictures shows the names of the agents.
+* Queues: The last queue name appears with a +N for more queues. Hovering on the queues shows the order in which the conversation entered the queues.
+* Skills: One skill appears with a +N for more skills. Hovering over the skills shows all skills associated with the conversation.
+* Status: The statuses of the conversation are as follows:
+    * In Progress: In Progress refers to an ongoing conversation. The interactions tab immediately displays a conversation that's in progress.
     * Error: Error is a disruption to an ongoing conversation, resulting in an error message. Failure of integrated systems results in errors.
     * Completed (Drop Off): Completed (Drop Off) refers to a voice call where there was no response from the user, and the conversation ends.
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
-    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the task is completed, and the AI Agents ends the conversation.
-    * Completed: Completed refers to a chat conversation where the task is completed, and the conversation ends.
+    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the AI agent completes the task and ends the call, and the AI Agents ends the conversation.
+    * Completed: Completed refers to a chat conversation where the AI agent completes the task and ends the conversation.
 
 ## Supervisor Actions
 
@@ -43,18 +43,18 @@ Supervisors can view ongoing interactions on the Interactions tab. They can inte
 
 Steps to perform supervisor actions:
 
-1. Click **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard is displayed on the right side of the page.
+1. Select **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard appears on the right side of the page.
 
-2. Click ( **⋮** ) under ACTIONS and then click **Supervisor View**.  
+2. Select **⋮** under ACTIONS and then select **Supervisor View**.  
 <img src="../images/supervisor-actions.png" alt="Supervisor Actions" title="Supervisor Actions" style="border: 1px solid gray; zoom:80%;">
 
-3. You will be redirected to the interactions section on the MONITOR tab.  
+3. You are redirected to the Interactions section on the Monitor tab.  
   <img src="../images/supervisor-actions-1.png" alt="Supervisor Actions 1" title="Supervisor Actions 1" style="border: 1px solid gray; zoom:80%;">
 
-4. Click the ongoing conversation. You can perform the following actions in the conversation:
-    1. Join Conversation
-    2. Assign
-    3. Change Queue  
+4. Select the ongoing conversation. You can perform the following actions in the conversation:
+    * Join Conversation
+    * Assign
+    * Change Queue  
     <img src="../images/supervisor-actions-2.png" alt="Supervisor Actions 2" title="Supervisor Actions 2" style="border: 1px solid gray; zoom:80%;">
 
 ## Search Interactions
@@ -62,7 +62,7 @@ Steps to perform supervisor actions:
 You can find the search field on the top right side of the Interactions tab.  
 <img src="../images/search-interactions.png" alt="Search Interactions" title="Search Interactions" style="border: 1px solid gray; zoom:80%;">
 
-The search feature on Interactions allows supervisors to do the following:
+The search feature on Interactions lets supervisors to do the following:
 
 * Search for keywords in both chats and call transcripts.
 * Search the Agent and Disposition notes.
@@ -71,17 +71,17 @@ The search feature on Interactions allows supervisors to do the following:
     * Complete matches receive the highest rank in the search results.
     * Results that match all single words of a phrase receive the next priority.
     * Results that receive the last priority are those where only a few words of a phrase match.
-* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can click the Start Time column to sort results by timestamp in either ascending or descending order.  
+* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can select the Start Time column to sort results by timestamp in either ascending or descending order.  
 * Ignore common words like Articles, Pronouns, and Prepositions while matching.
 
 How it works:
 
-1. Enter a word or phrase in the search field and click the **Search** icon.
+1. Enter a word or phrase in the search field and search the **Search** icon.
 
-2. The count of search results is displayed.  
+2. The count of search results appears.  
     <img src="../images/search-interactions-1.png" alt="Search Interactions 1" title="Search Interactions 1" style="border: 1px solid gray; zoom:80%;">
 
-3. When you click a conversation, the Insights to Logs window is displayed. Enter the word or phrase in the search field to prompt the system to search for it in the conversation.  
+3. When you select a conversation, the Insights to Logs window appears. Enter the word or phrase in the search field to prompt the system to search for it in the conversation.  
     <img src="../images/search-interactions-2.png" alt="Search Interactions 2" title="Search Interactions 2" style="border: 1px solid gray; zoom:80%;">
 
 4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
@@ -89,50 +89,51 @@ How it works:
 
 !!! Note
 
-    The search button works in two ways. By default, OpenSearch is enabled in all standard cloud deployments. However, if your deployment is on a Virtual Private Cloud (VPC) or a custom setup, OpenSearch must be deployed separately. When OpenSearch is available, you can use the full search functionality. If OpenSearch is not deployed, the search button still works, but it supports only ID-based searches.
+    The search button works in two ways. By default, OpenSearch is enabled in all standard cloud deployments. However, if your deployment is on a Virtual Private Cloud (VPC) or a custom setup, OpenSearch must be deployed separately. When OpenSearch is available, you can use the full search functionality. If OpenSearch is not deployed, the search works, but it supports only ID-based searches.
 
 ## Export/Download Recording, Transcripts, Latency Report, and Events
 
-The recording, transcripts, latency reports, and events can be downloaded to the local system from the dashboard.
+You can download the recording, transcripts, latency reports, and events to your local system from the dashboard.
 
 Steps to export conversation data/transcripts:
 
-1. Select the conversations and click **Export**.  
-    <img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the conversations and select **Export**.  
+    <img src="../images/export-button.png" alt="Export" title="Export" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.
+2. Select **Export Conversation Data**, **Export Transcripts**, or **Export Events** as required.
 
     or
 
-    Click **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report are downloaded in .csv format.  
+    Select **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report downloads in .csv format.  
     <img src="../images/download-options-interactions.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! Notes
 
-        * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
-        * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
-        * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
-        * A status message is displayed at the start of the export. On completion, the file is downloaded.
-        * The following [Call Control Parameters](../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters) must be added to view the Download Latency Report option.
+        * If you select Export Conversation Data, the system exports the metadata for all selected conversations.
+        * If you select Export Transcripts, the system exports transcript files using the standard naming convention for transcript exports. The files are compressed into a zip file named transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
+        * You can select up to 25 conversations for transcript export. If a selected conversation doesn't have a transcript or the system cannot retrieve it, the export includes a blank transcript for that conversation.
+        * The system displays a status message when the export starts. After the export completes, the file downloads automatically.
+        * Add the following [Call Control Parameters](../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters) to enable the Download Latency Report option
             `notifySttLatency = true`  
             `vadEnable = true`  
             `vadVendor = silero`
+        * When the permission is not granted or is disabled, users see inactive download buttons, and an access restriction message appears on hover. For details about permissions, see [Permissions](../../user-management/role-management.md#permissions).
 
-3. A status message is displayed at the start of the export. On completion, the file is downloaded.
+3. A status message appears at the start of the export. On completion, the file downloads.
 
 Steps to Preview and Download Events:
 
-1. Select the conversations, click **Export**, or click the Ellipsis (**⋮**) icon under Actions.  
+1. Select the conversations, select **Export**, or select the **⋮** icon under Actions.  
     <img src="../images/ellipsis-button-event.png" alt="Ellipsis Button" title="Ellipsis Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Preview Events**.  
+2. Select **Preview Events**.  
     <img src="../images/preview-events.png" alt="Preview Events" title="Preview Events" style="border: 1px solid gray; zoom:80%;">
 
-3. The preview is generated. Click **Download Events**.
+3. Select **Download Events**.
 
-    !!! Notes
+    !!! Notes "Download Events"
 
-        * The Download Events option will be unavailable for conversations over 30 days old.
+        * The Download Events option are unavailable for conversations over 30 days old.
         * Events are recorded periodically, so the exported document may not always reflect the entire event history. For a comprehensive record, it is recommended to download the events once the conversation has ended.
 
     <img src="../images/preview-events-page.png" alt="Preview Events Page" title="Preview Events Page" style="border: 1px solid gray; zoom:80%;">
@@ -140,19 +141,81 @@ Steps to Preview and Download Events:
 4. A confirmation is displayed when the event is exported.  
     <img src="../images/export-completed.png" alt="Export Completed" title="Export Completed" style="border: 1px solid gray; zoom:80%;">  
 
-    The following events and their timestamps are exported for chat and voice conversations.  
-        1. Routing Initiation  
-        2. Conversation Acceptance  
-        3. Conversation Rejection  
-        4. Conversation Transfer  
-        5. Transfer Failures  
-        6. Agent join  
-        7. Agent left  
-        8. Agent Consultation  
-        9. Skill Change  
-        10. Disposition Updates  
-        11. After-Call Work (ACW)  
-        12. Conversation Closure  
+    The system exports the following events and their timestamps for chat and voice conversations.  
+    * Routing Initiation  
+    * Conversation Acceptance  
+    * Conversation Rejection  
+    * Conversation Transfer  
+    * Transfer Failures  
+    * Agent join  
+    * Agent left  
+    * Agent Consultation  
+    * Skill Change  
+    * Disposition Updates  
+    * After-Call Work (ACW)  
+    * Conversation Closure  
+
+## Latency Metrics (Beta)
+
+The Latency Metrics feature measures how long each stage of a voice interaction takes Automatic Speech Recognition (ASR), bot processing, TTS, and the overall end-to-end response time. The following sections define each metric with formulas and examples.
+
+* **ASR Latency**: The time between when the user stops speaking and when the ASR provider returns the complete transcription.
+
+    Formula:
+    `ASR Latency = User stops speaking → ASR returns full transcript`
+
+    Example:
+
+    * User stops speaking: `10:00:05.000`
+    * ASR returns transcript: `10:00:05.450`
+    * ASR Latency = 450 ms
+
+* **Bot Latency**: The time between when the Voice Gateway (VG) sends the transcription to the platform and when VG receives the full response.
+
+    Formula:
+    `Bot Latency = VG sends transcript → VG receives bot response`
+
+    Example:
+
+    * Transcript sent: `10:00:05.450`
+    * Bot response received: `10:00:06.300`
+    * Bot Latency = 850 ms
+
+* **TTS Latency**: The time between when VG sends the bot’s response text to the TTS provider and when VG receives the first byte of synthesized audio (Time to First Byte).
+
+    Formula:
+    `TTS Latency = VG sends TTS request → VG receives first audio byte`
+
+    Notes:
+
+    * Captures only the first audio byte arrival time.
+    * Total TTS audio-generation time isn't shown.
+
+    Example:
+
+    * TTS request sent: `10:00:06.300`
+    * First audio byte received: `10:00:06.700`
+    * TTS Latency = 400 ms
+
+* **End-to-End Latency**: The total time between when the user stops speaking and when the first audio byte plays back to the user.
+
+    Formula:
+    `End-to-End Latency = User stops speaking → First audio byte heard`
+
+    Example:
+
+    * User stops speaking: `10:00:05.000`
+    * First audio byte heard: `10:00:06.700`
+    * End-to-End Latency = 1.7 seconds
+
+Summary Table
+
+| Metric                 | Measures Time Between                                | Represents                                | Example |
+|------------------------|--------------------------------------------------------|--------------------------------------------|---------|
+| ASR Latency            | User stops speaking → ASR full transcript             | Speed of speech recognition                | 450 ms  |
+| Bot Latency            | VG sends transcript → VG gets bot response            | Bot processing and platform delays         | 850 ms  |
+| TTS Latency            | VG sends TTS request → VG receives first audio byte   | TTS responsiveness (Time to First Byte)    | 400 ms  |
+| End-to-End Latency     | User stops speaking → user hears first audio byte     | Full round-trip delay                      | 1.7 s   |
 
 ## Edit Dispositions from the Interactions Tab
 
@@ -184,29 +247,34 @@ Steps to edit dispositions:
 
 ## Filters
 
-To avoid repeatedly filtering your choices, you can create and save multiple filters on the Interactions tab.
+To avoid filtering your choices repeatedly, you can create and save multiple filters on the Interactions tab.
 
 ### Create Filter
 
-1. Click the **Filter** button.  
+1. Select the **Filter** icon.  
     <img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **New Filter**.  
-    <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:70%;">
+2. Select **New Filter**.  
 
 3. Select the IDs, Queues, Channels, Agents, Status, CSAT, and Custom Tags.  
     <img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:70%;">
 
-    Select from the below available options:
-    1. Clear – Clears the selection.
-    2. Save & Apply – Saves the filter, and it appears when selected.
-    3. Apply – Applied for one instance and not saved.
+    Select from the available options:  
+    * Clear - Clears the selection.  
+    * Save & Apply - Saves the filter, and it appears when selected.  
+    * Apply - Applied for one instance and not saved.
 
-4. Click **Save & Apply**.
-5. On the pop-up window, enter a name for the filter and click **Save & Apply**.  
-    <img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:70%;">
+4. Select **Save & Apply**.
+5. On the pop-up window, enter a name for the filter and select **Save & Apply**. 
 
-A confirmation message is displayed, and the filter is created.
+A confirmation message appears, and creates the filter.
+
+#### SmartStatus
+
+SmartStatus is a fine-grained, business-relevant version of the conversation status. 
+
+SmartStatus detects events such as call handling, messaging activity, inactivity, or disconnections and updates the conversation’s status accordingly.  
+<img src="../images/smart-status.png" alt="Smart Status" title="Smart Status" style="border: 1px solid gray; zoom:70%;">
 
 #### Filter for Custom Tags [Beta]
 
@@ -214,87 +282,80 @@ You can filter conversations using custom tags.
 
 Steps to enable the filter:
 
-1. Click the Filter for Custom Tags (BETA) check box to enable the filters.
-The following Custom Tag fields are displayed:
+1. Select the Filter for Custom Tags (Beta) check box to enable the filters.
+The following Custom Tag fields appear:
     1. Tag name
     2. Predicate drop-down (CONTAINS and DOES NOT CONTAIN)
-    3. AND button to create a new clause
+    3. AND to create a new clause
     <img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
 
-2. Select the values for the custom tag fields and click **AND** to create a new clause.
+2. Select the values for the custom tag fields and select **AND** to create a new clause.
 
-3. Select the values for the second clause and click Apply.  
+3. Select the values for the second clause and select Apply.  
 <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
 
-A confirmation is displayed.
+A confirmation appears.
 
-Clicking the (-) button deletes a clause.
-
-<img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 3" style="border: 1px solid gray; zoom:80%;">
+Selecting (-) deletes a clause.
 
 !!! note
 
     You can add up to 5 clauses.
 
-The interactions that fulfill the criteria selected in the clauses are displayed.
+The interactions that fulfill the criteria selected in the clauses appear.
 
 ### Edit Filter
 
 Steps to edit a filter:
 
-1. Click the **Filters** tab. The Saved Filter name appears.  
-<img src="../images/edit-filters-1.png" alt="Edit Filters 1" title="Edit Filters 1" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Filters** tab. The Saved Filter name appears.  
 
-2. Click the **Edit** button.  
-<img src="../images/edit-filters-2.png" alt="Edit Filters 2" title="Edit Filters 2" style="border: 1px solid gray; zoom:80%;">
+2. Select **Edit**.  
 
-3. Make the necessary changes and click **Save & Apply**.
+3. Make the necessary changes and select **Save & Apply**.
 
-A confirmation message is displayed, and the filter is updated.
+    A confirmation message appears, and updates the filter.
 
 ### Copy Filter
 
-1. Click the **Duplicate** button.  
-<img src="../images/copy-filters-1.png" alt="Copy Filters 1" title="Copy Filters 1" style="border: 1px solid gray; zoom:80%;">
+1. Select **Duplicate**.
 
-2. On the **Rename Filter** window, enter a name for the filter and click **Save**.  
-<img src="../images/copy-filters-2.png" alt="Copy Filters 2" title="Copy Filters 2" style="border: 1px solid gray; zoom:80%;">
+2. On the **Rename Filter** window, enter a name for the filter and select **Save**.
 
-A confirmation is displayed and a copy of the filter is created.
+    A confirmation appears and creates a copy of the filter.
 
 ### Mark as Default
 
-1. Click the **Mark as Default** button.  
-<img src="../images/mark-as-default-1.png" alt="Mark as Default 1" title="Mark as Default 1" style="border: 1px solid gray; zoom:80%;">
-
-2. A confirmation message is displayed and the filter is marked as default.  
-<img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
+1. Select **Mark as Default**. A confirmation message appears and marks the filter as default.  
 
 ### Delete Filter
 
-1. Click the **Delete** button.  
-<img src="../images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:80%;">
+1. Select **Delete**.
 
+2. A Delete Filter message appears. Select **Delete**.
 
-2. A Delete Filter message appears. Click **Delete**.
-
-A confirmation message is displayed and the filter is deleted.
+    A confirmation message appears and deletes the filter.
 
 ## Insights to Logs
 
 The Insights to Logs panel provides details of the conversation between the contact and the agent.
 
-Click the interaction to view the Insights to Logs panel. The following tabs are displayed:
+Select the interaction to view the Insights to Logs panel. The following tabs appear:
 
-1. TRANSCRIPT – (formerly CHAT HISTORY)  
-2. DETAILS  
-3. USER  
-4. IDENTIFIERS
+* Transcript-(formerly Chat History)  
+* Details  
+* User  
+* Identifiers
 
-Icons beside the Insights to Logs header show the Direction (inbound or outbound), Language, and Channel.  
+Icons beside the Insights to Logs header show the following details:
+
+* Direction (inbound or outbound)
+* Language
+* Sentiment (Positive, Neutral, etc.)
+* Channel (Voice, Chat, or Email)  
 <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
-**TRANSCRIPT**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
+**Transcript**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
 <img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
 
 The transcripts tab also shows the call transfer stages:
@@ -307,50 +368,56 @@ The transcripts tab also shows the call transfer stages:
 
 !!! Note
 
-    * When customers are placed on hold (either themselves or by an agent), the system will not display transcripts of any customer speech during the hold period. 
+    * When customers are placed on hold (either themselves or by an agent), the system doesn't display transcripts of any customer speech during the hold period. 
 
     * To redact Personally Identifiable Information (PII) in the transcript, select the option 'De-identify PII data while presenting it to the user' from the entity node. [Learn more](../../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md#component-properties).
 
-**DETAILS**: This tab shows the following details:
+For email conversations, the Transcript tab displays the following:
 
-**Start**: Conversation start time  
-**End**: Conversation end time  
-**Agents**: Name of the agent  
-**Consulting agents**: Name of the consulting agent  
-**Joined Users**: Names of users who joined this conversation  
-**Queues**: The queues where the call was handled  
-**Skills**: The assigned skills  
-**Status**: Conversation status  
-**Mode**: Mode of the conversation  
-**CSAT**: CSAT survey score  
-**Disposition**: Dispositions assigned  
-**Notes**: Notes added to the conversation (view only)  
-**Snooze Count**: Number of times the conversation was snoozed  
-**Snooze Duration**: Duration for which the conversation was snoozed  
-**Session-level tags**: Session-level tags assigned to the conversation.  
+* The system displays the Subject at the beginning of the transcript.  
+* Each email entry includes a View Details pop-up.  
+* The pop-up displays the From, To, CC, and BCC fields.  
+    <img src="../images/email-transcript.png" alt="Email Transcript" title="Email Transcript" style="border: 1px solid gray; zoom:70%;">
+
+**Details**: This tab shows the following details:
+
+`Start`: Conversation start time  
+`End`: Conversation end time  
+`Agents`: Name of the agent  
+`Consulting agents`: Name of the consulting agent  
+`Joined Users`: Names of users who joined this conversation  
+`Queues`: The queues that handled the call  
+`Status`: Conversation status(smartStatus)  
+`Mode`: Mode of the conversation  
+`CSAT`: CSAT survey score  
+`Disposition`: Dispositions assigned  
+`Notes`: Notes added to the conversation (view only)  
+`Snooze Count`: Number of times the conversation was snoozed  
+`Snooze Duration`: Duration for which the conversation was snoozed  
+`Session-level tags`: Session-level tags assigned to the conversation.  
 <img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
-**USER**: This tab shows the following details:
+**User**: This tab shows the following details:
 
-**Customer Phone**: Customer’s phone number.  
-**Customer Name**: Customer’s name.  
-**Customer Email**: Customer’s email address.  
-**Channel User ID**: The user ID of the conversation channel.  
-**User ID**: Agent’s user ID.  
-**User-level tags**: User-level tags assigned to the conversation.  
+`Customer Phone`: Customer’s phone number.  
+`Customer Name`: Customer’s name.  
+`Customer Email`: Customer’s email address.  
+`Channel User ID`: The user ID of the conversation channel.  
+`User ID`: Agent’s user ID.  
+`User-level tags`: User-level tags assigned to the conversation.  
 <img src="../images/user-insights-to-logs.png" alt="User Tab" title="User Tab" style="border: 1px solid gray; zoom:60%;">
 
-**IDENTIFIERS**: This tab shows the following details:
+**Identifiers**: This tab shows the following details:
 
-**Call ID**: The call ID (for voice calls)  
-**Session ID**: The session ID.  
-**Channel User ID**: The user ID of the conversation channel.  
-**Call Conversation ID**: The conversation ID (for voice calls)  
-**Agent Conversation ID**: The agent conversation ID.  
-**User ID**: The agent’s user ID.  
-**Campaign Instance ID**: The campaign instance ID (for campaigns).
+`Call ID`: The call ID (for voice calls)  
+`Session ID`: The session ID.  
+`Channel User ID`: The user ID of the conversation channel.  
+`Call Conversation ID`: The conversation ID (for voice calls)  
+`Agent Conversation ID`: The agent conversation ID.  
+`User ID`: The agent’s user ID.  
+`Campaign Instance ID`: The campaign instance ID (for campaigns).
 
-Click the **Copy All** button to copy all the identifier details (from the details tab) like:
+Select **Copy All** to copy all the identifier details (from the details tab) like:
 
 * Start Time
 * End time
@@ -365,28 +432,23 @@ Click the **Copy All** button to copy all the identifier details (from the detai
 
 ### Call Recording
 
-The call recording feature available under CHAT HISTORY can play past conversations between a contact and an agent and is recorded by the system. It is helpful for conversational quality analysis and auditing purposes.  The recorded audio stream is available under CHAT HISTORY in the Insights to Logs panel.
+The Call Recording feature under Chat History plays past conversations between a contact and an agent. The system records these conversations automatically. It's helpful for conversational quality analysis and auditing purposes. The recorded audio stream is available under Chat History in the Insights to Logs panel.
 
-The following recording settings can be configured:
+Configure the following recording settings:
 
-* Play Audio: Click the Play icon to play the waveform of the audio.
-    <img src="../images/play-audio.png" alt="Play Audio" title="Play Audio" style="border: 1px solid gray; zoom:80%;">
+* Play Audio: Select the Play icon to play the waveform of the audio.
 
-* Increase playback speed: To change the playback speed, click the speed selection drop-down, and select the speed. The values ranging from the lowest to highest speeds are as follows:  
+* Increase playback speed: To change the playback speed, select the speed selection drop-down, and select the speed. The values ranging from the lowest to highest speeds are as follows:  
     <img src="../images/increase-playback-speed.png" alt="Increase Playback Speed" title="Increase Playback Speed" style="border: 1px solid gray; zoom:80%;">
 
-* Volume: The volume slider can be adjusted to increase or decrease the volume.  
-    <img src="../images/volume-slider.png" alt="Volume Slider" title="Volume Slider" style="border: 1px solid gray; zoom:80%;">
+* Volume: Adjust the volume slider to increase or decrease the volume.  
 
-* Mute: Click the Mute button to mute the audio.  
-    <img src="../images/mute-button.png" alt="Mute Button" title="Mute Button" style="border: 1px solid gray; zoom:80%;">
+* Mute: Select Mute to mute the audio.  
 
-* Rewind Audio: To rewind the audio by 10 seconds, click the Backward button.
-* Forward Audio: To fast forward the audio by 10 seconds, click the Forward button.  
-    <img src="../images/forward-audio.png" alt="Forward Audio" title="Forward Audio" style="border: 1px solid gray; zoom:80%;">
+* Rewind Audio: To rewind the audio by 10 seconds, select the Backward icon.
+* Forward Audio: To fast forward the audio by 10 seconds, select the Forward icon.
 
-* Download: Click the Download button to download the transcript.  
-    <img src="../images/download.png" alt="Download" title="Download" style="border: 1px solid gray; zoom:80%;">  
+* Download: Select the Download icon to download the transcript. 
 
     You can choose either as a single file or separate files.
 
@@ -394,26 +456,22 @@ The following recording settings can be configured:
 
     * The retention period for voice call recordings can be configured from [Data Retention Period](../../app-settings/advanced-settings/system-settings.md#data-retention-period)
 
-    * Once the configured retention period ends, the recordings are permanently deleted.  
+    * When the configured retention period ends, the recordings are permanently deleted.  
 
-    * Customers who opt in will receive an email 7 days before deletion and a confirmation email after deletion.  
+    * Customers who opt in receive an email 7 days before deletion and a confirmation email after deletion.  
 
-    * After deletion, the following message will be displayed to users: “Recording not available. It may have been deleted as per your data retention policy.”  
+    * After deletion, the following message appears to users: “Recording not available. It may have been deleted as per your data retention policy.”  
     
     * All actions—including retention configuration and recording deletions—are logged and accessible in the Admin Console.
 
-* **Download as a single file**: If you choose this option, all the files in the conversation will be downloaded as a single file.  
+* **Download as a single file**: If you choose this option, all the files in the conversation are downloaded as a single file.
 
-    <img src="../images/single-recording.png" alt="Download as single file" title="Download as single file" style="border: 1px solid gray; zoom:80%;">  
-
-* **Download as separate files**: If you choose this option, you can select the files and download them.  
-
-    <img src="../images/multiple-recording.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
+* **Download as separate files**: If you choose this option, you can select the files and download them. 
 
 The file format of the downloaded file is .flac across all operating systems, including Windows, macOS, and Linux.  
 <img src="../images/file-format.png" alt="Download as separate files" title="Download as separate files" style="border: 1px solid gray; zoom:80%;">
 
-* Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio is displayed before the audio plays.  
+* Duration: The increment and the countdown counters appear when the audio plays. The total duration of the audio appears before the audio plays.  
     <img src="../images/duration.png" alt="Duration" title="Duration" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -422,80 +480,78 @@ The file format of the downloaded file is .flac across all operating systems, in
     
         * If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
 
-A message is displayed to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../app-settings/advanced-settings/system-settings.md#call-recording-control).  
+A message appears to the user on the Transcript tab when Call Recording Control is disabled in [Agent Settings](../../app-settings/advanced-settings/system-settings.md#call-recording-control).  
 <img src="../images/recording-disabled.png" alt="No Recording Available" title="No Recording Available" style="border: 1px solid gray; zoom:80%;">  
 
 List of recording status and messages:
 
 | **State**               | **Message** |
 |-------------------------|-------------|
-| **failed**              | Media generation failed due to a technical issue. Please contact your administrator. |
-| **media_unavailable**   | No audio recording found on the server. Please contact your administrator. |
-| **call_in_progress**    | Media unavailable while the call is in progress. Please recheck once the call has ended. |
-| **media_in_progress**   | Media generation is in progress. Please wait for a few minutes. |
-| **partial_download_failed** | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue. Please contact your administrator.” appears. |
-| **partial_upload_failed**   | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
-| **partial_failed**      | Unable to fetch the recording. Please click the button below to retry. <br>**Note**: Users can click the "Fetch Again" button up to three times. If it still fails, the message “Media generation failed due to some technical issue” appears. |
-| **fetching_in_progress** | Generating your call recording... This may take a few minutes. Please wait. |
-| **initial_fetch_failed** | We couldn’t load the call recording. Please try again. |
-| **retry_failed**        | Still unable to fetch the recording. Please try again after 15 minutes. <br>**Note**: Do not restrict the number of times users can click the Retry button. Also, do not restrict job execution after 24 hours based on the number of retries. |
-| **24hr_retry_failed**   | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
+| `failed`              | Media generation failed due to a technical issue. Please contact your administrator. |
+| `media_unavailable`   | No audio recording found on the server. Please contact your administrator. |
+| `call_in_progress`    | Media unavailable while the call is in progress. Please recheck once the call has ended. |
+| `media_in_progress`   | Media generation is in progress. Please wait for a few minutes. |
+| `partial_download_failed` | Unable to fetch the recording. Please click the button below to retry.  |
+| `partial_upload_failed`   | Unable to fetch the recording. Please click the button below to retry.  |
+| `partial_failed`      | Unable to fetch the recording. Please click the button below to retry.  |
+| `fetching_in_progress` | Generating your call recording... This may take a few minutes. Please wait. |
+| `initial_fetch_failed` | We couldn’t load the call recording. Please try again. |
+| `retry_failed`        | Still unable to fetch the recording. Please try again after 15 minutes.  |
+| `24hr_retry_failed`  | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
 
 ### Troubleshooting
 
-#### Why can’t I see my call recording?
+Why can’t I see my call recording?
 
-**Overview**
-
-After every voice call, the system automatically tries to fetch the call recording from the recording server. In most cases, the recording becomes available within 10 minutes.
+After every voice call, the system automatically tries to fetch the call recording from the recording server. Usually, the recording becomes available within 10 minutes.
 
 However, sometimes there may be a short delay or a temporary issue that prevents the recording from appearing immediately in your dashboard.
 
-**What You Might See in the widget**
+What You Might See in the widget
 
-Below are the different status messages you may notice and what they mean:
+The different status messages you may notice and what they mean:
 
 | **Status message**                                                                                                      | **What it means**                                                                                                            | **What you can do**                                                                                                            |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is still processing the call audio.                                                                     | No action needed — please wait for 10 minutes and refresh the page.                                                            |
-| **We couldn’t load the call recording. Please try again.**                                                              | There was a temporary issue fetching the recording.                                                                          | Click **Retry** to try fetching the recording again.                                                                           |
-| **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but still couldn’t get the recording.                                                                     | Wait for about 15 minutes and click **Retry** again.                                                                           |
-| **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. Our team reviews the logs and attempts to recover the recording manually. |
+| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is processing the call audio.                                                                     | No action needed - wait for 10 minutes and refresh the page.                                                            |
+| **We couldn’t load the call recording. Please try again.**                                                              | There was a temporary issue fetching the recording.                                                                          | Select **Retry** to try fetching the recording again.                                                                           |
+| **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but  couldn’t get the recording.                                                                     | Wait for about 15 minutes and select **Retry** again.                                                                           |
+| **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. The team reviews the logs and attempts to recover the recording manually. |
 
-**Behind the Scenes**
+Behind the Scenes
 
-The platform automatically attempts to fetch the call recording 10 minutes after the call is completed.  
+The platform automatically attempts to fetch the call recording 10 minutes after completing the call.  
 
-* If the recording is available, it is made accessible to the user.  
-* If the recording retrieval fails, users can manually retry fetching it. Also, the system will automatically retry fetching the recording after 24 hours.  
+* If the recording is available, it's available to the user.  
+* If the recording retrieval fails, users can manually retry fetching it. Also, the system automatically retries fetching the recording after 24 hours.  
 
-Even without a manual retry, background jobs will continue to make periodic attempts to retrieve the recording.
+Even without a manual retry, background jobs continue to make periodic attempts to retrieve the recording.
 
-**Common Reasons for Delay or Failure**
+Common Reasons for Delay or Failure
 
 * Temporary network or connectivity issues between Kore’s system and the recording server.  
 
 * High server load delaying recording generation.  
 
-* Recording file not yet finalized or still being processed by the recording server.  
+* The system hasn't finalized the recording file, or the recording server is processing it.  
 
-* Rarely, a system error or missing call metadata prevents proper retrieval.
+* Sometimes, a system error or missing call metadata prevents proper retrieval.
 
-**Tips for Users**
+Tips for Users
 
 * Wait at least **10 minutes** after the call ends before expecting the recording to appear.  
 
-* Use the **Retry** button if the recording doesn’t show up.  
+* Use **Retry** if the recording doesn’t show up.  
 
 * If the issue persists beyond 24 hours, contact your administrator or raise a support ticket with details such as **Call ID**, **Timestamp**, and **Caller Number**.  
 
-**Need more Help?**
+Need more Help?
 
-If your call recording still isn’t available after following the steps above, contact your system administrator or Kore Support with your call details. Our team will investigate and share updates once the issue is resolved.
+If your call recording isn’t available after following the steps, [contact Support](https://support.kore.ai) or your system Administrator with your call details.
 
 ## Diagnostics
 
-Diagnostics is located at the top right corner of the Insights to Logs.
+Access Diagnostics at the top-right corner of Insights to Logs.
 
 !!! Note
 
@@ -503,7 +559,7 @@ Diagnostics is located at the top right corner of the Insights to Logs.
 
 <img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">  
 
-Clicking Diagnostics shows the following tabs:
+Selecting Diagnostics shows the following tabs:
 
 ### Flow
 

@@ -1,10 +1,10 @@
 # Audit Logs - Track Account-level User Actions and Events
 
-Agent Platform’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+AI for Process' comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias. 
 
-Each log entry includes the following to provide actionable insights on account and tool-level activities:
+Each log entry includes the following to provide actionable insights on account and workflow-level activities:
 
 - Event name and category.
 - The user who performed the action.
@@ -22,7 +22,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
-<li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Tool ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
+<li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Workflow ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
 ## Account-Level Audit Logs
 
@@ -387,11 +387,11 @@ Additionally, you can set **custom filters** based on a specific category, event
 
   <table>
   <tr>
-     <td colspan="3" align="center"><strong>Category</strong>: Tools
+     <td colspan="3" align="center"><strong>Category</strong>: Workflows
    </td>
    </tr>
   <tr>
-   <td colspan="3"><b>Metadata</b>: <strong><i>Tool ID</i></strong> and <strong><i>Tool Name</i></strong> are displayed for all the category events below.
+   <td colspan="3"><b>Metadata</b>: <strong><i>Workflow ID</i></strong> and <strong><i>Workflow Name</i></strong> are displayed for all the category events below.
    </td>
   </tr>
      <tr>
@@ -403,18 +403,18 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Tool created
+   <td>Workflow created
    </td>
-   <td>Tracks the creation of a tool in the account.
+   <td>Tracks the creation of a workflow in the account.
    </td>
    <td align="center">
    -
    </td>
   </tr>
   <tr>
-   <td>Tool deleted
+   <td>Workflow deleted
    </td>
-   <td>Tracks the deletion of a tool in the account.
+   <td>Tracks the deletion of a workflow in the account.
    </td>
    <td>
 <ul>
@@ -431,7 +431,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   </table>
 <table>
   <tr>
-     <td colspan="3" align="center"><strong>Category</strong>: Tools Flow Management: Integration Node</td>
+     <td colspan="3" align="center"><strong>Category</strong>: Workflows Flow Management: Integration Node</td>
    </tr>
   <tr>
    <td colspan="3"><b>Metadata</b>: <b>User ID</b>, <b>IP Address</b>, <b>Agent ID</b>, <b>Node name</b>, <b>Node ID</b>, and <b>Node Type</b> are displayed for all the category events below.
@@ -798,11 +798,11 @@ Additionally, you can set **custom filters** based on a specific category, event
 </table>
 
 
-## Tool-Level Audit Logs
+## Workflow-Level Audit Logs
 
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
-<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Tool ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
+<p>The <b>User ID</b>, <b>IP Address</b>, and <b>Workflow ID</b> are shown for audit log entries across all modules, in addition to module and category-specific metadata listed in the table below.</p></div>
 
 <table>
   <tr>
@@ -820,7 +820,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Role Changed
    </td>
-   <td>Tracks the change of a tool role for an account user by a user.
+   <td>Tracks the change of a workflow role for an account user by a user.
    </td>
    <td rowspan="3" align="center">-
    </td>
@@ -828,23 +828,23 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Invited users
    </td>
-   <td>Tracks the invitation of one or more users to the account at the tool level.
+   <td>Tracks the invitation of one or more users to the account at the workflow level.
    </td>
   </tr>
   <tr>
    <td>Removed Users
    </td>
-   <td>Tracks the removal of one or more users from the account at the tool level.
+   <td>Tracks the removal of one or more users from the account at the workflow level.
    </td>
   </tr>
   </table>
   <table>
   <tr>
-   <td colspan="4" align="center"><strong>Category</strong>: Tool Management
+   <td colspan="4" align="center"><strong>Category</strong>: Workflow Management
    </td>
   </tr>
   <tr>
-   <td colspan="4" ><strong>Tool version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
+   <td colspan="4" ><strong>workflow version</strong>,<strong> API mode</strong>,<strong> sync/async</strong>, and<strong> URL </strong>are displayed for all the category events below.
 <p style="text-align: center">
 <strong> </strong>
    </td>
@@ -858,14 +858,14 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   <tr>
-   <td>Tool Deployed</td>
-   <td>Tracks the tool deployments in the account.</td>
+   <td>Workflow Deployed</td>
+   <td>Tracks the workflow deployments in the account.</td>
    <td rowspan="2" align="center">-</td>
   </tr>
   <tr>
-   <td>Tool Undeployed
+   <td>Workflow Undeployed
    </td>
-   <td>Tracks the tool undeployments in the account.
+   <td>Tracks the workflow undeployments in the account.
    </td>
   </tr>
   <tr>
@@ -883,7 +883,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Created
    </td>
-   <td>Tracks the tool version creation.
+   <td>Tracks the workflow version creation.
    </td>
    <td rowspan="8" colspan="2" align="center">-
    </td>
@@ -891,7 +891,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   <tr>
    <td>Version Deleted
    </td>
-   <td>Tracks the tool version deletion.
+   <td>Tracks the workflow version deletion.
    </td>
   </tr>
   <tr>
@@ -899,37 +899,37 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p>
  
    </td>
-   <td>Tracks the tool API Key creation.
+   <td>Tracks the workflow API Key creation.
    </td>
   </tr>
   <tr>
    <td>API Key deleted
    </td>
-   <td>Tracks the tool API Key deletion.
+   <td>Tracks the workflow API Key deletion.
    </td>
   </tr>
   <tr>
-   <td>Tool description updated
+   <td>workflow description updated
 <p>
  
    </td>
-   <td>Tracks the tool description update done.
+   <td>Tracks the workflow description update done.
    </td>
   </tr>
   <tr>
-   <td>Tool name updated
+   <td>workflow name updated
 <p>
  
    </td>
-   <td>Tracks the tool name update done.
+   <td>Tracks the workflow name update done.
    </td>
   </tr>
   <tr>
-   <td>Tool exported
+   <td>workflow exported
 <p>
  
    </td>
-   <td>Tracks the tool export done.
+   <td>Tracks the workflow export done.
    </td>
   </tr>
   <tr>
@@ -1054,13 +1054,14 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 To access and view audit logs, follow the steps below:
 
-1. [Navigate](../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** console.
-2. Click **Monitoring** > **Audit Logs** on the left navigation menu.
-<img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
+2. Click **Monitoring** > **Audit Logs** on the left menu.
+   
 ## Dashboard Information
 
-The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your Agent Platform account:
+The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your AI for Process account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.
@@ -1079,13 +1080,12 @@ This customization helps you focus on relevant audit logs, making it easier to t
 
 ### Steps to Add a Custom Filter
 
-1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console. 
-2. Navigate to **Monitoring** > **Audit Logs**  on the left menu.
-3. Click the **Filter** icon.
-4. Click **+Add Filter**.
+1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to **Audit Logs**.
+2. Click the **Filter** icon.
+3. Click **+Add Filter**.
 <img src="../images/add-filter-audit-logs.png" alt="add filter" title="audit logs" style="border: 1px solid gray; zoom:75%;">
 
-5. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
+4. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
 <img src="../images/select-filter-from-dropdown.png" alt="select filter" title="select filter" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -1100,7 +1100,7 @@ To view the logs for all the events except role creation, you must set the filte
 
 <img src="../images/view-all-logs.png" alt="view all logs" title="view all logs" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="6"><li>Click <b>Apply</b>.</li></ol>
+<ol start="5"><li>Click <b>Apply</b>.</li></ol>
 
 All the log entries relevant to the applied filter(s) are displayed, as shown below.
 <img src="../images/log-entries.png" alt="log entries" title="log entries" style="border: 1px solid gray; zoom:75%;">
@@ -1124,7 +1124,7 @@ When adding multiple filters to refine your audit log queries, you can use the *
 <p class="admonition-title">Note</p>
 <p>Consistency in operator usage is required for each filtering step. This means you need to use either the AND operator or the OR operator throughout all criteria.
 
-Both operators cannot be used together.</p></div>
+Both operators can't be used together.</p></div>
 
 <img src="../images/operators-mutually-exclusive.png" alt="mutually exclusive operators" title="mutually exclusive operators" style="border: 1px solid gray; zoom:75%;">
 
@@ -1206,9 +1206,9 @@ The **Export** feature helps prepare and export [account-level audit logs](./aud
 Exporting audit logs offers the following benefits:
 
 * **Detailed Analysis**: CSV format allows you to perform in-depth analysis of log data to identify patterns or anomalies over time, while supporting transparency and accountability.
-* **Easy Sharing and Reporting**: CSV files of audit logs are easy to share with other stakeholders or integrate them into reporting tools.
+* **Easy Sharing and Reporting**: CSV files of audit logs are easy to share with other stakeholders or integrate them into reporting workflows.
 * **Compliance and Record-Keeping**: Having a documented trail in a standardized format is useful for compliance and regulatory audits, ensuring data is readily available when needed.
-* **Automation and Integration**: CSVs can be imported into other tools or systems, enabling automation and integration into workflows for continuous monitoring and alerts.
+* **Automation and Integration**: CSVs can be imported into other workflows or systems, enabling automation and integration into workflows for continuous monitoring and alerts.
 
 To export audit logs, follow the steps below:
 
@@ -1216,23 +1216,22 @@ To export audit logs, follow the steps below:
 2. Click the **Export** icon next to the **Filter By** icon.
 <img src="../images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
 
-The following message is displayed once the file is downloaded. The file can be found in the configured location in your system.
-<img src="../images/success-message-export-audit-logs.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
+A success message is displayed once the file is downloaded. The file can be found in the configured location in your system.
 
 The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file is shown below.
 
 <img src="../images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
 
-Agent Platform’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
+AI for Process’ Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
 You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
 
 ## Related Information
 
-* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../overview.md){:target="_blank"}- Learn more about other AI for Process admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+* [Workflow Flow Change Logs](../../workflows/workflow-builder/workflow-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a workflow.
 
 
 

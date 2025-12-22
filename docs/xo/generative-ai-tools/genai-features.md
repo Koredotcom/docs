@@ -23,7 +23,7 @@ Steps to enable the feature:
 	
 ### Product Filter
 
-Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent, Contact Center). The users can easily add/remove this filter as needed.  
+Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This shows the relevant feature options for that product (for example, Automation, Search, Agent, Contact Center). The users can easily add/remove this filter as needed.  
 <img src="../images/filter-and-search.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
@@ -59,9 +59,9 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 * **Instructions or Context**: Add feature/use case-specific instructions or context to guide the model.
 * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
 * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
-* **Number of Previous User Inputs**: Indicates how many previous user messages should be sent to the model as context for rephrasing the response sent through the respective node. For example, 5 means that the previous 5 responses are sent as context.
-* **Additional Instructions**: Add specific instructions on how prompts should be rephrased. You can create a persona, ask it to rephrase in a particular tone, etc.
-* **Similarity Threshold**: The Similarity Threshold is applicable for the Answer from Docs feature. This threshold refers to the similarity between the user utterance and the document chunks. The Platform shortlists all chunks that are above the threshold and sends these chunks to the LLMs to auto-generate the responses. Define a suitable threshold that works best for your use case. Setting a higher threshold limits the number of chunks and may not generate any result. Setting a lower threshold might qualify too many chunks and might dilute the response.
+* **Number of Previous User Inputs**: Indicates how many previous user messages you send to the model as context for rephrasing the response sent through the respective node. For example, 5 means that the previous 5 responses are sent as context.
+* **Additional Instructions**: Add specific instructions on how the system rephrases prompts. You can create a persona, ask it to rephrase in a particular tone, etc.
+* **Similarity Threshold**: The Similarity Threshold is applicable for the Answer from Docs feature. This threshold refers to the similarity between the user utterance and the document chunks. The Platform shortlists all chunks that are above the threshold and sends these chunks to the LLMs to auto generate the responses. Define a suitable threshold that works best for your use case. Setting a higher threshold limits the number of chunks and may not generate any result. Setting a lower threshold might qualify too many chunks and might dilute the response.
 
 		
 ### Change Settings for a Custom Model
@@ -115,8 +115,8 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual app responses.
 * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
 * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
-* **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
-* **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
+* **Few-shot ML Model**: Uses the Platform hosted embeddings for intent identification during run time based on semantic similarity.
+* **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple integrations of the dialog.
 * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
 * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the an AI Agent or human agent. This API leverages an open-source LLM to summarize conversations.
 * **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
@@ -171,8 +171,10 @@ Learn more about [Contact Center AI - GenAI Features](genai-features-contactcent
 
 ## Quality AI - GenAI Features
 
-
-- **Agent Empathy Identification**: Identify Agent empathy instances where customers have expressed negative sentiment throught Quality AI using LLMs.
+* **Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection**: Extract topics and intents from agent conversations detect resolution of agent conversations to discover levers based on customer sentiment, Handle Time and Resolution and quickly surface trends and anomalies based on these outcomes.
+- **Agent Empathy Identification**: Identify Agent empathy instances where customers have expressed negative sentiment through Quality AI using LLMs.
+- **By Hold Adherence**: This feature detects when an agent places a user on hold and resumes the conversation.
+- **By Transfer Adherence**: This feature identifies whether the agent informs the customer about the transfer.
 - **By Value Adherence validation for Quality AI**: Validates data adherence by comparing extracted metric values against reference data using multilingual LLM analysis. Performs precise value matching and returns binary adherence scores for each metric.
 - **By Value metric extraction for Quality AI**: Extract by value metric from user/agent/bot messages through Quality AI using LLMs.  
 - **Churn & Escalation Identification**: Identify customer churn risk and escalation intents across agent conversations through Quality AI using LLMs.
@@ -180,7 +182,8 @@ Learn more about [Contact Center AI - GenAI Features](genai-features-contactcent
 - **Crutch Word Usage Detection**: Use LLMs to detect agent crutch word usage in customer conversations through Quality AI.  
 - **Default Script Adherence**: Determine agent adherence to default script steps across greeting, branding, privacy policy, customer verification, hold etiquette and call closing through Quality AI's conversation Intelligence dashboard using LLMs.
 - **GenAI-based agent answer adherence and customer trigger detection**:  Use LLMs to check for agent adherence and customer trigger detection without configuring utterances and training.
-- **Generating Similar QM Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity. 
+- **Generating Similar QM Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity.
+- **Post Conversation Sentiment Analysis**: Generate post-interaction sentiment and emotion moment insights for agent conversations from Quality AI using LLMs. 
 - **Sentiment Analysis**: Identify customer sentiment across agent conversations through Quality AI using LLMs. 
 - **Topic Modelling**: Extract popular Topics and Intents that customers discuss across agent conversations through Quality AI using LLMs.
 

@@ -12,7 +12,6 @@ The steps to add an external model using API integration are given below:
 2. Click **Add a model**. The **Add an external model** dialog is displayed.
 
 3. Select the **Custom integration** option to connect models via API integration, and click **Next**.
-<img src="../images/add-external-model-api-integration1.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:60%;">
 
 4. On the **Custom API integration** dialog, enter the **Connection name** and **Model endpoint URL**.  
 <img src="../images/custom-api-integration-general-details.png" alt="Custom API Integration General Details" title="Custom API Integration General Details" style="border: 1px solid gray; zoom:80%;">
@@ -21,7 +20,6 @@ The steps to add an external model using API integration are given below:
 <img src="../images/set-auth-profile-parameter.png" alt="set auth profile" title="set auth profile" style="border: 1px solid gray; zoom:80%;">
 
 6. In the **Headers** section, specify the headers such as **Key** and **Value** that need to be sent along with the request payload. 
-<img src="../images/custom-api-integration-headers.png" alt="Custom API Integration Headers" title="Custom API Integration Headers" style="border: 1px solid gray; zoom:80%;">
 
 7. In the Model configurations section, select one of the following options to define your model’s API behavior:
 
@@ -79,7 +77,7 @@ This prevents customers from utilizing these models for advanced scenarios, such
 This feature removes that limitation by:
 
 * Allowing users to provide complete request/response definitions through the UI or OpenAPI specifications. 
-* Supporting commonly known request/response schemas (e.g., OpenAI Completions, Anthropic Messages).
+* Supporting commonly known request/response schemas (e.g., OpenAI Completions, Anthropic Messages, Google Gemini).
 
 With the Default option, you must manually define the request payload variables, including the model’s static and dynamic body parameters, and generate the response for the configured LLM. In this section, however, you can enable the required features and choose an LLM provider to automatically map the request and response schemas to their standard API format.
 
@@ -92,19 +90,19 @@ With the Default option, you must manually define the request payload variables,
 
   * **Structured response**: Specifies that the model supports the generation of a structured response. Enabling this flag allows the model to be used for generating a structured output within [Prompts](../../prompts/using-prompt-studio.md/#add-prompts){:target="_blank"} and [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
   * **Data generation**: Specifies that the model can be used for synthetic data generation for text-based tasks. Turning this flag on allows the model to be used for prompt generation in [Prompts Studio](../../prompts/using-prompt-studio.md/#add-prompts){:target="_blank"}.
-  * **Streaming**: Specifies that the model supports real-time, token-by-token generation for faster AI responses. Turning this flag on allows the model to be used for generating streaming responses within Agentic Apps. (coming soon) 
+  * **Streaming**: Specifies that the model supports real-time, token-by-token generation for faster AI responses. Turning this flag on allows the model to be used for generating streaming responses within Agentic Apps.
   * **Tool calling**: Specifies that the model supports tool calling. Enabling this flag allows the model to be used within Agentic Apps and for tool calls within the AI Text-to-text node in workflow tools.  
   * **Support Tools**: Specifies if the model supports simple tool calling.  Dynamic function or API calling by the LLM to perform actions or retrieve real-time data during generation.
   * **Parallel Tool Calling**: Specifies if the model handles parallel tool calls emanating from a single user request. 
   * **Modalities Support**: Specifies the modalities supported by the model. Enabling this flag allows the model to run Text-to-Text, Text-to-Image, Image-to-Text, and Audio-to-Text tasks for seamless downstream integration within the [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
   <img src="../images/model-features-list.png" alt="model features" title="model features" style="border: 1px solid gray; zoom:75%;">
  
-**Body**: In this section, choose a provider to set the API reference. The platform uses this mapping to resolve your model’s request-response structure. The available options include:
+**Body**: In this section, specify the **model name** to be included in the request body and select a provider to set the API reference. The platform uses this mapping to resolve the model’s request-response structure. The available options include:
 
   * **Anthropic (Messages)**:  Specifies that the selected model follows the request-response structure similar to [Anthropic’s Messages API](https://docs.anthropic.com/en/api/messages){:target="_blank"}.
   * **OpenAI (Chat Completions)**: Specifies that the selected model follows the request-response structure similar to [OpenAI’s Chat Completions API](https://platform.openai.com/docs/api-reference/chat){:target="_blank"}.
+  * **Google (Gemini)**: Specifies that the selected model follows the request–response structure for Google’s Gemini API, enabling compatibility with Gemini-formatted requests and responses.
   <img src="../images/api-reference-model.png" alt="api reference" title="api reference" style="border: 1px solid gray; zoom:75%;">
-
 
 ## Manage Custom API Integrations
 

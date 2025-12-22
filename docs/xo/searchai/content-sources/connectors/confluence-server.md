@@ -1,6 +1,6 @@
-# Confluence Data Center
+# Confluence Server
 
-If you are using Confluence Data Center to store and manage your content, you can easily search through that content using the out-of-box connector provided by Search AI. 
+If you use Confluence Server to store knowledge content, the Search AI Confluence Server Connector lets you securely index, filter, and search your Confluence data with expanded coverage and improved indexing controls. The connector provides enhanced ingestion capabilities, space-based filters, advanced filtering, and optional incremental sync with webhook-based deletion.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -14,7 +14,7 @@ If you are using Confluence Data Center to store and manage your content, you ca
   <tr>
    <td>Content Supported
    </td>
-   <td>Knowledge Articles
+   <td>Knowledge Articles, Spaces, Blogs, and Comments
    </td>
   </tr>
   <tr>
@@ -31,54 +31,91 @@ If you are using Confluence Data Center to store and manage your content, you ca
   </tr>
 </table>
 
-## Authorization Support for Confluence Data Center
+## Authorization Support for Confluence Server
 
-There are two ways to authorize and set up communication between Confluence Data Center and Search AI application.
+The connector provides two authorization mechanisms:
 
-* Using Basic Auth
-* Using OAuth 2.0
+* Basic Authentication
+* OAuth 2.0
+* Header Based Authorization
 
 For more information on auth types, refer to [this](../connectors.md). 
 
-If you are setting up **OAuth** auth mechanism, you need to 
+**Basic Authentication**
 
-* Register Search AI application as OAuth client in the Confluence Data Center.
-* Configure the connector in SearchAI with the integration details.
+When you use basic authentication, no server‑side configuration is required. Go to step 2 to configure the connector in Search AI.
 
-If you are using **Basic** authentication, no specific configuration is needed on the server side to fetch content from the Confluence Data Center. Directly go to step 2 and configure the connector in Search AI.
+**OAuth 2.0**
 
-## Step 1: Register the Search AI application in the Confluence Data Center
+1. Register Search AI as an OAuth client in Confluence Server.
+2. Configure the connector with the generated OAuth credentials.
 
-**OAuth 2.0 authentication** requires creating an incoming link in the **application links** section on the Confluence Data Center. During the registration process, set the **Redirect URL** as per your region and enable proper scopes to limit the range of resources that the SearchAI application can access.
+**Header Based Authorization**
 
-Depending upon your region, you can use one of the following URLs as the Redirect URL.
+Configure the required authorization headers (for example: Authorization: Bearer <token> or X-API-Key) within the Search AI connector settings.
+Ensure the external application or system you are connecting to is configured to accept and validate these specific headers. Go to step 2 to configure the connector in Search AI.
 
-* JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-* DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-* Prod Region Callback URL: https://idp.kore.com/workflows/callback
+## Step 1: Register the Search AI app in the Confluence Server
 
-Once you've created the link, you'll receive the OAuth credentials: Client ID and Client Secret. These will be used to complete the configuration in the SearchAI application. 
+* **OAuth 2.0** requires creating an incoming link under **application links** in the Confluence Server.
+* During setup, use the **Redirect URL** for your region:
 
-For detailed information and step-by-step instructions, refer to [this](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html). 
+| Region   | Redirect URL                                     |
+| -------- | ------------------------------------------------ |
+| **JP**   | `https://jp-bots-idp.kore.ai/workflows/callback` |
+| **DE**   | `https://de-bots-idp.kore.ai/workflows/callback` |
+| **Prod** | `https://idp.kore.com/workflows/callback`        |
 
-## Step 2: Configuring SearchAI Connector
+After creating the link, you will receive:
 
-To complete the integration, do the following configuration in the connector. 
+* Client ID
+* Client Secret
 
-1. Go to **Connectors** under the **Sources** tab. 
-2. On the authorization tab, provide the config parameters. 
+These values are required in Search AI. For more information, refer to [this](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html). 
+
+**Deletion Handling**
+
+SearchAI uses Confluence webhook notifications to manage deletion events. When configured, these callbacks automatically remove deleted content (pages and blog posts) from the SearchAI index.  
+
+This ensures search results remain accurate and reduces indexing time and system load.
+
+Configure a Confluence Webhook for SearchAI
+Perform the following steps in your Confluence server to set up the webhook:
+
+1. Go to Settings > General configuration.  
+2. In the search field, type Webhook. From the left navigation under Configuration, select Webhooks.  
+3. Click Create webhook.  
+4. Enter the details:  Name, URL, Secret
+5. Click Test connection to verify Confluence can reach the endpoint.  
+6. From the Events dropdown, select attachment_created, blog_removed, page_removed, etc  
+7. Ensure Active is selected, then click Save. 
+
+
+## Step 2: Configure the Confluence (Server) Connector
+
+In Search AI:
+
+1. Go to **Connectors**.
+1. Choose **Confluence (Server)**.
+1. Under **Authentication**, enter the required fields.
     * Authorization Type: Basic or OAuth 2.0
-    * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Data Center, Search AI supports two types: **Authorization Code grant type** and **Client Credentials** grant type. For more details, refer to [this](../connectors.md). 
+    * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Data Center, Search AI supports two types: Authorization Code grant type and Client Credentials grant type. For more details, refer to [this](../connectors.md).
     * For Basic Auth, provide the connector name, username, password, and Confluence Data Center host URL.
-    * For OAuth 2.0 Authentication,  enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence Data Center base URL and domain name.
+    * For OAuth 2.0 Authentication, enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence Data Center base URL and domain name.
+    * Header Based Authorization fields: Header, Token, and Host URL. Click Connect to initiate authorization.
 
-Click **Connect** to initiate the connector authorization process. This completes the setup for communication between SearchAI and the Confluence Data Center.
+Click **Connect** to initiate authorization.
 
 ### Content Ingestion
 
-Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Data Center or select specific content.  Note that if there are any attachments to the pages being ingested into the application, then the content from the attachments is also automatically ingested into the application. At present, only PDF format attachments are supported.
+Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes: **Ingest all content**, which syncs all available content from Confluence, or **Ingest filtered content**, which lets you specify only the content you want to sync. Select **Ingest filtered** content and click **Edit configuration** to open the **Ingestion Filters** page.
+Click **Browse & Select**, then mark the spaces or content types you want to sync. Use the search box to quickly locate spaces, check or uncheck items to include or exclude, and click **View More** to load additional spaces and save the configuration. The connector ingests only the items you select.
 
 ![Content Synchronization](images/confluenceserver/content-synchronization.png "Content Synchronization")
+
+### Incremental Sync
+
+The Confluence Server connector supports incremental synchronization to ensure efficient content updates. During each sync cycle, only newly created or modified Pages, Blogs, Spaces, and Comments are fetched and updated in SearchAI.
 
 ### Content Filters
 
@@ -86,17 +123,17 @@ The connector allows you to set up rules to selectively ingest content from the 
 
 ![Content Filters](images/confluenceserver/content-filters.png "Content Filters")
 
-The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
+The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. The following parameters now apply to Pages, Spaces, Blogs, and Comments. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
 
 * Ancestor: Affects the direct child pages/content and descendants of the given content IDs as value. 
 * Content: Affects the content defined using content ID only. 
 * Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”. 
 * Creator: Affects the content created by the User account IDs provided as values. 
 * Label: Affects the content by its label. 
-* Parent: Affects the content under a given parent. 
+* Parent: Affects the content under a given parent. Parent-child evaluation now applies to Pages, Blogs, and threaded Comments. 
 * ID: Affects the content based on its content ID. 
-* Space: Affects the content based on the space that it is available in.
-* Title: Define the rule using the title of the pages
+* Space: Affects the content based on the space that it's available in. Applicable to Pages, Blogs, and Comments.
+* Title: Define the rule using the title of the pages or blogs.
 * User: Define the rule using userId 
 
 The Operator field can take different values depending upon the parameter selected like equals to, not equals to, contains, etc. 
@@ -113,16 +150,16 @@ Similarly, to selectively ingest only the pages created or modified after Jan 1,
 
 Note:
 
-* You can define more than one condition to choose different types of content from the connector using the OR operator. 
+* You can define more than one condition to choose different types of content from the connector using the OR operator.
 * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
 
 ![Content Filters](images/confluenceserver/example3.png "Content Filters")
 
 ### Access Control
 
-SearchAI supports access control for content ingested using the **Confluence Data Center Connector**. To enable access control on the content, go to the **Permissions and Security** tab and select **Permission Aware** access.
+SearchAI supports access control for content ingested using the **Confluence Server**. To enable access control on the content, go to the **Permissions and Security** tab and select **Permission Aware** access.
 
-* **Permission Aware** honors the permissions of a user in Confluence Server. Users can only view search results for content they are permitted to access within the Confluence instance.
+* **Permission Aware** honors the permissions of a user in Confluence Server. Users can only view search results for content they're permitted to access within the Confluence instance.
 
 * **Public Access** overrides native Confluence permissions, making all ingested content visible to all users in SearchAI regardless of actual access in Confluence.
 
@@ -136,28 +173,31 @@ Access control in SearchAI relies on associating users with their unique identit
 
 This may require an admin account or permissions that allow access to user directories in Confluence.
 
-#### Permission Sets in Confluence Data Center
+#### Permission Sets in Confluence Server
 
-Confluence Data Center supports a two-level permission model:
+Confluence Server supports a two-level permission model:
 
 **Space Permissions**
 
 Each space defines its own set of permissions, managed by space administrators. These permissions control who can view, edit, or administer the content in that space. SearchAI requires at least **view** access to ingest and apply access control correctly.
 
+**Blog Restrictions**
+
+Blog posts inherit permissions from their parent space but can also have their own view or edit restrictions.
+Blog permissions follow the same model as page permissions in Confluence.
+For blog posts, the Blog Post ID must be set in the sys_racl field.
+Permissions inherited from the parent space apply unless overridden by blog-specific restrictions.
+
 **Page Restrictions**
 
 Pages may inherit permissions from their parent space but can also have their own **view** or **edit** restrictions. If a page is restricted to specific users or groups, these settings override inherited space permissions.
 
-#### Handling Confluence Data Center Permissions in SearchAI
+#### Handling Confluence Server Permissions in SearchAI
 
 * **Individual Access**: Users added directly to a space or specific page are included in the `sys_racl` field of the ingested document. These are typically represented by user email addresses or usernames, depending on your Confluence setup.
 
-* **Group Access**: If access is provided to groups (e.g., `confluence-users`, `engineering-team`), SearchAI creates **Permission Entities** using group identifiers. These entities are stored in the `sys_racl` field.
- To ensure correct access:
-
-    * Use **Permission Entity APIs** to associate users with the appropriate group/entity in SearchAI.
-
+* **Group Access**: When you grant access to groups (for example, `confluence-users` or `engineering-team`), SearchAI creates **Permission Entities** based on group identifiers. These entities are stored in the `sys_racl` field. To ensure correct access, use the **Permission Entity APIs** to associate users with the appropriate group or entity in SearchAI.
 
 #### Limitation
 
-**Anonymous Access**: SearchAI does **not support anonymous access** to content. If a page is publicly viewable in Confluence (e.g., not requiring login), that page will **not be searchable** unless explicitly shared with known users or groups.
+**Anonymous Access**: SearchAI does **not support anonymous access** to content. If a page is publicly viewable in Confluence (for example, not requiring login), that page will **not be searchable** unless explicitly shared with known users or groups.

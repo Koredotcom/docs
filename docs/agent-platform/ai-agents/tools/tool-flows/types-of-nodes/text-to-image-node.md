@@ -34,8 +34,8 @@ Configuration options allow you to specify input prompts and control output form
 
     **OpenAI Models**
 
-    * Dall-e-2 
-    * Dall-e-3
+    * DALL·E 2 
+    * DALL·E 3
 
 ## Common Use Cases
 
@@ -109,8 +109,6 @@ The metrics include:
 ### Step 1: Open Flow Builder
 
 * Log in → In Agent Platform Modules → Click **Tools**.
-     <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 * Select your tool → Click **Go to Flow**.
 
 ### Step 2: Add the Node

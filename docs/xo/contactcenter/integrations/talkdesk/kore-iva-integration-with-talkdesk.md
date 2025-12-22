@@ -19,20 +19,20 @@ The Kore AI Agent integration with Talkdesk operates as follows:
 * **Interaction**: When a customer contacts Talkdesk, audio streams are sent to Kore via the "Conversation Orchestrator" node under Talkdesk studio flow. Kore handles automation and sends bot responses back to Talkdesk.
 * **Agent Handover**: If the customer requests for agent transfer, control returns to Talkdesk for human agent interaction.
 
-This streamlined process enhances Talkdesk's contact center capabilities with Kore's voice automation technology.
+This streamlined process enhances Talkdesk's contact center capabilities with our voice automation technology.
 
 ## Voice Automation Process
 
 The following steps are initiated after a call is established between a user and Talkdesk:
 
-1. The user audio is sent to the “Conversation Orchestrator” through the “Connect to Virtual Agent Voice” block within the Studio Flow.
+1. The user audio is sent to the “Conversation Orchestrator” through the `Connect to Virtual Agent Voice` block within the Studio Flow.
 2. The user audio is forwarded to the Voice Gateway (VG).
 3. The VG transfers the WSS traffic to contact center using SIP over TLS or UDP.
 4. Contact Center AI (CCAI) converts the speech to text and then sends it to the Bots Platform for identification.
 5. The Bots Platform generates the appropriate response, and CCAI converts that response into speech.
 6. CCAI returns the synthesized speech to Voice Gateway using SIP. Speech response is received by the “Connect to Virtual Agent Voice” block on Talkdesk.
 7. The response is sent to the user.
-8. At the end of automation, if an agent transfer is required, that is handled using the Talkdesk Studio Flow (optional).
+8. At the end of automation, if an agent transfer is required, that's handled using the Talkdesk Studio Flow (optional).
 
 ## Configuration Steps
 
@@ -63,7 +63,7 @@ TFiARYEDF4LTA0ZDktNTM3MC04NTI3LWFlNjNmMjk1YmJjZiJ9.2ozN9wKNPi3A4R8HPdPUfdqBTv-Jg
     * **token**: [JSON Web Token](https://jwt.io){:target="_blank"} encrypted with the client secret of the bot with the following payload:
         * {“appId”:”&lt;Client ID>”}
         * Client ID: From the Bot details
-    * **botId**: Bot ID of the bot you want to use – for example, st-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx.
+    * **botId**: Bot ID of the bot you want to use-for example, st-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx.
     * **accountId**: Account ID of the bot owner. Unique identifier for an account.
 
 ### Step 3: Configure Audio Streaming Node in Talkdesk
@@ -82,14 +82,14 @@ This section explains both the Kore and Talkdesk side configurations for Agent E
 
 #### Kore Side Configuration
 
-For Agent Transfer, configure **SIP BYE** in UXO by going to **Settings > Integrations > Agent Transfer > Voice > SIP Transfer > Configuration**:  
+For Agent Transfer, configure **SIP BYE** in AI for Service by going to **Settings > Integrations > Agent Transfer > Voice > SIP Transfer > Configuration**:  
 <img src="../images/sip-bye-settings.png" alt="sip-bye-settings" title="sip-bye-settings" style="border: 1px solid gray; zoom:80%;">
 
 #### Talkdesk Side Configuration
 
 For Voice Automation, Kore uses the "Connect to Autopilot Voice" node of Talkdesk. Check the Exits and Preferences of this node in the screenshot below.
 
-On Agent Escalation, Kore creates variables that are populated to **Ring Groups** > **Variables** in the flow context. This allows you to use information collected from an external source. [Learn more](https://studio.talkdesk.com/docs/preferences-assignment-dial#:~:text=the%20latter%20allows%20you%20to%20use%20information%20collected%20from%20an%20external%20source%20such%20as%20a%20Customer%20Relationship%20Manager){:target="_blank"}.  
+On Agent Escalation, Kore creates variables that are populated to **Ring Groups** > **Variables** in the flow context. This lets you to use information collected from an external source. [Learn more](https://studio.talkdesk.com/docs/preferences-dial-agent){:target="_blank"}.  
 <img src="../images/agent-escalation-node-exits-tab-4.png" alt="agent-escalation-node-exits-tab" title="agent-escalation-node-exits-tab" style="border: 1px solid gray; zoom:80%;">  
 
 <img src="../images/agent-escalation-node-preferences-tab-5.png" alt="agent-escalation-node-preferences-tab" title="agent-escalation-node-preferences-tab" style="border: 1px solid gray; zoom:80%;">  

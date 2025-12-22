@@ -32,9 +32,9 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
     * **Use public APIs to control transcription**: Control transcript visibility through the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md). 
     * **Use agent’s entry and exit events**: Control transcript visibility based on agent’s entry and exit events–transcripts become visible when an agent joins, and prior conversations are hidden once the previous agent exits. 
 
-* **Send Button**: This widget lets you control the accessibility of the Send button functionality for Agent AI responses. By default, this widget is enabled for Voice and Chat channels only.
+* **Send Button**: This widget lets you control the accessibility of the **Send** button functionality for Agent AI responses. It is available for the **Chat** and **Email** channels, and by default enabled for the **Chat** channel.
 
-* **Copy Button**: This widget lets you control the accessibility of the Copy button functionality for Agent AI responses. By default, this widget is enabled for all three channels.
+* **Copy Button**: This widget lets you control the accessibility of the **Copy** button functionality for Agent AI responses. It is available for the **Chat** and **Email** channels, and by default enabled for both these channels.  
 
 * **Widget Search Bar Configuration**: This widget enables you to have a configurable search experience through the widget search bar. Search results load faster because they display as soon as data is retrieved from the first available source (XO Platform, Search AI, or Agentic App), while results from other sources load gradually. When **disabled**, the [default search experience](../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab){:target="_blank"} displays results from all sources simultaneously. When **enabled**, you can select one or more of the following options based on your need: 
 

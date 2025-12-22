@@ -45,32 +45,32 @@ The following methods are available:
 var loanType = { //creating a sample variable of skill - loan type
     "Car Loan": {
          name: "Car Loan",
-         id: "60b50bec5c4c1a4195b55d88",
+         id: "60b50becxxxxxxxx95b55d88",
     },
     "House Loan": {
          name: "House Loan",
-         id: "60b50c005c4c1a4195b55d89",
+         id: "60b50cxxxxxxxx4195b55d89",
     },
     "Education Loan": {
          name: "Education Loan",
-         id: "60b894198afcca6accc5f466",
+         id: "60b894xxxxxxxx6accc5f466",
     },
     "Gold Loan": {
          name: "Gold Loan",
-         id: "60b8943a8afcca6accc5f467",
+         id: "60b8943xxxxxxxxaccc5f467",
     },
 };
 
 agentUtils.setSkills([loanType[a]]); //setting the skill - loan type
 ```
 
-**getSkills()** – Returns an array of skills in the current conversation.
+**getSkills()**-Returns an array of skills in the current conversation.
 
-**getSkillById(skillId)** – Returns a skill using the skill ID. Skills IDs are available under skills.
+**getSkillById(skillId)**-Returns a skill using the skill ID. Skills IDs are available under skills.
 
-**deleteSkillById(skillId)** – Deletes a skill from the context of the current conversation.
+**deleteSkillById(skillId)**-Deletes a skill from the context of the current conversation.
 
-**deleteSkills(skillsToDelete)** – You can use a skill ID or an array of skill IDs to delete skills from the conversation.  
+**deleteSkills(skillsToDelete)**-You can use a skill ID or an array of skill IDs to delete skills from the conversation.  
 
      Example: `agentUtils.deleteSkills(["skillAId", "skillBId"]);`
 
@@ -78,12 +78,12 @@ agentUtils.setSkills([loanType[a]]); //setting the skill - loan type
 
 To edit the field values of an existing skill, follow these steps:
 
-1. Click the desired skill group to get the associated skills list;
-2. Click the **Edit** icon corresponding to the skill you want to update;  
+1. Select the desired skill group to get the associated skills list;
+2. Select the **Edit** icon corresponding to the skill you want to update;  
 <img src="../images/edit-skill-button.png" alt="Edit Skill Button" title="Edit Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Make your changes in the **Edit Skill** window;
-4. Click **Save**. A success confirmation message is displayed once the skill details are updated.
+4. Select **Save**. A success confirmation message displays.
 
 ### Delete a Skill
 

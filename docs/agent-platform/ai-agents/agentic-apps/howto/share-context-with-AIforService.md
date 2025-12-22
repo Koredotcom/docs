@@ -27,11 +27,12 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
         ordernumber: {{memory.orderDetails.orderNumber}}
         userPreferences: {{memory.sessionMeta.userPref}}
         ```
+
 [Learn more](../settings/events.md#agent-handoff-event).
 
 ### Step 2: Handle the metadata in AI for Service Experience Flow
 
-The parameters passed from Agent Platform become available in the XO Experience Flow under the Automation node context.
+The parameters passed from Agent Platform become available in the AI for Service Experience Flow under the Automation node context.
 
 Use the following format to access the metadata passed from the Agent Platform. 
 

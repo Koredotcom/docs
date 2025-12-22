@@ -8,16 +8,15 @@ Model Hub empowers you to enhance base models by fine-tuning them directly withi
 
 * **Open-source model**: Choose from a curated list of 30+ popular open-source models or bring in any text generation model from Hugging Face. [Learn more](../models/open-source-models/select-and-deploy-an-open-source-model.md).
 
-* **External models**: Add commercial models like OpenAI, Anthropic, Azure OpenAI, Cohere, and Google. You can also integrate your own hosted models into Agent Platform using API connections. [Learn more](../models/external-models/add-an-external-model-using-easy-integration.md).
+* **External models**: Add commercial models like OpenAI, Anthropic, Azure OpenAI, Cohere, and Google. You can also integrate your own hosted models into AI for Process using API connections. [Learn more](../models/external-models/add-an-external-model-using-easy-integration.md).
 
 * **Quick deployment**: Deploy a model quickly in just a few steps - select the model, review parameters and hardware, and click Deploy. [Learn more](./fine-tune-models/deploy-a-fine-tuned-model.md).
 
 
 ## Accessing Model Hub
 
-1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account and click **Model hub** under **Agent Platform Modules**.
-    <img src="../model-settings/images/model_hub.png" alt="access model hub" title="access model hub" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your AI for Process account and click **Model hub** under **AI for Process**.
  
 2. On the Models page, you can see three tabs: Fine-tuned Models, Open-source Models, and External Models. Click any tab to explore the corresponding models.
 
-    <img src="../fine-tune-models/images/start-fine-tuning.png" alt="Models page" title="Models page" style="border: 1px solid gray; zoom:80%;">
+    <img src="../fine-tune-models/images/start-fine-tuning.png" alt="Models page" title="Models page" style="border: 0px solid gray; zoom:80%;">

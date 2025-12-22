@@ -1,9 +1,9 @@
 # Test
 
-After you have defined your app and configured one or more tasks, you should test your settings before you publish your NLP-enabled app. Bot owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
+After you have defined your app and configured one or more tasks, test your settings before you publish your NLP-enabled app. App owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
 
 
-## Testing a App
+## Testing an App
 
 To test your tasks in a messaging window, click the **Test** icon located on the top right corner on the Platform. 
 
@@ -35,20 +35,17 @@ The Debug window lets you explore the following:
 
 ### Debug Log
 
-**Debug Log** provides the sequential progression of a dialog task and context and session variables captured at every node. It is a chat-like interface, grouped by user inputs and app responses for easier conversation flow tracing. It offers improved navigation and contextual information at a glance. This significantly enhances log readability and streamlines the debugging process. The Debug log supports the following statuses:
+**Debug Log** provides the sequential progression of a dialog task and context and session variables captured at every node. It's a chat-like interface, grouped by user inputs and app responses for easier conversation flow tracing. It offers improved navigation and contextual information at a glance. This significantly enhances log readability and streamlines the debugging process. The Debug log supports the following statuses:
 
 * _initiated_: The Platform initiates the various nodes in a dialog task. For example, script, service, and webhook execution is initiated.
 * _execution_: indicates execution of nodes has started. For example, script, service, and webhook execution has started.
-* _execution successful_: indicates execution of nodes is successful.For example, script, service, and webhook execution is successful.
+* _execution successful_: indicates execution of nodes is successful. For example, script, service, and webhook execution is successful.
 * _process completed_: indicates execution process for the script, service and webhook node is completed.  
-
 
 * _expand_: You can expand the node and click the **JSON** to view node debug log details.  
 <img src="../images/expand-option.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
 
 * _node details_: shows the node details in the script format. You can copy, open the script in a full screen view or close the script view.  
-
-
 * _parsing_: The Platform begins to parse the user prompt.
 * _parsing successful_:  the user prompt is parsed successfully.
 * _waitingForUserInput_: The user was prompted for input
@@ -62,7 +59,7 @@ The Debug window lets you explore the following:
 
 ### NL Analysis
 
-NL Analysis tab shows the task name analysis and recognition scores of each user utterance.  It presents a detailed tone analysis, intent detection, and entity detection performed by the NLP engine. As a part of intent detection, the NL Analysis tab shows the outcomes of Machine Learning, Fundamental Meaning, and Knowledge Graph engines. For a detailed discussion on the scores, see [Training Your Assistant ](testing-your-bot-with-nlp.md){:target="_blank"}topic.
+NL Analysis tab shows the task name analysis and recognition scores of each user utterance. It presents a detailed tone analysis, intent detection, and entity detection performed by the NLP engine. As a part of intent detection, the NL Analysis tab shows the outcomes of Machine Learning, Fundamental Meaning, and Knowledge Graph engines. For a detailed discussion on the scores, see [Training Your Assistant ](testing-your-bot-with-nlp.md){:target="_blank"}topic.
 
 <img src="../images/talk-to-bot-img9.png" alt="End of the dialog flow" title="End of the dialog flow" style="border: 1px solid gray; zoom:80%;"/>
 

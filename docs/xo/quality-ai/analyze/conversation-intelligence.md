@@ -3,19 +3,26 @@
 
 ## Overview
 
-The Conversation Intelligence dashboard displays post-interaction analytics and is a powerful tool designed to provide insights and actionable information following customer interactions. This dashboard gathers and presents data derived from customer interactions, allowing admins and supervisors to gain valuable insights into agent performance, customer experience, and interaction details.
+The Conversation Intelligence dashboard displays post-interaction analytics and provides insights following customer interactions. It gathers and presents data from those interactions, helping admins and supervisors understand agent performance, customer experience, and key interaction details.
+
+You can filter data by date and time range and by communication type: **All**, **Voice**, or **Chat**. The **Compare** toggle highlights performance changes between the selected date range and the previous period.
 
 The key sections of this dashboard include:
 
-* **Contact Center Efficiency** – Key Performance Indicators (Average Speed to Answer, Abandonment Rate, CSAT, and Transfer Rate).
-* **Agent Efficacy** – Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy.
-* **Customer Experience** – Avg. Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, Sentiment Monitor, and Customer Churn Monitor.
-* **Insights Mining** –  Topic vs. Sentiment Bubble, Keyword Cloud & Emotions
-* **Interaction Details** – Date/Time of the session, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
+* **Contact Center Efficiency**: Displays metrics such as Average Speed to Answer, Abandonment Rate, Customer Satisfaction Score (CSAT), and Transfer Rate.
 
-Users can access the **Conversation Intelligence** dashboard from **Quality AI** > **ANALYZE** > **Conversation Intelligence**.  
+* **Agent Efficacy**: Shows Empathy Score, CSAT, Crutch Word Score, Agent Performance Monitor, and Agent Occupancy. The compare toggle applies here to show changes over time.
 
-<img src="../conversation-intelligence/images/conv-inetelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelliegence Page" style="border: 1px solid gray; zoom:70%;">
+* **Customer Experience**: Includes Average Wait Time, Net Promoter Score (NPS), Churn Risk, Sentiment Score, and Customer Churn Monitor.
+
+* **Insights Mining**: Provides Topic vs. Sentiment bubbles, Keyword Cloud, and Emotions.
+
+* **Interaction Details**: Displays session details such as Date/Time, Call ID, Agent Name/ID, Call Reason/Intent, Sentiment Score, and Dispositions.
+
+## Access Conversation Intelligence 
+
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Intelligence**.   
+<img src="../conversation-intelligence/images/conversation-intelligence-page.png" alt="Conversation Intelligence Page" title="Conversation Intelligence Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Filters
 
@@ -25,30 +32,29 @@ You can use the filters to customize the **Conversation Intelligence** tab.
 
 Steps to create a filter:
 
-1. Click the **Filters** button on the upper-right corner.  
-<img src="../conversation-intelligence/images/dashboard-filter.png" alt="Filters Button" title="Filters Button" style="border: 1px solid gray; zoom:70%;">
+1. Select the **Filters**.  
+<img src="../conversation-intelligence/images/dashboard-filter.png" alt="Filters" title="Filters" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **+ Add New Filter**.  
+2. Select **+ Add New Filter**.  
 <img src="../conversation-intelligence/images/add-new-filter.png" alt="Add New Filter" title="Add New Filter" style="border: 1px solid gray; zoom:70%;">
 
-3. On the **New Filter** window, choose the relevant options pertaining to **Queues** or **Agents**, and click **Apply**.  
+3. On the **New Filter** window, choose the relevant **Queues** or **Agents**, and select **Apply**.  
 <img src="../conversation-intelligence/images/queues-filter.png" alt="Filter Options" title="Filter Options" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
 
-        Clicking **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently. 
-
-    <img src="../conversation-intelligence/images/unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:60%;">
-
+        Select **Apply** saves filters to the **Unsaved Filter** category for **Queues** or **Agents**, letting you review them before saving permanently. 
+    
 4. Under the **Save Filter** section, enter the Filter Name.
-5. Enable the toggle switch **Make this the default view** for the newly added filter or save filter, and click **Save & Apply**.  
+
+5. Enable the toggle switch **Make this the default view** for the new filter added or save filter.
+
+6. Select **Save & Apply**. The system displays a confirmation message after it saves the filter. 
     <img src="../conversation-intelligence/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:90%;">
     
-A successful confirmation message is displayed.  
-
 ### Saved Filters
 
-You can view the saved filters by clicking the **Filters** tab.  
+You can view the saved filters by selecting the **Filters** tab.  
 <img src="../conversation-intelligence/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:90%;">
 
 Hovering over a saved filter displays the following options:
@@ -63,46 +69,44 @@ Hovering over a saved filter displays the following options:
 
 Steps to duplicate a filter:
 
-1. Click the **Duplicate** button on the filter that you want to copy.  
+1. Select **Duplicate** to copy a filter.  
 <img src="../conversation-intelligence/images/duplicate-filter.png" alt="Duplicate Filter" title="Duplicate Filter" style="border: 1px solid gray; zoom:90%;">
 
-2. Enter a name in the **Filter Name** field for the new filter, and click **SAVE**.  
+2. Enter a name in the **Filter Name** field for the new filter, and select **SAVE**.  
 <img src="../conversation-intelligence/images/rename-filter.png" alt="Save Renamed Filter" title="Save Renamed Filter" style="border: 1px solid gray; zoom:90%;">
 
-3. A confirmation message is displayed, and a copy of the filter is created.  
+3. The system displays a confirmation message and creates a copy of the filter.   
 <img src="../conversation-intelligence/images/filter-cloned-success.png" alt="Filter Cloned Success" title="Filter Cloned success" style="border: 1px solid gray; zoom:90%;">
 
 ### Mark as Default
 
-Click the **Mark as Default** button to set the filter as the default filter.  
+Select the **Mark as Default** to set the filter as the default filter.  
 <img src="../conversation-intelligence/images/mark-as-default.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:90%;">
 
-A confirmation message is displayed, and the filter is set as the default filter.  
+The system displays a confirmation message when the filter sets as the default filter.  
 <img src="../conversation-intelligence/images/filter-marked-default.png" alt="Filter Marked Default" title="Filter Marked Default" style="border: 1px solid gray; zoom:90%;">
 
 ### Delete Filter
 
 Steps to delete a filter:
 
-1. Click the **Delete** button.  
+1. Select the **Delete**.  
 <img src="../conversation-intelligence/images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:90%;">
 
-2. On the delete confirmation pop-up window, click **Delete**.  
+2. On the delete confirmation pop-up window, select **Delete**.  
     <img src="../conversation-intelligence/images/confirm-delete.png" alt="Confirm Delete Filter" title="Confirm Delete Filter" style="border: 1px solid gray; zoom:90%;">
 
-    A confirmation message is displayed, and the filter is deleted.
+    The system displays a confirmation message and deletes the filter.
 
 ### Edit Filter
 
 Steps to edit a filter:
 
-1. Click the **Edit** button.  
+1. Select the **Edit**.  
     <img src="../conversation-intelligence/images/edit-filter.png" alt="Edit Filter" title="Edit Filter" style="border: 1px solid gray; zoom:90%;">
 
-2. Make the necessary changes, and click **Save & Apply**.  
+2. Make the necessary changes, and select **Save & Apply**.  
     <img src="../conversation-intelligence/images/save-edit-filter.png" alt="Save Edited Filter" title="Save Edited Filter" style="border: 1px solid gray; zoom:90%;">
-
-    A successful confirmation message is displayed.
 
 ## Clear Filters
 
@@ -112,84 +116,88 @@ This filter displays only the analytics data for the current day's agent perform
 
 ## Date and Time Range Selection
 
-In this section, you can filter data by date and time range. By default, data is displayed for the current day (Today). Select a specified date and time range, and click **Apply**.  
+Lets you filter data by date and time range. The widget displays the current day’s data initially. Select a date and time range, and select **Apply**.  
 
 <img src="../conversation-intelligence/images/time-duration.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
 ## Compare Functionality
 
-The Conversation Intelligence dashboard's compare functionality allows you to view a comparison of metrics between a selected date range and the previous date range. The compare toggle is enabled by default.
+The Conversation Intelligence dashboard lets you view a comparison of metrics between a selected date range and the previous date range. When you enable the **Compare** toggle, the dashboard highlights changes in metrics over time. The system enables the compare toggle by default.
 
-The spike or dip indicators for playbook adherence are linked to this toggle and only display across stages and steps if enabled. These indicators are included for all fields. They can have different meanings based on an increase or decrease; an increase can be positive or negative depending on the metrics, resulting in either red badges (negative) or green badges (positive). 
+The dashboard displays spike and dip indicators for playbook adherence only when you enable the compare toggle. These indicators display across stages and steps for all relevant fields. An increase or decrease in a metric can have different meanings depending on context:
 
-For example, if the selected date range is the last 7 days, all metrics, such as the Average Speed to Answer, will show a spike or dip indicating the percentage change for a selected period (June 5 - June 12) compared to the same duration in the previous period (May 29 - June 5).
-  
-<img src="../conversation-intelligence/images/conv-intel-compare-functionality.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
+* Green badges indicate positive changes.
+
+* Red badges indicate negative changes.
+
+For example, if you select the last 7 days as the date range, metrics such as Average Speed to Answer shows a spike or dip representing the percentage change for June 5–12 compared to the previous period, May 29–June 5.   
+<img src="../conversation-intelligence/images/compare-functionality.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
 
 ## Channels
 
-You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy since occupancy per channel is not tracked.  
-
+You can filter data by channels (**All**, **Voice**, **Chat**, and **Email**). This filter applies to the entire dashboard except for agent occupancy, because the system doesn't track occupancy per channel.     
 <img src="../conversation-intelligence/images/channels.png" alt="Channels" title="Channels" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Center Efficiency
 
 ### Key Performance Indicators
 
-Efficient contact centers are the backbone of excellent support. Managers use key performance indicators (KPIs) to ensure teams maximize productivity and efficiency. The KPIs in a contact center environment are measurable metrics used to assess the effectiveness and efficiency of customer service operations. They include:
+Effective contact centers rely on KPIs to help managers track productivity and efficiency. In a contact center, KPIs are measurable metrics that assess how well customer service operations perform. They include:
 
 **Average Speed to Answer** (**Voice**, **Chat**, **Email channels**): Average Speed to Answer (ASA) displays the average time an agent takes to answer inbound calls, starting when callers join the queue.
 
 **Abandonment Rate (Voice** and **Chat channels**): The Abandonment Rate refers to the total number of customers who disconnect their calls while in the queue before reaching an agent.
 
-**CSAT (Voice** and **Chat channels**): Customer Satisfaction (CSAT) scores indicate the level of customer satisfaction with Support services. This can be calculated from CSAT survey scores.
+**Transfer Rate (Voice**, **Chat**, and **Email channels**): Transfer Rate measures the percentage of customer interactions that agent or queue transfer to another resource to resolve the issue.
 
-**Transfer Rate (Voice**, **Chat**, and **Email channels**): Transfer Rate measures the percentage of customer interactions that were transferred from one agent or queue to another to resolve the issue.
+**CSAT (Voice** and **Chat channels**): Customer Satisfaction (CSAT) scores indicate the level of customer satisfaction with Support services that you can calculate from CSAT survey scores.
 
 #### Default Zones for KPIs
 
 * For Average Speed to Answer:
-    * Voice Channel – Green up to 28 seconds, Yellow 28 to 40 seconds, Red 40 seconds and above.
-    * Chat Channel – Green up to 35 seconds, Yellow 35 seconds to 50 seconds, Red 50 seconds and above.
-* For Transfer Rate: Voice and Chat Channels – Green up to 10%, and Red beyond 10%.
-* For Abandonment Rate: Voice and Chat Channels – Green up to 6%, and Red beyond 6%.
-* For CSAT: Show the actuals as it is with the respective weight-ages of interactions.
-    * CSAT is shown as a score in the range of 1-10 (1 being the lowest and 10 being the highest).
-    * Green 8 and above, Yellow 6 to 8, and  Red 1 to 6.
 
-The average of the KPIs for a time interval is shown beside the line bar, along with a percentage increase or decrease in comparison with the period selected.
+    * **Voice Channel**: Green up to 28 seconds, Yellow 28 to 40 seconds, Red at 40 seconds and higher.
 
-Hovering over the color zones shows the percentage of calls and the actual number of calls for the represented percentage (volume).  
+    * **Chat Channel**: Green up to 35 seconds, Yellow 35 seconds to 50 seconds, Red 50 seconds and higher.
 
+* For **Transfer Rate** (Voice and Chat Channels): Green up to 10%, and Red beyond 10%.
+
+* For **Abandonment Rate** (Voice and Chat Channels): Green up to 6%, and Red beyond 6%.
+
+* For **CSAT**: Shows the CSAT score along with the weighted value of each interaction.
+
+    * CSAT ranges from 1 to 10 (1 = lowest, 10 = highest).
+
+    * Green 8 and higher; Yellow 6 to 8; and Red 1 to 6.
+
+The dashboard presents the KPI average for the selected date range next to the line bar and shows the percentage increase or decrease compared with the previous period. Hover over a color zone to view the call distribution by percentage and count.   
 <img src="../conversation-intelligence/images/cc-efficiency.png" alt="Contact Center Efficiency" title="Contact Center Efficiency" style="border: 1px solid gray; zoom:70%;">
 
 ## Agent Efficacy
 
 ### Empathy Score
 
-Empathy is a crucial necessity for having a quality customer experience. The empathy detection module analyzes both customer and agent utterances and detects if there is a _need for empathy_. This is done by detecting the sentiment of customer utterance and classifying it either as _’empathy-seeking’ or ‘non-empathy-seeking’_.
-
-The empathy module analyzes an agent’s utterance and classifies whether or not the agent is empathetic.
+Empathy plays an important role in delivering a quality customer experience. The empathy detection module analyzes both customer and agent utterances and identifies when the situation calls for empathy. It detects the sentiment in the customer’s utterance and classifies it as either `empathy-seeking` or `non-empathy-seeking`. 
+This analyzes an agent’s utterance and classifies whether the agent is empathetic.
 
 ### CSAT
 
-Customer Satisfaction (CSAT) is a widely used metric for measuring and evaluating customer satisfaction. This widget displays the average of customers' CSAT scores on a scale of 1 to 5.
+CSAT is a widely used metric for measuring and evaluating customer satisfaction. This widget displays the average of customers' CSAT scores on a scale of 1 to 5.
 
 ### Crutch Word Score
 
-This measures how frequently an agent uses crutch words during their speech. These words or phrases are used as fillers by the agents that give them more time to think. Common crutch words are “um,” “uh,” “like,” “you know,” “so,” and “basically.” The crutch word score is calculated for agent utterances and supports multilingual conversations, enhancing detection by identifying subtle crutch words. [Learn more](../../quality-ai/configure/language-settings.md).
+This score measures how frequently an agent uses crutch words during a conversation. Crutch words are filler phrases agents use to gain thinking time. Common examples include `um`, `uh`, `like`, `you know`, `so`, and `basically`. The system calculates this score from agent utterances and supports multilingual conversations by detecting subtle crutch-word patterns across languages. [Learn more](../../quality-ai/configure/language-settings.md).
 
 ## Agent Performance Monitor
 
-The admins and supervisors must completely understand customer interactions and their influence on customer satisfaction. Agent Performance Monitor provides a visual representation of the relationship among different metrics, including empathy score, crutch word score, CSAT score, and sentiment score. You can make informed, data-driven decisions by identifying the patterns to enhance the overall customer experience.
+The admins and supervisors must have a clear understanding of customer interactions and how they affect customer satisfaction. Agent Performance Monitor visualizes the relationship among key metrics such as empathy score, crutch word score, CSAT score, and sentiment score. By identifying patterns across these metrics, you can make data-driven decisions that improve the overall customer experience.
 
-The agent performance metrics are on the Y-axis. You can select individual or multiple metrics to view and analyze. CSAT and sentiment score are the customer experience-based metrics on the X-axis.  
-
+The agent performance metrics are on the Y-axis. You can select individual or multiple metrics to view and analyze. CSAT and sentiment score are the customer experience-based metrics on the X-axis.   
 <img src="../conversation-intelligence/images/agent-performance-monitor.png" alt="Agent Performance Monitor" title="Agent Performance Monitor" style="border: 1px solid gray; zoom:70%;">
 
-### Agent Occupancy and Agent Status
+### Agent Occupancy
 
-Agent occupancy refers to the time agents actively handle customer interactions or perform work-related tasks like After Call Work (ACW). It represents the amount of time agents spend on productive activities compared to their total available working time.
+Agent occupancy represents the time agents spend handling customer interactions or performing work-related tasks such as ACW. The system shows this as a percentage.
 
 **Agent Occupancy (%)** = (Total talk or chat time + Total ACW time) / (Total logged-in time) * 100
 
@@ -197,40 +205,37 @@ Agent occupancy refers to the time agents actively handle customer interactions 
 
 **Total ACW time**: The cumulative duration agents spend in post-call activities, including ACW, note-taking, updating customer records, or completing essential tasks linked to the interaction.
 
-**Total logged-in time**: The total duration agents remain logged in to SmartAssist, available to handle customer interactions.
+**Total logged-in time**: The total duration agents remain logged in to Agent AI, available to handle customer interactions.
 
-Agent statuses include available, busy, away, “break”, and other custom codes the administrator configures. This information is represented in a pie chart, enabling admins and supervisors to assess agents' distribution across various statuses quickly. This section also helps understand agent occupancy and optimize agent utilization.  
-
+Agent statuses include `Available`, `Busy`, `Away`, `Break`, and any custom codes the administrator configures. A pie chart visualizes the distribution of agents across these statuses, helping admins and supervisors to assess occupancy and optimize agent utilization.   
 <img src="../conversation-intelligence/images/agent-occupancy.png" alt="Agent Occupancy" title="Delete Filter" style="border: 1px solid gray; zoom:70%;">
 
 ### Script and Playbook Adherence
 
 Agents follow predefined scripts when handling customer interactions. These scripts are part of either the static playbooks configured in Agent AI or business process-specific scripts configured in the dynamic playbooks in Agent AI. Supervisors can track agents’ adherence to the configured scripts.
 
-The adherence is presented as a bar graph, with each attribute represented by individual bars indicating the compliance percentage for the selected period.
+The adherence percentage shows as a bar graph, with each attribute represented by individual bars indicating the compliance percentage for the selected period.
 
-The compliance percentage for each attribute is displayed beside the graph, along with an indication for an increase or decrease in compliance percentage during the selected period compared to the same time range. For example, if a supervisor views the compliance scores for the last week, the percentage increase or decrease is indicated for the previous week. Similarly, if the supervisor selects a one-month time frame, the comparison period is one month.
+The compliance percentage for each attribute appears beside the graph and shows whether compliance increased or decreased during the selected period compared with the same time range. For example, if a supervisor views compliance scores for the last week, the system shows the percentage change compared with the previous week. If the supervisor selects a one-month range, the comparison uses the previous month.
 
-When the playbook steps are the same across all the different playbook configurations, they appear as the default set of parameters for measuring adherence.
+When all playbook configurations share the same steps, the system uses those steps as the default parameters for measuring adherence.
 
-When no Agent AI playbooks are configured, adherence is displayed for the following scripts (Conversation Etiquettes) by default:
+If you don't configure any Agent AI playbooks, the system uses the following default scripts (Conversation Etiquettes) to measure adherence:
 
-* **Greeting**: For example, Hello, My name is John Doe, and I am your customer support executive. How may I help you today?
+* **Greeting**: For example, Hello, My name is John Doe, and I am your customer support executive. How may I help you?
 
-* **Branding**: For example, Thank you for contacting XYZ.
+* **Branding**: For example, Thank you for contacting Mr. John.
 
-* **Privacy Policy**: For example, This call is being recorded for quality and training purposes.
+* **Privacy Policy**: For example, This call gets recorded for quality and training purposes.
 
 * **Hold Etiquette (Voice calls)**: For example, May I place you on hold for a few minutes while I pull up some information?
 
-* **Customer Verification**: For example, Can I know your date of birth?
+* **Customer Verification**: For example, May I know your date of birth?
 
-* **Proper Sign Off**: For example, Thank you for calling XYZ today. It was a pleasure to assist you. Have a great day!  
-
+* **Proper Sign Off**: For example, `Thank you for reaching out. It was a pleasure to assist you. Have a great day!`     
     <img src="../conversation-intelligence/images/script-adherence.png" alt="Script Adherence" title="Script Adherernce" style="border: 1px solid gray; zoom:90%;">
 
-    Supervisors can choose specific playbooks from the dropdown menu other than the default options. In that case, adherence to the specific parameters/steps in that playbook is displayed.  
-
+    Supervisors can select any playbook from the drop-down menu instead of the default options. When they choose a playbook, the system displays adherence to the specific steps and parameters defined in that playbook.   
     <img src="../conversation-intelligence/images/playbook-adherence.png" alt="Playbook Adherence" title="Playbook Adherence" style="border: 1px solid gray; zoom:90%;">
 
     Administrators can configure the attributes for agent playbook adherence. [Learn more](../../console/monitor-queues-agents-and-interactions.md).
@@ -241,16 +246,19 @@ When no Agent AI playbooks are configured, adherence is displayed for the follow
 
 ## Customer Experience
 
-You can monitor and review historical data to assess customer experience. This in-depth analysis of the metrics results in improved customer experience.
+You can monitor and review historical data to assess customer experience. Analyzing these metrics helps you identify trends and make informed decisions.
 
-The following parameters can be monitored:
+The following parameters are available:
 
-* **All Languages**: Enables the multi-selection of languages from the All Languages drop-down menu, reflecting the languages chosen in the evaluation form. By default, all languages are pre-selected. Only the metrics corresponding to the selected languages are shown under this filter. Once the language filter is applied, the relevant language-specific interaction data is displayed in the **Sentiment Monitor** and **Customer Churn Monitor** widgets.
-* **Average Wait Time**: The average wait time is the total wait time for all customers in a specific period (for example, an hour) divided by the total number of customers served during that period.
-* **NPS Score**: The Net Promoter Score (NPS) measures customer loyalty and satisfaction. It is determined through a survey question that asks customers to rate, on a scale from 0 to 10, how likely they are to recommend the products or services to others.
-* **Churn Risk**: Churn risk refers to the rate at which customers stop using the services or products provided by the contact center and switch to a competitor or discontinue their engagement altogether. It indicates the loss of customers over a specific period.
-* **Sentiment Score**: The sentiment of each customer utterance is assessed in real-time at the keyword/phrase/sub-topic level and stored. Once the call concludes, all the customer sentiments recorded are averaged to compute a sentiment score for the entire call, which is then normalized within the range of 1 to 10. It is a numerical representation of the sentiment or emotion expressed during the interaction, such as a comment. The goal is to determine the overall sentiment or attitude conveyed in the interaction.  
+* **All Languages**: You can select multiple languages from the All Languages drop-down, based on the languages used in the evaluation form. The system selects **All languages** by default. The filter shows only metrics relevant to the selected languages. When applied, language-specific interaction data appears in the **Sentiment Monitor** and **Customer Churn Monitor** widgets.
 
+* **Average Wait Time**: This represents the total customer wait time during a defined period (for example, one hour) divided by the number of customers served in that period.
+
+* **NPS Score**: The Net Promoter Score (NPS) measures customer loyalty and satisfaction. Customers rate, on a scale of 0 to 10, how likely customer recommend your product or service.
+
+* **Churn Risk**: Churn risk shows how many customers stop using your services during a selected timeframe. It reflects customers who move to competitors or discontinue their engagement.
+
+* **Sentiment Score**: The system analyzes the sentiment of each customer utterance in real-time at the keyword, phrase, or sub-topic level. After the call ends, it averages the detected sentiments to compute an overall score for the interaction, normalized on a 1 to 10 scale. This score reflects the general emotion or attitude expressed during the conversation.   
 <img src="../conversation-intelligence/images/custom-experience.png" alt="Custom Experience" title="Custom Experience" style="border: 1px solid gray; zoom:100%;">
 
 ### Sentiment Monitor
@@ -259,107 +267,108 @@ The Sentiment Monitor module provides a score range from 1 to 10 for each intera
 
 The sentiment monitor graph shows the distribution of customer sentiment across different intents, enabling an admin to understand customer satisfaction and sentiment levels related to specific intents or topics of conversation.
 
-The sentiment monitor graph is a bar chart where each bar represents an intent or topic. Each bar represents the associated sentiment across all interactions with that intent, categorizing the sentiment weightage as follows:
+The sentiment monitor graph is a bar chart where each bar represents an intent or topic. Each bar represents the associated sentiment across all interactions with that intent, categorizing the sentiment weightage as follows:  
 
 * **Positive Sentiment**: Green color
 * **Neutral Sentiment**: Yellow color
-* **Negative Sentiment**: Red color  
-
+* **Negative Sentiment**: Red color   
 <img src="../conversation-intelligence/images/sentiment-monitor.png" alt="Sentiment Monitor" title="Sentiment Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ### Customer Churn Monitor
 
-The Customer Churn Monitor is a pie chart representation of the customer churn risk. This chart indicates customer churn percentage compared with total calls and any observed escalations in the same period. It functions as an interactive graph, where hovering over the graph reveals the weightage of each section based on the hover placement, and clicking a specific section directs to the calls associated with either escalation or customer churn. The following details are displayed:
+The Customer Churn Monitor shows customer churn risk in a pie chart. It compares the churn percentage with total calls and any escalations in the same period. Hovering over a section shows its value, and selecting a section opens the calls linked to that escalation or churn category. The dashboard displays the following details:
 
-* **No Customer Churn/Escalation**: Number of interactions with no customer churn/escalation.
+* **No Customer Churn/Escalation**: Number of interactions with no customer churn or escalation.
+
 * **Customer Churn**: Count of interactions where there has been a customer churn.
-* **Escalation**: Number of interactions where the customer has requested assistance from a supervisor or a senior.  
 
+* **Escalation**: Number of interactions where the customer has requested assistance from a supervisor or a senior.  
 <img src="../conversation-intelligence/images/customer-churn-monitor.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 ## Insights Mining
 
-Insights Mining displays the top 30 topics by volume and allows you to identify the topics associated with volume, sentiment, keywords and emotions for the selected date range and channel.  
+Insights Mining displays the top 30 topics by volume and lets you identify the topics associated with volume, sentiment, keywords and emotions for the selected date range and channel.  
 <img src="../conversation-intelligence/images/insights-mining-default-screen.png" alt="Customer Churn Monitor" title="Customer Churn Monitor" style="border: 1px solid gray; zoom:80%;">
 
 By default, this widget displays a blank screen without any data. Based on the date range and topic selected from the calendar, it pulls the required sentiment scores for interactions in bubbles.
 
 #### All Languages
-This enables multi-selection of languages from the **All Languages** drop-down menu, corresponding to the languages chosen in the evaluation form. By default, all languages are selected. Only the metrics configured for the chosen languages are shown under this filter. 
 
- You can filter data by channel (All, Voice, Chat, Email). This filter affects the entire dashboard, except for agent occupancy, since occupancy per channel is not tracked.
+This lets you select multiple languages from the **All Languages** drop-down menu that match the languages in the evaluation form. By default, the system selects all languages. The filter shows only the metrics configured for the languages you choose.
 
- Upon selection of any language and channel filter, the corresponding interaction sentiment scores along with bubble plotting visual representations are populated in the **Topics** and **Keyword Cloud & Emotions** for all widgets. 
-
+ You can filter data by channel (All, Voice, Chat, Email). This filter affects the entire dashboard, except for agent occupancy, since occupancy per channel isn't tracked.
+ 
+ When you select any language or channel filter, the system updates the interaction sentiment scores and bubble-plot visuals in **Topics** and **Keyword Cloud & Emotions** across all widgets.
 
 ### Topics 
 
-This displays grades sentiment scores for interactions on a scale of 1 to 10. Each topic is represented by a bubble with indicators for different volumes associated with positive, neutral, or negative sentiment. This displays the Top 5 emotions including both positive and negative.
+This shows graded sentiment scores for interactions on a scale of 1 to 10. Each topic appears as a bubble that reflects the volume of positive, neutral, or negative sentiment. The widget also shows the top five emotions, including both positive and negative ones.
 
-Hovering over a topic (actionable insights via tooltips) displays the following associated average emotion index label (for example, angry or frustrated) instead of the topic name. 
+When you hover over a topic, the tooltip shows the average emotion label (for example, angry or frustrated) instead of the topic name.
 
 #### Bubble Color & Sentiment Logic
-The bubble plotting visual representation helps you to quickly identify sentiment distribution and volume for each topic. Hovering over a bubble displays a tooltip with sentiment distribution, total interactions, and average sentiment score.
+
+The bubble plotting visual representation helps you identify sentiment distribution and volume for each topic. Hovering over a bubble displays a tooltip with sentiment distribution, total interactions, and average sentiment score.
 
 **Sentiment Color**
 
 * **Green** (Positive): Indicates positive sentiment distribution and the Sentiment score is between 6 and 10.
+
 * **Grey** (Neutral): Indicates neutral sentiment distribution and the Sentiment score is between 4 and 6.
+
 * **Red** (Negative): Indicates negative sentiment distribution and the Sentiment score is between 1 and 4.
+
 * **No. of Interactions**: Total count of interactions for that topic.
 * **Sentiment Score**: Overall sentiment score for the topic.
 
-The bubble size reflects the volume of interactions for a topic. It is dynamically calculated within the selected date range, with the size scaled proportionally to show the topic's interaction volume relative to the minimum and maximum values. By default, all three sentiment colors are selected, showing a combined view of all topics with varying sentiments. By clicking on a specific sentiment color, you can view the most relevant topics within each sentiment category.
+The bubble size reflects the interaction volume for a topic. The system calculates this size dynamically within the selected date range and scales it to show the topic’s volume relative to the minimum and maximum values. By default, all the three selected sentiment colors, give you a combined view of all topics across sentiments. You can select a specific sentiment color to view the most relevant topics in that category.
 
 The color logic for sentiment:
 
-* 1<=x<4: Negative (Red)
+* 1 ≤ x < 4: Negative (Red)
 
-* 4<=x<6: Neutral (Grey)
+* 4 ≤ x < 6: Neutral (Grey)
 
-* 6<=x<=10: Positive (Green)
-
+* 6 ≤ x < 10: Positive (Green)
 
     !!! Note
 
-        By default, only the top most significant 30 topics (based on interaction volume) are displayed on the widget.
+        Only the top 30 most significant topics (based on interaction volume) are displayed on the widget.
 
-For example, the **Payment** bubble indicates sentiment distribution as **Positive** 68% (green), **Neutral**  10% (grey), and **Negative** 22% (red). 
+For example, the **Payment** bubble indicates sentiment distribution as **Positive** 68% (green), **Neutral** 10% (gray), and **Negative** 22% (red). 
 
-These percentages are represented by the bubble’s circumference. Hovering over the Payment bubble shows the average emotion index, such as **Flexible**, **Accurate**, **Fast**, and so on (associated with the average sentiment score).  
+The bubble’s circumference represents these percentages. When you hover over the Payment bubble, the tooltip shows the average emotion index, such as Flexible, Accurate, or Fast, based on the average sentiment score.     
 <img src="../conversation-intelligence/images/topics-percentage.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
 
 ## Keyword Cloud & Emotions for All
 
-This displays relevant keywords for a selected **Topics** from the previous widget. It excludes general stop words and common words. 
- 
+This widget shows relevant keywords for the selected Topic from the previous widget. It excludes stop words and other common terms.     
 <img src="../conversation-intelligence/images/insights-mining.png" alt="Keyword Cloud" title="Keyword Cloud" style="border: 1px solid gray; zoom:90%;">
 
 ### Keyword Search
 
-Supervisors can search specific keywords across interactions related to a chosen topic from the topic bubbles using the Keyword Search option.
+Supervisors use Keyword Search to find and analyze keywords across interactions by topic.
 
-You can select a single or all topics from the dropdown list to search for a keyword. The total mentions of the keyword and the total number of unique interactions where the keyword is displayed when hovering over the keyword.
+* Select one topic or All Topics and enter a keyword to search interactions.
 
-If a specific topic bubble is selected, the topic dropdown list automatically chooses the relevant topic. The searched keyword appears in the selected topic bubble or the selected topic from the dropdown list.
+* Hover over a keyword to view total mentions and unique interactions.
 
-When “all topics” are selected from the dropdown list, the topic bubble is deselected and it displays the keywords and interaction details across all topics.
+* Select a topic bubble or choose a topic from the drop-down list to filter related keywords.
 
-Selecting a specific topic from the dropdown list selects the relevant topic bubble, which shows only the pertinent keywords for that topic.
+* Select All Topics to view keywords and interaction details across all topics.
 
-If a keyword is present in multiple topics, the keyword count and interaction mention the specific topic’s relevance.
+* When a keyword appears in multiple topics, the system reflects topic-specific relevance.
 
-When searching for a keyword, only that specific keyword appears in the keyword cloud. Relevant semantic keywords, if available, are displayed in the keyword cloud.
+* The keyword cloud shows only the searched keyword and available semantic variations.
 
-The interaction details refer to the main keyword searched, and if any semantic variations are present, the interaction details are shown after the complete set of interactions for the specific keyword is searched.
+* Select a semantic variation to view its related interactions in the Interaction Details panel.
 
-When a specific semantic variation keyword is selected in the keyword cloud, the interactions related to that keyword are displayed in the interaction details.  
-
+* When you select a semantic variant in the keyword cloud, the system displays the interactions related to that specific keyword in the Interaction Details panel.  
 <img src="../conversation-intelligence/images/selected-topic.png" alt="Keyword Search" title="Keyword Search" style="border: 1px solid gray; zoom:90%;">
 
 ## Interaction Details
 
-Interaction details display the relevant details based on default settings that you can configure. When you select specific topics or keywords, the widget presents the relevant information, or if no specific selection is made, it displays information based on the highest sentiment score or other user-configured settings.
+The Interaction Details widget shows information based on default settings, which you can configure. When you select specific topics or keywords, the widget displays the relevant information. If you make no selection, it shows data based on the highest sentiment score or other settings you configure.
 
 This section includes the following fields:
 
@@ -372,3 +381,7 @@ This section includes the following fields:
 * Dispositions  
 
 <img src="../conversation-intelligence/images/interaction-details.png" alt="Interaction Details" title="Interaction Details" style="border: 1px solid gray; zoom:90%;">
+
+
+
+

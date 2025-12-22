@@ -10,10 +10,9 @@ In the following steps, you will learn how to add an input scanner. The steps to
 
 Steps to add a Scanner:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
+1. Log in to your account.
 
-2. In the **Tools** section, click the name of the tool to which you want to add the scanner. The Tool flow page is displayed. 
+2. In the **Workflows** section, click the workflow to which you want to add the scanner. The Workflow page is displayed. 
 
 2. Click **Guardrails** in the left navigation pane. The Guardrails page is displayed.  
 <img src="./../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;">

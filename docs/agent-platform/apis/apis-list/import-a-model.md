@@ -100,7 +100,7 @@ curl --location 'https://{host}/api/public/files/session/start'
   <tr>
    <td><strong>fileContext</strong>
    </td>
-   <td>Context of the file (e.g., model/dataset).
+   <td>Context of the file (for example, model/dataset).
    </td>
    <td>String
    </td>
@@ -120,7 +120,7 @@ curl --location 'https://{host}/api/public/files/session/start'
   <tr>
    <td><strong>fileExtension</strong>
    </td>
-   <td>The extension of the file (e.g., tar).
+   <td>The extension of the file (for example, tar).
    </td>
    <td>String
    </td>
@@ -477,7 +477,7 @@ No parameters are passed.
   <tr>
    <td><strong>jobType</strong>
    </td>
-   <td>Type of job being performed, i.e. <em>MODEL</em>
+   <td>Type of job being performed, <em>MODEL</em>
    </td>
    <td>String
    </td>

@@ -1,6 +1,6 @@
 # Conversation Designer Overview
 
-The Conversation Designer is a dialog task editor which allows you to design and build a conversation flow between a user and an AI Agentt.
+The Conversation Designer is a dialog task editor which allows you to design and build a conversation flow between a user and an AI Agent.
 
 In the XO Platform, the Conversation Designer comes in two versions, each designed to fulfill a specific function:
 

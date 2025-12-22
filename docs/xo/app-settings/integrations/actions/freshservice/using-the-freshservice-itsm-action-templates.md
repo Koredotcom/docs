@@ -299,13 +299,13 @@ Steps to view all tickets in the Freshservice integration:
         "to_emails": null,
         "type": "Incident",
         "description": "
-        qfvftwd
+        test
         ",
-        "description_text": "qfvftwd",
+        "description_text": "test",
         "custom_fields": {}
         },
         {
-        "subject": "freshh",
+        "subject": "fresh",
         "group_id": null,
         "department_id": null,
         "category": null,
@@ -933,7 +933,7 @@ Steps to update a ticket in the Freshdesk integration:
     1. **updateTicket** – A user intent to update a ticket.
     2. **ticketID**, **updateField**, **email**, **subject**, **description**, **status**, and **priority** – Entity nodes for gathering the required ticket details.
     3. **updateTicketScript** – A bot action service to update a ticket in an external integration. Click the **Plus** icon to expand to view the _updateTicketScript_ bot action component properties.  
-    <img src="../images/freshservice-tem-img14.png" alt="View bot action component properties" title="View bot action component propertiess" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/freshservice-tem-img14.png" alt="View bot action component properties" title="View bot action component properties" style="border: 1px solid gray;zoom:50%;"/>
 
     4. In the Component Properties window, click the "Edit Request" link to edit the request parameters as shown below:  
     <img src="../images/freshservice-tem-img15.png" alt="Edit request" title="Edit request" style="border: 1px solid gray;zoom:50%;"/>
@@ -1093,7 +1093,7 @@ Steps to search ticket by field from the Freshservice integration:
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the App console to find a ticket by field as shown below:  
-<img src="../images/freshservice-tem-img19.png" alt="VA prompt to find ticket by field" title="VA prompt to fild ticket by field" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/freshservice-tem-img19.png" alt="VA prompt to find ticket by field" title="VA prompt to find ticket by field" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ### Delete a Ticket

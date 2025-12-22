@@ -2,12 +2,13 @@ site_name: Kore ai Docs
 site_author: Kore ai Content Experience Team
 docs_dir: 'docs/ai-for-process/'
 site_dir: 'site/ai-for-process/'
+site_url: https://docs.kore.ai/ai-for-process/
 repo_name: Koredotcom/docs
 repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
-  favicon: images/gale_favicon.svg
+  favicon: images/Kore_logo_new.svg
   name: material
   custom_dir: overrides.en.ai-for-process
   features:
@@ -16,6 +17,7 @@ theme:
     - navigation.top
     - navigation.path
     - navigation.footer
+    - navigation.instant
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -59,10 +61,8 @@ extra:
           name: This page could be improved
           data: 0
           note: >-                       
-            Thanks for your feedback! Help us improve this page by
-            using our <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Feedback Form<a>.            
+            Thanks for your feedback!
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - extra_js/feedback.js
 markdown_extensions:
@@ -72,6 +72,11 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - toc:
       permalink: true
       title: On this Page
@@ -106,6 +111,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path: .
 
 copyright: |
   © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
@@ -113,58 +120,63 @@ nav:
   - Home : home.md
   - Getting Started: 
     - AI for Process Overview: getting-started/introduction.md
-    - Accessing AI for Process: getting-started/sign-up-sign-in.md        
+    - Accessing AI for Process: getting-started/accessing-ai-for-process.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
   - Workflows: 
-    - About Workflow Tools: workflows/workflow-tools.md
-    - Create a Workflow Tool: workflows/create-a-new-tool.md
-    - Import a Tool: workflows/import-a-tool.md
-    - Tool Flows:
-      - About Flows: workflows/tool-flows/flows-overview.md
-      - About Tool Calling: workflows/tool-flows/tool-calling.md
+    - About Workflows: workflows/overview.md
+    - Create a Workflow: workflows/create-a-workflow.md
+    - Import a Workflow: workflows/import-a-workflow.md
+    - Workflow Builder:
+      - About Workflow Builder: workflows/workflow-builder/flows-overview.md
+      - About Triggers: workflows/workflow-builder/about-triggers.md
       - Manage Flows: 
-        - Manage Nodes in Flows: workflows/tool-flows/manage-flow-nodes.md
-        - Manage Input and Output: workflows/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
-        - Run the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Create a Version of the Flow: workflows/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+        - Manage Nodes in Flows: workflows/workflow-builder/manage-flow-nodes.md
+        - Manage Input and Output: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: workflows/workflow-builder/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
+        - Start Node: workflows/workflow-builder/types-of-nodes/start-node.md
         - AI Node: 
-          - About AI Nodes: workflows/tool-flows/types-of-nodes/ai-node.md
-          - Text to Text Node: workflows/tool-flows/types-of-nodes/text-to-text-node.md
-          - Text to Image Node: workflows/tool-flows/types-of-nodes/text-to-image-node.md
-          - Audio to Text Node: workflows/tool-flows/types-of-nodes/audio-to-text-node.md
-          - Image to Text Node: workflows/tool-flows/types-of-nodes/image-to-text-node.md
-        - Integration Node: workflows/tool-flows/types-of-nodes/integration-node.md
-        - API Node: workflows/tool-flows/types-of-nodes/api-node.md
-        - Function Node: workflows/tool-flows/types-of-nodes/function-node.md
-        - Condition Node: workflows/tool-flows/types-of-nodes/condition-node.md
-        - DocSearch Node: workflows/tool-flows/types-of-nodes/docsearch-node.md 
-        - Loop Node: workflows/tool-flows/types-of-nodes/loop-node.md  
-        - Human Node: workflows/tool-flows/types-of-nodes/human-node.md 
-        - End Node: workflows/tool-flows/types-of-nodes/end-node.md 
-      - Tool Flow Change Log: workflows/tool-flows/tool-canvas-change-log.md    
+          - About AI Nodes: workflows/workflow-builder/types-of-nodes/ai-node.md
+          - Text to Text Node: workflows/workflow-builder/types-of-nodes/text-to-text-node.md
+          - Text to Image Node: workflows/workflow-builder/types-of-nodes/text-to-image-node.md
+          - Audio to Text Node: workflows/workflow-builder/types-of-nodes/audio-to-text-node.md
+          - Image to Text Node: workflows/workflow-builder/types-of-nodes/image-to-text-node.md
+        - Integration Node: workflows/workflow-builder/types-of-nodes/integration-node.md
+        - API Node: workflows/workflow-builder/types-of-nodes/api-node.md
+        - Function Node: workflows/workflow-builder/types-of-nodes/function-node.md
+        - Condition Node: workflows/workflow-builder/types-of-nodes/condition-node.md
+        - DocSearch Node: workflows/workflow-builder/types-of-nodes/docsearch-node.md 
+        - Loop Node: workflows/workflow-builder/types-of-nodes/loop-node.md  
+        - Human Node: workflows/workflow-builder/types-of-nodes/human-node.md 
+        - Agentic App Node: workflows/workflow-builder/types-of-nodes/agentic-app-node.md
+        - Doc Intelligence Node: workflows/workflow-builder/types-of-nodes/doc-intelligence-node.md       
+        - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
+      - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
       - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md
     - Workflow Endpoint: 
-      - Deploy a Tool: workflows/deploy-a-tool.md
+      - Deploy a Workflow: workflows/deploy-a-workflow.md
     - API Keys: 
       - Create an API Key: workflows/create-a-new-api-key.md 
     - Workflow Monitor: 
-      - About Tool Monitor: workflows/tool-monitor/about-tool-monitor.md
-      - Accessing Tool Monitor: workflows/tool-monitor/accessing-tool-monitor.md
-      - Understanding Tool Monitor: workflows/tool-monitor/understanding-the-tool-monitor-interface.md
+      - About Workflow Monitor: workflows/workflow-monitor/about-workflow-monitor.md
+      - Accessing Workflow Monitor: workflows/workflow-monitor/accessing-workflow-monitor.md
+      - Understanding Workflow Monitor: workflows/workflow-monitor/understanding-the-workflow-monitor-interface.md
     - Guardrails:
       - About Guardrails: workflows/guardrails/overview.md
       - Add a Scanner: workflows/guardrails/add-a-scanner.md
       - Test Guardrail: workflows/guardrails/test-guardrail.md
       - Manage Guardrails: workflows/guardrails/manage-guardrails.md
     - Audit Logs:
-      - Tool Audit Logs: workflows/tool-audit-log.md
+      - Workflow Audit Logs: workflows/workflow-audit-log.md
     - Configurations:
-      - Configure a Tool: workflows/configure-a-tool.md
-      - Export a Tool: workflows/export-a-tool.md
-      - Import Tool as a Version: workflows/import-a-tool/#import-tool-as-a-version 
+      - Configure a Workflow: workflows/configure-a-workflow.md
+      - Export a Workflow: workflows/export-a-workflow.md
+      - Import Workflow as a Version: workflows/import-a-workflow.md
+  - Inbox: 
+    - About Inbox: workflows/inbox.md
   - Models: 
     - About Models: models/overview.md 
     - Model Factory: 
@@ -196,7 +208,7 @@ nav:
         - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
     - Supported Models: models/supported-models.md        
   - Prompts:
-    - About Prompt Studio: prompts/overview.md
+    - About Prompt Studio: prompts/about-prompt-studio.md
     - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
     - Using Prompt Studio: prompts/using-prompt-studio.md
     - Advanced Features: prompts/advanced-features.md
@@ -217,11 +229,13 @@ nav:
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
+    - Manage Models:
+      - Manage OCR Models: settings/manage-models/manage-ocr.md   
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
-        - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
+        - Workflow Analytics Dashboard: settings/monitoring/analytics/workflows-analytics-dashboard.md      
         - Model Analytics Dashboard: settings/monitoring/analytics/model-analytics-dashboard.md
         - Model Traces: settings/monitoring/analytics/model-traces.md
       - Custom Scripts: settings/monitoring/monitoring-custom-scripts.md

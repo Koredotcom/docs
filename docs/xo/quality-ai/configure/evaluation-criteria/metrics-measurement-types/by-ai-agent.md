@@ -1,402 +1,207 @@
 # By AI Agent Metric
 
-The By AI Agent metric type enables you to configure evaluation metrics powered by AI agents that can understand complex requests, perform multi-step reasoning, and make autonomous decisions through natural language processing. This metric type is designed for sophisticated evaluation scenarios that require domain expertise and advanced analytical capabilities beyond standard Generative AI metrics.
+The By AI Agent metric lets supervisors configure AI-driven evaluation metrics that intelligently assess multiple aspects of a conversation using agents hosted on the Agent Platform. This metric type introduces a two-level structure, a parent metric that contains multiple sub-metrics, each with its own evaluation question, weight, and adherence logic.
+
+With this setup, a single agentic evaluation call can analyze several aspects of a conversation, returning structured responses and justifications for each sub-metric.
 
 ## When to Use By AI Agent Metric
 
-Use By AI Agent metric for evaluation scenarios that require:
+Use this metric type for evaluation scenarios that require:
 
-* **Multi-step reasoning and complex analysis**: Evaluation scenarios require connecting multiple pieces of information across a conversation.
+* **Multi-Dimensional Assessments**: Evaluate several facets (sub-metrics) under one parent metric.
 
-* **Domain-specific expertise**: Evaluations that need specialized knowledge in areas like compliance, technical support, or industry-specific protocols.
+* **Autonomous AI Analysis**: Leverage AI agents to interpret, reason, and assess interactions using contextual understanding.
 
-* **Knowledge-based verification**: Scenarios where the AI agent must search through knowledge bases, documentation, or external sources to verify factual accuracy, compliance adherence, or policy conformance against established information repositories.
+* **Weighted Evaluations**: Assign different weight to sub-metrics to prioritize specific aspects.
 
-* **Ground truth validation using tools**: Cases where specialized tools are required to cross-reference information against authoritative sources, validate the correctness of responses or recommendations, and ensure adherence to specific standards or protocols.
+* **Efficient Execution**: Reduce redundant API calls by evaluating multiple sub-metrics within one agentic request.
 
-* **Comprehensive contextual understanding**: Situations where the full conversation context and nuanced understanding are critical for accurate evaluation.
-
-* **Advanced decision-making capabilities**: Complex judgment calls that require sophisticated reasoning beyond simple pattern matching.
-
-## AI Agent vs Gen AI Metrics Comparison
-
-<table>
-  <tr>
-   <td><strong>AI Agent Metrics</strong>
-   </td>
-   <td><strong>Gen AI Metrics</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>High - handles multi-step reasoning and domain expertise.
-   </td>
-   <td>Low to Medium - pattern matching and similarity detection.
-   </td>
-  </tr>
-  <tr>
-   <td>Requires external AI agent configuration and API integration.
-   </td>
-   <td>Built-in configuration with predefined parameters.
-   </td>
-  </tr>
-  <tr>
-   <td>Autonomous decision-making with custom logic.
-   </td>
-   <td>Rule-based or similarity-based evaluation.
-   </td>
-  </tr>
-  <tr>
-   <td>Nuanced compliance checks, complex quality assessments.
-   </td>
-   <td>Adherence verification, standard response validation.
-   </td>
-  </tr>
-</table>
+* **Seamless Configuration**: Select agentic apps directly from the same workspace without entering endpoint URLs.
 
 ## Prerequisites
 
-To configure By AI Agent metrics, ensure the following prerequisites are met:
+Ensure the following before creating a By AI Agent metric:
 
-* The By AI Agent metric type is in private beta.
+* You have access to Quality AI and Agent Platform.
 
-* You have access to Kore.ai's AI Agent Platform and a deployed agent.
+* The same workspace is available across both platforms.
 
-* You have the endpoint URL and API key for your AI agent service.
+* You have access permissions to view and deploy agentic apps.
 
-* Your AI agent is configured to provide Quality AI-compatible responses.
+* The By AI Agent Metric feature is enabled for your workspace account.
 
-    !!! Note
+* You have configured at least one agentic app on the Agent Platform with the required response structure.
 
-        The By AI Agent metric type is currently in private beta. To enable this feature:
-    
-        * Contact Kore.ai support through the support portal.
+    * If your workspace has no configured agentic app, the Agent App dropdown shows no options during metric configuration.
 
-        * Provide your workspace account ID in the request.
+    * If the agentic app's response structure does not match the required contract, the Test Connection fails, and blocks you from proceeding with metric configuration.
 
-## Configuring By AI Agent Metric
+## Configure By AI Agent Metric
+
+### Step 1: Navigate to Metric Configuration
 
 1. Navigate to **Quality AI > Configure > Evaluation Forms> Evaluation Metrics**.
 
-2. Click **+ New Evaluation Metric**.
+1. Click **+ New Evaluation Metric**.
 
-3. From the **Evaluation Metrics Measurement Type** dropdown, select **By AI Agent**.   
+1. From the **Evaluation Metrics Measurement Type** dropdown, select **By AI Agent**.   
 <img src="../images/by-ai-agent-add-new-eva-metrics.png" alt="Measurement Type" title="Measurement Type" style="border: 1px solid gray; zoom:70%;">
 
-4. Enter a descriptive **Name** for future reference of the metrics.
+### Step 2: Create the Parent Metric
 
-5. Select the **Language** from the dropdown to provide language context for the AI agent's evaluation process.   
+1. Enter a descriptive **Name** for the future reference of this metric. For example, compliance disclosure.  
+
+1. Select the **Language** from the dropdown for the AI agent's evaluation process.   
 <img src="../images/ai-agent-lang.png" alt="Language" title="Language" style="border: 1px solid gray; zoom:70%;">
 
-6. Enter the evaluation **Question** that defines what the AI agent should assess.
+### Step 3: Select the Agentic App
 
-7. Configure the **AI Agent Connection**:
-    1. **AI Agent Endpoint**: Enter the API endpoint URL for your external AI agent service.
+1. In the **Agent App** dropdown, choose from the list of agentic apps available in the same workspace.
 
-    2. **API Key**: Provide the authentication key for accessing the AI agent endpoint.   
-    <img src="../images/api-key-ai-agent.png" alt="AI Agent Connection" title="AI Agent Connection" style="border: 1px solid gray; zoom:70%;">
+1. Choose the Environment you want to use (for example, Draft, Version 1, Version 2).
 
-        !!! note
+### Step 4: Test Connection and Fetch Sub-Metrics
 
-            For detailed instructions on retrieving your AI Agent Endpoint and API Key, see [AI Agent Endpoint Documentation](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/deployment/access-deployed-version/?h=access+deployed+version){:target="_blank"}. 
-    
-8. **Test Connection**: Click the **Test Request** button to validate your configuration. The system verifies the API endpoint accessibility, authentication, and response format compatibility.
+1. Select the app and environment.
 
-9. Click **Create** to save the new metric for AI Agent evaluation.
+1. Select **Test Connection**.
 
-## Response Format
+1. The system sends a test call to the selected app and retrieves the available sub-metrics for configuration.
 
-When configuring your AI Agent in the Agent Platform, you must define the response format in the **Description** field to ensure proper communication with Quality AI. This format specification tells the AI Agent how to structure its evaluation responses.
+1. The retrieved sub-metrics appear under the parent metric with editable fields for customization.  
+<img src="../images/api-key-ai-agent.png" alt="AI Agent Connection" title="AI Agent Connection" style="border: 1px solid gray; zoom:70%;">
 
-### Setting up response format
+### Step 5: Configure Sub-Metrics
+
+After a successful connection, the system displays all sub-metrics provided by the agentic app along with their reference names.     
+<img src="./images/ai-agent-sub-metrics.png" alt="AI Agent Sub-Metrics" title="AI Agent Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
+
+You can configure each sub-metric individually by selecting **Edit** next to the **Weightage** column. This opens a full-screen configuration panel where you can define the following:
+
+| Field             | Description                                                                  |
+|-------------------|------------------------------------------------------------------------------|
+| **Display Name**      | Label for the sub-metric                                                     |
+| **Question**          | The evaluation question for this sub-metric                                  |
+| **Positive Weightage**| Assign the positive weight when the criterion is met                          |
+| **Negative Weightage**| Assign the negative weight when the criterion is not met                      |
+| **Fatal Error**       | Toggle this key if failing this sub-metric must mark the entire interaction as a critical failure |
+
+<img src="../images/sub-metrics-weight.png" alt="Configure Sub-Metrics" title="Configure Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
+
+When you configure all the details, select **Create** to save the sub-metric for AI Agent evaluation.
+
+## Setting up Response Format
 
 1. Navigate to your AI Agent configuration in the Agent Platform.
 
-2. Locate the **Description** field.
+1. Locate the Description field.
 
-3. Enter the response format specification as shown in the template below.  
-<img src="../images/response-format-ai-agent.png" alt="Response Format" title="Response Format" style="border: 1px solid gray; zoom:70%;">
+1. Enter the response format specification as shown in the template below.
 
-4. Save your configuration.
+## Use Case Example: UDAP Compliance
 
-    !!! Note
+For financial services compliance (UDAP), a single parent metric can evaluate multiple aspects:
 
-        For detailed instructions on setting up an AI Agent, see the [AI Agent creation guide](https://docs.kore.ai/agent-platform/ai-agents/create-agent/){:target="_blank"}.
-        
-### Response Format Template
+* **Fee Disclosure** (Weight - 25%): Verifies that all fees are clearly explained.
 
-The AI Agent must return responses in the following JSON structure:
+* **Interest Rate Accuracy** (Weight - 30%): Ensures correct rate information.
 
-### Field descriptions
+* **Benefit Explanation** (Weight - 20%): Confirms benefits are thoroughly described.
+
+* **Exclusion Details** (Weight - 15%): Validates that exclusions properly are mentioned.
+
+* **Terms Clarity** (Weight - 10%): Assesses overall clarity of terms.
+
+Each sub-metric is evaluated independently with a single API call, providing detailed  justifications for each aspect.
+
+## Evaluation Flow
+
+At runtime, the evaluation process includes the following actions:
+
+* Only one agentic call is made per parent metric.
+
+* The agent analyzes the conversation and returns structured results for all sub-metrics in a single response.
+
+* Each sub-metric’s adherence, justification, and metadata are automatically extracted and displayed under its parent metric.
+
+## Response Format for Sub-Metrics
+
+The Agent Platform must return responses in the following JSON format to ensure Quality AI can process and display sub-metric results correctly.
+ 
+### Expected Response Format
 
 ```js
 {
-  "messageId": "msg-{uuid-here}",
-  "output": [
+  "botId": "string",
+  "accountId": "string",
+  "conversationId": "string",
+  "agentEvaluation": [
     {
-      "type": "text",
-      "content": "{
-        \"source\": \"{customer|agent}\",
-        \"isQualified\": \"{yes|no|NA}\",
-        \"messageIds\": [
-          \"{message_id_1}\",
-          \"{message_id_2}\"
-        ],
-        \"sourceIds\": [
-          \"{source_id_1}\",
-          \"{source_id_2}\"
-        ],
-        \"msgTimestamps\": [
-          \"{timestamp_1_milliseconds}\",
-          \"{timestamp_2_milliseconds}\"
-        ],
-        \"justification\": [
+      "PARENTMETRIC_ID_VALUE": {
+        "subMetrics": [
           {
-            \"aspect\": \"{Evaluation_Aspect_Name}\",
-            \"status\": \"{Identified|Not Identified}\",
-            \"justification\": \"{Detailed explanation of finding or empty string}\",
-            \"message_id\": [
-              \"{supporting_message_id_1}\",
-              \"{supporting_message_id_2}\"
-            ],
-            \"timestamp\": [
-              \"{supporting_timestamp_1}\",
-              \"{supporting_timestamp_2}\"
-            ]
+            "subMetricId": "string",
+            "subMetricName": "string",
+            "justification": "string",
+            "messageIds": ["array"],
+            "timestamps": ["array"],
+            "source": "agent | customer",
+            "isQualified": "YES | NO | NA",
+            "failureReason": "string"
           }
         ]
-      }"
+      }
     }
   ]
 }
+
 ```
 
-<table>
-  <tr>
-   <td><strong>Field</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>messageId</code>
-   </td>
-   <td>String
-   </td>
-   <td>Unique identifier for the response message.
-   </td>
-  </tr>
-  <tr>
-   <td><code>output</code>
-   </td>
-   <td>Array
-   </td>
-   <td>Contains the evaluation results.
-   </td>
-  </tr>
-  <tr>
-   <td><code>type</code>
-   </td>
-   <td>String
-   </td>
-   <td>Always set to <strong>text</strong>.
-   </td>
-  </tr>
-  <tr>
-   <td><code>content</code>
-   </td>
-   <td>String
-   </td>
-   <td>JSON string containing the evaluation details.
-   </td>
-  </tr>
-  <tr>
-   <td><code>source</code>
-   </td>
-   <td>String
-   </td>
-   <td>Indicates whether evaluation focuses on <strong>customer</strong> or <strong>agent</strong>.
-   </td>
-  </tr>
-  <tr>
-   <td><code>isQualified</code>
-   </td>
-   <td>String
-   </td>
-   <td>Overall evaluation result: <strong>yes</strong>, <strong>no</strong>, or <strong>NA</strong>.
-   </td>
-  </tr>
-  <tr>
-   <td><code>messageIds</code>
-   </td>
-   <td>Array
-   </td>
-   <td>List of message IDs that were evaluated.
-   </td>
-  </tr>
-  <tr>
-   <td><code>sourceIds</code>
-   </td>
-   <td>Array
-   </td>
-   <td>List of source IDs corresponding to the messages.
-   </td>
-  </tr>
-  <tr>
-   <td><code>msgTimestamps</code>
-   </td>
-   <td>Array
-   </td>
-   <td>Timestamps in milliseconds for evaluated messages.
-   </td>
-  </tr>
-  <tr>
-   <td><code>justification</code>
-   </td>
-   <td>Array
-   </td>
-   <td>Detailed breakdown of evaluation aspects.
-   </td>
-  </tr>
-</table>
+### Sample Response from Agent Platform
 
-### Justification Object Structure
-
-Each item in the `justification` array contains:
-
-<table>
-  <tr>
-   <td><strong>Field</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>aspect</code>
-   </td>
-   <td>String
-   </td>
-   <td>Name of the specific evaluation aspect.
-   </td>
-  </tr>
-  <tr>
-   <td><code>status</code>
-   </td>
-   <td>String
-   </td>
-   <td><strong>Identified</strong> or <strong>Not Identified</strong>.
-   </td>
-  </tr>
-  <tr>
-   <td><code>justification</code>
-   </td>
-   <td>String
-   </td>
-   <td>Detailed explanation or empty string if not identified.
-   </td>
-  </tr>
-  <tr>
-   <td><code>message_id</code>
-   </td>
-   <td>Array
-   </td>
-   <td>Supporting message IDs for this aspect.
-   </td>
-  </tr>
-  <tr>
-   <td><code>timestamp</code>
-   </td>
-   <td>Array
-   </td>
-   <td>Corresponding timestamps for supporting messages.
-   </td>
-  </tr>
-</table>
-
-### Configuration Example
-
-When setting up your AI Agent, include this specification in the Description field:
-
-**Response Format Requirements:**
 ```js
 {
-    "The response must be a JSON object with the following structure": [
-        {
-            "isQualified": "String representing overall compliance outcome (\"Yes\", \"No\", or \"Partial\")"
-        },
-        {
-            "compliance_evaluation_details": "Array of JSON objects detailing specific compliance aspects"
-        }
-    ],
-    "Each compliance evaluation object should include": [
-        {
-            "aspect": "Descriptive name of the compliance aspect (e.g., \"Data Security Measures\")"
-        },
-        {
-            "status": "Identified or Not Identified"
-        },
-        {
-            "justification": "Detailed explanation of findings"
-        },
-        {
-            "supporting_evidence": "References to specific messages or timestamps"
-        }
-    ]
-}
-```
-
-### Sample response
-
-An example of a properly formatted response:
-```js
-{
-  "messageId": "msg-b0a1b156-928f-4024-b337-805c193d1472",
-  "output": [
+  "botId": "bot_001",
+  "accountId": "account_001",
+  "conversationId": "conv_001",
+  "agentEvaluation": [
     {
-      "type": "text",
-      "content": "{
-        \"source\": \"customer\",
-        \"isQualified\": \"yes\",
-        \"messageIds\": [\"1\", \"9\"],
-        \"sourceIds\": [\"1\", \"9\"],
-        \"msgTimestamps\": [\"1746792625000\", \"1746792681000\"],
-        \"justification\": [
+      "eval_001": {
+        "subMetrics": [
           {
-            \"aspect\": \"Agent Greetings\",
-            \"status\": \"Identified\",
-            \"justification\": \"The agent starts the conversation with a greeting: 'Thank you for calling Premier Banking Services. This is Michael. How may I assist you today?'\",
-            \"message_id\": [\"1\"],
-            \"timestamp\": [\"1746792625000\"]
+            "subMetricId": "sm_001",
+            "subMetricName": "Loan Inquiry Identification",
+            "justification": "Agent correctly identified the customer's loan-related query.",
+            "messageIds": ["msg_001"],
+            "timestamps": ["2025-10-17T10:00:00Z"],
+            "source": "agent",
+            "isQualified": "YES",
+            "failureReason": ""
           },
           {
-            \"aspect\": \"Customer Satisfaction\",
-            \"status\": \"Identified\",
-            \"justification\": \"The customer expressed understanding and satisfaction: 'I think you've covered everything. The annual fee is $550, but with the $300 travel credit and lounge access, it seems worth it for me.'\",
-            \"message_id\": [\"38\"],
-            \"timestamp\": [\"1746792884000\"]
+            "subMetricId": "sm_002",
+            "subMetricName": "Loan Eligibility Explanation",
+            "justification": "Agent provided some loan eligibility information.",
+            "messageIds": ["msg_002", "msg_004"],
+            "timestamps": ["2025-10-17T10:00:10Z", "2025-10-17T10:00:35Z"],
+            "source": "agent",
+            "isQualified": "YES",
+            "failureReason": ""
+          },
+          {
+            "subMetricId": "sm_003",
+            "subMetricName": "Repayment Plan Guidance",
+            "justification": "Agent provided the available service range.",
+            "messageIds": ["msg_006"],
+            "timestamps": ["2025-10-17T10:00:55Z"],
+            "source": "agent",
+            "isQualified": "YES",
+            "failureReason": ""
           }
         ]
-      }"
+      }
     }
   ]
 }
+
 ```
-
-## Edit or Delete By AI Agent Metrics
-
-Steps to edit or delete any existing **By AI Agent** evaluation metrics:
-
-1. Right-click on a desired evaluation metric name under the **By AI Agent** category.   
-<img src="../images/by-ai-agent-edit.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
-
-2. Choose an option:
-
-    * Click **Edit** to modify the selected metric details.    
-    <img src="../images/by-ai-agent-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
-
-    * Click **Delete** to remove the selected metric.
-
-3. Click **Update** to save the changes.

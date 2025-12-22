@@ -1,3 +1,5 @@
+
+
 # Conversation Orchestration
 
 Conversation Orchestration in DialogGPT allows you to define and manage Conversation Types while configuring separate Chunk Shortlisting and Conversation Orchestration models. You can turn Intent Events and Conversation Events on or off and choose how each event is fulfilled (by overriding the default fulfillment), ensuring precise and adaptable conversation management that you can confidently rely on.  
@@ -25,11 +27,11 @@ To manage the conversation types, click **Settings**, turn the toggle on/off to 
 
 Use the Model Configurations card to select the models for Shortlisting Relevant Chunks and Conversation Management (Orchestration).
 
-* **Shortlisting Relevant Chunks**: The supported models are **MPNet**, **BGE-M3**, **LaBSE**, and **E5 embedding**. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3.
+* **Shortlisting Relevant Chunks**: **BGE-M3** is the supported and recommended model. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine.
 
-* **Maximum no. of Chunks to Shortlist (Knowledge from Search AI)**: Enter the maximum number of chunks to be shortlisted from Search AI. These chunks will be sent to the LLM for answer generation. The default value is 5. Click "[Go to Search AI](../searchai/retrieval.md)" to access the Search AI chunks retrieval settings.
+* **Maximum no. of Chunks to Shortlist (Knowledge from Search AI)**: Enter the maximum number of chunks to be shortlisted from Search AI. These chunks are send to the LLM for answer generation. The default value is 5. Click "[Go to Search AI](../searchai/retrieval.md)" to access the Search AI chunks retrieval settings.
 
-* **Conversation Management**: The supported LLMs help detect user intent and create execution plans. You can configure advanced settings such as Temperature, Max Tokens, and Conversation History Length. The default settings are sufficient for most use cases. Support for major commercial models will be introduced in the coming months. However, you can always integrate your own model through the custom LLM integration option. Conversation Management currently supports the following LLMs:
+* **Conversation Management**: The supported LLMs help detect user intent and create execution plans. You can configure advanced settings such as Temperature, Max Tokens, and Conversation History Length. The default settings are sufficient for most use cases. Support for major commercial models will be introduced in the coming months. However, you can always integrate your own model through the custom LLM integration option. Conversation Management supports the following LLMs:
     * OpenAI GPT-4o
     * OpenAI GPT-4o mini
     * Azure OpenAI GPT-4o
@@ -56,7 +58,7 @@ The following is the intent event fulfillment behavior.
     * Execute Dialog task: Select the dialog task to execute.
 * **Answer Generation**: This event handles user inputs that need answers generated from Search AI documents. When Knowledge from Search AI is enabled in DialogGPT, the system activates the Answer Generation event and adds the default event handler to the App.
 
-* **Multiple Intents**: Define Multi-Intent fulfillment logic when the Conversation Orchestrator detects multiple intents in a user’s utterance. Users can modify the predefined Multi-Intent fulfillment dialog, gaining greater control and flexibility. By default, the platform executes the predefined dialog (Multiintent) to handle the Multi-Intent event.
+* **Multiple Intents**: Define Multi-Intent fulfillment logic when the Conversation Orchestrator detects multiple intents in a user’s utterance. Users can modify the predefined Multi-Intent fulfillment dialog, gaining greater control and flexibility. By default, the platform executes the predefined dialog (MultiIntent) to handle the Multi-Intent event.
 
 To manage an intent, click the respective settings. Define the event configuration, use the toggle to enable/disable the intent type, and click save.
 
@@ -73,7 +75,7 @@ Supported Conversation Events:
 
 * **Interaction Intents**: Handle actions like answering from context, holding, or refusing to answer. The default fulfillment method is ‘Executing a dialog task - ConversationEvent.’ 
 * **Restart Conversation**: Triggers the welcome flow. The default fulfillment method is 'Ask for Confirmation' and then based on the user response, 'Restart the Conversation'.
-* **Agent Transfer**: Transition the user to a human agent. The default fulfillment method is 'Ask for Confirmation' and then based on the user response 'Execute the Dialog Task - DefaultAgentTrasfer'.
+* **Agent Transfer**: Transition the user to a human agent. The default fulfillment method is 'Ask for Confirmation' and then based on the user response 'Execute the Dialog Task - DefaultAgentTransfer'.
 * **End Conversation**: Manage the termination of a conversation. The default fulfillment method is 'Ask for Confirmation' and then based on the user response, 'End the Conversation'.
 
 To manage an intent, click the respective settings. Define the event configuration, use the toggle to enable/disable the intent type, and click save.

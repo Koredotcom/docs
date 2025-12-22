@@ -8,9 +8,9 @@ By supporting model and agentic app evaluation, Evaluation Studio provides a com
 
 Model Evaluation enables you to assess the performance of large language models (LLMs) using configurable quality and safety metrics. You can:
 
-* Upload datasets with input-output pairs
-* Apply built-in or custom evaluators
-* Analyze model effectiveness through visual scoring, thresholds, and collaborative projects
+* Upload datasets with input-output pairs.
+* Apply built-in or custom evaluators.
+* Analyze model effectiveness through visual scoring, thresholds, and collaborative projects.
 
 This evaluation is ideal for fine-tuning, comparing, and validating models before or after deployment.
 
@@ -18,22 +18,23 @@ This evaluation is ideal for fine-tuning, comparing, and validating models befor
 
 ### Agentic Evaluation
 
-Agentic Evaluation is designed to assess how effectively an agentic application performs in production. You can:
+Agentic Evaluation is designed to assess how effectively an agentic app performs in both production and pre-production environments. Users can import real session data from deployed apps or generate simulated sessions to test behavior before go-live. You can:
 
-* Import app sessions and trace data
-* Run multi-level evaluations to see how well the app achieves goals, follows workflows, and uses tools
-* Analyze inputs and outputs across supervisors, agents, and tools
+* Import app sessions and trace from production or simulations.
+* Generate simulated sessions using Personas and Test Scenarios to validate agent behavior before deployment.
+* Run multi-level evaluations to see how well the app achieves goals, follows workflows, and uses tools.
+* Analyze inputs and outputs across supervisors, agents, and tools.
 
-Agentic Evaluation enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools operate in production. This helps uncover coordination issues, workflow failures, and opportunities for optimization.
+Agentic Evaluation enables multi-level evaluation across sessions and traces, offering deep insights into how orchestrators, agents, and tools behave across real and simulated conditions. This helps uncover coordination issues, workflow failures, and opportunities for optimization.
 
 [Learn more :octicons-arrow-right-24:](./agentic-evaluation/overview.md)
 
 ## Accessing Evaluation Studio
 
-1. Log in to your Agent Platform account and click **Evaluation Studio** under **Agent Platform Modules**.
+1. Log in to your Agent Platform account.
 
-    <img src="../images/evaluation_studio.png" alt="access evaluation studio" title="access evaluation studio" style="border: 1px solid gray; zoom:75%;">
+2. Go to the **Agent Platform Modules** menu and select **Evaluation Studio**.
  
-2. On the Evaluation page, select **Model evaluation** or **Agent evaluation** to begin.
+3. On the Evaluation page, select **Model evaluation** or **Agentic evaluation** to begin.
 
     <img src="../images/eval_studio_page.png" alt="Evaluation page" title="Evaluation page" style="border: 1px solid gray; zoom:80%;">

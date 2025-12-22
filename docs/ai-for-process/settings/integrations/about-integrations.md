@@ -1,8 +1,8 @@
 # Integration with Third-party Services
 
-The **Integrations** feature connects your Agent Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects your AI for Process account to third-party services, streamlining access to external workflows and automating workflows. Once connected, you can use these integrations from the workflow canvas to build high-quality AI applications. [Learn more](../../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
-The Agent Platform supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
+The AI for Process supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
 
 * **API**: Authenticate by passing a token (usually in headers or query parameters). Used for API Key or Access Token integrations.
 * **OAuth2**: Uses the OAuth2 industry-standard authorization framework to grant limited access to resources on a service without sharing passwords. The auth method uses the following concepts:
@@ -23,12 +23,11 @@ The Agent Platform supports 120+ integrations with different authorization types
 
 To access the feature, follow the steps below:
 
-1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
-   <img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** → On the left navigation menu → Click **Integrations**.
-    <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
-
+2. On the left navigation menu → Click **Integrations**.
+    
 ## Key Features
 
 The features supported on the **Integrations** page include:
@@ -43,7 +42,7 @@ The features supported on the **Integrations** page include:
 * **Search Integration**: Enter the name in the **Search** field for full or partial matches.
 <img src="../images/search-integration.png" alt="search integration" title="search integration" style="border: 1px solid gray; zoom:75%;">
 
-* **Category Dropdown List**: The Agent Platform supports multiple categories based on the purpose of the integration, such as AI and Machine Learning, Marketing and Social Media, E-commerce, and more. Select the relevant category or categories in the list and click **Apply** to view the corresponding integrations.
+* **Category Dropdown List**: The AI for Process supports multiple categories based on the purpose of the integration, such as AI and Machine Learning, Marketing and Social Media, E-commerce, and more. Select the relevant category or categories in the list and click **Apply** to view the corresponding integrations.
 <img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;">
 
 
@@ -60,7 +59,7 @@ The features supported on the **Integrations** page include:
 
 ## Supported Integrations
 
-The following third-party integrations are available on the Agent Platform:
+The following third-party integrations are available on the AI for Process:
 
 <table>
   <tr>
@@ -96,7 +95,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Affinity
    </td>
-   <td>CRM focused on relationship intelligence, with other tools and systems. This allows for data synchronization, workflow automation, and the sharing of relationship insights across different platforms. 
+   <td>CRM focused on relationship intelligence, with other workflows and systems. This allows for data synchronization, workflow automation, and the sharing of relationship insights across different platforms. 
    </td>
    <td>20
    </td>
@@ -132,7 +131,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Airtable
    </td>
-   <td>Airtable is a low‒code platform that helps build next generation apps. Move beyond rigid tools, and implement your critical data, and re-imagine workflows with AI.
+   <td>Airtable is a low‒code platform that helps build next generation apps. Move beyond rigid workflows, and implement your critical data, and re-imagine workflows with AI.
    </td>
    <td> 17
    </td>
@@ -170,7 +169,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Apollo
    </td>
-   <td>Apollo is a CRM tool that allows you to manage your contacts, leads, and opportunities.
+   <td>Apollo is a CRM workflow that allows you to manage your contacts, leads, and opportunities.
    </td>
    <td> 17
    </td>
@@ -180,7 +179,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Asana
    </td>
-   <td>Tool to help teams organize, track, and manage their work.
+   <td>workflow to help teams organize, track, and manage their work.
    </td>
    <td> 15
    </td>
@@ -294,7 +293,7 @@ The following third-party integrations are available on the Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>Browserbase_tool
+   <td>Browserbase_workflow
    </td>
    <td>A browsing app that gets a URL, reads its contents, and returns it.
    </td>
@@ -332,7 +331,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Calendly
    </td>
-   <td>Calendly is an appointment scheduling tool that automates meeting invitations, availability checks, and reminders, helping individuals and teams avoid email back-and-forth.
+   <td>Calendly is an appointment scheduling workflow that automates meeting invitations, availability checks, and reminders, helping individuals and teams avoid email back-and-forth.
    </td>
    <td> 41
    </td>
@@ -404,7 +403,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Composio
    </td>
-   <td>Composio enables AI Agents and LLMs to authenticate and integrate with various tools via function calling.
+   <td>Composio enables AI Agents and LLMs to authenticate and integrate with various workflows via function calling.
    </td>
    <td> 12
    </td>
@@ -414,7 +413,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Composio_search
    </td>
-   <td>Composio Search is an all-in-one tool for searching and scraping the web.
+   <td>Composio Search is an all-in-one workflow for searching and scraping the web.
    </td>
    <td> 12
    </td>
@@ -424,7 +423,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Confluence
    </td>
-   <td>A tool for team collaboration and knowledge management.
+   <td>A workflow for team collaboration and knowledge management.
    </td>
    <td> 190
    </td>
@@ -460,7 +459,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Coda
    </td>
-   <td>Collaborative workspace platform that transforms documents into powerful tools for team productivity and project management
+   <td>Collaborative workspace platform that transforms documents into powerful workflows for team productivity and project management
    </td>
    <td> 97
    </td>
@@ -568,7 +567,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Exa
    </td>
-   <td>The Exa class extends the base Tool class to interact with the Exa Search service, offering actions like Search, Similarlink, and Answer. These actions enable querying, finding similar links, and generating answers from search results. Currently, no triggers are defined, but they can be added as needed to enhance functionality.
+   <td>The Exa class extends the base workflow class to interact with the Exa Search service, offering actions like Search, Similarlink, and Answer. These actions enable querying, finding similar links, and generating answers from search results. Currently, no triggers are defined, but they can be added as needed to enhance functionality.
    </td>
    <td> 4
    </td>
@@ -588,7 +587,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Figma
    </td>
-   <td>A collaborative interface design tool.
+   <td>A collaborative interface design workflow.
    </td>
    <td> 44
    </td>
@@ -764,7 +763,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Googlemeet
    </td>
-   <td>Google Meet is a video conferencing tool developed by Google.
+   <td>Google Meet is a video conferencing workflow developed by Google.
    </td>
    <td> 5
    </td>
@@ -898,7 +897,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Jira
    </td>
-   <td>Jira API tool.
+   <td>Jira API workflow.
    </td>
    <td> 544
    </td>
@@ -940,7 +939,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Kommo
    </td>
-   <td>Kommo CRM (formerly amoCRM) integration tool for managing customer relationships, sales pipelines, and business processes. This tool enables the automation of various CRM operations.
+   <td>Kommo CRM (formerly amoCRM) integration workflow for managing customer relationships, sales pipelines, and business processes. This workflow enables the automation of various CRM operations.
    </td>
    <td> 15
    </td>
@@ -1026,7 +1025,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Mem0
    </td>
-   <td>Mem0 assists with AI-driven note-taking, knowledge recall, and productivity tools, allowing users to organize, search, and generate content from stored information.
+   <td>Mem0 assists with AI-driven note-taking, knowledge recall, and productivity workflows, allowing users to organize, search, and generate content from stored information.
    </td>
    <td> 43
    </td>
@@ -1036,7 +1035,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Metaads
    </td>
-   <td>Meta Ads Marketing API Integration This tool provides access to Meta's Marketing API for managing ad campaigns, ad sets, ads, and custom audiences, as well as retrieving insights and analytics.
+   <td>Meta Ads Marketing API Integration This workflow provides access to Meta's Marketing API for managing ad campaigns, ad sets, ads, and custom audiences, as well as retrieving insights and analytics.
    </td>
    <td> 16
    </td>
@@ -1052,7 +1051,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Microsoft_clarity
    </td>
-   <td>Microsoft Clarity is a free, easy-to-use tool that captures how real people use your site.
+   <td>Microsoft Clarity is a free, easy-to-use workflow that captures how real people use your site.
 <p>
  
    </td>
@@ -1178,7 +1177,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Perplexityai
    </td>
-   <td>The Perplexity tool interfaces with Perplexity AI's search service, offering advanced natural language processing for sophisticated searches. The PerplexityAISearch action allows for: - Query execution with AI models tailored to various search tasks. - Search customization through parameters affecting content generation. - Domain filtering to enhance search precision. - Real-time response streaming for dynamic applications. This action is highly configurable for a tailored search experience, suitable for a wide range of AI-driven applications.
+   <td>The Perplexity workflow interfaces with Perplexity AI's search service, offering advanced natural language processing for sophisticated searches. The PerplexityAISearch action allows for: - Query execution with AI models tailored to various search tasks. - Search customization through parameters affecting content generation. - Domain filtering to enhance search precision. - Real-time response streaming for dynamic applications. This action is highly configurable for a tailored search experience, suitable for a wide range of AI-driven applications.
    </td>
    <td> 1
    </td>
@@ -1198,7 +1197,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Pipedrive
    </td>
-   <td>Pipedrive is a sales management tool built around pipeline visualization, lead tracking, activity reminders, and automation to keep deals progressing.
+   <td>Pipedrive is a sales management workflow built around pipeline visualization, lead tracking, activity reminders, and automation to keep deals progressing.
    </td>
    <td> 275
    </td>
@@ -1222,7 +1221,7 @@ The following third-party integrations are available on the Agent Platform:
    </td>
   </tr>
   <tr>
-   <td>Posthog
+   <td>PostHog
    </td>
    <td>PostHog is an open-source product analytics platform tracking user interactions and behaviors to help teams refine features, improve funnels, and reduce churn.
    </td>
@@ -1244,7 +1243,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Ramp
    </td>
-   <td>Ramp is a comprehensive finance platform designed to help you manage your finances, track your income and expenses, and get insights into your business. The Ramp API provides developers with the tools to interact with the platform programmatically.
+   <td>Ramp is a comprehensive finance platform designed to help you manage your finances, track your income and expenses, and get insights into your business. The Ramp API provides developers with the workflows to interact with the platform programmatically.
    </td>
    <td> 8
    </td>
@@ -1334,7 +1333,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Semrush
    </td>
-   <td>Semrush is a popular SEO tool suite that specializes in keyword research, competitor analysis, and Google Ad campaign optimization.
+   <td>Semrush is a popular SEO workflow suite that specializes in keyword research, competitor analysis, and Google Ad campaign optimization.
    </td>
    <td> 36
    </td>
@@ -1420,7 +1419,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Slack
    </td>
-   <td>Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work — all within a secure, enterprise-grade environment.
+   <td>Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software workflows and services, and find the information they need to do their best work — all within a secure, enterprise-grade environment.
    </td>
    <td> 174
    </td>
@@ -1498,7 +1497,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Textrazor
    </td>
-   <td>TextRazor offers state-of-the-art natural language processing tools, enabling advanced text analysis and understanding through their API.
+   <td>TextRazor offers state-of-the-art natural language processing workflows, enabling advanced text analysis and understanding through their API.
    </td>
    <td> 1
    </td>
@@ -1564,7 +1563,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Twitter_media
    </td>
-   <td>Twitter Media focuses on multimedia tools and features within Twitter, allowing brands to leverage rich content for marketing campaigns
+   <td>Twitter Media focuses on multimedia workflows and features within Twitter, allowing brands to leverage rich content for marketing campaigns
    </td>
    <td> 1
    </td>
@@ -1614,7 +1613,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Workiom
    </td>
-   <td>Workiom provides APIs for automating workflows, integrating with various tools, and building custom applications.
+   <td>Workiom provides APIs for automating workflows, integrating with various workflows, and building custom applications.
    </td>
    <td> 3
    </td>
@@ -1624,7 +1623,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Yousearch
    </td>
-   <td>YouSearch is a search engine or search tool that enables users to find relevant information, possibly with enhanced filtering or privacy-focused features.
+   <td>YouSearch is a search engine or search workflow that enables users to find relevant information, possibly with enhanced filtering or privacy-focused features.
    </td>
    <td> 1
    </td>
@@ -1664,7 +1663,7 @@ The following third-party integrations are available on the Agent Platform:
   <tr>
    <td>Zoom
    </td>
-   <td>Zoom is a video conferencing and online meeting platform featuring breakout rooms, screen sharing, and integrations with various enterprise tools.
+   <td>Zoom is a video conferencing and online meeting platform featuring breakout rooms, screen sharing, and integrations with various enterprise workflows.
    </td>
    <td> 172
    </td>
@@ -1700,7 +1699,7 @@ To add a connection and configure an integration, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can also add a connection directly from the <b>Integration node</b> on the Tool Flow canvas. <a href="../../../ai-agents/tools/tool-flows/types-of-nodes/integration-node" target="_blank">Learn more</a>.</p>
+<p>You can also add a connection directly from the <b>Integration node</b> on the Workflow canvas. [Learn more](../../workflows/workflow-builder/types-of-nodes/integration-node.md){:target="_blank"}.</p>
 </div>
 
 1. [Access](../integrations/about-integrations.md#access-integrations){:target="_blank"} **Integrations**.
@@ -1719,21 +1718,21 @@ To add a connection and configure an integration, follow the steps below:
 4. The Configuration window is displayed, where you must enter the following information:
     * **Connection Name**: A unique name to identify the integration.
     * **Authorization Details** 
-        * Configure the required authorization details in this section to securely connect to the tool and access external services. A provider may support more than one auth type. In this case, you must select the authentication type you want to set up for the integration, such as *OAuth2*, *Bearer Token*, *Basic Auth*, or *API*.
+        * Configure the required authorization details in this section to securely connect to the workflow and access external services. A provider may support more than one auth type. In this case, you must select the authentication type you want to set up for the integration, such as *OAuth2*, *Bearer Token*, *Basic Auth*, or *API*.
 
         <div class="admonition note">
         <p class="admonition-title">Note</p>
         <p>You are allowed to select only one auth type for a connection.</p>
         </div>
 
-        * The **Pre-authorize the integration** option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as *OAuth2*, *Bearer*, or *Basic Auth*, from the available options to configure the credentials. 
+        * The **Pre-authorize the integration** option is auto-selected, indicating that you must provide authentication credentials to interact with the workflow or service. You can select the preferred authentication method, such as *OAuth2*, *Bearer*, or *Basic Auth*, from the available options to configure the credentials. 
 
         * Based on the selected authorization method, the relevant configuration fields automatically appear under each corresponding authorization type.
 
         **OAuth2**
 
         * Provide the connection name and select the configured **Auth Profile** in the **Custom** for authentication by the integration. [Learn more](../security-and-control/authorization-profile.md#add-authorization-profile){:target="_blank"} about adding an auth profile to your account.
-        * **Custom auth**: Allows you to use a tailored authentication process, set up in the Agent Platform, to connect to a service. This is an alternative to using any standard authentication flows like API or OAuth2 provided by the service.
+        * **Custom auth**: Allows you to use a tailored authentication process, set up in the AI for Process, to connect to a service. This is an alternative to using any standard authentication flows like API or OAuth2 provided by the service.
         * Once an Auth Profile is selected, all its credentials are fetched and automatically populate the corresponding fields such as **Redirect URL**, **Scopes**, **Base URL**, and more.
         * No need to re-authenticate unless the authorization profile is deleted from your account.
         * Connecting to a provider with a deleted auth profile results in an error.
@@ -1780,7 +1779,7 @@ To add a connection and configure an integration, follow the steps below:
 A success message appears after setup.
 
 You will be redirected to the following page, where all the connections for the provider are listed.
-<img src="../images/integration-summary.png" alt="integration summary" title="integration summary" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/established-integration-aip.png" alt="integration summary" title="integration summary" style="border: 1px solid gray; zoom:75%;">
 
 ### Manage Connection Errors
 
@@ -1852,7 +1851,7 @@ To delete an integration, follow the steps below:
 
   <div class="admonition warning">
   <p class="admonition-title">Caution</p>
-  <p>This action is irreversible and will remove all associations of the connection from the Agent Platform.</p></div>
+  <p>This action is irreversible and will remove all associations of the connection from the AI for Process.</p></div>
   <img src="../images/delete-connection.png" alt="delete connection" title="delete connection" style="border: 1px solid gray; zoom:75%;">
 
   A success message appears, and the connection is removed from the system.
@@ -1873,7 +1872,7 @@ If there are no errors, a success message is displayed when the connection is es
 
 ### Enable or Disable Connection
 
-Enabling a connection makes it available for **user authentication** with the service provider. It also becomes accessible for use in the **Integration node** on the Tool Flow canvas. 
+Enabling a connection makes it available for **user authentication** with the service provider. It also becomes accessible for use in the **Integration node** on the workflow canvas. 
 
 Use the toggle switch to enable (default setting) or disable the connection as needed.
 <img src="../images/enable-integration.png" alt="enable integration" title="enable integration" style="border: 1px solid gray; zoom:75%;">

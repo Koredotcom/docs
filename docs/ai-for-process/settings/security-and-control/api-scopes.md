@@ -1,8 +1,8 @@
 # Manage Scopes and Keys for API Apps
 
-Agent Platform introduces **API scopes** in the **Settings** console, moving from unrestricted management API keys to more secure, scoped API key-based application management.
+AI for Process introduces **API scopes** in the **Settings** console, moving from unrestricted management API keys to more secure, scoped API key-based application management.
 
-Users can select specific scopes for managing tools, models, and guardrails. This allows for the creation of internal applications with restricted access to only the necessary API endpoints. By limiting API access, this feature reduces security risks, allowing administrators to generate multiple API keys and ensure secure, controlled access for authorized personnel.
+Users can select specific scopes for managing workflows, models, and guardrails. This allows for the creation of internal applications with restricted access to only the necessary API endpoints. By limiting API access, this feature reduces security risks, allowing administrators to generate multiple API keys and ensure secure, controlled access for authorized personnel.
 
 **Important Considerations for API Keys**
 
@@ -20,11 +20,11 @@ For more information on roles and permissions for API-scoped apps, please refer 
 
 ## Use Case: Scoped API Access for Banking Departments
 
-A bank automates tool workflows and integrates various internal systems across different departments, including **Risk & Compliance**, **Customer Support**, and **Marketing**. This requires access to APIs with different scopes.
+A bank automates workflows and integrates various internal systems across different departments, including **Risk & Compliance**, **Customer Support**, and **Marketing**. This requires access to APIs with different scopes.
 
-* **Risk & Compliance Department**: This team requires access only to models and tools for generating reports from transaction logs and audit trails. The admin creates a scoped app that grants access to tools and models. This prevents the team from accidentally accessing unrelated customer information available for guardrails. 
+* **Risk & Compliance Department**: This team requires access only to models and workflows for generating reports from transaction logs and audit trails. The admin creates a scoped app that grants access to workflows and models. This prevents the team from accidentally accessing unrelated customer information available for guardrails. 
 
-* **Customer Support Department**: Support agents require access to monitoring AI customer interactions, but should not have access to risk and compliance tools or model management. A scoped app ensures support teams stay within their operational boundaries.
+* **Customer Support Department**: Support agents require access to monitoring AI customer interactions, but should not have access to risk and compliance workflows or model management. A scoped app ensures support teams stay within their operational boundaries.
 
 By using API-scoped apps and API keys, the bank minimizes the risk of data exposure while maintaining security, ensuring compliance, and strictly regulating access to authorized system users.
 
@@ -41,63 +41,63 @@ The following API scopes are available for this feature.
    </td>
   </tr>
   <tr>
-   <td>Deploy Tool
+   <td>Deploy workflow
    </td>
-   <td>Deploy a specific tool into an environment. It allows the user to control the deployment process either synchronously or asynchronously. <a href="../../../apis/apis-list/deploy-a-tool" target="_blank">Learn more</a>.
+   <td>Deploy a specific workflow into an environment. It allows the user to control the deployment process either synchronously or asynchronously. [Learn more](../../workflows/deploy-a-workflow.md){:target="_blank"}.
    </td>
   </tr>
   <tr>
-   <td>Undeploy Tool
+   <td>Undeploy workflow
    </td>
-   <td>Undeploy a tool that is deployed in an environment. <a href="../../../apis/apis-list/undeploy-a-tool" target="_blank">Learn more</a>.
+   <td>Undeploy a workflow that is deployed in an environment.
    </td>
   </tr>
   <tr>
    <td>Deploy Model
    </td>
-   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state. <a href="../../../apis/apis-list/deploy-a-model" target="_blank">Learn more</a>.
+   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state.
    </td>
   </tr>
   <tr>
    <td>Undeploy Model
    </td>
-   <td>Undeploy a model from the environment. <a href="../../../apis/apis-list/undeploy-a-model" target="_blank">Learn more</a>.
+   <td>Undeploy a model from the environment.
    </td>
   </tr>
   <tr>
    <td>Import Model
    </td>
-   <td> Import a model in chunks into the Agent Platform environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
+   <td> Import a model in chunks into the AI for Process environment.
    </td>
   </tr>
   <tr>
-   <td>Import Tool
+   <td>Import workflow
    </td>
-   <td>Import a new tool into the system. <a href="../../../apis/apis-list/import-a-new-tool" target="_blank">Learn more</a>.
+   <td>Import a new workflow into the system.
    </td>
   </tr>
   <tr>
    <td>Export Model
    </td>
-   <td>Export a trained AI model from the system. <a href="../../../apis/apis-list/export-a-model" target="_blank">Learn more</a>.
+   <td>Export a trained AI model from the system.
    </td>
   </tr>
   <tr>
-   <td>Export Tool
+   <td>Export workflow
    </td>
-   <td>Export a tool's configuration and associated data.<a href="../../../apis/apis-list/export-a-tool" target="_blank">Learn more</a>.
+   <td>Export a workflow's configuration and associated data.
    </td>
   </tr>
   <tr>
    <td>Deploy Guardrails
    </td>
-   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="../../../apis/apis-list/deploy-guardrails" target="_blank">Learn more</a>.
+   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions.
    </td>
   </tr>
   <tr>
    <td>Undeploy Guardrails
    </td>
-   <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="../../../apis/apis-list/undeploy-guardrails" target="_blank" target="_blank"> Learn more</a>.
+   <td>Remove the previously deployed guardrails that regulate AI interactions.
    </td>
   </tr>
 </table>
@@ -106,12 +106,10 @@ The following API scopes are available for this feature.
 
 To access this feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
+1. Log in → In AI for Process Modules top menu → Click **Settings**.
+   <img src="../images/aip-settings-access.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 
-2. Click **Settings** on the top navigation bar.
-3. Click **Security & Control** > **API Scopes** on the left navigation menu.
-    <img src="../images/click-api-scopes.png" alt="select api scopes" title="select api scopes" style="border: 1px solid gray; zoom:75%;">
+2. Click **Security & Control** > **API Scopes** on the left navigation menu.
 
 ## Implement API Scoping
 

@@ -74,9 +74,9 @@ To enable content ingestion from the Box account, perform the following steps:
 1. Go to the **Configuration** tab of the newly created app. 
     * A client ID and secret are generated automatically. These client credentials are used for connector configuration in Search AI.
     * Go to the **OAuth 2.0 Redirect URIs** section and provide the following redirect URIs per your region or deployment. 
-        * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-        * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-        * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+        * JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+        * DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+        * Prod Callback URLs: `https://idp.kore.com/workflows/callback`
     * Go to the Application Scopes section and enable the following scopes:
         * Read all files and folders stored in Box: Required to access the content in Search AI. 
         * Write all files and folders stored in Box: Required to download the content from Search AI. 

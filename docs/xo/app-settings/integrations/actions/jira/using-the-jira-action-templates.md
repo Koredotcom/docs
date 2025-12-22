@@ -178,13 +178,13 @@ Steps to find an issue using the key in the JIRA integration:
         "author": {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "updateAuthor": {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "comment": {
@@ -271,7 +271,7 @@ Steps to view all issues in the JIRA integration:
         {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         }
         ] },
@@ -292,7 +292,7 @@ Steps to view all issues in the JIRA integration:
         "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
         "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
         },
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "created": "2023-02-28T09:45:11.830+0000",
@@ -368,7 +368,7 @@ Steps to view all issues in the JIRA integration:
         "author": {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "body": {
@@ -387,7 +387,7 @@ Steps to view all issues in the JIRA integration:
         "updateAuthor": {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "created": "2021-01-17T12:34:00.000+0000",
@@ -447,13 +447,13 @@ Steps to view all issues in the JIRA integration:
         "author": {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "updateAuthor": {
         "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
         "accountId": "5b10a2844c20165700ede21g",
-        "displayName": "Mia Krystof",
+        "displayName": "John Doe",
         "active": false
         },
         "comment": {

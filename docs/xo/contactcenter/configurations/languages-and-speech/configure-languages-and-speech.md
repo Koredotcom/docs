@@ -46,7 +46,7 @@ Delete Language" title="Delete Language" style="border: 1px solid gray; zoom:80%
 
 ### List of Supported Languages for AI Agents (Bots) and Human Agents
 
-The following languages are supported for AI Agents (Bots) and Human Agents:
+The system supports the following languages for AI Agents (Bots) and Human Agents:
 
 | Afrikaans       | English        | Indonesian      | Malayalam       | Sesotho         | Ukrainian       |
 |-----------------|----------------|-----------------|-----------------|-----------------|-----------------|
@@ -65,7 +65,7 @@ The following languages are supported for AI Agents (Bots) and Human Agents:
 | Cebuano         | Hawaiian       | Latin           | Portuguese (European) | Tatar         |                 |
 | Chinese Simplified | Hebrew     | Latvian         | Punjabi         | Telugu          |                 |
 | Corsican        | Hindi          | Lithuanian      | Russian         | Thai            |                 |
-| Croatian        | Hmong Daw      | Luxembourgish   | Romanian        | Tibetian        |                 |
+| Croatian        | Hmong Daw      | Luxembourgish   | Romanian        | Tibetan        |                 |
 | Czech           | Hungarian      | Macedonian      | Samoan          | Traditional Chinese |                 |
 | Danish          | Icelandic      | Malagasy        | Scots Gaelic    | Turkish         |                 |
 | Dutch           | Igbo           | Malay           | Serbian (Cyrillic) | Turkmen       |                 |
@@ -80,9 +80,9 @@ Hold Audio" title="Hold Audio" style="border: 1px solid gray; zoom:80%;">
 
 ### Add Hold Audio Files
 
-1. In the **Hold Audio** panel, click **Browse** to select and upload your _.WAV_ audio file. Alternatively, you can drag and drop the file to the panel.
-1. Once the file uploads, you can adjust the audio file name in the **Rename Audio** text area.
-2. Click **Save** to add the new audio file and it is automatically added to the **Hold Audio** list. The uploaded audio plays to the caller while on hold or waiting in the queue.
+1. In the **Hold Audio** panel, select **Browse** to select and upload your _.WAV_ audio file. Alternatively, you can drag the file to the panel.
+1. After the file uploads, you can adjust the audio file name in the **Rename Audio** text area.
+2. Select **Save** to add the new audio file and it's automatically added to the **Hold Audio** list. The uploaded audio plays to the caller while on hold or waiting in the queue.
 <img src="../images/configure-hold-tone.gif" alt="
 Add Hold Audio" title="Add Hold Audio" style="border: 1px solid gray; zoom:80%;">
 
@@ -90,7 +90,7 @@ Add Hold Audio" title="Add Hold Audio" style="border: 1px solid gray; zoom:80%;"
 
 The available audio file deletion methods are listed below and illustrated in the following screenshot:
 
-1. Delete a file from the saved list by clicking the **Delete (bin)** icon next to it. You will be asked to confirm your choice. Files deleted from the list have to be reuploaded if you change your mind.
-2. Remove an uploaded file that has not yet been saved to the list by clicking the **Delete (x)** button on the top right corner of the upload panel.
+1. Delete a file from the saved list by selecting the **Delete** icon next to it. The system asks you to confirm your choice. Re-upload the files deleted from the list if you change your mind.
+2. Remove an uploaded file that hasn't yet been saved to the list by clicking the **Delete (x)** button on the top right corner of the upload panel.
 <img src="../images/delete-audio-file.png" alt="
 Delete Audio File" title="Delete Audio File" style="border: 1px solid gray; zoom:80%;">

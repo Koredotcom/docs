@@ -14,12 +14,14 @@ The Settings has the following three sections:
 
 This extracts valuable insights from customer interactions across various communication channels. It captures information from spoken and written conversations, matches the information with structured metadata about the interaction, and analyzes emotions and feelings to understand customers' desires, needs, opinions, and expectations.
 
-You can access the **Conversation Intelligence** by navigating to **Quality AI** > **Configure** > **Settings** > **Conversation Intelligence**.  
+## Access Settings - Conversation Intelligence
+
+Navigate to **Quality AI** > **CONFIGURE** > **Settings** > **Conversation Intelligence**.  
 <img src="../settings/images/default-settings.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Intelligence Dashboard
 
-The Conversation Intelligence Dashboard displays post-interaction analytics and is a powerful tool designed to provide insights and actionable information following customer interactions. 
+The Conversation Intelligence Dashboard displays post-interaction analytics and is a powerful tool designed to provide insights and operational information following customer interactions. 
 
 For more information about the Conversation Intelligence Dashboard, see [Conversation Intelligence](../analyze/conversation-intelligence.md).
 
@@ -39,25 +41,25 @@ By enabling this option, you can view the **Conversation Intelligence** feature 
 
 Steps to disable the Conversation Intelligence dashboard:
 
-1. Disable the **Conversation Intelligence Dashboard** toggle button. The following dialog box appears.  
-<img src="../settings/images/disable-conversation-intelligence.png" alt="Disable Converstion Intelligence" title="Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
+1. Toggle off the **Conversation Intelligence Dashboard**.     
+<img src="../settings/images/disable-conversation-intelligence.png" alt="Disable Conversation Intelligence" title="Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
 
     !!! Note
     
-        The Conversation Intelligence dashboard will not be visible to users throughout the application if the admin has disabled Conversation Intelligence. If it is enabled, then the user can view the insights on contact center efficiency, agent efficacy, and customer experience.
+        The Conversation Intelligence dashboard is not be visible to users throughout the application if the admin has disabled Conversation Intelligence. If it is enabled, then the user can view the insights on contact center efficiency, agent efficacy, and customer experience.
 
-2. Click **Confirm** to disable the entire Conversation Intelligence application. The following screen appears.  
+2. Select **Confirm** to disable the entire Conversation Intelligence application. The following screen appears.  
 <img src="../settings/images/confirm-conversation-intelligence.png" alt="Confirm Disable Converstion Intelligence" title="Confirm Disable Conversation Intelligence" style="border: 1px solid gray; zoom:60%;">
 
-3. Click **Save** to save the settings.
+3. Select **Save** to save the settings.
 
 ### Script Adherence Configuration
 
-This allows you to add and define a set of dynamic messages or scripts for the user or agent. By default, the script adherence widget uses a default generic script to check for adherence, using this app level configuration, the user can set custom messages for each step of the script to visualize adherence to the custom message instead of the default script message.
+This lets you add and define a set of dynamic messages or scripts for the user or agent. By default, the script adherence widget uses a default generic script to check for adherence, using this app level configuration, the user can set custom messages for each step of the script to visualize adherence to the custom message instead of the default script message.
 
 Steps to enable the Script Adherence configuration:
 
-1. Expand the **Conversation Intelligence** collapse icon, and enable the toggle button of **Conversation Intelligence Dashboard** and **Script adherence configuration**.  
+1. Expand the **Conversation Intelligence** collapse icon, and enable the **Conversation Intelligence Dashboard** toggle key and **Script adherence configuration**.  
     <img src="../settings/images/script-adherence.png" alt="Script Adherence Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
 
 2. Define the scripts for the following attributes to check the agent adherence. 

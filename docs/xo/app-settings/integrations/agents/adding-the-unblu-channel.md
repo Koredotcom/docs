@@ -25,7 +25,7 @@ The Unblu AI Agent can be directly created from the Kore.ai XO Platform.
 
 1. Create or Open the assistant in the XO platform.
 2. Go to **App Settings** > **Integrations** > **Agent Transfer** and select **Unblu**..
-3. Proceed to the **Configurations tab** and provide the following details for creating an assistantin your Unblu account:
+3. Proceed to the **Configurations tab** and provide the following details for creating an assistant in your Unblu account:
     1. **Unblu Host URL** -the URL of your Unblu application. For example, use [https://www.unblu.com/](https://www.unblu.com/){:target="_blank"} for the Unblu cloud.
     2. **Unblu Account Username** –Provide your Unblu account username.
     3. **Unblu Account Password** – Provide the password associated with your Unblu username.
@@ -141,7 +141,7 @@ For a detailed document on the implementation, [refer here](kore-unblu-integrati
         "dialogType" : "ONBOARDING",
         "counterpartPerson" : {
         "type" : "PersonData",
-        "id" : "xZHnVmhxQNKvyf5ybxyLoQ",
+        "id" : "xZHnVmhxQNKvyf5ybxxxxx",
         "accountId" : "wZvcAnbBSpOps9oteH-Oxw",
         "personSource" : "VIRTUAL",
         "sourceId" : "awhFjUq1RQCvdMDoV5OW2Q",
@@ -369,7 +369,7 @@ Following is a code example for how to use the above mentioned templates, change
     var unbluMultiChoiceTemplate =  {
         "$_type": "MultichoiceQuestionPostMessageData",
         "type": "MULTICHOICE_QUESTION",
-        "text": "Chooseone of the options",
+        "text": "Choose one of the options",
         "textType": "MARKDOWN",
         "options": [
         {

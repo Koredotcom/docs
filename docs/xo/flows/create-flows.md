@@ -21,7 +21,7 @@ Start flows represent the most complex flow type, providing access to all [node 
 
 #### Default Welcome Flows
 
-The default welcome flows are created automatically when you create a new account. Default Flows support both Chat and Voice functionalities. These flows act as fallback entry points to initiate and test the AI Agent experience when no specific intent or task is triggered. You can edit these flows to customize the experience for your users.
+The default welcome flows are created automatically when you create a new account. Default Flows support both Chat and Voice functionalities. These flows act as fallback. You can edit these flows to customize the experience for your users.
 
 **Chat – Welcome Flow**  
 The Welcome Chat Flow allows you to simulate user interactions on any configured chat channel. Use the RTM (Real-Time Messaging) channel to test chat scenarios. This flow ensures that the AI Agent responds appropriately when users initiate conversations without clearly stating their intent.  
@@ -86,7 +86,7 @@ Steps to create a Start Flow:
 
 !!! Note
 
-    This feature is only available when using Kore's Twilio account. It's not supported for SIP trunk setups.
+    This feature is only available when using our Twilio account. It's not supported for SIP trunk setups.
 
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
     * Microsoft Azure Speech Services,
