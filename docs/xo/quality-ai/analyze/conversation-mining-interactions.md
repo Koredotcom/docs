@@ -294,7 +294,11 @@ This shows the automated QA score for an interaction, based on the evaluation fo
 
 #### Saved Filters Customization Options
 
+<<<<<<< Updated upstream
 When you save filters, the system provides the following customization options:
+=======
+When filters are saved, the following customization options are available:  
+>>>>>>> Stashed changes
 
 * **Copy**: Creates a duplicate of the saved filter.
 
