@@ -88,7 +88,7 @@ plugins:
         'searchai/workbench.md': 'searchai/workbench/introduction.md'
         'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
         'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/quality-ai-express.md'
-        'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
+        'quality-ai/analyze/conversation-mining-overview.md': 'quality-ai/analyze/conversation-mining-interactions.md'
 extra:
   version:
     provider: mike
@@ -520,7 +520,6 @@ nav:
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
       - Conversation Mining: 
-        - Introduction: quality-ai/analyze/conversation-mining-overview.md
         - Interactions: quality-ai/analyze/conversation-mining-interactions.md 
         - Audit Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md
