@@ -130,7 +130,7 @@ This function is responsible for returning all the credentials required to rende
     * **BotID**: Add your Agent AI Bot ID created on Agent AI.  
     * **ClientId**: Add your Agent AI  Client ID created on Agent AI. 
     * **ClientSecret**: Add your Agent AI Client Secret created on Agent AI. 
-    * **SipUri**: Add “sip:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com” and replace **XXXX** with your SIPREC Configuration of Agent AI.    
+    * **SipUri**: Add `sip:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com` and replace **XXXX** with your SIPREC Configuration of Agent AI.    
 
     To get the SIP URI from [Agent AI](https://platform.kore.ai/){:target="_blank"}:  
 

@@ -580,25 +580,25 @@ The interface shows SIP signaling messages exchanged between endpoints:
 1. **INVITE**
     * Direction: 50.19.12.248 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 2. **100 (Trying)**
     * Direction: 172.31.11.64 to 50.19.12.248
     * Port: 5060 ← 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 3. **200 (OK)**
     * Direction: 172.31.11.64 to 50.19.12.248
     * Port: 5060 ← 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 4. **ACK**
     * Direction: 50.19.12.248 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 The interface also shows RTCP media packets exchanged between endpoints:
@@ -606,14 +606,14 @@ The interface also shows RTCP media packets exchanged between endpoints:
 1. **RTCP (First packet)**
     * Direction: 172.31.11.62 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 2. **RTCP (Second packet)**
 
     * Direction: 172.31.11.62 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 **How to Use?**

@@ -235,7 +235,7 @@ If you are using Kore-managed transcriptions, the final step is to install Audio
     1. For **Channel**, select “both” from the **Value** dropdown list.
     2. The **Connection URI** format should be similar to the following: \
        wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true]  
-        1. Get **sipuri=sip:<sip-string>** from the **Agent AI** > **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.  
+        1. Get `sipuri=sip:<sip-string>` from the **Agent AI** > **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.  
         <img src="../images/sip-identifier-35.png" alt="sip-identifier" title="sip-identifier" style="border: 1px solid gray; zoom:80%;"> 
 
         2. Use the following references from **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
