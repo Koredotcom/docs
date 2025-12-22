@@ -32,4 +32,4 @@ Configure notification preferences to control how the system communicates with u
 
 Schedule Trigger configuration becomes available only when scheduling is enabled by an administrator.
 
-To understand the required admin-level controls, see [Scheduler Settings](../assistant-configuration/scheduler-settings.md).
+To understand the required admin-level controls, see [Scheduler Settings](../assist-configuration/scheduler-settings.md).
