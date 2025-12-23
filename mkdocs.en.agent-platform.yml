@@ -124,6 +124,7 @@ nav:
   - Home : home.md
   - Getting Started: 
     - Introduction to (In)Agent Platform: getting-started/introduction.md
+    - Outbound IP Addresses: getting-started/outbound-ip-address.md
     - Agentic App Setup Guide: ai-agents/agentic-apps/agentic-app-setup-guide.md
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
