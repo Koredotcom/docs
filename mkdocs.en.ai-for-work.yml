@@ -128,10 +128,8 @@ nav:
     - Introduction to AI for Work: getting-started/introduction.md
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md
     - Setup Guide: getting-started/setup-guide.md 
+    - How to Use: getting-started/how-to-use.md
     - Marketplace: getting-started/marketplace.md
-    - Using AI for Work Assistant: 
-      - How to Use: getting-started/how-to-use.md
-      - Schedule Agents: getting-started/schedule-agents.md
     - Release Notes:
       - Release Updates: release-notes/release-updates.md
   - Custom Agents:
@@ -190,7 +188,6 @@ nav:
       - MCP Server: assist-configuration/mcp-server.md
       - Orchestration Settings: assist-configuration/orchestration-settings.md
       - Rate Limit: assist-configuration/rate-limit.md
-      - Scheduler Settings: assist-configuration/scheduler-settings.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
