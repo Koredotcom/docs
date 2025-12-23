@@ -10,4 +10,4 @@ The test interface enables users to test a workflow tool with sample inputs to v
 ![Test a Workflow tool](images/test-workflow-tool.png "Test a Workflow tool")
 4. Select Test Results to view the output in JSON. 
 5. The Logs tab under Test Results presents the execution logs from the tool.
-6. To edit or update the workflow, click Go to Flow. 
+6. To edit or update the workflow, click Go to Flow.

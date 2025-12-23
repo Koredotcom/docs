@@ -59,8 +59,6 @@ return {
 };
 ```
 
-
-
 ## Delete Agent
 
 Click on Delete Agent to permanently delete the agent. Deleting the agent also deletes the associated data.

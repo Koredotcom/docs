@@ -43,6 +43,7 @@ Click on Add Fallback Delegation.
 Select the fallback agent or event from the list.
 Set the condition under which it should be triggered.
 -->
+
 ## Passing Information Between Agents
 
 When the control passes from one agent to another, the application saves the data, including the context info, summary, and pending tasks, to the `sessionMeta` memory under the `delegationContext` field. The next agent can use this field to get the required information. 

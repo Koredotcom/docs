@@ -173,8 +173,8 @@ Sample Response
 * Authorization is only required once per user (across sessions) or until the token expires.
 * If one or more authorizations are pending, all of them must be completed before continuing. If the required authorization is not completed, the associated tools will return an error upon invocation.
 
-<hr>
+<hr/>
 
-**Related Link**
+ **Related resource** 
 
 * [List of available APIs](../../apis/list-of-apis.md).

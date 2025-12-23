@@ -248,7 +248,6 @@ This section displays a dynamic table with the following log-level data:
 ## Time-based Filtering
 
 Use the time selection dropdown (displayed as "Custom") at the top-right of the page to view and monitor script runs/logs within a specific past period or the current day. This allows you to focus on specific runs to track changes or perform targeted debugging.
-<img src="../images/time-selection-dropdown.png" alt="time selection" title="time selection" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -290,8 +289,6 @@ Filter customization streamlines tracking and debugging of script runs at a deta
 <ol start="6"><li>Click <b>Apply</b>.</li></ol>
 
 The UI displays all the relevant run and log records that align with the applied filter(s). The number of filters you have applied is displayed on the **Filter** icon.
-
-<img src="../images/filter-count.png" alt="filter" title="filter" style="border: 1px solid gray; zoom:75%;">
 
 ### Multiple Filters
 
@@ -494,6 +491,3 @@ The export schema files include the dashboard data organized in the following fo
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Each user’s export process is implemented separately, ensuring that one user's cancellations or adjustments do not interfere with another user’s export pipeline.</p></div>
-
-
-

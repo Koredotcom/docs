@@ -17,5 +17,3 @@ You can generate an API key for your open-source model and share it with other t
     <img src="../images/copy-and-close-api-key.png" alt="Copy API Key" title="Copy API Key" style="border: 1px solid gray; zoom:60%;">
 
     All the generated API keys are listed in the API key section. You can hover over any key and find the delete icon corresponding to the name of the key if you want to delete the key.
-
-   

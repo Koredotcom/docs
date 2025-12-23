@@ -167,5 +167,3 @@ The node’s output is stored in a context variable. You can access the variable
 
 * [Manage Nodes in Tool Flow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
 * [Run Tool Flow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an tool flow in real time.
-
-

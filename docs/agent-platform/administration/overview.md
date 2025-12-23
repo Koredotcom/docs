@@ -123,8 +123,7 @@ View pre-deployed guardrail models that apply scanners to prompt input and outpu
 To access the **Settings** Console on Agent Platform, follow the steps below:
 
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
+   
 2. Click **Settings** on the top navigation bar.
 
    The system redirects to the **Users** page under **Users Management**.

@@ -81,14 +81,19 @@ The steps mentioned below, allow you to import users' data from a designated fil
 **Key Suggestions**
 
 * Click and download the sample ._csv_ file for reference.
+* The fields are pre-defined in the sample file, as shown below.
 
-    <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
 
-* The fields are pre-defined in the sample file, and the data requirements are shown below:
-<img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
+  <div class="admonition note">
+  <p class="admonition-title">Important</p>
+  <p><ul><li>Mandatory fields are marked with an asterisk (*).</li>
+  <li>The column header names and order must match the fields in the uploaded file.</li>
+  <li>Only <i>New</i>, <i>Update</i>, and <i>Delete</i> user statuses are accepted.</li>
+  <li>Invalid email IDs are not accepted.</li></ul></p> 
+</div>
 
-* Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
-<img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;">
+* Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error.
 
 4. A preview window displays the file’s data with a file uploaded success message. Click **Continue** to import the file.
 <img src="../images/success-import.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
@@ -101,9 +106,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
 
 Correct the highlighted values based on the reason, and upload the file again. Then, follow **Steps 4 and 5** above.
 
-The file takes a few minutes to import. You can see the progress in the dialog window. When completed, the following message is displayed.
-
-<img src="../images/file-imported-successfully.png" alt="file imported successfully" title="file imported successfully" style="border: 1px solid gray; zoom:75%;">
+The file may take a few minutes to import. You can track the progress in the dialog window. Once complete, a success message is displayed.
 
 Click **OK** to see the imported users on the dashboard. 
 
@@ -233,12 +236,10 @@ To perform bulk role change, follow the steps below:
 The role is updated for the selected users.
 <img src="../images/bulk-role-changed.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;">
 
-## Related Information
+<hr/> 
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-* **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
-* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
+ **Related resources**
 
-
-
-
+* [Settings Console](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+* [Role Management](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
+* [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

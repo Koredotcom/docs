@@ -120,7 +120,7 @@ To add tools, click the **Tool Calling** icon. When you select a model that supp
 
 !!! note
 
-    When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+    When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../../tool-calling.md#tool-calling-in-workflow-tools-ai-nodes). 
 
 * **Add Tools**: Click **Add Tools** to add a tool.
 
