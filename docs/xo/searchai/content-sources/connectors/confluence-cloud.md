@@ -33,7 +33,7 @@
    </td>
   </tr>
   <tr>
-   <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  attachments, docs, and images is't supported.
+   <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  attachments, docs, and images isn't supported.
    </td>
   </tr>
 </table>

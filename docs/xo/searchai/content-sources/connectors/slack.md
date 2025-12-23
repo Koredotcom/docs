@@ -44,6 +44,10 @@ Slack can be easily integrated with Search AI to search through conversations in
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr>
 </table>
 
 ## Slack Connector Configuration
