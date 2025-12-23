@@ -7,14 +7,7 @@ The Agent Protocol API enables programmatic interaction with your agents, allowi
 
 ### Base URL
 
-All requests are made to the following base URL. 
-
-```
-https://<agent-platform-env>.<domain>.com/api/v2/
-```
-
-
-Replace `<agent-platform-env>` with your specific environment name and `<domain>` with your domain name.
+All requests are made to the base URL `https://<host>.com/api/v2/`.
 
 
 ### Authentication

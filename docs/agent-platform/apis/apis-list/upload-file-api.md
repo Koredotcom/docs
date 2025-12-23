@@ -75,7 +75,7 @@ This method directly calls the endpoint and returns the <code>fileId</code> and 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -221,7 +221,7 @@ This API starts the upload process, returning a <code>session ID</code>. The fil
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -396,7 +396,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
+   <td>The environment URL.
    </td>
    <td>String
    </td>

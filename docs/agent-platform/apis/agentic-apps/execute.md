@@ -847,7 +847,7 @@ Sample Response
 **Sample Request**
 
 ```
-curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
+curl --location 'https://example.com/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
 --header 'x-api-key: <your-api-key>' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -923,7 +923,7 @@ curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xx
 
 
 ```
-curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
+curl --location 'https://example.com/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
 --header 'x-api-key: <your-api-key>' \
 --header 'Content-Type: application/json' \
 --data '{

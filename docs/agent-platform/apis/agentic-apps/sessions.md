@@ -231,7 +231,7 @@ Lists sessions for the selected app and environment. Supports optional filters s
    <tr>
    <td><strong>Base URL</strong>
    </td>
-   <td>https://&lt;agent-platform-env>.&lt;domain>.com/api/v1/
+   <td>https://example.com/api/v1/
    </td>
   </tr>
   <tr>

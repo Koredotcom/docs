@@ -15,7 +15,7 @@ Provides an endpoint to create a new Agentic App.
   <tr>
    <td>Endpoint
    </td>
-   <td>https://&lt;agent-platform-env>.&lt;domain>.ai/api/public/apps/createApp  </td>
+   <td>https://example.com/api/public/apps/createApp  </td>
   </tr>
   <tr>
    <td>Content-type 
@@ -127,7 +127,7 @@ Provides an endpoint to create a new Agentic App.
 
 
 ```curl
-curl --location 'https://&lt;agent-platform-env>.&lt;domain>.ai/api/public/apps/createApp' \ 
+curl --location 'example.com/api/public/apps/createApp' \ 
 --header 'Content-Type: application/json' \ 
 --header 'x-api-key: your-api-key' \ 
 </code>--header 'accountid: axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx45' \ 
