@@ -51,3 +51,11 @@ These nodes manage workflow execution, including human intervention and completi
 * **[Human Node](./human-node.md)**: Pauses workflow execution for human input or approval. Use for approval workflows, quality assurance checks, or compliance review steps.
 
 * **[End Node](./end-node.md)**: Marks the completion of a workflow. Place at the end of every flow to signal successful completion.
+
+ <hr/> 
+  
+  **Related Resources** 
+  
+ * [Manage Nodes in Tool Flow](./../manage-flow-nodes.md)
+ 
+ 
