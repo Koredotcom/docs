@@ -250,8 +250,8 @@ nav:
           - Brief about the Dialog: automation/use-cases/dialogs/dialog-tasks-overview.md
           - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
           - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
-      - Session Management: automation/use-cases/using-session-and-context-variables.md
-      - Context Management: automation/intelligence/context-object.md 
+        - Session Management: automation/use-cases/using-session-and-context-variables.md
+        - Context Management: automation/intelligence/context-object.md 
       - AI Agents:
         - Agent Node:
             - About Agent Node: automation/agent-node/working-with-agent-node.md
