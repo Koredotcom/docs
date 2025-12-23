@@ -244,7 +244,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 |------------------------------|----------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | `alternativeLanguages` (Session Level) | Array of Objects     | Google, Microsoft, Deepgram      | Array of alternative languages the user might speak. Based on the utterance, the ASR chooses from the defined options.                                        | `"alternativeLanguages": [ { "language": "de-DE", "voiceName": "de-DE-KatjaNeural" }, { "language": "fr-FR", "voiceName": "fr-FR-DeniseNeural" } ]` |
 | `alternativeLanguages` (Node Level)    | Array of Objects     | Google, Microsoft, Deepgram      | In addition to `voiceName` and `language`, this parameter supports `sttProvider`, `ttsProvider`, and `label`. If a label is configured initially, it updates automatically when the language changes. | `node.alternativeLanguages = [ { "language": "en-ES", "voiceName": "es-ES-ArabellaMultilingualNeural" }, { "language": "en-IN", "voiceName": "en-IN-PrabhatNeural", "ttsLabel": "microsoft2", "ttsProvider": "microsoft", "sttProvider": "microsoft2" } ]` |
-| `sttMinConfidence`           | Number (0.1–0.9)     | All                              | If the transcript's confidence score is below this threshold, the input is ignored and the timeout prompt is triggered. Ensures only high-confidence transcriptions are accepted. | `"sttMinConfidence": 0.5` |
+| `sttMinConfidence`           | Number (0.1–0.9)     | All                              | If the transcript's confidence score is < this threshold, the input is ignored and the timeout prompt is triggered. Ensures only high-confidence transcriptions are accepted. | `"sttMinConfidence": 0.5` |
 | `hints` with phrase-level boost | Array of Objects  | Google, Nvidia                   | Suggests specific phrases to the STT engine to improve accuracy. You can assign a boost value per phrase. Useful for distinguishing similar-sounding words.   | `"hints": [ { "phrase": "benign", "boost": 50 }, { "phrase": "malignant", "boost": 10 }, { "phrase": "biopsy", "boost": 20 } ]` |
 | `hints` with `hintsBoost`    | Array + Number       | Google, Microsoft, Nvidia        | Instead of boosting each phrase individually, apply a single boost value to the entire array of hints.                                                        | `"hints": ["benign", "malignant", "biopsy"], "hintsBoost": 50` |
 | `sttDisablePunctuation`      | Boolean              | Google, Microsoft                | Controls punctuation in ASR output. `false` enables punctuation (default); `true` disables it.                                                                | `"sttDisablePunctuation": true` |
@@ -304,7 +304,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
 | **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / Notes** |
 |---------------|----------|-------------------------|------------------|----------------------|
-| `nvidiaRivaUri` | String | — | gRPC endpoint (`ip:port`) where the NVIDIA Riva ASR service is hosted. | `"nvidiaRivaUri": "10.0.0.12:50051"` |
+| `nvidiaRivaUri` | String | — | gRPC endpoint (`ip:port`) hosting the NVIDIA Riva ASR service. | `"nvidiaRivaUri": "10.0.0.12:50051"` |
 | `nvidiaMaxAlternatives` | Number | — | Number of alternative transcriptions to return. | `"nvidiaMaxAlternatives": 3`|
 | `nvidiaProfanityFilter` | Boolean | — | Enables or disables profanity filtering in transcripts. | `"nvidiaProfanityFilter": true` |
 | `nvidiaWordTimeOffsets` | Boolean | — | Enables word-level timestamp details in the transcript. | `"nvidiaWordTimeOffsets": true` |
@@ -350,24 +350,24 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
 ### Azure ASR
 
-| Parameter        | Type                 | Supporting STT/ TTS                   | Description                                                                                                                                                                                                                       | Examples                                       |
+| **Parameter**        | **Type**                 | **Supporting STT/ TTS**                   | **Description**                                                                                                                                                                                                                       | **Examples**                                       |
 |------------------|----------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | `azureAudioLogging`  | Boolean              | —                                   | Enables the logging of audio data for applications utilizing Azure's speech services.                                                                                                                                                              |    —                                            |
 
 ## Common TTS Parameters
 
-| Parameter        | Type                 | Supporting STT/ TTS                   | Description                                                                                                                                                                                                                       | Examples                                       |
+| **Parameter**        | **Type**                 | **Supporting STT/ TTS**                   | **Description**                                                                                                                                                                                                                       | **Examples**                                       |
 |------------------|----------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | `disableTtsCache`  | Boolean              | ALL                                   | Using cache for calling TTS engine if same statement or word found.                                                                                                                                                              |    `"disableTtsCache": true`                                            |
 | `ttsEnhancedVoice` | String               | AWS                                   | Amazon Polly has four voice engines that convert input text into life-like speech. These include Generative, Long-form, Neural, and Standard. To use an Amazon Polly voice                                                      | `"ttsEnhancedVoice": "neural"` |
-| `ttsGender`        | String (MALE, FEMALE, NEUTRAL) | Google                                |                                                                                                                                                                                                                                   |   `"ttsGender": "FEMALE"`                                             |
-| `ttsLoop`          | Number / String      | ALL                                   | The `ttsLoop` parameter is used in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message plays multiple times in a loop.       |`"ttsLoop": 2` |
-| `earlyMedia`       | Boolean              | ALL                                   | The **Early Media** parameter in TTS (Text-to-Speech) is used to control the playback of audio prompts or messages before a call is fully connected.                                                                             |        `"earlyMedia": true`                                        |
+| `ttsGender`        | String (Male, Female, Neutral) | Google                                |                                                                                                                                                                                                                                   |   `"ttsGender": "FEMALE"`                                             |
+| `ttsLoop`          | Number / String      | All                                   | Use the `ttsLoop` parameter in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message plays multiple times in a loop.       |`"ttsLoop": 2` |
+| `earlyMedia`       | Boolean              | All                                   | Use the **Early Media** parameter in TTS (Text-to-Speech) to control the playback of audio prompts or messages before a call connects.                                                                             |        `"earlyMedia": true`                                        |
 | `ttsOptions`       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It's used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
 
 ### TTS Options in Voice Gateway
 
-Voice Gateway now supports a `ttsOptions` parameter that lets bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, these options can be used to fine-tune aspects like voice settings, speed, and other properties.
+Voice Gateway now supports a `ttsOptions` parameter that lets bot developers to customize Text-to-Speech (TTS) messages by passing dynamic objects tailored to the specific TTS provider. Depending on the provider, use these options to fine-tune aspects like voice settings, speed, and other properties.
 
 !!! Note
 
@@ -375,13 +375,13 @@ Voice Gateway now supports a `ttsOptions` parameter that lets bot developers to 
 
 ### Structure of `ttsOptions`
 
-The `ttsOptions` object contains provider-specific settings in a key-value format. Below are examples of different TTS providers:
+The `ttsOptions` object contains provider-specific settings in a key-value format. Following are examples of different TTS providers:
 
 #### ElevenLabs
 
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
 * `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/creative-platform/playground/text-to-speech#voice-settings).
-* `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values below 1 will slow down the speech, while values above 1 will speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
+* `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values less < 1 slow down the speech, while values > 1 speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
 
 #### PlayHT
 
@@ -392,7 +392,7 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 
 !!! Note
 
-     Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
+    Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
 
     `ttsProvider = playht`  
     `ttsLanguage = en-US`  
@@ -404,17 +404,17 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Deepgram offers a few additional parameters that enhance customization:
 
 * **encoding (string)**: You can specify the desired encoding format for the output audio file, such as `mp3` or `wav`.
-* **model (enum)**: Defines the AI model to be used for synthesizing the text into speech. The default model is `aura-asteria-en`, optimized for natural-sounding English voice output.
+* **model (enum)**: Defines the AI model used for synthesizing the text into speech. The default model is `aura-asteria-en`, optimized for natural-sounding English voice output.
 * **sample_rate (string)**: This enables you to set the sample rate of the audio output, offering control over the quality and clarity of the sound produced.
-* **Container**: The Container feature allows users to specify the desired file format wrapper for the output audio generated through text-to-speech synthesis.
+* **Container**: The Container feature lets users to specify the desired file format wrapper for the output audio generated through text-to-speech synthesis.
 
-These parameters provide additional flexibility for developers to fine-tune the audio output to meet their specific needs. All these parameters will be set inside ttsOptions. [Learn more](https://developers.deepgram.com/docs/tts-rest).
+These parameters provide additional flexibility for developers to fine-tune the audio output to meet their specific needs. Set all these parameters inside ttsOptions. [Learn more](https://developers.deepgram.com/docs/tts-rest).
 
 #### AWS
 
-Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Aws offers a few additional parameters that enhance customization, like ttsEnhanceVoice, also known as an engine.
+Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Aws offers a few additional parameters that enhance customization, like `ttsEnhanceVoice`, also known as an engine.
 
-Amazon Polly has four voice engines that convert input text into lifelike speech. These include “standard," "neural," "generative," and "long-form." 
+Amazon Polly has four voice engines that convert input text into lifelike speech. These include `standard`, `neural`, `generative`, and `long-form`. 
 
 `ttsEnhancedVoice = “neural”`
 
@@ -422,7 +422,7 @@ Amazon Polly has four voice engines that convert input text into lifelike speech
 
 Apart from generic parameters like `ttsLanguage` and `voiceName`, which are common across most TTS engines, Whisper offers a few additional parameters that enhance customization, like a model.
 
-For real-time applications, the standard tts-1 model provides the lowest latency but at a lower quality than the tts-1-hd model. Due to how the audio is generated, tts-1 is likely to generate more static content in certain situations than tts-1-hd. In some cases, the audio may not have noticeable differences depending on your listening device and the person.
+For real-time applications, the standard tts-1 model provides the lowest latency but at a lower quality than the tts-1-hd model. Because of the audio generation process, tts-1 may produce more static in certain situations than tts-1-hd. Sometimes, the audio may not have noticeable differences depending on your listening device and the person.
 
 ```
 ttsOptions = {
@@ -434,16 +434,16 @@ ttsOptions = {
 
 ### Continuous ASR
 
-Continuous ASR (Automatic Speech Recognition) is a feature that allows Speech-to-Text (STT) recognition to be tuned for the collection of things like phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, are often spoken with pauses in between utterances. Two parameters to enable it are:
+Continuous ASR (Automatic Speech Recognition) is a feature that lets tuning Speech-to-Text (STT) recognition for the collection of phone numbers, customer identifiers, and other strings of digits or characters, which, when spoken, are often spoken with pauses between utterances. Two parameters to enable it are:
 
 | **Parameter**              | **Type**                         | **Supporting STT/TTS**                        | **Description**                                                                                                                                                                                                                                                                                                                                     |
 | -------------------------- | -------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `continuousASRTimeoutInMS` | Number (milliseconds)            | STT-Google, Microsoft<br>TTS-Not Required | Duration of silence (in milliseconds) to wait after receiving a transcript from the STT vendor before returning the result. If another transcript is received before this timeout, transcripts are combined and recognition continues. The combined result is returned after silence exceeds the timeout. <br><br>**Example:** `5000` for 5 seconds |
+| `continuousASRTimeoutInMS` | Number (milliseconds)            | STT-Google, Microsoft<br>TTS-Not Required | Duration of silence (in milliseconds) to wait after receiving a transcript from the STT vendor before returning the result. If another transcript is received before this timeout, transcripts combine and recognition continues. The combined result is returned after silence exceeds the timeout. <br><br>**Example:** `5000` for 5 seconds |
 | `continuousASRDigits`      | Digit (for example, `*`, `%`, `&`, `#`) | STT-Google, Microsoft<br>TTS-Not Required | A DTMF key that terminates the gather operation and returns the collected results immediately.
 
 ### Handling Bot Delay
 
-If the bot takes time to respond to a message, you can configure Voice Gateway to take action.
+Configure Voice Gateway to act when the bot takes time to respond to a message.
 
 #### Handle Bot Delay After User Input
 
@@ -452,7 +452,7 @@ The delay is only applied when Voice Gateway sends a response to the bot and is 
 
 If a delay occurs between two Message nodes, the bot developer must handle it manually by playing audio and stopping it after the delay.
 
-By setting timeout properties, the following actions can be configured:  
+By setting timeout properties, configure the following actions:  
 
 * Play a textual prompt to the user  
 * Play an audio file to the user  
@@ -461,36 +461,36 @@ By setting timeout properties, the following actions can be configured:
 **Use Case**:
 
 * To play a message to the user, configure a timeout on the botNoInputTimeoutMS parameter and define the action:
-* To play a textual prompt, set the prompt on the botNoInputSpeech parameter.
-* To play an audio file, set the file URL using the botNoInputUrl parameter.
-* To replay the message if the timeout is exceeded multiple times, configure the number of retries using the botNoInputRetries parameter.
-* A separate timeout for disconnecting the call can be configured using the botNoInputGiveUpTimeoutMS parameter, which is set to 30 seconds by default.
+* To play a textual prompt, set the prompt on the `botNoInputSpeech` parameter.
+* To play an audio file, set the file URL using the `botNoInputUrl` parameter.
+* To replay the message if the timeout exceedes multiple times, configure the number of retries using the botNoInputRetries parameter.
+* Configure a separate timeout for disconnecting the call using the `botNoInputGiveUpTimeoutMS` parameter, set to 30 seconds by default.
 
 **Parameters Description**
 
-The following table lists the bot parameters that are used to configure this feature:
+The following table lists the bot parameters used to configure this feature:
 
 | **Parameter**               | **Type**       | **Description**                                                                                                                                                                                                      | **Required**           |
 | --------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| `botNoInputGiveUpTimeoutMS` | Number         | Defines the timeout (in milliseconds) for the bot response before the call is disconnected. If no response is received when the timeout expires, Voice Gateway disconnects the call.<br><br>**Default:** 30 seconds. | Yes<br>Default: 30 sec |
-| `botNoInputTimeoutMS`       | Number         | Defines the timeout (in milliseconds) before a prompt is played to the user. If no input is received from the bot, Voice Gateway plays a textual prompt (`botNoInputSpeech`) or an audio file (`botNoInputUrl`).     | Yes                    |
-| `botNoInputRetries`         | Number         | Specifies the number of times the bot will retry after a no-input timeout. For example, if set to `2`, and timeout is 1000 ms, the prompt will play two more times if no bot response is received.                   | Yes                    |
+| `botNoInputGiveUpTimeoutMS` | Number         | Defines the timeout (in milliseconds) for the bot response before disconnecting the call. If no response is received when the timeout expires, Voice Gateway disconnects the call.<br><br>**Default:** 30 seconds. | Yes<br>Default: 30 sec |
+| `botNoInputTimeoutMS`       | Number         | Defines the timeout (in milliseconds) before playing a prompt to the user. If no input is received from the bot, Voice Gateway plays a textual prompt (`botNoInputSpeech`) or an audio file (`botNoInputUrl`).     | Yes                    |
+| `botNoInputRetries`         | Number         | Specifies the number of times the bot retries after a no-input timeout. For example, if set to `2`, and timeout is 1000 ms, the prompt plays two more times if no bot response is received.                   | Yes                    |
 | `botNoInputSpeech`          | String / Array | Defines the prompt to play when no input is received from the bot. Can include:<br>- **Plain text**<br>- **SSML**<br>- **Audio URL**<br><br>**Example:** `["https://audiourl", "This is second message"]`            | Yes                    |
-| `botNoInputUrl`             | String         | Specifies a URL from which an audio file is played to the user when the bot doesn't respond within the defined timeout.                                                                                             | Yes                    |
+| `botNoInputUrl`             | String         | Specifies a URL from which an audio file plays to the user when the bot doesn't respond within the defined timeout.                                                                                             | Yes                    |
 
 Example:  
 <img src="../images/message-node-parameters.png" alt="Example Configuration" title="Example Configuration" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
-      `botNoInputSpeech` can contain multiple messages, including audio URLs. Example: `botNoInputSpeech` = [“this is first delay Msg”, “[https://](https://thisdummy.wav)”,” this is third textual Message”].
+      `botNoInputSpeech` can contain multiple messages, including audio URLs. Example: `botNoInputSpeech` = [“this is first delay Msg”, `[https://](https://thisdummy.wav)`,” this is third textual Message”].
 
 #### Handle Delay Between Two Message Nodes
 
 Voice Gateway can only handle delays when it sends a response to the bot and waits for the bot's reply. If a delay occurs, Voice Gateway can handle it. If a delay occurs between a Message node or Script node where the user hasn’t spoken, Voice Gateway won’t be aware of the delay, and the bot developer must handle it manually.
 
-If a Service Node is placed between two Message nodes (delay observed between two Message nodes):
-This must be managed manually, as the gateway has already received a command to play a message and isn't waiting for user input. The gateway won't initiate a delay timer and waits for the next bot message.
+Place a Service Node between two Message nodes (delay observed between two Message nodes):
+Manage this manually, as the gateway has received a command to play a message and isn't waiting for user input. The gateway won't initiate a delay timer and waits for the next bot message.
 
 To handle this scenario:
 
@@ -512,11 +512,11 @@ The Barge-In feature controls Voice Gateway behavior in scenarios where the user
 | **Parameter**                    | **Type**                                                                             | **Supporting STT/TTS**                           | **Description**                                                                                                               |
 | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | `listenDuringPrompt`             | Boolean (true or false)<br>Similar to Barge-In                                       | STT-Google and Microsoft<br>TTS-Not Required | If `false`, the bot doesn't listen for user speech until the response finishes playing.<br>**Default:** `true`.              |
-| `bargeInMinWordCount`            | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | If Barge-In is enabled, the bot only interrupts playback after the specified number of words are spoken.<br>**Default:** `1`. |
+| `bargeInMinWordCount`            | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | If Barge-In is enabled, the bot only interrupts playback after speaking the specified number of words.<br>**Default:** `1`. |
 | `bargeInOnDTMF`                  | Boolean                                                                              | STT-Google and Microsoft<br>TTS-Not Required | Lets users to press a key to interrupt the audio playback. After pressing a key, the user can speak their input.            |
 | `dtmfCollectInterDigitTimeoutMS` | Number (milliseconds)                                                                | STT-Google and Microsoft<br>TTS-Not Required | Time allowed between DTMF key presses before sending all digits to the bot.                                                   |
 | `dtmfCollectSubmitDigit`         | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Special digit that submits all collected DTMF input immediately, bypassing the timeout or max digit limit.                    |
-| `dtmfCollectMaxDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Maximum number of DTMF digits to collect.<br>Example: If set to `5` and input is `1234567`, only `12345` is processed.        |
+| `dtmfCollectMaxDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Maximum number of DTMF digits to collect.<br>Example: If set to `5` and input is `1234567`, only processes `12345`.        |
 | `dtmfCollectminDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Minimum number of DTMF digits to collect. <br>**Default:** `1`.                                                               |
 | `dtmfCollectnumDigits`           | Number                                                                               | STT-Google and Microsoft<br>TTS-Not Required | Exact number of DTMF digits to collect.                                                                                       |
 | `input`                          | Array of strings<br>Valid values: `['digits']`, `['speech']`, `['digits', 'speech']` | STT-Google and Microsoft<br>TTS-Not Required | Specifies allowed input types. <br>**Default:** `['digits']`.                                                                 |
@@ -531,7 +531,7 @@ For example, if a user speaks in English, the conversation continues in English.
 
 1. In Bot Builder (on the child bot), navigate to **Languages,** add a new language (for example, Spanish), and enable it.
 2. Select English as the default language from the language dropdown menu. [Learn more](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-an-ai-agent).
-3. Create a new dialog titled "Language Detection" (or choose a suitable name).
+3. Create a new dialog titled `Language Detection` (or choose a suitable name).
 4. Inside this dialog, add an **entity node** to capture user intent input.
 5. Set the entity precedence to **'Intent over Entity'** in the advanced controls.
 6. Add the **AlternativeLanguage** call control parameter.
@@ -547,11 +547,11 @@ For example, if a user speaks in English, the conversation continues in English.
 14. Update entity details in Spanish as well.
 15. Publish the bot.
 
-These steps ensure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
+These steps make sure the bot can detect the user's language at the start and adjust the conversation flow accordingly.
 
 ### Click-to-Call
 
-To configure ASR (Automatic Speech Recognition) and TTS (Text-to-Speech) in a ClickToCall flow, add the call control parameters in the [Script Task](../../flows/node-types/script-task.md) node at the start of the flow. The parameters must be set in the following format:
+To configure ASR (Automatic Speech Recognition) and TTS (Text-to-Speech) in a ClickToCall flow, add the call control parameters in the [Script Task](../../flows/node-types/script-task.md) node at the start of the flow. Set the parameters must in the following format:
 
 ```
 const ccParamList = [
@@ -569,10 +569,10 @@ ccParamList.forEach((ccParam) => {
 })
 ```
 
-| Parameter   | Type   | Description                                         | Example            |
-|-------------|--------|-----------------------------------------------------|--------------------|
-| ttsLanguage | String | Specifies the language code for text-to-speech output. | ja-JP              |
-| ttsProvider | String | Defines the provider for text-to-speech services.     | google             |
-| voiceName   | String | Identifies the voice to be used for text-to-speech output. | ja-JP-Wavenet-B |
-| sttLanguage | String | Specifies the language code for speech-to-text recognition. | ja-JP          |
-| sttProvider | String | Defines the provider for speech-to-text services.     | Microsoft          |
+| **Parameter**   | **Type**   | **Description**                                         | **Example**            |
+|-----------------|------------|---------------------------------------------------------|------------------------|
+| ttsLanguage     | String     | Specifies the language code for text-to-speech output.  | ja-JP                  |
+| ttsProvider     | String     | Defines the provider for text-to-speech services.       | google                 |
+| voiceName       | String     | Identifies the voice to be used for text-to-speech output.| ja-JP-Wavenet-B      |
+| sttLanguage     | String     | Specifies the language code for speech-to-text recognition.| ja-JP               |
+| sttProvider     | String     | Defines the provider for speech-to-text services.       | Microsoft              |
