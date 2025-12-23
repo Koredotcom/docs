@@ -8,7 +8,4 @@ By leveraging Search AI capabilities, Knowledge Tools can access information fro
 
 Integrated seamlessly through the **(In)Business Customer Experience** platform, these tools enable autonomous agents to understand user intent in natural language, retrieve relevant content, and generate meaningful and business-aware responses in real time. 
 
-![About Knowledge](images/about-knowledge.png "About Knowledge Tools")
-
-
 [Learn More about Search AI.](overview.md)

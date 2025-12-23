@@ -160,6 +160,3 @@ If your external agent doesn't follow the expected format, follow the steps list
     * Accept (In)Agent Platform-defined request structure.
     * Convert it to the format required by your external agent.
     * Reformat the external agent's response to match the (In)Agent Platform’s response structure.
-
-![alt_text](images/externalagents/adapter.png "image_tooltip")
-
