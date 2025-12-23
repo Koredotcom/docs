@@ -270,7 +270,7 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 
 <hr/> 
 
- **Related resources**
+**Related Resources**
 
 * [Settings Console](../../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - about tracking activities and events in your account.

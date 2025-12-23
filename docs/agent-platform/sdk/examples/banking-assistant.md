@@ -326,7 +326,7 @@ banking-app/
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Building Applications](../guide/building-apps.md)
 - [Working with Tools](../guide/working-with-tools.md)

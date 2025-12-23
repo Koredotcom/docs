@@ -1226,7 +1226,7 @@ You can confidently scale AI initiatives with event-based user activity logs to 
 
 <hr/> 
 
-**Related resources**
+**Related Resources**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"} - Other admin features of the Platform.
 * [Users Management](../user-management/overview.md){:target="_blank"} - Manage users linked to your account.

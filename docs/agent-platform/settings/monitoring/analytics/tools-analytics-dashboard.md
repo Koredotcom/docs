@@ -264,7 +264,7 @@ The **Tools Analysis Dashboard** offers actionable and customized insights on th
 
 <hr/> 
 
-**Related resources**
+**Related Resources**
 
 * [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Tool Platform admin features.
 * [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"} - Track, audit, and review changes made to a tool's flow.

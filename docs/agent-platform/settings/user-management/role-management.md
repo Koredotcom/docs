@@ -2116,7 +2116,7 @@ Like a system role, you can duplicate a custom role, which copies the name, role
 
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
 * [Users Management](../user-management/users.md){:target="_blank"} - about managing users in your account.

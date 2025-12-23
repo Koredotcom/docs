@@ -500,6 +500,6 @@ As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-par
 
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.

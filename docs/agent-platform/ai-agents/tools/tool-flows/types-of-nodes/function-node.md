@@ -484,7 +484,7 @@ Do one of the following:
 When you share a tool with another user within the same account, all configurations of the Function node are retained and available to the recipient as well.
 
 <hr/> 
- 
- **Related resources** 
+
+**Related resource**
 
 * [Supported Libraries](../types-of-nodes/script-libraries.md) - list of supported libraries in the script editor of the Function node.

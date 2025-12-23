@@ -117,7 +117,7 @@ graph TB
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - 📖 [Documentation](getting-started/installation.md)
 

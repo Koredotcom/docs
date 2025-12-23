@@ -28,7 +28,7 @@ Once you invite a user or import users data, you can change their roles, assign/
 
 <hr/> 
 
- **Related resources**
+**Related Resources**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"} - about other admin features.
 * [Role Management](../user-management/role-management.md){:target="_blank"} - about managing default and custom roles in your account.

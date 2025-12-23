@@ -1,10 +1,10 @@
 {
 
- "Related resources": {
+ "Related Resources": {
 	"scope": "markdown",
  	"prefix": "kore-related-docs",
  	"body": [
-	   "<hr/> \n \n **Related resources** \n \n* [link1]()\n* [link2]()\n"
+	   "<hr/>\n\n**Related resources**\n\n* [link1]()\n* [link2]()\n"
  	],
  	"description": "Related resources."
 },

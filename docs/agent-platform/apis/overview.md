@@ -33,6 +33,6 @@ API keys are typically included in request headers or parameters to validate acc
    
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [List of available APIs](list-of-apis.md).

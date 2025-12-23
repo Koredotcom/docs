@@ -80,8 +80,8 @@ To resolve conflicts by editing either the existing or imported environment vari
 To cancel the import process during the conflicting environment variables resolution, click **Cancel** in the **Edit Environment Variable** window, and then click **Confirm**.
 
 <hr/> 
- 
- **Related resources** 
+
+**Related Resources**
 
 * [Create a Tool](../tools/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
 * [Export a Tool](../tools/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.

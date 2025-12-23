@@ -34,8 +34,8 @@ Each agent is characterized by its description, scope, and instructions, which h
 * **Autonomy and Adaptability**: Agents are designed to act autonomously, interpreting input, analyzing situations, and deciding the best course of action. Their adaptability allows them to respond dynamically to changing conditions or unexpected challenges in pursuit of their goals.
 
 <hr/> 
- 
- **Related resources** 
+
+**Related Resources**
 
 * [Create an Agentic App](./agentic-apps/create-app.md)
 * [Set up AI Agents](./create-agent.md)

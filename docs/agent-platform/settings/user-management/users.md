@@ -238,7 +238,7 @@ The role is updated for the selected users.
 
 <hr/> 
 
- **Related resources**
+**Related Resources**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
 * [Role Management](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.

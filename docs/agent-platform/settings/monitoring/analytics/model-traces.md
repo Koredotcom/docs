@@ -442,7 +442,7 @@ In addition to the above metadata (excluding *Deployment name* and *Deployment v
 
 <hr/> 
 
- **Related resources**
+**Related Resources**
 
 * [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Agent Platform admin features.
 * [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.

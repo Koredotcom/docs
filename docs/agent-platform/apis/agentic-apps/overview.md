@@ -175,6 +175,6 @@ Sample Response
 
 <hr/>
 
- **Related resource** 
+**Related resource**
 
 * [List of available APIs](../../apis/list-of-apis.md).

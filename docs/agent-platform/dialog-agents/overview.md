@@ -7,7 +7,7 @@ Dialog Agents paradigm, powered by DialogGPT and Agent Node, offers a structured
 
 <hr/> 
 
- **Related resources**
+**Related Resources**
 
 * [DialogGPT for Dialog Agents Orchestration](./dialoggpt.md)
 * [Dialog Agents vs. AI Agents](../getting-started/introduction.md#deciding-the-right-paradigm-or-approach)

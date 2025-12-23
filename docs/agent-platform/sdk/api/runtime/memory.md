@@ -316,7 +316,7 @@ async def batch_user_operations(user_updates: list):
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [RequestContext API](request_context.md) - Parent context for memory access  
 - [MemoryStore Design-Time Model](../designtime/memory_store.md) - Store configuration
