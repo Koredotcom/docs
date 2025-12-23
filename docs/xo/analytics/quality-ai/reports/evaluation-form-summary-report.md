@@ -84,16 +84,17 @@ Steps to generate the Evaluation Form Summary Report:
 
 ## Report Fields
 
-### Agent Performance Summary 
+### Metric Adherence Summary Report  
 
-This report provides an overview of evaluation metric adherence across all interactions, presenting aggregated compliance statistics that highlight adherence rates, applicable interaction counts, and fatal metric violations for each evaluated metric.
+This report summarizes adherence results for evaluation metrics across selected forms. It aggregates metric-level performance for all evaluated interactions, including total applicability, adherence counts, adherence percentages, and identification of fatal metrics.
 
-| **Metric Name** | **Is Fatal** | **Applicable Interactions** | **Adhered Interactions** | **Adherence %** |
-|-----------------|--------------|-----------------------------|---------------------------|------------------|
-| AI Agent Metric Check | 0 | 13 | N/A | 0.00% |
-| Agent Blaming Customer | 0 | 13 | N/A | 0.00% |
-| Agent Rude | 0 | 13 | N/A | 0.00% |
-| COMMON AU - GEN & DET | 0 | 13 | 2 | 15.38% |
+| Metric Names              | Is Fatal | Total Interactions | Total Applicable | Total Adhered | Metric Adherence Percent |
+|---------------------------|----------|--------------------|------------------|---------------|--------------------------|
+| AI Agent Metric Check     | 0        | 13                 | 13               | 0             | 0.00%                    |
+| Agent Blaming Customer    | 0        | 13                 | 13               | 0             | 0.00%                    |
+| Agent Rude                | 0        | 13                 | 13               | 0             | 0.00%                    |
+| COMMON AU – GEN & DET     | 0        | 13                 | 13               | 2             | 15.38%                   |
+
 
 ### View and Download the Report
 

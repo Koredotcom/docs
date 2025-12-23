@@ -1,8 +1,8 @@
 # Taxonomy Builder Overview
 
-**Taxonomy Builder** enables organizations to design and manage their own topic hierarchy, ensuring that conversation analysis reflects their unique business priorities rather than relying only on machine-generated topic labels.
+**Taxonomy Builder** enables organizations to design and manage their own topic hierarchy, ensuring that conversation analysis reflects their unique business priorities rather than relying only on machine-generated topic levels.
 
-This feature addresses challenges by enabling Contact Center managers, analysts, and quality teams to define a structured taxonomy of business-relevant topics. This taxonomy can be applied consistently across conversations, ensuring precise classification, better insights, and actionable metrics.  
+This helps contact center managers, analysts, and quality teams define a structured taxonomy of business-relevant topics. The system applies this taxonomy consistently across conversations to improve classification accuracy, generate clearer insights, and produce operational metrics.    
 <img src="../images/taxonomy-builder-overview.png" alt="Taxonomy Builder" title="Taxonomy Builder" style="border: 1px solid gray; zoom:100%;">  
 
 ## Why Taxonomy Builder?
@@ -21,7 +21,7 @@ Taxonomy Builder enables you to:
 
 * Define custom topic hierarchies that mirror your business structure.
 
-* Ensure consistent labeling across all conversations.
+* Make sure consistent labeling across all conversations.
 
 * Analyze topics at strategic (L1), tactical (L2), and operational (L3) levels.
 
@@ -59,22 +59,27 @@ Choose one of the two approaches to determine contact resolution:
 
 **Topic-Based Resolution (Strict)**: The system marks a contact as resolved only when you resolve all L3 topics in the conversation. This approach tracks every issue but may mark contacts as unresolved if minor issues remain, even after addressing primary concerns.
 
-**Use this method when**:
+Use This Method When:
 
-    * You need to resolve all issues completely. 
-    * Require comprehensive resolution of every mentioned issue.
-    * Quality standards mandate complete issue closure.
-    * Compliance or regulatory requirements demand full resolution tracking.
+* You must resolve all issues. 
+
+* Require comprehensive resolution of every mentioned issue.
+
+* Quality standards mandate complete issue closure.
+
+* Compliance or regulatory requirements demand full resolution tracking.
 
 **Example**: When a customer calls about a credit card payment issue and mentions a rewards program question. With strict resolution, the system marks the contact as unresolved if you fix the payment but the rewards question remains unanswered.
 
 **Holistic Resolution Assessment**: The LLM evaluates contact resolution independently of individual topics. This method marks a contact as resolved if you address the customer’s primary concerns, even when minor issues remain unresolved. Use this method for a nuanced view of customer satisfaction and agent effectiveness.
 
-**Use this method when**:
+Use This Method When:
 
-    * You want to prioritize primary over secondary contact reasons.
-    * Measure agent performance based on resolving main customer concerns.
-    * Exclude minor issues or casual mentions from resolution metrics.
+* You want to prioritize primary over secondary contact reasons.
+
+* Measure agent performance based on resolving main customer concerns.
+
+* Exclude minor issues or casual mentions from resolution metrics.
 
 **Example**: A customer calls primarily about a payment issue (resolved) but casually mentions a rewards question (unresolved). The system marks the contact as resolved after you handle the primary concern.
 

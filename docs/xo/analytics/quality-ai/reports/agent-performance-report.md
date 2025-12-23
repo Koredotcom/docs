@@ -95,7 +95,7 @@ Steps to generate the Agent Performance Report:
 
 This report provides an overview of each agent’s performance, summarizing key metrics such as total interactions, evaluation and audit scores, and adherence levels, along with detailed attribute-level results that show scores, adherence percentages, and interaction counts for each evaluated category.
 
-| **Agent Name** | **Total Interactions** | **Kore Evaluation Score** | **Scorecard Score** | **Audit Score** | **Fail %** | **Coaching Assignments** | **Contained Metrics & Adherence Summary** |
+| Agent Name | Total Interactions | Kore Evaluation Score | Scorecard Score | Audit Score | Fail % | Coaching Assignments | Contained Metrics & Adherence Summary |
 |----------------|------------------------|----------------------------|----------------------|------------------|------------|---------------------------|-------------------------------------------|
 | **Lily Agent** | 20                     | 0.00                       | 28.00               | 0.00            | 0.00%      | N/A                       | COMMON Closing Resolution: **40%**, Dead Air: **33.33%**, Cross Talk: **22.22%**, Speech Rate: **11.11%**, Greeting: **100%**, Price: **100%**, Resolution: **100%**, Sign-off: **100%** |
 | **Rosie V**      | 11                     | 0.00                       | -20.00              | 0.00            | 0.00%      | N/A                       | Closing Resolution: **0%**, Dead Air: **0%**, Cross Talk: **0%**, Speech Rate: **0%** |
