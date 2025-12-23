@@ -42,7 +42,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
 ### Step 1: Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
+* Log in → In (In)Agent Platform Modules → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
 
 ### Step 2: Add the Node

@@ -1,4 +1,4 @@
-# About Core AI Capabilities of Agent Platform
+# About Core AI Capabilities of (In)Agent Platform
 
 The (In)Agent Platform offers a comprehensive suite of AI capabilities designed to empower enterprises in building, optimizing, evaluating, and safeguarding AI systems. These capabilities form the foundation of a robust, scalable, and responsible AI workflow. The four core components—Models Studio, Prompt Studio, Evaluation Studio, and Guardrails—work together to streamline model customization, improve prompt performance, ensure model quality, and uphold compliance and safety standards.
 

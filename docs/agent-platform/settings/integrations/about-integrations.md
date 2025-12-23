@@ -23,7 +23,7 @@ The (In)Agent Platform supports 120+ integrations with different authorization t
 
 To access the feature, follow the steps below:
 
-1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
+1. Log in → In (In)Agent Platform Modules → Click **Autonomous Agents**.
 2. Click **Settings** → On the left navigation menu → Click **Integrations**.
     <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 

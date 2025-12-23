@@ -50,7 +50,7 @@ See [How to set up an agent](./../create-agent.md) for detailed instructions.
 
 ### Step 3: Simulate or Test the Behavior of the App and the Agents
 
-Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md).
+Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for (In)Agent Platform](diagnostics-for-agent-platform.md).
 
 Next, simulate different scenarios to evaluate agent interactions and responses.  
 See [Simulate and Test the App](./../agentic-apps/app-testing.md).

@@ -1,6 +1,6 @@
 # Agent Diagnostics
 
-The Agent Platform’s Diagnostics feature provides a comprehensive health check for any Agentic App—whether it uses Supervisor Orchestration or the Adaptive Agent Network. When a user selects Run Diagnostics from the Agentic App Overview page, the platform performs a full validation across all major components, including agents, tools, events, memory systems, and overall orchestration logic.
+The (In)Agent Platform’s Diagnostics feature provides a comprehensive health check for any Agentic App—whether it uses Supervisor Orchestration or the Adaptive Agent Network. When a user selects Run Diagnostics from the Agentic App Overview page, the platform performs a full validation across all major components, including agents, tools, events, memory systems, and overall orchestration logic.
 
 ![Create App](images/createapp/diagnostics-button.png "Diagnostics button")
 
