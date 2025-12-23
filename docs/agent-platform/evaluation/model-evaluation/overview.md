@@ -1,4 +1,4 @@
-# About Model Evaluation
+# Model Evaluation Overview
 
 Model Evaluation is a comprehensive tool in (In)Agent Platform for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators or create custom evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. Additionally, Evaluation Studio fosters collaboration and sharing, allowing teams to work together on projects, share evaluation results, and collectively analyze model performance. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.
 

@@ -88,7 +88,3 @@ Selecting a specific deployment on the Deployment page opens its detail view, wh
 - **[Configurations](../open-source-models/configure-your-open-source-model.md)** – Edit the description and tags, or undeploy/delete the model.
 
 <img src="../images/model_endpoint_new.png" alt="Model API Endpoint" title="Model API Endpoint" style="border: 1px solid gray; zoom:80%;">
-
-
-
-

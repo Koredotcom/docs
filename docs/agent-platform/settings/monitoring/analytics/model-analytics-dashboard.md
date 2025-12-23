@@ -268,9 +268,10 @@ The expanded views of all the widgets are shown below:
 
 With intuitive data visualization and dynamic filtering capabilities, the **Model Analysis Dashboard** enables data-driven decisions for model optimization, resource allocation, and performance monitoring.
 
-## Related Links
+<hr/> 
 
-* **Settings Console** - [Learn more](../../../administration/overview.md){:target="_blank"} about other (In)Agent Platform admin features.
-* **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
-* **Monitoring: Tools Analytics Dashboard** - [Learn more](../analytics/tools-analytics-dashboard.md){:target="_blank"} about getting actionable insights into tools’ performance.
+**Related resources**
 
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - about tracking activities and events in your account.
+* [Monitoring: Tools Analytics Dashboard](../analytics/tools-analytics-dashboard.md){:target="_blank"} - about getting actionable insights into tools’ performance.

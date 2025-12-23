@@ -190,4 +190,3 @@ curl --location 'https://{host}/api/public/guardrails/deploy' \
    </td>
   </tr>
 </table>
-

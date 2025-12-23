@@ -1,7 +1,3 @@
-
-
-
-
 # Model Optimization Techniques
 
 Model optimization is the process of improving a machine learning model's performance by making it more efficient and effective without compromising its accuracy or predictive power. This involves a variety of techniques aimed at reducing the computational resources required for the model, speeding up inference time, and minimizing latency. The goal is to ensure that the large model operates swiftly and efficiently, particularly in real-time or resource-constrained environments.
@@ -79,8 +75,6 @@ Comparisons between CTranslate2 and vLLM on important attributes are listed belo
 
 
 ### Inference Speed and Throughput
-
-
 
 * For quick, real-time responses, CTranslate2 is advantageous.
 * For batch processing of large-scale data, vLLM optimizations offer better throughput.

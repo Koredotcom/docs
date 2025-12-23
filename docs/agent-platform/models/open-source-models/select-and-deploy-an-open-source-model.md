@@ -1,9 +1,6 @@
-
 # Select and Deploy an Open-Source Model
 
-
-Currently, (In)Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Inception-hosted model, you can optimize it before deployment.  
-   For more information on the list of models supported, see [Supported models](../supported-models.md#supported-open-source-models).
+(In)Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Inception-hosted model, you can optimize it before deployment. For more information on the list of models supported, see [Supported models](../supported-models.md#supported-open-source-models).
 
 To select and deploy a model, follow these steps:
 
@@ -85,5 +82,3 @@ To re-deploy a deployed model, follow these steps:
 1. Go to **Models** > **Open-source models** and select a **model** to redeploy.
 2. Click the **Deploy model**. The **Model Configuration** page is displayed.
 3. Modify the required fields and click the **Deploy**. Once deployed, the status changes to “Deployed”.
-
-

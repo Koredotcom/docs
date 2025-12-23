@@ -1312,7 +1312,7 @@ The following third-party integrations are available on the (In)Agent Platform:
   <tr>
    <td>Search AI
    </td>
-   <td>Connect to your users' SearchAssist setup.
+   <td>Connect to your users' Search AI setup.
    </td>
    <td> 1
    </td>

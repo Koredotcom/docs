@@ -80,48 +80,29 @@ To view the required data, use the [Global Timeline Filters](../analytics/tools-
 
 ## Global Timeline Filters
 
-To generate account-level and tool-level data for a specific period, use the following options on the top panel:
+Use the top-panel filters to scope account- and tool-level data by time.
 
-* **24 hours**: Displays tool data for all the hours in the past day.
-* **7 days**: Displays tool data for all the days in the past week.
-* **30 days**: Displays tool data for all the days in the past month.
-* **90 days**: Displays tool data for all the days in the past three months.
-* **Custom**: Allows you to select a custom day or date range from the following calendar widget to view tool data. Once you select the required period, click **Apply** to see the relevant data.
-<img src="../images/global-timeline-filters.png" alt="global timeline filters" title="global timeline filters" style="border: 1px solid gray; zoom:75%;">
+* **Preset ranges**: 24 hrs, 7 days, 30 days, and 90 days.
+* **Custom range**: Select a single date or a continuous date range via the calendar, then click *Apply*.
 
-<div class="admonition note">
-<p class="admonition-title">Key Considerations</p>
-<p><ul><li>You can select only the current and past dates and not a future date.</li>
-<li>You can view past data only up to one year from the current date.</li></ul></p></div>
+     <img src="../images/global-timeline-filters.png" alt="global timeline filters" title="global timeline filters" style="border: 1px solid gray; zoom:75%;">
 
-**Single Date**
+**Calendar Presets**
 
-To select a single day, click the required date on the widget.
-<img src="../images/single-date.png" alt="single date" title="single date" style="border: 1px solid gray; zoom:75%;">
+* **This Month**: From the 1st of the current month to today.
 
-**Date Range**
+* **Last Month**: Full previous calendar month.
 
-To select a custom date range, select the start and end dates on the widget.
-<img src="../images/date-range.png" alt="date range" title="date range" style="border: 1px solid gray; zoom:75%;">
+* **This Year**: From Jan 1 of the current year to today.
+
+* **Last Year**: Full previous calendar year.
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><ul><li>Only consecutive dates can be selected for a date range. For example, alternate or random date selections are not allowed.</li>
-<li>Multiple date range selections are not supported.</li></ul></p></div>
-
-The other options you can select include:
-
-* **This Month**: Displays data for the current month. For example, if today is 20 September, the data from 1 September to 20 September is displayed.
-<img src="../images/this-month.png" alt="this month" title="this month" style="border: 1px solid gray; zoom:75%;">
-
-* **Last Month**: Displays data for the past month. For example, if this month is September, the data from 1 August to 31 August is displayed.
-<img src="../images/last-month.png" alt="last month" title="last month" style="border: 1px solid gray; zoom:75%;">
-
-* **This Year**: Displays data for the current year. For example, if today is 20 September 2024, the data from 1 January 2024 to 20 September is displayed.
-<img src="../images/this-year.png" alt="this year" title="this year" style="border: 1px solid gray; zoom:75%;">
-
-* **Last Year**: Displays data for the previous year from 1 January 2023 to 31 December 2023.
-<img src="../images/last-year.png" alt="last year" title="last year" style="border: 1px solid gray; zoom:75%;">
+<p class="admonition-title">Constraints</p>
+<p><ul><li>Only current and past dates are supported (no future dates).</li>
+<li>Historical data is available up to one year back.</li>
+<li>Date ranges must be consecutive; multiple or non-contiguous ranges aren’t supported.</li></ul></p>
+</div>
 
 ## Tool Performance Filters
 
@@ -281,10 +262,12 @@ The expanded views of all the widgets are shown below:
 
 The **Tools Analysis Dashboard** offers actionable and customized insights on the tool performance metrics for various features in your account. 
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
-* [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
-* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
+**Related resources**
+
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Tool Platform admin features.
+* [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"} - Track, audit, and review changes made to a tool's flow.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank" }- Manage resource consumption for tools, set limits, and track usage trends.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - Track activities and events in your account.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.

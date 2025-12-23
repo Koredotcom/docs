@@ -55,4 +55,4 @@ When adding connections:
 
 When multiple API keys are configured, each connection appears separately in the Connections list for the model, making it easier to manage access and switch between keys as needed.
 
-Once added, the model name and its connection name appear across the (In)Agent Platform — including in Agentic apps, Prompt Studio, Tools, Evaluation Studio, Model Traces & Analytics, Audit Logs, Billing, and other areas — so wherever you select a model, you can choose from its available connection names if multiple connections are configured. In Agentic apps, you can assign the model connection name at the Agent or Supervisor level for granular control. 
+Once added, the model name and its connection name appear across the (In)Agent Platform — including in Agentic apps, Prompt Studio, Tools, Evaluation Studio, Model Traces & Analytics, Audit Logs, Billing, and other areas — so wherever you select a model, you can choose from its available connection names if multiple connections are configured. In Agentic apps, you can assign the model connection name at the Agent or Supervisor level for granular control.

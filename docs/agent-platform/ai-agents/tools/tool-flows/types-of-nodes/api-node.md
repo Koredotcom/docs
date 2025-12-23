@@ -158,5 +158,3 @@ Finally, test the flow and fix any issues found. Click the **Run Flow** button a
     ~~~
     {{context.steps.Start.APINodeName}}
     ~~~
-
-

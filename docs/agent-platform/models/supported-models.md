@@ -637,4 +637,3 @@ Here is the list of all the external models supported in (In)Agent Platform:
    </td>
   </tr>
 </table>
-

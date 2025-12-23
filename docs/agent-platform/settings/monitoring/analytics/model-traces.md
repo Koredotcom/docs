@@ -174,19 +174,6 @@ Time selection is available for the past and current period, including the ones 
 
 The relevant model traces' data is displayed for the selected period.
 
-### Key Considerations and Tips
-
-The date range is automatically selected on the calendar widget once you select the period and displayed at the bottom of the widget.
-<img src="../images/date-range-display.png" alt="date range display" title="date range display" style="border: 1px solid gray; zoom:75%;">
-
-You can select a specific month or year from the relevant dropdown list and switch to different months by clicking the **forward/backward** arrows.
-<img src="../images/calendar-widget.png" alt="calendar widget" title="calendar widget" style="border: 1px solid gray; zoom:75%;">
-
-To set a specific past date as the start date, click on the desired date in the widget.
-
-By default, the current day will be set as the end date. This feature allows you to easily customize the period you want to monitor and analyze model traces.
-<img src="../images/default-calendar-selection.png" alt="default selection" title="default selection" style="border: 1px solid gray; zoom:75%;">
-
 ## Filter Model Traces by Columns
 
 You can narrow down the information displayed for model traces by applying **custom column filters**. This functionality is similar to **Filter** in the Audit Logs feature. [Learn more](../audit-logs.md/#filter-audit-logs){:target="_blank"}.
@@ -453,10 +440,11 @@ In addition to the above metadata (excluding *Deployment name* and *Deployment v
 
 **Model Traces** empowers users to identify time-based trends, troubleshoot issues, and make informed decisions by offering detailed and targeted insights into run-based metrics. This capability ensures that organizations uphold high efficiency, reliability, and compliance standards in their model deployments.
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other (In)Agent Platform admin features.
-* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
-* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
+**Related resources**
 
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - Know about other Agent Platform admin features.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - Track activities and events in your account.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"} - Manage resource consumption for tools, set limits, and track usage trends.

@@ -522,13 +522,10 @@ print(context['customData']['stage'])
 
 ### Guidelines
 
-
 * Use camelCase naming (customerInfo, retryCounter, tempResults). 
 * Avoid overriding system-reserved keys (steps, branch, status, dbquery). 
 * Keep data lightweight - avoid large arrays or raw API responses.
 * Everything added to the context object is accessible in later nodes through {{context.&lt;key>}} references. 
-
-
 
 ## Best Practices
 

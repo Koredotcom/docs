@@ -97,6 +97,4 @@ Click ‘Instructions’ to view the detailed guidelines for the supported forma
 
 !!! note
 
-    The deployconfig.json file is added to the model export. If the same model is later imported into (In)Agent Platform, the deployment details from this file will be automatically retrieved and pre-filled in the deployment wizard. This includes the previously selected optimization techniques, hyperparameters, hardware settings, and scaling configuration.
-
-
+    The `deployconfig.json` file is added to the model export. If the same model is later imported into (In)Agent Platform, the deployment details from this file will be automatically retrieved and pre-filled in the deployment wizard. This includes the previously selected optimization techniques, hyperparameters, hardware settings, and scaling configuration.

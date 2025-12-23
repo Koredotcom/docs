@@ -48,23 +48,15 @@ The export process begins, and a success message is displayed after the tool val
 
 The exported package includes the following JSON files encapsulating the tool’s configuration data:
 
-* ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyperparameters, and timeout information.
+* ***flow_definition.json***: It includes the tool's canvas definitions (node definitions) and AI node configurations, including prompts, hyper parameters, and timeout information.
 * ***app_definition.json:*** It includes general information about the tool version and guardrails.
 * ***env_variables.json***: It includes the environment variables set for the tool. [Learn more](../tools/configure-a-tool.md){:target="_blank"}.
 
-<img src="../images/exported-files.png" alt="exported files" title="exported files" style="border: 1px solid gray; zoom:75%;">
+You can view the file name in the archive.
 
-To view the files, right-click and select **View file**.
-
-<img src="../images/view-exported-file.png" alt="view exported file" title="view exported file" style="border: 1px solid gray; zoom:75%;">
-
-The file information is displayed as follows:
-
-<img src="../images/app-definition-file-example.png" alt="file example" title="file example" style="border: 1px solid gray; zoom:75%;">
-
-<hr>
-
-## Related Links
+<hr/> 
+ 
+ **Related resources** 
 
 * [Import a tool](./import-a-tool.md){:target="_blank"} - Create a tool by importing configurations or add it as a version to an existing tool.
 * [Deploy a tool](./deploy-a-tool.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for tool integration.

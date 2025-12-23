@@ -1,4 +1,4 @@
-# About Evaluation Studio
+# Evaluation Studio Overview
 
 Evaluation Studio is a unified workspace for evaluating AI system performance across two main areas: Model Evaluation and Agentic Evaluation. It enables users to systematically assess both the quality of large language model (LLM) outputs and the behavior of agentic applications in real-world scenarios.
 

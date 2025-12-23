@@ -1067,7 +1067,6 @@ The **Audit Logs** dashboard displays the following information to collectively 
 * **User Name:** Specifies the name of the user who performed the action or triggered the event.
 * **Date and Time:** Represents when the event occurred.
 * **Description:** Provides detailed information about what was done.
-<img src="../images/audit-logs-dashboard.png" alt="audit logs dashboard" title="audit logs dashboard" style="border: 1px solid gray; zoom:75%;">
 
 ## Filter Audit Logs
 
@@ -1080,12 +1079,9 @@ This customization helps you focus on relevant audit logs, making it easier to t
 ### Steps to Add a Custom Filter
 
 1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console. 
-2. Navigate to **Monitoring** > **Audit Logs**  on the left menu.
-3. Click the **Filter** icon.
-4. Click **+Add Filter**.
-<img src="../images/add-filter-audit-logs.png" alt="add filter" title="audit logs" style="border: 1px solid gray; zoom:75%;">
-
-5. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
+2. Navigate to **Monitoring** -> **Audit Logs**  on the left menu.
+3. Click the **Filter** icon -> **+Add Filter**.
+4. In the **Filter By** window, select the required option from the dropdown list for **Select Column**, **Select Operator**, and **Enter Value**.
 <img src="../images/select-filter-from-dropdown.png" alt="select filter" title="select filter" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -1110,7 +1106,6 @@ To clear the filter settings, click **Clear All**.
 <img src="../images/clear-all-filters.png" alt="clear all filters" title="clear all filters" style="border: 1px solid gray; zoom:75%;">
 
 The number of filters you have applied is displayed on the **Filter** icon.
-<img src="../images/applied-filters.png" alt="applied filters" title="applied filters" style="border: 1px solid gray; zoom:75%;">
 
 ### Add Multiple Filters
 
@@ -1213,26 +1208,27 @@ Exporting audit logs offers the following benefits:
 To export audit logs, follow the steps below:
 
 1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
-2. Click the **Export** icon next to the **Filter By** icon.
-<img src="../images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
+2. Click the **Export** icon.
 
-The following message is displayed once the file is downloaded. The file can be found in the configured location in your system.
-<img src="../images/success-message-export-audit-logs.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
+A success message is displayed once the file is downloaded. The file can be found in the configured location in your system.
 
-The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file is shown below.
+The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Logs</em></code>. The schema of the output file includes the following fields:
 
-<img src="../images/csv-file-export-audit-logs.png" alt="csv file example" title="csv file example" style="border: 1px solid gray; zoom:75%;">
+* Event Name
+* Category
+* User Name
+* Date & Time
+* Description
 
 (In)Agent Platform’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
 You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other (In)Agent Platform admin features.
-* [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
-* [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
-* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
+**Related resources**
 
-
-
+* [Settings Console](../../administration/overview.md){:target="_blank"} - Other admin features of the Platform.
+* [Users Management](../user-management/overview.md){:target="_blank"} - Manage users linked to your account.
+* [Role Management](../user-management/role-management.md){:target="_blank"} - View and manage system and custom roles for your account.
+* [Tool Flow Change Logs](../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"} - Track, audit, and review changes made to a tool's flow.

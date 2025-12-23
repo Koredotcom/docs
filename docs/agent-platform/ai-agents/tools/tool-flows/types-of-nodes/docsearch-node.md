@@ -158,10 +158,9 @@ could be <code>context.steps.DocSearch.response.response.answer</code> in one ca
 Check the sample response from Search AI to find the correct key that holds the content.
 Use that key in your tool flow. You may also need to extract multiple chunks from different keys.</p></div>
 
-## Related Links
+<hr/> 
+
+ **Related resources**
 
 * [Manage Nodes in Tool Flow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
 * [Run Tool Flow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an tool flow in real time.
-
-
-

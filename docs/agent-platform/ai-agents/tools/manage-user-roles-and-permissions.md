@@ -20,4 +20,3 @@ Steps to invite users to your Tool:
         Only the account owners can view the Invite button and invite other users.    
 
 5. Enter users’ email addresses to invite them and click **Invite** to grant them access to collaborate on the Tool.  
-

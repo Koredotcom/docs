@@ -175,6 +175,3 @@ After completing your simulations, import the generated sessions into Evaluation
 
 * **[Create evaluations](../agentic-evaluation/create-evaluation.md)** – Organize your imported simulated sessions into an evaluation to start analyzing performance and generating insights.
 * **[Import data](./import-data.md)** – Bring simulated sessions into Evaluation Studio for analysis.
-
-
-

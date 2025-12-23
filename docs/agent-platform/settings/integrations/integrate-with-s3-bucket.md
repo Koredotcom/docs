@@ -36,7 +36,7 @@ You can test your connection after you provide the details to verify the accurac
 
 1. If the connection is successful, you can click **Confirm** and complete the connection process.
 2. If the connection fails, you can verify the details entered or cancel the set-up process.
-3. From the connections table, you can test the connection by clicking the **Play** button.
+3. From the connections table, you can test the connection by clicking the **▶** icon.
 
     !!! note
 

@@ -126,5 +126,3 @@ Each option determines how your model communicates with the platform and how res
 * Or, click **Confirm** to finalize and add the model connection.
 
 Once completed, your model appears in the **External Models** tab. You can now reference this model in your **Prompts** and **Tools** across the platform.
-
-
