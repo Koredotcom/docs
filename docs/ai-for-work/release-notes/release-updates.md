@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
-## v1.13.0 Dec 22, 2025
+## v1.13.0 Dec 23, 2025
 
 <u>Major Release</u>
 
