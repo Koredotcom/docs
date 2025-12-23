@@ -245,23 +245,25 @@ nav:
       - DialogGPT FAQs: generative-ai-tools/dgpt-faq.md
     - Agent Flows:
       - About Agent Flows: automation/use-cases/dialogs/dialog-tasks-overview.md 
-      - Dialog:
-        - Brief about the Dialog: automation/use-cases/dialogs/dialog-tasks-overview.md
-        - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
-        - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
-      - Session and Context Variables: automation/use-cases/using-session-and-context-variables.md
-      - Context Object: automation/intelligence/context-object.md 
-      - Agent Flows Management:
+      - Flows Management:
+        - Dialog:
+          - Brief about the Dialog: automation/use-cases/dialogs/dialog-tasks-overview.md
+          - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
+          - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
+      - Session Management: automation/use-cases/using-session-and-context-variables.md
+      - Context Management: automation/intelligence/context-object.md 
+      - AI Agents:
         - Agent Node:
-          - About Agent Node: automation/agent-node/working-with-agent-node.md
-          - Prompt Setup: automation/agent-node/prompt-setup.md
-          - Quick Start Tutorials:
-            - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
-            - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
-            - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
-            - Model Configuration: automation/agent-node/tutorials/model-configuration.md
-            - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
-            - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
+            - About Agent Node: automation/agent-node/working-with-agent-node.md
+            - Prompt Setup: automation/agent-node/prompt-setup.md
+            - Quick Start Tutorials:
+              - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
+              - Agent Node Components: automation/agent-node/tutorials/agent-node-components.md
+              - Prompt Creation: automation/agent-node/tutorials/prompt-creation.md
+              - Model Configuration: automation/agent-node/tutorials/model-configuration.md
+              - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
+              - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
+      - Nodes:
         - Prompt Node: automation/use-cases/dialogs/node-types/genai-prompt.md
         - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
