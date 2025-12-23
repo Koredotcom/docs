@@ -21,7 +21,7 @@ Verify that identity and authorization tokens are correctly passed to external s
 
 To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
 <img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">

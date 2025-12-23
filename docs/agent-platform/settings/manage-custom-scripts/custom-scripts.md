@@ -41,7 +41,7 @@ The key steps in managing custom scripts are:
 
 To access the custom scripts wizard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. Click **Manage Custom Scripts** on the left menu.
    <img src="../images/access-manage-custom-scripts.png" alt="manage custom scripts" title="manage custom scripts" style="border: 1px solid gray; zoom:75%;">

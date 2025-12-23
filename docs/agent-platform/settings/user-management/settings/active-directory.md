@@ -18,7 +18,7 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 ## Steps to Configure Active Directory Sync 
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. Navigate to **Users Management** > **Settings** on the left menu.
 4. Click the **Configure Directory** button in the **Configure sync with directory** section.

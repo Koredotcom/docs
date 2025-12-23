@@ -4,7 +4,7 @@ You can generate an API key for a tool and share it with trusted users to enable
 
 Steps to create an API key for your tool:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** from the list of modules.
 2. Click the **Tools** tab on the top navigation bar, and select the required tool from the list. 
 
 3. Click **API keys** in the left panel.  

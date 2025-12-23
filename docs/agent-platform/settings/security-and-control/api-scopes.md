@@ -118,7 +118,7 @@ The following API scopes are available for this feature.
 
 To access this feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. Click **Security & Control** > **API Scopes** on the left navigation menu.
     <img src="../images/click-api-scopes.png" alt="select api scopes" title="select api scopes" style="border: 1px solid gray; zoom:75%;">
