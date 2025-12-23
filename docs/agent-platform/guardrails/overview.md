@@ -1,4 +1,4 @@
-# Guardrails for Safety and Compliance
+# Guardrails Overview
 
 Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) remain appropriate and aligned with organizational or regulatory standards. The Agent Platform includes pre-deployed guardrails that scan both user inputs and model outputs to help maintain safe, responsible, and compliant AI interactions.
 

@@ -312,27 +312,27 @@ nav:
         - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
         - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md
     - AI Safety & Governance: 
-      - About Guardrails: guardrails/overview.md
+      - Guardrails Overview: guardrails/overview.md
       - Enable a Scanner: guardrails/enable-a-scanner.md
       - Test Guardrail: guardrails/test-guardrail.md
   - Administration: 
-    - About Settings: administration/overview.md
-    - About Workspaces: settings/workspaces/workspace-mgmt.md
+    - Settings Overview: administration/overview.md
+    - Workspaces Overview: settings/workspaces/workspace-mgmt.md
     - User Management:
-      - Overview: settings/user-management/overview.md
-      - User Management: settings/user-management/users.md
+      - User Management Overview: settings/user-management/overview.md
+      - Manage Account Users: settings/user-management/users.md
       - Invite a User: settings/user-management/invite-a-user.md
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
     - Integrations:
-      - About Integrations: settings/integrations/about-integrations.md
+      - Integrations Overview: settings/integrations/about-integrations.md
       - Enable Hugging Face: settings/integrations/enable-hugging-face.md
       - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
     - Monitoring: 
-      - About Monitoring: settings/monitoring/overview.md
+      - Analyze Account-level Performance: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
         - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
