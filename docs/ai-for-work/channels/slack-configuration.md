@@ -13,13 +13,10 @@ Define how your app appears to users in Slack.
 
 3. Open the **Configuration** page.
 
-**Customize App Name**
+**Customize App Name**: Enter a name that users will see when they interact with the app in Slack. Choose a name that clearly identifies the app's purpose within your organization.
 
-Enter a name that users will see when they interact with the app in Slack. Choose a name that clearly identifies the app's purpose within your organization.
+**Customize App Description**: Provide a description that explains what users can do with the app. This description appears in the app's About section within Slack.
 
-**Customize App Description**
-
-Provide a description that explains what users can do with the app. This description appears in the app's About section within Slack.
 <img src="../images/slack-2.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
@@ -110,13 +107,9 @@ Configure the introduction message and sample prompts that users see when they f
 2. This page displays the default welcome message and sample prompts.
 <img src="../images/slack-8.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-**Configure Welcome Message**
+**Configure Welcome Message**: Edit the welcome message that greets users when they open the app. This message should introduce the app's capabilities and encourage users to start interacting.
 
-Edit the welcome message that greets users when they open the app. This message should introduce the app's capabilities and encourage users to start interacting.
-
-**Configure Sample Prompts**
-
-Add up to four sample prompts that users can click to quickly start a conversation. For each prompt, configure:
+**Configure Sample Prompts**: Add up to four sample prompts that users can click to quickly start a conversation. For each prompt, configure:
 
 * **Display Message**. The text you show to users in Slack (what they see as the prompt button).
 * **Actual Query**. The complete query you send to AI for Work when users click the prompt.

@@ -10,46 +10,44 @@ This update includes new features and feature enhancements summarized below.
 
 </font></p><font size="4">New Feature</font>
 
-
-**MCP Integration**
-
-The platform now supports Model Context Protocol (MCP) integration, enabling enhanced connectivity and extensibility. This integration includes three key components:
-
-* **MCP Connections**: Establish and maintain connections between your platform and MCP-enabled services.
-* **MCP Agents**: Configure and deploy MCP-enabled agents to extend AI capabilities across your workflows.
-* **MCP Server**: Set up and manage MCP server connections for seamless protocol communication.
-
-This integration provides a foundation for advanced AI orchestration and interoperability with external systems.
-
-[Learn more :octicons-arrow-right-24:](../custom-agents/mcp-connections.md)
-
-
-**Work - Agentic Search**
-
-Introducing **Work**, an intelligent search capability that leverages AI agents to deliver more contextual and actionable search results. This feature enhances the Work Orchestrator experience by enabling agents to understand search intent, reason through complex queries, and provide comprehensive answers with proper source attribution.
-
-[Learn more :octicons-arrow-right-24:](../custom-agents/work-agent.md)
-
-
 **Slack Integration**
 
 AI for Work now supports native Slack integration, allowing you to bring AI capabilities directly into your team's communication workflows. Configure agents to respond in Slack channels, provide intelligent assistance, and streamline collaboration without leaving your Slack workspace.
 
 [Learn more :octicons-arrow-right-24:](../channels/slack-overview.md)
 
+**MCP Server Integration**
+
+AI for Work now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the Agent platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
+
+MCP Server integration provides enhanced connectivity and extensibility, enabling advanced AI orchestration and interoperability with external systems.
+
+[Learn more :octicons-arrow-right-24:](../assist-configuration/mcp-server.md)
+
+**Work - Agentic Search**
+
+Introducing Work, an intelligent search capability that leverages AI agents to deliver more contextual and actionable search results. This feature enhances the Work Orchestrator experience by enabling agents to understand search intent, reason through complex queries, and provide comprehensive answers with proper source attribution.
+
+To enable Work - Agentic Search, create an agentic app from the base template and link it with AI for Work. This configuration unlocks powerful AI-driven search capabilities across your organization.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/work-agent.md)
+
 <font size="4">Feature Enhancement</font>
 
 **Agent Publishing Defaults**
 
-Agent publishing is now streamlined with improved default settings. When publishing an agent, the enablement type now defaults to *Enabled by Default,* reducing configuration steps and accelerating deployment workflows.
+Agent publishing has been streamlined with improved default settings. When publishing an agent, the enablement type now defaults to "Enabled by Default," reducing configuration steps and accelerating deployment workflows.
 
-**Persistent Compose Bar Attachments**
+**Persistent Compose Bar Agents and Attachments**
 
 Agents and attachments added to the compose bar now remain visible until manually removed by the user. This enhancement provides better control over your conversation context and prevents accidental removal of important references during interactions.
 
-**HubSpot Integration Optimization**
+**HubSpot Integration Optimization in Work - Agentic Search**
 
-The HubSpot connector in Work Orchestrator us optimized for improved query performance. The integration now utilizes API-based agents that excel at aggregation and lookup queries, ensuring faster and more reliable data retrieval from your HubSpot instance. Semantic search and advanced reasoning queries are best handled through dedicated search connectors for optimal results.
+The HubSpot connector in Work - Agentic Search has been optimized for improved query performance. The integration now utilizes API-based agents that excel at aggregation and lookup queries, ensuring faster and more reliable data retrieval from your HubSpot instance. 
+
+!!!note
+     Semantic search and advanced reasoning queries are not currently supported for HubSpot integration. We recommend using dedicated search connectors for these query types. Support for semantic search and advanced reasoning in HubSpot integration is coming soon.
 
 <hr>
 
