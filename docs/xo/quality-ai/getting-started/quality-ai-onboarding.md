@@ -2,7 +2,10 @@
 
 Quality AI is an advanced analytics platform that evaluates post-interaction customer conversations to enhance agent performance and improve the overall customer experience.
 
-This guide walks you through the onboarding journey, from account access to application setup and configuration.
+Quality AI onboarding guides you through the process, from account access to application setup. It helps quality teams and analysts configure data sources, define evaluation criteria, and apply consistent scoring. This approach reduces manual setup and accelerates access to compliance metrics, quality insights, and performance reporting.
+
+After signing up, you select deployment options, configure ingestion sources, and complete the required settings to start scoring and analyzing interactions.
+
 
 ## Before You Start
 
@@ -45,12 +48,10 @@ Steps to create a Quality AI application via the XO platform:
 
 1. Log in through **Email** or **SSO** (Google or Office 365). 
 
-1. Sign up for a new account if you don't have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
+1. Sign up for a new account if you don’t have one. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
 <img src="../Onboarding/images/xo-landing-page.png" alt="Landing Page" title="Landing Page" style="border: 1px solid gray; zoom:80%;">
 
-1. Select the **New App** dropdown located at the upper right corner of the landing page.
-
-1. Select **+ New App**.   
+1. After logging into your account, select the **+ New App** from the dropdown at the top of the XO landing page.    
 <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
 
 1. Select **Quality AI**.   
@@ -62,13 +63,19 @@ Steps to create a Quality AI application via the XO platform:
         
         * For existing users, the **Get Started** screen displays a **Contact us** option to proceed. The subsequent Guided Onboarding steps are skipped, and the user is taken directly to the **Basic Configuration Settings** section.
 
-1. Proceed with the following guided setup steps (for a new user).
+1. Enter your **App's Name** and provide a brief **Description** about it.    
+<img src="../Onboarding/images/creat-new-app.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
+
+1. The system automatically generates a new application.  
+<img src="../Onboarding/images/creating-app.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
+
+1. After the generation is complete, follow the guided setup steps (for new users).
 
 ### Configure Basic Settings
 
 #### Multilingual Support
 
-This includes multilingual support, and the default language is English.
+This includes multilingual support, with English as the default language.
 
 1. Select agent languages for customer assistance and AI-generated output (Topics, Justifications, QA outcomes).
 
@@ -81,7 +88,7 @@ This includes multilingual support, and the default language is English.
 
     !!! note
 
-        English is the default language, and you cannot edit or remove it.
+        The system defaults to English and prevents editing or removal of the default language set.
 
 1. Select **+ Add** to move the selected language into the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
@@ -166,7 +173,6 @@ This lets you define agent access, audit preferences, and usage policies to supp
 1. When configured, **Quality AI** automatically starts processing conversations.
 
 1. Use the workspace **Product Switcher** to access **Quality AI**.    
-<img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;"> 
 
 1. Navigate to **Conversation Sources** under the **Configure** section and select the required conversations to enable and streamline your interaction tracking and routing. 
 <img src="../Onboarding/images/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
@@ -189,3 +195,5 @@ After launch, the following sections appear in the **Quality AI** left menu:
 
 * **User Management** (assign roles and permissions).     
 <img src="../Onboarding/images/conversation-sources-left-navigation.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
+
+
