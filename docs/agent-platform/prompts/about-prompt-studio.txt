@@ -1,5 +1,5 @@
 
-# About Prompt Studio
+# Prompt Studio Overview
 
 Agent Platform's enhanced Prompt Studio transforms the way you experiment with and refine prompts, enabling you to achieve the best performance from large language models (LLMs). Prompt Studio helps you manage the entire lifecycle of your prompts - from initial creation and testing to ongoing optimization. With the ability to test different prompts across various models — external, fine-tuned, or open-source, Prompt Studio helps you identify each prompt's ideal model and configurations through an iterative process. This streamlined workspace enables rapid optimization of prompts for maximum model effectiveness.
 

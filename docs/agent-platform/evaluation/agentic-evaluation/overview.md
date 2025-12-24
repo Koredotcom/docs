@@ -1,4 +1,4 @@
-# About Agentic Evaluation
+# Agentic Evaluation Overview
 
 Agentic Evaluation is a comprehensive framework for systematically analyzing AI agent performance in real-world production scenarios. It enables structured evaluation of complete AI agent trajectories across entire sessions and individual decision points within traces. This provides both high-level and granular insights into how AI agents reason, act, and interact over time.
 

@@ -39,5 +39,3 @@ The Audit Logs dashboard displays the following information to collectively prov
 * **User Name:** Specifies the name of the user who performed the action or triggered the event.
 * **Date and Time:** Represents when the event occurred.
 * **Description:** Provides detailed information about what was done.  
-
-

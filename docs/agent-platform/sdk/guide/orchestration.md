@@ -319,7 +319,7 @@ app.start(
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 <!--
 - [Custom Orchestrators in workspace](https://github.com/agenticai/workspace)

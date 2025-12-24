@@ -193,7 +193,7 @@ async def typed_config():
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [RequestContext API](request_context.md) - Parent context class
 - [Memory API](memory.md) - Memory management operations

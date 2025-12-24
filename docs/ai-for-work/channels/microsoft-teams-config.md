@@ -157,8 +157,8 @@ Deploy the AI for Work application to Microsoft Teams for user access.
 3. Click **Upload new app**.
 <img src="../images/teams_9.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-4. Select the downloaded manifest file from AI for Work.
-5. Wait for upload and validation to complete.
+1. Select the downloaded manifest file from AI for Work.
+2. Wait for upload and validation to complete.
 
 **Configure App Permissions and Policies**
 

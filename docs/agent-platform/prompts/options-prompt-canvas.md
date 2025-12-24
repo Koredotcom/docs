@@ -310,4 +310,3 @@ Click to commit the current prompt as a new version, creating a record in Versio
    </td>
   </tr>
 </table>
-

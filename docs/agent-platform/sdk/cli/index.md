@@ -407,7 +407,7 @@ cat run.py | grep "app_module"
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Getting Started](../getting-started/quickstart.md) - Complete tutorial with CLI usage
 - [Runtime APIs](../api/runtime/index.md) - Runtime context and services

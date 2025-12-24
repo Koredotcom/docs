@@ -1,8 +1,9 @@
 # Realtime Multimodal - AI Agents and Models Orchestration
 
-Realtime multimodal orchestration coordinates AI agents and models dynamically. It processes and responds to various data types like text, audio, images, and video in real-time. This allows for smooth, context-aware interactions and automated tasks. It integrates different modalities and manages complex workflows among AI components.
+Realtime multimodal orchestration dynamically coordinates AI agents and models. It processes and responds to various data types, such as text, audio, images, and video, in realtime. This allows for smooth, context-aware interactions and automated tasks. It integrates different modalities and manages complex workflows among AI components.
 
-Traditional AI systems can handle only one input type. However, Multimodal orchestration enables AI systems to understand, interpret, and generate responses using diverse data streams simultaneously. This is essential for applications like conversational AI agents, customer service AI chatbots, and digital assistants that engage users across different channels and formats.
+Traditional AI systems can handle only one input type. However, Multimodal orchestration enables AI systems to simultaneously understand, interpret, and generate responses from diverse data streams. This is essential for applications like conversational AI agents, customer service AI chatbots, and digital assistants that engage users across different channels and formats.
+
 
 ## Key Capabilities
 
@@ -18,19 +19,16 @@ Traditional AI systems can handle only one input type. However, Multimodal orche
 
 The core architecture of a Realtime Multimodal Orchestration system typically includes the following components and workflow:
 
-<img src="../images/realtime-multimodal-ai.png" alt="Realtime Multimodal AI" title="Realtime Multimodal AI" style="zoom:70%;">
+<img src="../images/realtime-multimodal-orchestration.png" alt="Realtime Multimodal AI" title="Realtime Multimodal AI" style="zoom:60%;">
 
 
-1. **Input Layer**: The system captures data from various sources, such as spoken queries (audio), written text, uploaded images, or live video feeds. Each input type is processed by specialized models (e.g., NLP for text, computer vision for images, ASR for audio).
+1. **Input Layer**: The system captures data from various sources, including spoken queries (audio), written text, and uploaded images. A session manager handles WebSocket connections and detects the input modality.
 
-2. **Modality-Specific Processors**: Dedicated models extract features and insights from each modality. For example, speech recognition transcribes audio, while computer vision identifies objects in images.
+2. **Native Multimodal Model**: Modern, realtime multimodal models (such as OpenAI GPT-4o Realtime, Google Gemini Live, or Azure OpenAI Realtime API) process audio and text natively without requiring separate ASR-to-LLM-to-TTS pipelines. These models understand and generate across modalities directly, preserving vocal nuances and enabling lower latency.
 
-3. **Fusion Module**: Information from different modalities is combined and aligned to create a unified context. This fusion can involve concatenating raw data or integrating features at higher levels.
+3. **Orchestration Layer**: The App Orchestrator plans, reasons, and delegates tasks to the appropriate AI agents based on the current context and user intent. It manages multi-agent coordination and maintains session context.
 
-4. **Orchestration and Agent Management**: The core orchestration layer, such as MARS (Multi-Agent Reasoner and Orchestrator) in the MARCO framework, plans, reasons, and delegates tasks to the appropriate agents based on the current context and user intent.
+4. **Task Execution and Coordination**: Each agent may have its own task execution procedure, tools, and sub-agents. The orchestrator ensures tasks are executed in the correct sequence and handles dynamic user interactions. Function calling can occur mid-stream without breaking the conversation flow.
 
-5. **Task Execution and Coordination**: Each agent may have its own task execution procedure, tools, and sub-agents. The orchestrator ensures tasks are executed in the correct sequence, manages dependencies, and handles dynamic user interactions.
+5. **Output Layer**: The system provides immediate streaming responses and adapts to new inputs or changes in context. Guardrails validate outputs and ensure reliability in real-time operations.
 
-6. **Real-Time Feedback and Adaptation**: The system provides immediate responses and updates to users, adapting to new inputs or context changes to ensure a seamless experience.
-
-7. **Guardrails and Error Handling**: Robust guardrails validate outputs, steer agent behavior, and recover from errors to ensure reliability and accuracy in real-time operations.

@@ -1,4 +1,4 @@
-# Configuring Microsoft Azure 
+# Configure Microsoft Azure 
 
 This guide walks you through creating an Azure app registration with the required permissions for integration. Complete these steps in the Azure Portal before configuring the service account.
 

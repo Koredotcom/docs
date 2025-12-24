@@ -18,4 +18,3 @@ Once your project is set up, the next step is to create an evaluation where sess
 After you create the evaluation, it appears in the Evaluations list, where you can **[Import data](./import-data.md)**, configure evaluators, and start analysis.
 
 <img src="../../agentic-evaluation/images/evaluations_listing_page.png" alt="evaluation list" title="evaluation list" style="border: 1px solid gray; zoom:80%;">
-
