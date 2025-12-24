@@ -34,7 +34,7 @@ To use Generative AI features in AI for Work, configure integration with either 
 
 ### Step 4: Configure Rate Limit for User Queries
 
-Rate limits restrict user queries based on complexity and user category. Simple queries like small talk use 1 point each, while advanced queries involving knowledge integration or context use 3 points. There are two user categories: Moderate Users with default rate limits and Power Users with custom limits set by account administrators. [Learn more](../assistant-configuration/rate-limit.md).
+Rate limits restrict user queries based on complexity and user category. Simple queries like small talk use 1 point each, while advanced queries involving knowledge integration or context use 3 points. There are two user categories: Moderate Users with default rate limits and Power Users with custom limits set by account administrators. [Learn more](../assist-configuration/rate-limit.md).
 
 ### Step 5: Configure Enterprise Knowledge
 
