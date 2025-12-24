@@ -32,11 +32,25 @@ To enable Work - Agentic Search, create an agentic app from the base template an
 
 [Learn more :octicons-arrow-right-24:](../custom-agents/work-agent.md)
 
+**Schedule Trigger for Agents**
+
+Automate your workflows with Schedule Trigger, a powerful new capability that enables agents to execute tasks on predefined schedules. Configure agents to run at specific times or intervals, ensuring critical operations happen automatically without manual intervention.
+
+Key components include:
+
+* **Scheduled Agents**: Configure agents to execute automatically based on your defined schedules.
+* **Schedule Trigger**: Define when and how often your agents should run with flexible scheduling options.
+* **Scheduler Settings**: Configure account-wide scheduler controls and setting per-user scheduler limits.
+
+This feature is ideal for recurring tasks such as generating reports, sending notifications, syncing data, and performing routine maintenance operations.
+
+[Learn more :octicons-arrow-right-24:](../getting-started/schedule-agents.md)
+
 <font size="4">Feature Enhancement</font>
 
 **Agent Publishing Defaults**
 
-Agent publishing has been streamlined with improved default settings. When publishing an agent, the enablement type now defaults to "Enabled by Default," reducing configuration steps and accelerating deployment workflows.
+Agent publishing is streamlined with improved default settings. When publishing an agent, the enablement type now defaults to "Enabled by Default," reducing configuration steps and accelerating deployment workflows.
 
 **Persistent Compose Bar Agents and Attachments**
 
@@ -44,7 +58,7 @@ Agents and attachments added to the compose bar now remain visible until manuall
 
 **HubSpot Integration Optimization in Work - Agentic Search**
 
-The HubSpot connector in Work - Agentic Search has been optimized for improved query performance. The integration now utilizes API-based agents that excel at aggregation and lookup queries, ensuring faster and more reliable data retrieval from your HubSpot instance. 
+The HubSpot connector in Work - Agentic Search is optimized for improved query performance. The integration now utilizes API-based agents that excel at aggregation and lookup queries, ensuring faster and more reliable data retrieval from your HubSpot instance. 
 
 !!!note
      Semantic search and advanced reasoning queries are not currently supported for HubSpot integration. We recommend using dedicated search connectors for these query types. Support for semantic search and advanced reasoning in HubSpot integration is coming soon.
