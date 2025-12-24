@@ -12,7 +12,7 @@ Automation AI offers AI-powered sophisticated tools for creating AI Agents that 
         <kr-grid-item>
         <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
         <kr-grid-title>DialogGPT</kr-grid-title>
-        <kr-grid-desc>Agentic Orchestrator, managing the entire conversation flow from intent identification to fulfillment</kr-grid-desc>
+        <kr-grid-desc>Agentic Orchestrator, managing the entire conversation flow from intent identification to fulfillment.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](dialog-gpt-based-orchestration.md)
     </kr-grid-item>
     <kr-grid-item>

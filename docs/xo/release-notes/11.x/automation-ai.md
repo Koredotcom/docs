@@ -54,7 +54,7 @@ Backward Compatibility
 
 All existing V1 and V2 prompts remain unchanged; streaming is disabled by default, preserving existing configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tool-definition) 
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/tools.md) 
 
 
 
@@ -190,7 +190,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 **Enhanced DialogGPT Batch Testing Framework** 
 
 
-The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI agent performance across various conversation types [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
+The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI agent performance across various conversation types. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
 
  
 <font size="4">Agent Transfer</font>

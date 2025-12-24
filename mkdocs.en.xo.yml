@@ -237,7 +237,7 @@ nav:
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
-        - Build an AI Agent: getting-started/building-a-virtual-assistant.md   
+        - Setup Automation AI: getting-started/dialoggpt-app-setup-guide.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - DialogGPT:
       - About DialogGPT: automation/dialog-gpt-based-orchestration.md
@@ -255,6 +255,7 @@ nav:
       - AI Agents:
         - Agent Node:
             - About Agent Node: automation/agent-node/working-with-agent-node.md
+            - Tool Calling: automation/agent-node/tools.md
             - Prompt Setup: automation/agent-node/prompt-setup.md
             - Quick Start Tutorials:
               - Set Up Agent Node: automation/agent-node/tutorials/setting-up-agent-node.md
@@ -649,7 +650,7 @@ nav:
       - Contact Center AI - GenAI Features: generative-ai-tools/genai-features-contactcenterai.md
       - Quality AI - GenAI Features: generative-ai-tools/genai-features-qualityai.md
     - DialogGPT:
-      - About DialogGPT Module: generative-ai-tools/dialog-gpt.md
+      - Overview: generative-ai-tools/dialog-gpt.md
     - Safeguards:
       - Data Anonymization: generative-ai-tools/data-anonymization.md
       - Guardrails: generative-ai-tools/guardrails.md       
