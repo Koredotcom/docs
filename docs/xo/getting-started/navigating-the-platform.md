@@ -1,8 +1,8 @@
-# Navigating the XO Platform
+# Navigating the Platform
 
-This article takes you through the main sections and menu items you will be using while working with the XO Platform.
+This article takes you through the main sections and menu items you will be using while working with the Platform.
 
-To get started navigating the XO Platform, [log into your account](https://platform.kore.ai/){:target="_blank"}.
+To get started navigating the  Platform, [log into your account](https://platform.kore.ai/){:target="_blank"}.
 
 ## Explore The Landing Page
 
@@ -14,14 +14,14 @@ After you sign in, you are directed to the landing page, which is, essentially, 
 
 The top menu available on the landing page provides access to the following options:
 
-1. **Data** – Define Data Tables, Table Views, and manipulate them from your agents and Process Apps. Thus taking care of your data needs, without having to depend on external services.
-2. **Help** – Find useful resources and support methods to help you develop your App.
-3. **Invite Users** – You can invite members to collaborate on the App creation journey.
-4. **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
-5. **Profile** - Access the profile section, which allows you to reach the following features:
-    * **Manage Profile** - View and edit your profile.
-    * **App Language** - Allows users to switch between supported languages like English, Japanese, German, and Korean for all user interface elements and content.
-    * **Admin Console** – Access the Admin Console only if you are an Administrator. This is where you can manage your account and associated assets.
+1. **Data**: Define Data Tables, Table Views, and manipulate them from your agents and Process Apps. Thus taking care of your data needs, without having to depend on external services.
+2. **Help**: Find useful resources and support methods to help you develop your App.
+3. **Invite Users**: You can invite members to collaborate on the App creation journey.
+4. **Account Switcher**: If you are part of more than one organization, you can switch between accounts.
+5. **Profile**: Access the profile section, which allows you to reach the following features:
+    * **Manage Profile**: View and edit your profile.
+    * **App Language**: Allows users to switch between supported languages like English, Japanese, German, and Korean for all user interface elements and content.
+    * **Admin Console**: Access the Admin Console only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Logout**.
 
 ### The Apps List
@@ -43,17 +43,17 @@ Within this area, you can:
     By default, only three apps are displayed in the app list. To find a specific app, click "View All" or enter the app name in the search bar.
 
 
-## Explore The XO Platform
+## Explore The Platform
 
 The following sections describe the menu options that are available once you open any AI Agent from your account.
 
 ### The Top Menu
 
-All the actions available within the Kore.ai XO Platform for a product can be accessed from this menu, which is organized as follows:
+All the actions available within the Platform for a product can be accessed from this menu, which is organized as follows:
 
 <img src="../images/ntp(5).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-1. **Product Switcher icon** Product Switcher lets you effortlessly switch between different products on the XO Platform.
+1. **Product Switcher icon** Product Switcher lets you effortlessly switch between different products on the Platform.
 
     <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
@@ -70,11 +70,11 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 
 The Left Navigation Menu shows options, depending on the product and features you select. The top menu has the Product Specific features and the bottom menu has the Related Products features.
 Product specific features and Common features applicable to each products are shown below:  
-<img src="./images/ntp(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/ntp(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
 #### Product Specific Options
 
-The left navigation of Products of the XO Platform are as follows.
+The left navigation of Products of the Platform are as follows.
 
 | AUTOMATION AI | SEARCH AI | CONTACT CENTER AI | AGENT AI | QUALITY AI
 | --- | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ The left navigation of Products of the XO Platform are as follows.
 
 #### Common Features
 
-The left navigation of common features of the XO Platform are as follows.
+The left navigation of common features of the Platform are as follows.
 
 | User Management | Deploy | Billing | Settings |
 | --- | --- | --- | --- | 
