@@ -35,7 +35,7 @@ Automation AI delivers agentic conversational experiences through DialogGPT and 
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Workflow Testing</kr-grid-title>
+        <kr-grid-title>Evaluation</kr-grid-title>
         <kr-grid-desc>Use an extensive suite of testing features to rigorously validate your conversational workflows and ensure everything works as expected before issues reach your users.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./testing/playground.md)
     </kr-grid-item>      
