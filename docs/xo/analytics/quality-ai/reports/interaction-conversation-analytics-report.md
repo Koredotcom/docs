@@ -101,6 +101,7 @@ Steps to view and download a report:
 ### Report Format
 
 * **Format**: CSV file
+
 * **File Name**: [ReportName]-YYYY-MM-DD-HH-MM-SS.csv  
 <img src="../images/interaction-eva-sample-report.png" alt="Reports Access" title="Reports Access" style="border: 1px solid gray; zoom:100%;">
 
