@@ -175,30 +175,30 @@ nav:
         - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
         - Tool Templates: ai-agents/tools/tool-templates.md
         - Import a Tool: ai-agents/tools/import-a-tool.md
-        - Tool Flows and Nodes:
+        - Tool Flows:
           - About Flows: ai-agents/tools/tool-flows/flows-overview.md          
           - Manage Flows: 
             - Manage Nodes in Flows: ai-agents/tools/tool-flows/manage-flow-nodes.md
             - Manage Input and Output: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
             - Run the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
             - Create a Version of the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
-          - Nodes: 
-            - Nodes Overview: ai-agents/tools/tool-flows/types-of-nodes/nodes-overview.md
-            - AI Node: 
-              - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
-              - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
-              - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
-              - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
-              - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
-            - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
-            - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
-            - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
-            - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
-            - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md 
-            - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
-            - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
-            - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
-          - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md    
+          - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md
+        - Nodes: 
+          - Nodes Overview: ai-agents/tools/tool-flows/types-of-nodes/nodes-overview.md
+          - AI Node: 
+            - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
+            - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
+            - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
+            - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
+            - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
+          - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
+          - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
+          - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
+          - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
+          - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md 
+          - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
+          - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
+          - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md              
         - Sharing & Permissions: 
           - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
         - Tool Endpoint: 
@@ -221,7 +221,7 @@ nav:
       - MCP Tools: 
         - MCP Tools Overview: ai-agents/tools/mcp-tools.md
         - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
-      - Context Object: ai-agents/context-object.md
+      - Context Management: ai-agents/context-object.md
     - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md

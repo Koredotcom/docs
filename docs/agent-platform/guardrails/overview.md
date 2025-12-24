@@ -34,6 +34,6 @@ To view the list of guardrails:
 
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [Enable Scanners](./enable-a-scanner.md) - Enable guardrails in your Agentic app or Tool.

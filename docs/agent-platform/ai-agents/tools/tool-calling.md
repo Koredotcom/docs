@@ -196,9 +196,9 @@ Below is a list of models across various platforms that currently support tool c
 * Gemini-1.5-pro
 
 <hr> 
- 
- **Related resources** 
- 
+
+**Related Resources**
+
 * [Code Tools](./code-tools.md)
 * [MCP Tools](./mcp-tools.md)
 * [Workflow Tools](./workflow-tools.md)

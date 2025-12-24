@@ -1,6 +1,6 @@
-# Context Object - Structural Reference Guide
+# Context Management Using Context Object
 
-The *Context Object* is the central runtime state container for any workflow execution within the platform.
+The Context Object is the central runtime state container for any workflow execution within the platform.
 
 It captures everything about a run - from inputs, intermediate data, and node-level status to final outputs and metadata required for debugging, visualization, or rehydration of the session.
 

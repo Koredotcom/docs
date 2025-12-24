@@ -389,7 +389,8 @@ To configure SSO using WS-Federation and Windows Azure, follow the steps below:
 3. Select **WS-Federation** for **Sign-on protocol** and **Windows Azure** to **Configure SSO for WS-Federation**.
 4. Open **Server Manager** on the computer running AD FS, then choose **AD FS** > **Tools** > **AD FS Management**.
 5. Copy **IdP URL** from your IdP metadata (FederationMetadata.xml). You can find your ADFS Federation Metadata file URL on the AD FS server through **ADFS Management** in **ADFS** > **Service** > **Endpoints** > **Metadata**. It should look like this:
-<img src="../images/copy-idp-url.png" alt="copy idp url" title="copy idp url"  style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/copy-idp-url.png" alt="copy idp url" title="copy idp url"  style="border: 1px solid gray; zoom:75%;">
 
 6. Paste this value into the **Azure AD sign-on end point url** field on Agent Platform’s SSO setup page.
 7. Copy and paste [this](https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml){:target="_blank"} URL link into the **Azure AD federation metadata document** field on Agent Platform’s SSO setup page.
@@ -500,6 +501,6 @@ As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-par
 
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
