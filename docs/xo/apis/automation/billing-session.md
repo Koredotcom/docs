@@ -80,6 +80,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 ## Body Parameters
+
 <table>
   <tr>
    <td><strong>Parameter</strong>
@@ -137,7 +138,8 @@ A maximum of three months date period is allowed
 
 ## Sample Request
 
-* For Dialog Builder API scope 
+* For Dialog Builder API scope
+
 ```
 `curl --location --request POST 'https://{{HOST}}/api/public/bot/{{botId}}/getBillingSessionsDetails' \`
 --header 'auth: {{Auth Token}}' \
@@ -151,7 +153,8 @@ A maximum of three months date period is allowed
 
 ```
 
-* For Admin API scope 
+* For Admin API scope
+
 ```
 `curl --location --request POST 'https://{{HOST}}/api/public/bots/getBillingSessionsDetails' \`
 --header 'auth: {{Auth Token}}' \

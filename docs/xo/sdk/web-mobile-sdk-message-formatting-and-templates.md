@@ -641,8 +641,8 @@ var message = {
   "type": "template",
   "payload":
     {
-     "text": "Travelling expenses report chart",
-     "template_type": "piechart",
+     "text": "Traveling expenses report chart",
+     "template_type": "pie chart",
      "pie_type": "regular",
      "elements":
        [{
@@ -908,14 +908,16 @@ You can apply your formatting directly in JavaScript using the Platform markdown
 * **Paragraph Indent** – >> For example, `>>This is indented once.`
 * **Multi Indent** – >>>> For example, `>>>>This is indented twice.`
 * **Heading** – #h1, #h2, #h3, #h4, #h5, #h6 For example,
+
     * `Here is an example of #h1Heading1.`
     * `Here is an example of #h2Heading2.`
     * `Here is an example of #h3Heading3.`
     * `Here is an example of #h4Heading4.`
     * `Here is an example of #h5Heading5.`
     * `Here is an example of #h6Heading6.`
+
 * **Horizontal Rule** – ___ Three underscores inserts a horizontal line. For example, `This is a horizontal rule line, added three times. _________`
-* 
+
 ## Default Message Templates for Web SDK
 
 When custom formatting is not defined, the following default message formatting types apply to the Web SDK.

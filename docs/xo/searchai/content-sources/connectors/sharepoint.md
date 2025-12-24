@@ -34,6 +34,10 @@ Configure the SharePoint connector if you're using SharePoint to manage your con
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr> 
 </table>
 
 
@@ -273,7 +277,8 @@ The owner can also share a file with all the domain or organization members.
 * When a file is shared with a specific user, the user is automatically added to the sourceACL field of the corresponding files during ingestion. 
 * When a file is shared with a user group, the groupId is used to create a permission entity that can be used to resolve individual users. 
 * When a file is shared with a specific domain, the domain name is stored as a permission entity in the sourceACL field. SearchAI automatically compares the user email IDs with the domain name during answer generation. If there is a match, access to the files is granted. 
+ 
+ **Related resources** 
 
-### Related Pages
 * [Learn About Access Control in Search AI](../racl-support.md)
 * [Associate users with permission Entities using Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md).

@@ -179,6 +179,7 @@ User: What about the interest rates of both loans?
 The co-reference and the query have to be completed as “What's the interest rate of personal loan and home loan?
 
 ### Conversation History Length
+
 This setting allows you to specify the number of recent messages sent to the LLM as context for the user query rephrasing feature. These messages include both user messages and an AI Agent messages. The default value is 5. However, the number of messages sent is limited to the session's conversation history, even if your set value is higher. 
 You can access the Conversation History Length from **Rephrase User Query** > **Advanced Settings**.  
 
@@ -398,43 +399,3 @@ Once you request to generate utterances for a given intent, the Platform provide
 You can add/delete the suggested training utterances from the list or generate more suggestions.
 
 If this feature is disabled, you won’t see the Suggestions tab on the training page.[ Learn more](../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks).
-
-## Use Case Suggestions
-
-In the standard AI Agent creation journey, use case suggestions help link the standard App to a business scenario. Based on the selected use case, the system identifies and creates specific dialog tasks or interactions that the an AI Agent should be able to handle.
-
-		
-
-!!! note
-
-    This feature is only available if **Default Language** is set to English.
-
-	
-
-		
-
-			
-
-Generating Use Cases automatically creates up to 30 customizable[ Dialog Tasks](../automation/use-cases/dialogs/dialog-tasks-overview.md) tailored to specific use cases. This streamlines the development process, as developers won’t need to manually create each interaction from scratch.
-
-LLM and Generative AI help generate accurate suggestions automatically without configuring any LLM settings for this feature. Providing a detailed App description is crucial for the effective functioning of this feature. The more information you provide about the an AI Agent’s intended purpose and capabilities, the better the generated use case suggestions will be.
-
-**Usage**
-
-
-
-1. The user initiates a new standard an AI Agent creation on the Platform.
-2. The user provides the App Name and selects the following:
-    * Purpose 
-    * _Standard App_ for **App Type**.
-    * _English_ for **Default Language**.
-1. When adding the short App description, the user must include specific details on the high-level scenarios the App needs to handle.
-2. The user generates use case suggestions by clicking **Get Use Cases**.
-3. Based on the user’s description, the system generates improved use case suggestions with the help of the OpenAI Model.
-<img src="../images/use-case-suggestions.png" alt="Use Case Suggestions" title="Use Case Suggestions" style="border: 1px solid gray; zoom:70%;"> 
-
-
-
-1. The user selects the relevant use cases from the suggestions to create and configure the an AI Agent accordingly.
-
-If you select Create without use cases when creating a App , the system won’t provide use case suggestions for an AI Agent creation. Only the default Dialogs for Welcome and Fallback tasks are created.[ Learn more](../getting-started/building-a-virtual-assistant.md).

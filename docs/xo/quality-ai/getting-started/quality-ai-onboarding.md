@@ -1,6 +1,4 @@
-# Quality AI Onboarding Guide
-
-## Overview
+# Quality AI Onboarding 
 
 Quality AI is an advanced analytics platform that evaluates post-interaction customer conversations to enhance agent performance and improve the overall customer experience.
 
@@ -47,12 +45,12 @@ Steps to create a Quality AI application via the XO platform:
 
 1. Log in through **Email** or **SSO** (Google or Office 365). 
 
-1. Sign up for a new account if you do not have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
+1. Sign up for a new account if you don't have the account. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
 <img src="../Onboarding/images/xo-landing-page.png" alt="Landing Page" title="Landing Page" style="border: 1px solid gray; zoom:80%;">
 
 1. Select the **New App** dropdown located at the upper right corner of the landing page.
 
-1. Click **+ New App**.   
+1. Select **+ New App**.   
 <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
 
 1. Select **Quality AI**.   
@@ -64,7 +62,7 @@ Steps to create a Quality AI application via the XO platform:
         
         * For existing users, the **Get Started** screen displays a **Contact us** option to proceed. The subsequent Guided Onboarding steps are skipped, and the user is taken directly to the **Basic Configuration Settings** section.
 
-1. Proceed with the following guided setup steps (in case of a new user).
+1. Proceed with the following guided setup steps (for a new user).
 
 ### Configure Basic Settings
 
@@ -85,7 +83,7 @@ This includes multilingual support, and the default language is English.
 
         English is the default language, and you cannot edit or remove it.
 
-1. Click **+ Add** to move the selected language into the **Selected Languages** list.  
+1. Select **+ Add** to move the selected language into the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
 
 1. Toggle on any language to **Mark as the Default**.   
@@ -95,9 +93,9 @@ This includes multilingual support, and the default language is English.
 
     !!! warning "Default Language Removal"
 
-        When you remove the default language, the system stops scoring and analyzing in that language. However, it still shows AI-generated insights (such as topics and names) in the default language, no matter how agents or customers communicate.
+        When you remove the default language, the system stops scoring and analyzing interactions in that language. The system continues to display AI-generated insights, such as topics and names, in the default language regardless of how agents or customers communicate.
 
-1. Click **Confirm** to save your language selections.
+1. Select **Confirm** to save your language selections.
 
 ### Set up and Manage Your Conversation Sources
 
@@ -107,7 +105,7 @@ Configure conversation sources based on your deployment type
 
 * Enable **CCAI** or **Agent AI** connections based on the conversation source.
 
-* Configure queue IDs and agent email ID mappings if **Agent AI** is selected.
+* Configure Queue IDs and Agent Email ID mappings when you select **Agent AI**.
 
 #### For Standalone or Express
 
@@ -117,7 +115,7 @@ Configure conversation sources based on your deployment type
 
 #### Queue Configuration
 
-* Displayed only when using **Agent AI** or **Quality AI Express** deployment mode is selected.
+* Displays only when you select the **Agent AI** or **Quality AI Express** deployment mode.
 
 * Add the required queue names and IDs.  
 <img src="../Onboarding/images/conversation-sources-basic-settings-configuration.png" alt="Queue Configuration" title="Queue Configuration" style="border: 1px solid gray; zoom:80%;">
@@ -128,21 +126,21 @@ Configure conversation sources based on your deployment type
 
 #### Conversation Sources Warnings
 
-* **CCAI**: If the CCAI source is disabled, the system does not process incoming interactions from CCAI on a third-party desktop.
+* **CCAI**: Disabling the CCAI source stops the system from processing incoming interactions from CCAI on a third-party desktop.
 
-* **Agent AI**: If the Agent AI source is disabled, the system does not process incoming interactions from Agent AI on a third-party desktop.
+* **Agent AI**: Disabling the Agent AI source stops the system from processing incoming interactions from Agent AI on a third-party desktop.
 
-* **Quality AI Express**: If the Quality AI Express source is disabled, the system prevents file-based conversation ingestion.
+* **Quality AI Express**: Disabling the Quality AI Express source blocks file-based conversation ingestion.
 
 ### Set Application Usage Permissions
 
-This allows you to define agent access, audit preferences, and usage policies to ensure compliance and tailor application functionality.
+This lets you define agent access, audit preferences, and usage policies to support compliance and tailor application functionality.
 
 #### Enable Agent Access
 
-* Allow agents to view AI-generated emotions and sentiment.
+* Lets agents view AI-generated emotions and sentiment.
 
-* Allow agents to view AI justifications for GenAI-based Auto QA. 
+* Lets agents view AI justifications for GenAI-based Auto QA. 
 
 * Hide auditor details from agents.
 
@@ -165,7 +163,7 @@ This allows you to define agent access, audit preferences, and usage policies to
 
 1. Complete all configuration steps.
 
-1. Once configured, **Quality AI** automatically starts processing conversations.
+1. When configured, **Quality AI** automatically starts processing conversations.
 
 1. Use the workspace **Product Switcher** to access **Quality AI**.    
 <img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;"> 

@@ -1,4 +1,3 @@
-
 # Conversation Intelligence
 
 ## Overview
@@ -122,15 +121,15 @@ Lets you filter data by date and time range. The widget displays the current day
 
 ## Compare Functionality
 
-The Conversation Intelligence dashboard lets you view a comparison of metrics between a selected date range and the previous date range. When you enable the **Compare** toggle, the dashboard highlights changes in metrics over time. The system enables the compare toggle by default.
+The Conversation Intelligence dashboard lets you view a comparison of metrics between a selected date range and the previous date range. When you enable the **Compare** toggle key, the dashboard highlights changes in metrics over time. The system enables the compare toggle key by default.
 
-The dashboard displays spike and dip indicators for playbook adherence only when you enable the compare toggle. These indicators display across stages and steps for all relevant fields. An increase or decrease in a metric can have different meanings depending on context:
+The dashboard displays spike and dip indicators for playbook adherence only when you enable the compare toggle. These indicators appear across relevant metrics and show the percentage change from the previous period. An increase or decrease in a metric can have different meanings depending on context:
 
-* Green badges indicate positive changes.
+* Green upward arrow indicates positive changes.
 
-* Red badges indicate negative changes.
+* Red downward arrow indicates negative changes.
 
-For example, if you select the last 7 days as the date range, metrics such as Average Speed to Answer shows a spike or dip representing the percentage change for June 5–12 compared to the previous period, May 29–June 5.   
+For example, if you select the last 7 days as the date range, metrics such CSAT shows a spike or dip representing the percentage change that represents the change compared to the previous period.   
 <img src="../conversation-intelligence/images/compare-functionality.png" alt="Compare Functionality" title="Compare Functionality" style="border: 1px solid gray; zoom:100%;">
 
 ## Channels
@@ -267,7 +266,7 @@ The Sentiment Monitor module provides a score range from 1 to 10 for each intera
 
 The sentiment monitor graph shows the distribution of customer sentiment across different intents, enabling an admin to understand customer satisfaction and sentiment levels related to specific intents or topics of conversation.
 
-The sentiment monitor graph is a bar chart where each bar represents an intent or topic. Each bar represents the associated sentiment across all interactions with that intent, categorizing the sentiment weightage as follows:  
+The sentiment monitor graph is a bar chart where each bar represents an intent or topic. Each bar represents the associated sentiment across all interactions with that intent, categorizing the sentiment weights as follows:  
 
 * **Positive Sentiment**: Green color
 * **Neutral Sentiment**: Yellow color
@@ -381,7 +380,4 @@ This section includes the following fields:
 * Dispositions  
 
 <img src="../conversation-intelligence/images/interaction-details.png" alt="Interaction Details" title="Interaction Details" style="border: 1px solid gray; zoom:90%;">
-
-
-
 

@@ -54,7 +54,7 @@ Backward Compatibility
 
 All existing V1 and V2 prompts remain unchanged; streaming is disabled by default, preserving existing configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tool-definition) 
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/tools.md) 
 
 
 
@@ -90,7 +90,7 @@ The Agent node's Intent Detection now defaults to "Prefer user input as intent a
 
 **Multi-language Support**
 
-DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines to translate the user input and AI agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
+DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines to translate the user input and AI Agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
 
 **Pre-intent Input Guardrails Support**
 
@@ -190,7 +190,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 **Enhanced DialogGPT Batch Testing Framework** 
 
 
-The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI agent performance across various conversation types [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
+The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI Agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI Agent performance across various conversation types. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
 
  
 <font size="4">Agent Transfer</font>
@@ -607,7 +607,7 @@ Key Updates:
 * Supports transitions to both orphan nodes and sub-dialogs.
 * Ensures full backward compatibility with existing tool configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md){:target="_blank"}
 
 <font size="4">Agent Transfer</font>
 
@@ -669,7 +669,7 @@ Key changes
 * Scripts execution order in a defined flow: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
 * Support for app functions in addition to content, context, and environment variables in the node level pre and post-processor scripts.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md)
 
 
 <hr>

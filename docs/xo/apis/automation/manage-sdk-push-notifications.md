@@ -264,6 +264,7 @@ curl --location
 --data-raw '{
 }'
 ```
+
 ### Body Parameters
 
 No body parameters.
@@ -464,6 +465,7 @@ curl --location
     "userId": "u-fxxxxxxe-6b83-56d8-8397-011c430550a4"
 }'
 ```
+
 ### Body Parameters
 
 <table>

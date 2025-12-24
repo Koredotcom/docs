@@ -52,6 +52,7 @@ Search AI interacts with Zoho CRM via its APIs. The Zoho CRM API uses the OAuth2
 4. Click **Create**. This generates the client credentials, which can be found in the Client Secret tab. 
 
 Note that we uses the following scopes to access information from the Zoho CRM account. 
+
 * ZohoCRM.org.READ
 * ZohoCRM.apis.READ
 * ZohoCRM.users.READ

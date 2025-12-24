@@ -28,7 +28,7 @@ Once the Dashboard is configured for the listed scenarios, it looks like the fol
 * Custom Meta Tags usage. See here for more information.
 * A Banking AI Agents with the dialogs as follows:
 
-**Transfer Funds** – The Dialog task walks the user through the transfer steps.
+**Transfer Funds**: The Dialog task walks the user through the transfer steps.
 
 <img src="./../images/transfer-funds.png" alt="Transfer Funds" title="Transfer Funds" style="border: 1px solid gray; zoom:80%;">
 
@@ -55,7 +55,7 @@ if(context.entities.TransferAmount[0].amount > 0)
 <img src="./../images/transfer-funds-add-scripts.png" alt="Transfer Funds Add Scripts" title="Transfer Funds Add Scripts" style="border: 1px solid gray; zoom:80%;">
 
 
-**Manage Payee** – For the user to manage their payee list.
+**Manage Payee**:For the user to manage their payee list.
 
 <img src="./../images/manage-payee.png" alt="Manage Payee" title="Manage Payee" style="border: 1px solid gray; zoom:80%;">
 
@@ -96,19 +96,18 @@ The details for each widget are explained in the following sections.
 
 1. **Add Widget**
 2. Query setup:
-    1. **Dataset** – _Analytics_
-    2. **Select** – _sessionTag.TransferValue as TransferValue, count(taskName)
+    * **Dataset**: _Analytics_
+    * **Select**: _sessionTag.TransferValue as TransferValue, count(taskName)
 _This will let the platform know what data to fetch. Here we are using the session tag values added to the Transfer Amount task against the total number of tasks executed.
-    3. **Group By** – _sessionTag.TransferValue_
-    4. **Run** to see the results from the above query.
+    * **Group By**: _sessionTag.TransferValue_
+    * **Run** to see the results from the above query.
 3. Widget Setup
+    * Select **Pie chart**
+    * Set **Dimension** to TransferValue
+    * Set **Metrics** to count(taskName)  
+    <img src="./../images/dollar-value-breakup1.png" alt="Dollar Value Breakup1" title="Dollar Value Breakup1" style="border: 1px solid gray; zoom:80%;">
 
-    5. Select **Pie chart**
-    6. Set **Dimension** to TransferValue
-    7. Set **Metrics** to count(taskName)
-<img src="./../images/dollar-value-breakup1.png" alt="Dollar Value Breakup1" title="Dollar Value Breakup1" style="border: 1px solid gray; zoom:80%;">
-
-4. See the **Preview** and if all is fine, click **Update to Dashboard**.
+4. See the **Preview** and if all is fine, click **Update to Dashboard**.  
 <img src="./../images/dollar-value-breakup2.png" alt="Dollar Value Breakup2" title="Dollar Value Breakup2" style="border: 1px solid gray; zoom:80%;">
 
 
@@ -120,16 +119,16 @@ Repeat the steps listed in the previous section (Dollar Value Breakup) with the 
 
 1. **Add Widget**
 2. Query setup:
-    1. **Dataset** – _Analytics_
-    2. **Select** – _userTag.CustomerType as CustomerCategory, count(taskName)_
-    3. **Group By** – _userTag.CustomerType_
-    4. **Run** to see the results from the above query.
+    * **Dataset**: _Analytics_
+    * **Select**: _userTag.CustomerType as CustomerCategory, count(taskName)_
+    * **Group By**: _userTag.CustomerType_
+    * **Run** to see the results from the above query.
 3. Widget Setup
 
-    5. Select **Bar chart**
-    6. Set **Dimension** to _CustomerCategory_
-    7. Set **Metrics** to _count(taskName)_
-<img src="./../images/customer-type-summary.png" alt="Customer Type Summary" title="Customer Type Summary" style="border: 1px solid gray; zoom:80%;">
+    * Select **Bar chart**
+    * Set **Dimension** to _CustomerCategory_
+    * Set **Metrics** to _count(taskName)_  
+    <img src="./../images/customer-type-summary.png" alt="Customer Type Summary" title="Customer Type Summary" style="border: 1px solid gray; zoom:80%;">
 
 
 4. See the **Preview** and then click **Update to Dashboard**
@@ -140,19 +139,19 @@ This query provides day-wise task success vs. failure trends. Repeat the steps l
 
 1. **Add Widget**
 2. Query setup:
-    1. **Dataset** – _Analytics_
-    2. **Select** – _date,metricType, count(metricType) as TotalTasks_
-    3. **Filter By** – _metricType = ‘successtasks’ or metricType = ‘failedtasks’ \
+    * **Dataset**: _Analytics_
+    * **Select**: _date,metricType, count(metricType) as TotalTasks_
+    * **Filter By**: _metricType = ‘successtasks’ or metricType = ‘failedtasks’ \
 _We want to see only Success or Failed Tasks
-    4. **Group By** – _date,metricType_
-    5. **Run** to see the results from the above query.
+    * **Group By**: _date,metricType_
+    * **Run** to see the results from the above query.
 3. Widget Setup
 
-    6. Select **Bar chart**
-    7. Set **Dimension** to _date_
-    8. Set **Metrics** to _TotalTasks_
-    9. Set **Overlay** to _metricType_
-<img src="./../images/task-fulfillment-trend.png" alt="Task Fulfillment Trend" title="Task Fulfillment Trend" style="border: 1px solid gray; zoom:80%;">
+    * Select **Bar chart**
+    * Set **Dimension** to _date_
+    * Set **Metrics** to _TotalTasks_
+    * Set **Overlay** to _metricType_  
+    <img src="./../images/task-fulfillment-trend.png" alt="Task Fulfillment Trend" title="Task Fulfillment Trend" style="border: 1px solid gray; zoom:80%;">
 
 
 4. See the **Preview** and then click **Update to Dashboard.**
@@ -165,17 +164,17 @@ This query provides the top tasks that are failing. Repeat the steps listed in t
 
 1. **Add Widget**
 2. Query setup:
-    1. **Dataset** – _Analytics_
-    2. **Select** – _taskName as TaskName,count(taskName) as Failures_
-    3. **Filter By** – _metricType = ‘failedtasks’ \
+    * **Dataset**: _Analytics_
+    * **Select**: _taskName as TaskName,count(taskName) as Failures_
+    3. **Filter By**: _metricType = ‘failedtasks’ \
 _We want to see only Failed Tasks
-    4. **Group By** – _taskName_
-    5. **Run** to see the results from the above query.
+    * **Group By**: _taskName_
+    * **Run** to see the results from the above query.
 3. Widget Setup
 
-    6. Select **Table chart**
-    7. Set **Dimension** to _TaskName_ and _Failures_
-<img src="./../images/top-failure-tasks.png" alt="Top Failure Tasks" title="Top Failure Tasks" style="border: 1px solid gray; zoom:80%;">
+    * Select **Table chart**
+    * Set **Dimension** to _TaskName_ and _Failures_  
+    <img src="./../images/top-failure-tasks.png" alt="Top Failure Tasks" title="Top Failure Tasks" style="border: 1px solid gray; zoom:80%;">
 
 
 4. See the **Preview** and then click **Update to Dashboard**
@@ -187,16 +186,16 @@ This query provides channel-wise usage details. Repeat the steps listed in the p
 
 1. **Add Widget**
 2. Query setup:
-    1. **Dataset** – _Messages_
-    2. **Select** – _date,channel,count(messageId)_
-    3. **Group By** – _date, channel_
-    4. **Run** to see the results from the above query.
+    * **Dataset**: _Messages_
+    * **Select**: _date,channel,count(messageId)_
+    * **Group By**: _date, channel_
+    * **Run** to see the results from the above query.
 3. Widget Setup
 
-    5. Select **Line chart**
-    6. Set **Dimension** to _date_
-    7. Set **Metrics** to _count(messageId)_
-    8. Set **Overlay** to _channel_
+    * Select **Line chart**
+    * Set **Dimension** to _date_
+    * Set **Metrics** to _count(messageId)_
+    * Set **Overlay** to _channel_
     <img src="./../images/channel-volume-trend.png" alt="Channel Volume Trend" title="Channel Volume Trend" style="border: 1px solid gray; zoom:80%;">
 
 4. See the **Preview** and then click **Update to Dashboard**
@@ -210,23 +209,30 @@ This query uses a **Having** clause, to display the number of filtered messages 
 
 1. **Add Widget**
 2. Query setup:
-    1. **Dataset** – _Messages_
-    2. **Select** – _count(messageId),userId_
-    3. **Group By** – _userId_
-    4. **Having** – _count(messageId) > 12_
-    5. **Run** to see the results from the above query.
+    * **Dataset**: _Messages_
+    * **Select**: _count(messageId),userId_
+    * **Group By**: _userId_
+    * **Having**: _count(messageId) > 12_
+    * **Run** to see the results from the above query.
 3. Widget Setup
 
-    6. Select **Table chart**
-    7. Set **Dimension** to _count(messageId),userId_
-4. The following results when you just retrieve the count of all messages, grouping by the userId.
-<img src="./../images/filter-the-message-using-having-clause1.png" alt="Filter the Message Using Having Clause 1" title="Filter the Message Using Having Clause 1" style="border: 1px solid gray; zoom:80%;">
+    * Select **Table chart**
+    * Set **Dimension** to _count(messageId),userId_  
 
-5. The following results when you retrieve the count of messages, grouping by the userId, using the Having clause.
-<img src="./../images/filter-the-message-using-having-clause2.png" alt="Filter the Message Using Having Clause 2" title="Filter the Message Using Having Clause 2" style="border: 1px solid gray; zoom:80%;">
 
-6. See the **Preview** and then click **Add to Dashboard**.
-<img src="./../images/filter-the-message-using-having-clause3.png" alt="Filter the Message Using Having Clause 3" title="Filter the Message Using Having Clause 3" style="border: 1px solid gray; zoom:80%;">
-The Having clause widget is added to the dashboard as shown in the following screenshot.
+
+4. The following results when you just retrieve the count of all messages, grouping by the userId.  
+<img src="./../images/filter-the-message-using-having-clause1.png" alt="Filter the Message Using Having Clause 1" title="Filter the Message Using Having Clause 1" style="border: 1px solid gray; zoom:80%;">   
+
+
+5. The following results when you retrieve the count of messages, grouping by the userId, using the Having clause.  
+<img src="./../images/filter-the-message-using-having-clause2.png" alt="Filter the Message Using Having Clause 2" title="Filter the Message Using Having Clause 2" style="border: 1px solid gray; zoom:80%;">   
+
+
+6. See the **Preview** and then click **Add to Dashboard**.  
+<img src="./../images/filter-the-message-using-having-clause3.png" alt="Filter the Message Using Having Clause 3" title="Filter the Message Using Having Clause 3" style="border: 1px solid gray; zoom:80%;">   
+
+
+7. The Having clause widget is added to the dashboard as shown in the following screenshot.  
 <img src="./../images/filter-the-message-using-having-clause4.png" alt="Filter the Message Using Having Clause 4" title="Filter the Message Using Having Clause 4" style="border: 1px solid gray; zoom:80%;">
 

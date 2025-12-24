@@ -1,4 +1,5 @@
 # XO GPT - User Query Paraphrasing Model
+
 <br>
 
 ## Introduction
@@ -513,8 +514,8 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
 
 To compare and contrast the performance of the fine-tuned model, we've considered the following other models: 
 
-* Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI agents.
-* GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI agents.
+* Flan-T5: An open-source language model designed for fine-tuned performance across a variety of natural language processing tasks, including summarization, translation, and conversational AI Agents.
+* GPT-4: OpenAI's advanced language model, known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI Agents.
 
 <img src="../images/user01.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 

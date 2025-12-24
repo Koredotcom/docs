@@ -58,7 +58,7 @@ To add the Twilio Channel, pursue the following steps:
 12. Click **Step 4: Add compliance info**. The success message is displayed and then, click **Complete Messaging Service Setup**.  
 <img src="../images/tw10.png" alt="Automations" title="image_add compliance info" style="border: 1px solid gray; zoom:70%;">
 
-13. The setup complete pop-up appeares. Click **View my new Messaging Service**.
+13. The setup complete pop-up appears. Click **View my new Messaging Service**.
 <img src="../images/tw11.png" alt="Automations" title="image_new messaging service pop-up" style="border: 1px solid gray; zoom:70%;">
 
 15. Copy the **Messaging Service SID** and click **Save**.

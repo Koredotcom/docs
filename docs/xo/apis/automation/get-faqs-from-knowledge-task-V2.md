@@ -165,6 +165,7 @@ curl --location 'https://localhost/api/public/bot/st-8b87fxxxxx4e90e/v2/faqs?lim
 --header 'auth: eyJfxxxxxI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWJjZTZiMfxxxxxNTFkYS1iYjNhLWY5MzkwMDM0Mjg2ZiJ9.40rpnPhnY1CnDPwWfxxxxx'
  
 ```
+
 ## Sample Response
 
 

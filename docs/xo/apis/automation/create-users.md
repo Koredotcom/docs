@@ -151,7 +151,7 @@ curl -X POST \
   <tr>
    <td>users
    </td>
-   <td>The array of details for each user to include user email id, user first name, group to which the user will belong, roles to be assigned to the AI agents, and the permissions.
+   <td>The array of details for each user to include user email id, user first name, group to which the user will belong, roles to be assigned to the AI Agents, and the permissions.
 <p>
 <strong>Note:</strong> The following entries till isDeveloper are the sub-parameters of the <strong>users</strong> parameter.
    </td>

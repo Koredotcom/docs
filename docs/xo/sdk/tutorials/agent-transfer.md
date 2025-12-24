@@ -35,7 +35,7 @@ ngrok http 8003
 
 ![alt_text](images/ngrok-status.png "ngrok status")
 
-Copy the https **Forwarding URL** as shown in the previous illustration, for example, https://1b47f1d2.ngrok.io. Leave the terminal window open and _ngrok_ running.
+Copy the https **Forwarding URL** as shown in the previous illustration, for example, `https://1b47f1d2.ngrok.io`. Leave the terminal window open and _ngrok_ running.
 
 ### Installing node.js
 
@@ -78,7 +78,7 @@ To register your BotKit SDK with the Kore.ai XO Platform, you will need to creat
 2. Click the **Add** button next to the **App name** drop-down list.
 3. Enter a name for the app and then click Next.
 4. The Client ID and Client Secret details appear. Click **Done**.
-5. In the **Callback URL** field, enter the URL for your application that you copied from the **Forwarding URL** from the _ngrok_ application that you installed and ran as part of the prerequisites, for example,  https://1bXXXXd2.ngrok.io.
+5. In the **Callback URL** field, enter the URL for your application that you copied from the **Forwarding URL** from the _ngrok_ application that you installed and ran as part of the prerequisites, for example,  `https://1bXXXXd2.ngrok.io`.
   !!!note
     Each running instance of ngrok will generate a session unique URL. You need to update the Callback URL field if you stop and restart ngrok._**
 6. In the **Events** section, select:
@@ -89,8 +89,8 @@ To register your BotKit SDK with the Kore.ai XO Platform, you will need to creat
 
 To configure the BotKit SDK settings, you will need to:
 
-* Copy the **Client ID**, for example, cs-6e5eb411-XXXX-XXXX-9ba2-ccc748d4f719.
-* View, and then copy the **Client Secret**, for example, dTTmuTOgs8SOXXXXXXXXouE0EPy28fXojOJWedOEF6s=.
+* Copy the **Client ID**, for example, `cs-6e5eb411-XXXX-XXXX-9ba2-ccc748d4f719`.
+* View, and then copy the **Client Secret**, for example, `dTTmuTOgs8SOXXXXXXXXouE0EPy28fXojOJWedOEF6s=`.
 
 ## Publishing the Assistant
 

@@ -35,6 +35,10 @@ You can connect to the ServiceNow application to enable users to fetch query res
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr>  
   </table>
 
 To configure the ServiceNow connector, follow the steps listed below.
@@ -95,6 +99,7 @@ Note:
 ## RACL Support
 
 ### Knowledge Articles
+
 SearchAI offers access control for content ingested from ServiceNow Knowledge bases. Currently, **SearchAI enforces access control at the knowledge base level.**
 
 To learn the basics of RACL in SearchAI, refer to this. 
@@ -262,4 +267,3 @@ The **sys_racl** field for a catalog item includes the following:
    </td>
   </tr>
 </table>
-

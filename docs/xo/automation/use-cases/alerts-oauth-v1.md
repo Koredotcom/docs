@@ -71,19 +71,19 @@ To define oAuth v1, define the fields described in the following table.
   <tr>
    <td>Request Token Link
    </td>
-   <td>The URL used by the Kore.ai application to obtain an unauthorized request token. A request token is the value used by the Kore.ai application to obtain authorization from the end-user to obtain an access token. For example, https://{tenant}.someCompany.com/oauth/request_token. After end-user authorization, an access token can be requested by the Kore.ai application. This field is required.
+   <td>The URL used by the Kore.ai application to obtain an unauthorized request token. A request token is the value used by the Kore.ai application to obtain authorization from the end-user to obtain an access token. For example, https://{tenant}.example.com/oauth/request_token. After end-user authorization, an access token can be requested by the Kore.ai application. This field is required.
    </td>
   </tr>
   <tr>
    <td>Access Token Link
    </td>
-   <td>The URL used to exchange the end-user authorized request token for an access token. The access token is the value used by the Kore.ai application to gain access to the web application or web service on behalf of the end-user, instead of using the end-users log on credentials. For example, https://{tenant}.someCompany.com/oauth/access_token. This field is required.
+   <td>The URL used to exchange the end-user authorized request token for an access token. The access token is the value used by the Kore.ai application to gain access to the web application or web service on behalf of the end-user, instead of using the end-users log on credentials. For example, https://{tenant}.example.com/oauth/access_token. This field is required.
    </td>
   </tr>
   <tr>
    <td>User Authorization Link
    </td>
-   <td>The URL used to obtain end-user authorization for the Kore.ai application to access the web application or web service using the access token. For example, https://{tenant}.someCompany.com/oauth/authorize. This field is required.
+   <td>The URL used to obtain end-user authorization for the Kore.ai application to access the web application or web service using the access token. For example, https://{tenant}.example.com/oauth/authorize. This field is required.
    </td>
   </tr>
   <tr>
@@ -102,7 +102,9 @@ To define oAuth v1, define the fields described in the following table.
 
 ## Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL.
+
+For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.` 
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 <img src="../images/set-tenancy.png" alt="set tenancy" title="set tenancy" style="border: 1px solid gray; zoom:75%;">

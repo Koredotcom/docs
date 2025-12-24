@@ -127,7 +127,8 @@ curl -X POST \
 
 ## Sample Response
 
-* For success case: 
+* For success case:
+
 ```json
 [
     {

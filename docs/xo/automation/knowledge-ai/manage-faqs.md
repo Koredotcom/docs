@@ -18,6 +18,7 @@ The Few-Shot Knowledge Graph supports all features explained in this document, e
 * Path Level and Knowledge Graph Synonyms are supported only for mandatory terms and tags.
 
 ## Add FAQs
+
 Step to add an FAQ:
 
 1. Go to **Automation AI** > **Knowledge AI** > **FAQs** > **Manage KG**. 
@@ -40,6 +41,7 @@ Step to add an FAQ:
 As you enter these questions, consider terms you can further add to your FAQ hierarchy. [Learn more](knowledge-graph-terminology.md).
 
 ## Manage Default Responses
+
 You can compose a simple or complex channel-specific reply for the FAQ Response. The editor is like any other prompt editor on the Platform, such as messages for dialog nodes. [Learn more](../use-cases/dialogs/prompt-editor.md#prompt-editor){:target="_blank"}.
 
 You can add channel-specific responses to questions in your Knowledge Graph. By creating varying responses with different language and formatting options, you can leverage the dynamic responses on the selected channels. 
@@ -59,6 +61,7 @@ Sometimes, the FAQ responses are lengthy or may include nice-to-have information
 * Select **Add Alternate Response** if your question has multiple answers. Repeat the step for all the alternative responses you want to add. At runtime, the Platform picks one response at random.
 
 ## Add FAQs from an Existing Source
+
 When the Knowledge Graph you are trying to build is large and complex, it's important to have all the FAQs in one place and Import or Extract them as required. 
 
 Adding FAQs from an existing source is the most effective implementation method. The different ways to accomplish this include:
@@ -68,6 +71,7 @@ Adding FAQs from an existing source is the most effective implementation method.
 * Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. [Learn more](knowledge-extraction.md){:target="_blank"}.
 
 ## Move FAQs Between Nodes
+
 You can move one or more Questions and Response sets between nodes in your Knowledge Graph.
 
 Steps to move FAQs between nodes:
@@ -87,8 +91,11 @@ Steps to edit FAQs and responses:
 3. Hover over the intent or response and click the **Edit** icon.
 4. Make changes and click **Save**.
 5. To delete the question, click the **Bin** icon.
-<img src="../images/edit-delete-faq-responses.png" alt="edit or delete faq responses" title="edit or delete faq responses" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/edit-delete-faq-responses.png" alt="edit or delete faq responses" title="edit or delete faq responses" style="border: 1px solid gray; zoom:75%;">
+
 You can also select multiple intents to delete them in bulk.
+
 <img src="../images/delete-multiple-intents.png" alt="delete selected intents" title="delete selected intents" style="border: 1px solid gray; zoom:75%;">
 
 ## FAQ Conditional Responses

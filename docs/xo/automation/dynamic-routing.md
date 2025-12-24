@@ -92,7 +92,7 @@ The Dynamic Routing leverages DialogGPT and Language Models (LLM) to understand 
 
 The Automation Node allows you to link multiple apps within your accessible workspace. An app can be linked only if it contains at least one dialog. To configure a Dynamic Routing functionality, you must have access to at least two apps within the same workspace.
 
-Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](../generative-ai-tools/dialog-gpt.md#how-to-enable-dialoggpt). To explore supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations).
+Before proceeding, ensure that DialogGPT is enabled. For details, see [How to Enable DialogGPT](dialog-gpt-based-orchestration.md). To explore supported models, see [Model Configuration](../generative-ai-tools/dgpt-conversation-orchestration.md#model-configurations).
 
 Step to set up a Dynamic Routing:
 

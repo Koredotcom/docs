@@ -3,7 +3,9 @@ hide:
   - toc
   - feedback
 ---
+
 # About Agent AI
+
 Agent AI is your agent’s personal AI Agent. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. Set up AI-powered automation workflows to empower your agents in delivering exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
 
 <kr-grid type="g2">

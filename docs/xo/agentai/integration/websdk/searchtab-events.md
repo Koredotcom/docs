@@ -2,9 +2,7 @@
 
 The **Search** tab offers suggestions for the Agent's query. The search results feature various data presentations, such as articles, FAQs, and snippets. This diversity helps the agent find relevant information quickly and efficiently and allows the agent to quickly find and select the most appropriate response to send to the user.
 
-There are two types of search suggestions– SearchAssist results and FAQ.
-
-You can configure *SearchAssist* in Agent AI to get SearchAssist responses. In SearchAssist, there are different categories like Articles, Snippets, and files objects.
+There are two types of search suggestions–Search AI results and FAQ.
 
 ## Search events
 
@@ -54,7 +52,9 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 });
 ```
 
-**Tip:** An article is a web page or a specific piece of content that provides detailed information of a particular topic. When users enter search queries, it retrieves relevant articles from various websites. These articles are then displayed in the search results, often with a title, URL, and a brief snippet or description that summarizes the content.
+:   !!! tip
+
+        An article is a web page or a specific piece of content that provides detailed information of a particular topic. When users enter search queries, it retrieves relevant articles from various websites. These articles are then displayed in the search results, often with a title, URL, and a brief snippet or description that summarizes the content.
 
 ### SNIPPET_TEMPLATE 
 
@@ -76,14 +76,18 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 });
 ```
 
-**Tip:** A snippet is a brief description or summary of a web page that appears in the search engine results, usually providing a glimpse of the content on the page and also a short excerpt from a larger document or conversation. Snippets are often used to provide a quick reference or highlight key information. Kore uses the following types of snippets to display content:
+:   !!! tip
+
+        A snippet is a brief description or summary of a web page that appears in the search engine results, usually providing a glimpse of the content on the page and also a short excerpt from a larger document or conversation. Snippets are often used to provide a quick reference or highlight key information. Kore uses the following types of snippets to display content:
 
 * Active_citation_snippet or citation_snippet
 * Paragraph_snippet
 * List_element_snippet
 * Headings_snippet
 
-**Note:** Every snippet contains content. However, content varies based on snippet type.
+!!! note
+
+    Every snippet contains content. However, content varies based on snippet type.
 
 ### FILE_TEMPLATE 
 
@@ -131,7 +135,7 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 ### DIALOG_TEMPLATE 
 
-This event provides Dialog suggestions for Agent queries/ User queries. Click **run** button to initiate execution on assist tab.
+This event provides Dialog suggestions for Agent queries/ User queries. Select the **run** button to initiate execution on assist tab.
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
@@ -223,7 +227,7 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 
 ### FAQ_EXPAND_CLOSE_TEMPLATE (SEARCH and ASSIST SUGGESTIONS)
 
-Displays only the top answer initially. Expand to extract more answers by clicking the Expand button and click the Close button to Collapse answers.
+Displays only the top answer initially. Expand to extract more answers by selecting the **Expand** button and select the **Close** button to collapse answers.
 
 ```
 aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {

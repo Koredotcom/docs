@@ -34,6 +34,10 @@ GitHub is a widely used platform for version control and collaboration, enabling
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr>
 </table>
 
 
@@ -62,14 +66,15 @@ Search AI supports two types of authentication for communication with GitHub.
 **OAuth authentication**
 
 1. Register a new [OAuth application](https://github.com/settings/developers) in GitHub.
-1. Enter the basic details of the app.
-1. Use one of the following as the callback URLs, depending on your region or deployment:
-* JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-* DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-* Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+2. Enter the basic details of the app.
+3. Use one of the following as the callback URLs, depending on your region or deployment:
 
-1. Generates a client ID and Client Secret.
-1. Use the [device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool, such as Postman. 
+   * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
+   * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
+   * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+
+4. Generates a client ID and Client Secret.
+5. Use the [device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool, such as Postman. 
 
 
 ## GitHub Connector Configuration in Search AI

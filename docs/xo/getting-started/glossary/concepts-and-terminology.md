@@ -195,7 +195,7 @@ Count: Two
 
 ## F
 
-**Facebook Messenger** – A [supported channel](https://kore.ai/bots-platform/channels/) for agents built on Kore.ai’s XO Platform, primarily used when companies build bots for end customers.
+**Facebook Messenger** – A supported channel for agents built on Kore.ai’s XO Platform, primarily used when companies build bots for end customers.
 
 **FAQ** – One of the primary data source agents use, along with the Knowledge Graph, to pull information to complete knowledge tasks. 
 
@@ -292,7 +292,7 @@ Count: Two
 
 **Knowledge task** / **Knowledge Graph** – Knowledge tasks take user questions and query a predefined set of information to rapidly find the right answers, such as business hours of operation or specific policy questions.
 
-**Kore.ai** – Kore.ai is a software development company, founded in 2014 in Orlando, FL to help enterprises build and use conversational, agents for a variety of use cases. Learn more about [Kore.ai](https://kore.ai/about-kore/).
+**Kore.ai** – Kore.ai is a software development company, founded in 2014 in Orlando, FL to help enterprises build and use conversational, agents for a variety of use cases. Learn more about [Kore.ai](https://www.kore.ai/about-us).
 
 		
 
@@ -454,7 +454,7 @@ Count: Two
 
 **SAP Solutions** – Bots built by Kore.ai to specifically integrate with SAP’s most popular systems, such as SuccessFactors, Concur, S/4Hana, SAP Hybris, and more.
 
-**Sentiment analysis** – Beyond completing tasks, agents built with the Kore.ai XO Platform can understand a user’s mood throughout a conversation. Our NLP engine scores sentimentbased on connotation, word placement, and modifiers. Developers can use these scores to trigger custom flows to improve bot-to-user communication, or bring in human agents as needed.
+**Sentiment analysis** – Beyond completing tasks, agents built with the Kore.ai XO Platform can understand a user’s mood throughout a conversation. Our NLP engine scores sentiment based on connotation, word placement, and modifiers. Developers can use these scores to trigger custom flows to improve bot-to-user communication, or bring in human agents as needed.
 
 **Service call** – Service calls are used to make API requests to third-party web services to push, pull, or manipulate data. The web service unpacks the request and converts it to a command that the application or system can understand in order to complete the task or return the needed data. The platform then receives that message and unpacks it in order to obtain the results of the request. The XO Platform supports the use of API services to make REST, SOAP, or ODATA requests.
 
@@ -474,7 +474,7 @@ Count: Two
 
 **Structured data** – Information with a high degree of organization that is easily searchable when placed in a database.
 
-**Supervised learning for NL** – Through the Bot Builder tool, developers and admins can support supervised learningand evaluate all interaction logs, easily change NL settings for failed scenarios, and use the learnings to retrain the bot for better conversations. Developers can also leverage chat logs to build predictive models and use the outcomes to further define additional proactive alerts, suggested actions, or automated workflows. Developers have input variables (X) and an output variable (Y), and use an algorithm to learn the mapping function from the input to the output Y=f(X). Here, the agent developer acts as a teacher and has virtually full control over what the agent learns. This means that the algorithm makes predictions based on the training data provided. The agent creator or developer can manually correct these predictions by flagging the findings as correct or incorrect. Since the agent developer already knows what the agent should understand, learning can be stopped as soon as the developer decides or when the model reaches an acceptable level of performance and maturity.
+**Supervised learning for NL** – Through the Bot Builder tool, developers and admins can support supervised learning and evaluate all interaction logs, easily change NL settings for failed scenarios, and use the learnings to retrain the bot for better conversations. Developers can also leverage chat logs to build predictive models and use the outcomes to further define additional proactive alerts, suggested actions, or automated workflows. Developers have input variables (X) and an output variable (Y), and use an algorithm to learn the mapping function from the input to the output Y=f(X). Here, the agent developer acts as a teacher and has virtually full control over what the agent learns. This means that the algorithm makes predictions based on the training data provided. The agent creator or developer can manually correct these predictions by flagging the findings as correct or incorrect. Since the agent developer already knows what the agent should understand, learning can be stopped as soon as the developer decides or when the model reaches an acceptable level of performance and maturity.
 
 **Synonyms** – Word variations for intents or entities that developers can add to a agents synonym library to give it a wider and more accurate range of natural language understanding.
 

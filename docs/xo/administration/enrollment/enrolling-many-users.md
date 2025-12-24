@@ -22,7 +22,7 @@ The following illustration is an example of the **Bulk Invite** page in the **En
 
 You can create an invitation file with all the email addresses of the users you want to add to your Enterprise Apps Platform account. **To create a bulk invite file**
 
-1. In a text editor, enter a complete email address on each line or in a comma-separated list as shown in the following example: For a '.txt' file:  john.doe@example.com jane.doe@example.com 
+1. In a text editor, enter a complete email address on each line or in a comma-separated list as shown in the following example: For a '.txt' file:  `john.doe@example.com` `jane.doe@example.com` 
 2. Save the bulk invite file as a '.txt' file, for example, Kore.aiImport.txt.
 3. After you create a bulk invite file, you can upload the file to invite your users.
 

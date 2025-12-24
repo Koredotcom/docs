@@ -37,6 +37,10 @@ GitHub is a widely used platform for version control and collaboration, enabling
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr>
 </table>
 
 
