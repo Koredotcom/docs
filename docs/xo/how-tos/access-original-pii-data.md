@@ -4,7 +4,7 @@
 # How to Access Original PII Data
 
 
-When PII masking is applied to user input, the data values are redacted across the Platform, including context variables, logs, and chat history. This ensures that the original input is not visible to any user, including platform users. However, in some cases, the original value may still be required, for example, to display in an AI agent’s responses or to send to backend systems.
+When PII masking is applied to user input, the data values are redacted across the Platform, including context variables, logs, and chat history. This ensures that the original input is not visible to any user, including platform users. However, in some cases, the original value may still be required, for example, to display in an AI Agent’s responses or to send to backend systems.
 
 To support these scenarios, the platform securely stores the original input in a protected vault. The original value is accessed only for specific system operations, such as:
 
@@ -18,7 +18,7 @@ To access original PII values during runtime, you must configure specific nodes 
 
 ## Entity Node PII Setting
 
-You can configure node-level PII settings to use the original entity value during a user conversation. In the Entity node, under Redaction of PII Data, select the option - ‘Use the original value of the PII data while presenting it to the user’. The AI agent uses the original value in prompts and messages. This is useful when the agent needs to confirm PII data with the user.
+You can configure node-level PII settings to use the original entity value during a user conversation. In the Entity node, under Redaction of PII Data, select the option - ‘Use the original value of the PII data while presenting it to the user’. The AI Agent uses the original value in prompts and messages. This is useful when the agent needs to confirm PII data with the user.
 
 For more information, see [Entity Node](../automation/use-cases/dialogs/node-types/working-with-the-entity-node.md).
 

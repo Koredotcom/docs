@@ -82,7 +82,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | --- | --- | --- | --- |
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
 | [Find Intent](./find-intent.md) | To obtain the intent recognition result and the scoring from NLP and ML engines. | Intent and Entity Detection | Intent Identification > Intent and Entity Detection |
-| [Conversation History](./conversation-history.md) | To fetch the conversational messages between the AI agent and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
+| [Conversation History](./conversation-history.md) | To fetch the conversational messages between the AI Agent and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
 | [Conversation History-Lightweight](./conversation-history-lightweight.md) | To fetch high-volume conversation summarization without additional metadata or payload overhead. | Chat History | Bot Analytics > Chat History |
 | [Conversation Summary](./conversation-summary.md) | To summarizes the conversation between a user and an agent. | Conversation Summary | NA  |
 | [Feedback Analytics](./fetch-feedback-survey-scores.md) | To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard. | Feedback Survey | Bot Analytics > Feedback Analytics |
@@ -110,7 +110,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Export Roles](./export-roles.md) | To export bot or admin roles from an account | Profile Management > Role Management |
 | [Assign BT Roles](./assign-bt-roles.md) | To assign a bot role to a set of users in a specific agent | Profile Management > Role Management |
 | [Assign Admin Roles](./assign-admin-roles.md) | To add or remove users or groups from admin roles | Profile Management > Role Management |
-| [Update User Access](./update-user-access.md) | To add or remove the ability to access AI for Service Platform, create new AI agents | Profile Management > Role Management |
+| [Update User Access](./update-user-access.md) | To add or remove the ability to access AI for Service Platform, create new AI Agents | Profile Management > Role Management |
 | [Create Users](./create-users.md) | To add users to an account | User Management |
 | [Get Users Information](./get-user-information.md) | To retrieve the user details | User Management |
 | [Update User](./update-user.md) | To update user details | User Management |

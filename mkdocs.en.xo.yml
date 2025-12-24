@@ -237,7 +237,7 @@ nav:
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
-        - Setup Automation AI: getting-started/dialoggpt-app-setup-guide.md   
+        - AI Agent Setup Guide: getting-started/dialoggpt-app-setup-guide.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - DialogGPT:
       - About DialogGPT: automation/dialog-gpt-based-orchestration.md
@@ -247,7 +247,7 @@ nav:
       - About Agent Flows: automation/agent-flows.md
       - Flows Management:
         - Dialog:
-          - Brief about the Dialog: automation/use-cases/dialogs/dialog-tasks-overview.md
+          - About Dialog Task: automation/use-cases/dialogs/dialog-tasks-overview.md
           - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
           - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
         - Session Management: automation/use-cases/using-session-and-context-variables.md

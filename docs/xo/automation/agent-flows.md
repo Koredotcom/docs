@@ -6,7 +6,7 @@
 
 **Agent Flows** are intelligent conversational workflows built by combining Dialog Tasks with Agent Nodes to deliver autonomous, goal-driven customer service experiences.
 
-At their core, Agent Flows leverage DialogGPT as the orchestration layer for intent identification and routing, while Agent Nodes handle the execution of the conversation within individual use cases. This combination enables the virtual assistant to autonomously plan, reason, and execute multi-step actions - much like a skilled human agent.
+At their core, Agent Flows leverage DialogGPT as the orchestration layer for intent identification and routing, while Agent Nodes handle the execution of the conversation within individual use cases. This combination enables AI Agent to autonomously plan, reason, and execute multi-step actions - much like a skilled human agent.
 
 
 ## Key Components

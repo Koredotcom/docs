@@ -141,7 +141,7 @@ curl -X DELETE \
    <td>Determines if the specified users details have to be removed from all the Bots. Set to `true` or false.
    <ul>
    <li>This parameter is set to false by default.
-   <li>If it is set to `true`, the user details provided in userIds parameter will be deleted from all the AI agents in the organization and botIds parameter will be ignored.
+   <li>If it is set to `true`, the user details provided in userIds parameter will be deleted from all the AI Agents in the organization and botIds parameter will be ignored.
    </ul>
    </td>
   </tr>

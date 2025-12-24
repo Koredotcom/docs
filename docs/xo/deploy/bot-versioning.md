@@ -171,7 +171,7 @@ The following rules apply to Small Talk (per Language)
 
 #### AI Agent Management
 
-* AI agent Import will not be allowed until the restored version is published.
+* AI Agent Import will not be allowed until the restored version is published.
 
 
 ## Exporting Versions
