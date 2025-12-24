@@ -1,6 +1,6 @@
 # Dialog Tasks Overview
 
-Dialog Tasks represent is an essential tool in building conversations connected to your business logic.
+Dialog Tasks is an essential tool in building conversations connected to your business logic.
 
 Each task comprises interlinked [nodes ](./node-types/nodes-transitions.md){:target="_blank"}that help retrieve information, perform actions, connect with external apps, send messages to users, and more.
 
