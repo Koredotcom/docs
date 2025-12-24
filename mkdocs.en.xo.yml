@@ -175,8 +175,7 @@ nav:
       - Trial Overview: manage-assistant/plan-and-usage/trial-overview.md
       - Onboarding:
         - Navigating the Platform: getting-started/navigating-the-platform.md  
-        - Guided Onboarding: getting-started/guided-onboarding.md
-        - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md      
+        - Guided Onboarding: getting-started/guided-onboarding.md     
       - Flows and Channels:
         - Flows: 
           - About Flows: flows/introduction-to-flows.md
