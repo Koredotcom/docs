@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
-## v1.13.0 Dec 23, 2025
+## v1.13.0 Dec 16, 2025
 
 <u>Major Release</u>
 
@@ -32,15 +32,9 @@ To enable Work - Agentic Search, create an agentic app from the base template an
 
 [Learn more :octicons-arrow-right-24:](../custom-agents/work-agent.md)
 
-**Schedule Trigger for Agents**
+**Schedule Trigger**
 
 Automate your workflows with Schedule Trigger, a powerful new capability that enables agents to execute tasks on predefined schedules. Configure agents to run at specific times or intervals, ensuring critical operations happen automatically without manual intervention.
-
-Key components include:
-
-* **Scheduled Agents**: Configure agents to execute automatically based on your defined schedules.
-* **Schedule Trigger**: Define when and how often your agents should run with flexible scheduling options.
-* **Scheduler Settings**: Configure account-wide scheduler controls and setting per-user scheduler limits.
 
 This feature is ideal for recurring tasks such as generating reports, sending notifications, syncing data, and performing routine maintenance operations.
 
