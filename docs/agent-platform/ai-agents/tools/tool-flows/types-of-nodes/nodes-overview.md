@@ -28,7 +28,7 @@ These nodes connect your workflow to external systems and services.
 
 * **[API Node](./api-node.md)**: It can call external APIs for data exchange or triggering external services. Use REST or SOAP API calls for real-time data retrieval or actions.
 
-## Logic & Processing Nodes
+## Logic and Processing Nodes
 
 These nodes handle decision-making, custom logic, and iterative processing within your workflow.
 
