@@ -237,7 +237,7 @@ nav:
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
     - Getting Started:
-        - Setup Automation AI: getting-started/dialoggpt-app-setup-guide.md   
+        - AI Agent Setup Guide: getting-started/dialoggpt-app-setup-guide.md   
         - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - DialogGPT:
       - About DialogGPT: automation/dialog-gpt-based-orchestration.md

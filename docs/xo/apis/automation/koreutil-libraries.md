@@ -5,7 +5,7 @@
 
 ## How to Use
 
-koreUtil libraries can be used anywhere in the AI agent where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.
+koreUtil libraries can be used anywhere in the AI Agent where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.
 
 
 ## List of koreUtil libraries

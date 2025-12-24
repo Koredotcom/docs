@@ -113,7 +113,7 @@ curl -X POST 'https://{{host}}/api/public/useraccess' \
   <tr>
    <td>canCreateBot
    </td>
-   <td>Determines if the specified users can create AI agents in their App Builder accounts. Set to true or false.
+   <td>Determines if the specified users can create AI Agents in their App Builder accounts. Set to true or false.
    </td>
   </tr>
   <tr>
