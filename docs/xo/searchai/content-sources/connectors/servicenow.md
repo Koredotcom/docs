@@ -35,6 +35,10 @@ You can connect to the ServiceNow application to enable users to fetch query res
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr>  
   </table>
 
 To configure the ServiceNow connector, follow the steps listed below.

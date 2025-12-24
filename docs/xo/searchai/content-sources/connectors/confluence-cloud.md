@@ -33,7 +33,7 @@
    </td>
   </tr>
   <tr>
-   <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  docs, and images is not supported.
+   <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  attachments, docs, and images isn't supported.
    </td>
   </tr>
 </table>
@@ -123,7 +123,6 @@ To add permissions to the **Confluence API**:
 * Add the following permissions:
 
     * `read:analytics.content:confluence`
-    * `read:attachment:confluence`
     * `read:content-details:confluence`
     * `read:content.permission:confluence`
     * `read:content:confluence`
