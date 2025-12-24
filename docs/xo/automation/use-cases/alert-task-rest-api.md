@@ -700,7 +700,7 @@ Follow these steps to add a standard post-processor:
 
 **Resolve**: You can use the results of one payload response as input for a second request. 
 
-For example, click **Add Processor**, enter a **Name** for your processor, set **Type of Process** to **resolve**, and **Key** to the name of the variable, and then define the **Post URL** using a variable from the first API Request. For example, https://app.asana.com/api/1.0/projects/**{project_id}** that returns the id field in the payload response as: 
+For example, click **Add Processor**, enter a **Name** for your processor, set **Type of Process** to **resolve**, and **Key** to the name of the variable, and then define the **Post URL** using a variable from the first API Request. For example, `https://app.asana.com/api/1.0/projects/{project_id}` that returns the id field in the payload response as: 
 
 ```js
 "id":80468818418144, <br/>
@@ -712,7 +712,7 @@ For example, click **Add Processor**, enter a **Name** for your processor, set *
 ```
 
 This is then used as a variable input as shown in the following **Post URL**: 
-https://app.asana.com/api/1.0/projects/**{id}**/tasks?opt_fields=completed,modified_at 
+`https://app.asana.com/api/1.0/projects/{id}/tasks?opt_fields=completed,modified_at`
 
 You must also specify the HTML **Content Type** expected in the payload response as well as the HTML **Request** method. 
 

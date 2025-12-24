@@ -73,6 +73,7 @@ The permissions for an item are of the following types:
     "createdOn": "2024-06-13T10:15:33.679195022",
     "chunkContent": "recordTitle : Apple.pdf; chunkText : The document provides an overview of emerging technologies adopted by enterprises in 2025, including advancements in edge computing, container orchestration, and AI-powered monitoring tools. It summarizes performance evaluations conducted across various cloud providers such as Azure, AWS, and Google Cloud, focusing on scalability and data governance. The analysis also covers recent partnerships between enterprises and startups to enhance automation, improve developer experience, and streamline infrastructure provisioning."
     ```
+    
   Similarly, if a ServiceNow article gives access to two user criteria, Search AI creates two permission entities corresponding to the user criteria. The article’s manager and owners are also granted access. Hence, the sys_racl field would be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.
 
     ```json

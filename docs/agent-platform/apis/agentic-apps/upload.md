@@ -248,4 +248,3 @@ Deletes an uploaded file.
   "fileId": "f-a84242a9-9d9f-4590-8622-59cd93c7f7c3"
 }
 ```
-

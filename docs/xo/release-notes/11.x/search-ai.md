@@ -242,7 +242,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Multi-Vector Search</font> 
 
-Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
+Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weight based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
 
 For example, consider a document utilizing a dual-vector approach for information retrieval. One vector, generated from the document's content and title, captures detailed context. The other vector, derived from questions related to the content, anticipates user inquiries. By appropriately weighting these vectors, retrieval efficiency is significantly enhanced. This is because the vectors encompass various content aspects, such as title, content, and derived questions, resulting in improved alignment with diverse user queries.
 

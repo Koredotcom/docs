@@ -75,6 +75,7 @@ To configure a custom Interaction Model, follow the steps below:
    ![JSON editor](images/alexa-7.png "JSON editor")
 3. In the **JSON Editor** window, define the intents and entities to associate with your newly created skill based on the Kore.ai XO Platform definitions.
 4. To capture the intents and entities from the Kore.ai XO Builder, follow these steps:
+
  * Select the AI Agent.
  * Navigate to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** >
  **Amazon Alexa** > **Configurations**.
@@ -111,6 +112,7 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
 3. After writing a few utterances, pick the words or phrases representing variable information as the intent’s slots; For example, “_I would like to order two iPhones_.”
 4. Create a slot for each word or phrase and replace the original word with the slot name in curly brackets **({ })**.
 5. To create a slot, follow the steps below:
+
  * Sign in to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
  * Click the **Skills** tab.
  * In the **SKILL NAME** column, click the name of your custom skill.
@@ -125,9 +127,11 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
  * In the drop-down box, enter the slot name and click the **+** icon.
   ![slot name](images/alexa-14.png "slot name")
  * Repeat these steps for all the remaining variable words.
-6. Select `AMAZON.SearchQuery` from the dropdown list in the **SLOT TYPE** column.
+
+1. Select `AMAZON.SearchQuery` from the dropdown list in the **SLOT TYPE** column.
 ![intent slots](images/alexa-15.png "intent slots")
-7. Click **Save Model** and **Build Model** on the top action panel.
+
+1. Click **Save Model** and **Build Model** on the top action panel.
 
 !!! note
 

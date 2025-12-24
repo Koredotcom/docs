@@ -7,7 +7,7 @@ Large language models (LLMs) are powerful AI systems that can be leveraged to of
 
 Guardrails enable responsible and ethical AI practices by allowing Platform users to easily enable/disable rules and configure settings for different features using LLMs. Additionally, the users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
 
-The Platform leverages the open-source models tailored for conversational AI agents. Each guardrail is powered by a different model, that has been fine-tuned specifically to validate text for toxicity, bias, filter topics, etc. Kore.ai hosts these models and periodically updates them through training to detect emerging threats and prompt injection patterns effectively. These small models reside within the Platform, ensuring swift performance during runtime.
+The Platform leverages the open-source models tailored for conversational AI Agents. Each guardrail is powered by a different model, that has been fine-tuned specifically to validate text for toxicity, bias, filter topics, etc. Kore.ai hosts these models and periodically updates them through training to detect emerging threats and prompt injection patterns effectively. These small models reside within the Platform, ensuring swift performance during runtime.
 <img src="../images/safeguards.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -79,6 +79,7 @@ The Guardrails are available for the following features and will gradually becom
 * Rephrase Responses
 
 ### Search AI Features
+
 <ul>
   <li>Answer Generation</li>
   <li>Enriching Chunks with LLM</li>

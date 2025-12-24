@@ -193,6 +193,7 @@ The following types of session variables are available on the XO Platform:
     };
     BotUserSession.put('DestinationLocation', destlocation, '20000');
     ```
+
 You can fetch custom data from the BotUserSession with path - **session.BotUserSession.channels[0].botInfo.customData**
 
 ## Standard Keys

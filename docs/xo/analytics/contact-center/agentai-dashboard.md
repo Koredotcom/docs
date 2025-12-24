@@ -104,4 +104,3 @@ In the above screenshot:
      <img src="../agentai-dashboard-images/dashboard-conversation-details.png" alt="Dashboard-conversation-details" title="Dashboard-conversation-details" style="border: 1px solid gray; zoom:80%;">  
     * Details such as agent name, selected feedback reason, and added comments display along with the actual conversation:  
         <img src="../agentai-dashboard-images/dashboard-conversationid-level-feedback-details.png" alt="dashboard-conversationid-level-feedback-details" title="dashboard-conversationid-level-feedback-details" style="border: 1px solid gray; zoom:80%;">
-

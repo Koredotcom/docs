@@ -272,7 +272,7 @@ app.start(
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Tool API Reference](../api/designtime/tool.md)
 - [Memory Stores Guide](memory-stores.md)

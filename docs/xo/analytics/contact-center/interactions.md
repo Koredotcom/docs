@@ -232,16 +232,16 @@ Steps to edit dispositions:
 
 1. Select a completed interaction for which the disposition has to be revised.
 2. Select the **DETAILS** tab in the Insights to Logs window.
-3. Click **Edit Disposition**.  
+3. Select **Edit Disposition**.  
     <img src="../images/edit-disposition-button.png" alt="Edit Disposition" title="Edit Disposition" style="border: 1px solid gray; zoom:70%;">
 
-4. Make the necessary changes to the dispositions and click **Save**.  
+4. Make the necessary changes to the dispositions and select **Save**.  
     <img src="../images/edit-disposition-pop-up.png" alt="Save Disposition" title="Save Disposition" style="border: 1px solid gray; zoom:70%;">
 
-5. Click **View Logs**.  
+5. Select **View Logs**.  
     <img src="../images/view-logs.png" alt="View Logs" title="View Logs" style="border: 1px solid gray; zoom:70%;">  
 
-    The disposition logs are displayed.
+    The disposition logs appear.
 
     <img src="../images/disposition-log-details.png" alt="Disposition Log Details" title="Disposition Log Details" style="border: 1px solid gray; zoom:70%;">  
 
@@ -294,9 +294,7 @@ The following Custom Tag fields appear:
 3. Select the values for the second clause and select Apply.  
 <img src="../images/create-filters-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
 
-A confirmation appears.
-
-Selecting (-) deletes a clause.
+A confirmation appears. Selecting (-) deletes a clause.
 
 !!! note
 
@@ -353,7 +351,7 @@ Icons beside the Insights to Logs header show the following details:
 * Language
 * Sentiment (Positive, Neutral, etc.)
 * Channel (Voice, Chat, or Email)  
-<img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Log" style="border: 1px solid gray; zoom:80%;">
 
 **Transcript**: This tab shows the transcript of the voice conversation including whispers from the supervisor.  
 <img src="../images/transcripts.png" alt="Transcript Tab" title="Transcript Tab" style="border: 1px solid gray; zoom:60%;">  
@@ -443,7 +441,7 @@ Configure the following recording settings:
 
 * Volume: Adjust the volume slider to increase or decrease the volume.  
 
-* Mute: Select Mute to mute the audio.  
+* Mute: Select Mute to silence the audio.  
 
 * Rewind Audio: To rewind the audio by 10 seconds, select the Backward icon.
 * Forward Audio: To fast forward the audio by 10 seconds, select the Forward icon.
@@ -513,10 +511,10 @@ The different status messages you may notice and what they mean:
 
 | **Status message**                                                                                                      | **What it means**                                                                                                            | **What you can do**                                                                                                            |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Generating your call recording...** This may take a few minutes.                                                      | The recording server is processing the call audio.                                                                     | No action needed - wait for 10 minutes and refresh the page.                                                            |
-| **We couldn’t load the call recording. Please try again.**                                                              | There was a temporary issue fetching the recording.                                                                          | Select **Retry** to try fetching the recording again.                                                                           |
-| **Still unable to fetch the recording. Please try again after 15 minutes.**                                             | The system retried but  couldn’t get the recording.                                                                     | Wait for about 15 minutes and select **Retry** again.                                                                           |
-| **We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance.** | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. The team reviews the logs and attempts to recover the recording manually. |
+| Generating your call recording... This may take a few minutes.                                                      | The recording server is processing the call audio.                                                                     | No action needed - wait for 10 minutes and refresh the page.                                                            |
+| We couldn’t load the call recording. Please try again.                                                              | There was a temporary issue fetching the recording.                                                                          | Select **Retry** to try fetching the recording again.                                                                           |
+| Still unable to fetch the recording. Please try again after 15 minutes.                                             | The system retried but  couldn’t get the recording.                                                                     | Wait for about 15 minutes and select **Retry** again.                                                                           |
+| We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. | The system made multiple attempts (including automated background jobs) but couldn’t retrieve the recording from the server. | Contact your administrator or support team for help. The team reviews the logs and attempts to recover the recording manually. |
 
 Behind the Scenes
 
@@ -582,22 +580,25 @@ The interface shows SIP signaling messages exchanged between endpoints:
 1. **INVITE**
     * Direction: 50.19.12.248 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 2. **100 (Trying)**
     * Direction: 172.31.11.64 to 50.19.12.248
     * Port: 5060 ← 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 3. **200 (OK)**
     * Direction: 172.31.11.64 to 50.19.12.248
     * Port: 5060 ← 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
 4. **ACK**
     * Direction: 50.19.12.248 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
 The interface also shows RTCP media packets exchanged between endpoints:
@@ -605,15 +606,17 @@ The interface also shows RTCP media packets exchanged between endpoints:
 1. **RTCP (First packet)**
     * Direction: 172.31.11.62 to 172.31.11.64
     * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
-    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
-2. **RTCP (Second packet)**
-    * Direction: 172.31.11.62 to 172.31.11.64
-    * Port: 5060 → 5060
-    * Details: INVITE sip: +12513254563@domain...
+    * Details: `INVITE sip: +12513254563@domain...`
     * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
 
-**How to Use**
+2. **RTCP (Second packet)**
+
+    * Direction: 172.31.11.62 to 172.31.11.64
+    * Port: 5060 → 5060
+    * Details: `INVITE sip: +12513254563@domain...`
+    * Timestamp: [1][UU09]2024-04-15 15:29:37.679 +05:30 +0.000s
+
+**How to Use?**
 
 1. **Track Call Setup**: Follow the initial INVITE, 100 Trying, 200 OK, and ACK sequence to verify proper call establishment.
 2. **Analyze Response Times**: Note the timestamps to identify any delays in message processing.
@@ -622,6 +625,7 @@ The interface also shows RTCP media packets exchanged between endpoints:
 5. **Export Data**: Use the export options to save the communication flow for further analysis.
 
 ### QoS (Quality of Service) 
+
 The QoS tab provides detailed network metrics for call monitoring and troubleshooting. It offers comprehensive data visualization of network performance indicators to help Agents and Supervisors analyze call quality.  
 <img src="../images/qos-tab.png" alt="QoS Tab" title="QoS Tab" style="border: 1px solid gray; zoom:70%;">  
 
@@ -877,7 +881,7 @@ The Agents tab provides comprehensive call information for agents and supervisor
   <tr>
    <td>Call Exit Reason
    </td>
-   <td>Categorized reason why the participant left the call (for example, "Disconnected", "Transfer", "Call Ended").
+   <td>Categorized reason why the participant left the call (for example, `Disconnected`, `Transfer`, `Call Ended`).
    </td>
   </tr>
   <tr>

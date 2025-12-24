@@ -196,7 +196,7 @@ The following measurement types are:
 
 1. **By AI Agent**
 
-    Enables sophisticated evaluations using AI agents capable of multistep reasoning and autonomous decision-making.
+    Enables sophisticated evaluations using AI Agents capable of multistep reasoning and autonomous decision-making.
 
     **Key Features**:
 

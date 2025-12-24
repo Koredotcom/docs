@@ -20,7 +20,7 @@ The system optimizes manual review efforts and enhances agent performance feedba
         <img src="../images/conversation-mining.svg" style="zoom:200%;"></img>
         <kr-grid-title>Conversation Mining</kr-grid-title>
         <kr-grid-desc>Eliminate guesswork in manual evaluations. Use advanced filters to find interactions with the most potential for improvement and focus your manual efforts only on critical interactions.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining-overview.md)        
+        [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining-interactions.md)        
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/ai-assistance.svg" style="zoom:200%;"></img>

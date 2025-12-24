@@ -5,21 +5,22 @@ The Platform BotKit SDK provides functions that you can use for greater control 
 The following functions are supported by the BotKit SDK.
 
 
-* [sdk.sendUserMessage](#sdksendusermessage)
-* [sdk.sendBotMessage](#sdksendbotmessage)
-* [sdk.AsyncResponse](#sdkasyncresponse)
-* [sdk.respondToHook](#sdkrespondtohook)
-* [sdk.saveData](#sdksavedata)
-* [sdk.registerBot](#sdkregisterbot)
-* [sdk.getSavedData](#sdkgetsaveddata)
-* [sdk.getMessages](#sdkgetmessages)
-* [sdk.resetBot](#sdkresetbot)
-* [sdk.startAgentSession](#sdkstartagentsession)
-* [sdk.clearAgentSession](#sdkclearagentsession)
-* [sdk.extendRequestId](#sdkextendrequestid)
-* [sdk.skipUserMessage](#sdkskipusermessage)
-* [sdk.skipBotMessage](#sdkskipbotmessage)
-* [sdk.closeConversationSession](#sdkcloseconversationsession)
+- [Functions for the BotKit SDK](#functions-for-the-botkit-sdk)
+  - [sdk.sendUserMessage](#sdksendusermessage)
+  - [sdk.sendBotMessage](#sdksendbotmessage)
+  - [sdk.AsyncResponse](#sdkasyncresponse)
+  - [sdk.respondToHook](#sdkrespondtohook)
+  - [sdk.registerBot](#sdkregisterbot)
+  - [sdk.saveData](#sdksavedata)
+  - [sdk.getSavedData](#sdkgetsaveddata)
+  - [sdk.getMessages](#sdkgetmessages)
+  - [sdk.clearAgentSession](#sdkclearagentsession)
+  - [sdk.startAgentSession](#sdkstartagentsession)
+  - [sdk.resetBot](#sdkresetbot)
+  - [sdk.extendRequestId](#sdkextendrequestid)
+  - [sdk.skipBotMessage](#sdkskipbotmessage)
+  - [sdk.skipUserMessage](#sdkskipusermessage)
+  - [sdk.closeConversationSession](#sdkcloseconversationsession)
 
 
 ## sdk.sendUserMessage
@@ -36,6 +37,7 @@ sdk.sendUserMessage(payload, callback)
 ```
 
 **Parameters:**
+
 * payload – A JSON response payload as follows:
 
 ```json
@@ -288,6 +290,7 @@ sdk.respondToHook(payload)
 ```
 
 **Parameters:**
+
 * payload – A JSON response payload as follows:
 
 ```json
@@ -353,6 +356,7 @@ sdk.registerBot(require('./<Bot Name>.js'));
 ```
 
 **Parameters:**
+
 * Node.js file for the bot to register
 
 **Examples**
@@ -392,6 +396,7 @@ sdk.saveData(requestId, payload)
 ```
 
 **Parameters:**
+
 * requestId – The `requestId` from the asynchronous `on_webhook` event call.
 * payload – A JSON response payload as follows:
 
@@ -445,6 +450,7 @@ sdk.getSavedData(requestId, payload)
 
 * requestId – The `requestId` from the asynchronous `on_webhook` event call.
 * payload – A JSON response payload as follows:
+
 ```json
 {
    "taskId":"Dialog task ID",
@@ -594,6 +600,7 @@ sdk.startAgentSession(requestData, callback)
 ```
 
 **Parameters:**
+
 * `requestData` – as follows: \
 ` requestData.baseUrl + '/startAgentSession/' + requestData.requestId \
 `where
@@ -608,7 +615,7 @@ sdk.startAgentSession(requestData, callback)
 // the bot detects the Agent transfer in progress
 function connectToAgent(requestId, data, cb) {
     var formdata = {};
-    formdata.licence_id = config.liveagentlicense;
+    formdata.license_id = config.liveagentlicense;
     formdata.welcome_message = "";
     var visitorId = _.get(data, 'channel.channelInfos.from');
     if (!visitorId) {
@@ -795,6 +802,7 @@ sdk.skipUserMessage(requestData, callback)
 ```
 
 **Parameters:**
+
 * `requestData` – data
 * `callback` – The function to call at event completion.
 

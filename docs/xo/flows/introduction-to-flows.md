@@ -8,7 +8,7 @@ A _flow_ is a step-by-step process that helps you define the end-to-end customer
 
 The Flow Designer is a tool that allows you to quickly set up both simple and complex customer experiences. It is a drag-and-drop work surface that enables you to link together blocks of actions called _nodes_. These nodes help you map the customer experience from the initial contact to the query allocation to an agent, an AI Agent, or both.
 
-The Flow Designer also allows you to link Contact Center AI to an XO Platform AI agent to handle the customer request, potentially resolve it, or otherwise transfer it to an agent.
+The Flow Designer also allows you to link Contact Center AI to an XO Platform AI Agent to handle the customer request, potentially resolve it, or otherwise transfer it to an agent.
 
 ## Why Use the Flow Designer?
 
@@ -50,10 +50,10 @@ You can access the following features on the Flows Live Board:
 <img src="../images/functions.png" alt="Functionalities" title="Functionalities" style="border: 1px solid gray; zoom:80%;">
 
 * To delete a flow, click **Delete**.  
+
 <img src="../images/delete-flow.png" alt="Delete Flow" title="Delete Flow" style="border: 1px solid gray; zoom:80%;">  
+
 !!! Note
 
      You cannot restore deleted flow entries. Please proceed with caution.
-
-
    

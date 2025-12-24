@@ -36,11 +36,13 @@ When using an import file, the following validation rules are applied:
 **Sample File**
 
 For a .txt file:
+
 ```
 Email ID, First Name, Last Name, Alternate ID, Work Phone, Title, Department, User Status
 john.doe@example.com., John,Doe, 800-555-1212,President,Executive,New
 jane.doe@example.com., Jane,Doe, 800-555-5555,VicePresident,Executive,New
 ```
+
 ### Create and Upload an Import File
 
 You can create a file to invite users in your organization to become Kore.ai users that you can manage as an Admin. This topic describes how to create a file that contains the email addresses and user information, such as first and last name, phone number, department, and so forth, for the users that you want to invite to become Kore.ai users in your account. If you only have email address information for your users, you should create and [import a bulk invite file](enrolling-many-users.md){:target="_blank"} instead. **To create an import file**
@@ -48,13 +50,15 @@ You can create a file to invite users in your organization to become Kore.ai use
 1. In a text editor or spreadsheet, enter the field IDs on the first line, and then enter a complete email address and data on each following line or in a comma-separated list as shown in the following example:  
   
     **For a .txt file:**
+
     ```
     Email ID, First Name, Last Name, Alternate ID, Work Phone, Title, Department, User Status
     Kore.aiUser1@kore.com,User1FirstName,User1LastName,User1AlternateID,800-555-1212,President,Executive,New
     Kore.aiUser2@kore.com,User2FirstName,User2LastName,User2AlternateID,800-555-5555,VicePresident,Executive,New
     Kore.aiUser3@kore.com,User3FirstName,User1LastName,,,,New
     ```
- our account users.
+
+our account users.
 
 After you have created an import file, you need to upload the import file. This topic describes how you can upload your import file of users of your account. **To upload a user import file**
 
@@ -82,8 +86,10 @@ You can review the import operation results on a per-user basis if needed. This 
 
 After you create and import a list of users in your account, you may want to review the results of the import. This topic describes how to view the historical list of file-based user imports. **To view historical import reports**
 
-1. In the **Enrollment** module, on the **Import** page, click _File Based Bulk User Import History_ as shown in the following illustration.  
-<img src="../images/importing-users-and-user-data-img5.png" alt="Click 'File Based Bulk User Import History'" title="Click 'File Based Bulk User Import History'" style="border: 1px solid gray;zoom:70%;"/>
+1. In the **Enrollment** module, on the **Import** page, click _File Based Bulk User Import History_ as shown in the following illustration.
 
-2. In the **File Based Import History** dialog, to view the results of an import, in the **Report** column for the import that you want to view, click Results. The individual user results for the import are displayed in the **File Based Import Results** dialog as shown in the following illustration.  
-<img src="../images/importing-users-and-user-data-img6.png" alt="File Based Import Results" title="File Based Import Results" style="border: 1px solid gray;zoom:70%;"/>
+    <img src="../images/importing-users-and-user-data-img5.png" alt="Click 'File Based Bulk User Import History'" title="Click 'File Based Bulk User Import History'" style="border: 1px solid gray;zoom:70%;"/>
+
+2. In the **File Based Import History** dialog, to view the results of an import, in the **Report** column for the import that you want to view, click Results. The individual user results for the import are displayed in the **File Based Import Results** dialog as shown in the following illustration.
+
+    <img src="../images/importing-users-and-user-data-img6.png" alt="File Based Import Results" title="File Based Import Results" style="border: 1px solid gray;zoom:70%;"/>

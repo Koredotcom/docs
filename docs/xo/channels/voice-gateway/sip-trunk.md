@@ -1,6 +1,6 @@
 # SIP Trunk
 
-The SIP (Session Initiation Protocol) Trunk feature allows you to define how calls are redirected or transferred between different endpoints in your phone system.
+The SIP (Session Initiation Protocol) Trunk feature lets you define how to redirect or transfer calls between different endpoints in your phone system.
 
 ## Configure SIP Trunk
 

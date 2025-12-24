@@ -346,6 +346,7 @@ The _Bot status changed successfully_ message is displayed at the top of the pag
 You can view and if needed change the subscribed plan. [See here for details](billing.md){:target="_blank"}.
 
 ### Restore
+
 A published bot with active dialog tasks can be restored within 30 days following the deletion date.
 On the **Consumer Bots** page in the **Bots Management** module, click the **Ellipses** icon for the Bot that you want to restore, and then click **Restore**.  
 

@@ -12,7 +12,7 @@ Agent Transfer node now allows you to define the IVR properties required to hand
 
 ## Configure Agent Transfer in Voice Gateway
 
-The **Agent Transfer** feature in Voice Gateway enables seamless transfer of live calls from an AI agent or IVR to a human agent. Supervisors can transfer calls to internal agents within their contact center or to external agents outside your organization’s network. Use this feature when a customer’s query requires human assistance or escalation.
+The **Agent Transfer** feature in Voice Gateway enables seamless transfer of live calls from an AI Agent or IVR to a human agent. Supervisors can transfer calls to internal agents within their contact center or to external agents outside your organization’s network. Use this feature when a customer’s query requires human assistance or escalation.
 
 **Overview**
 

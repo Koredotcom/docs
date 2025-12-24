@@ -575,6 +575,7 @@ This response is displayed when the AI Agent identifies a dialog task for which 
 </table>
 
 ### Queries
+
 Statements from the AI Agent to the user to ask for more information. For example, *Which field do you want to change?*
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -784,6 +785,7 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
 </table>
 
 ### Errors & Warnings
+
 Statements from the AI Agent to the user, when an error occurs during the scenario, such as the *End date, cannot be before or the same as the start date!*
 
 <table border="1.5">
@@ -1104,6 +1106,7 @@ This message is displayed when an API call fails due to the expiry of user crede
 </table>
 
 ### Questions
+
 Questions the app may pose to the user when not included in any other category.
 
 <table border="1.5">
@@ -1132,6 +1135,7 @@ This message is displayed when the app asks the user to input the frequency at w
 </table>
 
 ### Choices
+
 The app is asking for Yes/No input. For example, *Would you like to receive push notifications every time this task occurs?*
 
 <table border="1.5">

@@ -96,6 +96,7 @@ curl -X POST 'https://{{host}}/api/public/samplebots/{{bot_id}}/add' \
 ## Body Parameters
 
 No Body parameters are passed.
+
 ## Sample Response
 
 ```json

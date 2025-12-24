@@ -1,6 +1,6 @@
-# Context Object - Structural Reference Guide
+# Context Management Using Context Object
 
-The *Context Object* is the central runtime state container for any workflow execution within the platform.
+The Context Object is the central runtime state container for any workflow execution within the platform.
 
 It captures everything about a run - from inputs, intermediate data, and node-level status to final outputs and metadata required for debugging, visualization, or rehydration of the session.
 
@@ -522,13 +522,10 @@ print(context['customData']['stage'])
 
 ### Guidelines
 
-
 * Use camelCase naming (customerInfo, retryCounter, tempResults). 
 * Avoid overriding system-reserved keys (steps, branch, status, dbquery). 
 * Keep data lightweight - avoid large arrays or raw API responses.
 * Everything added to the context object is accessible in later nodes through {{context.&lt;key>}} references. 
-
-
 
 ## Best Practices
 

@@ -162,4 +162,3 @@ If your external agent doesn't follow the expected format, follow the steps list
     * Reformat the external agent's response to match the Agent Platform’s response structure.
 
 ![alt_text](images/externalagents/adapter.png "image_tooltip")
-

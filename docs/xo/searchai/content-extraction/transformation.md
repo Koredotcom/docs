@@ -136,6 +136,7 @@ To reference a dynamic field in the URL, enclose the field name in double braces
 For instance, the following endpoint uses two chunk fields.  [https://api.external.com/metadata/{{chunkTitle}}?type={{](https://api.external.com/metadata/{{doc.id}}?lang={{doc.language)cfs1}}. 
   
 In this example,
+
   * {{chunkTitle}} is used as a path parameter.
   * {{cfs1}} is used as a query parameter.
   

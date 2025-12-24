@@ -206,4 +206,3 @@ curl --location 'https://{host}/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xx
    </td>
   </tr>
 </table>
-

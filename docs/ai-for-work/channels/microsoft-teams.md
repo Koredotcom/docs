@@ -64,4 +64,4 @@ The integration process follows these sequential steps:
 5. **Microsoft Team Deployment** – Upload manifest to Microsoft Team Admin Center.
 6. **User Approval** – Configure user access and permissions.
 
-For detailed implementation instructions, including step-by-step configuration procedures, authentication setup, and deployment guidance, refer to the [Microsoft Teams Integration Configuration Guide](../ms-teams/microsoft-teams-config.md)
+For detailed implementation instructions, including step-by-step configuration procedures, authentication setup, and deployment guidance, refer to the [Microsoft Teams Integration Configuration Guide](../channels/microsoft-teams-config.md)

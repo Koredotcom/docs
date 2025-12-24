@@ -349,7 +349,7 @@ The platform provides:
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Logger API](logger.md) - Structured logging with tracer integration patterns
 - [RequestContext API](request_context.md) - Session context and environment variables

@@ -157,6 +157,7 @@ In the **General Settings** tab, "**LiveChatEnd**" is selected from the dropdown
 <img src="../images/live-chat-end-flow.png" alt="Live Chat End Messaging" title="Live Chat End Messaging" style="border: 1px solid gray; zoom:70%;">
 
 #### On Error
+
 In the **General Settings** tab, "**error**" is selected from the dropdown menu under "**Your Message to User**". A message field displays the default auto-response message to customers in case of any error. The chat will end after the message is displayed. You can edit this message, change language, or add another message by clicking **+ Add Another**.
 <img src="../images/error.png" alt="On Error Message" title="On Error Message" style="border: 1px solid gray; zoom:70%;">
 

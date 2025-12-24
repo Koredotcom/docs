@@ -6,7 +6,8 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 
     This integration process also works for Genesys Desktop App.
 
-## Definitions
+## Definitions 
+
 | **Section/Group** | **Key** | **Definition** | **Reference** |
 |--------------------|---------|---------------|---------------|
 | Generate Oauth ID to enable Kore Services to Connect with Genesys<br>+<br>Create an Interaction Widget in Genesys for Agent AI | <span id="AAI">Agent AI URL</span> | The domain of the Agent AI. | - If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}<br>- If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
@@ -44,22 +45,26 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 This document provides detailed, step-by-step instructions for setting up the integration of the Agent AI widget in the Genesys environment.
 
 ## Activities on Kore Platform
+
 * [Capture AI Agent information in Kore Data Table](#capture-ai-agent-information) 
 * [Access Custom Data and Secure Custom Data in AI Agent](#access-custom-data-and-secure-custom-data-in-ai-agent)
 
 ## Activities on Genesys Cloud
+
 * [Generate Oauth ID to enable Kore Services to Connect with Genesys](#generate-oauth-id-to-enable-kore-services-to-connect-with-genesys)
 * [Create an Interaction Widget in Genesys for Agent AI](#create-an-interaction-widget-in-genesys-for-agent-ai)
 * [Provide Interaction Widget Access to Agents](#provide-interaction-widget-access-to-agents)
 * [Create a Queue in Genesys](#create-a-queue-in-genesys)
 
 ## Chat Setup
+
 * [Create/Update Architect Inbound Message Flow in Genesys for the Agent Queue](#createupdate-architect-inbound-message-flow-in-genesys-for-the-agent-queue)
 * [Create Messenger Configuration](#create-messenger-configuration)
 * [Create Messenger Deployment](#create-messenger-deployment)
 * [Steps to start a Chat Request Simulation](#steps-to-start-a-chat-request-simulation)
 
 ## Voice Setup
+
 * [(Optional) Install Audiohook for Voice Streaming](#optional-install-audiohook-for-voice-streaming)
 * [Create/Update an Architect Inbound Call Flow in Genesys for the Agent Queue](#createupdate-architect-inbound-call-flow-in-genesys-for-the-agent-queue)
 * [Steps to start a Voice Request Simulation](#steps-to-start-a-voice-request-simulation)
@@ -93,8 +98,8 @@ This step involves creating a Genesys Data Table with Agent AI bot details.
 
         **Reference Key** label must be set to “agentAssist”. This is the value used by the Interaction Widget to load the configuration data.  
 
-    5. Click the “pencil” icon to edit a data table.  
-    <img src="../images/pencil-icon.png" alt="pencil-icon" title="pencil-icon" style="border: 1px solid gray; zoom:80%;">   
+    5. Click the 'pencil' icon to edit a data table.  
+        <img src="../images/pencil-icon.png" alt="pencil-icon" title="pencil-icon" style="border: 1px solid gray; zoom:80%;">   
 
         !!! note 
             Do not click on the data table name.  
@@ -115,8 +120,8 @@ These values are found in the **Agent AI** > **Flows & Channels** > **Channels**
 |----------------------|-----------------------------------------|
 | **Field Label**          | **Default Value**                           |
 | AgentAssist URL      | <a href="#AAI">Agent AI URL</a>                            |
-| Bot Id               | st-8cb94691-xxxx-xxxx-xxxx-xxxxxxxx     |
-| Client Id            | cs-b60f544d-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
+| Bot Id               | `st-8cb94691-xxxx-xxxx-xxxx-xxxxxxxx`     |
+| Client Id            | `cs-b60f544d-xxxx-xxxx-xxxx-xxxxxxxxxxxx` |
 | Client Secret        | &lt;secret-key from AgentAssist>        |
 | is Audiohook Enabled | true / false                            | 
 
@@ -463,9 +468,9 @@ This step is essential for managing incoming messages to the Genesys platform. W
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/directory/#/login-oauth){:target="_blank"}.
 2. Go to **Admin** > **Architect** > **Architect**.
 3. Click the **three dots** next to **Flows: Inbound Call**, and select **Inbound Message**.  
-<img src="../kore-data-table/inbound-message-28.png" alt="inbound-message" title="inbound-message" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/inbound-message-28.png" alt="inbound-message" title="inbound-message" style="border: 1px solid gray; zoom:80%;">  
 4. Click the **+Add** button to create an **Inbound Message Flow**.  
-<img src="../kore-data-table/create-inbound-message-flow-29.png" alt="create-inbound-message-flow" title="create-inbound-message-flow" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/create-inbound-message-flow-29.png" alt="create-inbound-message-flow" title="create-inbound-message-flow" style="border: 1px solid gray; zoom:80%;">  
 5. Click **Create Flow**. The final architect flow looks like the following screenshot:  
 <img src="../kore-data-table/create-flow-30.png" alt="create-flow" title="create-flow" style="border: 1px solid gray; zoom:80%;">
 
@@ -478,28 +483,31 @@ Before using web messaging, you must configure it in Genesys Cloud. To configure
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Configurations**.  
 3. Click **New Configuration**.  
-<img src="../kore-data-table/messenger-new-configuration-31.png" alt="messenger-new-configuration" title="messenger-new-configuration" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/messenger-new-configuration-31.png" alt="messenger-new-configuration" title="messenger-new-configuration" style="border: 1px solid gray; zoom:80%;">  
 4. Enter a name and description.  
-<img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/messenger-configuration-name-description-32.png" alt="messenger-configuration-name-description" title="messenger-configuration-name-description" style="border: 1px solid gray; zoom:80%;">
 
 5. Click the **Appearance** tab and complete the following information:
-* Under **Select your Supported Languages**, click the **Select language(s)** list and choose the languages that you want to support in the Messenger interface.
 
-    !!! note
+    * Under **Select your Supported Languages**, click the **Select language(s)** list and choose the languages that you want to support in the Messenger interface.
 
-        The same language should be configured in the **Kore AI Agent**.  
+        !!! note
 
-    <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;"> 
+            The same language should be configured in the **Kore AI Agent**.  
 
-* Under **Select Default Language**, click the **Select language** list and choose the default language.  
-<img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
+        <img src="../kore-data-table/select-supported-languages-33.png" alt="select-supported-languages" title="select-supported-languages" style="border: 1px solid gray; zoom:80%;"> 
 
-* Adjust the other settings according to your preferences.
+    * Under **Select Default Language**, click the **Select language** list and choose the default language.  
+    <img src="../kore-data-table/default-language-34.png" alt="default-language" title="default-language" style="border: 1px solid gray; zoom:80%;">
+
+    * Adjust the other settings according to your preferences.
+
 6. Click the **Apps** tab and complete the following steps: 
-* Under **Clear Conversation**, turn on the toggle button. This is required for the **Agent AI Conversation Summary** feature to work.  
-<img src="../kore-data-table/clear-conversation-toggle-35.png" alt="clear-conversation-toggle" title="clear-conversation-toggle" style="border: 1px solid gray; zoom:80%;">
+    * Under **Clear Conversation**, turn on the toggle button. This is required for the **Agent AI Conversation Summary** feature to work.  
+        <img src="../kore-data-table/clear-conversation-toggle-35.png" alt="clear-conversation-toggle" title="clear-conversation-toggle" style="border: 1px solid gray; zoom:80%;">
 
-* Adjust the other settings according to your preferences.
+    * Adjust the other settings according to your preferences.
+
 7. Click **Save New Version** to create a new version.
 
 ### Create Messenger Deployment
@@ -509,17 +517,19 @@ To deploy the Messenger snippet to your website, follow these steps:
 1. Sign in to [Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}.
 2. Go to **Admin** > **Message** > **Messenger Deployment**. 
 3. Click **New Deployment**.  
-<img src="../kore-data-table/new-messenger-deployment-36.png" alt="new-messenger-deployment" title="new-messenger-deployment" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../kore-data-table/new-messenger-deployment-36.png" alt="new-messenger-deployment" title="new-messenger-deployment" style="border: 1px solid gray; zoom:80%;">  
 4. Enter a name and description.  
-<img src="../kore-data-table/messenger-deployment-details-37.png" alt="messenger-deployment-details" title="messenger-deployment-details" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../kore-data-table/messenger-deployment-details-37.png" alt="messenger-deployment-details" title="messenger-deployment-details" style="border: 1px solid gray; zoom:80%;"> 
 
 5. Under **Select your Configuration**, click **Select Configuration** to select a version of a Messenger configuration created in the previous step to assign to this deployment.
-* In the **Assignment** pane, navigate to the Messenger configuration you want to assign to the configuration, and click the name of the Messenger configuration.
-* Select the version that you want to assign.
-* Click **Save**.
+    * In the **Assignment** pane, navigate to the Messenger configuration you want to assign to the configuration, and click the name of the Messenger configuration.
+    * Select the version that you want to assign.
+    * Click **Save**. 
+
 6. Under **Restrict domain access**, determine whether to allow all domains or restrict the domains on which you want to deploy the snippet.  
-* To allow all domains, select the **Allow all domains** option. Use this option for testing and development purposes.
-* To restrict domains, enter a domain and click **Add Domain**. You can add multiple domains to the list. Restrict domains to prevent unauthorized usage of your snippet from unknown domains. If you restrict a domain, Messenger does not run on that website and rejects API requests from that domain.
+    * To allow all domains, select the **Allow all domains** option. Use this option for testing and development purposes.
+    * To restrict domains, enter a domain and click **Add Domain**. You can add multiple domains to the list. Restrict domains to prevent unauthorized usage of your snippet from unknown domains. If you restrict a domain, Messenger does not run on that website and rejects API requests from that domain. 
+
 7. Under **Select your Architect Flow**, select the inbound message flow created in the previous steps.
 8. Click **Save.** The **Messenger Deployments** page now displays the snippet and the deployment key.
 9. Copy the Messenger snippet and deploy the Messenger snippet to your website.
@@ -538,7 +548,7 @@ The final step is to install Audiohook for voice streaming, if using Kore-manage
 1. Sign in to **[Genesys Cloud](https://apps.mypurecloud.com/){:target="_blank"}**.
 2. Go to **Admin** > **Integrations** > **Integrations**.  
 3. Enter “audiohook” in the search bar.  
-<img src="../kore-data-table/audiohook-39.png" alt="audiohook" title="audiohook" style="border: 1px solid gray; zoom:80%;">
+    <img src="../kore-data-table/audiohook-39.png" alt="audiohook" title="audiohook" style="border: 1px solid gray; zoom:80%;">
 
     Audiohook integration requires specific configuration values to support Agent AI configuration. 
 
@@ -725,6 +735,7 @@ For first time users, use the POST API and for existing users, use the PUT API t
         }
     }
 ```
+
 ## XO 11 Configuration Notes
 
 For the configured App, ensure at least one Dialog Task has been configured for Agent AI use.

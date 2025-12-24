@@ -225,13 +225,16 @@ The following examples show the conversations between the AI Agents and user, wi
 
 For example, when the user provides an invalid input at entity or confirmation nodes as follows:
 
-_User: I want my account statement_
+```
+User: I want my account statement
 
-_AI Agents: Please enter your Customer Id_
+AI Agents: Please enter your Customer Id
 
-_User: Where do I find it?_
+User: Where do I find it?
 
-_AI Agents: Sorry, that is an incorrect input. Please enter your Customer Id_
+AI Agents: Sorry, that is an incorrect input. Please enter your Customer Id
+
+```
 
 In the above conversation, if the AI Agent doesn’t recognize _“where to find customer id”_ as an intent or entity, then this utterance is  categorized under Unhandled Utterances.
 
@@ -239,17 +242,24 @@ In the above conversation, if the AI Agent doesn’t recognize _“where to find
 
 For example, when the user provides an invalid input at a message node as follows:
 
-_User: I want to book a flight for today_
+```
+User: I want to book a flight for today
 
-_AI Agents: Enter the flight number
+AI Agents: Enter the flight number
+
 User: 12434
+
 AI Agents: Enter number of seats required
 User: 3 
+
 AI Agents: Your flight is booked. Would you like to:
-1. Book a Hotel 
-2. Book a sightseeing tour
+   * Book a Hotel 
+   * Book a sightseeing tour
+
 User: I want to Cancel the Flight
-AI Agents: I’m sorry, I don’t understand. Please enter again._
+
+AI Agents: I’m sorry, I don’t understand. Please enter again.
+```
 
 In the above conversation, if the AI Agent doesn’t recognize the intent name “cancel flight” as an input at the message node. The intent identification fails and the utterance is categorized under Unhandled Utterances.
 
@@ -257,19 +267,22 @@ In the above conversation, if the AI Agent doesn’t recognize the intent name �
 
 For example, when the user provides an invalid input at a confirmation node as follows:
 
-_AI Agents: How may I help you_
+```
+AI Agents: How may I help you
 
-_User: I want to book a flight_
+User: I want to book a flight
 
-_AI Agents: Enter the number of seats_
+AI Agents: Enter the number of seats
 
-_User: 2_
+User: 2
 
-_AI Agents: Please confirm if you want two seats_
+AI Agents: Please confirm if you want two seats
 
-_User: I want to hire a cab_
+User: I want to hire a cab
 
-_AI Agents: I cannot understand it, can you rephrase it_
+AI Agents: I cannot understand it, can you rephrase it
+
+```
 
 In the preceding conversation, when a user enters ‘I want to hire a cab’ at the confirmation node, it is not recognized and logged under Unhandled Utterances.
 
@@ -738,19 +751,18 @@ Chat History provides visibility into the user information by capturing the foll
  * **User Profile**: Provides a 360-degree view of the user and their usage metrics.
 * **User Conversation Sessions**: Lists all the sessions of the user in the given period with the selected utterance section expanded.
 * **Go to Selected Utterance**: When you click this icon, the selected utterance is highlighted in orange (see the preceding screenshot).
-* **X-Trace Id**– A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform.
-* **K-Trace Id** – This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
+* **X-Trace Id**: A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform.
+* **K-Trace Id**: This is Kore’s monitoring trace ID. This ID is useful for debugging purposes.
 
 When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message Id** associated with the message.
 <img src="../images/chat-history-1.png" alt="Chat History-1" title="Chat History-1" style="border: 1px solid gray; zoom:60%;">
 
 * Click the **Message Id** to view the **X-Trace Id** and **K-Trace Id** associated with a message in the Chat History.  
-
 <img src="../images/xtraceid.png" alt="Chat History-2" title="Chat History-2" style="border: 1px solid gray; zoom:60%;">
 
-!!! note
+   !!! note
 
-    The **X-Trace Id** and **K-Trace Id** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
+      The **X-Trace Id** and **K-Trace Id** are retained in the logs for 30 days. Once expired, you see a tooltip message as ‘`Trace records for this message are not available`‘.
 
 
 The following user information details are displayed on the **Chat History** tab:

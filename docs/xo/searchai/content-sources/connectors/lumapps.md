@@ -33,7 +33,6 @@ LumApps organizes content into key types, such as pages, news, and custom object
   <tr>
    <td>
 RACL Support
-
    </td>
    <td>Yes
 

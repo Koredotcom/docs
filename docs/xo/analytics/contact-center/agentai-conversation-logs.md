@@ -1,6 +1,10 @@
+
+# Conversation Logs
+
 The **Conversation Logs** is a library of all conversations agents have with their customers. It lets you access and review past interactions, view agent names, copy conversation identifiers, view the overall sentiment, access voice call recordings, and view the overall widget feedback. You can also compare edited conversation summaries with their original versions. Additionally, you can create, edit, delete, and save search filters, and set a default filter.
 
 ## Accessing the Conversation Logs
+
 Steps to access the Conversation Logs:
 
 1. Sign in to [**AI for Service**](https://platform.kore.ai/){:target="_blank"}.
@@ -12,7 +16,7 @@ Steps to access the Conversation Logs:
 
 4. Click a **CONVERSATION ID** to view the corresponding conversation summary, edited summary (if any), identifiers, Voice Call Recording, overall widget feedback, and the conversation record.  
 
-| **Field**         | **Description**                                                                                                  |
+| **Field**          | **Description**                                                                                                  |
 |--------------------|------------------------------------------------------------------------------------------------------------------|
 | **Clear Filters**  | Removes all filters (Time and Custom) and returns to the default view (Today).                                   |
 | **Conversation ID**| A unique identification number assigned to each conversation. It helps identify and track specific interactions. |

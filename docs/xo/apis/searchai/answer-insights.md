@@ -148,7 +148,8 @@ When a specific time is also to be included, ensure it follows the ISO 8601 form
 }
 ```
 
-## Response 
+## Response
+
 The API returns a job ID(_id). The job type is set to DATA_EXPORT. The fileInfo object in the response gives information about the type of file being generated. Use the job id to get the file details. 
 
 ### Sample Response - Creating Export Job

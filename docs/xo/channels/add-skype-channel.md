@@ -25,7 +25,7 @@ To complete this procedure, you must have or register for a new developer accoun
 
 3. Log in to the _Microsoft Bot Framework_ portal, and then click **Register a bot**.
 4. On the **Register a bot** tab, under the **Bot profile** section, enter your **Bot Name**, **Bot handle**, and **Description**.
-5. In the **Configuration** section, paste the **Webhook URL** from the Bot Builder into the **Messaging endpoint** field. For example, https://bots.kore.ai/hooks/skype/st-2724c525-484b-55ca-a844-8d7dfa6b6b23
+5. In the **Configuration** section, paste the **Webhook URL** from the Bot Builder into the **Messaging endpoint** field. For example, `https://bots.kore.ai/hooks/skype/st-2724c525-484b-55ca-a844-8d7dfa6b6b23`
 6. Click **Create Microsoft App ID and password** as shown in the following illustration.
 ![register bot](images/Skype-Channel2.png "register bot")
 
@@ -62,6 +62,7 @@ To edit the Skype channel, follow the below steps:
 1. Hover over the channel to modify, and then click the **Settings** icon displayed to show the command menu displayed in the following illustration.
 ![settings](images/Skype-Channel4.png "settings")
 2. Select one of the following commands to modify the channel:
+
   * **Edit** – Click to open the **Skype Channel** page.
   * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Skype channel for your app.
   * **Enable** - When the channel is disabled, click **Enable** to enable use of the Skype channel.

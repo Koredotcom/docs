@@ -195,7 +195,7 @@ curl -X POST \
 
 * **when aggregation_type = Hourly or empty or not given**
 
-    ```json
+```json
     {
      [
        results:{

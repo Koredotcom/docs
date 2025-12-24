@@ -857,6 +857,7 @@ The [Raw Data API](../../apis/agent-ai/raw-data-api.md){:target="_blank"} is enh
 <hr>
 
 ## v11.5.1 September 14, 2024
+
 <u> Patch Release </u>
 
 This update includes bug fixes.
@@ -864,6 +865,7 @@ This update includes bug fixes.
 <hr>
 
 ## v11.5.0 September 01, 2024
+
 <u> Patch Release </u>
 
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
@@ -912,6 +914,7 @@ Key updates:
 <hr>
 
 ## v11.4.1 August 11, 2024
+
 <u> Patch Release </u>
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
@@ -929,12 +932,13 @@ This change consolidates widget customization options, making it easier for user
 
 The **Authorized Redirect URI** in the Genesys Middleman App is updated to ensure seamless integration of Agent AI with XO v11:
 
-* Previous URI: https://agentassist.kore.ai/koreaiaa-genesys/
-* New URI: https://platform.kore.ai/koreaiaa-genesys/
+* Previous URI: `https://agentassist.kore.ai/koreaiaa-genesys/`
+* New URI: [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/)
 
 <hr>
 
 ## v11.4 July 27, 2024
+
 <u> Patch Release </u>
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
@@ -1179,6 +1183,7 @@ The SearchAssist Configuration page inside Agent AI has been updated with the fo
 <font size="4">Conversation Transfer Experience (Third-Party Agent Desktop)</font>
 
 Agent AI has introduced the Conversation Transfer feature to customize the transfer functionality of the Agent AI widget. This feature is applicable only to the third-party configurations where appropriate transfer events are transmitted. The Cold Transfer type applies to all three channels - Chat, Voice, and Email and has the following options to choose from:
+
 * Scroll up to the First Message
 * Continue from the Last Message
 * Configure Dialog Task

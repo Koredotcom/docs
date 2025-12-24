@@ -26,19 +26,19 @@ To view the contextual content added to the chunks, go to the chunk viewer and s
 
 ## Enabling Contextual Information in Chunks
 
-Go to **Advanced Configuration** and set **Contextual Embeddings** to True. 
+Go to *Advanced Configuration* and set *Contextual Embeddings* to True. 
 
-**Note**
-* If documents are ingested **after** enabling contextual embeddings, contextual information will be automatically added to the generated chunks during the ingestion process. 
-* If content was **already ingested** before enabling contextual embeddings, you must **retrain the application** to update the existing chunks with contextual information.
+!!!note 
+    * If documents are ingested after enabling contextual embeddings, contextual information is automatically added to the generated chunks during the ingestion process. 
+    * If content was already ingested before enabling contextual embeddings, you must retrain the application to update the existing chunks with contextual information.
 
 ![Contextual Embedding](images/setting.png "Contextual Embedding")
 
 ## Limitations
 
 * Supported LLMs: Only supports OpenAI and Azure OpenAI.
-* Recommended Models: Use models with larger context windows (e.g., gpt-4o) to ensure all generated chunks benefit from the contextual enhancements. Avoid smaller context models like GPT-3.5.
-* Connector Support: Currently supported for documents ingested via connectors in the following formats: PDF, HTML, and Markdown.
-* Unsupported Connectors: This feature does not apply to connectors that fetch structured dat,a such as:
+* Recommended Models: Use models with larger context windows (example, gpt-4o) to ensure all generated chunks benefit from the contextual enhancements. Avoid smaller context models like GPT-3.5.
+* Connector Support: Supported for documents ingested via connectors in the following formats: PDF, HTML, and Markdown.
+* Unsupported Connectors: This feature doesn't apply to connectors that fetch structured dat,a such as:
     * JSON Connector
     * Jira Connector

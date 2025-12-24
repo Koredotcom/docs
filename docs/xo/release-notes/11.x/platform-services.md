@@ -52,7 +52,7 @@ This update includes an enhancement and bug fixes. The key enhancement included 
 
 **New Channel Integration: Amazon Connect Chat**
 
-Amazon Connect Chat is now available as a communication channel, enabling real-time user interactions with AI agents. The integration supports both hosted and custom widget configurations. [Learn more :octicons-arrow-right-24:](../../channels/add-amazon-connect-chat-channel.md)
+Amazon Connect Chat is now available as a communication channel, enabling real-time user interactions with AI Agents. The integration supports both hosted and custom widget configurations. [Learn more :octicons-arrow-right-24:](../../channels/add-amazon-connect-chat-channel.md)
 
 <hr>
 

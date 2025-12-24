@@ -49,8 +49,3 @@ Finally, test the flow and fix any issues found. Click the **Run Flow** button a
 !!! failure "Standard Error"
 
     When the value for the output variable is not defined, a list of unresolved outputs is displayed.
-
-
-
-
-

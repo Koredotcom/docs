@@ -3,13 +3,15 @@ hide:
   - toc
   - feedback
 ---
+
 # AI for Service (XO)
 
 AI for Service (XO) helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
 
 Built for security and scalability, the platform uses a no-code interface that lets businesses build AI Agents. These agents use large language models to hold natural conversations in multiple languages across various channels.
 
-# Comprehensive Suite of Products and Services
+## Comprehensive Suite of Products and Services
+
 AI for Service offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
 **Key Products, Features, and Services:**
@@ -134,6 +136,6 @@ The image below provides a high-level understanding of AI for Service capabiliti
 
 ##### Related Links
 
-* [What's New in AI for Service (XO) v11](./whats-new-in-xo-platform.md)
-* [Key Differences Between v11 and v10](./key-differences-between-xo11-and-xo10.md)
-* [Upgrade Journey: Migration Path for Existing Customers](./whats-new-in-xo-platform.md)
+* [What's New in AI for Service (XO) v11](whats-new-in-xo-platform.md)
+* [Key Differences Between v11 and v10](key-differences-between-xo11-and-xo10.md)
+* [Upgrade Journey: Migration Path for Existing Customers](migration-path-xo10-to-xo11.md)
