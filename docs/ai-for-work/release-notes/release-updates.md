@@ -38,7 +38,7 @@ Automate your workflows with Schedule Trigger, a powerful new capability that en
 
 This feature is ideal for recurring tasks such as generating reports, sending notifications, syncing data, and performing routine maintenance operations.
 
-[Learn more :octicons-arrow-right-24:](../getting-started/schedule-agents.md)
+[Learn more :octicons-arrow-right-24:](../custom-agents/schedule-trigger.md)
 
 <font size="4">Feature Enhancement</font>
 
