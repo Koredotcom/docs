@@ -247,7 +247,7 @@ nav:
       - About Agent Flows: automation/agent-flows.md
       - Flows Management:
         - Dialog:
-          - Brief about the Dialog: automation/use-cases/dialogs/dialog-tasks-overview.md
+          - About Dialog Task: automation/use-cases/dialogs/dialog-tasks-overview.md
           - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
           - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
         - Session Management: automation/use-cases/using-session-and-context-variables.md
