@@ -2,9 +2,9 @@ site_name: Inceptionai Docs
 site_author: Inceptionai Content Experience Team
 docs_dir: 'docs/ai-for-work/'
 site_dir: 'site/business-productivity/'
-site_url: https://docs.kore.ai/business-productivity/
-repo_name: Koredotcom/docs
-repo_url: https://github.com/Koredotcom/docs
+site_url: https://inceptionai.ai/
+repo_name: inceptionai-public/platform-docs
+repo_url: https://github.com/inceptionai-public/platform-docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:

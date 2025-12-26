@@ -2,7 +2,7 @@ site_name: Inceptionai Docs
 site_author: Inceptionai Content Experience Team
 docs_dir: 'docs/agent-platform/'
 site_dir: 'site/agent-platform/'
-site_url: https://docs.kore.ai/agent-platform/
+site_url: https://inceptionai.ai/
 repo_name: inceptionai-public/platform-docs
 repo_url: https://github.com/inceptionai-public/platform-docs
 extra_css:
