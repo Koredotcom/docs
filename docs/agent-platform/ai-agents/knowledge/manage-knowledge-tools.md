@@ -4,15 +4,11 @@ A Knowledge Tool connects your Agentic application to a **Search AI application(
 
 To manage these tools, go to the *Knowledge* page of your Agentic App. This page offers a structured view of all knowledge bases connected to the app, providing clear visibility into their total count, associated agents, and easy access from one central location.
 
-<img src="../images/knowledge-listing-page.png" alt="Knowledge Listing Page" title="Knowledge Listing Page" style="zoom:70%; border: 1px solid gray;">
+<img src="../images/knowledge-listing-page.png" alt="Knowledge Listing Page" title="Knowledge Listing Page" style="zoom:70%; border: 0px solid gray;">
 
 ## Create a Knowledge Tool
 
 You can either create a new Search AI application from the Agentic application or link an existing Search AI application.
-
-To associate the Agentic application with a knowledge tool, open the application and navigate to the *Knowledge* page. This page displays all existing Knowledge Tools in the Agentic app.
-
-![Knowledge](images/knowledge-page.png "Knowledge")
 
 To add a new knowledge tool to the application, select one of the following options from the **Create Knowledge Base** drop-down at the top of the page.
 
@@ -73,10 +69,12 @@ Click **Create**. This action creates a new Search AI application within the sam
 
 **Next Steps** : Navigate to Search AI and take the following actions.
 
-* Set extraction strategies.
-* Ingest Content.
-* Set Retrieval Strategies.
-* Configure answer generation.
+* [Set extraction strategies.](https://docs.kore.ai/xo/searchai/content-extraction/etl/){:target="_blank"} 
+* [Ingest Content.](https://docs.kore.ai/xo/searchai/content-sources/introduction/){:target="_blank"}
+* [Set Retrieval Strategies.](https://docs.kore.ai/xo/searchai/retrieval/){:target="_blank"}
+* [Configure answer generation.](https://docs.kore.ai/xo/searchai/answer-generation/){:target="_blank"}
+
+[Learn More.](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}
 
 ## Test the Knowledge Base
 
@@ -86,7 +84,7 @@ The response includes both the script output and detailed logs. These logs provi
 
 ![Test the Knowledge Base](images/test-knowledgebase-tool.png "Test the Knowledge Base")
 
-## Unlink the Knowledge Base
+## Delete the Knowledge Base
 
 To remove the knowledge tool from the Agentic app, go to the Knowledge page and delete the knowledge tool. This removes the integration from the given Agentic app. The integration can still be found on the Search AI page and can be associated with any Agentic app.
 
@@ -94,4 +92,4 @@ To remove the knowledge tool from the Agentic app, go to the Knowledge page and 
 
 ## Manage Content in Search AI
 
-To update the content in the search AI application or edit any configurations, use the **Manage Content** option to navigate to the corresponding Search AI app.
+To update the content in the search AI application or edit any configurations, use the **Manage Content** option to navigate to the corresponding Search AI app. [Learn More](https://docs.kore.ai/xo/searchai/content-sources/introduction/){:target="_blank"}.

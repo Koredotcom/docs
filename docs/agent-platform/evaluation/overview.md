@@ -1,4 +1,4 @@
-# About Evaluation Studio
+# Evaluation Studio Overview
 
 Evaluation Studio is a unified workspace for evaluating AI system performance across two main areas: Model Evaluation and Agentic Evaluation. It enables users to systematically assess both the quality of large language model (LLM) outputs and the behavior of agentic applications in real-world scenarios.
 
@@ -31,9 +31,9 @@ Agentic Evaluation enables multi-level evaluation across sessions and traces, of
 
 ## Accessing Evaluation Studio
 
-1. Log in to your Agent Platform account and click **Evaluation Studio** under **Agent Platform Modules**.
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account.
 
-    <img src="../images/evaluation_studio.png" alt="access evaluation studio" title="access evaluation studio" style="border: 1px solid gray; zoom:75%;">
+2. Go to the **Agent Platform Modules** menu and select **Evaluation Studio**.
  
 2. On the Evaluation page, select **Model evaluation** or **Agentic evaluation** to begin.
 

@@ -1,4 +1,4 @@
-# About Models
+# Models Overview
 
 Model Hub empowers you to enhance base models by fine-tuning them directly within the product using your enterprise's proprietary data. This allows you to create customized models tailored to your specific needs. You can also seamlessly integrate models from external sources and open-source models, expanding the range of available models to address your unique requirements.
 
@@ -15,9 +15,13 @@ Model Hub empowers you to enhance base models by fine-tuning them directly withi
 
 ## Accessing Model Hub
 
-1. Log in to your Agent Platform account and click **Model hub** under **Agent Platform Modules**.
-    <img src="../model-settings/images/model_hub.png" alt="access model hub" title="access model hub" style="border: 1px solid gray; zoom:75%;">
+1. [Log in](../getting-started/sign-up-sign-in.md){:target="_blank"} to your Agent Platform account and then select  **Model hub** under **Agent Platform Modules**.
  
-2. On the Models page, you can see three tabs: Fine-tuned Models, Open-source Models, and External Models. Click any tab to explore the corresponding models.
+2. On the Models page, you can see three tabs: 
+    * Fine-tuned Models
+    * Open-source Models
+    * External Models. 
+
+    Select any tab to explore the available models.
 
     <img src="../fine-tune-models/images/start-fine-tuning.png" alt="Models page" title="Models page" style="border: 1px solid gray; zoom:80%;">

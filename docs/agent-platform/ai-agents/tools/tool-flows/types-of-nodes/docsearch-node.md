@@ -62,17 +62,15 @@ After fetching the Search AI application credentials, configuring the source, an
 
 **Steps to integrate Search AI in Agent Platform**
 
-* Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
-* Click **Settings** on the top navigation bar.
-* Click **Integrations** on the left navigation menu.
-* Scroll down to **Search AI** and click **Link an App**.
+1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+2. Click **Settings** on the top navigation bar.
+3. Click **Integrations** on the left navigation menu.
+4. Scroll down to **Search AI** and click **Link an App**.
   <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
 
-* In the **Search AI** window, provide the required information that you copied from the Search AI app in 
+5. In the **Search AI** window, provide the required information that you copied from the Search AI app in 
 [Step 1](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-* Click **Test** to test the connection.
+6. Click **Test** to test the connection.
 * If the connection is successful, click **Confirm**.
   <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
 
@@ -83,17 +81,15 @@ After fetching the Search AI application credentials, configuring the source, an
 
   <img src="./../images/connection-failure.png" alt="connection failure" title="connection failure" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We support connections through Search AI. You must provide the Platform URL for the <b>Search AI URL</b> field.</p></div>
+  <div class="admonition note">
+  <p class="admonition-title">Note</p>
+  <p>We support connections through Search AI. You must provide <code>https://platform.kore.ai</code> for the <b>Search AI URL</b> field.</p></div>
 
 ## Step 3: Add and Configure a DocSearch Node
 
 ### Step 3(A): Open Flow Builder
 
 * Log in → In Agent Platform Modules → Click **Tools**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 * Select your tool → Click **Go to Flow**.
 
 ### Step 3(B): Add the Node
@@ -104,8 +100,6 @@ After fetching the Search AI application credentials, configuring the source, an
 ### Step 3(C): Configure the Node
 
 * To provide a unique name, right-click the node and click **Rename** since the node is provided a default name.
-
-    <img src="./../images/rename-docsearch-node.png" alt="rename node" title="rename node" style="border: 1px solid gray; zoom:75%;">
 
     Alternatively, click the node and change the value for **Node Name** in the configuration panel.
     <img src="./../images/node-name.png" alt="node name" title="node name" style="border: 1px solid gray; zoom:75%;">
@@ -166,10 +160,9 @@ could be <code>context.steps.DocSearch.response.response.answer</code> in one ca
 Check the sample response from Search AI to find the correct key that holds the content.
 Use that key in your tool flow. You may also need to extract multiple chunks from different keys.</p></div>
 
-## Related Links
+<hr/> 
+
+**Related Resources**
 
 * [Manage Nodes in Tool Flow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
 * [Run Tool Flow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an tool flow in real time.
-
-
-

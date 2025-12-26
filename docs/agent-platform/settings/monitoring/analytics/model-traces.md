@@ -131,7 +131,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
     * If a model's P90 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
     * If a model's P99 is 100 seconds, it means that 99% of the requests are completed within 100 seconds.
 * **Failure Rate**: Indicates the number of requests/runs that failed with an error code or were not serviced by the model out of the total requests sent since deployment. For example, if 5 requests failed out of 100, the failure rate displayed is 5%.
-* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage. Please see the pricing details [here](../../../models/hardware-pricing.md){:target="_blank"}. This metric allows for a comparison of credit consumption against actual model usage.
+* **Hosting Credits**: Displays the credits consumed in your account by the deployed model based on its usage. Please see the pricing details [here](../../../settings/billing/managing-usage-limits.md){:target="_blank"}. This metric allows for a comparison of credit consumption against actual model usage.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -173,19 +173,6 @@ Time selection is available for the past and current period, including the ones 
 <img src="../images/select-and-apply.png" alt="select date" title="select date" style="border: 1px solid gray; zoom:75%;">
 
 The relevant model traces' data is displayed for the selected period.
-
-### Key Considerations and Tips
-
-The date range is automatically selected on the calendar widget once you select the period and displayed at the bottom of the widget.
-<img src="../images/date-range-display.png" alt="date range display" title="date range display" style="border: 1px solid gray; zoom:75%;">
-
-You can select a specific month or year from the relevant dropdown list and switch to different months by clicking the **forward/backward** arrows.
-<img src="../images/calendar-widget.png" alt="calendar widget" title="calendar widget" style="border: 1px solid gray; zoom:75%;">
-
-To set a specific past date as the start date, click on the desired date in the widget.
-
-By default, the current day will be set as the end date. This feature allows you to easily customize the period you want to monitor and analyze model traces.
-<img src="../images/default-calendar-selection.png" alt="default selection" title="default selection" style="border: 1px solid gray; zoom:75%;">
 
 ## Filter Model Traces by Columns
 
@@ -429,7 +416,7 @@ The following model run metadata helps analyze the model’s performance.
 **For Fine-tuned and Open-source Models**
 
 * **Request ID**: Unique identifier for the specific model request.
-* **Base model**: The Inception-hosted or imported model that executes the request.
+* **Base model**: The Platform-hosted or imported model that executes the request.
 * **Deployment name**: The deployment name of the model.
 * **Deployment version**: Version of the model deployed for the run.
 * **Streaming**: Streams the model’s response token by token in real time.
@@ -453,10 +440,11 @@ In addition to the above metadata (excluding *Deployment name* and *Deployment v
 
 **Model Traces** empowers users to identify time-based trends, troubleshoot issues, and make informed decisions by offering detailed and targeted insights into run-based metrics. This capability ensures that organizations uphold high efficiency, reliability, and compliance standards in their model deployments.
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
-* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
-* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
+**Related Resources**
 
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Agent Platform admin features.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - Track activities and events in your account.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"} - Manage resource consumption for tools, set limits, and track usage trends.
