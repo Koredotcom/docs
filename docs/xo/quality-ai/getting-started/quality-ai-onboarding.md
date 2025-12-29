@@ -6,7 +6,6 @@ Quality AI onboarding guides you through the process, from account access to app
 
 After signing up, you select deployment options, configure ingestion sources, and complete the required settings to start scoring and analyzing interactions.
 
-
 ## Before You Start
 
 Make sure you have the following prerequisites:
@@ -51,8 +50,11 @@ Steps to create a Quality AI application via the XO platform:
 1. Sign up for a new account if you don’t have one. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
 <img src="../Onboarding/images/xo-landing-page.png" alt="Landing Page" title="Landing Page" style="border: 1px solid gray; zoom:80%;">
 
-1. After logging into your account, select the **+ New App** from the dropdown at the top of the XO landing page.    
+1. After logging into your account, select the **+ New App** from the dropdown at the top of the XO landing page. Or,   
 <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
+
+1. Select **Create New** to start a new app project using any available AI-powered product. You can add additional products to the app at any time during your application journey.      
+<img src="../Onboarding/images/create-new-app-project.png" alt="Create New App" title="Create New App" style="border: 1px solid gray; zoom:80%;">
 
 1. Select **Quality AI**.   
 <img src="../Onboarding/images/Quality-ai-new-user.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
@@ -79,16 +81,14 @@ This includes multilingual support, with English as the default language.
 
 1. Select agent languages for customer assistance and AI-generated output (Topics, Justifications, QA outcomes).
 
-    !!! note
-
-        Configure an LLM in the GenAI section to enable Quality AI features for non-English languages.
-
 1. Select your preferred language to set it as the default for reports.   
-<img src="../Onboarding/images/choose-langs.png" alt="Preferred Language" title="Preferred Language" style="border: 1px solid gray; zoom:80%;">
+<img src="../Onboarding/images/choose-language.png" alt="Preferred Language" title="Preferred Language" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
-        The system defaults to English and prevents editing or removal of the default language set.
+        * The system uses English by default and does not let you edit or remove the default language.
+
+        * To enable Quality AI features for non-English languages, configure an LLM in the GenAI section.
 
 1. Select **+ Add** to move the selected language into the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
