@@ -73,7 +73,7 @@ Kore’s BYOK solution integrates with external key management systems such as A
 2. Click **Create key** → **Symmetric** → **Encrypt and decrypt**.
 3. Configure key policy to allow administrative access.
 4. Save the **CMK ARN**:
-     arn:aws:kms:&lt;region>:&lt;account-id>:key/&lt;key-id>
+     `arn:aws:kms:<region>:<account-id>:key/<key-id>`
 
 **Use Existing CMK**
 
@@ -181,7 +181,7 @@ aws kms describe-key
 **Option 1: Admin Consent URL**
 
 1. Log in to Azure portal as Global Administrator.
-2. Navigate to the following URL (replace `&lt;YOUR-TENANT-ID>` and `&lt;KORE-CLIENT-ID>`):   
+2. Navigate to the following URL (replace `<YOUR-TENANT-ID>` and `<KORE-CLIENT-ID>`):   
 ```
 https://login.microsoftonline.com/<YOUR-TENANT-ID>/adminconsent?client_id=<KORE-CLIENT-ID
 
@@ -203,7 +203,7 @@ https://login.microsoftonline.com/<YOUR-TENANT-ID>/adminconsent?client_id=<KORE-
     * **Key vault name**: Choose unique name
     * **Region**: Select appropriate region
     * **Pricing tier**: Standard or Premium
-3. Note the Key Vault URI: `https://&lt;vault-name>.vault.azure.net/`
+3. Note the Key Vault URI: `https://<vault-name>.vault.azure.net/`
 
 Create RSA Key (if needed)
 
