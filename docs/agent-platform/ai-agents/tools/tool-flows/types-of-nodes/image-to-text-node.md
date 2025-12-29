@@ -105,7 +105,3 @@ In this document, you will learn how to add the node to your flows, configure it
 !!! Failure "Standard Error"
 
     When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.
-    
-
-
-

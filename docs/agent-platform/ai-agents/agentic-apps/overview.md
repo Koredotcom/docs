@@ -1,4 +1,4 @@
-# About Agentic Apps
+# Agentic Apps
 
 Agentic Apps represent a paradigm shift from rule-based systems to dynamic, autonomous systems. They're intelligent software systems powered by multiple specialized AI agents that collaborate under the coordination of an orchestrator to understand user intent, decompose complex tasks, and deliver automated outcomes. By leveraging large language models (LLMs), Agentic apps can reason, adapt, and act without requiring constant human intervention.
 
@@ -92,9 +92,9 @@ A Banking Assistant built as an Agentic App demonstrates how multiple specialize
 
 This approach ensures an organized, automated, and scalable banking solution.
 
-<hr>
+<hr/> 
 
-### Related Links
+**Related Resources**
 
 * [About AI Agents](../overview.md)
 * [Supervisor Pattern](../supervisor.md)

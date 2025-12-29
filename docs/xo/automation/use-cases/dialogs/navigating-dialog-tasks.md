@@ -25,11 +25,7 @@ Here are a few other ways in which the Dialog Builder can benefit your organizat
 * Encourages innovation through clear, collaborative processes to Design, Build and Train AI-powered Conversational AI Agents.
 
 
-## Explore Dialog Tasks
 
-You can access Dialog Tasks from **Automation AI > USE CASES > Dialogs**.
-
-<img src="../images/navigate-dialog.png" alt="Navigate to Dialogs" title="Navigate to Dialogs" style="border:1px solid gray; zoom:60%;">
 
 
 ## The Dialog Tasks List

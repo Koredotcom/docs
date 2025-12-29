@@ -183,7 +183,7 @@ If your email domain matches an existing Workspace within the Platform, then it 
 
 ### Create Your Workspace
 
-If you are managing a team, as part of your organization’s AI agent development projects, then you may want to create your own Workspace. You can do so by choosing **Create New**, rather than requesting access to an existing Workspace.
+If you are managing a team, as part of your organization’s AI Agent development projects, then you may want to create your own Workspace. You can do so by choosing **Create New**, rather than requesting access to an existing Workspace.
 
 <img src="../images/accplatform(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 

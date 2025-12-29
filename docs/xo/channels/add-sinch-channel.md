@@ -15,7 +15,7 @@ The **Sinch Conversation API** allows developers to create robust omnichannel me
 **Prerequisites**
 
 * Access to the XO Platform App Builder. [Learn more](../getting-started/accessing-the-platform.md){:target="_blank"}.
-* A working AI Agent on the XO Platform to test the channel enablement. [Learn more](../getting-started/building-a-virtual-assistant.md){:target="_blank"}.
+* A working AI Agent on the Platform to test the channel enablement. [Learn more](../getting-started/guided-onboarding.md){:target="_blank"}.
 * Enabling the Sinch Conversation API requires [signing up](https://dashboard.sinch.com/signup){:target="_blank"} on the Sinch developer dashboard.
 
 To set up the channel, you must associate the AI Agent with a Sinch app and set up the required delivery channel. The steps to complete the channel enablement are summarized below:

@@ -34,6 +34,10 @@ Configure the SharePoint connector if you're using SharePoint to manage your con
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr> 
 </table>
 
 

@@ -87,7 +87,7 @@ Perform the following steps in your Confluence server to set up the webhook:
 3. Click Create webhook.  
 4. Enter the details:  Name, URL, Secret
 5. Click Test connection to verify Confluence can reach the endpoint.  
-6. From the Events dropdown, select attachment_created, blog_removed, page_removed, etc  
+6. From the Events dropdown, select blog_removed, page_removed, etc  
 7. Ensure Active is selected, then click Save. 
 
 

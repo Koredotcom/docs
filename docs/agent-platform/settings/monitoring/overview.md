@@ -15,4 +15,3 @@ Monitoring supports the following features:
 3. **Model Analytics Dashboard**: Enables account owners to track the performance of models deployed in their account . [Learn more](./analytics/model-analytics-dashboard.md){:target="_blank"}.
 4. **Model Traces**: Displays run-level performance metrics and metadata for models deployed in your account. [Learn more](./analytics/model-traces.md){:target="_blank"}.
 5. **Custom Scripts**: Enables admins to track the scripts deployed internally and externally on the Agent Platform at the run and logs levels. Default and xxxxlogger-based enhanced logging helps debug and troubleshoot script issues efficiently. [Learn more](./monitoring-custom-scripts.md){:target="_blank"}.
-

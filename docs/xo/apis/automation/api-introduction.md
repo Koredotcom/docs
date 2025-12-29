@@ -199,7 +199,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
   <tr>
    <td>Import Variables
    </td>
-   <td>Assign this scope to import variables of this AI agent using secured APIs.
+   <td>Assign this scope to import variables of this AI Agent using secured APIs.
    </td>
   </tr>
   <tr>
@@ -241,7 +241,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
   <tr>
    <td>Logs History
    </td>
-   <td>To retrieve the change logs for the particular AI agent.
+   <td>To retrieve the change logs for the particular AI Agent.
    </td>
   </tr>
   <tr>
@@ -277,7 +277,7 @@ Steps to associate API Scopes to a Client App from the Admin Console:
   <tr>
    <td>Manage Knowledge Graph
    </td>
-   <td>To export the complete definition of the Knowledge Graph of this AI agent.
+   <td>To export the complete definition of the Knowledge Graph of this AI Agent.
    </td>
   </tr>
   <tr>

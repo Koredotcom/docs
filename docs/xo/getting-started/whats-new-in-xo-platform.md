@@ -185,5 +185,5 @@ The key features and experience changes are summarized below.
 
 <font size="4"> Related Links</font>
 
-* [Key UI Differences - v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
-* [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)
+* [Key UI Differences - v11 vs. v10](key-differences-between-xo11-and-xo10.md)
+* [Migration Path for Existing Customers - Upgrade Journey](migration-path-xo10-to-xo11.md)

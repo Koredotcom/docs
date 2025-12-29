@@ -78,7 +78,7 @@ Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
 This report analyzes agent interactions by summarizing each conversation’s sentiment, duration, and evaluation scores, along with key performance metrics such as total interactions, scorecard results, evaluation and audit scores, failure rates, coaching assignments, and adherence indicators.
 
-| **Conversation ID**                      | **Agent**              | **Language** | **Start Time**         | **End Time**           | **Duration (min)** | **Topic**           | **Sentiment Score** | **Kore Evaluation Score** | **Audit Score** | **Is Passed** | **Escalation** |
+| Conversation ID  |Agent  | Language | Start Time  | End Time  | Duration (min) | Topic  | Sentiment Score | Kore Evaluation Score | Audit Score | Is Passed | Escalation |
 |------------------------------------------|-------------------------|--------------|--------------------------|--------------------------|----------------------|----------------------|------------------------|-----------------------------|------------------|----------------|----------------|
 | c-01ca24e-4b50-4d38-a1d1-ddd0bd371258     | John K StagingXo     | en           | 2025-10-24 21:23:17     | 2025-10-24 21:25:42     | 2.4                  | Flight Booking       | 5.85                   | 78                          | N/A              | 0              | 0              |
 | c-0634784-37ed-4550-bb73-3d0e88ca2a32     | Lily A              | ja           | 2025-11-11 09:36:50     | 2025-11-11 09:38:51     | 2                    | Flight Booking       | 6.91                   | 53                          | N/A              | 1              | 0              |
@@ -101,6 +101,7 @@ Steps to view and download a report:
 ### Report Format
 
 * **Format**: CSV file
+
 * **File Name**: [ReportName]-YYYY-MM-DD-HH-MM-SS.csv  
 <img src="../images/interaction-eva-sample-report.png" alt="Reports Access" title="Reports Access" style="border: 1px solid gray; zoom:100%;">
 

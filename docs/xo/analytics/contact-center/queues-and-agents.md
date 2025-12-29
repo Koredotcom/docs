@@ -4,15 +4,15 @@ The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performan
 
 **To view the Queues & Agents dashboard, follow the steps**:
 
-1. Click **Analytics** on the left navigation pane. The **Analytics** panel is displayed with the list of reports.
+1. Select **Analytics** on the left navigation pane. The **Analytics** panel displays with the list of reports.
 
     <img src="../images/navigating-to-queues-agents-report.png" alt="Navigating to Queues Agents Report" title="Navigating to Queues Agents Report" style="border: 1px solid gray; zoom:80%;">
 
-2. Click **Queues & Agents** under the **Contact Center** section of the **Analytics** panel. The **Queues & Agents** dashboard is displayed on the right side of the page.
+2. Select **Queues & Agents** under the **Contact Center** section of the **Analytics** panel. The **Queues & Agents** dashboard displays on the right side of the page.
 
 ## Time Selection
 
-You can filter Queues & Agents data for a specific time range. You can choose a particular time range and click Apply.
+You can filter Queues & Agents data for a specific time range. You can choose a particular time range and select Apply.
 
 <img src="../images/time-selection.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
@@ -22,79 +22,59 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
 ### Create Filter
 
-1. Click the **Filter** button.
+1. Select **Filter**.
 
-    <img src="../images/create-filter-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
-
-2. Click **New Filter**.
-
-    <img src="../images/create-filter-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
+2. Select **New Filter**.
 
 3. Select the Queues, Channels, Direction, and Agents.
 
     <img src="../images/create-filter-3.png" alt="Create Filters 3" title="Create Filters 3" style="border: 1px solid gray; zoom:80%;">
 
-   Select from the below available options:
+   Select from the following available options:
 
    * Clear: Clears the selection.
    * Save & Apply: Saves the filter, and it appears when selected.
    * Apply: Applied for one instance and not saved.
 
-4. Click **Save & Apply**.
+4. Select **Save & Apply**.
 
-5. On the pop-up window, enter a name for the filter and click **Save & Apply**.
+5. On the pop-up window, enter a name for the filter and select **Save & Apply**.
 
-    <img src="../images/create-filter-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
-
-A confirmation message is displayed, and the filter is created.
+A confirmation message displays, and creates the filter.
 
 ### Edit Filter
 
 Steps to edit a filter:
 
-1. Click the **Filters** tab. The **Saved Filter** name appears.
+1. Select the **Filters** tab. The **Saved Filter** name appears.
 
-    <img src="../images/edit-filters-1.png" alt="Edit Filters 1" title="Edit Filters 1" style="border: 1px solid gray; zoom:80%;">
+2. Select **Edit**.
 
-2. Click the **Edit** button.
+3. Make the necessary changes and select **Save & Apply**.
 
-    <img src="../images/edit-filters-2.png" alt="Edit Filters 2" title="Edit Filters 2" style="border: 1px solid gray; zoom:80%;">
-
-3. Make the necessary changes and click **Save & Apply**.
-
-A confirmation message is displayed, and the filter is updated.
+A confirmation message displays, and updates the filter.
 
 ### Copy Filter
 
-1. Click the **Duplicate** button.
+1. Select **Duplicate**.
 
-    <img src="../images/copy-filters-1.png" alt="Copy Filters 1" title="Copy Filters 1" style="border: 1px solid gray; zoom:80%;">
+2. On the **Rename Filter** window, enter a name for the filter and select **Save**.
 
-2. On the **Rename Filter** window, enter a name for the filter and click **Save**.
-
-    <img src="../images/copy-filters-2.png" alt="Copy Filters 2" title="Copy Filters 2" style="border: 1px solid gray; zoom:80%;">
-
-A confirmation is displayed and a copy of the filter is created.
+A confirmation displays and creates a copy of the filter.
 
 ### Mark as Default
 
-1. Click the **Mark as Default** button.
+1. Select **Mark as Default**.
 
-    <img src="../images/mark-as-default-1.png" alt="Mark as Default 1" title="Mark as Default 1" style="border: 1px solid gray; zoom:80%;">
-
-2. A confirmation message is displayed and the filter is marked as default.
-
-    <img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
+2. A confirmation message displays and marks the filter as default.
 
 ### Delete Filter
 
-1. Click the **Delete** button.
+1. Select **Delete**.
 
-    <img src="../images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:80%;">
+2. A Delete Filter message appears. Select **Delete**.
 
-2. A Delete Filter message appears. Click **Delete**.
-
-A confirmation message is displayed and the filter is deleted.
+A confirmation message displays and deletes the filter.
 
 ## Overview of Incoming Conversations
 
@@ -107,7 +87,7 @@ This section displays the metrics for all conversations (phone, chat, and email)
 * Expired-Count of expired conversations.
 * Closed-Count of closed conversations.
 
-COMPARE: The COMPARE toggle compares all historical metrics over a previous equal-sized time range. For example, if the Average Handle Time is 12m 2s for the last 30 days the previous Average Handle Time was 6m 1s. If you click Compare, an increase of 50% over the last 30 days will be displayed.
+COMPARE: The COMPARE toggle compares all historical metrics over a previous equal-sized time range. For example, if the Average Handle Time is 12m 2s for the last 30 days the previous Average Handle Time was 6m 1s. If you select Compare, an increase of 50% over the last 30 days displays.
 
 Transfer Rate-Percentage of transferred conversations.
 
@@ -129,7 +109,7 @@ The formula for measuring the Abandon Count:
 
 Overdue-This live metric shows the number of conversations in the overdue state. It displays the number based on all the conversations associated with the selected queues and agents.
 
-System Terminations: Count of conversations that were terminated by the System. This metric is shown based on selected queues only. Clicking on the number displays the details of the system terminations.
+System Terminations: Count of conversations terminated by the System. This metric appears based on selected queues only. Clicking on the number displays the details of the system terminations.
 
 <img src="../images/system-terminations.png" alt="System Terminations" title="System Terminations" style="border: 1px solid gray; zoom:80%;">
 
@@ -147,60 +127,46 @@ Resolved Rate-Percentage of resolved conversations.
 
 This section displays individual metrics for all conversations (call, chat, email):
 
-Voice Metrics: The following voice conversation metrics are displayed in this section:
+Voice Metrics: The following voice conversation metrics appear in this section:
 
-* Average Speed to Answer
-* Avg Handle Time
-* Avg Pick-up Time
-* Avg Engagement time
-* Avg Talk Time
-* Avg. Mute/Hold Time
+* Average Speed to Answer  
+* Average Handle Time  
+* Average Pick-up Time  
+* Average Engagement time  
+* Average Talk Time  
+* Average Mute/Hold Time  
 
-   <img src="../images/voice-metrics.png" alt="Voice Metrics" title="Voice Metrics" style="border: 1px solid gray; zoom:80%;">
+Chat Metrics: The following chat conversation metrics appear in this section: 
 
-Chat Metrics: The following chat conversation metrics are displayed in this section: 
+* Average Speed to Answer  
+* Average Handle Time  
+* Average First Response Time  
+* Average Agent Response Time  
+* Average Customer Response Time  
 
-* Average Speed to Answer
-* Avg Handle Time
-* Avg First Response Time
-* Avg. Agent Response Time
-* Avg Customer Response Time
+Transfers: The following transfer metrics appear in this section: 
 
-   <img src="../images/chat-metrics.png" alt="Chat Metrics" title="Chat Metrics" style="border: 1px solid gray; zoom:80%;">
-
-Transfers: The following transfer metrics are displayed in this section: 
-
-* Transfer Rate
-* Transfer Rate
-* Call Transfers
+* Transfer Rate  
+* Transfer Rate  
+* Call Transfers  
 * Chat Transfers
 
-   <img src="../images/transfers.png" alt="Transfers" title="Transfers" style="border: 1px solid gray; zoom:80%;">
+**Skills In Queue**: Displays counts per skill of all conversations in the queue (active or waiting).
 
-Skills In Queue: Displays counts per skill of all conversations in the queue (active or waiting).
-
-   <img src="../images/skills-in-queue.png" alt="Skills in Queue" title="Skills in Queue" style="border: 1px solid gray; zoom:80%;">
-
-Top Skills: Displays the number of conversations per skill for the selected time range.
-
-   <img src="../images/top-skills.png" alt="Top Skills" title="Top Skills" style="border: 1px solid gray; zoom:80%;">
+**Top Skills**: Displays the number of conversations per skill for the selected time range.
 
 Conversations by &lt; List-of-all-Disposition Sets>: Displays the Conversations by &lt;List-of-all-Disposition-Sets> to let users to select a Disposition Set from the list.
 
-   <img src="../images/conversations-by.png" alt="Conversations By" title="Conversations By" style="border: 1px solid gray; zoom:80%;">
-
 * The Resolution Disposition Set is marked as default and appears as the default option in Disposition & Notes on the Live Interactions pane of the Agent Console. For additional information on Disposition Sets, refer to Disposition Sets.
 
-    <img src="../images/resolution-disposition-set.png" alt="Resolution Disposition Set" title="Resolution Disposition Set" style="border: 1px solid gray; zoom:80%;">
-
 * The multi-colored progress bar appears only for the codes in the selected Disposition Set.
-* Separate progress bars appear below each Disposition Code.
+* Separate progress bars appear under each Disposition Code.
 
-Average Satisfaction Rating: Displays the customer satisfaction rating based on the count of survey responses.
+**Average Satisfaction Rating**: Displays the customer satisfaction rating based on the count of survey responses.
 
    <img src="../images/average-satisfaction-rating.png" alt="Average Satisfaction Rating" title="Average Satisfaction Rating" style="border: 1px solid gray; zoom:80%;">
 
-Customer Satisfaction by Channel: This section displays channel-wise customer satisfaction metrics based on survey responses.
+**Customer Satisfaction by Channel**: This section displays channel-wise customer satisfaction metrics based on survey responses.
 
    <img src="../images/customer-satisfaction-by-channel.png" alt="Customer Satisfaction by Channel" title="Customer Satisfaction by Channel" style="border: 1px solid gray; zoom:80%;">
 
@@ -236,7 +202,7 @@ This section displays agent performance metrics for all conversations (call, cha
   <tr>
    <td>Unanswered
    </td>
-   <td>Number of conversations that are assigned but not answered by the agent.
+   <td>Number of conversations assigned but not answered by the agent.
    </td>
    <td>NA
    </td>
@@ -308,15 +274,15 @@ This section displays queue performance metrics for all conversations (call, cha
    </td>
    <td>Incoming = InQueue + Active + Idle + Expired + Completed + Transferred Out (The Q&A dashboard shows all transferred, even those back to the same queue).
 
-Completed = AbandonedInQueue + SystemTerminated + All-Conversations-With-Resolutions.
+   Completed = AbandonedInQueue + SystemTerminated + All-Conversations-With-Resolutions.
 
-**Note**: This formula is applicable when a call doesn't return to the same queue multiple times. If it does, it will be counted multiple times and doesn't add up correctly.
+   **Note**: This formula is applicable when a call doesn't return to the same queue multiple times. If it does, it gets counted multiple times and doesn't add up correctly.
 
-**Question**. Does the Incoming count include Inbound and Outbound calls?<br>
-**Answer**: Yes, if the conversations (calls/chats) entered that queue.
+   **Question**. Does the Incoming count include Inbound and Outbound calls?<br>
+   **Answer**: Yes, if the conversations (calls/chats) entered that queue.
 
-**Question**. Is the Incoming call count taken from the queue?<br>
-**Answer**: Yes. However, for `No-Filters`, the incoming call count includes conversations directly transferred from the AI Agents to the Agent, without entering a queue.
+   **Question**. Is the Incoming call count taken from the queue?<br>
+   **Answer**: Yes. However, for `No-Filters`, the incoming call count includes conversations directly transferred from the AI Agents to the Agent, without entering a queue.
    </td>
   </tr>
   <tr>

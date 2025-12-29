@@ -310,7 +310,7 @@ python run.py -c prod test --app <appId> --env prod
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Custom Orchestration](../guide/orchestration.md)
 - [Creating Agents](../guide/creating-agents.md)

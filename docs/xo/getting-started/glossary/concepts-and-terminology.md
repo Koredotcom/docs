@@ -195,7 +195,7 @@ Count: Two
 
 ## F
 
-**Facebook Messenger** – A [supported channel](https://kore.ai/bots-platform/channels/) for agents built on Kore.ai’s XO Platform, primarily used when companies build bots for end customers.
+**Facebook Messenger** – A supported channel for agents built on Kore.ai’s XO Platform, primarily used when companies build bots for end customers.
 
 **FAQ** – One of the primary data source agents use, along with the Knowledge Graph, to pull information to complete knowledge tasks. 
 
@@ -292,7 +292,7 @@ Count: Two
 
 **Knowledge task** / **Knowledge Graph** – Knowledge tasks take user questions and query a predefined set of information to rapidly find the right answers, such as business hours of operation or specific policy questions.
 
-**Kore.ai** – Kore.ai is a software development company, founded in 2014 in Orlando, FL to help enterprises build and use conversational, agents for a variety of use cases. Learn more about [Kore.ai](https://kore.ai/about-kore/).
+**Kore.ai** – Kore.ai is a software development company, founded in 2014 in Orlando, FL to help enterprises build and use conversational, agents for a variety of use cases. Learn more about [Kore.ai](https://www.kore.ai/about-us).
 
 		
 

@@ -89,4 +89,3 @@ Selecting a specific deployment on the Deployment page opens its detail view, wh
 - **[Configurations](./configure-your-fine-tuned-model.md)** – Edit the description and tags, or undeploy/delete the model.
 
 <img src="../images/fine_tuned_deployment_detailed.png" alt="Fine-tune deployments" title="Fine-tune deployments" style="border: 1px solid gray; zoom:80%;">
-

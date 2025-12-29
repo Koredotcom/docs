@@ -305,13 +305,13 @@ or userInfo.orgUserId
    </td>
    <td>Optional
    </td>
-   <td>array of AI agents that have to be assigned to the user. If not present, the current assignment will be retained.
+   <td>array of AI Agents that have to be assigned to the user. If not present, the current assignment will be retained.
 
 <table>
   <tr>
    <td>botId
    </td>
-   <td>Unique Id of the AI Agent to be assigned to the user. If not given, all the previous assigned AI agents will be unassigned. That is, an entry for “assignBotTasks” without “botId” entry can be used to unassign the Bot tasks to the user.
+   <td>Unique Id of the AI Agent to be assigned to the user. If not given, all the previous assigned AI Agents will be unassigned. That is, an entry for “assignBotTasks” without “botId” entry can be used to unassign the Bot tasks to the user.
    </td>
   </tr>
   <tr>
@@ -332,7 +332,7 @@ or userInfo.orgUserId
    <td>Optional
 
    </td>
-   <td>Determines if the specified users can create AI agents in their App Builder accounts. Set to true or false.
+   <td>Determines if the specified users can create AI Agents in their App Builder accounts. Set to true or false.
 
 Default value is _“true”._
 

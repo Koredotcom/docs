@@ -120,8 +120,8 @@ These values are found in the **Agent AI** > **Flows & Channels** > **Channels**
 |----------------------|-----------------------------------------|
 | **Field Label**          | **Default Value**                           |
 | AgentAssist URL      | <a href="#AAI">Agent AI URL</a>                            |
-| Bot Id               | st-8cb94691-xxxx-xxxx-xxxx-xxxxxxxx     |
-| Client Id            | cs-b60f544d-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
+| Bot Id               | `st-8cb94691-xxxx-xxxx-xxxx-xxxxxxxx`     |
+| Client Id            | `cs-b60f544d-xxxx-xxxx-xxxx-xxxxxxxxxxxx` |
 | Client Secret        | &lt;secret-key from AgentAssist>        |
 | is Audiohook Enabled | true / false                            | 
 

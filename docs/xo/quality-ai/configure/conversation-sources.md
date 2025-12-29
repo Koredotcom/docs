@@ -1,6 +1,6 @@
 # Conversation Sources
 
-The Conversation Sources enables Quality AI to ingest voice and chat data from CCAI, Agent AI, and Express within a single app. It allows organizations to collect, process, and analyze conversational data from multiple platforms in a unified quality ai framework. This streamlined approach supports key metadata for accurate analysis and simplifies management across diverse systems.
+The Conversation Sources enables Quality AI to ingest voice and chat data from Contact Center AI (CCAI), Agent AI, and Express within a single app. It enables organizations to collect, process, and analyze conversational data from multiple platforms in a unified quality AI framework. This streamlined approach supports key metadata for accurate analysis and simplifies management across diverse systems.
 
 ## Access Conversation Sources
 
@@ -39,7 +39,7 @@ This source supports human-agent interactions augmented by AI augmentation capab
 
     * Agent Queues
 
-    * Agent QueueID 
+    * Agent `QueueID` 
 
 * **Use Case**: Organizations with human agents supported by AI assistance.
 
@@ -55,7 +55,7 @@ This source lets you import interactions or data (such as service records, chat 
 
 File-based conversation ingestion system designed for third-party contact center platforms.
 
-* **Integration Method**: AWS S3 Connectors
+* **Integration Method**: Amazon Web Services (AWS) S3 Connectors
 
 * **Data Processing**: Batch file processing
 
@@ -63,7 +63,7 @@ File-based conversation ingestion system designed for third-party contact center
 
     * Agent Queues
 
-    * Agent QueueID
+    * Agent `QueueID`
 
 * **Supported Data Types**:
 
@@ -77,7 +77,7 @@ File-based conversation ingestion system designed for third-party contact center
 
     * Structured metadata files 
 
-* **Use Case**: For organizations using third-party CCaaS platforms with minimal infrastructure changes.
+* **Use Case**: For organizations using third-party Contact Center as a Service (CCaaS) platforms with minimal infrastructure changes.
 
     !!! note
 
@@ -144,10 +144,37 @@ For Agent AI and Quality AI Express sources:
 
 * View-only interface (non-editable)
 
-* Cannot save configurations
+* Can't save configurations
 
 **Agent-Level Access**:
 
 * Toggle source enable/disable
 
-* Cannot save settings
+* Can't save settings
+
+When you disable **Conversation Sources** > **Quality AI Express**, the system hides the following CCAI feature metrics:
+
+* Compare functionality
+
+* Contact Center Efficiency
+
+* Agent Efficacy
+
+    * CSAT
+
+* Agent Performance Monitor
+
+    * Agent Occupancy
+
+    * Playbook Adherence
+
+* Customer Experience
+
+    * Average Wait Time
+
+    * NPS Score
+
+* Interaction Details
+
+    * Dispositions
+
