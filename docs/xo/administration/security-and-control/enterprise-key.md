@@ -128,8 +128,8 @@ Select the existing CMK in the console and copy its ARN.
         "kms:ReEncrypt*",
         "kms:GenerateDataKey*",
         "kms:DescribeKey"
-                ],
-                "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
+        ],
+        "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
       }
     ]
   }
