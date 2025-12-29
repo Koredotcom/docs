@@ -116,9 +116,8 @@ Select the existing CMK in the console and copy its ARN.
 1. Navigate to IAM > Policies > Create policy.
 2. Select JSON tab.
 3. Enter the following policy:
-
 ```
- {
+  {
     "Version": "2012-10-17",
     "Statement": [
      { "Sid": "AllowKMSOperations",
@@ -134,10 +133,10 @@ Select the existing CMK in the console and copy its ARN.
       }
     ]
   }
+  
 ```
-
-3. Name the policy (for example, `KoreByokKmsPolicy`)  
-4. Create the policy and attach it to your IAM role.
+4. Name the policy (for example, `KoreByokKmsPolicy`)  
+5. Create the policy and attach it to your IAM role.
 
 **Step 4: Update CMK Key Policy**
 
@@ -182,12 +181,11 @@ aws kms describe-key
 **Option 1: Admin Consent URL**
 
 1. Log in to Azure portal as Global Administrator.
-2. Navigate to the following URL (replace `&lt;YOUR-TENANT-ID>` and `&lt;KORE-CLIENT-ID>`):
+2. Navigate to the following URL (replace `&lt;YOUR-TENANT-ID>` and `&lt;KORE-CLIENT-ID>`):   
+```
+https://login.microsoftonline.com/<YOUR-TENANT-ID>/adminconsent?client_id=<KORE-CLIENT-ID
 
-    ```
-         https://login.microsoftonline.com/<YOUR-TENANT-ID>/adminconsent?client_id=<KORE-CLIENT-ID
-
-    ```
+```
 
 3. Review permissions and grant admin consent.
 
@@ -242,7 +240,7 @@ Assign Key Vault Permissions
 1. On the Admin Console, navigate to the **Enterprise Key** menu.
 2. Click **Create Key** under the **Bring Your Own Key** section. 
 
-<img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>
 
 **2. Configure Cloud Provider Details**
 
@@ -269,7 +267,7 @@ Assign Key Vault Permissions
 
 1. On the next screen, you will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.  
     
-    <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
+    <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>
 
 2. Review the list of all applications and bots in your workspace.
     * By default, all items are selected for CMK encryption.
@@ -284,6 +282,6 @@ Assign Key Vault Permissions
 
 **Related Links**
 
-* AWS KMS Developer Guide:[ https://docs.aws.amazon.com/kms/](https://docs.aws.amazon.com/kms/){:target="_blank"}
-* Azure Key Vault Documentation:[ Azure Key Vault documentation](https://docs.microsoft.com/en-us/azure/key-vault/){:target="_blank"}
+* [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/){:target="_blank"}
+* [Azure Key Vault documentation](https://docs.microsoft.com/en-us/azure/key-vault/){:target="_blank"}
 
