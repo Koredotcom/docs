@@ -117,26 +117,24 @@ Select the existing CMK in the console and copy its ARN.
 2. Select JSON tab.
 3. Enter the following policy:
 
-
-            ```
-            {
-            "Version": "2012-10-17",
-            "Statement": [
-            { "Sid": "AllowKMSOperations",
-                "Effect": "Allow"
-                "Action": [
-                "kms:Encrypt",
-                "kms:Decrypt",
-                "kms:ReEncrypt*",
-                "kms:GenerateDataKey*",
-                "kms:DescribeKey"
+```
+ {
+    "Version": "2012-10-17",
+    "Statement": [
+     { "Sid": "AllowKMSOperations",
+        "Effect": "Allow"
+        "Action":[
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:DescribeKey"
                 ],
                 "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
-            }
-            ]
-            }
-
-            ```
+      }
+    ]
+  }
+```
 
 3. Name the policy (for example, `KoreByokKmsPolicy`)  
 4. Create the policy and attach it to your IAM role.
