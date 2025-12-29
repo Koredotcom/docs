@@ -116,9 +116,8 @@ Select the existing CMK in the console and copy its ARN.
 1. Navigate to IAM > Policies > Create policy.
 2. Select JSON tab.
 3. Enter the following policy:
-
 ```
- {
+  {
     "Version": "2012-10-17",
     "Statement": [
      { "Sid": "AllowKMSOperations",
@@ -134,10 +133,10 @@ Select the existing CMK in the console and copy its ARN.
       }
     ]
   }
+  
 ```
-
-3. Name the policy (for example, `KoreByokKmsPolicy`)  
-4. Create the policy and attach it to your IAM role.
+4. Name the policy (for example, `KoreByokKmsPolicy`)  
+5. Create the policy and attach it to your IAM role.
 
 **Step 4: Update CMK Key Policy**
 
@@ -284,6 +283,6 @@ Assign Key Vault Permissions
 
 **Related Links**
 
-* AWS KMS Developer Guide:[ https://docs.aws.amazon.com/kms/](https://docs.aws.amazon.com/kms/){:target="_blank"}
-* Azure Key Vault Documentation:[ Azure Key Vault documentation](https://docs.microsoft.com/en-us/azure/key-vault/){:target="_blank"}
+* [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/){:target="_blank"}
+* [Azure Key Vault documentation](https://docs.microsoft.com/en-us/azure/key-vault/){:target="_blank"}
 
