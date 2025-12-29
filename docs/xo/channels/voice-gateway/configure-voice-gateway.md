@@ -525,7 +525,7 @@ Steps to configure a Multilingual App:
 
 **Step 1: Add Languages to Your Platform**
 
-Before you can use a language in an APP, you need to enable it on the platform.
+Before you can use a language in an App, you need to enable it on the platform.
 
 1. Log to AI for Service and select the **Product Switcher**.
 2. Go to **Settings** > **Language Management**.
