@@ -60,7 +60,7 @@ Platform supports a range of models from leading providers, each offering differ
 <p>
 Gemini 2.5 Flash Lite, Gemini 2.0 Flash, Gemini 2.0 Flash Lite
    </td>
-   <td>Google Vertex AI integration
+   <td>Google Vertex AI integration, Gemini Studio
    </td>
    <td>Multi-modal tasks, fast response times, and Google Cloud-based deployments
    </td>
@@ -126,7 +126,7 @@ Pre-built integrations offer the fastest path to leveraging leading AI models wi
 
 **Google Gemini**:
 
-* Access Google Cloud Console and enable Vertex AI API.
+* Access Google Cloud Console and enable Vertex AI API, or use Gemini Studio.
 * Create a service account with appropriate permissions.
 * Generate and download the API credentials.
 * Ensure selected models are enabled in Google Model Garden.
