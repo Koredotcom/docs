@@ -128,6 +128,12 @@ The main interface displays all enabled conversation sources and their respectiv
 
 * **Add Queue**: Select Add Queue to add new queues with agent mapping.
 
+    !!! note
+
+        When you enable **Quality AI Express** in **Conversation Sources**, the system displays **Connectors** in the left navigation menu of Quality AI.
+
+        <img src="../configure/conversation-sources/connectors.png" alt="Connectors" title="Connectors" style="border: 1px solid gray; zoom:80%;">
+
 #### Chat Script Timestamp Format
 
 Chat Script Timestamp Format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. The script contain multiple timestamp entries for each message exchange. Proper timestamp configuration ensures accurate conversation sequencing, duration calculations, and time-based analytics.
