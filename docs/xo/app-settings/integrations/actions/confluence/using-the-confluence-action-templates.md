@@ -45,7 +45,7 @@ Steps to create content using the Confluence integration:
 
     1. **createContent**: A user intent to create content in the Confluence space.
     2. **contentType**, **spaceKey,** **contentTitle**, and **contentBody** – Entity nodes for entering the required details to create content.
-    3. **getResourceIdService** – A bot action service to fetch the resource ID from the Confluence integration. Click the **Plus** icon to expand to view the getResouceIdService bot action component properties. In the **Component Properties** window, click the **Edit Request** link to edit the request parameters as shown below:  
+    3. **getResourceIdService** – A bot action service to fetch the resource ID from the Confluence integration. Click the **Plus** icon to expand to view the getResourceIdService bot action component properties. In the **Component Properties** window, click the **Edit Request** link to edit the request parameters as shown below:  
     <img src="../images/confluence-tem-img5.png" alt="Request" title="Request" style="border: 1px solid gray;zoom:50%;"/>
 
         **Sample Request**

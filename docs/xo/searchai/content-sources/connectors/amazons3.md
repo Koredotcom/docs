@@ -59,6 +59,7 @@ Ensure that the IAM user generating the access credentials has the following per
       "Resource": "arn:aws:s3:::your-bucket-name/*"
     }
 ```
+
 ## Generate Access Key 
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/). 

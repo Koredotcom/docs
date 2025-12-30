@@ -50,6 +50,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 ## Path Parameters
+
 <table>
   <tr>
    <td><strong>PARAMETER</strong>

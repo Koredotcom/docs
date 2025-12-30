@@ -33,10 +33,10 @@ The orchestrator is a critical component that manages the overall multi-agent sy
 * Detects and handles errors and failures.
 * Supports scalability by allowing new agents to be seamlessly added without disrupting existing workflows.
 
-<hr>
+<hr/> 
 
-#### Related Links
+**Related Resources**
 
 * [Create your first Agentic App](./../ai-agents/agentic-apps/create-app.md)
 * [Set up AI Agents](./../ai-agents/create-agent.md)
-* [Configure Tools for Agents](./../ai-agents/tools/overview.md) 
+* [Configure Tools for Agents](./../ai-agents/tools/overview.md)

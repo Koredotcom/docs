@@ -2,6 +2,63 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
 
+## v1.13.0 Dec 16, 2025
+
+<u>Major Release</u>
+
+This update includes new features and feature enhancements summarized below.
+
+</font></p><font size="4">New Feature</font>
+
+**Slack Integration**
+
+AI for Work now supports native Slack integration, allowing you to bring AI capabilities directly into your team's communication workflows. Configure agents to respond in Slack channels, provide intelligent assistance, and streamline collaboration without leaving your Slack workspace.
+
+[Learn more :octicons-arrow-right-24:](../channels/slack-overview.md)
+
+**MCP Server Integration**
+
+AI for Work now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the Agent platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
+
+MCP Server integration provides enhanced connectivity and extensibility, enabling advanced AI orchestration and interoperability with external systems.
+
+[Learn more :octicons-arrow-right-24:](../assist-configuration/mcp-server.md)
+
+**Work - Agentic Search**
+
+Introducing Work, an intelligent search capability that leverages AI agents to deliver more contextual and actionable search results. This feature enhances the Work Orchestrator experience by enabling agents to understand search intent, reason through complex queries, and provide comprehensive answers with proper source attribution.
+
+To enable Work - Agentic Search, create an agentic app from the base template and link it with AI for Work. This configuration unlocks powerful AI-driven search capabilities across your organization.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/work-agent.md)
+
+**Schedule Trigger**
+
+Automate your workflows with Schedule Trigger, a powerful new capability that enables agents to execute tasks on predefined schedules. Configure agents to run at specific times or intervals, ensuring critical operations happen automatically without manual intervention.
+
+This feature is ideal for recurring tasks such as generating reports, sending notifications, syncing data, and performing routine maintenance operations.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/schedule-trigger.md)
+
+<font size="4">Feature Enhancement</font>
+
+**Agent Publishing Defaults**
+
+Agent publishing is streamlined with improved default settings. When publishing an agent, the enablement type now defaults to "Enabled by Default," reducing configuration steps and accelerating deployment workflows.
+
+**Persistent Compose Bar Agents and Attachments**
+
+Agents and attachments added to the compose bar now remain visible until manually removed by the user. This enhancement provides better control over your conversation context and prevents accidental removal of important references during interactions.
+
+**HubSpot Integration Optimization in Work - Agentic Search**
+
+The HubSpot connector in Work - Agentic Search is optimized for improved query performance. The integration now utilizes API-based agents that excel at aggregation and lookup queries, ensuring faster and more reliable data retrieval from your HubSpot instance. 
+
+!!!note
+     Semantic search and advanced reasoning queries are not currently supported for HubSpot integration. We recommend using dedicated search connectors for these query types. Support for semantic search and advanced reasoning in HubSpot integration is coming soon.
+
+<hr>
+
 ## v1.12.0 Nov 13, 2025
 
 <u>Major Release</u>
@@ -91,6 +148,7 @@ Enhanced Personal Workspace support agent sharing across all published users. Sh
 
 <hr>
 
+
 ## v1.10.0 Sept 8, 2025
 
 <u>Major Release</u>
@@ -105,7 +163,7 @@ AI for Work integrates natively with Microsoft Teams through the Azure Bot Servi
 
 The system generates custom Microsoft Teams app manifests with organizational branding options (custom name, logo, description) and supports multiple deployment strategies, including organization-wide rollout, selective user groups, or self-service installation.
 
-[Learn more :octicons-arrow-right-24:](../channels/ms-teams/microsoft-teams.md)
+[Learn more :octicons-arrow-right-24:](../channels/microsoft-teams.md)
 
 **Amazon Q Integration with AI for Work**
 
@@ -127,7 +185,7 @@ The **Admin Hub** now includes a new **Announcements** capability under **Assist
 
 Announcement banners now support rich content (up to 800 characters with formatting and links), flexible targeting for publishing, dynamic display with rotation and temporary dismissal options, and efficient management features like auto-save and chronological listing.
 
-[Learn more :octicons-arrow-right-24:](../assistant-configuration/announcements.md)
+[Learn more :octicons-arrow-right-24:](../assist-configuration/announcements.md)
 
 **Enterprise Encryption**
 
@@ -234,7 +292,7 @@ Key benefits
 * Maintain brand safety and policy compliance through customizable topic restrictions.
 * Validate configurations before deployment with comprehensive testing tools.
 
-[Learn more :octicons-arrow-right-24:](../assistant-configuration/guardrails.md)
+[Learn more :octicons-arrow-right-24:](../assist-configuration/guardrails.md)
 
 **AI Query Pipeline Orchestration**
 
@@ -247,7 +305,7 @@ Key benefits
 * Adapt AI behavior to specific use cases and organizational requirements.
 * Unified management interface with intelligent component synchronization.
 
-[Learn more :octicons-arrow-right-24:](../assistant-configuration/orchestration-settings.md)
+[Learn more :octicons-arrow-right-24:](../assist-configuration/orchestration-settings.md)
 
 <font size="4">Feature Enhancements</font>
 
@@ -502,7 +560,7 @@ Key Benefits:
 * Timezone Optimization: Resolved timezone inconsistencies in logs. The system now properly displays logs based on your local system time, ensuring accurate and relevant time-based analytics.
 
 * Template Rendering Fix:  Fixed an issue where bot templates used to render duplicates when selected or clicked. The fix results in a cleaner and more predictable user interface.
-  
+
 <hr>
 
 ## v1.7.0 February 14, 2025

@@ -100,7 +100,7 @@ Following are the options under **Allow interruptions**.
  <tr bgcolor="#FAFAFA">
    <td><strong>Discard the current task and switch to new</strong>
    </td>
-   <td>When you select this option, the AI Agent discards the current task and switches to a new task soon after it encounters another intent. The AI Agent sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
+   <td>When you select this option, the AI Agent discards the current task and switches to a new task soon after it encounters another intent. The AI Agent sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the available responses, click <b>+ Add Response</b> to add a custom response text.</td>
   </tr>
   <tr>
    <td><strong>Switch to a new task without any notification to the user and discard the current task</strong>
@@ -111,7 +111,7 @@ Following are the options under **Allow interruptions**.
   <tr bgcolor="#FAFAFA">
    <td><strong>Continue the current task and add new task to the follow-up task list.</strong>
    </td>
-   <td>When you select this option, the AI Agent continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
+   <td>When you select this option, the AI Agent continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the available responses, click <b>+ Add Response</b> to add a custom response text.</td>
   </tr>
 </table>
 

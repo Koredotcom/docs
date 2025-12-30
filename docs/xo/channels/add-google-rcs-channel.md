@@ -106,24 +106,19 @@ The webhook URL provided by you at Step 1 will receive the following events so t
     `{"event":"BROADCAST_ATTEMPT_TO_OPTED_OUT_USER", \
     "userIdentity":"&lt;Mobile number with country code>"}`
     ```
+
 **Important**
 
 *  Publishing the channel will allow test numbers to talk to the assistant. The channel still needs to be launched for access by users.
-
 * The RCS Business Messaging OptOut event will be invoked when the user sends the message "OPT-OUT" to the bot agent (see below for details).
 * The platform will notify the business that the user has Opted out of receiving messages through the webhook URL. The URL is captured in Step 1.
 * Any request to send messages to the users that have opted-out will be rejected.
 * After having opted out, if the user continues conversing with the bot agent (without explicitly opting in again) standard message will be triggered. The message can be managed from the Events section in the XO Platform.
 
 
-
-
-
 ## Launch the Bot Agent
 
 After having verified your bot agent, you can launch for end users by following the steps below:
-
-
 
 1. On the XO Platform, from the **Channels & Flows** > **Channels** > **Digital** > **All** > open the **RCS Business Messaging** page.
 2. Navigate to **Configurations** tab.
@@ -134,6 +129,6 @@ After having verified your bot agent, you can launch for end users by following 
 7. Once Google RCS Business Messaging team reviews the Bot Agent and approves, you will receive a confirmation email from Kore.ai support team.
 8. Your AI Agent’s users can now start using the RCS Messaging by opting for the same.
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about [Publishing your App](../deploy/publishing-bot.md).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

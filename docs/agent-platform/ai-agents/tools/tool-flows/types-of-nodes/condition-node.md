@@ -79,4 +79,3 @@ In this document, you will learn how to set up a Condition Node in a tool flow, 
 !!! failure "Standard Error"
 
     If a condition is true or false but has no connected node, the following error message is displayed: "Path not defined. Please check the flow."
-

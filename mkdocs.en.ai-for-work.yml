@@ -45,6 +45,16 @@ plugins:
       redirect_maps:
         'getting-started/quick-start-guide.md': 'getting-started/setup-guide.md'
         'user-management/managing your users.md': 'user-management/managing-your-users.md'
+        'security/sso.md': 'security/sso-overview.md'
+        'APIs/audit-log-api.md': 'audit-log/audit-log-api.md'
+        'custom-agents/default-rag.md': 'custom-agents/enterprise-knowledge.md'
+        'assistant-configuration/email-template.md': 'assist-configuration/email-template.md'
+        'assistant-configuration/rate-limit.md': 'assist-configuration/rate-limit.md'
+        'assistant-configuration/guardrails.md': 'assist-configuration/guardrails.md'
+        'assistant-configuration/orchestration-settings.md': 'assist-configuration/orchestration-settings.md'
+        'assistant-configuration/mcp-server.md': 'assist-configuration/mcp-server.md'
+        'channels/ms-teams/microsoft-teams-config.md': 'channels/microsoft-teams-config.md'
+        'channels/ms-teams/microsoft-teams.md': 'channels/microsoft-teams.md'
 extra:
   version:
     provider: mike
@@ -118,8 +128,10 @@ nav:
     - Introduction to AI for Work: getting-started/introduction.md
     - Accessing AI for Work: getting-started/accessing-ai-for-work.md
     - Setup Guide: getting-started/setup-guide.md 
-    - Using AI for Work Assistant: getting-started/how-to-use.md
     - Marketplace: getting-started/marketplace.md
+    - Using AI for Work Assistant: 
+      - How to Use: getting-started/how-to-use.md
+      - Schedule Agents: getting-started/schedule-agents.md
     - Release Notes:
       - Release Updates: release-notes/release-updates.md
   - Custom Agents:
@@ -129,6 +141,7 @@ nav:
       - Connect Search AI: custom-agents/connect-search-ai.md
       - Connect Agentic App: custom-agents/connect-agentic-app.md
       - Connect Amazon Q: custom-agents/connect-amazon-q.md
+      - Work - Agentic Search: custom-agents/work-agent.md
     - AI Agents: 
       - Prompt Agents: custom-agents/prompt-agents.md 
       - API Agents: custom-agents/api-agents.md 
@@ -137,7 +150,10 @@ nav:
       - Autonomous Agents: custom-agents/autonomous-agent.md      
     - Other Agents: 
       - Bot Agents: custom-agents/bot-agents.md
-      - Workflow Agents: custom-agents/workflow-agents.md 
+      - Workflow Agents: custom-agents/workflow-agents.md
+    - MCP:
+      - MCP Agents: custom-agents/mcp-agents.md   
+      - MCP Connections: custom-agents/mcp-connections.md
     - Agent Management:
       - Agent Options: custom-agents/agent-options.md
       - Agent Testing: custom-agents/agent-testing.md
@@ -145,6 +161,7 @@ nav:
       - Agent Version: custom-agents/agent-version.md
       - Alert Task: custom-agents/alert-task.md
       - Notify API: custom-agents/notify-api.md
+      - Schedule Trigger: custom-agents/schedule-trigger.md
   - Pre-built Agents:
     - About Pre-built Agents: pre-built-agents/overview.md
   - Pre-built Solutions:
@@ -159,29 +176,34 @@ nav:
     - Admin Console Overview: Administration/overview.md
     - Workspace: Administration/workspace.md
     - Account Hub: Administration/account-hub.md
-    - Workspace Management:
-      - Account Workspace: workspace-management/account-workspace.md
-      - Personal Workspace: workspace-management/personal-workspace.md
-    - Integration:
-      - Amazon Q: integration/amazon-q.md
+    - Assist Configuration:
+      - Announcements: assist-configuration/announcements.md
+      - Channels:
+        - Microsoft Teams: 
+          - Overview: channels/microsoft-teams.md
+          - Configuration: channels/microsoft-teams-config.md
+        - Slack: 
+          - Overview: channels/slack-overview.md
+          - Configuration: channels/slack-configuration.md
+      - Email Template: assist-configuration/email-template.md
+      - Guardrails: assist-configuration/guardrails.md
+      - MCP Server: assist-configuration/mcp-server.md
+      - Orchestration Settings: assist-configuration/orchestration-settings.md
+      - Rate Limit: assist-configuration/rate-limit.md
+      - Scheduler Settings: assist-configuration/scheduler-settings.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
       - Enterprise Directory: user-management/enterprise-directory.md
+    - Workspace Management:
+      - Account Workspace: workspace-management/account-workspace.md
+      - Personal Workspace: workspace-management/personal-workspace.md
+    - Integration:
+      - Amazon Q: integration/amazon-q.md
     - LLM Configuration:
       - General Purpose: llm-configuration/general-purpose.md
       - Business Rules: llm-configuration/business-rules.md
-    - Assist Configuration:
-      - Email Template: assistant-configuration/email-template.md
-      - Rate Limit: assistant-configuration/rate-limit.md
-      - Guardrails: assistant-configuration/guardrails.md
-      - Orchestration Settings: assistant-configuration/orchestration-settings.md
-      - Channels:
-        - Microsoft Teams: 
-          - Overview: channels/ms-teams/microsoft-teams.md
-          - Configuration: channels/ms-teams/microsoft-teams-config.md
-      - Announcements: assistant-configuration/announcements.md
     - Security: 
       - SSO: 
         - Overview: security/sso-overview.md
@@ -189,7 +211,10 @@ nav:
         - SAML: security/saml.md
         - WSFC: security/wsfc.md  
       - Domain Management: security/domain-management.md
-      - Service Accounts: security/service-accounts.md
+      - Service Accounts: 
+        - Overview: security/service-accounts.md
+        - Google: security/google-cloud-service-accounts.md
+        - MS Azure: security/azure-service-accounts.md
       - Data Settings: security/data-settings.md
       - Enterprise Encryption: 
         - Setup: security/enterprise-encryption.md

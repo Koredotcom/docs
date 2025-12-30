@@ -1,3 +1,5 @@
+# Agent AI VOice Integration with CX Cloud From Genesys and Salesforce
+
 [CX Cloud from Genesys and Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=7f59a36f-86c0-4cac-b8af-2c1722ede4d1&channel=recommended){:target="_blank"} is a unified AI-powered customer experience and relationship management solution that integrates Genesys Cloud CX and Salesforce Service Cloud. It allows you to connect Genesys Cloud as a contact center in Service Cloud.
 
 Kore Agent AI leverages Kore.ai’s Platform capabilities along with generative AI and LLMs to enhance agent productivity and elevate customer satisfaction. It uses features like real-time coaching, and seamless integration with popular CCaaS software and offers automated task streamlining, smart replies, sentiment tracking, automated guidance, summarized conversations, and deep integration with enterprise systems. To ensure consistency and accuracy, it has features like the Playbooks and Kore.ai’s advanced information retrieval system.
@@ -13,7 +15,7 @@ Before integrating Agent AI with Salesforce Genesys CTI, the following prerequis
     * Install [CX Cloud from Genesys and Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=7f59a36f-86c0-4cac-b8af-2c1722ede4d1){:target="_blank"} package.
     * Install [Kore Agent AI Salesforce](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000HSGlnUAH){:target="_blank"} package.
 * In Genesys
-    * Install [Genesys AudioHook](https://appfoundry.genesys.com/filter/genesyscloud/listing/a3ff6a99-d866-4734-ab7a-16cff2e4308c){:target="_blank"} from Appfoundry.
+    * Install [Genesys AudioHook](https://appfoundry.genesys.com/filter/genesyscloud/listing/a3ff6a99-d866-4734-ab7a-16cff2e4308c){:target="_blank"} from AppFoundry.
 * Browser Compatibility Check
     * Supports Chrome
 
@@ -131,14 +133,15 @@ This section explains the post-installation steps of Agent AI integration with S
 <img src="../images/kore-agent-assist-feature-configuration-15.png" alt="kore-agent-assist-feature-configuration" title="kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;"> 
 3. Click the **New** button on the top-right, and select the features in the package you want to use. 
 
-* **Configuration Name**: Provide a name for the configuration you are creating.
-* **CTI Provider**: Skip this field.
-* **Salesforce OmniChannel Solution**: “Chat and Voice” or “Voice” (based on your license).
-* **Active**: Only one feature configuration will be active, and the active configuration will be considered at runtime.
+   * **Configuration Name**: Provide a name for the configuration you are creating.
+   * **CTI Provider**: Skip this field.
+   * **Salesforce OmniChannel Solution**: “Chat and Voice” or “Voice” (based on your license).
+   * **Active**: Only one feature configuration will be active, and the active configuration will be considered at runtime.
+
 4. Click **Save**.  
 <img src="../images/save-kore-agent-assist-feature-configuration-16.png" alt="save-kore-agent-assist-feature-configuration" title="save-kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;">  
 
-5. Click the **Edit** button, if you want to edit the existing feature configurations.  
+1. Click the **Edit** button, if you want to edit the existing feature configurations.  
 <img src="../images/edit-genesys-new-adapter-17.png" alt="edit-genesys-new-adapter" title="edit-genesys-new-adapter" style="border: 1px solid gray; zoom:80%;"> 
 
 ### Set up Widget Configuration
@@ -211,16 +214,16 @@ This section explains the post-installation steps of Agent AI integration with S
 7. Save the **Client ID** and **Client Secret** values.
 8. Follow this [documentation](https://help.mypurecloud.com/articles/configure-oauth-settings/){:target="_blank"} for the rest of the steps related to configuring OAuth settings.
 
-### Configure Audiohook
+### Configure AudioHook
 
-If you are using Kore-managed transcriptions, the final step is to install Audiohook for voice streaming. The Audiohook integration requires specific configuration values to support Agent Ai configuration.
+If you are using Kore-managed transcriptions, the final step is to install AudioHook for voice streaming. The AudioHook integration requires specific configuration values to support Agent Ai configuration.
 
 1. Sign in to **Genesys Cloud**.
 2. Go to **Admin** > **Integrations** > **Integrations**.
-3. Enter “audiohook” in the search box to check for any existing instances of audiohooks.  
+3. Enter **audiohook** in the search box to check for any existing instances of AudioHooks.  
 <img src="../images/genesys-cloud-integrations-audiohook-31.png" alt="genesys-cloud-integrations-audiohook" title="genesys-cloud-integrations-audiohook" style="border: 1px solid gray; zoom:80%;">  
 
-4. Click the **Integrations** button on the top-right corner to install a new audiohook app.  
+4. Click the **Integrations** button on the top-right corner to install a new AudioHook app.  
 <img src="../images/genesys-cloud-audiohook-integrations-32.png" alt="genesys-cloud-audiohook-integrations-32" title="genesys-cloud-audiohook-integrations-32" style="border: 1px solid gray; zoom:80%;">  
 
 5. Enter “audio” in the search box.  
@@ -232,7 +235,7 @@ If you are using Kore-managed transcriptions, the final step is to install Audio
     1. For **Channel**, select “both” from the **Value** dropdown list.
     2. The **Connection URI** format should be similar to the following: \
        wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true]  
-        1. Get **sipuri=sip:<sip-string>** from the **Agent AI** > **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.  
+        1. Get `sipuri=sip:<sip-string>` from the **Agent AI** > **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** page.  
         <img src="../images/sip-identifier-35.png" alt="sip-identifier" title="sip-identifier" style="border: 1px solid gray; zoom:80%;"> 
 
         2. Use the following references from **Agent AI** > **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** page to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
@@ -243,7 +246,7 @@ If you are using Kore-managed transcriptions, the final step is to install Audio
 7. Add credentials in the **Credentials** tab.  
 <img src="../images/credentials-tab-37.png" alt="credentials-tab" title="credentials-tab" style="border: 1px solid gray; zoom:80%;">  
 
-    1. Refer to Step-6, and enter the **Client ID** and **Client Secret** credentials in the **API Key** and **Client Secret** fields respectively. These credentials are used to validate the audiostream signature by Kore.
+    1. Refer to Step-6, and enter the **Client ID** and **Client Secret** credentials in the **API Key** and **Client Secret** fields respectively. These credentials are used to validate the audio stream signature by Kore.
     2. Click **OK**. 
 
 8. Click **Save**.

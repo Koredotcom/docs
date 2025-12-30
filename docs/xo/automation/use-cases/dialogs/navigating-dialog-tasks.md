@@ -25,11 +25,7 @@ Here are a few other ways in which the Dialog Builder can benefit your organizat
 * Encourages innovation through clear, collaborative processes to Design, Build and Train AI-powered Conversational AI Agents.
 
 
-## Explore Dialog Tasks
 
-You can access Dialog Tasks from **Automation AI > USE CASES > Dialogs**.
-
-<img src="../images/navigate-dialog.png" alt="Navigate to Dialogs" title="Navigate to Dialogs" style="border:1px solid gray; zoom:60%;">
 
 
 ## The Dialog Tasks List
@@ -119,7 +115,7 @@ To delete a Dialog Task:
 
 ### More Options
 
-You can access more Dialog Task options like **Display, Dialog Settings, Manage Interruptions,** and **Manage Ammend Behavior** by clicking the 3-dot **More Options** (<img src="../images/navigate-dialog-builder-more-options.png">) icon.
+You can access more Dialog Task options like **Display, Dialog Settings, Manage Interruptions,** and **Manage Amend Behavior** by clicking the 3-dot **More Options** (<img src="../images/navigate-dialog-builder-more-options.png">) icon.
 
 <img src="../images/navigate-dialog-builder-more-options-menu.png" alt="More Options" title="More Options" style="border:1px solid gray; zoom:70%;">
 
@@ -127,7 +123,7 @@ Please see the articles linked below for information on:
 
 * [Dialog Settings](using-the-dialog-builder-tool.md#dialog-settings){:target="_blank"},
 * [Manage Interruptions](../../intelligence/conversation-management/manage-interruptions.md){:target="_blank"},
-* [Manage Ammend Behavior.](../../natural-language/nlu-configurations/amend-entities.md){:target="_blank"}
+* [Manage Amend Behavior.](../../natural-language/nlu-configurations/amend-entities.md){:target="_blank"}
 
 
 ## Dialog Builder - Conversation Design and Logic Building

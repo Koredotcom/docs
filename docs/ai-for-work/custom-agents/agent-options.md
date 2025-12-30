@@ -12,7 +12,7 @@ Manage your agent’s deployment, data, and availability post-publication. Agent
 
 * Share Button: Click **Share** to access and manage agent sharing settings.
   <img src="../images/agent_management_3.png" alt="Agent Management" title="Agent Management" style="border: 1px solid gray; zoom:70%;">
-
+  
 * Default Visibility: All agents are visible to workspace collaborators, the creator has full edit access, while others have view-only access.
 
     **Access Level Configuration**
@@ -35,8 +35,8 @@ To edit an existing agent:
 1. Navigate to the desired agent list page and locate the agent you wish to modify. 
 <img src="../images/agent_management_1.png" alt="Agent Management" title="Agent Management" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the three-dot icon next to the agent’s name. A menu with the following options will appear:
+1. Click the three-dot icon next to the agent’s name. A menu with the following options will appear:
     * **Edit**: Open and modify the agent’s details.
     * **Publish/Unpublish**: Change the agent’s status.
     * **Delete**: Permanently remove the agent.
-3. Select the required option and continue to complete the modifications as needed.
+2. Select the required option and continue to complete the modifications as needed.

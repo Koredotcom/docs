@@ -2,11 +2,11 @@
 
 Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
 
-Thus, the roles can be classified based on the role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+User roles can be classified based on the role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
 
-When you [invite](../../getting-started/sign-up-sign-in.md){:target="_blank"}/add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
+When you invite/add a user to your account, you must assign a default role to them to define their module-wise permissions and access levels. You can later reassign a different role to the user, including a default/system-defined or custom role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
-**Key Points**
+Here are some key points to consider:
 
 1. **App Owner**: When you create an Agentic App, you automatically become the app owner and are assigned this role which provides administrative access on all features and configurations across the Platform.
 
@@ -285,37 +285,19 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Create a Tool
    </td>
-   <td>Yes
-<p>
- 
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
-<p>
- 
-   </td>
-   <td>Yes
-<p>
- 
-   </td>
-   <td>No
-   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
   </tr>
   <tr>
      <td>Tool Import
    </td>
-   <td>Yes
-<p>
- 
-   </td>
-   <td>Yes
-<p>
- 
-   </td>
-   <td>Yes
-<p>
- 
-   </td>
-   <td>No
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -335,97 +317,97 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td>Add an external model
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create a custom model and perform fine tuning
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add open-source model
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Manage Deployment - deploy/undeploy/redeploy
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create or Delete an API Key for a model
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Export Model
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Delete Model
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Model Configuration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -433,13 +415,13 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Access to a Prompt
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -447,13 +429,13 @@ The following table summarizes the module-wise permissions and access levels for
 <p>
  
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -471,13 +453,13 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td><strong>Access to guardrails at the account level</strong>
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
@@ -509,61 +491,61 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td>Delete an Integration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Test an Integration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Update an Integration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create an Integration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Disable an Integration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -583,121 +565,121 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td>Invite User (via email or import)
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Bulk Import Users via files
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Assign/revoke system roles to users & manage profile and status
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Groups
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Enrolment
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Directory Sync to enroll users
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Manage Tool Roles (Create and edit Custom roles), assign/revoke users
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Manage Admin Roles (Create and edit Custom roles), assign/revoke users
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Remove Users
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td><strong>Manage User Settings (profile fields): </strong>Users with the permissions to manage user settings can bulk change permissions.
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -705,72 +687,72 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Access
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No</td>
-   <td>No</td>
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
   </tr>
   <tr>
    <td>Create API App
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Delete API App
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Update API App
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Create or Delete an API Key
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td><b>Monitoring</b>
    </td>
    <td>All actions</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
 <p>
    </td>
   </tr>
@@ -778,26 +760,26 @@ The following table summarizes the module-wise permissions and access levels for
    <td><b>Billing: Plans, invoice, subscribe & unsubscribe, token usage</b>
    </td>
    <td>All actions</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td><b>Tool Management</b>
    </td>
    <td>All actions</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -816,47 +798,47 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td>Create projects
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create Global Evaluators.</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Delete Global Evaluators
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Edit Global Evaluators</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
    <tr>
@@ -875,78 +857,78 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td>Import New Custom Script
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Deploy/Re-deploy custom script</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Undeploy Custom Script
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Delete Custom Script</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Export Project</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-  <td>No</td>
+  <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
    </tr>
      <tr>
    <td>Overview and Other Details</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-  <td>Yes</td>
+  <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;"></td>
    </tr>
        <tr>
    <td>Create/Delete an API Key</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-  <td>No
+  <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
    </tr>
   </table>
@@ -993,109 +975,109 @@ The following table summarizes the module-wise permissions and access levels for
   <tr>
    <td>Create a Tool Version
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Import as a Version
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Share Tools/ Unshare Tools/ Assign Tool Roles/ Remove users
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Delete Tool
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Export Tool
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Monitoring Trace of a Tool
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Editing Tool Workflow
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Tool configurations
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create/Delete an API Key
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1103,13 +1085,13 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Manage Deployment - deploy/undeploy/redeploy
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1117,13 +1099,13 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Manage Guardrails Configuration
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1131,13 +1113,13 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Audit Log
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
 </table>
@@ -1235,7 +1217,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
   <tr>
@@ -1249,7 +1231,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
   <tr>
@@ -1263,7 +1245,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
   <tr>
@@ -1277,7 +1259,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
   <tr>
@@ -1305,7 +1287,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
   <tr>
@@ -1319,7 +1301,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
   <tr>
@@ -1347,7 +1329,7 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View
    </td>
-   <td>No
+   <td>No Access
    </td>
   </tr>
 </table>
@@ -1384,29 +1366,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Profile, View Config, view app versions
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Edit Profile, Edit Config, Import App version, Delete App version
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1414,29 +1396,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Agent
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add Agent, Edit Agent, Link Tools, Unlink Tools, Restore Agent Version, Restore App Version, Create Agent Version
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1444,29 +1426,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Tool
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add Tool, Edit Tool, Create In-line tool, Edit Inline Tool, Delete Inline Tool
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1474,15 +1456,15 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>Test
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1490,15 +1472,15 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Sessions, Traces, Generations
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1506,29 +1488,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Environment
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create Environment, Delete Environment, Deploy Version
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1536,29 +1518,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View List
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add Key
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1566,15 +1548,15 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Logs
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1582,29 +1564,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Guardrails
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add Guardrails, Edit Guardrails
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
@@ -1612,29 +1594,29 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
    <td>View Users
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add Users, Update Role
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
 </table>
@@ -1654,164 +1636,164 @@ The following table summarizes the module-wise permissions and access levels for
   </tr>
   <tr>
    <td>Edit a project.</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Share a project.</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>User management - invite/delete users from project</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Delete a project.</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create/delete custom evaluators</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create/rename evaluations</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
       <tr>
    <td>Delete Evaluations</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Run an Evaluation</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Add, edit and delete evaluator columns and run evaluation</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   <tr>
    <td>Create a custom evaluator</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Save as a global evaluator</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Export evaluation</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Automate evaluation</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Import rows</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Add, edit and delete evaluator columns and run evaluation</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Add production data(model traces)</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Run a prompt</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>No
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
     <tr>
    <td>Table options(user specific)</td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
-   <td>Yes
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
    </td>
   </tr>
   </table>
@@ -2132,8 +2114,10 @@ Deleting the assigned users removes their association with the role you want to 
 Like a system role, you can duplicate a custom role, which copies the name, role type, and configurations for permissions and access. Follow the steps mentioned [here](../user-management/role-management.md/#duplicate-system-role){:target="_blank"} to complete the process for a custom role.
 <img src="../images/duplicate-custom-role.png" alt="duplicate custom role" title="duplicate custom role" style="border: 1px solid gray; zoom:80%;">
 
-## Related Information
+<hr/> 
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-* **Users Management** - [Learn more](../user-management/users.md){:target="_blank"} about managing users in your account.
-* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
+**Related resources**
+
+* [Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Users Management](../user-management/users.md){:target="_blank"} - about managing users in your account.
+* [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} - about tracking events and user activity in your account.

@@ -290,7 +290,7 @@ orchestrator = CustomOrchestrator(agents=app_agents)
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Agent API Reference](../api/designtime/agent.md)
 - [Working with Tools](working-with-tools.md)

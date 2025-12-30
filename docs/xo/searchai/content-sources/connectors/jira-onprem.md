@@ -40,9 +40,8 @@ Search AI enables easy integration with Jira server to ingest, index, and search
 
 ## Prerequisites
 
-An Atlassian account with admin access. This account will be used to fetch content and find the access permissions on the indexed content. 
-
-
+* An Atlassian account with *admin* access. This account will be used to fetch content and find the access permissions for the indexed content. Search AI uses basic auth mechanism to communicate with the Jira application.
+<!--
 ## Set up Jira
 
 Search AI interacts with the Jira server through the APIs. To enable Search AI to interact with the Jira server, it needs a **Personal Access Token**. Follow the instructions in this [documentation](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) for step-by-step instructions. 
@@ -67,14 +66,15 @@ While generating the Access Token Key, enable the following scopes to allow Sear
 * read:project.property:jira
 * read:project:jira
 * read:user:jira
-
+-->
 
 ## Configure Jira Connector in SearchAI 
 
-Go to the **Connectors** page and add **the Jira Server Connector**. Provide the following details to configure the connector. 
+Go to the *Connectors* page and add the *Jira Server Connector*. Provide the following details to configure the connector. 
 
 * Name - Provide a unique name for the connector.  
-* Personal Access Token - Provide the API token generated above. 
+* Username - Username of the account.
+* Password - Password of the account.  
 * Domain - The URL of your Jira application instance.
 
 

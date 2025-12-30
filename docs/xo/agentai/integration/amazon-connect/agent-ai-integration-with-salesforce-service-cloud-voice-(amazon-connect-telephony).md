@@ -1,3 +1,5 @@
+# Agent AI Integration with Salesforce Service Cloud Voice (Amazon Connect Telephony)
+
 The Agent AI integration with Salesforce Service Cloud Voice (Amazon Connect Telephony) combines Salesforce CRM with Amazon Connect’s telephony system. This integration enables agents to deliver efficient, personalized support through real-time AI-driven insights, suggestions, and automation. It leads to improved response times, customer satisfaction, and operational efficiency by streamlining workflows and providing quick access to critical information.
 
 ## Prerequisites
@@ -101,13 +103,15 @@ This section explains the post-installation steps of Agent AI integration with S
 
 1. Click the **app launcher**, and type **Kore** in the **quick search** box.
 2. Click **Kore AgentAssist Feature Configuration** from the suggestions list.  
-<img src="../images/kore-agent-assist-feature-configuration-20.png" alt="kore-agent-assist-feature-configuration" title="kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/kore-agent-assist-feature-configuration-20.png" alt="kore-agent-assist-feature-configuration" title="kore-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;">
 
 3. Click the **New** button in the top-right corner, and select the desired features in the package.
-* **Configuration Name:** Provide a name for the configuration you are creating.
-* **CTI Provider**: Skip this field.
-* **Salesforce OmniChannel Solution**: “Chat and Voice” or “Voice” (based on your license).
-* **Active**: Only one feature configuration will be active, and the active configuration will be considered at runtime.
+
+    * **Configuration Name:** Provide a name for the configuration you are creating.
+    * **CTI Provider**: Skip this field.
+    * **Salesforce OmniChannel Solution**: “Chat and Voice” or “Voice” (based on your license).
+    * **Active**: Only one feature configuration will be active, and the active configuration will be considered at runtime.
+
 4. Click **Save**.  
 <img src="../images/save-agent-assist-feature-configuration-21.png" alt="save-agent-assist-feature-configuration" title="save-agent-assist-feature-configuration" style="border: 1px solid gray; zoom:80%;">
 

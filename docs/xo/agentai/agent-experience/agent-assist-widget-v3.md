@@ -45,6 +45,7 @@ The following buttons are available in this section:
 * **Spyglass icon**: After entering the search content, click the “spyglass” icon in the search bar or press the “Enter” key to search.
 
 #### Timeout, Server Errors, and No Search Results
+
 The **Search** tab displays error messages for searches exceeding 10 seconds, dialog tasks not configured, and server issues.
 
 * Timeout/dialog tasks not configured:  
@@ -243,6 +244,7 @@ The Settings tab gives you access to set:
 The Proactive Mode toggle allows you to put the app in listening mode. You can turn off the toggle if it is not working as expected.
 
 #### Auto-Scroll Content
+
 The Auto-Scroll Content toggle lets you manage the scrolling functionality of content in the Assist, My AI Agent (Bot), and Transcript tabs. You can turn on or off the toggle, as required.
 
 #### Help & Support
@@ -316,6 +318,7 @@ The following updates have been added at the feature level:
 <img src="../widget-images/agentassist-v3-features-2.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
 
 ### New Tab addition - Settings Tab
+
 The **Settings** tab in V3 lets you to:
 
 * Turn on/off the **Proactive mode**.

@@ -5,7 +5,7 @@
 
 ## How to Use
 
-koreUtil libraries can be used anywhere in the AI agent where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.
+koreUtil libraries can be used anywhere in the AI Agent where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.
 
 
 ## List of koreUtil libraries
@@ -227,7 +227,7 @@ var message = {
    "type": "template",
    "payload": {
       "template_type": "button",
-      "text": "please select your laguage",
+      "text": "please select your language",
       "subText": "Button Template Description",
       "buttons": []
    }
@@ -428,7 +428,7 @@ The `koreUtil.ClearAuthProfiles` is a Platform function to clear tokens associat
 To clear one or more authorization profile:
 
 ```javascript
-koreUtil.ClearAuthProfiles([Auth_Profle_Name]);
+koreUtil.ClearAuthProfiles([Auth_Profile_Name]);
 ```
 
 Example:
@@ -475,7 +475,7 @@ koreUtil.autotranslate is a platform function that lets you automatically transl
 
 !!! note
     
-    To use the `koreUtil.autoTranlsate`function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.
+    To use the `koreUtil.autoTranslate`function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.
 
 Please refer below for the translation behavior:
 

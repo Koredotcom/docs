@@ -33,7 +33,7 @@
    </td>
   </tr>
   <tr>
-   <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  docs, and images is not supported.
+   <td colspan="2" >Note: Only manually created Knowledge articles are supported. Searching through any other types of uploaded content like PDF files,  attachments, docs, and images isn't supported.
    </td>
   </tr>
 </table>
@@ -88,9 +88,9 @@ Once the application is created, you can update its name and description from th
 
 Next, configure Authorization code grants to allow Search AI to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
 
-* JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-* DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-* Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+* JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+* DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+* Prod Region Callback URLs: `https://idp.kore.com/workflows/callback`
 
 ![App Settings](images/confluencecloud/callback-url.png "App Settings")
 
@@ -123,7 +123,6 @@ To add permissions to the **Confluence API**:
 * Add the following permissions:
 
     * `read:analytics.content:confluence`
-    * `read:attachment:confluence`
     * `read:content-details:confluence`
     * `read:content.permission:confluence`
     * `read:content:confluence`

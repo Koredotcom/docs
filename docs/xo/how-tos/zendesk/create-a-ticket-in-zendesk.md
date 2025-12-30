@@ -28,7 +28,7 @@ Before you start the linking process, keep the following information handy:
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
 4. In the section, pre-authorize the integration using the Basic Auth option as follows:
     1. Select **Pre-authorize the Integration** and **Basic Auth** options.  
-    <img src="../images/authorisation.png" alt="authorisation" title="authorisation" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/authorisation.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
     2. Under the Basic Auth section, enter the following information specific to your Zendesk account:
         * **User Sub Domain**: The instance name of your Zendesk account.
@@ -36,7 +36,7 @@ Before you start the linking process, keep the following information handy:
         * **API Token**: The password token of the Zendesk account.
     3. Click **Proceed** at the top-right corner of the dialog box.
 5. The Integration Installed Successfully confirmation is displayed.  
-<img src="../images/integration-installed-successfully.png" alt="successfull_message" title="successfull_message" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/integration-installed-successfully.png" alt="successful_message" title="successful_message" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 2: Install the 'Create a Ticket' Template for Zendesk
 
@@ -66,7 +66,7 @@ Before you start the linking process, keep the following information handy:
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
 3. Click **Train** to complete the untrained utterances.
 4. Follow the prompts in the App console to create a ticket, as shown below.  
-<img src="../images/appconsole-zendesk.png" alt="iapp_console" title="app_console" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/appconsole-zendesk.png" alt="app_console" title="app_console" style="border: 1px solid gray; zoom:70%;">
 
 5. Enter all the details when prompted by the Chatbot, as shown below.  
 <img src="../images/view-ticket-details-zendesk.png" alt="ticket_details" title="ticket_details" style="border: 1px solid gray; zoom:70%;">

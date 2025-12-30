@@ -334,7 +334,7 @@ memory_store = MemoryStore(
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Memory Store API Reference](../api/designtime/memory_store.md)
 - [Working with Tools](working-with-tools.md)

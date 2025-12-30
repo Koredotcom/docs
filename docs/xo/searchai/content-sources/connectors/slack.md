@@ -10,8 +10,7 @@ Slack can be easily integrated with Search AI to search through conversations in
 1. Comprehensive Search Across Channels: Seamlessly search messages, files, and conversations across public and private Slack channels, ensuring no important detail is missed.
 2. Enhanced Productivity: Saves time by quickly surfacing relevant messages, files, and discussions without the need to manually sift through channels.
 3. Permission-Based Access: Users can only access the content they're authorized to view.
-4. Direct Links to Context: Provides citations and direct links to Slack threads or messages, making it easy to dive into the original context. 
-5. File attachment: Provides precise searches for files or attachments shared in Slack using its metadata.
+4. Direct Links to Context: Provides citations and direct links to Slack threads or messages, making it easy to dive into the original context.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -42,6 +41,10 @@ Slack can be easily integrated with Search AI to search through conversations in
    <td><b>Content Filtering</b>
    </td>
    <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
    </td>
   </tr>
 </table>
@@ -96,14 +99,13 @@ After successfully connecting the Search AI connector to the Slack app, set up c
 
 Upon sync, Search AI ingests conversations from the past 6 months in Slack channels by default. If an advanced filter is set up, content is fetched according to the timelines in the filter. 
 
-When messages from a Slack channel are ingested into SearchAI, two or more consecutive messages may be grouped together based on their context and size. If a message includes attachments, the attachment’s name and URL are also captured as part of the ingested content. Each ingested message always includes the following details in the content field:
+When messages from a Slack channel are ingested into SearchAI, two or more consecutive messages may be grouped together based on their context and size. Each ingested message always includes the following details in the content field:
 
 
 * **Channel’s Name:** The name of the channel where the message was sent. 
 * **Sender's Name**: The name of the person who sent the message.
 * **Timestamp**: The exact date and time when the message was sent.
-* The **textual content** of the message. 
-* **Attachment URL**, if present. 
+* The **textual content** of the message.  
 
 **Sample Content**
 

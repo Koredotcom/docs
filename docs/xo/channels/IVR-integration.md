@@ -62,8 +62,9 @@ Steps to configure IVR settings for your AI Agent:
     <img src="../images/IVR-5.png" alt="Webhook URL" title="Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 9.  From the **Voice Call Properties** tab, set the configurations.  
-<img src="../images/IVR-6.png" alt="IVR Sandbox" title="IVR Sandbox" style="border: 1px solid gray; zoom:70%;">  
-<img src="../images/IVR-7.png" alt="IVR data" title="IVR data" style="border: 1px solid gray; zoom:70%;">
+
+   <img src="../images/IVR-6.png" alt="IVR Sandbox" title="IVR Sandbox" style="border: 1px solid gray; zoom:70%;">  
+   <img src="../images/IVR-7.png" alt="IVR data" title="IVR data" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -117,6 +118,7 @@ The **Phone Number**, **PIN**, and **Secret** are populated in the IVR Configura
 * We strongly recommend you use IVR Sandbox only for internal testing purposes and not for the end-users of your AI Agents, as there might be some functional limitations.
 
 ### Configure Dialog Node IVR Properties
+
 You can configure IVR properties for a node in a dialog task. Click the **IVR Properties** icon and  enter initial prompts, define Grammar, enter timeout, number of retries and other available fields. To know more about dialog definition, see the [Voice Call Properties: Dialog Node Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings) section.
 
  ![IVR properties](images/IVR-16.png "IVR properties")

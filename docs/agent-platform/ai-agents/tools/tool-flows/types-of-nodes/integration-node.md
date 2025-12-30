@@ -200,4 +200,3 @@ The node’s output is stored in a context variable. You can access the variable
 <p class="admonition-title">Important</p>
 <p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see available variables and nodes, including the nodes' outputs.</p>
 </div>
-

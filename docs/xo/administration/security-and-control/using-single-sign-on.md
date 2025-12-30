@@ -181,6 +181,7 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
 
 
 #### Okta for Kore.ai SSO
+
 To configure Single Sign-On in _Okta_ for Kore.ai, you must first add the Kore.ai app to your _Okta_ account, and then copy URLs and the security certificate from _Okta_ into your Kore.ai account. This topic describes how to add the Kore.ai app to your _Okta_ account, and then access the URLs and certificate needed for the Kore.ai configuration for SSO using _Okta_.
 
 To complete this procedure, you must have already selected _Okta_ as a SAML provider on the **Single Sign On** page in the Bots Admin Console.

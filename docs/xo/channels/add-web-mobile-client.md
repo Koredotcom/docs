@@ -100,6 +100,7 @@ Steps to edit the Web/Mobile Client channel:
 1. You can edit, test, disable or delete the channel. [Learn more](adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels)
 
 2. Select one of the following commands to modify the channel:
+
   *  **Edit** – Click to open the Web/Mobile Client channel setup page.
   *  **Disable/Enable** – Click **Disable** to temporarily disable the use of the Web/Mobile Client channel for your app. When the channel is disabled, click **Enable** to enable the use of the Web/Mobile Client channel.
 

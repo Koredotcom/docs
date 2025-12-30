@@ -4,7 +4,7 @@ This section covers the infrastructure requirements and operational aspects of t
 
 ## IPs, Ports, and Protocols
 
-This document contains all the region wise IPs, ports, and protocols for Voice Gateway. It is useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](./configure-voice-gateway.md#sip-trunk-setup).
+This document contains all the region wise IPs, ports, and protocols for Voice Gateway. It's useful for transferring calls from respective Contact Centres to Contact Center AI. [Learn more](./configure-voice-gateway.md#sip-trunk-setup).
 
 ### Regions
 
@@ -12,7 +12,7 @@ This document contains all the region wise IPs, ports, and protocols for Voice G
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1    |
+| **Component**      | SIP Server-1    |
 | ------------------ | ----------------- |
 | **IP Address**     | 3.224.189.218     |
 | **FQDN**           | savg-sbc1.kore.ai |
@@ -21,7 +21,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2    |
+| **Component**      | SIP Server-2    |
 | ------------------ | ----------------- |
 | **IP Address**     | 35.174.41.205     |
 | **FQDN**           | savg-sbc2.kore.ai |
@@ -30,12 +30,12 @@ For example: sip:savg-sbc1.kore.ai:5060
 
 For example: sip:savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 44.215.230.111 |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 54.210.75.166  |
 | **RTP Ports**  | 6000-65535     |
@@ -60,7 +60,7 @@ For example: sip:savg-sbc1.kore.ai:443
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1        |
+| **Component**      | SIP Server-1        |
 | ------------------ | --------------------- |
 | **IP Address**     | 54.67.69.12           |
 | **FQDN**           | usw-savg-sbc1.kore.ai |
@@ -69,7 +69,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:usw-savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2        |
+| **Component**      | SIP Server-2        |
 | ------------------ | --------------------- |
 | **IP Address**     | 54.177.21.117         |
 | **FQDN**           | usw-savg-sbc2.kore.ai |
@@ -78,12 +78,12 @@ For example: sip:usw-savg-sbc1.kore.ai:5060
 
 For example: sip:usw-savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 54.67.69.12    |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 54.177.21.117  |
 | **RTP Ports**  | 6000-65535     |
@@ -108,7 +108,7 @@ For example: sip:usw-savg-sbc1.kore.ai:443
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1            |
+| **Component**      | SIP Server-1            |
 | ------------------ | ------------------------- |
 | **IP Address**     | 54.153.137.7              |
 | **FQDN**           | au-prod-savg-sbc1.kore.ai |
@@ -117,7 +117,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:au-prod-savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2            |
+| **Component**      | SIP Server-2            |
 | ------------------ | ------------------------- |
 | **IP Address**     | 13.237.170.233            |
 | **FQDN**           | au-prod-savg-sbc2.kore.ai |
@@ -126,12 +126,12 @@ For example: sip:au-prod-savg-sbc1.kore.ai:5060
 
 For example: sip:au-prod-savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 54.153.137.7   |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 13.237.170.233 |
 | **RTP Ports**  | 6000-65535     |
@@ -156,7 +156,7 @@ For example: sip:au-prod-savg-sbc1.kore.ai:443
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1        |
+| **Component**      | SIP Server-1        |
 | ------------------ | --------------------- |
 | **IP Address**     | 20.244.87.83          |
 | **FQDN**           | ind-savg-sbc1.kore.ai |
@@ -165,7 +165,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:ind-savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2        |
+| **Component**      | SIP Server-2        |
 | ------------------ | --------------------- |
 | **IP Address**     | 20.197.5.84           |
 | **FQDN**           | ind-savg-sbc2.kore.ai |
@@ -174,12 +174,12 @@ For example: sip:ind-savg-sbc1.kore.ai:5060
 
 For example: sip:ind-savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 20.244.87.83   |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 20.197.5.84    |
 | **RTP Ports**  | 6000-65535     |
@@ -204,7 +204,7 @@ For example: sip:ind-savg-sbc1.kore.ai:443
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1       |
+| **Component**      | SIP Server-1       |
 | ------------------ | -------------------- |
 | **IP Address**     | 18.133.179.73        |
 | **FQDN**           | eu-savg-sbc1.kore.ai |
@@ -213,7 +213,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:eu-savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2       |
+| **Component**      | SIP Server-2       |
 | ------------------ | -------------------- |
 | **IP Address**     | 13.43.133.73         |
 | **FQDN**           | eu-savg-sbc2.kore.ai |
@@ -222,12 +222,12 @@ For example: sip:eu-savg-sbc1.kore.ai:5060
 
 For example: sip:eu-savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 18.133.179.73  |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 13.43.133.73   |
 | **RTP Ports**  | 6000-65535     |
@@ -252,7 +252,7 @@ For example: sip:eu-savg-sbc1.kore.ai:443
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1       |
+| **Component**      | SIP Server-1       |
 | ------------------ | -------------------- |
 | **IP Address**     | 3.70.125.14          |
 | **FQDN**           | de-savg-sbc1.kore.ai |
@@ -261,7 +261,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:de-savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2       |
+| **Component**      | SIP Server-2       |
 | ------------------ | -------------------- |
 | **IP Address**     | 18.158.223.171       |
 | **FQDN**           | de-savg-sbc2.kore.ai |
@@ -270,12 +270,12 @@ For example: sip:de-savg-sbc1.kore.ai:5060
 
 For example: sip:de-savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 3.70.125.14    |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 18.158.223.171 |
 | **RTP Ports**  | 6000-65535     |
@@ -300,7 +300,7 @@ For example: sip:de-savg-sbc1.kore.ai:443
 
 Enable inward and outward traffic to the following IPs and respective ports:
 
-| **Component**      | SIP Server – 1       |
+| **Component**      | SIP Server-1       |
 | ------------------ | -------------------- |
 | **IP Address**     | 35.76.183.247        |
 | **FQDN**           | jp-savg-sbc1.kore.ai |
@@ -309,7 +309,7 @@ Enable inward and outward traffic to the following IPs and respective ports:
 
 For example: sip:jp-savg-sbc1.kore.ai:5060
 
-| **Component**      | SIP Server – 2       |
+| **Component**      | SIP Server-2       |
 | ------------------ | -------------------- |
 | **IP Address**     | 54.248.11.38         |
 | **FQDN**           | jp-savg-sbc2.kore.ai |
@@ -318,12 +318,12 @@ For example: sip:jp-savg-sbc1.kore.ai:5060
 
 For example: sip:jp-savg-sbc2.kore.ai:5060
 
-| **Component**  | RTP Server – 1 |
+| **Component**  | RTP Server-1 |
 | -------------- | -------------- |
 | **IP Address** | 35.76.183.247  |
 | **RTP Ports**  | 6000-65535     |
 
-| **Component**  | RTP Server – 2 |
+| **Component**  | RTP Server-2 |
 | -------------- | -------------- |
 | **IP Address** | 54.248.11.38   |
 | **RTP Ports**  | 6000-65535     |
@@ -344,11 +344,59 @@ For example: sip:jp-savg-sbc2.kore.ai:443
 | **IP Address** | 35.76.183.247<br>54.248.11.38 |
 | **RTP Ports**  | 6000-65535                    |
 
+#### United Arab Emirates (UAE)
+
+Enable inward and outward traffic to the following IPs and respective ports:
+
+| **Component**      | SIP Server-1       |
+| ------------------ | -------------------- |
+| **IP Address**     | 40.172.158.151       |
+| **FQDN**           | uae-savg-sbc1.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
+
+For example: sip:uae-savg-sbc1.kore.ai:5060
+
+| **Component**      | SIP Server-2       |
+| ------------------ | -------------------- |
+| **IP Address**     | 40.172.133.71         |
+| **FQDN**           | uae-savg-sbc2.kore.ai |
+| **TCP / UDP Port** | 5060                 |
+| **TLS Port**       | 5061                 |
+
+For example: sip:uae-savg-sbc2.kore.ai:5060
+
+| **Component**  | RTP Server-1 |
+| -------------- | -------------- |
+| **IP Address** |  3.28.132.111  |
+| **RTP Ports**  | 6000-65535     |
+
+| **Component**  | RTP Server-2 |
+| -------------- | -------------- |
+| **IP Address** | 3.28.124.143   |
+| **RTP Ports**  | 6000-65535     |
+
+For Agent transfers, enable inward and outward traffic to the following IPs and respective ports:
+
+| **Component**  | WebRTC Session Border Controller (SBC)       |
+| -------------- | -------------------------------------------- |
+| **IP Address** | 40.172.158.151<br>40.172.133.71                |
+| **FQDN**       | uae-savg-sbc1.kore.ai<br>uae-savg-sbc2.kore.ai |
+| **HTTPS**      | 443                                          |
+| **WSS Port**   | 8443                                         |
+
+For example: sip:uae-savg-sbc1.kore.ai:443
+
+| **Component**  | WebRTC RTP Servers            |
+| -------------- | ----------------------------- |
+| **IP Address** | 40.172.158.151<br>40.172.133.71 |
+| **RTP Ports**  | 6000-65535                    |
+
 ## Infrastructure Setup Guide
 
-Use the following steps and checklist to ensure that your company's network is prepared for voice and video.
+Use the following steps and checklist to verify your company's network preparedness for voice and video.
 
-To assist in preparing your network, we offer a Network Readiness checklist available at the end of this document.
+To assist in preparing your network, a Network Readiness checklist is available at the end of this document.
 
 ### Site Infrastructure Specifications
 
@@ -360,7 +408,7 @@ Cables usually have their type printed on them. If you are unsure, an electrical
 
 #### Appliance Power Source
 
-For enhanced resilience, ensure each Edge appliance is plugged into a separate power outlet. Ideally, these outlets should be serviced by different power circuits.
+For enhanced resilience, plug each Edge appliance into a separate power outlet. Ideally, these outlets are serviced by different power circuits.
 
 #### Installation Site Conditions
 
@@ -374,7 +422,7 @@ Refer to the [Cloud requirements](../voice-gateway/minimum-system-requirements-a
 
 !!! Note
 
-    To ensure successful usage of our Cloud, please make sure to configure the necessary ports and services on your company firewall. Complete details can be found in the "Firewall Requirements" section within the above-provided link.
+    To ensure successful usage of our Cloud, make sure to configure the necessary ports and services on your company firewall. Complete details can be found in the "Firewall Requirements" section within the above-provided link.
 
 #### End-User Safety Guidelines
 
@@ -382,8 +430,8 @@ To maintain uninterrupted access to our Cloud, we recommended to directly let ou
 
 #### SIP Trunking Requirements
 
-Ensure that the features provided by your SIP trunking provider adhere to the following minimum requirements.  
-In addition to selecting a compatible SIP provider, customers are strongly advised to conduct thorough interoperability testing between their specific Edge device and the chosen SIP provider's infrastructure. This testing is essential to identify and resolve any potential compatibility issues, ensuring seamless communication and optimal performance between the customer's Edge device and the SIP provider's network.
+Verify that the features provided by your SIP trunking provider adhere to the following minimum requirements.  
+Also, select a compatible SIP provider, customers are strongly advised to conduct thorough interoperability testing between their specific Edge device and the chosen SIP provider's infrastructure. This testing is essential to identify and resolve any potential compatibility issues, ensuring seamless communication and optimal performance between the customer's Edge device and the SIP provider's network.
 
 * Provide the list of the carrier's source IP addresses to us for SIP and RTP traffic configuration
 
@@ -400,7 +448,7 @@ In addition to selecting a compatible SIP provider, customers are strongly advis
 
 #### SIP/RTP Traffic Requirements
 
-* The carrier must allow SIP and RTP traffic from your Edge Appliance IP Addresses
+* The carrier must let SIP and RTP traffic from your Edge Appliance IP Addresses
 * Sequential trunk failover is recommended for multi-edge deployments
 * SIP port 5060 (TCP, UDP) and 5061 (TLS) for all inbound/outbound SIP traffic
 * Recommended to use the PCMU, PCMA, OPUS Codec for voice traffic inbound and outbound between you and the carrier
@@ -410,15 +458,15 @@ In addition to selecting a compatible SIP provider, customers are strongly advis
 
 * Does your service provider maintain Quality of Service (QoS) markings on SIP and/or RTP traffic?
     * Our recommendation: Yes, they should maintain
-* What is the maximum call per second (CPS) capacity supported on a trunk by your provider?
-* What is the maximum number of concurrent calls (CCP) that your provider supports on a trunk?
+* What's the maximum call per second (CPS) capacity supported on a trunk by your provider?
+* What's the maximum number of concurrent calls (CCP) that your provider supports on a trunk?
 * Does your provider support/require SIP authentication?
     * Our recommendation: Yes, it should support
 * Does your provider have SIP header requirements for network access or billing?
     * Our recommendation: Yes, they should support SIP headers
 * What are the SIP provider’s inbound IP addresses?
 * Does your SIP provider require registration for their SIP trunk?
-* What is the inbound protocol the SIP provider is using (that is, UDP / TCP / TLS)?
+* What's the inbound protocol the SIP provider is using (that is, UDP / TCP / TLS)?
     * Our recommendation: UDP/TLS for the best experience
 * Does your SIP provider require a P-Asserted identity?
 * Does your SIP provider require outbound digest authentication?
@@ -432,7 +480,7 @@ A dependable internet connection is necessary for our Cloud. Most internet conne
 
 #### Network firewalls and security devices
 
-To maintain uninterrupted access to our Cloud, ensure that your network firewalls and security devices permit our Cloud connectivity. Company firewalls may occasionally block network traffic between our Cloud and your users.
+To maintain uninterrupted access to our Cloud, verify that your network firewalls and security devices permit our Cloud connectivity. Company firewalls may occasionally block network traffic between our Cloud and your users.
 
 For a list of our common Cloud ports, protocols, and destinations, see the "Firewall Requirements" section [here](../voice-gateway/minimum-system-requirements-and-supported-browsers.md).
 
@@ -442,7 +490,7 @@ For a list of our common Cloud ports, protocols, and destinations, see the "Fire
 
 Many companies take advantage of private connectivity between their company offices. Private connectivity includes Multi-Protocol Label Switching (MPLS) and point-to-point connections. When using private circuit connectivity for voice and video services, the physical connection between your company office and your carrier’s network is a critical component. The industry refers to this connection as the “last mile.”
 
-We suggest that you collaborate with your provider to obtain a “fully diverse” private circuit connection, if available in your area. Having diversity guarantees that your connectivity utilizes multiple “last mile” paths to reach different access points on your provider's network.
+We suggest that you collaborate with your provider to obtain a `fully diverse` private circuit connection, if available in your area. Having diversity guarantees that your connectivity utilizes multiple “last mile” paths to reach different access points on your provider's network.
 
 To ensure a consistent user experience for voice and video communications over private circuit WAN connections, which typically have lower bandwidth than local office networks, it's recommended to enable Quality of Service (QoS). QoS prioritizes voice and video traffic over other network traffic. Contact your private circuit carrier to configure QoS on your circuits.
 
@@ -492,51 +540,65 @@ The manufacturer's documentation for your specific network hardware setup detail
 
 ### Check List
 
-* Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is called a pinhole).
+* Does your firewall support the Pinhole feature or not? (Firewalls performing a network address translation (NAT) function, the mapping between the external IP address, port socket, and the internal IP address, port socket is a pinhole). 
     - [ ] Yes
     - [ ] No
-* If your firewall has a Pinhole feature, does it have the support of the following modules:
+
+* If your firewall has a Pinhole feature, does it have the support of the following modules: 
     - [ ] NAT hole punching
     - [ ] NAT traversal
     - [ ] TCP hole punching
     - [ ] UDP hole punching
-* Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection?
+
+* Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection? 
     - [ ] Yes
     - [ ] No
-* Are you connecting to the internet through the router?
+
+* Are you connecting to the internet through the router? 
     - [ ] Yes
     - [ ] No
-* Are you using any proxy server to connect to the internet?
+
+* Are you using any proxy server to connect to the internet? 
     - [ ] Yes
     - [ ] No
-* If you are using a proxy server, will you be able to remove or skip (bypass) your proxy server from our Kore configuration environment?
+
+* If you are using a proxy server, will you be able to remove or skip (bypass) your proxy server from our configuration environment? 
     - [ ] Yes
     - [ ] No
-* Will you be able to allocate and configure one test number to us?
+
+* Will you be able to allocate and configure one test number to us? 
     - [ ] Yes
     - [ ] No
-* Will you allow and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports?
+
+* Will you let and bypass traffic for *. [Kore](https://kore.ai/) and *.[twilio.com](https://twilio.com/) domains (HTTPS) on 443, 8443, 3478, and 5349 ports? 
     - [ ] Yes
     - [ ] No
-* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and allow the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?
+
+* Per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to whitelist and let the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)? 
     - [ ] Yes
     - [ ] No
-* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to allow all mentioned UDP ports in a bi-directional way?
+
+* As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to let all mentioned UDP ports in a bi-directional way? 
     - [ ] Yes
     - [ ] No
-* Are you using any anti-virus software?
+
+* Are you using any anti-virus software? 
     - [ ] Yes
     - [ ] No
-* If you are using any anti-virus software, does it need to follow any federation rules?
+
+* If you are using any anti-virus software, does it need to follow any federation rules? 
     - [ ] Yes
     - [ ] No
-* Can you run the latency test using the [AWS latency test](https://aws-latency-test.com/) from your Agent's office premises and share the latency test results with Kore?
+
+* Can you run the latency test using the [AWS latency test](https://aws-latency-test.com/) from your Agent's office premises and share the latency test results with Kore? 
     - [ ] Yes
     - [ ] No
-* Are you using any internal firewall for each and every agent in their systems, like ZScaler?
+
+* Are you using any internal firewall for each and every agent in their systems, like ZScaler? 
     - [ ] Yes
     - [ ] No
-* If you are using any internal firewall like ZScaler, will you be able to allow all mentioned UDP ports in a bi-directional way?
+
+* If you are using any internal firewall like ZScaler, will you be able to let all mentioned UDP ports in a bi-directional way? 
     - [ ] Yes
     - [ ] No
 
@@ -546,7 +608,7 @@ Our Cloud WebRTC (Agent Desktop) requires specific port and service configuratio
 
 When reviewing the diagrams to identify the one that best matches the WebRTC (Agent Desktop) setup, consider the following questions:
 
-* Is Kore.ai Cloud Voice Edges being used?
+* Are Kore.ai Cloud Voice Edges used?
 * Are agents:
 
   * Inside the same network or firewall as the Edges?
@@ -578,28 +640,24 @@ If connectivity issues, screen freezing, or lag occur in Agent Desktop, perform 
  
 * First, verify the network connection. This applies whether working in the office or remotely.  
 * Ensure the network strength meets our defined parameters. See [Minimum System Requirements and Supported Browsers](../voice-gateway/minimum-system-requirements-and-supported-browsers.md) for reference.  
-* After completing the above steps, run [User Diagnostics](../../console/manage-layout.md#user-diagnostics).
+* After completing these steps, run [User Diagnostics](../../console/manage-layout.md#user-diagnostics).
 
 ### Checklist
 
-| Sl. No. | Description | Impact | Yes/No |
-|---------|-------------|--------|--------|
-| 1 | Does your firewall support the Pinhole feature or not? | Firewalls performing a network address translation (NAT) function — the mapping between the external IP address, port socket, and the internal IP address, port socket-is called a pinhole. |  |  |
-| 2 | If your firewall has a Pinhole feature, does it have the support of below modules:
-||**NAT hole punching** | If No, unable to establish direct connection between two peers in which one or both are behind firewalls or behind routers that use NAT.<br>
-<br>|**NAT traversal** | If No, won't allow edges behind a NAT device to communicate with devices outside the NAT network. With NAT traversal, the edges located behind a router can communicate directly with each other without the need for port forwarding or any other manual configurations.<br><br>
-<br>|**TCP hole punching**| If No, unable to establish TCP connection between two peers using NAT traversal.<br><br>
-<br> |**UDP hole punching**| If No, unable to establish bidirectional UDP connection between two peers using NAT traversal. |  |  |
-| 3 | Will you be able to enable WSS support in your Firewall to establish a WebSocket over an encrypted TLS connection?<br><br>|If No, unable to establish a WebSocket over an encrypted TLS connection to transmit the packets (data) in a secure way. |  |  |
-| 4 | Are you connecting to the internet through the router?<br><br>|If yes, should open required ports as described in [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). Otherwise, unable to establish the connection between the peers and traffic will be blocked. |  |  |
-| 5 | Are you using any proxy server to connect to the internet?<br><br>|If Yes, won’t be able to do NAT traversal directly with the end user. |  |  |
-| 6 | If you are using a proxy server, will you be able to remove or skip (bypass) your proxy server from our "Kore" configuration environment?<br><br>|If yes, NAT traversal will be done directly with the end user and packets (data) will be transmitted smoothly without having any hassles. |  |  |
-| 7 | Will you be able to allocate and configure one test number to us?<br><br>|If yes, we will test everything and will be able to deliver without any blockers or issues. This will help us to troubleshoot the issues in the future, if any occurs. |  |  |
-| 8 | Will you allow and bypass traffic for *.kore.ai and *.twilio.com domains (HTTPS) on 443, 8443, 3478, and 5349 ports?<br><br>|If not, won’t be able to establish any connection, unable to do the NAT traversal, unable to transmit IP packets (audio, data, etc.) between the peers. |  |  |
-| 9 | As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to white list and allow the traffic to all IP addresses and domains (SBCs, STUN/TURN, etc.)?<br><br>|If not, won’t be able to establish any connection, unable to do the NAT traversal, unable to transmit IP packets (audio, data, etc.) between the peers. |  |  |
-| 10 | As per the [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md), will you be able to allow all mentioned UDP ports in bi-directional way?<br><br>|If not, unable to transmit data in both directions (one way audio issue occurs). |  |  |
-| 11 | Are you using any anti-virus software?<br><br>|If yes, it will block the traffic and should allow the data through the required ports. |  |  |
-| 12 | If you are using any anti-virus software, does it need to follow any federation rules?<br><br>|If yes, as per your country's regulations, is it possible to allow traffic as per Kore’s requirement? |  |  |
-| 13 | Can you run the latency test using [AWS latency test](https://aws-latency-test.com/) from your Agent's office premises and share the latency test results with “Kore”?<br><br>|Latency of 20 ms (milliseconds) is normal for and up to 150 ms the latency is barely noticeable and hence acceptable. A latency higher than 150 ms diminishes the call quality. Latency levels between 150 ms to 300 ms are within acceptable latency limits. |  |  |
-| 14 | Are you using any internal firewall to each and every agent in their systems like ZScaler?<br><br>|If yes, should open required UDP ports as described in [firewall requirements](../voice-gateway/minimum-system-requirements-and-supported-browsers.md). Otherwise, unable to transmit the RTP packets (Audio) between the peers and audio traffic will be blocked. |  |  |
-| 15 | If you are using any internal firewall like ZScaler, will you be able to allow all mentioned UDP ports in bi-directional way?<br><br>|If not, unable to transmit the RTP packets (Audio) between the peers and audio traffic will be blocked. |  |  |
+| Description | Impact |
+|-------------|--------|
+| Does your firewall support the pinhole feature? | Firewalls that perform Network Address Translation (NAT) map an external IP address and port to an internal IP address and port. This is a pinhole mapping. |
+| If your firewall supports the pinhole feature, does it support the following modules? <br><br> **NAT hole punching** <br> **NAT traversal** <br> **TCP hole punching** <br> **UDP hole punching** | **NAT hole punching:** Without support, the system can't establish a direct connection between peers when one or both are behind firewalls or NAT-enabled routers. <br><br> **NAT traversal:** Without support, devices behind a NAT can't communicate with external devices. NAT traversal enables direct communication without port forwarding or manual configuration. <br><br> **TCP hole punching:** Without support, the system can't establish TCP connections between peers using NAT traversal. <br><br> **UDP hole punching:** Without support, the system can't establish bidirectional UDP connections between peers using NAT traversal. |
+| Can you enable WSS support on your firewall to establish a WebSocket over an encrypted TLS connection? | Without WSS support, the system can't establish a secure WebSocket connection to transmit data securely over TLS. |
+| Do you connect to the internet through a router? | If required ports aren't opened as described in the firewall requirements, the system can't establish peer connections and blocks traffic. |
+| Do you use a proxy server to connect to the internet? | When a proxy server is in use, the system can't perform direct NAT traversal with the customer. |
+| If you use a proxy server, can you bypass it in the Kore configuration environment? | When you bypass the proxy, NAT traversal occurs directly with the customer, and data transmission proceeds. |
+| Can you allocate and configure one test number? | A test number enables end-to-end testing, ensures successful delivery, and helps troubleshoot future issues. |
+| Can you let and bypass traffic for `*.kore.ai` and `*.twilio.com` domains (HTTPS) on ports 443, 8443, 3478, and 5349? | Without allowing this traffic, the system can't establish connections, perform NAT traversal, or transmit audio and data packets between peers. |
+| Can you whitelist and let traffic to all required IP addresses and domains (SBCs, STUN/TURN, and others) as specified in the firewall requirements? | Without whitelisting, the system can't establish connections, perform NAT traversal, or transmit IP packets between peers. |
+| Can you let all required UDP ports in a bidirectional manner as specified in the firewall requirements? | Without bidirectional UDP ports, the system can't transmit data in both directions, which results in one-way audio issues. |
+| Do you use any antivirus software? | Antivirus software can block traffic and must let data through the required ports. |
+| If you use antivirus software, does it require federation rules? | If federation rules apply, let traffic must according to Kore requirements and local regulations. |
+| Can you run the AWS latency test from the agent office premises and share the results? | Latency up to 150 ms is acceptable. Latency more than 150 ms degrades call quality, and latency between 150 ms and 300 ms remains within acceptable limits. |
+| Do you use an internal firewall on each agent system, such as Zscaler? | Open required UDP ports. Otherwise, RTP audio packets can't transmit between peers and blocks audio traffic. |
+| If you use an internal firewall such as Zscaler, can you let all required UDP ports in a bidirectional manner? | Without bidirectional UDP ports, the system can't transmit RTP audio packets and blocks audio traffic. |

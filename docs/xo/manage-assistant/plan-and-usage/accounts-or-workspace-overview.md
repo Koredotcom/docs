@@ -64,7 +64,7 @@ In the below example, only Automation AI and SearchAI enterprise licenses are of
 
 ## Workspace Linked to Multiple Apps
 
-A workspcae owner can explicitly manage the Plan and Usage for a workspace linked to multiple bot accounts and do the following:
+A workspace owner can explicitly manage the Plan and Usage for a workspace linked to multiple bot accounts and do the following:
 
 * Manage the free and paid credits for individual bots listed for a standard account.
 * View the number of paid and inactive bots.

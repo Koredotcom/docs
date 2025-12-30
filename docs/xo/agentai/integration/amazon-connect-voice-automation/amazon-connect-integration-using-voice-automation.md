@@ -3,6 +3,7 @@
 This document outlines the steps for Kore users to integrate Kore Voice Automation with Amazon Connect, leveraging Amazon's external voice transfer capabilities. This setup enables voice transfers from Amazon Connect to a Voice Gateway and back, facilitating a seamless call experience through the Amazon Connect desktop.
 
 ## Architecture Diagram
+
 <img src="../images/architecture-diagram.png" alt="architecture-diagram" title="architecture-diagram" style="border: 1px solid gray; zoom:80%;">  
 
 ## Prerequisites
@@ -29,12 +30,12 @@ Before setting up the integration, you must enable the "External voice systems" 
 After enabling the feature, create a connector under **Voice transfer integrations** to link Amazon Connect with your Voice Gateway.  
 
 * **Navigate to Connector Creation**: Click the **External voice systems** option to access the connector creation screen.  
-<img src="../images/specificy-connector-details-2.png" alt="specificy-connector-details" title="specificy-connector-details" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/specify-connector-details-2.png" alt="specify-connector-details" title="specify-connector-details" style="border: 1px solid gray; zoom:80%;">  
 
 * **Connector Configuration**:
     * **Name**: Provide any desired name for the connector.
     * **Connector destination type**: Select **audio code** from the dropdown list.
-    * **Voice system type**: Select one or multiple options; it does not affect the functionality. 
+    * **Voice system type**: Select one or multiple options; it doesn't affect the functionality. 
     * **Encryption**: Select **Disabled**.  
     * **Logging**: Select the option(s) to view the corresponding log in Connector Logs. It is recommended to select both the options.  
 * **Host and Port Details**: After creation, the connector configuration displays the IP address of the host, the protocol, and the port. This port should correspond to your Voice Gateway environment.
@@ -84,6 +85,7 @@ The following steps describe the call flow after this integration:
 This setup provides a robust solution for leveraging our voice automation capabilities within your Amazon Connect Contact Center environment.
 
 ## Metadata Passing from Kore to Amazon Connect (Additional Feature)
+
 Currently, Amazon Connect does not support SIP header extraction. To pass metadata from Kore to Amazon Connect, use the following alternative AWS components: 
 
 * API Gateway
@@ -125,7 +127,7 @@ Once you paste the lambda code, deploy the latest version of the code. Ensure yo
 
 1. **koreStoreSessionMetadata**: This lambda function is used to expose an API Gateway (Trigger) to get the metadata from Kore Platform and store it in the DynamoDB table. Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/koreStoreSessionMetadata.py){:target="_blank"}.  
 
-2. **AuthenticateBeforeStoringInDynamoDB**: This lambda function is used to add an authentication layer (Authoriser) on the API Gateway mentioned in the previous lambda function (koreStoreSessionMetadata). Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/AuthenticateBeforeStoringInDynamoDB.py){:target="_blank"}.  
+2. **AuthenticateBeforeStoringInDynamoDB**: This lambda function is used to add an authentication layer (Authorizer) on the API Gateway mentioned in the previous lambda function (koreStoreSessionMetadata). Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/AuthenticateBeforeStoringInDynamoDB.py){:target="_blank"}.  
 
 3. **koreRetrieveSessionMetadata**: This lambda is invoked in the Amazon Connect Contact Flow after the call gets disconnected from Kore and is handed over to Amazon Connect. This lambda returns all the metadata stored in the DynamoDB table using the first lambda. Copy and deploy the code from [this link](https://raw.githubusercontent.com/Koredotcom/korecc-twilio/master/AmazonConnect/Metadata%20passing%20via%20External%20voice%20connector/lambdas/%20koreRetrieveSessionMetadata.py){:target="_blank"}.  
 
@@ -262,7 +264,7 @@ Ensure the Automation bot used in the CCAI Conditional Flow includes an Agent Tr
 **Add the Request URL**: Add the **API Gateway URL** with **contactId** as query parameter. Get this by accessing your first lambda function (“koreStoreSessionMetadata”) > **Configuration** > **Trigger**.  
 <img src="../images/core-store-session-metadata-25.png" alt="core-store-session-metadata" title="core-store-session-metadata" style="border: 1px solid gray; zoom:80%;">   
 
-**Example**: https://ubpl0dxgq1.execute-api.us-east-1.amazonaws.com/dev/kore-metadata?contactId={{context.session.BotUserSession.ContactId}}  
+**Example**: `https://ubpl0dxgq1.execute-api.us-east-1.amazonaws.com/dev/kore-metadata?contactId={{context.session.BotUserSession.ContactId}}`  
 
 * **Method**: POST  
 * **Headers**:  

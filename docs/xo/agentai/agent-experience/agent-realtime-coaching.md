@@ -155,6 +155,7 @@ If you don’t want to use a rule temporarily, you can disable it.
     1. The **Configuration has been Saved** message appears on the screen.
 
 ## Agent Coaching Rule Triggers (When…)
+
 Trigger setting is essential to rule creation. You can’t have a rule without a trigger. Triggers define the conditions for a rule to come into effect. This section explains how to set up triggers for new rules. The available triggers are:
 
 * Utterance Triggers
@@ -162,9 +163,11 @@ Trigger setting is essential to rule creation. You can’t have a rule without a
 * Gen AI Utterances
 
 ### Utterance Triggers
+
 Utterances are inputs from customers and agents. In Utterance Triggers, you set up conditions like input from customers or agents, the number of times the input came, and the time frame within which the input came to set off the trigger.
 
-#### Steps to set up Utterance Triggers:
+#### Steps to set up Utterance Triggers
+
 1. Go to the rule trigger creation page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule). 
 2. Under **When**, click the **+ Add a trigger** button.
 3. Select **Utterance**.  
@@ -193,7 +196,7 @@ Utterances are inputs from customers and agents. In Utterance Triggers, you set 
 
         Before clicking the **Save** button, you can delete any utterance you would have added by mistake or think is irrelevant.
 
-* The following screen appears:
+    * The following screen appears:
       <img src="../agent-coaching-images/saving-and-removing-utterances-8.png" alt="saving-and-removing-utterances" title="saving-and-removing-utterances" style="border: 1px solid gray; zoom:80%;">
 
 13. Click **1 time** to select the number of times any of these utterances appear. The default selection is **1 time**. For example, a customer may use any of these utterances once by mistake and to be sure, you want the customer to use them twice or thrice. You need to select **2 times** or **3 times** for such situations.
@@ -202,6 +205,7 @@ Utterances are inputs from customers and agents. In Utterance Triggers, you set 
 
 14. Click the default time frame, in conversation, to change it if you want to select other options.
     <img src="../agent-coaching-images/trigger-based-on-utterance-time-frame-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;"> 
+
     1. If you select **Anytime in conversation**, the following screen appears:
         <img src="../agent-coaching-images/utterance-trigger-any-time-in-conversation-11.png" alt="utterance-trigger-any-time-in-conversation" title="utterance-trigger-any-time-in-conversation" style="border: 1px solid gray; zoom:80%;"> 
     2. If you select **By time**, the following screen appears:
@@ -213,12 +217,15 @@ Utterances are inputs from customers and agents. In Utterance Triggers, you set 
         <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
 
         From the dropdown, select **first** or **within** and enter a number in the messages field.
+
 15. Press the **Enter** key to complete the process.
 
 ### Speech Analysis Triggers
+
 This feature analyzes the speech pattern or event of both the customer and the agent and provides real-time feedback and coaching to improve customer-agent conversation quality. This section explains the steps to set up the Speech Analysis Triggers feature.
 
 #### Steps to set up Speech Analysis Triggers
+
 1. Select **Speech Analysis** after clicking **When**> **+Add a trigger**.
 2. Click **{speech type}** and select a type for analysis.
     <img src="../agent-coaching-images/speech-type-trigger-15.png" alt="speech-type-trigger" title="speech-type-trigger" style="border: 1px solid gray; zoom:80%;"> 
@@ -252,12 +259,12 @@ This feature analyzes the speech pattern or event of both the customer and the a
            <img src="../agent-coaching-images/dead-air-source-trigger-24.png" alt="dead-air-source-trigger" title="dead-air-source-trigger" style="border: 1px solid gray; zoom:80%;">
         3. Click **1 time** to select the frequency. 
 
-        4. Click **In conversation** to select a time frame.
+        4. Click **In conversation** to select a time frame. 
            <img src="../agent-coaching-images/dead-air-timing-trigger-25.png" alt="dead-air-timing-trigger" title="dead-air-timing-trigger" style="border: 1px solid gray; zoom:80%;"> 
 
-           1. From the dropdown list, select **first** or **within** and enter the time in seconds.
+            1. From the dropdown list, select **first** or **within** and enter the time in seconds.
 
-           2. Press the **Enter** key to save the new values.
+            2. Press the **Enter** key to save the new values.
            
             !!! note
 
@@ -438,9 +445,11 @@ Valid values to choose from:
 </table>
 
 ### And/Or Condition
+
 AgentAssist allows you to add multiple rule triggers. It lets you set different conditions like combining multiple rules or choosing one or a set of rules against another or a different set of rules. You can even choose or combine rules from different trigger types like Utterance and Speech Analysis triggers.
 
 #### Steps to select And/Or condition
+
 1. Click **+Add a trigger** in the rule trigger creation page to create a new trigger.
 2. Click **+Add a trigger** again to create a new rule trigger.
 3. Select **And** or **Or**.  
@@ -455,6 +464,7 @@ AgentAssist allows you to add multiple rule triggers. It lets you set different 
 The **And** condition ensures that rule triggers **1** and **2** are combined, and the **Or** condition ensures that either the combination of the first two rule triggers (**1+2**) or the third rule trigger (**3**) becomes applicable.
 
 ## Agent Real-time Coaching Actions (Then do…)
+
 After setting up rule triggers, you must set up actions for those triggers. Here, you configure what actions AgentAssist should take if the conditions you set up are met. You can set up three different actions: 
 
 * Nudge Agent
@@ -466,9 +476,11 @@ After setting up rule triggers, you must set up actions for those triggers. Here
 You can also set up adherence, which is like an acknowledgment, to ensure the agent has followed the instructions.
 
 ### Add Adherence
+
 The Add Adherence feature lets you know the agent’s adherence to the instructions in the form of nudges and hints. Later, you can use this acknowledgment to measure agent performance in the Dashboard. This feature is applicable only for the Nudge and Hint Agent actions. 
 
 #### Add Adherence Types
+
 You have two types of adherences to choose from:
 
 * **Acknowledge Pressed**: Choosing this option sends an acknowledgment that the agent understood your instructions. The agent doesn’t need to take any other action except acknowledging your message. An example would be a compliment to the agent for a job well done. The following screenshot is displayed when this option is used:
@@ -480,6 +492,7 @@ You have two types of adherences to choose from:
 For practical examples of this feature, refer to steps 7-8 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions).
 
 ### Nudge Agent
+
 The Nudge Agent actions are the small messages that pop up on the agent’s screen while communicating with customers. These are disappearing messages that stay on the agent’s screen for five seconds. Agents can close these messages anytime after their appearance. Through these messages, you either compliment the agents for a good job or direct them to take other appropriate actions to serve the customers in the best way possible. You can use Gen AI to generate nudge messages based on your prompt. Here are the four nudges to select from:
 
 * Positive
@@ -490,7 +503,8 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
 
 * Critical
 
-#### Steps to set up the Nudge Agent actions:
+#### Steps to set up the Nudge Agent actions
+
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under the **Then do…** section.
    <img src="../agent-coaching-images/then-do-add-an-action-40.png" alt="then-do-add-an-action" title="then-do-add-an-action" style="border: 1px solid gray; zoom:80%;"> 
@@ -542,6 +556,7 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
          <img src="../agent-coaching-images/critical-nudge-widget-55.png" alt="critical-nudge-widget" title="critical-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
 ### Hint Agent
+
 The Hint Agent actions are small pop-up messages that advise agents to take further action. They appear on the agent’s screen while communicating with the customers and may or may not auto-close, based on how you set them. Through these messages, you also compliment the agents for a good job. You can use Gen AI to generate the title and message body based on your prompt. Here are the four hint types that you can choose from:
 
 * Positive
@@ -552,7 +567,8 @@ The Hint Agent actions are small pop-up messages that advise agents to take furt
 
 * Critical
 
-#### Steps to set up the Hint Agent actions:
+#### Steps to set up the Hint Agent actions
+
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under the **Then do…** section.
 3. Click the **Hint Agent** option in the **Choose an Action** window.
@@ -609,9 +625,11 @@ The agent gets screens similar to the following on their system for:
 <img src="../agent-coaching-images/critical-hint-widget-69.png" alt="critical-hint-widget" title="critical-hint-widget" style="border: 1px solid gray; zoom:80%;"> 
 
 ### Email Manager
+
 This feature lets you set a push notification alert to the manager’s desktop. You can set who should receive this notification and customize the title and the body of the message. It applies to the customer’s actions, such as using profanity or too many cross-talks. Instead of nudges and hints, the system can send an alert notification to the manager in these situations.
 
-#### Steps to set up the Email Manager action:
+#### Steps to set up the Email Manager action
+
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under the **Then do…** section.
 3. Click the **Email Manager** option in the **Choose an Action** window.
@@ -633,9 +651,11 @@ This feature lets you set a push notification alert to the manager’s desktop. 
 9. Enter the notification content and then click the **tick** mark to save it.
 
 ## Assign This To
+
 This feature lets you assign the rule to the intended agents or groups. Currently, by default, this feature is assigned for all agents.
 
 ### Steps to assign rules to agents or groups
+
 1. Go to the rule action setup page. For help, refer to steps 1 and 2 of [Steps to create a new rule](#steps-to-create-a-new-rule).
 2. Click **+Add agents, groups** under the **Assign this to…** section.
 The following screen shows the default selection of **All Agents**:

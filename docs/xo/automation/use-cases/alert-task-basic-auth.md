@@ -33,7 +33,10 @@ To define Basic Authorization, select **Basic Auth** in the **Authorization Type
 
 ## Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com. In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL.
+For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
+In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 <img src="../images/set-tenancy.png" alt="set tenancy" title="set tenancy" style="border: 1px solid gray; zoom:75%;">
 
 ## Form Fields
@@ -106,12 +109,17 @@ The following table describes the fields used to define an authorization IDP for
 By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, a verification code, click **+ Add Authorization Field** and then define the fields as shown in the following illustration.
 <img src="../images/authorization-fields.png" alt="auth fields" title="auth fields" style="border: 1px solid gray; zoom:75%;">
 
-1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. **Header** – The AI Agent expects the authorization fields as part of the header of the request.**Payload** – The assistant expects the authorization fields as part of the content of the body of the request. **Query String** – The AI Agent expects the authorization fields as a query in the body of the request. **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
+1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
+    * **Header**: The AI Agent expects the authorization fields as part of the header of the request.
+    * **Payload**: The assistant expects the authorization fields as part of the content of the body of the request.
+    * **Query String**: The AI Agent expects the authorization fields as a query in the body of the request.
+    * **Path Param**: The AI Agent expects the authorization fields as part of the URL path for the request.
+
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
 4. Click **Done**. The new authorization field is added in the **Authorization Fields** section.
 5. To add additional authorization fields, click **Add** in the **Authorization Fields** section.
-6. In the **Authorization Check URL** field, optionally define a URL that is used to test the authentication settings from the XO Platform before you deploy the task with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example, https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
+6. In the **Authorization Check URL** field, optionally define a URL that is used to test the authentication settings from the XO Platform before you deploy the task with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example, https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
 7. Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 
 ## Testing
@@ -125,7 +133,7 @@ After you save the authentication, if you have defined an **Authorization Check 
 
   <img src="../images/test-authorization-window.png" alt="test authorization window" title="test authorization window" style="border: 1px solid gray; zoom:75%;">
 
-To configure the Test Authorization – Basic Auth, follow the below steps:
+To configure the Test Authorization: Basic Auth, follow the below steps:
 
 1. In the **Auth Check URL** field, verify or enter the URL to test the authentication configuration.
 2. If your assistant uses subdomains, the **Tenancy** field is displayed and you must specify the tenant.

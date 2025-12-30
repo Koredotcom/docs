@@ -1,5 +1,5 @@
-
 # XO GPT - Response Rephrasing Model
+
 <br>
 
 ## Introduction
@@ -525,7 +525,7 @@ The model is hosted on infrastructure with A10 - g5-xlarge. Some of the other ge
 To compare and contrast the performance of the fine-tuned model, we've considered the following other models: 
 
 * Mistral-vanilla: An open-source large language model with 7 billion parameters, known for its strong performance despite its relatively small size.
-* GPT 4: OpenAI's advanced language model is known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI agents.
+* GPT 4: OpenAI's advanced language model is known for exceptional reasoning and language generation across diverse tasks, including summarization, content creation, and conversational AI Agents.
 
 <img src="../images/response01.png" alt="XO GPT" title=" " style="border: 1px solid gray; zoom:70%;">
 

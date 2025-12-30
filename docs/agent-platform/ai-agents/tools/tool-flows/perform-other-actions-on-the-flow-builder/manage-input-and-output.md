@@ -81,10 +81,3 @@ The output variable is displayed on the Output tab of the <b>Manage Input & Outp
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can also add an output variable in the End node using the <b>Add a Key</b> option on the node's interface.</p></div>
-
-
-
-
-
-
-

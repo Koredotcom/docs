@@ -113,7 +113,7 @@ For detailed usage patterns, see:
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [Logger API](logger.md) - Structured logging with session context
 - [Tracer API](tracer.md) - Distributed tracing integration

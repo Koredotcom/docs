@@ -87,7 +87,7 @@ This function is responsible for returning all the credentials required to rende
 
 1. Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KoreAgentAssistCCP.zip){:target="_blank"} and upload it to the function once you create a new Lambda function.
 2. **Environment variable List**:
-    * **agentassistUrl**: https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+    * **agentassistUrl**: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html`
     * **botId**: [Agent AI Bot Id]
     * **clientId**: [Agent AI Client Id]
     * **clientSecret**: [Agent AI Client Secret]
@@ -130,7 +130,7 @@ This function is responsible for returning all the credentials required to rende
     * **BotID**: Add your Agent AI Bot ID created on Agent AI.  
     * **ClientId**: Add your Agent AI  Client ID created on Agent AI. 
     * **ClientSecret**: Add your Agent AI Client Secret created on Agent AI. 
-    * **SipUri**: Add “sip:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com” and replace **XXXX** with your SIPREC Configuration of Agent AI.    
+    * **SipUri**: Add `sip:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com` and replace **XXXX** with your SIPREC Configuration of Agent AI.    
 
     To get the SIP URI from [Agent AI](https://platform.kore.ai/){:target="_blank"}:  
 
