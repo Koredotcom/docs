@@ -6,7 +6,7 @@ The **Billing** section helps you monitor and analyze your Agent Platform expens
 
 Steps to access the Usage page:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. On the left navigation pane, click **Billing** > **Usage**.
 

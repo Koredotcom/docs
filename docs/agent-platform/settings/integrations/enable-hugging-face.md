@@ -4,7 +4,7 @@ Agent Platform seamlessly integrates with the Hugging Face platform, allowing yo
 
 **To integrate with your hugging face account, follow these steps**:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 2. Click **Integrations** on the left menu.
 

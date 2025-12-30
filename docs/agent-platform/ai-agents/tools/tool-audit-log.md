@@ -23,7 +23,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 
 Steps to access and view tool audit logs:
 
-1. Log in to your Agent Platform account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your (In)Agent Platform account and click **Tools** from the list of modules.
 2. On the **All tools** page, click the desired tool.
 3. In the left navigation pane, click **Audit logs**. The Audit logs page is displayed. 
 4. Click each row to view more details about the event. For more information, see Tool-Level Audit Logs. [Learn more](../../settings/monitoring/audit-logs.md/#tool-level-audit-logs){:target="_blank"}.
