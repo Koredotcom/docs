@@ -166,9 +166,9 @@ Unix Timestamp (also called Epoch time) represents time as the number of seconds
 
 **Offset Timestamp**
 
-Offset Timestamp represents time relative to the conversation start time, measured in seconds from the beginning of the interaction.
+Offset Timestamp measures time in seconds from the conversation start and end date validation.
 
-**Format**: Integer or decimal number representing seconds from conversation start.
+**Format**: Integer or decimal number representing seconds from conversation start or end.
 
 **Examples**: 
 

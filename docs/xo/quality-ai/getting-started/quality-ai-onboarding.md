@@ -170,9 +170,9 @@ Represents time as the number of seconds since January 1, 1970 (UTC).
 
 **Offset Timestamp**
 
-Represents time as seconds relative to the conversation start.
+Represents time as seconds relative to the conversation start and end date validation.
 
-**Format**: Integer or decimal number representing seconds from conversation start.
+**Format**: Integer or decimal number representing seconds from conversation start or end.
 
 **Examples**: 
 
