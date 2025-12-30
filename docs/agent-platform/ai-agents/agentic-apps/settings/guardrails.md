@@ -4,7 +4,7 @@ The personally identifiable information (PII) framework and Guardrails provide e
 
 ### Core Components
 
-* **PII**: A dedicated PII layer that idenitifes sensitive information with the help of configured patterns. Protective measures like masking or redaction are taken on the detected sensitive content before it's passed to the  language models or other components.
+* **PII**: A dedicated PII layer that identifies sensitive information with the help of configured patterns. Protective measures like masking or redaction are taken on the detected sensitive content before it's passed to the  language models or other components.
 * **Guardrails (Input and Output Scanners)**: Guardrails monitor both inputs and responses. They enforce safety, compliance, and content-quality rules to ensure the agent behaves consistently and responsibly across all workflows.
 * **Data Anonymization**: Data remains anonymized throughout the processing pipeline. Only components explicitly configured to access sensitive information can selectively de-anonymize it when operationally required.
 

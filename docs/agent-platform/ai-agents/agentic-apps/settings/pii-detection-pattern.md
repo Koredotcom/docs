@@ -10,17 +10,17 @@ To create a new PII rule, click *+ New Pattern* on the PII page and configure th
 * Pattern Name: Unique name to identify the rule.
 * Regex Definition: Define custom regular expression to detect the PII entity in user input. This pattern determines which values are identified as sensitive data. For example, to identify all the email ids from the content, use a regex as shown below. 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`
-* Status:
+* Status: Enable or disable the pattern. If a pattern is disabled, it is ignored during processing.  
 * Redaction Method: Choose the action to be taken on the identified PII data. 
     * Replace with random string: Replaces original value with a randomly system generated, unique string.
-    * Replace with predefined text: Replaces original value with a predefined text. Provide the text with which PII should be replaced.
+    * Replace with predefined text: Replaces original value with a predefined text. Provide the text with which PII is to be replaced.
     * Partially mask the value: Masks the PII partially. 
         * Mask Character: Specifies the character used to mask the hidden portion of the value. 
         * Number of Characters to Skip from Start: Defines how many characters at the beginning of the value remain visible and aren't masked. 
         * Number of Characters to Skip from End: Defines how many characters at the end of the value remain visible and are not masked.
 
-    For example, if the mask character is * and the end charaters are set to 12, the original email id, `john.doe@example.com`is masked and shown as `****.***@example.com`
-    * Access Control: Defines who or what can access the original (unredacted/unmasked) PII value. Based on the selections here, the read
+    For example, if the mask character is * and the end characters are set to 12, the original email id, `john.doe@example.com`is masked and shown as `****.***@example.com`
+    * Access Control: Defines who or what can access the original (not redacted/masked/replaced) PII value. Based on the selections here, the read
     * Test Pattern: Use this to test and validate if the regex pattern detects PII data as expected. 
 
 ![PII Detection Pattern](images/new-pattern.png "PII Detection Pattern")
