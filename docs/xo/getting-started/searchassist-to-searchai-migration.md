@@ -61,15 +61,15 @@ During migration, content from web pages, documents, and connectors in SearchAss
     * Scheduler configuration from the connectors isn't replicated into Search AI and must be manually configured. 
 * **Structured Data**
     * Structured data is partially replicated. Only the content in the title, content, and URL fields is replicated as-is during migration. Content in other fields is migrated as custom fields. Manually review the fields and map them into corresponding fields in Search AI. 
-    * Manually, structured data can be imported into Search AI using the [JSON connector](https://docs.kore.ai/xo/searchai/content-sources/connectors/json/). This connector enables ingestion and indexing of structured data in JSON format. Use the sample file to prepare the structured data in the expected format and then upload the file. 
-    * Alternatively, structured data can also be imported via APIs. Refer to [this for details](https://docs.kore.ai/xo/apis/searchai/ingest-data/). 
+    * Manually, structured data can be imported into Search AI using the [JSON connector](../searchai/content-sources/connectors/json.md). This connector enables ingestion and indexing of structured data in JSON format. Use the sample file to prepare the structured data in the expected format and then upload the file. 
+    * Alternatively, structured data can also be imported via APIs. Refer to [this for details](../apis/searchai/ingest-data.md). 
     * Manually train the app to view the chunks from the structured data. 
 * **FAQs**
     * FAQs aren't automatically migrated. 
-    * You can manage FAQs using the [Knowledge Module](https://docs.kore.ai/xo/automation/knowledge-ai/manage-faqs/) under Automation AI. 
+    * You can manage FAQs using the [Knowledge Module](../automation/knowledge-ai/manage-faqs.md) under Automation AI. 
     * You can [export the existing FAQs](https://docs.kore.ai/searchassist/manage-content-sources/managing-faqs/#Exporting_FAQs) from SearchAssist and import them into Automation AI as part of its Knowledge Graph.
-    * You can also manually add FAQs or [extract them from unstructured web pages or files ](https://docs.kore.ai/xo/automation/knowledge-ai/knowledge-extraction/)into the application. 
-    * Alternatively, use the [JSON connector](https://docs.kore.ai/xo/searchai/content-sources/connectors/json/) to add FAQs by saving the question as chunkTitle and the answer as chunkText.
+    * You can also manually add FAQs or [extract them from unstructured web pages or files ](../automation/knowledge-ai/knowledge-extraction.md)into the application. 
+    * Alternatively, use the [JSON connector](../searchai/content-sources/connectors/json.md) to add FAQs by saving the question as chunkTitle and the answer as chunkText.
 
 ### Indexing Configurations
 
@@ -78,12 +78,12 @@ Index fields are fully replicated, but traits aren't replicated. There is no lon
 
 #### Index Fields
 
-Index fields are fully replicated and mapped to corresponding fields in Search AI. The custom fields in SearchAssist are automatically mapped to the corresponding fields in Search AI. [Learn more](https://docs.kore.ai/xo/searchai/content-sources/connectors/unified-schema/). 
+Index fields are fully replicated and mapped to corresponding fields in Search AI. The custom fields in SearchAssist are automatically mapped to the corresponding fields in Search AI. [Learn more](../searchai/content-sources/connectors/unified-schema.md). 
 
 
 #### Index Configurations
 
-Index Configurations must be reconfigured manually after migration. For more details, refer to [this](https://docs.kore.ai/xo/searchai/index-configuration/). 
+Index Configurations must be reconfigured manually after migration. For more details, refer to [this](../searchai/index-configuration.md). 
 
 In Search AI, the BGE-M3 vector model is selected by default for generating embeddings. You can also set up a custom embedding model. 
 
@@ -118,12 +118,12 @@ Note
 1. in Search AI stages, basic conditions aren't supported. Therefore any stage that has basic conditions is partially migrated. Enhance the custom script manually in those cases to address the basic conditions. 
 2. All custom scripts are automatically converted from Painless to JavaScript during migration.
 
-Additionally, you can also configure the Chunk Workbench manually in Search AI to apply additional processing on extracted chunks. [Learn More](https://docs.kore.ai/xo/searchai/workbench/introduction/). 
+Additionally, you can also configure the Chunk Workbench manually in Search AI to apply additional processing on extracted chunks. [Learn More](../searchai/workbench/introduction.md). 
 
 
 #### Index Settings
 
-Search AI supports 100+ languages and can handle all the languages supported by the underlying LLM and embedding models. Refer to [this ](https://docs.kore.ai/xo/searchai/language-support/)for language-specific configuration and recommendations. No specific configuration is required for the supported languages. 
+Search AI supports 100+ languages and can handle all the languages supported by the underlying LLM and embedding models. Refer to [this ](../searchai/language-support.md)for language-specific configuration and recommendations. No specific configuration is required for the supported languages. 
 
 
 #### Traits
@@ -368,14 +368,14 @@ To do this, navigate to the <em>Advanced Crawl Configurations</em> for a web cra
     * Presentable
     * Prefix Search
     * Search Relevance
-* Small Talk is also deprecated from Search AI, but can be managed through conversational flows in Automation AI. If required, this must be manually set up after migration. Go to the[ SmallTalk page in Automation AI](https://docs.kore.ai/xo/automation/use-cases/small-talk/) and provide the details of the small talk to be managed.[ Learn More](https://docs.kore.ai/xo/automation/use-cases/small-talk/). 
+* Small Talk is also deprecated from Search AI, but can be managed through conversational flows in Automation AI. If required, this must be manually set up after migration. Go to the[ SmallTalk page in Automation AI](../automation/use-cases/small-talk.md) and provide the details of the small talk to be managed.[ Learn More](../automation/use-cases/small-talk.md). 
 * Synonym and stop word support isn't available in Search AI and is planned for a future release.. 
 * Spell correction isn't required since we don't rely on keyword matching in Search AI. Hence, this configuration isn't replicated. 
 
 
 #### Result Ranking
 
- In Search AI, [Business rules](https://docs.kore.ai/xo/searchai/business-rules/) and [Agentic Rag](https://docs.kore.ai/xo/searchai/rag-agents/) capabilities provide more flexible, context-aware control over retrieval, eliminating the need to configure ranking rules for each unique user query.
+ In Search AI, [Business rules](../searchai/business-rules.md) and [Agentic Rag](../searchai/rag-agents.md) capabilities provide more flexible, context-aware control over retrieval, eliminating the need to configure ranking rules for each unique user query.
 
 Hence, this functionality has been deprecated and doesn't need migration. 
 
