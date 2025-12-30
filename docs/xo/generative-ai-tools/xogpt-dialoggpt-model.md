@@ -814,9 +814,9 @@ Output:
 
 "score": 0.5552528,
 
-"Description": "This intent allows users to make changes to or cancel their existing leave requests within the HR system. Users can easily modify details such as the duration or type of leave or cancel the request altogether if needed. ",
+"Description": "This intent allows users to make changes to or cancel their existing leave requests within the HR system. Users can easily modify details such as the duration or type of leave or cancel the request altogether if needed.",
 
-"appId": "st-e0dc1b66-b34f-4e90-a040-af3ab69a782d",
+"appId": "st-e0dc1b66-b34f-xxxx-a040-af3ab69a782d",
 
 "appName": "kWEysAZN"
 
