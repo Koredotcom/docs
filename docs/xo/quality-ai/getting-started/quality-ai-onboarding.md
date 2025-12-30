@@ -125,11 +125,61 @@ Configure conversation sources based on your deployment type
 * Displays only when you select the **Agent AI** or **Quality AI Express** deployment mode.
 
 * Add the required queue names and IDs.  
-<img src="../Onboarding/images/conversation-sources-basic-settings-configuration.png" alt="Queue Configuration" title="Queue Configuration" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
         Ensure the Agent AI integration includes the unique agent email ID and queue ID from the source system for proper processing and routing. Duplicates may lead to routing or processing errors.
+
+##### Add Queue
+
+To map agents to a new queue,
+
+1. Enable **Agent AI** or **Quality AI Express** source toggle.
+
+1. Select **Add Queue**, and enter the following details:   
+<img src="../Onboarding/images/add-queue.png" alt="Add Queue" title="Add Queue" style="border: 1px solid gray; zoom:80%;">
+
+    * **Name**: Enter a descriptive queue name.
+
+    * **Queue ID**: Provide a unique identifier for the queue.
+
+    * **System Generated Queue ID**: Generates a unique System Generated Queue ID for internal tracking.
+
+    * **Agents**: Assign agents to the queue using the searchable list.
+
+1. Select **Save** to start or update conversation ingestion and routing.     
+<img src="../Onboarding/images/add-queue-agent.png" alt="Agent Queue Details" title="Agent Queue Details" style="border: 1px solid gray; zoom:80%;">
+
+##### Chat Script Timestamp Format
+
+The Chat Script Timestamp Format defines how Quality AI Express parses timestamps in chat files during ingestion. Chat scripts can include multiple timestamps per message. Correct configuration preserves message order, duration calculations, and time-based analytics.
+
+**Supported Timestamp Formats**
+
+**Unix Timestamp**
+
+Represents time as the number of seconds since January 1, 1970 (UTC).
+
+**Format**: Integer or decimal (seconds).
+
+**Examples**: 
+
+* `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
+
+* `1735574400.523` (includes milliseconds)
+
+**Offset Timestamp**
+
+Represents time as seconds relative to the conversation start.
+
+**Format**: Integer or decimal number representing seconds from conversation start.
+
+**Examples**: 
+
+* `0` (conversation start)
+* `45` (45 seconds into the conversation)
+* `120.5` (2 minutes and 0.5 seconds into the conversation)
+
 
 #### Conversation Sources Warnings
 
@@ -172,7 +222,7 @@ Complete all the following configuration steps.
 
 1. After setup, **Quality AI** automatically processes conversations.
 
-1. Use the workspace **Product Switcher** to access **Quality AI**.      
+1. Use the **Product Switcher** workspace to access **Quality AI**. This screen only appears for first-time login users, not for existing ones.        
 <img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;">   
 
 1. Navigate to **Conversation Sources** under the **Configure** section. Select the required conversations to enable interaction tracking and routing. The Product Switcher icon lets you switch effortlessly between products.       
