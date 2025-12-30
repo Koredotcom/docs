@@ -136,7 +136,7 @@ The main interface displays all enabled conversation sources and their respectiv
 
 #### Chat Script Timestamp Format
 
-Chat Script Timestamp Format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. The script contain multiple timestamp entries for each message exchange. Proper timestamp configuration ensures accurate conversation sequencing, duration calculations, and time-based analytics.
+Chat Script Timestamp Format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. The script contain multiple timestamp entries for each message exchange. Proper timestamp configuration ensures accurate conversation sequencing, duration calculations, and time-based analytics. This ingestion supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format.
 
 **Why Timestamp Format Matters**
 
@@ -166,7 +166,7 @@ Unix Timestamp (also called Epoch time) represents time as the number of seconds
 
 **Offset Timestamp**
 
-Offset Timestamp measures time in seconds from the conversation start and end date validation.
+When you select Offset Timestamp, the ingestion process supports message-level offset timestamps without start or end date validation. The system uses start and end dates only for reporting and filtering purposes. This change applies only to chat ingestion and doesn't affect voice conversation ingestion.
 
 **Format**: Integer or decimal number representing seconds from conversation start or end.
 

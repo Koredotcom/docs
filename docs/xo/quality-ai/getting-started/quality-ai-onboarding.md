@@ -158,7 +158,7 @@ The Chat Script Timestamp Format defines how Quality AI Express parses timestamp
 
 **Unix Timestamp**
 
-Represents time as the number of seconds since January 1, 1970 (UTC).
+When you select Unix Timestamp, this ingestion supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format.
 
 **Format**: Integer or decimal (seconds).
 
@@ -170,7 +170,7 @@ Represents time as the number of seconds since January 1, 1970 (UTC).
 
 **Offset Timestamp**
 
-Represents time as seconds relative to the conversation start and end date validation.
+When you select Offset Timestamp, the ingestion process supports message-level offset timestamps without start or end date validation. 
 
 **Format**: Integer or decimal number representing seconds from conversation start or end.
 
