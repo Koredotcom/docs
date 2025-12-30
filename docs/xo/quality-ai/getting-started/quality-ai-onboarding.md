@@ -2,7 +2,7 @@
 
 Quality AI is an advanced analytics platform that evaluates post-interaction customer conversations to enhance agent performance and improve the overall customer experience.
 
-Quality AI onboarding guides you through the process, from account access to application setup. It helps quality teams and analysts configure data sources, define evaluation criteria, and apply consistent scoring. This approach reduces manual setup and accelerates access to compliance metrics, quality insights, and performance reporting.
+The Quality AI onboarding guides you through the process, from account access to application setup. It helps quality teams and analysts configure data sources, define evaluation criteria, and apply consistent scoring. This approach reduces manual setup and accelerates access to compliance metrics, quality insights, and performance reports.
 
 After signing up, you select deployment options, configure ingestion sources, and complete the required settings to start scoring and analyzing interactions.
 
@@ -168,13 +168,14 @@ This lets you define agent access, audit preferences, and usage policies to supp
 
 ### Go Live with Quality AI
 
-1. Complete all configuration steps.
+Complete all the following configuration steps.
 
-1. When configured, **Quality AI** automatically starts processing conversations.
+1. After setup, **Quality AI** automatically processes conversations.
 
-1. Use the workspace **Product Switcher** to access **Quality AI**.    
+1. Use the workspace **Product Switcher** to access **Quality AI**.      
+<img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;">   
 
-1. Navigate to **Conversation Sources** under the **Configure** section and select the required conversations to enable and streamline your interaction tracking and routing. 
+1. Navigate to **Conversation Sources** under the **Configure** section. Select the required conversations to enable interaction tracking and routing. The Product Switcher icon lets you switch effortlessly between products.       
 <img src="../Onboarding/images/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! note
