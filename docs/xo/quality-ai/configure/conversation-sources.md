@@ -154,15 +154,15 @@ Quality AI uses the following timestamp format options:
 
 **Unix Timestamp**
 
-Unix Timestamp (also called Epoch time) represents time as the number of seconds elapsed since January 1, 1970, 00:00:00 UTC.
+When you select Unix Timestamp, this ingestion supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format. 
 
 **Format**: Integer or decimal number representing seconds.
 
 **Examples**: 
 
-* `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
+    * `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
 
-* `1735574400.523` (includes milliseconds)
+    * `1735574400.523` (includes milliseconds)
 
 **Offset Timestamp**
 
@@ -172,9 +172,9 @@ When you select Offset Timestamp, the ingestion process supports message-level o
 
 **Examples**: 
 
-* `0` (conversation start)
-* `45` (45 seconds into the conversation)
-* `120.5` (2 minutes and 0.5 seconds into the conversation)
+    * `0` (conversation start)
+    * `45` (45 seconds into the conversation)
+    * `120.5` (2 minutes and 0.5 seconds into the conversation)
 
 ### Queue Management
 
