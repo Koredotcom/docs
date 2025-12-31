@@ -52,17 +52,17 @@ Follow this guided configuration to integrate your cloud provider's encryption s
 2. **Configure Cloud Provider Details**
     3. **Select Provider** – Choose **AWS** or **Azure**.
     4. **Enter Identifiers**:
-        1. **AWS** – Provide the ARN of your CMK and Role ARN.
+        1. **AWS** – Provide the Service Key ARN and Assume Role ARN.
         2. **Azure** – Provide the Key Vault URL and Tenant ID.
     5. **Additional Inputs**:
-        3. **AWS** – Account ID (with copy option).
-        4. **Azure** – Client ID and Client Name (with copy option).
+        1. **AWS** – Service Role ARN and Assume Role External ID(with copy option).
+        2. **Azure** – Client ID and App Name (with copy option).
 3. **Test Connection**
-    6. Click **Test Connection** to validate:
-        5. Key accessibility
-        6. Correct permissions
-        7. Authentication credentials
-    7. If successful, click **Next**.
+    1. Click **Test Connection** to validate:
+        1. Key accessibility
+        2. Correct permissions
+        3. Authentication credentials
+    2. If successful, click **Next**.
 4. **Finalize Setup**: Click **Proceed** to complete the configuration.
    
 ## Post-Activation Key Management
