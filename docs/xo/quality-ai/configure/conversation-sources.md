@@ -1,8 +1,8 @@
 # Conversation Sources
 
-The Conversation Sources section in Quality AI enables users to configure and manage sources of voice and chat conversation data from multiple platforms within a unified interface. It supports data ingestion from Contact Center AI (CCAI), Agent AI, and Quality AI Express. This provides a centralized way to manage and ingest conversation data for seamless interaction tracking, routing, and analysis. The platform collects, processes, and analyzes data across multiple sources, supporting key metadata for accurate insights while simplifying overall management.
+The Conversation Sources section in Quality AI lets users configure and manage voice and chat conversation data sources from multiple platforms in a single interface. It supports data ingestion from Contact Center AI (CCAI), Agent AI, and Quality AI Express. This centralized approach simplifies conversation ingestion, tracking, routing, and analysis while supporting key metadata for accurate insights.
 
-You can assign agents to Agent AI and Quality AI Express queues directly through the UI instead of only via Public APIs. The interface lets you enable or disable sources, view and manage queues with details like Queue Name, Queue ID, system-generated IDs, and assigned agents, and add or edit queues. The Add Queue dialog simplifies creating queues by allowing agent mapping through a searchable list. This UI-based mapping improves usability, onboarding, and consistent queue management across platforms.
+You can assign agents to Agent AI and Quality AI Express queues directly through the UI, removing the need to rely only on Public APIs. The interface lets you enable or disable sources, view and manage queues with details such as queue name, queue ID, system-generated IDs, and assigned agents, and add or edit queues. The Add Queue dialog simplifies queue creation by allowing agent assignment through a searchable list.
 
 ## Access Conversation Sources
 
@@ -11,11 +11,11 @@ Navigate to **Quality AI** > **CONFIGURE** > **Conversation Sources**.
 
 ## Supported Conversation Sources
 
-Quality AI supports three conversation sources, each designed for specific deployment scenarios and organizational requirements:
+Quality AI supports three conversation sources, each designed for specific deployment scenarios and organizational needs:
 
 ### Contact Center AI (CCAI)
 
-This seamlessly integrates and ingests real-time conversation data from the CCAI platform.
+CCAI integrates and ingests real-time conversation data from the CCAI platform.
 
 * **Integration Method**: Direct API connection
 
@@ -23,11 +23,13 @@ This seamlessly integrates and ingests real-time conversation data from the CCAI
 
 * **Configuration Requirements**: None (automatic integration) 
 
-* **Use Case**: Organizations using Kore.ai's native contact center solution. 
+* **Use Case**: Organizations using Kore.ai's native contact center solutions. 
 
     !!! note
 
-        If the CCAI source is disabled, the system does not process incoming interactions from CCAI on third-party desktops.
+        * If the CCAI source is disabled, the system does not process incoming interactions from CCAI on third-party desktops.
+
+        * CCAI queues do not support agent mapping through UI. Queue configuration and agent assignment continue to follow existing CCAI workflows and APIs.
 
 ### Agent AI
 
@@ -45,17 +47,17 @@ This supports human-agent interactions enhanced by AI augmentation capabilities.
 
         * If the Agent AI source is disabled, the system does not process incoming interactions from Agent AI on third-party desktops. 
         
-        * Make sure that Agent email IDs and queue IDs are included during integration.
+        * Include agent email IDs and queue IDs during integration.
 
 ### Quality AI Express
 
-This imports interactions or data (service records, chat logs, and emails) from external sources such as AWS S3 connectors for third-party contact centers [Connectors](../../searchai/content-sources/connectors/amazons3.md), bypassing CCAI as the ingestion path into the quality AI system.
+Quality AI Express imports interactions such as service records, chat logs, and emails from external sources using [AWS S3 Connectors](../../searchai/content-sources/connectors/amazons3.md), bypassing CCAI as the ingestion path.
 
 * **Integration Method**: Amazon Web Services (AWS) S3 Connectors
 
 * **Data Processing**: Batch file processing
 
-* **Configuration Requirements**: Add queues with Agent Queue names and Queue IDs.
+* **Configuration Requirements**: Add queues with agent queue names and queue IDs
 
 * **Supported Data Types**:
 
@@ -69,23 +71,23 @@ This imports interactions or data (service records, chat logs, and emails) from 
 
     * Structured metadata files 
 
-* **Use Case**: For organizations using third-party Contact Center as a Service (CCaaS) platforms.
+    * **Use Case**: Organizations using third-party Contact Center as a Service (CCaaS) platforms.
 
     !!! note
 
-        Connectors act as the primary bridge for importing conversations from external systems into Quality AI through file transfer from AWS S3.
+        Connectors act as the primary bridge for importing conversations into Quality AI through AWS S3 file transfers.
 
 ## Configuration Requirements
 
 ### Prerequisites
 
-Before configuring Conversation Sources, make sure:
+Before you configure Conversation Sources:
 
-* Assign the appropriate user permissions.
+* Assign appropriate user permissions.
 
-* Verify that the required metadata structures are available.
+* Verify that required metadata structures exist.
 
-* Confirm that the integration endpoints are available.
+* Confirm that integration endpoints are available.
 
 ### Quality AI Express Setup
 
@@ -95,26 +97,26 @@ Complete these steps before activating **Quality AI Express**:
 
 * Clear all active **Dialog Task** metrics from evaluated form queues.
 
-Failure to complete clearance prevents activation with a warning message.   
+If you skip these steps, the system blocks activation and displays a warning.      
 <img src="../conversation-sources/enable-quality-ai-express-setup.png" alt="Express Setup" title="Express Setup" style="border: 1px solid gray; zoom:80%;">
 
 **AWS S3 Configuration**:
 
-* Configure S3 bucket access
+* Configure S3 bucket access.
 
-* Set up file transfer protocols
+* Set up file transfer protocols.
 
-* Define data format specifications
+* Define data format specifications.
 
-* Establish processing schedules
+* Establish processing schedules.
 
 ### Conversation Sources Interface
 
-The main interface displays all enabled conversation sources and their respective queues.
+The main interface displays all enabled conversation sources and their queues.
 
-* **Enable/Disable Toggles**: Switch each source on or off to start or stop ingestion.
+* **Enable/Disable Toggles**: Start or stop ingestion for each source.
 
-* **Queue List**: Displays existing queues for each source with the following columns:
+* **Queue List**: Displays existing queues with the following columns:
 
     * **Name**: Queue name for easy identification.
 
@@ -122,41 +124,40 @@ The main interface displays all enabled conversation sources and their respectiv
 
     * **System Generated Queue ID**: Unique system-generated identifier.
 
-    * **Agents**: Shows assigned agents counts.
+    * **Agents**: Number of assigned agents.
 
-* **Actions**: Edit or delete to manage agents or queues.
+* **Actions**: Edit or delete queues.
 
-* **Add Queue**: Select Add Queue to add new queues with agent mapping.   
+* **Add Queue**: Add new queues and assign agents.   
 <img src="../conversation-sources/connectors.png" alt="Connectors" title="Connectors" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
-        When you enable **Quality AI Express** in **Conversation Sources**, the system displays **Connectors** in the left navigation menu of Quality AI.
-
+        When you enable **Quality AI Express**, the system displays **Connectors** in the Quality AI left navigation panel. 
     
 #### Chat Script Timestamp Format
 
-Chat Script Timestamp Format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. The script contain multiple timestamp entries for each message exchange. Proper timestamp configuration ensures accurate conversation sequencing, duration calculations, and time-based analytics. 
+Chat Script Timestamp Format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. The script contains multiple timestamp entries for each message exchange. Proper timestamp configuration ensures accurate conversation sequencing, duration calculations, and time-based analytics. 
 
 **Why Timestamp Format Matters**
 
-* Order messages chronologically within conversations
+* Order messages chronologically.
 
-* Calculate conversation duration and response times
+* Calculate conversation duration and response times.
 
-* Identify hold periods and transfer events
+* Identify hold periods and transfer events.
 
-* Generate time-based analytics and reports
+* Generate time-based analytics and reports.
 
-* Incorrect timestamp parsing leads to conversation sequencing errors and inaccurate metrics.
+* Incorrect timestamp parsing causes sequencing errors and inaccurate metrics.
 
 Quality AI uses the following timestamp format options:
 
 **Unix Timestamp**
 
-When you select Unix Timestamp, this ingestion supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format. 
+Represents seconds since the Unix epoch. This ingestion process supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format. 
 
-**Format**: Integer or decimal number representing seconds.
+**Format**: Integer or decimal number.
 
 **Examples**: 
 
@@ -166,9 +167,9 @@ When you select Unix Timestamp, this ingestion supports only Unix timestamps wit
 
 **Offset Timestamp**
 
-When you select Offset Timestamp, the ingestion process supports message-level offset timestamps without start or end date validation. The system uses start and end dates only for reporting and filtering purposes. This change applies only to chat ingestion and doesn't affect voice conversation ingestion.
+Represents seconds from the start or end of the conversation. This ingestion process supports message-level offset timestamps without start or end date validation (only for reporting and filtering purposes). This change applies only to chat ingestion and doesn't affect voice conversation ingestion.
 
-**Format**: Integer or decimal number representing seconds from conversation start or end.
+**Format**: Integer or decimal number.
 
 **Examples**: 
 
@@ -182,25 +183,29 @@ Configure queues for Agent AI and Quality AI Express sources to route conversati
 
 #### Add Queue
 
-To map agents to a new queue,
+To map agents to a new queue:
 
 1. Navigate to **Quality AI** > **CONFIGURE** > **Conversation Sources**.   
 
-1. Enable **Agent AI** or **Quality AI Express** source toggle.
+1. Turn on **Agent AI** or **Quality AI Express** source.
 
-1. Select **Add Queue**, and enter the following details:   
+1. Select **Add Queue** and enter the following details:   
 <img src="../conversation-sources/add-queue.png" alt="Add Queue" title="Add Queue" style="border: 1px solid gray; zoom:80%;">
 
     * **Name**: Enter a descriptive queue name.
 
     * **Queue ID**: Provide a unique identifier for the queue.
 
-    * **System Generated Queue ID**: Generates a unique System Generated Queue ID for internal tracking.
+    * **System Generated Queue ID**: A system-generated Queue ID for internal tracking.
 
     * **Agents**: Assign agents to the queue using the searchable list.
 
-1. Select **Save** to start or update conversation ingestion and routing.     
+1. Select **Save** to start or update conversation ingestion for the queue.        
 <img src="../conversation-sources/add-queue-agent.png" alt="Agent Queue Details" title="Agent Queue Details" style="border: 1px solid gray; zoom:80%;">
+
+    !!! note
+
+        Agent-to-queue mapping through the UI applies only to Agent AI and Quality AI Express sources. Contact Center AI (CCAI) queue configuration CCAI queue configuration, routing, and agent assignment remain unchanged.
 
 ## Access Control
 
@@ -208,23 +213,23 @@ To map agents to a new queue,
 
 **Auto QA Access Required**:
 
-* Enable/disable Quality AI Express
+    * Enable/disable Quality AI Express.
 
-* Save configuration settings
+    * Save configuration settings.
 
-* Modify source parameters
+    * Modify source parameters.
 
 **Limited Access Users**:
 
-* View-only interface (non-editable)
+    * View-only interface (non-editable).
 
-* Can't save configurations
+    * Can't save configurations.
 
 **Agent-Level Access**:
 
-* Toggle source enable/disable
+    * Toggle source enable/disable.
 
-* Can't save settings
+    * Can't save settings.
 
 When you disable **Conversation Sources** > **Quality AI Express**, the system hides the following CCAI feature metrics:
 
