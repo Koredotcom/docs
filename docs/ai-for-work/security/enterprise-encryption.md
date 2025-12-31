@@ -53,11 +53,11 @@ Follow this guided configuration to integrate your cloud provider's encryption s
     3. **Select Provider**: Choose **AWS** or **Azure**.
     4. **Enter Your Identifiers**:
          -  AWS:
-             - **Key ARN**: Your KMS Customer Managed Key ARN
-             - **Assume Role ARN**: The IAM role ARN you created in AWS
+             - **Key ARN**: Your KMS Customer Managed Key ARN.
+             - **Assume Role ARN**: The IAM role ARN you created in AWS.
          - Azure:
-             - **Key Vault URL**: Your Azure Key Vault URL
-             - **Tenant ID**: Your Azure tenant ID
+             - **Key Vault URL**: Your Azure Key Vault URL.
+             - **Tenant ID**: Your Azure tenant ID.
     5. **Review Pre-populated Values**:
          - AWS: The system displays the **Service Role ARN** and **Assume Role External ID** with a copy option. These values are required for configuring your IAM role trust policy in AWS.
          - Azure: The system displays the **Client ID** and **App Name** with a copy option. These values are required for configuring your Azure Key Vault access.
