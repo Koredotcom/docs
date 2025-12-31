@@ -168,7 +168,14 @@ The dialog task is created and opens in the Dialog Builder. You can make require
 
 ## Dialog Task Builder Overview
 
-Before moving on, here is an overview of the Dialog Task Builder. For details on navigating dialog tasks, please see [Navigating the Dialog Task Builder](./navigating-dialog-tasks.md){:target="_blank"}.
+
+The Dialog Builder is where you can design, build, train, and test the conversations that your AI Agent can have with your users. You can access them by creating a new Dialog Task or opening an existing one. You can build Dialogs by adding and configuring [nodes](node-types/nodes-transitions.md){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
+
+!!! Note
+
+    This guide applies to the new Dialog Builder. If your tasks are using the previous version, please consider upgrading.
+
+
 
 <img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
 
