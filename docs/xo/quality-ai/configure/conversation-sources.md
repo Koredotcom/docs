@@ -213,23 +213,23 @@ To map agents to a new queue:
 
 **Auto QA Access Required**:
 
-    * Enable/disable Quality AI Express.
+* Enable/disable Quality AI Express.
 
-    * Save configuration settings.
+* Save configuration settings.
 
-    * Modify source parameters.
+* Modify source parameters.
 
 **Limited Access Users**:
 
-    * View-only interface (non-editable).
+* View-only interface (non-editable).
 
-    * Can't save configurations.
+* Can't save configurations.
 
 **Agent-Level Access**:
 
-    * Toggle source enable/disable.
+* Toggle source enable/disable.
 
-    * Can't save settings.
+* Can't save settings.
 
 When you disable **Conversation Sources** > **Quality AI Express**, the system hides the following CCAI feature metrics:
 
