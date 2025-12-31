@@ -16,7 +16,7 @@ Make sure you have the following prerequisites:
 
 * Enable Quality AI at the workspace level using the public API.
 
-* Selection of a deployment mode.
+* A selected deployment mode.
 
 ## Conversation Sources
 
@@ -50,28 +50,32 @@ Steps to create a Quality AI application via the XO platform:
 1. Sign up for a new account if you don’t have one. [Learn more](../../getting-started/accessing-the-platform.md){:target="_blank"}.  
 <img src="../Onboarding/images/xo-landing-page.png" alt="Landing Page" title="Landing Page" style="border: 1px solid gray; zoom:80%;">
 
-1. After logging into your account, select the **+ New App** from the dropdown at the top of the XO landing page. Or,   
-<img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
+1. On the XO landing page, choose one of the following options:
 
-1. Select **Create New** to start a new app project using any available AI-powered product. You can add additional products to the app at any time during your application journey.      
-<img src="../Onboarding/images/create-new-app-project.png" alt="Create New App" title="Create New App" style="border: 1px solid gray; zoom:80%;">
+    * Select the **+ New App** from the top dropdown.   
+    <img src="../Onboarding/images/navigate-to new-app.png" alt="New App" title="New App" style="border: 1px solid gray; zoom:80%;">
+
+    * Select **Create New** to start a new app project. You can add additional AI-powered products at any time.     
+    <img src="../Onboarding/images/create-new-app-project.png" alt="Create New App" title="Create New App" style="border: 1px solid gray; zoom:80%;">
 
 1. Select **Quality AI**.   
 <img src="../Onboarding/images/Quality-ai-new-user.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
-        * For new users, the **Get Started** screen displays a **Try now** option to begin onboarding, followed by the Guided Onboarding. 
-        
-        * For existing users, the **Get Started** screen displays a **Contact us** option to proceed. The subsequent Guided Onboarding steps are skipped, and the user is taken directly to the **Basic Configuration Settings** section.
+        * For new users, the **Get Started** screen displays Try now. Select **Try now** to start self-service onboarding for Quality AI. The system creates the application automatically and guides you through the onboarding steps.
 
-1. Enter your **App's Name** and provide a brief **Description** about it.    
-<img src="../Onboarding/images/creat-new-app.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
+        * For existing users, the **Get Started** screen displays Contact Us. Select **Contact Us** to proceed with sales-assisted onboarding. The system skips Guided Onboarding and opens the Basic Configuration Settings section after license activation.
+
+    <img src="../Onboarding/images/onboarding-new-users.png" alt="Contact Us" title="Contact Us" style="border: 1px solid gray; zoom:80%;">
+        
+1. Enter the **App's Name** and a brief **Description**.    
+<img src="../Onboarding/images/create-new-app.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
 
 1. The system automatically generates a new application.  
 <img src="../Onboarding/images/creating-app.png" alt="Try Now" title="Try Now" style="border: 1px solid gray; zoom:80%;">
 
-1. After the generation is complete, follow the guided setup steps (for new users).
+1. After creation, follow the guided setup steps.
 
 ### Configure Basic Settings
 
@@ -81,7 +85,7 @@ This includes multilingual support, with English as the default language.
 
 1. Select agent languages for customer assistance and AI-generated output (Topics, Justifications, QA outcomes).
 
-1. Select your preferred language to set it as the default for reports.   
+1. Select a preferred language for reports.   
 <img src="../Onboarding/images/choose-language.png" alt="Preferred Language" title="Preferred Language" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
@@ -90,47 +94,47 @@ This includes multilingual support, with English as the default language.
 
         * To enable Quality AI features for non-English languages, configure an LLM in the GenAI section.
 
-1. Select **+ Add** to move the selected language into the **Selected Languages** list.  
+1. Use **+ Add** to move languages into the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
 
 1. Toggle on any language to **Mark as the Default**.   
 <img src="../Onboarding/images/set-default-lang.png" alt="Mark Default Language" title="Mark Default Language" style="border: 1px solid gray; zoom:80%;">
     
-1. Turn Off the toggle for a selected language in the **Selected Languages** list to remove it from the default language list.   
+1. Turn Off the toggle to remove a selected language from the default language list.   
 
     !!! warning "Default Language Removal"
 
-        When you remove the default language, the system stops scoring and analyzing interactions in that language. The system continues to display AI-generated insights, such as topics and names, in the default language regardless of how agents or customers communicate.
+        When you remove the default language, the system stops scoring interactions in that language but continues to display AI-generated insights in the default language.
 
 1. Select **Confirm** to save your language selections.
 
-### Set up and Manage Your Conversation Sources
+### Set up and Manage Conversation Sources
 
-Configure conversation sources based on your deployment type 
+Configure sources based on your deployment type: 
 
-#### For Standalone or Integrated
+**For Standalone or Integrated**
 
-* Enable **CCAI** or **Agent AI** connections based on the conversation source.
+    * Enable **CCAI** or **Agent AI** connections.
 
-* Configure Queue IDs and Agent Email ID mappings when you select **Agent AI**.
+    * Configure Queue IDs and Agent Email ID mappings for **Agent AI**.
 
-#### For Standalone or Express
+**For Standalone or Express**
 
-* Enable **Quality AI Express**.
+    * Enable **Quality AI Express**.
 
-* Configure file upload settings through connectors.
+    * Configure file uploads using connectors.
 
-#### Queue Configuration
+### Queue Configuration
 
-* Displays only when you select the **Agent AI** or **Quality AI Express** deployment mode.
+Queue configuration appears only for **Agent AI** or **Quality AI Express** deployments.
 
-* Add the required queue names and IDs.  
+* Add queue names and Queue IDs.  
 
     !!! note
 
-        Ensure the Agent AI integration includes the unique agent email ID and queue ID from the source system for proper processing and routing. Duplicates may lead to routing or processing errors.
+        Include unique agent email IDs and Queue IDs from the source system. Duplicate values can cause routing or processing issues.
 
-##### Add Queue
+#### Add Queue
 
 To map agents to a new queue,
 
@@ -147,18 +151,18 @@ To map agents to a new queue,
 
     * **Agents**: Assign agents to the queue using the searchable list.
 
-1. Select **Save** to start or update conversation ingestion and routing.     
+1. Select **Save** to start or update conversation ingestion.     
 <img src="../Onboarding/images/add-queue-agent.png" alt="Agent Queue Details" title="Agent Queue Details" style="border: 1px solid gray; zoom:80%;">
 
-##### Chat Script Timestamp Format
+#### Chat Script Timestamp Format
 
 The Chat Script Timestamp Format defines how Quality AI Express parses timestamps in chat files during ingestion. Chat scripts can include multiple timestamps per message. Correct configuration preserves message order, duration calculations, and time-based analytics.
 
-**Supported Timestamp Formats**
+##### Supported Timestamp Formats
 
-**Unix Timestamp**
+**Unix Timestamp (Default)**
 
-When you select Unix Timestamp, this ingestion supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format.
+When you select Unix Timestamp, this ingestion supports start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format.
 
 **Format**: Integer or decimal (seconds).
 
@@ -170,7 +174,7 @@ When you select Unix Timestamp, this ingestion supports only Unix timestamps wit
 
 **Offset Timestamp**
 
-When you select Offset Timestamp, the ingestion process supports message-level offset timestamps without start or end date validation. 
+When you select Offset Timestamp, this supports message-level offsets without start or end date validation. 
 
 **Format**: Integer or decimal number representing seconds from conversation start or end.
 
@@ -184,31 +188,30 @@ When you select Offset Timestamp, the ingestion process supports message-level o
 
 #### Conversation Sources Warnings
 
-* **CCAI**: Disabling the CCAI source stops the system from processing incoming interactions from CCAI on a third-party desktop.
+* **CCAI**: Disabling stops processing CCAI interactions from third-party desktops.
 
-* **Agent AI**: Disabling the Agent AI source stops the system from processing incoming interactions from Agent AI on a third-party desktop.
+* **Agent AI**: Disabling stops processing Agent AI interactions.
 
-* **Quality AI Express**: Disabling the Quality AI Express source blocks file-based conversation ingestion.
+* **Quality AI Express**: Disabling blocks file-based ingestion.
 
 ### Set Application Usage Permissions
 
-This lets you define agent access, audit preferences, and usage policies to support compliance and tailor application functionality.
+This defines agent access, audit behavior, and usage policies.
 
-#### Enable Agent Access
+#### Agent Access
 
-* Lets agents view AI-generated emotions and sentiment.
+* View AI-generated emotions and sentiment.
 
-* Lets agents view AI justifications for GenAI-based Auto QA. 
+* View GenAI Auto QA justifications. 
 
 * Hide auditor details from agents.
 
-#### Enable Audit Settings
+#### Audit Settings
 
-* Enable auditing (manual review) for:
+    * Enable Speech-based audit 
 
-    * Audit speech-based metrics
-
-    * Audit Agent AI Playbook metrics   
+    * Enable Agent AI Playbook audit   
+    
     <img src="../Onboarding/images/app-usage-settings.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
 
         !!! note
@@ -219,33 +222,33 @@ This lets you define agent access, audit preferences, and usage policies to supp
 
 ### Go Live with Quality AI
 
-Complete all the following configuration steps.
+Complete all configuration steps.
 
 1. After setup, **Quality AI** automatically processes conversations.
 
-1. Use the **Product Switcher** workspace to access **Quality AI**. This screen only appears for first-time login users, not for existing ones.        
+1. Use the **Product Switcher** to access **Quality AI**. This screen appears only for first-time login users.        
 <img src="../Onboarding/images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:80%;">   
 
-1. Navigate to **Conversation Sources** under the **Configure** section. Select the required conversations to enable interaction tracking and routing. The Product Switcher icon lets you switch effortlessly between products.       
+1. Navigate to **Conversation Sources** > **Configure** and enable the required sources for tracking and routing. The Product Switcher icon lets you switch effortlessly between products.       
 <img src="../Onboarding/images/conversation-sources.png" alt="Conversation Sources" title="Conversation Sources" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! note
 
         * Use the workspace switcher to manage multiple environments. 
         
-        * Through the feature flag, the Quality AI Switcher is controlled.
+        * Feature flags control the Quality AI Switcher.
 
-### Quality AI Left Navigation Workflow
+### Quality AI Left Navigation
 
-After launch, the following sections appear in the **Quality AI** left menu:
+After launch, the left navigation displays:
 
 * **Quality AI** (dashboard and analytics).
 
-* **GenAI** (manages LLM configurations).
+* **GenAI** (LLM configuration).
 
 * **Deploy** (deployment and publishing workflows).
 
-* **User Management** (assign roles and permissions).     
+* **User Management** (roles and permissions).     
 <img src="../Onboarding/images/conversation-sources-left-navigation.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
 
 
