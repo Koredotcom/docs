@@ -7,12 +7,16 @@ For detailed guidance on AWS KMS, refer to the [AWS KMS Developer Guide](https:/
 
 ## Prerequisites
 
-We will provide you with:
+Information pre-populated in the interface:
+
+When you initiate the BYOK setup in the admin console, the following values are automatically displayed and available for you to copy:
 
 * **Service Role ARN**: `arn:aws:iam::<account-id>:role/<role-name>` (required to configure the IAM role trust policy).
 * **External ID**: A unique value that you add to your IAM role trust policy to securely allow our service to assume the role in your AWS BYOK setup.
 
-You will provide us with:
+These pre-populated values ensure secure and accurate configuration of your IAM role.
+
+Information you need to provide:
 
 * **Role ARN**: The ARN of the IAM role you create (e.g., `arn:aws:iam::<your-account-id>:role/<role-name>`).
 * **CMK ARN**: The ARN of your KMS Customer Managed Key (e.g.,`arn:aws:kms:<region>:<your-account-id>:key/<key-id>`).
@@ -141,5 +145,6 @@ Provide the team with the following details to complete the integration:
 
 * Your **CMK ARN** from step 1 (e.g., `arn:aws:kms:<region>:account-id>:key/<key-id>`)
 * Your **Role ARN** from step 2 (e.g., `arn:aws:iam::<account-id>:role/<role-name>`)
+* **Service Role ARN** and **External ID** (pre-populated in the admin console interface).
 
 These steps ensure the application can securely access your CMK for BYOK functionality while maintaining the highest security standards.
