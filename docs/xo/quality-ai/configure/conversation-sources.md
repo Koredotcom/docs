@@ -51,7 +51,7 @@ This supports human-agent interactions enhanced by AI augmentation capabilities.
 
 ### Quality AI Express
 
-Quality AI Express imports interactions such as service records, chat logs, and emails from external sources using [AWS S3 Connectors](../../searchai/content-sources/connectors/amazons3.md), bypassing CCAI as the ingestion path.
+Quality AI Express imports interactions such as service records, chat logs, and emails from external sources using [AWS S3 Connectors](../../quality-ai/connectors/aws-s3-connector-setup-guide.md), bypassing CCAI as the ingestion path.
 
 * **Integration Method**: Amazon Web Services (AWS) S3 Connectors
 
@@ -128,7 +128,7 @@ The main interface displays all enabled conversation sources and their queues.
 
 * **Actions**: Edit or delete queues.
 
-* **Add Queue**: Add new queues and assign agents.   
+* **Add Queue**: Add new queues and assign agents'.   
 <img src="../conversation-sources/connectors.png" alt="Connectors" title="Connectors" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
