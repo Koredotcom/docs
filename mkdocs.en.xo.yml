@@ -91,7 +91,7 @@ plugins:
         'quality-ai/analyze/conversation-mining-overview.md': 'quality-ai/analyze/conversation-mining-interactions.md'
         'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
         'getting-started/building-a-virtual-assistant.md' : 'getting-started/dialoggpt-app-setup-guide.md'
-        'quality-ai/configure/quality-ai-express.md' : 'quality-ai/connectors/aws-s3-connector-setup-guide.md'
+        'searchai/content-sources/connectors/amazons3.md' : 'quality-ai/connectors/aws-s3-connector-setup-guide.md'
 extra:
   version:
     provider: mike
