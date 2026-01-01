@@ -33,7 +33,7 @@ CCAI integrates and ingests real-time conversation data from the CCAI platform.
 
 ### Agent AI
 
-This supports human-agent interactions enhanced by AI augmentation.
+Agent AI supports human-agent interactions enhanced by AI augmentation.
 
 * **Integration Method**: Structured data feeds. 
 
