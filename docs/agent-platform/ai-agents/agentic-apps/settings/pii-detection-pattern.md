@@ -1,6 +1,6 @@
 # PII Detection
 
-The platform provides comprehensive PII protection through automated detection, custom pattern recognition, and configurable masking strategies to ensure compliant data handling across all agentic applications. The PII section allows you to define rules to detect and protect personally identifiable information (PII) in user inputs. You can create custom patterns using regular expressions and configure how detected values are handled by the agent.
+The platform provides comprehensive PII protection through automated detection, custom pattern recognition, and configurable masking strategies to ensure compliant data handling across all agentic applications. The PII section allows you to define rules to detect and protect personally identifiable information in user inputs. You can create custom patterns using regular expressions and configure how detected values are handled by the agent.
 
 
 ## Creating a PII Detection Pattern
@@ -10,7 +10,7 @@ To create a new PII rule, click *+ New Pattern* on the PII page and configure th
 * Pattern Name: Unique name to identify the rule.
 * Regex Definition: Define custom regular expression to detect the PII entity in user input. This pattern determines which values are identified as sensitive data. For example, to identify all the email ids from the content, use a regex as shown below. 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`
-* Status: Enable or disable the pattern. If a pattern is disabled, it is ignored during processing.  
+* Status: Enable or disable the pattern. If a pattern is disabled, it's ignored during processing.  
 * Redaction Method: Choose the action to be taken on the identified PII data. 
     * Replace with random string: Replaces original value with a randomly system generated, unique string.
     * Replace with predefined text: Replaces original value with a predefined text. Provide the text with which PII is to be replaced.
