@@ -114,15 +114,15 @@ Configure sources based on your deployment type:
 
 **For Standalone or Integrated**
 
-    * Enable **CCAI** or **Agent AI** connections.
+* Enable **CCAI** or **Agent AI** connections.
 
-    * Configure Queue IDs and Agent Email ID mappings for **Agent AI**.
+* Configure Queue IDs and Agent Email ID mappings for **Agent AI**.
 
 **For Standalone or Express**
 
-    * Enable **Quality AI Express**.
+* Enable **Quality AI Express**.
 
-    * Configure file uploads using connectors.
+* Configure file uploads using connectors.
 
 ### Queue Configuration
 
@@ -168,9 +168,9 @@ When you select Unix Timestamp, this ingestion supports start and end time valid
 
 **Examples**: 
 
-    * `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
+* `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
 
-    * `1735574400.523` (includes milliseconds)
+* `1735574400.523` (includes milliseconds)
 
 **Offset Timestamp**
 
@@ -180,11 +180,11 @@ When you select Offset Timestamp, this supports message-level offsets without st
 
 **Examples**: 
 
-    * `0` (conversation start)
+* `0` (conversation start)
 
-    * `45` (45 seconds into the conversation)
+* `45` (45 seconds into the conversation)
 
-    * `120.5` (2 minutes and 0.5 seconds into the conversation)
+* `120.5` (2 minutes and 0.5 seconds into the conversation)
 
 #### Conversation Sources Warnings
 
@@ -208,17 +208,16 @@ This defines agent access, audit behavior, and usage policies.
 
 #### Audit Settings
 
-    * Enable Speech-based audit 
+* Enable Speech-based audit 
 
-    * Enable Agent AI Playbook audit   
-    
-    <img src="../Onboarding/images/app-usage-settings.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
+* Enable Agent AI Playbook audit        
+<img src="../Onboarding/images/app-usage-settings.png" alt="App Usage Setting" title="App Usage Setting" style="border: 1px solid gray; zoom:80%;"> 
 
-        !!! note
+    !!! note
 
-            * The system disables access to both **Agent Access** and **Audit Settings** by default. 
+        * The system disables access to both **Agent Access** and **Audit Settings** by default. 
         
-            * It shows queue configuration only when you select **Agent AI or Quality AI Express**, not **CCAI** alone.
+        * It shows queue configuration only when you select **Agent AI or Quality AI Express**, not **CCAI** alone.
 
 ### Go Live with Quality AI
 
