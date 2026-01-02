@@ -45,6 +45,9 @@ plugins:
       redirect_maps:
         'getting-started/quick-start-guide.md': 'getting-started/setup-guide.md'
         'user-management/managing your users.md': 'user-management/managing-your-users.md'
+        'security/sso.md': 'security/sso-overview.md'
+        'APIs/audit-log-api.md': 'audit-log/audit-log-api.md'
+        'custom-agents/default-rag.md': 'custom-agents/enterprise-knowledge.md'
 extra:
   version:
     provider: mike
@@ -111,7 +114,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Inception AI – All trademarks are the property of their respective owners.
+  © 2026 Inception AI – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
@@ -137,7 +140,10 @@ nav:
       - Autonomous Agents: custom-agents/autonomous-agent.md      
     - Other Agents: 
       - Bot Agents: custom-agents/bot-agents.md
-      - Workflow Agents: custom-agents/workflow-agents.md 
+      - Workflow Agents: custom-agents/workflow-agents.md
+    - MCP:
+      - MCP Agents: custom-agents/mcp-agents.md   
+      - MCP Connections: custom-agents/mcp-connections.md
     - Agent Management:
       - Agent Options: custom-agents/agent-options.md
       - Agent Testing: custom-agents/agent-testing.md
@@ -168,6 +174,7 @@ nav:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
+      - Enterprise Directory: user-management/enterprise-directory.md
     - LLM Configuration:
       - General Purpose: llm-configuration/general-purpose.md
       - Business Rules: llm-configuration/business-rules.md
@@ -176,6 +183,7 @@ nav:
       - Rate Limit: assistant-configuration/rate-limit.md
       - Guardrails: assistant-configuration/guardrails.md
       - Orchestration Settings: assistant-configuration/orchestration-settings.md
+      - MCP Server: assistant-configuration/mcp-server.md
       - Channels:
         - Microsoft Teams: 
           - Overview: channels/ms-teams/microsoft-teams.md
@@ -188,7 +196,10 @@ nav:
         - SAML: security/saml.md
         - WSFC: security/wsfc.md  
       - Domain Management: security/domain-management.md
-      - Service Accounts: security/service-accounts.md
+      - Service Accounts: 
+        - Overview: security/service-accounts.md
+        - Google: security/google-cloud-service-accounts.md
+        - MS Azure: security/azure-service-accounts.md
       - Data Settings: security/data-settings.md
       - Enterprise Encryption: 
         - Setup: security/enterprise-encryption.md
@@ -199,5 +210,3 @@ nav:
       - Audit Log API: audit-log/audit-log-api.md
     - APIs:  
       - Authorization: APIs/authorization.md
-      
-      
