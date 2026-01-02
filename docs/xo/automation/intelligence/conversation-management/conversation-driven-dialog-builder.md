@@ -85,8 +85,8 @@ Please click [here](../../use-cases/dialogs/navigating-dialog-tasks.md){target="
 
 ## Dialog Builder Components
 
-To learn more about the components available on the Dialog Builder Panel, click [here](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-task-builder-overview){target="_blank"}.
+To learn more about the components available on the Dialog Builder Panel, click [here](../../use-cases/dialogs/navigating-dialog-tasks.md#dialog-task-builder-overview){target="_blank"}.
 
 ## Node Types
 
-Please click [here](../../use-cases/dialogs/node-types/nodes-transitions.md#node-types){target="_blank"} to learn more about the node types supported on UXO Platform's Dialog Builder.
+Please click [here](../../use-cases/dialogs/node-types/nodes-transitions.md#node-types){target="_blank"} to learn more about the node types supported on the Platform's Dialog Builder.
