@@ -114,7 +114,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2026 Inception AI – All trademarks are the property of their respective owners.
+  © 2026 Inceptionai.ai, Inc. - All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
