@@ -413,7 +413,7 @@ Sample Input
 
 "score": 1,
 
-"chunkText": "Discharge process Your nurse will assist you in the discharge process which may take a few hours to complete.. Once your final bill is generated, you are expected to clear your dues by paying cash or using a credit/debit card. The nurse will hand over your discharge summary and belongings (like a thermometer, urinal bedpan, etc. - used during the course of your stay). She will also explain the medications you need to continue after your discharge and any other follow-up instructions. If you need a medical ambulance to drop you off at your home, please inform your nurse, and she will make the necessary arrangements. Keep track of your appointments, get updates & more!"
+"chunkText": "Discharge process Your nurse will assist you in the discharge process which may take a few hours to complete. Once your final bill is generated, you are expected to clear your dues by paying cash or using a credit/debit card. The nurse will hand over your discharge summary and belongings (like a thermometer, urinal bedpan, etc. - used during the course of your stay). She will also explain the medications you need to continue after your discharge and any other follow-up instructions. If you need a medical ambulance to drop you off at your home, please inform your nurse, and she will make the necessary arrangements. Keep track of your appointments, get updates & more!"
 
 }
 

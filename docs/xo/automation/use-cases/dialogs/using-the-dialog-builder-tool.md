@@ -162,5 +162,5 @@ The dialog task is created and opens in the Dialog Builder. You can make require
 
 <img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed" style="border:1px solid gray;zoom:70%;">
 
-[Click here to know about Nodes & Connections](./node-types/nodes-transitions.md){:target="_blank"}
+[Click here to know about Nodes & Connections](./node-types/nodes-transitions.md){:target="_blank"}.
 

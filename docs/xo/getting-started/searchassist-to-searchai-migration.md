@@ -369,7 +369,7 @@ To do this, navigate to the <em>Advanced Crawl Configurations</em> for a web cra
     * Prefix Search
     * Search Relevance
 * Small Talk is also deprecated from Search AI, but can be managed through conversational flows in Automation AI. If required, this must be manually set up after migration. Go to the[ SmallTalk page in Automation AI](../automation/use-cases/small-talk.md) and provide the details of the small talk to be managed.[ Learn More](../automation/use-cases/small-talk.md). 
-* Synonym and stop word support isn't available in Search AI and is planned for a future release.. 
+* Synonym and stop word support isn't available in Search AI and is planned for a future release. 
 * Spell correction isn't required since we don't rely on keyword matching in Search AI. Hence, this configuration isn't replicated. 
 
 

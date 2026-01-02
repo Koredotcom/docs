@@ -65,7 +65,7 @@ The Dialog Builder interface consists of:
 
 ### The Tool Set
 
-The Dialog Design process occurs in the Dialog Builder. This comes with its specific top menu - the **Tool Set**.
+The Dialog Design process occurs in the Dialog Builder. This comes with its specific top menu: the **Tool Set**.
 
 For the convenience of comprehension and demonstration, let’s visualize the Tool Set into three parts:
 
@@ -77,26 +77,26 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
 
 * **Exit the Dialog Task Builder** (<img src="../images/using-dialog-tasks-tool-set-left-back.png">) and return to the Dialog Tasks List.
-* Add **Bookmarks** (<img src="../images/using-dialog-tasks-tool-set-left-bookmark.png">) - You can bookmark frequently visited or crucial content in the canvas with relevant information. The added bookmarks can be seen in the **Bookmarks** tab of the **Index Panel**. They help you navigate to the bookmarked content without having to search or browse extensively.
+* Add **Bookmarks** (<img src="../images/using-dialog-tasks-tool-set-left-bookmark.png">): You can bookmark frequently visited or crucial content in the canvas with relevant information. The added bookmarks can be seen in the **Bookmarks** tab of the **Index Panel**. They help you navigate to the bookmarked content without having to search or browse extensively.
 
     <img src="../images/using-dialog-builder-add-bookmark.gif" alt="Add Bookmark" title="Add Bookmark" style="border:1px solid gray;zoom:60%;">
 
-* Add **Note** (<img src="../images/using-dialog-tasks-tool-set-left-note.png">) - You can add a note anywhere on the canvas to record the logic being developed in a sequence or group of sequences or other relevant nodes about the logic building for future reference. 
+* Add **Note** (<img src="../images/using-dialog-tasks-tool-set-left-note.png">): You can add a note anywhere on the canvas to record the logic being developed in a sequence or group of sequences or other relevant nodes about the logic building for future reference. 
 
     <img src="../images/using-dialog-builder-add-text.gif" alt="Add Note" title="Add Note" style="border:1px solid gray;zoom:60%;">
 
-* Add **Comment** (<img src="../images/using-dialog-tasks-tool-set-left-comment.png">) - You can tag other users in a comment to enhance communication through feedback, suggestions, and discussions on specific elements of the design or if you need another user to pitch in and help you with the conversation design with their developmental or functional expertise. 
+* Add **Comment** (<img src="../images/using-dialog-tasks-tool-set-left-comment.png">): You can tag other users in a comment to enhance communication through feedback, suggestions, and discussions on specific elements of the design or if you need another user to pitch in and help you with the conversation design with their developmental or functional expertise. 
 
     <img src="../images/using-dialog-builder-add-comment.gif" alt="Add Comment" title="Add Comment" style="border:1px solid gray;zoom:60%;">
 
-* **Find** (<img src="../images/using-dialog-tasks-tool-set-left-find.png">) - You can search for nodes, variables, Bookmarks and sequences at Dialog level. Clicking this icon opens a window where you can perform a universal search. You will get a list of all the nodes, variables, sequences and bookmarks grouped by type that contain the search string. Additionally, individual tabs are present for each type wherein all items of those types are listed.
+* **Find** (<img src="../images/using-dialog-tasks-tool-set-left-find.png">): You can search for nodes, variables, Bookmarks and sequences at Dialog level. Clicking this icon opens a window where you can perform a universal search. You will get a list of all the nodes, variables, sequences and bookmarks grouped by type that contain the search string. Additionally, individual tabs are present for each type wherein all items of those types are listed.
 
     <img src="../images/using dialog-builder-tool-set-left-search.png" alt="Find" title="Find" style="border:1px solid gray;zoom:60%;">
 
 
 **Features in the Middle of the Tool set**
 
-* **Switch between Dialog Tasks** (<img src="../images/using-dialog-tasks-tool-set-middle-switch-dialog-task.png">) – The Task Switcher allows you to change to a different task within your selected app easily. This option is located at the top of your canvas
+* **Switch between Dialog Tasks** (<img src="../images/using-dialog-tasks-tool-set-middle-switch-dialog-task.png">): The Task Switcher allows you to change to a different task within your selected app easily. This option is located at the top of your canvas
 
     <img src="../images/using-dialog-builder-img23-task-switcher.png" alt="Switch Task" title="Switch Task" style="border:1px solid gray;zoom:60%;">
 
@@ -105,45 +105,45 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
 <img src="../images/using-dialog-tasks-tool-set-right.png" alt="Tool set - Right side" title="Tool set - Right side" style="border:1px solid gray;zoom:60%;">
 
-* **Test** (<img src="../images/using-dialog-tasks-tool-set-right-test.png">) - You can chat with the app in real time to test recognition, performance, and flow as if it were a live session.
-* **View Warnings** (<img src="../images/using-dialog-tasks-tool-set-right-warnings.png">) - In the top navigation area, you will see a real-time set of errors and warnings that might have occurred as you define your dialog task. The information icon is located at the top right of the Dialog Builder. Click the information icon to display any errors or warnings, as shown in the following illustration.
+* **Test** (<img src="../images/using-dialog-tasks-tool-set-right-test.png">): You can chat with the app in real time to test recognition, performance, and flow as if it were a live session.
+* **View Warnings** (<img src="../images/using-dialog-tasks-tool-set-right-warnings.png">): In the top navigation area, you will see a real-time set of errors and warnings that might have occurred as you define your dialog task. The information icon is located at the top right of the Dialog Builder. Click the information icon to display any errors or warnings, as shown in the following illustration.
 
     <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray;zoom:60%;">
 
-* **Display Options** (<img src="../images/using-dialog-tasks-tool-set-right-display.png">) - Use **Display Options** to utilize screen real estate better.
+* **Display Options** (<img src="../images/using-dialog-tasks-tool-set-right-display.png">): Use **Display Options** to utilize screen real estate better.
 
     <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display settings" style="border:1px solid gray;zoom:60%;">
 
     Display Options are used to:
     
-    * **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
-    * **Zoom Level** – is used to set the zoom level as needed.
-    * **Zoom to Last Edited** – This takes you to the zoom level you have used to edit the dialog.
-    * **Hide/Show Mini Map** – To show or hide the mini-map of the dialog.
+    * **Fit to Screen**: Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
+    * **Zoom Level**: is used to set the zoom level as needed.
+    * **Zoom to Last Edited**: This takes you to the zoom level you have used to edit the dialog.
+    * **Hide/Show Mini Map**: To show or hide the mini-map of the dialog.
 
 * **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Amend behavior and View Comments. [Learn more](#the-more-options-menu).
 
     <img src="../images/using-dialog-builder-right-more-settings.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
 
-* **App Owners** - You can see bubbles containing the names of all the users of the current dialog, such as App Owner, App Developer, Conversation Designer, etc. The first letter of the app owner’s name appears in a colored bubble.
+* **App Owners**: You can see bubbles containing the names of all the users of the current dialog, such as App Owner, App Developer, Conversation Designer, etc. The first letter of the app owner’s name appears in a colored bubble.
 
 
 ### The Index Panel
 
-<img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray;zoom:60%;">
 
 The Index panel consists of tabs listing features that help enhance collaboration and organization while using the dialog builder:
 
 * [Bookmarks tab](#bookmark-tab)
 * [Assets tab](#assets-tab)
-* [Nodes tab](#nodes-tab)
+* [Nodes tab](#nodes-tab)  
+<img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray;zoom:60%;">
+
 
 You can add, edit, move or delete notes, comments, or bookmarks as needed. However, note that once deleted, they cannot be restored.
 
 #### Bookmark Tab
 
-The Bookmarks tab allows you to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. This helps you navigate to the bookmarked content without having to search or browse extensively.
-
+The Bookmarks tab allows you to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. This helps you navigate to the bookmarked content without having to search or browse extensively.  
 <img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray;zoom:60%;">
 
 The Bookmark tab provides a structured and organized way to manage bookmarks and contributes to a user-friendly interface, making it easier to navigate and interact with the bookmarked dialogs.
@@ -152,8 +152,7 @@ You can also search for bookmarks.
 
 #### Assets Tab
 
-The **Assets** tab contains all the node types as expandable lists. Upon expanding them, you can see an option to add a new node of that type to the canvas, as well as all the nodes created for the current app, irrespective of whether they are added to any dialog.
-
+The **Assets** tab contains all the node types as expandable lists. Upon expanding them, you can see an option to add a new node of that type to the canvas, as well as all the nodes created for the current app, irrespective of whether they are added to any dialog.  
 <img src="../images/using-dialog-builder-assets-tab.gif" alt="Assets tab" title="Assets tab" style="border:1px solid gray;zoom:60%;">
 
 All the created nodes you see in this tab are **reusable**. You can drag and drop them or add them using the **"+" (Connector)** before, after, or between existing [sequences](#sequences).
@@ -162,29 +161,26 @@ You can also search for nodes.
 
 #### Nodes Tab
 
-On this tab, you can see a list of all the sequences present in the Current Dialog. Upon clicking the sequence name, you see all the nodes in that sequence - the nodes that are added to the canvas for the current dialog.
-
+On this tab, you can see a list of all the sequences present in the Current Dialog. Upon clicking the sequence name, you see all the nodes in that sequence - the nodes that are added to the canvas for the current dialog.  
 <img src="../images/using-dialog-builder-nodes-tab.gif" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray;zoom:60%;">
 
 You can also search for nodes and sequences, which will show you the nodes/sequences in the current dialog that match the search text.
 
 ### The Nodes Panel
 
-The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
-
+The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.  
 <img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
 
 Node type groups in the panel:
 
-* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
-* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
-* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
-* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, Agent Node and Prompt Node.
+* **Inform**: Contains the nodes that can be used to provide information to the user. For example, Message node.
+* **Ask**: Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
+* **Action**: Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
+* **GenAI**: Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, Agent Node and Prompt Node.
 
 ### The Canvas
 
-The Canvas is where you can integrate your conversation scenarios with your business logic.
-
+The Canvas is where you can integrate your conversation scenarios with your business logic.  
 <img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog builder - Canvas" title="Dialog builder - Canvas" style="border:1px solid gray;zoom:60%;">
 
 The canvas contains the following elements or components:
@@ -203,14 +199,12 @@ Like any other dialog, you can configure the component, NLP, and Connection prop
 
 #### Sequences
 
-These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
-
+These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.  
 <img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
 
 A sequence gets **automatically created** when you add a node to the canvas. By default it is named **Sequence [x]** where **x** depends on the number of unnamed sequences already present on the canvas. Once a sequence gets created, you can either add more nodes to that sequence, or, you can add nodes outside any existing sequence, in which case a new sequence will get created.
 
-To add a node to an existing sequence, drag the node on the sequence. You will see placeholders labeled **Drop here** appearing between nodes. You can drop the node on any of these placeholders; the node will get added on that spot in the sequence.
-
+To add a node to an existing sequence, drag the node on the sequence. You will see placeholders labeled **Drop here** appearing between nodes. You can drop the node on any of these placeholders; the node will get added on that spot in the sequence.  
 <img src="../images/using-dialog-builder-creating-sequence.gif" alt="Creating sequence" title="Creating sequence" style="border:1px solid gray;zoom:60%;">
 
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
@@ -225,17 +219,18 @@ You can also add a sequence **between two existing sequences**. Below are the st
 
 * If you add the new node directly to the canvas, a new sequence will be created containing the newly added node.
 * Set the connection between the source sequence and the new sequence.
-* Set the connection between the new sequence and the Destination sequence.
-
+* Set the connection between the new sequence and the Destination sequence.  
 <img src="../images/using-dialog-builder-sequence-connection.gif" alt="Sequence connection" title="Sequence connection" style="border:1px solid gray;zoom:60%;">
 
-To delete a sequence, right-click it and select **Delete** from the menu.
+To delete a sequence, right-click it and select **Delete** from the menu.  
+<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete sequence" title="Delete sequence" style="border:1px solid gray;zoom:60%;">
+
 
 !!! Warning
 
     The deleted sequences cannot be restored.
 
-<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete sequence" title="Delete sequence" style="border:1px solid gray;zoom:60%;">
+
 
 
 #### Nodes
@@ -260,7 +255,6 @@ You can use Notes, Comments, and Bookmarks to easily record and collaborate betw
 You can place **Notes** on strategic points on the canvas and write down the dialog's introduction, a list of subtasks, and the purpose of each subtask.
 
 Using **Bookmarks**, you can create navigation points in a dialog with a complex structure so that you can quickly navigate to the bookmarked points without having to manually search the entire design. You can mention the specific point of the dialog flow in the bookmarks as an easy reference for other users.  
-
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
 **Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other app users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
@@ -273,26 +267,23 @@ Below action can be performed:
 * Resolve Comment: You can resolve the comment by clicking the <img src="../images/using-dialog-builder-resolve-comment-icon.png"> icon once discussion in the thread is closed. The Resolve option is available in the View Comments panel too.
 * Delete comment/reply: You can delete the comment or a reply. Note that you can delete a comment or reply only if it is posted by you. Also, deleting the main comment will delete all the responses too.
 * Edit comment/reply: You can edit the comment or a reply. Note that you can edit comments or replies only if they are posted by you.
-* Other Options (At thread level)
-    * Mark as Unread - You can mark a comment as Read
-    * Copy link - Clicking on this option,you can copy the link of the comment. When you access the link, you are panned to the relevant comment
-    * Delete Thread - You can delete the entire thread if the main comment is posted by you
-
+* Other Options (At thread level):
+    * Mark as Unread: You can mark a comment as Read
+    * Copy link: Clicking on this option,you can copy the link of the comment. When you access the link, you are panned to the relevant comment
+    * Delete Thread: You can delete the entire thread if the main comment is posted by you.  
     <img src="../images/using-dialog-builder-comment-thread-level-option.png" alt="Comments - Thread level options" title="Comments - Thread level options" style="border:1px solid gray;zoom:70%;">
 
 * Mention and Notification: You mention others in comments using **@** followed by their name, triggering notifications to ensure that the mentioned team members are aware of the discussion.
 * Other Features:
-    * Zoom Out Preview - When canvas is zoomed out, the nearby comment icons are clubbed and displayed with the count.
-        
+    * Zoom Out Preview: When canvas is zoomed out, the nearby comment icons are clubbed and displayed with the count.
+
         <img src="../images/using-dialog-builder-comment-zoom-in-view.png" alt="Comments - Zoom In view" title="Comments - Zoom In view" style="border:1px solid gray;zoom:70%;">
         
-        Zoom In view
-
-        <img src="../images/using-dialog-builder-comment-zoom-out-view.png" alt="Comments - Zoom Out view" title="Comments - Zoom Out view" style="border:1px solid gray;zoom:70%;">
+        Zoom In view:
+        <img src="../images/using-dialog-builder-comment-zoom-out-view.png" alt="Comments: Zoom Out view" title="Comments - Zoom Out view" style="border:1px solid gray;zoom:70%;">
         
-        Zoom Out view
 
-    * Timestamp - Time stamp will be displayed in the comment thread as well as the comments panel. It will be shown as “relative time indicators” and the complete timestamp will be displayed on hover
+    * Timestamp: Time stamp will be displayed in the comment thread as well as the comments panel. It will be shown as “relative time indicators” and the complete timestamp will be displayed on hover
 
 * Options in the Comments Panel
     * Show/Hide All comments (Default - Show)
@@ -303,8 +294,7 @@ Below action can be performed:
         * All
         * Unread
         * My Mentions
-        * My comments
-
+        * My comments  
         <img src="../images/using-dialog-builder-comment-panel.png" alt="Comments panel" title="Comments panel" style="border:1px solid gray;zoom:70%;">
 
 #### Mini map
@@ -368,8 +358,7 @@ Clicking on a node will open its Properties panel, which includes specific featu
 * **Instance Properties** can be customized for the selected node for the current dialog.
 * **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost node in a sequence)
 * **NLP Properties** for intent and entity recognition.
-* **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](./node-types/voice-call-properties.md){:target="_blank"}).
-
+* **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](./node-types/voice-call-properties.md){:target="_blank"}). 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray;zoom:60%;">
 
 ## Visual Appearance of Flow Design
@@ -383,24 +372,21 @@ The platform provides the following options for customizing notes and bookmarks:
 
 * **Edit:** To edit the contents.
 * **Delete:** To delete the bookmark or the note from the canvas
-* **Color Change:** To change the color of the bookmark or note. You can use custom colors to improve visibility and collaboration.
-
+* **Color Change:** To change the color of the bookmark or note. You can use custom colors to improve visibility and collaboration. 
 <img src="../images/using-dialog-builder-visual-customization-notes-bookmarks.png" alt="Visual customization of Notes and Bookmarks" title="Visual customization of Notes and Bookmarks" style="border:1px solid gray;zoom:60%;">
 
 You can see these options by **right-clicking the note** and **clicking the 3-dot menu icon on the bookmark**.
 
 ### Sequences
 
-You can see the following visual customization options for a sequence by right-clicking it:
-
+You can see the following visual customization options for a sequence by right-clicking it:  
 <img src="../images/using-dialog-builder-sequence-customization-options.png" alt="Sequence - Customization options" title="Sequence - Customization options" style="border:1px solid gray;zoom=90%;">
 
 * **Rename**: You can rename a sequence based on your preference and logic. By default, the name is **Untitled**; you can name and rename it as many times as you need.
 * **Mark as Flow Starting Point**: Using this option, you can mark a sequence as the starting point of the dialog flow. When you do so, the connector arrow from the root intent points to the first node of this sequence.
 * **Sequence Color**: You can change the color scheme (Border and Fill colors) of a sequence. The platform provides six default color schemes to choose from. This can be useful in case you need to visually indicate a split of flow, positive and negative flows, etc.
 
-    For example, in the image below, green and red colors have been used for sequences that contain the positive and negative flows, respectively.
-
+    For example, in the image below, green and red colors have been used for sequences that contain the positive and negative flows, respectively.  
     <img src="../images/using-dialog-builder-sequence-color.png" alt="Visual customization of sequences - Color" title="Visual customization of sequences - Color" style="border:1px solid gray;zoom:60%;">
 
     You cannot change the default color schemes, however, you can add your own custom colors or edit the custom colors available on the palette. The border color is auto-populated based on the color you select.
@@ -442,59 +428,52 @@ The **Dialog Settings** panel allows you to modify the dialog task's basic setti
 
 Add or modify the following settings for your dialog:
 
-* **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
-* **Description** – An optional description of your dialog task displayed in the Platform.
+* **Name**: The name of your dialog task, usually the main user intent. For example, _Book Ticket._
+* **Description**: An optional description of your dialog task displayed in the Platform.
 * **Intent Settings:**
             
-     * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
-     * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.  
+     * **Sub intent only dialog**: The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
+     * **Hide from help**: The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant. This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
         
-    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
-        
-* **Customer Use Cases** – Select if this dialog task is available for end users (customers).
-* **Agent AI Use Cases** - Select if this dialog task is available for agents.
-    * Enable or disable the following options in this section:
-        * **During Chats**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in a chat channel.
-        * **During Calls**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in a phone call.
-        * **During E-Mails**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in an email conversation.
-            * **Launch through Library**:
-                * **Enabled**: The dialog task is listed under all available dialog tasks in the Search tab of the widget.
-                * **Disabled**: The dialog task doesn’t appear on the list, but remains searchable via the “Ask a question” search bar in the Search tab of the Agent AI widget, allowing agents to browse and find this use case to trigger it.
+* **Customer Use Cases**: Select if this dialog task is available for end users (customers).
+* **Agent AI Use Cases**: Select if this dialog task is available for agents.
+    * **During Chats**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in a chat channel.
+    * **During Calls**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in a phone call.
+    * **During E-Mails**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in an email conversation.
+    * **Launch through Library**:
+         * **Enabled**: The dialog task is listed under all available dialog tasks in the Search tab of the widget.
+         * **Disabled**: The dialog task doesn’t appear on the list, but remains searchable via the “Ask a question” search bar in the Search tab of the Agent AI widget, allowing agents to browse and find this use case to trigger it.
 
 * **Analytics - Containment Type**(Any one option can be selected):
         * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
         * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.
-* **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
+* **Follow-up Task**: The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
         * Handle the follow-up tasks as part of node connections (default setting) or
         * Let the user select the follow-up task.
-* **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
+* **Task Execution Failure**: Define the assistant’s behavior when there is an error in task execution. It can be set as either:
         * Same as the App Level behavior.
-        * Specific to this task – initiate a task, run a script, or show a message.
+        * Specific to this task, initiate a task, run a script, or show a message.
 
 
 ### Manage Interruptions
 
-The **Manage Interruptions** options allow you to select if and how a user can switch to another task and exit strategies. It can be set up at the App, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
-
+The **Manage Interruptions** options allow you to select if and how a user can switch to another task and exit strategies. It can be set up at the App, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them. Click here to [learn more](../../intelligence/conversation-management/manage-interruptions.md#dialog-level-settings){:target="_blank"}.  
 <img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray;zoom:60%;">
 
-Click here to [learn more](../../intelligence/conversation-management/manage-interruptions.md#dialog-level-settings){:target="_blank"}.
+
 
 
 ### Manage Amend Behavior
 
-Using **Amend Entity,** you can allow the users to amend entity values and control post-amendment dialog behavior.
-
+Using **Amend Entity,** you can allow the users to amend entity values and control post-amendment dialog behavior. Click here to [learn more.](../../natural-language/nlu-configurations/amend-entities.md#task-level)  
 <img src="../images/using-dialog-builder-img28-manage-amend-behavior.png" alt="Manage Amend behavior" title="Manage Amend behavior" style="border:1px solid gray;zoom:60%;">
 
-Click here to [learn more.](../../natural-language/nlu-configurations/amend-entities.md#task-level)
+
 
 
 ### Manage Groups
 
-Using this option, you can create and manage Node Groups.
-
-Click here to [learn more.](#node-groups)
+Using this option, you can create and manage Node Groups. Refer to [Node Groups](#node-groups).
 
 
 ## Node Groups

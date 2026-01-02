@@ -1,6 +1,6 @@
 # Alert Task – OAuth v2
 
-We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform.. In this article, we will see how alert task authorization can be set up using the OAuth v2.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this article, we will see how alert task authorization can be set up using the OAuth v2.
 
 ## How it Works 
 
