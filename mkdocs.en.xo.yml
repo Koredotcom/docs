@@ -92,6 +92,7 @@ plugins:
         'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
         'getting-started/building-a-virtual-assistant.md' : 'getting-started/dialoggpt-app-setup-guide.md'
         'searchai/content-sources/connectors/amazons3.md' : 'quality-ai/connectors/aws-s3-connector-setup-guide.md'
+        'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md' : 'automation/use-cases/dialogs/dialog-tasks-overview.md'
 extra:  
   version:
     provider: mike
@@ -250,6 +251,7 @@ nav:
         - Dialog:
           - About Dialog Task: automation/use-cases/dialogs/dialog-tasks-overview.md
           - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
+          - Manage Components: automation/use-cases/dialogs/managing-dialogs.md
           - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
         - Session Management: automation/use-cases/using-session-and-context-variables.md
         - Context Management: automation/intelligence/context-object.md 

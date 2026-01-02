@@ -8,7 +8,7 @@ Your App can have many dialog tasks with related components. You can use the Dia
 To manage your dialog tasks, follow the below steps:
 
 1. Open the app for which you want to manage the dialog task components.
-2. Select the **Automation** from the left menu
+2. Select the **Automation** from the left menu.
 3. On the **Automation** menu, click **Dialogs**.
 4. Click **Manage Components** on the top-right.
 
@@ -35,8 +35,6 @@ The following table lists the details included in the window for each component 
 ## Upgrade Tasks
 
 After you publish a task, the Admin approves and deploys the task to make changes in the published app. You must upgrade the app; then publish the upgrade for Admin approval and deploy it to users.
-
-### Upgrade Tasks
 
 If you need changes to the published task, you must upgrade the task to a new version.
 
@@ -70,9 +68,9 @@ Using the **Upgrade** command, a duplicate of the original task is created where
 
 To upgrade a task, follow the below steps:
 
-1. Open the app to edit the task
-2. Select the **Automation** from the left menu
-3. On the **Automation** menu, click **USE CASES > Dialogs**.
+1. Open the app to edit the task.
+2. Select the **Automation** from the left menu.
+3. On the **Automation** menu, click **Dialogs**.
 4. Click the **More** icon of the published task you want to upgrade, and then click **Upgrade**.
 5. A duplicate of the published task is created with the **Status** set to **Upgrade In Progress** and the **General** tab is displayed.
 6. Modify the task and click **Finish Setup**.

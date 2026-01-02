@@ -105,12 +105,12 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
 <img src="../images/using-dialog-tasks-tool-set-right.png" alt="Tool set - Right side" title="Tool set - Right side" style="border:1px solid gray;zoom:60%;">
 
-* **Test** (<img src="../images/using-dialog-tasks-tool-set-right-test.png">): You can chat with the app in real time to test recognition, performance, and flow as if it were a live session.
-* **View Warnings** (<img src="../images/using-dialog-tasks-tool-set-right-warnings.png">): In the top navigation area, you will see a real-time set of errors and warnings that might have occurred as you define your dialog task. The information icon is located at the top right of the Dialog Builder. Click the information icon to display any errors or warnings, as shown in the following illustration.
+* **Test**: You can chat with the app in real time to test recognition, performance, and flow as if it were a live session.
+* **View Warnings**: In the top navigation area, you will see a real-time set of errors and warnings that might have occurred as you define your dialog task. The information icon is located at the top right of the Dialog Builder. Click the information icon to display any errors or warnings, as shown in the following illustration.
 
     <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray;zoom:60%;">
 
-* **Display Options** (<img src="../images/using-dialog-tasks-tool-set-right-display.png">): Use **Display Options** to utilize screen real estate better.
+* **Display Options**: Use **Display Options** to utilize screen real estate better.
 
     <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display settings" style="border:1px solid gray;zoom:60%;">
 
@@ -279,7 +279,8 @@ Below action can be performed:
 
         <img src="../images/using-dialog-builder-comment-zoom-in-view.png" alt="Comments - Zoom In view" title="Comments - Zoom In view" style="border:1px solid gray;zoom:70%;">
         
-        Zoom In view:
+        Zoom In view:  
+        
         <img src="../images/using-dialog-builder-comment-zoom-out-view.png" alt="Comments: Zoom Out view" title="Comments - Zoom Out view" style="border:1px solid gray;zoom:70%;">
         
 
@@ -319,8 +320,8 @@ Real-time collaboration features:
 
 There are two ways to add a node:
 
-1. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
-2. You can also use the options on the Dialog Builder Canvas using Connector; [see below](#use-the-dialog-canvas).
+1. Drag and drop nodes from the panel onto the dialog builder.
+2. You can also use the options on the Dialog Builder Canvas using Connector.
 
 ### Use Drag and Drop
 
@@ -328,7 +329,7 @@ You can add nodes within the dialog task by dragging them from the Index panel o
 
 <img src="../images/using-dialog-builder-creating-sequence.gif" alt="Adding nodes by drag and drop" title="Adding nodes by drag and drop" style="border:1px solid gray;zoom:60%;">
 
-You can also add a node directly on the canvas, creating a new sequence.  You can then drag and drop the node to an existing sequence, if required.
+You can also add a node directly on the canvas, creating a new sequence. You can then drag and drop the node to an existing sequence, if required.
 
 
 ### Use the Dialog Canvas
@@ -356,7 +357,7 @@ Clicking on a node will open its Properties panel, which includes specific featu
 
 * **Component Properties** such as name, type, and component-specific properties.
 * **Instance Properties** can be customized for the selected node for the current dialog.
-* **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost node in a sequence)
+* **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost node in a sequence).
 * **NLP Properties** for intent and entity recognition.
 * **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](./node-types/voice-call-properties.md){:target="_blank"}). 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray;zoom:60%;">
@@ -373,7 +374,8 @@ The platform provides the following options for customizing notes and bookmarks:
 * **Edit:** To edit the contents.
 * **Delete:** To delete the bookmark or the note from the canvas
 * **Color Change:** To change the color of the bookmark or note. You can use custom colors to improve visibility and collaboration. 
-<img src="../images/using-dialog-builder-visual-customization-notes-bookmarks.png" alt="Visual customization of Notes and Bookmarks" title="Visual customization of Notes and Bookmarks" style="border:1px solid gray;zoom:60%;">
+
+    <img src="../images/using-dialog-builder-visual-customization-notes-bookmarks.png" alt="Visual customization of Notes and Bookmarks" title="Visual customization of Notes and Bookmarks" style="border:1px solid gray;zoom:60%;">
 
 You can see these options by **right-clicking the note** and **clicking the 3-dot menu icon on the bookmark**.
 
@@ -397,7 +399,7 @@ You can see the following visual customization options for a sequence by right-c
 
 * **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.  
 
-  [Refer here](#node-groups) for details on grouping of nodes in a sequence
+  [Refer here](#manage-node-groups) for details on grouping of nodes in a sequence.
 
 ### Connector Arrows
 
@@ -471,14 +473,9 @@ Using **Amend Entity,** you can allow the users to amend entity values and contr
 
 
 
-### Manage Groups
+### Manage Node Groups
 
-Using this option, you can create and manage Node Groups. Refer to [Node Groups](#node-groups).
-
-
-## Node Groups
-
-Node groups are primarily used for defining a group of nodes. 
+Use this option to create and manage node groups. Node groups let you logically group related nodes for easier organization and management.
 
 **Advantages of grouping Nodes in a sequence**
 
@@ -492,7 +489,7 @@ Node groups are primarily used for defining a group of nodes.
 
 *  Node groups support better handling of follow-ups, digressions, and amending entity values.
 
-### Create the Node Group
+#### Create the Node Group
 
 To create node groups, follow the below steps:
 
@@ -519,26 +516,18 @@ To create node groups, follow the below steps:
     You can manage groups by editing the group, and adding and removing nodes.
 
 
-### Edit the Node Group
+#### Edit the Node Group
 
-On Right-clicking on a group name, you get a menu containing **Edit** and **Delete**.
+Right-click a group name to open the Edit and Delete options. Edit lets you change the group name and add or remove nodes, then save the changes. Delete permanently deletes the group. You cannot undo this action.
+
 
 <img src="../images/using-dialog-builder-edit-group.png" alt="Edit group" title="Edit group" style="border:1px solid gray; zoom:70%;">
 
-On clicking **Edit**, you can edit the name of the node group, as well as add or remove nodes. And finally, save the changes.
-
-<img src="../images/using-dialog-builder-edit-name-nodes.png" alt="Edit name and nodes" title="Edit name and nodes" style="border:1px solid gray; zoom:70%;">
-
-On clicking **Delete**, you get a popup warning; the group will be deleted if you click **Confirm**.
-
-<img src="../images/using-dialog-builder-group-delete-confirmation.png" alt="Delete group" title="Delete group" style="border:1px solid gray; zoom:70%;">
-
-!!! Warning
-
-    You cannot undo the deletion.
 
 
-### Add node to a group
+
+
+#### Add node to a group
 
 Follow the below steps to add a node to an existing group:
 
@@ -551,19 +540,19 @@ Follow the below steps to add a node to an existing group:
     <img src="../images/using-dialog-builder-group-select-add-node.png" alt="Select and add nodes" title="Select and add nodes" style="border:1px solid gray; zoom:70%;">
 
 
-### Highlight Nodes
+#### Highlight Nodes
 
 You can locate a node that is added to a group on the canvas. Click on the arrowhead icon (<img src="../images/using-dialog-builder-group-arrowhead.png">) corresponding to a node, and the sequence containing that node will be highlighted.
 
 <img src="../images/using-dialog-builder-group-highlight-node.gif" alt="Highlight nodes" title="Highlight nodes" style="border:1px solid gray; zoom:70%;">
 
 
-### Delete node
+#### Delete node
 
 You can hover over a node to get the **Delete** option. Once deleted, the node will no longer be a part of the group; however, you can add it again.
 
 
-### Subintent
+#### Subintent
 
 If you are using the group to set up a Subintent, you can do so by navigating to the required node group and clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](./node-connections/grouping-nodes.md){:target="_blank"}.
 
