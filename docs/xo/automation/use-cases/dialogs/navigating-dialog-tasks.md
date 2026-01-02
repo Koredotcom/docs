@@ -131,26 +131,22 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 ### The Index Panel
 
 
-The Index panel consists of tabs listing features that help enhance collaboration and organization while using the dialog builder:
-
-* [Bookmarks tab](#bookmark-tab)
-* [Assets tab](#assets-tab)
-* [Nodes tab](#nodes-tab)  
+The Index panel consists of tabs listing features that help enhance collaboration and organization while using the dialog builder. You can add, edit, move or delete notes, comments, or bookmarks as needed. However, note that once deleted, they cannot be restored.  
 <img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray;zoom:60%;">
 
 
-You can add, edit, move or delete notes, comments, or bookmarks as needed. However, note that once deleted, they cannot be restored.
 
-#### Bookmark Tab
 
-The Bookmarks tab allows you to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. This helps you navigate to the bookmarked content without having to search or browse extensively.  
+**Bookmark Tab**
+
+The Bookmark tab allows you to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. This helps you navigate to the bookmarked content without having to search or browse extensively.  
 <img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray;zoom:60%;">
 
 The Bookmark tab provides a structured and organized way to manage bookmarks and contributes to a user-friendly interface, making it easier to navigate and interact with the bookmarked dialogs.
 
 You can also search for bookmarks.
 
-#### Assets Tab
+**Assets Tab**
 
 The **Assets** tab contains all the node types as expandable lists. Upon expanding them, you can see an option to add a new node of that type to the canvas, as well as all the nodes created for the current app, irrespective of whether they are added to any dialog.  
 <img src="../images/using-dialog-builder-assets-tab.gif" alt="Assets tab" title="Assets tab" style="border:1px solid gray;zoom:60%;">
@@ -159,7 +155,7 @@ All the created nodes you see in this tab are **reusable**. You can drag and dro
 
 You can also search for nodes.
 
-#### Nodes Tab
+**Nodes Tab**
 
 On this tab, you can see a list of all the sequences present in the Current Dialog. Upon clicking the sequence name, you see all the nodes in that sequence - the nodes that are added to the canvas for the current dialog.  
 <img src="../images/using-dialog-builder-nodes-tab.gif" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray;zoom:60%;">
@@ -185,7 +181,7 @@ The Canvas is where you can integrate your conversation scenarios with your busi
 
 The canvas contains the following elements or components:
 
-#### The Root Intent
+**The Root Intent**
 
 This is the first component of any conversation, and whenever you create a new Dialog Task, it is automatically placed on your canvas.
 
@@ -197,7 +193,7 @@ Like any other dialog, you can configure the component, NLP, and Connection prop
 * You can connect a Root Intent to any node present on the canvas, not necessarily the first node of a sequence.
 * Creating If-Else connection paths is not possible for the Root Intent.
 
-#### Sequences
+**Sequences**
 
 These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.  
 <img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
@@ -233,7 +229,7 @@ To delete a sequence, right-click it and select **Delete** from the menu.
 
 
 
-#### Nodes
+**Nodes**
 
 Nodes are the different points at which components of your conversation intersect. Each kind of node has a set of distinct features and can be used to fulfill a specific purpose, like displaying a text message, providing the user a digital form to provide data, gathering a specific piece of data from the user, accessing data files, etc.
 
@@ -248,7 +244,7 @@ To delete a node, right-click it and select **Delete** from the menu.
     Deleted nodes cannot be restored on the canvas. However, they will still be available in the **Assets** tab of the **Index panel**.
 
 
-#### Notes, Comments and Bookmarks
+**Notes, Comments and Bookmarks**
 
 You can use Notes, Comments, and Bookmarks to easily record and collaborate between app users.
 
@@ -298,7 +294,7 @@ Below action can be performed:
         * My comments  
         <img src="../images/using-dialog-builder-comment-panel.png" alt="Comments panel" title="Comments panel" style="border:1px solid gray;zoom:70%;">
 
-#### Mini map
+**Mini map**
 
 It is a miniature representation of the visual appearance of the dialog design.
 
@@ -489,7 +485,7 @@ Use this option to create and manage node groups. Node groups let you logically 
 
 *  Node groups support better handling of follow-ups, digressions, and amending entity values.
 
-#### Create the Node Group
+**Create the Node Group**
 
 To create node groups, follow the below steps:
 
@@ -516,7 +512,7 @@ To create node groups, follow the below steps:
     You can manage groups by editing the group, and adding and removing nodes.
 
 
-#### Edit the Node Group
+**Edit the Node Group**
 
 Right-click a group name to open the Edit and Delete options. Edit lets you change the group name and add or remove nodes, then save the changes. Delete permanently deletes the group. You cannot undo this action.
 
@@ -527,7 +523,7 @@ Right-click a group name to open the Edit and Delete options. Edit lets you chan
 
 
 
-#### Add node to a group
+**Add node to a group**
 
 Follow the below steps to add a node to an existing group:
 
@@ -540,19 +536,19 @@ Follow the below steps to add a node to an existing group:
     <img src="../images/using-dialog-builder-group-select-add-node.png" alt="Select and add nodes" title="Select and add nodes" style="border:1px solid gray; zoom:70%;">
 
 
-#### Highlight Nodes
+**Highlight Nodes**
 
 You can locate a node that is added to a group on the canvas. Click on the arrowhead icon (<img src="../images/using-dialog-builder-group-arrowhead.png">) corresponding to a node, and the sequence containing that node will be highlighted.
 
 <img src="../images/using-dialog-builder-group-highlight-node.gif" alt="Highlight nodes" title="Highlight nodes" style="border:1px solid gray; zoom:70%;">
 
 
-#### Delete node
+**Delete node**
 
 You can hover over a node to get the **Delete** option. Once deleted, the node will no longer be a part of the group; however, you can add it again.
 
 
-#### Subintent
+**Subintent**
 
 If you are using the group to set up a Subintent, you can do so by navigating to the required node group and clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](./node-connections/grouping-nodes.md){:target="_blank"}.
 
@@ -560,7 +556,7 @@ If you are using the group to set up a Subintent, you can do so by navigating to
 
 ### View All Comments
 
-Through this option, you can view all the [comments](#notes-comments-and-bookmarks) added to the current dialog.
+Through this option, you can view all the comments added to the current dialog.
 
 <img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray; zoom:70%;">
 

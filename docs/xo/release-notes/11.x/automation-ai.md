@@ -1357,7 +1357,7 @@ Key features and enhancements included in this release are summarized below.
 
 **Enhancement to the Comments Functionality**
 
-The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#notes-comments-and-bookmarks){:target="_blank"}
+The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md){:target="_blank"}
 
 <font size="4">Digital Forms</font>
 
