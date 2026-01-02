@@ -69,7 +69,7 @@ Agent Platform supports SSO for the following protocols and providers:
 
 To access the SSO feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. Go to **Security & Control** > **Single Sign On** on the left menu.
 
