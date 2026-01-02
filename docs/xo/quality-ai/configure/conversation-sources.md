@@ -163,9 +163,9 @@ Represents seconds since the Unix epoch. This ingestion process supports only Un
 
 **Examples**: 
 
-    * `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
+* `1735574400` (represents December 30, 2024, 12:00:00 PM UTC)
 
-    * `1735574400.523` (includes milliseconds)
+* `1735574400.523` (includes milliseconds)
 
 **Offset Timestamp**
 
@@ -175,9 +175,9 @@ Represents seconds from the start or end of the conversation. This ingestion pro
 
 **Examples**: 
 
-    * `0` (conversation start)
-    * `45` (45 seconds into the conversation)
-    * `120.5` (2 minutes and 0.5 seconds into the conversation)
+* `0` (conversation start)
+* `45` (45 seconds into the conversation)
+* `120.5` (2 minutes and 0.5 seconds into the conversation)
 
 ### Queue Management
 
