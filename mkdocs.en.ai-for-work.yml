@@ -218,7 +218,7 @@ nav:
       - Data Settings: security/data-settings.md
       - Enterprise Encryption: 
         - Setup: security/enterprise-encryption.md
-        - Aws: security/aws-enterprise-encryption.md
+        - AWS: security/aws-enterprise-encryption.md
         - Azure: security/azure-enterprise-encryption.md
     - Audit Log:
       - Audit Log Management: audit-log/audit-log-management.md
