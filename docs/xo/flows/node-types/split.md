@@ -8,13 +8,13 @@ The syntax for defining a context variable is:
 context.contextvariable.<< context variable name >>
 ```
 
-For example, _intent_ is a context variable that defines the customer’s intent for a dialog. This variable can be defined in the condition as:
+For example, _intent_ is a context variable that defines the customer’s intent for a dialog. This variable can is defined in the condition as:
 
 ```
 context.intent.<< intent name >>
 ```
 
-Context variables are managed via the Kore.ai XO Platform. [Learn more](../../automation/intelligence/context-object.md).
+The system manages the context variables from AI for Service. [Learn more](../../automation/intelligence/context-object.md).
 
 !!! Note
 
@@ -24,22 +24,22 @@ Context variables are managed via the Kore.ai XO Platform. [Learn more](../../au
 
 ### General Settings
 
-Click the **General Settings** icon and set up the following conditions:
+Select the **General Settings** icon and set up the following conditions:
 
 1. A **Custom Name** to identify the node.
-2. Under **_Execute branches where condition matches_**, define the _IF/ELSE-IF/ELSE_ conditions using context variables and the AND/OR operator.
-    1. **_IF _**– Directs the flow on a specific path if specific criteria are met.
-    2. **_ELSE-IF_**– This condition allows you to configure another set of criteria to be met by the flow when the criteria in the initial _If_ condition are not met.
-    3. **_ELSE_**– Directs the flow on a specific path if the set criteria are not met.
-3. Under the first **Action** dropdown, select the **Branch Name** in the dropdown to route the logic to this branch if the conditions above are met.
-4. Click **_Add ELSE-IF_** to add another set of criteria to be met if the previous ones are not.
-5. Under the second **Action** dropdown, select the branch name corresponding to the **_ELSE_** condition. The flow will route to this branch if the _IF/ELSE_-IF criteria are not met.
+2. Under **_Execute branches where condition matches_**, define the _IF/ELSE-IF/ELSE_ conditions using context variables and the AND OR operator.
+    * **_IF _**-Directs the flow on a specific path on meeting a specific criteria.  
+    * **_ELSE-IF_**-This condition lets you configure another set of criteria for the flow to follow when the criteria in the initial If condition aren't met.  
+    * **_ELSE_**-Directs the flow on a specific path if the set criteria aren't met.  
+3. Under the first Action dropdown, select the Branch Name to route the logic to this branch when the conditions meet the criteria.
+4. Select **_Add ELSE-IF_** to add another set of criteria for the flow to follow when the previous criteria are not met.
+5. Under the second **Action** dropdown, select the branch name corresponding to the **_ELSE_** condition. The flow routes to this branch if the _IF/ELSE_-IF criteria aren't met.
 
     !!!Note
 
         The condition setup in Contact Center AI is similar to that of the Automation AI process. [Learn more](../../automation/use-cases/dialogs/node-connections/nodes-conditions.md).
 
-You can delete a condition by clicking on the **Delete** (bin) icon next to it.
+You can delete a condition by selecting **Delete** icon next to it.
 <img src="./../images/delete-branch.png" alt="Delete Branch" title="Delete Branch" style="border: 1px solid gray; zoom:70%;">
 
 ### Error Handling

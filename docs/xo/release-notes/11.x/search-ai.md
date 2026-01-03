@@ -15,7 +15,9 @@ Search AI now automatically enforces RACL rules at design time for all new works
 
 **New Axero Connector**
 
-The Axero connector enables ingestion and management of content from the Axero knowledge base platform, including Pages, Wiki, Discussions, Documents, Articles, Announcements, Blogs, and associated comments. The connector also preserves hyperlinks within content for use in the answers. 
+The Axero connector enables ingestion and management of content from the Axero knowledge base platform, including Pages, Wiki, Discussions, Documents, Articles, Announcements, Blogs, and associated comments. The connector also preserves hyperlinks within content for use in the answers.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/axero.md)
 
 **GitHub Connector**
 
@@ -39,9 +41,9 @@ To improve platform performance and stability, Search AI is automatically upgrad
 * Re-rankers: MS MARCO Cross Encoder and Mixbread Large are upgraded to BGE Re-ranker. This change applies automatically with no user action required.
 * Legacy Web Crawler: The legacy web crawler is replaced with the AI-Powered Crawler. Users must trigger a re-crawl to extract content using the new crawler.
 
-After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. Learn more.
+After migration, manual retraining of Search AI applications is required to ensure the updates take effect and maintain optimal performance. 
 
-[Learn more :octicons-arrow-right-24:](searchai-deprecations.md)
+[Learn more :octicons-arrow-right-24:](deprecations.md)
 
 
 <hr>
@@ -240,7 +242,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Multi-Vector Search</font> 
 
-Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
+Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weight based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
 
 For example, consider a document utilizing a dual-vector approach for information retrieval. One vector, generated from the document's content and title, captures detailed context. The other vector, derived from questions related to the content, anticipates user inquiries. By appropriately weighting these vectors, retrieval efficiency is significantly enhanced. This is because the vectors encompass various content aspects, such as title, content, and derived questions, resulting in improved alignment with diverse user queries.
 

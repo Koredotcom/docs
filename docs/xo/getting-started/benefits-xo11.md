@@ -528,7 +528,7 @@ Chunk Workbench provides granular control over how content is transformed at the
 
 **Multi-Vector Generation**
 
-Search AI supports multi-vector search, which allows you to associate multiple embedding vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different important fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize certain fields during search and retrieval. This leads to more relevant and accurate results. [Learn more](../searchai/index-configuration.md).
+Search AI supports multi-vector search, which allows you to associate multiple embedding vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different important fields of a chunk. Each vector can be assigned a weight based on the relative importance of the fields used in that vector generation, enabling the system to prioritize certain fields during search and retrieval. This leads to more relevant and accurate results. [Learn more](../searchai/index-configuration.md).
 
 
 **Enhanced Embedding Models**

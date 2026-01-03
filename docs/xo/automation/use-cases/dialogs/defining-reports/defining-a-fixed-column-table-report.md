@@ -42,7 +42,7 @@ To complete the following procedure, you must have already defined a task, such 
 13. In the **Display it as an image** section, select **Yes** if the column value is an image.
 14. In the **Display it as HTML** section, select **Yes** if the column value contains HTML content.
 15. In the **Is this column Sortable** section, select **Yes** if the end-user should be able to sort the column.
-16. In the **Fixed Column** section, select **Yes** if the end-user is abled to set the column width
+16. In the **Fixed Column** section, select **Yes** if the end-user is able to set the column width
 17. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.  
 <img src="../images/fixed_column_table_report_4.png" alt="Table Configuration" title="Table  Configuration" style="border: 1px solid gray; zoom:100%;">
 

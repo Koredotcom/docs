@@ -623,7 +623,7 @@ print(JSON.stringify(message));
 
 ![Carousel template](images/web-mobile-message-templates/carousel-template.png "carousel template")
 
-### Piechart Template
+### Pie chart Template
 
 !!! note
 
@@ -641,8 +641,8 @@ var message = {
   "type": "template",
   "payload":
     {
-     "text": "Travelling expenses report chart",
-     "template_type": "piechart",
+     "text": "Traveling expenses report chart",
+     "template_type": "pie chart",
      "pie_type": "regular",
      "elements":
        [{
@@ -665,7 +665,7 @@ var message = {
   }
 print(JSON.stringify(message));
 ```
-![Piechart template](images/web-mobile-message-templates/piechart-template.png "Piechart template")
+![Pie chart template](images/web-mobile-message-templates/pie-chart-template.png "Pie chart template")
 
 
 ### Line Chart Template
@@ -890,7 +890,7 @@ on_user_message: function(requestId, data, callback) {
 You can apply your formatting directly in JavaScript using the Platform markdown as described.
 
 * **Bold** – *text to be bolded* Do not add spaces after or before the ” * ” symbol. For example, `Here is *bold*.`
-* **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
+* **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceding and succeeding _ will also italicize the enclosed text, i.e. `Here is _italics_.`
 * **Link** – [Text for the link here](https://iana.org) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
 * **New Line** – \n One line indention.
 * **Multi Line** – \n\n\n Three line indentions.
@@ -908,14 +908,16 @@ You can apply your formatting directly in JavaScript using the Platform markdown
 * **Paragraph Indent** – >> For example, `>>This is indented once.`
 * **Multi Indent** – >>>> For example, `>>>>This is indented twice.`
 * **Heading** – #h1, #h2, #h3, #h4, #h5, #h6 For example,
+
     * `Here is an example of #h1Heading1.`
     * `Here is an example of #h2Heading2.`
     * `Here is an example of #h3Heading3.`
     * `Here is an example of #h4Heading4.`
     * `Here is an example of #h5Heading5.`
     * `Here is an example of #h6Heading6.`
+
 * **Horizontal Rule** – ___ Three underscores inserts a horizontal line. For example, `This is a horizontal rule line, added three times. _________`
-* 
+
 ## Default Message Templates for Web SDK
 
 When custom formatting is not defined, the following default message formatting types apply to the Web SDK.
@@ -973,7 +975,7 @@ var message =  {
                     "value":"CHF"
                 },
                 {
-                    "title": "Chinese Yuanr",
+                    "title": "Chinese Yuan",
                     "value":"CNY"
                 },
                 {

@@ -18,7 +18,7 @@ The **Audio to Text** node is a powerful AI component that enables you to conver
 
 * **Meeting and Lecture Transcription**: Automatically convert meetings, interviews, or classroom sessions into searchable text. 
 
-* **Customer Support Automation**: Transcribe voice interactions to feed into chatbots or help desk workflows. 
+* **Customer Support Automation**: Transcribe voice interactions to feed into chat bots or help desk workflows. 
 
 * **Subtitle and Caption Generation**: Generate accurate subtitles for video content across platforms. 
 
@@ -88,7 +88,7 @@ The **Agent Platform** uses **OpenAI Whisper-1** for transcription.
 This node is commonly used for:
 
 * Transcribing meetings, interviews, or lectures.
-* Automating customer service chatbots.
+* Automating customer service chat bots.
 * Generating subtitles for videos.
 * Voice command processing for applications.
 * Audio translation.
@@ -125,8 +125,6 @@ Metrics include:
 ### Step 1: Open Flow Builder
 
 * Log in → In Agent Platform Modules → Click **Tools**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 * Select your tool → Click **Go to Flow**.
 
 ### Step 2: Add the Node
@@ -227,6 +225,3 @@ To run and test the flow, follow the steps below:
   The **Debug** window generates the flow log and results, as shown below. [Learn more](../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} about running the tool flow.
 
    <img src="../images/debug-window-audio-to-text.png" alt="debug window" title="debug window" style="border: 1px solid gray; zoom:75%;">
-
-
-

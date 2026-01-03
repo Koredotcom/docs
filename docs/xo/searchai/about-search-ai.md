@@ -3,7 +3,9 @@ hide:
   - toc
   - feedback
 ---
+
 # About Search AI
+
 Search AI offers advanced, AI-powered conversational search capabilities that enable businesses to efficiently navigate vast datasets and deliver users the most relevant information. Powered by large language models (LLMs), Search AI provides accurate, context-aware answers, significantly improving the user experience. Integrate a variety of data sources—such as web crawlers, structured data, documents, catalogues, and knowledge repositories—to create a comprehensive answer index. Customize and enrich content to meet specific business needs and boost user engagement.
 
 By combining automation, LLM capabilities, and intelligent answer generation, Search AI helps create intuitive, seamless conversational search experiences. This innovative approach supports businesses in enhancing user satisfaction and driving informed decision-making.

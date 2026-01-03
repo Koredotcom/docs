@@ -1,3 +1,5 @@
+--8<-- "includes/qualityai-reports-back-link.md"
+
 # Evaluation Form Summary Report 
 
 Summarizes evaluation metric adherence using selected forms, providing aggregated compliance statistics. This report focuses on metric-level performance across all interactions, highlighting adherence rates and fatal metric violations.
@@ -6,12 +8,12 @@ Summarizes evaluation metric adherence using selected forms, providing aggregate
 
 Steps to generate the Evaluation Form Summary Report:
 
-1. On the **Reports** tab, click **New Report**.
+1. On the **Reports** tab, select **New Report**.
 
 1. From the **Create New Report** list, select the **Evaluation Form Summary Report**.  
 <img src="../images/evaluation-form-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
 
-1. Click **Next** to proceed.
+1. Select **Next** to proceed.
 
 1. Configure the **General** section.
 
@@ -19,20 +21,20 @@ Steps to generate the Evaluation Form Summary Report:
 
     * Enter a meaningful **Description** explaining the report's purpose and intended audience.
  
-    * Click **Next** to proceed.        
+    * Select **Next** to proceed.        
     <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
 
 1. Enter the **Configure** section fields and filters.
 
-    * Select one evaluation form to determine data scope and applicable interactions. At least one form selection is required. 
+    * Select one evaluation form to determine data scope and applicable interactions. At least one form selection you must select. 
 
-    * Select a **Date** or date range from the dropdown, such as Today, Yesterday, Last 7 days, Last Week, Week to Date.
+    * Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
 
     * Select a **Timezone** (defaults to device local timezone) from the dropdown.
 
     * Configure the required **Filter**.
 
-        * Click **+Add Filter** to configure additional filters.
+        * Select **+Add Filter** to configure additional filters.
 
             * **Channel**: Select communication channel (Chat, Voice).
 
@@ -44,18 +46,18 @@ Steps to generate the Evaluation Form Summary Report:
 
             * **Agent Groups**: Select a team or group of agents.
 
-        * Set the values against the selected/added filters. 
+        * Set the values vs. the selected/added filters. 
 
     * Add **Optional Fields** to include additional metrics or attributes.
 
     * Enter one or more addresses in the **Send Email to** field to send the automated reports (minimum one required). 
 
-    * Click **Next** to proceed.  
+    * Select **Next** to proceed.  
     <img src="../images/create-new-report-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
 1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
  
-    * Select **Run on Demand**, and click **Save** to generate the report immediately with the current configuration.  
+    * Select **Run on Demand**, and Select **Save** to generate the report immediately with the current configuration.  
     <img src="../images/evaluation-form-run-on-demand.png" alt="Run on Demand" title="Run on Demand" style="border: 1px solid gray; zoom:50%;">
 
     * Select **Schedule** to set up automated recurring report generation.  
@@ -68,30 +70,31 @@ Steps to generate the Evaluation Form Summary Report:
 
 1. Select a **Timezone** (defaults to your device's local timezone).
 
-1. Click **Instant Run** to generate the report immediately.
+1. Select **Instant Run** to generate the report immediately.
 
-1. Click **Save** to confirm and activate the schedule.  
+1. Select **Save** to confirm and activate the schedule.  
 <img src="../images/gen-start-date-and-timezone.png" alt="Save" title="Save" style="border: 1px solid gray; zoom:60%;">
 
-1. The saved report is displayed in the **My Reports - Reports** dashboard.  
+1. The saved report appears in the **Reports > My Reports** dashboard.  
 <img src="../images/sample-report.png" alt="My Reports" title="My Reports" style="border: 1px solid gray; zoom:100%;">
 
 1. Enable scheduling by switching on the **Schedule** toggle.
 
-1. Click the **Run** button to generate the report immediately.
+1. Select **Bulk Run** to generate the report immediately.
 
 ## Report Fields
 
-### Agent Performance Summary 
+### Metric Adherence Summary Report  
 
-This report provides an overview of evaluation metric adherence across all interactions, presenting aggregated compliance statistics that highlight adherence rates, applicable interaction counts, and fatal metric violations for each evaluated metric.
+This report summarizes adherence results for evaluation metrics across selected forms. It aggregates metric-level performance for all evaluated interactions, including total applicability, adherence counts, adherence percentages, and identification of fatal metrics.
 
-| **Metric Name** | **Is Fatal** | **Applicable Interactions** | **Adhered Interactions** | **Adherence %** |
-|-----------------|--------------|-----------------------------|---------------------------|------------------|
-| AI Agent Metric Check | 0 | 13 | N/A | 0.00% |
-| Agent Blaming Customer | 0 | 13 | N/A | 0.00% |
-| Agent Rude | 0 | 13 | N/A | 0.00% |
-| COMMON AU - GEN & DET | 0 | 13 | 2 | 15.38% |
+| Metric Names              | Is Fatal | Total Interactions | Total Applicable | Total Adhered | Metric Adherence Percent |
+|---------------------------|----------|--------------------|------------------|---------------|--------------------------|
+| AI Agent Metric Check     | 0        | 13                 | 13               | 0             | 0.00%                    |
+| Agent Blaming Customer    | 0        | 13                 | 13               | 0             | 0.00%                    |
+| Agent Rude                | 0        | 13                 | 13               | 0             | 0.00%                    |
+| COMMON AU – GEN & DET     | 0        | 13                 | 13               | 2             | 15.38%                   |
+
 
 ### View and Download the Report
 
@@ -99,15 +102,16 @@ Steps to view and download a report:
 
 1. On the **Reports** tab, navigate to the **Actions** column.
 
-1. Click the vertical **Ellipsis** button. 
+1. Select the vertical **Ellipsis** button. 
 
 1. Select **History** to view all generated reports.
 
-1. Click **Download** to save and view the required reports in CSV format.
+1. Select **Download** to save the required reports in CSV format.
 
-### Sample Report Format
+### Report Format
 
 * **Format**: CSV file
+
 * **File Name**: [ReportName]-YYYY-MM-DD-HH-MM-SS.csv   
 <img src="../images/sample-evaluation-form-summary-report.png" alt="Reports Access" title="Reports Access" style="border: 1px solid gray; zoom:80%;">
 

@@ -1,6 +1,6 @@
 # Quality AI Release Notes
 
-This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
+This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases. 
 
 ## v11.20.0 December 07, 2025
 
@@ -18,7 +18,7 @@ Import and Export support for Quality AI deployment enables seamless management 
 
 **QM Express Onboarding Supports AWS Assume Role Access**
 
-QM Express now supports IAM Role (Assume Role) authentication for secure, temporary credential access without storing long-term AWS keys. The update includes a new IAM auth type, Role ARN schema, enhanced validation, and S3 service initialization using STS AssumeRole with automatic credential rotation. This strengthens security, enables cross-account access, and aligns with AWS best practices for least-privilege access. [Learn more :octicons-arrow-right-24:](../../quality-ai/connectors/aws-s3-connector-setup-guide.md)
+QM Express now supports IAM Role (Assume Role) authentication for secure, temporary credential access without storing long-term AWS keys. The update includes a new IAM auth type, Role ARN schema, enhanced validation, and S3 service initialization using STS AssumeRole with automatic credential rotation. This strengthens security, enables cross-account access, and aligns with AWS best practices for least-privilege access. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/connectors/aws-s3-connector-setup-guide.md)
 
 <font size="4">Analyze</font>
 
@@ -26,11 +26,11 @@ QM Express now supports IAM Role (Assume Role) authentication for secure, tempor
 
 Analytics visibility is enhanced across Conversation Mining, Audit workflows, and Agent Dashboards:
 
-* Conversation Mining includes optional columns for Configured Intents, Generated Intents, and Overall Resolution, with color-coded topic sentiment and advanced filters for L1–L3 topics, intents, sentiment, emotion, and resolution.
+* Conversation Mining includes optional columns for Configured Intents, Generated Intents, and Overall Resolution, with color-coded topic sentiment and advanced filters for L1–L3 topics, intents, sentiment, emotion, and resolution. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md)
 
-* The Audit Screen provides deeper topic-level insights with click-through intents and detailed L3 resolution mapping, helping auditors quickly locate where each topic or resolution appears in the transcript.
+* The Audit Screen provides deeper topic-level insights with click-through intents and detailed L3 resolution mapping, helping auditors quickly locate where each topic or resolution appears in the transcript. [Learn more :octicons-arrow-right-24:](../../quality-ai/ai-assisted-manual-audit.md)
 
-* The Agent Dashboard includes scrollable Sentiment and Resolution Insights, with averages, trend indicators, and top or bottom-performing topics. App-level controls enable admins to manage agent access to sentiment and resolution data for flexible team visibility.
+* The Agent Dashboard includes scrollable Sentiment and Resolution Insights, with averages, trend indicators, and top or bottom-performing topics. App-level controls enable admins to manage agent access to sentiment and resolution data for flexible team visibility. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/my-dashboard-agent-view.md)
 
 <font size="4">API Enhancements</font>
 
@@ -130,7 +130,7 @@ Supervisors and QA users can now add comments directly on individual messages, w
 
 **Conversation Mining Processing Status**
 
-In Conversation Mining, the Processing Status now displays a status icon: green (pass) when all processes have succeeded and metrics are being captured; red (fail) when any process fails, and metric tracking is interrupted. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-elements)
+In Conversation Mining, the Processing Status now displays a status icon: green (pass) when all processes have succeeded and metrics are being captured; red (fail) when any process fails, and metric tracking is interrupted. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-interactions.md#interactions-dashboard-columns)
 
 
 <font size="4">Conversation Sources</font>

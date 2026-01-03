@@ -145,7 +145,7 @@ The platform has set up a check on loop limit and if the dialog conditions resul
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td>Server returned authorisation failure and the user needs to re-authorize
+   <td>Server returned authorization failure and the user needs to re-authorize
    </td>
    <td>This message is displayed for a Server Authorization failure during the execution of the script node or making an API call.
    </td>
@@ -177,7 +177,7 @@ This AI Agent message is displayed to request the user to specify the Alert time
    </td>
    <td>Applicable to Alert Task Only
 <p>
-During the setup of the Alert, the AI Agentt will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
+During the setup of the Alert, the AI Agent will ask the user the frequency at which the alert will be triggered. The end-user will need to specify at what interval the alert task will be triggered.
 <p>
 This message is displayed to request the user to specify the Alert time interval if the Trigger interval option is set to Every X mins.
    </td>
@@ -575,6 +575,7 @@ This response is displayed when the AI Agent identifies a dialog task for which 
 </table>
 
 ### Queries
+
 Statements from the AI Agent to the user to ask for more information. For example, *Which field do you want to change?*
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -784,6 +785,7 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
 </table>
 
 ### Errors & Warnings
+
 Statements from the AI Agent to the user, when an error occurs during the scenario, such as the *End date, cannot be before or the same as the start date!*
 
 <table border="1.5">
@@ -1078,7 +1080,7 @@ This message is displayed when an API call fails due to the expiry of user crede
    </td>
   </tr>
   <tr>
-   <td>Task is discarded when user exceeds maximum number of alowed attempts.
+   <td>Task is discarded when user exceeds maximum number of allowed attempts.
    </td>
    <td>Shown when the user enters an invalid format for an entity type 5 times. For example, the entity is of type <em>number</em> and the user enters an email 5 times.
    </td>
@@ -1104,6 +1106,7 @@ This message is displayed when an API call fails due to the expiry of user crede
 </table>
 
 ### Questions
+
 Questions the app may pose to the user when not included in any other category.
 
 <table border="1.5">
@@ -1132,6 +1135,7 @@ This message is displayed when the app asks the user to input the frequency at w
 </table>
 
 ### Choices
+
 The app is asking for Yes/No input. For example, *Would you like to receive push notifications every time this task occurs?*
 
 <table border="1.5">

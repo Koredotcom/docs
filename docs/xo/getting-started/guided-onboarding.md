@@ -2,14 +2,13 @@
 
 
 
-DialogGPT is now the default intent identification mode for AI for Service app creation, replacing traditional NLP. This reduces configuration effort and improves conversational accuracy for new AI Agents. App creation automatically enables the required XO GPT models for DialogGPT. You can view the DialogGPT configuration after creating your app.
+DialogGPT is now the default orchestration mode for AI for Service app creation. This reduces configuration effort and improves conversational accuracy for new AI Agents. App creation automatically enables the required XO GPT models for DialogGPT. You can view the DialogGPT configuration after creating your app.
 
 After signing up, users are guided through the following onboarding process to create their app.
 
 
 
-1. Log in to the Platform.
-2. On the app listing page, click **New App**.
+1. After logging in to the platform, click **New App** on the app listing page.
 3. Select the type of app you want to create. The available apps are AI Agents (Automation AI), Contact Center AI, Search AI, and Agent AI.  
 <img src="../images/service-app.png" alt="Onboarding - App Creation" title="Onboarding - App Creation" style="border: 1px solid gray; zoom:70%;">
 

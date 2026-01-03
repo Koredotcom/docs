@@ -174,7 +174,7 @@ You can do the following to analyze the model’s performance:
 
 ### Model Scaling and Usage
 
-This widget is available for **Fine-tuned** and **Open-source** models. It features a step graph illustrating the usage and scaling, meaning the number of replicas (with a specific [hardware configuration](../../../models/hardware-pricing.md){:target="_blank"} deployed for the selected model version in the [Model Performance Filter](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} and the period in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Replicas**, and the X-axis indicates the selected **Date**.
+This widget is available for **Fine-tuned** and **Open-source** models. It features a step graph illustrating the usage and scaling, meaning the number of replicas (with a specific [hardware configuration](../../../settings/billing/managing-usage-limits.md){:target="_blank"} deployed for the selected model version in the [Model Performance Filter](../analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"} and the period in the [Global Timeline Filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Replicas**, and the X-axis indicates the selected **Date**.
 
 **Key Features**
 
@@ -268,9 +268,10 @@ The expanded views of all the widgets are shown below:
 
 With intuitive data visualization and dynamic filtering capabilities, the **Model Analysis Dashboard** enables data-driven decisions for model optimization, resource allocation, and performance monitoring.
 
-## Related Links
+<hr/> 
 
-* **Settings Console** - [Learn more](../../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-* **Monitoring: Audit Logs** - [Learn more](../audit-logs.md){:target="_blank"} about tracking activities and events in your account.
-* **Monitoring: Tools Analytics Dashboard** - [Learn more](../analytics/tools-analytics-dashboard.md){:target="_blank"} about getting actionable insights into tools’ performance.
+**Related Resources**
 
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - about tracking activities and events in your account.
+* [Monitoring: Tools Analytics Dashboard](../analytics/tools-analytics-dashboard.md){:target="_blank"} - about getting actionable insights into tools’ performance.

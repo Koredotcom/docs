@@ -180,10 +180,11 @@ aaWindowInstance.on('BEFORE_VIEW_INIT', (html, payload) => {
 ### Theme Persistence
 
 There are two type of themes available to select:
+
 - Dark theme
 - Light theme
 
-**Behaviour**
+**Behavior**
 
 - The selected theme is saved in the local storage.
 - Upon reloading the application, the same theme is automatically applies without any user assistance.

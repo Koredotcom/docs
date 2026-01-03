@@ -41,7 +41,7 @@ Latency reporting now captures ASR, Bot, and TTS delays at both node and call le
 
 **Outbound Dialing API - v2**
 
-The updated API now sends Answering Machine Detection (AMD) configurations during call creation instead of after call connection. This lets AMD to start earlier, improving detection speed and reducing overall latency.
+The updated API now sends Answering Machine Detection (AMD) configurations during call creation instead of after call connection. This lets AMD to start earlier, improving detection speed and reducing overall latency. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/outbound-calling-vg-v2.md)
 
 <hr>
 
@@ -108,7 +108,7 @@ A new configuration option, Answer call on AI Agent first response, is available
 
 **API to Start, Pause, Resume, and End/Stop Transcriptions and Call Recordings**
 
-The enhanced version of the Control Transcription API (v2) now supports managing call recordings, in addition to transcriptions, for third-party agent desktops. This API provides enhanced flexibility and control during live interactions, allowing agent desktops outside of Kore's ecosystem to manage transcriptions and recordings in accordance with business and regulatory requirements. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/control-transcription-api-2.md)
+The enhanced version of the Control Transcription API (v2) now supports managing call recordings, in addition to transcriptions, for third-party agent desktops. This API provides enhanced flexibility and control during live interactions, allowing agent desktops outside of our ecosystem to manage transcriptions and recordings in accordance with business and regulatory requirements. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/control-transcription-api-2.md)
 
 <hr>
 

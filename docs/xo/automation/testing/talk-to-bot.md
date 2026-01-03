@@ -1,4 +1,4 @@
-# Test
+# Test - NLP
 
 After you have defined your app and configured one or more tasks, test your settings before you publish your NLP-enabled app. App owners and developers can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
 

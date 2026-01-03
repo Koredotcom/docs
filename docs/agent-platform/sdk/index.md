@@ -60,7 +60,7 @@ app.start(
 ```
 
 ## Quick Links
-
+ 
 <div class="grid cards" markdown>
 
 - :material-clock-fast:{ .lg .middle } __Getting Started__
@@ -115,7 +115,9 @@ graph TB
     E --> G[(Storage)]
 ```
 
-## Community and Support
+<hr/>
+
+**Related Resources**
 
 - 📖 [Documentation](getting-started/installation.md)
 

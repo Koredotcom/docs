@@ -44,6 +44,7 @@ To access the **Plan and Usage**, follow the steps below:
 <img src="../images/navigating-to-plan-and-usage.gif" alt="Navigating to Plan and Usage" title="Navigating to Plan and Usage" style="border: 1px solid gray;"/>
 
 ### Plan Information
+
 Here, you can find detailed information about your current plan and product usage. You can also modify or upgrade your plan directly from here.  
 <img src="../images/plan-information.png" alt="Nplan-information" title="plan-information" style="border: 1px solid gray;"/>
 
@@ -106,6 +107,7 @@ Select the wire transfer payment mode while adding funds. A wire transfer is a f
 
 
 ### Subscribe and Modify the Plan
+
 To subscribe to a new plan or modify an existing plan, follow the steps below:
 
 1. On the Platform, navigate to **Manage** > **Plan & Usage**.

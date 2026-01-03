@@ -1,4 +1,4 @@
-# Introduction to Agent Platform
+# Agent Platform Overview
 
 The all-new Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
 

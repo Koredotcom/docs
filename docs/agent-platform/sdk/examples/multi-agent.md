@@ -308,7 +308,9 @@ python run.py -c prod test --app <appId> --env prod
 4. **Memory Usage** - Share data via memory stores
 5. **Error Handling** - Handle failures gracefully at each level
 
-## Related Documentation
+<hr/>
+
+**Related Resources**
 
 - [Custom Orchestration](../guide/orchestration.md)
 - [Creating Agents](../guide/creating-agents.md)

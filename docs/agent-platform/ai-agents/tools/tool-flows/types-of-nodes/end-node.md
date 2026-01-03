@@ -12,7 +12,6 @@ Steps to add and configure the node:
 
 * Log in → In **Agent Platform Modules** → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the End Node
 
@@ -50,8 +49,3 @@ Finally, test the flow and fix any issues found. Click the **Run Flow** button a
 !!! failure "Standard Error"
 
     When the value for the output variable is not defined, a list of unresolved outputs is displayed.
-
-
-
-
-

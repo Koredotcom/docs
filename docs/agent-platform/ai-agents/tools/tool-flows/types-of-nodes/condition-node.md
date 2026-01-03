@@ -49,8 +49,6 @@ In this document, you will learn how to set up a Condition Node in a tool flow, 
 * Log in → In Agent Platform Modules → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
 
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 ### Step 2: Add the Condition Node
 
 * Click the “**+**” icon on an existing node → Select Condition node.
@@ -81,4 +79,3 @@ In this document, you will learn how to set up a Condition Node in a tool flow, 
 !!! failure "Standard Error"
 
     If a condition is true or false but has no connected node, the following error message is displayed: "Path not defined. Please check the flow."
-

@@ -2,8 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - ashishorg-stage
-
+      - dev
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true      
@@ -17,6 +16,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Build EN AI for Service docs
+        uses: ./
+        with:
+          entrypoint: mkdocs
+          args: build --strict --config-file=mkdocs.en.xo.yml
       - name: Build EN AI for Work docs
         uses: ./
         with:
@@ -32,6 +36,7 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --strict --config-file=mkdocs.en.ai-for-process.yml
+          
 
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site

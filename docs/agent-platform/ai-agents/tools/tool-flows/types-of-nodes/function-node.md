@@ -37,7 +37,6 @@ Steps to add and configure the node:
 
 * Log in → In **Agent Platform Modules** → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
-  <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the Function Node
 
@@ -484,6 +483,8 @@ Do one of the following:
 
 When you share a tool with another user within the same account, all configurations of the Function node are retained and available to the recipient as well.
 
-## Related Links
+<hr/> 
 
-* **Supported Libraries** - [Learn more](../types-of-nodes/script-libraries.md) about the list of supported libraries in the script editor of the Function node.
+**Related resource**
+
+* [Supported Libraries](../types-of-nodes/script-libraries.md) - list of supported libraries in the script editor of the Function node.

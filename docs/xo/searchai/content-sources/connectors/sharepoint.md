@@ -34,6 +34,10 @@ Configure the SharePoint connector if you're using SharePoint to manage your con
    <td>Yes
    </td>
   </tr>
+  <tr>
+   <td colspan="2" >Note: Searching through attachments not supported.
+   </td>
+  </tr> 
 </table>
 
 
@@ -68,9 +72,9 @@ App registrations are required to access resources programmatically. Registering
 ![App Registration](images/sharepoint/new-app-registration.png "Application Registration")
 
 * Enter the application's name. Create a multi-tenant account and set the account type to ‘Accounts in any organization directory’. Set the Redirect URL and click **_Register_**. You can use one of the following URLs according to your region.
-    * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Callback URL: https://idp.kore.com/workflows/callback
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
     
 ![Account Types](images/sharepoint/account-types.png "Account Types")
 
@@ -273,7 +277,8 @@ The owner can also share a file with all the domain or organization members.
 * When a file is shared with a specific user, the user is automatically added to the sourceACL field of the corresponding files during ingestion. 
 * When a file is shared with a user group, the groupId is used to create a permission entity that can be used to resolve individual users. 
 * When a file is shared with a specific domain, the domain name is stored as a permission entity in the sourceACL field. SearchAI automatically compares the user email IDs with the domain name during answer generation. If there is a match, access to the files is granted. 
+ 
+ **Related resources** 
 
-### Related Pages
 * [Learn About Access Control in Search AI](../racl-support.md)
 * [Associate users with permission Entities using Permission Entity APIs](../../../apis/searchai/permission-entity-apis.md).

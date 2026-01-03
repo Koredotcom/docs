@@ -42,12 +42,9 @@ The key steps in managing custom scripts are:
 To access the custom scripts wizard, follow the steps below:
 
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
 2. Click **Settings** on the top navigation bar.
 3. Click **Manage Custom Scripts** on the left menu.
-   <img src="../images/access-manage-custom-scripts.png" alt="manage custom scripts" title="manage custom scripts" style="border: 1px solid gray; zoom:75%;">
-
+   
 ## Import and Deploy a Custom Script
 
 To import and add a custom script, follow the steps below:
@@ -180,6 +177,7 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
      * Select the required **hardware** for the deployment. The unit is **No. of vCPUs with memory**. The profiles are virtualized for standardization. The available profiles are listed below:
 
          <table>
+
   <tr>
    <td><strong>Hardware configuration</strong>
    </td>
@@ -246,11 +244,8 @@ The next step is to review all the configuration details before deploying the sc
 4. Click **Deploy**.
 <img src="../images/click-deploy-terms.png" alt="deploy terms" title="deploy terms" style="border: 1px solid gray; zoom:75%;">
 
-The following message is displayed when the script deployment progresses, and the status changes to “*Deploying*”.
-<img src="../images/initiated-deployment.png" alt="initiated deployment" title="initiated deployment" style="border: 1px solid gray; zoom:75%;">
- 
-Once the script is deployed successfully, the following message is displayed, and the status changes to “*Deployed*”. 
-<img src="../images/deployed-success.png" alt="deployed success" title="deployed success" style="border: 1px solid gray; zoom:75%;">
+During deployment, the progress status displays “Deploying.”
+After the script is successfully deployed, a success message appears and the status changes to “Deployed.”
 
 **Email Notification**
 
@@ -259,8 +254,6 @@ After a custom script is deployed, a confirmation email with the subject line "*
 * Credits remaining for the account 
 
 * Total allocation
-
-   <img src="../images/deployment-email.png" alt="deployed success" title="deployed success" style="border: 1px solid gray; zoom:75%;">
 
 ## View Deployed Scripts and their Statuses
 
@@ -486,7 +479,6 @@ Downloads the *.Zip* folder of the project to the user’s local system. To expo
 <img src="../images/access-export.png" alt="access export" title="access export" style="border: 1px solid gray; zoom:75%;">
 
    Alternatively, click the deployed script entry and select **Export** on the **Overview** page.
-   <img src="../images/click-export-script.png" alt="export script" title="export script" style="border: 1px solid gray; zoom:75%;">
 
 To see when **Export** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
 
@@ -516,8 +508,6 @@ To undeploy, follow the steps below on the **Manage Custom Scripts** page:
 
    You can also select a script entry and click **Proceed to Undeploy** on its **Overview** page. 
 
-   <img src="../images/proceed-to-undeploy.png" alt="proceed to undeploy" title="proceed to undeploy" style="border: 1px solid gray; zoom:75%;">
-
 <ol start="2"><li>Click <b>Undeploy</b> in the confirmation window.</li>
 <img src="../images/undeploy-script-confirmation.png" alt="undeploy script confirm" title="undeploy script confirm" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -535,8 +525,6 @@ After a custom script is undeployed, a confirmation email with the subject line 
 
 * Total allocation
 
-   <img src="../images/undeploy-email.png" alt="undeployed success" title="undeployed success" style="border: 1px solid gray; zoom:75%;">
-
 #### Delete Script
 
 This action permanently deletes a deployed script, including its configurations and definitions, from the system.
@@ -553,15 +541,12 @@ To delete, follow the steps below on the **Manage Custom Scripts** page:
 <img src="../images/access-delete.png" alt="access delete" title="access delete" style="border: 1px solid gray; zoom:75%;">  
 
    Alternatively, select a script entry and click **Proceed to Delete** on its **Overview** page.
-   <img src="../images/proceed-to-delete-script.png" alt="proceed to delete" title="proceed to delete" style="border: 1px solid gray; zoom:75%;">  
 
 <ol start="2"><li>Click <b>Delete</b> in the confirmation window.</li> 
 <img src="../images/delete-the-script.png" alt="delete the script" title="delete the script" style="border: 1px solid gray; zoom:75%;"></ol>
 
 A success message is displayed, and the script is permanently removed. 
 
-<img src="../images/delete-script-confirmation.png" alt="script deletion" title="script deletion" style="border: 1px solid gray; zoom:75%;">
- 
 To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
 
 
@@ -753,8 +738,6 @@ To add an API secret key, follow these steps:
 
 A success message is displayed once the API key is generated. The added API Key is listed on the page.
 
-<img src="../images/api-key-success-message.png" alt="api key success message" title="api key success message" style="border: 1px solid gray; zoom:75%;">  
-
 ### Delete an API Key
 
 To delete an API key, follow the steps below:
@@ -810,8 +793,9 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     Please refer to the [API node](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} for more information.
 
-    ## Related Links
-    
-    * **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-    * **API Node** - [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
+<hr/> 
 
+**Related Resources**
+
+* *[Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [API Node](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} - about configuring the API node via endpoint.

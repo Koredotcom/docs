@@ -435,7 +435,7 @@ var data = {
       "displayValue": "$ 120"
     },
     {
-      "title": "Inivestments",
+      "title": "Investments",
       "value": "320",
       "displayValue": "$ 320"
     },
@@ -459,7 +459,7 @@ print(JSON.stringify(data));
 
 
 
-<img src="../images/widget-message-templates/piechart-template.png" alt="Piechart template" title="Piechart template" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/widget-message-templates/pie-chart-template.png" alt="Pie chart template" title="Pie chart template" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Line Chart Template

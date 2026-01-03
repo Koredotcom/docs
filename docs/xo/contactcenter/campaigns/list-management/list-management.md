@@ -89,6 +89,7 @@ hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on
     <img src="../images/csv.png" alt="CSV Fields" title="CSV Fields" style="border: 1px solid gray; zoom:80%;">  
 
 #### Time Zone
+
 * The **Timezone** field of the CSV is validated against the Calling Hours Timezone.
 * The time zone mentioned for a contact in the CSV gets preference over Calling Hours.
 * When setting up the time zones for an Outbound campaign's contact list or specifying contactable timings, use the format mentioned in the Tz database. [Tz Identifiers](./tz-identifiers.md).
@@ -125,9 +126,9 @@ Steps to pull  the contacts using API Integration:
     <img src="../images/header.png" alt="Headers" title="Headers" style="border: 1px solid gray; zoom:80%;">
 
 9. Enter the **Key-Value** pairs and select **Next**.  
-    <img src="../images/keyvalue-pairs.png" alt="Key-Value Pairs" title="Key-Value Pairs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/key-value-pairs.png" alt="Key-Value Pairs" title="Key-Value Pairs" style="border: 1px solid gray; zoom:80%;">
 
-10. Click **Validate**. The response is displayed.  
+10. Select **Validate**. The response displays.  
     <img src="../images/validate.png" alt="Validate" title="Validate" style="border: 1px solid gray; zoom:70%;">
 
 11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
@@ -144,7 +145,7 @@ Steps to pull  the contacts using API Integration:
             }
         ```
         You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields.  
-            <img src="../images/fieldmapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+            <img src="../images/field-mapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
     * Ensure that the phone numbers are in E.164 format with Country Code, Area Code, Subscriber Number, and within double inverted quotes.
 
     !!! Note
@@ -183,12 +184,15 @@ You can use the extracted labels to access specific contact list fields within y
 
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
 2. In the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) or [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md), add the following JavaScript function to retrieve campaign user details:
+
 ```
 const campaignUserInfo = context.session.UserSession.campaignUserInfo;
 ```
+
 // Accessing all fields, including mapped and unmapped ones
 
 3. After retrieving the user information, implement custom logic as needed. In this example, the script extracts the user’s phone number and stores it in the context for use in future flows.
+
 ```
 const number = campaignUserInfo.phoneNumber;
 ```
@@ -223,10 +227,10 @@ context.campaignUserInfoNumber=number;
 
 Steps to edit a contact list from the local drive:
 
-1. Click the **Edit** icon beside the contact list name.  
-    <img src="../images/edit-call-list-button.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Edit** icon beside the contact list name.  
+    <img src="../images/edit-call-list-button.png" alt="Edit Contact List" title="Edit Contact List" style="border: 1px solid gray; zoom:80%;">
 
-2. Upload the call list and click **Save** when the list is appended.  
+2. Upload the call list and select **Save**.  
     <img src="../images/append-contact-list.png" alt="Append Contact List" title="Append Contact List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -237,17 +241,17 @@ Steps to edit a contact list from the local drive:
 
 Steps to  edit an API-integrated contact list:
 
-1. Click the **Edit** icon beside the contact list name.  
-    <img src="../images/editapi.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Edit** icon beside the contact list name.  
+    <img src="../images/edit-api.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
 
-2. Click the **Edit** icon (🖉)at the right corner of the URL.  
-    <img src="../images/editapinewlist.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+2. Select the 🖉 at the right corner of the URL.  
+    <img src="../images/edit-api-new-list.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-3. Do the changes and click **Next**.  
-    <img src="../images/editapisyncmode.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+3. Do the changes and select **Next**.  
+    <img src="../images/edit-api-sync-mode.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
 
-4. Make changes to the mapping fields (if required) and click **Save**.  
-    <img src="../images/editapimapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">  
+4. Make changes to the mapping fields (if required) and select **Save**.  
+    <img src="../images/edit-api-mapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">  
 
 ### Delete a Contact List
 
@@ -255,29 +259,24 @@ Steps to  edit an API-integrated contact list:
 
 Steps to delete a contact list from the local drive:
 
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
+1. Select the **Edit** icon beside the contact list name and select the **Delete** icon at the left corner of the edit window.  
     <img src="../images/delete-call-list.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
         You cannot delete a contact list if it is associated with any campaign.
 
-2. A confirmation message is displayed. Click **Delete**.  
+2. A confirmation message displays. Select **Delete**.  
     <img src="../images/delete-list-confirmation.png" alt="Delete Contact List Confirmation" title="Delete Contact List Confirmation" style="border: 1px solid gray; zoom:80%;">  
-
-    The contact list is deleted.
 
 #### API Integration
 
 Steps to delete an API-integrated contact list:
 
-1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
-    <img src="../images/deleteapilist.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
+1. Select the **Edit** icon beside the contact list name and select the **Delete** icon at the left corner of the edit window.  
+    <img src="../images/delete-api-list.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
-2. A confirmation message is displayed. Click **Delete**.  
-    <img src="../images/deleteintegration.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
-
-    The contact list is deleted.
+2. A confirmation message displays. Select **Delete**.
 
 ## DNC Lists
 

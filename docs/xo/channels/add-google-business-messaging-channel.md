@@ -2,15 +2,9 @@
 
 # Adding the Google Business Messaging Channel
 
-
-
-
-
 !!! Warning
 
     Google announced the discontinuation of the Google Business Messages channel from July 31st. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there. For more details, please refer to the [Google announcement](https://developers.google.com/business-communications/business-messages/resources/release-notes/update-on-gbm?hl=en).
-
-    
 
 Modern business applications require agent integrations on web/mobile devices to enable seamless customer communication via SMS/chats.
 
@@ -101,7 +95,7 @@ To integrate with the GBM channel, you need to register as a partner for Google 
 
 1. Open the [Business Communications Developer Console](https://business-communications.cloud.google.com/?utm_source=/business-communications/business-messages/guides/how-to/register&utm_medium=devsite&utm_campaign=business-messages).
 2. Under **Business Messages**, click **Create partner account**.
-<img src="../images/GBM-1.png" alt="gooogle business " title="gooogle business " style="border: 1px solid gray; zoom:70%;">
+<img src="../images/GBM-1.png" alt="Google business " title="Google business " style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the values for the following fields in the **Create a Business Messages partner account** window:
     * **Your Name**: Your full name.
@@ -151,6 +145,7 @@ Also, to create an agent for your GBM Partner account, you must submit informati
 
 1. If you registered for a partner account before March 7, 2022, you need to enable the Business Messages API before creating your first agent. See[ Enable the Business Communications API and Business Messages API](https://developers.google.com/business-communications/business-messages/guides/concepts/open-api#enable_the_business_communications_api_and_business_messages_api).
 2. Please ensure you have the following values for each brand you manage before you create an agent:
+
   * Brand name
   * Agent name to appear in conversations with users.
 

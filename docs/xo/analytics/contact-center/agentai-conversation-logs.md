@@ -1,6 +1,10 @@
+
+# Conversation Logs
+
 The **Conversation Logs** is a library of all conversations agents have with their customers. It lets you access and review past interactions, view agent names, copy conversation identifiers, view the overall sentiment, access voice call recordings, and view the overall widget feedback. You can also compare edited conversation summaries with their original versions. Additionally, you can create, edit, delete, and save search filters, and set a default filter.
 
 ## Accessing the Conversation Logs
+
 Steps to access the Conversation Logs:
 
 1. Sign in to [**AI for Service**](https://platform.kore.ai/){:target="_blank"}.
@@ -12,7 +16,7 @@ Steps to access the Conversation Logs:
 
 4. Click a **CONVERSATION ID** to view the corresponding conversation summary, edited summary (if any), identifiers, Voice Call Recording, overall widget feedback, and the conversation record.  
 
-| **Field**         | **Description**                                                                                                  |
+| **Field**          | **Description**                                                                                                  |
 |--------------------|------------------------------------------------------------------------------------------------------------------|
 | **Clear Filters**  | Removes all filters (Time and Custom) and returns to the default view (Today).                                   |
 | **Conversation ID**| A unique identification number assigned to each conversation. It helps identify and track specific interactions. |
@@ -130,7 +134,7 @@ Each conversation in the **Conversation Logs** has a unique **Conversation ID**.
 **Steps to search through the Conversation ID**:
 
 1. Go to **Conversation Logs**.
-2. Locate the **Search by Conv ID** search box in the upper-right corner of the page.
+2. Locate the **Search by Conversation ID** search box in the upper-right corner of the page.
 3. Enter the **Conversation ID** value in the search box.
 4. Press the **Enter** key.  
     <img src="../conversation_logs/conversation-id.png" alt="conversation-id" title="conversation-id" style="border: 1px solid gray; zoom:80%;">
@@ -146,7 +150,9 @@ Steps to create a new filter:
     <img src="../conversation_logs/logs-filter.png" alt="logs-filter" title="logs-filter" style="border: 1px solid gray; zoom:80%;">  
 
 3. In the **New Filter** page:
-    1. Select **Channel Type**—**Chat**, **Voice**, **Email**.
+
+    1. Select **Channel Type**-**Chat**, **Voice**, **Email**.
+
     2. Enter the first few letters of an agent’s email address—autocomplete displays the rest—and select it. To select multiple displayed addresses, click **Add Selected**.  
         <img src="../conversation_logs/agent-email-address.png" alt="agent-email-address" title="agent-email-address" style="border: 1px solid gray; zoom:80%;">  
 

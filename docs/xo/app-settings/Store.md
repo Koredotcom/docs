@@ -1,3 +1,6 @@
+
+# Store
+
 The **Store** is an online collection of Apps that run on the Kore.ai XO Platform. The purpose of the store is to enable you as an App developer to explore the App’s capabilities and import them into your account.You must have a Kore.ai XO Platform account to use template App (which are the only type of App available in the store).
 
 ## Benefits
@@ -62,9 +65,11 @@ On the preview display, click **Know More** for more details such as:
 
 1. A **video** that explains the App’s features.
 2. Two sections that provide:
-* **Overview** – This section gives a summary of the template Apps and the available features .
-* **Technical Specifications** – This section gives a detailed overview of the technical aspects of the App, including prerequisites, configuration, etc.
-1. On the right column, you can find:
+
+   * **Overview** – This section gives a summary of the template Apps and the available features .
+   * **Technical Specifications** – This section gives a detailed overview of the technical aspects of the App, including prerequisites, configuration, etc.
+
+3. On the right column, you can find:
     * The **number of times the App was downloaded**.
     * The **_category_** of the App.
     * The list of **_channels,_** **_languages,_** and **_integrations_** (if any) supported.

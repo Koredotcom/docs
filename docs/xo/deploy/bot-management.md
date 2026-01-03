@@ -46,14 +46,12 @@ To import an AI Agent, follow these steps:
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
         2. Click the **Choose File** buttons next to the **App Definition File** field and **App Config File** fields, and upload the _appDefinition.json_ and _config.json_ files, respectively.
-        3. Optionally, upload the custom script file from the imported agent, if any. The file size limit is 500kb.
-        
+        3. Optionally, upload the custom script file from the imported agent, if any. The file size limit is 500kb.  
         <img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;">
 
     * Import by uploading a **ZIP file**:
         1. Choose the **Zip File** radio button.
-        2. Through the **Choose File** button, browse and import the Zip file. This option allows you to import an app by directly importing the zip file created at the time of Export without having to unzip it.
-
+        2. Through the **Choose File** button, browse and import the Zip file. This option allows you to import an app by directly importing the zip file created at the time of Export without having to unzip it.  
         <img src="../images/bot-import-zip-file.png" alt="App import - ZIP file" title="App import - ZIP file" style="border:1px solid gray; zoom:70%;">
 
 6. Select one of these import options: **Full Import** or **Incremental Import**. You get a warning to back up your agent before performing the import.
@@ -84,15 +82,15 @@ To import an AI Agent, follow these steps:
 
     * **NLP Data**: Here you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns, and Standard Responses. You can choose to either append or replace the ML Utterances and Patterns..
             
-        1. **Append** You can use this when the utterances in the file must be imported into the agent, and any additional utterances in the agent must be retained (this is the default behavior).
-        2. **Replace** You can use this when when the utterances in the file must be imported into the agent. Any additional utterances are removed.
+        * **Append** You can use this when the utterances in the file must be imported into the agent, and any additional utterances in the agent must be retained (this is the default behavior).
+        * **Replace** You can use this when when the utterances in the file must be imported into the agent. Any additional utterances are removed.
         
             If you are also importing Tasks, the additional utterances related to tasks being imported are removed. 
 
             <img src="../images/bm(1).png" alt="App import" title="App import" style="border:1px solid gray; zoom:60%;">
 
 
-        3. The imported Traits, Synonyms, and Concepts replace those in the target agent. Rules can be imported along with their tagged dialog tasks.
+        * The imported Traits, Synonyms, and Concepts replace those in the target agent. Rules can be imported along with their tagged dialog tasks.
 
     * **Settings**: App Settings, App Variables, Voice Call Properties, Generative AI and LLM. The Generative AI and LLM setting includes:  
 
@@ -106,9 +104,8 @@ To import an AI Agent, follow these steps:
 
     * **Agent AI Dashboards**: Here you can select the Agent coaching rules, Checklists, and their configurations.
 
-    * On the confirmation dialog that opens, click **Backup** to download the existing agent configuration.
-
-        <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;">
+    * On the confirmation dialog that opens, click **Backup** to download the existing agent configuration.  
+    <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;">
     
         !!! Note
 
@@ -366,7 +363,7 @@ When you export an AI Agent in the Latest mode, the latest versions of the  task
         If you want to export one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not exported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
 8. You can also choose to **Include dependent tasks** or not for export. The existence of these are checked before import and the import fails if the dependent tasks are missing. These dependent tasks include the following:
-    * Linked Dialogs that is dialog nodes present in the definition of another dialog;
+    * Linked Dialogs that's dialog nodes present in the definition of another dialog;
     * Dialogs linked in defining ‘Behavior on Exceeding Retries’ for IVR Properties of any node of the dialog;
     * Dialog linked as part of sub-intent / interruption settings;
     * Any other scenario where a dialog execution could fail if a dependent task isn't included;

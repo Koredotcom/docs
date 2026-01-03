@@ -15,9 +15,9 @@ To delete the particular skill group with the given `streamId` and `skillGroupId
 
 | **PARAMETER** | **DESCRIPTION**                                               | **TYPE**        |
 |---------------|---------------------------------------------------------------|-----------------|
-| host          | Environment URL, for example, `https://platform.kore.ai`     | string, required |
-| streamId         | botId or streamId. You can get it from the App Settings page. | string, required |
-| id            | The skill group id.                                           | string, required |
+| `host`          | Environment URL, for example, `https://platform.kore.ai`     | string, required |
+| `streamId`         | botId or streamId. You can get it from the App Settings page. | string, required |
+| `id`            | The skill group id.                                           | string, required |
 
 ## Sample Request
 

@@ -189,6 +189,7 @@ curl -X POST 'https://{{host}}/api/1.1/public/builder/bot/{{BotId}}/variables/im
   }
 ]'
 ```
+
 ## Sample Request when Collections are enabled
 
 

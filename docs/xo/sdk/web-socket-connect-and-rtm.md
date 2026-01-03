@@ -404,6 +404,7 @@ The following payload is used to send a response message to the Platform.
   "traceId": "a33d81825f3bxxxx"
 }
 ```
+
 ## Agent Transfer Events
 
 The following agent transfer events are exchanged and triggered between the client app and the Platform when an agent is invoked. For more information, see the [Agent Transfer Overview](../app-settings/integrations/agents/agent-transfer-integrations.md) article.
@@ -457,6 +458,7 @@ The following payload is used to send a response message to the Platform.
   "traceId": "4a663e27051cxxxx"
 }
 ```
+
 ## User Input Event
 
 The following user input event is exchanged and triggered between the client app and the Platform when the user input is required.
@@ -486,14 +488,13 @@ The following payload is used to send a response message to the Platform.
   "traceId": "4a663e27051cxxxx"
 }
 ```
+
 ## Get Conversation History
 
 The client app requests the Platform endpoint `/api/botmessages/rtm?botId={{botId}}` using the access token as generated in Step 2 above to get the previous messages exchanged between the user and the chatbot. The response from the mentioned endpoint can be used to display the conversation history in the chat window. This section describes how to format the request to get the web socket URL with the `/api/botmessages/rtm` endpoint based on the following JSON syntax.
 
-
 ```json
-GET
-https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}
+GET https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}
 ```
 
 **Query Parameters**:

@@ -72,40 +72,41 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 To access a tool template, follow the steps below:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
-
 2. Click **Tools** on the top navigation bar to access the **Tools** dashboard.
 3. If you are adding your first tool, click **Tool templates**.
 <img src="../images/first-tool-template.png" alt="first tool" title="first tool" style="border: 1px solid gray; zoom:60%;">
 
       Otherwise, click either the **All Tools** or **My Tools** tab. Then, click **Tool Templates** to access the Tools library/Marketplace.
 
-      <img src="../images/tools-template-nav.png" alt="tools template section" title="tools template section" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/tools-template-nav.png" alt="tools template section" title="tools template section" style="border: 1px solid gray; zoom:60%;">
 
-<ol start="4"><li>Scroll down to the <b>Tools</b> section.</li>
-<li>Select the required <b>Categories</b> and <b>Tasks</b> from the left filter to view the relevant templates.
-<img src="../images/select-category-tasks.png" alt="select category and task" title="select category and task" style="border: 1px solid gray; zoom:60%;"></li>
-<li>Click the required template to view its information window.
+4. Scroll down to the **Tools** section.
+5. Select the required **Categories** and **Tasks** from the left filter to view the relevant templates.
 
-   The window includes the following details:</li></ol>
+    <img src="../images/select-category-tasks.png" alt="Select category and task" title="Select category and task" style="border: 1px solid gray; zoom:60%;" />
 
-   * Tool Template Name 
-   * Template description
-   * Categories the tool belongs to and the compatible LLM model.
-   * Configuration status
-   * Prebuilt tool flow preview
-   * Related or similar templates.
-   * Developer, last updated timestamp, the language used, and the number of installations.
-   * Install button
+6. Click the required template to view its information window.
 
-<ol start="7"><li>Click <b>Install</b> to connect to the Marketplace and import the tool template, including its pre-configured flow.</li>
-<img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
+       The information window includes the following details:
 
-The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
+       * Tool template name
+       * Template description
+       * Categories the tool belongs to and the compatible LLM model
+       * Configuration status
+       * Prebuilt tool flow preview
+       * Related or similar templates
+       * Developer details, last updated timestamp, language used, and number of installations
+       * **Install** button
+
+7. Click **Install** to connect to the Marketplace and import the tool template, including its pre-configured flow.
+
+    <img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
+
+    The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
 
 **Important Considerations** 
 
-* Once you install a **tool template**, it is listed in the **My Tools** section.
+* Once you install a **tool template**, it's listed in the **My Tools** section.
 * A *PDF* document with the key details listed below is displayed. You can download and save this page for future reference.
     * Input to the Agent
     * Output from the Agent
@@ -172,4 +173,3 @@ To delete a tool template, follow the steps below:
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Deleting the tool is irreversible and removes all the associated data.</p></div>
-

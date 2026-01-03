@@ -16,7 +16,7 @@ In the Agent AI widget, the Disposition Summary (end-of-conversation summary) is
     * **Endpoint (POST)**: Enter an URL to connect to the interface to interact with the LLM through API requests. 
 6. Click the **Headers** option, and enter values in the **Key** and **Value** fields: 
     * **Key**: Enter a key name; for example, api-key. 
-    * **Value**: Enter a value for the key. For example, 3d4f1cOdxxxxxxxxxxxxxxx. 
+    * **Value**: Enter a value for the key. For example, `3d4f1cOdxxxxxxxxxxxxxxx`. 
 7. Select the **LLM and Generative Policy guidelines** checkbox. 
 8. Click **Next**.  
 <img src="../custom-llm-genai/configuration-details-next-3.png" alt="configuration-details-next" title="configuration-details-next" style="border: 1px solid gray; zoom:80%;">  

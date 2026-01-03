@@ -27,13 +27,13 @@ If your agent is trained in one or more languages that use NLP Version 2, you wi
 
 Agent tasks and flows pass through the following stages:
 
-* **In Progress** - Developers have begun configuring the task but haven’t yet defined all the required configurations. This status applies only to Alert, Action, and Information tasks.
-* **Configured** – The task configuration is complete but the Owner hasn’t yet published the task.
-* **Awaiting Approval** – The Owner has published the task thus initiating a request to the Admin, but the Admin hasn’t yet approved the publishing request.
-* **Published** – The task is published for personal, enterprise, or public use.
-* **Upgrade in Progress** – Developers have created an upgraded version of the published task to change any configurations, but the configuration is not yet complete.
-* **Rejected** – The Admin rejects the publishing request. An email is sent to the developer with comments from the Admin.
-* **Suspended** – The Admin suspended use of a deployed agent in an enterprise. An email is sent to the developer with comments from the Admin. While the end-users cannot access the suspended agent/tasks, developers can work with the In-development copy of the agent.
+* **In Progress**: Developers have begun configuring the task but haven’t yet defined all the required configurations. This status applies only to Alert, Action, and Information tasks.
+* **Configured**: The task configuration is complete but the Owner hasn’t yet published the task.
+* **Awaiting Approval**: The Owner has published the task thus initiating a request to the Admin, but the Admin hasn’t yet approved the publishing request.
+* **Published**: The task is published for personal, enterprise, or public use.
+* **Upgrade in Progress**: Developers have created an upgraded version of the published task to change any configurations, but the configuration is not yet complete.
+* **Rejected**: The Admin rejects the publishing request. An email is sent to the developer with comments from the Admin.
+* **Suspended**: The Admin suspended use of a deployed agent in an enterprise. An email is sent to the developer with comments from the Admin. While the end-users cannot access the suspended agent/tasks, developers can work with the In-development copy of the agent.
 
 !!! note
 
@@ -158,17 +158,17 @@ Every component that impacts end-user interactions or experience goes through th
  
         <li><strong>Trait Types</strong>: Replaces the traits in the <em>Published</em> version with a new set of trait types from the <em>In-Development</em> version for specific entities, attributes, or details that the users express in their conversations. 
  
-        <li><strong>Others</strong> – Replaces the following components:  
+        <li><strong>Others</strong>: Replaces the following components:  
         <ul>
   
         <li><strong>Bot Synonyms</strong>: Synonyms in the <em>Published</em> version with a new set of synonyms from the <em>In-Development</em> version to include all possible alternative forms with all the additions, updates, and deletions. 
-        <li><strong>Utterances and NER</strong> – User utterances in the <em>Published</em> version from the <em>In-Development</em> version with a new set of utterances associated with the task.
+        <li><strong>Utterances and NER</strong>: User utterances in the <em>Published</em> version from the <em>In-Development</em> version with a new set of utterances associated with the task.
   
-        <li><strong>Ignore Words and Fields Memory</strong> – A full set of Ignore Words and Field Memory in the <em>Published</em> version with words the NLP engine must ignore when interpreting the user input for a task, including all the additions, updates, and deletions. 
+        <li><strong>Ignore Words and Fields Memory</strong>: A full set of Ignore Words and Field Memory in the <em>Published</em> version with words the NLP engine must ignore when interpreting the user input for a task, including all the additions, updates, and deletions. 
   
-        <li><strong>Entity Patterns and Negative Patterns</strong> – Old entity patterns with a new set of Entity and Negative patterns to improve NLP interpreter accuracy in the <em>Published</em> version from the <em>In-Development</em> version with all the additions, updates, and deletions. 
+        <li><strong>Entity Patterns and Negative Patterns</strong>: Old entity patterns with a new set of Entity and Negative patterns to improve NLP interpreter accuracy in the <em>Published</em> version from the <em>In-Development</em> version with all the additions, updates, and deletions. 
   
-        <li><strong>Entity Synonyms</strong> – Old entity synonyms with new ones in the <em>Published</em> version from the <em>In-Development</em> version with all the additions, updates, and deletions published along with the corresponding synonyms.
+        <li><strong>Entity Synonyms</strong>: Old entity synonyms with new ones in the <em>Published</em> version from the <em>In-Development</em> version with all the additions, updates, and deletions published along with the corresponding synonyms.
         </li>  
     </ul>
     </li>  
@@ -304,13 +304,13 @@ Every component that impacts end-user interactions or experience goes through th
    <td>Replaces the Generative AI and LLM related features in the Published version with the ones in the In Development version.The setting includes:
 
    <br>
-    – Integration
+   : Integration
     <br>
-    – Prompts and Requests Library
+   : Prompts and Requests Library
     <br>
-    – Feature Mappings
+   : Feature Mappings
     <br>
-    – Guardrails
+   : Guardrails
    </td>
   </tr>
   
@@ -319,13 +319,13 @@ Every component that impacts end-user interactions or experience goes through th
    </td>
    <td>Replaces the following in the Published version with the ones in the In Development version:
     <br>
-    – Language Detection Preference
+   : Language Detection Preference
     <br>
-    – Subdomain
+   : Subdomain
     <br>
-    – Show link for task setup/execution
+   : Show link for task setup/execution
     <br>
-    – Error Messages
+   : Error Messages
    </td>
   </tr>
 </table>
@@ -355,7 +355,7 @@ When you publish an agent or any of its components, the Platform initiates a req
 
 Admins can set up auto-approval for any updates made to Enterprise or Consumer agents using the following steps:
 
-1. Open the Xo Platform Admin Console at: [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
+1. Open the Platform Admin Console at: [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
 2. Go to **Bots Management > Consumer Bots** or **Bots Management > Enterprise Bots**.
 3. Click the more icon for the required agent and select **Bot Settings**.
 

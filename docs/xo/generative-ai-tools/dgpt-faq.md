@@ -3,7 +3,7 @@
 
 #### **What's DialogGPT?**
 
-DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from an AI Agents. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. The DialogGPT is supported only for English conversations.  
+DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. This innovative solution perfectly balances defined business rules and the conversational fluidity your customers expect from an AI Agents. Using a powerful combination of embeddings and generative models, it contextually understands user input and identifies optimal paths for request fulfillment. Setup is quick and effortless, as DialogGPT eliminates the need for training data by intelligently utilizing task names and descriptions for recognition. 
 
 
 #### **What challenges does DialogGPT solve compared to traditional systems?**
@@ -67,8 +67,7 @@ DialogGPT enables:
 
 #### **What models are supported by DialogGPT?**
 
-DialogGPT supports Open AI GPT-4o and Azure OpenAI GPT-4o models. Future updates plan to include models like Kore.ai XO GPT, Commercial, and Custom models.
-
+DialogGPT supports Pre-built, custom, and XO GPT models. For the latest supported models, see [Model Configurations](dgpt-conversation-orchestration.md).
 
 #### **Is DialogGPT secure for enterprise use?**
 
@@ -90,9 +89,7 @@ Rephrasing is crucial in DialogGPT's ability to understand and respond to ambigu
 Yes, small talk is treated as conversational intent. DialogGPT seamlessly integrates small talk, making the Apps feel less robotic and more human-like, enhancing the user experience.
 
 
-#### **What are the limitations of DialogGPT?**
 
-DialogGPT is evolving, with some features like entity extraction and enhanced response generation planned for Phase 2. Additionally, contextual embeddings for complex scenarios may require domain-specific tuning.
 
 
 #### **Can existing Apps be migrated to DialogGPT?**

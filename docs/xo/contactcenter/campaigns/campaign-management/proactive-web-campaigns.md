@@ -133,8 +133,8 @@ Steps to create a proactive web campaign:
 7. The `Preview Section` on the left side shows the configured layout.
 8. Select the `Engagement Strategy` tab and configure the following:
 
-    1. **Website**: Select `+ Add Website` and select the `URL` or `Page Name`. URLs are crucial for directing users to specific web pages, tracking campaign performance, and optimizing user experience, ultimately enhancing audience engagement and conversion rates. Select the URL and the condition about what the URL contains.  
-        <img src="../images/engagemet-strategy.png" alt="Engagement Strategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:80%;">
+    1. **Website**: Select `+ Add Website` and select the `URL` or `Page Name`. URLs are crucial for directing users to specific web pages, tracking campaign performance, and optimizing user experience, enhancing audience engagement and conversion rates. Select the URL and the condition about what the URL contains.  
+        <img src="../images/engagement-strategy.png" alt="Engagement Strategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:80%;">
 
     2. **Rules**: Rules define when a Proactive Web Campaign (PWC) engages with a website visitor. Use rules to target visitors based on who they're, what they're doing, and where they're on the site.
 
@@ -318,7 +318,7 @@ Steps to schedule a Campaign:
 
     `Every “Enter Value” day(s)` is a subset of what you select, Daily, Weekly, Monthly, or Yearly.  
 
-    <img src="../images/recurrance-duration.gif" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/recurrence-duration.gif" alt="Recurrence Precedence" title="Recurrence Precedence" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 

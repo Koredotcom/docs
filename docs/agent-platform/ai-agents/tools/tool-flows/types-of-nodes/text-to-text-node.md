@@ -36,7 +36,6 @@ Setting up a Text to Text node in a tool flow involves adding the node at the ap
 
 * Log in → In **Agent Platform Modules** → Click **Tools**.
 * Select your tool → Click **Go to Flow**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 ### Step 2: Add the Text to Text Node
 
@@ -121,7 +120,7 @@ To add tools, click the **Tool Calling** icon. When you select a model that supp
 
 !!! note
 
-    When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../tool-calling.md). 
+    When you attach tools to the AI node, its details are sent to the model along with the request details. This enables the model to determine whether to resolve the input query, prompt, or request using its own knowledge or by calling the appropriate tools. You can select up to three tools for each AI node. For more information, see [**Tool Calling in Agent Platform**](./../../tool-calling.md#tool-calling-in-workflow-tools-ai-nodes). 
 
 * **Add Tools**: Click **Add Tools** to add a tool.
 

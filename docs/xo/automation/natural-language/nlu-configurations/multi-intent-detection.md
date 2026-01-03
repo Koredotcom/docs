@@ -24,4 +24,5 @@ Following are the steps to enable multi-intent detection:
 1. Open the app for which you want to add multiple intents.
 2. From the left menu, click **Natural Language** > **NLU Config** > **Multi Intent Detection**.
 3. Turn on the toggle to enable it.
-<img src="../images/multi-intent-detection-toggle-window.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/multi-intent-detection-toggle-window.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">

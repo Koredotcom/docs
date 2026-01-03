@@ -55,7 +55,7 @@ All these features benefit an AI Agent developers, NLP developers, and testers a
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
 * Mundane tasks like generating dialog tasks or training utterances are automated to help developers be more productive and focus on other important tasks like enhancing conversation design, creating complex test cases, and more.
 * Testers can ensure that their intent descriptions are meaningful in the right context to generate the right content.
-* The Platform provides suggestions and nudges developers in the right direction for the better design and development of an AI Agent. For example, it offers curated use case suggestions while[ creating an AI Agent](../getting-started/building-a-virtual-assistant.md#building-an-ai-agent), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the AI Agent can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
+* The Platform provides suggestions and nudges developers in the right direction for the better design and development of an AI Agent. For example, it offers curated use case suggestions while[ creating an AI Agent](../getting-started/guided-onboarding.md), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the AI Agent can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
 * Allows enterprises and advanced users to bypass the Platform’s pre-built integrations. They can establish customized connections to large language models and optimize prompts and requests for their specific use cases.
 
 
@@ -69,8 +69,8 @@ LLMs can now generate responses in app languages that LLMs also support. To lear
 
 LLM and Generative AI features involve data sharing with third-party LLM providers, such as OpenAI, Azure OpenAI, Claude, and others.
 
-
 ## Next Steps
+
 1. Integrate a [pre-built or custom LLM or XO GPT](models-library.md) in models library. 
 2. Create [ New Prompts](prompts-library.md) in the prompts library.
 3. Enable[ GenAI Features](genai-features.md).

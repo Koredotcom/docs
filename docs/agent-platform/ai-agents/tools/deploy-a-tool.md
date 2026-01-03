@@ -33,7 +33,6 @@ Push endpoints actively send data to the client, while poll endpoints require th
 Steps to deploy a tool:
 
 1. Log in to your account and click **Tools** under **Agent Platform Modules**.
-   <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 2. Click the **Tools** tab on the top navigation bar, and select the tool you want to deploy.
 3. Click **Tool endpoint** in the left menu.

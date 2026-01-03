@@ -134,6 +134,7 @@ Returns details of the newly created session, which are required for managing an
 
 
 #### Sample Response 
+
 ```json
 {
   "session": {
@@ -438,7 +439,7 @@ Fetches the details of a given session. You must provide either a *sessionId* or
   <tr>
    <td>Authorization Header
    </td>
-   <td>x-api-key: <API-KEY>
+   <td>x-api-key:&lt;API-KEY>
    </td>
   </tr>
 </table>
@@ -503,7 +504,6 @@ Fetches the details of a given session. You must provide either a *sessionId* or
 
 
 !!!note
-  
   Either sessionId or sessionReference must be provided to identify the session. 
 
 

@@ -19,13 +19,9 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 ## Steps to Configure Active Directory Sync 
 
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="nav user" title="nav user" style="border: 1px solid gray; zoom:75%;">
-
 2. Click **Settings** on the top navigation bar.
 3. Navigate to **Users Management** > **Settings** on the left menu.
 4. Click the **Configure Directory** button in the **Configure sync with directory** section.
-<img src="../images/configure-directory-button.png" alt="configure directory" title="configure directory" style="border: 1px solid gray; zoom:75%;">
-
 5. Complete the setup by following the steps below in the **Configure Directory** window:
 
 <div class="admonition note">
@@ -118,9 +114,7 @@ To set an **Exclusion Rules**, follow the steps below:
 
 <img src="../images/add-exclusion.png" alt="add exclusion" title="add exclusion" style="border: 1px solid gray; zoom:75%;">
 
-To delete a rule, hover over the entry and click the **Delete** icon.
-
-<img src="../images/delete-rule.png" alt="delete rule" title="delete rule" style="border: 1px solid gray; zoom:75%;">
+To delete a rule, hover over the entry, click the **Delete** icon, and confirm.
 
 ### Step 4: Schedule Automatic Active Directory Sync
 
@@ -145,66 +139,28 @@ To enable and configure auto sync, follow the steps below:
 
 <ol start="2"><li>Select the following sync fields:</li></ol>
 
-* **Sync Frequency**: Select from _daily,_ _weekly_, _monthly_, or _other _sync periods. The default selection is _Daily_.
+* **Sync Frequency**: Select from _daily_, _weekly_ (use the *Repeat on* option), _monthly_ (choose a specific day for each month), or _other_ (custom) sync periods. The default selection is _Daily_ and the syncs continue for the selected period until the connection is active.
 * **Sync Start**: Click the Calendar icon and choose a date from the widget to start the Active Directory sync. The default selection is the current date. 
 * **Time**: According to the selected sync frequency, select when the Active Directory sync should occur. The default setting is 12:00 PM.
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Constraints</p>
 <ul><li>You can select only one date from the calendar for weekly and monthly syncs.</li>
-<li>You can schedule the sync only with a future date and time from the default selections.</li></ul>
+<li>You can schedule the sync only with a future date and time from the default selections.</li>
+<li>The default selection for <b>Start Sync</b> is the current date, which you can change.</li></ul>
 </div>
 
-**Daily**
-
-Selecting the Daily option means user data from Active Directory synchronizes everyday starting from the date specified for **Start Sync** and continuing for the duration of the Active Directory connection.
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The default selection for <b>Start Sync</b> is the current date, which you can change.</p>
-</div>
-
-For example, the data syncs daily from 10 June 2024 at 12:00 PM.
-
-<img src="../images/daily-schedule.png" alt="daily schedule" title="daily schedule" style="border: 1px solid gray; zoom:75%;">
-
-**Weekly**
-
-Selecting the **Weekly** option means user data from Active Directory synchronizes on the selected day every week (**Repeat On** option), starting from the date you set for Start Sync and continuing for the duration of the Active Directory connection.
-
-For example, the data syncs every Thursday from 10 June 2024, at 12:00 PM.
-
-<img src="../images/weekly-schedule.png" alt="weekly schedule" title="weekly schedule" style="border: 1px solid gray; zoom:75%;">
-
-**Monthly**
-
-Selecting **monthly** triggers synchronizes user data from the Active Directory on the designated day of each month, starting from the specified **Start Sync** date and continuing throughout the duration of the Active Directory connection.
-
-For example, the data syncs on the 15th of each month, starting from 10 June 2024, at 12:00 PM.
-
-<img src="../images/monthly-schedule.png" alt="monthly schedule" title="monthly schedule" style="border: 1px solid gray; zoom:75%;">
-
-**Other**
-
-Select **Other** to schedule Active Directory syncs at intervals different from Daily, Weekly, or Monthly. This option allows you to schedule syncs that repeat after a specified number of days/weeks. The periodic sync occurs at the specified time starting from the selected start date.
-
-For example, the data sync repeats every 60 days or weeks, starting 10 June 2024 at 12:00 PM.
-
-<img src="../images/other-schedule.png" alt="other schedule" title="other schedule" style="border: 1px solid gray; zoom:75%;">
-
-<ol start="3"><li>Click <b>Save</b>.</li>
-<img src="../images/save-schedule.png" alt="save schedule" title="save schedule" style="border: 1px solid gray; zoom:75%;">
-</ol>
+<ol start="3"><li>Click <b>Save</b>.</li></ol>
 
 If auto sync is disabled, clicking **Save** only saves the Active Directory sync configuration. Enabling auto-sync saves the configuration and initiates syncing at the scheduled date and time.
 
 When you set up Active Directory sync for the first time, the following options appear under **Configure sync with directory**:
 
-* **Sync now**: Performs an Active Directory hoc Active Directory sync. Select this option if you don't want to perform a scheduled sync.
+* **Sync now**: Perform an immediate sync.
 * **Sync History**: Displays the history of Active Directory syncs, including the comprehensive summary of the following:
-  * **Date and Time**: Timestamp indicating when the sync occurred.
-  * **By**: Identification of the individual who initiated the sync.
-  * The number of **successful** and **failed** user records that got synced.
+  * Date and Time
+  * By (user name)
+  * The number of *successful* and *failed* user records that got synced.
   <img src="../images/sync-history.png" alt="sync history" title="sync history" style="border: 1px solid gray; zoom:75%;">
 
 * **Manage directory sync**: Displays the **Configure Directory** window where you can edit the existing configurations.
@@ -220,13 +176,7 @@ When you set up Active Directory sync for the first time, the following options 
 
 ### Sync Status Email Notifications
 
-For a **successful** sync, you will receive the following email:    
-
-<img src="../images/success-sync.png" alt="success sync" title="success sync" style="border: 1px solid gray; zoom:75%;">
-
-For a **failed** sync, you will receive the following email:    
-
-<img src="../images/failed-sync.png" alt="failed sync" title="failed sync" style="border: 1px solid gray; zoom:75%;">
+For a successful or failed sync, a notification is sent to the registered email.  
 
 An alternative way to add users to your account (without using Active Directory sync) is to invite them via email. 
 

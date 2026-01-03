@@ -68,7 +68,7 @@ The following table describes the `Context` object keys. These can be classified
 <p>
 <code>  print("You have requested to transfer" +context.entities.Passenger + </code>
 <p>
-<code>        " from " +context.entities.FromFlightNumbere +</code>
+<code>        " from " +context.entities.FromFlightNumber +</code>
 <p>
 <code>        " to " +context.entities.ToFlightNumber+ ". Shall I go ahead? " +</code>
 <p>
@@ -335,7 +335,7 @@ For example, <code>context.customerId</code>
    </td>
    <td>Dialog
    </td>
-   <td>Repharse user query.
+   <td>Rephrase user query.
    </td>
    <td><strong>Syntax:</strong> <code>context.UserQuery : {
       	originalUserQuery : < original user input >,
@@ -480,7 +480,7 @@ The following is a payload response that contains a context object:
          "EnterpriseContext Summary":"TestingSpread",
          "enterprisecontext":"enterprisecontextvalue",
          "ec2":"Enterprise Context session variable from channel response",
-         "EC":"ec session variable from intializer",
+         "EC":"ec session variable from initializer",
          "enterprisepreprocessorkey":"enterprisepreprocessorvalue"
       },
       "BotContext":{
