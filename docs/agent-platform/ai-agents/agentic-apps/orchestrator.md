@@ -4,12 +4,12 @@ This page allows you to select the orchestrator pattern for the app and make the
 
 An orchestration pattern refers to the architectural pattern or structured approach in which multiple agents coordinate, communicate, and execute tasks to accomplish a goal. It defines how agents work together, take control of the execution flow, delegate tasks, and make decisions or resolve conflicts.
 
-Agent Platform supports the following types of orchestration patterns:
+The Platform supports the following types of orchestration patterns:
 
 1. Single Agent - The application can use this pattern of orchestration when it consists of a single agent that independently handles the requests and generates responses. This is ideal for apps with one primary capability.
 2. Supervisor - This pattern introduces a central controller that analyzes requests, delegates tasks to specialized agents, and synthesizes the response based on the agent responses. [Learn More](../supervisor.md). 
 3. Adaptive Network - In this pattern, the agents collaborate in a distributed manner, intelligently routing tasks based on their capabilities and context. [Learn More](../adaptive-network.md). 
-4. Custom - Agent Platform also enables you to build custom orchestration patterns with custom logic and rules using the SDK. [Learn More](../../sdk/getting-started/quickstart.md). 
+4. Custom - The Platform also enables you to build custom orchestration patterns with custom logic and rules using the SDK. [Learn More](../../sdk/getting-started/quickstart.md). 
 
 ![Orchestrator](images/orchestrator-home.png "App Orchestrator")
 

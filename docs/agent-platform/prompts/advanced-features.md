@@ -5,7 +5,7 @@ Prompt Studio offers a suite of features designed to streamline and enhance your
 
 ## Using Test Data
 
-Agent Platform provides two ways to work with test data:
+The Platform provides two ways to work with test data:
 
 * **Import test data**: Upload a CSV file with your data to  populate variables in your prompts automatically.
 * **Generate test data**: Create synthetic datasets in a quick automated way significantly reducing the time required for manual data creation. AI analyzes the prompt and its variables to understand the context and then generates the corresponding values for each variable.
@@ -113,7 +113,7 @@ Below are the roles and their associated permissions:
 
 ## Prompt Versioning
 
-Prompt versioning in Agent Platform improves the experimentation process and promotes collaboration among team members. It allows users to create a shareable roadmap of prompt iterations within a repository, tracking each version as the prompt evolves. With prompt versioning, you can track and manage changes by committing updates at any stage, creating a repository that logs all modifications for easy reference and control. This feature helps evolve prompts to better suit specialized use cases.
+Prompt versioning in the Platform improves the experimentation process and promotes collaboration among team members. It allows users to create a shareable roadmap of prompt iterations within a repository, tracking each version as the prompt evolves. With prompt versioning, you can track and manage changes by committing updates at any stage, creating a repository that logs all modifications for easy reference and control. This feature helps evolve prompts to better suit specialized use cases.
 
 **Committing Prompts** - You can save the current prompt only after generating the output. Committing the prompt without first generating the output is not allowed. When you commit the prompt, a new version is created that includes both the prompt and its corresponding output.
 
@@ -148,7 +148,7 @@ To use a particular prompt version, select it and click **Use as a draft**. The 
 
 ## Prompt API Endpoint
 
-The Prompt API enables seamless sharing of prompts outside of Agent Platform by using version-specific API keys. Users can fetch prompts via API calls, eliminating the need for repetitive copy-pasting.
+The Prompt API enables seamless sharing of prompts outside of the Platform by using version-specific API keys. Users can fetch prompts via API calls, eliminating the need for repetitive copy-pasting.
 
 Each prompt has an associated API endpoint. When a user commits the first version of a created prompt, the API endpoint is automatically generated for that specific prompt's latest version. The endpoint becomes active only after a version is committed. Users can designate a specific version as the default. If no default version is selected, the endpoint will call the latest version.
 

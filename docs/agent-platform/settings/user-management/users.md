@@ -59,13 +59,13 @@ The import feature allows administrators to add multiple users at once using .tx
 * The **User Status** indicates the user’s status after import, and the corresponding actions are taken for *New*, *Update*, and *Delete* statuses.
 * Entries with invalid email formats, missing domain name, or wrong email IDs are ignored during import.
 * Once an entry in the file is validated, an email request is sent out to the user to activate their account.
-* If a user is already active (joined admin’s account), the email invitation is not sent.
+* If a user is already active (joined admin’s account), the email invitation isn't sent.
 
 #### Import User Data File
 
 The steps mentioned below, allow you to import users' data from a designated file into Agent Platform.
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the navigation bar.
 3. Navigate to **Users Management** > **Users** on the left menu.
 4. Click **Add New User**, and select **Import**.
@@ -221,7 +221,7 @@ On the **Users** dashboard, you can change the account-level role for one or mor
 
 Changing the user role automatically assigns the designated permissions and access levels defined in the system.
 
-To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
+To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
 ### Bulk Role Change
 
