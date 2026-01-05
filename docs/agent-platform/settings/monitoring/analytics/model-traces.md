@@ -35,7 +35,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 ## Best Practices
 
-* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on Agent Platform to optimize usage.
+* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on the Platform to optimize usage.
 * Analyze successful versus failed runs to compare model performance over time and identify failure patterns using failure rates for all model types.
 * Identify model runs with low or high response times using P90 and P99 thresholds and isolate under-performing runs for further investigation.
 * Apply time-based and record filters for focused and accurate analysis.
@@ -135,7 +135,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Hosting Credits apply only to Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
+<p>Hosting Credits apply only to the Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
 
 <img src="../images/hosting-credits.png" alt="hosting credits" title="hosting credits" style="border: 1px solid gray; zoom:75%;">
 

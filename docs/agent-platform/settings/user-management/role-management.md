@@ -24,7 +24,7 @@ Here are some key points to consider:
 
     * Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. [Learn more](./role-management.md#module-wise-permissions-and-access-levels){:target="_blank"}. 
 
-    Agent Platform supports the following roles in the **Settings** console:
+    The Platform supports the following roles in the **Settings** console:
 
     * **Default Role**: A system-generated role with internally defined set of permissions and access levels. [Learn more](./role-management.md#system-defined-roles){:target="_blank"}.
 
@@ -66,7 +66,7 @@ A **Tool Admin** has complete control over the core functionalities of tools, su
 
 An **App Admin** has full access to almost all the core Platform features relating to Agentic Apps.
 
-Agent Platform supports the following roles:
+The Platform supports the following roles:
 
 #### System-defined Roles
 
@@ -232,7 +232,7 @@ Roles are auto-assigned by the system based on the following Role Types. Please 
 
 * **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
 * **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
-* **App**: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
+* **App**: When a user is invited to the Platform at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
 
 **Account Role**
 
@@ -1800,7 +1800,7 @@ The following table summarizes the module-wise permissions and access levels for
 
 ### Role Management Dashboard
 
-The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the Agent Platform.
+The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the Platform.
 
 To access the dashboard, follow the steps below:
 

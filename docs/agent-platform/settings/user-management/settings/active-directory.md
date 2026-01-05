@@ -118,9 +118,9 @@ To delete a rule, hover over the entry, click the **Delete** icon, and confirm.
 
 ### Step 4: Schedule Automatic Active Directory Sync
 
-To finish configuring your directory, schedule auto sync for your Active Directory. Enabling auto sync is **_optional_** but highly recommended to keep your Active Directory data on Agent Platform up-to-date. 
+To finish configuring your directory, schedule auto sync for your Active Directory. Enabling auto sync is **_optional_** but highly recommended to keep your Active Directory data on the Platform up-to-date. 
 
-Auto sync will ensure that any changes in Active Directory, such as user additions or deletions, are automatically reflected on Agent Platform.
+Auto sync will ensure that any changes in Active Directory, such as user additions or deletions, are automatically reflected on the Platform.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -164,7 +164,7 @@ When you set up Active Directory sync for the first time, the following options 
   <img src="../images/sync-history.png" alt="sync history" title="sync history" style="border: 1px solid gray; zoom:75%;">
 
 * **Manage directory sync**: Displays the **Configure Directory** window where you can edit the existing configurations.
-* **Reset**: Resets the Active Directory sync configurations but retains the last sync data on Agent Platform.
+* **Reset**: Resets the Active Directory sync configurations but retains the last sync data on the Platform.
 * **Sync Status**: This information summary displays the date of last sync, the total number of users and organization units synchronized, and any errors/issues encountered during the process. 
 
 <div class="admonition note">
