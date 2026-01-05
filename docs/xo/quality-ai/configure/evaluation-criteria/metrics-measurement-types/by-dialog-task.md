@@ -1,6 +1,6 @@
 # By Dialog Task Metric
 
-The By Dialog Task metric helps to determine how consistently agents follow predefined scripts, workflows, or behavioral steps during customer interactions. These playbooks are designed to enforce best practices, ensure compliance, and drive high-quality outcomes in customer service and support environments. 
+The By Dialog Task metric shows how consistently agents follow predefined scripts, workflows, and behavioral steps during customer interactions. These playbooks enforce best practices, support compliance, and drive high-quality customer service and support outcomes.
 
 ## Why Use Dialog Task Metric
 
@@ -18,15 +18,15 @@ By configuring and monitoring **Playbook Adherence** metrics, you can:
 
 * Improve consistency across interactions, regardless of the agent or communication channels.
 
-* Ensure regulatory and procedural compliance, especially in highly regulated industries.
+* Support regulatory and procedural compliance, especially in highly regulated industries.
 
-* Configure time-bound windows for evaluation to ensure timely and relevant feedback.
+* Configure time-bound evaluation windows to provide timely and relevant feedback.
 
 ## Use Cases
 
 * **Compliance Monitoring**: Evaluate whether agents are following mandatory process steps in regulated industries (for example, finance, telecom).
 
-* **Onboarding and Escalation Flows**: Ensure new agents follow onboarding scripts or escalation workflows accurately.
+* **Onboarding and Escalation Flows**: Help new agents follow onboarding scripts or escalation workflows accurately.
 
 * **Quality Assurance Reviews**: Use metrics to audit specific parts of the conversation, such as greetings, disclaimers, or closings.
 
@@ -38,7 +38,7 @@ By configuring and monitoring **Playbook Adherence** metrics, you can:
 
 ### Prerequisites
 
-Before configuring or using Dialog Task metrics, ensure the following:
+Before configuring or using Dialog Task metrics, verify the following:
 
 1. **Playbooks or Dialog Tasks Must Exist**
 
@@ -48,13 +48,13 @@ Before configuring or using Dialog Task metrics, ensure the following:
     
     You must have the appropriate permissions to access **Quality AI** > **Configure** > **Evaluation Metrics**.
 
-3. **Evaluation Forms Should Be Defined Separately**
+3. **Define Evaluation Forms in Advance**
     
-    If you plan to use metrics in evaluation forms, ensure the forms are configured beforehand.
+    If you plan to use metrics in evaluation forms, configure the forms beforehand.
 
 4. **No Active Dependencies for Deletion**
 
-    * Cannot delete any metrics if any of the metrics are actively linked to evaluation forms or attributes.
+    * Can't delete any metrics if any of the metrics are actively linked to evaluation forms or attributes.
 
     * Reassign or remove dependencies before attempting to delete a metric.
 
@@ -80,9 +80,9 @@ Configure the following settings:
 
 4. Select a **Count Type** from the dropdown. This has the following two options.
 
-    * **Entire Conversation**: This allows you to check the adherence throughout the entire conversation.
+    * **Entire Conversation**: This lets you check the adherence throughout the entire conversation.
 
-    * **Time Bound**: This allows you to check adherence within a certain time range of the interaction.
+    * **Time Bound**: This lets you check adherence within a certain time range of the interaction.
 
         * **Parameter**: Select the section of the interaction to evaluate for this metric. If you choose the **First Part of Conversation** or the **Last Part of Conversation**, enter the relevant subsection details provided.
 
@@ -90,7 +90,7 @@ Configure the following settings:
 
         * **Chat**: Enter the number of messages from the start or end of the interaction to evaluate this metric.
 
-5. Click **Create** to save the new metric configuration.
+5. Select **Create** to save the new metric configuration.
 
 ## Managing By Dialog Task Metric
 
@@ -98,27 +98,27 @@ Configure the following settings:
 
 Steps to edit any existing **By Dialog Task** metrics:
 
-1. Right-click on a desired evaluation metric name **By Dialog Task** metrics category.       
+1. Select the **By Dialog Task** metric in the evaluation metrics list.          
 <img src="../images/by-dialog-task-edit.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">   
 
 2. Choose an option:
 
-    * Click **Edit** to modify the selected metric details.      
+    * Select **Edit** to modify the selected metric details.      
     <img src="../images/edit-dialog-task.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">  
 
-    * Click **Delete** to remove the selected metric.
+    * Select **Delete** to remove the selected metric.
 
-3. Click **Update** to save the changes.
+3. Select **Update** to save the changes.
 
 #### Deletion Warnings
 
 This section describes the warnings and prerequisites you must address before deleting a metric.
 
-* If the metric is used in any evaluation form, the system displays a warning message.
+*  If any evaluation form uses the metric, the system shows a warning message.
 
 * Remove the metric from all associated evaluation forms before you delete it.
 
-* If any attributes are linked to the metric, assign a different metric to those attributes before proceeding with deletion.
+* Reassign linked attributes (if any) to a different metric before you delete it.
 
-* The system allows you to delete the metric only after resolving all dependencies.  
+* The system lets you delete the metric only after resolving all dependencies.  
 <img src="../images/by-dialog-task-delete-warning.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">

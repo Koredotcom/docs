@@ -18,16 +18,6 @@ Navigate the taxonomy builder interface by using the hierarchical tree view and 
 
 **Navigation Path: **Quality AI > Configure > Taxonomy Builder**
 
-### Visual Hierarchy Design
-
-The interface uses color-coding to distinguish hierarchy levels:
-
-* **L1 topics**: Primary color emphasis
-* **L2 topics**: Secondary color differentiation and increased indentation
-* **L3 topics**: Tertiary visual styling and maximum indentation
-
-**Interactive Elements**: Hover over the information icon next to hierarchy levels. View tooltips that explain move and arrange functionality, parent-child relationships, and available actions.
-
 ### Topics 
 
 Create and organize your conversation topics using a structured three-level hierarchy system. The topic interface provides visual tools to create, edit, and manage complex taxonomical relationships efficiently.
@@ -63,8 +53,12 @@ The system supports three distinct hierarchical levels for topic organization:
 
 #### Adding Second Level
 
-1. Select the + **Add Level 2** under the desired L1.  
+1. Select the + **Add Level 2** under the desired L1 topic.  
 <img src="../images/add-level-2-item.png" alt="Add Level 2" title="Add Level 2" style="border: 1px solid gray; zoom:100%;">  
+
+    !!! Note
+
+        When you click from an existing L1 node, the configuration slideout preselects that L1 as the parent category. This streamlines the creation process.
 
 2. Complete the required fields:
 
@@ -72,18 +66,24 @@ The system supports three distinct hierarchical levels for topic organization:
 
     * **Description** (required, max 250 characters)
 
-3. Parent Category:
+    * **Parent Category**:
 
-    * Set as Standalone Category (Level 2)
+        * Assign to New or Different Parent Category (Level 1)
+        
+        * Keep the preselected parent (if added from existing L1)
 
-    * Assign to New Parent Category (Level 1)
+        * Set as Standalone Category (Level 2)
 
 4. Select **Create** to add the topic to your taxonomy.
 
-#### Add Third Level
+#### Adding Third Level
 
-1. Select the + **Add Level 3** under the desired L2.    
-<img src="../images/add-level-3-item.png" alt="Add Level 3" title="Add Level 3" style="border: 1px solid gray; zoom:100%;">  
+1. Select the + **Add Level 3** under the desired L2 topic.    
+<img src="../images/add-level-3-item.png" alt="Add Level 3" title="Add Level 3" style="border: 1px solid gray; zoom:100%;"> 
+
+    !!! Note
+
+        The system preselects the L2 parent from which you initiated the action. 
 
 2. Complete the required fields:
 
@@ -99,7 +99,7 @@ The system supports three distinct hierarchical levels for topic organization:
 
 1. Locate the level you want to modify in the taxonomy tree.
 
-2. Select **Edit**.    
+2. Select the **Edit** option.    
 <img src="../images/edit-existing-level.png" alt="Edit Existing Level" title="Edit Existing Level" style="border: 1px solid gray; zoom:100%;">  
 
 3. Update the following fields in the modal window:
@@ -115,9 +115,43 @@ The system supports three distinct hierarchical levels for topic organization:
 Define success criteria and outcome measurements for your conversation topics and customer interactions. Configure resolution tracking to monitor the effectiveness of customer service interactions and identify opportunities for improvement.   
 <img src="../images/resolution.png" alt="Resolution Configuration" title="Resolution Configuration" style="border: 1px solid gray; zoom:100%;">  
 
+### Configuring Holistic Resolution Assessment
+
+When you select Holistic Resolution Assessment, the Resolution Configuration tab displays additional options.
+
+1. Navigate to Taxonomy Builder > Resolution Configuration tab.
+
+1. Locate the **Contact-Level Resolution** section.
+
+1. Customize the prompt descriptions that guide the LLM to evaluate resolution.
+
+**Successful Resolution Description**
+
+Define what constitutes a successfully resolved contact for your organization. Include the following criteria:
+
+* Address the primary contact reason
+
+* Satisfy the customer's main concern
+
+* Complete necessary follow-up actions
+
+**Unsuccessful Resolution Description**:
+
+Define what constitutes an unresolved contact. Include these criteria:
+
+* Leave the primary issue unaddressed
+
+* Record customer dissatisfaction with the outcome
+
+* Escalate or schedule a required callback
+
+        !!! Note
+
+            These custom descriptions ensure the LLM evaluates contacts according to your organization’s quality standards and resolution expectations.
+
 #### Setting Up Resolution Detection
 
-Navigate to the **Resolution Configuration** tab to define success criteria for your intents.
+Navigate to the **Resolution Configuration** tab to define success criteria for your topics.
 
 Available Resolution Types:
 
@@ -147,21 +181,21 @@ Customizing Resolution Definitions:
 
 Implement systematic version control to track taxonomy changes and maintain historical data integrity. Version management ensures seamless updates while preserving analytical continuity across different taxonomy iterations.
 
-Saving and Managing Versions:
+#### Saving and Managing Versions
 
-1. After making changes to your taxonomy, save the version to impact runtime analytics.
+Save the version after making changes to your taxonomy to impact runtime analytics.
 
-2. Access version history from the Topic Discovery dashboard.
+Access **Version History** from the **Topic Discovery** dashboard:
 
-3. View the current version plus the three most recent previous versions.
+    * View the current version plus the three most recent previous versions.
 
-4. Previous versions display data only up to their respective update dates.
+    * Previous versions display data only up to their respective update dates.
 
 ### Organizing Your Taxonomy
 
-**Move and Arrange Functionality**
+#### Move and Arrange Functionality
 
-* Drag intents to new positions within the hierarchy.
+* Drag topics to new positions within the hierarchy.
 
 * Highlight drop zones when valid.
 
@@ -169,7 +203,7 @@ Saving and Managing Versions:
 
 * Preview the new structure before confirming changes.
 
-**Level Changes**: You can move intents between different levels (for example, L2 to L1, L2 to L3) while maintaining their child relationships.
+**Level Changes**: You can move topics between different levels (for example, L2 to L1, L2 to L3) while maintaining their child relationships.
 
 **Important Considerations**:
 
@@ -267,9 +301,9 @@ Implement a taxonomy structure for financial services using real-world banking s
 
 **Custom Resolution Definitions Example**: For "Payment Issues" L3 topic:
 
-* **Successful**: "Customer completes payment, or the system resolves the payment issue during the call. Fix the payment processing error, set up an alternative payment method, or correct a technical issue preventing payment."
+* **Successful**: "You completed the customer's payment, or you resolved the payment issue during the call. You fixed the payment processing error, set up an alternative payment method, or corrected a technical issue preventing payment."
 
-* **Unsuccessful**: "Customer fails to complete payment, or the system cannot resolve the payment issue. Technical problems persist, you can't update the payment method, or you must escalate the issue or schedule a follow-up call."
+* **Unsuccessful**: "The customer can't complete payment or the payment issue remains unresolved. Technical problems persist, you can't update the payment method, or the issue requires escalation or a follow-up call."
 
 ### Phase 4: Version Management and Deployment
 

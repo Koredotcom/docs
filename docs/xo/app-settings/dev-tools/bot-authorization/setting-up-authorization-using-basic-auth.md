@@ -1,3 +1,5 @@
+[Back to Authorization :octicons-arrow-right-24:](bot-authentication.md)
+
 # Setting Up Authorization using Basic Auth
 
 When basic authorization is used for a task, the XO Platform automatically prompts the user for login credentials to access the web application or web service, as shown in the following illustration.
