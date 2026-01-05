@@ -1,6 +1,6 @@
 # Add an External Model using API Integration
 
-You can connect an external model to Agent Platform using API integration. This feature extends Agent Platform's functionality by allowing you to bring in models from external sources.
+You can connect an external model to Agent Platform using API integration. This feature extends the Platform's functionality by allowing you to bring in models from external sources.
 
 ## Add an External Model
 
@@ -106,7 +106,7 @@ With the Default option, you must manually define the request payload variables,
 
 ## Manage Custom API Integrations
 
-Once the integration is successful and the inference toggle is ON, you can use the model across Agent Platform. You can also turn inferencing OFF if needed.
+Once the integration is successful and the inference toggle is ON, you can use the model across the Platform. You can also turn inferencing OFF if needed.
 
 To manage an integration, click the three-dot icon corresponding to its name and choose from the following options:  
 
