@@ -249,8 +249,8 @@ nav:
         - Dialog:
           - About Dialog Task: automation/use-cases/dialogs/dialog-tasks-overview.md
           - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
-          - Manage Components: automation/use-cases/dialogs/managing-dialogs.md
-          - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
+          - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
+          - Manage Components: automation/use-cases/dialogs/managing-dialogs.md 
         - Session Management: automation/use-cases/using-session-and-context-variables.md
         - Context Management: automation/intelligence/context-object.md 
       - AI Agents:
