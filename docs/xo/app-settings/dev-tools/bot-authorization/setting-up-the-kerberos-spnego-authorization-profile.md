@@ -1,4 +1,4 @@
-[Back to Authorization :octicons-arrow-right-24:](bot-authentication.md)
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
 
 # Setting Up the Kerberos SPNEGO Authorization Profile
 
