@@ -132,9 +132,7 @@ aws kms describe-key \
 
 ## Step 5: Service-Side Configuration
 
-!!! note
-
-    Customer or account admin should reach out to the Support team to complete this step.
+Contact [Kore.ai support](https://support.kore.ai/) to complete this step.
 
 After you share your **Role ARN** with us, we configure our AWS account to assume the role and securely access your **KMS CMK** for BYOK. Once this is done, the BYOK configuration and test will work successfully.
 
@@ -143,8 +141,7 @@ After you share your **Role ARN** with us, we configure our AWS account to assum
 
 Provide the team with the following details to complete the integration:
 
-* Your **CMK ARN** from step 1 (e.g., `arn:aws:kms:<region>:account-id>:key/<key-id>`)
-* Your **Role ARN** from step 2 (e.g., `arn:aws:iam::<account-id>:role/<role-name>`)
-* **Service Role ARN** and **External ID** (pre-populated in the admin console interface).
+* Your **CMK ARN** from step 1 (e.g., `arn:aws:kms:<region>:account-id>:key/<key-id>`).
+* Your **Role ARN** from step 2 (e.g., `arn:aws:iam::<account-id>:role/<role-name>`).
 
 These steps ensure the application can securely access your CMK for BYOK functionality while maintaining the highest security standards.
