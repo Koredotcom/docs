@@ -150,4 +150,4 @@ The node’s output is stored in a context variable. You can access the variable
 
 !!! note
 
-    Agent Platform can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.
+    The Platform can automatically recognize variables and outputs. To do so, type "context.steps." and you will see available variables and nodes, including the nodes' outputs.

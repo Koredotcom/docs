@@ -7,7 +7,7 @@ Essentially, tool calling is the ability of an LLM to identify when external fun
 
 ## Tool Calling Across the Platform
 
-The Agent Platform supports tool calling in two primary contexts: **Agentic Apps** and **Workflow Tools (AI Nodes)**. In Agentic Apps, agents receive user queries through an orchestrator and dynamically select the most appropriate tools based on the LLM's reasoning capabilities. 
+The Platform supports tool calling in two primary contexts: **Agentic Apps** and **Workflow Tools (AI Nodes)**. In Agentic Apps, agents receive user queries through an orchestrator and dynamically select the most appropriate tools based on the LLM's reasoning capabilities. 
 
 Within Workflow Tools, tool calling extends the AI Node's capabilities beyond text generation. The node's prompt is dynamically enhanced with tool definitions, enabling it to connect with Service, Script, and Search AI nodes during execution.
 
@@ -109,7 +109,7 @@ The model generates the tool call for the Get Weather API, which includes the ne
     * `location: "Paris"`
     * `unit: "Celsius"`
 
-The model sends this information in the response body, asking Agent Platform to trigger the weather tool.
+The model sends this information in the response body, asking the Platform to trigger the weather tool.
 
 **Step 4: Tool Call 1 - Weather API**  
 The Get Weather tool is triggered, and the external Weather API returns the following data:
@@ -163,9 +163,9 @@ The user receives the final output, which includes both the weather update and t
 
 ## Supported Models for Tool Calling
 
-Tool calling functionality is available when commercial models are added to an AI node. However, only specific commercial models support this feature. Currently, Platform-hosted and Hugging Face models do not support tool calling. 
+Tool calling functionality is available when commercial models are added to an AI node. However, only specific commercial models support this feature. Currently, Platform-hosted and Hugging Face models don't support tool calling. 
 
-Below is a list of models across various platforms that currently support tool calling in Agent Platform:
+Below is a list of models across various platforms that support tool calling in the Platform:
 
 **OpenAI**
 
