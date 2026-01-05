@@ -38,6 +38,7 @@ import itertools
 ## Functions of Supported Libraries
 
 ### json
+
 ```
   "json": [
         "JSONDecodeError",
@@ -47,7 +48,9 @@ import itertools
         "loads"
     ]
 ```
+
 ### enum
+
 ```
 "enum": [
         "DynamicClassAttribute",
@@ -62,6 +65,7 @@ import itertools
 ## Numerical Libraries
 
 ### numPy
+
 ```
 "numpy": [
         "abs",
@@ -495,6 +499,7 @@ import itertools
 <a href="https://numpy.org/doc/stable/reference/index.html#reference" target="_blank">Learn more</a>.
 
 ### pandas
+
 ```
 "pandas": [
         "BooleanDtype",
@@ -574,6 +579,7 @@ import itertools
 <a href="https://pandas.pydata.org/docs/reference/index.html" target="_blank">Learn more</a>.
 
 ### collections
+
 ```
 "collections": [
         "ChainMap",
@@ -590,6 +596,7 @@ import itertools
 <a href="https://docs.python.org/3/library/collections.html" target="_blank">Learn more</a>.
 
 ### math
+
 ```
 "math": [
         "acos",
@@ -647,6 +654,7 @@ import itertools
 <a href="https://docs.python.org/3/library/math.html" target="_blank">Learn more</a>.
 
 ### cmath
+
 ```
 "cmath": [
         "acos",
@@ -677,6 +685,7 @@ import itertools
 <a href="https://docs.python.org/3/library/cmath.html" target="_blank">Learn more</a>.
 
 ### statistics
+
 ```
 "statistics": [
         "Counter",
@@ -688,6 +697,7 @@ import itertools
 <a href="https://docs.python.org/3/library/statistics.html" target="_blank">Learn more</a>.
 
 ### random
+
 ```
  "random": [
         "Random",
@@ -722,7 +732,9 @@ import itertools
 <hr>
 
 ## String Manipulation Libraries
+
 ### re
+
 ```
  "re": [
         "compile",
@@ -743,6 +755,7 @@ import itertools
 <a href="https://docs.python.org/3/library/re.html" target="_blank">Learn more</a>.
 
 ### textwrap
+
 ```
  "textwrap": [
         "TextWrapper",
@@ -760,6 +773,7 @@ import itertools
 ## Date-time Libraries
 
 ### datetime
+
 ```
 "datetime": [
         "date",
@@ -773,6 +787,7 @@ import itertools
 <a href="https://docs.python.org/3/library/datetime.html" target="_blank">Learn more</a>.
 
 ### time
+
 ```
  "time": [
         "asctime",
@@ -799,6 +814,7 @@ import itertools
 <a href="https://docs.python.org/3/library/time.html" target="_blank">Learn more</a>.
 
 ### calendar
+
 ```
  "calendar": [
         "Calendar",
@@ -831,6 +847,7 @@ import itertools
 <hr>
 
 ## Itertools
+
 ```
 "itertools": [
 
