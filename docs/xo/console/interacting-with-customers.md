@@ -185,6 +185,11 @@ Agents can make outbound calls to the customers as follows:
 #### Inbound Click-to-Call Interaction
 
 Agents receive the Click-to-Call interaction in the Live Interaction pane, similar to an inbound voice call. The system displays the metadata and prior chat transcript to the agent. During the call, agents can pause and resume recording when handling sensitive information. After the call ends, the system stores the transcription and disposition summary. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#click-to-call-flow).  
+
+!!! note 
+ 
+    This capability is supported only in the Eternal SDK.
+
 <img src="../images/click-to-call-interaction.png" alt="Click to Call Interaction" title="Click to Call Interaction" style="border: 1px solid gray; zoom:70%;">  
 
 Agents also have access to the following call controls:  
