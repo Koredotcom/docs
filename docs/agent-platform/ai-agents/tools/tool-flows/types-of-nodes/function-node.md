@@ -1,6 +1,6 @@
 # Function Node - Empower Workflows with Custom Code
 
-The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes cannot achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
+The Function node is a powerful component that enables you to extend your automation flows with custom business logic and data processing capabilities. By embedding JavaScript or Python code directly into your tool flows, you can manipulate variables in ways that preset nodes can't achieve. Configuration options provide you the ability to specify input and output variables and write corresponding execution code.
 
 ## Key Capabilities
 
@@ -447,7 +447,7 @@ For example, <code><em>context.steps.Bankingnode.output</em></code>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
+<p>The Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see the available variables, nodes, and node outputs.</p>
 </div>
 
 ## Import, Export, and Share a Tool with Function Node

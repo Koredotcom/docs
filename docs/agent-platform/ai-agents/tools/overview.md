@@ -18,7 +18,7 @@ Similarly, a ‘Credit Card Assistant’ might include tools like:
 
 ## Types of Tools
 
-The Agent Platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
+The Platform supports three types of tools that agents can use to perform tasks and integrate with external systems: **Workflow Tools**, **Code Tools**, and **MCP Tools**. Each type serves a different purpose, ranging from orchestrating visual tasks to executing custom scripts or invoking remote services. Understanding the differences between these tool types will help you design agent behaviors that are both efficient and scalable.
 
 !!! info
 

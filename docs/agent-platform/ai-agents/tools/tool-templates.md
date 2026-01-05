@@ -5,9 +5,9 @@ Instead of building a tool flow from scratch, **Tool Templates** enable you to a
 You can customize the tool’s actions (how the tool responds) and enhance the automation flow. Simply select a template and import it into the Tools dashboard with zero coding efforts. The template types you can leverage include:
 
 * **Pre-built templates**: These ready-to-deploy templates come with use-case scenarios and pre-configured integrations, like an email auto-replier or an automated grading system.
-* **Customizable templates**: The various node types in the tool flow on the Agent Platform allow you to tailor the tool flow to your business needs.
+* **Customizable templates**: The various node types in the tool flow on the Platform allow you to tailor the tool flow to your business needs.
 
-Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They are a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
+Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They're a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
 
 **Key Benefits**
 
@@ -33,7 +33,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Agent Platform integrates with the XO Platform marketplace.</p>
+<p>The Platform integrates with the XO Platform marketplace.</p>
 </div>
 
 **Categories**
@@ -148,7 +148,7 @@ Once you install a tool template, you can access its prebuilt flow and modify it
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
-   <p>Appropriate canvas-level errors are displayed (in the error log) with a fresh installation of templates since models will not be connected in Gen AI nodes, the API nodes will be empty, etc. You can view and fix the errors by clicking the <b>warning</b> icon.</p>
+   <p>Appropriate canvas-level errors are displayed (in the error log) with a fresh installation of templates since models won't be connected in Gen AI nodes, the API nodes will be empty, etc. You can view and fix the errors by clicking the <b>warning</b> icon.</p>
    </div>
 
    <img src="../images/canvas-level-errors.png" alt="canvas level errors" title="canvas level errors" style="border: 1px solid gray; zoom:75%;">
