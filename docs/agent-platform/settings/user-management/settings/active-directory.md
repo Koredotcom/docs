@@ -11,8 +11,8 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 **Key Steps for Configuring Active Directory Import**
 
-1. [Set up the Connection](./active-directory.md/#step-1-set-up-the-connection){:target="_blank"}: Connect the **Settings** Console to your organization's AD to enable data import.
-2. [Select and Import the Organizational Units (OUs)](./active-directory.md/#step-2-import-organization-units){:target="_blank"}: Choose specific OUs or all OUs from which to import key user information.
+1. [Set up the Connection](./active-directory.md#step-1-set-up-the-connection){:target="_blank"}: Connect the **Settings** Console to your organization's AD to enable data import.
+2. [Select and Import the Organizational Units (OUs)](./active-directory.md#step-2-import-organization-units){:target="_blank"}: Choose specific OUs or all OUs from which to import key user information.
 3. [Specify User Attributes and Configure Rules for Selective Import from Active Directory](#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-active-directory){:target="_blank"}: Define desired user attributes (profile fields) that need to be imported from your active directory. Configure the inclusion and exclusion rules to control the information you need.
 4. [Schedule Automatic Active Directory Sync](#step-4-schedule-automatic-active-directory-sync){:target="_blank"}: Set up automatic or periodic sync schedules to keep user data current and reflect any changes or deletions from Active Directory.
 

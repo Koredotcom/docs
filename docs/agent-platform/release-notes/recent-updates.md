@@ -249,7 +249,7 @@ Key benefits
 **Data Type Validation for Custom Scripts in the Function Node**
 
 The Function node now supports data type selection and validation for Custom Function arguments. Users can define each argument as Text, Number, Boolean, or JSON, instead of the default String. During execution, the system validates that mapped values or variables match the defined type and throws a clear error if a mismatch occurs, preventing runtime failures. <br>
-[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/function-node.md/#add-and-configure-a-function-node){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/tool-flows/types-of-nodes/function-node.md#add-and-configure-a-function-node){:target="_blank"}
 
 
 <font size="4">AI Engineering Tools</font>
@@ -273,7 +273,7 @@ This update introduces support for the following new AI models, providing greate
 **Enhanced Custom API Integration for External Models**
 
 Custom API integration for external models now offers automatic provider format mapping (Anthropic, OpenAI) with improved error messaging, simplifying request/response configuration. Admins can also explicitly select supported features from a predefined list, making integration more robust and error-resistant. <br>
-[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-api-integration.md/#add-an-external-model){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-api-integration.md#add-an-external-model){:target="_blank"}
 
 **Tool Calling Support for Open-Source Models**
 
@@ -379,9 +379,9 @@ The platform now provides advanced filtering and usage tracking in the Settings 
 
 Key improvements:
 
-* Model Analytics & Traces: Filter and view data by deployment name & version (open-source/fine-tuned) or connection name (external). [Learn more :octicons-arrow-right-24:](../settings/monitoring/analytics/model-analytics-dashboard.md/#model-performance-filters){:target="_blank"}
-* Audit Logs: Model Added/Deleted events now display the relevant deployment or connection name. [Learn more :octicons-arrow-right-24:](../settings/monitoring/audit-logs.md/#account-level-audit-logs){:target="_blank"}
-* Billing & Usage: The drill-down view in the Usage page’s Models tab displays the *deployment name*, *type*, *credits used*, *last updated date,* and *status* for a model. Totals of all the deployments roll up to show model-level consumption, with deployment-level data reflected in *fine-tuning*, *hosting*, and *storage* metrics. [Learn more :octicons-arrow-right-24:](../settings/billing/billing-and-usage.md/#models-usage){:target="_blank"}
+* Model Analytics & Traces: Filter and view data by deployment name & version (open-source/fine-tuned) or connection name (external). [Learn more :octicons-arrow-right-24:](../settings/monitoring/analytics/model-analytics-dashboard.md#model-performance-filters){:target="_blank"}
+* Audit Logs: Model Added/Deleted events now display the relevant deployment or connection name. [Learn more :octicons-arrow-right-24:](../settings/monitoring/audit-logs.md#account-level-audit-logs){:target="_blank"}
+* Billing & Usage: The drill-down view in the Usage page’s Models tab displays the *deployment name*, *type*, *credits used*, *last updated date,* and *status* for a model. Totals of all the deployments roll up to show model-level consumption, with deployment-level data reflected in *fine-tuning*, *hosting*, and *storage* metrics. [Learn more :octicons-arrow-right-24:](../settings/billing/billing-and-usage.md#models-usage){:target="_blank"}
 
 
 <font size="4">Other Improvements</font>
@@ -517,7 +517,7 @@ Key highlights:
 
 **Export All Runs and Logs Data**
 
-Admins can now export and download All Runs and Logs from the Monitoring Custom Scripts dashboard as a <code><em>.csv</em></code> file, following the schema and file-naming conventions defined in the Agent Platform. [Learn more :octicons-arrow-right-24:](../settings/monitoring/monitoring-custom-scripts.md/#export-runs-and-logs-data){:target="_blank"}
+Admins can now export and download All Runs and Logs from the Monitoring Custom Scripts dashboard as a <code><em>.csv</em></code> file, following the schema and file-naming conventions defined in the Agent Platform. [Learn more :octicons-arrow-right-24:](../settings/monitoring/monitoring-custom-scripts.md#export-runs-and-logs-data){:target="_blank"}
 
  
 <hr>
