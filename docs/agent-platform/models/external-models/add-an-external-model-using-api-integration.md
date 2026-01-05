@@ -1,6 +1,6 @@
 # Add an External Model using API Integration
 
-You can connect an external model to Agent Platform using API integration. This feature extends Agent Platform's functionality by allowing you to bring in models from external sources.
+You can connect an external model to Agent Platform using API integration. This feature extends the Platform's functionality by allowing you to bring in models from external sources.
 
 ## Add an External Model
 
@@ -88,8 +88,8 @@ With the Default option, you must manually define the request payload variables,
     This configuration requires at least one feature to be enabled.  
     Users can enable any feature, but the model must support it. Otherwise, you may see unexpected behavior.
 
-  * **Structured response**: Specifies that the model supports the generation of a structured response. Enabling this flag allows the model to be used for generating a structured output within [Prompts](../../prompts/using-prompt-studio.md/#add-prompts){:target="_blank"} and [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
-  * **Data generation**: Specifies that the model can be used for synthetic data generation for text-based tasks. Turning this flag on allows the model to be used for prompt generation in [Prompts Studio](../../prompts/using-prompt-studio.md/#add-prompts){:target="_blank"}.
+  * **Structured response**: Specifies that the model supports the generation of a structured response. Enabling this flag allows the model to be used for generating a structured output within [Prompts](../../prompts/using-prompt-studio.md#add-prompts){:target="_blank"} and [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
+  * **Data generation**: Specifies that the model can be used for synthetic data generation for text-based tasks. Turning this flag on allows the model to be used for prompt generation in [Prompts Studio](../../prompts/using-prompt-studio.md#add-prompts){:target="_blank"}.
   * **Streaming**: Specifies that the model supports real-time, token-by-token generation for faster AI responses. Turning this flag on allows the model to be used for generating streaming responses within Agentic Apps.
   * **Tool calling**: Specifies that the model supports tool calling. Enabling this flag allows the model to be used within Agentic Apps and for tool calls within the AI Text-to-text node in workflow tools.  
   * **Support Tools**: Specifies if the model supports simple tool calling.  Dynamic function or API calling by the LLM to perform actions or retrieve real-time data during generation.
@@ -106,7 +106,7 @@ With the Default option, you must manually define the request payload variables,
 
 ## Manage Custom API Integrations
 
-Once the integration is successful and the inference toggle is ON, you can use the model across Agent Platform. You can also turn inferencing OFF if needed.
+Once the integration is successful and the inference toggle is ON, you can use the model across the Platform. You can also turn inferencing OFF if needed.
 
 To manage an integration, click the three-dot icon corresponding to its name and choose from the following options:  
 

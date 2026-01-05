@@ -8,7 +8,7 @@ Model Hub empowers you to enhance base models by fine-tuning them directly withi
 
 * **Open-source model**: Choose from a curated list of 30+ popular open-source models or bring in any text generation model from Hugging Face. [Learn more](../models/open-source-models/select-and-deploy-an-open-source-model.md).
 
-* **External models**: Add commercial models like OpenAI, Anthropic, Azure OpenAI, Cohere, and Google. You can also integrate your own hosted models into Agent Platform using API connections. [Learn more](../models/external-models/add-an-external-model-using-easy-integration.md).
+* **External models**: Add commercial models like OpenAI, Anthropic, Azure OpenAI, Cohere, and Google. You can also integrate your own hosted models into the Platform using API connections. [Learn more](../models/external-models/add-an-external-model-using-easy-integration.md).
 
 * **Quick deployment**: Deploy a model quickly in just a few steps - select the model, review parameters and hardware, and click Deploy. [Learn more](./fine-tune-models/deploy-a-fine-tuned-model.md).
 
