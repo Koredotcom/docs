@@ -121,7 +121,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2026 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
@@ -225,7 +225,7 @@ nav:
     - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
-        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
+        - PII & Guardrails: ai-agents/agentic-apps/settings/guardrails.md
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
         - Variables: ai-agents/agentic-apps/settings/variables.md
         - Content: ai-agents/agentic-apps/settings/content.md

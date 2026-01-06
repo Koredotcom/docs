@@ -5,9 +5,9 @@ Instead of building a tool flow from scratch, **Tool Templates** enable you to a
 You can customize the tool’s actions (how the tool responds) and enhance the automation flow. Simply select a template and import it into the Tools dashboard with zero coding efforts. The template types you can leverage include:
 
 * **Pre-built templates**: These ready-to-deploy templates come with use-case scenarios and pre-configured integrations, like an email auto-replier or an automated grading system.
-* **Customizable templates**: The various node types in the tool flow on the Agent Platform allow you to tailor the tool flow to your business needs.
+* **Customizable templates**: The various node types in the tool flow on the Platform allow you to tailor the tool flow to your business needs.
 
-Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They are a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
+Tool templates are the foundation for building AI tools. They provide a structure for workflows, ensuring a smooth user experience. They're a reliable and efficient starting point for automating tasks like lead capture, order scheduling, and customer support.  
 
 **Key Benefits**
 
@@ -33,7 +33,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Agent Platform integrates with the XO Platform marketplace.</p>
+<p>The Platform integrates with the XO Platform marketplace.</p>
 </div>
 
 **Categories**
@@ -71,7 +71,7 @@ The **Tools Library Marketplace** offers more than 50 prebuilt tool templates fo
 
 To access a tool template, follow the steps below:
 
-1. Log in to your account and click **Tools** under **Agent Platform Modules**.
+1. Log in to your account and click **Tools** from the list of modules.
 2. Click **Tools** on the top navigation bar to access the **Tools** dashboard.
 3. If you are adding your first tool, click **Tool templates**.
 <img src="../images/first-tool-template.png" alt="first tool" title="first tool" style="border: 1px solid gray; zoom:60%;">
@@ -102,7 +102,7 @@ To access a tool template, follow the steps below:
 
     <img src="../images/click-tool-install.png" alt="install tool" title="install tool" style="border: 1px solid gray; zoom:60%;"></ol>
 
-    The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md/#view-and-manage-tool-flow){:target="_blank"}.
+    The system redirects you to the **Tool Flow** page. Click **Go to Flow** to view and manage the prebuilt tool flow canvas. [Learn more](../tools/tool-templates.md#view-and-manage-tool-flow){:target="_blank"}.
 
 **Important Considerations** 
 
@@ -133,7 +133,7 @@ To modify your tool's general details, such as its name and description, asynchr
 2. On the left navigation menu, click **Configurations**.
    <img src="../images/configurations-tools.png" alt="configurations" title="configurations" style="border: 1px solid gray; zoom:75%;">  
 
-3. Perform the required action on the page like tool renaming or [deletion](../tools/tool-templates.md/#delete-a-tool-template){:target="_blank"}. To configure other tool options, refer [here](../tools/configure-a-tool.md){:target="_blank"}.
+3. Perform the required action on the page like tool renaming or [deletion](../tools/tool-templates.md#delete-a-tool-template){:target="_blank"}. To configure other tool options, refer [here](../tools/configure-a-tool.md){:target="_blank"}.
 
 ### View and Manage Tool Flow
 
@@ -148,7 +148,7 @@ Once you install a tool template, you can access its prebuilt flow and modify it
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
-   <p>Appropriate canvas-level errors are displayed (in the error log) with a fresh installation of templates since models will not be connected in Gen AI nodes, the API nodes will be empty, etc. You can view and fix the errors by clicking the <b>warning</b> icon.</p>
+   <p>Appropriate canvas-level errors are displayed (in the error log) with a fresh installation of templates since models won't be connected in Gen AI nodes, the API nodes will be empty, etc. You can view and fix the errors by clicking the <b>warning</b> icon.</p>
    </div>
 
    <img src="../images/canvas-level-errors.png" alt="canvas level errors" title="canvas level errors" style="border: 1px solid gray; zoom:75%;">

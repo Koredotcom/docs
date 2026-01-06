@@ -413,7 +413,7 @@ Sample Input
 
 "score": 1,
 
-"chunkText": "Discharge process Your nurse will assist you in the discharge process which may take a few hours to complete.. Once your final bill is generated, you are expected to clear your dues by paying cash or using a credit/debit card. The nurse will hand over your discharge summary and belongings (like a thermometer, urinal bedpan, etc. - used during the course of your stay). She will also explain the medications you need to continue after your discharge and any other follow-up instructions. If you need a medical ambulance to drop you off at your home, please inform your nurse, and she will make the necessary arrangements. Keep track of your appointments, get updates & more!"
+"chunkText": "Discharge process Your nurse will assist you in the discharge process which may take a few hours to complete. Once your final bill is generated, you are expected to clear your dues by paying cash or using a credit/debit card. The nurse will hand over your discharge summary and belongings (like a thermometer, urinal bedpan, etc. - used during the course of your stay). She will also explain the medications you need to continue after your discharge and any other follow-up instructions. If you need a medical ambulance to drop you off at your home, please inform your nurse, and she will make the necessary arrangements. Keep track of your appointments, get updates & more!"
 
 }
 
@@ -814,9 +814,9 @@ Output:
 
 "score": 0.5552528,
 
-"Description": "This intent allows users to make changes to or cancel their existing leave requests within the HR system. Users can easily modify details such as the duration or type of leave or cancel the request altogether if needed. ",
+"Description": "This intent allows users to make changes to or cancel their existing leave requests within the HR system. Users can easily modify details such as the duration or type of leave or cancel the request altogether if needed.",
 
-"appId": "st-e0dc1b66-b34f-4e90-a040-af3ab69a782d",
+"appId": "st-e0dc1b66-b34f-xxxx-a040-af3ab69a782d",
 
 "appName": "kWEysAZN"
 

@@ -16,7 +16,7 @@ Key features include:
 
 * **Flagged interactions**: Surfaced across all tools (for example, QA Dashboard, Audit Screen, Conversation Mining) for targeted coaching and quality control. 
 
-The dashboard enables supervisors to maintain quality standards, identify improvement areas, and guide focused coaching through consistent, actionable insights.
+The dashboard enables supervisors to maintain quality standards, identify improvement areas, and guide focused coaching through consistent, operational insights.
 
 ### Access Supervisor Dashboard 
 
@@ -29,11 +29,11 @@ Navigate to **Quality AI** > **ANALYZE** > **Dashboard**.
 
 ## Dashboard Filters
 
-This dashboard allows you to filter the data by language, time period, and specific channel.
+This dashboard lets you filter the data by language, date range, and specific channel.
 
 ### Filter Options
 
-The dashboard metrics allow you to filter and refine the data displayed across the entire dashboard by selected language(s), date range or calendar, and channel.
+The dashboard metrics lets you filter and refine the data displayed across the entire dashboard by selected languages, date range or calendar, and channel.
 
 #### All Languages 
 
@@ -66,7 +66,7 @@ When a language filter is applied, the following widget metrics are updated to r
 
 #### Date Range
 
-Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to **All Languages**. The displayed data gets updated based on the chosen language and time period.
+Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to **All Languages**. The displayed data gets updated based on the chosen language and date range.
 
 To filter by calendar, 
 
@@ -77,7 +77,7 @@ To filter by calendar,
 
 #### Channel
 
-The Quality AI dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, or **All**. You can filter performance metrics by channel: **Voice**, **Chat**, or **All** (which includes both Voice and Chat conversations). The dashboard presents trends and graphs with daily, weekly, and monthly views, along with a distribution view. Data is displayed based on the selected language and channel.
+The Quality AI dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, or **All**. You can filter performance metrics by channel: **Voice**, **Chat**, or **All** (which includes both Voice and Chat conversations). The dashboard presents trends and graphs with daily, weekly, and monthly views, along with a distribution view. The system displays data based on the selected language and channel.
 
 To filter by channel, 
 
@@ -88,7 +88,7 @@ To filter by channel,
 
 ## Agent Performance Metrics
 
-This outlines the metrics that used to assess agent performance and monitor coaching progress. Metrics are filtered based on the selected languages and date range.
+This outlines the metrics that used to assess agent performance and monitor coaching progress. The system filters metrics based on the selected languages and date range.
 
 The following components provide insights through audit results and coaching activity tracking:
 
@@ -114,7 +114,7 @@ Displays the number of agents with an active coaching assignment in the queues t
 
 ### Fatal Interactions
   
-Displays the number of interactions that failed due to critical errors. If an interaction meets any fatal criteria defined in the evaluation form, the entire scorecard is scored as zero, regardless of performance in other areas.   
+Displays the number of interactions that failed due to critical errors. If an interaction meets any fatal criteria defined in the evaluation form, the system scores the entire scorecard zero, regardless of performance in other areas.   
 <img src="../dashboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:100%;">
 
 ### Audit Progress
@@ -150,7 +150,7 @@ To view adherence with fatal errors or interactions, you must do the following:
 
 !!! Note
 
-    You must enable **Auto QA** (**Settings** > **Quality AI General Settings**) to to configure evaluation forms and generate automated scores.
+    You must enable **Auto QA** (**Settings** > **Quality AI General Settings**) to configure evaluation forms and generate automated scores.
 
 ### View More Details
 

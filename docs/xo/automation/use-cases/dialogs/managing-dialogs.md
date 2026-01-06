@@ -8,8 +8,8 @@ Your App can have many dialog tasks with related components. You can use the Dia
 To manage your dialog tasks, follow the below steps:
 
 1. Open the app for which you want to manage the dialog task components.
-2. Select the **Automation** from the left menu
-3. On the **Automation** menu, click **USE CASES > Dialogs**.
+2. Select the **Automation** from the left menu.
+3. On the **Automation** menu, click **Dialogs**.
 4. Click **Manage Components** on the top-right.
 
     <img src="../images/manage-components-img1.png" alt="Manage Components" title="Manage Components" style="border: 1px solid gray; zoom:60%;">
@@ -21,239 +21,20 @@ The Dialog Components window shows all the components used in any dialog task of
 
 <img src="../images/manage-components-img2.png" alt="Dialog Components" title="Dialog Components" style="border: 1px solid gray; zoom:60%;">
 
-The following table lists the details included in the window for each component type
+The following table lists the details included in the window for each component type.
 
 
-<table>
-  <tr>
-   <td><strong>COMPONENT TYPE</strong>
-   </td>
-   <td><strong>DETAILS</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>User Intent</strong>
-   </td>
-   <td>
-<ul>
+| Component Types | Details |
+|-----------------|---------|
+| User intent | Name, display name, description, dialog tasks used in |
+| Entity, Service | Name, display name, type, dialog tasks used in |
+| Agent Node, Agent transfer, Bot action, Confirmation, Form, Logic, Message, Process, Prompt node, Script, Webhook | Name, display name, dialog tasks used in |
 
-<li>Name
 
-<li>Display Name
-
-<li>Description
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Entity</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Entity Type
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Service</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Service Type
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Script</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Message</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Confirmation</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Agent Node</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Prompt Node</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Webhook</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Agent Transfer</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Form</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Logic</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Bot Action</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Process</strong>
-   </td>
-   <td>
-<ul>
-
-<li>Name
-
-<li>Display Name
-
-<li>Dialog Tasks used in
-</li>
-</ul>
-   </td>
-  </tr>
-</table>
 
 ## Upgrade Tasks
 
 After you publish a task, the Admin approves and deploys the task to make changes in the published app. You must upgrade the app; then publish the upgrade for Admin approval and deploy it to users.
-
-### Upgrade Tasks
 
 If you need changes to the published task, you must upgrade the task to a new version.
 
@@ -261,8 +42,8 @@ If you need changes to the published task, you must upgrade the task to a new ve
 
 There are two types of upgrades for a task:
 
-* **Mandatory** – A mandatory upgrade generally does not require end-user action, and users are only informed that the task was upgraded with an auto-upgrade. If a mandatory upgrade does require end-user action, for example, new authentication requirements, the end-user is notified to take the action for a manual upgrade, sent reminder notifications, and finally, expiration of the original task after 15 days.
-* **Optional** – An optional upgrade is not required and is not auto-upgraded for users. End-user action is required to complete the manual upgrade and the user can choose whether or not to upgrade.
+* **Mandatory**: A mandatory upgrade generally does not require end-user action, and users are only informed that the task was upgraded with an auto-upgrade. If a mandatory upgrade does require end-user action, for example, new authentication requirements, the end-user is notified to take the action for a manual upgrade, sent reminder notifications, and finally, expiration of the original task after 15 days.
+* **Optional**: An optional upgrade is not required and is not auto-upgraded for users. End-user action is required to complete the manual upgrade and the user can choose whether or not to upgrade.
 
 
 ### Task Upgrade Definitions
@@ -287,9 +68,9 @@ Using the **Upgrade** command, a duplicate of the original task is created where
 
 To upgrade a task, follow the below steps:
 
-1. Open the app to edit the task
-2. Select the **Automation** from the left menu
-3. On the **Automation** menu, click **USE CASES > Dialogs**..
+1. Open the app to edit the task.
+2. Select the **Automation** from the left menu.
+3. On the **Automation** menu, click **Dialogs**.
 4. Click the **More** icon of the published task you want to upgrade, and then click **Upgrade**.
 5. A duplicate of the published task is created with the **Status** set to **Upgrade In Progress** and the **General** tab is displayed.
 6. Modify the task and click **Finish Setup**.

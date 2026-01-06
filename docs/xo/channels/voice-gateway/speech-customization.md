@@ -16,7 +16,7 @@ You can apply Call Control Parameters at either the Session or Node level, offer
 
 * **Session-Level Parameters**: Add the prefix `session.` to apply parameters throughout the session (for example, `session.ttsprovider`).
 * **Node-Level Parameters**: Add the prefix node. to apply parameters only at a specific node (for example, `node.ttsprovider`).
-* **Default Behavior**: Parameters without a prefix are considered session-level by default.
+* **Default Behavior**: The platform considers parameters without a prefix as session-level by default.
 * Node-level parameters take precedence over session-level parameters. If no node-level parameters are defined, session-level properties apply.
 
 ## Node Level Call Control
@@ -53,7 +53,7 @@ This behavior applies to Session-Level Call Control Parameters.
 }
 ```
 
-In this scenario, the system retains the existing **sttProvider** and previously set **sttLanguage**, ensuring that only the new parameter adds without requiring users to re-enter unchanged values.
+In this scenario, the system retains the existing `sttProvider` and previously set `sttLanguage`, ensuring that only the new parameter adds without requiring users to re-enter unchanged values.
 
 ## Supported Speech Engines (ASR/TTS)
 
@@ -174,7 +174,7 @@ Examples:
     * If the current provider fails, Voice Gateway switches to the fallback provider.
     * Fallback properties are applied at the session level.
 
-| **Parameter**              | **Type**   | **Description**                                                                            | **Example Values**      |
+| **Parameter**          |**Type**| **Description**                                                                        | **Example Values**  |
 | ---------------------- | ------ | -------------------------------------------------------------------------------------- | ------------------- |
 | `sttLabel`             | String | Uniquely identifies the ASR engine in Voice Gateway.                                   | `my_azure-US`       |
 | `sttFallbackLabel`     | String | Fallback label for ASR; switch happens on error. Prefer same vendor, different region. | `my_azure_Europe`   |
@@ -209,7 +209,7 @@ Both `continuousASRTimeoutInMS` and `AzureSegmentationSilenceTimeout` apply at t
 
 ### Barge-In Related Parameters
 
-Barge-In allows the Voice Gateway to detect and respond when a user interrupts the bot by speaking or entering DTMF digits while the bot responds. This enables quicker interactions by preventing users from waiting for the bot to finish speaking.
+Barge-In lets the Voice Gateway to detect and respond when a user interrupts the bot by speaking or entering DTMF digits while the bot responds. This enables quicker interactions by preventing users from waiting for the bot to finish speaking.
 
 !!! Note
 
@@ -248,8 +248,8 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `hints` with phrase-level boost | Array of Objects  | Google, Nvidia                   | Suggests specific phrases to the STT engine to improve accuracy. You can assign a boost value per phrase. Useful for distinguishing similar-sounding words.   | `"hints": [ { "phrase": "benign", "boost": 50 }, { "phrase": "malignant", "boost": 10 }, { "phrase": "biopsy", "boost": 20 } ]` |
 | `hints` with `hintsBoost`    | Array + Number       | Google, Microsoft, Nvidia        | Instead of boosting each phrase individually, apply a single boost value to the entire array of hints.                                                        | `"hints": ["benign", "malignant", "biopsy"], "hintsBoost": 50` |
 | `sttDisablePunctuation`      | Boolean              | Google, Microsoft                | Controls punctuation in ASR output. `false` enables punctuation (default); `true` disables it.                                                                | `"sttDisablePunctuation": true` |
-| `vadEnable`                  | Boolean              | All                              | If `true`, the system delays connecting to the cloud recognizer until voice activity is detected.                                                             | `"vadEnable": true` |
-| `vadVoiceMS`                 | Number (milliseconds)| All                              | Specifies how many milliseconds of detected speech are required before connecting to the cloud recognizer. Only applies if `vadEnable` is `true`.             | `"vadVoiceMS": 500` |
+| `vadEnable`                  | Boolean              | All                              | If `true`, the system delays connecting to cloud recognizer until voice activity is detected.                                                             | `"vadEnable": true` |
+| `vadVoiceMS`                 | Number (milliseconds)| All                              | Specifies how many milliseconds of detected speech are required before connecting to cloud recognizer. Only applies if `vadEnable` is `true`.             | `"vadVoiceMS": 500` |
 | `vadMode`                    | Number (0–3)         | All                              | Determines the sensitivity of the voice activity detector. Lower values make it more sensitive. Only applies if `vadEnable` is `true`.                        | `"vadMode": 2` |
 
 ### Microsoft ASR
@@ -267,7 +267,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
 ### Google ASR
 
-| **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / Notes** |
+| **Parameter** | **Type** | **Supporting STT/TTS**  | **Description**  | **Example / Notes**  |
 |---------------|----------|-------------------------|------------------|----------------------|
 | `sttProfanityFilter` | Boolean | — | Enables profanity filtering in transcripts. Default: `false`. | `"sttProfanityFilter": true`|
 | `singleUtterance` | Boolean | — | If `true`, returns only a single utterance/transcript. | `"singleUtterance": true` |
@@ -288,7 +288,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
 ### AWS ASR
 
-| **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / Notes** |
+| **Parameter** | **Type** | **Supporting STT/TTS**  | **Description**  | **Example / Notes**  |
 |---------------|----------|-------------------------|------------------|----------------------|
 | `awsAccessKey` | String | — | AWS access key used for authenticating requests. | `"awsAccessKey": "AKIAIOSFODNN7EXAMPLE"` |
 | `awsSecretKey` | String | — | Secret key used with the access key for authentication. | `"awsSecretKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"` |
@@ -302,7 +302,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 
 ### NVIDIA ASR
 
-| **Parameter** | **Type** | **Supporting STT/TTS** | **Description** | **Example / Notes** |
+| **Parameter** | **Type** | **Supporting STT/TTS**  | **Description**  | **Example / Notes**  |
 |---------------|----------|-------------------------|------------------|----------------------|
 | `nvidiaRivaUri` | String | — | gRPC endpoint (`ip:port`) hosting the NVIDIA Riva ASR service. | `"nvidiaRivaUri": "10.0.0.12:50051"` |
 | `nvidiaMaxAlternatives` | Number | — | Number of alternative transcriptions to return. | `"nvidiaMaxAlternatives": 3`|
@@ -569,10 +569,10 @@ ccParamList.forEach((ccParam) => {
 })
 ```
 
-| **Parameter**   | **Type**   | **Description**                                         | **Example**            |
-|-----------------|------------|---------------------------------------------------------|------------------------|
-| ttsLanguage     | String     | Specifies the language code for text-to-speech output.  | ja-JP                  |
-| ttsProvider     | String     | Defines the provider for text-to-speech services.       | google                 |
-| voiceName       | String     | Identifies the voice to be used for text-to-speech output.| ja-JP-Wavenet-B      |
-| sttLanguage     | String     | Specifies the language code for speech-to-text recognition.| ja-JP               |
-| sttProvider     | String     | Defines the provider for speech-to-text services.       | Microsoft              |
+| **Parameter** | **Type** | **Description**                                            | **Example**     |
+|---------------|----------|------------------------------------------------------------|-----------------|
+| `ttsLanguage` | String   | Specifies the language code for text-to-speech output.     | ja-JP           |
+| `ttsProvider` | String   | Defines the provider for text-to-speech services.          | google          |
+| `voiceName`   | String   | Identifies the voice used for text-to-speech output.       | ja-JP-Wavenet-B |
+| `sttLanguage` | String   | Specifies the language code for speech-to-text recognition.| ja-JP           |
+| `sttProvider` | String   | Defines the provider for speech-to-text services.          | Microsoft       |

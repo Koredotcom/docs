@@ -65,7 +65,7 @@ To select and deploy a model, follow these steps:
 <p class="admonition-title">Note</p>
 <p>You will be charged for deployment and inferencing-related costs for each open-source model. </p></div> 
 
-If you have selected optimization, the model optimization starts, and the status changes to “Optimization”. If not, the model is deployed. After deployment, the status changes to "Deployed." You can now use this model across Agent Platform and externally.
+If you have selected optimization, the model optimization starts, and the status changes to “Optimization”. If not, the model is deployed. After deployment, the status changes to "Deployed." You can now use this model across the Platform and externally.
 
 Hover over the deployed model to view **more** icons (three dots) which provide access to the model **API endpoint** and **Configurations**. Selecting the API endpoint option shows the API endpoint, deployment history, API keys, and other details. Selecting the Configuration option allows you to add a description, tags, and deploy or delete the model.
 

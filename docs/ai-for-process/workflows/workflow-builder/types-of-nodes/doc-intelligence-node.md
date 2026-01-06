@@ -61,12 +61,12 @@ Configure engine-specific options to control how the document is processed.
 
 Options include Async execution, which processes the document in the background without blocking the workflow, and Structured data extraction, which generates machine-readable outputs for downstream nodes.
 
-| Engine                 | Default settings                              | Structured data            | Notes |
-|------------------------|------------------------------------------------|-----------------------------|-------|
-| **Docling**            | Async enabled, structured data disabled        | Can enable                 | The model dropdown shows all configured Docling models. |
-| **OpenAI**             | Async enabled, structured data disabled        | Can enable                 | Only configured OpenAI models are listed.<br>Model timeout: 30–360 sec (default 300). |
-| **Anthropic**          | Async enabled, structured data disabled        | Can enable                 | Only configured Anthropic models are listed.<br>Model timeout: 30–360 sec (default 300). |
-| **Azure Doc Intelligence** | Async enabled, structured data always enabled | Cannot disable structured data | Prebuilt models are available by default. |
+| Engine                     | Default settings                              | Notes |
+|----------------------------|-----------------------------------------------|-------|
+| **Docling**                | Async enabled        | The model dropdown shows all configured Docling connections. |
+| **OpenAI**                 | Async enabled        | Only configured OpenAI models are listed.<br>Model timeout: 30–360 sec (default 300). |
+| **Anthropic**              | Async enabled        | Only configured Anthropic models are listed.<br>Model timeout: 30–360 sec (default 300). |
+| **Azure Doc Intelligence** | Async enabled, structured data always enabled | Prebuilt models are available by default. |
 
 <img src="../images/doc_node_config.png" alt="Doc node panel" title="Doc node panel" style="border: 1px solid gray; zoom:80%;">
 

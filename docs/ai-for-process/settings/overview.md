@@ -105,6 +105,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
 - Review workflow performance metrics and take informed decisions on the **Workflows Analytics** dashboard. [Learn more](../settings/monitoring/analytics/workflows-analytics-dashboard.md){:target="_blank"}.
+
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 * Track custom script executions across runs and logs for deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.

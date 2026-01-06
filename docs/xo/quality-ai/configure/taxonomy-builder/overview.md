@@ -41,14 +41,6 @@ Taxonomy Builder enables you to:
 
 The system uses custom topic names and detailed descriptions to classify conversations accurately by using large language models (LLMs). When you create a topic, you provide descriptions that help the model identify which customer statements, issues, or requests belong to that topic.
 
-## Enhanced User Experience
-
-**Visual Hierarchy**: Color-coded levels and progressive indentation distinguish L1, L2, and L3 topics. This hierarchy helps you understand the structure at a glance.
-
-**Interactive Guidance**: Tooltips provide contextual guidance for moving and arranging items, which you can use to reorganize and manage your taxonomy structure.
-
-**Contextual Parent Selection**: The system preselects the parent context when you add topics from existing nodes. This streamlines topic creation.
-
 **Configurable Resolution Tracking (L3 Focus)**
 
 For Level 3 topics, you can enable sophisticated resolution tracking. This feature automatically determines whether each customer issue was successfully resolved during the conversation. The system provides binary classification, Successful or Unsuccessful, with the ability to customize what these outcomes mean for each specific topic type.
