@@ -1033,7 +1033,7 @@ curl --location `https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/
 | `timestamp`               | The system recorded the date and time of the event or message.                                                                              | `number`    |
 | `Pass Score`              | Overall pass score.                           | `number`  |
 | `IsPassed`                | Indicates whether the conversation passed.                | `boolean`  |
-| `Crutch Word Score`       | Score indicating the frequency or impact of crutch (filler) words used by the agent during the conversation.                                                 | `number`  |
+| `Crutch Word Score`       | Score indicating the frequency or impact of crutch (filler) words used by the agent during the conversation.                                                 | `number` (optional)  |
 | `Customer talk ratio percentage`     | Percentage of customer talk time.                                                                | `number`  |
 | `Agent talk ratio percentage`       | Percentage of agent talk time.                                                 | `number`  |
 | `Silence percentage`       | Percentage of silence time.                                                                             | `number`  |
