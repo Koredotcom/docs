@@ -48,14 +48,12 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
 
 ## Body Parameters
 
-| PARAMETER | DESCRIPTION                                                                                                             | TYPE            |
-|-----------|-------------------------------------------------------------------------------------------------------------------------|-----------------|
-| `offset`    | The number of responses the documents need to Skip. The default value is 0. For example, 10.                            | `integer`, optional|
-| `startDate` | Specify the start date to include records. Use the UTC-based date format:
-: `YYYY-MM-DDTHH24:MM:SS.NNNZ`.  For Example, `2025-12-18T11:33:12.724Z`.      | `string`, required |
-| `endDate`  | Specify the end date to include records. Use the UTC-based date format:
-: `YYYY-MM-DDTHH24:MM:SS.NNNZ`. For Example, `2025-12-18T11:33:12.904Z`.       | `string`, required |
-| `limit`     | This sets the number of conversation records returned to the response, or the number of records to fetch is 100.                    | `integer`, optional|
+| PARAMETER   | DESCRIPTION                                                                                                                                 | TYPE                 |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| `offset`    | The number of responses to skip. The default value is `0` (for example, `10`).                                                              | `integer`, optional  |
+| `startDate` | The start date to include records. Use the UTC-based date format `YYYY-MM-DDTHH:MM:SS.NNNZ` (for example, `2025-12-18T11:33:12.724Z`).     | `string`, required  |
+| `endDate`   | The end date to include records. Use the UTC-based date format `YYYY-MM-DDTHH:MM:SS.NNNZ` (for example, `2025-12-18T11:33:12.904Z`).       | `string`, required  |
+| `limit`     | The maximum number of conversation records to return. The default value is `100`.                                                         | `integer`, optional  |
 
 
 ## Sample Response
@@ -137,7 +135,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3502e",
+                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3xxxx",
                     "Metric Name": "SRV",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -220,7 +218,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3502e",
+                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3xxxx",
                     "Metric Name": "SRV",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -230,16 +228,16 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
             ]
         },
         {
-            "conversationId": "c-9a00d98-7ee8-4b39-82a5-e94ae142ec90",
+            "conversationId": "c-9a00d98-7ee8-4b39-82a5-e94ae142xxxx",
             "Queues": [
                 {
-                    "Queue ID": "qu-ab7d46a-dd5c-41d8-8ce7-4530260154ae",
+                    "Queue ID": "qu-ab7d46a-dd5c-41d8-8ce7-45302601xxxx",
                     "Queue Name": "Default Queue"
                 }
             ],
             "Agents": [
                 {
-                    "Agent ID": "a-03ab958-03cd-4eb9-a9b5-7cd442e5a1e4",
+                    "Agent ID": "a-03ab958-03cd-4eb9-a9b5-7cd442e5xxxx",
                     "Agent Name": "John SVC"
                 }
             ],
@@ -247,7 +245,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
             "Language": "English",
             "Metrics": [
                 {
-                    "Metric ID": "em-1c929a75-73a8-5f74-ae92-d11f30861a40",
+                    "Metric ID": "em-1c929a75-73a8-5f74-ae92-d11f3086xxxx",
                     "Metric Name": "AU - Agent response back with information",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -255,7 +253,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-810ebfde-c2d5-58bf-a971-2e48beec92a8",
+                    "Metric ID": "em-810ebfde-c2d5-58bf-a971-2e48beecxxxx",
                     "Metric Name": "CU - Customer issue followup by agent",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -263,7 +261,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-048f6359-b612-54a9-b978-5bae94e8d3a7",
+                    "Metric ID": "em-048f6359-b612-54a9-b978-5bae94e8xxxx",
                     "Metric Name": "CrossTalk",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -271,7 +269,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-edff1e44-e8c2-5432-a5af-255c243a97e1",
+                    "Metric ID": "em-edff1e44-e8c2-5432-a5af-255c243axxxx",
                     "Metric Name": "DeadAir",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -279,7 +277,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-e911550c-f2fd-5d96-ba1f-dfa15dbe1f9b",
+                    "Metric ID": "em-e911550c-f2fd-5d96-ba1f-dfa15dbexxxx",
                     "Metric Name": "Greeting Complaince Rate",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -287,7 +285,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-167c3b4a-9324-5636-b74e-22f7ccbc5b14",
+                    "Metric ID": "em-167c3b4a-9324-5636-b74e-22f7ccbcxxxx",
                     "Metric Name": "Proper Sign-off",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -295,7 +293,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-a476a5cd-fb8c-5c48-961f-dc15089d3a45",
+                    "Metric ID": "em-a476a5cd-fb8c-5c48-961f-dc15089dxxxx",
                     "Metric Name": "Resolution Complaince - confirmation of Resolution provided",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -303,7 +301,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3502e",
+                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3xxxx",
                     "Metric Name": "SRV",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -317,7 +315,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
             "customConversationId": "umafeb2102",
             "Queues": [
                 {
-                    "Queue ID": "qu-a9e7697-12de-4842-84d9-072dce60d3de",
+                    "Queue ID": "qu-a9e7697-12de-4842-84d9-072dce60xxxx",
                     "Queue Name": "Feb21 Queue"
                 }
             ],
@@ -331,16 +329,16 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
             "Metrics": []
         },
         {
-            "conversationId": "c-6469ecb-6a00-4c4d-a0b4-196e8362522a",
+            "conversationId": "c-6469ecb-6a00-4c4d-a0b4-196e8362xxxx",
             "Queues": [
                 {
-                    "Queue ID": "qu-ab7d46a-dd5c-41d8-8ce7-4530260154ae",
+                    "Queue ID": "qu-ab7d46a-dd5c-41d8-8ce7-45302601xxxx",
                     "Queue Name": "Default Queue"
                 }
             ],
             "Agents": [
                 {
-                    "Agent ID": "a-1ab766c-15cb-4c88-8919-048aabcabe90",
+                    "Agent ID": "a-1ab766c-15cb-4c88-8919-048aabcaxxxx",
                     "Agent Name": "Matthew Agent"
                 }
             ],
@@ -348,7 +346,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
             "Language": "English",
             "Metrics": [
                 {
-                    "Metric ID": "em-1c929a75-73a8-5f74-ae92-d11f30861a40",
+                    "Metric ID": "em-1c929a75-73a8-5f74-ae92-d11f3086xxxx",
                     "Metric Name": "AU - Agent response back with information",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -356,7 +354,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-810ebfde-c2d5-58bf-a971-2e48beec92a8",
+                    "Metric ID": "em-810ebfde-c2d5-58bf-a971-2e48beecxxxx",
                     "Metric Name": "CU - Customer issue followup by agent",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -364,7 +362,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-048f6359-b612-54a9-b978-5bae94e8d3a7",
+                    "Metric ID": "em-048f6359-b612-54a9-b978-5bae94e8xxxx",
                     "Metric Name": "CrossTalk",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -372,7 +370,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-edff1e44-e8c2-5432-a5af-255c243a97e1",
+                    "Metric ID": "em-edff1e44-e8c2-5432-a5af-255c243axxxx",
                     "Metric Name": "DeadAir",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -380,7 +378,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-e911550c-f2fd-5d96-ba1f-dfa15dbe1f9b",
+                    "Metric ID": "em-e911550c-f2fd-5d96-ba1f-dfa15dbexxxx",
                     "Metric Name": "Greeting Complaince Rate",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -388,7 +386,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-167c3b4a-9324-5636-b74e-22f7ccbc5b14",
+                    "Metric ID": "em-167c3b4a-9324-5636-b74e-22f7ccbcxxxx",
                     "Metric Name": "Proper Sign-off",
                     "Metric Weight": 15,
                     "Metric Negative Weight": 0,
@@ -396,7 +394,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-a476a5cd-fb8c-5c48-961f-dc15089d3a45",
+                    "Metric ID": "em-a476a5cd-fb8c-5c48-961f-dc15089dxxxx",
                     "Metric Name": "Resolution Complaince - confirmation of Resolution provided",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
@@ -404,7 +402,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
                     "isFatalError": false
                 },
                 {
-                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3502e",
+                    "Metric ID": "em-0098b0e1-8445-59a3-af20-3cee2cf3xxxx",
                     "Metric Name": "SRV",
                     "Metric Weight": 10,
                     "Metric Negative Weight": 0,
