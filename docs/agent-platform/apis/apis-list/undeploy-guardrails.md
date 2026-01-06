@@ -36,7 +36,7 @@ Once undeployed, the guardrails become inactive. The API response includes the *
 
 **Where can I find the API key?**
 
-To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
+To use the API, you will need an API key. [Learn more](../../apis/overview.md#how-to-create-the-api-key){:target="_blank"}.
 
 ## Path Parameters
 

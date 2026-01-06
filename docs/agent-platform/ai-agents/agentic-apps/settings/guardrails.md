@@ -4,7 +4,7 @@ The personally identifiable information (PII) framework and Guardrails provide e
 
 ### Core Components
 
-* **PII**: A dedicated PII layer that idenitifes sensitive information with the help of configured patterns. Protective measures like masking or redaction are taken on the detected sensitive content before it's passed to the  language models or other components.
+* **PII**: A dedicated PII layer that identifies sensitive information with the help of configured patterns. Protective measures like masking or redaction are taken on the detected sensitive content before it's passed to the  language models or other components.
 * **Guardrails (Input and Output Scanners)**: Guardrails monitor both inputs and responses. They enforce safety, compliance, and content-quality rules to ensure the agent behaves consistently and responsibly across all workflows.
 * **Data Anonymization**: Data remains anonymized throughout the processing pipeline. Only components explicitly configured to access sensitive information can selectively de-anonymize it when operationally required.
 
@@ -21,7 +21,7 @@ Debug logs, traces, and sessions show redacted values by default, reducing the r
 
 ## PII Detection
 
-PII detection helps identify and protect sensitive user information—such as names, email addresses, phone numbers, and other personally identifiable data—before it's processed by the agent. When anonymization is enabled, detected values are automatically masked or replaced according to your configuration. The agent works only with redacted inputs, ensuring privacy and compliance throughout the workflow. 
+PII detection helps identify and protect sensitive user information—such as names, email addresses, phone numbers, and other personally identifiable data—before it's processed by the agent. When it is enabled, detected values are automatically masked or replaced according to your configuration. The agent works with the inputs ensuring privacy and compliance throughout the workflow.  
 
 Learn how to add a [PII detection pattern.](pii-detection-pattern.md){:target="_blank"}
 
