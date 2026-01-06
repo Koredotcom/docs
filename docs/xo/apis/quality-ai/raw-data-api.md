@@ -6,7 +6,7 @@ The Raw Data API now provides detailed Quality AI and Conversation Intelligence 
 
 | **METHOD**     | **POST**                                                                                                                                       |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Endpoint       |<`https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata>`|
+| Endpoint       |`https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata`|
 | Content Type     | `application/json` |
 | Authorization    | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). 
 | API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |                                                                    || API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |                                                                    |
@@ -34,7 +34,7 @@ The Raw Data API now provides detailed Quality AI and Conversation Intelligence 
 ## Sample Request
 
 ```
-curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{accountId}}/v1/RawData` \
+curl --location `https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata` \
   --header 'accountId: {{accountId}}' \
   --header 'auth: {{authToken}}' \
   --header 'Content-Type: application/json' \
@@ -980,64 +980,61 @@ curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{acc
 
 | **PARAMETER**           | **DESCRIPTION**                                           | **TYPE** |
 | ----------------------- | --------------------------------------------------------- | -------- |
-| src                     | Source platform of the conversation.                      | string   |
-| speechSpeed             | Speech speed detected (if available).                     | integer  |
-| Conversation ID         | System-generated unique conversation ID of the record.    | string   |
-| Conversation Start Time | UTC timestamp of when the conversation started.           | string   |
-| Conversation End Time   | UTC timestamp of when the conversation ended.             | string   |
-| Language                | Detected language.                                        | string   |
-| Duration                | Duration of the conversation in milliseconds.             | string   |
-| Sentiment Score         | Sentiment score detected for the conversation (for example, positive, neutral, negative, or numeric score).                                                 | string   |
-| Queues                  | Queue details for the conversation.                       | string   |
-| Queue ID                | Queue ID of the conversation.                             | string   |
-| Queue Name              | The system assigns the queue name to the conversation.    | string   |
-| Agents                  | An array of agents participated in the conversation.     | string   |
-| agentId                 | Agent ID of the conversation.                             | string   |
-| Agent Name              | Names of agents who participated in the conversation.     | string   |
-| Agent Start Time        | Timestamp when the agent joined the interaction.          | string   |
-| Kore Evaluation Score   | AI-calculated evaluation score for the conversation.      | integer  |
-| IsChurnRiskObserved     | Shows if the system detected churn risk.                  | boolean  |
-| IsEscalationObserved    | Shows if the system observed an escalation.               | boolean  |
-| Fatal Errors            | Number of fatal errors detected.                          | integer  |
-| Emotions                | Detected emotions for the conversation or agent responses.| array  |
-| Taxonomy Resolution     | Shows if the system achieved a taxonomy-based resolution. | boolean  |
-| Sentiment Pattern       | Shows sentiment at the start and end of the conversation. | object   |
-| Generated Intents       | List of intents automatically generated/detected from the conversation, with confidence scores.                                                 | array   |
-| start                   | Sentiment at the beginning of the conversation.           | string   |
-| end                     | Sentiment at the end of the conversation.                 | string   |
-| Customer emotions       | Captures customer emotions with duration and proportion.  | array    |
-| emotion                 | Detected emotion (for example, *Patience*).               | string   |
-| intent                  | The primary intent of the conversation, detected or assigned by the system.                                                                               | string   |
-| keywords                | List of important words or phrases extracted from the conversation for analysis.                                                                             | array   |
-| Sentiment               | General sentiment classification for the conversation or agent response. Values: For example, "optimism", "neutral",                                                                            | string   |
-| Sentiment Score         | Numeric score representing the overall sentiment of the conversation. Higher values indicate more positive sentiment.                                                                            | integer   |
-| topic                   | The overall topic or category of the conversation, used for reporting, analytics, or routing.                                                                | string   |
-| Speaking Rate           | Number of words spoken per minute by the agent or user. Used for analyzing pacing, clarity, and conversation dynamics.                                                                             | integer   |
-| proportion              | Emotion’s percentage share of the conversation.           | boolean  |
-| Agent emotions          | Emotions detected specifically from the agent’s speech or messages during the conversation, with emotion type and intensity/score.                       | array  |
-| Sentiment Ratio         | Sentiment distribution across the conversation.           | object   |
-| positive                | Percentage of positive sentiment.                         | boolean  |
-| neutral                 | Detected emotion type. Neutral indicates emotionally balanced or calm interaction.                                                                          | string  |
-| negative                | Percentage of negative sentiment.                         | boolean  |
-| Metrics                 | The system uses an array of evaluation metrics for scoring.                                                                              | array    |
-| Metric ID               | Identifier for the metric.                                | string   |
-| Metric Name             | Name of the metric.                                       | string   |
-| Metric Weight           | Weightage for meeting the metric.                         | integer  |
-| Metric Negative Weight  | Penalty weight for failing the metric.                    | integer  |
-| Qualification           | Evaluation result (YES/NO/NA).                            | string   |
-| isFatalError            | Indicates if this metric is a fatal error.                | boolean  |
-| triggerJustification    | Trigger-based justifications.                             | array    |
-| justification           | Evaluator-provided justifications.                        | array    |
-| message_id              | Unique identifier of an individual message within a conversation (agent or customer message).                                                          | string    |
-| timestamp               | The system recorded the date and time of the event or message.                                                                              | string    |
-| Pass Score              | Minimum score required to pass.                           | integer  |
-| IsPassed                | Indicates whether the conversation passed.                | boolean  |
-| totalResults            | Total number of records available for the query.          | integer  |
-| hasMore                 | Indicates if more pages of results exist.                 | boolean  |
-| totalPages              | Total number of pages based on the limit.                 | integer  |
-| Crutch Word Score       | Score indicating the frequency or impact of crutch (filler) words used by the agent during the conversation.                                                 | integer  |
-| Customer talk ratio percentage     | Percentage of total conversation time during which the customer was speaking.                                                                | integer  |
-| Agent talk ratio percentage       | Score indicating the frequency or impact of crutch (filler) words used by the agent during the conversation.                                                 | float  |
-| Agent talk ratio percentage       | Percentage of total conversation time during which the agent was speaking.                                                                         | float  |
-| Silence percentage       | The percentage of the total conversation duration during which no participant was speaking.                                                                             | float  |
+| `src`                     | Source identifier (for example, "rtm", "korevg").                                                                  | `string`   |
+| `speechSpeed`             | Speech speed data array.                     | `array`  |
+| `Conversation ID`         | Unique conversation identifier.    | `string`   |
+| `Conversation Start Time` | Timestamp when conversation started.           | `string`   |
+| `Conversation End Time`   | Timestamp when conversation ended.             | `string`   |
+| `Language`                | Language of the conversation.                                        | `string`   |
+| `Duration`                | Duration of the conversation in milliseconds.             | `string`   |
+| `Sentiment Score`         | Overall sentiment score.                                                 | `number`   |
+| `Queues`                  | Queue information array.                       | `array`   |
+| `Queue ID`                | Queue ID of the conversation.                             | `string`   |
+| `Queue Name`              | The system assigns the queue name to the conversation.    | `string`   |
+| `Agents`                  | An array of agents participated in the conversation.     | `string`   |
+| `agentId`                 | Agent ID of the conversation.                             | `string`   |
+| `Agent Name`              | Names of agents who participated in the conversation.     | `string`   |
+| `Agent Start Time`        | Timestamp when the agent joined the interaction.          | `string`   |
+| `Kore Evaluation Score`   | AI-calculated evaluation score for the conversation.      | `number`  |
+| `IsChurnRiskObserved`     | Shows if the system detected churn risk.                  | `boolean`  |
+| `IsEscalationObserved`    | Shows if the system observed an escalation.               | `boolean`  |
+| `Fatal Errors`            | Number of fatal errors detected.                          | `number`  |
+| `Emotions`                | Detected emotions for the conversation or agent responses.| `array`  |
+| `Taxonomy Resolution`     | Taxonomy resolution status. | `string`  |
+| `Sentiment Pattern`       | Sentiment pattern with start and end states. | `object`   |
+| `Generated Intents`       | Array of generated intent objects.                                                 | `array`   |
+| `start`                   | Sentiment at the beginning of the conversation.           | `string`   |
+| `end`                     | Sentiment at the end of the conversation.                 | `string`   |
+| `Customer emotions`       | Captures customer emotions with duration and proportion.  | `array`    |
+| `emotion`                 | Detected emotion (for example, Patience).               | `string`   |
+| `intent`                  | The primary intent of the conversation, detected or assigned by the system.                                                                               | `string` (optional)   |
+| `keywords`                | List of important words or phrases extracted from the conversation for analysis.                                                                             | `array`   |
+| `Sentiment`               | General sentiment classification for the conversation or agent response. Values: For example, "optimism", "neutral",                                                                            | `string`   |
+| `Sentiment Score`         | Numeric score representing the overall sentiment of the conversation. Higher values indicate more positive sentiment.                                                                            | `number`   |
+| `topic`                   | The overall topic or category of the conversation, used for reporting, analytics, or routing.                                                                | `string`(optional)   |
+| `Speaking Rate`           | Speaking rate metrics.                                                                             | `array`   |
+| `proportion`              | Emotion’s percentage share of the conversation.           | `number`  |
+| `Agent emotions`          | Emotions detected specifically from the agent’s speech or messages during the conversation, with emotion type and intensity/score.                       | `array`  |
+| `Sentiment Ratio`         | Ratio of positive, neutral, and negative sentiments.
+           | `object`   |
+| `positive`                | Percentage of positive sentiment.                         | `number`  |
+| `neutral`                 | Detected emotion type. Neutral indicates emotionally balanced or calm interaction.                                                                          | `number`  |
+| `negative`                | Percentage of negative sentiment.                         | `number`  |
+| `Metrics`                 | Evaluation metrics array.                                                                              | `array`    |
+| `Metric ID`               | Identifier for the metric.                                | `string`   |
+| `Metric Name`             | Name of the metric.                                       | `string`   |
+| `Metric Weight`           | Weightage for meeting the metric.                         | `number`  |
+| `Metric Negative Weight`  | Penalty weight for failing the metric.                    | `number`  |
+| `Qualification`           | Evaluation result (YES/NO/NA).                            | `string`   |
+| `isFatalError`            | Indicates if this metric is a fatal error.                | `boolean`  |
+| `triggerJustification`    | Trigger-based justifications.                             | `array`    |
+| `justification`           | Evaluator-provided justifications.                        | `array`    |
+| `message_id`              | Unique identifier of an individual message within a conversation (agent or customer message).                                                          | `string`    |
+| `timestamp`               | The system recorded the date and time of the event or message.                                                                              | `number`    |
+| `Pass Score`              | Overall pass score.                           | `number`  |
+| `IsPassed`                | Indicates whether the conversation passed.                | `boolean`  |
+| `Crutch Word Score`       | Score indicating the frequency or impact of crutch (filler) words used by the agent during the conversation.                                                 | `number`  |
+| `Customer talk ratio percentage`     | Percentage of customer talk time.                                                                | `number`  |
+| `Agent talk ratio percentage`       | Percentage of agent talk time.                                                 | `number`  |
+| `Silence percentage`       | Percentage of silence time.                                                                             | `number`  |
 

@@ -8,7 +8,7 @@ This API provides reporting interaction level, Auto QA scoring and qualification
 |------------------|----------|
 | Endpoint         | `https://{{host}}//qualityai/api/v1/public/qualitymanagement/app/{{streamId}}` |
 | Content Type     | `application/json` |
-| Authorization    | `auth: <JWT_TOKEN>`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
+| Authorization    | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). |
 | API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |
 
 ## Header Parameters
@@ -51,9 +51,9 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
 | PARAMETER | DESCRIPTION                                                                                                             | TYPE            |
 |-----------|-------------------------------------------------------------------------------------------------------------------------|-----------------|
 | `offset`    | The number of responses the documents need to Skip. The default value is 0. For example, 10.                            | `integer`, optional|
-| startDate | Specify the start date to include records. Use the UTC-based date format:
+| `startDate` | Specify the start date to include records. Use the UTC-based date format:
 : `YYYY-MM-DDTHH24:MM:SS.NNNZ`.  For Example, `2025-12-18T11:33:12.724Z`.      | `string`, required |
-| endDate  | Specify the end date to include records. Use the UTC-based date format:
+| `endDate`  | Specify the end date to include records. Use the UTC-based date format:
 : `YYYY-MM-DDTHH24:MM:SS.NNNZ`. For Example, `2025-12-18T11:33:12.904Z`.       | `string`, required |
 | `limit`     | This sets the number of conversation records returned to the response, or the number of records to fetch is 100.                    | `integer`, optional|
 
@@ -468,7 +468,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
 
 | PARAMETER           | DESCRIPTION                                                                                           | TYPE    |
 |---------------------|-----------------------------------------------------------------------------------------------------|---------|
-| `conversationId`      | The conversation id of the record.                                                                   | `string`  |
+| `conversationId`      | The conversation ID of the record.                                                                   | `string`  |
 | `customConversationId`  | Custom identifier for the conversation (optional).                                                     | `string`  |
 | `queues`              | An array of queue objects.                                                        | `array`  |
 | `Queue ID`            | Unique identifier for the queue.                                                          | `string`  |
@@ -476,12 +476,12 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
 | `Agents`              | An array of agents who have participated in the conversation.                                                   | `string`  |
 | `Agent ID`            | Unique identifier for the agent.                                                          | `string`  |
 | `Agent Name`          | Name of the agent.                    | `string`  |
-| koreEvaluationScore  | Evaluation score for the conversation.                                                   | `number`  |
+| `koreEvaluationScore`  | Evaluation score for the conversation.                                                   | `number`  |
 | `Metrics`              | An array of metric objects.                                                        | `array`   |
 | `Metric ID`           | Unique identifier for the metric.                                                         | `string`  |
-| `Metric Name`         | Name of the metric being measured or evaluated in the conversation.                                                   | `string`  |
+| `Metric Name`         | The metric name used to measure or evaluate the conversation.                                                   | `string`  |
 | `Metric Weight`       | Weight assigned to the metric.        | `number` |
-| Metric Negative Weight  | Negative weight assigned to the metric.                                                         | `number` |
+| `Metric Negative Weight`  | Negative weight assigned to the metric.                                                         | `number` |
 | `Qualification`       | Qualification status (YES/NO/NA).                                                            | `string` |
 | `isFatalError`       | Indicates if this metric is a fatal error.                                                          | `boolean` |
 | `customConversationId`       | Custom identifier for the conversation (optional).                                                      | `string` |
