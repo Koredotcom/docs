@@ -77,7 +77,7 @@ The Add Bot feature enables seamless integration of a bot created on the platfor
 
      b. **Access Token**: Populates the field with the necessary endpoint.
 
-     c. **Webhook URL**: Enter the URL from the Bot Webhook dialog. For detailed information about webhooks, [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
+     c. **Webhook URL**: Enter the URL from the Bot Webhook dialog. For detailed information about webhooks, [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/).
      <img src="../images/add-bot.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
      d. **Bot client ID** : Enter the client identifier retrieved from the Bot Webhook dialog.
