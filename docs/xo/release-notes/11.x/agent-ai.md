@@ -59,17 +59,17 @@ This update includes only bug fixes.
 
 **Agentic Copilot Enablement for Specific Queues**
 
-Admins and supervisors can now enable Agentic Copilot apps for specific agent queues via the **Agent AI Mapping** section, allowing them to try the feature with select agents before enabling it for a larger agent base. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/agent-ai-mapping.md/#configure-agentic-copilot-apps)
+Admins and supervisors can now enable Agentic Copilot apps for specific agent queues via the **Agent AI Mapping** section, allowing them to try the feature with select agents before enabling it for a larger agent base. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/agent-ai-mapping.md#configure-agentic-copilot-apps)
 
 The Agent AI **Channel Specific Settings** > **Agentic Copilot** now includes two options: 
 
 * Enable for all agents: Enables the selected app for all queues.
 * Enable for specific queues: Enables the selected app for selected queues.  
- [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)
+ [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#agent-ai-channel-specific-settings)
 
 **Conversation Logs Display Identifiers and Sentiment Data**
 
-The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-conversation-logs.md/#identifiers)
+The Conversation Logs section now displays Session ID, Bot ID, Conversation ID, and User ID, with copy buttons. It also displays Overall Sentiment, which, when hovered over, shows the detailed user sentiment journey. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-conversation-logs.md#identifiers)
 
 <font size="4">API Enhancement</font>
 
@@ -101,7 +101,7 @@ Agent AI now supports CCAI’s real-time translation feature. Agents can switch 
 
 **Call Recording Playback Support in Agent AI**
 
-For quality monitoring, Agent AI now supports call recording playback when the **SIP Trunk** > **Record the Calls** setting is enabled. Recordings appear at the top of individual call transcripts and can be played, paused, stopped, downloaded, or replayed with adjustable speed, volume, and timestamps. You can also filter by agent or timeframe, download reports, and navigate recordings through an accordion view for easier access. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md/#voice-call-recording)
+For quality monitoring, Agent AI now supports call recording playback when the **SIP Trunk** > **Record the Calls** setting is enabled. Recordings appear at the top of individual call transcripts and can be played, paused, stopped, downloaded, or replayed with adjustable speed, volume, and timestamps. You can also filter by agent or timeframe, download reports, and navigate recordings through an accordion view for easier access. [Learn more :octicons-arrow-right-24:](./../../analytics/contact-center/agentai-conversation-logs.md#voice-call-recording)
 
 <font size="4">Integration Enhancement</font>
 
@@ -135,7 +135,7 @@ The Overall Widget Feedback feature allows admins to configure feedback options 
 * Display or hide an additional comment box.  
 [Learn more :octicons-arrow-right-24:](../../agentai/configuration/feedback-settings.md) 
 
-Enhanced Dashboard: The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-dashboard.md/#overall-widget-feedback)
+Enhanced Dashboard: The **Dashboard** > **Overall Widget Feedback** section displays feedback metrics submitted by agents. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/agentai-dashboard.md#overall-widget-feedback)
 
 **Dialog Queue Feature Mapping**
 
@@ -176,11 +176,11 @@ This update includes only bug fixes.
 
 **Agentic Copilot Auto-Send functionality now Supports Multiple Parallel Chats**
 
-The Auto-Send functionality now supports multiple parallel chats. The updated communication mechanism enables Agentic Copilot to auto-send responses, regardless of the active UI frame. It resolves disruptions caused by widget reloads when agents switch between customers, ensuring uninterrupted support across multiple conversations. [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)
+The Auto-Send functionality now supports multiple parallel chats. The updated communication mechanism enables Agentic Copilot to auto-send responses, regardless of the active UI frame. It resolves disruptions caused by widget reloads when agents switch between customers, ensuring uninterrupted support across multiple conversations. [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md#assist-tab)
 
 **Enhanced Dialog Task Grouping**
 
-When grouping Dialog Tasks, the Group Name field now supports up to 100 characters, and a character counter displays the number of characters entered as you type. The widget retains the expanded or collapsed state of a group, as configured during the last save. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md/#edit-expand-collapse-or-delete-a-dialog-task-group) 
+When grouping Dialog Tasks, the Group Name field now supports up to 100 characters, and a character counter displays the number of characters entered as you type. The widget retains the expanded or collapsed state of a group, as configured during the last save. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md#edit-expand-collapse-or-delete-a-dialog-task-group) 
 
 **Exit Events Support Agentic App Configuration**
 
@@ -188,7 +188,7 @@ The Exit Events tab now includes the **Configure End of Conversation Agentic App
 
 * Use the same app as Agentic Copilot: Select this option if you want to use the same app configured for Agentic Copilot.
 * Select a different Agentic App: Select this option to get a dropdown list of available Agentic Apps, excluding the one used by Agentic Copilot. 
-[Learn more :octicons-arrow-right-24:](../../agentai/configuration/conversation-events.md/#configure-end-of-conversation-agentic-app)  
+[Learn more :octicons-arrow-right-24:](../../agentai/configuration/conversation-events.md#configure-end-of-conversation-agentic-app)  
 
 **Introduction of Widget Search Bar Configuration Toggle**
 
@@ -198,7 +198,7 @@ The Agent AI Channel Specific Settings section now includes the Widget Search Ba
 * Search AI: Get search results or answers from the Search AI app.
 * Agentic App (LLM): Powers search results through a customizable Agentic App.
 
-When the toggle is disabled, the widget uses the default search behavior. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings) 
+When the toggle is disabled, the widget uses the default search behavior. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#agent-ai-channel-specific-settings) 
 
 <font size="4">Widget Runtime Enhancement</font>
 
@@ -245,7 +245,7 @@ Configuration Updates:
 * On the Agentic Configurations > App Information page:  
     * The Agentic App Name field now has a 50-character limit.   
     * The App ID of the Agentic Platform is now renamed to App ID.  
-    * The X-Api Key has been renamed to API Key.  [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#agentic-configurations)  
+    * The X-Api Key has been renamed to API Key.  [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md#agentic-configurations)  
 
 Runtime Updates:  
 
@@ -254,7 +254,7 @@ Runtime Updates:
 * When multiple Agentic responses are generated with the ‘Allow auto send Message’ option enabled:  
     * The timer for each message starts only after the previous message is sent.  
     * If the view does not auto-scroll to the latest message, an arrow icon appears in the bottom-right corner, indicating the number of Agentic messages stacked below.  
-* To regenerate a failed response, double-click the corresponding customer message.  [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)  
+* To regenerate a failed response, double-click the corresponding customer message.  [Learn more :octicons-arrow-right-24:](../../agentai/agent-experience/agent-assist-widget-v3.md#assist-tab)  
 
 <a id="V3-Features-to-SDK"></a>
 
@@ -274,7 +274,7 @@ Agent-to-agent call transfers now limit transcript visibility to the current age
 The **Control Transcript Visibility between Agents** widget offers two options:  
 
 * Use public APIs to control transcription via the [Control Transcription API](./../../apis/agent-ai/control-transcription-api.md){:target="_blank"} or  
-* Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits). [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)  
+* Use the agent’s entry and exit events (transcript visible upon agent entry, excluding prior conversations after previous agent exits). [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md#agent-ai-channel-specific-settings)  
 
 <a id="Custom-Disposition-Summary-Generation"></a>
 
@@ -325,7 +325,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Agentic Copilot in the Agent AI Widget**
 
-The Agentic Copilot feature lets you configure an Agentic app that autonomously manages end-to-end customer interactions. At runtime, agents can edit or override the app’s suggestions and enter their own content. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#assist-tab)
+The Agentic Copilot feature lets you configure an Agentic app that autonomously manages end-to-end customer interactions. At runtime, agents can edit or override the app’s suggestions and enter their own content. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md#assist-tab)
 
 **Configuration of Agentic Apps**
 
@@ -371,7 +371,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Kore Agent AI Integration with NICE MAX Desktop for Outbound Calls**
 
-The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agentai/agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agentai/agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agentai/agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
+The Agent AI integration with NICE MAX Desktop now supports outbound calls. The integration enables key Agent AI features such as Automation, [Agent Coaching](./../../agentai/agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agentai/agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](./../../agentai/agent-experience/agent-assist-widget-v3.md), [Transcription](./../../agentai/agent-experience/agent-assist-widget-v3.md#transcript-tab){:target="_blank"}, end-of-call summary, and Custom Data passing (for example, agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md)
 
 **AgentAssist Widget Now Receives Real-Time Updates through Genesys Middleware**
 
@@ -389,7 +389,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Custom Tab in the Agent AI widget**
 
-This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#widget-menu-layout)
+This feature lets admins and supervisors create a custom tab within the Agent AI widget. The tab can be configured to run a dialog task automatically based on selected events or highlight a task for agents to view and execute manually. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md#widget-menu-layout)
 
 **Introduction of Conversation Events and Automatic Dialog Task Execution on End-of-Conversation Trigger**
 
@@ -404,7 +404,7 @@ In the **Agent AI** > **Configuration** section, "Welcome Events" is renamed to 
 
 **Improved Search Functionality in Library**
 
-Search functionality automatically updates the library list to match the search query. The library displays relevant words and phrases as agents type in real time. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab)
+Search functionality automatically updates the library list to match the search query. The library displays relevant words and phrases as agents type in real time. [Learn more :octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md#search-tab)
 
 <font size="4">Integration Enhancements</font>
 
@@ -506,7 +506,7 @@ This update has introduced a service node and a new tag-based approach to genera
 
 **Search AI Timeout Configuration and Runtime Error**
 
-The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md/#timeout-server-errors-and-no-search-results)
+The Search tab in the Agent AI widget now displays a timeout error message for searches exceeding 10 seconds. [Learn more:octicons-arrow-right-24:](./../../agentai/agent-experience/agent-assist-widget-v3.md#timeout-server-errors-and-no-search-results)
 
 **API Call Notification for Dialog Tasks**
 
@@ -529,11 +529,11 @@ To enhance the management and customization of dialog tasks within the widget, K
 !!! note
 
     Dialog tasks not added to a group don’t appear at runtime. 
-[Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#dialog-task-layout)
+[Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md#dialog-task-layout)
 
 **Interactive Language (App Language) option for Widget**
 
-Kore has included a new option, **Interactive Language**, in the **Default Language for Agent AI Widget** drop-down list. Selecting this option adjusts the widget's localized text language to match the app's language. [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md/#steps-to-set-agent-ai-general-settings) 
+Kore has included a new option, **Interactive Language**, in the **Default Language for Agent AI Widget** drop-down list. Selecting this option adjusts the widget's localized text language to match the app's language. [Learn more:octicons-arrow-right-24:](./../../agentai/configuration/widget-settings.md#steps-to-set-agent-ai-general-settings) 
 
 <font size="4">Integration Enhancements</font>
 
@@ -589,11 +589,11 @@ Genesys Middleware has been enhanced to support Base64-encoded values when passi
 
 **Enhanced Salesforce Package includes Language Parameter**
 
-The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md/#set-up-the-agentassist-configuration)
+The Salesforce package now includes a language parameter to support AgentAssist's multi-language capability. During installation, users select a language that sets the *interactive_language* parameter (e.g., interactive_language=Spanish), which is sent to AgentAssist to conduct all interactions (for example, welcome messages, task running, sentiment analysis) in the selected language. [Learn more:octicons-arrow-right-24:](../../agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md#set-up-the-agentassist-configuration)
 
 **Multi-bot Support for Agent AI Integration with ServiceNow**
 
-Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md/#multibot-solution-with-servicenow)
+Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md#multibot-solution-with-servicenow)
 
 <hr>
 

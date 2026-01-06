@@ -20,9 +20,9 @@ The following sections describe how to set up case management, enable features, 
 
     * **Default or Custom:** Use default queues or customize your setup as per your requirements.
 
-    * **Configure:** Set up agent skills for proper case routing (optional). [Learn more](../user-management/manage-users.md/#skills){:target="_blank"}. 
+    * **Configure:** Set up agent skills for proper case routing (optional). [Learn more](../user-management/manage-users.md#skills){:target="_blank"}. 
     
-    * **Customize:** Adjust operation hours to match your business schedule (for example, weekday hours or 24/7 hours of operation). [Learn more](../contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md/#hours-of-operation){:target="_blank"}.
+    * **Customize:** Adjust operation hours to match your business schedule (for example, weekday hours or 24/7 hours of operation). [Learn more](../contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md#hours-of-operation){:target="_blank"}.
 
 4. **Add Channels** 
 
@@ -109,7 +109,7 @@ The following sections describe how to set up case management, enable features, 
 
     * **Automation Failure**: When automation fails, the system routes the conversation to Agent 1 or Agent 2.
 
-        * **Case Creation**: When Agent 1 creates a case, the system assigns it to Agent 3 or Agent 4. For more information, see [Learn more](../case-management/agent-console.md/#create-a-new-case).
+        * **Case Creation**: When Agent 1 creates a case, the system assigns it to Agent 3 or Agent 4. For more information, see [Learn more](../case-management/agent-console.md#create-a-new-case).
 
         * **Case Handling**: Agent 1 can close the conversation while the case remains open for the assigned agent to take further action.
 
@@ -117,9 +117,9 @@ The following sections describe how to set up case management, enable features, 
 
     Configure the following access controls (user management and role settings):
 
-    * **[Manage Users](../user-management//manage-users.md/#manage-users){:target="_blank"}**
+    * **[Manage Users](../user-management//manage-users.md#manage-users){:target="_blank"}**
 
-    * **[User Attributes](../user-management//manage-users.md/#attributes){:target="_blank"}**
+    * **[User Attributes](../user-management//manage-users.md#attributes){:target="_blank"}**
 
 13. **Configure case handling capacity and language settings**
 

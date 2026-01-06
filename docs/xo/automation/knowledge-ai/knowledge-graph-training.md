@@ -24,9 +24,9 @@ You can find the Knowledge Graph by selecting your desired App, then going to **
 
     4. You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.
     
-See the [Knowledge Graph Types Comparison Table](../knowledge-ai/knowledge-graph-overview.md/#compare-knowledge-graph-types){:target="_blank"} for a detailed list of supported features.
+See the [Knowledge Graph Types Comparison Table](../knowledge-ai/knowledge-graph-overview.md#compare-knowledge-graph-types){:target="_blank"} for a detailed list of supported features.
 
-Also, [Training Configurations](../knowledge-ai/knowledge-graph-training.md/#training-configuration){:target="_blank"} for training setup details.
+Also, [Training Configurations](../knowledge-ai/knowledge-graph-training.md#training-configuration){:target="_blank"} for training setup details.
 
 ## Knowledge Graph Engine Capabilities
 
@@ -35,7 +35,7 @@ The following are the overall capabilities of the Knowledge Graph Engine:
 * **Ease of Training using Synonyms**: Kore.ai’s Knowledge Graph has a provision to associate synonyms against a graph node. This helps capture the variation in a question. For example, *flight* can be used as a synonym for *plane* in an FAQ such as *How can I buy a plane ticket*?
 * **Better Coverage with Alternate Questions**: The Knowledge Graph has a provision to add alternate questions. This helps us to capture the various ways a user might ask the same question. For example, in *How do I change my flight?* we can add an alternate question as *Can I change my flight?*
 * **Improved Accuracy**: Ontology-driven question-answers reduce the possibility of false positives.
-* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. [Learn more](../knowledge-ai/knowledge-graph-terminology.md/#traits){:target="_blank"}.
+* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. [Learn more](../knowledge-ai/knowledge-graph-terminology.md#traits){:target="_blank"}.
 * **Ability to Mark Term Importance**: The Knowledge Graph has a provision to mark that an ontology term is important. For example, in the question, *How to book a flight?*, the word *flight* is an important term. If the *flight* keyword is not present in the user utterance, then it makes little sense.
 * **Ability to Group Relevant Nodes**: As the graph grows in size, managing graph nodes can become a challenging task. Using the *organizer node* construct of the ontology engine, developers can group relevant child nodes under a parent node.
 
@@ -74,7 +74,7 @@ From the Knowledge Graph, follow these steps to build and train the correspondin
 
 ## Training Configuration
 
-This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read [this](../knowledge-ai/knowledge-graph-overview.md/#the-ontology-knowledge-graph){:target="_blank"} article.
+This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read [this](../knowledge-ai/knowledge-graph-overview.md#the-ontology-knowledge-graph){:target="_blank"} article.
 
 In order to configure the training of your Knowledge Graph for improved AI Agent performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:
 
