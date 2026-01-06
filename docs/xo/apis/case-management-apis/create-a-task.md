@@ -183,12 +183,12 @@ curl --location 'https://{{host}}/caseManagement/api/public/analytics/{{streamId
     "attachments": [],
     "feedback": [],
     "createdBy": {
-        "name": "hi hi",
+        "name": "John Doe",
         "_id": "u-9471a3c6-d950-5720-a812-fbc1ac9fxxxx",
         "profImage": "no-avatar"
     },
     "updatedBy": {
-        "name": "hi hi",
+        "name": "John Doe",
         "_id": "u-9471a3c6-d950-5720-a812-fbc1ac9fxxxx",
         "profImage": "no-avatar"
     },
