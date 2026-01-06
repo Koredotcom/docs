@@ -377,11 +377,11 @@ To clear the filter settings, click **Clear All**.
 
 ### Add Multiple Filters
 
-Adding multiple filter levels enhances model trace visibility on the UI. You can combine column, operator, and value filters using the AND or OR operators for targeted data, allowing you to focus on the model trace entries most relevant to your needs. [Learn more](../audit-logs.md/#add-multiple-filters){:target="_blank"}.
+Adding multiple filter levels enhances model trace visibility on the UI. You can combine column, operator, and value filters using the AND/OR operators for targeted data, allowing you to focus on the model trace entries most relevant to your needs. [Learn more](../audit-logs.md/#add-multiple-filters){:target="_blank"}.
 
 **Important**
 
-* AND and OR operators cannot be combined in multiple filtering steps to set filter criteria, ensuring consistent operator usage for each filtering step.
+* AND/OR operators cannot be combined in multiple filtering steps to set filter criteria, ensuring consistent operator usage for each filtering step.
 * Using the AND operator ensures that all specified conditions must be met for an entry to be included in the results.
 * On the other hand, using the OR operator broadens the criteria, allowing entries that meet any of the specified conditions to be included. These operators provide flexibility in tailoring your model traces data.
 * Click the **Delete** icon to delete a filter criteria step.

@@ -295,7 +295,7 @@ The UI displays all the relevant run and log records that align with the applied
 
 ### Multiple Filters
 
-Users can combine filters using AND/OR operators for multi-level filtering. Note that AND and OR operators cannot be mixed in the same filter set. [Learn more](../monitoring/audit-logs.md/#add-multiple-filters){:target="_blank"} about using multiple filters.
+Users can combine filters using AND/OR operators for multi-level filtering. Note that AND/OR operators cannot be mixed in the same filter set. [Learn more](../monitoring/audit-logs.md/#add-multiple-filters){:target="_blank"} about using multiple filters.
 
 ## Record View
 
