@@ -6,7 +6,7 @@ The Raw Data API now provides detailed Quality AI and Conversation Intelligence 
 
 | **METHOD**     | **POST**                                                                                                                                       |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Endpoint       |`https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata`|
+| Endpoint       |<`https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata>`|
 | Content Type     | `application/json` |
 | Authorization    | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token). 
 | API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |                                                                    || API Scope        | Quality AI<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |                                                                    |
@@ -16,10 +16,10 @@ The Raw Data API now provides detailed Quality AI and Conversation Intelligence 
 
 | **PARAMETER** | **DESCRIPTION**                                                                 | **OPTIONAL/REQUIRED**          |
 |---------------|----------------------------------------------------------------------------------|-------------------|
-| `Content-Type`        | `application/json`| required |
-| `accountId`   | The Account Id. For example, `67a9ca06cf0e510a8632xxxx`                         | required |
-| `orgId`   | The unique identifier of the organization.                         | required |
-| `auth`   | JWT token used for authentication.                         |required |
+| `Content-Type`        | `application/json`| `string`, required |
+| `accountId`   | The Account ID. For example, `67a9ca06cf0e510a8632xxxx`                         | `string`, required |
+| `orgId`   | The unique identifier of the organization.                         | `string`, required | 
+| `auth`   | JWT token used for authentication.                         |`string`, required |
 
 
 ## Path Parameters
@@ -56,7 +56,7 @@ curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{acc
 | `offset` | The number of responses the documents need to skip before starting to return results. The default value is 0. For example, 10. | `integer`, required |
 | `startDate` | Specify the start date to include records. Use the UTC-based date format: <br>`YYYY-MM-DDTHH24:MM:SS.NNNZ`<br>For example: `2025-12-18T11:31:14.722Z` | `string`, required |
 | `endDate` | Specify the end date to include records. Use the UTC-based date format: <br>`YYYY-MM-DDTHH24:MM:SS.NNNZ`<br>For example: `2025-12-18T11:33:12.904Z` | `string`, required |
-| `limit` | This sets the number of conversation records returned to the response or the number of records to fetch is 10.  | `integer`, optional |
+| `limit` | This sets the number of conversation records returned to the response, or the number of records to fetch is 10.  | `integer`, optional |
 | `page` | Indicates the number of pages in the response; it's used for pagination. The default value is 1. | `integer`, optional |
 
 ## Sample Response	
@@ -990,8 +990,8 @@ curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{acc
 | Sentiment Score         | Sentiment score detected for the conversation (for example, positive, neutral, negative, or numeric score).                                                 | string   |
 | Queues                  | Queue details for the conversation.                       | string   |
 | Queue ID                | Queue ID of the conversation.                             | string   |
-| Queue Name              | Queue name assigned to the conversation.                  | string   |
-| Agents                  | Array of agents who participated in the conversation.     | string   |
+| Queue Name              | The system assigns the queue name to the conversation.    | string   |
+| Agents                  | An array of agents participated in the conversation.     | string   |
 | agentId                 | Agent ID of the conversation.                             | string   |
 | Agent Name              | Names of agents who participated in the conversation.     | string   |
 | Agent Start Time        | Timestamp when the agent joined the interaction.          | string   |
@@ -1017,9 +1017,9 @@ curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{acc
 | Agent emotions          | Emotions detected specifically from the agent’s speech or messages during the conversation, with emotion type and intensity/score.                       | array  |
 | Sentiment Ratio         | Sentiment distribution across the conversation.           | object   |
 | positive                | Percentage of positive sentiment.                         | boolean  |
-| neutral                 | Detected emotion type. neutral indicates emotionally balanced or calm interaction.                                                                          | string  |
+| neutral                 | Detected emotion type. Neutral indicates emotionally balanced or calm interaction.                                                                          | string  |
 | negative                | Percentage of negative sentiment.                         | boolean  |
-| Metrics                 | Array of evaluation metrics used for scoring.             | array    |
+| Metrics                 | The system uses an array of evaluation metrics for scoring.                                                                              | array    |
 | Metric ID               | Identifier for the metric.                                | string   |
 | Metric Name             | Name of the metric.                                       | string   |
 | Metric Weight           | Weightage for meeting the metric.                         | integer  |
@@ -1029,7 +1029,7 @@ curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{acc
 | triggerJustification    | Trigger-based justifications.                             | array    |
 | justification           | Evaluator-provided justifications.                        | array    |
 | message_id              | Unique identifier of an individual message within a conversation (agent or customer message).                                                          | string    |
-| timestamp               | Date and time when the event or message was recorded by the system.                                                                               | string    |
+| timestamp               | The system recorded the date and time of the event or message.                                                                              | string    |
 | Pass Score              | Minimum score required to pass.                           | integer  |
 | IsPassed                | Indicates whether the conversation passed.                | boolean  |
 | totalResults            | Total number of records available for the query.          | integer  |
@@ -1039,5 +1039,5 @@ curl --location 'https://{{host}}//api/v1/public/QualityManagement/account/{{acc
 | Customer talk ratio percentage     | Percentage of total conversation time during which the customer was speaking.                                                                | integer  |
 | Agent talk ratio percentage       | Score indicating the frequency or impact of crutch (filler) words used by the agent during the conversation.                                                 | float  |
 | Agent talk ratio percentage       | Percentage of total conversation time during which the agent was speaking.                                                                         | float  |
-| Silence percentage       | Percentage of the total conversation duration where no participant was speaking.                                                                         | float  |
+| Silence percentage       | The percentage of the total conversation duration during which no participant was speaking.                                                                             | float  |
 
