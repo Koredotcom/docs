@@ -178,6 +178,7 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
      * Select the required **hardware** for the deployment. The unit is **No. of vCPUs with memory**. The profiles are virtualized for standardization. The available profiles are listed below:
 
          <table>
+
   <tr>
    <td><strong>Hardware configuration</strong>
    </td>

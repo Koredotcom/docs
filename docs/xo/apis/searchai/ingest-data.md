@@ -8,19 +8,19 @@ This API allows you to ingest and index data into the SearchAI application. You 
 
 * To ingest content from a file, use the **Upload File API** to upload your file to the application.
 * After uploading, include the `fileId` from the **Upload File API** response in the **Ingest API** to process the file content.
-* Currently, only uploading of PDF, docx, ppt or txt is supported. If any other type of file is sent for ingestion, the API throws error. 
+* This API supports upload of files in the following formats: PDF, docx, ppt or txt. If any other type of file is uploaded for ingestion, the API throws error. 
 
 ## Ingesting Structured Data
 
 * To ingest structured data, add the content to the body of the request object in the API. Ensure that the data corresponds to the **Chunk Fields** listed in the table below.
 * **File Structure**: The JSON file must adhere to a specific structure for SearchAI to interpret the data correctly:
     * The **file name** is used as the `recordTitle`.
-    * The JSON file should consist of an **array of objects**, where each object represents a chunk of data.
+    * The JSON file must consist of an **array of objects**, where each object represents a chunk of data.
     * The fields in each chunk must correspond to the chunk fields listed in the table below.
 
 ## Crawling Web Pages
 
-* This API can be used for incremental web crawling. The API will add the ingested content corresponding to an existing web source in Search AI. 
+* This API can be used for incremental web crawling. It adds the ingested content corresponding to an existing web source in Search AI. 
     * The sourceName in the API must match the Source Title for the web domain added in Search AI. 
     * Set the sourceType as “web”.
     * Provide the URLs of the pages to be crawled in the URLs array under the documents field. 
@@ -129,24 +129,43 @@ This API allows you to ingest and index data into the SearchAI application. You 
    <td>This can take the following values:
 <ul>
 
-<li>“json” - to upload structured data in the form of chunk fields , sent via the request object. When sourceType is json, even if file ID is present it will not be considered</li>
+<li>“json” - to upload structured data in the form of chunk fields , sent via the request object. When sourceType is json, even if file ID is present it's ignored.</li>
 
-<li>“file” - to upload documents based on file ID. When sourceType is file only file ID is considered. If chunk payload is present it will be ignored. </li>
+<li>“file” - to upload documents based on file ID. When sourceType is file only file ID is considered. If chunk payload is present it is ignored. </li>
 <li>“web” - to crawl web pages using the URLs provided in the payload. </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td>documents
+    <td>documents</td>
+   <td>Yes</td>
+   <td>
+   <p>Depending upon the value of the sourceType, this field can be used for:</p>
+<ol>
+<li>Passing the chunks fields in JSON format..</li>
+<li>Passing the details of the file uploaded for ingestion.&nbsp;</li>
+<li>Passing the web URLs to be crawled.</li>
+</ol>
+<ul>
+<li>When sourceType is `json`, use documents to pass structured content directly in the request. Each document object can include a <em>title</em>and a <em>chunks</em>array. Each item in the chunks array must map exactly to the configured chunk fields (for example, <em>chunkText</em><em>, </em><em>chunkTitle</em><em>, </em><em>recordUrl</em>).</li>
+<li>When sourceType is `<em>web</em>`, use documents to provide web URLs to be crawled. Each document object must contain a urls array with one or more web page URLs. The system crawls all provided URLs according to the source's crawl configuration. Previously crawled URLs are re-crawled, and new URLs are crawled if permitted by the source settings.</li>
+<li>When sourceType is &lsquo;<em>file</em>`, use documents to reference uploaded files using their <em>fileId</em>. Each object in the documents array represents a single file and must include a valid <em>fileId</em>. Supported fields for each document object include:
+<ul>
+<li><em>fileId</em> (required): Unique identifier of the uploaded file.</li>
+<li><em>fileName</em>(optional): Name of the file for reference or display purposes.</li>
+<li><em>permissions</em>(optional): Defines access control for the file.
+<ul>
+<li><em>allowedUsers</em>: List of user identifiers allowed to access the content.</li>
+<li><em>allowedGroups</em>: List of groups whose members are allowed to access the content. These groups are saved as permission entities.&nbsp;</li>
+</ul>
+</li>
+<li><em>category</em>(optional): Logical grouping or classification for the file. This is added as metadata of the file.&nbsp;</li>
+<li><em>priority</em>(optional): Indicates content priority (for example, high, medium, low). This field does not affect the ingestion process in Search AI. If the priority is set, this field is available as metadata of the content.</li>
+</ul>
+</li>
+</ul>
+
    </td>
-   <td>Yes
-   </td>
-   <td>Depending upon the  value of the sourceType, this field can be used for:
-   <ol>
-    <li> Passing the chunks fields in JSON format. </li>
-    <li> Passing the reference of the file containing the chunk fields in JSON format. </li> 
-    <li> Passing the web URLs to be crawled.</li>
-   </ol></td>
   </tr>
 </table>
 
@@ -202,20 +221,21 @@ Note that the URLs field should point to the list of URLs that need to be crawle
 
 ```json
 {
-“sourceName”: “Abc”,  
-“sourceType” : “file”, 
+“sourceName”: “Abc”, 
+“sourceType”: “file”,
 “documents”: [
-
       {
-
-         "fileId": "f12455"
-
+         "fileId": "f12455",
+         "permissions": {
+	   "allowedUsers": ["john@example.com", "jane@example.com"],
+                "allowedGroups": ["Engineering", "Management"]
+           },
       }
-
   ]
+
 }
 ```
 
 where, fileId is the unique identifier of the uploaded file.
 
-Use the [Upload File API](../automation/upload-file.md) to upload the file to the application. This API will return the fileId in response, which should be used in the Ingest API to ingest and index the content of the file. 
+Use the [Upload File API](../automation/upload-file.md) to upload the file to the application. This API returns the fileId in response. Pass that fileId in the Ingest API to ingest and index the contents of the file. 

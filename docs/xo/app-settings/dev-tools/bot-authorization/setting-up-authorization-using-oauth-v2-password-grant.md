@@ -1,3 +1,5 @@
+[Back to Authorization :octicons-arrow-right-24:](bot-authentication.md)
+
 # Setting Up Authorization using oAuth v2 password grant
 
 OAuth v2 is the new version of the open protocol to allow secure authorization in a standardized manner from web, mobile, and desktop applications. 

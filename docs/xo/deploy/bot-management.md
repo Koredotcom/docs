@@ -23,7 +23,7 @@ You can import tasks and configurations of a specific agent into a new or existi
 
         We strongly recommend you exercise caution and take a backup of the target agent before importing using this option. 
 
-* **Incremental import**: Upgrades the current agent with the configurations available in the import file. The system retains any additional configurations available in the target or imported agent.. You can select specific agent components to import from the agent tasks, NLP data, and agent settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported agent items replace the target agent’s items in incremental import.
+* **Incremental import**: Upgrades the current agent with the configurations available in the import file. The system retains any additional configurations available in the target or imported agent. You can select specific agent components to import from the agent tasks, NLP data, and agent settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported agent items replace the target agent’s items in incremental import.
 
 **Before you Begin** The _config.json_ file consists of variables that need values for the target agent. Share the file with the relevant developers or enter suitable values yourself for the variables before importing the agent definition into a new AI Agent.
 

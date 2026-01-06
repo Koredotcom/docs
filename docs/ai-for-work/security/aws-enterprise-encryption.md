@@ -7,12 +7,16 @@ For detailed guidance on AWS KMS, refer to the [AWS KMS Developer Guide](https:/
 
 ## Prerequisites
 
-We will provide you with:
+Information pre-populated in the interface:
+
+When you initiate the BYOK setup in the admin console, the following values are automatically displayed and available for you to copy:
 
 * **Service Role ARN**: `arn:aws:iam::<account-id>:role/<role-name>` (required to configure the IAM role trust policy).
 * **External ID**: A unique value that you add to your IAM role trust policy to securely allow our service to assume the role in your AWS BYOK setup.
 
-You will provide us with:
+These pre-populated values ensure secure and accurate configuration of your IAM role.
+
+Information you need to provide:
 
 * **Role ARN**: The ARN of the IAM role you create (e.g., `arn:aws:iam::<your-account-id>:role/<role-name>`).
 * **CMK ARN**: The ARN of your KMS Customer Managed Key (e.g.,`arn:aws:kms:<region>:<your-account-id>:key/<key-id>`).
@@ -128,9 +132,7 @@ aws kms describe-key \
 
 ## Step 5: Service-Side Configuration
 
-!!! note
-
-    Customer or account admin should reach out to the Support team to complete this step.
+Contact [Kore.ai support](https://support.kore.ai/) to complete this step.
 
 After you share your **Role ARN** with us, we configure our AWS account to assume the role and securely access your **KMS CMK** for BYOK. Once this is done, the BYOK configuration and test will work successfully.
 
@@ -139,7 +141,7 @@ After you share your **Role ARN** with us, we configure our AWS account to assum
 
 Provide the team with the following details to complete the integration:
 
-* Your **CMK ARN** from step 1 (e.g., `arn:aws:kms:<region>:account-id>:key/<key-id>`)
-* Your **Role ARN** from step 2 (e.g., `arn:aws:iam::<account-id>:role/<role-name>`)
+* Your **CMK ARN** from step 1 (e.g., `arn:aws:kms:<region>:account-id>:key/<key-id>`).
+* Your **Role ARN** from step 2 (e.g., `arn:aws:iam::<account-id>:role/<role-name>`).
 
 These steps ensure the application can securely access your CMK for BYOK functionality while maintaining the highest security standards.

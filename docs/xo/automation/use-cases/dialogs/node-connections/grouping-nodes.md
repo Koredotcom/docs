@@ -2,14 +2,14 @@
 
 Node groups are primarily used for defining a group of nodes. Note that it is not a part of the dialog flow.  
 
-[Refer here](../using-the-dialog-builder-tool.md#node-groups){:target="_blank"} for advantages of grouping nodes in a sequence.
+[Refer here](../navigating-dialog-tasks.md#manage-node-groups){:target="_blank"} for advantages of grouping nodes in a sequence.
 
 ## Add a Node Group
 
 To add a node group to the dialog task, follow the below steps:
 
 1. **Open the Dialog Task** where you want to add the Group node.
-2. **Group the nodes**. For steps in grouping nodes, [refer here](../using-the-dialog-builder-tool.md#node-groups){:target="_blank"}.
+2. **Group the nodes**. For steps in grouping nodes, [refer here](../navigating-dialog-tasks.md#manage-node-groups){:target="_blank"}.
 3. You can add or remove nodes, edit and delete the group as per your need any time.
 
 

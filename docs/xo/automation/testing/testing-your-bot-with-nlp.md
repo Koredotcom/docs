@@ -76,7 +76,7 @@ During testing of the app, the matched entities are displayed. The entities from
 Post v. 8.0 of the Platform, the details of how the entity is matched, and with what confidence scores are also displayed. The details include:
 
 * **Identification Engine** – Machine Learning, Fundamental Meaning or Knowledge Graph;
-* **Training Type** – match can be from NER, pattern training, entity name, system concept, etc.. In case of pattern match, click the row to get the details for the same;
+* **Training Type** – match can be from NER, pattern training, entity name, system concept, etc. In case of pattern match, click the row to get the details for the same;
 * **Confidence Score** identified by the ML engine using NER training (only when Conditional Random Field is selected as the NER model) 
 
 <img src="../images/utterance-testing-5.png" alt="Entity Match" title="Entity Match" style="border: 1px solid gray; zoom:50%;"/>
