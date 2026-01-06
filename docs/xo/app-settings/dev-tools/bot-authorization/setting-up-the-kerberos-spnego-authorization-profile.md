@@ -3,7 +3,7 @@
 # Setting Up the Kerberos SPNEGO Authorization Profile
 
 
-## Overview
+
 
 The XO Platform offers Kerberos SPNEGO-based authentication mechanism for enterprise users to use Kerberos authentication flow to securely connect with their internal applications using Kerberos SPNEGO security protocol.
 
