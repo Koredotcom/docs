@@ -6,7 +6,7 @@ hide:
 
 # AI for Service (XO)
 
-AI for Service is an enterprise-grade foundation for building AI Agents at scale to transform customer service operations through intelligent automation, agent augmentation, and personalized customer engagement. The platform deploys Agentic AI capabilities across the service lifecycle from self-service interactions to agent assistance to proactive outreach, enabling organizations to scale service operations while improving both customer satisfaction and operational efficiency.
+AI for Service is an enterprise-grade foundation for building AI Agents at scale to transform customer service operations through intelligent automation, agent augmentation, and personalized customer engagement. The platform deploys Agentic AI capabilities across the service lifecycle—from self-service interactions to agent assistance to proactive outreach—enabling organizations to scale service operations while improving both customer satisfaction and operational efficiency.
 
 The platform also provides a flexible approach, enabling organizations to strategically combine deterministic workflows for regulated or compliance-critical operations with agentic capabilities for flexible, natural conversation handling. 
 
