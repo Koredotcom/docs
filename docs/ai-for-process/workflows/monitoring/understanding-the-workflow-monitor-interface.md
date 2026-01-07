@@ -24,14 +24,10 @@ The All runs tab provides the following information for each workflow run:
 * **Nodes executed**: The total number of nodes executed in the run.
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
-* **Source**: Based on whether the workflow was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
-    * **Agentic App** - The name of the Agentic App used to run the workflow.
-    * **API Key**: The API key name used to execute the workflow. (This is the name provided in the API keys page when you created a new API key. If you didn't provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single workflow).
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When there is a nested (multi-level) tool calling, the immediate tool (parent) is displayed as the source.</p>
-</div>
+* **Type**: Indicates the category of the trigger such as Event-based, Schedule-based, or API-based.
+* **Source**: Indicates where the workflow was triggered. For example:
+    * Event-based sources: The provider or service that triggered the workflow (e.g., Gmail). 
+    * Schedule-based sources: Time-based triggers configured to run at specific intervals.
 
 You can also see the following metrics on the top of the page: 
 
@@ -59,6 +55,7 @@ The Model runs tab provides the following information for each AI node call:
     * **Failed**: The request wasn't completed successfully.
 * **Node name**: The name of the AI node.
 * **Model name**: The model that's used for the AI node.
+* **Connection or Deployment name**: The connection or deployment associated with the model. 
 * **Response time**: The amount of time taken by the AI node to complete the request.
 * **Start time**: The time when the AI node has started its execution.
 * **End time**: The time when the AI node has completed its execution.

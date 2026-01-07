@@ -10,10 +10,8 @@
     *  **All Runs**: Comprehensive data on all workflow instances, offering a holistic view of endpoint interactions.
     *  **Model Runs**: Focused analytics on AI node executions, providing deeper insights into language model performance.
 *  **Detailed Metrics**: Access critical performance indicators, including total runs, average response times (P90 and P99), and failure rates, allowing for precise performance tuning.
-*  **API Key Usage Monitoring**: Track and manage the utilization of API keys across your workflow ecosystem.
-*  **AI Node Analysis**: Gain specific insights into the performance of individual AI nodes within your workflows.
-*  **Advanced Filtering and Search**: Use time-based searches and custom filters to drill down into specific scenarios or periods.
-*  **Detailed Run Information**: Access comprehensive logs and debug information for each workflow run, facilitating efficient troubleshooting and optimization.
+* **Triggers overview**: View and monitor event-based and schedule-based triggers for each workflow.
+* **Source information**: Identify what initiated each workflow run, such as a service or time-based trigger.
 
 ## Best Practices
 
