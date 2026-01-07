@@ -58,7 +58,7 @@ Use the following options to configure the use of Search AI.
 * Search AI first, Automation as Fallback:
     The AI Agent first uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the agent uses the automation framework to handle the user inputs.
 
-**Use Search AI for Unrecognized Inputs During Dialogs**: This option enhances the AI agent's ability to handle diverse user inputs during Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog.
+**Use Search AI for Unrecognized Inputs During Dialogs**: This option enhances the AI Agent's ability to handle diverse user inputs during Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog.
 
 !!!note
     The fallback method should be chosen carefully, considering the nature of the queries and the desired user experience.

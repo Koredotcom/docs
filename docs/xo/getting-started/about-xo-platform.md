@@ -6,9 +6,9 @@ hide:
 
 # AI for Service (XO)
 
-AI for Service (XO) helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
+AI for Service is an enterprise-grade foundation for building AI Agents at scale to transform customer service operations through intelligent automation, agent augmentation, and personalized customer engagement. The platform deploys Agentic AI capabilities across the service lifecycle from self-service interactions to agent assistance to proactive outreach, enabling organizations to scale service operations while improving both customer satisfaction and operational efficiency.
 
-Built for security and scalability, the platform uses a no-code interface that lets businesses build AI Agents. These agents use large language models to hold natural conversations in multiple languages across various channels.
+The platform also provides a flexible approach, enabling organizations to strategically combine deterministic workflows for regulated or compliance-critical operations with agentic capabilities for flexible, natural conversation handling. 
 
 ## Comprehensive Suite of Products and Services
 
@@ -20,13 +20,15 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
 === "Automation AI"
 
-    Automation AI offers sophisticated AI-powered tools for creating agents to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower agents to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+    Automation AI offers agentic conversational experiences through DialogGPT and AI Agents, enabling multi-turn engagements that understand intent, retain context, and respond naturally. It empowers organizations to build sophisticated AI Agents that can handle complex customer interactions, manage interruptions, and provide clarifications for personalized, self-service experiences. Comprehensive testing tools ensure smooth, reliable deployments by identifying and fixing issues before they reach users.
     
-    Key Features
+    Key Features:
     
-    * AI Agent Builder: Enables the creation of AI Agents.
-    * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
-    * GenAI Framework: A generative AI framework to enhance automation capabilities.  
+    * DialogGPT: Orchestrates conversations autonomously using embeddings and generative models—no training data required.
+    * Agent Flows: Combines Dialog Tasks with Agent Nodes to create intelligent workflows that adapt dynamically to user needs.
+    * AI Agent: Enables tool-calling through Agent Nodes to manage complex tasks with contextual intelligence and external integrations.
+    * GenAI Framework: Enhances automation capabilities with generative AI.
+ 
     
     [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md)
 
@@ -34,7 +36,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
     Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. You can add multiple data sources to build your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. You can also enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining Automation AI Use Cases and Search AI, businesses can create an exceptional, seamless conversational experience for their users.
     
-    Key Features
+    Key Features:
     
     * Knowledge AI with LLM: Integrates large language models to enrich knowledge bases.
     * Retrieval Augmented Generation: Enhances information retrieval with generative AI.
@@ -46,7 +48,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
     Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI use cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
     
-    Key Features
+    Key Features:
     
     * Routing & Experience Flows: Manages the routing of queries and the flow of customer experiences.
     * Agent Desktop: Provides a centralized workspace for agents.
@@ -58,7 +60,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
     Agent AI is your agent’s personal agent. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
     
-    Key Features
+    Key Features:
     
     * Real-time AI suggestions: Offers live AI-powered guidance to agents.
     * Auto-fulfillment: Automates the completion of tasks and processes.
@@ -70,7 +72,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
     The Analytics Module provides a comprehensive 360-degree view of all voice and digital conversations across channels. It offers insightful dashboards, including containment information, conversation history, automation analytics, generative AI logs and analytics, search analytics, and contact center analytics. The module empowers your teams with data-driven insights, enabling them to make informed decisions to meet their targets.
     
-    Key Features
+    Key Features:
     
     * Virtual Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and virtual agents.
     * Virtual Agent Performance Insights: Monitors and evaluates the performance of virtual agents.
@@ -82,7 +84,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
     Common services help manage the entire lifecycle of products and services easily. You can configure the settings and the services once and use them across the Platform for all products and services.
     
-    Key Services
+    Key Services:
     
     * Life Cycle Management: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
     * Multi-lingual Support: Offers support for multiple languages.
@@ -96,7 +98,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
 
     The Platform empowers enterprise customers with additional services.   
     
-    Key Services
+    Key Services:
     
     * Role-based Access Controls, Audit Logs: Ensures security and accountability through access management and logging.
     * Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR): Compliant with major security and privacy standards.

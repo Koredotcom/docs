@@ -19,7 +19,7 @@ A new utility function, voiceUtils.transfer enables seamless call transfers betw
 
 **Support DTMF Input for Caller After External Call Transfer**
 
-The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI agent, preserving the intended automated experience.
+The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI Agent, preserving the intended automated experience.
 
 <font size="4">Inbound and Outbound Calls</font>
 
@@ -69,7 +69,7 @@ When fetching a voice call recording, the system displays context-specific messa
 
 **Agent Platform – Text Streaming Support for Deepgram and ElevenLabs TTS**
 
-Agent Platform now supports end-to-end streaming via the Voice Gateway for Deepgram and ElevenLabs TTS engines, delivering real-time AI agent voice responses. A new ‘TTS Streaming’ flag in the Automation Node controls this feature. When enabled, it automatically disables the Real-time Voice Interactions flag to prevent conflicts. Streaming provides low-latency audio playback, gracefully falls back to standard TTS if interrupted, maintains full backward compatibility with existing configurations, and captures streaming latency metrics for monitoring performance. [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#full-autonomy)
+Agent Platform now supports end-to-end streaming via the Voice Gateway for Deepgram and ElevenLabs TTS engines, delivering real-time AI Agent voice responses. A new ‘TTS Streaming’ flag in the Automation Node controls this feature. When enabled, it automatically disables the Real-time Voice Interactions flag to prevent conflicts. Streaming provides low-latency audio playback, gracefully falls back to standard TTS if interrupted, maintains full backward compatibility with existing configurations, and captures streaming latency metrics for monitoring performance. [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#full-autonomy)
 
 <font size="4">Configuration</font>
 
