@@ -164,6 +164,6 @@ Before finalizing the tool, test its functionality to ensure it behaves as expec
 
 The response also includes execution logs along with the script output. These logs can be used for troubleshooting and debugging.
 
-After the tool is defined and tested successfully, click **Create Tool** to add it to the agent. Once added, the tool becomes available for use and is automatically invoked by the agent when a matching intent is detected.
+After the tool is defined and tested successfully, click **Create Tool** to add it to the agent. After the tool is added, it becomes available for use and is automatically invoked by the agent when a matching intent is detected.
 
 
