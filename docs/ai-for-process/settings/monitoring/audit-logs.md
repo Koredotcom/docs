@@ -797,7 +797,62 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
 </table>
 
+<table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: OCR
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: All events record relevant user and system metadata, including user ID, user name (where applicable), IP address, connection name, connection ID, deployment name, and hardware type.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>OCR deployed
+   </td>
+   <td>Tracks the deployment of OCR models.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>OCR undeployed</td>
+   <td>Tracks the undeployment of OCR models.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>OCR saved as draft</td>
+   <td>Tracks when an OCR deployment is saved as a draft.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Azure Doc Intelligence account added</td>
+   <td>Tracks the addition of an Azure Doc Intelligence account.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Azure Doc Intelligence account deleted</td>
+   <td>Tracks the deletion of an Azure Doc Intelligence account.</td>
+   <td align="center">-
+   </td>
+  </tr>
 
+</table>
 
 
 
@@ -1054,6 +1109,88 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
   </table>
+
+<table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: OCR
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: All workflow node events record relevant user and system metadata, including user ID, IP address, Agent ID, node name, node ID, and node type.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Node name edited
+   </td>
+   <td>Tracks when a node’s name is edited.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>Node deleted</td>
+   <td>Tracks  when a node is deleted.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Description added</td>
+   <td>Tracks when a description is added to a node.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Description edited</td>
+   <td>Tracks when a node’s description is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Engine added</td>
+   <td>Tracks when an engine is added to a node.</td>
+   <td align="center">-
+   </td>
+  </tr>
+  <tr>
+   <td>Engine edited</td>
+   <td>Tracks when a node's engine is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    <tr>
+   <td>Connection added</td>
+   <td>Tracks when a connection is added to a node.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    <tr>
+   <td>Connection modified</td>
+   <td>Tracks when a node’s connection is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    <tr>
+   <td>Base URL edited</td>
+   <td>Tracks  when the Base URL of a node is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+</table>
+
+
 
 ## Access Audit Logs
 
