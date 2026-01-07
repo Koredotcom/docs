@@ -43,9 +43,4 @@ The following APIs let users interact with agents and manage sessions.
 | Undeploy a model from the environment.      |   [Undeploy a Model API](apis-list/undeploy-a-model.md){:target="_blank"} |
 | Manage external model connections.      |   [External Model Connection APIs](apis-list/connections-api.md){:target="_blank"} |
 
-## Manage Guardrails APIs
 
-| Use Cases   | APIs     |
-|--------|----------|
-|   Deploy predefined guardrails.     |  [Deploy Guardrails API](apis-list/deploy-guardrails.md){:target="_blank"}       |
-| Undeploy predefined guardrails.     |   [Undeploy Guardrails API](apis-list/undeploy-guardrails.md){:target="_blank"}       |
