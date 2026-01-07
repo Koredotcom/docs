@@ -1,9 +1,9 @@
-[Back to Authorization :octicons-arrow-right-24:](bot-authentication.md)
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
 
 # Setting Up the Kerberos SPNEGO Authorization Profile
 
 
-## Overview
+
 
 The XO Platform offers Kerberos SPNEGO-based authentication mechanism for enterprise users to use Kerberos authentication flow to securely connect with their internal applications using Kerberos SPNEGO security protocol.
 
@@ -13,7 +13,7 @@ The Kerberos SPNEGO auth profile can be configured from the following XO Platfor
 
 * [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"}
 * [Configurations > Authorization Profile](bot-authentication.md){:target="_blank"}
-* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/configure-llm-integration.md/#custom-llm-integration){:target="_blank"}
+* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/configure-llm-integration.md#custom-llm-integration){:target="_blank"}
 
 
 ## Configuring Kerberos SPNEGO Authorization

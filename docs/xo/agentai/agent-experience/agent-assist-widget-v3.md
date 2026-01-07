@@ -136,7 +136,7 @@ The Assist tab features the following:
 Agents can now click the **Generate Summary** button in the Assist tab to generate on-demand conversation summaries at any point during a conversation, up to two times per agent, per conversation. This functionality is available even during agent transfers, allowing the receiving agent to regenerate a new summary and view the previous summary with timestamps. Agents can also provide feedback for these summaries.
 
 !!! note
-    For this functionality, the **Generate Summary** toggle must be enabled in the **Widget Theming > Layout Customization > Assist Action Menu Layout** section. [Learn more](../configuration/widget-theming-layout-customization.md/#assist-action-menu-layout){:target="_blank"}
+    For this functionality, the **Generate Summary** toggle must be enabled in the **Widget Theming > Layout Customization > Assist Action Menu Layout** section. [Learn more](../configuration/widget-theming-layout-customization.md#assist-action-menu-layout){:target="_blank"}
 
 The following screenshot shows the agent-generated summaries with timestamps along with the end-of-summary auto-generated summary:  
 <img src="../widget-images/summary-generation.jpg" alt="summary-generation" title="summary-generation" style="border: 1px solid gray; zoom:80%;">

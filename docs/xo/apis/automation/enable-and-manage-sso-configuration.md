@@ -4,10 +4,10 @@
 
 To execute and get results for managing an account’s SSO configurations with the following APIs:
 
-* [Fetch the SSO Meta](./enable-and-manage-sso-configuration.md/#fetch-the-sso-meta-api){target="_blank"} API
-* [Enable SSO](./enable-and-manage-sso-configuration.md/#enable-sso-api){target="_blank"} API
-* [Disable SSO](./enable-and-manage-sso-configuration.md/#disable-sso-api){target="_blank"} API
-* [Update the SSO Configuration](./enable-and-manage-sso-configuration.md/#update-sso-api){target="_blank"} API
+* [Fetch the SSO Meta](./enable-and-manage-sso-configuration.md#fetch-the-sso-meta-api){target="_blank"} API
+* [Enable SSO](./enable-and-manage-sso-configuration.md#enable-sso-api){target="_blank"} API
+* [Disable SSO](./enable-and-manage-sso-configuration.md#disable-sso-api){target="_blank"} API
+* [Update the SSO Configuration](./enable-and-manage-sso-configuration.md#update-sso-api){target="_blank"} API
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

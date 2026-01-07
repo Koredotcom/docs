@@ -104,7 +104,7 @@ Quality AI supports multiple languages. English is the default language.
 
         * To enable Quality AI features for non-English languages, configure an LLM in the GenAI section.
 
-1. Select **+ Add** to move languages to **Selected Languages** list.  
+1. Select **+ Add** to move languages to the **Selected Languages** list.  
 <img src="../Onboarding/images/add-new-lang.png" alt="Select Language" title="Select Language" style="border: 1px solid gray; zoom:80%;">
 
 1. Toggle a language on to **Mark as the Default**.   

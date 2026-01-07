@@ -44,7 +44,7 @@ This section explains how the system displays and calculates adherence metrics f
 
     * **Fatal Errors**: These are critical errors that typically trigger an immediate red flag or alert explaining the failure, regardless of other correct answers or scores. Examples include major compliance breaches. When a fatal error occurs, the entire interaction’s adherence score or scorecard is marked as 0% (red) and marked as failed. 
     
-    Supervisors Agents can use flagged fatal errors to self-assess and prepare for coaching. Visual adherence scores (heat maps) and question-level feedback support this process. For more information, refer to [AI-Assisted Manual Audit](../ai-assisted-manual-audit.md/#by-question). 
+    Supervisors Agents can use flagged fatal errors to self-assess and prepare for coaching. Visual adherence scores (heat maps) and question-level feedback support this process. For more information, refer to [AI-Assisted Manual Audit](../ai-assisted-manual-audit.md#by-question). 
 
 * **Color Coding & Display** 
 

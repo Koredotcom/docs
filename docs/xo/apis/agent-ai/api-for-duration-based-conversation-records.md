@@ -13,8 +13,8 @@ This API retrieves a paginated list of Agent AI conversation records within a sp
 | **Method**       | `POST` |
 | **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconversation` |
 | **Content Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
-| **Scope**        | `AgentAssist Analytics`  <br> See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |
+| **Authorization** | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
+| **Scope**        | `AgentAssist Analytics`  <br> See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |
 
 ## Path Parameters
 
