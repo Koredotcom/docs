@@ -488,7 +488,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
          * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
          * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
          * Both Primary and Fallback ASR/TTS configurations should be available in VG Speech Services otherwise you will not be able to configure in SmartAssist.
-         * The Credential Status of the Speech services configured in VG should be verified. If credential status is failed then ASR/TTS conversations will fail.
+         * The Credential Status of the Speech services configured in VG should be verified. If credential status is failed then ASR/TTS conversations fail.
       * In Call control parameters, 
          * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
          * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes.
@@ -501,15 +501,15 @@ Voice Gateway supports integration with third party ASR, TTS, and Voice Biometri
 
 The following languages and dialects are supported:
 
-| English (Australia)   | English (Nigeria)        |
-|-----------------------|--------------------------|
-| English (Canada)      | English (Pakistan)       |
-| English (Ghana)       | English (Philippines)    |
-| English (Hong Kong)   | English (Singapore)      |
-| English (India)       | English (South Africa)   |
-| English (Ireland)     | English (Tanzania)       |
-| English (Kenya)       | English (United Kingdom) |
-| English (New Zealand) | English (United States)  |
+| English (Australia)    | English (Nigeria)         |
+|:-----------------------|:--------------------------|
+| English (Canada)       | English (Pakistan)        |
+| English (Ghana)        | English (Philippines)     |
+| English (Hong Kong)    | English (Singapore)       |
+| English (India)        | English (South Africa)    |
+| English (Ireland)      | English (Tanzania)        |
+| English (Kenya)        | English (United Kingdom)  |
+| English (New Zealand)  | English (United States)   |
 
 ### Best Practices
 

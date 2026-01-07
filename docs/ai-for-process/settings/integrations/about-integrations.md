@@ -1712,6 +1712,7 @@ To add a connection and configure an integration, follow the steps below:
      **Case 2**: To select an existing/connected provider, click the **Connected** tab, and click the required provider.
 
 3. Click **Add Connection** on the next page or the integrations listing page.
+
 <img src="../images/add-new-conn.png" alt="add connection" title="add connection" style="border: 1px solid gray; zoom:75%;">
 <img src="../images/connected-integration-add.png" alt="connected integration" title="connected integration" style="border: 1px solid gray; zoom:75%;">
 
@@ -1805,6 +1806,7 @@ You will be redirected to the following page, where all the connections for the 
 
 You can view, edit, delete, and perform additional actions with connected integrations to your account in the **Connected** section.
 <img src="../images/click-connected-tab.png" alt="click connected tab" title="click connected tab" style="border: 1px solid gray; zoom:75%;">
+
 ### View Summary
 
 Once you click the integration in the **Connected** section, the list of configured connections is displayed with the following information:

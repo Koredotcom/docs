@@ -50,40 +50,40 @@ A foundational library for configuration (design) and the runtime needs.
 
 ```
 ├── dist
-│   ├── agenticai_core-0.1.0-py3-none-any.whl               -- binary distrubution of this library
-│   └── agenticai_core-0.1.0.tar.gz
+│   ├── agenticai_core-0.1.0-py3-none-any.whl               -- binary distrubution of this library
+│   └── agenticai_core-0.1.0.tar.gz
 ├── docs
-│   ├── architecture.md                                     -- documention
-│   ├── assets/
+│   ├── architecture.md                                     -- documention
+│   ├── assets/
 ├── pyproject.toml
 ├── README.md
 ├── requirements.txt
 ├── setup.sh
 ├── src
-│   └── agenticai_core
-│       ├── api
-│       │   └── kore_client.py                              -- a rest client to create artifacts & perform CI/CD operations on platform
-│       ├── designtime
-│       │   ├── __init__.py
-│       │   └── models
-│       │       ├── agent.py
-│       │       ├── app.py
-│       │       ├── icon.py
-│       │       ├── __init__.py
-│       │       ├── llm_model.py
-│       │       ├── prompt.py
-│       │       └── tool.py
-│       ├── __init__.py
-│       └── runtime
-│           ├── agents
-│           │   ├── agent_message.py
-│           │   ├── agent_request.py
-│           │   ├── agent_response.py
-│           │   ├── agent_runtime.py                        -- implements the server for regsitering & calling custom orchestrators and tools
-│           │   ├── abstract_agent.py                       -- base class that any agent must implement
-│           │   └── abstract_orchestrator.py                -- base class that any custom orchestrator must implement
-│           ├── __init__.py
-│           └── message_item.py
+│   └── agenticai_core
+│       ├── api
+│       │   └── kore_client.py                              -- a rest client to create artifacts & perform CI/CD operations on platform
+│       ├── designtime
+│       │   ├── __init__.py
+│       │   └── models
+│       │       ├── agent.py
+│       │       ├── app.py
+│       │       ├── icon.py
+│       │       ├── __init__.py
+│       │       ├── llm_model.py
+│       │       ├── prompt.py
+│       │       └── tool.py
+│       ├── __init__.py
+│       └── runtime
+│           ├── agents
+│           │   ├── agent_message.py
+│           │   ├── agent_request.py
+│           │   ├── agent_response.py
+│           │   ├── agent_runtime.py                        -- implements the server for regsitering & calling custom orchestrators and tools
+│           │   ├── abstract_agent.py                       -- base class that any agent must implement
+│           │   └── abstract_orchestrator.py                -- base class that any custom orchestrator must implement
+│           ├── __init__.py
+│           └── message_item.py
 └── wheels
     └── kore_api-1.0.0-py3-none-any.whl                     -- depenency binary for implementing kore_client
 ```
@@ -137,25 +137,25 @@ Implements other supporting commands & subcommands for configuration management 
 
 ```
 ├── bin
-│   ├── application.config.json                         -- serialzed json
-│   └── myproject.kar                                   -- the archive of the source code
+│   ├── application.config.json                         -- serialzed json
+│   └── myproject.kar                                   -- the archive of the source code
 ├── .env
-│   ├── dev                                             -- environment variables for dev-agent env
-│   └── local                                           -- environment variables for local env
+│   ├── dev                                             -- environment variables for dev-agent env
+│   └── local                                           -- environment variables for local env
 ├── lib                                                 -- wheel files that are core dependencies for workspace
-│   ├── agenticai_core-0.1.0-py3-none-any.whl
-│   └── kore_api-1.0.0-py3-none-any.whl
+│   ├── agenticai_core-0.1.0-py3-none-any.whl
+│   └── kore_api-1.0.0-py3-none-any.whl
 ├── README.md
 ├── requirements.txt                                    -- To include dependencies
 ├── run.py                                              -- CLI interface
 └── src
     ├── app.py                                          -- app configuration and setup
     ├── functions
-    │   └── __init__.py
+    │   └── __init__.py
     ├── __init__.py
     ├── orchestrator
-    │   ├── __init__.py
-    │   └── round_robin_orchestrator.py                 -- an example of custom orchestrator
+    │   ├── __init__.py
+    │   └── round_robin_orchestrator.py                 -- an example of custom orchestrator
     └── tools
         ├── add.py                                      -- example of a tool implementation
         ├── greet.py                                    -- example of a tool implementation

@@ -36,7 +36,7 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
 
 * **Copy Button**: This widget lets you control the accessibility of the **Copy** button functionality for Agent AI responses. It is available for the **Chat** and **Email** channels, and by default enabled for both these channels.  
 
-* **Widget Search Bar Configuration**: This widget enables you to have a configurable search experience through the widget search bar. Search results load faster because they display as soon as data is retrieved from the first available source (XO Platform, Search AI, or Agentic App), while results from other sources load gradually. When **disabled**, the [default search experience](../../agentai/agent-experience/agent-assist-widget-v3.md/#search-tab){:target="_blank"} displays results from all sources simultaneously. When **enabled**, you can select one or more of the following options based on your need: 
+* **Widget Search Bar Configuration**: This widget enables you to have a configurable search experience through the widget search bar. Search results load faster because they display as soon as data is retrieved from the first available source (XO Platform, Search AI, or Agentic App), while results from other sources load gradually. When **disabled**, the [default search experience](../../agentai/agent-experience/agent-assist-widget-v3.md#search-tab){:target="_blank"} displays results from all sources simultaneously. When **enabled**, you can select one or more of the following options based on your need: 
 
     * **XO Platform**: To identify and surface intents such as dialogs and FAQs through the XO Platform.
     * **Search AI**: To get search results or answers from the **Search AI** app.

@@ -103,7 +103,7 @@ Set up necessary permissions and app assignments and insert bot-specific data in
 <img src="../images/copying-client-id-and-secret-6.png" alt="copying-client-id-and-secret" title="copying-client-id-and-secret" style="border: 1px solid gray; zoom:80%;">
 
 4. Copy **Client ID** and **Client Secret** of the App.
-5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}.
 6. Insert data into the Data Table by following this [doc](./../../../apis/automation/data-insert.md){:target="_blank"}. Use the JWT Token created in the previous step.
 
     **API Body Payload Structure:**
@@ -202,7 +202,7 @@ Replace “Agent AI.kore.ai” with the domain where your Agent AI is hosted. Th
     7.2.4. Copy the <strong>Client ID</strong> and <strong>Client Secret</strong> values.  
         <img src="../images/copying-client-id-and-secret-values-19.png" alt="copying-client-id-and-secret-values" title="copying-client-id-and-secret-values" style="border: 1px solid gray; zoom:80%;">
     
-    7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+    7.2.5. Create a JWT Token using the <strong>Client ID</strong> and <strong>Client Secret</strong> by following this [doc](./../../../apis/automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}.
 
     7.2.6. Generate a JSON object with the specified structure and then convert it into a url-encoded string:
 
@@ -244,7 +244,7 @@ An Interaction Widget uses Group Membership to determine who can view it on the 
 1. Use an existing Group, if your agents are already part of it. Otherwise, create a new Group for Agent AI permission.
 2. Name the Group as **KoreAA-Agents** or similar to distinguish it.
 3. Add any agent to allow them to use the Agent AI functionality. You can utilize more than one Group, if required.
-4. Go back to the **Integrations** section and open the **Interaction Widget** created in [this doc](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md/#create-an-interaction-widget-in-genesys-for-agent-ai){:target="_blank"}. 
+4. Go back to the **Integrations** section and open the **Interaction Widget** created in [this doc](../../../agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md#create-an-interaction-widget-in-genesys-for-agent-ai){:target="_blank"}. 
 5. On the **Configuration** tab, add access using the Group you identified or created for Agent AI in the Group Filtering option.  
 
 You may also utilize Queue Filtering (optional).  
@@ -301,7 +301,7 @@ Audiohook integration requires specific configuration values to support Agent AI
 7. Use the following reference from **Agent AI**, **Bot Channel** configuration page to fetch **App ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
 <img src="../images/for-token-generation-28.png" alt="for-token-generation" title="for-token-generation" style="border: 1px solid gray; zoom:80%;">
 
-    7.1. Follow the steps of [API Introduction](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)
+    7.1. Follow the steps of [API Introduction](./../../../apis/automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} to generate the token (token= &lt;token>.)
 
 8. Add credentials in the **Credentials** tab. Use the **ClientID** and **ClientSecret** of the app you have used while configuring the Audiohook. These credentials are used to validate the audiostream signature by Kore.  
 <img src="../images/credential-tab-29.png" alt="credential-tab" title="credential-tab" style="border: 1px solid gray; zoom:80%;">

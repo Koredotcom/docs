@@ -21,7 +21,7 @@ Verify that identity and authorization tokens are correctly passed to external s
 
 To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. Click **Security & Control** -> **Authorization profile** on the left navigation menu.
 
@@ -70,7 +70,7 @@ The Client Credentials flow is one of the OAuth 2.0 authorization grant types. I
 
 To add a new Auth profile, you must first set up the required auth fields with the steps below: 
 
-1. [Navigate](../security-and-control/authorization-profile.md/#access-authorization-profile){:target="_blank"} to the **Authorization Profile** feature.
+1. [Navigate](../security-and-control/authorization-profile.md#access-authorization-profile){:target="_blank"} to the **Authorization Profile** feature.
 2. Click **Create Authorization Profile** if this is your first auth profile.
 <img src="../images/click-create-auth-profile.png" alt="create auth profile" title="create auth profile" style="border: 1px solid gray; zoom:75%;">  
 

@@ -185,6 +185,7 @@ You can access this data using context variables:
 
  `{{context.steps.<NodeName>.output}}`
 `
+
 ## Notes
 
 * **Inside Loops** – If the Human node is inside a loop, the loop will not move to the next iteration until a human response is received. This ensures each cycle gets explicit approval/input.

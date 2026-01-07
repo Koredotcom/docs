@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using an API Key
 
 An API key can act as both a unique identifier and a secret token for identification as well as authorization to provide a set of access rights on the associated API. Instead of prompting the end-user for both a username and password for access, the user is prompted only for an API key when configuring the assistant.

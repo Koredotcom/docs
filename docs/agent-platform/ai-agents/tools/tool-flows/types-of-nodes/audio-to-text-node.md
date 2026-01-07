@@ -45,9 +45,9 @@ In this document, you will learn how to add the node to your flow, configure it 
 You can add audio input in one of the following ways:
 
 1. Manually select and upload an audio file in the allowed format.
-2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](../../../../ai-agents/tools//tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}. 
+2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](../../../../ai-agents/tools//tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}. 
 
-   You must provide the audio file URL when running the flow, as mentioned [here](../../../tools/tool-flows/types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
+   You must provide the audio file URL when running the flow, as mentioned [here](../../../tools/tool-flows/types-of-nodes/audio-to-text-node.md#step-3-run-the-flow){:target="_blank"}.
 
    <img src="../images/select-text-input-type.png" alt="select text type input" title="select text type input" style="border: 1px solid gray; zoom:75%;">
 
@@ -81,7 +81,7 @@ The following audio file formats are supported by the node:
 
 ### Processing Model
 
-The **Agent Platform** uses **OpenAI Whisper-1** for transcription.
+The Platform uses **OpenAI Whisper-1** for transcription.
 
 **Use Cases**
 
@@ -109,7 +109,7 @@ This node is commonly used for:
 Metrics include:
 
 * **Minutes transcribed/Minutes of Audio** (total audio processed by the node) since the Whisper models are charged based on the minutes of the audio consumed.
-* **Input and output tokens** since the Whisper models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](../../../../settings/monitoring/analytics/model-analytics-dashboard.md/#tokens){:target="_blank"}.
+* **Input and output tokens** since the Whisper models usually support a small number of tokens, and tracking the counts is necessary. [Learn more](../../../../settings/monitoring/analytics/model-analytics-dashboard.md#tokens){:target="_blank"}.
 * Each model execution is logged on the **Model Traces** page, displaying summarized data for:
     * **Input**, **Output**, and **Response Time**
     * **Translation,** and **Timestamp**.  [Learn more](../../../../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
@@ -139,7 +139,7 @@ Metrics include:
 
 * Enter or select the following **General Settings**:
     * **Node Name**: Enter an appropriate name for the node. For example, “*CustomerSupportConversation*.”
-    * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
+    * Provide the input variable that is set for the node for the **Audio File** field. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
     * Select a model from the list of configured models.
     * (Optional) Turn on the toggle for the following to enable the respective feature:
          * **Translation**: Translate other languages supported by the model to English.
@@ -186,7 +186,7 @@ Metrics include:
 
 ### Step 1: (Optional) Add Input Variable(s)
 
-* Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md/#adding-input-variables){:target="_blank"}.
+* Click the **Input** tab of the **Start** node, and click **Add Input Variable** to configure the input for the flow’s test run. [Learn more](../../tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}.
 
     <img src="../images/add-input-variable-audio-to-text.png" alt="add input variable" title="add input variable" style="border: 1px solid gray; zoom:75%;">
 

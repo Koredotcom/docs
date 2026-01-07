@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using OAuth v1
 
 OAuth v1 is an open protocol to allow secure authorization in a simple and standardized method from web, mobile, and desktop applications.
