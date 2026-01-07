@@ -2,7 +2,7 @@
 
 Agent Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
 
-By activating SSO, users can access their Agent Platform accounts using a single set of secure credentials managed by an external Identity Provider (IDP). This setup streamlines the login process and integrates users into a unified authentication framework.
+By activating SSO, users can access their Platform accounts using a single set of secure credentials managed by an external Identity Provider (IDP). This setup streamlines the login process and integrates users into a unified authentication framework.
 
 SSO is a powerful option for organizations looking to balance convenience and security in user authentication. It offers the following key benefits:
 
@@ -80,7 +80,7 @@ If SSO is already configured, the **Single sign-on** setup page is displayed.
 
 ## Enable SSO
 
-Depending on your company's security requirements, you can enable SSO for your Agent Platform account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} to integrate with the IDP service.
+Depending on your company's security requirements, you can enable SSO for your account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} to integrate with the IDP service.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -234,7 +234,7 @@ Okta's scalable and customizable platform reduces IT overhead, improves producti
 
 To configure SSO using SAML and Okta, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to the **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Okta** for **SSO provider**.
 
@@ -304,7 +304,7 @@ OneLogin's Single Sign-On (SSO) solution simplifies user access by enabling a si
 
 To configure SSO using SAML and Onelogin, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Onelogin** for **SSO provider**.
 4. Login into the [Onelogin developer portal](https://app.onelogin.com/login){:target="_blank"}.
@@ -314,7 +314,7 @@ To configure SSO using SAML and Onelogin, follow the steps below:
 <ul><li>To learn how to <b>add a new app</b>, click <a href="https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#manage-add" target="_blank">here</a>.</li>
 <li>To learn how to <b>configure apps</b>, click <a href="https://onelogin.service-now.com/support?id=kb_article&sys_id=9bf39e0047ccbd509d8dfd1f536d431c&kb_category=e9866930db185340d5505eea4b9619b7#config" target="_blank">here</a>.</li></ul>
 
-<ol start="6"><li>Search for your Agent Platform app and click <b>Enter</b>.</li>
+<ol start="6"><li>Search for your Platform app and click <b>Enter</b>.</li>
 <li>Click your app to view the <b>Add App</b> page. Optionally, change the display name or the icons displayed to your users in the <i>OneLogin</i> portal, and then click <b>SAVE</b>. The Platform app has been added to your company apps for <i>OneLogin</i> and is listed on the app page.</li>
 <li>Copy the following values from <b>SSO</b> > <b>Enable SAML2.0</b> on Onelogin and paste them into the relevant fields on the Platform’s SSO setup page:</li>
     <ul><li><b>OneLogin SAML 2.0 Endpoint (HTTP)</b>: Paste into <b>SAML 2.0 endpoint</b>.</li>
@@ -340,15 +340,15 @@ To add a new certificate, click <b>+Add new</b>.
 <ul><li>ACS URL for SP Initiated SAML Flow.</li>
 <li>ACS URL for IDP Initiated SAML Flow.</li></ul>
 
-<li>Click <b>Save</b> on Agent Platform and Onelogin.</li></ol>
+<li>Click <b>Save</b> on the Platform and Onelogin.</li></ol>
 
-Once SSO for Onelogin is complete, the system redirects to the **Onelogin Sign in** page for the Agent Platform account authentication.
+Once SSO for Onelogin is complete, the system redirects to the **Onelogin Sign in** page for the the Platform account authentication.
 
 ### Other Configuration
 
 To configure and enable SSO using SAML for other IDPs of your choice, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to the Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **SAML** for **Sign-on protocol** and **Other** for **SSO provider**.
 4. Fetch the necessary SSO configuration parameters listed in [this](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} table from your app's **Settings** page within the IDP developer portal. 
@@ -370,7 +370,7 @@ To add a new certificate, click **+Add new**.
 
 ### How WS-Federation Works
 
-When a user logs into a system that acts as an IDP and tries to access his Agent Platform account, the following happens:
+When a user logs into a system that acts as an IDP and tries to access his Platform account, the following happens:
 
 1. The relying party redirects the user to the IDP for authentication.
 2. The IDP authenticates the user through credentials or another authentication mechanism.
@@ -384,7 +384,7 @@ Azure AD Federation with WS-Federation offers seamless SSO integration with Micr
 
 To configure SSO using WS-Federation and Windows Azure, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to the Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **WS-Federation** for **Sign-on protocol** and **Windows Azure** to **Configure SSO for WS-Federation**.
 4. Open **Server Manager** on the computer running AD FS, then choose **AD FS** > **Tools** > **AD FS Management**.
@@ -400,7 +400,7 @@ To configure SSO using WS-Federation and Windows Azure, follow the steps below:
 
 To configure and enable SSO using WS-Federation and other IDPs of your choice, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to the Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **WS-Federation** for **Sign-on protocol** and **Other** to **Configure SSO for WS-Federation**.
 4. Copy and paste the SSO endpoint URL from the IDP’s portal into **AD sign-on end point url** on the Platform’s SSO setup page.
@@ -426,7 +426,7 @@ When a user logs into a system that acts as an IDP and tries to access his Platf
 
 To configure SSO using OpenId Connect and Google, follow the steps below:
 
-1. Go to Agent Platform’s **Single sign-on** page.
+1. Go to the Platform’s **Single sign-on** page.
 2. Select the **Enable SSO** tab.
 3. Select **OpenId Connect** for **Sign-on protocol** and **Sign in with Google** to **Configure SSO for OpenId connect**.
 4. Click **Save**.
@@ -491,16 +491,16 @@ The user can do one of the following:
 
 * Click **Continue** to log in using the configured SSO provider service's sign-in page.
 
-* Click “**Having trouble logging in with SSO?**” to sign in using the default option (email and password, Google, Windows, etc.) set during Agent Platform sign-up.
+* Click “**Having trouble logging in with SSO?**” to sign in using the default option (email and password, Google, Windows, etc.) set during Platform sign-up.
 
 When **SSO is disabled**, the user is taken through the default sign-in flow (email and password, Google, Windows, etc.).
 
 ## Default Sign-in Flow 
 
-As a Agent Platform admin, you can enable Single Sign-On (SSO) using a third-party provider. However, if your SSO security system fails or you forget your SSO credentials for your IDP, you can log into the Platform using either email sign-in or your default SSO provider. 
+As a Platform admin, you can enable Single Sign-On (SSO) using a third-party provider. However, if your SSO security system fails or you forget your SSO credentials for your IDP, you can log into the Platform using either email sign-in or your default SSO provider. 
 
 <hr/> 
 
 **Related resource**
 
-* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"}- Learn more about other the Platform's admin features.
