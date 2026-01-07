@@ -74,7 +74,7 @@ Enable this setting to allow real-time streaming of the response in Playground, 
 
 ### Error Handling
 
-Agent Platform provides an error-handling framework to handle failures that occur when an agent’s underlying AI model is invoked. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
+The Platform provides an error-handling framework to handle failures that occur when an agent’s underlying AI model is invoked. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
 
 * This configuration applies specifically to agent model invocation failures such as timeouts, provider errors, or transient network issues. 
 * All agents within the app inherit this configuration.
