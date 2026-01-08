@@ -34,8 +34,8 @@ To view the Interactions dashboard, follow the steps:
     * Error: Error is a disruption to an ongoing conversation, resulting in an error message. Failure of integrated systems results in errors.
     * Completed (Drop Off): Completed (Drop Off) refers to a voice call where there was no response from the user, and the conversation ends.
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
-    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the AI agent completes the task and ends the call, and the AI Agents ends the conversation.
-    * Completed: Completed refers to a chat conversation where the AI agent completes the task and ends the conversation.
+    * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the AI Agent completes the task and ends the call, and the AI Agents ends the conversation.
+    * Completed: Completed refers to a chat conversation where the AI Agent completes the task and ends the conversation.
 
 ## Supervisor Actions
 

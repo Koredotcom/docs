@@ -10,7 +10,7 @@ Use this metric type for evaluation scenarios that require:
 
 * **Multi-Dimensional Assessments**: Evaluate several facets (sub-metrics) under one parent metric.
 
-* **Autonomous AI Analysis**: Leverage AI agents to interpret, reason, and assess interactions using contextual understanding.
+* **Autonomous AI Analysis**: Leverage AI Agents to interpret, reason, and assess interactions using contextual understanding.
 
 * **Weighted Evaluations**: Assign different weight to sub-metrics to prioritize specific aspects.
 
@@ -51,7 +51,7 @@ Ensure the following before creating a By AI Agent metric:
 
 1. Enter a descriptive **Name** for the future reference of this metric. For example, compliance disclosure.  
 
-1. Select the **Language** from the dropdown for the AI agent's evaluation process.   
+1. Select the **Language** from the dropdown for the AI Agent's evaluation process.   
 <img src="../images/ai-agent-lang.png" alt="Language" title="Language" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 3: Select the Agentic App

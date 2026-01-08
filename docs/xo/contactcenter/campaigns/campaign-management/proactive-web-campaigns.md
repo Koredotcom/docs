@@ -124,7 +124,7 @@ Steps to create a proactive web campaign:
     <img src="../images/buttons.png" alt="Buttons" title="Buttons" style="border: 1px solid gray; zoom:80%;">  
     The following options are available for the Actions:  
         1. **Send to URL** - Selecting this option displays the URL field where the system redirects the user.
-        2. **Send to AI Agent** - The system redirects the conversation to the AI agent.
+        2. **Send to AI Agent** - The system redirects the conversation to the AI Agent.
         3. **Dismiss** - Dismiss the proactive chat offer.
 
 6. Under the `Appearance` section, select the `Message Bubble Alignment`, `Bubble Alignment`, and `Dark Shadow`.  

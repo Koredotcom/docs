@@ -24,7 +24,7 @@ The Dialog page lists existing dialog tasks and shows key details for each task,
 
 When you hover over a dialog task, you can select Edit, Clone, or Delete. From [More options](#the-more-options-menu), you can view the dialog task, configure dialog settings, manage interruptions, or amend behavior.
 
-[Manage Components](managing-dialogs.md) lets you access the Dialog Components section, where you manage entities, webhooks, messages, agent transfers, and other components used across all dialog tasks in the AI agent.
+[Manage Components](managing-dialogs.md) lets you access the Dialog Components section, where you manage entities, webhooks, messages, agent transfers, and other components used across all dialog tasks in the AI Agent.
 
 [Create Dialog](using-the-dialog-builder-tool.md) lets you create a new dialog task.
 
