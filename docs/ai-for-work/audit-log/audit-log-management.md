@@ -44,7 +44,7 @@ Agent logs record:
 
 Each log entry contains comprehensive metadata to facilitate detailed analysis and investigation.
 
-<img src="../Images/Audit_log_2.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../Images/audit_log_2.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
 
 **User Information**
 
@@ -73,7 +73,7 @@ Each log entry contains comprehensive metadata to facilitate detailed analysis a
 
 The system provides powerful filtering tools that enable efficient log analysis and investigation:
 
-<img src="../Images/Audit_log_3.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../Images/audit_log_3.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
 
 * **Date Range Filtering**: Narrow log view to specific time periods using intuitive date selection controls.
 * **User Filtering**: Focus on activities performed by specific individuals.
@@ -84,7 +84,7 @@ The system provides powerful filtering tools that enable efficient log analysis 
 
 For compliance reporting, investigations, or record-keeping, the system supports exporting filtered log data:
 
-<img src="../Images/Audit_log_4.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../Images/audit_log_4.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
 
 * Export to CSV format with a single click
 * Maintain all data fields and relationships in the exported file
