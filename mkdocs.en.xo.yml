@@ -874,7 +874,7 @@ nav:
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
         - Enterprise Encryption:
           - Enterprise Key: administration/security-and-control/enterprise-key.md
-          - BYOK Integration Guide for AWS KMS: administration/security-and-control/byok-aws-integration.md
+          - BYOK for AWS: administration/security-and-control/byok-aws-integration.md
         - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md
