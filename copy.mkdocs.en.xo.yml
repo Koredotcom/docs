@@ -86,7 +86,7 @@ plugins:
         'quality-ai/getting-started/quality-ai-express.md': 'quality-ai/configure/quality-ai-express.md'
         'searchai/workbench.md': 'searchai/workbench/introduction.md'
         'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
-        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/quality-ai-express.md'
+        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
 extra:
   version:
     provider: mike
@@ -160,7 +160,7 @@ markdown_extensions:
       base_path: .
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
+  © 2026 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home: home.md
   - Platform:

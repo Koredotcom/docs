@@ -121,7 +121,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2026 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
@@ -218,7 +218,7 @@ nav:
       - Data Settings: security/data-settings.md
       - Enterprise Encryption: 
         - Setup: security/enterprise-encryption.md
-        - Aws: security/aws-enterprise-encryption.md
+        - AWS: security/aws-enterprise-encryption.md
         - Azure: security/azure-enterprise-encryption.md
     - Audit Log:
       - Audit Log Management: audit-log/audit-log-management.md

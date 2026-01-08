@@ -2,6 +2,10 @@
 
 Get started with the AgenticAI Workspace and set up your development environment.
 
+!!!note 
+
+    The SDK repository is private and is shared on request. [Contact Support for access to the repo.](https://support.kore.ai)
+
 ## Requirements
 
 - Python 3.10 or higher
@@ -48,6 +52,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+<!--
 ### 3. Using agenticai-core Standalone (Future)
 
 !!! info "PyPI Availability"
@@ -59,7 +64,9 @@ pip install -r requirements.txt
     
     For now, use the workspace which includes the library in `lib/`.
 
-### 4. Install from Local Wheel
+-->
+
+### 3. Install from Local Wheel
 
 If you need to install the library separately:
 

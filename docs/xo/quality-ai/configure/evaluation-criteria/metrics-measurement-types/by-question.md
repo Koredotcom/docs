@@ -153,7 +153,7 @@ The GenAI-based features are activated only when the following conditions are en
 
     a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-    b. [Enable](../../../../generative-ai-tools/genai-features.md){:target="_blank"} and [Publish](../../../../deploy/publishing-bot.md/#publishing-components){:target="_blank"} the following two features:
+    b. [Enable](../../../../generative-ai-tools/genai-features.md){:target="_blank"} and [Publish](../../../../deploy/publishing-bot.md#publishing-components){:target="_blank"} the following two features:
 
         * **GenAI-based agent answer adherence**
 

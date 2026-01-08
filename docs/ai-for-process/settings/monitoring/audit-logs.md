@@ -15,9 +15,9 @@ Each log entry includes the following to provide actionable insights on account 
 
 The event metadata provides business users with actionable insights, helping them in efficiently identifying patterns in user activities within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.
 
-You can specify a **current** or **past period** to view the logs and have complete visibility into the activities and modifications in your account. [Learn more](./audit-logs.md/#steps-to-set-time-range-for-audit-logs){:target="_blank"}.
+You can specify a **current** or **past period** to view the logs and have complete visibility into the activities and modifications in your account. [Learn more](./audit-logs.md#steps-to-set-time-range-for-audit-logs){:target="_blank"}.
 
-Additionally, you can set **custom filters** based on a specific category, event, or user value to view only the required audit logs. [Learn more](./audit-logs.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+Additionally, you can set **custom filters** based on a specific category, event, or user value to view only the required audit logs. [Learn more](./audit-logs.md#steps-to-add-a-custom-filter){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -797,6 +797,66 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
 </table>
 
+<table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: OCR
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: All events record relevant user and system metadata, including user ID, user name (where applicable), IP address, connection name, connection ID, deployment name, and hardware type.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>OCR deployed
+   </td>
+   <td>Tracks the deployment of OCR models.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>OCR undeployed</td>
+   <td>Tracks the undeployment of OCR models.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>OCR saved as draft</td>
+   <td>Tracks when an OCR deployment is saved as a draft.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Azure Doc Intelligence account added</td>
+   <td>Tracks the addition of an Azure Doc Intelligence account.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Azure Doc Intelligence account deleted</td>
+   <td>Tracks the deletion of an Azure Doc Intelligence account.</td>
+   <td align="center">-
+   </td>
+  </tr>
+
+</table>
+
+
+
+
 
 ## Workflow-Level Audit Logs
 
@@ -1050,6 +1110,88 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
   </table>
 
+<table>
+     <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: OCR
+   </td>
+   </tr>
+   <tr>
+   <td colspan="3">
+   <b>Metadata</b>: All workflow node events record relevant user and system metadata, including user ID, IP address, Agent ID, node name, node ID, and node type.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Node name edited
+   </td>
+   <td>Tracks when a node’s name is edited.
+   </td>
+   <td align="center">
+    -
+   </td>
+  </tr>
+  <tr>
+   <td>Node deleted</td>
+   <td>Tracks  when a node is deleted.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Description added</td>
+   <td>Tracks when a description is added to a node.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Description edited</td>
+   <td>Tracks when a node’s description is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    </tr>
+  <tr>
+   <td>Engine added</td>
+   <td>Tracks when an engine is added to a node.</td>
+   <td align="center">-
+   </td>
+  </tr>
+  <tr>
+   <td>Engine edited</td>
+   <td>Tracks when a node's engine is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    <tr>
+   <td>Connection added</td>
+   <td>Tracks when a connection is added to a node.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    <tr>
+   <td>Connection modified</td>
+   <td>Tracks when a node’s connection is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+    <tr>
+   <td>Base URL edited</td>
+   <td>Tracks  when the Base URL of a node is modified.</td>
+   <td align="center">-
+   </td>
+  </tr>
+</table>
+
+
+
 ## Access Audit Logs
 
 To access and view audit logs, follow the steps below:
@@ -1080,7 +1222,7 @@ This customization helps you focus on relevant audit logs, making it easier to t
 
 ### Steps to Add a Custom Filter
 
-1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to **Audit Logs**.
+1. [Navigate](./audit-logs.md#access-audit-logs){:target="_blank"} to **Audit Logs**.
 2. Click the **Filter** icon.
 3. Click **+Add Filter**.
 <img src="../images/add-filter-audit-logs.png" alt="add filter" title="audit logs" style="border: 1px solid gray; zoom:75%;">
@@ -1134,12 +1276,12 @@ On the other hand, using the OR operator broadens the criteria, allowing entries
 
 #### Steps to Add Multiple Filters
 
-1. Follow **Steps 1 to 3** mentioned [here](./audit-logs.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+1. Follow **Steps 1 to 3** mentioned [here](./audit-logs.md#steps-to-add-a-custom-filter){:target="_blank"}.
 2. Select the **AND/OR** operator tab in the **Filter by** window.
 
     <img src="../images/filter-operators.png" alt="filter operators" title="filter operators" style="border: 1px solid gray; zoom:75%;">
 
-3. Follow **Steps 4 to 5** mentioned [here](./audit-logs.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+3. Follow **Steps 4 to 5** mentioned [here](./audit-logs.md#steps-to-add-a-custom-filter){:target="_blank"}.
 
 The matched log entries are displayed in the dashboard. 
 
@@ -1166,7 +1308,7 @@ Time selection is available for past and current time periods, including the one
 
 ### Steps to Set Time Range for Audit Logs
 
-1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
+1. [Navigate](./audit-logs.md#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
 2. Click the time selection button (displays **Last 30 Days**).
 <img src="../images/click-time-selection.png" alt="time selection" title="time selection" style="border: 1px solid gray; zoom:75%;">
 
@@ -1194,7 +1336,7 @@ By default, the current day will be set as the end date. This feature allows you
 
 ## Export Audit Logs
 
-The **Export** feature helps prepare and export [account-level audit logs](./audit-logs.md/#account-level-audit-logs){:target="_blank"} into a *.csv* file. The audit logs data for the following columns is downloaded. [Learn more](./audit-logs.md/#dashboard-information){:target="_blank"}.
+The **Export** feature helps prepare and export [account-level audit logs](./audit-logs.md#account-level-audit-logs){:target="_blank"} into a *.csv* file. The audit logs data for the following columns is downloaded. [Learn more](./audit-logs.md#dashboard-information){:target="_blank"}.
 
 * Date and Time
 * Event Name
@@ -1212,7 +1354,7 @@ Exporting audit logs offers the following benefits:
 
 To export audit logs, follow the steps below:
 
-1. [Navigate](./audit-logs.md/#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
+1. [Navigate](./audit-logs.md#access-audit-logs){:target="_blank"} to the **Audit Logs** dashboard.
 2. Click the **Export** icon next to the **Filter By** icon.
 <img src="../images/export-audit-logs.png" alt="export audit logs" title="export audit logs" style="border: 1px solid gray; zoom:75%;">
 

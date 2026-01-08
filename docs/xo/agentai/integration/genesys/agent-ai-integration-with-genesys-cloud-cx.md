@@ -13,7 +13,7 @@ Integration of Agent AI in Genesys is a significant enhancement to our solution.
 | Generate Oauth ID to enable Kore Services to Connect with Genesys<br>+<br>Create an Interaction Widget in Genesys for Agent AI | <span id="AAI">Agent AI URL</span> | The domain of the Agent AI. | - If it is legacy Agent AI, URL is [https://agentassist.kore.ai](https://agentassist.kore.ai){:target="_blank"}<br>- If it is UXO, URL is [https://platform.kore.ai](https://platform.kore.ai){:target="_blank"}<br>- If it is on-prem, the URL is the origin where your Agent AI is hosted. |
 |  | Client App | To use any Kore AI Agent SDKs, a client app must be created to get the authentication credentials to communicate between the Kore AI Agent and Agent AI.<br>**Note:** Only the default Client App is supported. | [https://docs.kore.ai/xo/channels/add-web-mobile-client/adding-the-webmobile-client-channel](../../../channels/add-web-mobile-client.md){:target="_blank"} |
 | Create an Interaction Widget in Genesys for Agent AI | Custom Data / x_passthru_metadata | Use this to pass information to Kore AI Agent. |  |
-| Capture AI Agent Information in Kore Data Table | Secure Custom Data / KvpConfig | Use this to pass sensitive information to Kore AI Agent. | [https://docs.kore.ai/xo/sdk/sdk-security/json-web-encryption-jwe](../../../sdk/sdk-security.md/#json-web-encryption-jwe){:target="_blank"} |
+| Capture AI Agent Information in Kore Data Table | Secure Custom Data / KvpConfig | Use this to pass sensitive information to Kore AI Agent. | [https://docs.kore.ai/xo/sdk/sdk-security/json-web-encryption-jwe](../../../sdk/sdk-security.md#json-web-encryption-jwe){:target="_blank"} |
 | Create an Interaction Widget in Genesys for Agent AI | Interaction Widget | The Interaction Widget is utilized for displaying the Agent AI iframe within the Genesys Agent Desktop. | [https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration](https://help.mypurecloud.com/articles/set-up-an-interaction-widget-integration){:target="_blank"} |
 | Create an Interaction Widget in Genesys for Agent AI | Interaction Widget URL params | - **“multibot=true”** represents usage of new version of Agent AI integration that supports agent specific AI Agent<br>- **“x_metadata”** – URL-encoded JSON containing data required by Kore Middleware service<br>- **“x_passthru_metadata”** – Optional, can be JWE/JWT/base64/URL-encoded JSON stored as custom data | **x_metadata** JSON object structure:<br>`{`<br>`"datatable":{`<br>`"name":<datatable name>,`<br>`"token":<jwt token>,`<br>`"qDelimiter":<Paste the special character used in the queue name>`<br>`}}` |
 | Capture AI Agent Information in Kore Data Table | BotId | A unique identifier assigned to an AI Agent. | Agent AI > Flows & Channels > Digital > Web/Mobile Client > JWT App Details |
@@ -250,7 +250,7 @@ Set up necessary permissions and app assignments and insert AI Agent-specific da
 <img src="../kore-data-table/app-write-access-10.png" alt="app-write-access" title="app-write-access" style="border: 1px solid gray; zoom:80%;">  
 
 4. Copy **Client ID** and **Client Secret** of the App. 
-5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+5. Create a JWT Token using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}.
 6. Insert the following data into the Data Table by following this [doc](./../../../apis/automation/data-insert.md){:target="_blank"}. Use the JWT Token created in the previous step.
 
     **API Body Payload Structure**:
@@ -367,7 +367,7 @@ The “`x_metadata`” value equals the `URL`-`encoded string` of the JSON objec
     4. Copy the **Client ID** and **Client Secret** values.  
         <img src="../kore-data-table/client-id-client-secret-values-21.png" alt="client-id-client-secret-values" title="client-id-client-secret-values" style="border:1px solid gray; zoom:80%;">
 
-    5. Create a **JWT Token** using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md/#generating-the-jwt-token). 
+    5. Create a **JWT Token** using the **Client ID** and **Client Secret** by following this [doc](./../../../apis/automation/api-introduction.md#generating-the-jwt-token). 
 
     6. Generate a **JSON object** with the specified structure, and then convert it into a URL-encoded string:
 

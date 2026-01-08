@@ -10,19 +10,19 @@ Automation AI delivers agentic conversational experiences through DialogGPT and 
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
+        <img src="../images/dialoggpt-icon.svg" style="zoom:200%;"></img>
         <kr-grid-title>DialogGPT</kr-grid-title>
         <kr-grid-desc>DialogGPT is an agentic orchestration engine that autonomously manages conversations across topics, using embeddings and generative models for contextual understanding—no training data required.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](dialog-gpt-based-orchestration.md)
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
+        <img src="../images/agentflows-icon.svg" style="zoom:200%;"></img>
         <kr-grid-title>Agent Flows</kr-grid-title>
         <kr-grid-desc>Define intelligent conversational workflows by combining Dialog Tasks with Agent Nodes to deliver autonomous, goal-driven customer service experiences that dynamically adapt to user needs.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](agent-flows.md)
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
+        <img src="../images/agents-icon.svg" style="zoom:200%;"></img>
         <kr-grid-title>AI Agent</kr-grid-title>
         <kr-grid-desc>Configure Agent Nodes with tool-calling to build AI Agents that manage complex tasks and deliver human-like conversational experiences through contextual intelligence and external integrations.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./agent-node/working-with-agent-node.md)

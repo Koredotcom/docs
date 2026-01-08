@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using OAuth v2 client credentials
 
 OAuth v2 is the new version of the open protocol to allow secure authorization via a standard method from web, mobile, and desktop applications.

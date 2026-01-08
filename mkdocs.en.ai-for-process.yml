@@ -115,11 +115,11 @@ markdown_extensions:
       base_path: .
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2026 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
   - Getting Started: 
-    - AI for Process Overview: getting-started/introduction.md
+    - Introduction to AI for Process: getting-started/introduction.md
     - Accessing AI for Process: getting-started/accessing-ai-for-process.md        
     - Release Notes:
       - Recent Updates: release-notes/recent-updates.md
@@ -160,10 +160,12 @@ nav:
       - Deploy a Workflow: workflows/deploy-a-workflow.md
     - API Keys: 
       - Create an API Key: workflows/create-a-new-api-key.md 
-    - Workflow Monitor: 
-      - About Workflow Monitor: workflows/workflow-monitor/about-workflow-monitor.md
-      - Accessing Workflow Monitor: workflows/workflow-monitor/accessing-workflow-monitor.md
-      - Understanding Workflow Monitor: workflows/workflow-monitor/understanding-the-workflow-monitor-interface.md
+    - Monitoring: 
+      - Triggers: workflows/monitoring/triggers.md
+      - Workflow Monitor: 
+        - About Workflow Monitor: workflows/monitoring/about-workflow-monitor.md
+        - Accessing Workflow Monitor: workflows/monitoring/accessing-workflow-monitor.md
+        - Understanding Workflow Monitor: workflows/monitoring/understanding-the-workflow-monitor-interface.md   
     - Guardrails:
       - About Guardrails: workflows/guardrails/overview.md
       - Add a Scanner: workflows/guardrails/add-a-scanner.md

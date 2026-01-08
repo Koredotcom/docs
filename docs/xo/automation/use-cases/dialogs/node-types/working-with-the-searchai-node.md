@@ -18,7 +18,7 @@ For example, in IT support automation workflows, a dialog flow can be defined to
 ## Adding the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the **Search AI Node**.
-2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [add a node](../using-the-dialog-builder-tool.md#add-node-to-dialog).
+2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [add a node](../navigating-dialog-tasks.md#add-node-to-dialog).
 
 
 ## Configuring the Node

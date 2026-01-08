@@ -4,7 +4,7 @@ Using import functionality, you can create a new workflow or add it as a version
 
 When a workflow is imported, its prompts, properties, and linked workflows with their configurations are carried over. This ensures that the workflow works seamlessly in the new system. Additionally, any models present in the exported workflow — specifically external and open-source models — will be automatically linked and integrated. If any child workflows are missing or there are conflicts, the system will notify you.
 
-Creating a new workflow involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported workflow a unique name to avoid conflicts with existing workflow. [Learn more](../workflows/import-a-workflow.md/#import-a-workflow){:target="_blank"}.
+Creating a new workflow involves importing a *.zip* package from your local system with the flow definition, app definition, and environment variables JSON files from another environment. During the creation journey, assign the imported workflow a unique name to avoid conflicts with existing workflow. [Learn more](../workflows/import-a-workflow.md#import-a-workflow){:target="_blank"}.
 
 When importing a workflow version to a parent workflow, the imported flow definition becomes the new in-dev version, overriding the flow, app definition, and environment variable files. The previous version is renamed and saved in the list, with optional backup of the current version available.
 

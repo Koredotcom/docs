@@ -119,7 +119,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
         "_id": "cd-e7110489-a30a-5d1e-80ee-f246cc8xxxxx",
         "name": "Interactive Support SMS Campaign",
         "lname": "interactive support sms campaign",
-        "description": "Updated: This campaign sends an SMS with a link or instructions to interact with an AI agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
+        "description": "Updated: This campaign sends an SMS with a link or instructions to interact with an AI Agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
         "status": "Ready",
         "priority": "5",
         "dialingStrategy": {

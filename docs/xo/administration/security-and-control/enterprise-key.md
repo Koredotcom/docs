@@ -73,7 +73,7 @@ Kore’s BYOK solution integrates with external key management systems such as A
 2. Click **Create key** → **Symmetric** → **Encrypt and decrypt**.
 3. Configure key policy to allow administrative access.
 4. Save the **CMK ARN**:
-     arn:aws:kms:&lt;region>:&lt;account-id>:key/&lt;key-id>
+     `arn:aws:kms:<region>:<account-id>:key/<key-id>`
 
 **Use Existing CMK**
 
@@ -116,30 +116,27 @@ Select the existing CMK in the console and copy its ARN.
 1. Navigate to IAM > Policies > Create policy.
 2. Select JSON tab.
 3. Enter the following policy:
-
-
-            ```
-            {
-            "Version": "2012-10-17",
-            "Statement": [
-            { "Sid": "AllowKMSOperations",
-                "Effect": "Allow"
-                "Action": [
-                "kms:Encrypt",
-                "kms:Decrypt",
-                "kms:ReEncrypt*",
-                "kms:GenerateDataKey*",
-                "kms:DescribeKey"
-                ],
-                "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
-            }
-            ]
-            }
-
-            ```
-
-3. Name the policy (for example, `KoreByokKmsPolicy`)  
-4. Create the policy and attach it to your IAM role.
+```
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+     { "Sid": "AllowKMSOperations",
+        "Effect": "Allow"
+        "Action":[
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:DescribeKey"
+        ],
+        "Resource": "<YOUR-CMK-ARN-FROM-STEP-1>"
+      }
+    ]
+  }
+  
+```
+4. Name the policy (for example, `KoreByokKmsPolicy`)  
+5. Create the policy and attach it to your IAM role.
 
 **Step 4: Update CMK Key Policy**
 
@@ -184,12 +181,11 @@ aws kms describe-key
 **Option 1: Admin Consent URL**
 
 1. Log in to Azure portal as Global Administrator.
-2. Navigate to the following URL (replace `&lt;YOUR-TENANT-ID>` and `&lt;KORE-CLIENT-ID>`):
+2. Navigate to the following URL (replace `<YOUR-TENANT-ID>` and `<KORE-CLIENT-ID>`):   
+```
+https://login.microsoftonline.com/<YOUR-TENANT-ID>/adminconsent?client_id=<KORE-CLIENT-ID
 
-    ```
-         https://login.microsoftonline.com/<YOUR-TENANT-ID>/adminconsent?client_id=<KORE-CLIENT-ID
-
-    ```
+```
 
 3. Review permissions and grant admin consent.
 
@@ -207,7 +203,7 @@ aws kms describe-key
     * **Key vault name**: Choose unique name
     * **Region**: Select appropriate region
     * **Pricing tier**: Standard or Premium
-3. Note the Key Vault URI: `https://&lt;vault-name>.vault.azure.net/`
+3. Note the Key Vault URI: `https://<vault-name>.vault.azure.net/`
 
 Create RSA Key (if needed)
 
@@ -244,7 +240,7 @@ Assign Key Vault Permissions
 1. On the Admin Console, navigate to the **Enterprise Key** menu.
 2. Click **Create Key** under the **Bring Your Own Key** section. 
 
-<img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/byok_1.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>
 
 **2. Configure Cloud Provider Details**
 
@@ -271,7 +267,7 @@ Assign Key Vault Permissions
 
 1. On the next screen, you will see a list of all **Apps/Bots** in the workspace that will be encrypted with the provided CMK.  
     
-    <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:70%;"/>
+    <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>
 
 2. Review the list of all applications and bots in your workspace.
     * By default, all items are selected for CMK encryption.
@@ -286,6 +282,6 @@ Assign Key Vault Permissions
 
 **Related Links**
 
-* AWS KMS Developer Guide:[ https://docs.aws.amazon.com/kms/](https://docs.aws.amazon.com/kms/){:target="_blank"}
-* Azure Key Vault Documentation:[ Azure Key Vault documentation](https://docs.microsoft.com/en-us/azure/key-vault/){:target="_blank"}
+* [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/){:target="_blank"}
+* [Azure Key Vault documentation](https://docs.microsoft.com/en-us/azure/key-vault/){:target="_blank"}
 

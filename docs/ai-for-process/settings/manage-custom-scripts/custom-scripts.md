@@ -26,16 +26,16 @@ You can import a script by uploading the file in one of the supported formats, v
 
 The key steps in managing custom scripts are:
 
-1. [Access the script deployment wizard](../manage-custom-scripts/custom-scripts.md/#access-script-deployment-wizard){:target="_blank"}.
-2. [Import and Configure a script](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"} by following these steps:
+1. [Access the script deployment wizard](../manage-custom-scripts/custom-scripts.md#access-script-deployment-wizard){:target="_blank"}.
+2. [Import and Configure a script](../manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"} by following these steps:
 
-    * [Step 1: Add general details, upload the script file, and validate the script file for errors](../manage-custom-scripts/custom-scripts.md/#step-1-general-details){:target="_blank"}.
-    * [Step 2: Configure the runtime settings for the script to execute successfully.](../manage-custom-scripts/custom-scripts.md/#step-2-runtime-settings){:target="_blank"}.
-    * [Step 3: Define resource allocations, including the limitations for hardware, memory, and scaling parameters.](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"}.
-    * [Step 4: Review configuration details and deploy the script.](../manage-custom-scripts/custom-scripts.md/#step-4-review-the-provided-details){:target="_blank"}.
+    * [Step 1: Add general details, upload the script file, and validate the script file for errors](../manage-custom-scripts/custom-scripts.md#step-1-general-details){:target="_blank"}.
+    * [Step 2: Configure the runtime settings for the script to execute successfully.](../manage-custom-scripts/custom-scripts.md#step-2-runtime-settings){:target="_blank"}.
+    * [Step 3: Define resource allocations, including the limitations for hardware, memory, and scaling parameters.](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"}.
+    * [Step 4: Review configuration details and deploy the script.](../manage-custom-scripts/custom-scripts.md#step-4-review-the-provided-details){:target="_blank"}.
 
-3. [View deployed scripts and their statuses](../manage-custom-scripts/custom-scripts.md/#view-deployed-scripts-and-their-statuses){:target="_blank"}.
-4. Manage script deployment [overview](../manage-custom-scripts/custom-scripts.md/#script-overview){:target="_blank"}, [history](../manage-custom-scripts/custom-scripts.md/#deployment-history){:target="_blank"},  [endpoint](../manage-custom-scripts/custom-scripts.md/#endpoint){:target="_blank"}, and [API](../manage-custom-scripts/custom-scripts.md/#api-keys){:target="_blank"}.
+3. [View deployed scripts and their statuses](../manage-custom-scripts/custom-scripts.md#view-deployed-scripts-and-their-statuses){:target="_blank"}.
+4. Manage script deployment [overview](../manage-custom-scripts/custom-scripts.md#script-overview){:target="_blank"}, [history](../manage-custom-scripts/custom-scripts.md#deployment-history){:target="_blank"},  [endpoint](../manage-custom-scripts/custom-scripts.md#endpoint){:target="_blank"}, and [API](../manage-custom-scripts/custom-scripts.md#api-keys){:target="_blank"}.
 
 ## Access Script Deployment Wizard
 
@@ -50,7 +50,7 @@ To access the custom scripts wizard, follow the steps below:
 
 To import and add a custom script, follow the steps below:
 
-1. [Access](../manage-custom-scripts/custom-scripts.md/#access-script-deployment-wizard){:target="_blank"} the script deployment wizard.
+1. [Access](../manage-custom-scripts/custom-scripts.md#access-script-deployment-wizard){:target="_blank"} the script deployment wizard.
 2. Click **+ Import** or **+ Import new**.
 <img src="../images/import-options.png" alt="import options" title="import options" style="border: 1px solid gray; zoom:75%;">
  
@@ -178,6 +178,7 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
      * Select the required **hardware** for the deployment. The unit is **No. of vCPUs with memory**. The profiles are virtualized for standardization. The available profiles are listed below:
 
          <table>
+
   <tr>
    <td><strong>Hardware configuration</strong>
    </td>
@@ -236,7 +237,7 @@ On this page, you define scaling parameters (minimum and maximum replicas) and h
 
 The next step is to review all the configuration details before deploying the script. 
 
-1. Review each section- [General Details](../manage-custom-scripts/custom-scripts.md/#step-1-general-details){:target="_blank"}, [Runtime Settings](../manage-custom-scripts/custom-scripts.md/#step-2-runtime-settings){:target="_blank"}, and  [Resource Allocation](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} to ensure all information is accurate. You can return to any section to modify the configured values if needed.
+1. Review each section- [General Details](../manage-custom-scripts/custom-scripts.md#step-1-general-details){:target="_blank"}, [Runtime Settings](../manage-custom-scripts/custom-scripts.md#step-2-runtime-settings){:target="_blank"}, and  [Resource Allocation](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"} to ensure all information is accurate. You can return to any section to modify the configured values if needed.
 2. Read all the **Terms and Conditions**, and select **Accept** to enable deployment.
 3. (Optional) Click **Save as Draft** to save a copy and deploy it later. A success message is displayed, and the label “*Draft*” is displayed for the script. 
 <img src="../images/saved-as-draft.png" alt="saved as draft" title="saved as draft" style="border: 1px solid gray; zoom:75%;">
@@ -278,7 +279,7 @@ The summary table displays the following fields:
 
 * **Added by**: The user who added the custom script.
 * **Updated on**: The timestamp when an action (deployment, re-deployment, or undeployment) was done on the script.
-* **Action**: Perform actions on the script like undeploy, delete, or export. Refer [here](../manage-custom-scripts/custom-scripts.md/#actions){:target="_blank"} for more information.
+* **Action**: Perform actions on the script like undeploy, delete, or export. Refer [here](../manage-custom-scripts/custom-scripts.md#actions){:target="_blank"} for more information.
 
 ### Information on Script Deployment Statuses
 
@@ -485,7 +486,7 @@ Downloads the *.Zip* folder of the project to the user’s local system. To expo
    Alternatively, click the deployed script entry and select **Export** on the **Overview** page.
    <img src="../images/click-export-script.png" alt="export script" title="export script" style="border: 1px solid gray; zoom:75%;">
 
-To see when **Export** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
+To see when **Export** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md#information-on-script-deployment-statuses){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -522,7 +523,7 @@ A success message is displayed, and the script’s status changes to <b>Ready to
 <img src="../images/ready-to-deploy-success.png" alt="ready to deploy" title="ready to deploy" style="border: 1px solid gray; zoom:75%;">
 
 
-To see when **undeploy** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}. 
+To see when **undeploy** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md#information-on-script-deployment-statuses){:target="_blank"}. 
 
 **Email Notification**
 
@@ -557,12 +558,12 @@ To delete, follow the steps below on the **Manage Custom Scripts** page:
 
 A success message is displayed, and the script is permanently removed. 
 
-To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
+To see when **delete** is available, please refer to the table [here](../manage-custom-scripts/custom-scripts.md#information-on-script-deployment-statuses){:target="_blank"}.
 
 
 #### Redeploy Script
 
-This action lets you redeploy a script by editing the description, project file, runtime settings, and resource allocation (except name, base language, and version number) in the **Import Custom Script** flow mentioned [here](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"}. Redeploy is only available for the “**Deployed**” status.
+This action lets you redeploy a script by editing the description, project file, runtime settings, and resource allocation (except name, base language, and version number) in the **Import Custom Script** flow mentioned [here](../manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"}. Redeploy is only available for the “**Deployed**” status.
 
 To re-deploy, select the script with the “**Deployed**” status, and click **Re-deploy** in the **Overview** page. 
 <img src="../images/click-deployed-script.png" alt="deployed script" title="deployed script" style="border: 1px solid gray; zoom:75%;">  
@@ -587,15 +588,15 @@ The configuration details of the latest deployed version of a script can be view
 The information available on this page includes the configurations you have set for the following:
 
 * Script name and the assigned status
-* [General Details](../manage-custom-scripts/custom-scripts.md/#step-1-general-details){:target="_blank"} 
-* [Runtime Settings](../manage-custom-scripts/custom-scripts.md/#step-2-runtime-settings){:target="_blank"} 
-* [Resource Allocation](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} 
+* [General Details](../manage-custom-scripts/custom-scripts.md#step-1-general-details){:target="_blank"} 
+* [Runtime Settings](../manage-custom-scripts/custom-scripts.md#step-2-runtime-settings){:target="_blank"} 
+* [Resource Allocation](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"} 
 
-The [actions](../manage-custom-scripts/custom-scripts.md/#actions){:target="_blank"} you can perform on the script on the **Overview** page depend on the assigned status. See the table [here](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"} for more details.
+The [actions](../manage-custom-scripts/custom-scripts.md#actions){:target="_blank"} you can perform on the script on the **Overview** page depend on the assigned status. See the table [here](../manage-custom-scripts/custom-scripts.md#information-on-script-deployment-statuses){:target="_blank"} for more details.
 
 <img src="../images/overview-script-deployment.png" alt="overview" title="overview" style="border: 1px solid gray; zoom:75%;">  
 
-Refer [here](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"} to import and deploy a custom script.
+Refer [here](../manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"} to import and deploy a custom script.
 
 ## Deployment History
 
@@ -609,7 +610,7 @@ The **Deployment History** page helps view key information about the script’s 
      <img src="../images/draft-action.png" alt="draft action" title="draft action" style="border: 1px solid gray; zoom:75%;">  
 
 Click **Deploy custom script** and follow the steps for 
-[import and deploy](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"}.
+[import and deploy](../manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"}.
 
 * Information about un-deployment is displayed only when the status is '**Ready to Deploy**', indicating that the script is currently undeployed.
 * Hover over a failed status to view the reason.
@@ -644,11 +645,11 @@ To view the detailed deployment/undeployment summary, click the **Expand** arrow
 
 <img src="../images/expand-deployment-history.png" alt="deployment history expansion" title="deployment history expansion" style="border: 1px solid gray; zoom:75%;"> 
 
-The following information, configured by the user during the [import and deploy ](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"} or [un-deploy](../manage-custom-scripts/custom-scripts.md/#undeploy-the-script){:target="_blank"} step, is displayed:
+The following information, configured by the user during the [import and deploy ](../manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"} or [un-deploy](../manage-custom-scripts/custom-scripts.md#undeploy-the-script){:target="_blank"} step, is displayed:
 
-* [General Details](../manage-custom-scripts/custom-scripts.md/#step-1-general-details){:target="_blank"} 
-* [Runtime Settings](../manage-custom-scripts/custom-scripts.md/#step-2-runtime-settings){:target="_blank"} 
-* [Resource Allocation](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} 
+* [General Details](../manage-custom-scripts/custom-scripts.md#step-1-general-details){:target="_blank"} 
+* [Runtime Settings](../manage-custom-scripts/custom-scripts.md#step-2-runtime-settings){:target="_blank"} 
+* [Resource Allocation](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"} 
 
 Additionally, the following details are available:
 
@@ -712,7 +713,7 @@ For the statuses '*Deploying*,' '*Deployment Failed*,' and '*Ready to Deploy*,' 
 
 <img src="../images/not-deployed-error.png" alt="not deployed error" title="not deployed error" style="border: 1px solid gray; zoom:75%;">   
  
-To [deploy the script](../manage-custom-scripts/custom-scripts.md/#import-and-deploy-a-custom-script){:target="_blank"} and activate the endpoint (obtain the code), click **Deploy**. 
+To [deploy the script](../manage-custom-scripts/custom-scripts.md#import-and-deploy-a-custom-script){:target="_blank"} and activate the endpoint (obtain the code), click **Deploy**. 
 
 ## API Keys
 

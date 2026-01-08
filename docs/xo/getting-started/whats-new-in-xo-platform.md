@@ -149,7 +149,7 @@ The key features and experience changes are summarized below.
 
 * **Configuration**: The Configuration section lets users customize the various aspects of Agent AI. This section includes:
     
-    * **Welcome Events**: Welcome Events are pre-configured messages or prompts that are automatically triggered when a conversation is assigned to an agent in Agent AI. Welcome Events guide agents to handle inquiries effectively by streamlining workflows, lowering their Average Handle Times (AHT), reducing repetition, and contributing to enhanced customer satisfaction. [Learn more :octicons-arrow-right-24:](../agentai/configuration/conversation-events.md/#welcome-events)
+    * **Welcome Events**: Welcome Events are pre-configured messages or prompts that are automatically triggered when a conversation is assigned to an agent in Agent AI. Welcome Events guide agents to handle inquiries effectively by streamlining workflows, lowering their Average Handle Times (AHT), reducing repetition, and contributing to enhanced customer satisfaction. [Learn more :octicons-arrow-right-24:](../agentai/configuration/conversation-events.md#welcome-events)
 
     * **Answer Configuration**: SearchAssist provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. You can enhance the search capabilities of Agent AI by integrating it with the SearchAssist application. [Learn more :octicons-arrow-right-24:](../searchai/answer-configuration.md)
 

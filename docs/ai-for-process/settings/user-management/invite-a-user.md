@@ -10,12 +10,13 @@ To invite a user, follow the steps below:
 
 3. Click **Invite**.
 4. Enter a valid email address of the user you want to invite. 
+
 <ol start="5"><li>Select a role from the dropdown to define the user’s access to modules and features.
    <img src="../images/role-drop-down.png" alt="role selection" title="role selection" style="border: 1px solid gray; zoom:75%;"></li>
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>System-defined and custom roles available in the inviter’s account can be assigned. <a href="../role-management" target="_blank">Learn more</a> about roles and permissions.</p></div></ol>
+<p>System-defined and custom roles available in the inviter’s account can be assigned. <a href="../role-management/" target="_blank">Learn more</a> about roles and permissions.</p></div></ol>
 
 <ol start="6"><li>To invite multiple users, click <b>+ Add another member</b>. Then, follow steps 4 and 5.
 

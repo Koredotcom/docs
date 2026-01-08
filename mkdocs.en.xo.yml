@@ -87,11 +87,11 @@ plugins:
         'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/connectors/aws-s3-connector-setup-guide.md'
         'searchai/workbench.md': 'searchai/workbench/introduction.md'
         'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
-        'quality-ai/connectors/aws-s3-connector-setup-guide.md': 'quality-ai/configure/quality-ai-express.md'
         'quality-ai/analyze/conversation-mining-overview.md': 'quality-ai/analyze/conversation-mining-interactions.md'
         'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
         'getting-started/building-a-virtual-assistant.md' : 'getting-started/dialoggpt-app-setup-guide.md'
-extra:
+        'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md' : 'automation/use-cases/dialogs/dialog-tasks-overview.md'
+extra:  
   version:
     provider: mike
   generator: false
@@ -164,7 +164,7 @@ markdown_extensions:
       base_path: .
 
 copyright: |
-  © 2025 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
+  © 2026 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home: home.md
   - Platform:
@@ -249,7 +249,8 @@ nav:
         - Dialog:
           - About Dialog Task: automation/use-cases/dialogs/dialog-tasks-overview.md
           - Navigating Dialogs: automation/use-cases/dialogs/navigating-dialog-tasks.md
-          - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md 
+          - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
+          - Manage Components: automation/use-cases/dialogs/managing-dialogs.md 
         - Session Management: automation/use-cases/using-session-and-context-variables.md
         - Context Management: automation/intelligence/context-object.md 
       - AI Agents:
@@ -773,8 +774,7 @@ nav:
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
-          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
-          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md               
   - Analytics:
     - Analyzing Your App: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md

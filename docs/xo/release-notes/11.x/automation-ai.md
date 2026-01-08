@@ -739,7 +739,7 @@ Key updates
 * Customizable background colors.
 * Default yellow styling with instant edit mode.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#bookmarks-and-notes)
 
 
 **Upgraded Bookmarks for Better Visual Organization**
@@ -750,7 +750,7 @@ Key updates
 * Customizable background colors.
 * Improved loading experience with visual feedback.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#bookmarks-and-notes)
 
 
 <hr>
@@ -1008,7 +1008,7 @@ Key updates:
 
 * Collaborative viewing: The first user to open the app is automatically granted editing rights, while subsequent users join as viewers. This ensures clear control over who can make changes, reducing the potential for conflicts or errors.  
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#collaboration-tool){:target="_blank"}
 
 **Redesigned Property Panel for Dialog Builder Nodes**
 
@@ -1122,7 +1122,7 @@ Key benefits:
 
 <img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#collaboration-tool){:target="_blank"}
 
 
 **Redesigned Property Panel for Dialog Builder Nodes**
@@ -1357,7 +1357,7 @@ Key features and enhancements included in this release are summarized below.
 
 **Enhancement to the Comments Functionality**
 
-The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#notes-comments-and-bookmarks){:target="_blank"}
+The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md){:target="_blank"}
 
 <font size="4">Digital Forms</font>
 

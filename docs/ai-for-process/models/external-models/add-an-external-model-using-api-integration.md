@@ -50,6 +50,7 @@ The steps to add an external model using API integration are given below:
        <img src="../images/sample-input-dialog.png" alt="sample input" title="sample input" style="border: 1px solid gray; zoom:75%;"></ul></ul> 
 
 These inputs are used to test the connection and receive a response from the model. Once the response is generated, you must configure the **JSON path** to capture the Output path, Input tokens, and Output tokens, as follows:
+
    * **Output Path**: When you interact with the model, you send a request in a specific format and receive a response in a corresponding format, often as a large JSON object. As a user, you are mainly interested in extracting the model’s answer from this response. The *output path* refers to the location or key within the JSON where the model’s main output is stored. Knowing this path is essential, especially in the prompt playground, as it tells you exactly which key to map to populate the response in the playground box. For example, in the sample response below, the output path is `choices[0].message.content.` 
    <img src="../images/output-path-entry.png" alt="output path" title="output path" style="border: 1px solid gray; zoom:75%;">
 
@@ -83,8 +84,8 @@ These inputs are used to test the connection and receive a response from the mod
      <p><ul><li>This configuration requires at least one feature to be enabled.</li>
      <li>Users can enable any feature, but the model must support it. Otherwise, you may see unexpected behavior.</li></ul></p></div>
 
-    * **Structured response**: Specifies that the model supports the generation of a structured response. Enabling this flag allows the model to be used for generating a structured output within [Prompts](../../prompts/using-prompt-studio.md/#add-prompts){:target="_blank"} and [Workflows](../../workflows/workflow-builder/flows-overview.md){:target="_blank"}.
-    * **Data generation**: Specifies that the model can be used for synthetic data generation for text-based tasks. Turning this flag on allows the model to be used for prompt generation in [Prompts Studio](../../prompts/using-prompt-studio.md/#add-prompts){:target="_blank"}.
+    * **Structured response**: Specifies that the model supports the generation of a structured response. Enabling this flag allows the model to be used for generating a structured output within [Prompts](../../prompts/using-prompt-studio.md#add-prompts){:target="_blank"} and [Workflows](../../workflows/workflow-builder/flows-overview.md){:target="_blank"}.
+    * **Data generation**: Specifies that the model can be used for synthetic data generation for text-based tasks. Turning this flag on allows the model to be used for prompt generation in [Prompts Studio](../../prompts/using-prompt-studio.md#add-prompts){:target="_blank"}.
     * **Streaming**: Specifies that the model supports real-time, token-by-token generation for faster AI responses. Turning this flag on allows the model to be used for generating streaming responses within Agentic Apps. (coming soon) 
     * **Modalities Support**: Specifies the modalities supported by the model. Enabling this flag allows the model to run Text-to-Text, Text-to-Image, Image-to-Text, and Audio-to-Text tasks for seamless downstream integration within the [Workflows](../../workflows/workflow-builder/flows-overview.md){:target="_blank"}.
      <img src="../images/model-features-list.png" alt="model features" title="model features" style="border: 1px solid gray; zoom:75%;">
