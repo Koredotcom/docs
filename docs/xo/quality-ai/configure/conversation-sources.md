@@ -139,7 +139,9 @@ The main interface displays all enabled conversation sources and their queues.
     
 #### Chat Script Timestamp Format
 
-Chat Script Timestamp Format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. Each chat script contains multiple timestamps per message. Correct configuration ensures accurate message sequencing, duration calculations, and time-based analytics. You configure the timestamp format at the Quality AI Express app level, and it applies to all ingested chat files. The system persists the selected format across sessions and displays it consistently in the Conversation Sources tab.
+Chat script timestamp format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. Each chat script includes message-level timestamps. Correct configuration ensures accurate message sequencing, duration calculations, and time-based analytics.
+
+Enables you to configure the timestamp format at the Quality AI Express app level. The selected format applies to all ingested chat files, persists across sessions, and displays consistently in the **Conversation Sources** tab.
 
 **Why Timestamp Format Matters**
 
@@ -153,11 +155,11 @@ Chat Script Timestamp Format controls how Quality AI Express parses timestamps i
 
 * Incorrect timestamp parsing causes sequencing errors and inaccurate metrics.
 
-Quality AI uses the following timestamp format options:
+Quality AI supports the following Chat script timestamp formats:
 
-**Unix Timestamp**
+**Unix Timestamp (Default)**
 
-Represents seconds since the Unix epoch. This ingestion process supports only Unix timestamps with start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format. 
+Represents seconds since the Unix epoch. This ingestion process validates start and end times, which can limit flexibility for demo environments and third-party desktop integrations. 
 
 **Format**: Integer or decimal number.
 
