@@ -85,7 +85,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>testRunId</strong>
    </td>
-   <td>The unique identifier of an execution result obtained by running the <a href="../batch-test-execution">test execution API</a>.
+   <td>The unique identifier of an execution result obtained by running the <a href="../batch-test-execution/">test execution API</a>.
    </td>
    <td>Required
    </td>

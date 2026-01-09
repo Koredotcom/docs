@@ -8,8 +8,8 @@ To fetch the conversation details and conversation summary between the bot and t
 |-------------------|-----------|
 | Endpoint       | `https://{{host}}/api/public/bot/{{botId}}/conversationDetails` |
 | Content Type   | `application/json` |
-| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
-| API Scope      | App Builder: Chat History<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes){:target="_blank"} |
+| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
+| API Scope      | App Builder: Chat History<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |
 
 ## Path Parameters
 

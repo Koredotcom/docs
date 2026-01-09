@@ -18,7 +18,7 @@ Here are some key points to consider:
 
 3. **Assigning Roles**
 
-    * Once a user joins your account, assign them a role based on their responsibilities and job functions. By default, the **Viewer** role is assigned to new users joining your account, providing the minimum level of account access required. [Learn more](./role-management.md#system-defined-roles){:target="_blank"}. This role can be changed later in the **Settings** console. [Learn more](./role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
+    * Once a user joins your account, assign them a role based on their responsibilities and job functions. By default, the **Member** role is assigned to new users joining your account, providing the minimum level of account access required. [Learn more](./role-management.md#system-defined-roles){:target="_blank"}. This role can be later changed by the admin in the **Settings** console. [Learn more](./role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
 4. **Default and Custom Roles**
 
@@ -105,7 +105,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create tools, add external models, and modify only specific integrations.</td>
+   <td>Users can create tools, add external models, and modify only specific integrations. This is the default role assigned to new users.</td>
   </tr>
   <tr>
    <td><strong>Viewer</strong>

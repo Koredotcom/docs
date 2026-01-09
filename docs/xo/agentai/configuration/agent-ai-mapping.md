@@ -54,7 +54,7 @@ To configure dialogs to  queues:
 
     !!! note
 
-        Agents assigned to a queue during its creation appear by default, and the agent-to-queue assignment is controlled through CCAI. For more information, see [this](../../contactcenter/routing/queues/queue-management.md/#assign-agents){:target="_blank"} section. 
+        Agents assigned to a queue during its creation appear by default, and the agent-to-queue assignment is controlled through CCAI. For more information, see [this](../../contactcenter/routing/queues/queue-management.md#assign-agents){:target="_blank"} section. 
 
 To delete a queue, click the **delete** icon against it, and then click **Delete** on the confirmation message:  
 

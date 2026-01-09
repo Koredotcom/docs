@@ -8,7 +8,7 @@ This API triggers a conversation summary event in the Agent AI system. It is use
 |------------------|----------------------------------------------------------------------|
 | **Endpoint**     | `https://{{host}}/api/v1/public/bot/{{botId}}`                       |
 | **Content Type** | `application/json`                                                   |
-| **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
+| **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
 
 ### Path Parameters
 

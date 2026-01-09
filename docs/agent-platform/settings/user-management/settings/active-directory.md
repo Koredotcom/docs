@@ -174,10 +174,21 @@ When you set up Active Directory sync for the first time, the following options 
 
 <img src="../images/configure-sync-with-directory.png" alt="configure sync with directory" title="configure sync with directory" style="border: 1px solid gray; zoom:75%;">
 
+### User Settings
+
+In this module, you can choose which profile fields (data fields) are visible to all users by default in your domain. You can also specify whether users are allowed to edit these default fields. You can manage mandatory fields here. For example: *First Name* in the HRIS.
+
+Additionally, you can manage which non-default fields (controlled fields) end users can view and edit. You can manage optional fields here. For example: *District* for address.
+
 ### Sync Status Email Notifications
 
-For a successful or failed sync, a notification is sent to the registered email.  
+For a successful or failed sync, a notification is sent to the registered email.
 
-An alternative way to add users to your account (without using Active Directory sync) is to invite them via email. 
+In the **Email Notifications** section you can choose whether the users should receive email notifications in the following scenarios:
+
+* Only when invited by the administrator.
+* Only when added or sychronized using AD server
+
+An alternative way to add users to your account (without using Active Directory sync) is to [invite them via email](../invite-a-user.md){:target="_blank"}. 
 
 To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.

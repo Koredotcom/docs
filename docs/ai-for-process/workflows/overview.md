@@ -12,7 +12,7 @@ Workflow can automate processes, streamline workflows, generate insights, and pr
 
 * **API Keys**: Create API keys for your deployed workflows to access them from external systems securely. Share these keys only with trusted users. [Learn more](./create-a-new-api-key.md).
 
-* **Workflow Monitor**: Track and analyze your workflows' performance across multiple runs, gaining a comprehensive, time-based view of workflow activities to optimize your AI operations. [Learn more](./workflow-monitor/about-workflow-monitor.md).
+* **Workflow Monitor**: Track and analyze your workflows' performance across multiple runs, gaining a comprehensive, time-based view of workflow activities to optimize your AI operations. [Learn more](./monitoring/about-workflow-monitor.md).
 
 * **Guardrails**: Deploy various guardrail models and use them to scan LLM requests and responses to enforce safety and appropriateness standards. [Learn more](guardrails/add-a-scanner.md){:target="_blank"}.
 
