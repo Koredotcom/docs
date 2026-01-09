@@ -1321,7 +1321,7 @@ Key benefits:
 * Greater precision in identifying IP addresses through pattern matching.
 * Streamlined administration for large IP ranges.
 
-[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/security-settings.md/#ip-address-restriction){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/security-settings.md#ip-address-restriction){:target="_blank"}
 
 <hr>
 

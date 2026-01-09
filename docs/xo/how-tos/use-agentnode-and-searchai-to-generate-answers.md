@@ -8,7 +8,7 @@ Prerequisites:
 
 
 
-* The [Agent Node](../automation/agent-node/working-with-agent-node.md) feature is [enabled](../generative-ai-tools/genai-features.md/#enable-feature).
+* The [Agent Node](../automation/agent-node/working-with-agent-node.md) feature is [enabled](../generative-ai-tools/genai-features.md#enable-feature).
 * Ensure you have selected a [custom tool calling prompt](../automation/agent-node/prompt-setup.md) for the Agent Node.
 * Search AI is configured.
 

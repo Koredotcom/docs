@@ -239,8 +239,8 @@ Below is the process we recommend you use for utterance training:
     2. **For multiple matched intents**: Select the radio button for the intent you want to match.
     3. **For a single matched intent**: Click the name of the matched intent.
 2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](../natural-language/training/machine-learning-engine.md){:target="_blank"}.
-3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](../natural-language/training/fundamental-meaning.md/#manage-synonyms){:target="_blank"}.
-4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](../natural-language/training/fundamental-meaning.md/#manage-patterns-and-rules){:target="_blank"}.
+3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](../natural-language/training/fundamental-meaning.md#manage-synonyms){:target="_blank"}.
+4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](../natural-language/training/fundamental-meaning.md#manage-patterns-and-rules){:target="_blank"}.
 5. When you are done making the relevant training entries, click **Re-Run Utterance** to see if you have improved the intent to get a high confidence score. 
 
 <img src="../images/utterance-testing-16-utterance-training.png" alt="Utterance-based Training" title="Utterance-based Training" style="border: 1px solid gray; zoom:50%;"/>

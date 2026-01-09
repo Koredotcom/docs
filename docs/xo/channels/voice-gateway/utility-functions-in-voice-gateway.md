@@ -408,7 +408,7 @@ Example: A caller navigates a self-service flow and requests a human agent. The 
 * Redirecting to business partners or external support lines.  
 * Escalating calls to off-platform teams.
 
-Example: An AI agent identifies that a customer inquiry requires a third-party vendor’s assistance. The system transfers the call to the vendor’s helpline.
+Example: An AI Agent identifies that a customer inquiry requires a third-party vendor’s assistance. The system transfers the call to the vendor’s helpline.
 
 ## Raw Packet (JavaScript Code)
 

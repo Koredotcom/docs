@@ -1,6 +1,6 @@
 # NICE MAX Desktop Chat and Voice
 
-This document provides detailed instructions on the integration process of the Kore.ai Agent AI widget into the NICE MAX Desktop environment. It offers step-by-step guidance to ensure a smooth and efficient setup process, covering all necessary aspects of integration from start to finish. This integration will support all outstanding features of Agent AI such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/){:target="_blank"}, [Agent Coaching](../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Transcription](../../agent-experience/agent-assist-widget-v3.md/#transcript-tab){:target="_blank"} along with end of call summary and Custom Data passing such as agent name, ID etc to Agent AI widget.
+This document provides detailed instructions on the integration process of the Kore.ai Agent AI widget into the NICE MAX Desktop environment. It offers step-by-step guidance to ensure a smooth and efficient setup process, covering all necessary aspects of integration from start to finish. This integration will support all outstanding features of Agent AI such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/){:target="_blank"}, [Agent Coaching](../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Transcription](../../agent-experience/agent-assist-widget-v3.md#transcript-tab){:target="_blank"} along with end of call summary and Custom Data passing such as agent name, ID etc to Agent AI widget.
 
 ## Shared Responsibilities
 
@@ -21,7 +21,7 @@ This document provides detailed instructions on the integration process of the K
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
 * Agent Assist Hub enabled for your account. Contact your NICE CX representative. Note this requires an extra license cost.
 * Access to Kore AgentAssist application and familiarity with creating and configuring a Kore AI Agent.
-* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Voice Gateway](../../../channels/voice-gateway/configure-voice-gateway.md/#steps-to-configure-sip-trunk){:target="_blank"} and [Chat](../../../channels/add-web-mobile-client.md){:target="_blank"} for a walkthrough. 
+* Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Voice Gateway](../../../channels/voice-gateway/configure-voice-gateway.md#steps-to-configure-sip-trunk){:target="_blank"} and [Chat](../../../channels/add-web-mobile-client.md){:target="_blank"} for a walkthrough. 
 * Ensure that Voice Interaction Streams are enabled via NICE. 
 
 ## Definitions

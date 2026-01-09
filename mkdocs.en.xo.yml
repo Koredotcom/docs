@@ -774,8 +774,7 @@ nav:
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md
-          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md
-          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md                
+          - Installing Botkit in AWS: sdk/installing-botkit-in-aws.md               
   - Analytics:
     - Analyzing Your App: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md

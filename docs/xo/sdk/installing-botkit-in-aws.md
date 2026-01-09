@@ -37,7 +37,7 @@ References:
 
 
 * [Using the BotKit SDK](./using-the-botkit-sdk.md)
-* [Events for the BotKit SDK](./sdk-events.md/)
+* [Events for the BotKit SDK](./sdk-events.md)
 * [Functions for the BotKit SDK](./sdk-functions.md)
 
 

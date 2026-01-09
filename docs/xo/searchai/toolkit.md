@@ -1,6 +1,6 @@
 # Toolkit - Developer Utilities
 
-The **Toolkit** section under **Dev Tools** in Search AI provides a collection of utilities and SDKs to extend, integrate, and optimize your search experience. The toolkit offers a range of utilities for various activities, including content processing, data extraction, performance tuning, and connector development, enabling advanced customization and intelligent search workflows. These are developer-friendly tools that aim to reduce implementation time and enable fast adoption. 
+The *Toolkit* section under *Dev Tools* in Search AI provides a collection of utilities and SDKs to extend, integrate, and optimize your search experience. The toolkit offers a range of utilities for various activities, including content processing, data extraction, performance tuning, and connector development, enabling advanced customization and intelligent search workflows. These are developer-friendly tools that aim to reduce implementation time and enable fast adoption. 
 
 
 ## Tools and Utilities

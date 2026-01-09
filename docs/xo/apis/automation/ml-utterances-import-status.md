@@ -82,7 +82,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td><strong>MLutteranceID</strong>
    </td>
-   <td>The ID generated in the format Bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx when calling the <a href="../import-ml-utterances">ML Utterances Import API</a>.
+   <td>The ID generated in the format Bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx when calling the <a href="../import-ml-utterances/">ML Utterances Import API</a>.
    </td>
    <td>Required
    </td>
