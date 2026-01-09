@@ -24,7 +24,7 @@ With the shift from SearchAssist to the next-generation Search AI on the AI for 
    </td>
    <td>Available( under the Automation AI Module)
    </td>
-   <td><a href="../best-practices-faq-and-answer">FAQs</a> are now managed via the<a href="../../automation/knowledge-ai/knowledge-ai-introduction/"> Knowledge Module</a>, offering a more flexible and scalable approach for handling common queries without duplicating functionality. This ensures consistent, centralized knowledge management.
+   <td><a href="../best-practices-faq-and-answer/">FAQs</a> are now managed via the<a href="../../automation/knowledge-ai/knowledge-ai-introduction/"> Knowledge Module</a>, offering a more flexible and scalable approach for handling common queries without duplicating functionality. This ensures consistent, centralized knowledge management.
    </td>
   </tr>
   <tr>
