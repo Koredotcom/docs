@@ -49,7 +49,7 @@ The system supports three distinct hierarchical levels for topic organization:
 
     * **Description**: Required, max 250 characters.
 
-4. Select **Create** to add the new level to your taxonomy.
+5. Select **Create** to add the new level to your taxonomy.
 
 #### Adding Second Level
 
@@ -68,13 +68,14 @@ The system supports three distinct hierarchical levels for topic organization:
 
     * **Parent Category**:
 
-        * Assign to New or Different Parent Category (Level 1)
+        * Assign to New Parent Category (Level 1)
         
         * Keep the preselected parent (if added from existing L1)
 
         * Set as Standalone Category (Level 2)
 
-4. Select **Create** to add the topic to your taxonomy.
+4. Select **Create** to add the topic to your taxonomy.    
+<img src="../images/add-new-topic-second-level.png" alt="Add Level 2" title="Add Level 2" style="border: 1px solid gray; zoom:100%;"> 
 
 #### Adding Third Level
 
@@ -108,7 +109,16 @@ The system supports three distinct hierarchical levels for topic organization:
     
     * Description
 
-4. Select **Save** to confirm your changes.
+    * Reorganise Topic
+
+    * Change Level
+
+4. Select the Reorganise Topic checkbox to move topics to new parent categories.
+
+5. Select the options like Standalone Level 2 or Level 1 to update the hierarchy, which automatically moves all your related child topics with the parent topic.   
+<img src="../taxonomy-builder/images/edit-reorganize-topic-level.png" alt="Edit Existing Topic Hierarchy" title="Edit Existing Topic Hierarchy" style="border: 1px solid gray; zoom:100%;">  
+  
+6. Select **Save** to confirm your changes.
 
 ### Resolution Configuration
 

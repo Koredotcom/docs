@@ -8,25 +8,25 @@ Follow these steps:
 
     a. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**. [Learn more](../../user-management/role-management.md){:target=”_blank”}.
 
-    b. Assign relevant roles (Supervisor role) or create custom roles with QM permissions. [Learn more](../../user-management/role-management.md/#custom-role){:target=”_blank”}.
+    b. Assign relevant roles (Supervisor role) or create custom roles with QM permissions. [Learn more](../../user-management/role-management.md#custom-role){:target=”_blank”}.
     
 2. **Set up Contact Center**
 
-    a. Assign Supervisors/Auditors to relevant queues in your Contact Center application so that they have access to the relevant interactions. [Learn more](../../console/monitor-queues-agents-and-interactions.md/#queues){:target=”_blank”}.
+    a. Assign Supervisors/Auditors to relevant queues in your Contact Center application so that they have access to the relevant interactions. [Learn more](../../console/monitor-queues-agents-and-interactions.md#queues){:target=”_blank”}.
 
 3. **Enable Settings Features**
 
-    a. Enable **Conversation Intelligence**, **Auto QA**, and **Bookmarks** in Quality AI **Settings**. [Learn more](../analyze/conversation-intelligence.md/){:target=”_blank”}.
+    a. Enable **Conversation Intelligence**, **Auto QA**, and **Bookmarks** in Quality AI **Settings**. [Learn more](../analyze/conversation-intelligence.md){:target=”_blank”}.
 
-    b. Enable **Answer** and **Utterance** suggestions in GenAI Settings. [Learn more](../../generative-ai-tools/genai-features.md/){:target=”_blank”}.
+    b. Enable **Answer** and **Utterance** suggestions in GenAI Settings. [Learn more](../../generative-ai-tools/genai-features.md){:target=”_blank”}.
     
 4. **Create New Evaluation Metrics**
 
-    a. Use By Question, Question Answer Pair, Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
+    a. Use By Question, Question Answer Pair, Adherence Types (Static/Dynamic). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md){:target=”_blank”}.
     
-    b. Evaluation Metrics (Create New Evaluation Metrics). [Learn more](../configure/evaluation-metrics.md/#create-new-evaluation-metric){:target=”_blank”}.    
+    b. Evaluation Metrics (Create New Evaluation Metrics). [Learn more](../configure/evaluation-metrics.md#create-new-evaluation-metric){:target=”_blank”}.    
     
-    c. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md/){:target=”_blank”}.
+    c. Set Count Type (Entire Conversation/Time Bound). [Learn more](../configure/evaluation-criteria/metrics-measurement-types/by-question.md){:target=”_blank”}.
     
 5. **Create Evaluation Forms**
 
@@ -34,7 +34,7 @@ Follow these steps:
 
     b. Select metrics, assign weights, and link to queues. 
     
-    [Learn more](../configure/evaluation-forms.md/#create-a-new-evaluation-form){:target=”_blank”}. 
+    [Learn more](../configure/evaluation-forms.md#create-a-new-evaluation-form){:target=”_blank”}. 
 
 6. **View Scored Interactions in Conversation Mining**
 

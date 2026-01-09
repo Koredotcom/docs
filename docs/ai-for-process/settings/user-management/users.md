@@ -218,7 +218,7 @@ On the **Users** dashboard, you can change the account-level role for one or mor
 
 Changing the user role automatically assigns the designated permissions and access levels defined in the system.
 
-To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
+To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
 ### Bulk Role Change
 

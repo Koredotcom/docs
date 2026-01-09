@@ -33,7 +33,7 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
 --header 'iid: st-0603182c-7ffb-53c3-b307-47ca14bxxxxx' \
 --data '{
     "name": "Interactive Support SMS Campaign1212",
-    "description": "This campaign sends an SMS with a link or instructions to interact with an AI agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
+    "description": "This campaign sends an SMS with a link or instructions to interact with an AI Agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
     "contactLists": [
         "CL Only 2020 Dec 4"
     ],
@@ -134,7 +134,7 @@ curl --location 'hhttps://{{host}}/api/v2/public/{{streamId}}/campaign?accountId
         "_id": "cd-e7110489-a30a-5d1e-80ee-f246cc8xxxxx",
         "name": "Interactive Support SMS Campaign1212",
         "lname": "interactive support sms campaign1212",
-        "description": "This campaign sends an SMS with a link or instructions to interact with the AI agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
+        "description": "This campaign sends an SMS with a link or instructions to interact with the AI Agent. Customers can check order status, raise tickets, or get help—all via chat-enabled SMS.",
         "status": "Ready",
         "dncLists": {
             "name": "testdnc"

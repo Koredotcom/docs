@@ -63,7 +63,7 @@ Go to **Flows & Channels** > **Channels** > **Voice Gateway**, and select **SIP 
     !!! note
         Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
-10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md/#attach-flow){:target="_blank"}.  
+10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md#attach-flow){:target="_blank"}.  
 <img src="../images/koreai-voice-gateway-4.png" alt="voice-gateway" title="voice-gateway" style="border: 1px solid gray; zoom:80%;">
 
 ## Step 3: Agent Transfer Configuration
@@ -239,6 +239,6 @@ Follow these steps to get the **botID**:
      16.2.4 On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
         <img src="../images/insights-to-logs-sessionid-26.png" alt="insights-to-logs-sessionid" title="insights-to-logs-sessionid" style="border: 1px solid gray; zoom:80%;">
 
-    16.3 Generate and copy the **JWT token** by following [this document](../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+    16.3 Generate and copy the **JWT token** by following [this document](../../../apis/automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}.
 
 17. Run the modified **curl** to get the conversation details and summary of a session.
