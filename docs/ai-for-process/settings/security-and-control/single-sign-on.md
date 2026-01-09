@@ -84,7 +84,7 @@ If SSO is already configured, the **Single sign-on** setup page is displayed, as
 
 ## Enable SSO
 
-Depending on your company's security requirements, you can enable SSO for your AI for Process account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} to integrate with the IDP service.
+Depending on your company's security requirements, you can enable SSO for your AI for Process account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} to integrate with the IDP service.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -200,12 +200,12 @@ To enable SSO on the **Settings** console, follow the steps below:
 
 3. If SSO is already enabled for a provider, click the **Enable SSO** tab and do one of the following:
 
-* Change and save the existing [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for the enabled SSO provider.
+* Change and save the existing [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} for the enabled SSO provider.
 * Disable the enabled SSO and set up a new configuration.
 * Select a different protocol/provider and complete the configuration.
 
 4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
-5. Configure the [parameters](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
+5. Configure the [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
 
 <ul><li><b>SAML</b>: <a href="#okta-configuration" target="_blank">Okta</a>, <a href="#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="#other-configuration" target="_blank">Other</a>. <a href="#saml" target="_blank">Learn more</a>.</li>
 <li><b>WS-Federation</b>: <a href="#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="#other-configuration" target="_blank">Other</a>. <a href="#ws-federation" target="_blank">Learn more</a>.</li>
@@ -372,7 +372,7 @@ To configure and enable SSO using SAML for other IDPs of your choice, follow the
 3. Select **SAML** for **Sign-on protocol** and **Other** for **SSO provider**.
 <img src="../images/other-sso-provider.png" alt="other sso provider" title="other sso provider" style="border: 1px solid gray; zoom:75%;">
 
-4. Fetch the necessary SSO configuration parameters listed in [this](../security-and-control/single-sign-on.md/#configuration-parameters){:target="_blank"} table from your app's **Settings** page within the IDP developer portal. 
+4. Fetch the necessary SSO configuration parameters listed in [this](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} table from your app's **Settings** page within the IDP developer portal. 
 5. Paste them into the relevant fields on AI for Process’ SSO setup page.
 
 To add a new certificate, click **+Add new**.
@@ -470,7 +470,7 @@ However, you can still view the previously configured SSO parameters for a speci
 
 ## Steps to Disable SSO
 
-1. [Access](../security-and-control/single-sign-on.md/#access-single-sign-on){:target="_blank"} the **Single sign on** page.
+1. [Access](../security-and-control/single-sign-on.md#access-single-sign-on){:target="_blank"} the **Single sign on** page.
 2. Click the **Disable SSO** tab.
 <img src="../images/click-disable-sso.png" alt="click disable sso" title="click disable sso" style="border: 1px solid gray; zoom:75%;">
 
@@ -502,7 +502,7 @@ The **Manage Users** feature on the **Single Sign-On** page allows the account o
 
 To exclude a user from the SSO requirement, follow the steps below:
 
-1. [Navigate](../security-and-control/single-sign-on.md/#access-single-sign-on){:target="_blank"} to the **Single Sign-on** page.
+1. [Navigate](../security-and-control/single-sign-on.md#access-single-sign-on){:target="_blank"} to the **Single Sign-on** page.
 2. Type and add an email address or select from the dropdown in the **Manage Users** textbox.
 <img src="../images/manage-users-sso.png" alt="manage sso users" title="manage sso users" style="border: 1px solid gray; zoom:75%;">
 
