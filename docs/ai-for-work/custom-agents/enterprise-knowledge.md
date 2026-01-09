@@ -1,11 +1,14 @@
 # Enterprise Knowledge
 
-Enterprise Knowledge represents a **Search AI** app, **Agentic** App, or **Amazon Q** Index application provisioned for every workspace. It serves as a fallback response repository, ensuring the system can generate responses by searching enterprise data when no specific agents align with the user's intent. Enterprise Knowledge enhances response accuracy and relevance by retrieving content from various sources and generating contextual responses based on that information. The system automatically makes it available to users when no custom or specific agents handle a user query.
+Enterprise Knowledge represents a **Search AI** app, **Agentic** App, or **Amazon Q** Index application provisioned for every enterprise  workspace. It serves as a fallback response repository, ensuring the system can generate responses by searching enterprise data when no specific agents align with the user's intent. Enterprise Knowledge enhances response accuracy and relevance by retrieving content from various sources and generating contextual responses based on that information. The system automatically makes it available to users when no custom or specific agents handle a user query.
 
 ## Key Features
 
 * **Fallback Search Response**: It activates when no specific agent matches the user's query, ensuring the system can still provide useful responses.
 * **Multiple Data Sources**: It retrieves information from various sources, including webpages, local files, third-party knowledge systems, and structured data, and combines them for a holistic response.
+
+!!!note
+    Enterprise Knowledge is only available in enterprise workspaces. Users in standard or other workspace  wont have access to this feature.
 
 ## How Does Enterprise Knowledge Work?
 
@@ -18,7 +21,7 @@ The **Enterprise Knowledge** is meant for generic use rather than a specific int
 
 ## Enterprise Knowledge Configuration
 
-Configure enterprise knowledge sources that activate when no agent triggers. Set up and manage sources using **Search AI** app, **Agentic App**, or **Amazon Q**. Enterprise Knowledge operates per workspace - each workspace maintains its own separate knowledge configuration.
+Configure enterprise knowledge sources that activate when no agent triggers. Set up and manage sources using **Search AI** app, **Agentic App**, or **Amazon Q**. Enterprise Knowledge operates per workspace - each enterprise workspace maintains its own separate knowledge configuration.
 
 * [Configure Search AI](../custom-agents/connect-search-ai.md)
 * [Configure Agentic App](../custom-agents/connect-agentic-app.md)
