@@ -8,8 +8,7 @@ Enterprise Knowledge represents a **Search AI** app, **Agentic** App, or **Amazo
 * **Multiple Data Sources**: It retrieves information from various sources, including webpages, local files, third-party knowledge systems, and structured data, and combines them for a holistic response.
 
 !!!note
-
-   Enterprise Knowledge is only available in enterprise workspaces. Users in standard or other workspace  wont have access to this feature.
+    Enterprise Knowledge is only available in enterprise workspaces. Users in standard or other workspace  wont have access to this feature.
 
 ## How Does Enterprise Knowledge Work?
 
