@@ -1,15 +1,24 @@
 # Workspace 
 
-A *workspace* represents a logical grouping of applications, tools, and configurations, typically organized by teams or projects. Workspaces bring organization and structure to how apps are grouped and accessed. It determines **what apps and data are accessible**, **what actions are allowed**, and **which configurations apply** based on the currently selected workspace.
+A *workspace* represents a logical grouping of applications, tools, and configurations, typically organized by teams or projects. Workspaces bring organization and structure to how apps are grouped and accessed. It determines *what apps and data are accessible*, *what actions are allowed*, and *which configurations apply* based on the selected workspace.
 
-By default, when a new account is created, a default workspace is created and assigned. When a new app is created, it is automatically associated with the workspace. 
+Workspaces provide:
 
-Points to Note:
+* Isolation between teams and projects. 
+* Independent configuration management for models, tools, and settings.
+* Controlled access based on user roles.
+* Clear ownership and accountability.
 
-* Every app is tied to a specific workspace. It cannot be moved or accessed across workspaces (use import/export to move apps across workspaces).
-* Tools created within a workspace are only available to apps in that workspace. (use import/export to move tools across workspaces).
-* All configurations, including AI Model configurations, settings, auth profiles, and permissions, are maintained separately for each workspace.
-* Each workspace has its own set of deployment environments.
+## Workspace Scope
+
+* By default, when a new account is created, a default workspace is created and assigned.
+* When a new app is created, it is automatically associated with the workspace.
+* Every app belongs to exactly one workspace.
+* Apps and tools (under development) are not shared across workspaces by default.
+* Tools created within a workspace are only available to apps in that workspace.
+* Configurations, including AI Model configurations, settings, auth profiles and permissions, and environments are workspace-specific.
+* To move apps or tools between workspaces, use import/export.
+
 
 The current workspace is displayed at the top right corner in the Agent Platform UI. 
 
@@ -17,12 +26,17 @@ The current workspace is displayed at the top right corner in the Agent Platform
 
 ## Switching between Workspaces
 
-Clicking the workspace name opens a drop-down list of all accessible workspaces.
+Switching workspaces changes the entire operational context of the platform. Click the workspace name to see the list of all accessible workspaces.
 
 ![alt_text](images/switcher.png "image_tooltip")
 
+The workspace switcher provides visibility into:
 
-Click on **Browse all Workspaces** to view the complete list of workspaces.  On switching between workspaces, 
+* Workspaces you have access to
+* Workspaces owned by other users
+* Your role within each workspace
+
+Click on *Browse all Workspaces* to view the complete list of workspaces. On switching between workspaces, 
 
 * The apps and tools are refreshed to show the ones from the new workspace. 
 * Permissions are also based on the user's role in the new workspace. 
@@ -30,7 +44,7 @@ Click on **Browse all Workspaces** to view the complete list of workspaces.  On 
 
 **Features of Workspace Switcher**
 
-* **Default workspace**: Users can mark any workspace as their default. This workspace will automatically load when logging into a new session.
-* **Search and Browse Workspaces**: Easily locate workspaces using the search bar or browse through the full list using pagination controls. 
-* **Request access to inaccessible workspaces**: My Workspaces tab lists the workspaces that the user has access to, and inaccessible ones are listed under Other Workspaces. Users can directly request access to a workspace from this list.
-* **User Role**: The workspace switcher indicates the total number of members in the workspace and the user’s role in the workspace. In the **workspace list view**, each workspace entry indicates the **owner**, helping users understand workspace ownership clearly.
+* Default workspace: Users can mark any workspace as their default. This workspace will automatically load when logging into a new session.
+* Search and Browse Workspaces: Easily locate workspaces using the search bar or browse through the full list using pagination controls. 
+* Request access to inaccessible workspaces: My Workspaces tab lists the workspaces that the user has access to, and inaccessible ones are listed under Other Workspaces. Users can directly request access to a workspace from this list.
+* User Role: The workspace switcher indicates the total number of members in the workspace and the user’s role in the workspace. In the workspace list view, each workspace entry indicates the owner, helping users understand workspace ownership clearly.

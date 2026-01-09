@@ -50,6 +50,9 @@ plugins:
         'getting-started/ip-addresses.md': 'getting-started/outbound-ip-address.md'
         'ai-agents/tools/tool-flows/tool-calling.md': 'ai-agents/tools/tool-calling.md' 
         'prompts/about-prompt-studio.md': 'prompts/overview.md'
+        'ai-agents/agentic-apps/app-settings.md': 'ai-agents/agentic-apps/settings/app-configurations.md'
+        'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
+        'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
 extra:
   version:
     provider: mike

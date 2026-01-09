@@ -13,4 +13,6 @@ This tool is designed to run SQL queries on a specified database instance. It le
 
 **Example prompt:** “Show me all customer orders from last week.”
 
-The tool will convert the input into a query and return results dynamically by calling a Supabase RPC endpoint.
+The tool will convert the input into a query and return results dynamically by calling a Supabase RPC endpoint. The tool executes this task by implementing the business logic directly in the script. 
+
+
