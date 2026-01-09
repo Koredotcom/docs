@@ -74,8 +74,8 @@ AI for Service offers a comprehensive suite of products, features, and services 
     
     Key Features:
     
-    * Virtual Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and virtual agents.
-    * Virtual Agent Performance Insights: Monitors and evaluates the performance of virtual agents.
+    * AI Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and AI agents.
+    * AI Agent Performance Insights: Monitors and evaluates the performance of AI agents.
     * Contact Center Quality AI Insights: Offers insights to improve contact center operations.  
     
     [Learn more about Analytics features :octicons-arrow-right-24:](../analytics/introduction.md)

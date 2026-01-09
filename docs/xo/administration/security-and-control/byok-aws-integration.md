@@ -1,28 +1,24 @@
-# BYOK Integration Guide for AWS KMS
-
-## Integration Overview
+# BYOK Integration Guide for AWS
 
 Bring Your Own Key (BYOK) encryption in Kore’s public cloud SaaS enables enterprises to retain complete control over their encryption keys while protecting sensitive data. With BYOK, organizations use their own Customer Master Keys (CMKs) to encrypt application and bot data, ensuring stronger security and compliance.
 
 Kore’s BYOK solution integrates with external key management systems such as AWS Key Management Service (KMS). Customers retain ownership of their encryption keys while leveraging Kore’s secure, scalable cloud platform with HSM-backed keys.
 
-## Integration Overview
-
-### Prerequisites
+## Prerequisites
 
 * Active Kore.ai subscription (platform.kore.ai) with BYOK enabled.
 * AWS account with administrative access to IAM and KMS.
 * Permissions to create IAM roles and policies.
 * Permissions to create and manage KMS keys.
 
-### Information Exchange
+## Information Exchange
 
 The BYOK integration requires coordination between you (the customer) and the Kore.ai support team. Key information exchanged between Kore.ai and you is summarized in the table. 
 
 | Information        | Description and Purpose | Provided By |
 |--------------------|-------------------------|-------------|
-| **Service Role ARN** | The Amazon Resource Name (ARN) of the IAM role in Kore.ai's AWS account. You add this to your IAM role's trust policy to allow Kore.ai's service to assume your role. <br><br> **Service Role ARN for `platform.kore.ai`:** <br>`arn:aws:iam::358587034707:role/SegBots-Servers-Role` <br><br> **Note:** Contact [Kore.ai Support](https://support.kore.ai/) if your SaaS instance differs from `platform.kore.ai`. | Kore.ai |
-| **External ID** | A unique identifier (similar to a password) that Kore.ai uses when assuming your IAM role to prevent unauthorized access. <br><br> Raise a [support ticket](https://support.kore.ai/) to obtain the External ID. | Kore.ai |
+| **Service Role ARN** | The Amazon Resource Name (ARN) of the IAM role in Kore.ai's AWS account. You add this to your IAM role's trust policy to allow Kore.ai's service to assume your role. <br><br> **Service Role ARN for `platform.kore.ai`:** <br>`arn:aws:iam::358587034707:role/SegBots-Servers-Role` <br><br> **Note:** Contact [Kore.ai Support](https://support.kore.ai/){:target="_blank"} if your SaaS instance differs from `platform.kore.ai`. | Kore.ai |
+| **External ID** | A unique identifier (similar to a password) that Kore.ai uses when assuming your IAM role to prevent unauthorized access. <br><br> Raise a [support ticket](https://support.kore.ai/){:target="_blank"} to obtain the External ID. | Kore.ai |
 | **Role ARN** | The ARN of the IAM role created in your AWS account. Kore.ai assumes this role to access your KMS key. <br><br> **Example:** <br>`arn:aws:iam::<your-account-id>:role/BYOK_Role` <br><br> Share this with Kore.ai after completing the steps in the [Integration Process](#integration-process) section. | Customer |
 | **CMK ARN** | The ARN of your Customer Managed Key (CMK) in AWS KMS. This key is used by Kore.ai to encrypt and decrypt your data. <br><br> **Example:** <br>`arn:aws:kms:<region>:<your-account-id>:key/<key-id>` <br><br> Follow the steps in the [Integration Process](#integration-process) section to create and share this value. | Customer |
 
@@ -211,7 +207,7 @@ Confirm all components are correctly configured:
 
 ### Step 6: Share Information with Kore.ai
 
-[Contact Kore.ai support](https://support.kore.ai/) and provide the following:
+[Contact Kore.ai support](https://support.kore.ai/){:target="_blank"} and provide the following:
 
 * CMK ARN: `arn:aws:kms:<region>:<your-account-id>:key/<key-id>`
 * Role ARN: `arn:aws:iam::<your-account-id>:role/BYOK_Role`
@@ -256,30 +252,27 @@ The system will test the connection to your KMS, authentication, and encryption 
 
 ## Validation (Optional)
 
-After the enforcement date, verify that encryption is working by using one of the following methods:
+After the enforcement date, You can verify that encryption is working by using one of the following options:
 
 ### Option 1: View Analytics
 
 Check analytics data for recent chat interactions to confirm that encrypted data is accessible.
 
 ### Option 2: Test Application Authorization
+
 Open the application and run Authorization Profiles and Dialogs.
 
-**Example:**  
+1. Execute **BasicAuthValidationDialog**.  
 
-* Execute **BasicAuthValidationDialog**.  
-
-* When the bot displays the authorization link, click the link and enter the credentials (**admin/password**).  
-
+2. When the bot displays the authorization link, click the link and enter the credentials (**admin/password**).  
 <img src="../images/byok_3.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>  
-
 <img src="../images/byok_4.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>  
 
+3. If successful, the system redirects you and displays "Basic authentication successful." This confirms your encrypted credentials are correctly stored and retrieved using your CMK.
 
-If successful, the system redirects you and displays "Basic authentication successful."
-This confirms your encrypted credentials are correctly stored and retrieved using your CMK.
+<hr/>
 
-**Related Link**
+**Related resources**
 
 [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/){:target="_blank"}
 
