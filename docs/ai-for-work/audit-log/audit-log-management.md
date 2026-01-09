@@ -4,6 +4,8 @@ Audit Log is a tracking mechanism designed to monitor and record all administrat
 
 <img src="../images/audit_log_1.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
 
+<img src="../audit-log/images/audit_log_1.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+
 ## Core Functionality
 
 The Audit Log System captures activities in three distinct but interconnected locations, each serving a specific purpose within your security infrastructure:
@@ -86,17 +88,17 @@ For compliance reporting, investigations, or record-keeping, the system supports
 
 <img src="../images/audit_log_4.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
 
-* Export to CSV format with a single click
-* Maintain all data fields and relationships in the exported file
-* Apply current filters to export only relevant data subsets
+* Export to CSV format with a single click.
+* Maintain all data fields and relationships in the exported file.
+* Apply current filters to export only relevant data subsets.
 
 ## System Integrity
 
 The Audit Log System is designed with several critical integrity features:
 
-* **Real-time Logging**: Every administrative action is recorded instantly when performed
-* **Cross-location Consistency**: Log entries maintain consistent format and content across all three logging locations
-* **Complete Coverage**: The system guarantees no missing or duplicate entries
-* **Tamper Resistance**: All logs are read-only to prevent modification
+* **Real-time Logging**: Every administrative action is recorded instantly when performed.
+* **Cross-location Consistency**: Log entries maintain consistent format and content across all three logging locations.
+* **Complete Coverage**: The system guarantees no missing or duplicate entries.
+* **Tamper Resistance**: All logs are read-only to prevent modification.
 
 The Audit Log System provides a comprehensive, multi-layered approach to activity tracking that supports security, compliance, and operational excellence. By implementing this logging infrastructure, organizations gain complete visibility into administrative actions while maintaining appropriate access controls.
