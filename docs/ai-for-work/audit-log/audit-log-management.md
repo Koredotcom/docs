@@ -2,13 +2,11 @@
 
 Audit Log is a tracking mechanism designed to monitor and record all administrative and operational activities across your platform. This system creates a comprehensive trail of user actions, providing enhanced security, accountability, and compliance capabilities for enterprise environments.
 
-<img src="../images/audit_log_1.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
-
-<img src="../audit-log/images/audit_log_1.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/audit_log_home.png" alt="audit_log_home" title="audit_log_home" style="border: 1px solid gray; zoom:70%;">
 
 ## Core Functionality
 
-The Audit Log System captures activities in three distinct but interconnected locations, each serving a specific purpose within your security infrastructure:
+The Audit Log system captures activities in three distinct but interconnected locations, each serving a specific purpose within your security infrastructure:
 
 **Admin Hub Logs**: Admin Hub logs function as the centralized repository for all administrative configuration activities. These logs record system-level changes that affect the entire platform.
 
@@ -21,8 +19,8 @@ These logs provide visibility into:
 
 Access to Admin Hub logs follows a hierarchical permission structure:
 
-* Full admins can view all Admin Hub logs
-* Custom admins can only view logs related to modules they have permission to access
+* Full admins can view all Admin Hub logs.
+* Custom admins can only view logs related to modules they have permission to access.
 
 **Workspace Logs**: Workspace logs document all activities that occur within specific workspace environments. These logs create accountability for team-specific actions and provide workspace administrators with visibility into collaborative activities.
 
@@ -46,7 +44,7 @@ Agent logs record:
 
 Each log entry contains comprehensive metadata to facilitate detailed analysis and investigation.
 
-<img src="../images/audit_log_2.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/audit_log_details.png" alt="audit_log_details" title="audit_log_details" style="border: 1px solid gray; zoom:70%;">
 
 **User Information**
 
@@ -57,7 +55,7 @@ Each log entry contains comprehensive metadata to facilitate detailed analysis a
 
 * Specific module where the activity occurred.
 * Dynamic identification based on location:
-    * For Admin Hub: User Management, Security, Assistant configurations, or Workspace management.
+    * For Admin Hub: User Management, Security, Assistant configurations, or Workspace Management.
     * For Workspaces: Type of agent.
     * For Agents: Specific page within the agent interface.
 
@@ -75,7 +73,7 @@ Each log entry contains comprehensive metadata to facilitate detailed analysis a
 
 The system provides powerful filtering tools that enable efficient log analysis and investigation:
 
-<img src="../images/audit_log_3.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/audit_log_filters.png" alt="audit_log_filters" title="audit_log_filters" style="border: 1px solid gray; zoom:70%;">
 
 * **Date Range Filtering**: Narrow log view to specific time periods using intuitive date selection controls.
 * **User Filtering**: Focus on activities performed by specific individuals.
@@ -86,7 +84,7 @@ The system provides powerful filtering tools that enable efficient log analysis 
 
 For compliance reporting, investigations, or record-keeping, the system supports exporting filtered log data:
 
-<img src="../images/audit_log_4.png" alt="Audit Log" title="Audit Log" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/audit_log_download.png" alt="audit_log_download" title="audit_log_download" style="border: 1px solid gray; zoom:70%;">
 
 * Export to CSV format with a single click.
 * Maintain all data fields and relationships in the exported file.
