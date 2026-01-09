@@ -56,7 +56,7 @@ Create your own custom authorization profile to obtain an access token and use i
     * Token Request URL
     * Scope
     * Refresh Token URL  
-    <img src="../images/new-authorization-mechanism.png" alt="new-authorization-mechanism" title="new-authorization-mechanism" style="border: 1px solid gray; zoom:70%;">
+
 
 * Click **Save Auth** to save Authorization Profile
 * Select the new **Authorization Profile,** which you created to enable integration.

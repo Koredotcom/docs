@@ -102,7 +102,7 @@ AI for Service offers a comprehensive suite of products, features, and services 
     
     * Role-based Access Controls, Audit Logs: Ensures security and accountability through access management and logging.
     * Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR): Compliant with major security and privacy standards.
-    * Cloud and On-Premise Deployments**: Flexible deployment options.
+    * Cloud and On-Premise Deployments: Flexible deployment options.
     * Scalability, Integrations, Authentication, and Authorization: Ensures the Platform can scale and integrate securely with other systems.  
     
     [Learn more about Enterprise Services :octicons-arrow-right-24:](../administration/adminconsole.md)
