@@ -1302,7 +1302,7 @@ Sample Response:
 
 **Response as a Request to Post URL**
 
-Then use the _pollId_ from the Response#1 to get the response of the second Message node.
+Then use the _pollId_ from the Response to get the response of the second Message node.
 
 Here is the sample curl to use pollId to fetch the response:
 
