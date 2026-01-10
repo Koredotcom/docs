@@ -24,19 +24,19 @@ The Auto QA feature enables automated evaluation using configured forms. When di
 
 3. Select **Save** to save the settings. 
 
-**Benefits of enabling Auto QA**:
+**Benefits of enabling Auto QA**
 
-    * Access Dashboards (Fail Statistics, Performance Monitor), Adherence Heatmap, Conversation Mining, Agent Leaderboard, Coaching Monitor, Evaluation Forms, and Metrics. 
+* Access Dashboards (Fail Statistics, Performance Monitor), Adherence Heatmap, Conversation Mining, Agent Leaderboard, Coaching Monitor, Evaluation Forms, and Metrics. 
 
-    * Receive scored interactions even when Conversation Intelligence is disabled.
+* Receive scored interactions even when Conversation Intelligence is disabled.
 
-    * Enable Conversation Intelligence without enabling Auto QA.
+* Enable Conversation Intelligence without enabling Auto QA.
 
-    * Auto QA operates independently of Conversation Intelligence.
+* Auto QA operates independently of Conversation Intelligence.
 
-!!! Note
+    !!! Note
 
-    Only administrators can enable Auto QA. By default, it is off. Disabling Auto QA hides Agent Scorecards and bookmarks, regardless of user permissions.
+        Only administrators can enable Auto QA. By default, it is off. Disabling Auto QA hides Agent Scorecards and bookmarks, regardless of user permissions.
     
 When you enable the **Auto QA**, the following screen shows to create and configure evaluation forms.
 
