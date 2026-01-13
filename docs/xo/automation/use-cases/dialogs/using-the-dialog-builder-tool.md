@@ -150,8 +150,8 @@ This option provides you ready-made templates targeting major industry verticals
         <img src="../images/using-dialog-builder-dialog template-name-description.png" alt="Dialog name and description" title="Dialog name and description" style="border:1px solid gray;zoom:70%;">
 
     4. The next few screens help you with the below setup:
-        1. Utterances to identify this intent
-        2. Channel experience
+        1. Utterances to identify this intent.
+        2. Channel experience.
         3. Other setup points pertaining to the intent. For example, information points to be captured for Lead Capture intent.
     
     5. The template is installed after you finish the setup. Click **Finish**.
