@@ -34,7 +34,7 @@ Ensure the following before creating a By AI Agent metric:
 
     * If your workspace has no configured agentic app, the Agent App dropdown shows no options during metric configuration.
 
-    * If the agentic app's response structure does not match the required contract, the Test Connection fails, and blocks you from proceeding with metric configuration.
+    * If the agentic app's response structure doesn't match the required contract, the Test Connection fails, and blocks you from proceeding with metric configuration.
 
 ## Configure By AI Agent Metric
 

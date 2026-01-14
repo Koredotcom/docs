@@ -16,7 +16,7 @@ Before beginning taxonomy setup, make sure you have:
 
 Navigate the taxonomy builder interface by using the hierarchical tree view and organizational tools. Understanding the layout improves efficiency when creating and managing taxonomies.
 
-**Navigation Path: **Quality AI > Configure > Taxonomy Builder**
+**Navigation Path: Quality AI > Configure > Taxonomy Builder**
 
 ### Topics 
 
@@ -116,7 +116,7 @@ The system supports three distinct hierarchical levels for topic organization:
 4. Select the Reorganise Topic checkbox to move topics to new parent categories.
 
 5. Select the options like Standalone Level 2 or Level 1 to update the hierarchy, which automatically moves all your related child topics with the parent topic.   
-<img src="../taxonomy-builder/images/edit-reorganize-topic-level.png" alt="Edit Existing Topic Hierarchy" title="Edit Existing Topic Hierarchy" style="border: 1px solid gray; zoom:100%;">  
+<img src="../images/edit-reorganise-topic-level.png" alt="Edit Existing Topic Hierarchy" title="Edit Existing Topic Hierarchy" style="border: 1px solid gray; zoom:100%;">  
   
 6. Select **Save** to confirm your changes.
 
@@ -155,9 +155,9 @@ Define what constitutes an unresolved contact. Include these criteria:
 
 * Escalate or schedule a required callback
 
-        !!! Note
+    !!! Note
 
-            These custom descriptions ensure the LLM evaluates contacts according to your organization’s quality standards and resolution expectations.
+        These custom descriptions ensure the LLM evaluates contacts according to your organization’s quality standards and resolution expectations.
 
 #### Setting Up Resolution Detection
 
@@ -197,9 +197,9 @@ Save the version after making changes to your taxonomy to impact runtime analyti
 
 Access **Version History** from the **Topic Discovery** dashboard:
 
-    * View the current version plus the three most recent previous versions.
+* View the current version plus the three most recent previous versions.
 
-    * Previous versions display data only up to their respective update dates.
+* Previous versions display data only up to their respective update dates.
 
 ### Organizing Your Taxonomy
 

@@ -121,7 +121,7 @@ On clicking the **Available in #other intents** link under **Details**, a pop-up
 
 
 
-* Click the **View Details** link corresponding to the cluster name to go to the **Cluster View** page.
+Click the **View Details** link corresponding to the cluster name to go to the **Cluster View** page.
 
 
 <img src="../images/conversation-insights-10.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
@@ -136,7 +136,7 @@ The **Cluster View** page displays all the intents and utterances for that clust
 #### Intent View
 
 
-* Click the **View Details** link corresponding to each intent, to go to the **Intent View** page.
+Click the **View Details** link corresponding to each intent, to go to the **Intent View** page.
 
 
 <img src="../images/intent-view.png" alt="Intent View" title="Intent View" style="border: 1px solid gray; zoom:60%;">
@@ -158,7 +158,7 @@ The **Intent View** page displays all the available clusters, utterances, and ot
 The utterances grouped in the clusters can be validated and trained for an existing intent or a new intent, based on the requirements. Training the utterances and discovering new intents improves the performance of your AI Agents.
 
 
-* Click any Utterance displayed in the grid on the **Intent View** or **Cluster View** pages.
+Click any Utterance displayed in the grid on the **Intent View** or **Cluster View** pages.
 
 The utterance details, NLP Analysis, and Chat History with user profile and conversation sessions are displayed the same as in NLP Insights.
 
@@ -172,7 +172,7 @@ The utterance details, NLP Analysis, and Chat History with user profile and conv
 This section describes the steps to be followed, to train the utterances grouped in a cluster.
 
 
-* Click the cluster in the treemap view or the grid view, to display all the intents and utterances the cluster is a part of.
+Click the cluster in the treemap view or the grid view, to display all the intents and utterances the cluster is a part of.
 
 
 !!! note
@@ -243,17 +243,17 @@ The following steps explain how to add an existing intent to an utterance or mul
 1. To map an existing Dialog Task or FAQ, click the **Train** drop-down. (See step 2 under Train the Utterances).
 2. Click the **Dialog Task** option to choose the matching intent for the selected utterance.
 
-    <img src="../automation/images/add-existing-intent.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/add-existing-intent.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 
 3. Click the button **Add Utterances** to add the intent for the utterances. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**. 
 
-    <img src="../automation/images/add-existing-intent-1.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/add-existing-intent-1.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 
 4. Click the **FAQ** option from the **Train** drop-down to add the matching FAQ for the selected utterance. 
 
-    <img src="../automation/images/add-existing-intent-2.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/add-existing-intent-2.png" alt="Add Existing Intent" title="Add Existing Intent" style="border: 1px solid gray; zoom:60%;">
 
 5. Upon adding the FAQ successfully, a message is displayed as shown below. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
  
@@ -305,7 +305,7 @@ The status of all the utterances is **Yet to review** by default. You can change
 
 
 
-* Click any utterance from the list to display the **Details, NLP Analysis**, and **Chat History** panel shown in the following screenshot.
+Click any utterance from the list to display the **Details, NLP Analysis**, and **Chat History** panel shown in the following screenshot.
 
 <img src="../images/status-review-1.png" alt="Status Review" title="Status Review" style="border: 1px solid gray; zoom:60%;">
 
