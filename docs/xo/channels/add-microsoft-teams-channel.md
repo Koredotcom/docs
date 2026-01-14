@@ -2,6 +2,62 @@
 
 # Adding the Microsoft Teams Channel
 
+To set up Microsoft Teams as a channel, a Bot Channel Service must be registered in Azure, and a webhook must be enabled to allow the platform to receive messages.
+
+
+## Step 1: Create an Azure Bot
+
+1. Log in to the [Azure portal](https://portal.azure.com/), and click **+ Create a resource** from the portal menu.
+2. Search and select **Azure Bot** on the page.
+3. Fill in the required details and click **Review + Create**.
+4. On the next page, review the details and check for the **Validation** status. Click **Create** to proceed.
+5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to **Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration).  
+<img src="../images/create-azure.png" alt="Create an Azure Bot" title="Create an Azure Bot" style="border: 1px solid gray; zoom:70%;">
+
+## Step 2: Configure the Resource
+
+1. After the deployment is completed, in the **Deployment details** section, click the bot name.  
+<img src="../images/azure-resource.png" alt="Configure the Resource" title="Configure the Resource" style="border: 1px solid gray; zoom:70%;">
+2. In the Platform, go to the MS Teams + Copilot channel configuration page and copy the **webhook URL**.
+3. Paste the URL in the Messaging endpoint field on the Configurations module in Azure portal.
+4. Click **Apply** to save the entered value.  
+<img src="../images/azure-configuration.png" alt="Configure the Resource" title="Configure the Resource" style="border: 1px solid gray; zoom:70%;">
+
+
+## Step 3: Configure the Resource App Id and Password
+
+1. On the **Configurations** tab, click the **Manage** option next to the **Microsoft App ID** field. 
+<img src="../images/azure-app.png" alt="Microsoft App ID" title="Microsoft App ID" style="border: 1px solid gray; zoom:70%;">
+
+2. On **Certificates & secrets** page, click the **+ New client secret** option, provide the necessary details, and then click the **Add** option to create a new client secret.
+3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Platform.  
+<img src="../images/azure-client.png" alt="Microsoft App ID" title="Microsoft App ID" style="border: 1px solid gray; zoom:70%;">
+
+4. Close the **Certificates and secrets** section to return the **Configuration** section of the resource using the breadcrumbs. Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.  
+<img src="../images/azure-certificate.png" alt="Microsoft App ID" title="Microsoft App ID" style="border: 1px solid gray; zoom:70%;">
+
+
+## Step 4: Enable Microsoft Teams Channel & Microsoft 365 (For Co-Pilot)
+
+1. Go to the **Channels** section from the menu and select the **Microsoft Teams** and **Microsoft 365** channel listed under the Available Channels.
+<img src="../images/teams-channels.png" alt="Microsoft Teams Channel " title="Microsoft Teams Channel " style="border: 1px solid gray; zoom:70%;">
+
+2. Review the channel information and click the **Save** to complete the channel setup.
+
+
+
+
+## Step 5: Publish Your App in Platform
+
+
+
+## Step 6: Creating the Manifest File
+## Step 7: Uploading the app
+
+
+--------------------------------------------------------------------------------
+# Adding the Microsoft Teams Channel
+
 You can add Microsoft Teams as a delivery channel to your Kore.ai Assistant to allow it to interact with end-users using Microsoft Teams.
 
 
