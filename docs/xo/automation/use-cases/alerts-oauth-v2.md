@@ -1,14 +1,14 @@
 # Alert Task – OAuth v2
 
-We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform.. In this article, we will see how alert task authorization can be set up using the OAuth v2.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this article, we will see how alert task authorization can be set up using the OAuth v2.
 
 ## How it Works 
 
-1. The Kore.ai application redirects the user to a login dialog at the web application.
+1. The platform application redirects the user to a login dialog at the web application.
 2. The user authenticates.
-3. The web application redirects the user back to the Kore.ai application with an access token.
-4. The Kore.ai application validates the access token.
-5. The access token allows the Kore.ai application to access a protected resource at the provider, on behalf of the user.
+3. The web application redirects the user back to the platform application with an access token.
+4. The platform application validates the access token.
+5. The access token allows the platform application to access a protected resource at the provider, on behalf of the user.
 
 ## General Setup
 
@@ -48,7 +48,7 @@ To configure oAuth v2, define the fields described in the following table.
   <tr>
    <td>Callback URL
    </td>
-   <td>The URL used by the web application or web service to redirect the end-user after end-user authorization is complete. This value, https://idp.kore.ai/workflows/callback/ is provided as a read-only value by the Kore.ai application when you define oAuth v2 settings.
+   <td>The URL used by the web application or web service to redirect the end-user after end-user authorization is complete. This value, https://idp.kore.ai/workflows/callback/ is provided as a read-only value by the platform application when you define oAuth v2 settings.
    </td>
   </tr>
   <tr>
@@ -60,25 +60,25 @@ To configure oAuth v2, define the fields described in the following table.
   <tr>
    <td>Client ID
    </td>
-   <td>The ID of the Kore.ai client.
+   <td>The ID of the platform client.
    </td>
   </tr>
   <tr>
    <td>Client Secret Key
    </td>
-   <td>The value provided as the Kore.ai application authentication based on the Client ID to the web application.
+   <td>The value provided as the platform application authentication based on the Client ID to the web application.
    </td>
   </tr>
   <tr>
    <td>Authorization URL
    </td>
-   <td>The URL used to obtain end-user authorization for the Kore.ai application to access the web application or web service using the access token. This field is required.
+   <td>The URL used to obtain end-user authorization for the platform application to access the web application or web service using the access token. This field is required.
    </td>
   </tr>
   <tr>
    <td>Token Request URL
    </td>
-   <td>The URL used by the Kore.ai application to obtain an unauthorized request token. A request token is a value used by the Kore.ai application to obtain authorization from the end-user to obtain an access token. After end-user authorization, an access token can be requested by the Kore.ai application. This field is required.
+   <td>The URL used by the platform application to obtain an unauthorized request token. A request token is a value used by the platform application to obtain authorization from the end-user to obtain an access token. After end-user authorization, an access token can be requested by the platform application. This field is required.
    </td>
   </tr>
   <tr>
@@ -109,7 +109,8 @@ To configure oAuth v2, define the fields described in the following table.
 
 ## Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, Kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 <img src="../images/set-tenancy.png" alt="set tenancy" title="set tenancy" style="border: 1px solid gray; zoom:75%;">
@@ -120,8 +121,8 @@ In the following example configuration, the tenancy URL contains the {tenant} or
 <img src="../images/add-form-fields-v2.png" alt="add form fields" title="add form fields" style="border: 1px solid gray; zoom:75%;"> 
 
 2. Specify the following fields:
-    * **Field Key** – The name of the custom field to specify for authorization.
-    * **Value** – The value of the custom field to specify for the authorization.
+    * **Field Key**: The name of the custom field to specify for authorization.
+    * **Value**: The value of the custom field to specify for the authorization.
     * Click **Add** to save the **Additional Field**.
 3. To add more **Additional Fields**, click **Add** in the **Additional Fields** section.
 
@@ -134,10 +135,10 @@ By default, authorization fields are configured as part of the header of the tas
     <img src="../images/add-auth-field-v2.png" alt="add auth fields" title="add auth fields" style="border: 1px solid gray; zoom:75%;"> 
 
 2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
-    * **Header** – The AI Agent expects the authorization fields as part of the header of the request.
-    * **Payload** – The AI Agent expects the authorization fields as part of the content of the body of the request.
-    * **Query String** – The AI Agent expects the authorization fields as a query in the body of the request.
-    * **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
+    * **Header**: The AI Agent expects the authorization fields as part of the header of the request.
+    * **Payload**: The AI Agent expects the authorization fields as part of the content of the body of the request.
+    * **Query String**: The AI Agent expects the authorization fields as a query in the body of the request.
+    * **Path Param**: The AI Agent expects the authorization fields as part of the URL path for the request.
 3. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 4. In the **Field Value** field, enter the value for the **Field Key** specified.
 5. Click **Add**. The new authorization field is added in the **Authorization Fields** section.

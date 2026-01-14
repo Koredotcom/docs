@@ -1,13 +1,13 @@
 
 # General Purpose
 
-Configure Large Language Models (LLMs) for your AI for Work deployment.
+Configure Large Language Models (LLMs) for your deployment.
 
 AI for Work provides secure and seamless integration with leading large language models (LLMs), enabling you to leverage powerful AI capabilities for your virtual assistants and workflows. Choose from pre-configured models from industry-leading providers or integrate your own custom models to suit your specific business needs.
 
-## What is LLM Configuration?
+## What is LLM Configuration
 
-LLM Configuration allows you to connect and manage various language models for use across AI for Work features. This includes both pre-built integrations with commercial providers and the flexibility to bring your own models.
+LLM Configuration allows you to connect and manage various language models for use across all features. This includes both pre-built integrations with commercial providers and the flexibility to bring your own models.
 
 **Key Capabilities:**
 
@@ -18,7 +18,7 @@ LLM Configuration allows you to connect and manage various language models for u
 
 ## Supported LLM Providers and Models
 
-AI for Work supports a range of models from leading providers, each offering different capabilities and pricing tiers. Choose the right model based on your use case requirements, performance needs, and budget considerations.
+Platform supports a range of models from leading providers, each offering different capabilities and pricing tiers. Choose the right model based on your use case requirements, performance needs, and budget considerations.
 
 ### Pre-Built LLM Providers
 
@@ -60,7 +60,7 @@ AI for Work supports a range of models from leading providers, each offering dif
 <p>
 Gemini 2.5 Flash Lite, Gemini 2.0 Flash, Gemini 2.0 Flash Lite
    </td>
-   <td>Google Vertex AI integration
+   <td>Google Vertex AI integration, Gemini Studio
    </td>
    <td>Multi-modal tasks, fast response times, and Google Cloud-based deployments
    </td>
@@ -80,7 +80,7 @@ Understanding model tiers helps you select the right balance between capability 
 
 ## Configuration Methods
 
-AI for Work provides two primary methods for configuring LLMs, each designed to meet different organizational needs and deployment scenarios.
+Platform provides two primary methods for configuring LLMs, each designed to meet different organizational needs and deployment scenarios.
 
 ### Pre-Built LLM Configuration
 
@@ -126,7 +126,7 @@ Pre-built integrations offer the fastest path to leveraging leading AI models wi
 
 **Google Gemini**:
 
-* Access Google Cloud Console and enable Vertex AI API.
+* Access Google Cloud Console and enable Vertex AI API, or use Gemini Studio.
 * Create a service account with appropriate permissions.
 * Generate and download the API credentials.
 * Ensure selected models are enabled in Google Model Garden.
@@ -171,7 +171,7 @@ Custom LLM configuration provides maximum flexibility for organizations with uni
 
 ## Embedding Models Configuration
 
-Embedding models generate vector representations of text, enabling semantic search, similarity matching, and other advanced AI features. AI for Work supports both pre-built and custom embedding models to power these capabilities.
+Embedding models generate vector representations of text, enabling semantic search, similarity matching, and other advanced AI features. Platform supports both pre-built and custom embedding models to power these capabilities.
 
 **What are Embeddings?**
 

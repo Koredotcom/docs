@@ -76,11 +76,11 @@ When agents are reviewing earlier parts of a conversation, and a new message arr
 
 The following table lists scenarios with expected results if a network fails while an agent attempts to send a response.
 
-| **SCENARIO**                             | **RESULT**                                                                                                                      |
+| **Scenario**                             | **Result**                                                                                                                      |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| When an agent sends a message            | “Sending” appears on the chat window.                                                                                           |
-| If the system sends the message      | “Sent” appears on the chat window.                                                                                              |
-| When network disrupts              | Disables the chat window. Undelivered messages appear as “Not Delivered” with the Resend icon in the compose bar’s left corner. |
+| When an agent sends a message            | `Sending` appears on the chat window.                                                                                           |
+| If the system sends the message      | `Sent` appears on the chat window.                                                                                              |
+| When network disrupts              | Disables the chat window. Undelivered messages appear as `Not Delivered` with the Resend icon in the compose bar’s left corner. |
 | When the network restores            | Enables the chat window.                                                                                                     |
 | Selecting the re-send option            | Sends the message again.                                                                                                      |
 | If the conversation terminates       | The Resend icon doesn't appear.                                                                                                |
@@ -88,13 +88,13 @@ The following table lists scenarios with expected results if a network fails whi
 
 ## Audio and Video Calls with Customers
 
-Agents can request the customer for an audio or video call during the chat conversation if required. Clicking the **Audio** or **Video Call** icon initiates a call.  
+Agents can request the customer for an audio or video call during the chat conversation if required. Selecting the **Audio** or **Video Call** icon initiates a call.  
 <img src="../images/audio-video-icons.png" alt="Audio and Video Call Icons" title="Audio and Video Call Icons" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
     * Accounts using Voice Gateway and AudioCodes can access the video call option. 
-    * Agents must close the chat interaction and the audio/video call separately, each with its own disposition.
+    * Agents must close the chat interaction and the audio or video call separately, each with its own disposition.
 
 ### Manual Outbound Call
 
@@ -105,11 +105,11 @@ Agents can initiate manual outbound calls from the agent console. Following are 
 1. **Initiating Outbound Calls from Any Status**  
     * Agents can initiate outbound calls from any status within the agent interface.
     * Exceptions:  
-        * Agents can't initiate outbound calls when their status is "System Away" for both Chat and Voice interactions.
-        * Agents can't initiate outbound calls when their status is "System Busy" for voice interactions.
+        * Agents can't initiate outbound calls when their status is `System Away` for both Chat and Voice interactions.
+        * Agents can't initiate outbound calls when their status is `System Busy` for voice interactions.
 2. **Outbound Calls During Digital Interactions**
     * Agents can initiate an outbound call even when handling digital interactions.
-    * If an agent's slots are full and their status is "System Busy," they can initiate an outbound call.
+    * If an agent's slots are full and their status is `System Busy`, they can initiate an outbound call.
 3. **Inbound Voice Interaction Restriction**
     * Agents can't initiate an outbound call if they're handling an existing inbound voice call.
 
@@ -127,6 +127,10 @@ Agents can initiate a secondary outbound voice call only after completing the on
 **Status Updates**
 
 When an agent initiates an outbound call, the system automatically changes the agent's status to `System Busy`. This automatic status update helps manage agent availability and workload distribution, ensuring efficient call handling and resource allocation.
+
+!!! note "Outbound Calling"
+ 
+    Outbound calls connect an agent to a customer using a number provisioned by Kore or an external provider. When the number is provisioned by Kore, the platform routes calls through the Twilio-based telephony. When the number is provisioned externally, for example through Verizon, the platform routes calls using SIP Trunk integration. To place outbound calls, the calling number must be a valid Twilio number associated with the same account. After the number is registered and permissions are enabled, outbound calling works as expected.
 
 #### Contacts
 
@@ -166,21 +170,13 @@ Agents can make outbound calls to the customers as follows:
 
         The following scenarios are possible:
 
-        1. A user enters “123124”:
+        | Scenario | User Input | What Happens |
+        |----------|------------|--------------|
+        | Entering a number without a country code | `123124` | The system doesn't select or validate any country code by default and places the call directly. If the user intends to dial a US number, the user can change the country code to **Unknown**. |
+        | Pasting a number without a country code | `123121` | The system displays a validation error because the number doesn't match the default country format. The user can change the country code to **Unknown**, after which the system places the call directly. |
+        | Entering or pasting a valid international number | `+91987654321` | The system automatically detects and selects **India** as the country code and places the call. |
+        | Entering or pasting an invalid international number | `+919876543` | The system displays a validation error and disables the call icon and prevents placing the call. |
 
-            * By default, the system doesn't select or validate any country code. A call is directly placed to this number.
-
-            * If the user has dialed a call with a USA number, they can change the country code to unknown.
-
-        2. A user pastes “123121”:
-
-            * Initially, a validation error appears if the number doesn't match the defined format for the default country.
-
-            * The user can change the country code to unknown and a call is directly dialed to this number.
-
-        3. User pastes/enters “+91987654321”: The system selects India as the country code and dials the call.
-
-        4. User pastes “+919876543”: The system displays a validation error and disables the call icon.
 
     !!! Note
 
@@ -189,6 +185,11 @@ Agents can make outbound calls to the customers as follows:
 #### Inbound Click-to-Call Interaction
 
 Agents receive the Click-to-Call interaction in the Live Interaction pane, similar to an inbound voice call. The system displays the metadata and prior chat transcript to the agent. During the call, agents can pause and resume recording when handling sensitive information. After the call ends, the system stores the transcription and disposition summary. [Learn more](../contactcenter/flows-and-routing/conditional-flows.md#click-to-call-flow).  
+
+!!! note 
+ 
+    This capability is supported only in the Eternal SDK.
+
 <img src="../images/click-to-call-interaction.png" alt="Click to Call Interaction" title="Click to Call Interaction" style="border: 1px solid gray; zoom:70%;">  
 
 Agents also have access to the following call controls:  
@@ -941,7 +942,7 @@ If ACW is enabled, then the system manages the conversations based on the ACW co
 
 * Agents can see a countdown timer when the conversation ends, indicating the time left to provide a disposition.
 * The slot becomes available if the agent submits a disposition or when the timer elapses.
-* The system generates a disposition code and fills any empty disposition fields when agents do not provide dispositions within the allotted time.  
+* The system generates a disposition code and fills any empty disposition fields when agents don't provide dispositions within the allotted time.  
     <img src="../images/timed-slot-release.png" alt="Timed Slot Release" title="Timed Slot Release" style="border: 1px solid gray; zoom:80%;">
 
 * When the disposition timer expires, the system displays a message to the agent.  

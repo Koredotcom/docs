@@ -8,8 +8,8 @@ This API controls transcription and call recording sessions for Agent AI SIP-REC
 |-------------------|-----------|
 | Endpoint      | `https://{{host}}/api/1.1/public/bot/{botid}/control/transcriptionv2?conversationId={conversationId}` |
 | Content Type  | `application/json` |
-| Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
-| API Scope     | Agent AI Transcription and Call Recording<br>See [Associate API Scopes](../automation/api-introduction.md/#associating-api-scopes) |
+| Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
+| API Scope     | Agent AI Transcription and Call Recording<br>See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes) |
 
 ## Path Parameters
 
@@ -54,6 +54,7 @@ This API controls transcription and call recording sessions for Agent AI SIP-REC
 </table>
 
 ## Sample Request
+
 ```
 curl --location 'https://staging-xo.korebots.com/api/1.1/public/bot/st-0510047e-9e82-5574-9523-bb02a0dxxxxx/control/transcriptionv2?conversationId=CAa8c6351c14ab45f09aaa04cde25xxxxx' 
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWM5OGVlOTk2LTNhZGQtNTM2ZS04ODZhLTM2ZDEyODY0MTRjOCJ9.klXB766H8VXnXRKDFSpQJqfNN0mV254AKnABg4xxxxx' 

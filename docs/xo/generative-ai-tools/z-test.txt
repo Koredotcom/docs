@@ -91,7 +91,7 @@ Choose your engine to see the relevant table of contents:
 ## Menu Path: Settings > DialogGPT > Parameters
 - [Parameter Configuration](topics/parameters.md)
 
-... (organize as per DialogGPT menu structure)
+(organize as per DialogGPT menu structure)
 
 
 

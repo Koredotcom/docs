@@ -16,7 +16,7 @@ Key features include:
 
 * **Flagged interactions**: Surfaced across all tools (for example, QA Dashboard, Audit Screen, Conversation Mining) for targeted coaching and quality control. 
 
-The dashboard enables supervisors to maintain quality standards, identify improvement areas, and guide focused coaching through consistent, actionable insights.
+The dashboard enables supervisors to maintain quality standards, identify improvement areas, and guide focused coaching through consistent, operational insights.
 
 ### Access Supervisor Dashboard 
 
@@ -29,11 +29,11 @@ Navigate to **Quality AI** > **ANALYZE** > **Dashboard**.
 
 ## Dashboard Filters
 
-This dashboard allows you to filter the data by language, time period, and specific channel.
+This dashboard lets you filter the data by language, date range, and specific channel.
 
 ### Filter Options
 
-The dashboard metrics allow you to filter and refine the data displayed across the entire dashboard by selected language(s), date range or calendar, and channel.
+The dashboard metrics lets you filter and refine the data displayed across the entire dashboard by selected languages, date range or calendar, and channel.
 
 #### All Languages 
 
@@ -66,29 +66,29 @@ When a language filter is applied, the following widget metrics are updated to r
 
 #### Date Range
 
-Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to **All Languages**. The displayed data gets updated based on the chosen language and time period.
+Use the **Calendar** to filter data by selecting a date range shown at the top-right of the dashboard, next to **All Languages**. The displayed data gets updated based on the chosen language and date range.
 
 To filter by calendar, 
 
-* Click the **Calendar** dropdown.
+* Select the **Calendar** dropdown.
 * Select the desired date range.
-* Click **Apply** to refresh dashboard data.  
+* Select **Apply** to refresh dashboard data.  
 <img src="../dashboard/images/calendar-drop-down.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
 
 #### Channel
 
-The Quality AI dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, or **All**. You can filter performance metrics by channel: **Voice**, **Chat**, or **All** (which includes both Voice and Chat conversations). The dashboard presents trends and graphs with daily, weekly, and monthly views, along with a distribution view. Data is displayed based on the selected language and channel.
+The Quality AI dashboard's default settings display combined data from all three channels — **Voice**, **Chat**, or **All**. You can filter performance metrics by channel: **Voice**, **Chat**, or **All** (which includes both Voice and Chat conversations). The dashboard presents trends and graphs with daily, weekly, and monthly views, along with a distribution view. The system displays data based on the selected language and channel.
 
 To filter by channel, 
 
-* Click All channels in the top-right corner.
+* Select All channels in the top-right corner.
 
 * Choose your preferred channel option (**Voice**, **Chat**, or **All**).    
 <img src="../dashboard/images/channel-options.png" alt="Date Range" title="Date Range" style="border: 1px solid gray; zoom:100%;">
 
 ## Agent Performance Metrics
 
-This outlines the metrics that used to assess agent performance and monitor coaching progress. Metrics are filtered based on the selected languages and date range.
+This outlines the metrics that used to assess agent performance and monitor coaching progress. The system filters metrics based on the selected languages and date range.
 
 The following components provide insights through audit results and coaching activity tracking:
 
@@ -105,7 +105,7 @@ Displays the average number of manual audits or evaluations completed by each ag
 ### Coaching Sessions Assigned
 
 Displays the total coaching sessions assigned to agents by supervisors.  
-<img src="../dashboard/images/coaching-sesssions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
+<img src="../dashboard/images/coaching-sessions-assigned.png" alt="Coaching Sessions Assigned" title="Coaching Sessions Assigned" style="border: 1px solid gray; zoom:100%;">
 
 ### Agents in Coaching
   
@@ -114,18 +114,18 @@ Displays the number of agents with an active coaching assignment in the queues t
 
 ### Fatal Interactions
   
-Displays the number of interactions that failed due to critical errors. If an interaction meets any fatal criteria defined in the evaluation form, the entire scorecard is scored as zero, regardless of performance in other areas.   
+Displays the number of interactions that failed due to critical errors. If an interaction meets any fatal criteria defined in the evaluation form, the system scores the entire scorecard zero, regardless of performance in other areas.   
 <img src="../dashboard/images/fatal-interactions.png" alt="Fatal Interactions" title="Fatal Interactions" style="border: 1px solid gray; zoom:100%;">
 
 ### Audit Progress
 
 Displays and tracks the overall progress score of audits (both pending and completed).  
 
-* **Completed**: Number of assigned interactions that are audited.
+* **Completed**: Number of assigned interactions audited.
 
-* **Pending**: Number of interactions assigned for audit and not yet audited.
+* **Pending**: Number of interactions assigned for audit that agents haven't audited.
 
-* **Audit**: Click the **Audit** button to navigate to the **Conversation Mining** > **Audit Allocations** feature, where you can start evaluating interactions. For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md){:target="_blank"}.    
+* **Audit**: Select the **Audit** to navigate to the **Conversation Mining** > **Audit Allocations** feature, where you can start evaluating interactions. For more information, see [Audit Allocations](../analyze/conversation-mining-audit-allocations.md){:target="_blank"}.    
 <img src="../dashboard/images/audit-progress.png" alt="Audit Progress" title="Audit Progress" style="border: 1px solid gray; zoom:70%;">
 
 ### Evaluation Score 
@@ -135,41 +135,49 @@ This displays the trend of the average **Kore Evaluation Score** (Auto QA Score)
 
 ## Adherence Heat Map
 
-This presents a simplified heatmap of adherence data for the past 7 days. It includes a default form selection without any click-through functionality. 
+This presents a simplified heatmap of adherence data for the past 7 days, with a default form selection and no option for detailed views.
 
-You can filter and view flagged or fatal interactions for each form. Additionally, you can select a default evaluation form and designate it as the "Mark as Default" queue. This allows you to view adherence data on both the heatmap and the QA dashboard, filtered by the selected languages for future reference.    
+You can filter and view flagged or fatal interactions for each form. Additionally, you can select a default evaluation form and designate it as the "Mark as Default" queue. This lets you view adherence data on both the heatmap and the QA dashboard, filtered by the selected languages for future reference.    
 <img src="../dashboard/images/dashboard-adhere-heatmap.png" alt="Evaluation Score" title="Evaluation Score" style="border: 1px solid gray; zoom:60%;">
 
-To view adherence with fatal errors or interactions, you should do the following:
+To view adherence with fatal errors or interactions, you must do the following:
 
-* **Evaluation Form**: Choose a form from the dropdown to set it as Default. This allows you to view related data, including fatal interactions, on both the heatmap and QA dashboard.
+* **Evaluation Form**: Choose a form from the dropdown to set it as Default. This lets you view related data, including fatal interactions, on both the heatmap and QA dashboard.
 
-* **Language Filter**: Use the All Languages drop-down to filter adherence data by language. All languages are selected by default.
+* **Language Filter**: Use the All Languages dropdown to filter adherence data by language. The system selects all languages by default.
 
 * **Tooltip Information**: Hover over the heatmap to view key metrics for the selected agents of the corresponding date, including adherence percentage, interaction count, and total interactions. 
 
 !!! Note
 
-    You must enable **Auto QA** (**Settings** > **Quality AI General Settings**) to to configure evaluation forms and generate automated scores.
+    You must enable **Auto QA** (**Settings** > **Quality AI General Settings**) to configure evaluation forms and generate automated scores.
 
 ### View More Details
 
-Click the **View More Details** button to see detailed trends in agent adherence. For more information, see [Adherence Heatmap](../analyze/adherence-heatmap.md){:target="_blank"}.
+Select the **View More Details** to view detailed trends in agent adherence. For more information, see [Adherence Heatmap](../analyze/adherence-heatmap.md){:target="_blank"}.
 
 ## Fail Statistics
 
-The **Fail Statistics** chart displays the count of failed interactions based on the selected Evaluation forms, scorecards, and date, and selected language. Allows you to view failure trends for the chosen Evaluation forms over the past 7 days, 7 weeks, or 7 months in daily, weekly, or monthly views. This displays failure statistics through the following charts for evaluation forms and agent scorecards over a selected time period.
+The **Fail Statistics** provides detailed insights into the number and trends of failed interactions, helping supervisors and quality teams monitor performance and identify areas for improvement. 
+
+This lets you,
+
+* Track the failed interactions percentages based on the selected evaluation forms, agent scorecards, date range, and language filters. 
+
+* Analyze fatal interactions data percentage in daily, weekly, or monthly formats. 
+
+* Visualize fail statistics through interactive charts for both Evaluation Forms and Agent Scorecards over the selected period, giving a comprehensive view of agent performance failure rates fluctuate day-to-day or over longer periods.
 
 ### Evaluation Form
 
-This chart shows failure scores across the selected evaluation forms, helping teams monitor failure rates or negative scores tied to key evaluation metrics. When you hover over the chart, it reveals specific failure rates or negatively weighted scores, so you can take corrective actions without manually reviewing each failed interaction.
+The evaluation form chart shows failure rates across the selected evaluation forms, highlighting negative scores associated with critical evaluation metrics. When you hover over the chart, it displays detailed failure rates and negatively weighted scores for each metric, helping you identify and address issues without manually reviewing every failed interaction.
 
-By assigning negative weights to critical metrics in evaluation forms, attributes, or scorecards, you generate negative final scores for certain interactions. The system displays these scores across relevant modules.  
+To emphasize critical areas, the system assigns negative weights to certain metrics or attributes within evaluation forms and scorecards. These negative weights produce final negative scores for interactions that fail key criteria. The system presents these scores consistently across all relevant modules.       
 <img src="../dashboard/images/fail-stat-evaluation-form.png" alt="Fail Statistics Evaluation Form" title="Fail Statistics Evaluation Form" style="border: 1px solid gray; zoom:60%;">
 
 ### Agent Scorecard
 
-The chart displays the trend of failed agent interactions as a percentage, based on selected scorecard metrics. If any of the selected metrics are marked as fatal criteria, the entire interaction or scorecard shows a zero score when you hover over it. Fatal interactions are automatically flagged and filtered across system modules for visibility and further action.   
+The agent scorecard chart shows the trend of failed interactions as a percentage, based on the selected scorecard metrics. If any metric designates as fatal, the system assigns a zero score to the entire interaction or scorecard when hovered over. Fatal interactions are automatically flagged and filtered across the platform, ensuring they receive immediate attention for corrective action.
 <img src="../dashboard/images/fail-stat-agent-scorecard.png" alt="Fail Statistics Agent Scorecard" title="Fail Statistics Agent Scorecard" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
@@ -182,24 +190,24 @@ This displays the overall performance score for the selected language, date rang
 
 ### Evaluation Form
 
-Supervisors can monitor agent performance using the selected evaluation form with negative weights assigned.
+Supervisors can monitor agent performance using the selected evaluation form with negative weights assigned. 
 
 * **Trends**: The Performance Monitor provides a **Trends** view (agent performance) that visualizes the average Kore Evaluation scores (both positive and negative) from agent scorecards on a daily, weekly, and monthly basis.  
 <img src="../dashboard/images/performance-monitor-evaluation-form-trends.png" alt="Performance Monitor Evaluation Form Trends" title="Performance Monitor Evaluation Form Trends" style="border: 1px solid gray; zoom:60%;">
 
-* **Distribution**: This view shows agents are distributed across score bands in increments of 10 over the last 7, 30, and 90 days.    
+* **Distribution**: The Evaluation Form Distribution view groups agents across evaluation score bands in increments of 10 (for example, 0–10, 11–20, 21–30) and shows the percentage of agents in each band for the selected date range (7 days, 30 days, or 90 days). This view helps teams monitor overall evaluation performance and identify score ranges that may need attention.    
 <img src="../dashboard/images/performance-monitor-evaluation-form-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Evaluation Form Distribution" style="border: 1px solid gray; zoom:60%;">
 
 #### Agent Scorecard
 
-* **Trends**: This view displays the performance monitor for agent scorecards. This provides a trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard.    
+* **Trends**: The Trends view displays the performance monitor for agent scorecards. This provides a trend view of the percentage of interactions with agent scorecard failures based on the selected scorecard.    
 <img src="../dashboard/images/performance-monitor-agent-scorecard-trends.png" alt="Performance Monitor Agent Scorecard Trends" title="Performance Monitor Agent Scorecard Trends" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 
     To access this feature, enable the **Agent Scorecard** toggle switch displayed under the **Quality AI General Settings**.
 
-* **Distribution**: This view displays how agents are distributed across score bands in increments of 10 over the last 7 days, 30 days and 90 days.  
+* **Distribution**: The Agent Scorecard Distribution view groups agents across scorecard score bands in increments of 10 and shows the percentage of agents in each band for the selected date range (7 days, 30 days, or 90 days). This view helps supervisors track trends in agent performance and spot shifts in score distribution over time.   
 <img src="../dashboard/images/performance-monitor-agent-scorecard-distribution.png" alt="Performance Monitor Evaluation Form Distribution" title="Performance Monitor Agent Scorecard Distribution" style="border: 1px solid gray; zoom:60%;">
 
 ## Agent Leaderboard
@@ -226,9 +234,9 @@ The **Agent Leaderboard** displays the following elements:
 
 ### View Leaderboard
 
-The **View Leaderboard** option allows supervisors, auditors, and managers to see both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md){:target="_blank"}.
+The **View Leaderboard** lets supervisors, auditors, and managers to see both top and bottom-performing agents, along with their conversations. For more information, see [Agent Leaderboard](agent-leaderboard.md){:target="_blank"}.
 
-* Click the **View Leaderboard** button located at the top-right corner to access the **Agent Leaderboard** quickly.    
+* Select the **View Leaderboard** to access the **Agent Leaderboard**.    
 <img src="../dashboard/images/view-leaderboard.png" alt="View Leaderboard" title="View Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 #### View Agent Leaderboard
@@ -241,7 +249,7 @@ You can view the **Agent Leaderboard** or **Agent-Specific Dashboard** in the fo
 * Navigate to **Quality AI** > **Agent Leaderboard**.   
 <img src="../dashboard/images/agent-leaderboard.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
-* Click on any agent to view the individual Agent Leaderboard or Agent-Specific Dashboard.   
+* Select any agent to view the individual Agent Leaderboard or Agent-Specific Dashboard.   
 <img src="../dashboard/images/agent-specific-dashboard-overview.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:60%;">
 
 Based on the selection, the **Agent Leaderboard** page displays all listed agents or only the dashboard for the selected agent. 

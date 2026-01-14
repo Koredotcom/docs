@@ -90,7 +90,7 @@ Steps to authorize a Salesforce action using developer credentials:
     * Select the **System** card to enable the Kore.ai’s preconfigured Salesforce app and click **Authorize**.  
     <img src="../images/salesforce-action-img3.png" alt="Kore.ai’s preconfigured Salesforce app" title="Kore.ai’s preconfigured Salesforce app" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Once you click **Authorize**, you are redirected to “login.salesfore.com”
+    * Once you click **Authorize**, you are redirected to “login.salesforce.com”
     * Enter your developer account credentials to successfully connect with your Salesforce Account
     * Click the **Allow Access** button to use Kore.ai’s app to fetch the access token to complete the authorization.
 
@@ -120,7 +120,7 @@ Steps to authorize a Salesforce action using developer credentials:
 
     * Click **Save Auth** to save Authorization Profile
     * Select the new **Authorization Profile,** which you created to enable integration
-    * Once click **Authorize**, you are navigated to “login.salesfore.com”  
+    * Once click **Authorize**, you are navigated to “login.salesforce.com”  
     <img src="../images/salesforce-action-img7.png" alt="Authorize" title="Authorize" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter login credentials to successfully connect with your Salesforce Account

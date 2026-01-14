@@ -356,7 +356,8 @@ The Audit screen integrates keyword search functionality directly into the conve
 | **AI Overview Panel** | • Displays keyword context and its relevance to QA evaluation.<br>• Highlights if the keyword relates to any compliance violations.<br>• Shows if keyword presence/absence affects question scoring.<br>• Shows sentiment at the time of keyword mention. |
 | **Session Preservation** | • Filters are saved in the user session until manually cleared. |
 | **Clear Filter Keywords** | • Removes all keyword filters (both include and exclude) from the transcript, but other filters (date, sentiment, QA score) remain active. |
- <img src="../quality-ai/ai-assist-manual-edit/images/keyword-by-question-audit.png" alt="Audit-Specific Conversation" title="Audit-Specific Conversation" style="border: 1px solid gray; zoom:70%;"> 
+
+<img src="../ai-assist-manual-edit/images/keyword-by-question-audit.png" alt="Audit-Specific Conversation" title="Audit-Specific Conversation" style="border: 1px solid gray; zoom:70%;"> 
 
 #### By Question
 

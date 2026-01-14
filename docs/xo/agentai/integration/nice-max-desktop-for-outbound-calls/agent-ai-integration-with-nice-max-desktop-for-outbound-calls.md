@@ -175,10 +175,16 @@ For on-prem, refer to corresponding host<strong> </strong>
 
 This section explains the configuration steps needed to integrate Kore Agent AI with NICE MAX Desktop.
 
-* [NICE CX Integration Hubs, Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
-* [NICE CX Studio, Import  Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-outbound-voice-script-and-configure-parameters)
-* [NICE CX Account Setup for Outbound Calls](#step-3-nice-cx-account-setup-for-outbound-call)
-* [Outbound Voice Simulation](#outbound-call-simulation)
+- [Shared Responsibilities](#shared-responsibilities)
+  - [NICE CXOne Admin](#nice-cxone-admin)
+  - [Kore.ai Admin](#koreai-admin)
+- [**Prerequisites**](#prerequisites)
+- [**Definitions**](#definitions)
+- [Configuration Steps](#configuration-steps)
+  - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
+  - [Step 2: NICE CX Studio \> Import Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-outbound-voice-script-and-configure-parameters)
+  - [Step 3: NICE CX Account Setup for Outbound Call](#step-3-nice-cx-account-setup-for-outbound-call)
+- [Outbound Call Simulation](#outbound-call-simulation)
 
 ### Step 1: Nice CX Integration Hubs > Add Agent Assist Hub
 
@@ -236,11 +242,11 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         3. Bot ID
         4. Agent AI Widget URL
         5. Bot Language Code - “en” is set as the default language. Refer to this [doc](./../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent's language.
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"}”* for instructions on how to access customdata in the AI Agent. 
+    2. Custom Data: The **customdata** object in the script can be used to pass information to the Kore AI Agent. During runtime, this customdata will be accessible in the UserContext of the AI Agent. Refer to *“[Access Custom Data in Agent AI Bot](./../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"}”* for instructions on how to access customdata in the AI Agent. 
     Include your data in the customdata object (one key-value pair per line). For example:
         1. `customdata.agentName="Agent"`
         2. `customdata.agentID="1234"`
-    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **https://home-abc.nice-incontact.com**, then the API URL would be **https://api-abc.nice-incontact.com**. Also, it is necessary to use the URLs without the trailing slash.
+    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is `https://home-abc.nice-incontact.com`, then the API URL would be `https://api-abc.nice-incontact.com`. Also, it is necessary to use the URLs without the trailing slash.
         1. NICE CX API Access Key
         2. NICE CX API Access Key Secret
         3. NICE CX API URL

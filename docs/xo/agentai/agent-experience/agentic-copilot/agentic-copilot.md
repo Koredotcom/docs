@@ -1,6 +1,6 @@
 # Agentic Copilot: Enhancing Efficiency, Control, and Customer Experience 
 
-The Agentic Copilot is a powerful extension of the Agent AI widget that automates end-to-end customer conversations while keeping human agents fully in control. It enables Agent AI to proactively send contextual, empathetic responses without requiring manual input. Agents can supervise every interaction, cancel or override automated replies, edit responses, use the “[Custom Tab](../../configuration/widget-theming-layout-customization.md/#add-a-custom-tab){:target="_blank"}” to manually run dialog tasks, and perform LLM-powered searches—allowing them to focus on service quality rather than repetitive tasks. 
+The Agentic Copilot is a powerful extension of the Agent AI widget that automates end-to-end customer conversations while keeping human agents fully in control. It enables Agent AI to proactively send contextual, empathetic responses without requiring manual input. Agents can supervise every interaction, cancel or override automated replies, edit responses, use the “[Custom Tab](../../configuration/widget-theming-layout-customization.md#add-a-custom-tab){:target="_blank"}” to manually run dialog tasks, and perform LLM-powered searches—allowing them to focus on service quality rather than repetitive tasks. 
 
 Agentic Copilot blends automation with human judgment, delivering fast, accurate, and personalized support at scale. It boosts agent productivity while keeping service empathetic and high quality. The LLM is constantly learning; hence, first call resolution (FCR) improves with better suggestions. Agents can now handle multiple conversations simultaneously.  
 
@@ -13,7 +13,7 @@ Agentic Copilot blends automation with human judgment, delivering fast, accurate
     * Prompt users for inputs  
     * Extract entities from messages  
     * Dynamically adapt responses using tool calling—triggering external APIs or business systems for up-to-date information (for example, pricing, availability, customer status).  
-* [Personalised and Empathetic Responses](#empathetic-and-personalized-responses): Understands the conversation context and responds in a natural, empathetic tone—creating a more human-like experience. 
+* [Personalized and Empathetic Responses](#empathetic-and-personalized-responses): Understands the conversation context and responds in a natural, empathetic tone—creating a more human-like experience. 
 * [Robust Fail-Safes](#robust-fail-safes): In case of data delays or message generation issues, agents can intervene using pause-to-send controls. The system disables auto-send if a response fails.  
 
 ### Proactive Engagement 

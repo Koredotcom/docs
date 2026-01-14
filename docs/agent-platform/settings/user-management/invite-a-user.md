@@ -10,6 +10,7 @@ To invite a user, follow the steps below:
 
 3. Click **Invite**.
 4. Enter a valid email address of the user you want to invite. 
+
 <ol start="5"><li>Select a role from the dropdown to define the user’s access to modules and features.
    <img src="../images/role-drop-down.png" alt="role selection" title="role selection" style="border: 1px solid gray; zoom:75%;"></li>
  
@@ -27,14 +28,14 @@ To invite a user, follow the steps below:
 
 Please note the following when adding an email address:
 
-* The **Email address** field should not be empty.
-* The system does not accept a space in front, between, or after the mail ID.
-* Enter a valid email address, including a domain (e.g., <code>[john@doe.com](mailto:john@doe.com)</code>), which must be provided. 
+* The **Email address** field shouldn't be empty.
+* The system does't accept a space in front, between, or after the mail ID.
+* Enter a valid email address, including a domain (for example, <code>[john@doe.com](mailto:john@doe.com)</code>), which must be provided. 
 
     <img src="../images/valid-email-address.png" alt="valid email address error" title="valid email address error" style="border: 1px solid gray; zoom:75%;"></ol>
 
 * Double-check the recipient’s email address before sending the invite.
-* Duplicate invitations are not allowed. The system displays: “*This email has already been added*."
+* Duplicate invitations are't allowed. The system displays: “*This email has already been added*."
     
     <img src="../images/duplicate-invitation.png" alt="duplicate invitation" title="duplicate invitation" style="border: 1px solid gray; zoom:75%;">
 
@@ -45,10 +46,5 @@ You’ll see a success message when the invite is sent. If it fails, check the h
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>Users receive an email invitation to join your account, which expires 15 days after it is sent.</li>
+<p><ul><li>Users receive an email invitation to join your account, which expires 15 days after it's sent.</li>
 <li>Until the recipient accepts your invitation to join, the user status is set to <b><i>Inactive</i></b>. Once the invitation is accepted, the status changes to <b><i>Active</i></b>.</li></ul></p></div>
-
-
-
-
-

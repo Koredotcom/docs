@@ -1,7 +1,9 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up the Kerberos SPNEGO Authorization Profile
 
 
-## Overview
+
 
 The XO Platform offers Kerberos SPNEGO-based authentication mechanism for enterprise users to use Kerberos authentication flow to securely connect with their internal applications using Kerberos SPNEGO security protocol.
 
@@ -11,7 +13,7 @@ The Kerberos SPNEGO auth profile can be configured from the following XO Platfor
 
 * [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node.md){:target="_blank"}
 * [Configurations > Authorization Profile](bot-authentication.md){:target="_blank"}
-* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/configure-llm-integration.md/#custom-llm-integration){:target="_blank"}
+* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/configure-llm-integration.md#custom-llm-integration){:target="_blank"}
 
 
 ## Configuring Kerberos SPNEGO Authorization
@@ -79,7 +81,7 @@ To configure the Kerberos SPNEGO authorization profile, define the fields descri
    </td>
    <td>This is the URL used to obtain end-user authorization for the XO Platform to access the web application or web service using the access token. The XO Platform accepts a valid URL with a maximum length of 3000 characters. This field is required. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the Authorization URL, for example,
     <br>
-     https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
+     https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
     <br>
     or
     <br>

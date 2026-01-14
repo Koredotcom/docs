@@ -15,7 +15,7 @@ Users can select specific scopes for managing tools, models, and guardrails. Thi
 
 Users can rename an app, modify its selected scopes, or delete the app as needed. Once the admin defines or updates the API scopes, the changes are applied platform-wide, ensuring consistent and controlled access to the APIs wherever they are used. 
 
-For more information on roles and permissions for API-scoped apps, please refer [here](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}.
+For more information on roles and permissions for API-scoped apps, please refer [here](../user-management/role-management.md#module-wise-permissions-and-access-levels){:target="_blank"}.
 
 
 ## Use Case: Scoped API Access for Banking Departments
@@ -118,39 +118,31 @@ The following API scopes are available for this feature.
 
 To access this feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
-3. Click **Security & Control** > **API Scopes** on the left navigation menu.
-    <img src="../images/click-api-scopes.png" alt="select api scopes" title="select api scopes" style="border: 1px solid gray; zoom:75%;">
+3. Click **Security & Control** -> **API Scopes** on the left navigation menu.
 
 ## Implement API Scoping
 
 The key steps to implement API scoping include:
 
-1. [Create an API app and assign scopes](../security-and-control/api-scopes.md/#create-an-api-application){:target="_blank"}: API-scoped apps have limited and specific permissions tied only to the API endpoints they need. Creating an API-scoped app enables you to restrict permissions, enhance security, better control and monitor access, and tailor the app specifically to meet the integration’s needs.
-2. [Create one or more API Keys to access the app](../security-and-control/api-scopes.md/#create-an-api-key){:target="_blank"}: API keys for scoped apps provide secure, manageable, and auditable access control tailored to the app’s needs, making access and usage safer and easier to track.
+1. [Create an API app and assign scopes](../security-and-control/api-scopes.md#create-an-api-application){:target="_blank"}: API-scoped apps have limited and specific permissions tied only to the API endpoints they need. Creating an API-scoped app enables you to restrict permissions, enhance security, better control and monitor access, and tailor the app specifically to meet the integration’s needs.
+2. [Create one or more API Keys to access the app](../security-and-control/api-scopes.md#create-an-api-key){:target="_blank"}: API keys for scoped apps provide secure, manageable, and auditable access control tailored to the app’s needs, making access and usage safer and easier to track.
 
 
 ### Create an API Application
 
 To create an app, follow the steps below:
 
-1. [Access](../security-and-control/api-scopes.md/#access-api-scopes){:target="_blank"} **API Scopes**.
+1. [Access](../security-and-control/api-scopes.md#access-api-scopes){:target="_blank"} **API Scopes**.
 2. Click **Create an API App** or **Create an App**.
-   <img src="../images/create-an-api-app.png" alt="create api app" title="create api app" style="border: 1px solid gray; zoom:75%;">
-
 3. Click **Untitled app** and provide the app name.
     <img src="../images/provide-app-name.png" alt="provide app name" title="provide app name" style="border: 1px solid gray; zoom:75%;">
 
 4. Select the required scopes from the list.
-    <img src="../images/scopes-selection.png" alt="select scopes" title="select scopes" style="border: 1px solid gray; zoom:75%;">
- 
 5. Click **Next**. 
 
-
-    A success message is displayed, and the following window is displayed. Follow the steps in the [next section](../security-and-control/api-scopes.md/#create-an-api-key){:target="_blank"} to complete the process.
-
-     <img src="../images/api-app-creation-success.png" alt="success app creation" title="success app creation" style="border: 1px solid gray; zoom:75%;">
+    A success message is displayed when the app is created. Follow the steps in the [next section](../security-and-control/api-scopes.md#create-an-api-key){:target="_blank"} to complete the process.
 
 ### Create an API Key
 
@@ -164,7 +156,7 @@ This step is necessary to complete the app creation process. To create an API Ke
    <img src="../images/create-new-api-key-window.png" alt="create new api key" title="create new api key" style="border: 1px solid gray; zoom:75%;">
 
 
-A success message is displayed once the key is copied.
+A success message is displayed after the key is copied. Additionally, the API key appears for the app on the summary page.
 
 <div class="admonition note">
 <p class="admonition-title">Important information on API Keys</p>
@@ -172,19 +164,15 @@ A success message is displayed once the key is copied.
 <p><b>What Happens If You Lose It?</b></p>
 <p>You’ll need to revoke the old key and <b>generate a new one</b>. This could disrupt services if the key is in use.</p>
 </div>   
- 
-The API key is listed for the app, as shown below.
-<img src="../images/api-keys-list-for-apps.png" alt="api keys list" title="api keys list" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="4"><li>Click <b>Done</b></li>. 
+<ol start="4"><li>Click <b>Done</b>.</li>
 
-The summary on the app displays the following information:
+The app summary page displays the following information:
 
 <ul><li><b>Name</b>: The API app name.</li>
 <li><b>Scopes</b>: The selected API scopes.</li>
 <li><b>Created by</b>: The name of the user who created the app.</li>
-<li><b>Created on</b>: The date when the app was created.</li>
-<img src="../images/api-apps-list.png" alt="apps list" title="apps list" style="border: 1px solid gray; zoom:75%;"></ul></ol> 
+<li><b>Created on</b>: The date when the app was created.</li></ul></ol>
 
 ## Manage API App and Key
 
@@ -210,8 +198,6 @@ To edit an API app, follow the steps below:
 
          * Click **Delete** in the confirmation window.
             
-            <img src="../images/del-api-key.png" alt="delete api keys" title="delete api keys" style="border: 1px solid gray; zoom:75%;">
-            
             <div class="admonition warning">
             <p class="admonition-title">Caution</p>
             <p>The key you are deleting will no longer function if it is in use. You must generate a new key.</p>
@@ -222,8 +208,7 @@ To edit an API app, follow the steps below:
 <ol start="3"><li>Click <b>Save</b>.</li>
 
 A success message is displayed once the app is edited. The changes are updated in the summary page.
-
-<img src="../images/edit-success-message-api-app.png" alt="edit success message" title="edit success message" style="border: 1px solid gray; zoom:75%;"></ol>
+</ol>
 
 ### Delete App
 
@@ -233,7 +218,5 @@ To delete an API app, follow the steps below:
    <img src="../images/delete-api-app-icon.png" alt="access delete" title="access delete" style="border: 1px solid gray; zoom:105%;">
 
 2. Click **Delete** in the confirmation window.
-
-      <img src="../images/delete-api-app.png" alt="delete api app" title="delete api app" style="border: 1px solid gray; zoom:55%;">
 
 A success message is displayed, and the app is removed from the list.

@@ -5,7 +5,7 @@
 
 The intent detection model leverages Large Language Models (LLMs) to predict user intent within multi-turn conversations accurately. It identifies the winning intent(s) by taking the RAG-qualified topics from dialogs, FAQs, knowledge bases, conversation history, the dialog context, and the query to determine the winning intent. The XO GPT - DialogGPT Model explicitly trained for the intent detection task improves precision in intent matching and enables more seamless, context-aware interactions.
 
-For every user query, the Retrieval Engine shortlists relevant chunks from the predefined conversation types- Dialog Chunks, FAQ Chunks, and Knowledge Chunks - configured within the conversational AI agent. These shortlisted chunks are then passed to the XO GPT - DialogGPT Model, which evaluates them along with the conversation history and the active dialog context to determine the most relevant chunk(s) for generating an accurate and contextually appropriate response.
+For every user query, the Retrieval Engine shortlists relevant chunks from the predefined conversation types- Dialog Chunks, FAQ Chunks, and Knowledge Chunks - configured within the conversational AI Agent. These shortlisted chunks are then passed to the XO GPT - DialogGPT Model, which evaluates them along with the conversation history and the active dialog context to determine the most relevant chunk(s) for generating an accurate and contextually appropriate response.
 
 <img src="../images/answer01.png" alt="XO GPT" title="RAG Framework" style="border: 1px solid gray; zoom:70%;">
 
@@ -413,7 +413,7 @@ Sample Input
 
 "score": 1,
 
-"chunkText": "Discharge process Your nurse will assist you in the discharge process which may take a few hours to complete.. Once your final bill is generated, you are expected to clear your dues by paying cash or using a credit/debit card. The nurse will hand over your discharge summary and belongings (like a thermometer, urinal bedpan, etc. - used during the course of your stay). She will also explain the medications you need to continue after your discharge and any other follow-up instructions. If you need a medical ambulance to drop you off at your home, please inform your nurse, and she will make the necessary arrangements. Keep track of your appointments, get updates & more!"
+"chunkText": "Discharge process Your nurse will assist you in the discharge process which may take a few hours to complete. Once your final bill is generated, you are expected to clear your dues by paying cash or using a credit/debit card. The nurse will hand over your discharge summary and belongings (like a thermometer, urinal bedpan, etc. - used during the course of your stay). She will also explain the medications you need to continue after your discharge and any other follow-up instructions. If you need a medical ambulance to drop you off at your home, please inform your nurse, and she will make the necessary arrangements. Keep track of your appointments, get updates & more!"
 
 }
 
@@ -781,7 +781,7 @@ Output:
 {
 "category": "Category 2",
 "fulfillment_type": "system_intent",
-"winning_intents": ["NoIntent_Indentified"]
+"winning_intents": ["NoIntent_Identified"]
 }
 ```
 
@@ -814,9 +814,9 @@ Output:
 
 "score": 0.5552528,
 
-"Description": "This intent allows users to make changes to or cancel their existing leave requests within the HR system. Users can easily modify details such as the duration or type of leave or cancel the request altogether if needed. ",
+"Description": "This intent allows users to make changes to or cancel their existing leave requests within the HR system. Users can easily modify details such as the duration or type of leave or cancel the request altogether if needed.",
 
-"appId": "st-e0dc1b66-b34f-4e90-a040-af3ab69a782d",
+"appId": "st-e0dc1b66-b34f-xxxx-a040-af3ab69a782d",
 
 "appName": "kWEysAZN"
 
@@ -884,7 +884,7 @@ Output:
 
 !!! note
 
-    When an AI Agenthas PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input isn't available for intent identification, which may impact the model's ability to recognize user intents accurately.
+    When an AI Agent has PII (Personally Identifiable Information) enabled, any user input that matches a PII field is masked to ensure user confidentiality. As a result, the masked input isn't available for intent identification, which may impact the model's ability to recognize user intents accurately.
 
 ## XO GPT - Model Building Process
 
@@ -951,7 +951,7 @@ We evaluate various community models that are suitable for response generation a
   <tr>
    <td><strong>Fine Tuning type</strong>
    </td>
-   <td>How the finetuning is done.
+   <td>How the fine-tuning is done.
    </td>
    <td>PEFT-QLoRA
    </td>

@@ -277,7 +277,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - See [Contributing Guide](contributing.md) for details on how to contribute.
 - For questions, issues, or feature requests, [contact Support](https://support.kore.ai).

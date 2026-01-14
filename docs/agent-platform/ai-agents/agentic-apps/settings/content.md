@@ -73,4 +73,3 @@ Example: if a content field is created with the name ‘guidelines’ and has a 
 ```
 {{content.guidelines.prefLang}}
 ```
-

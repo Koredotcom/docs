@@ -1,7 +1,7 @@
 
 # Kore.ai XO GPT Module
 
-The new Kore.ai XO GPT module delivers fine-tuned large language models designed for enterprise conversational AI agents. These models are optimized for accuracy, safety, and efficiency in production environments.
+The new Kore.ai XO GPT module delivers fine-tuned large language models designed for enterprise conversational AI Agents. These models are optimized for accuracy, safety, and efficiency in production environments.
 
 Current capabilities include Answer Generation, Conversation Summarization, User Query Rephrasing, AI Agent Response Rephrasing, Vector/Embedding Generation (Text and Image), and Intent Resolution (DialogGPT). Future updates will expand capabilities further, including Entity Co-referencing.
 
@@ -13,7 +13,7 @@ Current capabilities include Answer Generation, Conversation Summarization, User
 
 The XO GPT module offers fast, accurate AI responses with built-in security:
 
-* **Better Accuracy**: The module leverages smaller foundation models, typically under 10 billion parameters, that have been explicitly fine-tuned for conversational AI agents. The models achieve better accuracy, relevance, and Interpretability for production deployment by tuning smaller models rather than directly prompting larger generative models.
+* **Better Accuracy**: The module leverages smaller foundation models, typically under 10 billion parameters, that have been explicitly fine-tuned for conversational AI Agents. The models achieve better accuracy, relevance, and Interpretability for production deployment by tuning smaller models rather than directly prompting larger generative models.
 
 * **Faster Responses**: The models are relatively smaller and hosted along with the Platform. This results in faster response times, making them suitable for production use cases for digital and voice interactions.
 
@@ -24,7 +24,7 @@ The XO GPT module offers fast, accurate AI responses with built-in security:
 
 ## Kore.ai’s Model Fine-Tuning Process
 
-Fine-tuning is an iterative process of taking a pre-trained LLM and adapting it to perform conversational AI agents tasks:
+Fine-tuning is an iterative process of taking a pre-trained LLM and adapting it to perform conversational AI Agents tasks:
 
 1. **Collect Data**: Gather a dataset relevant to the desired task. This dataset serves as the training material for fine-tuning the LLM.
 

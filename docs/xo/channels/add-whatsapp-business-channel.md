@@ -18,29 +18,29 @@ Steps to configure **Infobip**:
 
 1. Login to the **Infobip** developer portal.
 2. On the left navigation menu, click the **Channels and Numbers** option and select the **WhatsApp** channel on the **Channel Essentials** panel.
-<img src="../images/whatsapp.png" alt="infobib" title="infobib" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp.png" alt="infobip" title="infobip" style="border: 1px solid gray; zoom:70%;">
 
 3. To configure a new number for the **Infobip** and **WhatsApp** messaging platforms’ integration, follow one of the steps given below:
     * Scan the QR code under **Overview** > **Connect** on the **WhatsApp** page on the Infobip portal using the camera or QR scanner on your mobile device.
     * Follow the instructions for steps 2 and 3 shown in the image below.
-    <img src="../images/whatsapp1.png" alt="infobib integration" title="infobib integration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/whatsapp1.png" alt="infobip integration" title="infobip integration" style="border: 1px solid gray; zoom:70%;">
 
     * Alternatively, add the number shown on the screen of the Infobip sender to your WhatsApp contacts.  
-    <img src="../images/whatsapp2.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/whatsapp2.png" alt="infobip sender" title="infobip sender" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
         The mobile number must have the country code preceded by a plus (+) sign to activate the Infobip and WhatsApp connections.
 
 4. After associating the number, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.  
-<img src="../images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp3.png" alt="infobip connection" title="infobip connection" style="border: 1px solid gray; zoom:70%;">
 
 
 5. Click the **ellipses** icon under **Action** and select **Edit Configuration**.  
-<img src="../images/whatsapp4.png" alt="edit infobib configuration" title="edit infobib configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp4.png" alt="edit infobip configuration" title="edit infobip configuration" style="border: 1px solid gray; zoom:70%;">
 
 6. On the **Edit Configuration** page, click the **edit** icon, add the **URL for incoming messages** (copy the Webhook URL from the Platform under **Channels and Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations** tab) and click **Back**.
-<img src="../images/whatsapp5.png" alt="deploy infobib" title="deploy infobib " style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp5.png" alt="deploy infobip" title="deploy infobip " style="border: 1px solid gray; zoom:70%;">
 
 7. Next, to add Infobip’s **Base URL**, follow these steps:
    
@@ -50,18 +50,18 @@ Steps to configure **Infobip**:
         * **Messaging Partner**: Select **Infobip** from the dropdown list.
         * **Phone Number**: Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same AI Agent. The AI Agent responds to only the source number from which it receives the message rather than a common phone number. [Learn more](whatsapp-support-for-multiple-phone-numbers.md).
         * **Base URL**: Copy the Base URL from this page. Use this URL sends messages when the **WhatsApp Business Messaging** channel is enabled.
-        <img src="../images/whatsapp7.png" alt="infobib messaging partner" title="infobib messaging partner" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/whatsapp7.png" alt="infobip messaging partner" title="infobip messaging partner" style="border: 1px solid gray; zoom:70%;">
 
 
         * **Username and Password**: The username and password of the **Infobip** account holder. Infobip’s API requires authentication and uses the basic authorization for sending and receiving messages over the API with these values.
         * **Webhook URL**: Copy the webhook URL provided in the configuration tab and update the same on the **Infobip developer portal** for Infobip to send the received messages from the subscriber (WhatsApp Business Messaging).
-        <img src="../images/whatsapp8.png" alt="infobib API" title="infobib API" style="border: 1px solid gray; zoom:70%;">  
+        <img src="../images/whatsapp8.png" alt="infobip API" title="infobip API" style="border: 1px solid gray; zoom:70%;">  
 
         * Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
 
         * Select **Yes** to enable the **WhatsApp Business Messaging** channel.
     * Click **Save** to complete the integration setup.
-    <img src="../images/whatsapp9.png" alt="save infobib configuration" title="save infobib configuration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/whatsapp9.png" alt="save infobip configuration" title="save infobip configuration" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -73,9 +73,9 @@ Steps to configure **Infobip**:
 
 Once you’ve sent a message to **Infobip** using the **WhatsApp Business Messaging** channel, you can track the text, AI Agent responses, delivery status, and errors (if any) on your **Infobip** account under **Channels and Numbers** > **Channel Essentials** > **WhatsApp** > **Overview** > **View Logs**.
 
-<img src="../images/whatsapp10.png" alt="view infobib logs" title="view infobib logs" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp10.png" alt="view infobip logs" title="view infobip logs" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../images/whatsapp11.png" alt="infobib errors" title="infobib errors" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/whatsapp11.png" alt="infobip errors" title="infobip errors" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Messaging Templates
@@ -315,6 +315,7 @@ The following sample shows a success payload:
   "timestamp": "1687160320000"
 }
 ```
+
 ### Error Response Codes
 
 The table below outlines the various error status codes that may occur when receiving incoming requests through the Gupshup Whatsapp channel:

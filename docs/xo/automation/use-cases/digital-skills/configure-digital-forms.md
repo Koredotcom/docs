@@ -11,7 +11,7 @@ Consider a Banking App trying to address the following scenarios:
 1. An already registered user wants to open an additional account.
 2. There are three types of accounts that are available, each with further options:
     * Savings Account.
-    * Checking Account with an option to opt for a Cash Card and set the miniumum balance.
+    * Checking Account with an option to opt for a Cash Card and set the minimum balance.
     * Credit Card with an option to choose the type of card to be Platinum, Gold, Silver or Basic.
     
     <img src="../../images/banking-form.png" alt="banking form" title="banking form" style="border: 1px solid gray; zoom:75%;">
@@ -73,7 +73,7 @@ Create a form to gather the following information:
 2. By default, a **Submit button** is added to the form. This would trigger the submit event which would capture the user input and save in context object.
 3. Drag and drop a **Text Field** component onto the form.
 4. As soon as you drag and drop a component, its property settings panel will be displayed.
-5. In that panel congigure the following settings:
+5. In that panel configure the following settings:
     * **Display Name** set as _Name._
     * **Name** used for internal reference, set as _accountname._
     * **Description** of the field.

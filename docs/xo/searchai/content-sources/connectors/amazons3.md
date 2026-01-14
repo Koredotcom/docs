@@ -35,7 +35,7 @@ The Amazon S3 Connector allows seamless integration between Amazon S3 and Search
 
 To integrate Search AI with the Amazon S3 account and ingest data from it, follow the steps listed below. 
 
-1. Generate an Access Key for the Amazon S3 account from which content will be ingested. 
+1. Generate an Access Key for the Amazon S3 account from which content is to be ingested. 
 2. Configure the Amazon S3 connector in Search AI.
 
 ## Prerequisites 
@@ -59,6 +59,7 @@ Ensure that the IAM user generating the access credentials has the following per
       "Resource": "arn:aws:s3:::your-bucket-name/*"
     }
 ```
+
 ## Generate Access Key 
 
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/). 
@@ -88,5 +89,5 @@ After successfully connecting the Search AI connector to the Amazon S3 account, 
 Upon sync, Search AI ingests all the files (in supported formats) from the buckets accessible to the user used to log into the connector. This content is then accessible to all the users of Search AI. 
 
 !!!note
-  
-  All the buckets from which content is to be ingested should be in the same region.
+
+  Only buckets from the same region can be used for content ingestion.

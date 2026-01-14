@@ -1,6 +1,6 @@
 # Alert Task – Authorization using API Key
 
-We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform.. In this section, we will see how to configure API authorization.
+We have seen how an [Alert task](../use-cases/alert-tasks.md) can be set up in the Platform. In this section, we will see how to configure API authorization.
 
 ## API Key Setup Overview
 
@@ -21,7 +21,8 @@ To authorize an API key, follow the steps below:
 
 ## Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com. 
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL.For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder, where **Tenant** including the braces represents the tenant name.
 <img src="../images/set-tenancy.png" alt="set tenancy" title="set tenancy" style="border: 1px solid gray; zoom:75%;">
@@ -103,11 +104,12 @@ By default, authorization fields are configured as part of the header of the tas
 
     <img src="../images/add-auth-field-api-key.png" alt="add authorization field" title="add authorization field" style="border: 1px solid gray; zoom:75%;"> 
 
-2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. 
-* **Header** – The AI Agent expects the authorization fields as part of the header of the request.
-* **Payload** – The AI Agent expects the authorization fields as part of the content of the body of the request.
-* **Query String** – The AI Agent expects the authorization fields as a query in the body of the request.
-* **Path Param** – The AI Agent expects the authorization fields as part of the URL path for the request.
+2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
+   * **Header**: The AI Agent expects the authorization fields as part of the header of the request.
+   * **Payload**: The AI Agent expects the authorization fields as part of the content of the body of the request.
+   * **Query String**: The AI Agent expects the authorization fields as a query in the body of the request.
+   * **Path Param**: The AI Agent expects the authorization fields as part of the URL path for the request.
+
 3. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 4. In the **Field Value** field, enter the value for the **Field Key** specified.
 5. Click **Add**. The new authorization field is added in the **Authorization Fields** section.

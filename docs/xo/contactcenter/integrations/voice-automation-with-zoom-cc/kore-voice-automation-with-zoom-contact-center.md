@@ -31,6 +31,7 @@ The important steps to set up the ZCC channel are summarized below:
 5. Fetch Conversation Details and Summary.
 
 ## Architecture Diagram
+
 <img src="../images/architecture-diagram-1.png" alt="architecture-diagram" title="architecture-diagram" style="border: 1px solid gray; zoom:80%;">
 
 ## Step 1: Associate an App within an experience flow. [Know more](../../../flows/create-flows.md){:target="_blank"}
@@ -62,12 +63,12 @@ Go to **Flows & Channels** > **Channels** > **Voice Gateway**, and select **SIP 
     !!! note
         Upon configuring the above SIP transfer configuration, you need to attach one flow created in Step 1 to this configuration.
 
-10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md/#attach-flow){:target="_blank"}.  
-<img src="../images/koreai-voice-gateway-4.png" alt="koreai-voice-gateway" title="koreai-voice-gateway" style="border: 1px solid gray; zoom:80%;">
+10. Click **Attach Flow** and attach the flow created on step-1. For help, refer to [Attach Flow](../../../channels/voice-gateway/configure-voice-gateway.md#attach-flow){:target="_blank"}.  
+<img src="../images/koreai-voice-gateway-4.png" alt="voice-gateway" title="voice-gateway" style="border: 1px solid gray; zoom:80%;">
 
 ## Step 3: Agent Transfer Configuration
 
-After the customer interacts with Kore’s AI Agent, you can perform agent transfer from Kore AI Agent to ZCC through one of the following two approaches:
+After the customer interacts with the AI Agent, you can perform agent transfer from Kore AI Agent to ZCC through one of the following two approaches:
 
 * Agent Transfer Node in Flow. [Read here ](../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md){:target="_blank"}
 * Agent Transfer Node in a Dialog Task
@@ -133,32 +134,34 @@ print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 
 1. Sign in to [Zoom App Marketplace](https://marketplace.zoom.us/apps){:target="_blank"} as an Admin.
 
-2. Select **App Types** > **Connectors** from the left navigation filter menu, and navigate to the **Connectors** page, or simply type “kore.ai” in the **Search** field.  
-<img src="../images/koreai-virtual-assistant-8.png" alt="virtual-assistant" title="virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
-<img src="../images/koreai-virtual-assistant2-9.png" alt="virtual-assistant2" title="virtual-assistant2" style="border: 1px solid gray; zoom:80%;">
+2. Select **App Types** > **Connectors** from the left navigation filter menu, and navigate to the **Connectors** page, or simply type “kore.ai” in the **Search** field.
+    
+   <img src="../images/koreai-virtual-assistant-8.png" alt="virtual-assistant" title="virtual-assistant" style="border: 1px solid gray; zoom:80%;">  
+
+   <img src="../images/koreai-virtual-assistant2-9.png" alt="virtual-assistant2" title="virtual-assistant2" style="border: 1px solid gray; zoom:80%;">
 
 3. Select the **Kore.ai** connector, and navigate to the **Connector Details** screen.  
 <img src="../images/connector-details-10.png" alt="connector-details" title="connector-details" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Create Kore.ai Assistant Connector**, and navigate to the **Create Kore.ai Assistant Connector** screen.  
+1. Click **Create Kore.ai Assistant Connector**, and navigate to the **Create Kore.ai Assistant Connector** screen.  
 <img src="../images/create-koreai-virtual-assistant-connector-11.png" alt="create-virtual-assistant-connector" title="create-virtual-assistant-connector" style="border: 1px solid gray; zoom:80%;">
 
-5. Enter a name in the **Connector Name** field, select “Voicebot” from the “Choose Bot Type” dropdown list, and then click **Next**.
+1. Enter a name in the **Connector Name** field, select “Voicebot” from the “Choose Bot Type” dropdown list, and then click **Next**.
 
-6. Select the desired region for the voice AI Agent from the dropdown list to automatically populate the Base URL of the regional Kore platform.
+2. Select the desired region for the voice AI Agent from the dropdown list to automatically populate the Base URL of the regional Kore platform.
 
-7. Copy the **Bot ID**, **Client ID**, and **Client Secret** of your respective app on kore.ai. (Go to **Flows & Channel** > **Digital**. Under **Configured**, click **Configured Channels** > **Web/Mobile Client** > **JWT App Details.**)  
+3. Copy the **Bot ID**, **Client ID**, and **Client Secret** of your respective app on kore.ai. (Go to **Flows & Channel** > **Digital**. Under **Configured**, click **Configured Channels** > **Web/Mobile Client** > **JWT App Details.**)  
 <img src="../images/web-mobile-client-screen-12.png" alt="web-mobile-client-screen" title="web-mobile-client-screen" style="border: 1px solid gray; zoom:80%;">
 
-8. Paste them into the **Bot ID**, **Client ID**, and **Client Secret** fields under the **Authorization Parameters** section on the **Zoom Kore.ai Assistant Connector** page, and then click **Next**.  
+1. Paste them into the **Bot ID**, **Client ID**, and **Client Secret** fields under the **Authorization Parameters** section on the **Zoom Kore.ai Assistant Connector** page, and then click **Next**.  
 <img src="../images/zoom-koreai-va-connector-13.png" alt="zoom-connector" title="zoom-connector" style="border: 1px solid gray; zoom:80%;">
 
-9. Copy the **Domain Name** and **DID Number** from the **Zoom Kore.ai Assistant Connector** page.  
+1. Copy the **Domain Name** and **DID Number** from the **Zoom Kore.ai Assistant Connector** page.  
 <img src="../images/domain-name-did-number-14.png" alt="domain-name-did-number" title="domain-name-did-number" style="border: 1px solid gray; zoom:80%;">
 
-10. Paste them into the **Assistant Connector** on **ZCC**.
+1.  Paste them into the **Assistant Connector** on **ZCC**.
 
-11. Click **Next** to authorize the **Kore.ai Chatbot Connector** with the Kore.ai platform.
+2.  Click **Next** to authorize the **Kore.ai Chatbot Connector** with the Kore.ai platform.
 
 After creating an Experience Flow, you must attach a DID Number to this flow. (Since Zoom integration is based on DID Number, you don’t need to purchase any number from Kore.)
 
@@ -236,6 +239,6 @@ Follow these steps to get the **botID**:
      16.2.4 On the **Insights to Logs** page, click **Identifiers**, and then click the **copy** symbol against the **Session ID** value.  
         <img src="../images/insights-to-logs-sessionid-26.png" alt="insights-to-logs-sessionid" title="insights-to-logs-sessionid" style="border: 1px solid gray; zoom:80%;">
 
-    16.3 Generate and copy the **JWT token** by following [this document](../../../apis/automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"}.
+    16.3 Generate and copy the **JWT token** by following [this document](../../../apis/automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}.
 
 17. Run the modified **curl** to get the conversation details and summary of a session.

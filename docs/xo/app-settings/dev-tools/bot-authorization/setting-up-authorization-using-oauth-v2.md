@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using OAuth v2
 
 OAuth v2 is the new version of the open protocol to allow secure authorization via a standard method from web, mobile, and desktop applications.
@@ -78,7 +80,7 @@ To configure oAuth v2, define the fields described in the following table.
    </td>
    <td>This is the URL used to obtain end-user authorization for the XO Platform to access the web application or web service using the access token. The XO Platform accepts a valid URL with a maximum length of 3000 characters. This field is required. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the Authorization URL, for example,
 <br>
-     https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
+     https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
 <br>
 or
 <br>
@@ -124,7 +126,9 @@ For more information, see [Using Session and Context Variables](../../../automat
 
 ## Defining Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface that uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants at www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface that uses a tenant name in the URL. 
+
+For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 
@@ -143,8 +147,8 @@ If, for example, the default username and password fields do not meet your needs
 
 Specify the following fields:
 
-* **Field Key** – The name of the custom field to specify for authorization.
-* **Value** – The value of the custom field to specify for the authorization.
+* **Field Key**: The name of the custom field to specify for authorization.
+* **Value**: The value of the custom field to specify for the authorization.
 
 Click **Done** to save the **Additional Field**.
 
@@ -157,10 +161,10 @@ By default, no authorization fields are configured as part of the header of the 
 
 
 1. In the **Field Type** field, you can select one of the following depending on where in the request message and the type of authorization fields that are required.
-    1. **Header** – The assistant expects the authorization fields as part of the header of the request.
-    2. **Payload** – The assistant expects the authorization fields as part of the content of the body of the request.
-    3. **Query String** – The assistant expects the authorization fields as a query in the body of the request.
-    4. **Path Param** – The assistant expects the authorization fields as part of the URL path for the request.
+    * **Header**: The assistant expects the authorization fields as part of the header of the request.
+    * **Payload**: The assistant expects the authorization fields as part of the content of the body of the request.
+    * **Query String**: The assistant expects the authorization fields as a query in the body of the request.
+    * **Path Param**: The assistant expects the authorization fields as part of the URL path for the request.
 
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.

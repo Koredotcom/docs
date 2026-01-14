@@ -25,17 +25,17 @@ Navigate to **Quality AI** > **CONFIGURE** > **Evaluation Forms** > **Evaluation
 
 The Interface displays the following elements:
 
-* **Name**: Shows the evaluation metrics name.
+* **Name**: Shows the evaluation metric name.
 
-* **Metric Type**: Indicates the measurement type used.
+* **Metric Type**: Indicates the measurement type.
 
-* **Evaluation Forms**: Shows all associated evaluation forms for configuration and assignment.
+* **Evaluation Forms**: Lists all associated evaluation forms for configuration and assignment.
 
-* **Ellipsis Icon**: Provides edit and delete an options. 
+* **Ellipsis Icon**: Provides edit and delete options. 
 
-* **Search**: Quick search to view and modify metrics.	
+* **Search**: Provides quick search option to view or modify metrics.	
 
-* **New Evaluation Metrics**: Button to configure new metrics. 
+* **New Evaluation Metrics**: Lets you configure new evaluation metrics. 
 
 ## Create New Evaluation Metric
 
@@ -44,11 +44,11 @@ Steps to create new evaluation metric:
 1. Select the **Evaluation Metrics** tab.    
 <img src="../evaluation-criteria/evaluation-metrics/images/eva-metrics-tab-selection.png" alt="Evaluation Metric" title="Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the **+ New Evaluation Metric** displayed in the upper-right corner.    
+2. Select the **+ New Evaluation Metric**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/new-eva-metrics.png" alt="New Evaluation Metric" title="New Evaluation Metric" style="border: 1px solid gray; zoom:70%;">
 
-3. Configure your chosen measurement type metrics.    
-<img src="../evaluation-criteria/evaluation-metrics/images/mtric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
+3. Configure the metrics for your selected measurement type.    
+<img src="../evaluation-criteria/evaluation-metrics/images/metric-pane.png" alt="Configure New Metric" title="Configure New Metric" style="border: 1px solid gray; zoom:60%;
 ">
 
 ## Metrics Configuration Elements
@@ -112,7 +112,7 @@ The following measurement types are:
 
     * **Dead Air**: Tracks unproductive silence periods with configurable thresholds (30-300 seconds). 
 
-    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring words per minute (WPM).
+    * **Speaking Rate**: Monitors speech pace trends to flag coaching opportunities, measuring Words Per Minute (WPM).
 
     **Use Cases**: 
     
@@ -130,7 +130,7 @@ The following measurement types are:
 
     **Key Features**:
 
-    * **API Integration**: Real-time verification with CRM and external systems.
+    * **API Integration**: Real-time verification with Customer Relationship Management (CRM) and external systems.
 
     * **Business Rules Engine**: Five rule types, including first or last value, negotiated value, and strict matching.
 
@@ -196,7 +196,7 @@ The following measurement types are:
 
 1. **By AI Agent**
 
-    Enables sophisticated evaluations using AI agents capable of multi-step reasoning and autonomous decision-making.
+    Enables sophisticated evaluations using AI Agents capable of multistep reasoning and autonomous decision-making.
 
     **Key Features**:
 
@@ -246,10 +246,10 @@ The process of managing evaluation metrics includes the following sections:
 
 Steps to edit or delete existing evaluation metrics types:
 
-1. Right-click on any of the existing **Evaluation Metrics Type**.    
+1. Select any existing **Evaluation Metrics Type**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Click **Edit** to update measurement type fields or **Delete** to remove.   
+2. Select **Edit** to update measurement type fields or **Delete** to remove.   
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Update** to save changes.
+3. Select **Update** to save changes.

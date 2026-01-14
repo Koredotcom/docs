@@ -1,4 +1,4 @@
-# About AI Agents
+# AI Agents
 
 **Agents in an Agentic App** are specialized entities that autonomously perform tasks or actions aligned with specific goals. They function as self-contained units of intelligence, equipped with the knowledge and resources necessary to address a wide range of scenarios effectively.
 
@@ -33,9 +33,9 @@ Each agent is characterized by its description, scope, and instructions, which h
 * **Equipped with Tools and Knowledge**: To enable action-taking, agents are provisioned with specialized tools, resources, and domain-specific knowledge. Depending on the tasks they're expected to perform, this could include access to APIs, external databases, computational resources, or pre-trained models.
 * **Autonomy and Adaptability**: Agents are designed to act autonomously, interpreting input, analyzing situations, and deciding the best course of action. Their adaptability allows them to respond dynamically to changing conditions or unexpected challenges in pursuit of their goals.
 
-<hr>
+<hr/> 
 
-#### Related Links
+**Related Resources**
 
 * [Create an Agentic App](./agentic-apps/create-app.md)
 * [Set up AI Agents](./create-agent.md)

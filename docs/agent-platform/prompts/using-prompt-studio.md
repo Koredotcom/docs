@@ -111,4 +111,3 @@ After selecting your models, you can generate the output for your prompt. Ensure
     * The time taken by the model to respond with the answer.  
 
 For more information on the available options on the prompts canvas, see [More options on the Prompt Canvas](./options-prompt-canvas.md).
-

@@ -97,7 +97,7 @@ await logger.error("Error affecting functionality")
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - [RequestContext API](request_context.md) - Session context and environment variables
 - [Tracer API](tracer.md) - Distributed tracing and monitoring

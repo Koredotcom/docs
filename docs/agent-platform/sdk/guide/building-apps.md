@@ -300,7 +300,7 @@ if __name__ == "__main__":
 
 <hr/>
 
-**Related resources**
+**Related Resources**
 
 - 📖 [API Reference](../api/index.md)
 

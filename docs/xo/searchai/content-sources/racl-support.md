@@ -42,7 +42,7 @@ The connector stores the permissions retrieved from the document in the `sys_rac
 
 The permissions for an item are of the following types:
 
-1. **Individual permissions**: The content (file or knowledge article) directly specifies the list of user identities that can access it ( for example, user1@example.com, user2@example.com). In this case, Search AI retrieves and stores user identities in the racl field of the indexed content as shown below.
+1. **Individual permissions**: The content (file or knowledge article) directly specifies the list of user identities that can access it ( for example, `user1@example.com`, `user2@example.com`). In this case, Search AI retrieves and stores user identities in the racl field of the indexed content as shown below.
 
     ```json
     "sys_racl": [
@@ -52,7 +52,7 @@ The permissions for an item are of the following types:
     
     ```
 
-2. **Group Permissions**- The content specifies a group of users or a criterion that defines who can access it (for example, devteam@example.com). When the access information retrieved from the content refers to group permissions, Search AI uses Permission Entities. A unique permission entity is created for each group or user criterion associated with the content. For example, if a Google Drive file is accessible to two individuals, “john.doe@example.com”, “smitha.joseph@example.com”, and to all the members of the group “testteam@example.com”, Search AI would fetch the access list and store it in the indexed content. In this case, the first two entries correspond to the users, and the third corresponds to the permission entity created for the group. 
+2. **Group Permissions**- The content specifies a group of users or a criterion that defines who can access it (for example, `devteam@example.com`). When the access information retrieved from the content refers to group permissions, Search AI uses Permission Entities. A unique permission entity is created for each group or user criterion associated with the content. For example, if a Google Drive file is accessible to two individuals, `john.doe@example.com`, `smitha.joseph@example.com`, and to all the members of the group `testteam@example.com`, Search AI would fetch the access list and store it in the indexed content. In this case, the first two entries correspond to the users, and the third corresponds to the permission entity created for the group. 
 
     ```json
     "sourceId": "fs-18107a80-7bf7-57d9-9a8f-96835bdbffad",
@@ -73,6 +73,7 @@ The permissions for an item are of the following types:
     "createdOn": "2024-06-13T10:15:33.679195022",
     "chunkContent": "recordTitle : Apple.pdf; chunkText : The document provides an overview of emerging technologies adopted by enterprises in 2025, including advancements in edge computing, container orchestration, and AI-powered monitoring tools. It summarizes performance evaluations conducted across various cloud providers such as Azure, AWS, and Google Cloud, focusing on scalability and data governance. The analysis also covers recent partnerships between enterprises and startups to enhance automation, improve developer experience, and streamline infrastructure provisioning."
     ```
+    
   Similarly, if a ServiceNow article gives access to two user criteria, Search AI creates two permission entities corresponding to the user criteria. The article’s manager and owners are also granted access. Hence, the sys_racl field would be something like this: the first two entries are for the permission entities, and the next two are for the article’s owners and managers.
 
     ```json
@@ -142,7 +143,7 @@ If the third party application uses user groups or user criteria (rather than in
 
 To enforce access control at query time, Search AI must resolve which individual users belong to each Permission Entity.
 
-For example, if a file is accessible only to employees in the HR department, Search AI indexes the file with a Permission Entity representing that department and does't have information about the individual users associated with the department. However, at query time, it must know which specific users (for example: jane.doe@example.com, john.smith@example.com) are in the HR department to determine access.
+For example, if a file is accessible only to employees in the HR department, Search AI indexes the file with a Permission Entity representing that department and does't have information about the individual users associated with the department. However, at query time, it must know which specific users (for example: `jane.doe@example.com`, `john.smith@example.com`) are in the HR department to determine access.
 
 In such a case, Search AI needs additional information to determine the association between the users and the groups. 
 

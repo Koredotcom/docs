@@ -146,7 +146,7 @@ For detailed steps, see [Add an External Model Using API Integration](external-m
 
 ## Supported Open-Source Models
 
-Agent Platform currently supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
+The Platform currently supports over thirty open-source models and provides them as a service. Platform-hosted models can be optimized prior to deployment, making them ideal for private environments or specialized applications.
 
 The supported models and their variants are given below:
 
@@ -443,7 +443,7 @@ The supported models and their variants are given below:
 
 ### Supported Models for Structured Output
 
-Kore-hosted open-source models can produce structured JSON responses, making outputs consistent and easy to parse.
+Platform-hosted open-source models can produce structured JSON responses, making outputs consistent and easy to parse.
 
 * Structured output support depends on the optimization technique used: No optimization or vLLM.
 * Models optimized with CT2, fine-tuned models, Hugging Face imports, and locally imported models are not supported.
@@ -498,7 +498,7 @@ The following table lists the models that support structured JSON output:
 
 With Easy Integration, you can quickly connect to external model providers, such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock. No infrastructure setup is needed—just authenticate and start deploying models within flows, tools, or agents.
 
-Here is the list of all the external models supported in Agent Platform:
+Here is the list of all the external models supported in the Platform:
 
 
 <table>
@@ -637,4 +637,3 @@ Here is the list of all the external models supported in Agent Platform:
    </td>
   </tr>
 </table>
-

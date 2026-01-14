@@ -983,7 +983,7 @@ The following table lists how the entity works in different scenarios:
   <tr>
    <td><strong>INPUT TYPE</strong>
    </td>
-   <td><strong>AI Agent BEHAVIOUR</strong>
+   <td><strong>AI Agent Behavior</strong>
    </td>
   </tr>
   <tr>
@@ -1037,7 +1037,7 @@ Captures statements or paragraphs of text from the user utterance. The value for
 
 ### Email
 
-Captures email address from the utterance. For example, “_Send an email to help@koremessenger.com”_ returns the value of **Email** as a string.
+Captures email address from the utterance. For example, _Send an email to `help@koremessenger.com`_ returns the value of **Email** as a string.
 
 ```
 "entities":
@@ -1299,7 +1299,7 @@ For example, for capturing volumes, select **Volume** as the **Unity Type** and 
 ```
 "Quantity":
 {
-"unit": "millilitre",
+"unit": "milliliter",
 "amount": 500,
 "type": "volume",
 "source": "500 ml"
@@ -1568,7 +1568,7 @@ A time zone. _Eastern Standard Time_ converts the timezone into GMT and stores t
 
 ### URL
 
-Captures a web URL from the utterance. The AI Agent recognizes all standard formats of URLs. For example, _Visit our website: www.kore.ai_. The value for the URL is returned as a string.
+Captures a web URL from the utterance. The AI Agent recognizes all standard formats of URLs. For example, _Visit our website `www.example.com`. The value for the URL is returned as a string.
 
 ```
 "entities":

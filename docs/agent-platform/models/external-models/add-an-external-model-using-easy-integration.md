@@ -20,7 +20,7 @@ Steps to add the Anthropic Claude-V1 model using easy integration:
 
     <img src="../images/easy-integration.png" alt="Easy Integration" title="Easy Integration" style="border: 1px solid gray; zoom:65%;">
 
-    A pop-up with the list of all the Anthropic models that are supported in Agent Platform is displayed.
+    A pop-up with the list of all the Anthropic models that are supported in the Platform is displayed.
     
     For more information on the list of external models supported, see [Supported models](../supported-models.md).
 
@@ -37,12 +37,12 @@ The model is integrated and is listed in the External models list.
 !!! note
 
     * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
-    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across Agent Platform. If the toggle button is OFF, it means you cannot infer it anywhere in Agent Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
+    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across the Platform. If the toggle button is OFF, it means you cannot infer it anywhere in the Platform. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
 
 
 ## Integrate a Model from Amazon Bedrock
 
-You can easily connect Amazon Bedrock models to the Agent Platform using a guided setup flow. This process enables secure role-based access using your own AWS credentials.
+You can easily connect Amazon Bedrock models to the Platform using a guided setup flow. This process enables secure role-based access using your own AWS credentials.
 
 !!! important
 
@@ -126,5 +126,3 @@ Each option determines how your model communicates with the platform and how res
 * Or, click **Confirm** to finalize and add the model connection.
 
 Once completed, your model appears in the **External Models** tab. You can now reference this model in your **Prompts** and **Tools** across the platform.
-
-

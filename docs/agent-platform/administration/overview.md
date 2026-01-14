@@ -105,7 +105,9 @@ View pre-deployed guardrail models that apply scanners to prompt input and outpu
 **Monitoring**
 
 - Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
+
 - Review Tool Performance Metrics and take informed decisions on the **Tools Analytics** dashboard. [Learn more](../settings/monitoring/analytics/tools-analytics-dashboard.md){:target="_blank"}.
+
 * Review, track, and fine tune model performance using model-specific metrics. [Learn more](../settings/monitoring/analytics/model-analytics-dashboard.md){:target="_blank"}.
 * Track and monitor run-level metrics and metadata for each model execution to determine the best and worst performers. [Learn more](../settings/monitoring/analytics/model-traces.md){:target="_blank"}.
 * Track custom script executions across runs and logs for deployments (endpoints), Function nodes, and API nodes. The **All Runs** section shows performance metrics (response times, failure rates) and execution details, while the **Logs** section provides runtime debugging information. Administrators can filter by date, search for runs or logs, and copy IDs to identify and resolve script issues efficiently. [Learn more](../settings/monitoring/monitoring-custom-scripts.md){:target="_blank"}.
@@ -121,8 +123,7 @@ View pre-deployed guardrail models that apply scanners to prompt input and outpu
 To access the **Settings** Console on Agent Platform, follow the steps below:
 
 1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-   <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
-
+   
 2. Click **Settings** on the top navigation bar.
 
    The system redirects to the **Users** page under **Users Management**.
@@ -176,7 +177,7 @@ The following modules and features are supported on the **Settings** Console:
 <li><strong>Active Directory</strong>: Configure sync with your organization's AD to import user information for the required organization units to Agent Platform seamlessly. Enable automatic data sync between the AD and Agent Platform daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across Agent Platform. Select profile fields and allow edits by the end user.
 </li>
-<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they are added to your account.
+<li><strong>Email Notifications</strong>: Select if and when the users should receive email notifications when they're added to your account.
 </li>
 </ul>
    </td>
@@ -301,7 +302,3 @@ The following modules and features are supported on the **Settings** Console:
 <li>Edit or delete the app as required.</li></ul></td>
   </tr>
 </table>
-
-
-
-

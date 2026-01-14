@@ -2,7 +2,7 @@
 
 The **Adherence Heatmap** feature helps supervisors to track and visualize trends in agent adherence to specific metrics over time, making it easy to filter out non-compliant interactions, particularly where agents fall short of meeting set metrics. Hovering over each tile highlights the corresponding date range, total number of interactions, interactions adhered, and adherence percentages. 
 
-Based on the date range, agents, and language filter selection, supervisors can analyze the color-coded adherence data in the heatmap to quickly identify areas of concern, monitor agent compliance across evaluation forms in evaluation metrics or queues, and also spot agents who need special attention. This provides valuable insights, enabling supervisors to make data-driven decisions and take focused actions to improve agent performance.
+Based on the selected date range, agents, and language filters, supervisors can analyze the color-coded adherence data in the heatmap to identify areas of concern, monitor agent compliance across evaluation forms, metrics, or queues, and identify agents who need additional attention. These insights help supervisors make data-driven decisions and take targeted actions to improve agent performance.
 
 ### Access Adherence Heatmap
 
@@ -19,14 +19,14 @@ The adherence heatmap has the following key sections:
 
 ## Visualization Basis
 
-This outlines how adherence metrics are displayed and calculated for a selected form across different date ranges. 
+This section explains how the system displays and calculates adherence metrics for a selected form across different date ranges.
 
-* **Adherence % Calculation**
+* **Adherence Percentage Calculation**
 
-    This is calculated by comparing:  
+    The system calculates by comparing:  
     <img src="../adherence-heatmap/images/adherence-calculation.png" alt="Agent Leaderboard" title="Agent Leaderboard" style="border: 1px solid gray; zoom:100%;">
 
-    The % adherence for each tile (box) in the heatmap is calculated based on the evaluation form, agent, and date range. 
+    The system calculates the adherence percentage for each heatmap tile based on the evaluation form, agent, and date range.
 
 * **Applicability of Metrics** 
 
@@ -34,17 +34,17 @@ This outlines how adherence metrics are displayed and calculated for a selected 
 
     * **Static Metrics (By question)**: These metrics apply to all terminated or failed interactions within the respective queue (form).
 
-    * **Dynamic Metrics (By question)**: These metrics apply only when the relevant trigger is detected; if the trigger is missing, the metric is marked as Not Applicable (N/A).
+    * **Dynamic Metrics (By question)**: If the trigger is missing, the system marks the metric as Not Applicable (N/A).
 
 * **Failed Interactions and Fatal Errors**
 
-    When an interaction is marked as failed, you find the following two conditions: 
+    When an interaction fails, the system applies the following two conditions:: 
         
-    * **Failed Interactions**: Includes all agent interactions that do not meet minimum quality or compliance thresholds. This category encompasses both fatal errors and process failures that cause the interaction to fail. Examples include missed greetings, providing incorrect information, or any compliance breaches.       
+    * **Failed Interactions**: Includes all agent interactions that don't meet minimum quality or compliance thresholds. This category encompasses both fatal errors and process failures that cause the interaction to fail. Examples include missed greetings, providing incorrect information, or any compliance breaches.       
 
     * **Fatal Errors**: These are critical errors that typically trigger an immediate red flag or alert explaining the failure, regardless of other correct answers or scores. Examples include major compliance breaches. When a fatal error occurs, the entire interaction’s adherence score or scorecard is marked as 0% (red) and marked as failed. 
     
-    Supervisors Agents can use flagged fatal errors to self-assess and prepare for coaching. Visual adherence scores (heat maps) and question-level feedback support this process. For more information, refer to [AI-Assisted Manual Audit](../ai-assisted-manual-audit.md/#by-question). 
+    Supervisors Agents can use flagged fatal errors to self-assess and prepare for coaching. Visual adherence scores (heat maps) and question-level feedback support this process. For more information, refer to [AI-Assisted Manual Audit](../ai-assisted-manual-audit.md#by-question). 
 
 * **Color Coding & Display** 
 
@@ -85,7 +85,7 @@ You can select from three views (Daily, Weekly, and a Custom range):
 * **Weekly**: For date ranges longer than 14 days, data is aggregated weekly (for example, Monday to Sunday) and shown as one summary point per week. This flexible daily variations, highlights broader trends for easier performance review and planning.  
 <img src="../adherence-heatmap/images/weekly-view.png" alt="Weekly View" title="Weekly View" style="border: 1px solid gray; zoom:100%;">
 
-* **Custom Range**: Allows flexible interaction data analysis within any custom date range up to 31 days (12:00:00 AM to 11:59:59 PM), based on your time zone (12:00:00 AM to 11:59:59 PM). You can filter by specific metrics or questions, group data by different periods (for example, bi-weekly, monthly), or apply multiple filters to tailor reports baseds on your needs.  
+* **Custom Range**: Lets you analyze interaction data within any custom date range of up to 31 days, based on your time zone (12:00:00 AM to 11:59:59 PM). You can filter by specific metrics or questions, group data by different periods (for example, biweekly or monthly), and apply multiple filters to tailor reports to your needs.     
 <img src="../adherence-heatmap/images/custom-range-view.png" alt="Custom Range View" title="Custom Range View" style="border: 1px solid gray; zoom:100%;">
 
 **Evaluation Form**
@@ -117,7 +117,7 @@ The clickable date range tiles (each box is a metric) display the interactions f
 <img src="../adherence-heatmap/images/adherence-percentage-count.png" alt="Heatmap Interaction" title="Heatmap Interaction" style="border: 1px solid gray; zoom:100%;"> 
 
 * **View Interactions**: Click the **View Interactions** button, which directs you to the [Conversation Mining](../analyze/conversation-mining-interactions.md){:target="_blank"} page, where you can view failed interactions of all agents. The applied filters (as **Unsaved**) include the evaluation metric name or metric used with queues, and metric qualification or the number of failed interactions (pass/fail).  
-<img src="../adherence-heatmap/images/conv-mining-failed-interactions.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
+<img src="../adherence-heatmap/images/conversation-mining-failed-interactions.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **View Interactions Filter Parameters**
 
@@ -134,14 +134,14 @@ The following are the filter parameters of **View Interactions**:
         * Click the **View Interaction** button to view the **Conversation Mining** page, where you can view all failed interactions see the tags explaining the filtering criteria based on the metric you clicked. 
 
         * Notification tags are shown only when navigating to the **Conversation Mining** from **Adherence Heatmap**, and not when accessing the **Conversation Mining** page directly.      
-        <img src="../adherence-heatmap/images/conv-mining-interaction-notification-tag.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
+    <img src="../adherence-heatmap/images/conversation-mining-interaction-notification-tag.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **Interaction Action**
 
 * **Filter Heatmap by Agent**: By clicking this icon, you can filter the heatmap metrics of any individual agent within a selected date range as displayed in the following **View Interactions** screen.  
 <img src="../adherence-heatmap/images/heatmap-by-agent.png" alt="Filter Heatmap by Agent" title="Filter Heatmap by Agent" style="border: 1px solid gray; zoom:100%;"> 
 
-* **View Failed Interactions in Conversation Mining**: When you click the agent interaction filter icon, it takes you you to the **Interactions** page of **Conversation Mining** feature to view the failed interactions of the corresponding agent.    
+* **View Failed Interactions in Conversation Mining**: When you select the agent interaction filter icon, it takes you to the **Interactions** page of **Conversation Mining** feature to view the failed interactions of the corresponding agent.    
 <img src="../adherence-heatmap/images/no-failed-interactions.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **QA or Supervisor Dashboard**: This displays a simplified version of the **Adherence Heatmap** from the QA Dashboard that displays data for the last 7 days with a default evaluation form selection, and no click-through functionality. You can choose an evaluation form from the drop-down menu and set it as the default within the QA Dashboard. For more information, see [Supervisor Dashboard](../analyze/dashboard.md). 

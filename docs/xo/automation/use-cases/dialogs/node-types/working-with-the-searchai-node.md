@@ -13,17 +13,17 @@ The **Search AI Node** is used to incorporate search functionality within a dial
 
 A **Search AI node** can be placed in the automation workflows when there is a need to retrieve contextually relevant information from large content sources like documents, FAQs, or third-party applications to execute the next step in the automation. It can also be used as a fallback mechanism when the regular automation is not able to find any matching intent. 
 
-!!!abstract "Example - IT Automation Workflow"
-
-    In IT support automation workflows, a dialog flow can be defined to handle application-specific error queries. When a known error is detected, the workflow checks the real-time health status of the corresponding application and provides guided troubleshooting steps. If the issue persists beyond these predefined actions, the workflow can fall back to a Search AI node, which retrieves relevant documentation and highlights potential causes of failure or resolutions from internal knowledge sources. This enhances the automation’s ability to provide contextual support even for complex or edge-case scenarios, which can be challenging to add to the dialog flow. 
+For example, in IT support automation workflows, a dialog flow can be defined to handle application-specific error queries. When a known error is detected, the workflow checks the real-time health status of the corresponding application and provides guided troubleshooting steps. If the issue persists beyond these predefined actions, the workflow can fall back to a Search AI node, which retrieves relevant documentation and highlights potential causes of failure or resolutions from internal knowledge sources. This enhances the automation’s ability to provide contextual support even for complex or edge-case scenarios, which can be challenging to add to the dialog flow. 
 
 ## Adding the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the **Search AI Node**.
-2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [add a node](../using-the-dialog-builder-tool.md#add-node-to-dialog).
+2. Click **GenAI** and then click **Search AI Node**. Alternatively, you can drag and drop the **Search AI Node** to the required location on the canvas. For more information on adding nodes, see [add a node](../navigating-dialog-tasks.md#add-node-to-dialog).
 
 
 ## Configuring the Node
+
+ 
 
 ### Component Properties
 
@@ -42,19 +42,20 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 * **Last User Input:** Uses the user's most recent message as the search query (default).
 * **Custom:** Enables you to specify static text or dynamic variables to create a more tailored and controlled search query. For example, you can pass a variable as the search input using the following format:
 
-```javascript
-{{context.entities.nodename}}
-```
+    ```javascript
+    {{context.entities.nodename}}
+    ```
 
 **Filters:** Define rules to search from the content in the SearchAI that are qualified by the filter. By narrowing the search scope, you ensure more relevant responses and reduce noise from unrelated content. To add a new filter, 
 
-* Click **+ Add Filter**.
-* Provide the following:
+1. Click **+ Add Filter**.
+2. Provide the following:
     * **Field**: Specify the name of the field you want to filter by. The content indexed in Search AI is stored in a JSON structure, where the content and its metadata are organized under different fields. To apply a filter using one of these fields, ensure that the Field Name exactly matches the corresponding field name in the ingested content. For example, to filter results from uploaded documents, use "sourceType": "file". Similarly, to filter based on the document title, use "recordTitle" as the field. To view available field names and their structure, navigate to the [Chunk Viewer](../../../../searchai/chunk-browser.md) in the Search AI app and inspect the content in JSON format. 
 
     * **Condition:** Choose from supported operators like contains, equals to, and exists.
     * **Field Value:** Enter a static value or dynamic variable as the value of the field. 
-* Use **AND**/**OR** logic to combine multiple filters and select specific content. 
+
+3. Use **AND**/**OR** logic to combine multiple filters and select specific content. 
 
 **Results Configuration**: Configure how the results should be rendered:
 
@@ -93,9 +94,7 @@ A **Search AI node** can be placed in the automation workflows when there is a n
  
 ### Instance Properties
 
-!!! Note
-
-    The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
+The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
 **Advanced Controls**
 
@@ -108,12 +107,8 @@ A **Search AI node** can be placed in the automation workflows when there is a n
 
 ### Connections Properties
 
-!!! Note
 
-    * These settings apply only to this instance and will not affect other uses of the node.
-    * Available only if this is the last node in a sequence.
-
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../node-connections/nodes-conditions.md)
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../node-connections/nodes-conditions.md) These settings apply only to this instance and will not affect other uses of the node. This setting are available only if this is the last node in a sequence.
 
  **Connection Path Options**
 
@@ -121,11 +116,8 @@ To set up node connection conditions, please follow the steps outlined in [Addin
 2. **End of Dialog:** Ends the current dialog.
 3. **Return to Flow:** Ends the dialog task and resumes the Flow Builder at the next node.
 
-    Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context. There are two deflection types: ‘ Automation’ and ‘Agent Transfer’.
+    Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context. There are two deflection types: ‘ Automation’ and ‘Agent Transfer’. Deflect to Chat works only with Voice Gateway Channels (Phone number or SIP Transfer).
 
 !["Deflect to Chat](images/deflect-to-chat1.png "Deflect to Chat")
 
 
-!!! Note
-    
-    Deflect to Chat works only with Voice Gateway Channels (Phone number or SIP Transfer).

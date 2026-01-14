@@ -10,14 +10,14 @@ Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Audit All
 The **Audit Allocations** has following key Items:
 
 * **Agent**: Shows the name of the Auditor.
-* **Actions**:  Allows auditors to assign the allocation to the desired bookmark for later reference.
+* **Actions**: Lets the auditors assign the allocation to the desired bookmark for later reference.
 * **Assigned Date**: Shows the assigned date to start the audit.
 * **Name**: Shows the audit name.
 * **Created By**: Shows the auditor name who has initiated.
-* **Evaluation Form**: Shows the forms list that are assigned to the QM auditors as assessments for review compliance.
+* **Evaluation Form**: Shows the list of forms assigned to the QM auditors as assessments for review compliance.
 * **Kore Evaluation Score**: Shows the Kore Evaluation score.
 * **Filters**: Shows the filter options to search and add the filters.
-* **New Audit Allocation**: Allows to create and assign the interactions for a new audit allocation. 
+* **New Audit Allocation**: Enables you to create and assign the interactions for a new audit allocation. 
 
 ## New Audit Allocation
 
@@ -32,13 +32,13 @@ Steps to add New Audit Allocation in **Settings** tab:
 1. Select **New Audit Allocation** to assign interactions for a new audit allocation.  
     <img src="../conversation-mining/images/conversation-mining-add-new-audit-allocations.png" alt="Add New Audit Allocations" title="Add New Audit Allocations" style="border: 1px solid gray; zoom:80%;">
 
-2. Under the **Settings**, enter a **Name** for the audit that needs to be done.
+2. Under the **Settings**, enter a **Name** for the audit.
 3. Enter a short **Description** of the audit which is optional.
-4. Select an **Evaluation Form** from the drop down list to evaluate for.
-5. Select **Agents** to search an agent from the drop down list to assign specific agents to a Queue for audit allocation.  
+4. Select an **Evaluation Form** from the dropdown list to evaluate for.
+5. Select **Agents** to search an agent from the dropdown list to assign specific agents to a Queue for audit allocation.  
     <img src="../conversation-mining/images/agents-search.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:80%;">
 
-6. Select **Agents Groups** to search an agent group from the drop down list to assign the agents group to a Queue for audit allocation.  
+6. Select **Agents Groups** to search an agent group from the dropdown list to assign the agents group to a Queue for audit allocation.  
     <img src="../conversation-mining/images/agent-groups-queue.png" alt="Agents Groups" title="Agents Groups" style="border: 1px solid gray; zoom:80%;"> 
 
 7. Select **Next** to move to **Allocation** section.
@@ -48,12 +48,12 @@ Steps to add New Audit Allocation in **Settings** tab:
 Steps to Add New Audit **Allocation** tab:
 
 1. Select an **Allocation Type** (**Random** or **Custom**).
-    1. **Random** allocation allows users to select randomly sampled interactions to be assigned for audit.
-    2. **Custom** allocation allows users to select saved filters from Conversation Mining to be assigned for audit allowing focused evaluations.
-2. By default, the **Random** radio button is selected. If you choose **Random**, then select a **Date range**.
-3. Select the **Channel** to enable **Voice** toggle button, and specify the % Interactions per agent  that you want to assign for audit. Based on the input, a random set of interactions is getting selected among the selected agents, and the selected queue (based on the form selection).
+    1. **Random** allocation lets you assign a set of interactions for audit.
+    2. **Custom** allocation lets you assign interactions for audit by selecting saved filters from Conversation Mining, enabling focused evaluations.
+2. The system selects **Random** radio key as the initial allocation type. If you choose **Random**, then select a **Date range**.
+3. Select the **Channel** to enable **Voice** toggle key, and specify the percentage of interactions per agent to assign for audit. Based on your input, the system selects interactions from the chosen agents and the selected queue.
 
-    a. The number of interactions per agent count below the input box displays the average number of interactions across the selected agents, which is being taken based on the % interactions per agent allocation user input.
+    a. The interaction count shows the average number of interactions per agent based on the selected agents and the specified percentage.
 
     b. The Total interactions value at the bottom of the panel shows the number of interactions selected based on random sampling and the user’s date-range input. The system applies the percentage of interactions per agent, along with the interaction count across channels, to the audit when required. You can adjust these values by changing the corresponding user inputs in the available fields.
     
@@ -80,9 +80,9 @@ Steps to **Add New Audit Allocation** in **Assignment** tab:
 
 3. The total allocation percentage across all auditors must sum to 100% to enable the **Create** button.
 
-!!! Note
+    !!! Note
 
-    When the assignment configuration is completed, such that the total allocation percentage is 100%.
+        When the assignment configuration is completed, such that the total allocation percentage is 100%.
 
 4. Select **Create** to assign the interactions for evaluation to the selected auditors
 

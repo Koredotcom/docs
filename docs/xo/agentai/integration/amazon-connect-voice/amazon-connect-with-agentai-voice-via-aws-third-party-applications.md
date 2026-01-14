@@ -1,6 +1,6 @@
 # Amazon Connect Integration with Agent AI Voice Via AWS Third Party Applications 
 
-This document describes the integration process of Amazon Connect with Kore Agent AI – Voice, using AWS third-party applications. This integration enables Amazon Connect to receive voice calls while Agent AI provides real-time support to agents. Audio streams from both the user and agent are captured and processed using Amazon Kinesis Video Streams. AWS Lambda functions manage transcription and token generation for seamless interaction. Agent AI is embedded into the Amazon Connect agent workspace to deliver AI-powered assistance such as [Agentic Copilot](./../../configuration/linked-services.md/#agentic-configurations){:target="_blank"}, [Next Best Action](./../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [sentiment analysis](./../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [EOC Summary](./../../agent-experience/agent-assist-widget-v3.md/#assist-tab){:target="_blank"}, and more throughout the conversation.
+This document describes the integration process of Amazon Connect with Kore Agent AI – Voice, using AWS third-party applications. This integration enables Amazon Connect to receive voice calls while Agent AI provides real-time support to agents. Audio streams from both the user and agent are captured and processed using Amazon Kinesis Video Streams. AWS Lambda functions manage transcription and token generation for seamless interaction. Agent AI is embedded into the Amazon Connect agent workspace to deliver AI-powered assistance such as [Agentic Copilot](./../../configuration/linked-services.md#agentic-configurations){:target="_blank"}, [Next Best Action](./../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Agent Coaching](./../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](./../../agent-experience/playbook.md){:target="_blank"}, [sentiment analysis](./../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [EOC Summary](./../../agent-experience/agent-assist-widget-v3.md#assist-tab){:target="_blank"}, and more throughout the conversation.
 
 ## High-level architecture  
 
@@ -17,13 +17,22 @@ This document describes the integration process of Amazon Connect with Kore Agen
 * Transcription trigger, a microservice that extracts the required parameters from the request body and generates the KVS Processing executable as a separate process with the parameters (like Contact Details, Credentials, and Voice Gateway).  
 
 ## Integration Setup Guide 
-* [Set up Kore Agent AI](#kore-agent-ai)
-* [Create Lambda Functions](#aws-lambda)
-* [Create Third Party App](#aws-connect-third-party-application-configuration)
-* [Create Amazon Connect Instance](#configuring-amazon-connect-instance)
-* [Create Amazon Connect Contact Flow](#configuring-amazon-connect-contact-flow)
-* [Add Phone Number to the Flow](#attaching-contact-flow-to-phone-number)
-* [Test Your Integration](#test-your-integration)
+
+- [Amazon Connect Integration with Agent AI Voice Via AWS Third Party Applications](#amazon-connect-integration-with-agent-ai-voice-via-aws-third-party-applications)
+  - [High-level architecture](#high-level-architecture)
+  - [Prerequisites](#prerequisites)
+  - [Integration Setup Guide](#integration-setup-guide)
+    - [Kore Agent AI](#kore-agent-ai)
+    - [AWS Lambda](#aws-lambda)
+      - [First Function: KVS Trigger (Choose any other name)](#first-function-kvs-trigger-choose-any-other-name)
+      - [Second Function: IFrame Token Generator (Choose any other name)](#second-function-iframe-token-generator-choose-any-other-name)
+    - [AWS Connect Third Party Application Configuration](#aws-connect-third-party-application-configuration)
+  - [Amazon Connect](#amazon-connect)
+    - [Configuring Amazon Connect Instance](#configuring-amazon-connect-instance)
+    - [Configuring Amazon Connect Contact Flow](#configuring-amazon-connect-contact-flow)
+    - [Attaching Contact Flow to Phone Number](#attaching-contact-flow-to-phone-number)
+  - [Test Your Integration](#test-your-integration)
+  - [KVSQueueFlow.json](#kvsqueueflowjson)
 
 ### Kore Agent AI 
 
@@ -61,7 +70,7 @@ This function retrieves call stream metadata and AWS credentials from the enviro
     * **kvsAccessKeyId** – AWS Client ID  
     * **kvsSecretAccessKey** – AWS Client Secret 
     * **region** – add your AWS Region 
-    * **transcriberURL** – https://agentassist.kore.ai/integrations/amzn/voice/  
+    * **transcriberURL** – `https://agentassist.kore.ai/integrations/amzn/voice/`
     * For regions other than the **US-prod**, replace the above domain with your Agent AI domain.  
 
     **Steps to get the AWS Client ID and Secret**
@@ -186,7 +195,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
     * **BotID**: Add your Agent AI Bot ID created on Kore UXO Platform.
     * **ClientId**: Add your Agent AI  Client ID created on Kore UXO Platform.
     * **ClientSecret**: Add your Agent AI Client Secret created on Kore UXO Platform.
-    * **sipUri**: Add “*sip:[XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com](mailto:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com)*" and replace **XXXX** with your SIPREC Configuration of Agent AI.  
+    * **sipUri**: Add `sip:[XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com](mailto:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com)` and replace **XXXX** with your SIPREC Configuration of Agent AI.  
     To get the SIP URI from [Kore](https://platform.kore.ai/){:target="_blank"}: 
         1. Go to **Agent AI** > **Flows & Channels** > **Voice Gateway**. 
         2. Click **SIP Numbers** > **Configure SIP Trunk**. 

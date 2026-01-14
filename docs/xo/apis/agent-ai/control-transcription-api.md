@@ -10,7 +10,7 @@ This API is used to control the transcription session of an AI Agent conversatio
 | **Endpoint**      | `https://{{host}}/api/1.1/public/bot/{{botid}}/control/transcription?conversationId={{conversationId}}` |
 | **Content Type**  | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"}. |
-| **API Scope**     | AgentAssist Transcription<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
+| **API Scope**     | AgentAssist Transcription<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
 
 ## Path Parameters
 
@@ -26,7 +26,9 @@ This API is used to control the transcription session of an AI Agent conversatio
 | `conversationId`  | Required               | Unique identifier of the AI Agent conversation |
 
 ## Sample Request
+
 **For start action**
+
 ```
 curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-f43ecf1xxxxx/control/transcription?conversationId=CAe8a34d2556235bcf0cbc51e98bbxxxxx' \
 --header 'auth: {{JWT_TOKEN}}' \
@@ -38,7 +40,9 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 }
 '
 ```
+
 **For pause action**
+
 ```
 curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-f43ecf1xxxxx/control/transcription?conversationId=CAe8a34d2556235bcf0cbc51e98bbxxxxx' \
 --header 'auth: {{JWT_TOKEN}}' \
@@ -51,7 +55,9 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 }
 '
 ```
+
 **For resume action**
+
 ```
 curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-f43ecf1xxxxx/control/transcription?conversationId=CAe8a34d2556235bcf0cbc51e98bbxxxxx' \
 --header 'auth: {{JWT_TOKEN}}' \
@@ -63,7 +69,9 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 }
 '
 ```
+
 **For end action**
+
 ```
 curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-f43ecf1xxxxx/control/transcription?conversationId=CAe8a34d2556235bcf0cbc51e98bbxxxxx' \
 --header 'auth: {{JWT_TOKEN}}' \
@@ -75,6 +83,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/st-4b8bb9d0-096d-56e5-b72f-
 }
 '
 ```
+
 ## Body Parameters
 
 | **Parameter** | **Description** | **Mandate** |

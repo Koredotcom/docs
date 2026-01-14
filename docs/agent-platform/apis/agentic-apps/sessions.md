@@ -89,7 +89,7 @@ Establishes a new conversation session for a specific user with the Agentic App.
 
 <li>sessionIdentity(lowest priority)</li>
 
-Refer to <a href="../overview">this</a> for a detailed description.
+Refer to <a href="../overview/">this</a> for a detailed description.
 </ol>
    </td>
   </tr>
@@ -134,6 +134,7 @@ Returns details of the newly created session, which are required for managing an
 
 
 #### Sample Response 
+
 ```json
 {
   "session": {

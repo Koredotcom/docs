@@ -15,7 +15,7 @@ To show the self-reported status (available, busy, away, etc.) in the given time
 
 | **PARAMETER** | **DESCRIPTION**                                          | **TYPE**            |
 |---------------|----------------------------------------------------------|---------------------|
-| host          | The Environment URL. For example, https://platform.kore.ai | string, required    |
+| host          | The Environment URL. For example, `https://platform.kore.ai` | string, required    |
 | accountId     | The Account Id.                                          | string, required    |
 
 ## Query Parameters

@@ -1,4 +1,5 @@
 # What's New in AI for Service (XO v11)
+
 Learn about the new features and enhancements included in AI for Service (XO v11).
 
 AI for Service helps enterprises deliver better conversations with customers, employees, and agents. It combines conversational AI intelligence and generative AI innovations to create engaging customer experiences.
@@ -6,6 +7,7 @@ AI for Service helps enterprises deliver better conversations with customers, em
 Built for security and scalability, the platform uses a no-code interface that lets businesses build agents. These assistants use large language models to hold natural conversations in multiple languages across various channels.
 
 ## Comprehensive Suite of Products and Services
+
 The unified platform offers a comprehensive suite of products, features, and services to help businesses leverage AI to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
 **Key Products, Features, and Services Offered by the XO Platform:**
@@ -147,7 +149,7 @@ The key features and experience changes are summarized below.
 
 * **Configuration**: The Configuration section lets users customize the various aspects of Agent AI. This section includes:
     
-    * **Welcome Events**: Welcome Events are pre-configured messages or prompts that are automatically triggered when a conversation is assigned to an agent in Agent AI. Welcome Events guide agents to handle inquiries effectively by streamlining workflows, lowering their Average Handle Times (AHT), reducing repetition, and contributing to enhanced customer satisfaction. [Learn more :octicons-arrow-right-24:](../agentai/configuration/conversation-events.md/#welcome-events)
+    * **Welcome Events**: Welcome Events are pre-configured messages or prompts that are automatically triggered when a conversation is assigned to an agent in Agent AI. Welcome Events guide agents to handle inquiries effectively by streamlining workflows, lowering their Average Handle Times (AHT), reducing repetition, and contributing to enhanced customer satisfaction. [Learn more :octicons-arrow-right-24:](../agentai/configuration/conversation-events.md#welcome-events)
 
     * **Answer Configuration**: SearchAssist provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. You can enhance the search capabilities of Agent AI by integrating it with the SearchAssist application. [Learn more :octicons-arrow-right-24:](../searchai/answer-configuration.md)
 
@@ -183,5 +185,5 @@ The key features and experience changes are summarized below.
 
 <font size="4"> Related Links</font>
 
-* [Key UI Differences - v11 vs. v10](./key-differences-between-xo11-and-xo10.md)
-* [Migration Path for Existing Customers - Upgrade Journey](../getting-started/migration-path-xo10-to-xo11.md)
+* [Key UI Differences - v11 vs. v10](key-differences-between-xo11-and-xo10.md)
+* [Migration Path for Existing Customers - Upgrade Journey](migration-path-xo10-to-xo11.md)

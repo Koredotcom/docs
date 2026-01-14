@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using Basic Auth
 
 When basic authorization is used for a task, the XO Platform automatically prompts the user for login credentials to access the web application or web service, as shown in the following illustration.
@@ -42,7 +44,8 @@ To define Basic Authorization for your assistant, follow these steps:
 
 ## Defining Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants as www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 
@@ -127,10 +130,10 @@ By default, authorization fields are configured as part of the header of the req
 <img src="../images/basic-auth-img7.png" alt="Adding Authorization Fields" title="Adding Authorization Fields" style="border: 1px solid gray;zoom:50%;"/>
 
 1. In the **Field Type** field, you can select one of the following depending on where in the request message and the type of authorization fields that are required.
-    1. **Header** – The AI Agent looks for the authorization fields in the request header.
-    2. **Payload** – The AI Agent looks for the authorization fields in the request body content.
-    3. **Query String** – The AI Agent looks for the authorization fields as a query in the request body.
-    4. **Path Param** – The AI Agent looks for the authorization fields in the request URL path.
+    * **Header**: The AI Agent looks for the authorization fields in the request header.
+    * **Payload**: The AI Agent looks for the authorization fields in the request body content.
+    * **Query String**: The AI Agent looks for the authorization fields as a query in the request body.
+    * **Path Param**: The AI Agent looks for the authorization fields in the request URL path.
 
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
@@ -141,18 +144,11 @@ By default, authorization fields are configured as part of the header of the req
 
 In the **Authorization Check URL** field, optionally define a URL that can be used to test the authorization settings from the XO Platform before you deploy the assistant with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL.
 
-For example
-
-https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
-
-or
-
-https://{tenant}.service-now.com/api/now/v1/table/incident
+For example, `https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json` or `https://{tenant}.service-now.com/api/now/v1/table/incident`.
 
 For more information, see [Using Session and Context Variables in Tasks](../../../automation/use-cases/using-session-and-context-variables.md){:target="_blank"}.
 
 Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
-
 
 ## Testing the Authorization 
 

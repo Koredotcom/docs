@@ -13,8 +13,8 @@ This API retrieves a paginated list of Agent AI conversation records within a sp
 | **Method**       | `POST` |
 | **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconversation` |
 | **Content Type** | `application/json` |
-| **Authorization** | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](https://docs.kore.ai/xo/apis/automation/api-introduction/#generating-the-jwt-token){:target="_blank"} |
-| **Scope**        | `AgentAssist Analytics`  <br> See [Associate API Scopes](https://docs.kore.ai/xo/apis/automation/api-introduction/#associating-api-scopes){:target="_blank"} |
+| **Authorization** | `auth: {{JWT}}`  <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
+| **Scope**        | `AgentAssist Analytics`  <br> See [Associate API Scopes](../automation/api-introduction.md#associating-api-scopes){:target="_blank"} |
 
 ## Path Parameters
 
@@ -41,14 +41,11 @@ This API retrieves a paginated list of Agent AI conversation records within a sp
 
 ## Sample Request
 
-curl --location '[https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconversation'](https://uat-agentassist-az.korebots.com/agentassist/api/v1/public/st-841b5cd4-6393-5561-9218-34e3c62f56c0/aaconversation?from=2025-10-13&to=2025-10-13%27) \
-
---header 'accountId: 660aafa0c0971e56e27xxxxx' \
-
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTU1ZDg4OGQzLTg1MDItNWI1OS1hNWNkLTMyOGMyZTJmYmIzZCJ9._C2kY7uD_1FIBnoHuIqj03pJ951EwCTh0mysOuVKMCI' \
-
---header 'Content-Type: application/json' \
-
+```
+curl --location '[https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconversation'](https://uat-agentassist-az.korebots.com/agentassist/api/v1/public/st-841b5cd4-6393-5561-9218-34e3c62f56c0/aaconversation?from=2025-10-13&to=2025-10-13%27) 
+--header 'accountId: 660aafa0c0971e56e27xxxxx' 
+--header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTU1ZDg4OGQzLTg1MDItNWI1OS1hNWNkLTMyOGMyZTJmYmIzZCJ9._C2kY7uD_1FIBnoHuIqj03pJ951EwCTh0mysOuVKMCI' 
+--header 'Content-Type: application/json' 
 --data '{
 
     "from": "2025-10-13",
@@ -62,9 +59,11 @@ curl --location '[https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconvers
    "includeHistory": false
 
 }'
+```
 
 ## Sample Response
 
+```
 {
 
     "results": [
@@ -124,7 +123,7 @@ curl --location '[https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconvers
     "totalResults": 29
 
 }
-
+```
 
 ## Response Body Parameters
 
@@ -136,21 +135,19 @@ curl --location '[https://{{host}}/agentassist/api/v1/public/{{botid}}/aaconvers
 | `results.botId` | String | Identifier of the bot handling the conversation. |
 | `results.isExtAD` | Boolean | Indicates whether the conversation is external. |
 | `results.startTime` | String (ISO 8601) | Timestamp when the conversation started. |
-| `results.experience` | String | Experience type, e.g., `chat`. |
+| `results.experience` | String | Experience type, for example, `chat`. |
 | `results.aaSessionId` | String | (Optional) Agent AI session ID. |
 | `results.aaUserId` | String | (Optional) Agent AI user ID. |
 | `results.mbSessionId` | String | (Optional) Messaging backend session ID. |
 | `results.mbUserId` | String | (Optional) Messaging backend user ID. |
 | `results.messages` | Array | List of messages exchanged in the conversation. |
 | `results.messages.botId` | String | Bot ID associated with the message. |
-| `results.messages.type` | String | Type of message, e.g., `incoming` or `outgoing`. |
-| `results.messages.status` | String | Status of the message, e.g., `pending`. |
+| `results.messages.type` | String | Type of message, for example, `incoming` or `outgoing`. |
+| `results.messages.status` | String | Status of the message, for example, `pending`. |
 | `results.messages.components` | Array | List of message components, such as text or media. |
 | `results.messages.components._id` | String | Unique identifier of the message component. |
-| `results.messages.components.cT` | String | Component type, e.g., `text`. |
-| `results.messages.components.data` | Object | Data of the component, e.g., `{ "text": "hi" }`. |
+| `results.messages.components.cT` | String | Component type, for example, `text`. |
+| `results.messages.components.data` | Object | Data of the component, for example, `{ "text": "hi" }`. |
 | `results.messages.components.thumbnails` | Array | List of thumbnails (if any) associated with the component. |
 | `results.messages.sT` | Integer | (Optional) Step or sequence number of the message. |
-| `results.messages.author.type` | String |
-
-
+| `results.messages.author.type` | String | |

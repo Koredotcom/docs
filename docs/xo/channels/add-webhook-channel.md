@@ -61,7 +61,7 @@ The platform supports Synchronous and Asynchronous modes of integrations for the
 
 
 
-* **Synchronous Mode**: Thapp responses are directly delivered as a response to the incoming requests. The app will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
+* **Synchronous Mode**: The app responses are directly delivered as a response to the incoming requests. The app will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
 
     !!! note
 
@@ -1302,7 +1302,7 @@ Sample Response:
 
 **Response as a Request to Post URL**
 
-Then use the _pollId_ from the Response#1 to get the response of the second Message node.
+Then use the _pollId_ from the Response to get the response of the second Message node.
 
 Here is the sample curl to use pollId to fetch the response:
 
@@ -1620,6 +1620,7 @@ Headers: {
 If your app has a form that needs user input, the synchronous WebHook channel gets the complete form definition in the response, and you need to send the _formData_ in the request when interacting with the app.
 
 #### Sample Request
+
 You can get the Webhook API URL on the WebHook channel **Configurations** tab. Learn more.
 
 !!! note

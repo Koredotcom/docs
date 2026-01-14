@@ -1,6 +1,6 @@
 # Amazon Connect CCP Integration: Agent AI Voice
 
-This document describes the integration process of Amazon Connect with Agent AI—Voice, using the AWS CCP Integration approach. This integration enables Amazon Connect to receive voice calls while Agent AI provides real-time support to agents. Audio streams from both the user and agent are captured and processed using Amazon Kinesis Streams. AWS Lambda functions manage transcription and token generation for seamless interaction. Agent AI provides AI-powered assistance, including [Agentic Copilot](./../../configuration/linked-services.md/#agentic-configurations){:target="_blank"}, [Next Best Action](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Agent Coaching](../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](../../agent-experience/playbook.md){:target="_blank"}, [sentiment analysis](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [EOC Summary](../../agent-experience/agent-assist-widget-v3.md/#assist-tab){:target="_blank"}, and more throughout the conversation. 
+This document describes the integration process of Amazon Connect with Agent AI—Voice, using the AWS CCP Integration approach. This integration enables Amazon Connect to receive voice calls while Agent AI provides real-time support to agents. Audio streams from both the user and agent are captured and processed using Amazon Kinesis Streams. AWS Lambda functions manage transcription and token generation for seamless interaction. Agent AI provides AI-powered assistance, including [Agentic Copilot](./../../configuration/linked-services.md#agentic-configurations){:target="_blank"}, [Next Best Action](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Agent Coaching](../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](../../agent-experience/playbook.md){:target="_blank"}, [sentiment analysis](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [EOC Summary](../../agent-experience/agent-assist-widget-v3.md#assist-tab){:target="_blank"}, and more throughout the conversation. 
 
 ## High-Level Architecture 
 
@@ -87,7 +87,7 @@ This function is responsible for returning all the credentials required to rende
 
 1. Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KoreAgentAssistCCP.zip){:target="_blank"} and upload it to the function once you create a new Lambda function.
 2. **Environment variable List**:
-    * **agentassistUrl**: https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html
+    * **agentassistUrl**: `https://agentassist.kore.ai/koreagentassist-sdk-v3/UI/agentassist-iframe.html`
     * **botId**: [Agent AI Bot Id]
     * **clientId**: [Agent AI Client Id]
     * **clientSecret**: [Agent AI Client Secret]
@@ -130,7 +130,7 @@ This function is responsible for returning all the credentials required to rende
     * **BotID**: Add your Agent AI Bot ID created on Agent AI.  
     * **ClientId**: Add your Agent AI  Client ID created on Agent AI. 
     * **ClientSecret**: Add your Agent AI Client Secret created on Agent AI. 
-    * **SipUri**: Add “sip:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com” and replace **XXXX** with your SIPREC Configuration of Agent AI.    
+    * **SipUri**: Add `sip:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com` and replace **XXXX** with your SIPREC Configuration of Agent AI.    
 
     To get the SIP URI from [Agent AI](https://platform.kore.ai/){:target="_blank"}:  
 
@@ -156,7 +156,7 @@ This function is responsible for returning all the credentials required to rende
 
     7. Select your **Trigger Lambda Function** from the dropdown list, and select the first function which was created in the [initial step](#function-1-kvs-trigger-choose-any-other-name).  
     8. Click **Save**.  
-    9. For **Transfer to Flow**, select a flow you want to move the user to. For example, save this [KVSQueueFlow.json](../amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md/#kvsqueueflowjson){:target="_blank"} in a file, import this flow to **Flows**, and add **Queue** details for routing.  
+    9. For **Transfer to Flow**, select a flow you want to move the user to. For example, save this [KVSQueueFlow.json](../amazon-connect-voice/amazon-connect-with-agentai-voice-via-aws-third-party-applications.md#kvsqueueflowjson){:target="_blank"} in a file, import this flow to **Flows**, and add **Queue** details for routing.  
     10. To use agent dispositions, configure the **Set Event Flow** block with **Disconnect** flow for Agent UI hook by importing this flow and selecting it. If not, you can delete the block and **Connect the remaining blocks** to the disconnect block.  
 
         !!! note 

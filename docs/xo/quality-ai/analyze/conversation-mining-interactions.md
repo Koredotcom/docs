@@ -1,4 +1,20 @@
-# Conversation Mining - Interactions
+# Conversation Mining
+
+The Conversation Mining feature lets you focus on interactions of interest or those with the greatest potential for improvement, removing guesswork from manual evaluations and allowing you to concentrate on the most critical interactions.
+
+## Access Conversation Mining
+
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining**.  
+
+<img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
+
+The **Conversation Mining** includes the following sections:
+
+* **Interactions**: Enables you to view the scored interactions and applied filters for targeted reviews. [Learn more](./conversation-mining-interactions.md){:target=”_blank”}.
+
+* **Audit Allocations**: Lets you create and assign allocations for auditors to perform manual quality scoring. [Learn more](../analyze/conversation-mining-audit-allocations.md){:target=”_blank”}.
+
+## Conversation Mining - Interactions
 
 This feature enables supervisors to review and filter scored interactions within their assigned queues, making it easier to identify conversations that need coaching or attention. It delivers clear insights into conversation quality, agent performance, and customer experience at the conversation level and agent level.
 
@@ -21,7 +37,7 @@ By using these new capabilities, supervisors can:
 * **Leverage Timeline Navigation**: Use a timeline-based search and jump-to-match display for fast, focused review.
 Save Custom Views: Store preferred filter sets and column configurations for targeted, repeatable audits.
 
-## Access Interactions
+### Access Interactions
 
 Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.  
 <img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
@@ -32,7 +48,7 @@ Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interacti
 
     * If any section of the Agent Interactions dashboard elements shows **NA** status, the data for that section is not available on the Audit Allocations page.
 
-## Interactions Dashboard Columns
+### Interactions Dashboard Columns
 
 The **Interactions** dashboard includes the following items:
 
@@ -54,9 +70,9 @@ The **Interactions** dashboard includes the following items:
 
 * **Queues**: Shows the queue where the system terminated during the interaction.
 
-        !!!Note
+    !!!Note
 
-            The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction. 
+        The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction. 
 
 * **Kore Evaluation Score**: Shows the Auto QA score based on the agent-completed evaluation form. Hover over the warning icon to view the agent’s API processing status (Pass, Failed, or Disabled). Select a conversation to open the Conversation Mining page, which includes Audit, Conversation Details, and Logs.
 
@@ -88,19 +104,19 @@ Emotions: Shows customer emotional states or tracked emotions during a conversat
 
 * **Generated Intents**: Displays the generated intents column identified by the AI in each conversation.
 
-## Interactions Filters 
+### Interactions Filters 
 
 Interaction filters help you find specific conversations, review agent performance, and identify improvement opportunities. By using the following filters, auditors can dive deeper into conversations and assess agent adherence to quality standards. Filters update automatically based on the default language set.
 
-## Columns
+#### Columns
 
 You can filter the Columns in the Interactions's dashboard by including or excluding specific fields.
 
-## Bookmarks
+#### Bookmarks
 
 Lets you assign interactions to bookmarks and view all bookmarks linked to an interaction.  
 
-## Date Range Selection
+#### Date Range Selection
 
 Provides the option to select the date range for the conversation interactions. The default date range selected is always the last seven days.  
 
@@ -278,7 +294,11 @@ This shows the automated QA score for an interaction, based on the evaluation fo
 
 #### Saved Filters Customization Options
 
+<<<<<<< Updated upstream
 When you save filters, the system provides the following customization options:
+=======
+When filters are saved, the following customization options are available:  
+>>>>>>> Stashed changes
 
 * **Copy**: Creates a duplicate of the saved filter.
 

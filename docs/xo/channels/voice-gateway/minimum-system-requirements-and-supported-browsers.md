@@ -29,10 +29,10 @@ The software may also work on any desktop operating system that meets the other 
 The Contact Center Agent and Supervisor Console support the following web browsers.
 
 | Browser | Core features | Video chat | Screen sharing | WebRTC calling |
-|---------|---------------|-------------|----------------|----------------|
-| Chrome  | Supported     | Supported   | Supported      | Supported      |
-| Edge    | Supported     | Supported   | Supported      | Supported      |
-| Safari  | Supported     | Supported   | Supported      | Supported      |
+|---------|---------------|------------|----------------|----------------|
+| Chrome  | Supported     | Supported  | Supported      | Supported      |
+| Edge    | Supported     | Supported  | Supported      | Supported      |
+| Safari  | Supported     | Supported  | Supported      | Supported      |
 
 ### Full Support
 
@@ -85,7 +85,7 @@ In Google Chrome, you can disable sleep mode for specific sites.
 
 ## Firewall Requirements
 
-Allow traffic and whitelist the listed ports in the respective firewalls based on the Session Border Controller (SBC) they connect to.
+Permit traffic and whitelist the listed ports in the respective firewalls based on the Session Border Controller (SBC) they connect to.
 
 ### Region - Australia (AU)
 

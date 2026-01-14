@@ -35,7 +35,7 @@ After triggering the import, the response returns a <code>dockStatusId</code>. U
 
 **Where can I find the API key?**
 
-To use the API, you will need an API key. [Learn more](../../apis/overview.md/#how-to-create-the-api-key){:target="_blank"}.
+To use the API, you will need an API key. [Learn more](../../apis/overview.md#how-to-create-the-api-key){:target="_blank"}.
 
 ## Query Parameters
 
@@ -206,4 +206,3 @@ curl --location 'https://{host}/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xx
    </td>
   </tr>
 </table>
-

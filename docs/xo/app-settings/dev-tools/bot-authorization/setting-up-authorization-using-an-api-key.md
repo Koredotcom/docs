@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using an API Key
 
 An API key can act as both a unique identifier and a secret token for identification as well as authorization to provide a set of access rights on the associated API. Instead of prompting the end-user for both a username and password for access, the user is prompted only for an API key when configuring the assistant.
@@ -19,7 +21,10 @@ To define Authorization for your assistant, using an API Key, follow these steps
 
 ## Defining Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants at www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL.
+
+For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
 
 
 ## Adding Form Fields
@@ -98,10 +103,10 @@ By default, authorization fields are configured as part of the header of the req
 
 
 1. In the **Field Type** field, you can select one of the following depending on where in the request message and the type of authorization fields that are required.
-    1. **Header** – The assistant expects the authorization fields as part of the header of the request.
-    2. **Payload** – The assistant expects the authorization fields as part of the content of the body of the request.
-    3. **Query String** – The assistant expects the authorization fields as a query in the body of the request.
-    4. **Path Param** – The assistant expects the authorization fields as part of the URL path for the request.
+    * **Header**: The assistant expects the authorization fields as part of the header of the request.
+    * **Payload**: The assistant expects the authorization fields as part of the content of the body of the request.
+    * **Query String**: The assistant expects the authorization fields as a query in the body of the request.
+    * **Path Param**: The assistant expects the authorization fields as part of the URL path for the request.
 
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
@@ -112,9 +117,9 @@ To add additional authorization fields, click **Add** in the **Authorization Fie
 
 ## Authorization Check URL
 
-In the **Authorization Check URL** field, optionally define a URL that can be used to test the authentication settings from the XO Platform before you deploy the AI Agent with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example,
+In the **Authorization Check URL** field, optionally define a URL that can be used to test the authentication settings from the Platform before you deploy the AI Agent with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example,
 
-[https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json](https://kore.somecompany.com/sap/opu/odata/sap/%7B%7Bauthfield1%7D%7D/?$format=json)
+[https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json](https://platform.example.com/sap/opu/odata/sap/%7B%7Bauthfield1%7D%7D/?$format=json)
 
 
 ## Access Using a Connector

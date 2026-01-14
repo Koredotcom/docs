@@ -45,23 +45,23 @@ To enable integration between Search AI and Egnyte ,
 2. [Register](https://developers.egnyte.com/member/register) a new client app to enable communication between the Egnyte account and the Search AI connector. Enter the basic details of the app. 
     1. Set the platform as a Web App and Type as a Publicly Available Application. 
     2. Use one of the following as the Registered OAuth Redirect URI. 
-        * JP Region Callback URL: https://jp-bots-idp.kore.ai/workflows/callback
-        * DE Region Callback URL: https://de-bots-idp.kore.ai/workflows/callback
-        * Prod Callback URL: https://idp.kore.com/workflows/callback
+        * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+        * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+        * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 3. Ensure that a key is generated for Connect API. 
-4. Click **Register** to generate the key and secret. 
+4. Click *Register* to generate the key and secret. 
 
 
 ## Configure Egnyte Connector in Search AI
 
-Go to the **Authorization page** of the connector, enter the following configuration fields, and click **Connect**. 
+Go to the *Authorization page* of the connector, enter the following configuration fields, and click **Connect**. 
 
-* **Name**- Unique name for the connector.
-* **Authorization Type**- Set this to OAuth 2.0.
-* **Grant Type** - Currently, only the Authorization Code type is supported. 
-* **Client ID** - Provide the key generated above.
-* **Client Secret** - Provide the secret generated above.
-* **Host URL** - Provide the domain URL from which the content will be ingested, such as “https://koredotai.egnyte.com”.
+* *Name*- Unique name for the connector.
+* *Authorization Type*- Set this to OAuth 2.0.
+* *Grant Type* - Only the Authorization Code grant type is supported. 
+* *Client ID* - Provide the key generated above.
+* *Client Secret* - Provide the secret generated above.
+* *Host URL* - Provide the domain URL from which the content will be ingested, such as `https://domain.egnyte.com`.
 
 Click **Connect**. This initiates the authentication process and requests for user login and consent to confirm the connection. 
 

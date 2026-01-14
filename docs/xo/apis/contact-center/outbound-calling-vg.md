@@ -35,8 +35,8 @@ The application triggers an outbound call using an HTTP POST request to the endp
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | botId               | The botId or streamId. You can access it from the bot’s General Settings page.                                                                           | string, required |
 | target              | URI of the target of the outbound call. For example:                                                                                                     | string, required |
-|                     | - “tel:911234567890” with the country code                                                                                                               |                  |
-|                     | - “sip:1234567890@1.23.345.678:1234”                                                                                                                    |                  |
+|                     | - `tel:911234567890` with the country code                                                                                                               |                  |
+|                     | - `sip:1234567890@1.23.345.678:1234`                                                                                                                    |                  |
 | caller              | User part for the caller ID of the outbound call. It's the experience flow number in Contact Center AI.                                                | string, required |
 | notifyurl           | Absolute URL of the dialer application where Voice Gateway sends notifications. If not provided, no notifications are sent.                     | string, optional |
 | notifyHeaders           | If these are included in the API payload, these headers will be sent along with AMD notifications to the specified notifyUrl.                     | object, optional |

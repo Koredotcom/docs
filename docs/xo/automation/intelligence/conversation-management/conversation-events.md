@@ -1,6 +1,7 @@
 # Conversation Events
 
 Define the behavior of the AI Agent during conversations with user to optimize user interactions.
+
 ## End of Task
 
 *End of Task* is triggered when the AI Agent is not expected to send any message to the user or receive any message from the user.
@@ -73,7 +74,7 @@ On triggering this event, the context will be updated with the following details
 ## Task Execution Failure Event
 
 * By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
-* This App-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-settings).
+* This App-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../use-cases/dialogs/navigating-dialog-tasks.md#dialog-settings).
 
     <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
     

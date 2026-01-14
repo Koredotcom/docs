@@ -52,7 +52,8 @@ Setting Up Agent AI chat with ServiceNow consists of the following steps:
 3. Under **Related Links**, click **Import Update Set from XML**.  
 <img src="../images/import-update-xml.png" alt="import-update-xml" title="import-update-xml" style="border: 1px solid gray; zoom:80%;">
 
-4. Open the update set **Agent AI by kore.ai** (this is the official name for Agent AI).  
+4. Open the update set **Agent AI by kore.ai** (this is the official name for Agent AI).
+
 #### Preview Update Set
 
 To preview the update set, click the **Preview Update Set** tab.  
@@ -113,7 +114,7 @@ This section details the steps to set up the Agent AI app configuration.
 
 #### V2-V3 Migration
 
-* For version 2 (v2) of Agent AI, **https://agentassist.kore.ai** (or the domain where the Agent AI is hosted), you should add this to the Agent AI URL.  
+* For version 2 (v2) of Agent AI, `https://agentassist.kore.ai` (or the domain where the Agent AI is hosted), you should add this to the Agent AI URL.  
 Sample v2 URL: https://<domain-name\>.kore.ai
 
 * For version 3 (v3), you must copy the Agent AI widget URL from the Agent UXO v11 Channel configuration and paste it into the Agent AI URL field. For XO v11, go to **Flows and Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details**. 

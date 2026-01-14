@@ -1,6 +1,6 @@
 # External NLU Adapters Overview
 
-Kore.ai has one of the best NLP engines in the market including the unique Multiengine NLP capability. However, to provide integration flexibility and let the customers use the NLU engine of their preference with other features of the platform, Kore.ai provides an ability to make an external NLU engine co-exist with our built-in NLP engines.
+Kore.ai has one of the best NLP engines in the market including the unique Multi-engine NLP capability. However, to provide integration flexibility and let the customers use the NLU engine of their preference with other features of the platform, Kore.ai provides an ability to make an external NLU engine co-exist with our built-in NLP engines.
 
 
 ## Overview

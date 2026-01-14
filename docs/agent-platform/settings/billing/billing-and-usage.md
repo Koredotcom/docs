@@ -6,13 +6,9 @@ The **Billing** section helps you monitor and analyze your Agent Platform expens
 
 Steps to access the Usage page:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
 3. On the left navigation pane, click **Billing** > **Usage**.
-
-The **Usage** dashboard appears as shown below.
-
- <img src="../images/access-usage.png" alt="Accessing Billing" title="Accessing Billing" style="border: 1px solid gray; zoom:80%;">
 
 The Usage page displays the following tabs for billing and usage:
 
@@ -29,7 +25,7 @@ The Usage page displays the following tabs for billing and usage:
 
 * Regularly monitor your usage trends to optimize resource allocation.
 * Review tools, models, guardrails, and custom scripts to identify cost-saving opportunities.
-* Please refer to the hardware profile and the credits consumption chart [here](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} before deploying custom scripts.
+* Please refer to the hardware profile and the credits consumption chart [here](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"} before deploying custom scripts.
 * Track guardrail deployment duration to manage hardware costs effectively.
 * Hover over the top-right corner of the **Runs** and **Credits** widgets and click the **Refresh** icon to update the latest data.
  
@@ -43,13 +39,11 @@ The Usage page displays the following tabs for billing and usage:
 
 ## Usage Overview
 
-The **Overview** tab summarizes expenses and usage patterns across your tools, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
+The **Overview** section summarizes expenses and usage patterns across your tools, models, guardrails, and custom scripts. The following usage information is displayed on the tab:
 
 * **Runs**: This field indicates the usage of tool runs, showing the proportion of capacity consumed compared to the total available runs. For example, if 45 out of 10,000 available tool runs have been utilized, indicating that 0.45% of the total capacity has been consumed.
 * **Credits**: This field displays the total credit usage, showing the proportion of credits used across models, guardrails, and custom scripts compared to the total available credits. It also includes the credits used to host guardrails. For example, if 212 credits have been used out of a total allocation of 300 credits, indicating that 70.72% of your available model credits have been utilized.
 * **Usage trend**: This visual representation shows tool runs, models, guardrails, and custom script credits consumed over time. Use the calendar feature to view changes over a defined timeline, such as daily, weekly, monthly, or any custom date range.
-
-    <img src="../images/overview-tab.png" alt="Billing Usage trend" title="Billing Usage trend" style="border: 1px solid gray; zoom:80%;">
 
 ## Tools Usage
 
@@ -74,7 +68,7 @@ The **Models** tab displays a comprehensive list of open-source and fine-tuning 
 
 <img src="../images/models-usage.png" alt="Billing Models tab" title="Billing Models tab" style="border: 1px solid gray; zoom:80%;">
 
-If there are multiple deployments of the same model, the usage data is displayed for each deployment in the drill-down view. [Learn more](./billing-and-usage.md/#viewing-deployment-level-information){:target="_blank"}.
+If there are multiple deployments of the same model, the usage data is displayed for each deployment in the drill-down view. [Learn more](./billing-and-usage.md#viewing-deployment-level-information){:target="_blank"}.
 
 The following usage metrics summarize data for all the deployments:
 
@@ -152,7 +146,7 @@ Billing and credit calculation data for Guardrails is sent via email, notifying 
 
 ## Custom Scripts Usage
 
-The **Custom Scripts** tab displays the list of custom scripts added to your account, along with the credits consumed for their deployment. Each custom script entry displays the language and version of the script, the credits used, the latest date of script usage (when it was active), and its [status](../manage-custom-scripts//custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}. The **Total Scripts** and the **Hosting Credits** available in the account are also displayed as key metrics on the page. The custom scripts are charged for each deployment and hardware profile used.
+The **Custom Scripts** tab displays the list of custom scripts added to your account, along with the credits consumed for their deployment. Each custom script entry displays the language and version of the script, the credits used, the latest date of script usage (when it was active), and its [status](../manage-custom-scripts//custom-scripts.md#information-on-script-deployment-statuses){:target="_blank"}. The **Total Scripts** and the **Hosting Credits** available in the account are also displayed as key metrics on the page. The custom scripts are charged for each deployment and hardware profile used.
 
 
 * Credits for script consumption are deducted from the allocated credits (**Overview** tab) based on the table mentioned [here](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"}.
@@ -175,7 +169,7 @@ The following usage information is displayed:
 * **Language(Version)**: The language and version of the script.
 * **Credits used**: The credits consumed by the script for hardware and other resources.
 * **Last active on**: The latest date when the script was actively used.
-* **Status**: The deployment status of the script. [Learn more](../manage-custom-scripts/custom-scripts.md/#information-on-script-deployment-statuses){:target="_blank"}.
+* **Status**: The deployment status of the script. [Learn more](../manage-custom-scripts/custom-scripts.md#information-on-script-deployment-statuses){:target="_blank"}.
 
 
 ### Viewing Detailed Script Information
@@ -184,17 +178,10 @@ Clicking each row on the **Custom scripts** tab opens a panel on the right that 
 
 * **Hosting infrastructure**: The hardware configurations (VCPUs and memory) used by the script.
 * Hosting time in hours and minutes.
-* Credits consumed by the components. Refer to the table [here](../manage-custom-scripts/custom-scripts.md/#step-3-resource-allocation){:target="_blank"} for pricing.
+* Credits consumed by the components. Refer to the table [here](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"} for pricing.
 * **Total** which represents the aggregate of all the credit components (when multiple components are involved).
 <img src="../images/custom-script-usage.png" alt="cs usage" title="cs usage" style="border: 1px solid gray; zoom:80%;">
 
 ### Email Notifications
 
 Billing and credit calculation emails for custom scripts notify users about credit usage, negative credits threshold breaches, and deployment or undeployment events. Deployment notifications also include the API endpoint access details.
-
-
-
-
-
-
-

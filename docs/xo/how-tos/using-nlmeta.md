@@ -194,19 +194,23 @@ In the above example, the *Authenticate User* intent would be triggered if the *
 		
 
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 
 
 #### Does the platform honor interruption settings when a new intent is received from BotKit using NLMeta?
+
 Yes, the platform honors all interruption settings when it receives a new intent from BotKit using NLMeta.
 
 ### Does BotKit provide details about the current node and dialog name? 
+
 Yes, BotKit has full access to the context object, which includes details about the current task and entities.
 
 ### Can I set an entity value directly from BotKit using NLMeta? 
+
 Yes, you can set the entity value of an ongoing dialog task directly from BotKit using NLMeta.
 
 ### Can I send an FAQ as part of NLMeta? 
+
 Yes, you can trigger an FAQ from NLMeta. To do this, include an additional key called `"intentType":"KG"` in NLMeta. By default, NLMeta triggers dialog tasks. Use this key to trigger FAQs from the Knowledge Graph.
 
 For example:

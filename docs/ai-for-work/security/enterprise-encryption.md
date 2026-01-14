@@ -27,7 +27,7 @@ Bring Your Own Key (BYOK) encryption for public cloud SaaS deployments allows en
 
 **Important Security Considerations**:
 
-* Once BYOK is configured, you cannot revert to default keys.
+* Upon configuring BYOK, you cannot revert to default keys.
 * You must safeguard your encryption key to prevent data loss.
 * BYOK configurations cannot be deleted or changed once activated - contact support if modifications are needed.
 
@@ -50,20 +50,27 @@ Follow this guided configuration to integrate your cloud provider's encryption s
     1. Navigate to **Admin Console > Enterprise Encryption**.
     2. Under **Bring Your Own Key**, click **Create Key**.
 2. **Configure Cloud Provider Details**
-    3. **Select Provider** – Choose **AWS** or **Azure**.
-    4. **Enter Identifiers**:
-        1. **AWS** – Provide the ARN of your CMK and Role ARN.
-        2. **Azure** – Provide the Key Vault URL and Tenant ID.
-    5. **Additional Inputs**:
-        3. **AWS** – Account ID (with copy option).
-        4. **Azure** – Client ID and Client Name (with copy option).
+    3. **Select Provider**: Choose **AWS** or **Azure**.
+    4. **Enter Your Identifiers**:
+         -  AWS:
+             - **Key ARN**: Your KMS Customer Managed Key ARN.
+             - **Assume Role ARN**: The IAM role ARN you created in AWS.
+         - Azure:
+             - **Key Vault URL**: Your Azure Key Vault URL.
+             - **Tenant ID**: Your Azure tenant ID.
+    5. **Review Pre-populated Values**:
+         - AWS: The system displays the **Service Role ARN** and **Assume Role External ID** with a copy option. These values are required for configuring your IAM role trust policy in AWS.
+         - Azure: The system displays the **Client ID** and **App Name** with a copy option. These values are required for configuring your Azure Key Vault access.
 3. **Test Connection**
-    6. Click **Test Connection** to validate:
-        5. Key accessibility
-        6. Correct permissions
-        7. Authentication credentials
-    7. If successful, click **Next**.
+    1. Click **Test Connection** to validate:
+        1. Key accessibility
+        2. Correct permissions
+        3. Authentication credentials
+    2. If successful, click **Next**.
 4. **Finalize Setup**: Click **Proceed** to complete the configuration.
+
+!!!note
+    The pre-populated values (Service Role ARN, External ID for AWS; Client ID, App Name for Azure) are provided by the system and must be used when configuring your cloud provider settings. Use the copy button to ensure accuracy.
    
 ## Post-Activation Key Management
 
@@ -72,3 +79,20 @@ Once BYOK is active:
 * The system automatically enforces BYOK for all encryption operations.
 * **View Only** -- Key details can be viewed but not edited, ensuring integrity. Default key actions (copy, refresh) are disabled.
 * **No Removal Option** -- BYOK configurations are permanent once activated. Contact support if you need to make changes to your encryption setup.
+
+## Configuration Flow Summary
+
+### AWS Configuration
+
+1. View pre-populated **Service Role ARN** and **External ID** in the admin console.
+2. Complete AWS IAM role and KMS key setup using these values.
+3. Return to admin console and enter your **Key ARN** and **Assume Role ARN**.
+4. Test and activate the configuration.
+
+
+### Azure Configuration
+
+1. View pre-populated **Client ID** and **App Name** in the admin console.
+2. Complete Azure Key Vault setup using these values.
+3. Return to admin console and enter your **Key Vault URL** and **Tenant ID**.
+4. Test and activate the configuration.

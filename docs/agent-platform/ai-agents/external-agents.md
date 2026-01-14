@@ -7,7 +7,7 @@ Proxy Agent acts as an intermediary, seamlessly relaying communication between t
 
 ## Prerequisites
 
-The External Agents connected to the Agent Platform must adhere to the Agent Protocol.
+The External Agents connected to the Platform must adhere to the Agent Protocol.
 
 ## Set Up
 
@@ -43,7 +43,7 @@ Click on the Test button to initiate a sample request to the external agents and
 
 * **Asynchronous Integration** - This property specifies whether the response expected from the external agent is synchronous or asynchronous. If this field is enabled, the proxy agent shows a URL that can be used as a callback URL from the external agent.
 * **Timeout** - This property specifies the maximum duration (in seconds) the proxy agent will wait for a response from the external agent. If a response isn't received within this specified time, the request is considered to have failed due to a timeout error.
-* **Route Response to User** - When enabled, the response from the external agent is directly presented to the user, bypassing the supervisor. This allows response to be presented in real time. Also, the response is delivered as it is without any modification or enrichment. This is ideal for scenarios where real-time responsiveness is prioritized and the external agent is fully trusted to handle user queries independently.
+* **Route Response to User** - When enabled, the response from the external agent is directly presented to the user, bypassing the supervisor. This allows response to be presented in real time. Also, the response is delivered as it's without any modification or enrichment. This is ideal for scenarios where real-time responsiveness is prioritized and the external agent is fully trusted to handle user queries independently.
 
 ## Key Characteristics of the Proxy Agent
 
@@ -58,7 +58,7 @@ The proxy agent offers a secure and streamlined method for integrating external 
 
 ## Request and Response formats for the External Agent
 
-The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it is recommended to create an adapter that processes the request from the Agent Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the specifications below.
+The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it's recommended to create an adapter that processes the request from the Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the specifications below.
 
 ### Request Format
 
@@ -157,9 +157,8 @@ If your external agent doesn't follow the expected format, follow the steps list
 
 * Create an adapter to translate incoming and outgoing data.
 * Adapter should:
-    * Accept Agent Platform-defined request structure.
+    * Accept the Platform-defined request structure.
     * Convert it to the format required by your external agent.
-    * Reformat the external agent's response to match the Agent Platform’s response structure.
+    * Reformat the external agent's response to match the Platform’s response structure.
 
 ![alt_text](images/externalagents/adapter.png "image_tooltip")
-

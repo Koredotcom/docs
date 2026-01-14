@@ -117,7 +117,8 @@ if (typeof(Recurrence) !== 'undefined' && Recurrence) {
 <li>If the <b>Format to Identify Recurrence</b> field is set to <b>Cron</b>, then define the <b>Event End</b> section to define the string displayed to the end-user to show the date and time of the last recurring event.</li>
 <li>Click <b>Save</b> to save the settings.</li></ol>
 
-## Preventing Duplicate Message Alerts 
+## Preventing Duplicate Message Alerts
+
 After you add your filters for the response object, you should determine if you need to apply a strategy to prevent the display of duplicate messages to the end-user. For example, if you set up an RSS task, you may want to prevent duplicate messages for the same subject, or for _Facebook_, prevent duplicate messages each time a comment is added to a post.
 
 In the XO Platform , you can choose one of two options for **Deduplicate Strategy**:

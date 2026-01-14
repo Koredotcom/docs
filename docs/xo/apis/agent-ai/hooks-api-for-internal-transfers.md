@@ -8,7 +8,7 @@ This API supports internal transfer events, reducing reliance on UI socket event
 |-------------------|-----------|
 | Endpoint       | `https://{{host}}/agentassist/api/v1/hooks/{{botId}}` |
 | Content Type   | `application/json` |
-| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md/#generating-the-jwt-token){:target="_blank"} |
+| Authorization  | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token){:target="_blank"} |
 
 ## Path Parameters
 
@@ -219,68 +219,13 @@ curl --location 'https://platform.kore.ai///agentassist/api/v1/hooks/st-XXXX-XXX
   </tr>
 </table>
 
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-   <td><strong>Required</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><code>participant</code>
-   </td>
-   <td>Object
-   </td>
-   <td>Yes
-   </td>
-   <td>Provides details about the participant involved in the event.
-   </td>
-  </tr>
-  <tr>
-   <td><code>participant.identity</code>
-   </td>
-   <td>String
-   </td>
-   <td>Yes
-   </td>
-   <td>Unique identifier of the participant.
-   </td>
-  </tr>
-  <tr>
-   <td><code>participant.name</code>
-   </td>
-   <td>String
-   </td>
-   <td>Yes
-   </td>
-   <td>Name of the participant.
-   </td>
-  </tr>
-  <tr>
-   <td><code>participant.type</code>
-   </td>
-   <td>String
-   </td>
-   <td>Yes
-   </td>
-   <td>Type of participant. Example: <code>agent</code>.
-   </td>
-  </tr>
-  <tr>
-   <td><code>participant.customFields</code>
-   </td>
-   <td>Object
-   </td>
-   <td>No
-   </td>
-   <td>Required only if you are using the Quality Module of Kore with Agent AI to perform post-call analysis.
-   </td>
-  </tr>
-</table>
+| Parameter                | Type   | Required | Description |
+|--------------------------|--------|----------|-------------|
+| participant              | Object | Yes      | Provides details about the participant involved in the event. |
+| participant.identity     | String | Yes      | Unique identifier of the participant. |
+| participant.name         | String | Yes      | Name of the participant. |
+| participant.type         | String | Yes      | Type of participant. Example: `agent`. |
+| participant.customFields | Object | No       | Required only when using the Kore Quality Module with Agent AI for post-call analysis. Includes the following fields:<br>• `agentEmail`<br>• `queueId`<br>• `queueName` |
 
 ## Types of Transfers
 

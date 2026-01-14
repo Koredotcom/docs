@@ -28,6 +28,7 @@ Key differences are summarized below.
 <img src="../images/ntp(21).png" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
 
 ## Bots Replaced with Apps
+
 A Bot is now replaced with an App. Each App can have four products, with common modules kept separate.  
 <img src="../images/xo-platform-apps.png" alt="Apps" title="Apps" style="border: 1px solid gray; zoom:70%;">  
 
@@ -110,7 +111,7 @@ The Analytics module is logically regrouped to address various audience needs. A
 ## Automation vs. Search (Answers) Fallback Behavior
 
 We have a new setting where users can configure where every user utterance should go first: Automation AI or Search AI (Answers) to get the response.  
-<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback Behaviour" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behavior" title="Fallback Behavior" style="border: 1px solid gray; zoom:70%;">
 
 ## New Marketplace
 

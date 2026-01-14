@@ -8,11 +8,11 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 **Key Features**
 
-* **Global timeline Filters** provide a comprehensive view of performance across all tools in your account. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+* **Global timeline Filters** provide a comprehensive view of performance across all tools in your account. [Learn more](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}.
 
-* **Tool Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected tool and version. [Learn more](../analytics/tools-analytics-dashboard.md/#tool-performance-filters){:target="_blank"}.
+* **Tool Performance Filters** offer a detailed analysis of individual runs, response times, and node executions during the selected period for the selected tool and version. [Learn more](../analytics/tools-analytics-dashboard.md#tool-performance-filters){:target="_blank"}.
 
-* An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/tools-analytics-dashboard.md/#expanded-widget-view){:target="_blank"}.
+* An **expanded view of analytics widgets** include filters to customize data display. [Learn more](../analytics/tools-analytics-dashboard.md#expanded-widget-view){:target="_blank"}.
 * Hovering over a data point on the **dynamic and interactive line graph** reveals the real-time information for that specific period, providing a focused view of tool performance.
 * You can obtain **hourly performance analysis** for a tool on a specific day or review **daily performance trends** when selecting a date range filter.
 * Click the **Refresh icon** shown below to ensure you have the latest dashboard data available to make informed decisions.
@@ -33,7 +33,7 @@ Key metrics are displayed intuitively using visually engaging graphs and dynamic
 
 To access the **Tools Analytics** dashboard, follow the steps below:
 
-1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Analytics**.
 3. Click the **Tools Analytics** tab on the right-hand side screen.
 <img src="../images/agents-analytics-tab.png" alt="tools analytics tab" title="tools analytics tab" style="border: 1px solid gray; zoom:75%;">
@@ -50,15 +50,15 @@ The following metrics summarize the counts for tools, runs, and node executions 
 
 * **Number of tools**: The total number of tools deployed within your account during the selected period. This includes tools and all their versions managed by all the users of your account. 
 
-    To view data for a specific tool and its version deployed in your account, use the **Tools Performance** filters. [Learn more](../analytics/tools-analytics-dashboard.md/#tool-performance-filters){:target="_blank"}.
+    To view data for a specific tool and its version deployed in your account, use the **Tools Performance** filters. [Learn more](../analytics/tools-analytics-dashboard.md#tool-performance-filters){:target="_blank"}.
 
 * **Number of runs**: The total count of success and failure tool flow runs or node executions completed by all deployed tools in your account during the specified period. 
 
-For detailed statistics on each status for the selected date/date range, see the **Tool Runs** widget. [Learn more](../analytics/tools-analytics-dashboard.md/#tool-runs){:target="_blank"}.
+For detailed statistics on each status for the selected date/date range, see the **Tool Runs** widget. [Learn more](../analytics/tools-analytics-dashboard.md#tool-runs){:target="_blank"}.
 
 * **Number of times nodes are executed**: The event-driven execution counts for different node types during a tool run. 
 
-For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/tools-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
+For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/tools-analytics-dashboard.md#nodes-execution){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -66,7 +66,7 @@ For detailed statistics on the total events and the runs executed by each node, 
 
 <img src="../images/info-icon.png" alt="info icon" title="info icon" style="border: 1px solid gray; zoom:75%;">
 
-To generate and view the required tools analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+To generate and view the required tools analytics data, use the **Global Timeline Filters**. [Learn more](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}.
 
 ### Tool-specific Metrics
 
@@ -76,56 +76,37 @@ The following metrics help analyze the performance of the selected tool and vers
 * **Avg. Tool Response Time**: Displays the selected tool version’s ART to the requests received during the selected period.
 * **Nodes Execution**: Displays the event-based node execution graph for all the node types on a single day or across the selected date range. **Nodes are executed up to the rate limit threshold subscription for your account**.
 
-To view the required data, use the [Global Timeline Filters](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"} and [Tool Performance Filters](../analytics/tools-analytics-dashboard.md/#tool-performance-filters){:target="_blank"}. 
+To view the required data, use the [Global Timeline Filters](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"} and [Tool Performance Filters](../analytics/tools-analytics-dashboard.md#tool-performance-filters){:target="_blank"}. 
 
 ## Global Timeline Filters
 
-To generate account-level and tool-level data for a specific period, use the following options on the top panel:
+Use the top-panel filters to scope account- and tool-level data by time.
 
-* **24 hours**: Displays tool data for all the hours in the past day.
-* **7 days**: Displays tool data for all the days in the past week.
-* **30 days**: Displays tool data for all the days in the past month.
-* **90 days**: Displays tool data for all the days in the past three months.
-* **Custom**: Allows you to select a custom day or date range from the following calendar widget to view tool data. Once you select the required period, click **Apply** to see the relevant data.
-<img src="../images/global-timeline-filters.png" alt="global timeline filters" title="global timeline filters" style="border: 1px solid gray; zoom:75%;">
+* **Preset ranges**: 24 hrs, 7 days, 30 days, and 90 days.
+* **Custom range**: Select a single date or a continuous date range via the calendar, then click *Apply*.
 
-<div class="admonition note">
-<p class="admonition-title">Key Considerations</p>
-<p><ul><li>You can select only the current and past dates and not a future date.</li>
-<li>You can view past data only up to one year from the current date.</li></ul></p></div>
+     <img src="../images/global-timeline-filters.png" alt="global timeline filters" title="global timeline filters" style="border: 1px solid gray; zoom:75%;">
 
-**Single Date**
+**Calendar Presets**
 
-To select a single day, click the required date on the widget.
-<img src="../images/single-date.png" alt="single date" title="single date" style="border: 1px solid gray; zoom:75%;">
+* **This Month**: From the 1st of the current month to today.
 
-**Date Range**
+* **Last Month**: Full previous calendar month.
 
-To select a custom date range, select the start and end dates on the widget.
-<img src="../images/date-range.png" alt="date range" title="date range" style="border: 1px solid gray; zoom:75%;">
+* **This Year**: From Jan 1 of the current year to today.
+
+* **Last Year**: Full previous calendar year.
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><ul><li>Only consecutive dates can be selected for a date range. For example, alternate or random date selections are not allowed.</li>
-<li>Multiple date range selections are not supported.</li></ul></p></div>
-
-The other options you can select include:
-
-* **This Month**: Displays data for the current month. For example, if today is 20 September, the data from 1 September to 20 September is displayed.
-<img src="../images/this-month.png" alt="this month" title="this month" style="border: 1px solid gray; zoom:75%;">
-
-* **Last Month**: Displays data for the past month. For example, if this month is September, the data from 1 August to 31 August is displayed.
-<img src="../images/last-month.png" alt="last month" title="last month" style="border: 1px solid gray; zoom:75%;">
-
-* **This Year**: Displays data for the current year. For example, if today is 20 September 2024, the data from 1 January 2024 to 20 September is displayed.
-<img src="../images/this-year.png" alt="this year" title="this year" style="border: 1px solid gray; zoom:75%;">
-
-* **Last Year**: Displays data for the previous year from 1 January 2023 to 31 December 2023.
-<img src="../images/last-year.png" alt="last year" title="last year" style="border: 1px solid gray; zoom:75%;">
+<p class="admonition-title">Constraints</p>
+<p><ul><li>Only current and past dates are supported (no future dates).</li>
+<li>Historical data is available up to one year back.</li>
+<li>Date ranges must be consecutive; multiple or non-contiguous ranges aren’t supported.</li></ul></p>
+</div>
 
 ## Tool Performance Filters
 
-The following widget-level filters apply exclusively to [tool-specific metrics](../analytics/tools-analytics-dashboard.md/#tool-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. 
+The following widget-level filters apply exclusively to [tool-specific metrics](../analytics/tools-analytics-dashboard.md#tool-specific-metrics){:target="_blank"}, providing real-time analytics when used with a [Global Timeline filter](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}. 
 
 * **Tool Name**: Select the deployed tool from the list to see the associated analytics data.
 
@@ -141,17 +122,17 @@ The following widget-level filters apply exclusively to [tool-specific metrics](
 
 ## Tool Performance Data Widgets
 
-The **Tools Analytics** dashboard displays the widgets mentioned below to represent the [tool-specific performance metrics](../analytics/tools-analytics-dashboard.md/#tool-specific-metrics){:target="_blank"}. The graphs update automatically when a different tool version is selected.
+The **Tools Analytics** dashboard displays the widgets mentioned below to represent the [tool-specific performance metrics](../analytics/tools-analytics-dashboard.md#tool-specific-metrics){:target="_blank"}. The graphs update automatically when a different tool version is selected.
 
 ### How it Works
 
-1. Select the required date/range in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}.
+1. Select the required date/range in the [global timeline filter](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}.
 2. Select the **Tool Name** and (optional) **Tool Version**.
 3. The widgets display an hourly graph for 24 hours on a single day and a daily graph for the respective metrics for a date range.
 
 ### Tool Runs
 
-This widget features two dynamic graphs illustrating successful and failed requests executed by the tool during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
+This widget features two dynamic graphs illustrating successful and failed requests executed by the tool during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Total Number of Requests**, while the X-axis indicates the **Date**. 
 
 **Key Features**
 
@@ -176,7 +157,7 @@ You can do the following to analyze tool performance:
 
 ### Avg. Tool Response Time
 
-This widget features a line graph illustrating the ART taken by the tool version to execute each request during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
+This widget features a line graph illustrating the ART taken by the tool version to execute each request during the selected period in the [global timeline filter](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Avg. Response Time**, while the X-axis indicates the **Date**. 
 
 **Key Features**
 
@@ -215,7 +196,7 @@ You can do the following to analyze tool performance:
 
 ### Nodes Execution
 
-This widget displays a line graph showing the number of nodes (including all node types) executed for each event run during a tool flow for the selected tool version and period (as selected in the [Global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Nodes Executed**, while the X-axis shows the **Date**.
+This widget displays a line graph showing the number of nodes (including all node types) executed for each event run during a tool flow for the selected tool version and period (as selected in the [Global timeline filter](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}. The Y-axis represents the **Number of Nodes Executed**, while the X-axis shows the **Date**.
 
 **Rate Limit**
 
@@ -253,8 +234,8 @@ You can expand any widget on the **Tools Analytics Dashboard** for a drill down 
 
 The widget-level filters include the following:
 
-* [Global timeline filter](../analytics/tools-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
-* [Tool Performance Filters](../analytics/tools-analytics-dashboard.md/#tool-performance-filters){:target="_blank"}
+* [Global timeline filter](../analytics/tools-analytics-dashboard.md#global-timeline-filters){:target="_blank"}
+* [Tool Performance Filters](../analytics/tools-analytics-dashboard.md#tool-performance-filters){:target="_blank"}
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -281,10 +262,12 @@ The expanded views of all the widgets are shown below:
 
 The **Tools Analysis Dashboard** offers actionable and customized insights on the tool performance metrics for various features in your account. 
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Tool Platform admin features.
-* [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"}- Track, audit, and review changes made to a tool's flow.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
-* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
+**Related Resources**
+
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Tool Platform admin features.
+* [Tool Flow Change Logs](../../../ai-agents/tools/tool-flows/tool-canvas-change-log.md){:target="_blank"} - Track, audit, and review changes made to a tool's flow.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank" }- Manage resource consumption for tools, set limits, and track usage trends.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - Track activities and events in your account.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.

@@ -1,8 +1,8 @@
 # Quality AI General Settings
 
-The Quality AI General Settings allow you to enhance the performance and compliance of your contact center agents. You can configure agent scorecards, create detailed evaluation forms, and set up bookmarks to highlight key conversation points by enabling specific options within this page. These settings are crucial for maintaining high standards in customer interactions and improving overall service quality.
+The Quality AI General Settings lets you configure and manage features that enhance agent performance and maintain compliance. You can set up agent scorecards, create evaluation forms, and use bookmarks to highlight key conversation points. These settings help improve customer interactions and streamline quality management.
 
-Supervisors or Administrators can enable or disable auto QA scoring of interactions through the QM settings at the app level. They can also control agent access to interactions, whether only audited interactions or both manually evaluated and Auto QA scored interactions, based on roles and operational procedures. Additionally, they can configure whether agents are allowed to view the names of auditors who scored their interactions, ensuring auditor anonymity under company policies and security requirements.
+Supervisors or administrators can manage Auto QA scoring, agent access to interactions, and auditor anonymity at the app level. They can configure agents view only manually audited interactions, Auto QA–scored interactions, or both, and control whether auditor identities are visible, maintaining privacy according to company policies.
 
 ## Access Quality AI General Settings 
 
@@ -13,34 +13,32 @@ The Quality AI General Settings include:
 
 ### Auto QA
 
-The Auto QA feature lets you set up Evaluation Forms for automated scoring. When the feature is turned off, automated QA scores are hidden across the entire application and its queues, regardless of whether the user has access to Agent Scorecard and QA functionalities. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
+The Auto QA feature enables automated evaluation using configured forms. When disabled, automated QA scores, Conversation Mining, Dashboards, and Evaluation Forms are hidden.
 
 #### Enable Auto QA
 
-Steps to enable Auto QA:
-
-1. Expand the **Quality AI General Settings** collapse icon to view the following **Auto QA**.  
+1. Expand **Quality AI General Settings**.  
 <img src="../settings/images/auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:90%;">
 
-2. Enable **Auto QA**.
+2. Turn on **Auto QA**.
 
-By enabling this Auto QA option, you can:
+3. Select **Save** to save the settings. 
 
-* Access features like the Dashboard (Fail Statistics, Performance Monitor), Adherence Heatmap, Conversation Mining, Agent Leaderboard, Coaching Monitor, Evaluation Forms, and Evaluation Metrics. 
+**Benefits of enabling Auto QA**:
 
-* Receive scored interactions even when Conversation Intelligence is disabled.
+    * Access Dashboards (Fail Statistics, Performance Monitor), Adherence Heatmap, Conversation Mining, Agent Leaderboard, Coaching Monitor, Evaluation Forms, and Metrics. 
 
-* Enable Conversation Intelligence without enabling AutoQA.
+    * Receive scored interactions even when Conversation Intelligence is disabled.
 
-* Auto QA functions independently of the Conversation Intelligence setting.
+    * Enable Conversation Intelligence without enabling Auto QA.
 
-3. Select **Save** to save the settings.
+    * Auto QA operates independently of Conversation Intelligence.
 
 !!! Note
 
-    Only the administrator can enable the Auto QA option for agents. By default, the Auto QA toggle remains disabled. When Auto QA is enabled, it provides access to create and configure evaluation forms.
+    Only administrators can enable Auto QA. By default, it is off. Disabling Auto QA hides Agent Scorecards and bookmarks, regardless of user permissions.
     
-When the **Auto QA** feature is enabled, you get the following screen to create and configure evaluation forms.
+When you enable the **Auto QA**, the following screen shows to create and configure evaluation forms.
 
 <img src="../settings/images/qa-settings-eva-forms.png" alt="Create and Config Evaluation Forms" title="Create and Config Evaluation Forms" style="border: 1px solid gray; zoom:60%;">
 
@@ -50,11 +48,8 @@ When the **Auto QA** feature is enabled, you get the following screen to create 
 
 #### Disable Auto QA
 
-Steps to disable Auto QA:
-
 1. Turn off the **Auto QA** toggle.  
-2. Select **Confirm** to disable the Auto QA.
-3. Select **Save** to save the settings.
+2. Select **Confirm** and **Save**.
 
 !!! Note
 
@@ -62,120 +57,117 @@ Steps to disable Auto QA:
     
 ### Agent Score Card
 
-This setting enables or disables the agent-level interaction scoring through agent scorecards. By allowing the agent scorecard, you can create and configure evaluation forms to generate automated scores. Users with the relevant permission access can enable or disable this setting. 
+Agent Scorecards enable scoring at the agent level using evaluation forms. Users with proper permissions can enable or disable this feature.
 
 #### Enable Agent Score Card
 
-Steps to enable the Agent Score Card:  
-1. Expand the **Quality AI General Settings** collapse icon to view the **Agent Score Card**.   
-<img src="../settings/quality-ai-general-settings/images/sett-agent-scorecard.png" alt="Agent Scorecard Set" title="Agent Scorecard Set" style="border: 1px solid gray; zoom:60%;">
+1. Expand the **Quality AI General Settings**.
 
-By enabling this Agent Score Card option, you can view features of Agent Leaderboard, Dashboard (Fail Statistics, Performance Monitor, Agent Leaderboard), Coaching Monitor, and Agent Scorecards.
+   <img src="../settings/quality-ai-general-settings/images/sett-agent-scorecard.png" alt="Agent Scorecard Set" title="Agent Scorecard Set" style="border: 1px solid gray; zoom:60%;">
 
-3. Select **Save** to save the settings.
+2. Turn on Agent Scorecard.
 
-When the **Agent Score Card** is enabled from the **Settings**, you can view the new Agent Scorecard.    
+3. Select **Save**
+
+**Features available**:
+Agent Leaderboard, Dashboard (Fail Statistics, Performance Monitor, Agent Leaderboard), Coaching Monitor, and Agent Scorecards.
+
+When you enable the **Agent Score Card**, it lets you view the new Agent Scorecard.    
 <img src="../settings/images/settings-enable-agent-scorecard.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
 
 #### Disable Agent Score Card
-Steps to disable the Agent Score Card:
 
-1. Turn off the **Agent Score Card** toggle to disable the Agent Scorecard.  
+1. Turn off **Agent Score Card**.  
 
-1. Select **Save** to save the settings.
+1. Select **Save**.
 
     !!! Note
 
-        If you disable the Agent Scorecard, automated agent scoring is disabled across the entire app and all its queues.
+        Disabling this feature disables automated agent scoring across the application and all queues.
 
 ### Bookmarks
 
-This feature lets you use bookmark interactions (conversations, including calls or messages) in different collections (tags) for easy reference later. When created, these collections are added to Conversation Mining.
+Bookmarks let you tag interactions (calls, messages) for easy reference in Conversation Mining and dashboards.
 
 #### Enable Bookmarks
-Steps to Add Bookmarks:
 
-1. Expand the **Quality AI General Settings** collapse icon to view the following **Bookmarks** option.  
+1. Expand the **Quality AI General Settings**.  
 <img src="../settings/images/settings-bookmarks.png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
 
-2. Enable the **Bookmarks** toggle option to add a new bookmark. Enabling this option lets you view features, such as in **Conversation Mining** (Interactions) and **Dashboard** > **Agent Leaderboard** (Evaluation).
+2. Turn on **Bookmarks** to add a new bookmark. Enabling this option lets you view features, such as in **Conversation Mining** (Interactions) and **Dashboard** > **Agent Leaderboard** (Evaluation).
 
-3. Select the **Add Bookmark**. The following new **Bookmarks** row appears.  
+3. Select **Add Bookmark**.     
 <img src="../settings/images/settings-new-bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:100%;">
 
 4. Enter the **Bookmarks** name for the assigned interactions.
-5. Add **Color** for the added bookmarks.
-6. Select **Save** to save the settings.
+5. Select a **Color** for the added bookmarks.
+6. Select **Save**.
 
 #### Disable Bookmarks
+
 Steps to disable Bookmarks:
 
-1. Turn off the **Bookmarks** toggle.   
-2. Select **Confirm** to disable the bookmark.
-3. Select **Save** to save the settings.
+1. Turn off **Bookmarks** toggle.   
+
+1. Select **Confirm**.
+
+1. Select **Save**.
 
 !!! Note
     
-    Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.
+    Deleting a bookmark removes only the tag, not the associated interactions.
 
 ## Agent Access to Scored Interactions
 
-This feature allows agents to view their supervisor-audited scores to assess and improve their performance and take action accordingly. By default, this feature is disabled. When enabled, this option adds a new tab next to the **Overview** tab on the agent dashboard. 
+Agents can view scored interactions to improve performance. By default, this feature is off. When enabled, this option adds a new tab next to the **Overview** tab on the agent dashboard. 
 
-Agents can use it to view scored interactions audited by a supervisor, accessible via **My Dashboard** > **Overview** > **Evaluation**.     
-<img src="./settings/quality-ai-general-settings/images/my-dashboard-evaluation.png" alt="Evaluation" title="Evaluation" style="border: 1px solid gray; zoom:100%;">
+Agents can use it to view scored interactions audited by a supervisor. Access is available via **My Dashboard** > **Overview** > **Evaluation**.     
+<img src="../settings/quality-ai-general-settings/images/my-dashboard-evaluation.png" alt="Evaluation" title="Evaluation" style="border: 1px solid gray; zoom:100%;">
 
-Agent Access to Scored Interactions has the following two options: 
+Agent Access to Scored Interactions includes two options: 
 
-1. **Only manually audited interactions**: This interaction only allows you to view the scored interactions the supervisor audited.
+1. **Only manually audited interactions**: Agents view only interactions that supervisors audit manually.
      
-2. **Manually audited interactions and Auto QA scored interactions**: This selected interaction allows you to view both Auto QA–scored interactions and the interactions the supervisor audited.  
-<img src="./settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:80%;">
+2. **Manually audited interactions and Auto QA scored interactions**: Agents view both Auto QA–scored interactions and supervisor-audited interactions.      
+<img src="../settings/quality-ai-general-settings/images/agent-access-to-scorecard.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:80%;">
  
-Refer to the [Available Interactions Based on Access Settings:octicons-arrow-right-24:](../analyze/my-dashboard-agent-view.md#available-interactions-based-on-access-settings).
+Refer to the [Available Interactions Based on Access Settings](../analyze/my-dashboard-agent-view.md#available-interactions-based-on-access-settings).
 
 ### Agent Dashboard Insights
 
-Controls whether agents can view Sentiment Insights and Resolution Insights on their Agent Dashboard at the app level.
+Controls visibility of agents Sentiment and Resolution metrics on their Agent Dashboard at the application level.
 
-* **When Disabled (default)**: Agents cannot view sentiment charts, resolution metrics, or topic-level insights. Their dashboard shows only standard information such as coaching assignments, scorecards, and performance data. 
+* **Disabled (default)**: Agents can't view sentiment charts, resolution metrics, or topic-level insights. Their dashboard shows only standard information such as coaching assignments, scorecards, and performance data. 
 
+* **Enabled**: Agents can view additional insights, including sentiment trends, topic-level sentiment, resolution rates, and drill-down metrics.   
+   
+    <img src="../settings/quality-ai-general-settings/images/agent-dashboard-insights.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
 
-* **When Enabled**: Agents gain access to additional insights, including:
-
-    * Sentiment trends
-    * Topic-level sentiment distribution
-    * Resolution rates
-    * Drill-down metrics    
-    <img src="../configure/settings/quality-ai-general-settings/images/agent-dashboard-insights.png" alt="Agent Access to Scored Interactions" title="Agent Access to Scored Interactions" style="border: 1px solid gray; zoom:100%;">
-
-    These insights match those available to supervisors but apply only to the agent’s own conversations and settings.
+    These insights match supervisor views but apply only to the agent’s own conversations and settings.
 
 ### AI Justification and Evidence
 
-When this setting is enabled, agents can view AI-generated justifications and supporting evidence for each question. These details are shown by question, by value, and by AI Agent metric type, helping agents understand how the AI arrived at specific scores or evaluations.
+This setting lets agents view AI-generated justifications and supporting evidence for each question and metric. The system displays details by question, value, and AI Agent metric type so that agents understand how the AI calculates scores and evaluations.
 
 ### Audit Settings
 
-The Audit settings have the following two options: 
+Audit settings control agent visibility and privacy: 
 
-1. **Allow agents to view AI-generated emotions and sentiment insights**: This allows agents to view the emotional indicators and sentiment scores generated by the AI for each interaction. These insights help agents understand customer tone, identify potential issues, and improve the accuracy of their evaluations. When disabled, agents cannot have access to AI-generated emotional or sentiment data in the audit view.
+1. **Allow agents to view AI-generated emotions and sentiment insights**: Agents can view AI-generated emotional indicators and sentiment scores for each interaction. These insights help agents understand customer tone, identify issues, and improve evaluations. When off, agents can't access emotional or sentiment data in the audit view.
 
-2. **Hide Auditor Details for Agent**: When this setting is enabled, supervisors can hide auditor identity details from agents who are being evaluated. This helps maintain privacy and reduces potential bias by preventing agents from seeing who performed the audit.
-
-When enabled, agents see the **Anonymous** name instead of the auditor's name for security purposes. 
+2. **Hide Auditor Details for Agent**: Turn this setting on to hide auditor identity details from evaluated agents. This setting protects privacy and reduces bias. When active, the system displays Anonymous instead of the auditor’s name.
 
 ### Manual Audit
 
-This feature allows supervisors to select additional metric types for comprehensive manual quality evaluations.
+Supervisors select additional metric types for comprehensive manual quality evaluations.
 
 #### Audit Speech Metrics
 
-**Purpose**: Provides comprehensive speech analysis capabilities for quality assurance and agent development.
+**Purpose**: Provide comprehensive speech analysis capabilities for quality assurance and agent development.
 
-* If **By Speech** is enabled, auditors can input responses for each speech metric (for example, clarity, tone, pace).
+* If **By Speech** is on, auditors enter responses for each speech metric (for example, clarity, tone, pace).
 
-* If **By Playbook** is enabled:
+* If **By Playbook** is on:
 
     * For **By Step**: Show each step and let the auditor input responses step-wise.
 
@@ -185,17 +177,22 @@ This feature allows supervisors to select additional metric types for comprehens
 
 #### Audit Playbook Metrics
 
-Evaluates agent adherence to established conversation playbooks and structured interaction protocols. enables the evaluation of speech-related performance indicators during audits.
+Evaluate agent adherence to defined conversation playbooks and structured interaction protocols. Measure speech-related performance indicators during audits.
 
 **For Non-Audited Interactions**
 
 * Agents can only view a non-editable single status:
+
     * Executed
+
     * Not Executed
+
     * Not Applicable
 
 **For Manually Audited Interactions**
 
-* The agent can view only:
-    * Non-selected radio buttons
-    * The supervisor's selected response highlighted
+* Agents can view only:
+
+    * Unselected radio buttons
+
+    * The supervisor-selected response highlighted

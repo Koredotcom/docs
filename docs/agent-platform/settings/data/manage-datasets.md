@@ -8,10 +8,8 @@ You can upload a dataset of your choice in CSV, JSON, or JSONL format.
 
 Steps to upload a dataset:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
-2. Click **Data** on the top navigation bar. The **Data** page is displayed.  
-<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:50%;">
-   
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
+2. Click **Data** on the top navigation bar. The **Data** page is displayed.   
 3. Click **Upload dataset** and select your file. The uploaded file will appear on the Data page.
 
     !!! note
@@ -25,4 +23,3 @@ You can download or delete the dataset if it’s no longer used on the platform.
 
 * Click the three dots icon in the last column, and choose **Download** or **Delete** as required.  
 <img src="../images/download-or-delete-datasets.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:50%;">
-

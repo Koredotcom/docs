@@ -121,6 +121,7 @@ You can link to one or more Search AI applications in the same workspace and acc
 [Learn more](./knowledge/overview.md){:target="_blank"} about Knowledge integration with agents. 
 
 ---
+
 ## Tools
 
 **Tools** are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments.

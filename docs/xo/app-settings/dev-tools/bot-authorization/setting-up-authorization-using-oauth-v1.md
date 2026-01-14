@@ -1,3 +1,5 @@
+[:octicons-arrow-left-24: Back to Authorization ](bot-authentication.md)
+
 # Setting Up Authorization using OAuth v1
 
 OAuth v1 is an open protocol to allow secure authorization in a simple and standardized method from web, mobile, and desktop applications.
@@ -76,13 +78,13 @@ To define oAuth v1, configure the fields described in the following table.
   <tr>
    <td>Request Token Link
    </td>
-   <td>The URL used by the XO Platform to obtain an unauthorized request token. The request token is a value used by the XO Platform to obtain authorization from the end-user to obtain an access token. For example, https://{tenant}.someCompany.com/oauth/request_token. After end-user authorization, an access token can be requested by the XO Platform. This field is required.
+   <td>The URL used by the XO Platform to obtain an unauthorized request token. The request token is a value used by the XO Platform to obtain authorization from the end-user to obtain an access token. For example, https://{tenant}.example.com/oauth/request_token. After end-user authorization, an access token can be requested by the XO Platform. This field is required.
    </td>
   </tr>
   <tr>
    <td>Access Token Link
    </td>
-   <td>The URL used to exchange the end-user authorized request token for an access token. The access token is the value used by the XO Platform to gain access to the web application or web service on behalf of the end-user, instead of using the end-user credentials. For example, https://{tenant}.someCompany.com/oauth/access_token. This field is required.
+   <td>The URL used to exchange the end-user authorized request token for an access token. The access token is the value used by the XO Platform to gain access to the web application or web service on behalf of the end-user, instead of using the end-user credentials. For example, https://{tenant}.example.com/oauth/access_token. This field is required.
    </td>
   </tr>
   <tr>
@@ -90,7 +92,7 @@ To define oAuth v1, configure the fields described in the following table.
    </td>
    <td>This is the URL used to obtain end-user authorization for the XO Platform to access the web application or web service using the access token. This field is required. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the Authorization URL, for example,
 <br>
-     https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
+     https://platform.example.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
 <br>
 or
 <br>
@@ -123,7 +125,9 @@ For more information, see [Using Session and Context Variables](../../../automat
 
 ## Defining Tenancy
 
-If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL. For example, kore is the tenant organization for a web service using tenants at www.**_kore_**.someCompany.com.
+If required, in the **Subdomain** section, select **Yes** if the base URL for a web application or user interface uses a tenant name in the URL.
+For example, platform is the tenant organization for a web service that uses subdomain-based tenants, such as `www.platform.example.com.`
+
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 
@@ -142,8 +146,8 @@ If, for example, the default username and password fields do not meet your needs
 
 Specify the following fields:
 
-* **Field Key** – The name of the custom field to specify for authorization.
-* **Field Value** – The value for the custom field to specify for authorization.
+* **Field Key**: The name of the custom field to specify for authorization.
+* **Field Value**: The value for the custom field to specify for authorization.
 * Click **Done** to save the **Additional Field**.
 
 
@@ -154,10 +158,10 @@ By default, no authorization fields are configured as part of the header of the 
 <img src="../images/oauth-v1-img5.png" alt="Adding auth fields" title="Adding auth fields" style="border: 1px solid gray;zoom:80%;"/>
 
 1. In the **Field Type** field, you can select one of the following depending on where in the request message and the type of authorization fields that are required.
-    1. **Header** – The assistant expects the authorization fields as part of the header of the request.
-    2. **Payload** – The assistant expects the authorization fields as part of the content of the body of the request.
-    3. **Query String** – The assistant expects the authorization fields as a query in the body of the request.
-    4. **Path Param** – The assistant expects the authorization fields as part of the URL path for the request.
+    * **Header**: The assistant expects the authorization fields as part of the header of the request.
+    * **Payload**: The assistant expects the authorization fields as part of the content of the body of the request.
+    * **Query String**: The assistant expects the authorization fields as a query in the body of the request.
+    * **Path Param**: The assistant expects the authorization fields as part of the URL path for the request.
 
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
