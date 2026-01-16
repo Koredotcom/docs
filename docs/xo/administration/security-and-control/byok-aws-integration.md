@@ -1,44 +1,27 @@
-# BYOK Integration Guide for AWS KMS
+# BYOK Integration Guide for AWS
 
-## Integration Overview
-
-BYOK Integration Guide for AWS KMS
 Bring Your Own Key (BYOK) encryption in Kore’s public cloud SaaS enables enterprises to retain complete control over their encryption keys while protecting sensitive data. With BYOK, organizations use their own Customer Master Keys (CMKs) to encrypt application and bot data, ensuring stronger security and compliance.
 
 Kore’s BYOK solution integrates with external key management systems such as AWS Key Management Service (KMS). Customers retain ownership of their encryption keys while leveraging Kore’s secure, scalable cloud platform with HSM-backed keys.
 
-### Prerequisites
+## Prerequisites
 
 * Active Kore.ai subscription (platform.kore.ai) with BYOK enabled.
 * AWS account with administrative access to IAM and KMS.
 * Permissions to create IAM roles and policies.
 * Permissions to create and manage KMS keys.
 
-### Information Exchange
+## Information Exchange
 
-The BYOK integration requires coordination between you (the customer) and the Kore.ai support team. Key information exchanged between Kore.ai and you: 
+The BYOK integration requires coordination between you (the customer) and the Kore.ai support team. Key information exchanged between Kore.ai and you is summarized in the table. 
 
-* **Service Role ARN**: The Amazon Resource Name (ARN) of the IAM role that Kore.ai uses in its AWS account to access customer resources. 
-    * Purpose: You add this to your IAM role's trust policy to allow Kore.ai's service to assume your role.
-    * Who provides it: Kore.ai   
-      The Service Role ARN for ‘platform.kore.ai’ is: `arn:aws:iam::358587034707:role/SegBots-Servers-Role`
+| Information        | Description and Purpose | Provided By |
+|--------------------|-------------------------|-------------|
+| **Service Role ARN** | The Amazon Resource Name (ARN) of the IAM role in Kore.ai's AWS account. You add this to your IAM role's trust policy to allow Kore.ai's service to assume your role. <br><br> **Service Role ARN for `platform.kore.ai`:** <br>`arn:aws:iam::358587034707:role/SegBots-Servers-Role` <br><br> **Note:** Contact [Kore.ai Support](https://support.kore.ai/){:target="_blank"} if your SaaS instance differs from `platform.kore.ai`. | Kore.ai |
+| **External ID** | A unique identifier (similar to a password) that Kore.ai uses when assuming your IAM role to prevent unauthorized access. <br><br> Raise a [support ticket](https://support.kore.ai/){:target="_blank"} to obtain the External ID. | Kore.ai |
+| **Role ARN** | The ARN of the IAM role created in your AWS account. Kore.ai assumes this role to access your KMS key. <br><br> **Example:** <br>`arn:aws:iam::<your-account-id>:role/BYOK_Role` <br><br> Share this with Kore.ai after completing the steps in the [Integration Process](#integration-process) section. | Customer |
+| **CMK ARN** | The ARN of your Customer Managed Key (CMK) in AWS KMS. This key is used by Kore.ai to encrypt and decrypt your data. <br><br> **Example:** <br>`arn:aws:kms:<region>:<your-account-id>:key/<key-id>` <br><br> Follow the steps in the [Integration Process](#integration-process) section to create and share this value. | Customer |
 
-!!! Note 
-    Contact [Kore.ai support](https://support.kore.ai/) if your SaaS instance differs from ‘platform.kore.ai’.
-
-* **External ID**: A unique identifier (like a password or shared secret) for your account that Kore.ai provides when assuming your IAM role. 
-    * Purpose: Prevents other Kore.ai customers from tricking Kore.ai into accessing your KMS key (solves the "[confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html)").
-    * Who provides it: Kore.ai support. [Raise a support ticket](https://support.kore.ai/) to get the External ID.
-* **Role ARN**: The Amazon Resource Name (ARN) of the IAM role YOU create in your AWS account for BYOK.
-    Example:` arn:aws:iam::<your-account-id>:role/BYOK_Role`
-    * Purpose: Identifies the role Kore.ai will assume to access your KMS key. You share this with Kore.ai so they can configure their service.
-    * Who provides it: You, follow the steps in the [Integration Process section](#integration-process).
-* **CMK ARN**: The Amazon Resource Name (ARN) of your Customer Managed Key in AWS KMS. 
-    Example: `arn:aws:kms:<region>:<your-account-id>:key/<key-id>`
-    * Purpose: Identifies the encryption key Kore.ai will use to encrypt/decrypt your data. You share this with Kore.ai to complete the integration.
-    * Who provides it: You, follow the steps in the [Integration Process section](#integration-process).
-
----
 ## Integration Process 
 
 The BYOK integration involves six main steps: 
@@ -51,42 +34,40 @@ The BYOK integration involves six main steps:
 5. [Verify Configuration](#step-5-verify-configuration): Confirm all components are correctly configured.
 6. [Share Information](#step-6-share-information-with-koreai): Provide your Role ARN and CMK ARN to Kore.ai support.
 
-## Step 1: Create IAM Policy
+### Step 1: Create IAM Policy
 
 This policy defines the KMS permissions for your BYOK role.   
 1. Go to **AWS Console → IAM → Policies**.   
 2. Click **Create policy**.   
 3. Select the **JSON** tab and paste this policy:   
-
     ```
-    { "Version": "2012-10-17",
+        { "Version": "2012-10-17",
             "Statement": [
-              {
-                "Sid": "BYOKKMSPermissions",
-                "Effect": "Allow",
-                "Action": [
-                    "kms:Encrypt",
-                    "kms:Decrypt",
-                    "kms:GenerateDataKey*",
-                    "kms:DescribeKey"
-                ],
+            {  
+            "Sid": "BYOKKMSPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:GenerateDataKey*",
+                "kms:DescribeKey"
+                    ],
                 "Resource": "arn:aws:kms:REGION:ACCOUNT_ID:key/KEY_ID"
-                }
-            ]
-    }
+                    }
+                ]
+        }
 
-    ```   
-    
-  !!! Note   
-     Replace REGION, ACCOUNT_ID, and KEY_ID with your values. You can use "Resource": "*" initially and update it after creating your KMS key.
-
-
+    ```    
 4. Click **Next**.   
 5. **Name** the policy (e.g., BYOK_KMS_Policy).   
 6. Add an appropriate description, for example: "Policy granting KMS permissions for BYOK integration with AI for Service Kore.ai Platform".   
-7. Click **Create policy**.
+7. Click **Create policy**.   
 
-## Step 2: Create IAM Role
+!!! Note   
+    
+    Replace REGION, ACCOUNT_ID, and KEY_ID with your values. You can use "Resource": "*" initially and update it after creating your KMS key.
+
+### Step 2: Create IAM Role
 
 This role establishes trust with Kore.ai and uses the policy from Step 1.
 
@@ -101,11 +82,11 @@ This role establishes trust with Kore.ai and uses the policy from Step 1.
 9.  Add an appropriate description, for example: "Role for BYOK integration with AI for Service Kore.ai Platform."
 10.	Click **Create role**.
 
-### Update Trust Policy
+#### Update Trust Policy
 
 Configure the role to trust Kore.ai's Service Role:
 
-1.	Go to the **BYOK_Role** you just created
+1.	Go to the **BYOK_Role** you just created.
 2.	Click the **Trust relationships** tab.
 3.	Click **Edit trust policy**.
 4.	Replace the policy with the following:   
@@ -132,7 +113,7 @@ Configure the role to trust Kore.ai's Service Role:
 
 5. Click Update policy.
 
-## Step 3: Create KMS Key
+### Step 3: Create KMS Key
 
 Create a Customer Managed Key for encryption.
 
@@ -143,7 +124,7 @@ Create a Customer Managed Key for encryption.
 5. Click **Next**.
 6. Enter key details:
     1. An **Alias** (e.g., `byok-kore-ai-key`).
-    2. An appropriate **Description**, for example: “Customer managed key for BYOK integration with AI for Service Kore.ai Platform” 
+    2. An appropriate **Description**, for example: “Customer managed key for BYOK integration with AI for Service Kore.ai Platform”.
 7. Click **Next**.
 8. Under **Key administrators**, add your administrator users or roles as those who should manage this key.
 9. Click **Next**.   
@@ -151,7 +132,7 @@ Create a Customer Managed Key for encryption.
 11. Click **Next**.   
 12. Review the key configuration and click **Finish**.
 
-## Step 4: Update KMS Key Policy
+### Step 4: Update KMS Key Policy
 
 Add the BYOK_Role to the key policy to grant explicit access.
 
@@ -179,9 +160,9 @@ Add the BYOK_Role to the key policy to grant explicit access.
     !!! Note   
         Replace ACCOUNT_ID with your AWS account ID.
 
-5. Save the policy.
+5. **Save** the policy.
 
-## Step 5: Verify Configuration
+### Step 5: Verify Configuration
 
 Confirm all components are correctly configured:
 
@@ -224,9 +205,9 @@ Confirm all components are correctly configured:
   </tr>
 </table>
 
-## Step 6: Share Information with Kore.ai
+### Step 6: Share Information with Kore.ai
 
-[Contact Kore.ai support](https://support.kore.ai/) and provide the following:
+[Contact Kore.ai support](https://support.kore.ai/){:target="_blank"} and provide the following:
 
 * CMK ARN: `arn:aws:kms:<region>:<your-account-id>:key/<key-id>`
 * Role ARN: `arn:aws:iam::<your-account-id>:role/BYOK_Role`
@@ -267,9 +248,31 @@ The system will test the connection to your KMS, authentication, and encryption 
     * Deselect any apps/bots you want to keep on the default Kore.ai encryption.   
     <img src="../images/byok_2.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>
 
-7. Complete Setup: Click Proceed to complete the process. Your CMK is added to the enterprise keys list, and encryption begins on the enforcement date.
+7. Complete Setup: Click **Proceed** to complete the process. Your CMK is added to the enterprise keys list, and encryption begins on the enforcement date.
 
-**Related Links**
+## Validation (Optional)
 
-* [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/){:target="_blank"}
+After the enforcement date, You can verify that encryption is working by using one of the following options:
+
+### Option 1: View Analytics
+
+Check analytics data for recent chat interactions to confirm that encrypted data is accessible.
+
+### Option 2: Test Application Authorization
+
+Open the application and run Authorization Profiles and Dialogs.
+
+1. Execute **BasicAuthValidationDialog**.  
+
+2. When the bot displays the authorization link, click the link and enter the credentials (**admin/password**).  
+<img src="../images/byok_3.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>  
+<img src="../images/byok_4.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>  
+
+3. If successful, the system redirects you and displays "Basic authentication successful." This confirms your encrypted credentials are correctly stored and retrieved using your CMK.
+
+<hr/>
+
+**Related resources**
+
+[AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/){:target="_blank"}
 

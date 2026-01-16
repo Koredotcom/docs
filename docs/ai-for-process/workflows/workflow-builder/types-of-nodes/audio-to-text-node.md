@@ -47,7 +47,7 @@ You can add audio input in one of the following ways:
 1. Manually select and upload an audio file in the allowed format.
 2. Configure the **Input variable** by selecting <b><i>Text</i></b> for **Type** in the following window when adding input variables for the node. [Learn more](../perform-other-actions-on-the-flow-builder/manage-input-and-output.md#adding-input-variables){:target="_blank"}. 
 
-   You must provide the audio file URL when running the flow, as mentioned [here](../../../workflows/workflow-builder/types-of-nodes/audio-to-text-node.md/#step-3-run-the-flow){:target="_blank"}.
+   You must provide the audio file URL when running the flow, as mentioned [here](../../../workflows/workflow-builder/types-of-nodes/audio-to-text-node.md#step-3-run-the-flow){:target="_blank"}.
 
    <img src="../images/select-text-input-type.png" alt="select text type input" title="select text type input" style="border: 1px solid gray; zoom:75%;">
 

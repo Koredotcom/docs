@@ -20,7 +20,7 @@ Use this metric type for evaluation scenarios that require:
 
 ## Prerequisites
 
-Ensure the following before creating a By AI Agent metric:
+Make sure the following before creating a By AI Agent metric:
 
 * You have access to Quality AI and Agent Platform.
 
@@ -28,13 +28,13 @@ Ensure the following before creating a By AI Agent metric:
 
 * You have access permissions to view and deploy agentic apps.
 
-* The By AI Agent Metric feature is enabled for your workspace account.
+* Enable the By AI Agent Metric feature for your workspace account.
 
 * You have configured at least one agentic app on the Agent Platform with the required response structure.
 
     * If your workspace has no configured agentic app, the Agent App dropdown shows no options during metric configuration.
 
-    * If the agentic app's response structure does not match the required contract, the Test Connection fails, and blocks you from proceeding with metric configuration.
+    * If the agentic app's response structure doesn't match the required contract, the Test Connection fails, and blocks you from proceeding with metric configuration.
 
 ## Configure By AI Agent Metric
 
@@ -42,7 +42,7 @@ Ensure the following before creating a By AI Agent metric:
 
 1. Navigate to **Quality AI > Configure > Evaluation Forms> Evaluation Metrics**.
 
-1. Click **+ New Evaluation Metric**.
+1. Select **+ New Evaluation Metric**.
 
 1. From the **Evaluation Metrics Measurement Type** dropdown, select **By AI Agent**.   
 <img src="../images/by-ai-agent-add-new-eva-metrics.png" alt="Measurement Type" title="Measurement Type" style="border: 1px solid gray; zoom:70%;">
@@ -74,17 +74,17 @@ Ensure the following before creating a By AI Agent metric:
 ### Step 5: Configure Sub-Metrics
 
 After a successful connection, the system displays all sub-metrics provided by the agentic app along with their reference names.     
-<img src="./images/ai-agent-sub-metrics.png" alt="AI Agent Sub-Metrics" title="AI Agent Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ai-agent-sub-metrics.png" alt="AI Agent Sub-Metrics" title="AI Agent Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
 
 You can configure each sub-metric individually by selecting **Edit** next to the **Weightage** column. This opens a full-screen configuration panel where you can define the following:
 
 | Field             | Description                                                                  |
 |-------------------|------------------------------------------------------------------------------|
-| **Display Name**      | Label for the sub-metric                                                     |
-| **Question**          | The evaluation question for this sub-metric                                  |
-| **Positive Weightage**| Assign the positive weight when the criterion is met                          |
-| **Negative Weightage**| Assign the negative weight when the criterion is not met                      |
-| **Fatal Error**       | Toggle this key if failing this sub-metric must mark the entire interaction as a critical failure |
+| **Display Name**      | Label for the sub-metric.                                                     |
+| **Question**          | The evaluation question for this sub-metric.                                  |
+| **Positive Weightage**| Assign a positive weight when meeting the criterion.                          |
+| **Negative Weightage**| Assign a negative weight if the criterion isn't met.                      |
+| **Fatal Error**       | Toggle this key if failing this sub-metric must mark the entire interaction as a critical failure. |
 
 <img src="../images/sub-metrics-weight.png" alt="Configure Sub-Metrics" title="Configure Sub-Metrics" style="border: 1px solid gray; zoom:70%;">
 
@@ -96,29 +96,29 @@ When you configure all the details, select **Create** to save the sub-metric for
 
 1. Locate the Description field.
 
-1. Enter the response format specification as shown in the template below.
+1. Enter responses following the format shown in the template.
 
 ## Use Case Example: UDAP Compliance
 
 For financial services compliance (UDAP), a single parent metric can evaluate multiple aspects:
 
-* **Fee Disclosure** (Weight - 25%): Verifies that all fees are clearly explained.
+* **Fee Disclosure** (Weight - 25%): Verifies that all applicable fees are clearly explained.
 
-* **Interest Rate Accuracy** (Weight - 30%): Ensures correct rate information.
+* **Interest Rate Accuracy** (Weight - 30%): Verifies that the interest rate information is accurate.
 
-* **Benefit Explanation** (Weight - 20%): Confirms benefits are thoroughly described.
+* **Benefit Explanation** (Weight - 20%): Describe the benefits clearly.
 
-* **Exclusion Details** (Weight - 15%): Validates that exclusions properly are mentioned.
+* **Exclusion Details** (Weight - 15%): Confirms that all exclusions are clearly listed.
 
 * **Terms Clarity** (Weight - 10%): Assesses overall clarity of terms.
 
-Each sub-metric is evaluated independently with a single API call, providing detailed  justifications for each aspect.
+Evaluate each sub-metric independently with a single API call and provide detailed justifications for each aspect.
 
 ## Evaluation Flow
 
 At runtime, the evaluation process includes the following actions:
 
-* Only one agentic call is made per parent metric.
+* Each parent metric uses a single agentic call.
 
 * The agent analyzes the conversation and returns structured results for all sub-metrics in a single response.
 
@@ -126,7 +126,7 @@ At runtime, the evaluation process includes the following actions:
 
 ## Response Format for Sub-Metrics
 
-The Agent Platform must return responses in the following JSON format to ensure Quality AI can process and display sub-metric results correctly.
+The Agent Platform must return responses in the following JSON format so that Quality AI can process and display sub-metric results correctly.
  
 ### Expected Response Format
 

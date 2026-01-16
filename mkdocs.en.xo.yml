@@ -72,12 +72,12 @@ plugins:
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
-        'contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
-        'contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
-        'contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
-        'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
-        'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
-        'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
+        'apis/contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
+        'apis/contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
+        'apis/contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
+        'apis/contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
+        'apis/contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
+        'apis/contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
         'apis/contact-center/get-all-conversations-data-call-details.md': 'apis/contact-center/get-all-conversations-data-call-details-v1.md'
         'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
         'quality-ai/coach/coaching-assignments-supervisor-creation.md': 'quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md'
@@ -874,7 +874,7 @@ nav:
         - Using Single-Sign On (SSO): administration/security-and-control/using-single-sign-on.md
         - Enterprise Encryption:
           - Enterprise Key: administration/security-and-control/enterprise-key.md
-          - BYOK Integration Guide for AWS KMS: administration/security-and-control/byok-aws-integration.md
+          - BYOK for AWS: administration/security-and-control/byok-aws-integration.md
         - API Scopes: administration/security-and-control/api-scopes.md
         - Two-Factor Authentication (2FA): administration/security-and-control/two-factor-authentication-for-platform-access.md
         - Security Settings: administration/security-and-control/security-settings.md

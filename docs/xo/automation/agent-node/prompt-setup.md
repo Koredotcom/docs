@@ -412,10 +412,9 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 9. Enter the Variable **Value** and click **Test**. This will convert the JavaScript to a JSON object and send it to the LLM.  
 <img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
 
-    You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
-
-   <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
-   <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
+10. You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
+<img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
 10. The LLM's response is displayed.  
 <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
@@ -480,11 +479,10 @@ To add an Agent Node V2 streaming prompt, follow the steps:
 8. (Optional) To add a Pre-Processor Script, click **Configure**. On the Pre-Processor Script pop-up, enter the Script and click **Save**.
 9. Enter the Sample Context Values and click **Test**. To know more about context values, see[ Dynamic Variables](#dynamic-variables).  
 <img src="../images/values.png" alt="Script Preview" title="Script Preview" style="border: 1px solid gray; zoom:70%;">
-
-    You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
-
-   <img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
-   <img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
+  
+10. You can open a Preview pop-up to enter the variable value, test the payload, and view the JSON response.  
+<img src="../images/valuepopup.png" alt="Preview pop-up" title="Preview pop-up" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/jsonpreview.png" alt="JSON Preview" title="JSON Preview" style="border: 1px solid gray; zoom:70%;">
 
 10. The Actual Response is displayed.
 
