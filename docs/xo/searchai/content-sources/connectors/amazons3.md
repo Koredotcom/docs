@@ -89,5 +89,4 @@ After successfully connecting the Search AI connector to the Amazon S3 account, 
 Upon sync, Search AI ingests all the files (in supported formats) from the buckets accessible to the user used to log into the connector. This content is then accessible to all the users of Search AI. 
 
 !!!note
-
-  Only buckets from the same region can be used for content ingestion.
+    Only buckets from the same region can be used for content ingestion.
