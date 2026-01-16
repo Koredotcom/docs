@@ -1,4 +1,4 @@
-# **WordPress Connector**
+# WordPress Connector
 
 To enhance the search capabilities for your content stored in WordPress pages and posts, configure the following connector in Search AI. This integration allows for a streamlined and efficient search experience. 
 
@@ -46,16 +46,16 @@ Search AI supports the ingestion of content from both public and private sites. 
 ## Generating OAuth Client Credentials in WordPress
 
 1. Go to the [WordPress developer page](https://developer.wordpress.com/apps).
-2. Click **Create New Application** to create new client application. Enter the following details. 
+2. Click **Create New Application** to create new client application. Enter the following details. ![OAuth Client](images/wordpress/OAuth-client.png "Client")
 
-![OAuth Client](images/wordpress/OAuth-client.png "Client")
-    1. **Name**: Enter a name for the client (e.g., *My App*).
-    2. **Redirect URLs**: Enter the callback URL where authorization responses will be sent. Use one of the following redirect URLs based on your region or deployment. 
-    * JP Region Callback URLs: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-    * DE Region Callback URLs: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-    * Prod Callback URLs: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+  * **Name**: Enter a name for the client (example, *My App*).
+  * **Redirect URLs**: Enter the callback URL where authorization responses will be sent. Use one of the following redirect URLs based on your region or deployment. 
+    * JP Region Callback URLs: `https://jp-bots-idp.kore.ai/workflows/callback`
+    * DE Region Callback URLs: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URLs: `https://idp.kore.com/workflows/callback`
+
 3. Click **Create** to generate the client credentials. 
-4. The following page will display the **Client credentials** along with other details of the app. Copy these and keep them secure. These credentials are required for configuration in the Search AI connector. 
+4. The following page displays the **Client credentials** along with other details of the app. Copy and keep them secure. These credentials are required for configuration in the Search AI connector. 
 
 ![Client Credentials](images/wordpress/client-credentials.png "Client credentials")
 
@@ -66,7 +66,7 @@ Search AI supports the ingestion of content from both public and private sites. 
 * Go to the **Connectors** page in the Search AI application. 
 * Select the **WordPress Connector** and provide the configuration details.
     * Name - Provide a unique name for the connector. 
-    * Authorization Type - If the WordPress site is publicly accessible, set this to **public**. If it is a private site, set this to **OAuth 2.0** and additionally provide the **client credentials** to set up communication with the site. 
+    * Authorization Type - If the WordPress site is publicly accessible, set this to **public**. If it's a private site, set this to **OAuth 2.0** and additionally provide the **client credentials** to set up communication with the site. 
     * Site URL - URL of the WordPress site from where the content is to be ingested. 
 * Click **Connect**. Upon successful authentication, the WordPress Connector is connected to the WordPress account and is ready to ingest pages and posts from the account into the Search AI application. 
 
