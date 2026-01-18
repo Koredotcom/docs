@@ -653,7 +653,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>Full
    </td>
@@ -1331,7 +1331,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>Full
    </td>
@@ -1977,7 +1977,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>None
    </td>
@@ -2635,7 +2635,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>Full
    </td>
@@ -3297,7 +3297,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>None
    </td>
@@ -4164,7 +4164,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    </td>
    <td>View<br>

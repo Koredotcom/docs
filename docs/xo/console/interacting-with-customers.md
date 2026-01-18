@@ -244,6 +244,27 @@ The “Consult a Call to a Queue” lets agents handling voice calls to initiate
 
 During the consult, the agent can use existing call control features such as Swap, Merge, and Transfer. When the consult call ends—either by the consulting agent or the internal agent—the system automatically routes the agent back to the original caller leg without requiring manual intervention.
 
+##### Queue Level Consult Without Selecting an Agent
+
+The platform allows agents to initiate a consult call by selecting a queue without specifying a particular agent. After the agent starts the consult, the system automatically connects the consult to an available agent in the selected queue.
+Use a queue-based consult when you are handling an active interaction and need assistance without knowing which agent to contact. You must have access to one or more consult-enabled queues. This option helps you reduce time spent searching for agents and allows the system to route the consult based on skills, availability, and capacity.
+
+Steps to Initiate a Queue-Based Consult call:
+
+1. During an active interaction, select **External Consult Call**.  
+    <img src="../images/external-consult-call.png" alt="External Consult Call" title="External Consult Call" style="border: 1px solid gray; zoom:70%;">
+2. Select a Queue.
+    <img src="../images/queue-select.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:70%;">
+3. (Optional) Select a specific agent.  
+4. Select Queue Consult to initiate the consult call.  
+
+The Consult option becomes available when you select a queue.
+
+What Happens After You Start the Consult
+
+* If you do not select an agent, the system routes the consult call to an available agent in the selected queue based on skills, availability, and capacity.  
+* If you select an agent, the system connects the consult call directly to the selected agent, following the existing consult behavior.
+
 #### Conference Call
 
 Up to 4 supervisors, and the primary agent, can join the same conference call from the contact center side.  
@@ -702,12 +723,47 @@ If [Inline Email ID Suggestions](../contactcenter/configurations/settings/email-
 
 **Standard Responses** (Widget): Agents can choose a standard response from the Responses widget as follows:
 
-1. Copy and Send options appear when you add a Standard Response.  
-    <img src="../images/copy-response.png" alt="Copy Standard Response" title="Copy Standard Response" style="border: 1px solid gray; zoom:60%;">
+1. Replace and Append options appear when you add a Standard Response. 
+    <img src="../images/replace-append.png" alt="Replace/Append" title="Replace/Append" style="border: 1px solid gray; zoom:60%;">
 
 2. Select **Send**, and then confirm the action in the pop-up window.
 
     Administrators can enable this feature in the [Email settings](../contactcenter/configurations/settings/email-settings.md).
+
+Replace behavior
+
+When an agent selects Replace, the system replaces the entire editor content with the selected standard response.
+
+For channels that support a subject (such as email):
+
+* Replace with subject updates both the body and subject.  
+* Replace (body only) updates only the body.
+
+Append behavior
+
+* When an agent selects Append, the system inserts a line break and adds the standard response as a new paragraph.  
+* The system displays Append and Replace only when the editor has content; otherwise, it displays Copy.  
+* The system renders and preserves all formatting, placeholders, and variables.
+
+For email with subject support:
+
+* Append with subject replaces the existing subject.  
+* Append (body only) appends only the body.
+
+Subject handling
+
+For standard responses with a subject, the system provides:
+
+* Replace (body only)  
+* Replace with subject  
+* Append (body only)  
+* Append with subject
+
+For channels without subject support, the system displays only Replace and Append. Replace with subject applies only to responses with subjects and only for the initial outbound email.
+
+Empty editor behavior
+
+When the editor is empty, the system lets only Copy. The system supports multiple append actions and returns keyboard focus to the editor after each action.
 
 **Attachments**: You can attach files and documents to the email to share relevant information or resources with customers. Attachments appear in a list format. If there are more than three attachments, a **View More** option appears. The system stores attachments received in emails in the Amazon S3 bucket. 
 
@@ -951,6 +1007,10 @@ If ACW is enabled, then the system manages the conversations based on the ACW co
 * For conversations transferred to another queue, the system applies the final queue’s disposition mode to determine the required dispositions.
 
 If ACW is disabled the conversation disappears from the agent console at the end of the conversation, freeing the slots for accepting other conversations. Agents don't receive any disposition sets or summary notes related to these conversations.
+
+!!! note 
+ 
+    When ACW is configured under [General Alerts](../contactcenter/performance-management/slas-and-alerts.md#general-alerts), the system triggers an ACW General Alert when the configured condition is met for the specified queue or channel. The alert includes all mandatory details, such as agent name, queue, channel, configured threshold, and actual ACW duration. Users can save, update, or delete ACW configurations from SLA General Alerts without impacting other alert settings. The system delivers alerts to all configured recipients through the selected delivery modes, including email and in-app notifications.
 
 ### Dispositions
 
