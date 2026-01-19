@@ -134,11 +134,14 @@ Users can filter the list using:
 
 **Language**
 
- Only languages enabled in the app are available for editing. Developers can update prompts for any enabled language from here.  
- 
+ Only languages enabled in the app are available for editing. You can update prompts for any enabled language from here.  
+
+**Dialog Name**
+
+By default, the filter is set to **All Dialogs**. You can select a specific dialog from the dropdown.
+
  <img src="../images/filter.png" alt="Filter" title="Filter" style="border: 1px solid gray;zoom:50%;"/>
-
-
+ 
 ## Switching Languages 
 
 If you have configured multiple languages for an AI Agent, you can switch the language to configure the AI Agent from the top right corner (language dropdown) from within any area of your AI Agent. The dropdown displays all the other supported languages with the corresponding NLU model that's configured for the language. 

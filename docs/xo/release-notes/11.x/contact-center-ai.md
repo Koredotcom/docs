@@ -34,7 +34,7 @@ Agents can now belong to multiple agent groups, and each group can be associated
 
 **Named-Agent Transfer Wait Before Queue Fallback**
 
-The system can hold a named-agent transfer for a configurable duration instead of immediately routing it to the queue. If any named agent becomes available and accepts within the wait period, the conversation is assigned to that agent; otherwise, it falls back to existing queue routing. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-named-agents)
+The system can hold a named-agent transfer for a configurable duration before routing it to the queue. If any named agent becomes available and accepts within the wait period, the conversation is assigned to that agent; otherwise, it falls back to existing queue routing. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-named-agents)
 
 **Parent–Child Permission Dependency Management**
 
@@ -80,11 +80,11 @@ The Interactions → Transcriptions page now displays latency metrics for Voice 
 
 **Schedule Campaign API for Voice and SMS**
 
-A new ScheduleCampaign API enables scheduling for Voice and SMS campaigns. The API permits enabling or disabling scheduling for a campaign and overrides any existing schedule when enabled. It supports UTC-based start and end times with Daily or Weekly recurrence options, while returning a standard status and message response.
+A new ScheduleCampaign API enables scheduling for Voice and SMS campaigns. The API permits enabling or disabling scheduling for a campaign and overrides any existing schedule when enabled. It supports UTC-based start and end times with Daily or Weekly recurrence options, while returning a standard status and message response. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/enable-voice-or-sms-campaign-schedule-daily.md)
 
 **Contact Management APIs: Create, Update, and Delete**
 
-The platform now supports a complete set of Contact Management APIs, including Create (existing), Update, and Delete operations. These APIs enable external systems to keep contact data synchronized, support partial updates, and permit safe deletion without impacting historical interactions. All operations enforce validation, permissions, and auditing, and remain backward compatible.
+The platform now supports a complete set of Contact Management APIs, including Create (existing), Update, and Delete operations. These APIs enable external systems to keep contact data synchronized, support partial updates, and permit safe deletion without impacting historical interactions. All operations enforce validation, permissions, and auditing, and remain backward compatible. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-contacts.md)
 
 <hr>
 
@@ -534,7 +534,7 @@ Supervisors can now edit disposition codes for completed conversations directly 
 * Editing is restricted to post-conversation only; agents retain control during live sessions.
 * Supervisor updates override previously submitted dispositions.
 * Alerts linked to updated disposition codes trigger as configured.
-* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-interactions-tab)
+* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-conversations-tab)
 
 Access is controlled via a new role-based permission: “Edit Disposition from Dashboard.”  [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
@@ -2268,7 +2268,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 Dashboard > Interactions
 
 Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-conversations)
 
 ## v11.1.1 May 11, 2024
 

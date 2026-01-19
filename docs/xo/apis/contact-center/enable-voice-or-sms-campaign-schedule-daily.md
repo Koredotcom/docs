@@ -1,6 +1,6 @@
 --8<-- "includes/ccai-api-back-link.md"
 
-# Enable Daily Voice or SMS Campaign Schedule API (v2)
+# Enable Daily Scheduling of Voice or SMS Campaigns
 
 Use this API to schedule a recurring daily Voice or SMS campaign.
 
@@ -31,7 +31,7 @@ Use this API to schedule a recurring daily Voice or SMS campaign.
 curl --location 'https://{{host}}/campaign/api/v2/public/{{streamId}}/campaign/schedule?enableSchedule=true&campaignName={{campaignName}}' \
 --header 'auth: {{jwt_token}}' \
 --header 'Content-Type: application/json' \
---header 'accountid: {{accountid}}' \
+--header 'accountid: {{accountId}}' \
 --header 'iid: {{iid}}' \
 --data '{
     "startDateTime": "2026-01-27 18:29:00",

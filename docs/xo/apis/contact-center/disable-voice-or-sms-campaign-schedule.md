@@ -1,6 +1,6 @@
 --8<-- "includes/ccai-api-back-link.md"
 
-# Disable a Scheduled Voice or SMS Campaign API (v2)
+# Disable a Scheduled Voice or SMS Campaign API
 
 Use this API to disable a previously scheduled Voice or SMS campaign.
 
