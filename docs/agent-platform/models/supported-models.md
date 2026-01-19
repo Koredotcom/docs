@@ -138,8 +138,9 @@ Agentic Apps also support integrating with custom third party models via API Int
 
 To use a custom model in Agentic Apps
 
-* The model must support **Tool Calling** functionality.
-* The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+* **Tool Calling Support**: The model must inherently support Tool Calling functionality. For models that support Tool Calling, the feature must be explicitly enabled during model configuration. ![Enable Tool Calling](images/custom-model/enable-tool.png "Enable Tool Calling")
+[Learn how to enable model features](external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).  
+* **Compatible API Structure**: The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
 
 
 For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).

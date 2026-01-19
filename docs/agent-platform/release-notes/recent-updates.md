@@ -126,7 +126,9 @@ These messages can be configured in two ways:
 
 Customize timing, message frequency, and content to maintain a smooth conversational flow.
 
-**Note**: This feature is currently in preview and can be enabled upon request.
+**Note**: 
+* This feature is currently in preview and can be enabled upon request.
+* This feature only works in ASR/TTS streaming mode.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#waiting-experience)
 
