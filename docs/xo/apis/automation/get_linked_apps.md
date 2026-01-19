@@ -2,21 +2,21 @@
 
 # Get Linked Apps API
 
-Use this API to retrieve all apps linked to a universal bot (app) for chat flows.
+Use this API to retrieve all apps linked to a parent app.
 
 | METHOD | GET |
 | :---- | :---- |
 | **Endpoint** | `https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/link?language=en` |
 | **Content Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
-| **API Scope** | Getlinkedbotdetails |
+| **API Scope** | Get linked App details |
 
 ## Path Parameters
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
 | :---- | :---- | :---- |
 | `host` | Environment URL, for example, `https://platform.kore.ai` | string, required |
-| `streamId` | BotId or StreamId. You can access it from the App Settings page of the bot. | string, required |
+| `streamId` | AppId or StreamId. You can access it from the App Settings page. | string, required |
 
 ## Sample Request
 
@@ -42,19 +42,19 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 
 | **Header** | **Description** | **Type/Required** |
 | :---- | :---- | :---- |
-| `sec-ch-ua-platform` | Indicates the client’s operating system platform | string, optional|
+| `sec-ch-ua-platform` | Indicates the client’s operating system platform. | string, optional|
 | `sec-ch-ua` | Helps the server understand the client environment. | string, optional |
 | `X-TimeZone` | Client’s time zone identifier | string, optional |
-| `sec-ch-ua-mobile` | Specifies whether the request originates from a mobile device or non-mobile device | boolean, optional|
-| `bot-language` | Preferred language of the bot or client application | string, required |
-| `Accept` | Defines the response content types the client can process | string, required |
-| `state` | Represents the current application or workflow state | string, required |
-| `Content-Type` | Specifies the media type of the request body | string, required |
+| `sec-ch-ua-mobile` | Specifies whether the request originates from a mobile device or a non-mobile device. | boolean, optional|
+| `bot-language` | Preferred language of the bot or client application. | string, required |
+| `Accept` | Defines the response content types that the client can process. | string, required |
+| `state` | Represents the current application or workflow state. | string, required |
+| `Content-Type` | Specifies the type of the request body. | string, required |
 | `Referer` | Identifies the web page from which the request originated. | string (URL), optional |
 | `app-language` | Application UI or processing language preference. | string, required |
-| `client-app` | Identifies the source application making the request | string, required |
+| `client-app` | Identifies the source application making the request. | string, required |
 | `User-Agent` | Full user agent string identifying the browser, engine, and operating system.  | string, optional |
-| `X-Timezone-Offset` | Client’s offset from UTC in minutes  | integer, optional |
+| `X-Timezone-Offset` | Client’s offset from UTC in minutes.  | integer, optional |
 | `auth` | Authentication credential or token used to authorize the request. | string, required |
 
 ## Sample Response
@@ -183,8 +183,8 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |
 | `type` | Indicates the overall application category. | string |
-| `appType` | Specifies the application type. For example, `unified` | string |
-|  `isUXOUB` | Indicates whether UXO Universal Bot is enabled at the root level. | boolean |
+| `appType` | Specifies the application type. For example, `unified`. | string |
+|  `isUXOUB` | Indicates whether the UXO Universal Bot is enabled at the root level. | boolean |
 |  `isDialogGPTEnabled` | Indicates whether DialogGPT functionality is enabled. | boolean |
 |  `configuredLinkedApps` | List of applications currently in a configured (draft) state. | array of objects |
 |  `configuredLinkedApps._id` | Unique identifier of the linked application. | string |
@@ -197,7 +197,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 |  `configuredLinkedApps.configuredVersion` | Latest configured (draft) version identifier or timestamp. | number |
 |  `configuredLinkedApps.publishedVersion` | Latest published version identifier or timestamp. | string |
 |  `publishedLinkedApps` | List of applications currently in a published state. | array of objects |
-|  `configuredLinkedApps._id` | Unique identifier of the linked application in configured state | string |
+|  `configuredLinkedApps._id` | Unique identifier of the linked application in the configured state | string |
 |  `configuredLinkedApps.name` | Display name of the application. | string |
 |  `configuredLinkedApps.defaultLanguage` | Default language code of the application (for example, `en`). | string |
 |  `configuredLinkedApps.appType` | Type of the linked application. | string |
@@ -207,8 +207,8 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 |  `configuredLinkedApps.configuredVersion` | Latest configured (draft) version identifier or timestamp. | number |
 |  `configuredLinkedApps.publishedVersion` | Latest published version identifier or timestamp. | string |
 |  `uxoUBConfigured` | UXO Universal Bot configuration for the configured state. | object |
-|  `uxoUBConfigured.linkedApps` |  List of linked application IDs associated with UXO Universal Bot.  | array[string] |
-|  `uxoUBConfigured.isUXOUB` | Indicates whether UXO Universal Bot is enabled for this state. | boolean |
+|  `uxoUBConfigured.linkedApps` |  List of linked application IDs associated with the UXO Universal Bot.  | array[string] |
+|  `uxoUBConfigured.isUXOUB` | Indicates whether the UXO Universal Bot is enabled for this state. | boolean |
 |  `uxoUBPublished` | UXO Universal Bot configuration for the published state. | object |
-|  `uxoUBPublished.linkedApps` | List of linked application IDs associated with UXO Universal Bot. | array[string] |
-|  `uxoUBPublished.isUXOUB` | Indicates whether UXO Universal Bot is enabled for this state. | boolean |
+|  `uxoUBPublished.linkedApps` | List of linked application IDs associated with the UXO Universal Bot. | array[string] |
+|  `uxoUBPublished.isUXOUB` | Indicates whether the UXO Universal Bot is enabled for this state. | boolean |

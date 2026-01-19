@@ -66,15 +66,15 @@ An app-level control automatically enrolls phone numbers into the Global DNC lis
 
 **CSAT Feedback Visibility in Interactions Details**
 
-Displays customer CSAT feedback directly within the Interactions details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+Displays customer CSAT feedback directly within the Interactions details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Error Event Visibility for Real-time Voice APIs in Agentic Apps**
 
-Error events from real-time voice APIs are now captured and displayed in Interaction Details when a response generation failure occurs. The transcript timeline shows a clear LLM error indicator with a timestamp, along with the full provider error message for improved troubleshooting and audit visibility. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+Error events from real-time voice APIs are now captured and displayed in Interaction Details when a response generation failure occurs. The transcript timeline shows a clear LLM error indicator with a timestamp, along with the full provider error message for improved troubleshooting and audit visibility. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Voice Interaction Latency Metrics**
 
-The Interactions → Transcriptions page now displays latency metrics for Voice interactions to help evaluate responsiveness. Customer messages show ASR latency, while bot messages show Bot, TTS, and End-to-End latency (only when a bot message follows a customer message). Unavailable values display as NA, and the entire latency block appears only for the Voice channel. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+The Interactions → Transcriptions page now displays latency metrics for Voice interactions to help evaluate responsiveness. Customer messages show ASR latency, while bot messages show Bot, TTS, and End-to-End latency (only when a bot message follows a customer message). Unavailable values display as NA, and the entire latency block appears only for the Voice channel. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 <font size="4">API</font>
 
@@ -184,11 +184,11 @@ Campaigns now support dynamic filters, enabling campaign managers to define prec
 
 **Interactions Dashboard - Email Channel Details**
 
-The dashboard now includes key email fields—Subject, From, To, CC, and BCC—within the transcript for clearer visibility of email interactions. The EmailSubject field is available as an optional column, and all email fields are searchable, helping users  locate relevant conversations. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+The dashboard now includes key email fields—Subject, From, To, CC, and BCC—within the transcript for clearer visibility of email interactions. The EmailSubject field is available as an optional column, and all email fields are searchable, helping users  locate relevant conversations. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Interactions Dashboard - SmartStatus Filter**
 
-The dashboard now supports filtering by SmartStatus, a new, fine-grained, business-relevant version of the conversation status. The Details tab displays both the original Status and the new SmartStatus for the conversations. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#smartstatus)
+The dashboard now supports filtering by SmartStatus, a new, fine-grained, business-relevant version of the conversation status. The Details tab displays both the original Status and the new SmartStatus for the conversations. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#smartstatus)
 
 <hr>
 
@@ -429,7 +429,7 @@ The Web SDK now supports a Click-to-Call option, enabling website visitors to st
 
 **Transcripts Log Updates for Maximum Retry Handling**
 
-The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs) 
+The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs) 
 
 <font size="4">API</font>
 
@@ -534,7 +534,7 @@ Supervisors can now edit disposition codes for completed conversations directly 
 * Editing is restricted to post-conversation only; agents retain control during live sessions.
 * Supervisor updates override previously submitted dispositions.
 * Alerts linked to updated disposition codes trigger as configured.
-* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-conversations-tab)
+* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#edit-dispositions-from-the-conversations-tab)
 
 Access is controlled via a new role-based permission: “Edit Disposition from Dashboard.”  [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
@@ -758,15 +758,15 @@ The alert system now supports general system events, including exporting the Int
 
 **Display Industry Standard MOS and Jitter Values in Diagnostics Page**
 
-The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
+The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#agents)
 
 **Default FLAC Format for Downloaded Call Recordings Across All OS Platforms**
 
-Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Interactions Dashboard: Customer Column Data Replaced with User ID**
 
-A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md)
+A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md)
 
 **Skills Filter Added to Wallboards**
 
@@ -1126,7 +1126,7 @@ Custom IDs can effectively retrieve agent IDs if mapped one-to-one. However, in 
 
 **Interaction Details Enhancement**
 
-The 'Copy All' functionality in the Interaction Details tab now includes additional information fields: Timezone and Caller and Callee Numbers. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+The 'Copy All' functionality in the Interaction Details tab now includes additional information fields: Timezone and Caller and Callee Numbers. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 <hr>
 
@@ -1327,7 +1327,7 @@ The Call Details API (v2) has been updated to include the `disconnectingEvent` p
 
 **Fetch Again Option for Failed Recordings**
 
-This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Enhanced SIP Trunk Options**
 
@@ -1448,7 +1448,7 @@ On the **Dashboard** > **Interactions** tab, supervisors now have two options to
 * Download as a single file,
 * Download as separate files.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Enhanced Diagnostics for Voice Interactions**
 
@@ -1461,7 +1461,7 @@ The diagnostics reports can be exported in the following formats:
 * Export PCAP
 * Export TEXT
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#diagnostics)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#diagnostics)
 
 **Call Recording Status Messaging Enhancements**
 
@@ -1469,7 +1469,7 @@ On the Dashboard > Interactions tab, a message, **“No audio is available for t
 
 * Transcript Tab: When call recording is disabled in Agent Settings, no audio is available.
 * Transcript Tab: When call recording is disabled, and media generation is in progress.
-* Interactions Page: When call recording is disabled and users attempt to download the recording from the Actions menu, the “Media generation is in progress” message will also appear. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+* Interactions Page: When call recording is disabled and users attempt to download the recording from the Actions menu, the “Media generation is in progress” message will also appear. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Copy All Identifiers**
 
@@ -1480,7 +1480,7 @@ The copied details include:
 * Call Start and Call End timestamps.
 * All other identifier information.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Agent Activity Summary Report CSV Format: Added Count for Each Status**
 
@@ -1529,7 +1529,7 @@ The Transcripts now show key conversation stages, including:
 * User transferred to Agent (When the Automation transfers the voice call to Agent)
 * User transferred to Automation (When the Agent transfers the voice call back to Automation)
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Mean Opinion Score (MOS) Display in Call Controls**
 
@@ -1846,7 +1846,7 @@ The update has enhanced the system’s tracking and reporting capabilities for u
 Key updates:
 
 * Interactions Dashboard:
-    * The new "Joined Users" field is in the **Insights to Logs** > **Details** tab. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+    * The new "Joined Users" field is in the **Insights to Logs** > **Details** tab. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
     * Displays a comma-separated list of users who joined the conversation.
 * Interactions Details Report:
     * The "Joined Users" column has been added to the CSV version.
@@ -2268,7 +2268,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 Dashboard > Interactions
 
 Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-conversations)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#search-conversations)
 
 ## v11.1.1 May 11, 2024
 

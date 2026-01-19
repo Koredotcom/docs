@@ -484,7 +484,7 @@ This update includes enhancement and bug fixes. The key enhancement included in 
 
 **Enhanced Diagnostics for Comprehensive Participant Tracking and Quality Metrics**
 
-The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
+The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#agents)
 
 <hr>
 
@@ -580,7 +580,7 @@ When a customer is on hold (self-initiated or agent-initiated):
 * Temporarily stops recording agent-side audio.
 * Automatically resumes recording when the hold state ends.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Answering Machine Detection (AMD) for Inbound Calls**
 
@@ -595,7 +595,7 @@ The Transcribe utility function now supports the following when integrated with 
 * Start/Stop recording control
 * Pause/Resume functionality
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **SIP Trunk Availability Monitoring**
 

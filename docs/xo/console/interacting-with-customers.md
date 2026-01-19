@@ -1300,7 +1300,7 @@ When callers complete CSAT surveys, the system automatically captures and stores
 
 How to view CSAT scores
 
-1. Navigate to the [Interactions Dashboard](../analytics/contact-center/interactions.md).
+1. Navigate to the [Interactions Dashboard](../analytics/overview/conversations.md).
 
 2. Open the interaction for which you want to view CSAT details.
 

@@ -81,4 +81,4 @@ To generate a Latency Report:
 
 #### Related Link
 
-* [Download Latency Report](../interactions.md#exportdownload-recording-transcripts-latency-report-and-events)
+* [Download Latency Report](../../overview/conversations.md#exportdownload-recording-transcripts-latency-report-and-events)
