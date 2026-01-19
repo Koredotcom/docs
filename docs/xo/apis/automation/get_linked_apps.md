@@ -9,7 +9,7 @@ Use this API to retrieve all apps linked to a universal bot (app) for chat flows
 | **Endpoint** | `https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/link?language=en` |
 | **Content Type** | `application/json` |
 | **Authorization** | `auth: {{JWT}}`<br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
-| **API Scope** | Getlinkedbotdetails |
+| **API Scope** | Get linked App details |
 
 ## Path Parameters
 
