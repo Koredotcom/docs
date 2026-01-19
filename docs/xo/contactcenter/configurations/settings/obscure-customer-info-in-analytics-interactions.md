@@ -22,4 +22,4 @@ Steps to enable Obscure Customer Info in Analytics - Interactions:
 
 ## Related Link
 
-* [Interactions Dashboard](../../../analytics/contact-center/interactions.md).
+* [Interactions Dashboard](../../../analytics/overview/conversations.md).

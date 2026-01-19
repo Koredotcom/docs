@@ -314,7 +314,7 @@ By default, the Allow Agent to Pause or Resume feature is disabled. However, adm
 By default, the Allow Assistant to Pause/Resume feature isn't available. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
+Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/overview/conversations.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
 
 The system logs the changes to the Call Recording Control settings on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 

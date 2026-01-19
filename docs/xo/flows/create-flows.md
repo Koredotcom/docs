@@ -213,10 +213,10 @@ Selecting the Disconnect the call after detecting a machine checkbox automatical
 
     * This is applicable only to voice flows.
     * For calls disconnected due to AMD detection, the status is shown in the ‘Interactions’ page
-        * [Interactions](../analytics/contact-center/interactions.md) Dashboard
+        * [Interactions](../analytics/overview/conversations.md) Dashboard
             * Status: Completed
             * Mode:  Machine Detected
-        * ['Insights to Log'](../analytics/contact-center/interactions.md#insights-to-logs) tab
+        * ['Insights to Log'](../analytics/overview/conversations.md#insights-to-logs) tab
             * Status: Completed (Closed)
             * Mode: Machine Detected
             * Reason: Machine Detected
