@@ -377,6 +377,12 @@ For email conversations, the Transcript tab displays the following:
 * The pop-up displays the From, To, CC, and BCC fields.  
     <img src="../images/email-transcript.png" alt="Email Transcript" title="Email Transcript" style="border: 1px solid gray; zoom:70%;">
 
+LLM Error Detected: An error message appears when real-time voice APIs in Agentic apps disconnect after receiving an error. The error message or event shared by the real-time API is also displayed.  
+<img src="../images/llm-error.png" alt="LLM Error" title="LLM Error" style="border: 1px solid gray; zoom:70%;">
+
+**Latency Metrics for Voice Conversations**: Displays the ASR, Bot, TTS, and End-to-End latency values.
+<img src="../images/latency-metrics.png" alt="Latency Metrics" title="Latency Metrics" style="border: 1px solid gray; zoom:70%;">
+
 **Details**: This tab shows the following details:
 
 `Start`: Conversation start time  
@@ -387,13 +393,14 @@ For email conversations, the Transcript tab displays the following:
 `Queues`: The queues that handled the call  
 `Status`: Conversation status(smartStatus)  
 `Mode`: Mode of the conversation  
-`CSAT`: CSAT survey score  
+`CSAT`: CSAT survey score and feedback 
 `Disposition`: Dispositions assigned  
 `Notes`: Notes added to the conversation (view only)  
 `Snooze Count`: Number of times the conversation was snoozed  
 `Snooze Duration`: Duration for which the conversation was snoozed  
+`Campaign Name`: Campaign Name: Campaign Name (Applicable for campaigns)
 `Session-level tags`: Session-level tags assigned to the conversation.  
-<img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/csat-feedback.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
 **User**: This tab shows the following details:
 

@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">ASR and TTS</font>
+
+**TTS Streaming at Start Flow Level**
+
+TTS Streaming can be configured at the start flow level to reduce voice response latency. The platform maintains a persistent streaming connection throughout the call and adapts playback based on the model's response streaming behavior. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#tts-streaming)
+
+**Continuous Gather at Start Flow Level**
+
+Provided a Continuous Gather option at the start flow when TTS streaming is enabled. Caller input is captured continuously to reduce latency and support agentic voice interactions, without altering default behavior unless configured. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#continuous-gather)
+
+**Model Selection for ASR and TTS Providers**
+
+The platform now allows model selection for ASR and TTS providers directly from the app-level and Start Flow-level UIs. The selected model is consistently applied across design-time and runtime voice scenarios, including interactions, transcriptions, and monitoring, without requiring call-control parameters.
+
+**TTS Providers: Required Language Support**
+
+The platform ensures that all natively supported TTS providers offer support for required languages wherever the vendor supports them. This applies to AWS Amazon Polly, Google, Microsoft Azure, ElevenLabs, OpenAI TTS, Deepgram, and similar integrations. The required languages include English, Japanese, Spanish, German, Arabic, French, Hindi, and Filipino.
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>

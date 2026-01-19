@@ -2,6 +2,92 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Agent Status Time Insights in the Console**
+
+The Agent Console now provides Status Insights under Agent Status to display aggregated time spent across system and custom statuses, including conversational status. Agents can view day-level insights in a pop-up and access detailed breakdowns in My Dashboard. This improves visibility into work patterns without impacting the current agent status. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#agent-status)
+
+**Standard Response Widget: Replace and Append Support**
+
+The Standard Response Widget supports Replace and Append actions to align with shortcut-based insertion. Agents can overwrite existing content or append multiple standard responses while preserving formatting and variables. For email, agents can optionally include or ignore the subject when replacing or appending, with subject options shown only when supported. When the editor is empty, only the Copy option appears, and focus returns to the editor after each action. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Queue-Level Consult Without Mandatory Agent Selection**
+
+Agents can now initiate a consult by selecting only a queue, without choosing a specific agent. The system routes the consult to an available agent using existing routing logic, improving speed and usability. Direct agent selection remains supported with no impact to current routing, reporting, or monitoring behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#queue-level-consult-without-selecting-an-agent)
+
+**Courtesy Callback Redial Updates**
+
+Courtesy callback redial now displays clear guidance for agents and supervisors. When the maximum number of redial attempts is reached, a Close Conversation option appears, directing the agent to the disposition screen. Supervisors attempting to assign such calls see a message: _“Maximum redial attempts reached for this number.”_ After the first or second failed attempt, the text updates to indicate the attempt failure while still allowing the agent to redial or return the call to the queue.
+
+<font size="4">Configuration</font>
+
+**Agent Status Grouping by Queues and Operations**
+
+Agents can now belong to multiple agent groups, and each group can be associated with a relevant set of custom agent statuses. Status visibility dynamically adjusts based on group membership, reducing clutter and improving operational clarity. All updates are applied in real-time across agent profiles and consoles, without impacting existing workflows. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#create-an-agent-group)
+
+**Named-Agent Transfer Wait Before Queue Fallback**
+
+The system can hold a named-agent transfer for a configurable duration instead of immediately routing it to the queue. If any named agent becomes available and accepts within the wait period, the conversation is assigned to that agent; otherwise, it falls back to existing queue routing. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-named-agents)
+
+**Parent–Child Permission Dependency Management**
+
+This update introduces logical parent–child permission dependencies across the Agent Console and Monitor Tab, automatically disabling child permissions when the parent is set to No/View and restoring them when the parent is re-enabled. It also introduces a new Force Logout permission and refines transfer controls by splitting the existing permission into granular options for assigning conversations, changing queues, and force-closing conversations. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+**Alerts for Extended After Call Work**
+
+This feature enables SLA-based alerts for After Call Work (ACW) by allowing admins to configure threshold conditions at the queue and channel level. When an agent’s ACW duration meets the configured condition, the system triggers a General Alert and notifies configured recipients via in-app notifications and/or email, including relevant details. The alert setup is fully configurable and doesn't affect existing ACW behavior when disabled. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md#create-a-general-alert)
+
+<font size="4">Campaigns</font>
+
+**Power Dialer for Voice Campaigns**
+
+The new Power Dialer mode dynamically selects and dials contacts based on agent availability and pacing ratios to reduce call abandonment. The feature intelligently prioritizes contacts and reserves agents during dialing to ensure an immediate connection. New global settings permit configurable control over agent linking and idle time, improving campaign efficiency. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#power-dialer)
+
+**Per-campaign Dispositions vs Attempts Dashboard Table**
+
+Provides a campaign-level view that correlates outbound attempts with their final dispositions. This enables campaign managers to assess how attempts progress and where outcomes converge as campaigns near completion. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/dashboard/campaign-dashboard.md#disposition)
+
+**Disposition-based Retry Configuration for Campaigns**
+
+Added a disposition-level retry configuration for Preview, Progressive, and Power Dialer campaigns, allowing campaign managers to define retry eligibility, retry count, and retry intervals per disposition. Campaign dashboards also display current disposition counts to provide visibility into retry outcomes during or after execution. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#dispositions)
+
+**Automatic Enrollment of Unreachable Contacts into Global DNC**
+
+An app-level control automatically enrolls phone numbers into the Global DNC list when repeated call attempts fail. The capability supports configurable attempt thresholds and retention periods, ensuring cleaner contact lists and reduced unnecessary dialing while preserving existing behavior by default. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/settings/global-settings.md#unanswered-call-attempts)
+
+<font size="4">Analytics</font>
+
+**CSAT Feedback Visibility in Interactions Details**
+
+Displays customer CSAT feedback directly within the Interactions details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+**Error Event Visibility for Real-time Voice APIs in Agentic Apps**
+
+Error events from real-time voice APIs are now captured and displayed in Interaction Details when a response generation failure occurs. The transcript timeline shows a clear LLM error indicator with a timestamp, along with the full provider error message for improved troubleshooting and audit visibility. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+**Voice Interaction Latency Metrics**
+
+The Interactions → Transcriptions page now displays latency metrics for Voice interactions to help evaluate responsiveness. Customer messages show ASR latency, while bot messages show Bot, TTS, and End-to-End latency (only when a bot message follows a customer message). Unavailable values display as NA, and the entire latency block appears only for the Voice channel. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+
+<font size="4">API</font>
+
+**Schedule Campaign API for Voice and SMS**
+
+A new ScheduleCampaign API enables scheduling for Voice and SMS campaigns. The API permits enabling or disabling scheduling for a campaign and overrides any existing schedule when enabled. It supports UTC-based start and end times with Daily or Weekly recurrence options, while returning a standard status and message response.
+
+**Contact Management APIs: Create, Update, and Delete**
+
+The platform now supports a complete set of Contact Management APIs, including Create (existing), Update, and Delete operations. These APIs enable external systems to keep contact data synchronized, support partial updates, and permit safe deletion without impacting historical interactions. All operations enforce validation, permissions, and auditing, and remain backward compatible.
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>

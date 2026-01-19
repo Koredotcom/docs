@@ -30,7 +30,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 --header 'Accept: application/json, text/plain, /' \
 --header 'state: configured' \
 --header 'Content-Type: application/json;charset=UTF-8' \
---header 'Referer: https://staging-xo.korebots.com/builder/app/welcomeflows' \
+--header 'Referer: https://{{host}}/builder/app/welcomeflows' \
 --header 'app-language: en' \
 --header 'client-app: unified' \
 --header 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
@@ -178,7 +178,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 }
 ```
 
-## Response parameters
+## Response Parameters
 
 | **Parameter** | **Description** | **Type** |
 | :---- | :---- | :---- |

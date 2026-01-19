@@ -140,6 +140,20 @@ A campaign automatically ends once all numbers are connected. If a call isn't co
 
     For all voice campaigns (agentless, progressive, and preview), experience flows and caller IDs (phone numbers) are decoupled. The phone number used as the caller ID for a campaign does not need to be linked to the attached experience flow. It can be an independent number or a number associated with a different experience flow. To use [phone numbers](../../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number) or [SIP numbers](../../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup) in a campaign, the Outbound option must be enabled for those numbers. All outbound-enabled numbers appear in the campaign configuration drop-down list.
 
+### Power Dialer
+
+Power Dialing uses a pacing ratio to place multiple outbound calls for each available agent and reduce call abandonment. When a campaign starts in Power Dialer mode or when the campaign configuration changes, the system re-fetches the contact lists, re-runs the filters, scrubs contacts against the Global DNC list, and scrubs them against any campaign-specific DNC lists. In this mode, the system determines how many phone numbers to dial based on the configured pacing ratio and the number of available outbound agents in the campaign queue who aren't assigned to calls. The system selects contacts based on priority, number of previous attempts, and Call-me-later or Agent Call-me-later flags within ±10 minutes of the requested time, with optional consideration for historical answer rates and conversion history. During campaign creation or editing, selecting Power as the dialing mode displays options to select a queue and configure the pacing ratio, which defaults to 2 and supports values up to 10. The Power Dialer connects the agent as the system dials the customer and doesn't consider voicemail detection or busy lines.
+
+#### Power Dialer Call Handling
+
+1. When an agent becomes available in a phone campaign that uses the Power Dialer, the system dials multiple contacts based on the configured pacing ratio.  
+2. The system reserves the agent during dialing and prevents outbound calls, inbound calls, application exit, and status changes.  
+3. The system displays a message when establishing  a connection.  
+    <img src="../images/connecting.png" alt="Connecting" title="Connecting" style="border: 1px solid gray; zoom:70%;">
+4. While this screen appears, the system sets the agent status to System Busy. If System Busy isn't configured, the system sets the status to Busy.  
+5. If the system determines that no campaign calls are available for the agent, the console displays. If a customer answers and the system connects a call, the call is automatically accepted and shown in the conversation tray.  
+    <img src="../images/connection-established.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:70%;">
+
 ### Filters
 
 Campaign Managers can create, duplicate, mark as default, delete and edit filters for the campaigns.
@@ -313,9 +327,28 @@ For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects 
 ### Stop a Scheduled Campaign
 
 Select **Stop** under actions. Stopping a scheduled campaign ends the instance of that campaign.  
-<img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/stop-scheduled-campaign.png" alt="Stop" title="Stop" style="border: 1px solid gray; zoom:80%;">
 
-A confirmation message is displayed. Select **Stop**.
+A confirmation message displays. Select **Stop**.
+
+### Dispositions
+
+The dispositions tab defines the retry mechanism for dispositions considered as not fully attempted.
+
+Steps to configure disposition retry logic:
+
+1. Select **+ Add Disposition Retry**.  
+2. Configure the required details, and then select ✓ to save the logic.  
+    <img src="../images/dispositions-tab.png" alt="Dispositions Tab" title="Dispositions Tab" style="border: 1px solid gray; zoom:80%;">
+
+#### Current Disposition Counts
+
+* This table shows Current Disposition Counts.  
+* Displays counts for all dispositions in the Default Disposition Set.  
+* Shows counts for:  
+    * The active campaign, or  
+    * The last run when viewing a completed campaign.  
+        <img src="../images/dispositions-table.png" alt="Dispositions Table" title="Dispositions Table" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Voice Campaign
 

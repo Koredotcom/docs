@@ -26,11 +26,12 @@ There are two pre-configured groups available:
 To create a new agent group, follow these steps:
 
 1. On the Agent Groups page, select `Add Group`.  
-<img src="../images/add-group-button.png" alt="Add Group Button" title="Add Group Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/add-agent-group.png" alt="Add Group" title="Add Group" style="border: 1px solid gray; zoom:80%;">
 
 2. In the New Group window, provide the input for the following fields:
     * `Group Name` - Enter the agent group name.
     * `Description` - Enter a brief description.
+    * `Agent Status` - (Optional) Select statuses for the Agent Group. Agents in the group see the selected statuses along with the system-defined ones. The system shows only system statuses for the group when no agent statuses are selected.
 
 ### Add Agents to a Group
 
@@ -122,6 +123,7 @@ To create a new agent status, follow these steps:
     1. `Status Name`-Enter the status name.
     2. `Status Type`-Select the status type: `Away` or `Busy`.
     3. `Description`-Type in a brief description of the status.
+    4. `Assign to Agent Groups`-Select the agent groups to assign the statuses. The system makes the status available to all agents in the selected groups.
 3. Select `Add & Exit` to create the status and exit the window or select `Add & Stay` to create the status and continue to a new one.  
 4. The status created successfully success message appears on-screen and the new status adds to the Agent Status list.  
 
