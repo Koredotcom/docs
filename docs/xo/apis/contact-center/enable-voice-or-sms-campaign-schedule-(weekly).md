@@ -1,6 +1,6 @@
 --8<-- "includes/ccai-api-back-link.md"
 
-# Enable Weekly Voice or SMS Campaign Schedule API (v2)
+# Enable Weekly Scheduling of Voice or SMS Campaigns
 
 Use this API to schedule a recurring weekly Voice or SMS campaign.
 
