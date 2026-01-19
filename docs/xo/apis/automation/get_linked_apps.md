@@ -2,7 +2,7 @@
 
 # Get Linked Apps API
 
-Use this API to retrieve all apps linked to a parent app.
+Use this API to retrieve all apps linked to a universal or parent app.
 
 | METHOD | GET |
 | :---- | :---- |
@@ -184,7 +184,7 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 | :---- | :---- | :---- |
 | `type` | Indicates the overall application category. | string |
 | `appType` | Specifies the application type. For example, `unified`. | string |
-|  `isUXOUB` | Indicates whether the UXO Universal Bot is enabled at the root level. | boolean |
+|  `isUXOUB` | Indicates whether the UXO universal or parent app is enabled at the root level. | boolean |
 |  `isDialogGPTEnabled` | Indicates whether DialogGPT functionality is enabled. | boolean |
 |  `configuredLinkedApps` | List of applications currently in a configured (draft) state. | array of objects |
 |  `configuredLinkedApps._id` | Unique identifier of the linked application. | string |
@@ -206,9 +206,9 @@ curl --location 'https://{{host}}/api/1.1/public/bot/{{streamId}}/universalbot/l
 |  `configuredLinkedApps.isDialogGPTEnabled` | Indicates whether DialogGPT is enabled for the linked application. | boolean |
 |  `configuredLinkedApps.configuredVersion` | Latest configured (draft) version identifier or timestamp. | number |
 |  `configuredLinkedApps.publishedVersion` | Latest published version identifier or timestamp. | string |
-|  `uxoUBConfigured` | UXO Universal Bot configuration for the configured state. | object |
-|  `uxoUBConfigured.linkedApps` |  List of linked application IDs associated with the UXO Universal Bot.  | array[string] |
-|  `uxoUBConfigured.isUXOUB` | Indicates whether the UXO Universal Bot is enabled for this state. | boolean |
-|  `uxoUBPublished` | UXO Universal Bot configuration for the published state. | object |
-|  `uxoUBPublished.linkedApps` | List of linked application IDs associated with the UXO Universal Bot. | array[string] |
-|  `uxoUBPublished.isUXOUB` | Indicates whether the UXO Universal Bot is enabled for this state. | boolean |
+|  `uxoUBConfigured` | UXO Universal or parent app configuration for the configured state. | object |
+|  `uxoUBConfigured.linkedApps` |  List of linked application IDs associated with the UXO Universal or parent app.  | array[string] |
+|  `uxoUBConfigured.isUXOUB` | Indicates whether the UXO universal or parent app is enabled for this state. | boolean |
+|  `uxoUBPublished` | UXO Universal or parent app configuration for the published state. | object |
+|  `uxoUBPublished.linkedApps` | List of linked application IDs associated with the UXO Universal or parent app. | array[string] |
+|  `uxoUBPublished.isUXOUB` | Indicates whether the UXO universal or parent app is enabled for this state. | boolean |
