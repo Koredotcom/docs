@@ -38,7 +38,7 @@ The system can hold a named-agent transfer for a configurable duration instead o
 
 **Parent–Child Permission Dependency Management**
 
-This update introduces logical parent–child permission dependencies across the Agent Console and Monitor Tab, automatically disabling child permissions when the parent is set to No/View and restoring them when the parent is re-enabled. It also introduces a new Force Logout permission and refines transfer controls by splitting the existing permission into granular options for assigning conversations, changing queues, and force-closing conversations. 
+This update introduces logical parent–child permission dependencies across the Agent Console and Monitor Tab, automatically disabling child permissions when the parent is set to No/View and restoring them when the parent is re-enabled. It also introduces a new Force Logout permission and refines transfer controls by splitting the existing permission into granular options for assigning conversations, changing queues, and force-closing conversations. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 **Alerts for Extended After Call Work**
 
