@@ -786,7 +786,7 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
-      - Conversations: analytics/contact-center/interactions.md  
+      - Conversations: analytics/overview/conversations.md 
     - Search AI:
       - Answer Insights: analytics/searchai/answer-insights.md
     - GenAI Analytics: 
