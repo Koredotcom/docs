@@ -5,6 +5,8 @@ This document provides information on the feature updates and enhancements intro
 ## v11.21.0 January 17, 2026
 <u>Minor Release</u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
 <font size="4">Export and Import Search AI Apps via Public APIs</font>
 
 Search AI now supports app configuration export and import via public APIs, enabling easy migration and backup. Users can initiate an app-export job and track its progress using the job-status API, which returns the download URL for the exported JSON file upon completion. For imports, users can upload a config file and then programmatically trigger an app-import request. This capability allows admins to efficiently replicate configurations across apps. Supported configurations include chunk processing stages, advanced configurations, business rules, search results config, answer generation settings, and answer retrieval configuration.
@@ -26,6 +28,8 @@ Key Features
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 <font size="4">Access Control Enhancements</font>
 
