@@ -20,7 +20,7 @@ Provided a Continuous Gather option at the start flow when TTS streaming is enab
 
 **Model Selection for ASR and TTS Providers**
 
-The platform now allows model selection for ASR and TTS providers directly from the app-level and Start Flow-level UIs. The selected model is consistently applied across design-time and runtime voice scenarios, including interactions, transcriptions, and monitoring, without requiring call-control parameters.
+The platform now allows model selection for ASR and TTS providers directly from the app-level and Start Flow-level UIs. The selected model is consistently applied across design-time and runtime voice scenarios, including interactions, transcriptions, and monitoring, without requiring call-control parameters. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences)
 
 **TTS Providers: Required Language Support**
 
