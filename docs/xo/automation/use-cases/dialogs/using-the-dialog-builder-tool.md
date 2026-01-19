@@ -25,19 +25,19 @@ Steps to add a dialog task:
 
     <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
 
-7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).  
+7. Provide an **Intent Name** (mandatory) and **Intent Description** (optional but recommended). Click **+Add** to add more descriptions. You can add up to five secondary descriptions in addition to the main description. Each unique description broadens semantic coverage and improves intent shortlisting and detection accuracy.  
+<img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray;zoom:60%;">
     
-    !!!Note 
+    !!! Note 
         
-         Non utf 8 characters are not supported for intent display name.
+        Non utf 8 characters are not supported for intent display name.
 
 8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(Agent AI Use Case)**, or both.
 9. Under **Intent Settings**, set options for the task to be independent, such as a **Sub-intent dialog** or **Hide it from Help**.
 10. Under **Analytics - Containment type**, you can choose between **Abandonment as Self-Service** and **Abandonment as Drop Off**.
 11. Optionally, you can adjust **Conversation Context**, set **Intent Preconditions**, or define **Context Output**.
-12. Click **Proceed**.
+12. Click **Proceed**.  
 
-    <img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray;zoom:60%;">
 
 The Dialog Builder is displayed with the canvas containing the root intent, which shows the Dialog Name and Description. Now, you can add nodes and establish transitions between these nodes for your workflow.
 

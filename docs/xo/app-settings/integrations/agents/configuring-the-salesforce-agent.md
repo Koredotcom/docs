@@ -285,6 +285,11 @@ Salesforce enables the full configuration of system messages displayed to end-us
 
 The Salesforce Integration enables end-users to end live agent sessions using a keyword configured in the Salesforce console. This helps reduce agent occupancy when the session is no longer actively needed. For more information on configuration, refer to [Customize the Messaging](https://help.salesforce.com/s/articleView?id=service.messaging_consent_status.htm&type=5).
 
+### Salesforce MIAW Conversation ID
+
+The platform now exposes the Salesforce MIAW conversation ID in the bot user context during agent transfer. This enables Message, Script, and Call Flow nodes, as well as external integrations, to access the active MIAW conversation identifier at runtime for tracking, correlation, and conditional logic.
+
+The conversation ID is available at the following context path: `context.session.BotUserSession.agentHandoffMeta.conversationId`
 
 
 

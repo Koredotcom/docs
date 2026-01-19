@@ -45,6 +45,13 @@ curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{str
 
      Saving contacts through the public API will allow duplicate names with different numbers but will prevent the same number from being associated with different or identical names. Backward compatibility to delete existing duplicate numbers will not be provided.
 
+## Request Headers
+
+| **Header** | **Description** | **Required/Optional** |
+| :---- | :---- | :---- |
+| `auth` | JWT token for authentication. | required |
+| `accountId` | The account ID associated with the API request. | required |
+
 ## Body Parameters
 
 | **PARAMETER**            | **DESCRIPTION**                                                                              | **TYPE**         |
