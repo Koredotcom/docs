@@ -36,7 +36,7 @@ Similarly, you can modify the other labels like **FAQ**, **Dialog Task**, **Term
 
 ## Dialog Task Labels
 
-Here, you can customize dialog task timeline, display, and labels. You can use {{Task}} as a placeholder for dynamic dialog names. You can disable this entire section by using the “toggle” button at the top and enable or disable either or both the labels (**Dialog Started** and **Dialog Ended**). In the following screenshot, **Dialog {{Task}} started** label has been renamed as **Dialog {{Task}} began**.  
+Here, you can customize dialog task timeline, display, and labels. You can use {{Task}} as a placeholder for dynamic dialog names. You can disable this entire section by using the **toggle** button at the top and enable or disable either or both the labels (**Dialog Started** and **Dialog Ended**). In the following screenshot, **Dialog {{Task}} started** label has been renamed as **Dialog {{Task}} began**.  
 <img src="../widget-theming-layout-customization/dialog-task-label-change-4.png" alt="dialog-task-label-change" title="dialog-task-label-change" style="border: 1px solid gray; zoom:80%;">
 
 Note that both the **Dialog {{Task}} started** and **Dialog {{Task}} ended** labels have a limit of 28 characters each. Click **Reset** to go back to the default label names.
