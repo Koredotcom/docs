@@ -45,9 +45,6 @@ Steps to create a JWT Client App from the Platform:
         Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
 
 
-
-
-
 ### How Request and Response Payload Encryption Works
 
 When the Enforce Request and Response Payload Encryption option is enabled, you must provide a public key. The platform generates a secure AES-256 encryption key, which is used to encrypt the public API request payload before sending it to the server. Once the server receives this encrypted request, it processes the request and returns the encrypted response payload along with the AES key encrypted using the client’s public key. Only the client that owns the matching private key can decrypt the AES key and access the original request and response data. This feature adds an additional layer of security for sensitive information, ensuring confidentiality and data integrity across all API communications.
@@ -58,12 +55,6 @@ The request and response payload encryption option is supported only for the fol
 * Get Analytics
 * Get Conversation Details
 * Get All Conversation Data Call Details
-* Get User Information
-* Get User Roles Details
-* Create Users
-* Update User
-* Update User Access
-* Delete Users
 
 When you enable this option, the platform:
 
@@ -86,7 +77,22 @@ Steps to create a Client App from the Admin Console:
 5. Click **New App** and then do the following:
     1. Enter a name.
     2. Select **Enforce JTI**, **JWE**, or both as per your requirements.
-6. Click **Save**.
+6. Click **Save** and **Done**.
+
+### Supported APIs for Request and Response Payload Encryption in the Admin Console
+
+The request and response payload encryption feature is supported only for the following endpoints:
+
+* Session History
+* Get Analytics
+* Get Conversation Details
+* Get All Conversation Data Call Details
+* Get User Information
+* Get User Roles Details
+* Create Users
+* Update User
+* Update User Access
+* Delete Users
 
 ## Data Tables
 
