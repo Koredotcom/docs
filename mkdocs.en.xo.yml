@@ -91,6 +91,8 @@ plugins:
         'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
         'getting-started/building-a-virtual-assistant.md' : 'getting-started/dialoggpt-app-setup-guide.md'
         'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md' : 'automation/use-cases/dialogs/dialog-tasks-overview.md'
+        'analytics/contact-center/interactions.md' : 'analytics/overview/conversations.md'
+        
 extra:  
   version:
     provider: mike
@@ -784,7 +786,7 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
-      - Conversations: analytics/contact-center/interactions.md  
+      - Conversations: analytics/overview/conversations.md 
     - Search AI:
       - Answer Insights: analytics/searchai/answer-insights.md
     - GenAI Analytics: 

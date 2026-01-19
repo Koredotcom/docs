@@ -5,6 +5,7 @@ Apart from the sign-on, and other security settings, you can modify the followin
 * Data retention period
 * Context persistence
 * IP address restriction
+* Active URLs Revocation
 
 
 ## Data Retention

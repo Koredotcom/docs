@@ -23,6 +23,7 @@ You can find the Knowledge Graph by selecting your desired App, then going to **
     3. Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.
 
     4. You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.
+    5. The available embedding model options for the Few-Shot Model are BGE M3, MPNet, and LaBSE.
     
 See the [Knowledge Graph Types Comparison Table](../knowledge-ai/knowledge-graph-overview.md#compare-knowledge-graph-types){:target="_blank"} for a detailed list of supported features.
 
