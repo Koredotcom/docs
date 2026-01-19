@@ -534,7 +534,7 @@ Supervisors can now edit disposition codes for completed conversations directly 
 * Editing is restricted to post-conversation only; agents retain control during live sessions.
 * Supervisor updates override previously submitted dispositions.
 * Alerts linked to updated disposition codes trigger as configured.
-* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-interactions-tab)
+* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-conversations-tab)
 
 Access is controlled via a new role-based permission: “Edit Disposition from Dashboard.”  [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
@@ -2268,7 +2268,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 Dashboard > Interactions
 
 Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-conversations)
 
 ## v11.1.1 May 11, 2024
 
