@@ -34,7 +34,7 @@ Agents can now belong to multiple agent groups, and each group can be associated
 
 **Named-Agent Transfer Wait Before Queue Fallback**
 
-The system can hold a named-agent transfer for a configurable duration instead of immediately routing it to the queue. If any named agent becomes available and accepts within the wait period, the conversation is assigned to that agent; otherwise, it falls back to existing queue routing. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-named-agents)
+The system can hold a named-agent transfer for a configurable duration before routing it to the queue. If any named agent becomes available and accepts within the wait period, the conversation is assigned to that agent; otherwise, it falls back to existing queue routing. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-named-agents)
 
 **Parent–Child Permission Dependency Management**
 
