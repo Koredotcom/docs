@@ -2,6 +2,65 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font> 
+
+**Multiple Intent Descriptions** 
+
+DialogGPT now allows users to add multiple descriptions for each intent, giving the flexibility to define various phrasings, perspectives, and explanations. This enhancement helps users achieve broader semantic coverage and significantly improves the accuracy of intent shortlisting and detection—especially valuable when working with broad, overlapping, or domain-specific intents. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#create-a-dialog-task) 
+
+
+<font size="4">Agent Node </font>
+
+**Ability to Render Rich UI Components from LLM Responses**
+
+The Agent Node can now pass structured JSON responses from the LLM to client channels for rich UI presentation. When users enable the "Parse Rich Templates" option in custom prompt settings (available for V1 and V2 prompts), the node passes the JSON payloads as structured responses to the platform, which then sends them as templates to client channels. This can be achieved by either prompting the model to generate responses in structured JSON format or by generating the templates in the prompt post-processor. The Node passes these JSON payloads as structured responses to the platform, which then sends them as templates to client channels. The client channels render these templates as supported UI components such as cards, lists, tables, and suggestion chips, enabling visually engaging information display beyond plain text. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/prompt-setup.md#parse-rich-templates) 
+
+
+<font size="4">Security (API Scopes) </font>
+
+**End-to-End Request and Response Payload Encryption for APIs**
+
+Payload encryption support has been extended to request payloads for selected APIs, in addition to the existing response payload encryption. The "Enforce Request and Response Payload Encryption" option (renamed from "Enforce Response Payload Encryption") now encrypts both request and response payloads. When enabled, the system generates a key to encrypt payloads in both directions, ensuring full end-to-end data protection for APIs within the JWT application's assigned scope.
+
+
+<font size="4">Flows & Channels</font>
+
+**Enhanced Response Structure for the Get Linked Apps API**
+
+
+The Get Linked Apps API has been enhanced with a revised response structure to retrieve all linked applications associated with a universal app for the chat flow. 
+
+
+<font size="4">Agent Transfer</font>
+
+**Read Receipts for WhatsApp Cloud API Integration**
+
+The Platform now supports WhatsApp Cloud API read receipts, allowing end users to see message status indicators (delivered and read) across both bot and agent conversations. This feature is automatically available for all existing and new WhatsApp Cloud API integrations. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#read-receipts) 
+
+**Availability of Salesforce MIAW Conversation ID**
+
+The Platform now exposes the Salesforce MIAW Conversation ID in the bot user context during agent transfer. This enables Message, Script, and Call Flow nodes, as well as external integrations, to access the active MIAW conversation identifier at runtime for tracking, correlation, and conditional logic. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#salesforce-miaw-conversation-id) 
+
+
+
+<font size="4">NLU Config</font>
+
+**BGE M3 Embeddings Support**
+
+The Platform now supports BGE M3 Embeddings as an additional option for Knowledge Graph, Machine Learning, and Few-Shot NLP use cases across all languages.
+
+Users can select BGE M3 alongside existing options (MPNet and LaBSE) to enhance multilingual performance and improve retrieval accuracy.
+
+
+
+<hr>
+
 
 ## v11.20.0 December 07, 2025
 

@@ -2,6 +2,63 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">LLM & Generative AI</font>
+
+**Prompts Library: Usage Status and Association Tracking**
+
+The Prompts Library will display "In Use" and "Not in Use" statuses for custom prompts based on actual usage at the feature or node level, replacing the previous "Active" and "Inactive" labels. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md#the-more-options) 
+
+
+<font size="4">Channels</font>
+
+**Email Thread Continuity When Adding Recipients**
+
+The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+
+**Email Channel Session Configuration and Analytics Updates**
+
+Changes to channel-based and thread-based session configurations (enable or disable) are now captured in change logs for improved audit tracking. Email Channel analytics updates are reflected in Generative AI Usage Logs and across public APIs, including Conversation History, Conversation History (Lightweight), and Get Analytics.
+
+**New Channel Integration: Microsoft Copilot**
+
+Microsoft Copilot is now available as a communication channel, expanding integration options beyond the existing Microsoft Teams channel. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md)
+
+<font size="4">App Settings</font>
+
+**CVV Data Type in Global PII Settings**
+
+The Global PII settings now include a CVV data type for redacting credit card verification values (3 or 4 digits) at entry. This prevents CVV data from persisting in logs or storage, and automatically purges it after session closure. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/pii-data-masking.md)
+
+**Dialog Filter for Locale-Specific Responses**
+
+Language Management now offers a Dialog filter, in addition to the existing Language and Component Type filters, for efficiently managing locale-specific responses.
+
+**Localization Support for Standard Responses**
+
+Standard Responses now support language-specific configurations across conversation management areas, including Dialog Interruptions, DialogGPT Events, Virtual Assistant Events, Intent Events, and Conversation Events.
+
+**Centralized URL Management and Revocation Controls**
+
+Admins can now centrally manage security settings for Platform-generated URLs (chat history and attachments). They can configure expiry times and optional access limits at the app level, and instantly revoke all active URLs using an emergency revocation control for enhanced security and compliance.
+
+
+<font size="4">Analytics </font>
+
+**Unified Interactions Dashboard Availability**
+
+The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products.
+
+
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>  
