@@ -34,10 +34,19 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4.1-nano-2025-04-14</li>
     <li>gpt-4.5-preview-2025-02-27</li>
     <li>o3-mini</li>
+    <li>gpt-5</li>
+    <li>gpt-5-mini</li>
+    <li>gpt-5-nano</li>
     <li>gpt-5-2025-08-07</li>
     <li>gpt-5-mini-2025-08-07</li>
     <li>gpt-5-nano-2025-08-07</li>
     <li>gpt-5-chat-latest</li>
+    <li>gpt-5.1</li>
+    <li>gpt-5.1-2025-11-13</li>
+    <li>gpt-5.1-chat-latest</li>
+    <li>gpt-5.2</li>
+    <li>gpt-5.2-2025-12-11</li>
+    <li>gpt-5.2-chat-latest</li>
   </ul>
    </td>
   </tr>
@@ -73,10 +82,13 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>claude-3-opus</li>
     <li>claude-3-7-sonnet-20250219</li>
     <li>claude-3-5-sonnet-20241022</li>
-    <li>claude-3-5-haiku-20241022</li>
     <li>claude-sonnet-4-20250514</li>
+    <li>claude-sonnet-4-5-20250929</li>
+    <li>claude-3-5-haiku-20241022</li>
+    <li>claude-haiku-4-5-20251001</li>
     <li>claude-opus-4-20250514</li>
-    <li>claude-opus-4-1-20250805</li>   
+    <li>claude-opus-4-1-20250805</li>
+    <li>claude-opus-4-5-20251101</li>
   </ul>
    </td>
   </tr>
@@ -97,7 +109,56 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
   </tr>
 </table>
 
+### Open-Source Models
 
+Agentic Apps supports open source models from providers such as Meta, Mistral, and XiaomiMiMo.
+
+<table>
+
+  </tr>
+<td><strong>Model Provider</strong>
+   </td>
+   <td><strong>Model Variant</strong>
+   </td>
+  <tr>
+</tr>
+  <tr>
+   <td><strong>Meta-llama</strong>
+   </td>
+   <td>
+<ul>
+
+<li>meta-llama/Meta-Llama-3.1-8B-Instruct</li>
+
+<li>meta-llama/Llama-3.2-1B-Instruct</li>
+
+<li>meta-llama/Llama-3.2-3B-Instruct</li>
+
+</ul>
+   </td>
+  </tr>
+  </tr>
+  <tr>
+   <td><strong>Mistralai</strong>
+   </td>
+   <td>
+<ul>
+
+<li>mistralai/Mistral-7B-Instruct-v0.3</li>
+
+<li>mistralai/Mistral-Nemo-Instruct-2407</li>
+
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Xiaomimimo</strong>
+   </td>
+   <td>
+   <ul><li>XiaomiMiMo/MiMo-VL-7B-RL</li></ul>
+   </td>
+   </tr>
+</table>
 
 ### Models with Real-Time Voice Support
 
@@ -138,8 +199,9 @@ Agentic Apps also support integrating with custom third party models via API Int
 
 To use a custom model in Agentic Apps
 
-* The model must support **Tool Calling** functionality.
-* The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+* **Tool Calling Support**: The model must inherently support Tool Calling functionality. For models that support Tool Calling, the feature must be explicitly enabled during model configuration. ![Enable Tool Calling](images/custom-model/enable-tool.png "Enable Tool Calling")
+[Learn how to enable model features](external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).  
+* **Compatible API Structure**: The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
 
 
 For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).
@@ -301,6 +363,7 @@ The supported models and their variants are given below:
 <li>meta-llama/Llama-3.2-3B-Instruct</li>
 
 <li>meta-llama/Llama-3.2-11B-Vision-Instruct</li>
+
 <li>meta-llama/Llama-Guard-4-12B</li>
 
 <li>meta-llama/Meta-Llama-3-8B</li>
@@ -431,10 +494,10 @@ The supported models and their variants are given below:
    </td>
   </tr>
   <tr>
-   <td><strong>Xiaomi</strong>
+   <td><strong>Xiaomimimo</strong>
    </td>
    <td>
-   <ul><li>Mimo-7B--VL-RL</li></ul>
+   <ul><li>XiaomiMiMo/MiMo-VL-7B-RL</li></ul>
    </td>
    </tr>
 </table>
@@ -535,7 +598,14 @@ Here is the list of all the external models supported in the Platform:
 <li>claude-sonnet-4-20250514</li>
 
 <li>claude-opus-4-20250514</li>
+
 <li>claude-opus-4-1-20250805</li>
+
+<li>claude-opus-4-5-20251101</li>
+
+<li>claude-haiku-4-5-20251001</li>
+
+<li>claude-sonnet-4-5-20250929</li>
 
 <li>Claude Sonnet Vision (Available only for the Image-to-text node, No Prompt Studio support.)</li>
 </ul>
@@ -623,10 +693,19 @@ Here is the list of all the external models supported in the Platform:
 <li> gpt-4.1-mini-2025-04-14</li>
 <li> gpt-4.1-nano-2025-04-14</li>
 <li> gpt-4.5-preview-2025-02-27</li>
+<li> gpt-5</li>
 <li> gpt-5-2025-08-07</li>
 <li> gpt-5-nano-2025-08-07</li>
+<li> gpt-5-nano</li>
 <li> gpt-5-mini-2025-08-07</li>
+<li> gpt-5-mini</li>
 <li> gpt-5-chat-latest</li>
+<li> gpt-5.1</li>
+<li> gpt-5.1-2025-11-13</li>
+<li> gpt-5.1-chat-latest</li>
+<li> gpt-5.2</li>
+<li> gpt-5.2-2025-12-11</li>
+<li> gpt-5.2-chat-latest</li>
 <li> whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
 <li> whisper-1</li>
 <li> dall-e-3</li>

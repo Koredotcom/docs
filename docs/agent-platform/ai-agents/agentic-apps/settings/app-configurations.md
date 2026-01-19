@@ -33,7 +33,7 @@ This field allows updating the prompt used for Thought Streaming. Click Modify P
 This feature allows you to configure how users are engaged during processing delays in voice interactions. Setting up appropriate wait-time interactions helps create a smoother and more human-like experience for users while they wait. The waiting experience begins automatically when a processing delay is detected and stops once the system response or the following action is available. Enable this feature to configure.
 
 !!!note
-    This feature is currently enabled only on request.
+    This feature only works in ASR/TTS streaming mode. It doesn't support real-time models.
 
 
 **Waiting Experience Configuration**
@@ -45,7 +45,8 @@ This feature allows you to configure how users are engaged during processing del
     * Static Messages: Use predefined messages that play during wait times in the response. Use the Add Message option to include multiple messages. Messages are displayed in random order during each waiting period.
     * Dynamic Messages: Use AI-generated messages to make interactions more natural and personalized. Note that using dynamic messages incurs additional LLM costs. Provide the following configurations for dynamic messages. 
         * AI Model - Select an AI model optimized for the agent’s specifications to ensure accurate and efficient task handling.
-        * AI Model Timeout -The maximum duration (in milliseconds) to wait for an AI model’s response.
+        * AI Model Timeout -The maximum duration (in seconds) to wait for an AI model’s response.
+        * Filler Message Prompt - Configure the prompt used by the LLM to generate custom messages to be presented during wait periods.
         * Context Window Limit - The maximum number of messages retained in the session context. Once the limit is reached, older messages are automatically removed to manage memory and context size. The AI model uses this context to generate dynamic messages. 
 
 ## Playground Settings
@@ -74,7 +75,7 @@ Enable this setting to allow real-time streaming of the response in Playground, 
 
 ### Error Handling
 
-Agent Platform provides an error-handling framework to handle failures that occur when an agent’s underlying AI model is invoked. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
+The Platform provides an error-handling framework to handle failures that occur when an agent’s underlying AI model is invoked. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
 
 * This configuration applies specifically to agent model invocation failures such as timeouts, provider errors, or transient network issues. 
 * All agents within the app inherit this configuration.
