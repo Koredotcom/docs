@@ -26,7 +26,7 @@ The Agent Node can now pass structured JSON responses from the LLM to client cha
 
 **End-to-End Request and Response Payload Encryption for APIs**
 
-Payload encryption support has been extended to request payloads for selected APIs, in addition to the existing response payload encryption. The "Enforce Request and Response Payload Encryption" option (renamed from "Enforce Response Payload Encryption") now encrypts both request and response payloads. When enabled, the system generates a key to encrypt payloads in both directions, ensuring full end-to-end data protection for APIs within the JWT application's assigned scope.
+Payload encryption support has been extended to request payloads for selected APIs, in addition to the existing response payload encryption. The "Enforce Request and Response Payload Encryption" option (renamed from "Enforce Response Payload Encryption") now encrypts both request and response payloads. When enabled, the system generates a key to encrypt payloads in both directions, ensuring full end-to-end data protection for APIs within the JWT application's assigned scope. [Learn more :octicons-arrow-right-24:](../../apis/automation/get_linked_apps.md) 
 
 
 <font size="4">Flows & Channels</font>
@@ -34,7 +34,9 @@ Payload encryption support has been extended to request payloads for selected AP
 **Enhanced Response Structure for the Get Linked Apps API**
 
 
-The Get Linked Apps API has been enhanced with a revised response structure to retrieve all linked applications associated with a universal app for the chat flow. 
+The Get Linked Apps API has been enhanced with a revised response structure to retrieve all linked applications associated with a universal or parent app. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#creating-and-managing-jwt-apps-in-the-platform)
+
+
 
 
 <font size="4">Agent Transfer</font>
@@ -55,9 +57,7 @@ The Platform now exposes the Salesforce MIAW Conversation ID in the bot user con
 
 The Platform now supports BGE M3 Embeddings as an additional option for Knowledge Graph, Machine Learning, and Few-Shot NLP use cases across all languages.
 
-Users can select BGE M3 alongside existing options (MPNet and LaBSE) to enhance multilingual performance and improve retrieval accuracy.
-
-
+Users can select BGE M3 alongside existing options (MPNet and LaBSE) to enhance multilingual performance and improve retrieval accuracy. [Learn more :octicons-arrow-right-24:](../../automation/knowledge-ai/knowledge-graph-overview.md#enable-the-few-shot-knowledge-graph)
 
 <hr>
 

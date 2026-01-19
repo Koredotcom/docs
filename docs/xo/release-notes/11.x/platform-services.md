@@ -38,7 +38,7 @@ The Global PII settings now include a CVV data type for redacting credit card ve
 
 **Dialog Filter for Locale-Specific Responses**
 
-Language Management now offers a Dialog filter, in addition to the existing Language and Component Type filters, for efficiently managing locale-specific responses.
+Language Management now offers a Dialog filter, in addition to the existing Language and Component Type filters, for efficiently managing locale-specific responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#filters)
 
 **Localization Support for Standard Responses**
 
@@ -46,16 +46,14 @@ Standard Responses now support language-specific configurations across conversat
 
 **Centralized URL Management and Revocation Controls**
 
-Admins can now centrally manage security settings for Platform-generated URLs (chat history and attachments). They can configure expiry times and optional access limits at the app level, and instantly revoke all active URLs using an emergency revocation control for enhanced security and compliance.
+Admins can now centrally manage security settings for Platform-generated URLs (chat history and attachments). They can configure expiry times and optional access limits at the app level, and instantly revoke all active URLs using an emergency revocation control for enhanced security and compliance. [Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/manage-url.md)
 
 
 <font size="4">Analytics </font>
 
 **Unified Interactions Dashboard Availability**
 
-The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products.
-
-
+The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md)
 
 <hr>
 
@@ -484,7 +482,7 @@ This update includes enhancement and bug fixes. The key enhancement included in 
 
 **Enhanced Diagnostics for Comprehensive Participant Tracking and Quality Metrics**
 
-The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
+The Agents tab provides Agents and Supervisors with comprehensive call analytics. It displays key information for all participants, including their status (In-Call/Left), timestamps, and quality metrics (MOS, jitter, packets lost). This enhances troubleshooting by showing detailed call exit reasons and descriptions for each participant. Active participants are indicated with "NA" in the End Timestamp field, while External Agents are labeled with an "External Agent" tag, improving visibility and simplifying the debugging process. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#agents)
 
 <hr>
 
@@ -580,7 +578,7 @@ When a customer is on hold (self-initiated or agent-initiated):
 * Temporarily stops recording agent-side audio.
 * Automatically resumes recording when the hold state ends.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Answering Machine Detection (AMD) for Inbound Calls**
 
@@ -595,7 +593,7 @@ The Transcribe utility function now supports the following when integrated with 
 * Start/Stop recording control
 * Pause/Resume functionality
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **SIP Trunk Availability Monitoring**
 

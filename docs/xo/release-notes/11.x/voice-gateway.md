@@ -89,7 +89,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Voice Call Recording - Failure Scenario Handling**
 
-When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 <font size="4">Text-to-Speech (TTS)</font>
 
@@ -162,7 +162,7 @@ The voicemail feature in `voiceutils.voicemail` now supports call control parame
 
 **Voice Call Recordings Retention Configuration for On-Prem Customers**
 
-On-prem customers can now configure a retention period for voice call recordings to meet compliance and storage needs. Recordings are permanently deleted after expiration, with email notifications sent 7 days before and upon deletion. Deleted recordings display the message: “Recording not available. It may have been deleted as per your data retention policy.” Customers who do not opt in remain unaffected. All configuration and deletion actions are logged in the admin console for audit purposes. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+On-prem customers can now configure a retention period for voice call recordings to meet compliance and storage needs. Recordings are permanently deleted after expiration, with email notifications sent 7 days before and upon deletion. Deleted recordings display the message: “Recording not available. It may have been deleted as per your data retention policy.” Customers who do not opt in remain unaffected. All configuration and deletion actions are logged in the admin console for audit purposes. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 <font size="4">API</font>
 
