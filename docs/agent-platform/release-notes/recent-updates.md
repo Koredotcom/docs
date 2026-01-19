@@ -68,7 +68,7 @@ Agentic apps now support open-source models, offering flexible, cost-effective a
 These models offer diverse capabilities across different sizes and specializations, letting you optimize for performance, cost, or specific use cases while maintaining full access to platform orchestration, tools, and knowledge features.
 
 
-<font size="4">Other improvements</font>
+<font size="4">Other Improvements</font>
 
 **Ability to Configure Default Role for New Users**
 
