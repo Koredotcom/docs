@@ -13,6 +13,7 @@ The **Agent Node** lets you leverage LLMs and generative AI with Tool calling to
 * **Tool Calling**: Tool calling is the ability to identify when external functions are needed, select appropriate ones, invoke them with correct parameters, process their outputs, and incorporate the results into responses.
 * **Tool Calling with Streaming Responses**: Tool calling with streaming, allowing the model to generate responses progressively for faster, more fluid user interactions.
 * **Simplified V2 Prompt Setup**: The Custom Prompt page now features a Response Payload Format control (OpenAI, Azure OpenAI, or Custom) for automatic parsing, eliminating the need for manual Post-Processor setup in streaming configurations.
+* **Rich UI Components**: The Agent Node can pass structured JSON responses from the LLM to client channels for rich UI presentation. When users enable the "Parse Rich Templates" option in custom prompt settings (available for V1 and V2 prompts), they can prompt the model to generate responses in structured JSON format. The Node passes these JSON payloads as structured responses to the platform, which then sends them as templates to client channels. The client channels render these templates as supported UI components such as cards, lists, tables, and suggestion chips, enabling visually engaging information display beyond plain text.
 
 ## Quick Start Guide
 

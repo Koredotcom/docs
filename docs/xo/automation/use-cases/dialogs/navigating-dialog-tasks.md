@@ -426,8 +426,8 @@ The **Dialog Settings** panel allows you to modify the dialog task's basic setti
 
 Add or modify the following settings for your dialog:
 
-* **Name**: The name of your dialog task, usually the main user intent. For example, _Book Ticket._
-* **Description**: An optional description of your dialog task displayed in the Platform.
+* **Intent Name**: The name of your dialog task, usually the main user intent. For example, _Book Ticket._
+* **Intent Description**: An (Optional but recommended) description of your dialog task displayed in the Platform. You can add up to five secondary descriptions in addition to the main description. Each unique description broadens semantic coverage and improves intent shortlisting and detection accuracy.
 * **Intent Settings:**
             
      * **Sub intent only dialog**: The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
