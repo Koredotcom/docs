@@ -227,93 +227,91 @@ Steps to delete a SIP number:
 
 #### Voice Calls - Failures and Fallback Handling
 
-**Overview**
-
 This document outlines the comprehensive failure handling and fallback mechanisms available for voice calls in the platform. The system provides three distinct layers of failure handling to ensure robust call management and graceful degradation in the event of issues.
 
 The failure handling mechanisms are designed to address different types of failures at various stages of the call lifecycle, from initial call establishment to ongoing conversation management and error recovery.
 
-**Failure Handling Mechanisms**
+Failure Handling Mechanisms
 
-**1. App-Level Settings - Answer Call on Bot Response**
+1. App-Level Settings - Answer Call on Bot Response
 
-**Purpose**
+Purpose
 
 The "Answer Call on Bot Response" functionality controls the timing of call answering behavior. When enabled, the system delays answering the call until the first AI Agent response is prepared and ready for delivery.
 
-**Configuration**
+Configuration
 
-**Location**: App-level settings
+Location: App-level settings
 
 AI for Service > App Settings > Advanced Settings > System Settings.  
 
 * **Default Value**: `false` (disabled)
 
-**Behavior**:  
+Behavior:  
 
 * **Enabled (`true`)**: Call is answered only when the first AI Agent response is ready.  
 * **Disabled (`false`)**: Call is answered immediately, with AI Agent response preparation occurring after call establishment.
 
-**Use Cases**
+Use Cases
 
 * **SIP-Specific Error Handling**: Ideal for systems requiring SIP response codes for failure detection.  
 * **Source System Integration**: Enables upstream systems to handle AI Agent unresponsiveness through standard SIP signaling.  
 * **Quality Assurance**: Ensures users only hear prepared, ready responses.
 
-**Technical Benefits**
+Technical Benefits
 
 * Prevents dead air or silence during AI Agent response preparation.  
 * Provides clear SIP signaling for upstream system integration.  
 * Enables proactive failure detection before call establishment.
 
-**Cons**
+Cons
 
-Configuring this setting results in frequent call drops if we've many script/service nodes, which delays the initial AI Agent response and prevent the call from being answered.
+Configuring this setting results in frequent call drops if we've many script/service nodes, which delays the initial AI Agent response and prevents answering the call.
 
-**2. Experience Flow Settings - Bot No Input Section**
+2. Experience Flow Settings - Bot No Input Section
 
-**Purpose**
+Purpose
 
 The Bot No Input section provides configuration options for handling scenarios where the AI Agent becomes unresponsive after a successful initial response.
 
-**Location**: Experience Flow → Bot No Input Section → BotNoInputGiveUp
+Location: Experience Flow → Bot No Input Section → BotNoInputGiveUp
 
 AI for Service > Contact Center AI > Start Flows > Create a ‘New Start Flow’ or update an existing ‘Start Flow’  
 <img src="../images/bot-no-input.png" alt="Bot no Input" title="Bot no Input" style="border: 1px solid gray; zoom:70%;">
 
-**Available Options**
+Available Options
 
-1. **End Call**: Automatically terminates the call when the system detects the AI Agent's unresponsiveness.  
-2. **SIP URI Target Transfer**: Transfers the call to a specified SIP URI target.
+* **End Call**: Automatically terminates the call when the system detects the AI Agent's unresponsiveness.  
+* **SIP URI Target Transfer**: Transfers the call to a specified SIP URI target.
 
-**Operational Behavior**
+Operational Behavior
 
 * **Trigger Condition**: The AI Agent fails to respond within the configured timeout interval.  
 * **Prerequisite**: First AI Agent response must have been successfully delivered.  
 * **Detection Method**: Timeout-based monitoring of AI Agent responsiveness.
 
-**Configuration Parameters**
+Configuration Parameters
 
 * **Timeout Interval**: Configurable duration for AI Agent response detection.  
 * **Action Type**: End call or transfer to target.  
 * **SIP URI Target**: Destination for call transfer (On selecting the transfer option).
 
-**3. Automation Node Error Handling - OnError Path**
+3. Automation Node Error Handling - OnError Path
 
-**Purpose**
+Purpose
 
 Provides explicit error handling for various types of system failures that can occur during call processing, including dialog flow errors, ASR (Automatic Speech Recognition) failures, and TTS (Text-to-Speech) errors.
 
-**Supported Error Types**
+Supported Error Types
 
 * **Dialog Flow Errors**: Task failure events and flow execution errors.  
 * **ASR Errors**: Speech recognition failures and timeout issues.  
 * **TTS Errors**: Text-to-speech synthesis failures.  
 * **Bot Failures**: Explicit AI Agent processing errors.
 
-**Configuration**
+Configuration
 
-**Location**: Experience Flow → Automation Node → OnError Path
+Location: Experience Flow → Automation Node → OnError Path
 
 AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Error Handling.  
 
@@ -326,27 +324,27 @@ AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Erro
 * **Graceful Degradation**: Maintain call continuity during error conditions.  
 * **User Communication**: Provide appropriate feedback to callers during error scenarios.
 
-**Implementation Guidelines**
+Implementation Guidelines
 
-**When to Use Each Mechanism?**
+When to Use Each Mechanism?
 
 Use App-Level Settings When:
 
-* Integration with SIP-aware source systems is required.  
+* Requires integration with SIP-aware source systems.  
 * Upstream failure detection and handling capabilities exist.  
 * Call quality requirements mandate prepared responses only.  
-* SIP response codes are needed for system integration.
+* Needs SIP response codes for system integration.
 
 Use Experience Flow Settings When:
 
 * First AI Agent response delivery is successful.  
-* Ongoing AI Agent responsiveness monitoring is required.  
-* Fallback targets or graceful call termination are needed.  
-* User experience continuity is prioritized.
+* Requires ongoing AI Agent responsiveness monitoring.  
+* Needs fallback targets or graceful call termination.  
+* Prioritizes user experience continuity.
 
 Use OnError Path When:
 
-* Comprehensive error handling is required.  
+* Requires comprehensive error handling.  
 * Multiple error types need specific handling.  
 * Custom error workflows are necessary.  
 * System resilience is a priority.
@@ -363,46 +361,46 @@ Configuration Recommendations
 * **Evaluate SIP integration requirements** before enabling AI Agent-level settings.  
 * **Define clear timeout values** for AI Agent responsiveness detection.
 
-**Use Case Scenarios**
+Use Case Scenarios
 
-**Scenario 1: SIP-Integrated Environment**
+Scenario 1: SIP-Integrated Environment
 
-**Configuration**:
+Configuration:
 
 * App-Level: Answer Call on Bot Response = true  
 * Experience Flow: BotNoInputGiveUp = Transfer to SIP URI  
 * OnError Path: Custom error handling workflow
 
-**Behavior**:
+Behavior:
 
 * Call answered only when the bot response is ready.  
 * SIP codes are available for the upstream system handling.  
 * Unresponsive bot triggers transfer to fallback target.  
 * Explicit errors are handled through a custom workflow.
 
-**Scenario 2: Direct Call Environment**
+Scenario 2: Direct Call Environment
 
-**Configuration**:
+Configuration:
 
 * App-Level: Answer Call on Bot Response = false  
 * Experience Flow: BotNoInputGiveUp = End call  
 * OnError Path: Standard error messaging
 
-**Behavior**:
+Behavior:
 
 * Immediate call answering for a better user experience.  
 * AI Agent unresponsiveness results in call termination.  
 * Errors handled with standard user messaging.
 
-**Scenario 3: High-Availability Environment**
+Scenario 3: High-Availability Environment
 
-**Configuration:**
+Configuration:
 
 * App-Level: Answer Call on Bot Response = true  
 * Experience Flow: BotNoInputGiveUp = Transfer to backup system  
 * OnError Path: Comprehensive error recovery workflows
 
-**Behavior**:
+Behavior:
 
 * Quality-assured response delivery.  
 * Multiple fallback layers for different failure types.  
@@ -426,8 +424,9 @@ Steps to configure Voice Preferences:
             * Google Cloud Speech-to-Text,
             * Amazon Transcribe.
         2. Dialect
-        3. Primary ASR Configuration (Advanced Setting)
-        4. Fallback ASR Configuration (Advanced Setting)
+        3. ASR Model [BETA] (Advanced Setting)
+        4. Primary ASR Configuration (Advanced Setting)
+        5. Fallback ASR Configuration (Advanced Setting)
     3. Text to Speech Engine (TTS)
         1. TTS
             You can choose between
@@ -441,11 +440,12 @@ Steps to configure Voice Preferences:
         2. Voice
     4. Voice Preview
         1. Sample Text: Enter Sample Text to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Selecting the More Options (**⋮**) reveals options to adjust Playback Speed. Select Play next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its voice options. Select a different Voice Language if required.
-        2. Primary TTS Configuration (Advanced Setting)
-        3. Fallback TTS Configuration (Advanced Setting)
+        2. TTS Model [BETA] (Advanced Setting)
+        3. Primary TTS Configuration (Advanced Setting)
+        4. Fallback TTS Configuration (Advanced Setting)
 2. Select **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.  
 
-    <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/config-voice-preferences.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
@@ -459,26 +459,19 @@ ASR/TTS Fallback functionality can be implemented at various levels within the s
 
 * For optimal performance, it’s advised to configure the fallback with the same vendor in a different region/label.
 
-**Location 1 - Global Setting**
+Location 1 - Global Setting
 
-In SmartAssist: **Configurations** > **System Setup** > **Language & Speech** > **Voice Preferences** > **Show Advanced Settings**.  
-<img src="../images/show-advanced-settings.png" alt="Show Advanced Settings" title="Show Advanced Settings" style="border: 1px solid gray; zoom:80%;">
+In SmartAssist: Configurations > System Setup > Language & Speech > Voice Preferences > Show Advanced Settings. 
 
-**Location 2 - Call Control Parameters**
+Location 2 - Call Control Parameters
 
-In SmartAssist: **Automation** > **Select app** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
-<img src="../images/call-control-parameters.png" alt="Call Control Parameters" title="Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
+In SmartAssist: Automation > Select app > Conversational Skills > Dialog Tasks > Select Dialog Task > Select the Node you want to configure > IVR Properties > Advance Controls > Call Control Parameters.  
 
-**Location 3 - Experience Flows**
+Location 3 - Experience Flows
 
-In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experience Flow** > **Speech Recognition Engine (ASR/TTS)** > **Show Advanced Settings**.  
-<img src="../images/experience-flows-advanced-settings.png" alt="Experience Flows" title="Experience flows" style="border: 1px solid gray; zoom:80%;">  
+In SmartAssist: Configurations > Experience Flows > Update/New Experience Flow > Speech Recognition Engine (ASR/TTS) > Show Advanced Settings.  
 
-<img src="../images/edit-experience-flows.png" alt="Edit Experience Flows" title="Edit Experience Flows" style="border: 1px solid gray; zoom:80%;">
-
-**Location 4 - Start Node in Experience Flow**  
-<img src="../images/start-node.png" alt="Start Node" title="Start Node" style="border: 1px solid gray; zoom:80%;">  
-<img src="../images/start-node-experience-flow.png" alt="Start Node - Experience Flow" title="Start Node - Experience Flow" style="border: 1px solid gray; zoom:80%;">
+Location 4 - Start Node in Experience Flow  
 
 !!! Note
       

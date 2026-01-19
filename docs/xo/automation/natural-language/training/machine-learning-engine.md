@@ -454,6 +454,7 @@ ConfigurationDefault Setting
     * Bot Synonyms, Stop Words and a few other ML Configurations are not used by the Few-Shot Model (Kore.ai Hosted Embeddings).
     * The new Few-Shot Model (Kore.ai Hosted Embeddings) for Traits in NLP V3 allows the NLP Engine to train and identify Traits when set as the default model. This feature is available for only the new bots that have English as the NLU language. [Learn more](#few-shot-model-koreai-hosted-embeddings).
     * Intents are rescored by the R&R Engine by comparing the closest training sentences (including the task name) with the user utterance.
+    * The available embedding model options for the Few-Shot Model are BGE M3, MPNet, and LaBSE.
 
 **How it works**
 

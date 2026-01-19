@@ -57,9 +57,9 @@ Sign in to the GitLab account. Depending on the type of authorization required, 
     * Go to the [Applications page](https://gitlab.com/-/user_settings/applications) under the User Profile. 
     * Create a new app for Search AI integration. 
     * Provide one of the following as the redirect URL. 
-        * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-        * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-        * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+        * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback`
+        * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+        * Prod Callback URL: `https://idp.kore.com/workflows/callback`
     * Select the scope as 
         * Read_api
     * This generates a application ID and client secret.

@@ -78,7 +78,7 @@ App registrations are required to access resources programmatically. Registering
     
 ![Account Types](images/sharepoint/account-types.png "Account Types")
 
-* This will generate a client ID, which will be used to identify the application uniquely in the  Microsoft Identity Platform. Save the **ClientId** and **TenantId** from the **Overview** section.
+* This generates a client ID, which is used to identify the application uniquely in the  Microsoft Identity Platform. Save the **ClientId** and **TenantId** from the **Overview** section.
 
 ![Client Credentials](images/sharepoint/client-credentials.png "Client Credentials")
 
@@ -90,7 +90,7 @@ App registrations are required to access resources programmatically. Registering
 
  ![Client Credentials](images/sharepoint/generate-secret.png "Client Credentials")
 
-* Save the client secret generated. The client secret cannot be seen again on switching the tabs. 
+* Save the client secret generated. The client secret can't be seen again on switching the tabs. 
 
 ![Client Credentials](images/sharepoint/save-secret.png "Client Credentials")
 
@@ -140,7 +140,7 @@ Go to the **Connectors** tab under **Sources**. Select **SharePoint** from the l
 * Tenant ID - Enter the Directory (Tenant) ID associated with your Azure AD instance.
 * Content Type - Choose the desired content type—All, Articles, or Files. 
 
-Click **Connect** to authenticate with the SharePoint application.
+Click *Connect* to authenticate with the SharePoint application.
 
 ## Content Ingestion
 
@@ -166,7 +166,7 @@ To configure content ingestion:
 
 * Go to the **Configuration** section.
 * Under Sync Specific Content, click the **Configure** link.
-* Enter one or more Site IDs from which content should be ingested. Note that the app created in Azure Active Directory should have access to the site(s) that are added here.
+* Enter one or more Site IDs from which content is to be ingested. Note that the app created in Azure Active Directory must have access to the sites that are added here.
 * Select the desired Content Type:
     * Articles
     * Files
@@ -174,8 +174,8 @@ To configure content ingestion:
 
 ![Select Sites](images/sharepoint/site-filter.png "Select Sites")
 
-!!! note
-Currently, only **Articles** or **Files** can be selected directly as content types. To ingest **both**, create a filter rule with **two conditions** combined using the **OR** operator. 
+!!!note
+    Only *Articles* or *Files* can be selected directly as content types. To ingest *both*, create a filter rule with *two conditions* combined using the *OR* operator. 
 
 Example:
     * Condition 1: Content Type = Articles
@@ -183,7 +183,7 @@ Example:
 
 ![Select Sites](images/sharepoint/site-filter.png "Select Sites")
 
-This  will fetch both types of content from the same site(s).
+This fetchs both types of content from the same site.
 
 ## Sync content
 

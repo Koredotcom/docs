@@ -21,19 +21,17 @@ LumApps organizes content into key types, such as pages, news, and custom object
 
    </td>
    <td>
-
-
-* Content Objects
-  * Pages
-  * News
-  * Custom Objects
-* Community Posts
-   </td>
+    <ul>
+      <li>Content Objects</li>
+      <li>Pages</li>
+      <li>News</li>
+      <li>Custom Objects</li>
+      <li>Community Posts</li>
+    </ul>
+  </td>
   </tr>
   <tr>
-   <td>
-RACL Support
-   </td>
+   <td> RACL Support   </td>
    <td>Yes
 
    </td>
@@ -112,14 +110,13 @@ For the **attachment record**:
 * The record also contains **metadata of the parent** object: parent_name, parent_url and parent_id.
 
     **Supported Attachment Types:**
-
-* .doc
-* .docx
-* .ppt
-* .pptx
-* .pdf
-* .txt
-* .html 
+    * .doc
+    * .docx
+    * .ppt
+    * .pptx
+    * .pdf
+    * .txt
+    * .html 
 
 
 The attachment types are ingested and indexed to support content discovery and search relevance, like all other ingested objects.

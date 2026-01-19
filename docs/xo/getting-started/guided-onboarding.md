@@ -17,7 +17,7 @@ After signing up, users are guided through the following onboarding process to c
 <img src="../images/create-new-app.png" alt="Onboarding - App Creation" title="Onboarding - App Creation" style="border: 1px solid gray; zoom:70%;">
 
 5. Click **Proceed**.
-6. The confirmation pop-up is displayed. You can choose to review the [DialogGPT](../generative-ai-tools/dialog-gpt.md) configuration or proceed to create dialogs. 
+6. The confirmation pop-up is displayed. You can choose to review the [DialogGPT](../automation/dialog-gpt-based-orchestration.md) configuration or proceed to create dialogs. 
 
 
 
