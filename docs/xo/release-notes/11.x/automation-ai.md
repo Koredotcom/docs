@@ -55,9 +55,7 @@ The Platform now exposes the Salesforce MIAW Conversation ID in the bot user con
 
 The Platform now supports BGE M3 Embeddings as an additional option for Knowledge Graph, Machine Learning, and Few-Shot NLP use cases across all languages.
 
-Users can select BGE M3 alongside existing options (MPNet and LaBSE) to enhance multilingual performance and improve retrieval accuracy.
-
-
+Users can select BGE M3 alongside existing options (MPNet and LaBSE) to enhance multilingual performance and improve retrieval accuracy. [Learn more :octicons-arrow-right-24:](../../automation/knowledge-ai/knowledge-graph-overview.md#enable-the-few-shot-knowledge-graph)
 
 <hr>
 
