@@ -18,6 +18,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
     - [SMS Campaigns](#sms-campaigns)
     - [Voice Campaigns](#voice-campaigns)
     - [Campaign Status](#campaign-status)
+    - [Campaign Schedule](#campaign-schedule)
     - [Campaign Details](#campaign-details)
     - [Contact List Management](#contact-list-management)
   - [Voice Gateway (VG) APIs](#voice-gateway-vg-apis)
@@ -188,7 +189,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Get Campaign Status](../contact-center/get-campaign-status.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
 | [Get Campaign Status (v2)](../contact-center/get-campaign-status-v2.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
 
-### Schedule Campaigns
+### Campaign Schedule
 
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
