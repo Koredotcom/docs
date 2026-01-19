@@ -91,9 +91,9 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Create Bulk Contacts](../contact-center/create-bulk-contacts.md)                                                    | To create bulk contacts from a CSV file with the given Stream Id.                                           | Configuration        |
 | [Get All Contacts](../contact-center/get-all-contacts.md)                                                    | To retrieve all contacts created for outbound calling in a given stream ID.                                           | Configuration        |
 | [Update a Contact](../contact-center/update-a-contact.md)                                                    | To update a specific contact associated with a stream ID.                                           | Configuration        |
-| [Update Bulk Contacts](../contact-center/update-bulk-contacts.md)                                                    | To update multiple contacts simultaneously by IDs.                                           | Configuration        |
+| [Update Bulk Contacts](../contact-center/update-bulk-contacts.md)                                                    | To update multiple contacts simultaneously.                                           | Configuration        |
 | [Delete a Contact](../contact-center/delete-a-contact.md)                                                    | To delete a specific contact by ID.                                           | Configuration        |
-| [Bulk Delete Contacts](../contact-center/bulk-delete-contacts.md)                                                    | To delete multiple contacts simultaneously by IDs.                                           | Configuration        |
+| [Delete Bulk Contacts](../contact-center/bulk-delete-contacts.md)                                                    | To delete multiple contacts simultaneously.                                           | Configuration        |
 
 ### Import/Export Data APIs
 
