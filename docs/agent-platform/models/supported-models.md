@@ -109,7 +109,56 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
   </tr>
 </table>
 
+### Open-Source Models
 
+Agentic Apps supports open source models from providers such as Meta, Mistral, and XiaomiMiMo.
+
+<table>
+
+  </tr>
+<td><strong>Model Provider</strong>
+   </td>
+   <td><strong>Model Variant</strong>
+   </td>
+  <tr>
+</tr>
+  <tr>
+   <td><strong>Meta-llama</strong>
+   </td>
+   <td>
+<ul>
+
+<li>meta-llama/Meta-Llama-3.1-8B-Instruct</li>
+
+<li>meta-llama/Llama-3.2-1B-Instruct</li>
+
+<li>meta-llama/Llama-3.2-3B-Instruct</li>
+
+</ul>
+   </td>
+  </tr>
+  </tr>
+  <tr>
+   <td><strong>Mistralai</strong>
+   </td>
+   <td>
+<ul>
+
+<li>mistralai/Mistral-7B-Instruct-v0.3</li>
+
+<li>mistralai/Mistral-Nemo-Instruct-2407</li>
+
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Xiaomimimo</strong>
+   </td>
+   <td>
+   <ul><li>XiaomiMiMo/MiMo-VL-7B-RL</li></ul>
+   </td>
+   </tr>
+</table>
 
 ### Models with Real-Time Voice Support
 
@@ -313,6 +362,7 @@ The supported models and their variants are given below:
 <li>meta-llama/Llama-3.2-3B-Instruct</li>
 
 <li>meta-llama/Llama-3.2-11B-Vision-Instruct</li>
+
 <li>meta-llama/Llama-Guard-4-12B</li>
 
 <li>meta-llama/Meta-Llama-3-8B</li>
@@ -443,10 +493,10 @@ The supported models and their variants are given below:
    </td>
   </tr>
   <tr>
-   <td><strong>Xiaomi</strong>
+   <td><strong>Xiaomimimo</strong>
    </td>
    <td>
-   <ul><li>Mimo-7B--VL-RL</li></ul>
+   <ul><li>XiaomiMiMo/MiMo-VL-7B-RL</li></ul>
    </td>
    </tr>
 </table>
