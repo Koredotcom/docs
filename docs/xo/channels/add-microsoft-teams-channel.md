@@ -269,4 +269,4 @@ if(channelActionMetadata){
 
 After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
+To learn more about working with Channels within the Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

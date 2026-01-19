@@ -147,6 +147,863 @@ The Agent Node can now pass structured JSON responses from the LLM to client cha
 
 To enable this feature, toggle on **Parse Rich Templates** in the custom prompt. In the post-processor script window, select the appropriate channel type and enter the corresponding post-processor script.
 
+Sample v1 prompt post-processor script:
+```
+let scriptResponse = {};
+let tools = [];
+let Templates = {
+    Name:{
+      rtm: function (content)  {
+          return JSON.stringify({text:content})
+      }
+    },
+     Modeofpayment: {
+            rtm: function (content) {
+                var info = ["UPI", "Cash", "Card"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        "subText": "Select the type of payment mode",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+            slack: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": info.map((info, i) => ({
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": info,
+                                    "emoji": true
+                                },
+                                "value": info,
+                                "action_id": "actionId-" + i
+                            }))
+                        }
+                    ]
+                };
+                return JSON.stringify(message)
+            }
+        },
+    book_ticket: {
+        type_of_transport: {
+            rtm: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        "subText": "Select the type of transport you want to book a ticket for.",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+            slack: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": info.map((info, i) => ({
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": info,
+                                    "emoji": true
+                                },
+                                "value": info,
+                                "action_id": "actionId-" + i
+                            }))
+                        }
+                    ]
+                };
+                return JSON.stringify(message)
+            }
+        },
+        source: {
+            rtm: function (content) {
+                return JSON.stringify({ text: content })
+            },
+            slack: function (content) {
+                return JSON.stringify({
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        }
+                    ]
+                })
+            }
+        },
+        count: {
+            rtm: function (content) {
+                var quickReplies = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "quick_replies",
+                        "text": content,
+                        "quick_replies": []
+                    }
+                };
+
+                for (i = 0; i < quickReplies.length; i++) {
+                    //if only text needs to diplayed
+                    var quickReply = {
+                        "content_type": "text",
+                        "title": quickReplies[i],
+                        "payload": quickReplies[i]
+                    };
+                    message.payload.quick_replies.push(quickReply);
+                }
+                return JSON.stringify(message);
+            },
+            slack: function (content) {
+                var quickReplies = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+                let blocks = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": [
+                                {
+                                    "type": "radio_buttons",
+                                    "options": quickReplies.map((quickReply, i) => ({
+                                        "text": {
+                                            "type": "plain_text",
+                                            "text": quickReply,
+                                            "emoji": true
+                                        },
+                                        "value": quickReply
+                                    }))
+                                }
+                            ]
+                        }
+                    ]
+                }
+                return JSON.stringify(blocks)
+            }
+        },
+        seating_type: {
+            rtm: function (content) {
+                var quickReplies = ["Seater", "Sleeper"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "quick_replies",
+                        "text": content,
+                        "quick_replies": []
+                    }
+                };
+
+                for (i = 0; i < quickReplies.length; i++) {
+                    //if only text needs to diplayed
+                    var quickReply = {
+                        "content_type": "text",
+                        "title": quickReplies[i],
+                        "payload": quickReplies[i]
+                    };
+                    message.payload.quick_replies.push(quickReply);
+                }
+                return JSON.stringify(message);
+            },
+            slack: function (content) {
+                let blocks = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": [
+                                {
+                                    "type": "radio_buttons",
+                                    "options": [
+                                        {
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Seater",
+                                                "emoji": true
+                                            },
+                                            "value": "value-0"
+                                        },
+                                        {
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Sleeper",
+                                                "emoji": true
+                                            },
+                                            "value": "value-1"
+                                        }
+                                    ],
+                                    "action_id": "actionId-0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+                return JSON.stringify(blocks)
+            }
+        }
+    },
+    FetchAccounts: {
+        accounttype: {
+            rtm: function (content) {
+                var info = ["saving", "current", "salary"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        //  "subText": "Select the type of transport you want to book a ticket for.",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+        }
+    },
+    type_of_transport: {
+            rtm: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        "subText": "Select the type of transport you want to book a ticket for.",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+            slack: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": info.map((info, i) => ({
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": info,
+                                    "emoji": true
+                                },
+                                "value": info,
+                                "action_id": "actionId-" + i
+                            }))
+                        }
+                    ]
+                };
+                return JSON.stringify(message)
+            }
+        },
+        source: {
+            rtm: function (content) {
+                return JSON.stringify({ text: content })
+            },
+            slack: function (content) {
+                return JSON.stringify({
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        }
+                    ]
+                })
+            }
+        },
+        count: {
+            rtm: function (content) {
+                var quickReplies = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "quick_replies",
+                        "text": content,
+                        "quick_replies": []
+                    }
+                };
+
+                for (i = 0; i < quickReplies.length; i++) {
+                    //if only text needs to diplayed
+                    var quickReply = {
+                        "content_type": "text",
+                        "title": quickReplies[i],
+                        "payload": quickReplies[i]
+                    };
+                    message.payload.quick_replies.push(quickReply);
+                }
+                return JSON.stringify(message);
+            },
+            slack: function (content) {
+                var quickReplies = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+                let blocks = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": [
+                                {
+                                    "type": "radio_buttons",
+                                    "options": quickReplies.map((quickReply, i) => ({
+                                        "text": {
+                                            "type": "plain_text",
+                                            "text": quickReply,
+                                            "emoji": true
+                                        },
+                                        "value": quickReply
+                                    }))
+                                }
+                            ]
+                        }
+                    ]
+                }
+                return JSON.stringify(blocks)
+            }
+        },
+        seating_type: {
+            rtm: function (content) {
+                var quickReplies = ["Seater", "Sleeper"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "quick_replies",
+                        "text": content,
+                        "quick_replies": []
+                    }
+                };
+
+                for (i = 0; i < quickReplies.length; i++) {
+                    //if only text needs to diplayed
+                    var quickReply = {
+                        "content_type": "text",
+                        "title": quickReplies[i],
+                        "payload": quickReplies[i]
+                    };
+                    message.payload.quick_replies.push(quickReply);
+                }
+                return JSON.stringify(message);
+            },
+            slack: function (content) {
+                let blocks = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": [
+                                {
+                                    "type": "radio_buttons",
+                                    "options": [
+                                        {
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Seater",
+                                                "emoji": true
+                                            },
+                                            "value": "value-0"
+                                        },
+                                        {
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Sleeper",
+                                                "emoji": true
+                                            },
+                                            "value": "value-1"
+                                        }
+                                    ],
+                                    "action_id": "actionId-0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+                return JSON.stringify(blocks)
+            }
+        },
+        paymentType: {
+            rtm: function (content) {
+                var info = ["UPI", "Cash", "Card"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        "subText": "Select the type of transport you want to book a ticket for.",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+            slack: function (content) {
+                var info = ["UPI", "Cash", "Card"];
+                var message = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": info.map((info, i) => ({
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": info,
+                                    "emoji": true
+                                },
+                                "value": info,
+                                "action_id": "actionId-" + i
+                            }))
+                        }
+                    ]
+                };
+                return JSON.stringify(message)
+            }
+        },
+}
+let getEntities = function (entities = []) {
+    let obj = {};
+    for (const { key, value } of entities) {
+        obj[key] = value;
+    }
+    return [obj];
+}
+
+if (llmResponse.choices[0].message.content) {
+    let content = JSON.parse(llmResponse.choices[0].message.content);
+    let mode = content.mode;
+    content = content.response;
+    scriptResponse.bot = content.bot;
+    scriptResponse.entities = getEntities(content.entities);
+    scriptResponse.conv_status = content.conv_status;
+    if (mode === "entity") {
+        if (Templates[content.entityName]?.[Channel_Type]){
+            scriptResponse.bot = Templates[content.entityName]?.[Channel_Type]?.(content.bot);
+        }
+    }
+    else if (mode == "tool") {
+        let toolName = content.toolName.split(".")
+        content.toolName = toolName.length >1 ? toolName[1]: toolName[0];
+        
+        if (Templates[content.toolName]?.[content.toolParam]?.[Channel_Type]){
+            scriptResponse.bot = Templates[content.toolName]?.[content.toolParam]?.[Channel_Type]?.(content.bot);
+        }
+    }
+    
+}
+
+if (llmResponse.choices[0].message.tool_calls && llmResponse.choices[0].message.tool_calls.length) {
+    tools = llmResponse.choices[0].message.tool_calls.map(tool_call => ({
+        toolCallId: tool_call.id,
+        toolName: tool_call.function.name,
+        args: tool_call.function.arguments
+    }));
+}
+
+scriptResponse.tools = tools;
+return JSON.stringify(scriptResponse);
+
+
+```
+
+Sample v2 prompt post-processor script:
+
+```
+let scriptResponse = {};
+let tools = [];
+
+let Templates = {
+    book_ticket: {
+        type_of_transport: {
+            rtm: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        "subText": "Select the type of transport you want to book a ticket for.",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+            slack: function (content) {
+                var info = ["Air", "Road", "Train"];
+                var message = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": info.map((info, i) => ({
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": info,
+                                    "emoji": true
+                                },
+                                "value": info,
+                                "action_id": "actionId-" + i
+                            }))
+                        }
+                    ]
+                };
+                return JSON.stringify(message)
+            }
+        },
+        source: {
+            rtm: function (content) {
+                return JSON.stringify({ text: content })
+            },
+            slack: function (content) {
+                return JSON.stringify({
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        }
+                    ]
+                })
+            }
+        },
+        count: {
+            rtm: function (content) {
+                var quickReplies = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "quick_replies",
+                        "text": content,
+                        "quick_replies": []
+                    }
+                };
+
+                for (i = 0; i < quickReplies.length; i++) {
+                    //if only text needs to diplayed
+                    var quickReply = {
+                        "content_type": "text",
+                        "title": quickReplies[i],
+                        "payload": quickReplies[i]
+                    };
+                    message.payload.quick_replies.push(quickReply);
+                }
+                return JSON.stringify(message);
+            },
+            slack: function (content) {
+                var quickReplies = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+                let blocks = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": [
+                                {
+                                    "type": "radio_buttons",
+                                    "options": quickReplies.map((quickReply, i) => ({
+                                        "text": {
+                                            "type": "plain_text",
+                                            "text": quickReply,
+                                            "emoji": true
+                                        },
+                                        "value": quickReply
+                                    }))
+                                }
+                            ]
+                        }
+                    ]
+                }
+                return JSON.stringify(blocks)
+            }
+        },
+        seating_type: {
+            rtm: function (content) {
+                var quickReplies = ["Seater", "Sleeper"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "quick_replies",
+                        "text": content,
+                        "quick_replies": []
+                    }
+                };
+
+                for (i = 0; i < quickReplies.length; i++) {
+                    //if only text needs to diplayed
+                    var quickReply = {
+                        "content_type": "text",
+                        "title": quickReplies[i],
+                        "payload": quickReplies[i]
+                    };
+                    message.payload.quick_replies.push(quickReply);
+                }
+                return JSON.stringify(message);
+            },
+            slack: function (content) {
+                let blocks = {
+                    "blocks": [
+                        {
+                            "type": "section",
+                            "text": {
+                                "type": "plain_text",
+                                "text": content,
+                                "emoji": true
+                            }
+                        },
+                        {
+                            "type": "actions",
+                            "elements": [
+                                {
+                                    "type": "radio_buttons",
+                                    "options": [
+                                        {
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Seater",
+                                                "emoji": true
+                                            },
+                                            "value": "value-0"
+                                        },
+                                        {
+                                            "text": {
+                                                "type": "plain_text",
+                                                "text": "Sleeper",
+                                                "emoji": true
+                                            },
+                                            "value": "value-1"
+                                        }
+                                    ],
+                                    "action_id": "actionId-0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+                return JSON.stringify(blocks)
+            }
+        }
+    },
+    FetchAccounts: {
+        accounttype: {
+            rtm: function (content) {
+                var info = ["saving", "current", "salary"];
+                var message = {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": content,
+                        //  "subText": "Select the type of transport you want to book a ticket for.",
+                        "buttons": []
+                    }
+                };
+                for (i = 0; i < info.length; i++) {
+                    // if the button is to send back text to platform
+                    var button = {
+                        "type": "postback",
+                        "title": info[i],
+                        "payload": info[i]
+                    };
+
+                    message.payload.buttons.push(button);
+                }
+                return JSON.stringify(message)
+            },
+        }
+    }
+}
+let content = llmResponse.choices[0].message.content;
+if (content) {
+    scriptResponse.bot = content;
+    try {
+        let parsedResp = JSON.parse(content);
+        if (parsedResp.toolName && parsedResp.toolParam && parsedResp.prompt) {
+            let toolName = parsedResp.toolName.split('.')
+            if (toolName.length > 1) {
+                toolName = toolName[1]
+            }
+            else {
+                toolName = toolName[0]
+            }
+            if (Templates[toolName]?.[parsedResp.toolParam]?.[Channel_Type]) {
+                scriptResponse.bot = Templates[toolName]?.[parsedResp.toolParam]?.[Channel_Type]?.(parsedResp.prompt)
+            }
+            else {
+                scriptResponse.bot = parsedResp.prompt;
+            }
+        }
+    }
+    catch (e) {}
+}
+
+
+if (llmResponse.choices[0].message.tool_calls && llmResponse.choices[0].message.tool_calls.length) {
+    tools = llmResponse.choices[0].message.tool_calls.map(tool_call => ({
+        toolCallId: tool_call.id,
+        toolName: tool_call.function.name,
+        args: tool_call.function.arguments
+    }));
+}
+
+scriptResponse.tools = tools;
+return JSON.stringify(scriptResponse);
+
+
+```
+
 
 
 ## Custom Prompt for Agent Node
@@ -455,7 +1312,6 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
         2. The expected LLM response structure is displayed. If the LLM response isn't aligned with the expected response structure, the runtime response might be affected. Click **Save**.
 
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/v1andv2.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tooling calling.  
 <img src="../images/selectv1.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
@@ -526,7 +1382,7 @@ To add an Agent Node V2 streaming prompt, follow the steps:
 
 
 15. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.  
-<img src="../images/v1andv2new.png" alt="Prompt Library" title="Prompt Library" style="border: 1px solid gray; zoom:70%;">
+
 
 16. Go to the Agent Node in the dialog. Select the Model and Custom Prompt for the tool calling.  
 <img src="../images/selectv2new.png" alt="Custom Prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
