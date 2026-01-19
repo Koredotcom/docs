@@ -143,7 +143,6 @@ To learn about the structural and implementation differences, as well as when to
 
 
 
-
 ## Custom Prompt for Agent Node
 
 Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts Library, the users can access, modify, and reuse prompts across different Agent Nodes.
