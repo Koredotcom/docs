@@ -52,7 +52,7 @@ The Agent Platform now supports additional AI models, giving users greater flexi
 New models include:
 
 * OpenAI Models: gpt-5.2-chat-latest, gpt-5.2-2025-12-11, gpt-5.2, gpt-5.1, gpt-5.1-chat-latest, gpt-5.1-2025-11-13, and gpt-5.1.
-* Anthropic: claude-haiku-4-5-20251001, claude-sonnet-4-5-20250929, and claude-opus-4-5-20251101
+* Anthropic: claude-haiku-4-5-20251001, claude-sonnet-4-5-20250929, and claude-opus-4-5-20251101.
 
 **Open-Source Model Support for Agentic Apps**
 
