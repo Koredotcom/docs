@@ -80,11 +80,11 @@ The Interactions → Transcriptions page now displays latency metrics for Voice 
 
 **Schedule Campaign API for Voice and SMS**
 
-A new ScheduleCampaign API enables scheduling for Voice and SMS campaigns. The API permits enabling or disabling scheduling for a campaign and overrides any existing schedule when enabled. It supports UTC-based start and end times with Daily or Weekly recurrence options, while returning a standard status and message response.
+A new ScheduleCampaign API enables scheduling for Voice and SMS campaigns. The API permits enabling or disabling scheduling for a campaign and overrides any existing schedule when enabled. It supports UTC-based start and end times with Daily or Weekly recurrence options, while returning a standard status and message response. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/enable-voice-or-sms-campaign-schedule-daily.md)
 
 **Contact Management APIs: Create, Update, and Delete**
 
-The platform now supports a complete set of Contact Management APIs, including Create (existing), Update, and Delete operations. These APIs enable external systems to keep contact data synchronized, support partial updates, and permit safe deletion without impacting historical interactions. All operations enforce validation, permissions, and auditing, and remain backward compatible.
+The platform now supports a complete set of Contact Management APIs, including Create (existing), Update, and Delete operations. These APIs enable external systems to keep contact data synchronized, support partial updates, and permit safe deletion without impacting historical interactions. All operations enforce validation, permissions, and auditing, and remain backward compatible. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-contacts.md)
 
 <hr>
 

@@ -92,7 +92,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Get All Contacts](../contact-center/get-all-contacts.md)                                                    | To retrieve all contacts created for outbound calling in a given stream ID.                                           | Configuration        |
 | [Update a Contact](../contact-center/update-a-contact.md)                                                    | To update a specific contact associated with a stream ID.                                           | Configuration        |
 | [Update Bulk Contacts](../contact-center/update-bulk-contacts.md)                                                    | To update multiple contacts simultaneously.                                           | Configuration        |
-| [Delete a Contact](../contact-center/delete-a-contact.md)                                                    | To delete a specific contact by ID.                                           | Configuration        |
+| [Delete a Contact](../contact-center/delete-a-contact.md)                                                    | To delete a specific contact.                                           | Configuration        |
 | [Delete Bulk Contacts](../contact-center/bulk-delete-contacts.md)                                                    | To delete multiple contacts simultaneously.                                           | Configuration        |
 
 ### Import/Export Data APIs
@@ -192,8 +192,8 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |
 |--------|------------------|---------------------------|
-| [Enable Daily Scheduling of Voice or SMS Campaign](../contact-center/enable-voice-or-sms-campaign-schedule-(daily).md) | To schedule a recurring daily Voice or SMS campaign. | Campaign Management |
-| [Enable Weekly Scheduling of Voice or SMS Campaign](../contact-center/enable-voice-or-sms-campaign-schedule-(weekly).md) | To schedule a recurring weekly Voice or SMS campaign. | Campaign Management |
+| [Enable Daily Scheduling of Voice or SMS Campaign](./enable-voice-or-sms-campaign-schedule-daily.md) | To schedule a recurring daily Voice or SMS campaign. | Campaign Management |
+| [Enable Weekly Scheduling of Voice or SMS Campaign](./enable-voice-or-sms-campaign-schedule-weekly.md) | To schedule a recurring weekly Voice or SMS campaign. | Campaign Management |
 | [Disable a Scheduled Voice or SMS Campaign API](../contact-center/disable-voice-or-sms-campaign-schedule.md) | To disable a previously scheduled Voice or SMS campaign. | Campaign Management |
 
 ### Campaign Details
