@@ -141,6 +141,12 @@ For a more practical approach, the differences through scenarios can make the co
 
 To learn about the structural and implementation differences, as well as when to use Regular or Streaming Prompts, see [Regular vs. Streaming Prompts](../../generative-ai-tools/prompts-library.md#regular-vs-streaming-prompts).
 
+### Parse Rich Templates
+
+The Agent Node can now pass structured JSON responses from the LLM to client channels for rich UI presentation. When users enable the "Parse Rich Templates" option in custom prompt settings (available for V1 and V2 prompts), the node passes the JSON payloads as structured responses to the platform, which then sends them as templates to client channels. This can be achieved by either prompting the model to generate responses in structured JSON format or by generating the templates in the prompt post-processor. The Node passes these JSON payloads as structured responses to the platform, which then sends them as templates to client channels. The client channels render these templates as supported UI components such as cards, lists, tables, and suggestion chips, enabling visually engaging information display beyond plain text.
+
+To enable this feature, toggle on **Parse Rich Templates** in the custom prompt. In the post-processor script window, select the appropriate channel type and enter the corresponding post-processor script.
+
 
 
 ## Custom Prompt for Agent Node
@@ -398,7 +404,7 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 
 
 7. You can either create a request from scratch or import the existing prompt from the Library to modify as needed. For example, click **Start from Scratch**. [Learn more](#dynamic-variables).  
-<img src="../images/v1toolcall.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/v1toolcall.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **JavaScript**. The Switch Mode pop-up is displayed. Click **Continue**.  
 <img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;">
@@ -419,6 +425,15 @@ To add an Agent Node V1 prompt using JavaScript, follow the steps:
 <img src="../images/content-key.png" alt="Response" title="Response" style="border: 1px solid gray; zoom:70%;">
 
 11. In the Actual Response section, double-click the **Key** that should be used to generate the text response path. For example, double-click the **Content** key and click **Save**.
+
+12. (Optional) toggle **Parse Rich Templates** to render the supported rich templates. Click Modify the post-processor script.
+    1. In the system context value, select the communication channel from the dropdown, enter the post-processor script, and click **Save & Test**.
+    2. The script response is displayed. Click **Save**.  
+    <img src="../images/rich-template-postprocessor.png" alt="Parse Rich Templates" title="Parse Rich Templates" style="border: 1px solid gray; zoom:70%;">
+
+
+
+
 12. Enter the **Exit Scenario Key-Value fields**, **Virtual Assistance Response Key**, and **Collected Entities**. The Exit Scenario Key-Value fields help identify when to end the interaction with the Agent model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the AI Agent’s response to the user. The Collected Entities is an object within the LLM response that contains the key-value of pairs of entities to be captured.  
 <img src="../images/essentialkeysv1.png" alt="Essential keys" title="Essential keys" style="border: 1px solid gray; zoom:70%;">
 
@@ -493,6 +508,9 @@ To add an Agent Node V2 streaming prompt, follow the steps:
         
         * Select OpenAI or Azure OpenAI, then click **Save**.
         * If you select Custom, enter the **Text Response Path** and **Tool Call Request key**. The tool-call request key in the LLM response payload enables the Platform to execute the tool-calling functionality. Click **Modify** to edit the Post-Processor Script. The expected LLM response structure is displayed. If the LLM response isn't aligned with the expected response structure, the runtime response might be affected. Click **Save**.  <img src="../images/custom-response-format.png" alt="Response format" title="Response format" style="border: 1px solid gray; zoom:70%;">
+
+12. (Optional) toggle Parse Rich Templates to enable rich UI presentation.  
+<img src="../images/parse-rich-templates.png" alt="Parse Rich Templates" title="Parse Rich Templates" style="border: 1px solid gray; zoom:70%;">
 
 12. (Optional) If you have enabled Token Usage Limits for your Custom Model, map the Request Tokens key and Response Tokens key for accurate token tracking and Analytics. Without proper mapping, the Platform can't calculate token consumption, potentially leading to untracked usage and unexpected costs.
     * Request Tokens key: `usage.input_tokens`
