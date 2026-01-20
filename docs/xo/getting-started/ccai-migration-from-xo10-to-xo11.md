@@ -317,7 +317,7 @@ Roles in Contact Center AI have additional access see [Role Management](../user-
 | Dispositions                           | Moved to Contact Center AI > Agent Management > Dispositions. [Learn more](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md) |
 | Languages & Speech                     | Moved to Contact Center AI > Configurations > Languages & Speech. [Learn more](../contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md) |
 | Standard Responses                     | Moved to Contact Center AI > Configurations > Response Templates. [Learn more](../contactcenter/configurations/response-templates/manage-response-templates.md) |
-| Interactions                           | Moved to Contact Center AI > Analytics > Interactions. [Learn more](../analytics/contact-center/interactions.md) |
+| Interactions                           | Moved to Contact Center AI > Analytics > Interactions. [Learn more](../analytics/overview/conversations.md) |
 | Queues & Agents                        | Moved to Contact Center AI > Analytics > Queues & Agents. [Learn more](../analytics/contact-center/queues-and-agents.md) |
 | Reports                                | Moved to Contact Center AI > Analytics > Reports. [Learn more](../analytics/contact-center/reports/reports-list.md) |
 | API Setup                              | Moved to App Settings > Dev Tools > API Scopes. [Learn more](../administration/security-and-control/api-scopes.md) |

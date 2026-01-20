@@ -8,7 +8,7 @@ To access surveys, go to **Contact Center AI** > **CONFIGURATIONS** > **Surveys*
 ## How Surveys Work
 
 The Surveys feature lets you get customer satisfaction ratings after conversations. You can only create one survey, which you can assign to voice, chat, or both.
-
+survey configuration window
 The system sends the survey according to a frequency that you can customize. After a customer conversation ends, the system or agent can ask the customer to provide feedback using a survey form.  
 <img src="../images/survey-link.png" alt="Surveys Link" title="Survey Link" style="border: 1px solid gray; zoom:80%;">
 
@@ -90,7 +90,7 @@ Steps to delete a survey:
 
 1. In the Surveys section, select the **Survey Name** or the **Edit** icon.
 2. In the survey configuration window, select **Delete** on the left side of the bottom toolbar.  
-<img src="../surveys/images/delete-surveys.png" alt="Delete a Survey" title="Delete a Survey" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-surveys.png" alt="Delete a Survey" title="Delete a Survey" style="border: 1px solid gray; zoom:70%;">
 3. Confirm your choice.
 
 !!! Warning "Deleted Surveys"

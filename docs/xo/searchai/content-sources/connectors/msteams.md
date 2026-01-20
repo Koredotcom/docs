@@ -51,9 +51,9 @@ Search AI interacts with MS Teams through its APIs. Registering Search AI as an 
 1. Navigate to **App registrations** and click **New Registration**.
 1. Enter a **Name** and choose an appropriate **Supported account type**.
 1. Enter the **Redirect URI** as one of the following, depending on your region and deployment. 
-    * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-    * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-    * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+    * JP Region Callback URL: `https://jp-bots-idp.kore.ai/workflows/callback
+    * DE Region Callback URL: `https://de-bots-idp.kore.ai/workflows/callback`
+    * Prod Callback URL: `https://idp.kore.com/workflows/callback`
 1. Click **Register** to create the app. A client ID is generated. 
 1. Go to **Certificates & secrets** and click **New Client Secret**. 
 1. Copy the client ID, client secret, and tenant ID. Use these parameters to configure the connector in Search AI. 

@@ -1,7 +1,7 @@
 
 # Prompts Library
 
-Effective prompts are essential for accurate LLM responses. The Prompts Library module enables you to create, test, and manage prompts tailored to specific use cases. It displays all custom and default prompt templates with their current status (active or inactive).
+Effective prompts are essential for accurate LLM responses. The Prompts Library module enables you to create, test, and manage prompts tailored to specific use cases.  It displays all custom and system prompt templates. Usage status ("In Use" or "Not In Use") is displayed only for custom prompts.
 The prompt post-processor helps you align LLM responses with Platform expectations. Use it to refine outputs, ensuring correct behavior and high-quality interactions at runtime. The post-processor is available for both default and custom prompts.
 
 
@@ -85,6 +85,16 @@ Use Streaming Prompts When:
 
 The Quick Filter lets you filter prompts by type: system or custom. Use the dedicated smart search to find prompts by name, feature, or model. Apply smart filters to refine results by prompt type, label, status, model, or feature name. The sort function reorganizes the list based on your selected criteria.  
 <img src="../images/prompt-library-with-search.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
+
+
+## The More Options
+
+The More Options menu next to each prompt allows you to perform the following actions:
+
+* **View Associations**: See all nodes and features where the prompt is currently applied.
+* **Edit**: Modify custom prompts.
+* **Delete**: Deletes unused custom prompts (deletion is permanent). "In Use" and system prompts can't be deleted.
+* **Advanced Configuration**: For system prompts, adjust the model's temperature and token limit.
 
 
 ## How to Add a Custom Prompt
