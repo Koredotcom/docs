@@ -36,7 +36,7 @@ Similarly, you can modify the other labels like **FAQ**, **Dialog Task**, **Term
 
 ## Dialog Task Labels
 
-Here, you can customize dialog task timeline, display, and labels. You can use {{Task}} as a placeholder for dynamic dialog names. You can disable this entire section by using the “toggle” button at the top and enable or disable either or both the labels (**Dialog Started** and **Dialog Ended**). In the following screenshot, **Dialog {{Task}} started** label has been renamed as **Dialog {{Task}} began**.  
+Here, you can customize dialog task timeline, display, and labels. You can use {{Task}} as a placeholder for dynamic dialog names. You can disable this entire section by using the **toggle** button at the top and enable or disable either or both the labels (**Dialog Started** and **Dialog Ended**). In the following screenshot, **Dialog {{Task}} started** label has been renamed as **Dialog {{Task}} began**.  
 <img src="../widget-theming-layout-customization/dialog-task-label-change-4.png" alt="dialog-task-label-change" title="dialog-task-label-change" style="border: 1px solid gray; zoom:80%;">
 
 Note that both the **Dialog {{Task}} started** and **Dialog {{Task}} ended** labels have a limit of 28 characters each. Click **Reset** to go back to the default label names.
@@ -55,7 +55,7 @@ This slider lets you control the opacity (visibility) of the **Sent** and **Copi
 
 ## Widget Menu Layout
 
-This section lets you enable or disable the Agent AI widget menus - **Assist Home**, **Search**, ** My AI Agent (Bot)**, and **Transcript** (for the Voice channel). The disabled menus appear on the widget, only if you enable them back. It also lets you select a landing tab and create a custom tab (**+ Add Custom Tab**). You can position the menus at the bottom or the side by clicking the **Bottom** or **Side** options at the top or shuffle the menus with the drag-and-drop action. To automatically position the menus based on the pixel level, select the **Responsive** option; If the pixel size is less than 600, the menus move to the bottom, and for more than 600, the menus move to the left. The following screenshot shows a disabled **Search** menu, **Side** positioning of the enabled menus, **My AI Agent (Bot)** tab marked as the landing tab, shuffled **Assist Home** menu with the **My AI Agent (Bot)** menu, and the **+ Add Custom Tab** button:
+This section lets you enable or disable the Agent AI widget menus - **Assist Home**, **Search**, **My AI Agent (Bot)**, and **Transcript** (for the Voice channel). The disabled menus appear on the widget, only if you enable them back. It also lets you select a landing tab and create a custom tab (**+ Add Custom Tab**). You can position the menus at the bottom or the side by clicking the **Bottom** or **Side** options at the top or shuffle the menus with the drag-and-drop action. To automatically position the menus based on the pixel level, select the **Responsive** option; If the pixel size is less than 600, the menus move to the bottom, and for more than 600, the menus move to the left. The following screenshot shows a disabled **Search** menu, **Side** positioning of the enabled menus, **My AI Agent (Bot)** tab marked as the landing tab, shuffled **Assist Home** menu with the **My AI Agent (Bot)** menu, and the **+ Add Custom Tab** button:
 
 <img src="../widget-theming-layout-customization/widget-menu-layout.png" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
 

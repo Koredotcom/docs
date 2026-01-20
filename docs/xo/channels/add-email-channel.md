@@ -28,7 +28,9 @@ To manage the channel session settings, click settings (gear icon) on the Email 
 
 **Channel-Based Sessions**: When enabled, the platform creates a new session for each unique "To" email address. Emails sent to the same address continue the existing session, while emails sent to different addresses automatically start new sessions. This keeps issues organized and separate.
 
-**Thread-Based Sessions**: When enabled, the platform creates sessions based on email thread reference headers. Replies within the same thread continue the existing session, while new threads always start fresh sessions. This option is only available when Channel-Based Sessions is enabled.  <img src="../images/email-session-settings.png" alt="Email Settings" title="Email Settings" style="border: 1px solid gray; zoom:80%;">
+**Thread-Based Sessions**: When enabled, the platform creates sessions based on email thread reference headers. Replies within the same thread continue the existing session, while new threads always start fresh sessions. When users or agents add recipients mid-thread, the platform maintains the existing email thread and preserves conversation context. This option is only available when Channel-Based Sessions is enabled.  
+
+<img src="../images/email-session-settings.png" alt="Email Settings" title="Email Settings" style="border: 1px solid gray; zoom:80%;">
 
 
 

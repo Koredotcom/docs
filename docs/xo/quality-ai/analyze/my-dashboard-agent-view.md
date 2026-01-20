@@ -1,8 +1,6 @@
-# Agent Dashboard (Agent View)
+# Agent Dashboard Overview
 
-## Overview
-
-My Dashboard is a personalized workspace for agents that provides a focused view of their own performance. It displays supervisor-assigned scorecards and key insights, such as sentiment trends and resolution effectiveness, based on their conversations. This supports global language selection, and individual Scorecard widgets allow agents to choose their preferred languages independently. Agents can monitor their performance trends, identify coaching opportunities, and track areas for improvement (including voice attributes) using Calendar and Channel filters for targeted analysis.
+My Dashboard is a personalized workspace for agents that provides a focused view of their own performance. It displays supervisor-assigned scorecards and key insights, such as sentiment trends and resolution effectiveness, based on their conversations. This supports global language selection, and individual Scorecard widgets lets agents choose their preferred languages independently. Agents can monitor their performance trends, identify coaching opportunities, and track areas for improvement (including voice attributes) using Calendar and Channel filters for targeted analysis.
 
 ### Access My Dashboard 
 

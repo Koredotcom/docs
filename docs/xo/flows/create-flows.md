@@ -23,11 +23,11 @@ Start flows represent the most complex flow type, providing access to all [node 
 
 The default welcome flows are created automatically when you create a new account. Default Flows support both Chat and Voice functionalities. These flows act as fallback. You can edit these flows to customize the experience for your users.
 
-**Chat – Welcome Flow**  
+**Chat-Welcome Flow**  
 The Welcome Chat Flow allows you to simulate user interactions on any configured chat channel. Use the RTM (Real-Time Messaging) channel to test chat scenarios. This flow ensures that the AI Agent responds appropriately when users initiate conversations without clearly stating their intent.  
 <img src="../images/welcome-chat-flow.gif" alt="Welcome Chat Flow" title="Welcome Chat Flow" style="border: 1px solid gray; zoom:70%;">
 
-**Voice – Welcome Flow**  
+**Voice-Welcome Flow**  
 The Welcome Voice Flow provides a similar capability for voice-based experiences. You can test voice interactions using the SBC (Session Border Controller) simulation channel. This flow handles default voice call routing when no predefined intent is matched.  
 <img src="../images/welcome-call-flow.gif" alt="Welcome Voice Flow" title="Welcome Voice Flow" style="border: 1px solid gray; zoom:70%;">
 
@@ -51,11 +51,11 @@ This flow type runs when a call gets disconnected and is useful in gathering cus
 Steps to create a Start Flow:
 
 1. In the left navigation, go to **Flows & Channels** > **FLOWS**.
-2. Click **+ New Start Flow**.  
+2. Select **+ New Start Flow**.  
     <img src="../images/new-start-flow.png" alt="New Start Flow" title="New Start Flow" style="border: 1px solid gray; zoom:80%;">
 
 3. In the New Start Flow window, provide inputs for the following fields:
-    1. **Start Flow Name**: This name will help identify the flow.
+    1. **Start Flow Name**: This name helps identify the flow.
     2. **Description**: Input text to describe what the experience flow does or its purpose.
     3. **Attach a Channel**: Select one of the following channels to integrate with this flow:
 
@@ -64,10 +64,10 @@ Steps to create a Start Flow:
 1. Selecting this option displays the list of phone numbers available within your account. Select a number to map to the start flow.
     <img src="../images/voice-channel-phone-number.png" alt="Phone Number" title="Phone Number" style="border: 1px solid gray; zoom:100%;">
 
-2. If you have not added any number to your account, click **Purchase a phone number**.  
+2. If you haven't added any number to your account, select **Purchase a phone number**.  
     <img src="../images/purchase-phone-number.png" alt="Purchase a Phone Number" title="Purchase a Phone Number" style="border: 1px solid gray; zoom:100%;">
 
-    * The _Phone Number_ window is displayed as shown below. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:  
+    * The _Phone Number_ window displays. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:  
     <img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
 
     * Select the **Country**.
@@ -78,7 +78,7 @@ Steps to create a Start Flow:
     <img src="../images/area-code.png" alt="Pricing" title="Pricing" style="border: 1px solid gray; zoom:100%;">
 
 3. Configure an available number with the following steps:
-    * Click the **Get Number** button.
+    * Select **Get Number**n.
     * Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and click **Done**. A success confirmation message is displayed, and the phone number is added.
     <img src="../images/forward-to-phone-number.png" alt="Reserve Phone Number" title="Reserve Phone Number" style="border: 1px solid gray; zoom:80%;">
 
@@ -121,19 +121,19 @@ To handle situations where there are delays in backend operations or unexpected 
 <img src="../images/bot-no-input.png" alt="Bot No Input Toggle" title="Bot No Input Toggle" style="border: 1px solid gray; zoom:80%;">
 
 * When enabled, the below configurations are applied.
-* When disabled, the default give-up timeout is applied, causing the call to disconnect if the bot does not respond within 30 seconds.
+* When disabled, the default give-up timeout is applied, causing the call to disconnect if the bot doesn't respond within 30 seconds.
 
 ##### Configuration Options
 
 ###### Bot No Input Timeout
 
-* If the bot does not respond within this duration, an action based on the "Interaction Type" is triggered.
-* This periodic message will repeat until the bot responds or until the "Bot No Input Give Up Timeout" is reached.  
-<img src="../images/timeout.png" alt="Bot No Input Timeout" title="Bot No Input Timeout" style="border: 1px solid gray; zoom:80%;">
+* If the bot doesn't respond within this duration, an action based on the "Interaction Type" is triggered.
+* This periodic message repeats until the bot responds or until the "Bot No Input Give Up Timeout" is reached.  
+<img src="../images/bot-no-input-timeout-message.png" alt="Bot No Input Timeout" title="Bot No Input Timeout" style="border: 1px solid gray; zoom:80%;">
 
 ###### Interaction Type
 
-You can play audio or background music (BGM) to users on hold when an agent initiates a tool call or checks the knowledge base. The Realtime TTS model supports audio playback only through an input URL and does not support speech input.
+You can play audio or background music (BGM) to users on hold when an agent initiates a tool call or checks the knowledge base. The Realtime TTS model supports audio playback only through an input URL and doesn't support speech input.
 
 The following options are available:
 
@@ -142,7 +142,6 @@ The following options are available:
 
 * **Bot No Input URL**: Enter a valid audio URL. The bot will play the audio file from this URL when triggered by the no-input timeout.  
 <img src="../images/background-music.png" alt="Interaction Type" title="Interaction Type" style="border: 1px solid gray; zoom:80%;">
-    
 
 ###### Bot No Input Retries
 
@@ -206,7 +205,7 @@ This configuration ensures that user interactions remain seamless and informativ
 
 The Answering Machine Detection (AMD) feature provides intelligent call handling capabilities for voice-based communication flows by detecting whether a human or an answering machine answers an incoming call.
 
-When enabled, the system detects Answering Machine Detection (AMD) from incoming calls and stores the result in context variables accessible through `context.session.UserSession`. 
+When enabled, the system detects Answering Machine Detection (AMD) from incoming calls and stores the result in context variables available through `context.session.UserSession`. 
 
 Selecting the Disconnect the call after detecting a machine checkbox automatically terminates the call upon machine detection.
 
@@ -214,10 +213,10 @@ Selecting the Disconnect the call after detecting a machine checkbox automatical
 
     * This is applicable only to voice flows.
     * For calls disconnected due to AMD detection, the status is shown in the ‘Interactions’ page
-        * [Interactions](../analytics/contact-center/interactions.md) Dashboard
+        * [Interactions](../analytics/overview/conversations.md) Dashboard
             * Status: Completed
             * Mode:  Machine Detected
-        * ['Insights to Log'](../analytics/contact-center/interactions.md#insights-to-logs) tab
+        * ['Insights to Log'](../analytics/overview/conversations.md#insights-to-logs) tab
             * Status: Completed (Closed)
             * Mode: Machine Detected
             * Reason: Machine Detected
@@ -226,9 +225,18 @@ Selecting the Disconnect the call after detecting a machine checkbox automatical
 
 <img src="../images/answering-machine-detection.png" alt="Answering Machine Detection" title="Answering Machine Detection" style="border: 1px solid gray; zoom:80%;">
 
+#### TTS Streaming
+
+Enabling this option streams the TTS response and saves 200ms of TTS connection latency. Supported only for Deepgram TTS and ElevenLabs TTS.
+
+#### Continuous Gather
+
+This option appears when enabling TTS Streaming. Enable this option to capture user responses and reduce latency. Use it only for Agentic App use cases.  
+<img src="../images/tts-streaming-continuous-gather.png" alt="TTS Streaming and Continuous Gather" title="TTS Streaming and Continuous Gather" style="border: 1px solid gray; zoom:80%;">
+
 #### Chat
 
-Selecting chat will display all the chat channels configured in the channels section. The displayed values include:
+Selecting chat displays all the chat channels configured in the channels section. The displayed values include:
 
 1. **All**: Selecting it selects the Web/Mobile Client and any other services available within your account for the chat flow.
 2. **Web/Mobile Client**: The web client is the front-end component of any conversational AI system or application that communicates with a server and is accessed by the end-user on a desktop or mobile device.  
