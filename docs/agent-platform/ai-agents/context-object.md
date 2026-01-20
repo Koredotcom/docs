@@ -474,7 +474,9 @@ You can reference any accessible value from the Context Object:
 * If a referenced key doesn’t exist, the expression resolves to null (or an empty string in string contexts).
 * Circular references are automatically detected and blocked.
 
+!!! note
 
+    Typing {{ in any field within a node that supports context variables displays a dynamic dropdown of all available variables, grouped by node, including environment variables defined at the workflow-tool level. This allows referencing values without manually entering full paths.
 
 ## Extending the Context Object with Script Nodes
 
