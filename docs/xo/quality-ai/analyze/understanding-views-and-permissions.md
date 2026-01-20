@@ -1,127 +1,141 @@
-# Audit Allocations
+# Understanding Views and Permissions
 
-Audit Allocations streamlines the manual quality assurance workflow by enabling QA managers and supervisors to systematically assign interactions to auditors for evaluation. This feature addresses the critical need for manual oversight in automated quality assurance systems, allowing teams to validate Auto QA accuracy, provide targeted agent feedback, and maintain consistent quality standards across all customer interactions.
+Audit Allocations presents different interfaces depending on your permissions:
 
-The Audit Allocations interface adapts to your permission level, displaying either management or auditor views based on your role.
+**For Users with Allocation Creation Permission**
 
-## Access Audit Allocations 
+You see two tabs that provide complete allocation lifecycle management:
 
-Navigate to **Quality AI** > **ANALYZE** > **Allocations**.  
-<img src="../allocations/images/audit-allocations.png" alt="Audit Allocations" title="Audit Allocations" style="border: 1px solid gray; zoom:80%;">
+* **My Allocations**: Track and manage all allocations you've created, with options to edit assignments and monitor completion progress.
 
-The **My Allocations** has following key Items:
+* **Assigned to Me**: View interactions that other managers have assigned to you for evaluation.
 
-* **Name**: Displays the audit name.
+**For Users without Allocation Creation Permission**
 
-* **Description**: Provides a brief summary or purpose of the audit allocation.
+You see a single tab focused on your evaluation work:
 
-* **Created On**: Shows the date the system created the audit allocation.
+* **Assigned to Me**: Access all interactions assigned to you by QA managers or supervisors.
 
-* **Auditors**: Lists all auditors assigned to the audit allocation.
+## My Allocations
 
-* **Interactions**: Displays the count of interactions assigned vs. completed in the audit.
+The **My Allocations** tab serves as your central dashboard for managing all audit assignments you've created. This view provides complete visibility into allocation status, completion progress, and auditor assignments, with powerful tools for editing and monitoring your team's evaluation work.   
+<img src="../allocations/images/my-allocations.png" alt="My Allocations" title="My Allocations" style="border: 1px solid gray; zoom:80%;">
 
-* **Status**: Shows the current state of the audit allocation, such as "Not Started," "In Progress," or "Completed."
+### Allocation Overview
 
-* **Actions**: Enables auditors to view audit details, reassign the allocation, and bookmark the audit for later reference.
+The **My Allocations** tab displays comprehensive information about each allocation you've created:
 
-## Why Audit Allocations?
+| Column        | Description                                                     |
+|--------------|-----------------------------------------------------------------|
+| Name          | The allocation identifier you created                            |
+| **Description**   | Description for the allocation                                   |
+| **Auditor**       | List of auditors assigned                                        |
+| **Created On**    | Date of creation                                                 |
+| **Interaction**   | Number of interactions                                           |
+| **Status**        | Overall allocation state (Completed / In Progress)               |
+| **Actions**       | Management options (View Logic, Edit)                             |
 
-Even with robust Auto QA systems, contact centers rely on manual evaluations to improve accuracy and deliver meaningful agent coaching. Traditional audit allocation methods create several operational challenges, which Audit Allocations directly addresses.
+### View Logic
 
-* **Allocation Visibility Gaps**: Tracking which interactions you've assigned to auditors and monitoring completion progress across your team.
+The View Logic action reveals the complete configuration behind your allocation, showing exactly which criteria and filters determined the interaction selection. This transparency helps you understand allocation composition and replicate successful audit strategies.   
+<img src="../allocations/images/view-logic-actions.png" alt="View Logic Actions" title="View Logic Actions" style="border: 1px solid gray; zoom:80%;">
 
-* **Inflexible Assignment Management**: Reassigning interactions when auditors become unavailable due to leave, workload changes, or scheduling conflicts.
+* Select **View Logic** from the Actions menu to see:
 
-* **Manual Workflow Inefficiencies**: Creating custom allocations without pre-saved filters, requiring multiple steps to set up one-time audit assignments.
+* **Date Range**: Date range for selected interactions
+* **Evaluation Form**: The specific form template used for evaluating interactions in this allocation.
+* **Languages**: Language filters applied to narrow interaction selection.
+* **Queues**: Selected queues or all queues.
+* **Agents/Agent Groups**: Specific agents or groups included.
+* **Allocation Type**: Random or Custom method used.
+* **Channel Settings**: Voice, Chat, or both channels.
+* **Assignment Logic**: Distribution method - Percentage-based (% of interactions per agent) or fixed interaction count per agent.
+* **Custom Filters**: Applied filters for custom allocations.
 
-* **Limited Control Over Distribution**: Managing per-agent interaction volumes limits consistent evaluation coverage across the team.
+### Edit Allocation
 
-* **Organizational Confusion**: Distinguishing between conversation analysis (Conversation Mining) and audit assignment workflows when they share the same interface.
+The Edit Allocation capability addresses one of the most common operational challenges in manual QA, adapting to auditor availability changes. This feature lets you redistribute pending work without disrupting completed evaluations or forcing you to create entirely new allocations.  
+<img src="../allocations/images/my-allocations.png" alt="My Allocations" title="My Allocations" style="border: 1px solid gray; zoom:80%;">
 
-Audit Allocations transforms the manual QA assignment process by providing a dedicated workspace with complete visibility into allocation lifecycle management, flexible reassignment capabilities, and streamlined allocation creation.
+**When to Use Edit Allocation?**
 
-## How Does Audit Allocations Help?
+Use this feature when you need to:
 
-Audit Allocations delivers value through several key capabilities that enhance your manual QA workflow:
+* Reassign interactions from auditors who are on leave or unavailable.
+* Balance workload when some auditors complete their assignments faster than others.
+* Add new auditors to help complete an allocation.
+* Update the allocation name or description for better organization.
 
-* **Comprehensive Tracking**: Monitor all allocations you've created with real-time visibility into auditor-wise completion rates, enabling proactive workload management.
+**Edit Allocation Process**
 
-* **Flexible Reassignment**: Redistribute pending interactions from unavailable auditors to other team members, ensuring consistent evaluation coverage without workflow disruption.
+1. Select **Edit** from the Actions menu for the allocation you want to modify.
 
-* **Streamlined Allocation Creation**: Create custom allocations with quick filters directly in the assignment workflow, eliminating the need to pre-save filters for one-time audits.
+1. Update the **Name** or **Description** if needed.
 
-* **Controlled Distribution**: Specify exact interaction counts or percentages per agent, giving you precise control over evaluation workload across your auditor team.
+1. Review the current auditor assignments, which display:
+    * Auditor names
+    * Total interactions assigned to each auditor
+    * Completed interactions count
+    * Pending interactions count
+1. Select the auditors you want to reassign interactions from by checking their boxes. You can only reassign pending interactions. Completed evaluations remain with the original auditor.
 
-* **Dual Assignment Methods**: Choose between random sampling for unbiased coverage or custom filters for targeted evaluations based on specific criteria.
+1. Choose reassignment options:
+    * **Redistribute Among Existing Auditors**: Assign pending interactions to auditors in this allocation.
 
-## New Audit Allocation
+    * **Add New Auditors**: Include additional team members to help complete the allocation.
 
-You can access **Audit Allocations** by navigating to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Audit Allocations** > **New Audit Allocation**. 
+1. Specify the allocation percentage for each auditor receiving redistributed interactions. The system automatically calculates interaction counts based on your percentage inputs and the total pending interactions.
 
-<img src="../conversation-mining/images/new-audit-allocation.png" alt="New Audit Allocation" title="New Audit Allocation" style="border: 1px solid gray; zoom:80%;">
+1. Select **Update** to apply your changes.
 
-### Settings
+### Create New Allocation
 
-Steps to add New Audit Allocation in **Settings** tab:
+Select **New Audit Allocation** to start the allocation creation process. The system guides you through three sequential steps: Settings, Allocation, and Assignment.
 
-1. Select **New Audit Allocation** to assign interactions for a new audit allocation.  
-    <img src="../conversation-mining/images/conversation-mining-add-new-audit-allocations.png" alt="Add New Audit Allocations" title="Add New Audit Allocations" style="border: 1px solid gray; zoom:80%;">
+## Assigned to Me
 
-2. Under the **Settings**, enter a **Name** for the audit.
-3. Enter a short **Description** of the audit which is optional.
-4. Select an **Evaluation Form** from the dropdown list to evaluate for.
-5. Select **Agents** to search an agent from the dropdown list to assign specific agents to a Queue for audit allocation.  
-    <img src="../conversation-mining/images/agents-search.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:80%;">
+The Assigned to Me tab displays all interactions that managers or supervisors have assigned to you for manual evaluation. This focused view helps you efficiently work through your audit queue while tracking your progress and organizing your evaluation work.   
+<img src="../allocations/images/assign-to-me.png" alt="Assign To Me" title="Assign To Me" style="border: 1px solid gray; zoom:80%;">
 
-6. Select **Agents Groups** to search an agent group from the dropdown list to assign the agents group to a Queue for audit allocation.  
-    <img src="../conversation-mining/images/agent-groups-queue.png" alt="Agents Groups" title="Agents Groups" style="border: 1px solid gray; zoom:80%;"> 
+### Interaction List Structure
 
-7. Select **Next** to move to **Allocation** section.
+The Assigned to Me table provides essential information for each interaction awaiting evaluation:
 
-### Allocation
+| Column                 | Description                                                                                                   |
+|------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Name**                   | Allocation Name                                                                                                |
+| **Agent**                  | The agent who handled the interaction                                                                          |
+| **Assigned Date**           | Shows the date the system created the allocation                                                                                |
+| **Evaluation Form**         | Form to use for evaluation                                                                                     |
+| **Kore Evaluation Score**   | Auto QA score if available                                                                                     |
+| **Emotions**               | Detected customer emotions throughout the interaction (for example, frustrated, satisfied, neutral).                |
+| **Moments**                | Key moments identified in the interaction (for example, escalation points, resolution moments, critical exchanges).  |
+| **Sentiment Score**        | Overall sentiment analysis of the customer's experience (positive, negative, neutral, with numerical scoring).|
 
-Steps to Add New Audit **Allocation** tab:
+### Filter and Search
 
-1. Select an **Allocation Type** (**Random** or **Custom**).
-    1. **Random** allocation lets you assign a set of interactions for audit.
-    2. **Custom** allocation lets you assign interactions for audit by selecting saved filters from Conversation Mining, enabling focused evaluations.
-2. The system selects **Random** radio key as the initial allocation type. If you choose **Random**, then select a **Date range**.
-3. Select the **Channel** to enable **Voice** toggle key, and specify the percentage of interactions per agent to assign for audit. Based on your input, the system selects interactions from the chosen agents and the selected queue.
+Use the **Filters** button to narrow your assigned interactions:
 
-    a. The interaction count shows the average number of interactions per agent based on the selected agents and the specified percentage.
+* **Allocation Name**: Filter by specific allocation names using the search dropdown.
+* **Date Range**: Focus on interactions from specific time periods.
+* **Agent**: View interactions for specific agents.
+* **Queue**: Filter by queue assignments.
+* **Evaluation Form**: See interactions using specific forms.
 
-    b. The Total interactions value at the bottom of the panel shows the number of interactions selected based on random sampling and the user’s date-range input. The system applies the percentage of interactions per agent, along with the interaction count across channels, to the audit when required. You can adjust these values by changing the corresponding user inputs in the available fields.
-    
-4. If you choose **Custom**, then the following screen appears to select a saved filter for **Custom Allocation** to assign those interactions for audits.  
-    <img src="../conversation-mining/images/add-new-audit-allocation.png" alt="Allocation" title="Allocation" style="border: 1px solid gray; zoom:70%;">
+### Evaluation Workflow   
 
-5. Select a required search filter for audit.
+<img src="../allocations/images/evaluation-workflow.png" alt="Evaluation Workflow" title="Evaluation Workflow" style="border: 1px solid gray; zoom:80%;">   
 
-    The total interactions count displays the total number of interactions that's assigned for this audit based on the evaluation form (queue), agent group selection, and the filter selection.
+Complete your assigned evaluations following this process:
 
-6. Select **Next** to move to **Assignment** tab.
+1. Select the **Evaluate** action for an interaction to open the full conversation view.
+2. Review the complete interaction thread with all available context:
+    * Customer-agent conversation flow
+    * Interaction metadata (duration, channel, queue)
+    * Auto QA scores and insights
+    * Topic identification and sentiment analysis
+3. Use the assigned Evaluation Form to score each criterion.
+4. Save your evaluation when complete.
+5. The interaction automatically removes from your Assigned to Me list after you submit your evaluation.
 
-### Assignment
 
-Steps to **Add New Audit Allocation** in **Assignment** tab: 
-
-1. Select the **Auditors** from the Search filter that you want to assign interactions for manual evaluation.  
-    <img src="../conversation-mining/images/new-audit-allocation-assignment.png" alt="Assignment" title="Assignment" style="border: 1px solid gray; zoom:60%;">    
-    
-2. Enter the % allocation of interactions that you want to allocate for each selected auditor.
-
-    The Interactions column shows the number of interactions assigned to each auditor based on the allocation percentage. You can adjust this percentage to match your preferences.
-    <img src="../conversation-mining/images/audit-allocation-search-filter.png" alt="Audit Allocation Search Filter" title="Audit Allocation Search Filter" style="border: 1px solid gray; zoom:60%;">
-
-3. The total allocation percentage across all auditors must sum to 100% to enable the **Create** button.
-
-    !!! Note
-
-        When the assignment configuration is completed, such that the total allocation percentage is 100%.
-
-4. Select **Create** to assign the interactions for evaluation to the selected auditors
-
-5. The interactions shown in the **Allocation** tab are the ones assigned to the user for audit. The audit allocation tab shows empty if no interactions are available for evaluation.
-
-6. After the user finishes evaluating an interaction, the system removes it from the audit allocation page.

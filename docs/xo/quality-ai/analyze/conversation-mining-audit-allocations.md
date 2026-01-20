@@ -9,22 +9,6 @@ The Audit Allocations interface adapts to your permission level, displaying eith
 Navigate to **Quality AI** > **ANALYZE** > **Allocations**.  
 <img src="../allocations/images/audit-allocations.png" alt="Audit Allocations" title="Audit Allocations" style="border: 1px solid gray; zoom:80%;">
 
-The **My Allocations** has following key Items:
-
-* **Name**: Displays the audit name.
-
-* **Description**: Provides a brief summary or purpose of the audit allocation.
-
-* **Created On**: Shows the date the system created the audit allocation.
-
-* **Auditors**: Lists all auditors assigned to the audit allocation.
-
-* **Interactions**: Displays the count of interactions assigned vs. completed in the audit.
-
-* **Status**: Shows the current state of the audit allocation, such as "Not Started," "In Progress," or "Completed."
-
-* **Actions**: Enables auditors to view audit details, reassign the allocation, and bookmark the audit for later reference.
-
 ## Why Audit Allocations?
 
 Even with robust Auto QA systems, contact centers rely on manual evaluations to improve accuracy and deliver meaningful agent coaching. Traditional audit allocation methods create several operational challenges, which Audit Allocations directly addresses.
