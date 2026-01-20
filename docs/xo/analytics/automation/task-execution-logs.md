@@ -16,8 +16,6 @@ The **Task Execution Logs** feature helps you gain in-depth insights into the ta
 
 The **Task Execution Logs** page shows information specific to task execution in the following sections:
 
-
-
 * **Failed Task**: Indicates the number of unsuccessful tasks.
 * **API Calls**: Displays all the Service node and Webhook node executions-related data, and the number of failed services during AI Agents interactions.
 * **Script Execution**: Displays analytics data for all the script node executions and the number of failed scripts during AI Agents interactions.

@@ -45,7 +45,6 @@ In the following example configuration, the tenancy URL contains the {tenant} or
 
 <img src="../images/oauth-v2-password-grant-img3.png" alt="Defining Tenancy" title="Defining Tenancy" style="border: 1px solid gray;zoom:80%;"/>
 
-
 ## Adding Form Fields
 
 If, for example, the default username and password fields do not meet your needs for authorization input, you can add custom fields displayed to the end-user by adding authorization IDP form fields. You can use these form fields, for example, if PIN code is required in the authorization process.

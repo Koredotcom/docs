@@ -49,6 +49,7 @@ The following key features can be leveraged when defining Traits:
 1. **Trait Type** is a collection of related traits like _Travel Class_ in the above example.
 
     * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click [here](#the-ml-model-for-traits) for ML-based trait configuration.
+    * Select the Network type (Standard or Few-shot Model) from the dropdown. The available embedding model options for the Few-Shot Model are BGE M3, MPNet, and LaBSE.
     * A _Trait Type_ can have one or more _Traits_.
     <img src="../images/trait-type-definition.png" alt="traits type definition" title="traits type definition" style="border: 1px solid gray; zoom:75%;">
 
