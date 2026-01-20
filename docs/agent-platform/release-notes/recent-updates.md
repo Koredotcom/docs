@@ -6,9 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release empowers you to build more sophisticated, secure, and flexible AI solutions. You can now create better user experiences with customizable waiting messages while agents process requests, and maintain tighter security controls with configurable session log settings.
-
-Access tool outputs directly through Artifacts to build a custom experience on the client side. Expand your deployment options with open-source LLM support for agentic applications, giving you greater flexibility in model selection. Additional improvements help you protect sensitive information with enhanced PII handling in workflows, work more efficiently with improved context variable selection, and streamline team onboarding with configurable default user roles.
+This release empowers you to build more sophisticated, secure, and flexible AI solutions. You can now improve voice interactions with direct real-time integration for single-agent apps,  create better user experiences with customizable waiting messages while agents process requests, and maintain tighter security controls with configurable session log settings.
+Access tool outputs directly through Artifacts for custom client-side experiences and expand deployment options with open-source LLM support for agentic applications. Additional improvements include enhanced PII handling in workflows, improved selection of context variables, and configurable default user roles for streamlined team onboarding.
 
 <font size="4">Multi-Agent Orchestration</font>
 
@@ -18,7 +17,7 @@ The Single Agent Orchestration Pattern now supports real-time models, which sign
 
 **Customizable Waiting Messages**
 
-The new Waiting Experience feature provides natural fillers during processing delays to improve voice interactions. When responses take longer than expected, the system can now stream waiting messages to keep users engaged, reducing perceived latency and creating a smoother conversational experience. You can configure waiting messages as either static pre-defined phrases or AI-generated dynamic responses. This feature supports streaming-enabled TTS models, including Deepgram and ElevenLabs, with Azure TTS support coming soon.
+The Waiting Experience feature enhances voice interactions by streaming natural filler messages during processing delays, reducing perceived latency and ensuring smoother conversations. This feature is now publicly available and includes a customizable prompt editor for creating AI-generated dynamic waiting messages. This feature is supported only in ASR/TTS mode (not available for real-time models).
 
 **Enhanced Security for Session Logs**
 
@@ -28,12 +27,11 @@ Organizations can now restrict access to detailed session logs through the Secur
 
 You can now configure tools to include their outputs as artifacts in the final response payload. This new capability allows you to capture specific tool execution results and make them available under the ‘artifacts’ key in the response, enabling downstream channels and applications to access structured data for custom processing, display logic, or integration workflows. Artifact inclusion is configurable at the individual tool level, giving you precise control over which tool outputs are exposed in the response.
 
-
 <font size="4">No-code & Pro-Code Tools</font>
 
 **PII Handling for Workflow Tools**
 
-The Agent Platform extends existing PII handling to Workflow Tools, ensuring sensitive data is securely processed while preventing exposure in logs, traces, or model outputs. Before a Workflow Tool starts execution, input fields are automatically scanned for declared PII patterns. Inputs identified as PII are masked as configured and passed to the tool in redacted form. If the workflows tools are granted access to the original value in the PII configuration: 
+The Agent Platform extends existing PII handling to Workflow Tools, ensuring sensitive data is securely processed while preventing exposure in logs, traces, or model outputs. Before a Workflow Tool starts execution, input fields are automatically scanned for declared PII patterns. Inputs identified as PII are masked as configured and passed to the tool in redacted form. If the Workflow tools are granted access to the original value in the PII configuration:
 
 * The tool can securely unredact and use the PII internally for execution.
 * All monitoring, debugging logs, and execution traces continue to display only masked values.
@@ -72,7 +70,7 @@ Agentic apps now support open-source models, offering flexible, cost-effective a
 These models offer diverse capabilities across different sizes and specializations, letting you optimize for performance, cost, or specific use cases while maintaining full access to platform orchestration, tools, and knowledge features. [Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 
-<font size="4">Other improvements</font>
+<font size="4">Other Improvements</font>
 
 **Ability to Configure Default Role for New Users**
 
