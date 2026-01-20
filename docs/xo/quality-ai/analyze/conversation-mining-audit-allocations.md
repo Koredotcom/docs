@@ -1,4 +1,4 @@
-# Audit Allocations
+# Audit Allocations Overview
 
 Audit Allocations streamlines the manual quality assurance workflow by enabling QA managers and supervisors to systematically assign interactions to auditors for evaluation. This feature addresses the critical need for manual oversight in automated quality assurance systems, allowing teams to validate Auto QA accuracy, provide targeted agent feedback, and maintain consistent quality standards across all customer interactions.
 
