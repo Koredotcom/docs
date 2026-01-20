@@ -107,13 +107,13 @@ This section lets you control how search results appear in the widget. You can u
 * **Classic Search (Default)**: Displays only the current search results. Each new search clears the previous query and results. When you select this option, the existing dialog tasks appear and once you enter a search query, the results replace the dialog tasks area. Refer to the following screenshot to view how the widget UI appears for this option:  
     <img src="../widget-theming-layout-customization/classic-search.png" alt="classic-search" title="classic-search" style="border: 1px solid gray; zoom:80%;">  
 
-* **Conversational Search**: Displays a history of previous questions and answers. Agents can refer to earlier results and ask followup questions, reducing repetition improving context.  
+* **Conversational Search**: Displays a history of previous questions and answers. Agents can refer to earlier results and ask followup questions, reducing repetition and improving context.  
 
     !!! note
 
-    Search history is maintained per agent at the conversation level. During agent transfers, the search history is cleared.  
+        Search history is maintained per agent at the conversation level. During agent transfers, the search history is cleared.  
 
-    * When you select **Conversational Search**, the widget shows the **Library** and **Search** tabs. By default, the **Library** tab displays the existing dialog tasks. When you select the **Search** tab or enter a query, results appear under the **Search** tab, and previous searches remain visible. The following screenshot shows the search results in the **Conversational Search** option:  
+    * When you select **Conversational Search**, the widget shows the **Library** and **Search** tabs. By default, the **Library** tab displays the existing dialog tasks. When you enter a query or select the **Search** tab, results appear under the **Search** tab, and previous searches remain visible. The following screenshot shows the search results in the **Conversational Search** option:  
         <img src="../widget-theming-layout-customization/conversational-search.png" alt="conversational-search" title="conversational-search" style="border: 1px solid gray; zoom:80%;">  
 
 ### Steps to select Search types 
