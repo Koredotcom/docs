@@ -32,7 +32,7 @@ Steps to access and view tool audit logs:
 
 ## Dashboard Information
 
-The Audit Logs dashboard displays the following information to collectively provide a comprehensive overview of activities within your Agent Platform account:
+The Audit Logs dashboard displays the following information to collectively provide a comprehensive overview of activities within your Platform account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.

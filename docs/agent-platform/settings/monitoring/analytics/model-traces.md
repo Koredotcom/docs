@@ -35,7 +35,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 ## Best Practices
 
-* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on Agent Platform to optimize usage.
+* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on the Platform to optimize usage.
 * Analyze successful versus failed runs to compare model performance over time and identify failure patterns using failure rates for all model types.
 * Identify model runs with low or high response times using P90 and P99 thresholds and isolate under-performing runs for further investigation.
 * Apply time-based and record filters for focused and accurate analysis.
@@ -135,7 +135,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Hosting Credits apply only to Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
+<p>Hosting Credits apply only to the Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
 
 <img src="../images/hosting-credits.png" alt="hosting credits" title="hosting credits" style="border: 1px solid gray; zoom:75%;">
 
@@ -312,11 +312,11 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="../../../../ai-agents/tools/overview" target="_blank">Learn more</a>.</li>
+<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="../../../../ai-agents/tools/overview/" target="_blank">Learn more</a>.</li>
 
-<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio" target="_blank">Learn more</a>.</li>
+<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio/" target="_blank">Learn more</a>.</li>
 
-<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="../../../../models/open-source-models/generate-an-api-key-open-source" target="_blank">Learn more</a>.</li>
+<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="../../../../models/open-source-models/generate-an-api-key-open-source/" target="_blank">Learn more</a>.</li>
 </ul>
    </td>
   </tr>
@@ -362,11 +362,11 @@ To clear the filter settings, click **Clear All**.
 
 ### Add Multiple Filters
 
-Adding multiple filter levels enhances model trace visibility on the UI. You can combine column, operator, and value filters using the AND or OR operators for targeted data, allowing you to focus on the model trace entries most relevant to your needs. [Learn more](../audit-logs.md#add-multiple-filters){:target="_blank"}.
+Adding multiple filter levels enhances model trace visibility on the UI. You can combine column, operator, and value filters using the AND/OR operators for targeted data, allowing you to focus on the model trace entries most relevant to your needs. [Learn more](../audit-logs.md#add-multiple-filters){:target="_blank"}.
 
 **Important**
 
-* AND and OR operators cannot be combined in multiple filtering steps to set filter criteria, ensuring consistent operator usage for each filtering step.
+* AND/OR operators cannot be combined in multiple filtering steps to set filter criteria, ensuring consistent operator usage for each filtering step.
 * Using the AND operator ensures that all specified conditions must be met for an entry to be included in the results.
 * On the other hand, using the OR operator broadens the criteria, allowing entries that meet any of the specified conditions to be included. These operators provide flexibility in tailoring your model traces data.
 * Click the **Delete** icon to delete a filter criteria step.

@@ -1,8 +1,8 @@
 --8<-- "includes/digital-channels-back-link.md"
 
-# Adding the Microsoft Teams Channel
+# Adding the Microsoft Teams & Copilot Channel
 
-To set up Microsoft Teams as a channel, a Bot Channel Service must be registered in Azure, and a webhook must be enabled to allow the platform to receive messages.
+To set up Microsoft Teams & Copilot as a channel, a Bot Channel Service must be registered in Azure, and a webhook must be enabled to allow the platform to receive messages.
 
 
 ## Step 1: Create an Azure Bot
@@ -18,15 +18,18 @@ To set up Microsoft Teams as a channel, a Bot Channel Service must be registered
 
 1. After the deployment is completed, in the **Deployment details** section, click the bot name.  
 <img src="../images/azure-resource1.jpg" alt="Configure the Resource" title="Configure the Resource" style="border: 1px solid gray; zoom:70%;">
+
 2. In the Platform, go to the MS Teams + Copilot channel configuration page and copy the **webhook URL**.
+
 3. Paste the URL in the Messaging endpoint field on the Configurations module in Azure portal.
+
 4. Click **Apply** to save the entered value.  
 <img src="../images/azure-configuration.png" alt="Configure the Resource" title="Configure the Resource" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Step 3: Configure App Id and Password
 
-1. On the **Configurations** tab, click the **Manage** option next to the **Microsoft App ID** field. 
+1. On the **Configurations** tab, click the **Manage** option next to the **Microsoft App ID** field.  
 <img src="../images/azure-app.png" alt="Microsoft App ID" title="Microsoft App ID" style="border: 1px solid gray; zoom:70%;">
 
 2. On **Certificates & secrets** page, click the **+ New client secret** option, provide the necessary details, and then click the **Add** option to create a new client secret.
@@ -37,9 +40,9 @@ To set up Microsoft Teams as a channel, a Bot Channel Service must be registered
 <img src="../images/azure-certificate.png" alt="Microsoft App ID" title="Microsoft App ID" style="border: 1px solid gray; zoom:70%;">
 
 
-## Step 4: Enable Microsoft Teams Channel & Microsoft 365 (For Co-Pilot)
+## Step 4: Enable Microsoft Teams Channel & Microsoft 365 (For Copilot)
 
-1. Go to the **Channels** section from the menu and select the **Microsoft Teams** and **Microsoft 365** channel listed under the Available Channels.
+1. Go to the **Channels** section from the menu and select the **Microsoft Teams** and **Microsoft 365** channel listed under the Available Channels.  
 <img src="../images/teams-channels.png" alt="Microsoft Teams Channel " title="Microsoft Teams Channel " style="border: 1px solid gray; zoom:70%;">
 
 2. Review the channel information and click the **Save** to complete the channel setup.
@@ -74,7 +77,7 @@ To set up Microsoft Teams as a channel, a Bot Channel Service must be registered
 
 ## Step 6: Creating the Manifest File
 
-### For Teams only
+### For Microsoft Teams
 
 1. Open the [Microsoft Teams Developer Portal](https://teams.microsoft.com/v2/).
 
@@ -90,14 +93,14 @@ To set up Microsoft Teams as a channel, a Bot Channel Service must be registered
 5. Navigate to App Features > Bot. Select the **Enter a bot ID**, enter the Microsoft App ID and enable all required scopes.  
 <img src="../images/teams-portal4.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
 
-### For Teams + Co-Pilot
+### For Microsoft Teams & Copilot
 
 !!! note
     
     For an existing Teams bot, uninstall the previous bot before uploading the new manifest file.
 
 Download a sample manifest file from the configuration page and use it to configure your bot to work as an agent in Copilot and as an app in Microsoft Teams.  
-You can also upload a custom image for your agent by naming the file `color.png`. Compress all three files into a single ZIP file before uploading.
+You can also upload a custom image for your agent by naming the file **color.png**. Compress all three files into a single ZIP file before uploading.
 
 
 
@@ -120,7 +123,7 @@ You can also upload a custom image for your agent by naming the file `color.png`
 
 
 8. **Add and Test the App**.
-Click Add to install the app/agent. Open the app within Teams (or Copilot) and verify that all bot interactions and features are working as expected. 
+Click Add to install the app/agent. Open the app within Teams (or Copilot) and verify that all bot interactions and features are working as expected.  
 <img src="../images/teams-add.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">  
 <img src="../images/teams-portal7.png" alt="complete process" title="complete process" style="border: 1px solid gray; zoom:70%;">
 
@@ -152,7 +155,7 @@ To prevent an increase in the size of the context object, only the metadata for 
 
 #### Channel Utility Function
 
-We have introduced two new channel utility functions: one for retrieving metadata from the channelActionMetadata object and another for updating or deleting delivered bot messages. Currently, these functions are supported for the MS Teams channel and will be extended to other third-party channels as needed.
+Platform has introduced two new channel utility functions: one for retrieving metadata from the channelActionMetadata object and another for updating or deleting delivered bot messages. Currently, these functions are supported for the MS Teams channel and will be extended to other third-party channels as needed.
 
 **channelUtil.getActionMetadata()**
 
@@ -269,4 +272,4 @@ if(channelActionMetadata){
 
 After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your App](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
+To learn more about working with Channels within the Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

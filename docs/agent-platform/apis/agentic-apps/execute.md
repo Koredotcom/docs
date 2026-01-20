@@ -299,6 +299,13 @@ Returns the agent's response to the query along with the session details.
    </td>
   </tr>
   <tr>
+  <td>Artifacts</td>
+  <td>Array of responses from the tools in the order of execution. For example, if tool 1 was executed followed by tool 2, artifacts[0] will contain the response from tool 1 and artifacts[1] will contain the response from tool 2. 
+  <p>
+  Note that the response from a tool is updated in this array only if the ‘Include tool response in artifacts’ flag is enabled in the corresponding tool. Learn More.
+  </td> 
+</tr>
+  <tr>
    <td>sessionInfo
    </td>
    <td>Object containing session metadata such as: 

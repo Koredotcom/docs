@@ -94,6 +94,6 @@ Agentic Apps enable seamless integration with the MCP server, allowing the apps 
 
 **Key Points:**
 
-* Agent Platform supports only tool discovery and invocation from MCP servers. 
-* Dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, aren't automatically reflected in the Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
-* Agent Platform supports both SSE-based and HTTP-based MCP server endpoint configurations.
+* The Platform supports only tool discovery and invocation from MCP servers. 
+* Dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, aren't automatically reflected in the Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
+* The Platform supports both SSE-based and HTTP-based MCP server endpoint configurations.

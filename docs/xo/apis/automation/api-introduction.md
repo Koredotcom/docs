@@ -31,10 +31,8 @@ Steps to create a JWT Client App from the Platform:
 
     * **Enforce JWE Encryption** (Generating JWT token): To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
 
-
-    * **Enforce Response Payload Encryption**: Provide your public key, which the platform will use to encrypt the AES key for Public API request and response payloads, including Token Introspection and User Information data. Use your private key to decrypt the AES key and access the encrypted payloads. Refer [How Request and Response Payload Encryption Works](#how-request-and-response-payload-encryption-works).    
+    * **Enforce Response Payload Encryption**: Provide the public key used by the Platform to encrypt Public API request and response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payloads. Refer [How Request and Response Payload Encryption Works](#how-request-and-response-payload-encryption-works).    
      <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">  
-
 
 5. Click **Next** and **Done**.
 
@@ -47,23 +45,23 @@ Steps to create a JWT Client App from the Platform:
 
 ### How Request and Response Payload Encryption Works
 
-When the Enforce Request and Response Payload Encryption option is enabled, you must provide a public key. The platform generates a secure AES-256 encryption key, which is used to encrypt the public API request payload before sending it to the server. Once the server receives this encrypted request, it processes the request and returns the encrypted response payload along with the AES key encrypted using the client’s public key. Only the client that owns the matching private key can decrypt the AES key and access the original request and response data. This feature adds an additional layer of security for sensitive information, ensuring confidentiality and data integrity across all API communications.
+When the Enforce Request and Response Payload Encryption option is enabled, you must provide a public key. The platform generates a secure AES-256 encryption key, which is used to encrypt the public API request payload before sending it to the server. Once the server receives this encrypted request, it processes it and returns the encrypted response payload along with the AES key, encrypted with the client’s public key. Only the client that owns the matching private key can decrypt the AES key and access the original request and response data. This feature adds an additional layer of security for sensitive information, ensuring confidentiality and data integrity across all API communications.
 
-The request and response payload encryption option is supported only for the following endpoints:
+The request and response payload encryption option is supported only for the following endpoints in the App builder:
 
-* Session History
-* Get Analytics
-* Get Conversation Details
-* Get All Conversation Data Call Details
+* [Session History](../../apis/automation/get-sessions-history.md)
+* [Get Analytics](../../apis/automation/get-analytics.md)
+* [Get Conversation Details](../../apis/contact-center/get-conversation-details.md)
+* [Get All Conversation Data Call Details](../../apis/contact-center/get-all-conversations-data-call-details-v1.md)
 
 When you enable this option, the platform:
 
 1. Accepts the client’s public key for the JWT app.
 2. Generates a secure AES-256 encryption key.
-3. Encrypts request and response payloads using the AES-256 key.
+3. Encrypts request and response payloads using AES-256 key.
 4. Encrypts (wraps) the AES-256 key with the client’s public key.
 5. Returns the encrypted response payload, the protected AES key, and related metadata.
-6. The client uses its private key to decrypt the AES key and then decrypt the original payload.
+6. The client uses its private key to decrypt the AES key, then decrypts the original payload.
  
 
 ## Creating and Managing Apps in Admin Console
@@ -73,26 +71,22 @@ Steps to create a Client App from the Admin Console:
 1. Log in to the Admin Console.
 2. Go to **Security & Control** > **API Scopes**.
 3. On the API Scopes page, click **New**.
-4. Click the **Manage Apps** link to create a new app.      
+4. Click the **Manage Apps** link to create a new app.
 5. Click **New App** and then do the following:
     1. Enter a name.
     2. Select **Enforce JTI**, **JWE**, or both as per your requirements.
 6. Click **Save** and **Done**.
 
-### Supported APIs for Request and Response Payload Encryption in the Admin Console
+## Supported APIs for Encryption in the Admin Console
+The request and response payload encryption option is supported only for the following endpoints:
 
-The request and response payload encryption feature is supported only for the following endpoints:
-
-* Session History
-* Get Analytics
-* Get Conversation Details
-* Get All Conversation Data Call Details
-* Get User Information
-* Get User Roles Details
-* Create Users
-* Update User
-* Update User Access
-* Delete Users
+* [Session History](../../apis/automation/get-sessions-history.md)
+* [Get User Information](../../apis/automation/get-user-information.md)
+* [Get User Roles Details](../../apis/automation/get-user-roles-details.md)
+* [Create Users](../../apis/automation/create-users.md)
+* [Update User](../../apis/automation/update-user.md)
+* [Update User Access](../../apis/automation/update-user-access.md)
+* [Delete Users](../../apis/automation/delete-users.md)
 
 ## Data Tables
 
