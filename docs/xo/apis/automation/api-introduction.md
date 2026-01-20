@@ -49,10 +49,10 @@ When the Enforce Request and Response Payload Encryption option is enabled, you 
 
 The request and response payload encryption option is supported only for the following endpoints in the App builder:
 
-* Session History
-* Get Analytics
-* Get Conversation Details
-* Get All Conversation Data Call Details
+* [Session History](../../apis/automation/get-sessions-history.md)
+* [Get Analytics](../../apis/automation/get-analytics.md)
+* [Get Conversation Details](../../apis/contact-center/get-conversation-details.md)
+* [Get All Conversation Data Call Details](../../apis/contact-center/get-all-conversations-data-call-details-v1.md)
 
 When you enable this option, the platform:
 
@@ -80,13 +80,13 @@ Steps to create a Client App from the Admin Console:
 ## Supported APIs for Encryption in the Admin Console
 The request and response payload encryption option is supported only for the following endpoints:
 
-* Session History
-* Get User Information
-* Get User Roles Details
-* Create Users
-* Update User
-* Update User Access
-* Delete Users
+* [Session History](../../apis/automation/get-sessions-history.md)
+* [Get User Information](../../apis/automation/get-user-information.md)
+* [Get User Roles Details](../../apis/automation/get-user-roles-details.md)
+* [Create Users](../../apis/automation/create-users.md)
+* [Update User](../../apis/automation/update-user.md)
+* [Update User Access](../../apis/automation/update-user-access.md)
+* [Delete Users](../../apis/automation/delete-users.md)
 
 ## Data Tables
 

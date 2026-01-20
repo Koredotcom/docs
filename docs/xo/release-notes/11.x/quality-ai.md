@@ -24,12 +24,11 @@ Audit Allocation management uses a dedicated “Allocations” menu and a “My 
 
 **Agent Queue Management in the Quality AI UI**
 
-Users can assign agents to Agent AI and Quality AI Express queues directly in the Quality AI UI, eliminating the need for public APIs. This update supports platform-level users, provides visibility into queue IDs for API use, and keeps agent mappings entirely separated from CCAI routing and configuration. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md) 
+Users can assign agents to Agent AI and Quality AI Express queues directly in the Quality AI UI, eliminating the need for public APIs. This update supports platform-level users, provides visibility into queue IDs for API use, and keeps agent mappings entirely separated from Contact Center AI (CCAI) routing and configuration. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md) 
 
-**SFTP Chatscript Timestamp Enhancements**
+**SFTP Chat Script Timestamp Enhancements**
 
-Quality AI Express now supports offset-based timestamps for chat script ingestion via Secure File Transfer Protocol (SFTP). With this update, users can configure the chatscript timestamp format at the app level under Conversation Sources. When users select offset-based timestamps, chatscripts can include message-level offsets relative to the conversation timeline without start or end time validation during ingestion. The system uses start and end dates solely for reporting and filtering. This change applies only to chat conversation ingestion and doesn't affect voice conversation ingestion.  
-[Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md) 
+Quality AI Express now supports offset-based timestamps for chat script ingestion via Secure File Transfer Protocol (SFTP). With this update, users can configure the chat script timestamp format at the app level under Conversation Sources. When users select offset-based timestamps, chat script can include message-level offsets relative to the conversation timeline without start or end time validation during ingestion. The system uses start and end dates solely for reporting and filtering. This change applies only to chat conversation ingestion and doesn't affect voice conversation ingestion. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md) 
 
 <hr>
 
