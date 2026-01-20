@@ -530,8 +530,7 @@ nav:
         - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
         - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
-      - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
-      - Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md      
+      - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md            
       - Allocations: 
         - Overview: quality-ai/analyze/conversation-mining-audit-allocations.md
         - Creating Audit Allocations: quality-ai/analyze/creating-audit-allocations.md

@@ -9,11 +9,6 @@ The **Linked Services** section lets you integrate Agent AI with external servic
 
 Search AI provides an intelligent, contextual, and personalized search experience in every interaction across web and mobile channels. In this section, you can define how Agent AI performs search operations. 
 
-* **None**: Makes the Search AI functionality unavailable, and search results don’t appear on the widget
-* **Use Search AI Configurations from the current app**: Uses the built-in Search AI app provided with the current AI for Service app.
-* **Link Search AI Configurations from a different app**: Lets you link and use up to three custom Search AI apps.  
-<img src="../answers-configuration-images/answers-generation.png" alt="answers-generation" title="answers-generation" style="border: 1px solid gray; zoom:40%;">  
-
 ### How Does It Work?
 
 1. **Set up Search AI Apps**: Add all the segregated information sources (internal information, external information, and auto-suggestions) the targeted agents might need in their searches, like web pages, data, documents, and content from apps like ServiceNow and Confluence.
@@ -41,8 +36,8 @@ In this section, you can select the Search App and define the search functionali
 Select this option to restrict the search capability to the configured bot. When you select it, the Agent AI widget shows the following search experience: 
 
 * If you search for content unrelated to the bot, the **No Search Result Found** message appears.
-* If your search matches information within the bot (for example, dialog tasks), a screenshot similar to the following appears: 
-    <img src="../answers-configuration-images/none-searchai-config.png" alt="none-searchai-config" title="none-searchai-config" style="border: 1px solid gray; zoom:40%;">  
+* If your search matches information within the bot (for example, dialog tasks), a screenshot similar to the following appears:   
+    <img src="../answers-configuration-images/none-searchai-config.png" alt="none-searchai-config" title="none-searchai-config" style="border: 1px solid gray; zoom:80%;">  
 
 #### Use only the inbuilt XO 11 Search App (AA Bot)
 
@@ -62,7 +57,7 @@ Select this option to use the inbuilt Search AI app linked to your XO 11 sign-in
 
     4. Turn on the **Knowledge Settings** toggle. (By default, it remains turned off.)
     5. Select a **channel** in the **Select channel** list.
-    6. Refer to the [Knowledge AI](https://docs.kore.ai/xo/agentai/configuration/linked-services/#knowledge-ai) section, and select the options under the **Search Results** and **Control expand behavior of Answers** sections.
+    6. Refer to the [Knowledge AI](#knowledge-ai) section, and select the options under the **Search Results** and **Control expand behavior of Answers** sections.
     7. Select the **Add Custom Meta Filter Script (Optional)** option under the **Advanced Search API Configuration** section.
 6. Select **Save**.  
 
@@ -105,6 +100,7 @@ Select this option to configure and enable up to three Search Apps across XO 10 
 5. Enter a name for the Search AI app in the **Name** field.
 6. Select the version (XO10 or XO11) for the app in the **Select Version** list.  
 7. Select an option or options in the **Use This App Settings for** list. Refer to the **[Configuration Rules](#configuration-rules)** while selecting your options.   
+
     !!! note
 
         Auto-Suggestions option is not available for the XO11 app.
@@ -146,7 +142,7 @@ This section allows you to access the Knowledge AI features within the Agent AI 
 
 ### How Does It Help Agents?
 
-When Agent AI is integrated with Search AI, data from all the sources configured in the Search AI application are accessible to agents via the Agent AI widget > **Search** tab. In the search results, Snippets and Articles are shown from the Search AI application, and Dialog Tasks and FAQs are shown from the Use Cases of the Agent AI application. Agents can quickly review the search results and share relevant information with the customers. This feature also enables sending internal notes to agents with important, agent-only information that can’t be sent or copied to customers.
+When Agent AI is integrated with Search AI, data from all the sources configured in the Search AI application are accessible to agents via the **Agent AI widget** > **Search** tab. In the search results, Snippets and Articles are shown from the Search AI application, and Dialog Tasks and FAQs are shown from the Use Cases of the Agent AI application. Agents can quickly review the search results and share relevant information with the customers. This feature also enables sending internal notes to agents with important, agent-only information that can’t be sent or copied to customers.
 
 ## Agentic Configurations
 

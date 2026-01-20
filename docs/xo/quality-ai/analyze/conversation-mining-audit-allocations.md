@@ -4,7 +4,7 @@ Audit Allocations streamlines the manual quality assurance workflow by enabling 
 
 The Audit Allocations interface adapts to your permission level, displaying either management or auditor views based on your role.
 
-The Audit Allocations interface adapts to your permission level, displaying either management or auditor views based on your role.
+## Access Audit Allocations
 
 Navigate to **Quality AI** > **ANALYZE** > **Allocations**.  
 <img src="../allocations/images/audit-allocations.png" alt="Audit Allocations" title="Audit Allocations" style="border: 1px solid gray; zoom:80%;">
