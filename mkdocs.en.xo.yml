@@ -532,7 +532,7 @@ nav:
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md            
       - Allocations: 
-        - Audit Allocations Overview: quality-ai/analyze/conversation-mining-audit-allocations.md
+        - Overview: quality-ai/analyze/conversation-mining-audit-allocations.md
         - Creating Audit Allocations: quality-ai/analyze/creating-audit-allocations.md
         - Understanding Views and Permissions: quality-ai/analyze/understanding-views-and-permissions.md
       - Conversation Mining: 
