@@ -53,8 +53,10 @@ The Agent Platform now supports additional AI models, giving users greater flexi
 
 New models include:
 
-* OpenAI Models: gpt-5.2-chat-latest, gpt-5.2-2025-12-11, gpt-5.2, gpt-5.1, gpt-5.1-chat-latest, gpt-5.1-2025-11-13, and gpt-5.1.
+* OpenAI Models: gpt-5.2-chat-latest, gpt-5.2-2025-12-11, gpt-5.2, gpt-5.1-chat-latest, gpt-5.1-2025-11-13, and gpt-5.1.
 * Anthropic: claude-haiku-4-5-20251001, claude-sonnet-4-5-20250929, and claude-opus-4-5-20251101
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 **Open-Source Model Support for Agentic Apps**
 
@@ -67,7 +69,7 @@ Agentic apps now support open-source models, offering flexible, cost-effective a
 * mistralai/Mistral-Nemo-Instruct-2407
 * XiaomiMiMo/MiMo-VL-7B-RL
 
-These models offer diverse capabilities across different sizes and specializations, letting you optimize for performance, cost, or specific use cases while maintaining full access to platform orchestration, tools, and knowledge features.
+These models offer diverse capabilities across different sizes and specializations, letting you optimize for performance, cost, or specific use cases while maintaining full access to platform orchestration, tools, and knowledge features. [Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 
 <font size="4">Other improvements</font>
