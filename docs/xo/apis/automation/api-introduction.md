@@ -78,6 +78,7 @@ Steps to create a Client App from the Admin Console:
 6. Click **Save** and **Done**.
 
 ### Supported APIs for Request and Response Payload Encryption in the Admin Console
+
 The request and response payload encryption feature is supported only for the following endpoints:
 
 * Session History
