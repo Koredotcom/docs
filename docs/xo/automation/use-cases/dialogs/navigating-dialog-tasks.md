@@ -426,8 +426,8 @@ The **Dialog Settings** panel allows you to modify the dialog task's basic setti
 
 Add or modify the following settings for your dialog:
 
-* **Name**: The name of your dialog task, usually the main user intent. For example, _Book Ticket._
-* **Description**: An optional description of your dialog task displayed in the Platform.
+* **Intent Name**: The name of your dialog task, usually the main user intent. For example, _Book Ticket._
+* **Intent Description**: The (optional but recommended) description of your dialog task displayed in the Platform. You can add up to five secondary descriptions in addition to the main description. Each unique description broadens semantic coverage and improves intent shortlisting and detection accuracy.
 * **Intent Settings:**
             
      * **Sub intent only dialog**: The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
@@ -443,14 +443,16 @@ Add or modify the following settings for your dialog:
          * **Disabled**: The dialog task doesn’t appear on the list, but remains searchable via the “Ask a question” search bar in the Search tab of the Agent AI widget, allowing agents to browse and find this use case to trigger it.
 
 * **Analytics - Containment Type**(Any one option can be selected):
-        * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
-        * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.
+    * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
+    * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.
+
 * **Follow-up Task**: The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
-        * Handle the follow-up tasks as part of node connections (default setting) or
-        * Let the user select the follow-up task.
+    * Handle the follow-up tasks as part of node connections (default setting) or
+    * Let the user select the follow-up task.
+
 * **Task Execution Failure**: Define the assistant’s behavior when there is an error in task execution. It can be set as either:
-        * Same as the App Level behavior.
-        * Specific to this task, initiate a task, run a script, or show a message.
+    * Same as the App Level behavior.
+    * Specific to this task, initiate a task, run a script, or show a message.
 
 
 ### Manage Interruptions

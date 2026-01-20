@@ -306,7 +306,7 @@ To view the history of any report:
 
 1. Navigate to the **Reports** > **Actions** column.
 
-1. Select the vertical **Ellipses** (⋮) button.
+1. Select the vertical **Ellipsis** (⋮) button.
 
 1. Select the **History** to view the last 5 runs of the reports.  
 <img src="../images/download-report-action.png" alt="History" title="History" style="border: 1px solid gray; zoom:80%;">  
@@ -324,7 +324,7 @@ To clone a report,
 
 1. Navigate to the **Reports** > **Actions** column.
 
-1. Select the vertical **Ellipses** (⋮) button.
+1. Select the vertical **ellipsis** (⋮) button.
 
 1. Select **Clone** to create a copy of the report.   
 <img src="../images/actions-clone.png" alt="Clone Report" title="Clone Report" style="border: 1px solid gray; zoom:80%;">
@@ -340,7 +340,7 @@ To mark a report favorite/unfavorite,
 
 1. Navigate to the **Reports** > **Actions** column.
 
-1. Select the vertical **Ellipses** (⋮) button.
+1. Select the vertical **Ellipsis** (⋮) button.
 
 1. Select **Favorite/Unfavorite** to create a copy of the report. A successful message appears when marked as favorite/unfavorite.  
 <img src="../images/actions-favorite.png" alt="Favorite Report" title="Favorite Report" style="border: 1px solid gray; zoom:80%;">
@@ -378,7 +378,7 @@ To delete a report,
 
 1. Navigate to the **Reports** > **Actions** column.
 
-1. Click the vertical **Ellipses** (⋮)button.
+1. Click the vertical **Ellipsis** (⋮) button.
 
 1. Select **Delete** to remove the report.  
 <img src="../images/actions-delete.png" alt="Delete Report" title="Delete Report" style="border: 1px solid gray; zoom:80%;">

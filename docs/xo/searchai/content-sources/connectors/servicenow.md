@@ -70,7 +70,6 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
 Click the *Connect* button to initiate authorization with the application. After the connection is established, go to the *Configurations* tab and click *Sync Now* to ingest content to the application. By default, upon sync, the connector ingests *published knowledge articles, incidents and catalog items* from the ServiceNow instance. 
 
 !!!note
-  
   Only the articles within their validity date are ingested. Any article that's expired(beyond its Valid To date) isn't ingested.
 
 ## Advanced Filters
@@ -88,19 +87,15 @@ Click on **Test and Save** to enable the filter. The filter is used on the next 
 
 Note:
 
-* You can define one or more rules to create a filter. Content that satisfies any one of the rules in the filter is selected for ingestion. For instance, the following filter can be used to select articles where sys ID is either of the list.
+* You can define one or more rules to create a filter. Content that satisfies any one of the rules in the filter is selected for ingestion. For instance, the following filter can be used to select articles where sys ID is either of the list. ![Example](images/servicenow/example2.png "Example")
 
-![Example](images/servicenow/example2.png "Example")
-
-* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied. For instance, the following filter can be used to select published articles with a given Sys Id.
-
-![Example](images/servicenow/example3.png "Example")
+* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied. For instance, the following filter can be used to select published articles with a given Sys Id. ![Example](images/servicenow/example3.png "Example")
 
 ## RACL Support
 
 ### Knowledge Articles
 
-SearchAI offers access control for content ingested from ServiceNow Knowledge bases. Currently, **SearchAI enforces access control at the knowledge base level.**
+SearchAI offers access control for content ingested from ServiceNow Knowledge bases. Currently, **Search AI enforces access control at the knowledge base level.**
 
 To learn the basics of RACL in SearchAI, refer to this. 
 
@@ -242,7 +237,7 @@ Catalog items in ServiceNow can be accessed based on the following configuration
     * User criteria defined for a catalog item specify which users or groups can access it.
     * A **permission entity** is created using the **user criteria ID** to control access based on these criteria.
 
-**Summary – <code>sys_racl</code> Field for a Catalog Item**
+**Summary - <code>sys_racl</code> Field for a Catalog Item**
 
 The **sys_racl** field for a catalog item includes the following:
 

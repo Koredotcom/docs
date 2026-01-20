@@ -3,10 +3,10 @@
 Events in the Agentic App signify critical moments within a user's conversation journey. These events are essential for managing important transitions, including the initiation and conclusion of conversations, as well as the handoff to human agents. By capturing these natural dialogue transitions, these system events aim to enhance clarity, consistency, and control over the conversational flow. By standardizing how conversations begin, evolve, and conclude, the app facilitates a seamless user experience.
 
 Events are automatically triggered by the application at specific points in the conversation, based on the conditions described in each event’s **description** field. These descriptions define the conversational context or user action that causes the event to fire.
-The Agent Platform enables developers to configure and customize the app’s behavior in response to these events, allowing tailored responses, workflows, or actions that align with the intent and flow of the conversation.
+The Platform enables developers to configure and customize the app’s behavior in response to these events, allowing tailored responses, workflows, or actions that align with the intent and flow of the conversation.
 
 
-Currently, Agent Platform supports the following three system events. By default, all the events are disabled. Go to the *Events* page under Settings, click on the *edit* icon to enable and configure them.
+The Platform supports the following three system events. By default, all the events are disabled. Go to the *Events* page under Settings, click on the *edit* icon to enable and configure them.
 
 ![Events](images/events/home.png "Events Page")
 
@@ -28,7 +28,7 @@ To enable and configure the Welcome event, follow these steps:
 
 By default, this event is triggered when an agent handoff is requested in a conversation. Use the Description field of the event to configure the detection of this event. The default description initiates hand-off if the user explicitly asks for it or the system is unable to fulfil the user's request. Use the following properties to configure the event. 
 
-Agent Platform supports agent handoff only via the AI for Service Platform. When the handoff event is triggered, Agent Platform sends session information via the variables listed below to the specified automation node within the AI for Service Platform's flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.
+The Platform supports agent handoff only via the AI for Service Platform. When the handoff event is triggered, the Platform sends session information via the variables listed below to the specified automation node within the AI for Service Platform's flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.
 
 * **Status** - Enable this to allow the agent to trigger this event. 
 <!--* **Invoke Human Agent** - Currently, Agent Handoff can be handled only through the Automation Node in the AI for Service Platform. When the event is triggered, the Agent Platform sends session information via the variables listed below to the specified automation node within the AI for Service Platform's flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.-->
