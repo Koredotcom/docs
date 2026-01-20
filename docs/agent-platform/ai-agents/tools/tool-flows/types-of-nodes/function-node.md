@@ -237,7 +237,7 @@ To select a custom script deployed in your account, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The deployed scripts are listed under <b>Settings</b> > <b>Manage custom scripts</b>. <a href="../../../../../settings/monitoring/monitoring-custom-scripts" target="_blank">Learn more</a>.</p>
+<p>The deployed scripts are listed under <b>Settings</b> > <b>Manage custom scripts</b>. <a href="../../../../../settings/monitoring/monitoring-custom-scripts/" target="_blank">Learn more</a>.</p>
 </div>
 
 1. Select the **Custom function** option for the **Function** node.
