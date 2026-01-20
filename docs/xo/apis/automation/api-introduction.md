@@ -77,8 +77,8 @@ Steps to create a Client App from the Admin Console:
     2. Select **Enforce JTI**, **JWE**, or both as per your requirements.
 6. Click **Save** and **Done**.
 
-### Supported APIs for Request and Response Payload Encryption in the Admin Console
-The request and response payload encryption feature is supported only for the following endpoints:
+## Supported APIs for Request and Response Payload Encryption
+The request and response payload encryption option is supported only for the following endpoints:
 
 * Session History
 * Get Analytics
