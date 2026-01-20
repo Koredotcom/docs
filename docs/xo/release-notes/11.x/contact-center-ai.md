@@ -64,9 +64,9 @@ An app-level control automatically enrolls phone numbers into the Global DNC lis
 
 <font size="4">Analytics</font>
 
-**CSAT Feedback Visibility in Interactions Details**
+**CSAT Feedback Visibility in Conversations Details**
 
-Displays customer CSAT feedback directly within the Interactions details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
+Displays customer CSAT feedback directly within the Conversations details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Error Event Visibility for Real-time Voice APIs in Agentic Apps**
 
