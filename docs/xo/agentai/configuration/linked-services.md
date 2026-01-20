@@ -116,25 +116,54 @@ When Agent AI is integrated with Search AI, data from all the sources configured
 
 ## Agentic Configurations
 
-The Agentic Copilot app is an agent’s aide. Once an Agentic app is successfully configured and linked with Agent AI, it manages end-to-end conversations autonomously. Agents supervise the conversations and focus more on the quality of service. They can cancel, override, or edit the Agentic conversations, as needed. Agents can also use the “custom tab” to run dialog tasks and perform LLM-powered searches.
+The Agentic Copilot app is an agent’s aide. Once you successfully configure and link an Agentic app with Agent AI, it manages end-to-end conversations autonomously. Agents supervise the conversations and focus more on the quality of service. They can cancel, override, or edit the Agentic conversations, as needed. Agents can also use the **custom tab** to run dialog tasks and perform LLM-powered searches.
 
 This section lets you configure and manage the Agentic Copilot apps. You can configure, test, and save multiple apps simultaneously. Once configured, link these apps with Agent AI to have autonomous, end-to-end task execution.
 
-### Configuring an Agentic Copilot app
+### Configuring an Agentic Copilot app 
+
+Configuring an Agentic Copilot app is a three-step process: 
+
+* Entering the app details
+* Selecting the required conversation metadata
+* Adding custom metadata
+
+#### Entering the app details
+
+The first step in configuring an Agentic Copilot app is to enter the details of the app. Use the following details: 
+
+* **App Name**: Enter a **name** for the new app. For example, Travel Agent. The character limit is set to 50.
+* **Domain URL**: Enter the Agentic platform’s **host URL**. For example, [agent-platform.kore.ai](https://agent-platform.kore.ai/){:target="_blank"}. 
+* **Environment**: Enter the **environment name** as configured in the **Environment** section of the Agentic Platform.
+* **App ID**: Enter the **Agentic app ID** in use.
+* **API Key**: Enter the **API key** as configured in the **API Keys** section of the Agentic Platform. 
+
+#### Selecting conversation metadata
+
+In this section, you can select from the available conversation metadata to pass to the Agentic Copilot app. This preserves context during conversation transfers from automation to human agents and enables Agentic Copilot to deliver relevant, context-aware responses. The following metadata is available to select: 
+
+* **Landing Summary**: To pass the summary of the customer-bot conversation before the conversation is transferred to a human agent.
+* **Agent-Customer Chat History**: To pass the conversation history of customer-human agent until the latest message.
+* **Custom Data**: To pass the collected custom data.
+* **Intermittent Summary**: To pass the agent-generated intermittent or mid conversation summary. 
+
+#### Adding custom metadata
+
+You can also add your custom metadata script in a code editor to pass to the Agentic Copilot app. The system validates and highlights the errors, if any, as you enter your script.
 
 Follow these steps to configure an Agentic Copilot app: 
 
 1. Sign in to [AI for Service](https://platform.kore.ai){:target="_blank"}. 
 2. Go to **Agent AI** > **Configurations** > **Linked Services**> and select **Agentic Configuration**.
 3. Select **+ Add Agentic Copilot App**. 
-4. Enter the following information under the **App Information** section:
-    * **App Name**: Enter a name for the new app. For example, Travel Agent. The character limit is set to 50.
-    * **Domain URL**: Enter the Agentic platform’s host URL. For example, [agent-platform.kore.ai](https://agent-platform.kore.ai).
-    * **Environment**: Enter the environment name as configured in the “Environment” section of the Agentic Platform.
-    * **App ID**: Enter the Agentic app ID in use.
-    * **API Key**: Enter the API key as configured in the **API Keys** section of the Agentic Platform.
-5. Select **Test Connection & Save**. The configured app is saved and gets connected.  
-    <img src="../answers-configuration-images/connect-agentic-app.png" alt="connect-agentic-app" title="connect-agentic-app" style="border: 1px solid gray; zoom:80%;">  
+4. Enter the **app name**, **domain URL**, **environment name**, **app ID**, and **API Key** in their respective fields. For help, refer to the [Entering the app details](#entering-the-app-details) section.  
+    <img src="../answers-configuration-images/agentic-configuration-app-info.png" alt="agentic-configuration-app-info" title="agentic-configuration-app-info" style="border: 1px solid gray; zoom:80%;"> 
+
+5. Expand the **Pass Metadata** section, and select from the list that you want to pass.  
+    <img src="../answers-configuration-images/choose-metadata-to-pass.png" alt="choose-metadata-to-pass" title="choose-metadata-to-pass" style="border: 1px solid gray; zoom:80%;">  
+6. Expand the **Add Custom Metadata** section, and enter your custom metadata script in the code editor. You can enlarge the editor page or copy the script using the corresponding buttons.  
+    <img src="../answers-configuration-images/add-custom-metadata.png" alt="add-custom-metadata" title="add-custom-metadata" style="border: 1px solid gray; zoom:80%;">  
+7. Select **Test Connection & Save**. The configured app is saved and gets connected.  
 
 ### Deleting an Agentic Copilot app
 
@@ -145,4 +174,5 @@ This section lets you delete a preconfigured Agentic Copilot app. When deleted, 
 
     !!! note
         You can't delete an in-use Agentic app—the delete button is unavailable, and a badge indicates the app is in use: 
+        
     <img src="../answers-configuration-images/linked-services.png" alt="linked-services" title="linked-services" style="border: 1px solid gray; zoom:80%;"> 
