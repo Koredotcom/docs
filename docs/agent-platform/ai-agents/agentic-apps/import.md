@@ -13,9 +13,9 @@ The Agentic app import feature enables users to transfer complete application co
 
 To import apps or agents into an Agentic app, follow these steps. 
 
-* Go to the Export/Import page under the Deploy section of the newly created app. 
-* Go to the Import tab. 
-* Click the Import button and upload the JSON file you want to import. Note that the file size can't exceed 5 MB.
+* Go to the *Export/Import* page under the Deploy section of the newly created app. 
+* Go to the *Import* tab. 
+* Click the *Import* button and upload the JSON file you want to import. Note that the file size can't exceed 5 MB.
 
 ![alt_text](images/import/import-app.png "image_tooltip")
 
@@ -36,8 +36,7 @@ To import apps or agents into an Agentic app, follow these steps.
 
 ![alt_text](images/import/import.png "image_tooltip")
 
-* If the file format is correct and there are no errors, the platform configures the application using the JSON file. 
-**Note:** Importing a configuration will overwrite all existing settings in the target application.
+* If the file format is correct and there are no errors, the platform configures the application using the JSON file. Note that importing a configuration overwrites all existing settings in the target application.
 * You can view the status of the import under the Import tab. 
 * Review and validate the imported apps and their components.
 * If the system detects missing configurations in the uploaded file, it highlights them in red. Correct these errors before importing the application. 
@@ -49,11 +48,10 @@ To import apps or agents into an Agentic app, follow these steps.
 ![alt_text](images/import/link.png "image_tooltip")
 
 
+## Key Considerations for Import
 
-### Key Considerations for Import
-
-* Ensure that the target application exists before performing an import.. 
-* Any existing app configurations will be overwritten during the import process.
+* Ensure that the target application exists before performing an import.
+* Any existing app configuration is overwritten during the import process.
 * The system attempts to import components in the following order: tools, agents, and then application configuration.
 * The config file can't exceed 5MB in size.
 * If valid, the platform creates the application with all components.
