@@ -21,7 +21,8 @@ To view the Conversations dashboard, follow the steps:
     * Session ID
     * Call Conversation ID
     * Agent Conversation ID  
-    * X External Call ID
+    * X External Call ID   
+    
     <img src="../images/agent-conversation-id.png" alt="Agent Conversation ID" title="Agent Conversation ID" style="border: 1px solid gray; zoom:80%;">
 
 * Support: The agent who handled the conversation.
