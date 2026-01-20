@@ -81,9 +81,6 @@ Steps to create a Client App from the Admin Console:
 The request and response payload encryption option is supported only for the following endpoints:
 
 * Session History
-* Get Analytics
-* Get Conversation Details
-* Get All Conversation Data Call Details
 * Get User Information
 * Get User Roles Details
 * Create Users
