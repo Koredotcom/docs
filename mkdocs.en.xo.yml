@@ -537,8 +537,7 @@ nav:
         - Creating Audit Allocations: quality-ai/analyze/creating-audit-allocations.md
         - Understanding Views and Permissions: quality-ai/analyze/understanding-views-and-permissions.md
       - Conversation Mining: 
-        - Interactions: quality-ai/analyze/conversation-mining-interactions.md
-        
+        - Interactions: quality-ai/analyze/conversation-mining-interactions.md        
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md
       - Topic Discovery: quality-ai/analyze/topic-discovery.md           
     - Coach:
