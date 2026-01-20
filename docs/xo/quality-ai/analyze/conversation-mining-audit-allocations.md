@@ -1,13 +1,26 @@
+<<<<<<< Updated upstream
 # Audit Allocations
 
 Audit Allocations streamlines the manual quality assurance workflow by enabling QA managers and supervisors to systematically assign interactions to auditors for evaluation. This feature addresses the critical need for manual oversight in automated quality assurance systems, allowing teams to validate Auto QA accuracy, provide targeted agent feedback, and maintain consistent quality standards across all customer interactions.
 
 The Audit Allocations interface adapts to your permission level, displaying either management or auditor views based on your role.
+=======
+# Allocations
 
-## Access Audit Allocations 
+Audit Allocations streamlines the manual quality assurance workflow by enabling QA managers and supervisors to systematically assign interactions to auditors for evaluation. This feature addresses the critical need for manual oversight in automated quality assurance systems, allowing teams to validate Auto QA accuracy, provide targeted agent feedback, and maintain consistent quality standards across all customer interactions.
+>>>>>>> Stashed changes
 
+The Audit Allocations interface adapts to your permission level, displaying either management or auditor views based on your role.
+
+<<<<<<< Updated upstream
 Navigate to **Quality AI** > **ANALYZE** > **Allocations**.  
 <img src="../allocations/images/audit-allocations.png" alt="Audit Allocations" title="Audit Allocations" style="border: 1px solid gray; zoom:80%;">
+=======
+## Access Allocations 
+
+Navigate to **Quality AI** > **ANALYZE** > **Allocations**.  
+<img src="../conversation-mining/images/conversation-mining-audit-allocations.png" alt="Audit Allocations" title="Audit Allocations" style="border: 1px solid gray; zoom:80%;">
+>>>>>>> Stashed changes
 
 The **My Allocations** has following key Items:
 
