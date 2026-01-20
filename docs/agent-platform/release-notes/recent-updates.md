@@ -38,7 +38,7 @@ The Agent Platform extends existing PII handling to Workflow Tools, ensuring sen
 
 **Improved Context Variable Selection in the Flow Builder**
 
-Selecting context variables is now faster and more intuitive. When users type `{{` in any field that supports context variables, a dynamic dropdown appears showing all available variables grouped by node, including environment variables defined at the workflow-tool level. This eliminates the hassle of manually entering the full path.
+Selecting context variables is now faster and more intuitive. When users type `{{` in any field that supports context variables, a dynamic dropdown appears showing all available variables grouped by node, including environment variables defined at the workflow-tool level. This eliminates the hassle of manually entering the full path. [Learn more :octicons-arrow-right-24:](../ai-agents/context-object.md#using-the-context-object)
 
 *Coming Soon:* Support for selecting and referencing agentic app-level environment variables in Workflow Tools is currently in progress and will be available in an upcoming release.
 
