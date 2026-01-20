@@ -53,7 +53,7 @@ Admins can now centrally manage security settings for Platform-generated URLs (c
 
 **Unified Interactions Dashboard Availability**
 
-The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md)
+The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products.
 
 <hr>
 

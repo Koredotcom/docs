@@ -49,7 +49,7 @@ Agent AI now automatically retrieves, stores, and accesses the complete pre-hand
 
 Agent AI automatically analyzes and summarizes a customer’s recent interactions across all channels, including orders, returns, exchanges, chat, email, SMS, WhatsApp, phone calls, product registrations, and other activities available through Harman’s APIs. This summary helps agents quickly understand the customer context, anticipate call intent, and assist customers efficiently without navigating multiple CRM pages.
 
-<ht>
+<hr>
 
 ## v11.20.0 December 07, 2025
 

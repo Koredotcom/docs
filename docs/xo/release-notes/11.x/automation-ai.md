@@ -34,7 +34,9 @@ Payload encryption support has been extended to request payloads for selected AP
 **Enhanced Response Structure for the Get Linked Apps API**
 
 
-The Get Linked Apps API has been enhanced with a revised response structure to retrieve all linked applications associated with a universal app for the chat flow. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#creating-and-managing-jwt-apps-in-the-platform)
+The Get Linked Apps API has been enhanced with a revised response structure to retrieve all linked applications associated with a universal or parent app. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#creating-and-managing-jwt-apps-in-the-platform)
+
+
 
 
 <font size="4">Agent Transfer</font>
