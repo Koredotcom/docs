@@ -18,7 +18,7 @@ The Evaluation Form Summary report now includes a Total Interactions column to s
 
 **Audit Allocation Enhancements**
 
-Audit Allocation management uses a dedicated “Allocations” menu and a “My Allocations” tab. QA managers can track auditor progress, create and edit custom allocations, assign interactions to agents by percentage or count, and reassign pending interactions to manage availability while maintaining consistent quality coverage. 
+Audit Allocation management uses a dedicated “Allocations” menu and a “My Allocations” tab. QA managers can track auditor progress, create and edit custom allocations, assign interactions to agents by percentage or count, and reassign pending interactions to manage availability while maintaining consistent quality coverage. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-audit-allocations.md)
 
 <font size="4">Configuration</font>
 
