@@ -47,7 +47,7 @@ Steps to create a JWT Client App from the Platform:
 
 When the Enforce Request and Response Payload Encryption option is enabled, you must provide a public key. The platform generates a secure AES-256 encryption key, which is used to encrypt the public API request payload before sending it to the server. Once the server receives this encrypted request, it processes it and returns the encrypted response payload along with the AES key, encrypted with the client’s public key. Only the client that owns the matching private key can decrypt the AES key and access the original request and response data. This feature adds an additional layer of security for sensitive information, ensuring confidentiality and data integrity across all API communications.
 
-The request and response payload encryption option is supported only for the following endpoints:
+The request and response payload encryption option is supported only for the following endpoints in the App builder:
 
 * Session History
 * Get Analytics
@@ -77,7 +77,7 @@ Steps to create a Client App from the Admin Console:
     2. Select **Enforce JTI**, **JWE**, or both as per your requirements.
 6. Click **Save** and **Done**.
 
-## Supported APIs for Request and Response Payload Encryption
+## Supported APIs for Encryption in the Admin Console
 The request and response payload encryption option is supported only for the following endpoints:
 
 * Session History
