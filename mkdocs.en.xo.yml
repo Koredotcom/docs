@@ -530,7 +530,7 @@ nav:
         - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
       - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md
-<<<<<<< Updated upstream
+      - Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md      
       - Allocations: 
         - Overview: quality-ai/analyze/conversation-mining-audit-allocations.md
         - Creating Audit Allocations: quality-ai/analyze/creating-audit-allocations.md
@@ -538,11 +538,6 @@ nav:
       - Conversation Mining: 
         - Interactions: quality-ai/analyze/conversation-mining-interactions.md
         
-=======
-      - Allocations: quality-ai/analyze/conversation-mining-audit-allocations.md      
-      - Conversation Mining: 
-        - Interactions: quality-ai/analyze/conversation-mining-interactions.md       
->>>>>>> Stashed changes
       - Agent Leaderboard: quality-ai/analyze/agent-leaderboard.md
       - Topic Discovery: quality-ai/analyze/topic-discovery.md           
     - Coach:
