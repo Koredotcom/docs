@@ -72,7 +72,7 @@ Azure marks all permissions with a green checkmark, indicating admin consent is 
 
 The platform requires three pieces of information from your app registration: Client ID, Tenant ID, and Client Secret.
 
-### Copy Client ID and Tenant ID
+**Copy Client ID and Tenant ID**
 
 1. Click **Overview** in the left sidebar (if not already on the Overview page).
 2. Locate the **Application (client) ID** field.
@@ -86,7 +86,7 @@ The platform requires three pieces of information from your app registration: Cl
 
 Client secrets authenticate the platform when accessing Microsoft Graph APIs.
 
-### Generate New Secret
+**Generate New Secret**
 
 1. Click **Certificates & Secrets** in the left sidebar.
 2. Click the **Client Secrets** tab.
@@ -103,19 +103,15 @@ Client secrets authenticate the platform when accessing Microsoft Graph APIs.
 
 Azure generates the secret and displays it in the client secrets list.
 
-### Copy Secret Value
+**Copy Secret Value**
 
 !!! note
-   
-    Azure displays the secret value only once at creation. You cannot retrieve it later.
+    
+     Azure displays the secret value only once at creation. If you lose the secret value, you must create a new client secret and update the configuration.
 
 1. Locate the **Value** column in the client secrets list.
 2. Click the copy icon next to the secret value.
 3. Store this value securely, you'll enter it as the **Client Secret**.
-
-!!! note
-
-    If you lose the secret value, you cannot retrieve it from Azure. You must create a new client secret and update the configuration.
 
 ## Set Expiration Reminders
 

@@ -34,7 +34,7 @@ Admin Templates manage account-level invitations and include:
 
 ### Application Templates
 
-Each provisioned application has its own email template section. For example: AI for Work
+Each provisioned application has its own email template section.
 
 **Member invitation template**: This system added this email template sent when ypu add a user as a member to the AI for Work application.
 
