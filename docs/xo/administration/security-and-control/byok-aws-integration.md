@@ -26,7 +26,6 @@ The BYOK integration requires coordination between you (the customer) and the Ko
 
 The BYOK integration involves six main steps: 
 
-
 1. [Create IAM Policy](#step-1-create-iam-policy): Define KMS permissions (encrypt, decrypt, generate keys, describe key).
 2. [Create IAM Role](#step-2-create-iam-role): Establish a trust relationship with Kore.ai and attach the IAM policy.
 3. [Create KMS Key](#step-3-create-kms-key): Set up a Customer Managed Key for encryption operations.
@@ -262,13 +261,15 @@ Check analytics data for recent chat interactions to confirm that encrypted data
 
 Open the application and run Authorization Profiles and Dialogs.
 
-1. Execute **BasicAuthValidationDialog**.  
+* Execute **BasicAuthValidationDialog**.  
+* When the bot displays the authorization link, click the link and enter the credentials (**admin/password**). 
 
-2. When the bot displays the authorization link, click the link and enter the credentials (**admin/password**).  
+**Example:**
+
 <img src="../images/byok_3.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>  
 <img src="../images/byok_4.png" alt="BYOK" title="BYOK" style="border: 1px solid gray;zoom:60%;"/>  
 
-3. If successful, the system redirects you and displays "Basic authentication successful." This confirms your encrypted credentials are correctly stored and retrieved using your CMK.
+If successful, the system redirects you and displays "Basic authentication successful." This confirms your encrypted credentials are correctly stored and retrieved using your CMK.
 
 <hr/>
 
