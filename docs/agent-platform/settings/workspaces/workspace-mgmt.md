@@ -42,7 +42,7 @@ Click on *Browse all Workspaces* to view the complete list of workspaces. On swi
 
 **Features of Workspace Switcher**
 
-* Default workspace: Users can mark any workspace as their default. This workspace will automatically load when logging into a new session.
+* Default workspace: Users can mark any workspace as their default. This workspace loads automatically when logging into a new session.
 * Search and Browse Workspaces: Easily locate workspaces using the search bar or browse through the full list using pagination controls. 
 * Request access to inaccessible workspaces: My Workspaces tab lists the workspaces that the user has access to, and inaccessible ones are listed under Other Workspaces. Users can directly request access to a workspace from this list.
 * User Role: The workspace switcher indicates the total number of members in the workspace and the user’s role in the workspace. In the workspace list view, each workspace entry indicates the owner, helping users understand workspace ownership clearly.
