@@ -111,7 +111,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
 
 ### Open-Source Models
 
-Agentic Apps supports open source models from providers such as Meta, Mistral, and XiaomiMiMo.
+Agentic Apps support open source models from providers such as Meta, Mistral, and XiaomiMiMo.
 
 <table>
 

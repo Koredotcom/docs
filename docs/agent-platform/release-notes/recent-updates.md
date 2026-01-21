@@ -38,6 +38,8 @@ The Agent Platform extends existing PII handling to Workflow Tools, ensuring sen
 * The tool can securely unredact and use the PII internally for execution.
 * All monitoring, debugging logs, and execution traces continue to display only masked values.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/workflow-tools.md#2-app-scoped-tools)
+
 **Improved Context Variable Selection in the Flow Builder**
 
 Selecting context variables is now faster and more intuitive. When users type `{{` in any field that supports context variables, a dynamic dropdown appears showing all available variables grouped by node, including environment variables defined at the workflow-tool level. This eliminates the hassle of manually entering the full path. [Learn more :octicons-arrow-right-24:](../ai-agents/context-object.md#using-the-context-object)
