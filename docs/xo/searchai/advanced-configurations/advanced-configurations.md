@@ -6,7 +6,7 @@ SearchAI offers advanced configurations that allow you to optimize the answers a
 
 
 Search for the config you want to set and select or provide its values. 
-![Advanced Configurations](./images/home.png "Advanced Configurations")
+![Advanced Configurations](./images/config.png "Advanced Configurations")
 
 The following table lists the supported configurations. 
 

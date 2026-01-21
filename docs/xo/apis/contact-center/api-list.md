@@ -18,6 +18,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
     - [SMS Campaigns](#sms-campaigns)
     - [Voice Campaigns](#voice-campaigns)
     - [Campaign Status](#campaign-status)
+    - [Campaign Schedule](#campaign-schedule)
     - [Campaign Details](#campaign-details)
     - [Contact List Management](#contact-list-management)
   - [Voice Gateway (VG) APIs](#voice-gateway-vg-apis)
@@ -89,6 +90,11 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------|
 | [Create a Contact by Giving Details](../contact-center/create-a-contact-by-giving-details.md)                        | To create a contact with the given Stream Id.                                                               | Configuration        |
 | [Create Bulk Contacts](../contact-center/create-bulk-contacts.md)                                                    | To create bulk contacts from a CSV file with the given Stream Id.                                           | Configuration        |
+| [Get All Contacts](../contact-center/get-all-contacts.md)                                                    | To retrieve all contacts created for outbound calling in a given stream ID.                                           | Configuration        |
+| [Update a Contact](../contact-center/update-a-contact.md)                                                    | To update a specific contact associated with a stream ID.                                           | Configuration        |
+| [Update Bulk Contacts](../contact-center/update-bulk-contacts.md)                                                    | To update multiple contacts simultaneously.                                           | Configuration        |
+| [Delete a Contact](../contact-center/delete-a-contact.md)                                                    | To delete a specific contact.                                           | Configuration        |
+| [Delete Bulk Contacts](../contact-center/bulk-delete-contacts.md)                                                    | To delete multiple contacts simultaneously.                                           | Configuration        |
 
 ### Import/Export Data APIs
 
@@ -182,6 +188,14 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 |--------|------------------|---------------------------|
 | [Get Campaign Status](../contact-center/get-campaign-status.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
 | [Get Campaign Status (v2)](../contact-center/get-campaign-status-v2.md) | Retrieves the current status (active, stopped, etc.) of a campaign using its campaign ID. | Campaign Management |
+
+### Campaign Schedule
+
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
+|--------|------------------|---------------------------|
+| [Enable Daily Scheduling of Voice or SMS Campaign](./enable-voice-or-sms-campaign-schedule-daily.md) | To schedule a recurring daily Voice or SMS campaign. | Campaign Management |
+| [Enable Weekly Scheduling of Voice or SMS Campaign](./enable-voice-or-sms-campaign-schedule-weekly.md) | To schedule a recurring weekly Voice or SMS campaign. | Campaign Management |
+| [Disable a Scheduled Voice or SMS Campaign API](../contact-center/disable-voice-or-sms-campaign-schedule.md) | To disable a previously scheduled Voice or SMS campaign. | Campaign Management |
 
 ### Campaign Details
 

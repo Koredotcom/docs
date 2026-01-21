@@ -31,9 +31,10 @@ Default roles are uneditable and non-removable, and all permissions are fixed. S
 
 The table below shows the permissions available within the XO Platform and their assignment to each user role. In the _Custom Role_ column, you can see all available permissions that can be assigned to custom roles.
 
-!!! Note
+!!! Note "Permissions"
 
-    The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    * The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    * When a parent permission is set to **No** or **View**, the system automatically disables all associated child permissions and prevents any modification.
 
 ### APP OWNER
 
@@ -327,278 +328,245 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-   <td><strong>Agent Desktop Console</strong>
-   <br>
-Access and use the agent desktop console
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Agent Desktop Console</strong><br>
+  Access and use the agent desktop console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Widget Management</strong>
-   <br>
-Create and manage custom widgets
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Internal Chat</strong><br>
+  Chat internally with others in the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Survey Management</strong>
-   <br>
-Create and manage surveys
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Audio Calls in Messaging Conversations</strong><br>
+  Allow agents to add audio calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Disposition Management</strong>
-   <br>
-Create and manage dispositions
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Video Calls in Messaging Conversations</strong><br>
+  Allow agents to add video calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Interactions</strong>
-   <br>
-Access to interactions in the Dashboard
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Desktop Layout Creation</strong><br>
+  Create custom desktop layouts in the console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to each agent's personal dashboard</strong>
-   <br>
-Define My Dashboard accessibility to Agents
-   </td>
-   <td>No
-   </td>
+  <td><strong>Desktop Layout Publishing</strong><br>
+  Publish custom layouts for account-wide use
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Standard Responses</strong>
-   <br>
-Create and manage standard responses
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Request Supervisor Support</strong><br>
+  Allow user to send request for supervisor support
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Internal Chat</strong>
-   <br>
-Chat internally with others in the account
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Receive Supervisor Support</strong><br>
+  Allow user to receive request for supervisor support from an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Audio calls in messaging conversations</strong>
-   <br>
-Allow agents to add audio calls to a messaging interaction
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Call Dialing Stage Settings</strong><br>
+  Enable call controls during dialing by toggling the option in Outbound Dialer
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Video calls in messaging conversations</strong>
-   <br>
-Allow agents to add video calls to a messaging interaction
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Direct Outward Dialing</strong><br>
+  Users can make direct outward calls
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to Agent metrics in the Dashboard</strong>
-   <br>
-Access to dashboard
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Outbound Email</strong><br>
+  Make outbound emails if enabled for the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Management</strong>
-   <br>
-Create and manage secure forms
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Agent Channel Selection for Upcoming Interactions</strong><br>
+  Allow user to select their preferred channel for Upcoming Interactions
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Data View</strong>
-   <br>
-View filled-out secure forms and data
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Manually Redact Sensitive Data</strong><br>
+  Allows the agent to manually redact selected portions of text during live conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Creation</strong>
-   <br>
-Create custom desktop layouts in the console
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Consult Call</strong><br>
+  Allow agents to make a consult call before transferring the conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Publishing</strong>
-   <br>
-Publish custom layouts for account-wide use
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Widget Management</strong><br>
+  Create and manage custom widgets
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Monitor Console</strong>
-   <br>
-Access to the monitor tab for live interactions
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Survey Management</strong><br>
+  Create and manage surveys
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
-   <br>
-Access to edit disposition code after the conversation is completed
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Disposition Management</strong><br>
+  Create and manage dispositions
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Request Supervisor Support</strong>
-   <br>
-Allow user to send request for supervisor support
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Access to each agent's personal dashboard</strong><br>
+  Define My Dashboard accessibility to agents
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Receive Supervisor Support</strong>
-   <br>
-Allow user to receive request for supervisor support from an agent
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Standard Responses</strong><br>
+  Create and manage standard responses
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Download Interactions Data</strong>
-   <br>
-Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Queues and Agents</strong><br>
+  Access to Queues and Agents metrics in Dashboard
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Reports</strong>
-   <br>
-Create, view, and run reports
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Secure Form Management</strong><br>
+  Create and manage secure forms
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Join Conversation</strong>
-   <br>
-Allow user to join a conversation
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Secure Form Data View</strong><br>
+  View filled-out secure forms and data
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Call Dialing Stage Settings</strong>
-   <br>
-Enable call controls during dialing by toggling the option in 'Outbound Dialer'
-   </td>
-   <td>No
-   </td>
+  <td><strong>Monitor Console</strong><br>
+  Access to the monitor tab for live interactions
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Voice Campaigns</strong>
-   <br>
-Access to Voice campaigns under Campaigns module
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Join Conversation</strong><br>
+  Allow user to join a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Proactive Web Campaigns</strong>
-   <br>
-Access to Proactive Web campaigns under Campaigns module
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Listen and Whisper Conversation</strong><br>
+  Allow user to listen and whisper to a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>SMS Campaigns</strong>
-   <br>
-Access to SMS campaigns under the Campaigns module
-   </td>
-   <td>Full
-   </td>
+  <td><strong>Monitor Queue Visibility</strong><br>
+  Determines which queues can be accessed by the user
+  </td>
+  <td>All</td>
 </tr>
 <tr>
-   <td><strong>Direct Outward Dialing</strong>
-   <br>
-Users can make direct outward calls
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Bot-led Interactions</strong><br>
+  Access bot-driven interactions on the Monitor tab
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Monitor Queue Visibility</strong>
-   <br>
-Determines which queues can be accessed by the user
-   </td>
-   <td>All
-   </td>
+  <td><strong>Force Logout</strong><br>
+  Allow user to force logout another user from the system
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Dashboard Content</strong>
-   <br>
-Whose interactions should he have access to
-   </td>
-   <td>All
-   </td>
+  <td><strong>Change Queue for Conversations</strong><br>
+  Allow user to change the queue for individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Outbound Email</strong>
-   <br>
-Make outbound emails if enabled for the account
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Assign Conversations</strong><br>
+  Allow user to assign individual or multiple conversations to an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Bot-led Interactions</strong>
-   <br>
-Access bot-driven interactions on the Monitor tab
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Force Close Conversations</strong><br>
+  Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
-   <br>
-Allow user to select their preferred channel for incoming interactions.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Edit Disposition from Dashboard</strong><br>
+  Access to edit disposition code after the conversation is completed
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Manually Redact Sensitive Data</strong>
-   <br>
-Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Download Interactions Data</strong><br>
+  Allow user to download transcripts, recordings, events, and latency reports
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Transfer/Close Multiple Conversations</strong>
-   <br>
-Allow user to redistribute or terminate conversations more flexibly across all channels
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Reports</strong><br>
+  Create, view, and run reports
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
+  <td><strong>Voice Campaigns</strong><br>
+  Access to Voice campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Proactive Web Campaigns</strong><br>
+  Access to Proactive Web campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>SMS Campaigns</strong><br>
+  Access to SMS campaigns under the Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Service Level Configuration</strong><br>
+  Manage the accessibility of service level feature
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Dashboard Content</strong><br>
+  Define whose interactions the user can access
+  </td>
+  <td>All</td>
+</tr>
+<tr>
+  <td><strong>Dynamic Queue Reprioritization</strong><br>
+  Manage queue priority to control routing logic
+  </td>
+  <td>Yes</td>
+</tr>
    <td colspan="2" ><strong>System</strong>
    </td>
 </tr>
@@ -653,7 +621,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>Full
    </td>
@@ -1031,250 +999,244 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-   <td><strong>Agent Desktop Console</strong>
-   <br>
-Access and use the agent desktop console
-   </td>
-   <td>Yes</td>
+  <td><strong>Agent Desktop Console</strong><br>
+  Access and use the agent desktop console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Widget Management</strong>
-   <br>
-Create and manage custom widgets
-   </td>
-   <td>Full</td>
+  <td><strong>Internal Chat</strong><br>
+  Chat internally with others in the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Survey Management</strong>
-   <br>
-Create and manage surveys
-   </td>
-   <td>Full</td>
+  <td><strong>Audio Calls in Messaging Conversations</strong><br>
+  Allow agents to add audio calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Disposition Management</strong>
-   <br>
-Create and manage dispositions
-   </td>
-   <td>Full</td>
+  <td><strong>Video Calls in Messaging Conversations</strong><br>
+  Allow agents to add video calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Interactions</strong>
-   <br>
-Access to interactions in the Dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Desktop Layout Creation</strong><br>
+  Create custom desktop layouts in the console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to each agent's personal dashboard</strong>
-   <br>
-Define My Dashboard accessibility to Agents
-   </td>
-   <td>No</td>
+  <td><strong>Desktop Layout Publishing</strong><br>
+  Publish custom layouts for account-wide use
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Standard Responses</strong>
-   <br>
-Create and manage standard responses
-   </td>
-   <td>Full</td>
+  <td><strong>Request Supervisor Support</strong><br>
+  Allow user to send request for supervisor support
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Internal Chat</strong>
-   <br>
-Chat internally with others in the account
-   </td>
-   <td>Yes</td>
+  <td><strong>Receive Supervisor Support</strong><br>
+  Allow user to receive request for supervisor support from an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Audio calls in messaging conversations</strong>
-   <br>
-Allow agents to add audio calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Call Dialing Stage Settings</strong><br>
+  Enable call controls during dialing by toggling the option in Outbound Dialer
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Video calls in messaging conversations</strong>
-   <br>
-Allow agents to add video calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Direct Outward Dialing</strong><br>
+  Users can make direct outward calls
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to Agent metrics in the Dashboard</strong>
-   <br>
-Access to dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Outbound Email</strong><br>
+  Make outbound emails if enabled for the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Management</strong>
-   <br>
-Create and manage secure forms
-   </td>
-   <td>Full</td>
+  <td><strong>Agent Channel Selection for Upcoming Interactions</strong><br>
+  Allow user to select their preferred channel for Upcoming Interactions
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Data View</strong>
-   <br>
-View filled-out secure forms and data
-   </td>
-   <td>Yes</td>
+  <td><strong>Manually Redact Sensitive Data</strong><br>
+  Allows the agent to manually redact selected portions of text during live conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Creation</strong>
-   <br>
-Create custom desktop layouts in the console
-   </td>
-   <td>Yes</td>
+  <td><strong>Consult Call</strong><br>
+  Allow agents to make a consult call before transferring the conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Publishing</strong>
-   <br>
-Publish custom layouts for account-wide use
-   </td>
-   <td>Yes</td>
+  <td><strong>Widget Management</strong><br>
+  Create and manage custom widgets
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Monitor Console</strong>
-   <br>
-Access to the monitor tab for live interactions
-   </td>
-   <td>Yes</td>
+  <td><strong>Survey Management</strong><br>
+  Create and manage surveys
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
-   <br>
-Access to edit disposition code after the conversation is completed
-   </td>
-   <td>Yes</td>
+  <td><strong>Disposition Management</strong><br>
+  Create and manage dispositions
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Request Supervisor Support</strong>
-   <br>
-Allow user to send request for supervisor support
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Access to each agent's personal dashboard</strong><br>
+  Define My Dashboard accessibility to agents
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Receive Supervisor Support</strong>
-   <br>
-Allow user to receive request for supervisor support from an agent
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Standard Responses</strong><br>
+  Create and manage standard responses
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Download Interactions Data</strong>
-   <br>
-Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Queues and Agents</strong><br>
+  Access to Queues and Agents metrics in Dashboard
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Reports</strong>
-   <br>
-Create, view, and run reports
-   </td>
-   <td>Full</td>
+  <td><strong>Secure Form Management</strong><br>
+  Create and manage secure forms
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Join Conversation</strong>
-   <br>
-Allow user to join a conversation
-   </td>
-   <td>Yes</td>
+  <td><strong>Secure Form Data View</strong><br>
+  View filled-out secure forms and data
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Call Dialing Stage Settings</strong>
-   <br>
-Enable call controls during dialing by toggling the option in 'Outbound Dialer'
-   </td>
-   <td>No
-   </td>
+  <td><strong>Monitor Console</strong><br>
+  Access to the monitor tab for live interactions
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Voice Campaigns</strong>
-   <br>
-Access to Voice campaigns under Campaigns module
-   </td>
-   <td>Full</td>
+  <td><strong>Join Conversation</strong><br>
+  Allow user to join a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Proactive Web Campaigns</strong>
-   <br>
-Access to Proactive Web campaigns under Campaigns module
-   </td>
-   <td>Full</td>
+  <td><strong>Listen and Whisper Conversation</strong><br>
+  Allow user to listen and whisper to a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>SMS Campaigns</strong>
-   <br>
-Access to SMS campaigns under the Campaigns module
-   </td>
-   <td>Full</td>
+  <td><strong>Monitor Queue Visibility</strong><br>
+  Determines which queues can be accessed by the user
+  </td>
+  <td>All</td>
 </tr>
 <tr>
-   <td><strong>Direct Outward Dialing</strong>
-   <br>
-Users can make direct outward calls
-   </td>
-   <td>Yes</td>
+  <td><strong>Bot-led Interactions</strong><br>
+  Access bot-driven interactions on the Monitor tab
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Monitor Queue Visibility</strong>
-   <br>    
-Determines which queues can be accessed by the user
-   </td>
-   <td>All</td>
+  <td><strong>Force Logout</strong><br>
+  Allow user to force logout another user from the system
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Dashboard Content</strong>
-   <br>
-Whose interactions should he have access to
-   </td>
-   <td>All</td>
+  <td><strong>Change Queue for Conversations</strong><br>
+  Allow user to change the queue for individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Outbound Email</strong>
-   <br>
-Make outbound emails if enabled for the account
-   </td>
-   <td>Yes</td>
+  <td><strong>Assign Conversations</strong><br>
+  Allow user to assign individual or multiple conversations to an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Bot-led Interactions</strong>
-   <br>
-Access bot-driven interactions on the Monitor tab
-   </td>
-   <td>No
-   </td>
+  <td><strong>Force Close Conversations</strong><br>
+  Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
-   <br>
-Allow user to select their preferred channel for incoming interactions.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Edit Disposition from Dashboard</strong><br>
+  Access to edit disposition code after the conversation is completed
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Manually Redact Sensitive Data</strong>
-   <br>
-Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Download Interactions Data</strong><br>
+  Allow user to download transcripts, recordings, events, and latency reports
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Transfer/Close Multiple Conversations</strong>
-   <br>
-Allow user to redistribute or terminate conversations more flexibly across all channels
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Reports</strong><br>
+  Create, view, and run reports
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Voice Campaigns</strong><br>
+  Access to Voice campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Proactive Web Campaigns</strong><br>
+  Access to Proactive Web campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>SMS Campaigns</strong><br>
+  Access to SMS campaigns under the Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Service Level Configuration</strong><br>
+  Manage the accessibility of service level feature
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Dashboard Content</strong><br>
+  Define whose interactions the user can access
+  </td>
+  <td>All</td>
+</tr>
+<tr>
+  <td><strong>Dynamic Queue Reprioritization</strong><br>
+  Manage queue priority to control routing logic
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -1331,7 +1293,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>Full
    </td>
@@ -1677,250 +1639,244 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-   <td><strong>Agent Desktop Console</strong>
-   <br>
-Access and use the agent desktop console
-   </td>
-   <td>Yes</td>
+  <td><strong>Agent Desktop Console</strong><br>
+  Access and use the agent desktop console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Widget Management</strong>
-   <br>
-Create and manage custom widgets
-   </td>
-   <td>Full</td>
+  <td><strong>Internal Chat</strong><br>
+  Chat internally with others in the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Survey Management</strong>
-   <br>
-Create and manage surveys
-   </td>
-   <td>Full</td>
+  <td><strong>Audio Calls in Messaging Conversations</strong><br>
+  Allow agents to add audio calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Disposition Management</strong>
-   <br>
-Create and manage dispositions
-   </td>
-   <td>Full</td>
+  <td><strong>Video Calls in Messaging Conversations</strong><br>
+  Allow agents to add video calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Interactions</strong>
-   <br>
-Access to interactions in the Dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Desktop Layout Creation</strong><br>
+  Create custom desktop layouts in the console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to each agent's personal dashboard</strong>
-   <br>
-Define My Dashboard accessibility to Agents
-   </td>
-   <td>No</td>
+  <td><strong>Desktop Layout Publishing</strong><br>
+  Publish custom layouts for account-wide use
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Standard Responses</strong>
-   <br>
-Create and manage standard responses
-   </td>
-   <td>Full</td>
+  <td><strong>Request Supervisor Support</strong><br>
+  Allow user to send request for supervisor support
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Internal Chat</strong>
-   <br>
-Chat internally with others in the account
-   </td>
-   <td>Yes</td>
+  <td><strong>Receive Supervisor Support</strong><br>
+  Allow user to receive request for supervisor support from an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Audio calls in messaging conversations</strong>
-   <br>
-Allow agents to add audio calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Call Dialing Stage Settings</strong><br>
+  Enable call controls during dialing by toggling the option in Outbound Dialer
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Video calls in messaging conversations</strong>
-   <br>
-Allow agents to add video calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Direct Outward Dialing</strong><br>
+  Users can make direct outward calls
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to Agent metrics in the Dashboard</strong>
-   <br>
-Access to dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Outbound Email</strong><br>
+  Make outbound emails if enabled for the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Management</strong>
-   <br>
-Create and manage secure forms
-   </td>
-   <td>Full</td>
+  <td><strong>Agent Channel Selection for Upcoming Interactions</strong><br>
+  Allow user to select their preferred channel for Upcoming Interactions
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Data View</strong>
-   <br>
-View filled-out secure forms and data
-   </td>
-   <td>Yes</td>
+  <td><strong>Manually Redact Sensitive Data</strong><br>
+  Allows the agent to manually redact selected portions of text during live conversations
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Creation</strong>
-   <br>
-Create custom desktop layouts in the console
-   </td>
-   <td>Yes</td>
+  <td><strong>Consult Call</strong><br>
+  Allow agents to make a consult call before transferring the conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Publishing</strong>
-   <br>
-Publish custom layouts for account-wide use
-   </td>
-   <td>Yes</td>
+  <td><strong>Widget Management</strong><br>
+  Create and manage custom widgets
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Monitor Console</strong>
-   <br>
-Access to the monitor tab for live interactions
-   </td>
-   <td>Yes</td>
+  <td><strong>Survey Management</strong><br>
+  Create and manage surveys
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
-   <br>
-Access to edit disposition code after the conversation is completed
-   </td>
-   <td>Yes</td>
+  <td><strong>Disposition Management</strong><br>
+  Create and manage dispositions
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Request Supervisor Support</strong>
-   <br>
-Allow user to send request for supervisor support
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Access to each agent's personal dashboard</strong><br>
+  Define My Dashboard accessibility to agents
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Receive Supervisor Support</strong>
-   <br>
-Allow user to receive request for supervisor support from an agent
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Standard Responses</strong><br>
+  Create and manage standard responses
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Download Interactions Data</strong>
-   <br>
-Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Queues and Agents</strong><br>
+  Access to Queues and Agents metrics in Dashboard
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Reports</strong>
-   <br>
-Create, view, and run reports
-   </td>
-   <td>Full</td>
+  <td><strong>Secure Form Management</strong><br>
+  Create and manage secure forms
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Join Conversation</strong>
-   <br>
-Allow user to join a conversation
-   </td>
-   <td>Yes</td>
+  <td><strong>Secure Form Data View</strong><br>
+  View filled-out secure forms and data
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Call Dialing Stage Settings</strong>
-   <br>
-Enable call controls during dialing by toggling the option in 'Outbound Dialer'
-   </td>
-   <td>No
-   </td>
+  <td><strong>Monitor Console</strong><br>
+  Access to the monitor tab for live interactions
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Voice Campaigns</strong>
-   <br>
-Access to Voice campaigns under Campaigns module
-   </td>
-   <td>None</td>
+  <td><strong>Join Conversation</strong><br>
+  Allow user to join a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Proactive Web Campaigns</strong>
-   <br>
-Access to Proactive Web campaigns under Campaigns module
-   </td>
-   <td>None</td>
+  <td><strong>Listen and Whisper Conversation</strong><br>
+  Allow user to listen and whisper to a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>SMS Campaigns</strong>
-   <br>
-Access to SMS campaigns under the Campaigns module
-   </td>
-   <td>None</td>
+  <td><strong>Monitor Queue Visibility</strong><br>
+  Determines which queues can be accessed by the user
+  </td>
+  <td>All</td>
 </tr>
 <tr>
-   <td><strong>Direct Outward Dialing</strong>
-   <br>
-Users can make direct outward calls
-   </td>
-   <td>Yes</td>
+  <td><strong>Bot-led Interactions</strong><br>
+  Access bot-driven interactions on the Monitor tab
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Monitor Queue Visibility</strong>
-   <br>
-Determines which queues can be accessed by the user
-   </td>
-   <td>All</td>
+  <td><strong>Force Logout</strong><br>
+  Allow user to force logout another user from the system
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Dashboard Content</strong>
-   <br>
-Whose interactions should he have access to
-   </td>
-   <td>All</td>
+  <td><strong>Change Queue for Conversations</strong><br>
+  Allow user to change the queue for individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Outbound Email</strong>
-   <br>
-Make outbound emails if enabled for the account
-   </td>
-   <td>No</td>
+  <td><strong>Assign Conversations</strong><br>
+  Allow user to assign individual or multiple conversations to an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Bot-led Interactions</strong>
-   <br>
-Access bot-driven interactions on the Monitor tab
-   </td>
-   <td>No
-   </td>
+  <td><strong>Force Close Conversations</strong><br>
+  Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
-   <br>
-Allow user to select their preferred channel for incoming interactions.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Edit Disposition from Dashboard</strong><br>
+  Access to edit disposition code after the conversation is completed
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Manually Redact Sensitive Data</strong>
-   <br>
-Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
-   </td>
-   <td>No
-   </td>
+  <td><strong>Download Interactions Data</strong><br>
+  Allow user to download transcripts, recordings, events, and latency reports
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Transfer/Close Multiple Conversations</strong>
-   <br>
-Allow user to redistribute or terminate conversations more flexibly across all channels
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Reports</strong><br>
+  Create, view, and run reports
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Voice Campaigns</strong><br>
+  Access to Voice campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Proactive Web Campaigns</strong><br>
+  Access to Proactive Web campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>SMS Campaigns</strong><br>
+  Access to SMS campaigns under the Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Service Level Configuration</strong><br>
+  Manage the accessibility of service level feature
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Dashboard Content</strong><br>
+  Define whose interactions the user can access
+  </td>
+  <td>All</td>
+</tr>
+<tr>
+  <td><strong>Dynamic Queue Reprioritization</strong><br>
+  Manage queue priority to control routing logic
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -1977,7 +1933,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>None
    </td>
@@ -2335,250 +2291,244 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-   <td><strong>Agent Desktop Console</strong>
-   <br>
-Access and use the agent desktop console
-   </td>
-   <td>Yes</td>
+  <td><strong>Agent Desktop Console</strong><br>
+  Access and use the agent desktop console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Widget Management</strong>
-   <br>
-Create and manage custom widgets
-   </td>
-   <td>Full</td>
+  <td><strong>Internal Chat</strong><br>
+  Chat internally with others in the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Survey Management</strong>
-   <br>
-Create and manage surveys
-   </td>
-   <td>None</td>
+  <td><strong>Audio Calls in Messaging Conversations</strong><br>
+  Allow agents to add audio calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Disposition Management</strong>
-   <br>
-Create and manage dispositions
-   </td>
-   <td>None</td>
+  <td><strong>Video Calls in Messaging Conversations</strong><br>
+  Allow agents to add video calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Interactions</strong>
-   <br>
-Access to interactions in the Dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Desktop Layout Creation</strong><br>
+  Create custom desktop layouts in the console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to each agent's personal dashboard</strong>
-   <br>
-Define My Dashboard accessibility to Agents
-   </td>
-   <td>No</td>
+  <td><strong>Desktop Layout Publishing</strong><br>
+  Publish custom layouts for account-wide use
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Standard Responses</strong>
-   <br>
-Create and manage standard responses
-   </td>
-   <td>None</td>
+  <td><strong>Request Supervisor Support</strong><br>
+  Allow user to send request for supervisor support
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Internal Chat</strong>
-   <br>
-Chat internally with others in the account
-   </td>
-   <td>Yes</td>
+  <td><strong>Receive Supervisor Support</strong><br>
+  Allow user to receive request for supervisor support from an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Audio calls in messaging conversations</strong>
-   <br>
-Allow agents to add audio calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Call Dialing Stage Settings</strong><br>
+  Enable call controls during dialing by toggling the option in Outbound Dialer
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Video calls in messaging conversations</strong>
-   <br>
-Allow agents to add video calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Direct Outward Dialing</strong><br>
+  Users can make direct outward calls
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Access to Agent metrics in the Dashboard</strong>
-   <br>
-Access to dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Outbound Email</strong><br>
+  Make outbound emails if enabled for the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Management</strong>
-   <br>
-Create and manage secure forms
-   </td>
-   <td>Full</td>
+  <td><strong>Agent Channel Selection for Upcoming Interactions</strong><br>
+  Allow user to select their preferred channel for Upcoming Interactions
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Data View</strong>
-   <br>
-View filled-out secure forms and data
-   </td>
-   <td>Yes</td>
+  <td><strong>Manually Redact Sensitive Data</strong><br>
+  Allows the agent to manually redact selected portions of text during live conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Creation</strong>
-   <br>
-Create custom desktop layouts in the console
-   </td>
-   <td>Yes</td>
+  <td><strong>Consult Call</strong><br>
+  Allow agents to make a consult call before transferring the conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Publishing</strong>
-   <br>
-Publish custom layouts for account-wide use
-   </td>
-   <td>Yes</td>
+  <td><strong>Widget Management</strong><br>
+  Create and manage custom widgets
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Monitor Console</strong>
-   <br>
-Access to the monitor tab for live interactions
-   </td>
-   <td>Yes</td>
+  <td><strong>Survey Management</strong><br>
+  Create and manage surveys
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
-   <br>
-Access to edit disposition code after the conversation is completed
-   </td>
-   <td>Yes</td>
+  <td><strong>Disposition Management</strong><br>
+  Create and manage dispositions
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Request Supervisor Support</strong>
-   <br>
-Allow user to send request for supervisor support
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Access to each agent's personal dashboard</strong><br>
+  Define My Dashboard accessibility to agents
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Receive Supervisor Support</strong>
-   <br>
-Allow user to receive request for supervisor support from an agent
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Standard Responses</strong><br>
+  Create and manage standard responses
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Download Interactions Data</strong>
-   <br>
-Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Queues and Agents</strong><br>
+  Access to Queues and Agents metrics in Dashboard
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Reports</strong>
-   <br>
-Create, view, and run reports
-   </td>
-   <td>Full</td>
+  <td><strong>Secure Form Management</strong><br>
+  Create and manage secure forms
+  </td>
+  <td>Full</td>
 </tr>
 <tr>
-   <td><strong>Join Conversation</strong>
-   <br>
-Allow user to join a conversation
-   </td>
-   <td>Yes</td>
+  <td><strong>Secure Form Data View</strong><br>
+  View filled-out secure forms and data
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Call Dialing Stage Settings</strong>
-   <br>
-Enable call controls during dialing by toggling the option in 'Outbound Dialer'
-   </td>
-   <td>No
-   </td>
+  <td><strong>Monitor Console</strong><br>
+  Access to the monitor tab for live interactions
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Voice Campaigns</strong>
-   <br>
-Access to Voice campaigns under Campaigns module
-   </td>
-   <td>Full</td>
+  <td><strong>Join Conversation</strong><br>
+  Allow user to join a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Proactive Web Campaigns</strong>
-   <br>
-Access to Proactive Web campaigns under Campaigns module
-   </td>
-   <td>Full</td>
+  <td><strong>Listen and Whisper Conversation</strong><br>
+  Allow user to listen and whisper to a conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>SMS Campaigns</strong>
-   <br>
-Access to SMS campaigns under the Campaigns module
-   </td>
-   <td>Full</td>
+  <td><strong>Monitor Queue Visibility</strong><br>
+  Determines which queues can be accessed by the user
+  </td>
+  <td>Self</td>
 </tr>
 <tr>
-   <td><strong>Direct Outward Dialing</strong>
-   <br>
-Users can make direct outward calls
-   </td>
-   <td>Yes</td>
+  <td><strong>Bot-led Interactions</strong><br>
+  Access bot-driven interactions on the Monitor tab
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Monitor Queue Visibility</strong>
-   <br>
-Determines which queues can be accessed by the user
-   </td>
-   <td>Self</td>
+  <td><strong>Force Logout</strong><br>
+  Allow user to force logout another user from the system
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Dashboard Content</strong>
-   <br>
-Whose interactions should he have access to
-   </td>
-   <td>All</td>
+  <td><strong>Change Queue for Conversations</strong><br>
+  Allow user to change the queue for individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Outbound Email</strong>
-   <br>
-Make outbound emails if enabled for the account
-   </td>
-   <td>Yes</td>
+  <td><strong>Assign Conversations</strong><br>
+  Allow user to assign individual or multiple conversations to an agent
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Bot-led Interactions</strong>
-   <br>
-Access bot-driven interactions on the Monitor tab
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Force Close Conversations</strong><br>
+  Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
-   <br>
-Allow user to select their preferred channel for incoming interactions.
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Edit Disposition from Dashboard</strong><br>
+  Access to edit disposition code after the conversation is completed
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Manually Redact Sensitive Data</strong>
-   <br>
-Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Download Interactions Data</strong><br>
+  Allow user to download transcripts, recordings, events, and latency reports
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Transfer/Close Multiple Conversations</strong>
-   <br>
-Allow user to redistribute or terminate conversations more flexibly across all channels
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Reports</strong><br>
+  Create, view, and run reports
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Voice Campaigns</strong><br>
+  Access to Voice campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Proactive Web Campaigns</strong><br>
+  Access to Proactive Web campaigns under Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>SMS Campaigns</strong><br>
+  Access to SMS campaigns under the Campaigns module
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Service Level Configuration</strong><br>
+  Manage the accessibility of service level feature
+  </td>
+  <td>Full</td>
+</tr>
+<tr>
+  <td><strong>Dashboard Content</strong><br>
+  Define whose interactions the user can access
+  </td>
+  <td>All</td>
+</tr>
+<tr>
+  <td><strong>Dynamic Queue Reprioritization</strong><br>
+  Manage queue priority to control routing logic
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
    <td colspan="2" ><strong>System</strong>
@@ -2635,7 +2585,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>Full
    </td>
@@ -2997,251 +2947,246 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-   <td><strong>Agent Desktop Console</strong>
-   <br>
-Access and use the agent desktop console
-   </td>
-   <td>Yes</td>
+  <td><strong>Agent Desktop Console</strong><br>
+  Access and use the agent desktop console
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Widget Management</strong>
-   <br>
-Create and manage custom widgets
-   </td>
-   <td>None</td>
+  <td><strong>Internal Chat</strong><br>
+  Chat internally with others in the account
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Survey Management</strong>
-   <br>
-Create and manage surveys
-   </td>
-   <td>None</td>
+  <td><strong>Audio Calls in Messaging Conversations</strong><br>
+  Allow agents to add audio calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Disposition Management</strong>
-   <br>
-Create and manage dispositions
-   </td>
-   <td>None</td>
+  <td><strong>Video Calls in Messaging Conversations</strong><br>
+  Allow agents to add video calls to a messaging interaction
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Interactions</strong>
-   <br>
-Access to interactions in the Dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Desktop Layout Creation</strong><br>
+  Create custom desktop layouts in the console
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Access to each agent's personal dashboard</strong>
-   <br>
-Define My Dashboard accessibility to Agents
-   </td>
-   <td>Yes</td>
+  <td><strong>Desktop Layout Publishing</strong><br>
+  Publish custom layouts for account-wide use
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Standard Responses</strong>
-   <br>
-Create and manage standard responses
-   </td>
-   <td>None</td>
+  <td><strong>Request Supervisor Support</strong><br>
+  Allow user to send request for supervisor support
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Internal Chat</strong>
-   <br>
-Chat internally with others in the account
-   </td>
-   <td>Yes</td>
+  <td><strong>Receive Supervisor Support</strong><br>
+  Allow user to receive request for supervisor support from an agent
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Audio calls in messaging conversations</strong>
-   <br>
-Allow agents to add audio calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Call Dialing Stage Settings</strong><br>
+  Enable call controls during dialing by toggling the option in Outbound Dialer
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Video calls in messaging conversations</strong>
-   <br>
-Allow agents to add video calls to a messaging interaction
-   </td>
-   <td>Yes</td>
+  <td><strong>Direct Outward Dialing</strong><br>
+  Users can make direct outward calls
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Access to Agent metrics in the Dashboard</strong>
-   <br>
-Access to dashboard
-   </td>
-   <td>Yes</td>
+  <td><strong>Outbound Email</strong><br>
+  Make outbound emails if enabled for the account
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Management</strong>
-   <br>
-Create and manage secure forms
-   </td>
-   <td>None</td>
+  <td><strong>Agent Channel Selection for Upcoming Interactions</strong><br>
+  Allow user to select their preferred channel for Upcoming Interactions
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Data View</strong>
-   <br>
-View filled-out secure forms and data
-   </td>
-   <td>No</td>
+  <td><strong>Manually Redact Sensitive Data</strong><br>
+  Allows the agent to manually redact selected portions of text during live conversations
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Creation</strong>
-   <br>
-Create custom desktop layouts in the console
-   </td>
-   <td>No</td>
+  <td><strong>Consult Call</strong><br>
+  Allow agents to make a consult call before transferring the conversation
+  </td>
+  <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Publishing</strong>
-   <br>
-Publish custom layouts for account-wide use
-   </td>
-   <td>No</td>
+  <td><strong>Widget Management</strong><br>
+  Create and manage custom widgets
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Monitor Console</strong>
-   <br>
-Access to the monitor tab for live interactions
-   </td>
-   <td>No</td>
+  <td><strong>Survey Management</strong><br>
+  Create and manage surveys
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
-   <br>
-Access to edit disposition code after the conversation is completed
-   </td>
-   <td>No</td>
+  <td><strong>Disposition Management</strong><br>
+  Create and manage dispositions
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Request Supervisor Support</strong>
-   <br>
-Allow user to send request for supervisor support
-   </td>
-   <td>Yes
-   </td>
+  <td><strong>Access to each agent's personal dashboard</strong><br>
+  Define My Dashboard accessibility to agents
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Receive Supervisor Support</strong>
-   <br>
-Allow user to receive request for supervisor support from an agent
-   </td>
-   <td>No
-   </td>
+  <td><strong>Standard Responses</strong><br>
+  Create and manage standard responses
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Download Interactions Data</strong>
-   <br>
-Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
-   </td>
-   <td>No
-   </td>
+  <td><strong>Queues and Agents</strong><br>
+  Access to Queues and Agents metrics in Dashboard
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Reports</strong>
-   <br>
-Create, view, and run reports
-   </td>
-   <td>None</td>
+  <td><strong>Secure Form Management</strong><br>
+  Create and manage secure forms
+  </td>
+  <td>None</td>
 </tr>
 <tr>
-   <td><strong>Join Conversation</strong>
-   <br>
-Allow user to join a conversation
-   </td>
-   <td>No</td>
+  <td><strong>Secure Form Data View</strong><br>
+  View filled-out secure forms and data
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Call Dialing Stage Settings</strong>
-   <br>
-Enable call controls during dialing by toggling the option in 'Outbound Dialer'
-   </td>
-   <td>No
-   </td>
+  <td><strong>Monitor Console</strong><br>
+  Access to the monitor tab for live interactions
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Voice Campaigns</strong>
-   <br>
-Access to Voice campaigns under Campaigns module
-   </td>
-   <td>None</td>
+  <td><strong>Join Conversation</strong><br>
+  Allow user to join a conversation
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Proactive Web Campaigns</strong>
-   <br>
-Access to Proactive Web campaigns under Campaigns module
-   </td>
-   <td>None</td>
+  <td><strong>Listen and Whisper Conversation</strong><br>
+  Allow user to listen and whisper to a conversation
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>SMS Campaigns</strong>
-   <br>
-Access to SMS campaigns under the Campaigns module
-   </td>
-   <td>None</td>
+  <td><strong>Monitor Queue Visibility</strong><br>
+  Determines which queues can be accessed by the user
+  </td>
+  <td>Self</td>
 </tr>
 <tr>
-   <td><strong>Direct Outward Dialing</strong>
-   <br>
-Users can make direct outward calls
-   </td>
-   <td>No</td>
+  <td><strong>Bot-led Interactions</strong><br>
+  Access bot-driven interactions on the Monitor tab
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Monitor Queue Visibility</strong>
-   <br>
-Determines which queues can be accessed by the user
-   </td>
-   <td>Self</td>
+  <td><strong>Force Logout</strong><br>
+  Allow user to force logout another user from the system
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Dashboard Content</strong>
-   <br>
-Whose interactions should he have access to
-   </td>
-   <td>Own</td>
+  <td><strong>Change Queue for Conversations</strong><br>
+  Allow user to change the queue for individual or multiple conversations
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Outbound Email</strong>
-   <br>
-Make outbound emails if enabled for the account
-   </td>
-   <td>No</td>
+  <td><strong>Assign Conversations</strong><br>
+  Allow user to assign individual or multiple conversations to an agent
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Bot-led Interactions</strong>
-   <br>
-Access bot-driven interactions on the Monitor tab
-   </td>
-   <td>No
-   </td>
+  <td><strong>Force Close Conversations</strong><br>
+  Allow user to force close individual or multiple conversations
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
-   <br>
-Allow user to select their preferred channel for incoming interactions.
-   </td>
-   <td>No
-   </td>
+  <td><strong>Edit Disposition from Dashboard</strong><br>
+  Access to edit disposition code after the conversation is completed
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Manually Redact Sensitive Data</strong>
-   <br>
-Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
-   </td>
-   <td>No
-   </td>
+  <td><strong>Download Interactions Data</strong><br>
+  Allow user to download transcripts, recordings, events, and latency reports
+  </td>
+  <td>No</td>
 </tr>
 <tr>
-   <td><strong>Transfer/Close Multiple Conversations</strong>
-   <br>
-Allow user to redistribute or terminate conversations more flexibly across all channels
-   </td>
-   <td>No
-   </td>
+  <td><strong>Reports</strong><br>
+  Create, view, and run reports
+  </td>
+  <td>None</td>
 </tr>
+<tr>
+  <td><strong>Voice Campaigns</strong><br>
+  Access to Voice campaigns under Campaigns module
+  </td>
+  <td>None</td>
+</tr>
+<tr>
+  <td><strong>Proactive Web Campaigns</strong><br>
+  Access to Proactive Web campaigns under Campaigns module
+  </td>
+  <td>None</td>
+</tr>
+<tr>
+  <td><strong>SMS Campaigns</strong><br>
+  Access to SMS campaigns under the Campaigns module
+  </td>
+  <td>None</td>
+</tr>
+<tr>
+  <td><strong>Service Level Configuration</strong><br>
+  Manage the accessibility of service level feature
+  </td>
+  <td>None</td>
+</tr>
+<tr>
+  <td><strong>Dashboard Content</strong><br>
+  Define whose interactions the user can access
+  </td>
+  <td>Own</td>
+</tr>
+<tr>
+  <td><strong>Dynamic Queue Reprioritization</strong><br>
+  Manage queue priority to control routing logic
+  </td>
+  <td>No</td>
+</tr>
+
 <tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -3297,7 +3242,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    <td>None
    </td>
@@ -3773,329 +3718,334 @@ No</td>
    </td>
 </tr>
 <tr>
-   <td><strong>Agent Desktop Console</strong>
-   <br>
-Access and use the agent desktop console
-   </td>
-   <td>Yes
-   <br>
-No</td>
-</tr>
-<tr>
-   <td><strong>Widget Management</strong>
-   <br>
-Create and manage custom widgets
-   </td>
-   <td>View
-   <br>
-None
-<br> 
-Full</td>
-</tr>
-<tr>
-   <td><strong>Survey Management</strong>
-   <br>
-Create and manage surveys
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Disposition Management</strong>
-   <br>
-Create and manage dispositions
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Interactions</strong>
-   <br>
-Access to interactions in the Dashboard
-   </td>
-   <td>Yes
-   <br>
-No</td>
-</tr>
-<tr>
-   <td><strong>Access to each agent's personal dashboard</strong>
-   <br>
-Define My Dashboard accessibility to Agents
-   </td>
-   <td>Yes
-   <br>
-No</td>
-</tr>
-<tr>
-   <td><strong>Standard Responses</strong>
-   <br>
-Create and manage standard responses
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Internal Chat</strong>
-   <br>
-Chat internally with others in the account
-   </td>
-   <td>Yes
-   <br>
-No</td>
-</tr>
-<tr>
-   <td><strong>Audio calls in messaging conversations</strong>
-   <br>
-Allow agents to add audio calls to a messaging interaction
-   </td>
-   <td>Yes
+  <td><strong>Agent Desktop Console</strong><br>
+  Access and use the agent desktop console
+  </td>
+ <td>Yes
    <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Video calls in messaging conversations</strong>
-   <br>
-Allow agents to add video calls to a messaging interaction
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Internal Chat</strong><br>
+  Chat internally with others in the account
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Access to Agent metrics in the Dashboard</strong>
-   <br>
-Access to dashboard
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Audio Calls in Messaging Conversations</strong><br>
+  Allow agents to add audio calls to a messaging interaction
+  </td>
+ <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Secure Form Management</strong>
-   <br>
-Create and manage secure forms
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Secure Form Data View</strong>
-   <br>
-View filled-out secure forms and data
-   </td>
-   <td>Yes
-   <br>   
+  <td><strong>Video Calls in Messaging Conversations</strong><br>
+  Allow agents to add video calls to a messaging interaction
+  </td>
+<td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Creation</strong>
-   <br>
-Create custom desktop layouts in the console
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Desktop Layout Creation</strong><br>
+  Create custom desktop layouts in the console
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Desktop Layout Publishing</strong>
-   <br>
-Publish custom layouts for account-wide use
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Desktop Layout Publishing</strong><br>
+  Publish custom layouts for account-wide use
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Monitor Console</strong>
-   <br>
-Access to the monitor tab for live interactions
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Request Supervisor Support</strong><br>
+  Allow user to send request for supervisor support
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Edit Disposition from Dashboard -> Interactions</strong>
-   <br>
-Access to edit disposition code after the conversation is completed
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Receive Supervisor Support</strong><br>
+  Allow user to receive request for supervisor support from an agent
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Request Supervisor Support</strong>
-   <br>
-Allow user to send request for supervisor support
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Call Dialing Stage Settings</strong><br>
+  Enable call controls during dialing by toggling the option in Outbound Dialer
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Receive Supervisor Support</strong>
-   <br>
-Allow user to receive request for supervisor support from an agent
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Direct Outward Dialing</strong><br>
+  Users can make direct outward calls
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Download Interactions Data</strong>
-   <br>
-Allow user to download the interactions data such as Transcripts, Recording, Events & Latency Report.
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Outbound Email</strong><br>
+  Make outbound emails if enabled for the account
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Reports</strong>
-   <br>
-Create, view, and run reports
-   </td>
-   <td>None
-   <br>
-View & Run
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Join Conversation</strong>
-   <br>
-Allow user to join a conversation
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Agent Channel Selection for Upcoming Interactions</strong><br>
+  Allow user to select their preferred channel for Upcoming Interactions
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Call Dialing Stage Settings</strong>
-   <br>
-Enable call controls during dialing by toggling the option in 'Outbound Dialer'
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Manually Redact Sensitive Data</strong><br>
+  Allows the agent to manually redact selected portions of text during live conversations
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Voice Campaigns</strong>
-   <br>
-Access to Voice campaigns under Campaigns module
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Proactive Web Campaigns</strong>
-   <br>
-Access to Proactive Web campaigns under Campaigns module
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>SMS Campaigns</strong>
-   <br>
-Access to SMS campaigns under the Campaigns module
-   </td>
-   <td>View
-   <br>
-None
-<br>
-Full</td>
-</tr>
-<tr>
-   <td><strong>Direct Outward Dialing</strong>
-   <br>
-Users can make direct outward calls
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Consult Call</strong><br>
+  Allow agents to make a consult call before transferring the conversation
+  </td>
+  <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Monitor Queue Visibility</strong>
-   <br>
-Determines which queues can be accessed by the user
-   </td>
-   <td>All
-   <br>
-Self</td>
+  <td><strong>Widget Management</strong><br>
+  Create and manage custom widgets
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
 </tr>
 <tr>
-   <td><strong>Dashboard Content</strong>
-   <br>
-Whose interactions should he have access to
-   </td>
-   <td>Own
-   <br>
-All</td>
+  <td><strong>Survey Management</strong><br>
+  Create and manage surveys
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
 </tr>
 <tr>
-   <td><strong>Outbound Email</strong>
-   <br>
-Make outbound emails if enabled for the account
-   </td>
-   <td>Yes
-   <br>
+  <td><strong>Disposition Management</strong><br>
+  Create and manage dispositions
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
+</tr>
+<tr>
+  <td><strong>Access to each agent's personal dashboard</strong><br>
+  Define My Dashboard accessibility to agents
+  </td>
+  </td>
+ <td>Yes
+   <br> 
 No</td>
 </tr>
 <tr>
-   <td><strong>Bot-led Interactions</strong>
-   <br>
-Access bot-driven interactions on the Monitor tab
-   </td>
-   <td>Yes
-   <br>
-   No</td>
+  <td><strong>Standard Responses</strong><br>
+  Create and manage standard responses
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
 </tr>
 <tr>
-   <td><strong>Agent Channel Selection for Incoming Interactions</strong>
-   <br>
-Allow user to select their preferred channel for incoming interactions.
-   </td>
-   <td>Yes
-   <br>
-   No</td>
+  <td><strong>Queues and Agents</strong><br>
+  Access to Queues and Agents metrics in Dashboard
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
 </tr>
 <tr>
-   <td><strong>Manually Redact Sensitive Data</strong>
-   <br>
-Allows the agent to manually redact selected portions of text during live conversations to prevent the exposure of sensitive or personal information
-   </td>
-   <td>Yes
-   <br>
-   No</td>
+  <td><strong>Secure Form Management</strong><br>
+  Create and manage secure forms
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
 </tr>
 <tr>
-   <td><strong>Transfer/Close Multiple Conversations</strong>
-   <br>
-Allow user to redistribute or terminate conversations more flexibly across all channels
-   </td>
-   </td>
-   <td>Yes
-   <br>
-   No</td>
+  <td><strong>Secure Form Data View</strong><br>
+  View filled-out secure forms and data
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Monitor Console</strong><br>
+  Access to the monitor tab for live interactions
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Join Conversation</strong><br>
+  Allow user to join a conversation
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Listen and Whisper Conversation</strong><br>
+  Allow user to listen and whisper to a conversation
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Monitor Queue Visibility</strong><br>
+  Determines which queues can be accessed by the user
+  </td>
+  <td>All
+  <br>Self</td>
+</tr>
+<tr>
+  <td><strong>Bot-led Interactions</strong><br>
+  Access bot-driven interactions on the Monitor tab
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Force Logout</strong><br>
+  Allow user to force logout another user from the system
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Change Queue for Conversations</strong><br>
+  Allow user to change the queue for individual or multiple conversations
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Assign Conversations</strong><br>
+  Allow user to assign individual or multiple conversations to an agent
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Force Close Conversations</strong><br>
+  Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Edit Disposition from Dashboard</strong><br>
+  Access to edit disposition code after the conversation is completed
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Download Interactions Data</strong><br>
+  Allow user to download transcripts, recordings, events, and latency reports
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Reports</strong><br>
+  Create, view, and run reports
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
+</tr>
+<tr>
+  <td><strong>Voice Campaigns</strong><br>
+  Access to Voice campaigns under Campaigns module
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
+</tr>
+<tr>
+  <td><strong>Proactive Web Campaigns</strong><br>
+  Access to Proactive Web campaigns under Campaigns module
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
+</tr>
+<tr>
+  <td><strong>SMS Campaigns</strong><br>
+  Access to SMS campaigns under the Campaigns module
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
+</tr>
+<tr>
+  <td><strong>Service Level Configuration</strong><br>
+  Manage the accessibility of service level feature
+  </td>
+  <td>View
+  <br>
+  None
+  <br>Full</td>
+</tr>
+<tr>
+  <td><strong>Dashboard Content</strong><br>
+  Define whose interactions the user can access
+  </td>
+  <td>Own
+  <br>All</td>
+</tr>
+<tr>
+  <td><strong>Dynamic Queue Reprioritization</strong><br>
+  Manage queue priority to control routing logic
+  </td>
+  <td>Yes
+   <br> 
+No</td>
 </tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -4164,7 +4114,7 @@ Can Manage WFM Configurations.
 <tr>
    <td><strong>VoiceGateway Settings</strong>
    <br>
-Manage 'Bot Delay Response Behavior' and 'Real-Time LLM Streaming' settings
+Manage 'Bot Delay Response Behaviour' settings
    </td>
    </td>
    <td>View<br>

@@ -72,12 +72,12 @@ plugins:
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'contactcenter/configurations/settings/llm-streaming.md': 'generative-ai-tools/streaming-responses.md'
-        'contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
-        'contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
-        'contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
-        'contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
-        'contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
-        'contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
+        'apis/contact-center/case-management-apis/create-a-case.md': 'apis/case-management-apis/create-a-case.md'
+        'apis/contact-center/case-management-apis/create-a-task.md': 'apis/case-management-apis/create-a-task.md'
+        'apis/contact-center/case-management-apis/get-cases.md': 'apis/case-management-apis/get-cases.md'
+        'apis/contact-center/case-management-apis/get-tasks.md': 'apis/case-management-apis/get-tasks.md'
+        'apis/contact-center/case-management-apis/update-a-case.md': 'apis/case-management-apis/update-a-case.md'
+        'apis/contact-center/case-management-apis/update-a-task.md': 'apis/case-management-apis/update-a-task.md'
         'apis/contact-center/get-all-conversations-data-call-details.md': 'apis/contact-center/get-all-conversations-data-call-details-v1.md'
         'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-diaolog-task.md': 'quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md'
         'quality-ai/coach/coaching-assignments-supervisor-creation.md': 'quality-ai/coach/coaching-assignments-supervisor-view-and-creation.md'
@@ -91,6 +91,8 @@ plugins:
         'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
         'getting-started/building-a-virtual-assistant.md' : 'getting-started/dialoggpt-app-setup-guide.md'
         'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md' : 'automation/use-cases/dialogs/dialog-tasks-overview.md'
+        'analytics/contact-center/interactions.md' : 'analytics/overview/conversations.md'
+        
 extra:  
   version:
     provider: mike
@@ -233,6 +235,7 @@ nav:
         - Automation AI: getting-started/migration-path-xo10-to-xo11.md
         - Contact Center AI: getting-started/ccai-migration-from-xo10-to-xo11.md
         - Agent AI: getting-started/agent-ai-migration-from-xo10-to-xo11.md    
+        - Search AI: searchai/migration.md
       - Deprecations: release-notes/11.x/deprecations.md 
   - Automation AI: 
     - About Automation AI: automation/about-automation-ai.md
@@ -784,6 +787,7 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
+      - Conversations: analytics/overview/conversations.md 
     - Search AI:
       - Answer Insights: analytics/searchai/answer-insights.md
     - GenAI Analytics: 
@@ -806,7 +810,6 @@ nav:
       - Agent AI Dashboard: analytics/contact-center/agentai-dashboard.md
       - Agent AI Conversation Logs: analytics/contact-center/agentai-conversation-logs.md
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
-      - Interactions: analytics/contact-center/interactions.md  
       - Reports:
         - Introduction to Reports: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
@@ -850,6 +853,7 @@ nav:
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
+        - Manage URLs: app-settings/advanced-settings/manage-url.md
         - System Settings: app-settings/advanced-settings/system-settings.md
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md

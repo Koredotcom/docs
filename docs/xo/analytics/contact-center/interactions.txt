@@ -1,11 +1,11 @@
-# Interactions Dashboard
+# Conversations
 
-Interactions store the AI Agents interactions. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
+Conversations store the AI Agents Conversations. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
 
-To view the Interactions dashboard, follow the steps:
+To view the Conversations dashboard, follow the steps:
 
-1. Go to **CONTACT CENTER AI** > **Analytics** > **Interactions**.  
-    <img src="../images/interactions-page.png" alt="Interactions Page" title="Interactions Page" style="border: 1px solid gray; zoom:80%;">
+1. Go to **Analytics** > **Overview** > **Conversations**.  
+    <img src="../images/interactions-page.png" alt="Conversations Page" title="Conversations Page" style="border: 1px solid gray; zoom:80%;">
 
 2. On this page, the following details of the logs appear in a table:
 
@@ -14,7 +14,7 @@ To view the Interactions dashboard, follow the steps:
     * Language (Icon): The language of the conversation.
     * Channel (Icon): The Channel of the conversation - Voice, Chat, or Email.
 
-    Administrators can configure the system to hide customer Email IDs and Phone Numbers in the Interactions dashboard, Details slider, and Export file. Instead, the system displays the internal User ID. [Learn more](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md).
+    Administrators can configure the system to hide customer Email IDs and Phone Numbers in the Conversations, Details slider, and Export file. Instead, the system displays the internal User ID. [Learn more](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md).
 
 * ACTIONS: You can download recordings and transcripts, and copy the following Identifiers:
     * User ID
@@ -30,7 +30,7 @@ To view the Interactions dashboard, follow the steps:
 * Queues: The last queue name appears with a +N for more queues. Hovering on the queues shows the order in which the conversation entered the queues.
 * Skills: One skill appears with a +N for more skills. Hovering over the skills shows all skills associated with the conversation.
 * Status: The statuses of the conversation are as follows:
-    * In Progress: In Progress refers to an ongoing conversation. The interactions tab immediately displays a conversation that's in progress.
+    * In Progress: In Progress refers to an ongoing conversation. The Conversations tab immediately displays a conversation that's in progress.
     * Error: Error is a disruption to an ongoing conversation, resulting in an error message. Failure of integrated systems results in errors.
     * Completed (Drop Off): Completed (Drop Off) refers to a voice call where there was no response from the user, and the conversation ends.
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
@@ -39,16 +39,16 @@ To view the Interactions dashboard, follow the steps:
 
 ## Supervisor Actions
 
-Supervisors can view ongoing interactions on the Interactions tab. They can intervene as a supervisor, similar to the Monitor tab, and join, reassign, or change the queue of any interaction visible on the Interactions tab.
+Supervisors can view ongoing Conversations on the Conversations tab. They can intervene as a supervisor, similar to the Monitor tab, and join, reassign, or change the queue of any interaction visible on the Conversations tab.
 
 Steps to perform supervisor actions:
 
-1. Select **Interactions** under the **Contact Center** section of the **Analytics** panel. The **Interactions** dashboard appears on the right side of the page.
+1. Select **Conversations** under the **Overview** section of the **Analytics** panel. The **Conversations** dashboard appears on the right side of the page.
 
 2. Select **⋮** under ACTIONS and then select **Supervisor View**.  
 <img src="../images/supervisor-actions.png" alt="Supervisor Actions" title="Supervisor Actions" style="border: 1px solid gray; zoom:80%;">
 
-3. You are redirected to the Interactions section on the Monitor tab.  
+3. You are redirected to the Conversations section on the Monitor tab.  
   <img src="../images/supervisor-actions-1.png" alt="Supervisor Actions 1" title="Supervisor Actions 1" style="border: 1px solid gray; zoom:80%;">
 
 4. Select the ongoing conversation. You can perform the following actions in the conversation:
@@ -57,12 +57,12 @@ Steps to perform supervisor actions:
     * Change Queue  
     <img src="../images/supervisor-actions-2.png" alt="Supervisor Actions 2" title="Supervisor Actions 2" style="border: 1px solid gray; zoom:80%;">
 
-## Search Interactions
+## Search Conversations
 
-You can find the search field on the top right side of the Interactions tab.  
-<img src="../images/search-interactions.png" alt="Search Interactions" title="Search Interactions" style="border: 1px solid gray; zoom:80%;">
+You can find the search field on the top right side of the Conversations tab.  
+<img src="../images/search-interactions.png" alt="Search Conversations" title="Search Conversations" style="border: 1px solid gray; zoom:80%;">
 
-The search feature on Interactions lets supervisors to do the following:
+The search feature on Conversations lets supervisors to do the following:
 
 * Search for keywords in both chats and call transcripts.
 * Search the Agent and Disposition notes.
@@ -79,13 +79,13 @@ How it works:
 1. Enter a word or phrase in the search field and search the **Search** icon.
 
 2. The count of search results appears.  
-    <img src="../images/search-interactions-1.png" alt="Search Interactions 1" title="Search Interactions 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-1.png" alt="Search Conversations 1" title="Search Conversations 1" style="border: 1px solid gray; zoom:80%;">
 
 3. When you select a conversation, the Insights to Logs window appears. Enter the word or phrase in the search field to prompt the system to search for it in the conversation.  
-    <img src="../images/search-interactions-2.png" alt="Search Interactions 2" title="Search Interactions 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-2.png" alt="Search Conversations 2" title="Search Conversations 2" style="border: 1px solid gray; zoom:80%;">
 
 4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
-    <img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/search-interactions-3.png" alt="Search Conversations 3" title="Search Conversations 3" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
@@ -217,9 +217,9 @@ Summary Table
 | TTS Latency            | VG sends TTS request → VG receives first audio byte   | TTS responsiveness (Time to First Byte)    | 400 ms  |
 | End-to-End Latency     | User stops speaking → user hears first audio byte     | Full round-trip delay                      | 1.7 s   |
 
-## Edit Dispositions from the Interactions Tab
+## Edit Dispositions from the Conversations Tab
 
-Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Interactions Tab. This capability ensures accurate categorization of interactions and supports streamlined post-conversation workflows. Administrators can enable this functionality for specific roles. [Learn more](../../user-management/role-management.md#permissions).
+Supervisors can edit or override disposition codes after a conversation ends. Agents assign dispositions during live sessions, but once the session completes, supervisors can review and revise the assigned codes directly from the Conversations Tab. This capability ensures accurate categorization of Conversations and supports streamlined post-conversation workflows. Administrators can enable this functionality for specific roles. [Learn more](../../user-management/role-management.md#permissions).
 
 Key Highlights:
 
@@ -247,7 +247,7 @@ Steps to edit dispositions:
 
 ## Filters
 
-To avoid filtering your choices repeatedly, you can create and save multiple filters on the Interactions tab.
+To avoid filtering your choices repeatedly, you can create and save multiple filters on the Conversations tab.
 
 ### Create Filter
 
@@ -300,7 +300,7 @@ A confirmation appears. Selecting (-) deletes a clause.
 
     You can add up to 5 clauses.
 
-The interactions that fulfill the criteria selected in the clauses appear.
+The Conversations that fulfill the criteria selected in the clauses appear.
 
 ### Edit Filter
 
@@ -377,6 +377,12 @@ For email conversations, the Transcript tab displays the following:
 * The pop-up displays the From, To, CC, and BCC fields.  
     <img src="../images/email-transcript.png" alt="Email Transcript" title="Email Transcript" style="border: 1px solid gray; zoom:70%;">
 
+LLM Error Detected: An error message appears when real-time voice APIs in Agentic apps disconnect after receiving an error. The error message or event shared by the real-time API is also displayed.  
+<img src="../images/llm-error.png" alt="LLM Error" title="LLM Error" style="border: 1px solid gray; zoom:70%;">
+
+**Latency Metrics for Voice Conversations**: Displays the ASR, Bot, TTS, and End-to-End latency values.
+<img src="../images/latency-metrics.png" alt="Latency Metrics" title="Latency Metrics" style="border: 1px solid gray; zoom:70%;">
+
 **Details**: This tab shows the following details:
 
 `Start`: Conversation start time  
@@ -387,13 +393,14 @@ For email conversations, the Transcript tab displays the following:
 `Queues`: The queues that handled the call  
 `Status`: Conversation status(smartStatus)  
 `Mode`: Mode of the conversation  
-`CSAT`: CSAT survey score  
+`CSAT`: CSAT survey score and feedback 
 `Disposition`: Dispositions assigned  
 `Notes`: Notes added to the conversation (view only)  
 `Snooze Count`: Number of times the conversation was snoozed  
 `Snooze Duration`: Duration for which the conversation was snoozed  
+`Campaign Name`: Campaign Name: Campaign Name (Applicable for campaigns)
 `Session-level tags`: Session-level tags assigned to the conversation.  
-<img src="../images/details-insights-to-logs.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/csat-feedback.png" alt="Details Tab" title="Details Tab" style="border: 1px solid gray; zoom:60%;">
 
 **User**: This tab shows the following details:
 
@@ -553,7 +560,7 @@ Access Diagnostics at the top-right corner of Insights to Logs.
 
 !!! Note
 
-    This option is available only for voice interactions.
+    This option is available only for voice Conversations.
 
 <img src="../images/diagnostics.png" alt="Diagnostics" title="Diagnostics" style="border: 1px solid gray; zoom:80%;">  
 
@@ -838,7 +845,7 @@ The bottom bar chart visualizes call metrics over time. The x-axis shows timesta
 
 ### Agents
 
-The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of interactions and assists with troubleshooting issues. The following data points are shown on this tab:  
+The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of Conversations and assists with troubleshooting issues. The following data points are shown on this tab:  
 <img src="../images/mos-jitter.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
 
 <table>
