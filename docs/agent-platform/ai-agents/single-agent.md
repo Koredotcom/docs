@@ -2,17 +2,15 @@
 
 The Single Agent orchestration pattern is used when an application relies on one autonomous agent to handle all user requests and generate responses independently. In this pattern, the agent is responsible for understanding user intent, accessing knowledge, invoking tools if required, and producing the final response to the user.
 
-The primary purpose of the Single Agent pattern is to provide a simple, efficient, and low-overhead orchestration model for focused use cases. By centralizing reasoning and execution within one agent, applications can deliver faster responses with minimal orchestration complexity.
-
+This pattern provides a simple, efficient, and low-overhead orchestration model for focused use cases. By centralizing reasoning and execution within one agent, applications can deliver faster responses with minimal orchestration complexity.
 
 ## When to Use a Single Agent
 
-This approach is ideal for applications with one primary capability or a well-defined domain where task delegation across multiple agents is not required. This is most appropriate when:
+This approach is ideal for applications with one primary capability or a well-defined domain where task delegation across multiple agents is not required. Use this pattern when:
 
-* The user request clearly falls within the domain of one agent.
+* The user's request clearly falls within the domain of one agent.
 * The task doesn't depend on other agents.
 * The workflow involves a straightforward, single-action, or closely related set of actions
-
 
 ## Single-Agent Architecture
 
@@ -25,17 +23,19 @@ This approach is ideal for applications with one primary capability or a well-de
     * Generates a response using the configured AI model
 * The response is returned to the user without delegation to other agents.
 
+<!--
 ## Key Characteristics
 
 * Single point of reasoning - One agent owns the full decision-making process.
 * Simplified orchestration  - Reduced configuration and operational overhead.
 * Direct execution flow - Faster response handling due to minimal orchestration layers.
+-->
 
 ## Example Scenario
 
 An organization wants an AI assistant to handle all employee leave-related requests, such as applying for leave, checking leave balances, and cancelling leave, through a conversational interface.
 
-Since leave management is a well-defined, single-domain capability, all user intents fall within the same functional boundary, allowing a single agent to own the entire interaction lifecycle without delegating tasks to other agents.
+Since leave management is a well-defined, single-domain capability, all user intents fall within the same functional boundary. This allows a single agent to own the entire interaction lifecycle without delegating tasks to other agents.
 
 **Sample Interaction**
 
