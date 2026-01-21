@@ -66,9 +66,8 @@ Using a Personal Access Token (PAT):
 
 1. Go to the [Developer Settings](https://github.com/settings/tokens) in your GitHub account.
 2. Generate a token with the following permissions:
-
-  * repo
-  * read:org
+    * repo
+    * read:org
 
 Using OAuth 2.0:
 
@@ -76,9 +75,9 @@ Using OAuth 2.0:
 1. Provide the basic details.
 1. Use one of the following callback URLs based on your region:
 
-  * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
-  * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
-  * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
+    * JP Region Callback URL: [https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
+    * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
+    * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 
 This will generate client credentials. [Use the device flow](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow) and client credentials to manually create an access token using an API client tool (for example, Postman).
 
@@ -105,7 +104,7 @@ The GitHub On-Prem connector allows you to add and manage multiple authenticatio
 * During initial setup, you can't navigate to other tabs until authentication succeeds.
 * Once authenticated, a pop-up lets you sync with default settings or customize before syncing.
 
-    :::image type="content" source="images/github/connector-setup.png" alt-text="The illustration shows the connector setup in search ai.":::
+![The illustration shows the connector setup in search ai.](images/github/connector-setup.png "image_tooltip")
 
 ### Profile-Specific and Shared Settings
 
