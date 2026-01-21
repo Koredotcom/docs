@@ -153,6 +153,7 @@ nav:
     - AI Agents: ai-agents/overview.md
     - Dialog Agents: dialog-agents/overview.md
     - Orchestration:
+      - Single Agent: ai-agents/single-agent.md
       - Supervisor: ai-agents/supervisor.md
       - Adaptive Network: ai-agents/adaptive-network.md
       - DialogGPT: dialog-agents/dialoggpt.md

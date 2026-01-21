@@ -228,6 +228,25 @@ Example: To directly invoke the leaveBalanceById tool in a specific agent, set t
 
 <hr/>
 
+**source**- Optional
+
+Identifies the system from which the API request is initiated. This field enables better analytics, monitoring, and observability by indicating what triggered the agentic app execution. This field is available as a filter in the session logs.
+
+If not provided, the platform automatically assigns the default value.
+
+Recommended Values:
+
+* AP: This is the default value. Used when the `source` field is not explicitly passed.
+* AIS-AA: AI for Service - Agent Assist
+* AIS-QM: AI for Service - Quality Module
+* AIS-CC: AI for Service - Contact Center
+* AP-PG: Agent Platform - Playground
+* AP-ES: Agent Platform - Evaluation Studio
+* AIW: AI for Work
+* AIP: AI for Process
+* MP: Agent Platform - Marketplace
+
+<hr/>
 
 #### Sample Request
 

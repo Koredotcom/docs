@@ -20,15 +20,13 @@ Workspaces provide:
 * To move apps or tools between workspaces, use import/export.
 
 
-The current workspace is displayed at the top right corner in the Agent Platform UI. 
+The current workspace is displayed at the top right corner in the platform. 
 
 ![alt_text](images/home.png "Workspace")
 
 ## Switching between Workspaces
 
 Switching workspaces changes the entire operational context of the platform. Click the workspace name to see the list of all accessible workspaces.
-
-![alt_text](images/switcher.png "image_tooltip")
 
 The workspace switcher provides visibility into:
 
