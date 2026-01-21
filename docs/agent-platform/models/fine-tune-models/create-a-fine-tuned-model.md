@@ -12,7 +12,7 @@ You can fine-tune a Platform-hosted model or import one from Hugging Face. The f
 
 Steps to fine-tune a model:
 
-1. Log in to your account and click **Model Hub** under Agent Platform Modules.
+1. Log in to your Platform account and click **Model Hub** under Modules.
 
 2. On the **Fine-tuned models** tab, click **Start fine-tuning**.<img src="../images/start-fine-tuning.png" alt="Start Fine-Tune Model" title="Start Fine-Tune Model" style="border: 1px solid gray; zoom:80%;">
 

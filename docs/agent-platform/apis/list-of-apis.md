@@ -39,7 +39,7 @@ The following APIs let users interact with agents and manage sessions.
 |--------|----------|
 |  Import a model in chunks.     |    [Import a Model API](apis-list/import-a-model.md){:target="_blank"}      |
 |  Export a trained AI model.     |   [Export a Model API](apis-list/export-a-model.md){:target="_blank"}       |
-| Deploy a model into the environment in the Ready to Deploy state and configure its parameters. You must perform the initial deployment manually in the Agent Platform account. Consecutive deployments must happen via the public API.      | [Deploy a Model API](apis-list/deploy-a-model.md){:target="_blank"}         |
+| Deploy a model into the environment in the Ready to Deploy state and configure its parameters. You must perform the initial deployment manually in the Platform account. Consecutive deployments must happen via the public API.      | [Deploy a Model API](apis-list/deploy-a-model.md){:target="_blank"}         |
 | Undeploy a model from the environment.      |   [Undeploy a Model API](apis-list/undeploy-a-model.md){:target="_blank"} |
 | Manage external model connections.      |   [External Model Connection APIs](apis-list/connections-api.md){:target="_blank"} |
 

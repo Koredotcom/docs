@@ -1,10 +1,10 @@
 # Share Contextual Metadata from Agent Platform to AI for Service
 
-Agent Platform offers seamless context sharing with AI for service using **event-driven handoffs**. This can be useful to pass the control back to AI for Service for agent transfer or workflow execution without losing any valuable contextual data or conversation history. 
+The Platform offers seamless context sharing with AI for service using **event-driven handoffs**. This can be useful to pass the control back to AI for Service for agent transfer or workflow execution without losing any valuable contextual data or conversation history. 
 
 ## How It Works
 
-Contextual metadata is transferred from the Agent Platform to AI for Service using **configured system events** and parameter mapping during the handoff process.
+Contextual metadata is transferred from the Platform to AI for Service using **configured system events** and parameter mapping during the handoff process.
 
 
 ### Step 1: Configure the Handoff event in Agent Platform
@@ -14,7 +14,7 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
 3. Configure metadata to be passed to AI for Service during the handoff. The event supports two types of parameters:
     * **LLM Collected parameters**: These parameters are automatically gathered by the LLM based on the description of the parameter. For example, if you wish to pass a summary of the conversation or user sentiment.
     * **System-defined parameters**: These parameters are explicitly defined. These parameters can have static values or dynamic values from the context or memory. Some examples are listed below. 
-        * Passing Static value : Add a parameter that indicates the source of information as ‘Agent Platform’.
+        * Passing Static value : Add a parameter that indicates the source of information as `Agent Platform`.
 
         ```
         "source": "Agent Platform"
@@ -32,9 +32,9 @@ Contextual metadata is transferred from the Agent Platform to AI for Service usi
 
 ### Step 2: Handle the metadata in AI for Service Experience Flow
 
-The parameters passed from Agent Platform become available in the AI for Service Experience Flow under the Automation node context.
+The parameters passed from the Platform become available in the AI for Service Experience Flow under the Automation node context.
 
-Use the following format to access the metadata passed from the Agent Platform. 
+Use the following format to access the metadata passed from the the Platform. 
 
 
 ```json
@@ -53,4 +53,4 @@ Use the following format to access the metadata passed from the Agent Platform.
 **Related Links**
 
 * [Integrate with AI for Service](../../ai-for-service.md)
-* [Pass Metadata from AI for Service to Agent Platform](https://docs.kore.ai/xo/how-tos/share-metadata-ais-to-agent-platform/)
+* [Pass Metadata from AI for Service to the Platform](https://docs.kore.ai/xo/how-tos/share-metadata-ais-to-agent-platform/)

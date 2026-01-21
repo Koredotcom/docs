@@ -1,15 +1,15 @@
 # Use the Metadata Fields Passed from the API in Agent Platform
 
-Metadata is structured data that provides additional context about a session, user, or request. When interacting with the Agent Platform via the [execute API](../../../apis/agentic-apps/execute.md), developers can provide custom metadata in every request using the metadata field. This enriches agent context, enabling personalized, stateful, and relevant experiences. 
+Metadata is structured data that provides additional context about a session, user, or request. When interacting with the Platform via the [execute API](../../../apis/agentic-apps/execute.md), developers can provide custom metadata in every request using the metadata field. This enriches agent context, enabling personalized, stateful, and relevant experiences. 
 
-The Agent Platform automatically stores this information in its default sessionMeta memory store, according to a specific, defined schema, making it easily accessible within the session. 
+The Platform automatically stores this information in its default sessionMeta memory store, according to a specific, defined schema, making it easily accessible within the session. 
 
 The stored metadata can then be referenced in prompts, allowing agents to respond dynamically based on context passed via the Metadata fields. 
 
 
 ## Example: Step-by-Step Usage
 
-Below is a complete example demonstrating how metadata is passed, stored, and accessed in the Agent Platform.
+Below is a complete example demonstrating how metadata is passed, stored, and accessed in the Platform.
 
 
 ### 1. API Call with Metadata

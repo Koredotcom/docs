@@ -22,11 +22,9 @@ The **DocSearch Node** is a Retrieval-Augmented Generation (RAG)-powered compone
 * **Knowledge Base Search**: Search internal wikis, technical docs, or training material with support for dynamic inputs and filters.
 * **User Query Handling**: Accept real-time input queries from other nodes to personalize search results in the workflow context.
 
-
 ## Example Use Case
 
 A retail bank uses the **DocSearch Node** to automate responses to frequently asked questions about loans, accounts, and card services. When a user asks, “*What documents are required to apply for a home loan based on my income?*”, the node dynamically passes the query to a connected Search AI App, which searches, indexes, and fetches relevant information chunks from internal resources such as loan policy documents, eligibility criteria, and process guidelines. It then returns a precise, context-aware response, reducing call center load and improving self-service efficiency.
-
 
 ## How It Works
 
@@ -40,14 +38,14 @@ In this document, you will learn how to add and configure DocSearch Nodes with S
 
 Configuring the DocSearch Node consists of the following steps:
 
-1. [Set up a Search AI application and the information source for Agent Platform integration](../types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in Agent Platform](../types-of-nodes/docsearch-node.md#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+1. [Set up a Search AI application and the information source for Platform integration](../types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app){:target="_blank"}.
+2. [Link the Search AI application in the Platform](../types-of-nodes/docsearch-node.md#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
 3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 4. [Test the Flow](../types-of-nodes/docsearch-node.md#step-4-test-the-flow) you have built.
 
 ## Step 1: Set up Search AI App
 
-The integration of Search AI with Agent Platform involves setting up a Search AI application, configuring it for integration, and modifying the Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
+The integration of Search AI with the Platform involves setting up a Search AI application, configuring it for integration, and modifying the Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
 
 Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-introduction/#creating-and-managing-jwt-apps-in-xo-platform){:target="_blank"} to complete the configuration.
 
@@ -60,7 +58,7 @@ Follow the detailed steps [here](https://docs.kore.ai/xo/apis/automation/api-int
 
 After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in the Platform. 
 
-**Steps to integrate Search AI in Agent Platform**
+**Steps to integrate Search AI in the Platform**
 
 1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
@@ -89,8 +87,8 @@ After fetching the Search AI application credentials, configuring the source, an
 
 ### Step 3(A): Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log into the Platform and select **Tools** under modules.
+* Select your tool and select **Go to Flow**.
 
 ### Step 3(B): Add the Node
 
