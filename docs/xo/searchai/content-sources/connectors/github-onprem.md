@@ -156,4 +156,4 @@ If two authentication profiles apply different field mappings to the same docume
 
 Search AI supports access control for content ingested from GitHub accounts. 
 
-For all content ingested from GitHub repositories, Search AI sets the `repository ID` as the `sys_racl` field. The system stores this value as a permission entity, so use the *Permission Entity APIs* to associate users with the permission entity that corresponds to the repository ID, enabling access to the content.
+For all content ingested from GitHub repositories, Search AI sets the `repository ID` as the `sys_racl` field. The system stores this value as a permission entity, so use the *Permission Entity APIs* to associate users with the permission entity that corresponds to the repository ID, enabling access to the content. 
