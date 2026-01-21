@@ -37,7 +37,7 @@ curl --location --request POST 'https://{{host}}/agentassist/api/v1/public/{{str
 |------------|------------------------------------------------------------------|----------------|
 | name       | Name of the skill Group.                                         | String, Required |
 | description| Brief description of the skill group up to 200 characters.        | string, optional |
-| color      | Color id of the color you want for the skill group up to 200 characters. For example, sg-4372 | string, optional |
+| color      | Color ID you want for the skill group up to 200 characters. For example, sg-4372 | string, optional |
 
 ## Sample Response
 
