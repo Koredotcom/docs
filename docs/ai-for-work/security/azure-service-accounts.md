@@ -8,7 +8,6 @@ This guide walks you through creating an Azure app registration with the require
 * Azure Active Directory administrator permissions to create app registrations and grant admin consent.
 * Permissions to create client secrets.
 
-
 ## Access App Registrations
 
 1. Log in to the[ Azure Portal](https://portal.azure.com/#home).
@@ -29,7 +28,6 @@ This guide walks you through creating an Azure app registration with the require
 
 Azure creates the app registration and displays the Overview page.
 
-
 ## Configure Microsoft Graph API Permissions
 
 The app registration requires specific Microsoft Graph permissions to access user directories, groups, and organizational data.
@@ -48,8 +46,6 @@ The app registration requires specific Microsoft Graph permissions to access use
 
 Add the following permissions by searching for each one and checking its checkbox:
 
-Here's the table converted to markdown format:
-
 | **Scopes** | **Purpose** | **Required** |
 |------------|-------------|--------------|
 | **User.Read.All** | The application reads user profile attributes (name, email, job title, department) to identify users referenced in groups and audit logs. | **Yes** --- the application cannot resolve user identities without this scope. |
@@ -61,7 +57,6 @@ Here's the table converted to markdown format:
 | **User.ReadBasic.All** | The application retrieves basic user identity fields (display name, email, ID). | **Optional** --- redundant when User.Read.All is granted; included only for compatibility. |
 
 After selecting all permissions, click **Add Permissions** at the bottom of the panel.
-
 
 ### Grant Administrator Consent
 
@@ -77,7 +72,7 @@ Azure marks all permissions with a green checkmark, indicating admin consent is 
 
 The platform requires three pieces of information from your app registration: Client ID, Tenant ID, and Client Secret.
 
-### Copy Client ID and Tenant ID
+**Copy Client ID and Tenant ID**
 
 1. Click **Overview** in the left sidebar (if not already on the Overview page).
 2. Locate the **Application (client) ID** field.
@@ -87,12 +82,11 @@ The platform requires three pieces of information from your app registration: Cl
 6. Click the copy icon next to the ID to copy it to your clipboard.
 7. Store this value securely, you'll enter it as the **Tenant ID.**
 
-
 ## Create Client Secret
 
 Client secrets authenticate the platform when accessing Microsoft Graph APIs.
 
-### Generate New Secret
+**Generate New Secret**
 
 1. Click **Certificates & Secrets** in the left sidebar.
 2. Click the **Client Secrets** tab.
@@ -109,18 +103,15 @@ Client secrets authenticate the platform when accessing Microsoft Graph APIs.
 
 Azure generates the secret and displays it in the client secrets list.
 
+**Copy Secret Value**
 
-### Copy Secret Value
-
-**Critical:** Azure displays the secret value only once at creation. You cannot retrieve it later.
+!!! note
+    
+     Azure displays the secret value only once at creation. If you lose the secret value, you must create a new client secret and update the configuration.
 
 1. Locate the **Value** column in the client secrets list.
 2. Click the copy icon next to the secret value.
 3. Store this value securely, you'll enter it as the **Client Secret**.
-
-!!! note
-
-    If you lose the secret value, you cannot retrieve it from Azure. You must create a new client secret and update the configuration.
 
 ## Set Expiration Reminders
 

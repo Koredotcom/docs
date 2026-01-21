@@ -19,26 +19,24 @@ To access Email Templates:
 2. In the left sidebar, expand **Email Templates.**
 3. Select the template category you want to configure:
     * **Admin Templates** - for account-level administrative invitations.
-    * Application-specific templates (e.g., **AI for Work**, **(In)Business Procurement**, **(In)Business Agenda**) - for application member invitations.
+    * Application-specific templates (e.g., **AI for Work**, **Business Procurement**, **Business Agenda**) - for application member invitations.
 
 ### Admin Templates
 
 Admin Templates manage account-level invitations and include:
 
-**Admin invitation template**: Email template sent when a user is added as an Admin to the account. Use this to communicate administrative privileges and responsibilities.
+**Admin invitation template**: The system sends this email template when you add a user as an Admin to the account. Use this template to communicate administrative privileges and responsibilities.
 
-**Custom Admin invitation template**: Email template sent when a user is assigned a custom administrative role. Customize this to explain the specific permissions granted to the custom role.
+**Custom Admin invitation template**: The system sends this email template when you assign a user a custom administrative role. Customize this template to explain the specific permissions you grant to the custom role.
 
-**Workspace invitation template**: Email template sent when a user is invited to join a specific workspace. This helps onboard members in project-specific environments.
+**Workspace invitation template**: The system sends this email template when you invite a user to join a specific workspace. This template helps you onboard members in project-specific environments.
 
 
 ### Application Templates
 
-Each provisioned application has its own email template section. 
+Each provisioned application has its own email template section.
 
-For example: AI for Work
-
-**Member invitation template**: Email template sent when a user is added as a member to the AI for Work application.
+**Member invitation template**: This system added this email template sent when ypu add a user as a member to the AI for Work application.
 
 Similar templates exist for all other provisioned applications in your account.
 
