@@ -856,7 +856,7 @@ The implementation of DialogGPT is planned in three phases:
 * Phase 2 (future release): Introduces advanced features such as Multi-App Routing support, granular intent identification, custom entity extraction, and new XO GPT models.
 * Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dialog-gpt-based-orchestration.md)
 
 <font size="4">Dialog Builder</font>  
 
@@ -1466,7 +1466,7 @@ Key Benefits
 * Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
 * Improved Customer Experience: assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dialog-gpt-based-orchestration.md)
 
 
 **Enhanced Agent Node with V2 Prompt and Tool Calling**
