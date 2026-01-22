@@ -33,7 +33,7 @@ The table below shows the permissions available within the XO Platform and their
 
 !!! Note "Permissions"
 
-    * The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    The Monitor Console permission is restricted to the Queues that the user is assigned to.
 
 ### Parent and Child Permissions
 
