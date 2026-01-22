@@ -34,7 +34,10 @@ The table below shows the permissions available within the XO Platform and their
 !!! Note "Permissions"
 
     * The Monitor Console permission is restricted to the Queues that the user is assigned to.
-    * When a parent permission is set to **No** or **View**, the system automatically disables all associated child permissions and prevents any modification.
+
+### Parent and Child Permissions
+
+Agent Desktop Console and Monitor Console act as parent permissions. When a parent permission is **No** or **View**, the system automatically disables all associated child permissions and prevents any modification. The Monitor Console functions as a View permission when it's set to **Yes** and all underlying permissions are set to **No**.
 
 ### APP OWNER
 
@@ -328,10 +331,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -460,11 +462,9 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
-</tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
   Allow user to join a conversation
