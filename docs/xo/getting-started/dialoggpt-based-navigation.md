@@ -1,5 +1,5 @@
 
-[:octicons-arrow-left-24: Back to DialogGPT ](../generative-ai-tools/dialog-gpt.md)
+[:octicons-arrow-left-24: Back to DialogGPT ](../automation/dialog-gpt-based-orchestration.md)
 
 # Redesigned Navigation for DialogGPT-based App
 

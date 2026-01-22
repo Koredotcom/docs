@@ -2,16 +2,16 @@
 
 Indexing is the process of generating vectors or embeddings from the extracted chunks and creating a knowledge Index that can be used for generating answers. 
 
-Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into those multidimensional numbers. The Kore AI for Service platform supports various embedding models, including MPNet, LaBSE, BGE-M3, E5, VDR, and custom models, allowing you to select a model tailored to your specific needs.
+Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into those multidimensional numbers. The Kore XO platform features support for embedding models, including BGE-M3, VDR, and custom models, allowing you to select a model tailored to your specific needs.
 
 **By default, when a new app is created, the BGE-M3 vector model is selected for generating embeddings.** 
 
 
 ## Features
 
-* You can select from a range of out-of-the-box embedding models, including MPNet, LaBSE, E5, VDR, and more, all supported by Kore XO GPT. These models are pre-integrated and can be readily used. Additionally, if you have specific requirements, you can choose to use a custom embedding model, which allows for full control over how vectors are generated to best suit your data and search needs.
-* You can choose the chunk fields on which embeddings will be generated. This selection enables you to focus on fields that are more relevant to your specific use case.
-* Multi-vector support, allowing multiple embedding vectors per chunk, where each vector can be tailored to capture different semantic aspects using different field combinations.
+* Select from the out-of-the-box embedding models supported by Kore.ai XO GPT for immediate use. These pre-integrated models work out of the box. If you have specific requirements, use a custom embedding model to gain full control over vector generation and tailor embeddings to your data and search needs.
+* Choose the chunk fields on which the system generates embeddings. This selection lets you focus embedding generation on the fields most relevant to your specific use case.
+* Multi-vector support allows you to generate multiple embedding vectors per chunk, with each vector tailored to capture different semantic aspects using distinct field combinations.
 
 
 ## Glossary
@@ -41,13 +41,13 @@ Here is a list of important terms related to vector configuration and generation
   <tr>
    <td>Field Combination
    </td>
-   <td>The specific combination of fields (e.g., Chunk Title, Chunk Text, Record Title) selected to generate a vector for a particular content type from a specific source.
+   <td>The specific combination of fields (example, Chunk Title, Chunk Text, Record Title) selected to generate a vector for a particular content type from a specific source.
    </td>
   </tr>
   <tr>
    <td>Vector Column
    </td>
-   <td>A vector column represent the data columns that store embeddings.  Column headers serve as identifiers that make your data meaningful and organized.  For example, if an app is configured for a 3-vector search, each vector will have a corresponding vector column. Hence, there will be three vector columns. All the vectors generated through configurations of vector 1 will be stored in vector column 1 and so on. 
+   <td>A vector column represent the data columns that store embeddings. Column headers serve as identifiers that make your data meaningful and organized. For example, if an app is configured for a 3-vector search, each vector has a corresponding vector column. Hence, there are three vector columns. All the vectors generated through configurations of vector 1 are stored in vector column 1, with each subsequent vector stored in its corresponding vector column. 
    </td>
   </tr>
   <tr>
@@ -65,7 +65,7 @@ Here is a list of important terms related to vector configuration and generation
   <tr>
    <td>Rebalancing
    </td>
-   <td>When a specific vector is not available for a content chunk, its assigned weight is proportionally redistributed among the remaining vectors. This is referred to as rebalancing.  This ensures that the weighted similarity scores still add up correctly and the final relevance score remains consistent. 
+   <td>When a specific vector isn't available for a content chunk, its assigned weight is proportionally redistributed among the remaining vectors. This is referred to as rebalancing. This ensures that the weighted similarity scores add up correctly and the final relevance score remains consistent. 
    </td>
   </tr>
 </table>
@@ -172,7 +172,7 @@ Click on a vector entry and provide the following details:
 * **Field Combination:** Define the conditions that determine which content the vector applies to and which fields are used for vector generation. Each field combination consists of three components.
     * Select the **source** (e.g., uploaded files, connectors). You can use the **AND **operator under the source drop-down to further narrow down the source on which the condition applies. 
     * Choose the relevant **File Types** (e.g., PDF, HTML) that are supported by the source to which the vector configuration applies. 
-    * Select the **Fields** (e.g., Chunk Text, Chunk Title, Record Title) that the embedding model should use. Choose one or more fields from the source fields for a chunk to generate vector embeddings. 
+    * Select the **Fields** (e.g., Chunk Text, Chunk Title, Record Title) that the embedding model must use. Choose one or more fields from the source fields for a chunk to generate vector embeddings. 
 
     !!! note
         Selecting fields that are semantically rich improves the embedding quality and search response accuracy. If multiple fields are selected, the order of the fields matters, it influences the generated embedding vector.
@@ -201,7 +201,7 @@ When two or more field combinations are defined, the order is used to resolve th
 
 * Combinations are evaluated from top to bottom.
 * The first matching combination is used for each content type.
-* More specific combinations should be placed above generic ones.
+* Place more specific combinations above generic ones.
 
 For instance, if the first field combination(higher in order, placed first) is configured for Default Directory and another field combination is configured for all sources, the one on top takes precedence and is used for Default Directory. All other content, except that from the default directory, uses the second field combination for vector generation. 
 
@@ -212,7 +212,7 @@ If the field combinations defined for a vector column don't cover certain conten
 
 In such a case, the application automatically [rebalances the weights](#automatic-weight-rebalancing) among available vectors.
 
-For instance, if Vector 2 is configured with fields that apply only to web files, then embeddings will be generated only for web content in Vector 2. Other content types, such as PDFs or connector-based files, won't have embeddings in Vector 2 and therefore won't contribute to semantic matching for that vector column.
+For instance, if Vector 2 is configured with fields that apply only to web files, then embeddings are generated only for web content in Vector 2. Other content types, such as PDFs or connector-based files, won't have embeddings in Vector 2 and therefore won't contribute to semantic matching for that vector column.
 
 
 ### Assigning Weights to Vectors
@@ -386,8 +386,9 @@ This results in the following adjusted weights of embeddings in vectors 1 and 3 
 
 This configuration is required only when content is extracted using the Image-based Document Extraction method. 
 
-**Vector Model**: For image-based document extraction, currently, **VDR embedding model** is supported and is selected by default. 
+**Vector Model**: For image-based document extraction, **VDR embedding model** is supported and is selected by default. 
 
 **Prompt**: Select the prompt to be used for vector generation of image based content. You can select the existing prompts or create a new prompt from this page. 
 
-Note that any changes made to the prompt for this feature will automatically reflect in the Vector Generation - Image feature under the Gen AI page. 
+!!!note 
+   Any changes made to the prompt for this feature automatically reflect in the Vector Generation - Image feature under the Gen AI page. 
