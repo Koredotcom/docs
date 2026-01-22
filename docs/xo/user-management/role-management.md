@@ -33,7 +33,8 @@ The table below shows the permissions available within the XO Platform and their
 
 !!! Note "Permissions"
 
-    The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    * The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    * The Transfer/Close Multiple Conversations permission is split into three permissions-Change Queue, Assign, and Force Close for individual or multiple conversations-and their values inherit from the parent permission. Select these permissions as **Yes** or **No** based on your use case.
 
 ### Parent and Child Permissions
 
@@ -999,10 +1000,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -1131,10 +1131,9 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -1639,10 +1638,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -1771,10 +1769,9 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -2291,10 +2288,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -2423,10 +2419,9 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -2947,10 +2942,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -3079,10 +3073,9 @@ Allow user roles to be modified
   <td>No</td>
 </tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>No</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -3718,12 +3711,9 @@ No</td>
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
- <td>Yes
-   <br> 
-No</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -3901,12 +3891,9 @@ No</td>
 No</td>
 </tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes
-   <br> 
-No</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
