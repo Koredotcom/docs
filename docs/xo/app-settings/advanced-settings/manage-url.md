@@ -4,7 +4,7 @@
 
 The **Manage URLs** section under **Advanced Settings** allows administrators to control the validity, access behavior, and reuse limits of secure, token-based URLs generated for attachments and chat history. These settings help prevent unintended sharing, enhance security, and align URL usage with organizational compliance requirements.
 
-!!! note "Important Points"
+!!! note Important Points
 
     * These settings apply only to newly generated URLs. Existing URLs will continue to follow the platform-defined defaults and will not be affected by changes made in this section.
     * Generated URLs do not require authentication.
