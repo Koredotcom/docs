@@ -1,12 +1,12 @@
 # App Component Limits
 
-To optimize performance and manage resources effectively, the following limits apply to Agentic App components. Once a limit is reached, the system displays an error in the UI.
+To optimize performance and manage resources effectively, the following limits apply to Agentic App components. Once a limit is reached, the system displays an error on the UI.
 
 ## App-Level Limits
 
-The following limits apply to applications within your workspace.
+The following limits apply to applications in your workspace:
 
-| **Component**              | **Limit** | **Description**                                                                 |
+| Component              | Limit | Description                                                                 |
 |-----------------------------|-----------|---------------------------------------------------------------------------------|
 | Apps per Workspace          | 1,000     | The maximum number of apps you can create in a workspace.|
 | App Versions                | 20        | The maximum number of versions maintained per app.|
@@ -16,7 +16,7 @@ The following limits apply to applications within your workspace.
 
 ## Agent-Level Limits
 
-The following limits apply to agents within an application.
+The following limits apply to agents within an application:
 
 | Component               | Limit | Description                                                                                           |
 |--------------------------|-------|-------------------------------------------------------------------------------------------------------|
@@ -26,7 +26,7 @@ The following limits apply to agents within an application.
 
 ## Tool-Level Limits
 
-The following limits apply to tools within an application.
+The following limits apply to tools within an application:
 
 | Component                | Limit | Description                                      |
 |---------------------------|-------|--------------------------------------------------|
@@ -37,16 +37,16 @@ The following limits apply to tools within an application.
 
 ## Code Tool Complexity Limits
 
-The following limits apply to individual code tools.
+The following limits apply to individual code tools:
 
 | Component               | Limit    | Description                                                                 |
 |--------------------------|----------|-----------------------------------------------------------------------------|
 | Parameters per Code Tool | 20       | The maximum number of input parameters for a code tool. |
-| JSON Object Hierarchy    | 5 levels | The maximum number of depth for JSON parameter objects. An error is displayed once the hierarchy exceeds this limit. |
+| JSON Object Hierarchy    | 5 levels | The maximum number of depth for JSON parameter objects. |
 
 ## Memory Store Limits
 
-The following limits apply to memory stores within an application.
+The following limits apply to memory stores within an application:
 
 | Component              | Limit | Description                                               |
 |-------------------------|-------|-----------------------------------------------------------|
@@ -54,7 +54,7 @@ The following limits apply to memory stores within an application.
 
 ## Variables
 
-The following limits apply to variables within an application.
+The following limits apply to variables within an application:
 
 | Component            | Limit | Description                              |
 |-----------------------|-------|------------------------------------------|
@@ -64,7 +64,7 @@ The following limits apply to variables within an application.
 
 ## API Scopes and Keys
 
-The following limits apply to API configuration.
+The following limits apply to API configuration:
 
 | Component   | Limit | Description                     |
 |-------------|-------|---------------------------------|
@@ -73,7 +73,7 @@ The following limits apply to API configuration.
 
 ## PII & Guardrails
 
-The following limit applies to PII (Personally Identifiable Information) patterns.
+The following limit applies to PII (Personally Identifiable Information) patterns:
 
 | Component    | Limit | Description                    |
 |--------------|-------|--------------------------------|
