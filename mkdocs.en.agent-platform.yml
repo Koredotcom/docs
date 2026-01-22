@@ -233,7 +233,7 @@ nav:
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
         - Variables: ai-agents/agentic-apps/settings/variables.md
         - Content: ai-agents/agentic-apps/settings/content.md
-        - Component Limits: ai-agents/agentic-apps/settings/agentic-app-component-limits.md
+        - Component Limits: ai-agents/agentic-apps/settings/component-limits.md
     - App Simulation:
       - App Diagnostics: ai-agents/agentic-apps/diagnostics-for-agent-platform.md
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md

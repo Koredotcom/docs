@@ -10,6 +10,7 @@ Key Benefits
 
 *Currently, environment variables are accessible only in the code tools.*
 
+**Note**: Review component limits for variables and namespaces to plan your application configuration. For more information, see [Component Limits](component-limits.md){:target="_blank"}.
 
 ## View Environment Variables
 
