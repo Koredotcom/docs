@@ -2,8 +2,7 @@
 
 Steps to access the tool monitor page:
 
-1. Log in to your Agent Platform account and click **Tools** from the list of modules.
- 
+1. Log into the the Platform and select **Tools** under modules. 
 2. On the top navigation bar, click **Tools**.
 3. On the **All tools** page, click the desired tool.  
 

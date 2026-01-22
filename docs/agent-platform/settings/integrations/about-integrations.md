@@ -1,6 +1,6 @@
 # Integration with Third-party Services
 
-The **Integrations** feature connects your Agent Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
+The **Integrations** feature connects your Platform account to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/integration-node.md){:target="_blank"} about the **Integration** node.
 
 The Platform supports 120+ integrations with different authorization types. To enable secure access, create a connection using third-party authentication to verify users. The main authentication methods are:
 
@@ -23,8 +23,8 @@ The Platform supports 120+ integrations with different authorization types. To e
 
 To access the feature, follow the steps below:
 
-1. Log in → In Agent Platform Modules → Click **Autonomous Agents**.
-2. Click **Settings** → On the left navigation menu → Click **Integrations**.
+1. Log into the the Platform and select **Autonomous Agents** under modules.
+2. Select **Settings** > **Integrations**.
     <img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;">
 
 ## Key Features
@@ -33,7 +33,7 @@ The features supported on the **Integrations** page include:
 
 * **All Integrations and Connected Tabs**
   
-    Click the **All Integrations** tab to see available integrations grouped by category. You can add a connection to these integrations using a supported authentication method, such as API, OAuth2, Bearer Token, or Basic Auth. AI-based integrations you can connect to include [AWS S3 Bucket](../integrations/integrate-with-s3-bucket.md){:target="_blank"}, [Weight & Biases](../integrations/integrate-with-wandb.md){:target="_blank"}, and [Hugging Face](../integrations/enable-hugging-face.md){:target="_blank"}. The category you select filters which integrations are shown in this list.
+    Select the **All Integrations** tab to see available integrations grouped by category. You can add a connection to these integrations using a supported authentication method, such as API, OAuth2, Bearer Token, or Basic Auth. AI-based integrations you can connect to include [AWS S3 Bucket](../integrations/integrate-with-s3-bucket.md){:target="_blank"}, [Weight & Biases](../integrations/integrate-with-wandb.md){:target="_blank"}, and [Hugging Face](../integrations/enable-hugging-face.md){:target="_blank"}. The category you select filters which integrations are shown in this list.
 
      Once you configure and connect to a third-party service, that integration appears in the **Connected** section and is no longer visible in the **All Integrations** list. If you delete the connection, the integration will return to the **All Integrations** list, allowing you to reconnect in the future.
      <img src="../images/all-integrations-tab.png" alt="all integrations" title="all integrations" style="border: 1px solid gray; zoom:75%;">

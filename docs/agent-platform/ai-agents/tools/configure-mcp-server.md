@@ -8,13 +8,27 @@ To integrate tools from an MCP server into an agent, follow these steps:
 2. Provide the MCP server configuration on the following page.![MCP Config](images/mcp/mcp-config.png "MCP Config")
     1. **Name**- Provide a unique name for the MCP server.
     2. **Description**- Provide a description of the capabilities/tools offered by the server. 
-    3. **Request Definition** - Define how the platform should send a request to the MCP server to fetch available tools. Click Configure and provide the MCP server configuration details. ![MCP Config](images/mcp/mcp-config-type.png "MCP Config")
+    3. **Request Definition** - Define how the platform sends a request to the MCP server to fetch available tools. Click Configure and provide the MCP server configuration details. ![MCP Config](images/mcp/mcp-config-type.png "MCP Config")
         1. Select the MCP server configuration type - HTTP or SSE. 
         2. URL: Endpoint that returns tool definitions.
         3. Headers:  Any required headers like Authorization tokens.
 
 3. Click the Test button to fetch tool metadata from the MCP server. 
-4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click Add Selected to add the tools to the agent. 
+4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click *Add Selected* to add the tools to the agent. 
+
+## Tool Preview
+
+The Tool Preview allows you to view, inspect, and test MCP tools configured for an application.
+
+To access the Tool Preview:
+
+1. Navigate to the Tools menu within the app.
+2. Open the MCP tab to see all tools configured for the app, grouped by MCP server.
+3. Click on any tool to view its details.
+
+The preview displays the tool’s metadata, including its description, input parameters, and sample responses. You can also enable the ‘**Include Tool Response in Artifacts**’ flag here. 
+
+This flag is used to add the response of a tool in the `artifacts` field of the Execute API response payload. This allows programmatic access to individual tool outputs in the API response. Note that this setting affects only the API response payload. Tool execution behavior, playground simulations, and other agent or tool functionalities remain unchanged.
 
 
 ## Tool Naming Convention
@@ -26,11 +40,11 @@ Format:
 <MCP server name>__<Tool name as exposed by the server>
 ```
 
-For instance, if the tool name is GMAIL_DELETE_DRAFT and the MCP server name is “GoogleMCP,” the tool name will be listed as GoogleMCP__GMAIL_DELETE_DRAFT.
+For instance, if the tool name is GMAIL_DELETE_DRAFT and the MCP server name is “GoogleMCP,” the tool name is presented as GoogleMCP__GMAIL_DELETE_DRAFT.
 
 ### Tool Testing
 
-Once an MCP server is configured, preview and test the tools to ensure they're functioning as expected. 
+After the MCP server is configured, preview and test the tools to ensure they're functioning as expected. 
 
 Testing the tools is essential as it helps validate their functionality, confirms the formats of requests and responses, identifies any issues, and  builds confidence in the tools’ reliability.
 
