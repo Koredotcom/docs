@@ -44,7 +44,7 @@ Narrow your allocation scope to specific team members or groups:
 
 * Select pre-configured agent groups for bulk selection.
 
-* Useful for team-based evaluations or organizational unit audits.
+* Useful for team-based evaluations or audits of organizational units.
 
 * Combine with individual agent selection if needed.   
 <img src="../allocations/images/agents-and-agent-groups-selection.png" alt="Agent and Agent Groups Selection" title="Agent and Agent Groups Selection" style="border: 1px solid gray; zoom:80%;">
@@ -53,7 +53,7 @@ The interaction count updates automatically as you adjust your selections, showi
 
 * Select **Next** to proceed to the Allocation step.
 
-### Step 2: Allocation
+### Step 2: Allocation Type
 
 The Allocation step determines how you select interactions from your filtered pool. Choose between Random for unbiased sampling or Custom for targeted evaluations based on specific criteria.   
 <img src="../allocations/images/allocation-type.png" alt="Allocation Type" title="Allocation Type" style="border: 1px solid gray; zoom:80%;">
@@ -73,7 +73,7 @@ Random allocation uses statistical sampling to guarantee impartial selection of 
 
     * **Chat**: Toggle on to include chat interactions.
 
-    * Both: Enable both toggles for comprehensive channel coverage.
+    * **Both Voice & Chat**: Enable both toggles for comprehensive channel coverage.
 
 1. Select your **Assignment Logic**: 
 
@@ -119,13 +119,13 @@ Custom allocation gives you precise control over interaction selection by applyi
     * Access the same comprehensive filter options available in Conversation Mining.
 
     * Perfect for one-time allocations without cluttering your saved filter library.     
-    <img src="../allocations/images/create-allocations.png" alt="Create Allocations" title="Create Allocations" style="border: 1px solid gray; zoom:80%;">
+    <img src="../allocations/images/custom-quick-filter.png" alt="Quick Filter" title="Quick Filter" style="border: 1px solid gray; zoom:80%;">
 
 ##### Quick Filter Creation
 
 Select **Create Filter** to access the quick filter builder. You can refine your interaction selection using criteria organized into four categories.
 
-<img src="../allocations/images/quick-filters.png" alt="Quick Filter" title="Quick Filter" style="border: 1px solid gray; zoom:80%;">
+<img src="../allocations/images/quick-filters.png" alt="Quick Filter Creation" title="Quick Filter Creation" style="border: 1px solid gray; zoom:80%;">
 
 **Experience Filters:** Target interactions based on customer experience metrics, including sentiment trends from opening to closing, emotional indicators, average waiting time, sentiment scores, Customer Satisfaction Score (CSAT) ratings, detected intents, conversation topics, and churn risk indicators.
 
