@@ -30,7 +30,14 @@ The LLM uses this description to determine when to invoke the tool.
 
 ---
 
-## Tool Parameters
+**Include Tool Response in Artifacts**
+
+When enabled, the response returned by the tool is included in the artifacts field of the Execute API response payload.
+This setting affects only the API response and doesn't change tool execution behavior, playground simulations, or other agent and tool functionalities.
+
+---
+
+## Input Parameters
 
 Define the input parameters required by the tool to perform its task. For each parameter, specify:
 

@@ -1,6 +1,6 @@
 # Application Analytics
 
-Agent Platform provides detailed traces and logs to analyze the execution of an Agentic application.
+The Platform provides detailed traces and logs to analyze the execution of an Agentic application.
 
 
 ## Traces

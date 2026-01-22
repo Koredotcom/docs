@@ -15,7 +15,7 @@ Agent Platform’s **Settings** console is a centralized management interface th
 
 The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.
 
-* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire Agent Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
+* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the Platform account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including tool creation, model management (including access, deployment, and export), integrations, user management, audit logs, security controls, model guardrails, and others.
 
 * **Tool level**: User management within the Platform is focused on tool management, emphasizing individual tool deployments and configurations. Each tool's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting tools, assigning roles, overseeing deployments, configuring guardrails, and managing API apps and keys.
 
@@ -120,13 +120,11 @@ View pre-deployed guardrail models that apply scanners to prompt input and outpu
 
 ## Access Settings Console
 
-To access the **Settings** Console on the Platform, follow the steps below:
+To access the **Settings** Console on the Platform, follow these steps:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and select the **Autonomous Agents** module.
    
-2. Click **Settings** on the top navigation bar.
-
-   The system redirects to the **Users** page under **Users Management**.
+2. Select **Settings** on the top navigation bar. The Platform redirects you to the **Users** page in **Users Management**.
 
    <img src="../images/access-settings-menu.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;">
 

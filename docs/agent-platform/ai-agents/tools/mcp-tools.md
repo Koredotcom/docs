@@ -33,7 +33,7 @@ MCP provides a standardized communication layer between AI agents and external t
 
 * **The MCP server** exposes specific capabilities through tools.
 * **The host or MCP client** (in this case, Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent interactions. The language model within the client or host application decides when to invoke the tools exposed by the server.
-* **The MCP protocol** is the communication layer between these two components, defining how requests and responses are structured and exchanged. 
+* **The MCP protocol** is the communication layer between these two components, defining how requests and responses are structured and exchanged.
 
 ![MCP At Play](images/mcp/mcp-atplay.png "MCP")
 
