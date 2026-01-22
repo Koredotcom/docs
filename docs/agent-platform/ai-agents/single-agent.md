@@ -14,6 +14,12 @@ This approach is ideal for applications with one primary capability or a well-de
 
 ## Single-Agent Architecture
 
+In this architecture, the sole agent has the responsibility to manage all the capabilities - intent understanding, knowledge retrieval, tool invocation, llm interactions and response generation. 
+
+![Single Agent Architecture](images/single-agent/single-agent-arch.png "Single Agent Architecture")
+
+![Single Agent Architecture](images/single-agent/single-agent-desc.png "Single Agent Architecture")
+
 * The user sends a request to the application.
 * The request is routed directly to the agent.
 * The agent:
