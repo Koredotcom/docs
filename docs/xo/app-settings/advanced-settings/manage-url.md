@@ -2,7 +2,7 @@
 
 # Overview
 
-The **Manage URLs** section under **Advanced Settings** allows administrators to control the validity, access behavior, and reuse limits of secure, token-based URLs generated for attachments and chat history. These settings help prevent unintended sharing, enhance security, and align URL usage with organizational compliance requirements.
+The **Manage URLs** section under **Advanced Settings** allows administrators to control the validity, access behavior, and reuse limits of secure, token-based URLs generated for attachments and chat history during agent transfers. These settings help prevent unintended sharing, enhance security, and align URL usage with organizational compliance requirements.
 
 !!! note "Important Points"
 
@@ -22,5 +22,21 @@ The **Manage URLs** section under **Advanced Settings** allows administrators to
 5. Enter the maximum number of times the URL can be accessed.
 6. Click **Save**. The configuration will take effect immediately for **all newly generated URLs**.
 
+!!!note
+
+    * To enable these configurations, setting a time limit is mandatory, while configuring the maximum number of accesses is optional.
+    * If both a time limit and a maximum number of accesses are configured, the limit that is reached first will take precedence.
+    * Users are responsible for determining appropriate limits that align with their specific use case.
+
 <img src="../images/manage-url.png" alt="Manage URL" title="Manage URL" style="border: 1px solid gray;zoom:50%;"/>
 
+## Default Configuration
+- **Link Expiry Time**  
+  - Default: 00 minutes  
+  - Minimum allowed: 1 minute  
+  - Maximum allowed: 6 hours  
+
+- **Maximum Number of Accesses**  
+  - Default: Toggle OFF (unlimited accesses within the expiry window)  
+  - Minimum allowed: 1 access  
+  - Maximum allowed: 20 accesses  
