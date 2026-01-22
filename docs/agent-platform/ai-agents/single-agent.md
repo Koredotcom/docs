@@ -49,6 +49,7 @@ This example illustrates how a single-agent orchestration pattern manages user r
 
 * User: “How many casual leaves do I have left?”
 * Agent(Identifies intent: Leave Balance Inquiry): “I’ll check your current leave balance.”
+
 [ Agent invokes Leave Balance Tool with parameters- `employeeId = 10234, leaveType = Casual`]
 * Leave Balance Tool: "4"`
 * Agent(Processes output and formats the response): "You have 4 casual leaves remaining."
