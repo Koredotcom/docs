@@ -12,13 +12,12 @@ This approach is ideal for applications with one primary capability or a well-de
 * The task doesn't depend on other agents.
 * The workflow involves a straightforward, single-action, or closely related set of actions
 
-## Single-Agent Architecture
+## Architecture and Execution Flow
+
 
 In this architecture, the sole agent has the responsibility to manage all the capabilities - intent understanding, knowledge retrieval, tool invocation, llm interactions and response generation. 
 
-![Single Agent Architecture](images/single-agent/single-agent-arch.png "Single Agent Architecture")
-
-![Single Agent Architecture](images/single-agent/single-agent-desc.png "Single Agent Architecture")
+![Single Agent Architecture](images/single-agent/single-agent.png "Single Agent Architecture")
 
 * The user sends a request to the application.
 * The request is routed directly to the agent.
@@ -48,7 +47,9 @@ Since leave management is a well-defined, single-domain capability, all user int
 This example illustrates how a single-agent orchestration pattern manages user requests.
 
 * User: “How many casual leaves do I have left?”
-* Agent(Identifies intent: Leave Balance Inquiry): “I’ll check your current leave balance.”
-[ Agent invokes Leave Balance Tool with parameters- `employeeId = 10234, leaveType = Casual`]
+* Agent(Identifies intent: Leave Balance Inquiry): “I’ll check your current leave balance.” 
+
+    [ Agent invokes Leave Balance Tool with parameters- `employeeId = 10234, leaveType = Casual`]
+
 * Leave Balance Tool: "4"`
 * Agent(Processes output and formats the response): "You have 4 casual leaves remaining."
