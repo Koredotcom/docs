@@ -1,6 +1,6 @@
 # Managing External Models 
 
-The External Models tab in the Models section allows you to connect and manage models hosted outside the platform. These include provider-hosted models (such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock) as well as custom models integrated via API. Once connected, these models can be used within the Agent Platform.
+The External Models tab in the Models section allows you to connect and manage models hosted outside the platform. These include provider-hosted models (such as OpenAI, Anthropic, Google, Cohere, and Amazon Bedrock) as well as custom models integrated via API. Once connected, these models can be used within the Platform.
 
 You can connect external models to the platform in two ways:
 

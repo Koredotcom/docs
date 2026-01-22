@@ -11,7 +11,7 @@ This page has the following sections:
 
 This section lets you set your preferences based on the channels–Chat, Voice, and Email–with a channel-specific default selection of options. The following option toggles are available to select under this section:
 
-* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It enables automatic (proactive) transcript logging and intent suggestions. When enabled, you can also use the “Automatic Dialog Task Entity Extraction” option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcript logging. However, you can still use the greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
+* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It enables automatic (proactive) transcript logging and intent suggestions. When enabled, you can also use the **Automatic Dialog Task Entity Extraction** option to automatically extract entities from user messages during a dialog task execution. If disabled, there will not be any automatic intent suggestions or transcript logging. However, you can still use the greetings, search bar, and My AI Agent (Bot) automations. By default, this widget is enabled for all three channels.
     * The **Assist** tab/**Run** button remains disabled. Only **Run with agent’s input** is available.
     * The Playbook feature functions as follows:
         * For Dynamic playbooks, identification through the bulb icon and adherence are not functional, but tick-off and step progression continue to function.
@@ -25,6 +25,8 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels. 
 
 * **Agentic Copilot**: The Agentic Copilot feature enables you to have autonomous, end-to-end task execution. Agents monitor the conversations and can cancel, override, or edit the messages. In this section, you can select a language, enable/disable this feature, select the **Enable for all Agents** or **Enable for Specific Queues** option, select an app, select to auto send messages, and set a timer (up to 60 seconds) for auto sending messages. 
+
+* **Agentic Response Streaming**: This widget streams the Agentic Copilot’s next best responses incrementally during live conversations rather than waiting for the full response to be generated. Agents receive suggestions in real time, reducing perceived latency and improving responsiveness. 
 
 * **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the Assist, My AI Agent (Bot), and Transcript tabs. When enabled, the system automatically navigates to the bottom of the respective tab to display the newest content. Admins can enable/disable it through the **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings** page, while the Agents can access it in the **Agent AI** widget > **Settings** tab. Between these two users, the Agents can override the Admin’s selection. 
 
@@ -55,16 +57,16 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
 
         * Configure Dialog Task: The user has to select one of the dialog tasks associated with an app from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.  
 
-### Steps to set channel specific preferences
+### Steps to set channel-specific preferences
 
 1. Sign in to XO Platform.
 2. Go to **Agent AI** > **Configuration** > **Widget Settings** > **Agent AI Settings** > **Agent AI Channel Specific Settings**.
-3. Click to expand the **Agent AI Channel Specific Settings** section on the **Agent AI Settings** page.
+3. Expand the **Agent AI Channel Specific Settings** section.
 4. Select a **channel** in the **Select channel** list.
-5. Click the **toggle** against **Agent AI Channel Specific Settings** to enable it (if disabled).
-6. Turn the toggle **on** or **off** against the **Proactive Mode** widget.
+5. Turn on the **Agent AI Channel Specific Settings** toggle (if turned off).
+6. Turn the **Proactive Mode** toggle **on** or **off**.
     * Select or clear the **Automatic Dialog Task Entity Extraction** option.
-7. Turn the toggle **on** or **off** against each widget, as required.
+7. Turn the toggle **on** or **off** for the **Agent Coaching**, **Agent Playbook**, **Agentic Response Streaming**, **Auto-scroll widget content**, **Send Button**, and **Copy button** fields, as required.
 8. For the **Agentic Copilot** feature: 
     * Select a language from the language list.
     * Click the toggle to Enable/Disable the Agentic Copilot feature.
@@ -87,14 +89,14 @@ This section lets you set your preferences based on the channels–Chat, Voice, 
     * Use agent’s entry and exit events 
     <img src="../widget-settings-images/control-transcript-visibility.png" alt="control-transcript-visibility" title="control-transcript-visibility" style="border: 1px solid gray; zoom:80%;"> 
 
-10. Select an option under the **Conversation Transfer** section.  
-11. Turn on the **Widget Search Bar Configuration** toggle. 
+10. Turn on the **Widget Search Bar Configuration** toggle. 
     1. Select one or more options—**XO Platform**, **Search AI**, **Agentic App**.  
     2. If you select **Agentic App**, select an app from the dropdown list. 
 
         !!! note
-            The **Search AI** and **Agentic App** fields are disabled until they are configured. A warning message prompts you to configure them before use.  
+            The **Search AI** and **Agentic App** fields are unavailable until you configure them. A warning message prompts you to configure them before use.  
 
+11. Select an option under the **Conversation Transfer** section.  
 12. Click **Save** to save your settings.  
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 

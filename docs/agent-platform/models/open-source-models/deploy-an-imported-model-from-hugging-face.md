@@ -4,7 +4,7 @@ You can deploy an open-source model by selecting the Hugging Face option in the 
 
 !!! note
 
-    Agent Platform currently supports models compatible with Transformers library version lower than or equal to 4.43.1. Models that require a higher version of the Transformers library cannot be supported in the Platform at this time.
+    Agent Platform supports models compatible with Transformers library version lower than or equal to 4.43.1 and not the models that require a higher version of the Transformers library.
 
 
 To deploy a model from Hugging Face, follow these steps:

@@ -16,11 +16,11 @@ Agentic Copilot responses now use a delimiter **===AGENT_NOTES===**. When the co
 
 **Agentic Copilot Streams Next Best Responses**
 
-Agentic Copilot now streams suggestions incrementally during live conversations, rather than waiting for the full response to be generated. This reduces perceived latency and allows agents to respond faster. Admins can enable this feature by toggling Agentic Response Streaming under **Widget Settings** > **Agent AI Channel Specific Settings**. 
+Agentic Copilot now streams suggestions incrementally during live conversations, rather than waiting for the full response to be generated. This reduces perceived latency and allows agents to respond faster. Admins can enable this feature by toggling Agentic Response Streaming under **Widget Settings** > **Agent AI Channel Specific Settings**. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)
 
 **Conversation Metadata Support for Agentic App**
 
-Agent AI now passes selected conversation metadata—such as landing summaries, agent–customer chat history, intermittent summaries, and custom data—to the Agentic App. This preserves context during conversation transfer from automation to human agents, enabling Agentic Copilot to deliver relevant, context-aware responses.
+Agent AI now passes selected conversation metadata—such as landing summaries, agent–customer chat history, intermittent summaries, and custom data—to the Agentic App. This preserves context during conversation transfer from automation to human agents, enabling Agentic Copilot to deliver relevant, context-aware responses. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#selecting-conversation-metadata) 
 
 **Playbook State Persistence on Widget Reloads and Transfers**
 
@@ -30,7 +30,7 @@ The system now preserves playbook checklist progress and step adherence during w
 
 **Support for Multiple Search Apps Integration**
 
-The Search AI integration in UX 11 now supports configuring multiple Search Apps across XO 10 and XO 11. Admins can use the inbuilt XO 11 Search App (AI Agent) or configure up to three Search Apps across XO 10 and XO 11.
+The Search AI integration in UX 11 now supports configuring multiple Search Apps across XO 10 and XO 11. Admins can use the inbuilt XO 11 Search App (AI Agent) or configure up to three Search Apps across XO 10 and XO 11. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#search-ai)
 
 **Search Result Layout Option in Widget Theming**
 
@@ -38,6 +38,8 @@ The **Widget Theming** > **Layout Customization** section now includes the **Sea
 
 * Classic Search: Shows only the current search results.
 * Conversational Search: Shows a history of previous questions and answers to reduce repetition and make it more contextual.  
+
+[Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md/#search-result-layout)
 
 <font size="4">Integration Enhancements</font> 
 

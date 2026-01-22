@@ -1,6 +1,6 @@
 # Select and Deploy an Open-Source Model
 
-Currently, Agent Platform supports thirty-plus open-source models and provides them as a service. If you select the Platform-hosted model, you can optimize it before deployment.  
+The Platform supports thirty-plus open-source models and provides them as a service. If you select the Platform-hosted model, you can optimize it before deployment.
    For more information on the list of models supported, see [Supported models](../supported-models.md#supported-open-source-models).
 
 To select and deploy a model, follow these steps:

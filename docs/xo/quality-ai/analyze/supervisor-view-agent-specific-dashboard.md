@@ -1,7 +1,5 @@
 # Supervisor View with Agent-Specific Dashboard
 
-## Overview
-
 The Agent-Specific Dashboard provides detailed Sentiment and Resolution insights at the L3 topic level, giving supervisors and agents a deeper view into performance and coaching needs. Each agent receives a personalized dashboard that supervisors can use to assess key metrics, identify areas of improvement, and create targeted coaching plans. Supervisors can filter data by Language, [Date Range](../analyze/dashboard.md#date-range){:target="_blank"}, and [Channel](../analyze/dashboard.md#channel){:target="_blank"} (voice or chat) to analyze performance trends and focus on the most relevant interactions. 
 
 ## Access Agent Dashboard
