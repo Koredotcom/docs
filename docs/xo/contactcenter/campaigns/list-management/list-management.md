@@ -165,7 +165,7 @@ Steps to retrieve the label names of all available fields in a contact record:
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
 2. Enter the following function in the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md).
 `{{JSON.stringify(context.session.UserSession.campaignUserInfo)}}`
-    1. You can get the labels from the [Transcripts](../../../analytics/contact-center/interactions.md#insights-to-logs) tab of the Interactions Dashboard.
+    1. You can get the labels from the [Transcripts](../../../analytics/overview/conversations.md#insights-to-logs) tab of the Interactions Dashboard.
     2. You can also use the same function in the [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) to access the data.  
         <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:80%;">
 

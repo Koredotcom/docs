@@ -26,11 +26,12 @@ There are two pre-configured groups available:
 To create a new agent group, follow these steps:
 
 1. On the Agent Groups page, select `Add Group`.  
-<img src="../images/add-group-button.png" alt="Add Group Button" title="Add Group Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/add-agent-group.png" alt="Add Group" title="Add Group" style="border: 1px solid gray; zoom:80%;">
 
 2. In the New Group window, provide the input for the following fields:
     * `Group Name` - Enter the agent group name.
     * `Description` - Enter a brief description.
+    * `Agent Status` - (Optional) Select statuses for the Agent Group. Agents in the group see the selected statuses along with the system-defined ones. The system shows only system statuses for the group when no agent statuses are selected.
 
 ### Add Agents to a Group
 
@@ -122,6 +123,7 @@ To create a new agent status, follow these steps:
     1. `Status Name`-Enter the status name.
     2. `Status Type`-Select the status type: `Away` or `Busy`.
     3. `Description`-Type in a brief description of the status.
+    4. `Assign to Agent Groups`-Select the agent groups to assign the statuses. The system makes the status available to all agents in the selected groups.
 3. Select `Add & Exit` to create the status and exit the window or select `Add & Stay` to create the status and continue to a new one.  
 4. The status created successfully success message appears on-screen and the new status adds to the Agent Status list.  
 
@@ -312,7 +314,7 @@ By default, the Allow Agent to Pause or Resume feature is disabled. However, adm
 By default, the Allow Assistant to Pause/Resume feature isn't available. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
+Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/overview/conversations.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
 
 The system logs the changes to the Call Recording Control settings on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 

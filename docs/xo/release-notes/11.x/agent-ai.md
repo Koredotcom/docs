@@ -2,9 +2,62 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Widget Enhancements</font>
+
+**Improved Copy and Send Behavior for Agentic Copilot Responses**
+
+Agentic Copilot responses now use a delimiter **===AGENT_NOTES===**. When the copilot response received from Agent Platform contains this delimiter separating the customer-facing content and agent-specific information, only the customer-facing content above the delimiter is copied or sent when an agent clicks Copy or Send. Agent-specific information remains visible to agents only. This reduces manual edits and helps lower average handling time (AHT).
+
+**Agentic Copilot Streams Next Best Responses**
+
+Agentic Copilot now streams suggestions incrementally during live conversations, rather than waiting for the full response to be generated. This reduces perceived latency and allows agents to respond faster. Admins can enable this feature by toggling Agentic Response Streaming under **Widget Settings** > **Agent AI Channel Specific Settings**. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-settings.md/#agent-ai-channel-specific-settings)
+
+**Conversation Metadata Support for Agentic App**
+
+Agent AI now passes selected conversation metadata—such as landing summaries, agent–customer chat history, intermittent summaries, and custom data—to the Agentic App. This preserves context during conversation transfer from automation to human agents, enabling Agentic Copilot to deliver relevant, context-aware responses. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#selecting-conversation-metadata) 
+
+**Playbook State Persistence on Widget Reloads and Transfers**
+
+The system now preserves playbook checklist progress and step adherence during widget reloads and conversation transfers, ensuring agents resume exactly where they left off without losing workflow continuity.
+
+<font size="4">UI Enhancements</font>
+
+**Support for Multiple Search Apps Integration**
+
+The Search AI integration in UX 11 now supports configuring multiple Search Apps across XO 10 and XO 11. Admins can use the inbuilt XO 11 Search App (AI Agent) or configure up to three Search Apps across XO 10 and XO 11. [Learn more :octicons-arrow-right-24:](../../agentai/configuration/linked-services.md/#search-ai)
+
+**Search Result Layout Option in Widget Theming**
+
+The **Widget Theming** > **Layout Customization** section now includes the **Search Result Layout** subsection. Admins can select one of the following options: 
+
+* Classic Search: Shows only the current search results.
+* Conversational Search: Shows a history of previous questions and answers to reduce repetition and make it more contextual.  
+
+[Learn more :octicons-arrow-right-24:](../../agentai/configuration/widget-theming-layout-customization.md/#search-result-layout)
+
+<font size="4">Integration Enhancements</font> 
+
+**Salesforce Omnichannel Web Chat Pre-handoff Conversation Context in Agent AI**
+
+Agent AI now automatically retrieves, stores, and accesses the complete pre-handoff conversation context when a Salesforce Einstein Bot transfers a Web Chat to a live agent. This includes the full bot conversation history and all pre-chat attributes stored in the Agent AI Bot Context (custom data), which are available in the Agent AI widget for use in dialog tasks and workflows. After handoff, Agent AI automatically detects customer intent using the Bot Platform. 
+
+**Proactive Cross-Channel Customer Summaries in Salesforce-Agent AI Integration**
+
+Agent AI automatically analyzes and summarizes a customer’s recent interactions across all channels, including orders, returns, exchanges, chat, email, SMS, WhatsApp, phone calls, product registrations, and other activities available through Harman’s APIs. This summary helps agents quickly understand the customer context, anticipate call intent, and assist customers efficiently without navigating multiple CRM pages.
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
 
 <font size="4">API Enhancements</font>
 
@@ -55,6 +108,8 @@ This update includes only bug fixes.
 
 <u>Minor Release</u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
 <font size="4">UI Enhancements</font>
 
 **Agentic Copilot Enablement for Specific Queues**
@@ -89,6 +144,8 @@ Agent AI integration with ServiceNow now supports Proactive Mode through Agentic
 
 <u>Minor Release</u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
 <font size="4">UI Enhancements</font>
 
 **Conversation Logs Enhancements**
@@ -122,6 +179,8 @@ This update includes only bug fixes.
 ## v11.17.0 August 23, 2025
 
 <u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
 
 <font size="4">Widget Enhancement</font>
 
@@ -172,6 +231,8 @@ This update includes only bug fixes.
 
 <u>Minor Release</u>
 
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
 <font size="4">Widget Enhancements</font>
 
 **Agentic Copilot Auto-Send functionality now Supports Multiple Parallel Chats**
@@ -216,7 +277,9 @@ Agent AI can now access form submission details from Kore Automation or Chat Aut
 
 ## v11.15.1 July 12, 2025
 
-<u>Patch Release </u>
+<u>Patch Release </u> 
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
 
 <font size="4">Integration Enhancement</font>
 
@@ -230,7 +293,9 @@ Salesforce Amazon Connect now includes accurate timestamps in call transcripts. 
 
 <u>Minor Release</u>
 
-<font size="4">Widget Enhancements</font>
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">Widget Enhancements</font> 
 
 <a id="Agentic-Copilot-Enhancements"></a>
 
@@ -645,7 +710,8 @@ Agent AI is now integrated with ServiceNow Chat. [Learn more :octicons-arrow-rig
 
 This update includes minor enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
-<font size="4">Multi-lingual Support</font>
+<font size="4">Multi-lingual Support</font> 
+
 The Agent AI integration with ServiceNow now supports multiple languages. Agents can interact with the widget, Welcome Events, and bots in their preferred language.
 
 <hr>
@@ -806,7 +872,8 @@ Previously limited to a single bot and a department-specific approach, the solut
 
 ## v11.6.1 October 21, 2024
 
-<u> Patch Release </u>
+<u> Patch Release </u> 
+
 This update includes enhancements and bug fixes. Key enhancements included in this release are summarized below.
 
 <font size="4">Enhanced NICE MAX Desktop Integration</font>

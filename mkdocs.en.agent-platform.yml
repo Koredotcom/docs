@@ -50,6 +50,9 @@ plugins:
         'getting-started/ip-addresses.md': 'getting-started/outbound-ip-address.md'
         'ai-agents/tools/tool-flows/tool-calling.md': 'ai-agents/tools/tool-calling.md' 
         'prompts/about-prompt-studio.md': 'prompts/overview.md'
+        'ai-agents/agentic-apps/app-settings.md': 'ai-agents/agentic-apps/settings/app-configurations.md'
+        'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
+        'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
 extra:
   version:
     provider: mike
@@ -150,6 +153,7 @@ nav:
     - AI Agents: ai-agents/overview.md
     - Dialog Agents: dialog-agents/overview.md
     - Orchestration:
+      - Single Agent: ai-agents/single-agent.md
       - Supervisor: ai-agents/supervisor.md
       - Adaptive Network: ai-agents/adaptive-network.md
       - DialogGPT: dialog-agents/dialoggpt.md
@@ -230,6 +234,7 @@ nav:
         - Variables: ai-agents/agentic-apps/settings/variables.md
         - Content: ai-agents/agentic-apps/settings/content.md
     - App Simulation:
+      - App Diagnostics: ai-agents/agentic-apps/diagnostics-for-agent-platform.md
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Analytics:
       - Usage Dashboard: ai-agents/agentic-apps/analytics-dashboard.md    

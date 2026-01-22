@@ -1,6 +1,6 @@
 # Add an External Model using API Integration
 
-You can connect an external model to Agent Platform using API integration. This feature extends the Platform's functionality by allowing you to bring in models from external sources.
+You can connect an external model to Platform using API integration. This feature extends the Platform's functionality by allowing you to bring in models from external sources.
 
 ## Add an External Model
 

@@ -127,4 +127,4 @@ Environment variables are defined at the app level and can take different values
 
 ## API Support for Updating Values of the Variables
 
-The Agent Platform provides APIs to update environment variable values dynamically at runtime. Contact Support Team to get access to the API.
+The Platform provides APIs to update environment variable values dynamically at runtime. Contact Support Team to get access to the API.

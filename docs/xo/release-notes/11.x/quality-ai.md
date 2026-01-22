@@ -1,6 +1,36 @@
 # Quality AI Release Notes
 
-This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases. 
+This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
+
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Analytics</font>
+
+**Evaluation Form Summary Report Enhancements**
+
+The Evaluation Form Summary report now includes a Total Interactions column to show the overall interaction count. The Total Applicable Interactions column excludes inapplicable interactions for dynamic-by-question metrics where the trigger was absent. These enhancements improve calculation accuracy and ensure that totals and percentages align with Heatmap data. [Learn more :octicons-arrow-right-24:](../../analytics/quality-ai/reports/evaluation-form-summary-report.md)
+
+<font size="4">Analyze</font>
+
+**Audit Allocation Enhancements**
+
+Audit Allocation management uses a dedicated “Allocations” menu and a “My Allocations” tab. QA managers can track auditor progress, create and edit custom allocations, assign interactions to agents by percentage or count, and reassign pending interactions to manage availability while maintaining consistent quality coverage. [Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/conversation-mining-audit-allocations.md)
+
+<font size="4">Configuration</font>
+
+**Agent Queue Management in the Quality AI UI**
+
+Users can assign agents to Agent AI and Quality AI Express queues directly in the Quality AI UI, eliminating the need for public APIs. This update supports platform-level users, provides visibility into queue IDs for API use, and keeps agent mappings entirely separated from Contact Center AI (CCAI) routing and configuration. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md) 
+
+**SFTP Chat Script Timestamp Enhancements**
+
+Quality AI Express now supports offset-based timestamps for chat script ingestion via Secure File Transfer Protocol (SFTP). With this update, users can configure the chat script timestamp format at the app level under Conversation Sources. When users select offset-based timestamps, chat script can include message-level offsets relative to the conversation timeline without start or end time validation during ingestion. The system uses start and end dates solely for reporting and filtering. This change applies only to chat conversation ingestion and doesn't affect voice conversation ingestion. <br> [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/conversation-sources.md) 
+
+<hr>
 
 ## v11.20.0 December 07, 2025
 

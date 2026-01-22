@@ -5,7 +5,7 @@
 
 
 
-Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Examples of PII include Social Security Numbers, email addresses, credit card numbers, passport numbers, and home addresses.
+Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Examples of PII include Social Security Numbers, email addresses, credit card numbers, card verification value (CVV), passport numbers, and home addresses.
 
 The Platform allows you to anonymize sensitive information, such as entities and tool parameters, before sending it to large language models (LLMs). This feature protects confidential or personally identifiable information (PII) while preserving end-to-end system functionality.
 

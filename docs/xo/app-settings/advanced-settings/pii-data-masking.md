@@ -1,6 +1,6 @@
 # Redacting Personally Identifiable Information
 
-Personally identifiable information (PII) or sensitive personal information (SPI) refers to information that can be used alone or in conjunction with other information to identify, contact, or locate a single person or to identify an individual in context. Some examples of PII include Social Security Numbers, email addresses, credit card numbers, passport numbers, home addresses, and so forth.
+Personally identifiable information (PII) or sensitive personal information (SPI) refers to information that can be used alone or in conjunction with other information to identify, contact, or locate a single person or to identify an individual in context. Some examples of PII include Social Security Numbers, email addresses, credit card numbers, card verification value (CVV), passport numbers, home addresses, and so forth.
 
 Kore.ai allows you to redact any sensitive information that users share with your AI Agent. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. The platform redacts any end-user input that matches the PII pattern in the context object, chat logs, chat history, and other places to protect sensitive data.
 

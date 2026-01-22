@@ -33,7 +33,7 @@ MCP provides a standardized communication layer between AI agents and external t
 
 * **The MCP server** exposes specific capabilities through tools.
 * **The host or MCP client** (in this case, Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent interactions. The language model within the client or host application decides when to invoke the tools exposed by the server.
-* **The MCP protocol** is the communication layer between these two components, defining how requests and responses are structured and exchanged. 
+* **The MCP protocol** is the communication layer between these two components, defining how requests and responses are structured and exchanged.
 
 ![MCP At Play](images/mcp/mcp-atplay.png "MCP")
 
@@ -94,6 +94,6 @@ Agentic Apps enable seamless integration with the MCP server, allowing the apps 
 
 **Key Points:**
 
-* Agent Platform supports only tool discovery and invocation from MCP servers. 
-* Dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, aren't automatically reflected in the Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
-* Agent Platform supports both SSE-based and HTTP-based MCP server endpoint configurations.
+* The Platform supports only tool discovery and invocation from MCP servers. 
+* Dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, aren't automatically reflected in the Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
+* The Platform supports both SSE-based and HTTP-based MCP server endpoint configurations.

@@ -187,7 +187,10 @@ CSAT (Customer Satisfaction) triggers under the following conditions:
 ## Agent Status
 
 The Status icon lets agents to show customers whether they're available for the conversation or not.  
-<img src="../images/agent-status.png" alt="Agent Status" title="Agent Status" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent-status-insights.png" alt="Agent Status" title="Agent Status" style="border: 1px solid gray; zoom:80%;">
+
+Selecting View Status Insights displays a pop-up with the time spent for each status.  
+<img src="../images/status-insights.png" alt="Agent Status Insights" title="Agent Status Insights" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent Profile
 

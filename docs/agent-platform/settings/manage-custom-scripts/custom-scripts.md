@@ -1,6 +1,6 @@
 # Deploy, Execute, and Manage Custom Scripts for Tool Automation
 
-The Agent Platform now allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
+The Platform allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
 
 A powerful script deployment wizard enables users to easily upload, configure, and deploy custom scripts in isolated containers. By leveraging container isolation, this feature enhances security while providing flexibility in configuring runtime and scaling settings.
 
@@ -706,7 +706,7 @@ To [deploy the script](../manage-custom-scripts/custom-scripts.md#import-and-dep
 
 ## API Keys
 
-Agent Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
+The Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -797,5 +797,5 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
 **Related Resources**
 
-* *[Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* *[Settings Console](../../administration/overview.md){:target="_blank"} - about other Platform admin features.
 * [API Node](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} - about configuring the API node via endpoint.

@@ -1,8 +1,8 @@
 # Enterprise Key Management 
 
-Enterprise Key Management is a core security feature that protects data on the Agent Platform through encryption. It allows organizations to control how encryption is implemented and managed for their data, ensuring the security of sensitive enterprise data, user information, and other content captured by the Agent Platform.  
+Enterprise Key Management is a core security feature that protects data on the Platform through encryption. It allows organizations to control how encryption is implemented and managed for their data, ensuring the security of sensitive enterprise data, user information, and other content captured by the Platform.  
 
-The Agent Platform offers two primary approaches to key management:
+The Platform offers two primary approaches to key management:
 
 * **Platform-managed encryption**, which uses the built-in key management service, or
 * **Bring Your Own Keys (BYOK),** which allows integration with external Key Management Systems.
@@ -13,12 +13,12 @@ The platform automatically encrypts all data using built-in, platform-managed ke
 
 ## Bring Your Own Key
 
-This feature enables custom encryption using keys controlled by the organization. The encryption and decryption processes depend on keys stored in the organization's Key Management System (KMS). The platform securely communicates with the external KMS to perform cryptographic operations. Third-party Key Management Systems are responsible for managing the lifecycle of these keys. The Agent Platform integrates with the KMS to retrieve the encryption keys.
+This feature enables custom encryption using keys controlled by the organization. The encryption and decryption processes depend on keys stored in the organization's Key Management System (KMS). The platform securely communicates with the external KMS to perform cryptographic operations. Third-party Key Management Systems are responsible for managing the lifecycle of these keys. The Platform integrates with the KMS to retrieve the encryption keys.
 
 Whenever custom encryption is available via the configured key management system, it's used for all content encryption. Else, the default encryption serves as the fallback. 
 
 !!!note
-    In Agent Platform, the encryption key configuration is implemented at the account level, unlike in the AI for Service platform, where it's applied at the app level. As a result, all apps within a given account in the Agent Platform use the same encryption key. 
+    In the Platform, the encryption key configuration is implemented at the account level, unlike in the AI for Service platform, where it's applied at the app level. As a result, all apps within a given account in the Platform use the same encryption key. 
 
 
 ### Supported providers
@@ -38,7 +38,7 @@ When configuring Bring Your Own Key (BYOK), you must provide specific details ba
 
 1. Navigate to Settings -> Key Management.
 2. Click Configure BYOK.
-3. Select the Cloud provider and provide the configuration details. Currently, the Agent platform supports 
+3. Select the Cloud provider and provide the configuration details. Currently, the platform supports 
     1. Azure Key Management System
     2. AWS
 

@@ -6,7 +6,7 @@ This document explains the script nodes, call flows, and supported utils with ex
 
 ### Context | Instance Bot
 
-All the instance bot’s `{{context.session}}` variables will be moved under context.
+All the instance bot’s `{{context.session}}` variables are moved under context.
 
 Example:
 
@@ -259,18 +259,65 @@ agentUtils.setLiveChatAgentOutGoingSetup({
 
 ### Set Named Agents
 
-This method takes an array of agentIds and only uses these agents for assigning a conversation.
+Use this method to restrict conversation assignment to one or more specific agents. The system considers only the specified agents when assigning the conversation.
+
+You can optionally configure the system to wait for the named agent or agents to become available before routing the conversation to a queue.
 
 Syntax
 
 ```
-agentUtils.setNamedAgents(['agentId1', 'agentId2'])
+agentUtils.setNamedAgents(agentIds, options)
 ```
+
+| Parameter | Description |
+|:----------|:------------|
+| `agentIds`| Specifies an array of agent IDs that are eligible to receive the conversation. |
+| `options` | Specifies an optional configuration that controls the wait behavior before the system falls back to queue-based routing. |
+
+#### Optional Wait Configuration
+
+When you enable the wait option, the system holds the conversation for the named agent or agents for a short, defined period instead of immediately routing it to the queue.
+
+| Option               | Description |
+|:---------------------|:------------|
+| `waitForAgent`       | When set to **true**, the system waits for any named agent to become available before applying fallback routing. |
+| `waitDurationSeconds`| Specifies the maximum duration, in seconds, that the system waits for a named agent before routing the conversation to the queue. The default maximum threshold is **3600 seconds**. If `waitDurationInSeconds` isn't specified or exceeds 3600 seconds, the system defaults the value to 30 seconds.|
+
+Bahavior
+
+* When wait options aren't provided, the system follows the existing behavior and immediately routes the conversation to the queue if no named agent is available.  
+* On enabling waitForAgent:  
+    * The system places the conversation in a waiting for named agent state.  
+    * The system doesn't route the conversation to the queue while the wait timer is active.  
+    * If any named agent becomes available and accepts the conversation within the wait duration, the system assigns the conversation to that agent.  
+    * If no named agent accepts within the configured time, the system routes the conversation using normal queue logic.  
+* The system respects standard availability rules, including agent login state and capacity.  
+* The system enforces a maximum wait duration to prevent indefinite waits.
 
 Example
 
+Basic named-agent assignment
+
 ```
-agentUtils.setNamedAgents(['a-e1427c4-8e7d-4728-8e6c-64281b23xxxx', 'a-e1427c4-8e7d-4728-8e6c-64281b23xxxx'])
+agentUtils.setNamedAgents([
+  'a-e1427c4-8e7d-4728-8e6c-64281b23xxxx',
+  'a-f1538d5-9f8e-5839-9f7d-75392c34xxxx'
+])
+```
+
+Named-agent assignment with wait before queue fallback
+
+```
+agentUtils.setNamedAgents(
+  [
+    'a-e1427c4-8e7d-4728-8e6c-64281b23xxxx',
+    'a-f1538d5-9f8e-5839-9f7d-75392c34xxxx'
+  ],
+  {
+    waitForAgent: true,
+    waitDurationSeconds: 90
+  }
+)
 ```
 
 ### Set Agent Matching Conditions

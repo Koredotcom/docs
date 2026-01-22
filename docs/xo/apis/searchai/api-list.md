@@ -17,4 +17,5 @@ The following table lists the APIs available for Search AI, which allows users t
 | [Jobs](./jobs.md) | To get the details of a job | Answer Generation |
 | [Feedback](./feedback.md) | To share the feedback on an answer | Feedback for Search AI |
 | [Training APIs](train-apis.md) | Training related APIs | Answer Generation |
-
+| [App Export](app-export.md) | Exports app config into a file | Search AI Export|
+| [App Import](app-import.md) |Imports app config from file | Search AI Import |

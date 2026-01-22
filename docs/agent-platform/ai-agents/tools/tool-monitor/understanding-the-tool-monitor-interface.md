@@ -17,16 +17,16 @@ The All runs tab provides the following information for each tool run:
 * **Run ID**: The unique identifier for the flow.
 * **Status**: The current state of the request. It displays one of the following statuses:
     * **In Progress**: The request is being processed.
-    * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Waiting**: The request is outside of the Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
-    * **Failed**: The request was not completed successfully.
+    * **Failed**: The request wasn't completed successfully.
 * **Response time**: The duration the tool takes to complete a request and provide an output.
 * **Nodes executed**: The total number of nodes executed in the run.
 * **Start time**: The time when the request is initiated.
 * **End time**: The time the response is received.
 * **Source**: Based on whether the tool was run using an **Agentic App** or an **API endpoint**, the following information is displayed:
     * **Agentic App** - The name of the Agentic App used to run the tool.
-    * **API Key**: The API key name used to execute the tool. (This is the name provided in the API keys page when you created a new API key. If you did not provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single tool).
+    * **API Key**: The API key name used to execute the tool. (This is the name provided in the API keys page when you created a new API key. If you didn't provide a name, the system uses the default name ‘*Secret Key*’. You can have multiple API keys for a single tool).
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -36,7 +36,7 @@ The All runs tab provides the following information for each tool run:
 You can also see the following metrics on the top of the page: 
 
 * **TOTAL RUNS**: The total number of tool runs. 
-* **RESPONSE TIME**: The average response time of all the tool runs. It is measured by the following two metrics:
+* **RESPONSE TIME**: The average response time of all the tool runs. It's measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
 * **FAILURE RATE**: The percentage of failed runs.
@@ -47,18 +47,18 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 Each AI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three AI nodes are used in a tool, three separate requests for each of the three AI nodes are displayed.
 
-If your tool currently does not have any AI nodes, this section will remain empty. Once you add AI nodes, the Model runs will begin to reflect here.
+If your tool currently doesn't have any AI nodes, this section will remain empty. Once you add AI nodes, the Model runs will begin to reflect here.
 
 The Model runs tab provides the following information for each AI node call:
 
 * **Request ID**: The unique identifier of the AI node request.
 * **Status**: The current state of the request. It displays one of the following statuses: 
     * **In Progress**: The request is being processed.
-    * **Waiting**: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
+    * **Waiting**: The request is outside of the Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).
     * **Success**: The request has been completed successfully.
-    * **Failed**: The request was not completed successfully.
+    * **Failed**: The request wasn't completed successfully.
 * **Node name**: The name of the AI node.
-* **Model name**: The model that is used for the AI node.
+* **Model name**: The model that's used for the AI node.
 * **Response time**: The amount of time taken by the AI node to complete the request.
 * **Start time**: The time when the AI node has started its execution.
 * **End time**: The time when the AI node has completed its execution.
@@ -66,7 +66,7 @@ The Model runs tab provides the following information for each AI node call:
 You can also see the following metrics on the top of the page:
 
 * **TOTAL REQUESTS**: The total number of AI node requests.
-* **RESPONSE TIME**: The average response time of all the AI node requests. It is measured by the following two metrics:
+* **RESPONSE TIME**: The average response time of all the AI node requests. It's measured by the following two metrics:
     * **P90**: This metric represents the response time below which 90% of the requests fall.
     * **P99**: This metric represents the response time below which 99% of the requests fall.
 * **FAILURE RATE**: The percentage of instances in which the AI node has failed in execution.
@@ -239,7 +239,7 @@ The table below lists the errors that can occur in the **Tool Monitoring** dashb
   <tr>
    <td>Network Issues:- Request timeout on the server
    </td>
-   <td>Temporary network or Agent Platform server connection issue.
+   <td>Temporary network or the Platform server connection issue.
    </td>
    <td>Network
    </td>

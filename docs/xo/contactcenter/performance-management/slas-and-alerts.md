@@ -16,7 +16,7 @@ For more information about Service Levels, refer to [Service Levels](../../conso
 
 Steps to create a new service level:
 
-1. Click the **+ New Service Level** button in the upper-right corner.  
+1. Select **+ New Service Level** in the upper-right corner.  
     <img src="../images/add-rule.png" alt="Add New Service Level" title="Add New Service Level" style="border: 1px solid gray; zoom:70%;">
 
 2. On the New Service Level Rule panel, enter a **Name** and **Description** for the service rule.  
@@ -110,26 +110,42 @@ Alerts to be triggered when users perform specific activities, such as:
 
 Steps to create a new General Alert:
 
-1. Click the General Alerts tab and then click **+ New Alert** in the top right corner.  
+1. Select the General Alerts tab and then select **+ New Alert** in the right top corner.  
     <img src="../images/add-alert-rule.png" alt="Add Alert" title="Add Alert" style="border: 1px solid gray; zoom:70%;">
 
 2. On the New General Alert panel, enter a **Name** and **Description** for the general alert.  
     <img src="../images/new-general-alert-rule.png" alt="Name and Description" title="Name and Description" style="border: 1px solid gray; zoom:70%;">
 
-    The general alerts page is displayed.
+    The general alerts page displays.
 
 3. Under Configuration Setup, choose a module from the following options.  
-    <img src="../images/choose-module.png" alt="Choose Module" title="Choose Module" style="border: 1px solid gray; zoom:70%;">
+    <img src="..images/module-selection.png" alt="Choose Module" title="Choose Module" style="border: 1px solid gray; zoom:70%;">
+
+    **After Call Work (ACW)**
+
+    1. Select the Queues, Channels, and Duration.  
+        <img src="../images/config-setup.png" alt="Config Setup" title="Config Setup" style="border: 1px solid gray; zoom:70%;">
+    2. Select **+ Add an action** and choose an action.  
+        <img src="../images/action-options.png" alt="Action Options" title="Action Options" style="border: 1px solid gray; zoom:70%;">  
+        Based on your selected action, you can choose the following:
+
+        Alert:  
+        <img src="../images/acw-alert.png" alt="Alert" title="Alert" style="border: 1px solid gray; zoom:70%;">  
+
+        Email:  
+        <img src="../performance-management/images/acw-email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">  
+
+    3. Select **Save**. A notification displays, and creates the alert.
 
     **Analytics** > **Interactions**
 
-    1. Click and select the trigger.  
+    1. Select and select the trigger.  
         <img src="../images/analytics-interactions-page.png" alt="Choose Trigger" title="Choose Trigger" style="border: 1px solid gray; zoom:70%;">
 
     2. Select the number of times the system exports data within the selected time interval.  
         <img src="../images/user-exports.png" alt="Export" title="Export" style="border: 1px solid gray; zoom:70%;">
 
-    3. Click **+ Add an action** and choose an action.  
+    3. Select **+ Add an action** and choose an action.  
         <img src="../images/action-options.png" alt="Action Options" title="Action Options" style="border: 1px solid gray; zoom:70%;">
 
         Based on your selected action, you can choose the following:  
@@ -140,10 +156,10 @@ Steps to create a new General Alert:
         **Email**:  
         <img src="../images/alert-email.png" alt="Email Config" title="Email Config" style="border: 1px solid gray; zoom:70%;">
 
-    4. Click **Save**.  
+    4. Select **Save**.  
         <img src="../images/analytics-interactions-page.png" alt="Choose Trigger" title="Choose Trigger" style="border: 1px solid gray; zoom:70%;">
 
-    A notification is displayed, and the alert is created.
+    A notification displays, and creates the alert.
 
     **Voicemail in Agent Console**
 

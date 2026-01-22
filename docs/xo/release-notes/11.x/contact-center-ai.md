@@ -2,6 +2,92 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Agent Status Time Insights in the Console**
+
+The Agent Console now provides Status Insights under Agent Status to display aggregated time spent across system and custom statuses, including conversational status. Agents can view day-level insights in a pop-up and access detailed breakdowns in My Dashboard. This improves visibility into work patterns without impacting the current agent status. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#agent-status)
+
+**Standard Response Widget: Replace and Append Support**
+
+The Standard Response Widget supports Replace and Append actions to align with shortcut-based insertion. Agents can overwrite existing content or append multiple standard responses while preserving formatting and variables. For email, agents can optionally include or ignore the subject when replacing or appending, with subject options shown only when supported. When the editor is empty, only the Copy option appears, and focus returns to the editor after each action. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+**Queue-Level Consult Without Mandatory Agent Selection**
+
+Agents can now initiate a consult by selecting only a queue, without choosing a specific agent. The system routes the consult to an available agent using existing routing logic, improving speed and usability. Direct agent selection remains supported with no impact to current routing, reporting, or monitoring behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#queue-level-consult-without-selecting-an-agent)
+
+**Courtesy Callback Redial Updates**
+
+Courtesy callback redial now displays clear guidance for agents and supervisors. When the maximum number of redial attempts is reached, a Close Conversation option appears, directing the agent to the disposition screen. Supervisors attempting to assign such calls see a message: _“Maximum redial attempts reached for this number.”_ After the first or second failed attempt, the text updates to indicate the attempt failure while still allowing the agent to redial or return the call to the queue.
+
+<font size="4">Configuration</font>
+
+**Agent Status Grouping by Queues and Operations**
+
+Agents can now belong to multiple agent groups, and each group can be associated with a relevant set of custom agent statuses. Status visibility dynamically adjusts based on group membership, reducing clutter and improving operational clarity. All updates are applied in real-time across agent profiles and consoles, without impacting existing workflows. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#create-an-agent-group)
+
+**Named-Agent Transfer Wait Before Queue Fallback**
+
+The system can hold a named-agent transfer for a configurable duration before routing it to the queue. If any named agent becomes available and accepts within the wait period, the conversation is assigned to that agent; otherwise, it falls back to existing queue routing. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-named-agents)
+
+**Parent–Child Permission Dependency Management**
+
+This update introduces logical parent–child permission dependencies across the Agent Console and Monitor Tab, automatically disabling child permissions when the parent is set to No/View and restoring them when the parent is re-enabled. It also introduces a new Force Logout permission and refines transfer controls by splitting the existing permission into granular options for assigning conversations, changing queues, and force-closing conversations. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+**Alerts for Extended After Call Work**
+
+This feature enables SLA-based alerts for After Call Work (ACW) by allowing admins to configure threshold conditions at the queue and channel level. When an agent’s ACW duration meets the configured condition, the system triggers a General Alert and notifies configured recipients via in-app notifications and/or email, including relevant details. The alert setup is fully configurable and doesn't affect existing ACW behavior when disabled. [Learn more :octicons-arrow-right-24:](../../contactcenter/performance-management/slas-and-alerts.md#create-a-general-alert)
+
+<font size="4">Campaigns</font>
+
+**Power Dialer for Voice Campaigns**
+
+The new Power Dialer mode dynamically selects and dials contacts based on agent availability and pacing ratios to reduce call abandonment. The feature intelligently prioritizes contacts and reserves agents during dialing to ensure an immediate connection. New global settings permit configurable control over agent linking and idle time, improving campaign efficiency. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#power-dialer)
+
+**Per-campaign Dispositions vs Attempts Dashboard Table**
+
+Provides a campaign-level view that correlates outbound attempts with their final dispositions. This enables campaign managers to assess how attempts progress and where outcomes converge as campaigns near completion. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/dashboard/campaign-dashboard.md#disposition)
+
+**Disposition-based Retry Configuration for Campaigns**
+
+Added a disposition-level retry configuration for Preview, Progressive, and Power Dialer campaigns, allowing campaign managers to define retry eligibility, retry count, and retry intervals per disposition. Campaign dashboards also display current disposition counts to provide visibility into retry outcomes during or after execution. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#dispositions)
+
+**Automatic Enrollment of Unreachable Contacts into Global DNC**
+
+An app-level control automatically enrolls phone numbers into the Global DNC list when repeated call attempts fail. The capability supports configurable attempt thresholds and retention periods, ensuring cleaner contact lists and reduced unnecessary dialing while preserving existing behavior by default. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/settings/global-settings.md#unanswered-call-attempts)
+
+<font size="4">Analytics</font>
+
+**CSAT Feedback Visibility in Conversations Details**
+
+Displays customer CSAT feedback directly within the Conversations details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
+
+**Error Event Visibility for Real-time Voice APIs in Agentic Apps**
+
+Error events from real-time voice APIs are now captured and displayed in Interaction Details when a response generation failure occurs. The transcript timeline shows a clear LLM error indicator with a timestamp, along with the full provider error message for improved troubleshooting and audit visibility. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
+
+**Voice Interaction Latency Metrics**
+
+The Conversations → Insights to Logs → Transcriptions tab now displays latency metrics for Voice interactions to help evaluate responsiveness. Customer messages show ASR latency, while bot messages show Bot, TTS, and End-to-End latency (only when a bot message follows a customer message). Unavailable values display as NA, and the entire latency block appears only for the Voice channel. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
+
+<font size="4">API</font>
+
+**Schedule Campaign API for Voice and SMS**
+
+A new ScheduleCampaign API enables scheduling for Voice and SMS campaigns. The API permits enabling or disabling scheduling for a campaign and overrides any existing schedule when enabled. It supports UTC-based start and end times with Daily or Weekly recurrence options, while returning a standard status and message response. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/enable-voice-or-sms-campaign-schedule-daily.md)
+
+**Contact Management APIs: Create, Update, and Delete**
+
+The platform now supports a complete set of Contact Management APIs, including Create (existing), Update, and Delete operations. These APIs enable external systems to keep contact data synchronized, support partial updates, and permit safe deletion without impacting historical interactions. All operations enforce validation, permissions, and auditing, and remain backward compatible. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-contacts.md)
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
@@ -98,11 +184,11 @@ Campaigns now support dynamic filters, enabling campaign managers to define prec
 
 **Interactions Dashboard - Email Channel Details**
 
-The dashboard now includes key email fields—Subject, From, To, CC, and BCC—within the transcript for clearer visibility of email interactions. The EmailSubject field is available as an optional column, and all email fields are searchable, helping users  locate relevant conversations. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+The dashboard now includes key email fields—Subject, From, To, CC, and BCC—within the transcript for clearer visibility of email interactions. The EmailSubject field is available as an optional column, and all email fields are searchable, helping users  locate relevant conversations. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Interactions Dashboard - SmartStatus Filter**
 
-The dashboard now supports filtering by SmartStatus, a new, fine-grained, business-relevant version of the conversation status. The Details tab displays both the original Status and the new SmartStatus for the conversations. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#smartstatus)
+The dashboard now supports filtering by SmartStatus, a new, fine-grained, business-relevant version of the conversation status. The Details tab displays both the original Status and the new SmartStatus for the conversations. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#smartstatus)
 
 <hr>
 
@@ -343,7 +429,7 @@ The Web SDK now supports a Click-to-Call option, enabling website visitors to st
 
 **Transcripts Log Updates for Maximum Retry Handling**
 
-The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs) 
+The transcripts log now displays timeline messages when maximum retries are exceeded and the configured fallback action is triggered. Instead of appearing as user transcription messages, the log indicates the scenario. For example, when a No Input timeout is exceeded and a fallback action is triggered, the message “Max no-input attempts reached” is shown. This update helps app users easily understand the reason behind the triggered action. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs) 
 
 <font size="4">API</font>
 
@@ -448,7 +534,7 @@ Supervisors can now edit disposition codes for completed conversations directly 
 * Editing is restricted to post-conversation only; agents retain control during live sessions.
 * Supervisor updates override previously submitted dispositions.
 * Alerts linked to updated disposition codes trigger as configured.
-* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#edit-dispositions-from-the-interactions-tab)
+* All edits are captured in logs and analytics. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#edit-dispositions-from-the-conversations-tab)
 
 Access is controlled via a new role-based permission: “Edit Disposition from Dashboard.”  [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
@@ -672,15 +758,15 @@ The alert system now supports general system events, including exporting the Int
 
 **Display Industry Standard MOS and Jitter Values in Diagnostics Page**
 
-The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#agents)
+The Diagnostics page now displays industry-standard values for MOS and Jitter with the average, minimum, and maximum scores. An ‘Industry Standard’ tooltip is included beside each  MOS and Jitter metrics set, providing agents and supervisors with a clear benchmark for evaluating call quality. This enhancement enables users to more effectively assess call performance by comparing actual values against established standards. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#agents)
 
 **Default FLAC Format for Downloaded Call Recordings Across All OS Platforms**
 
-Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+Voice call recordings downloaded from the Interactions page will now be in the .flac format by default on all operating systems, including macOS, regardless of whether they are single merged files or individual segments. This change ensures that downloaded files have the correct extension and are compatible with internal audio players, allowing agents and supervisors to play recordings directly without needing to convert them or manually use external tools. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Interactions Dashboard: Customer Column Data Replaced with User ID**
 
-A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md)
+A new boolean property—“Replace Customer Email/Phone in Interactions Dashboard with User ID”—is now available in the Advanced Settings. When enabled, the “Customer” column in the Interactions Dashboard displays the User ID instead of the customer’s email address or phone number. This change only applies to customers who activate the setting; others will see no change in the dashboard display. This enhancement supports organizations that prefer anonymized identifiers for improved privacy or system alignment. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md)
 
 **Skills Filter Added to Wallboards**
 
@@ -1040,7 +1126,7 @@ Custom IDs can effectively retrieve agent IDs if mapped one-to-one. However, in 
 
 **Interaction Details Enhancement**
 
-The 'Copy All' functionality in the Interaction Details tab now includes additional information fields: Timezone and Caller and Callee Numbers. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+The 'Copy All' functionality in the Interaction Details tab now includes additional information fields: Timezone and Caller and Callee Numbers. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 <hr>
 
@@ -1241,7 +1327,7 @@ The Call Details API (v2) has been updated to include the `disconnectingEvent` p
 
 **Fetch Again Option for Failed Recordings**
 
-This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+This update provides clear visibility of the call recording status for failed interactions, including predefined failure scenarios and reprocessing capabilities using a "Fetch Again" button. This allows agents and supervisors to take appropriate action when call recordings fail to be retrieved or processed. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Enhanced SIP Trunk Options**
 
@@ -1362,7 +1448,7 @@ On the **Dashboard** > **Interactions** tab, supervisors now have two options to
 * Download as a single file,
 * Download as separate files.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Enhanced Diagnostics for Voice Interactions**
 
@@ -1375,7 +1461,7 @@ The diagnostics reports can be exported in the following formats:
 * Export PCAP
 * Export TEXT
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#diagnostics)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#diagnostics)
 
 **Call Recording Status Messaging Enhancements**
 
@@ -1383,7 +1469,7 @@ On the Dashboard > Interactions tab, a message, **“No audio is available for t
 
 * Transcript Tab: When call recording is disabled in Agent Settings, no audio is available.
 * Transcript Tab: When call recording is disabled, and media generation is in progress.
-* Interactions Page: When call recording is disabled and users attempt to download the recording from the Actions menu, the “Media generation is in progress” message will also appear. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+* Interactions Page: When call recording is disabled and users attempt to download the recording from the Actions menu, the “Media generation is in progress” message will also appear. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 **Copy All Identifiers**
 
@@ -1394,7 +1480,7 @@ The copied details include:
 * Call Start and Call End timestamps.
 * All other identifier information.
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Agent Activity Summary Report CSV Format: Added Count for Each Status**
 
@@ -1443,7 +1529,7 @@ The Transcripts now show key conversation stages, including:
 * User transferred to Agent (When the Automation transfers the voice call to Agent)
 * User transferred to Automation (When the Agent transfers the voice call back to Automation)
 
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Mean Opinion Score (MOS) Display in Call Controls**
 
@@ -1760,7 +1846,7 @@ The update has enhanced the system’s tracking and reporting capabilities for u
 Key updates:
 
 * Interactions Dashboard:
-    * The new "Joined Users" field is in the **Insights to Logs** > **Details** tab. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#insights-to-logs)
+    * The new "Joined Users" field is in the **Insights to Logs** > **Details** tab. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
     * Displays a comma-separated list of users who joined the conversation.
 * Interactions Details Report:
     * The "Joined Users" column has been added to the CSV version.
@@ -2182,7 +2268,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 Dashboard > Interactions
 
 Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
+[Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#search-conversations)
 
 ## v11.1.1 May 11, 2024
 
