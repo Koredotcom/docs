@@ -34,7 +34,7 @@ The table below shows the permissions available within the XO Platform and their
 !!! Note "Permissions"
 
     * The Monitor Console permission is restricted to the Queues that the user is assigned to.
-    * The Transfer/Close Multiple Conversations permission is split into three permissions-Change Queue, Assign, and Force Close for individual or multiple conversations-and their values inherit from the parent permission. Select these permissions as **Yes** or **No** based on your use case.
+    * The Transfer/Close Multiple Conversations permission is split into three permissions-Change Queue for Conversations, Assign Conversations, and Force Close Conversations for individual or multiple conversations-and their values inherit from the parent permission. Select these permissions as **Yes** or **No** based on your use case.
 
 ### Parent and Child Permissions
 
