@@ -2,7 +2,7 @@
 
 ## API Endpoint
 
-After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in Agent Platform.
+After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in the Platform.
 
 !!! note
 

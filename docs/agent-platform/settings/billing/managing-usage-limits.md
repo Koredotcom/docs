@@ -1,6 +1,6 @@
 # Account Limits and Notifications
 
-When users create an account with Agent Platform, they receive free credits - 75 model credits and 10,000 tool runs by default. The model credits are used for model inference and setting guardrails, while tool runs are consumed when inferring tools. Once the free credits are fully exhausted, users will no longer be able to perform these actions. To continue using the Platform’s services after the free credits are exhausted, users must add credits to their account by contacting Agent Platform support.
+When users create an account with Agent Platform, they receive free credits - 75 model credits and 10,000 tool runs by default. The model credits are used for model inference and setting guardrails, while tool runs are consumed when inferring tools. Once the free credits are fully exhausted, users will no longer be able to perform these actions. To continue using the Platform’s services after the free credits are exhausted, users must add credits to their account by [contacting Support](https://support.kore.ai).
 
 ## Exhaustion alerts for Model Credits and Tool Runs
 
@@ -46,4 +46,4 @@ As credits are consumed, the dynamic pie chart indicates how much of the availab
 * **Red (Low Credits)**: The icon turns red when less than 25% of credits remain, warning the user to add credits soon to avoid disruption.
 * **Triangle Icon (Credits Exhausted)**: When credits are fully depleted, the icon changes to a triangle (associated with a warning), indicating that no credits are left. Users must add credits to resume services like model deployments or tool runs.
 
-For help with adding credits or managing your account, [contact](https://kore.ai/support/){:target="_blank"} Agent Platform Support.
+For help with adding credits or managing your account, [contact Support](https://support.kore.ai).

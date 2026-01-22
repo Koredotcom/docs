@@ -130,7 +130,7 @@ This functionality enhances the evaluation process by providing greater flexibil
 
 Follow this example to set up and run an API call inside Evaluation Studio:
 
-1. **Create and deploy a tool:** Set up your tool and deploy it in Agent Platform.
+1. **Create and deploy a tool:** Set up your tool and deploy it in the Platform.
 2. **Copy the tool endpoint:** From the **Tool Endpoint** tab, copy the deployed API's URL.  
 <img src="../../images/tool_endpoint.png" alt="Copy tool endpoint" title="Copy tool endpoint" style="border: 1px solid gray; zoom:80%;">
 

@@ -93,6 +93,24 @@ Refer to <a href="../overview/">this</a> for a detailed description.
 </ol>
    </td>
   </tr>
+  <tr>
+  <td>source(optional)</td>
+  <td><p>Identifies the system from which the API request is initiated. This field enables better analytics, monitoring, and observability by indicating what triggered the agentic app execution. This field is available as a filter in the session logs.</p>If not provided, the platform automatically assigns the default value.</p>
+    <p>Recommended Values:</p>
+    <ul>
+    <li>AP: This is the default value. Used when the sourcefield isn't explicitly passed.</li>
+    <li>AIS-AA: AI for Service - Agent Assist</li>
+    <li>AIS-QM: AI for Service - Quality Module</li>
+    <li>AIS-CC: AI for Service - Contact Center</li>
+    <li>AP-PG: Agent Platform - Playground</li>
+    <li>AP-ES: Agent Platform - Evaluation Studio</li>
+    <li>AIW: AI for Work</li>
+    <li>AIP: AI for Process</li>
+    <li>MP: Agent Platform - Marketplace</li>
+
+    </ul>
+</td>
+  </tr>
 </table>
 
 
@@ -321,8 +339,23 @@ Lists sessions for the selected app and environment. Supports optional filters s
   <tr>
    <td>filters
    </td>
-   <td>This field is for future implementation
-   </td>
+   <td><p>An array of filter objects used to restrict the list of sessions returned by the API. Each filter defines a field, a comparison operator, and a value to apply when selecting sessions.</p>
+   Filter object fields:<p>
+    <ul>
+    <li>key: The session field to filter on (for example, source).</li>
+    <li>operator: The comparison operation to apply (for example, contains)</li>
+    <li>value: The value to match against the specified field.</li>
+    </ul>
+    <p>Example</p>
+    <p>To retrieve all sessions originating from a specific source (for example, AP), include the following filter:</p>
+    <code>"filters": [ 
+        "key": "source",
+        "value": "AP",
+        "operator": "contains"
+        }
+    ]
+    </code>
+    </td>
    <td>No
    </td>
   </tr>
