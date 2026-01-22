@@ -228,6 +228,25 @@ Example: To directly invoke the leaveBalanceById tool in a specific agent, set t
 
 <hr/>
 
+**source**- Optional
+
+Identifies the system from which the API request is initiated. This field enables better analytics, monitoring, and observability by indicating what triggered the agentic app execution. This field is available as a filter in the session logs.
+
+If not provided, the platform automatically assigns the default value.
+
+Recommended Values:
+
+* AP: This is the default value. Used when the `source` field is not explicitly passed.
+* AIS-AA: AI for Service - Agent Assist
+* AIS-QM: AI for Service - Quality Module
+* AIS-CC: AI for Service - Contact Center
+* AP-PG: Agent Platform - Playground
+* AP-ES: Agent Platform - Evaluation Studio
+* AIW: AI for Work
+* AIP: AI for Process
+* MP: Agent Platform - Marketplace
+
+<hr/>
 
 #### Sample Request
 
@@ -854,7 +873,7 @@ Sample Response
 **Sample Request**
 
 ```
-curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
+curl --location 'https://{domain}/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
 --header 'x-api-key: <your-api-key>' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -930,7 +949,7 @@ curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xx
 
 
 ```
-curl --location 'https://<agent platform domain>/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
+curl --location 'https://{domain}/api/v2/apps/aa-0959e994-xxxx-xxxx-9217-45653a69772a/environments/draft/runs/execute' \
 --header 'x-api-key: <your-api-key>' \
 --header 'Content-Type: application/json' \
 --data '{

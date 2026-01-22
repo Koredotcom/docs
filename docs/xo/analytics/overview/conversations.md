@@ -21,6 +21,8 @@ To view the Conversations dashboard, follow the steps:
     * Session ID
     * Call Conversation ID
     * Agent Conversation ID  
+    * X External Call ID   
+    
     <img src="../images/agent-conversation-id.png" alt="Agent Conversation ID" title="Agent Conversation ID" style="border: 1px solid gray; zoom:80%;">
 
 * Support: The agent who handled the conversation.
@@ -104,7 +106,7 @@ Steps to export conversation data/transcripts:
 
     or
 
-    Select **Download Recording**, **Download Transcript**, or **Download Latency Report**. The transcript and latency report downloads in .csv format.  
+    Select **Download Chat Transcript**, or **Download Latency Report**. The transcript and latency report downloads in .csv format.  
     <img src="../images/download-options-interactions.png" alt="Download Options" title="Download Options" style="border: 1px solid gray; zoom:80%;"> 
 
     !!! Notes
@@ -276,7 +278,7 @@ SmartStatus is a fine-grained, business-relevant version of the conversation sta
 SmartStatus detects events such as call handling, messaging activity, inactivity, or disconnections and updates the conversation’s status accordingly.  
 <img src="../images/smart-status.png" alt="Smart Status" title="Smart Status" style="border: 1px solid gray; zoom:70%;">
 
-#### Filter for Custom Tags [Beta]
+#### Filter for Custom Tags
 
 You can filter conversations using custom tags.
 

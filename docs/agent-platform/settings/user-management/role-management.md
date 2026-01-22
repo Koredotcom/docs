@@ -1,6 +1,6 @@
 # Manage Roles, Permissions and Access Levels
 
-Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
+Platform's **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the Platform. 
 
 User roles can be classified based on the role types. [Learn more](./role-management.md#role-types){:target="_blank"}.
 
@@ -228,7 +228,7 @@ The **Settings** console supports two types of access: “_Yes_” indicates the
 
 A **Role Type** defines the module-wise scope and access level for the defined permissions and associated actions.
 
-Roles are auto-assigned by the system based on the following Role Types. Please refer to [this](./role-management.md#system-defined-roles){:target="_blank"} table for more information on the roles.
+Roles are auto-assigned by the system based on the following Role Types. See [this](./role-management.md#system-defined-roles){:target="_blank"} table for more information on the roles.
 
 * **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
 * **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
@@ -236,18 +236,18 @@ Roles are auto-assigned by the system based on the following Role Types. Please 
 
 **Account Role**
 
-* The user who creates an Agent Platform account is assigned the *Master Admin* role by default.
-* The *Master Admin* can assign other account roles to users added to their account.
+* The user who creates a Platform account is assigned the `Master Admin` role by default.
+* A `Master Admin` can assign other account roles to the users.
 
 **Tool Role**
 
-* The user who creates a tool is assigned the *Tool Admin* role by default.
-* The *Tool Admin* can assign other tool roles to users they invite to their tool.
+* The user who creates a tool is assigned the `Tool Admin` role by default.
+* The `Tool Admin` can assign other tool roles to users they invite to their tool.
 
 **App Role**
 
-* The user who creates an agentic app is assigned the *App Owner* role by default.
-* The *App Owner* can assign other Agentic App roles to users who have access to their agentic apps.
+* The user who creates an agentic app is assigned the `App Owner` role by default.
+* The `App Owner` can assign other Agentic App roles to users who have access to their agentic apps.
 
 ### Module-wise Permissions and Access Levels
 
@@ -2118,6 +2118,6 @@ Like a system role, you can duplicate a custom role, which copies the name, role
 
 **Related resources**
 
-* [Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"} - about other Platform admin features.
 * [Users Management](../user-management/users.md){:target="_blank"} - about managing users in your account.
 * [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} - about tracking events and user activity in your account.

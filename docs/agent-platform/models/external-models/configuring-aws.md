@@ -16,7 +16,7 @@ To integrate your Bedrock models, you will need to:
 
 ### A. Create IAM Role and Configure Trust Policy
 
-To begin, you must create an IAM role in your AWS account that allows Agent Platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.
+To begin, you must create an IAM role in your AWS account that allows the Platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.
 
 Follow the steps below to configure the IAM role and trust policy:
 

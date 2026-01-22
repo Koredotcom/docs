@@ -1,6 +1,6 @@
 # Supported AI Models on Agent Platform
 
-The Agent Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
+The Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
 
 ## Supported AI Models for Agents and Supervisors
 
@@ -111,7 +111,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
 
 ### Open-Source Models
 
-Agentic Apps supports open source models from providers such as Meta, Mistral, and XiaomiMiMo.
+Agentic Apps support open source models from providers such as Meta, Mistral, and XiaomiMiMo.
 
 <table>
 
