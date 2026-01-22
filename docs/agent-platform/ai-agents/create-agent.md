@@ -18,9 +18,6 @@ Key highlights
 
 <img src="../images/agents-listing-page.png" alt="Agent Listing Page" title="Agent Listing Page" style="zoom:70%; border: 1px solid gray;">
 -->
-## Prerequisites
-
-* Review component limits for agents and tools to plan your agent configuration. For more information, see [Component Limits](agentic-apps/settings/component-limits.md){:target="_blank"}.
 
 ## Create an Agent
 

@@ -4,8 +4,6 @@ Tools are foundational components that empower agents to perform purposeful acti
 
 Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.
 
-**Note**: Review component limits for tools to plan your application architecture. For more information, see [Component Limits](../agentic-apps/settings/component-limits.md){:target="_blank"}.
-
 For example, a ‘Leave Managing Agent’ might include tools like:
 
 * Get Leave Balance tool - Invokes an external API to retrieve leave details.

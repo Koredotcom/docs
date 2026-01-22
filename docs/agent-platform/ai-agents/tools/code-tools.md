@@ -4,8 +4,6 @@ Code tools are specialized functions that process user input based on predefined
 
 Code tools offer fine-grained control over how data is handled or external services are accessed. They're useful when agent decisions require logic, computations, or dynamic API interactions that go beyond static rules.
 
-**Note**: Review component limits for code tools to plan your application architecture. For more information, see [Component Limits](../agentic-apps/settings/component-limits.md){:target="_blank"}.
-
 **Supported languages**: Code tools can be designed using **JavaScript** and **Python** to process the input data and generate the appropriate output.  
 
 

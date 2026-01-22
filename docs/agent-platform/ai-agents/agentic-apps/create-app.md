@@ -3,7 +3,6 @@
 Prerequisites:
 
 * Add an AI Model that supports tool-calling capabilities. The Platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
-* Review component limits for apps, agents, tools, and other resources to plan your application architecture. For more information, see [Component Limits](settings/component-limits.md){:target="_blank"}.
 
 
 ## Steps to Create an Agentic App

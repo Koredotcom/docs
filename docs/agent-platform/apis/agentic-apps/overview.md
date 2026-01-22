@@ -49,8 +49,6 @@ Below is a list of important terms used across the API documentation.
 
 * **Run (runId)**: Represents a single execution step within a session, typically triggered by user input and resulting in the agent’s response.
 
-**Note**: API requests are subject to rate limits and component limits. For complete details on API scopes, keys, and other component limits, see [Component Limits](../../ai-agents/agentic-apps/settings/component-limits.md){:target="_blank"}.
-
 ## Session Resolution Process
 
 Each session is uniquely identified by **sessionId**. **sessionReference** is used as a secondary way to refer to the session. It can be particularly useful when the app invoking Agentic App APIs needs to maintain its own session tracking. Each session is owned by a user, identified by a system-generated **<code>userId</code>**, which is typically derived from the provided **<code>userReference</code>**.

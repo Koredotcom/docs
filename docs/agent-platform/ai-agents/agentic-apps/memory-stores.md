@@ -2,8 +2,6 @@
 
 Memory stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across multiple sessions or interactions. They're essential for building intelligent, personalized, and context-aware experiences by maintaining data during agent workflow executions.
 
-**Note**: Review component limits for memory stores to plan your application architecture. For more information, see [Component Limits](settings/component-limits.md){:target="_blank"}.
-
 Agentic Apps support two main types of memory:
 
 * **Session Meta Memory**: Default temporary memory for contextual data within a session. This is a default read-only system memory and can't be directly updated by users. 

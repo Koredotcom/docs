@@ -2,8 +2,6 @@
 
 The personally identifiable information (PII) framework and Guardrails provide essential safety, privacy, and compliance controls that regulate how sensitive data identifies and processed within an Agentic App. These capabilities work together to prevent PII exposure, enforce safety policies, and maintain predictable behavior across all stages of your app.
 
-**Note**: Review component limits for PII patterns to plan your application security configuration. For more information, see [Component Limits](component-limits.md){:target="_blank"}.
-
 ### Core Components
 
 * **PII**: A dedicated PII layer that identifies sensitive information with the help of configured patterns. Protective measures like masking or redaction are taken on the detected sensitive content before it's passed to the  language models or other components.
