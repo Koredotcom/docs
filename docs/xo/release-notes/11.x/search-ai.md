@@ -23,6 +23,8 @@ Key Features
 * Filters and Manage Content configurations are maintained separately for each organization.
 * Permissions, Content Types, and Sync Schedules are shared across all GitHub authentication profiles.
 
+[Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors/github-onprem.md)
+
 <hr>
 
 ## v11.20.0 December 07, 2025

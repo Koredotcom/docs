@@ -631,9 +631,10 @@ Steps to snooze a conversation:
     Hovering over a snoozed conversation in the conversation tray displays the snooze duration and the total count of snoozed conversations.  
         <img src="../images/snooze-hover.png" alt="Snooze Hover" title="Snooze Hover" style="border: 1px solid gray; zoom:70%;">  
 
-!!! note
+!!! note "Snooze Behavior"
 
-    Administrators can control how snoozed interactions behave. When Agent Logout with Snoozed Interactions is enabled, agents can log out while snoozed interactions remain in their personal inbox and resume at the next login. When Reactivation of Snoozed Interactions on User Message is enabled, new user messages automatically reactivate snoozed conversations. When disabled, the agent must resume them manually. Both options support Live Chat, Messaging, and Email.
+    * Administrators can control how snoozed interactions behave. When Agent Logout with Snoozed Interactions is enabled, agents can log out while snoozed interactions remain in their personal inbox and resume at the next login. When Reactivation of Snoozed Interactions on User Message is enabled, new user messages automatically reactivate snoozed conversations. When disabled, the agent must resume them manually. Both options support Live Chat, Messaging, and Email.
+    * When a supervisor transfers a snoozed conversation, the system opens the snoozed interaction when the new agent accepts it.
 
 ## Emails
 
