@@ -17,7 +17,10 @@ Steps to customize the widget’s layout
     * Assist Message Type
     * Visibility Controls for Sent/Copied Messages
     * Widget Menu Layout
+    * Search Result Layout
     * Assist Action Menu Layout
+    * Dialog Task Layout 
+
 7. Click **Save** to save all the customization.
 
 ## Menu Labels
@@ -96,6 +99,33 @@ To modify or delete an existing Custom Tab:
     <img src="../widget-theming-layout-customization/delete-custom-tab.png" alt="delete-custom-tab" title="delete-custom-tab" style="border: 1px solid gray; zoom:80%;"> 
 
 6. Click **Delete** on the confirmation window.
+
+## Search Result Layout
+
+This section lets you control how search results appear in the widget. You can use **Classic Search** (default) that shows only the current search results or **Conversational Search** to provide more contextual results.  
+
+* **Classic Search (Default)**: Displays only the current search results. Each new search clears the previous query and results. When you select this option, the existing dialog tasks appear and once you enter a search query, the results replace the dialog tasks area. Refer to the following screenshot to view how the widget UI appears for this option:  
+    <img src="../widget-theming-layout-customization/classic-search.png" alt="classic-search" title="classic-search" style="border: 1px solid gray; zoom:80%;">  
+
+* **Conversational Search**: Displays a history of previous questions and answers. Agents can refer to earlier results and ask followup questions, reducing repetition and improving context.  
+
+    !!! note
+
+        Search history is maintained per agent at the conversation level. During agent transfers, the search history is cleared.  
+
+    * When you select **Conversational Search**, the widget shows the **Library** and **Search** tabs. By default, the **Library** tab displays the existing dialog tasks. When you enter a query or select the **Search** tab, results appear under the **Search** tab, and previous searches remain visible. The following screenshot shows the search results in the **Conversational Search** option:  
+        <img src="../widget-theming-layout-customization/conversational-search.png" alt="conversational-search" title="conversational-search" style="border: 1px solid gray; zoom:80%;">  
+
+### Steps to select Search types 
+
+1. Sign in to **AI for Service**.
+2. Go to **Widget Theming** > **Layout Customization**.
+3. Select a channel—**Chat**, **Voice**, or **Email**.
+4. Go to the **Search Result Layout** section.  
+    <img src="../widget-theming-layout-customization/search-result-layout.png" alt="search-result-layout" title="search-result-layout" style="border: 1px solid gray; zoom:80%;">  
+
+5. Select **Classic Search** or **Conversational Search**.
+6. Select **Save**. 
 
 ## Assist Action Menu Layout
 

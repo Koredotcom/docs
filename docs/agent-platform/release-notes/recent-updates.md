@@ -2,6 +2,89 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.5.0 January 17, 2026
+
+<u> Minor Release </u>
+
+This release empowers you to build more sophisticated, secure, and flexible AI solutions. You can now improve voice interactions with direct real-time integration for single-agent apps,  create better user experiences with customizable waiting messages while agents process requests, and maintain tighter security controls with configurable session log settings.
+Access tool outputs directly through Artifacts for custom client-side experiences and expand deployment options with open-source LLM support for agentic applications. Additional improvements include enhanced PII handling in workflows, improved selection of context variables, and configurable default user roles for streamlined team onboarding.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Direct Real-Time Voice Integration for Single-Agent Apps**
+
+The Single Agent Orchestration Pattern now supports real-time models, which significantly reduce response latency when your agentic app contains only one agent. The platform now automatically bypasses the supervisor routing layer and connects users directly to the agent, eliminating unnecessary orchestration overhead. This improvement is especially beneficial for voice interactions with real-time models where speed is critical, and it works automatically without requiring any configuration changes.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md#single-agent-configuration)
+
+**Customizable Waiting Messages**
+
+The Waiting Experience feature enhances voice interactions by streaming natural filler messages during processing delays, reducing perceived latency and ensuring smoother conversations. This feature is now publicly available and includes a customizable prompt editor for creating AI-generated dynamic waiting messages. This feature is supported only in ASR/TTS mode (not available for real-time models).
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#waiting-experience)
+
+**Tool Output Artifacts in Response Payload**
+
+You can now configure tools to include their outputs as artifacts in the final response payload. This new capability allows you to capture specific tool execution results and make them available under the ‘artifacts’ key in the response, enabling downstream channels and applications to access structured data for custom processing, display logic, or integration workflows. Artifact inclusion is configurable at the individual tool level, giving you precise control over which tool outputs are exposed in the response.
+
+[Learn more :octicons-arrow-right-24:](../apis/agentic-apps/execute.md)
+
+<font size="4">No-code & Pro-Code Tools</font>
+
+**PII Handling for Workflow Tools**
+
+The Agent Platform extends existing PII handling to Workflow Tools, ensuring sensitive data is securely processed while preventing exposure in logs, traces, or model outputs. Before a Workflow Tool starts execution, input fields are automatically scanned for declared PII patterns. Inputs identified as PII are masked as configured and passed to the tool in redacted form. If the Workflow tools are granted access to the original value in the PII configuration:
+
+* The tool can securely unredact and use the PII internally for execution.
+* All monitoring, debugging logs, and execution traces continue to display only masked values.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/workflow-tools.md#2-app-scoped-tools)
+
+**Improved Context Variable Selection in the Flow Builder**
+
+Selecting context variables is now faster and more intuitive. When users type `{{` in any field that supports context variables, a dynamic dropdown appears showing all available variables grouped by node, including environment variables defined at the workflow-tool level. This eliminates the hassle of manually entering the full path. [Learn more :octicons-arrow-right-24:](../ai-agents/context-object.md#using-the-context-object)
+
+*Coming Soon:* Support for selecting and referencing agentic app-level environment variables in Workflow Tools is currently in progress and will be available in an upcoming release.
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Expanded Model Support**
+
+The Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
+
+New models include:
+
+* OpenAI Models: gpt-5.2-chat-latest, gpt-5.2-2025-12-11, gpt-5.2, gpt-5.1-chat-latest, gpt-5.1-2025-11-13, and gpt-5.1.
+* Anthropic: claude-haiku-4-5-20251001, claude-sonnet-4-5-20250929, and claude-opus-4-5-20251101
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
+
+**Open-Source Model Support for Agentic Apps**
+
+Agentic apps now support open-source models, offering flexible, cost-effective alternatives for building AI agents. You can use the following models directly within your agentic applications:
+
+* meta-llama/Llama-3.1-8B-Instruct
+* meta-llama/Llama-3.2-1B-Instruct
+* meta-llama/Llama-3.2-3B-Instruct
+* mistralai/Mistral-7B-Instruct-v0.3
+* mistralai/Mistral-Nemo-Instruct-2407
+* XiaomiMiMo/MiMo-VL-7B-RL
+
+These models offer diverse capabilities across different sizes and specializations, letting you optimize for performance, cost, or specific use cases while maintaining full access to platform orchestration, tools, and knowledge features. [Learn more :octicons-arrow-right-24:](../models/supported-models.md)
+
+
+<font size="4">Other Improvements</font>
+
+**Ability to Configure Default Role for New Users**
+
+Workspace admins can now set a default role for new Platform users added via email, AD sync, or API in *Users Management → Settings*. This streamlines onboarding by assigning the correct permissions immediately, eliminating the need for manual role updates after provisioning. 
+
+This setting applies only to new users. For existing users, change roles in *Users Management → Users*.
+
+
+<hr>
+
 ## v1.4.0 December 6, 2025
 
 <u> Minor Release </u>
@@ -126,7 +209,9 @@ These messages can be configured in two ways:
 
 Customize timing, message frequency, and content to maintain a smooth conversational flow.
 
-**Note**: This feature is currently in preview and can be enabled upon request.
+**Note**: 
+* This feature is currently in preview and can be enabled upon request.
+* This feature only works in ASR/TTS streaming mode.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#waiting-experience)
 

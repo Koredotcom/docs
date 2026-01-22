@@ -53,7 +53,7 @@ Admins can now centrally manage security settings for Platform-generated URLs (c
 
 **Unified Interactions Dashboard Availability**
 
-The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products.
+The ‘Interactions Dashboard’ has been renamed to “Conversations” and is now accessible to all licensed users under ‘Analytics’ > ‘Overview’. It provides unified access to real-time latency reports and session analytics across all products. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md)
 
 <hr>
 
@@ -697,7 +697,7 @@ The user input's Personal Identifiable Information (PII) data will be masked in 
 
 <font size="4">General Availability of a Key Feature</font>
 
-We are announcing the general availability (GA) of the [DialogGPT Module](../../generative-ai-tools/dialog-gpt.md) to all our users. 
+We are announcing the general availability (GA) of the [DialogGPT Module](../../automation/dialog-gpt-based-orchestration.md) to all our users. 
 
 <hr>
 

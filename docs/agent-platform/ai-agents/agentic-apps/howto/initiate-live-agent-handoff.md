@@ -2,7 +2,7 @@
 
 The Agent Handoff Event in Agentic Apps enables smooth transfer of conversations from an AI agent to a live agent when required. This feature is particularly useful in scenarios where user queries require personalized support or the user explicitly asks for assistance.
 
-The Agent Handoff event in Agent Platform can initiate live agent handoff only via the AI for Service platform. This event-driven handoff is managed through the Automation Node in AI for Service, which facilitates the integration between the two platforms. When the Agent Handoff Event is triggered, the Agent Platform sends required information to the specified automation node within the AI for Service Platform's flows. The automation node subsequently processes the agent transfer request in accordance with the transfer connection rules established for the node.
+The Agent Handoff event in the Platform can initiate live agent handoff only via the AI for Service platform. This event-driven handoff is managed through the Automation Node in AI for Service, which facilitates the integration between the two platforms. When the Agent Handoff Event is triggered, the Platform sends required information to the specified automation node within the AI for Service Platform's flows. The automation node subsequently processes the agent transfer request in accordance with the transfer connection rules established for the node.
 
 This document provides step-by-step instructions for configuring and invoking a live-agent handoff using the Automation Node in the AI for Service app. 
 
@@ -12,9 +12,9 @@ This document provides step-by-step instructions for configuring and invoking a 
 
 ## Prerequisites
 
-* Both AI for Service and Agent Platform applications must be in the same workspace.
+* Both AI for Service and the Platform applications must be in the same workspace.
 * The relevant channel flows (for example, chat, voice) must be set up in AI for Service.
-* [AI for service and Agent Platform must be integrated via the Automation Node](../../ai-for-service.md#integrate-an-agentic-app-with-ai-for-service-app).
+* [Integrate AI for Service and the Platform using the Automation Node](../../ai-for-service.md#integrate-an-agentic-app-with-ai-for-service-app).
 
 
 ## Setting up Live Agent Transfer in the Agent Platform App
@@ -30,4 +30,4 @@ This document provides step-by-step instructions for configuring and invoking a 
 
 ## Handling Agent Transfer Requests in AI for Service
 
-When an agent transfer event is triggered, the Agent Platform passes control and relevant context data to the AI for Service app. To process these agent transfer requests, set up the Agent Transfer connection configuration for the automation node. When the Agent Platform triggers the agent handoff event, the request, along with AI-collected and system-defined parameters, is delegated to the automation node. The automation node then routes the request to the appropriate node as defined by its connection rules. Configure an Agent Transfer Node to transfer the communications from the AI Agent to a live agent.[ Learn More.](https://docs.kore.ai/xo/automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node/)
+When an agent transfer event is triggered, the Platform passes control and relevant context data to the AI for Service app. To process these agent transfer requests, set up the Agent Transfer connection configuration for the automation node. When the Platform triggers the agent handoff event, the request, along with AI-collected and system-defined parameters, is delegated to the automation node. The automation node then routes the request to the appropriate node as defined by its connection rules. Configure an Agent Transfer Node to transfer the communications from the AI Agent to a live agent. [Learn More](https://docs.kore.ai/xo/automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node/).

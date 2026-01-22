@@ -4,15 +4,15 @@ This guide explains how to work with files uploaded by users in an Agentic App, 
 
 ## Overview
 
-When users upload documents to the agent, the platform stores them and makes the metadata of the files available in the system memory, sessionMeta. This enables tools to access the uploaded files and pass on the file URL and metadata to upstream systems or the data stores. 
+When users upload documents to the agent, the Platform stores them and makes the metadata of the files available in the system memory, sessionMeta. This enables tools to access the uploaded files and pass on the file URL and metadata to upstream systems or the data stores. 
 
 
 ## How It Works
 
-1. Users upload documents to the Agent Platform. Files can be uploaded via the Agentic App Playground or programmatically using APIs.
-2. The platform handles uploaded files in two ways, depending on the file types: 
+1. Users upload documents to the the Platform. Files can be uploaded via the Agentic App Playground or programmatically using APIs.
+2. The Platform handles uploaded files in two ways, depending on the file types: 
     1. **Content Extraction** - [For specific file types](../attachment-support.md#supported-file-formats-for-document-upload), the platform extracts the content and uses it as context.
-    2. **Metadata Storage** - [For all supported file types](../attachment-support.md#supported-file-formats-for-document-upload), the platform captures and stores file metadata as artifacts in the metadata field of the system memory, sessionMeta.  It captures the following metadata fields for each uploaded file.
+    2. **Metadata Storage** - [For all supported file types](../attachment-support.md#supported-file-formats-for-document-upload), the platform captures and stores file metadata as artifacts in the metadata field of the system memory, sessionMeta. It captures the following metadata fields for each uploaded file.
         * fileId: Unique identifier for the uploaded file
         * type: Type of data.
         * filename: Original filename as uploaded by the user.

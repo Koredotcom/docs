@@ -2,7 +2,7 @@
 
 The all-new Agent Platform is an enterprise-grade multi-agent orchestration platform. The platform is a comprehensive solution for enterprises to develop, deploy, and manage AI-powered business applications. It enables the orchestration of intelligent agents across service, work, and process automation while upholding enterprise-grade security and governance.
 
-The Agent Platform supports two distinct paradigms for building intelligent AI applications:
+The Platform supports two distinct paradigms for building intelligent AI applications:
 
 * **Dialog Agents** (Orchestrated Autonomy, Structured Flow Approach): This paradigm, powered by DialogGPT and Agent Node, offers a structured flow approach to enable a dynamic conversational experience. While responses are still somewhat deterministic, Dialog Agents can adapt to variations in input, handle multi-turn interactions with greater ease, recognize user intent, extract key information autonomously, and leverage context across conversations. This results in a more responsive and interactive AI that can assist users intelligently within defined boundaries. [Learn more :octicons-arrow-right-24:](../dialog-agents/dialoggpt.md){:target="_blank"}
 
@@ -15,7 +15,7 @@ Both paradigms leverage the platform's core AI capabilities, which include Searc
 
 The Platform's key components provide comprehensive capabilities that empower organizations to efficiently scale and manage AI deployments across the AI lifecycle.
 
-<img src="../images/agent-platform-components.png" alt="Agent Platform" title="Agent Platform">
+<img src="../images/agent-platform-components.png" alt="Components of the Platform" title="Components of the Platform">
 
 
 ### Multi-Agent Orchestration
@@ -55,7 +55,7 @@ It facilitates the easy deployment and management of AI models, including fine-t
 
 ### Prompt Management
 
-Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall Agent Platform for seamless deployment.
+Prompt Studio and Library enable efficient prompt design, management, reuse, and collaboration across teams. It enables real-time co-editing, commenting, version tracking, and integration with the overall Platform for seamless deployment.
 
 ### Evaluation and Testing Framework
 
@@ -82,7 +82,7 @@ The platform provides a standardized Agent Protocol for seamless communication a
 
 ### SDKs
 
-Comprehensive SDKs are available for developers to efficiently build and integrate various aspects of the Agent Platform, including custom Agents, Tools, Search/RAG capabilities, and observability Traces.
+Comprehensive SDKs are available for developers to efficiently build and integrate various aspects of the Platform, including custom Agents, Tools, Search/RAG capabilities, and observability Traces.
 
 ### Enterprise Grade CI/CD
 

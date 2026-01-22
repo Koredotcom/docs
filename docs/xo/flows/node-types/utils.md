@@ -6,7 +6,7 @@ This document explains the script nodes, call flows, and supported utils with ex
 
 ### Context | Instance Bot
 
-All the instance bot’s `{{context.session}}` variables will be moved under context.
+All the instance bot’s `{{context.session}}` variables are moved under context.
 
 Example:
 
@@ -281,12 +281,12 @@ When you enable the wait option, the system holds the conversation for the named
 | Option               | Description |
 |:---------------------|:------------|
 | `waitForAgent`       | When set to **true**, the system waits for any named agent to become available before applying fallback routing. |
-| `waitDurationSeconds`| Specifies the maximum duration, in seconds, that the system waits for a named agent before routing the conversation to the queue. The default maximum threshold is **3600 seconds**. |
+| `waitDurationSeconds`| Specifies the maximum duration, in seconds, that the system waits for a named agent before routing the conversation to the queue. The default maximum threshold is **3600 seconds**. If `waitDurationInSeconds` isn't specified or exceeds 3600 seconds, the system defaults the value to 30 seconds.|
 
 Bahavior
 
 * When wait options aren't provided, the system follows the existing behavior and immediately routes the conversation to the queue if no named agent is available.  
-* When waitForAgent is enabled:  
+* On enabling waitForAgent:  
     * The system places the conversation in a waiting for named agent state.  
     * The system doesn't route the conversation to the queue while the wait timer is active.  
     * If any named agent becomes available and accepts the conversation within the wait duration, the system assigns the conversation to that agent.  

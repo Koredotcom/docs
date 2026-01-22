@@ -1,6 +1,6 @@
 # Audit Logs - Track Account-level User Actions and Events
 
-Agent Platform’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+The Platform's comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
 
 This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias. 
 
@@ -1060,7 +1060,7 @@ To access and view audit logs, follow the steps below:
 
 ## Dashboard Information
 
-The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your Agent Platform account:
+The **Audit Logs** dashboard displays the following information to collectively provide a comprehensive overview of activities within your account:
 
 * **Event Name:** Describes the specific event or action that occurred.
 * **Category:** Identifies the module or entity affected by the event.
@@ -1220,7 +1220,7 @@ The downloaded *.CSV* file is automatically named as <code><em>Account_Audit_Log
 * Date & Time
 * Description
 
-Agent Platform’s Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
+Audit Logs promotes transparency and accountability in AI operations, helping build trust internally and externally. 
 
 You can confidently scale AI initiatives with event-based user activity logs to manage compliance and ensure responsible use of generative AI.
 

@@ -1,6 +1,6 @@
 # Monitoring Custom Script Runs and Logs
 
-**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the Agent Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
+**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
 
 **Key Benefits**
 
@@ -292,7 +292,7 @@ The UI displays all the relevant run and log records that align with the applied
 
 ### Multiple Filters
 
-Users can combine filters using AND/OR operators for multi-level filtering. Note that AND and OR operators cannot be mixed in the same filter set. [Learn more](../monitoring/audit-logs.md#add-multiple-filters){:target="_blank"} about using multiple filters.
+Users can combine filters using AND/OR operators for multi-level filtering. Note that AND/OR operators cannot be mixed in the same filter set. [Learn more](../monitoring/audit-logs.md#add-multiple-filters){:target="_blank"} about using multiple filters.
 
 ## Record View
 
@@ -325,7 +325,7 @@ The record view offers log-specific insights at the script run level after each 
 
 ## Enhanced Logging for gVisor Monitoring
 
-The Agent Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*xxxxlogger*).
+The Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*xxxxlogger*).
 
 **Key Considerations**
 

@@ -46,12 +46,12 @@ In this document, you will learn how to set up a Condition Node in a tool flow, 
 
 ### Step 1: Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log into the Agent Platform and select **Tools** under modules.
+* Select your tool and select **Go to Flow**.
 
 ### Step 2: Add the Condition Node
 
-* Click the “**+**” icon on an existing node → Select Condition node.
+* Click the plus `+` icon on an existing node and select Condition node.
 * Or drag the Condition node from the Assets panel onto the canvas.
 
 ### Step 3: Configure the Node

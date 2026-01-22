@@ -29,7 +29,7 @@ Model Evaluation is an essential tool for managing, evaluating, and optimizing L
 
 The following outlines the key actions at each stage of the Model Evaluation user journey:
 
-1. [**Create a project**](./create-project.md): Log in to Agent Platform, go to Evaluation Studio, and create a project under Model Evaluation.
+1. [**Create a project**](./create-project.md): Log in to the Platform, go to Evaluation Studio, and create a project under Model Evaluation.
 
 2. [**Create an evaluation**](./create-evaluation.md): Create an evaluation for your project.
 
