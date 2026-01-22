@@ -149,6 +149,7 @@ For example, `context["steps"]["Start"]["Q3balance"]`
 
 The above syntaxes fetch the variable “*Q3balance*” that you define in the **Start** node. [Learn more](../types-of-nodes/function-node.md#dynamic-inputs){:target="_blank"}.
 
+<!--
 ### Using Agent Memory in the script
 
 Memory Stores in Agentic Apps enable agents to retain, access, and manipulate information during a session or across sessions. The data stored in memory can be extremely useful for providing context and state persistence within the workflows. The Function node supports accessing agent memory, allowing you to create dynamic, context-aware, and stateful logic directly within the node.
@@ -217,6 +218,7 @@ Data is stored in the memory stores in JSON format and follows the [JSON Schema 
 * Handle error conditions.
 
 
+-->
 
 ### Execute a Custom Function 
 
