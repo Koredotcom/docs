@@ -318,19 +318,69 @@ Creates a new connection to an external model provider. Supports creation of Cus
 
 
 
-#### Sample Request – Custom API Connection
+#### Sample Request – Custom API Connection - Default Provider
 
 ```
-curl --location 'https://{{host}}/api/public/connections` \
---header 'x-api-key: {{apiKey}}` \
---header 'Content-Type: application/json` \
+curl --location '{{BASE_URL}}/api/public/connections' \
+--header 'x-api-key: {{API_KEY}}' \
+--header 'Content-Type: application/json' \
 --data '{
+  "model": "CustomProvider",
   "provider": "API",
-  "connectionName": "My Custom API",
-  "fields": {
-    "BASE_URL": "https://api.example.com",
-    "API_KEY": "sk-***************"
-  }
+  "connectionName": "CustomProvider",
+  "promptVars": [
+    {
+      "name": "prompt",
+      "displayName": "Prompt",
+      "status": true,
+      "dataType": "String",
+      "elementType": "textBox",
+      "defaultValue": "hlo",
+      "required": true
+    },
+    {
+      "name": "system_prompt",
+      "displayName": "System prompt",
+      "status": false,
+      "dataType": "String",
+      "elementType": "textBox",
+      "defaultValue": "",
+      "required": false
+    },
+    {
+      "name": "examples",
+      "displayName": "Examples",
+      "status": false,
+      "dataType": "String",
+      "elementType": "textBox",
+      "examples": true,
+      "defaultValue": "",
+      "required": false
+    }
+  ],
+  "customVars": [],
+  "endpointUrl": "{{LLM_API_URL}}",
+  "headers": [
+    {
+      "key": "x-api-key",
+      "value": "{{LLM_API_KEY}}"
+    }
+  ],
+  "payload": {
+    "model": "{{MODEL_NAME}}",
+    "max_tokens": 1024,
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is the weather like in San Francisco?"
+      }
+    ]
+  },
+  "outputPath": "content[0].text",
+  "inputTokensPath": "usage.input_tokens",
+  "outputTokensPath": "usage.output_tokens",
+  "status": "FINALIZED",
+  "isEnable": true
 }'
 ```
 
@@ -368,12 +418,157 @@ curl --location 'https://{{host}}/api/public/connections` \
    <td>API key for authentication
    </td>
   </tr>
+  <tr>
+   <td><code>fields.MODEL_NAME</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>Model name
+   </td>
+  </tr>
+  <tr>
+   <td><code>LLM_API_URL</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>URL for the model endpoint
+   </td>
+  </tr>
+  <tr>
+   <td><code>LLM_API_KEY</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>API key of the model
+   </td>
+  </tr>
 </table>
-
-
 
 ---
 
+#### Sample Request – Custom API Connection - Existing Provider
+
+```
+curl --location '{{BASE_URL}}/api/public/connections' \
+--header 'x-api-key: {{API_KEY}}' \
+--header 'Content-Type: application/json' \
+--data '{
+  "model": "{{MODEL_NAME}}",
+  "provider": "API",
+  "connectionName": "Custom_Existingnew",
+  "endpointUrl": "{{LLM_API_URL}}",
+  "headers": [
+    {
+      "key": "x-api-key",
+      "value": "{{LLM_API_KEY}}"
+    }
+  ],
+  "status": "FINALIZED",
+  "isEnable": true,
+  "idp": "none",
+  "bodyTab": "providerReferences",
+  "mapProvider": "anthropicModel",
+  "llmFeatures": {
+    "toolCalling": false,
+    "supportTools": true,
+    "parallelToolCalling": true,
+    "structuredResponse": true,
+    "dataGeneration": false,
+    "streaming": true
+  },
+  "IOMappings": [
+    "textToText",
+    "textToImage"
+  ]
+}'
+```
+
+**Custom API Fields (<code>provider: "API"</code>)**
+
+<table>
+  <tr>
+   <td><strong>Field</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+   <td><strong>Type</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><code>fields.BASE_URL</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>Base URL of the API endpoint
+   </td>
+  </tr>
+  <tr>
+   <td><code>fields.API_KEY</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>API key for authentication
+   </td>
+  </tr>
+  <tr>
+   <td><code>fields.MODEL_NAME</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>Model name
+   </td>
+  </tr>
+  <tr>
+   <td><code>LLM_API_URL</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>URL for the model endpoint
+   </td>
+  </tr>
+  <tr>
+   <td><code>LLM_API_KEY</code>
+   </td>
+   <td>Yes
+   </td>
+   <td>String
+   </td>
+   <td>API key of the model
+   </td>
+  </tr>
+  <tr>
+    <td><code>fields.IOMapping</code>
+    </td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>Supported values: "textToText", "textToImage", "imageToText", and "audioToText"</td>
+  </tr>
+  <tr>
+    <td><code>fields.mapProvider</code>
+    </td>
+    <td>Yes</td>
+    <td>String</td>
+    <td>Supported values: "anthropicModel", "geminiModel", and "openAIModel"</td>
+  </tr>
+</table>
+
+---
 
 #### Sample Request – OpenAI Connection
 
