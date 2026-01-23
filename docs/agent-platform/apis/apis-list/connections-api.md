@@ -557,14 +557,14 @@ curl --location '{{BASE_URL}}/api/public/connections' \
     </td>
     <td>Yes</td>
     <td>String</td>
-    <td>Supported values: "textToText", "textToImage", "imageToText", "audioToText"</td>
+    <td>Supported values: "textToText", "textToImage", "imageToText", and "audioToText"</td>
   </tr>
   <tr>
     <td><code>fields.mapProvider</code>
     </td>
     <td>Yes</td>
     <td>String</td>
-    <td>Supported values: "anthropicModel", "geminiModel", "openAIModel"</td>
+    <td>Supported values: "anthropicModel", "geminiModel", and "openAIModel"</td>
   </tr>
 </table>
 

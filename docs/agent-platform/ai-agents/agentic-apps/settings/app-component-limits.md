@@ -71,7 +71,7 @@ The following limits apply to API configuration:
 | API Scopes  | 20    | The maximum number of API scopes per app.     |
 | API Keys    | 40    | The maximum number of API keys per API scope. |
 
-## PII & Guardrails
+## PII and Guardrails
 
 The following limit applies to PII (Personally Identifiable Information) patterns:
 
