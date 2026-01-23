@@ -2,11 +2,11 @@
 
 # Interaction Evaluation and Conversation Analytics Report 
 
-Exports comprehensive conversation data based on selected evaluation forms, with customizable field options. This report provides detailed insights into individual interactions, including sentiment analysis, topics discussed, agent performance metrics, and evaluation scores.
+Exports detailed conversation data based on selected evaluation forms, with customizable fields. This report provides detailed insights into individual interactions, including sentiment analysis, topics discussed, agent performance metrics, evaluation scores, and AI-generated justifications for Gen AI by question metrics (optional).
 
-## Generate Interaction Conversation Analytics Report
+## Generate the Interaction Evaluations and Conversation Analytics Report
 
-Steps to generate the Interaction Evaluations and Conversation Analytics Report:
+Steps to generate the report:
 
 1. On the **Reports** tab, Select **New Report**.
 
@@ -15,43 +15,59 @@ Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
 1. Select **Next** to proceed.
 
-1. Configure the **General** section.
+1. Complete the **General** section.
 
-    * Enter a unique identifier **Name** for the report.
+    * Enter a unique **Name** for the report.
 
-    * Enter a meaningful **Description** explaining the report's purpose and intended audience.
+    * Provide a clear **Description** of the report's purpose.
  
-    * Select **Next** to proceed.        
+    * Select **Next**.        
     <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
 
-1. Enter the **Configure** section fields and filters.
+1. Configure the **Filters and Options**.
 
-    * Select one evaluation form to determine data scope and applicable interactions. 
+    * Select an evaluation form to set the data scope and applicable interactions. 
 
-    * Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
+    * Select a **Date** or date range (for example, Current day, Previous day, Last 7 days).
 
-    * Select a **Timezone** (defaulting to the device's local timezone) from the dropdown.
+    * Select a **Timezone** (defaults to the device's local timezone).
 
-    * Configure the required **Filter**.
+    * Select the required **Filter**.
+    
+        * Select **+Add Filter** to add Channel, Queue, Language, Agents.
 
-        * Select **+Add Filter** to add Channel, Queue, Language, Agents, Agent Groups.
+        * Set values for the selected filters. 
 
-        * Set the values vs. the selected/added filters. 
+    * Add **Optional Fields** to include additional metrics or attributes in the report.     
+    
+        !!! Note
 
-    * Add **Optional Fields** to include additional metrics or attributes.
+            AI Justification is an optional field available only for Gen AI by question metrics and provides: 
 
-    * Enter recipient addresses in **Send Email to** send the automated reports (minimum one required). 
+            * AI-generated explanations for each evaluation score.
 
-    * Select **Next** to proceed.  
+            * Not available for the Interaction Details Report for Quality AI.
+
+            * Included in the CSV only when:
+
+                * The evaluation form contains Gen AI by question metrics, and
+
+                * AI Justification is explicitly selected under Optional Fields.
+
+    * Enter one or more recipient emails in **Send Email to** receive automated reports (minimum one required). 
+
+    * Select **Next**.  
 
         <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
-1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
- 
-    * Select **Run on Demand**, and select **Save** to generate the report immediately with the current configuration.
+1. Configure the **Schedule**. 
 
-    * Select **Schedule** to set up automated recurring report generation.  
-    <img src="../images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
+    * Choose **Run on Demand** or **Schedule**.
+
+        * Select **Run on Demand** to generate the report immediately using the current configuration without scheduling.
+
+        * Select **Schedule** to automate report generation at regular intervals based on a defined start time and frequency or repeat.         
+        <img src="../images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
 
 1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
 <img src="../images/interaction-conversation-analytics.png" alt="Repeat" title="Repeat" style="border: 1px solid gray; zoom:50%;">
@@ -62,21 +78,13 @@ Steps to generate the Interaction Evaluations and Conversation Analytics Report:
 
 1. Select **Instant Run** to generate the report immediately.
 
-1. Select **Save** to confirm and activate the schedule.  
-<img src="../images/gen-start-date-and-timezone.png" alt="Save" title="Save" style="border: 1px solid gray; zoom:60%;">
-
-1. The saved report appears in the **Reports > My Reports** dashboard.  
-<img src="../images/sample-report.png" alt="My Reports" title="My Reports" style="border: 1px solid gray; zoom:60%;">
-
-1. Enable scheduling by switching on the **Schedule** toggle.
-
-1. Select **Bulk Run** to generate the report immediately.
+1. Select **Save** to activate the schedule.  
 
 ## Report Fields
 
 ### Conversation Summary 
 
-This report analyzes agent interactions by summarizing each conversation’s sentiment, duration, and evaluation scores, along with key performance metrics such as total interactions, scorecard results, evaluation and audit scores, failure rates, coaching assignments, and adherence indicators.
+This report analyses agent interactions by summarizing each conversation’s sentiment, duration, and evaluation scores, along with key performance metrics, including total interactions, scorecard results, evaluation and audit scores, failure rates, coaching assignments, adherence indicators, and AI Justification (when enabled for Gen AI by question metrics).
 
 | Conversation ID  |Agent  | Language | Start Time  | End Time  | Duration (min) | Topic  | Sentiment Score | Kore Evaluation Score | Audit Score | Is Passed | Escalation |
 |------------------------------------------|-------------------------|--------------|--------------------------|--------------------------|----------------------|----------------------|------------------------|-----------------------------|------------------|----------------|----------------|
@@ -94,13 +102,13 @@ Steps to view and download a report:
 
 1. Select the vertical **Ellipsis** button. 
 
-1. Select **History** to view all generated reports.
+1. Select **History** to view generated reports.
 
-1. Select **Download** to save the required reports in CSV format.
+1. Select **Download** to save the report in CSV format.
 
 ### Report Format
 
-* **Format**: CSV file
+* **Format**: CSV 
 
 * **File Name**: [ReportName]-YYYY-MM-DD-HH-MM-SS.csv  
 <img src="../images/interaction-eva-sample-report.png" alt="Reports Access" title="Reports Access" style="border: 1px solid gray; zoom:100%;">
