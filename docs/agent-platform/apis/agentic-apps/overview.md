@@ -35,20 +35,19 @@ Below is a list of important terms used across the API documentation.
 
 
 
-* **App (AppId)**: Represents a specific App built on the Agent Platform.
+* **App (AppId)**: Represents a specific app created for the Platform.
 * **Environment (envName)**: Refers to a deployment environment for the app. The environment name must match the exact name as configured in the application. 
-* **Session (sessionId)**: A unique ID representing a single conversation between an end-user and the agent. Sessions allow multi-turn conversations by preserving context.
+* **Session (sessionId)**: A unique ID representing a single conversation between an user and the agent. Sessions allow multi-turn conversations by preserving context.
 * **Session Identity**: Used to reference a session or user. You can refer to the session in one or more of the following ways. 
     * sessionId: The unique, platform-generated ID for the session.
     * sessionReference: A custom session identifier. If not set, it defaults to the userReference. This can be the session identifier for the application from which the Agentic app API is invoked. 
-    * userReference: A unique identifier from your system that ties all sessions to a specific user. This must be unique to your system. It is a crucial identifier. 
+    * userReference: A unique identifier from your system that ties all sessions to a specific user. This must be unique to your system. It's a crucial identifier. 
 
-    Refer to [Session Resolutions steps](overview.md#session-resolution-process) below for more information. 
+    Refer to [Session Resolutions steps](overview.md#session-resolution-process) for more information. 
 
 
 
 * **Run (runId)**: Represents a single execution step within a session, typically triggered by user input and resulting in the agent’s response.
-
 
 ## Session Resolution Process
 

@@ -38,7 +38,9 @@ The system can hold a named-agent transfer for a configurable duration before ro
 
 **Parent–Child Permission Dependency Management**
 
-This update introduces logical parent–child permission dependencies across the Agent Console and Monitor Tab, automatically disabling child permissions when the parent is set to No/View and restoring them when the parent is re-enabled. It also introduces a new Force Logout permission and refines transfer controls by splitting the existing permission into granular options for assigning conversations, changing queues, and force-closing conversations. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+This update enforces parent–child permission dependencies across the Agent Console and Monitor Tab, automatically disabling child permissions when the parent is set to No/View and restoring them when re-enabled.
+
+It also resolves an earlier issue with Transfer/Close Multiple Conversations by splitting it into three granular permissions: Assign Conversations, Change Queue, and Force Close Conversations (individual or multiple). These permissions inherit their values from the parent setting, and administrators can review and update them to Yes or No as needed. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 **Alerts for Extended After Call Work**
 
@@ -64,17 +66,17 @@ An app-level control automatically enrolls phone numbers into the Global DNC lis
 
 <font size="4">Analytics</font>
 
-**CSAT Feedback Visibility in Interactions Details**
+**CSAT Feedback Visibility in Conversations Details**
 
-Displays customer CSAT feedback directly within the Interactions details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. 
+Displays customer CSAT feedback directly within the Conversations details view, enabling quick visibility of submitted comments. The feedback appears contextually alongside CSAT information for improved review and insights. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Error Event Visibility for Real-time Voice APIs in Agentic Apps**
 
-Error events from real-time voice APIs are now captured and displayed in Interaction Details when a response generation failure occurs. The transcript timeline shows a clear LLM error indicator with a timestamp, along with the full provider error message for improved troubleshooting and audit visibility. 
+Error events from real-time voice APIs are now captured and displayed in Interaction Details when a response generation failure occurs. The transcript timeline shows a clear LLM error indicator with a timestamp, along with the full provider error message for improved troubleshooting and audit visibility. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 **Voice Interaction Latency Metrics**
 
-The Interactions → Transcriptions page now displays latency metrics for Voice interactions to help evaluate responsiveness. Customer messages show ASR latency, while bot messages show Bot, TTS, and End-to-End latency (only when a bot message follows a customer message). Unavailable values display as NA, and the entire latency block appears only for the Voice channel. 
+The Conversations → Insights to Logs → Transcriptions tab now displays latency metrics for Voice interactions to help evaluate responsiveness. Customer messages show ASR latency, while bot messages show Bot, TTS, and End-to-End latency (only when a bot message follows a customer message). Unavailable values display as NA, and the entire latency block appears only for the Voice channel. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#insights-to-logs)
 
 <font size="4">API</font>
 

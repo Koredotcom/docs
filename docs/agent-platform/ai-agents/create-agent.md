@@ -156,15 +156,15 @@ There are *three types of tools* that agents can use.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
 
-For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md){:target="_blank"}.
+    For more information, see [Workflow Tools](./../ai-agents/tools/workflow-tools.md){:target="_blank"}.
 
 2. **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that can't be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They're the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using *JavaScript or Python* code, allowing seamless integration and automation of complex workflows. 
 
-For more information, see [Code Tools](tools/code-tools.md){:target="_blank"}.
+    For more information, see [Code Tools](tools/code-tools.md){:target="_blank"}.
 
 3. **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform. Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they're centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They're best suited for seamless integration with external APIs, proprietary platforms, or shared tool sets across teams or organizations. 
 
-For more information, see [MCP Tools](tools/mcp-tools.md){:target="_blank"}.
+    For more information, see [MCP Tools](tools/mcp-tools.md){:target="_blank"}.
 
 ### Adding a Tool to Agent
 
@@ -175,25 +175,34 @@ You can enhance an agent's capabilities by creating a new tool or importing an e
 
 To add a new tool, click *New Tool* and choose the desired tool type - *Workflow Tool*, *Code Tool* or *MCP Tool*.
 
-For a *Workflow Tool*, enter the tool's *name* and *description*, then click *Create*. The tool will be added to your app. Next, go to the *Agent's Tools* page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool.
+For a **Workflow Tool**, enter the tool's *name* and *description*, then click *Create*. The tool will be added to your app. Next, go to the *Agent's Tools* page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool. [Learn More.](tools/configure-a-tool.md)
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a *Code tool*, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md){:target="_blank"} for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md){:target="_blank"} for details on creating a new code tool, along with an example. 
 
-### Test a Workflow Tool
+Similarly, to add a new MCP server and use MCP Tool, click on MCP Server and provide the configuration details. [Learn More about MCP Server Configuration](tools/configure-mcp-server.md){:target="_blank"}.
 
-To test a Workflow Tool, open it from the Tools page and use the Test interface. Detailed instructions on running sample queries and reviewing test outputs are available on this [page](test-a-workflow-tool.md){:target="_blank"}.
+The Tools Assignment page provides a structured view of the available tools, showing their types, statuses, and the total number of tools in the app.
+
+**Key highlights**
+
+* Displays total count categorized under Workflow, Code, and MCP.
+* Displays the Workflow tool status as Draft or Deployed.
+* Provide empty-state CTAs: Import and New Tool for Workflow tools, New Tool for Code tools, New Tool and Connect to MCP Server for MCP tools.
+* MCP tools are grouped by their parent MCP server. Each server provides a search bar to help you find tools within it.
+
+![Tool Assignment page](images/mcptool.png "MCP tool")
 
 ### Import a Tool
 
-You can easily **import an existing tool** into your Agentic app to accelerate development and reuse existing tools. When a tool is imported:
+You can easily **import an existing workflow tool** into your Agentic app to accelerate development and reuse existing tools. When a tool is imported:
 
 * A **new instance** of the tool is created, specifically scoped to the app.
 * This instance of the tool is independent of the original, and can be customized without affecting the source tool or its use in other apps.
 * You can use it as it's if it already meets your needs, or modify it to align with your app’s specific use cases.
 
-Tools can be imported from a variety of sources:
+Tools can be imported via:
 
 * **File**: Import tools that have been exported previously or shared in file formats(JSON format).
 * **Library**: Use existing tools from the shared repository of reusable tools existing in the platform.
@@ -202,3 +211,16 @@ Tools can be imported from a variety of sources:
 To make changes, simply select the tool and open it to **modify the flow** as needed.
 
 Use [this example as a reference or starting point](./../ai-agents/agent-creation-example.md){:target="_blank"} when building your own agent.
+
+
+### Testing a Tool
+
+Testing allows you to verify the behavior and output of a tool before using it in production workflows.
+
+To test a tool:
+
+* Navigate to the Tools page of the application.
+* Select the tool you want to test to open its details view.
+* Use the Test interface on the tool details page to run the tool and review its behavior and responses.
+
+For step-by-step instructions and example, refer to [this](test-a-workflow-tool.md){:target="_blank"}.

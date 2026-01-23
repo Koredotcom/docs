@@ -2,7 +2,7 @@
 
 Prerequisites:
 
-* Add an AI Model that supports tool-calling capabilities. The Agent Platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
+* Add an AI Model that supports tool-calling capabilities. The Platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
 
 
 ## Steps to Create an Agentic App
@@ -49,7 +49,7 @@ See [How to set up an agent](./../create-agent.md) for detailed instructions.
 
 ### Step 3: Simulate or Test the Behavior of the App and the Agents
 
-Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for Agent Platform](diagnostics-for-agent-platform.md).
+Before testing and deploying an Agentic app, use the Diagnostics to comprehensively validate its readiness. This tool proactively identifies potential issues across the app, agents, tools, events, and configurations, ensuring the application meets production-quality and operational standards before to deployment. See [Diagnostics for the Platform](diagnostics-for-agent-platform.md).
 
 Next, simulate different scenarios to evaluate agent interactions and responses.  
 See [Simulate and Test the App](./../agentic-apps/app-testing.md).

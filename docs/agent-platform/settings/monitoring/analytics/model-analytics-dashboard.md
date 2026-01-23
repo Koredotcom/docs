@@ -272,6 +272,6 @@ With intuitive data visualization and dynamic filtering capabilities, the **Mode
 
 **Related Resources**
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - about other Platform admin features.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - about tracking activities and events in your account.
 * [Monitoring: Tools Analytics Dashboard](../analytics/tools-analytics-dashboard.md){:target="_blank"} - about getting actionable insights into tools’ performance.

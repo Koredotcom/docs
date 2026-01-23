@@ -12,7 +12,7 @@ The **Users** feature simplifies account administration through centralized tool
 * **Status Tracking**: Monitor user statuses (active, inactive, locked) from a centralized dashboard.
 * **Account Unlocking**: Quickly unlock user accounts that have been locked due to failed login attempts.
 * **User Search**: Easily find specific users using the search functionality.
-* **User Deletion**: Remove individual or multiple users from your Agent Platform account as needed.
+* **User Deletion**: Remove individual or multiple users from your Platform account as needed.
 
 **Best Practices**
 
@@ -240,6 +240,6 @@ The role is updated for the selected users.
 
 **Related Resources**
 
-* [Settings Console](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"} about other Platform admin features.
 * [Role Management](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
 * [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
