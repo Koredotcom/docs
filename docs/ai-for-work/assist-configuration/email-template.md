@@ -19,7 +19,7 @@ To access Email Templates:
 2. In the left sidebar, expand **Email Templates.**
 3. Select the template category you want to configure:
     * **Admin Templates** - for account-level administrative invitations.
-    * Application-specific templates (e.g., **AI for Work**, **Business Procurement**, **Business Agenda**) - for application member invitations.
+    * Application-specific templates - for application member invitations.
 
 ### Admin Templates
 
