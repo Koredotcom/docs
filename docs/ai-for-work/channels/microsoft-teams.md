@@ -1,10 +1,10 @@
 # Microsoft Teams and Copilot Integration - Overview
 
-AI for Work integrates seamlessly with Microsoft Teams, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by allowing users to perform work-related tasks, receive proactive notifications, and utilize Copilot features all within Microsoft Teams. The following guide provides step-by-step instructions for deploying AI for Work as a custom Microsoft Teams application, covering Azure Bot Service setup, authentication, configuration, and organizational rollout.
+AI for Work integrates seamlessly with Microsoft Teams, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by allowing users to perform work-related tasks, receive proactive notifications, and utilize Copilot features all within Microsoft Teams. The following guide provides step-by-step instructions for deploying AI for Work as a custom Microsoft Teams application, covering Microsoft Azure Bot Service setup, authentication, configuration, and organizational rollout.
 
 ## When to Use Microsoft Teams Integration
 
-The Microsoft Teams integration is designed for organizations seeking to embed AI capabilities directly into their existing collaboration workflows without requiring users to switch between applications or learn new interfaces. This integration is particularly valuable for teams that rely heavily on Microsoft Teams as their primary communication and collaboration platform.
+The Microsoft Teams integration is designed for organizations seeking to embed AI capabilities directly into their existing collaboration workflows without requiring users to switch between applications or learn new interfaces. This integration is particularly valuable for teams that rely on Microsoft Teams as their primary communication and collaboration platform.
 
 ### Ideal Implementation Scenarios
 
@@ -34,7 +34,7 @@ The Microsoft Teams integration is designed for organizations seeking to embed A
 
 ## Architecture Overview
 
-The integration between AI for Work and Microsoft Teams follows a bot-based architecture using Azure Bot Service as the communication bridge:
+The integration between the Platform and Teams follows a bot-based architecture using Azure Bot Service as the communication bridge:
 
 `[AI for Work Platform] ↔ [Azure Bot Service] ↔ [Microsoft  Teams]`
 
@@ -57,9 +57,9 @@ Before beginning the deployment process, ensure you have:
 
 The integration process follows these sequential steps:
 
-1. **Webhook Configuration** – Copy the Webhook URL from AI for Work.
+1. **Webhook Configuration** – Copy the Webhook URL from the Platform.
 2. **Azure Bot Creation** – Create and configure the Azure Bot Service.
-3. **Credential Exchange** – Securely transfer credentials between AI for Work and Azure.
+3. **Credential Exchange** – Securely transfer credentials between the Platform and Azure.
 4. **Manifest Generation** – Generate the Microsoft Team application manifest file.
 5. **Microsoft Team Deployment** – Upload manifest to Microsoft Team Admin Center.
 6. **User Approval** – Configure user access and permissions.
