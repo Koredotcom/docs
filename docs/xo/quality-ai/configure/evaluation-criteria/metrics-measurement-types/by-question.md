@@ -183,14 +183,14 @@ Uses Generative AI to automatically evaluate agent responses by understanding na
 1. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.   
 <img src="../images/by-question-agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:70%;">
 
-!!! Note
+    !!! Note
             
-    * Before assessing GenAI-based adherence responses, ensure that the [Supported models](../../../../generative-ai-tools/genai-features-qualityai.md){:target="_blank"} and [GenAI features](../../../../generative-ai-tools/genai-features.md){:target="_blank"}, including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. 
+        * Before assessing GenAI-based adherence responses, ensure that the [Supported models](../../../../generative-ai-tools/genai-features-qualityai.md){:target="_blank"} and [GenAI features](../../../../generative-ai-tools/genai-features.md){:target="_blank"}, including GenAI-based agent answer adherence and customer trigger detection, are enabled for the respective products in the GenAI features section. 
                 
-    * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.
+        * No example utterances or similarity thresholds are required; LLMs evaluate adherence contextually using zero-shot prompts.
                 
-    * For effective prompts and LLM-based adherence detection, refer to
-    [AutoQA - Prompting Guide](autoqa-prompting-guide.md){:target="_blank"}.
+        * For effective prompts and LLM-based adherence detection, refer to
+        [AutoQA - Prompting Guide](autoqa-prompting-guide.md){:target="_blank"}.
 
 #### Deterministic Adherence
 
@@ -223,9 +223,9 @@ Evaluates agent responses based on semantic similarity to predefined sample utte
 1. Set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it's critical for the user to follow the adherence depending on the use cases.     
     <img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
         
-!!! Note
+    !!! Note
 
-    The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations.
+        The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations.
 
 1. Choose a **Count Type** based on the selected **Adherence Type**.
 
