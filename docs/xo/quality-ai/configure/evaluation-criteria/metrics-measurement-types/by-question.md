@@ -197,7 +197,7 @@ Uses Generative AI to automatically evaluate agent responses by understanding na
 
 Evaluates agent responses based on semantic similarity to predefined reference utterances or answers.
 
-### Agent Answer and Similarity Configuration
+#### Similarity Configuration
 
 1. Select **Deterministic Adherence** to assess responses based on similarity to reference answers. Encoder-based mode lets you define expected replies.                
 
