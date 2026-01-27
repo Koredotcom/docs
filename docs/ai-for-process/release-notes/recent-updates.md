@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release includes new AI-powered browser automation and general improvements across the platform. The key update is summarized below.
+This release includes a new AI-powered browser automation feature and general improvements across the platform. The new feature is summarized below.
 
 **New AI-Powered Browser Automation**
 
