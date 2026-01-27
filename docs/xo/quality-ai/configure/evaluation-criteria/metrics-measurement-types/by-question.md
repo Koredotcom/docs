@@ -206,11 +206,6 @@ Evaluates agent responses based on semantic similarity to predefined reference u
 1. Set the **Similarity** percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold. For example, use a lower threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher threshold (for example, 100%) for compliance-critical statements (such as Policy, Privacy, or Disclaimer), ensuring agents follow adherence according to the use case.     
     <img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
         
-    !!! Note
-
-        The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations. 
-
-
 ## Count Type Configuration
 
 Choose a **Count Type** to configure key count types for the selected **Adherence Type**.
