@@ -105,7 +105,7 @@ To import an AI Agent, follow these steps:
     * **Agent AI Dashboards**: Here you can select the Agent coaching rules, Checklists, and their configurations.
 
     * On the confirmation dialog that opens, click **Backup** to download the existing agent configuration.  
-    <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;">
+    <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border: 1px solid gray; zoom:70%;" >
     
         !!! Note
 
@@ -122,13 +122,11 @@ To import an AI Agent, follow these steps:
  
 To import an AI Agent while creating it, follow these steps: 
 
-1. On the landing page, click **New App**. Select **Import App** from the popup menu.
+1. On the landing page, click **New App**. Select **Import App** from the popup menu.  
+<img src="../images/bm(7)-new.png" alt="New app button" title="New app button" style="border: 1px solid gray; zoom:70%;" >
 
-    <img src="../images/bm(7)-new.png" alt="New app button" title="New app button" style="border:1px solid gray; zoom:60;">
-
-2. The **Get Started** screen appears. Select **Automation AI** by clicking the **Try now** button on the tile.
-
-    <img src="../images/bm-import-automation-ai.png" alt="Import - Automation AI" title="Import - Automation AI" style="border:1px solid gray; zoom:60;">
+2. The **Get Started** screen appears. Select **Automation AI** by clicking the **Try now** button on the tile.  
+<img src="../images/bm-import-automation-ai.png" alt="Import - Automation AI" title="Import - Automation AI" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter an **App Name**. Optionally, set an app icon.
 4. You can choose one of the below import options:
@@ -203,7 +201,6 @@ To import an AI Agent while creating it, follow these steps:
    <td>Generative AI and LLM    
    </td>
    <td>
-   <br>
     – Keeps existing prompts, only adds new ones.
     <br>
     – Replaces all feature mappings, custom instructions, Guardrail, and DialogGPT.
@@ -511,8 +508,7 @@ When you export an agent, the following components get exported, depending on yo
    </td>
   </tr>
   <tr>
-   <td>Generative AI	  
- and LLM
+   <td>Generative AI and LLM
 </td>
    <td>
 <ul>
@@ -562,6 +558,8 @@ When you export an agent, the following components get exported, depending on yo
    </td>
   </tr>
 </table>
+
+
 
 ## Related Links
 

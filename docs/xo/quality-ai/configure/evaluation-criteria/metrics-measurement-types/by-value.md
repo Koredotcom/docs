@@ -361,9 +361,9 @@ Defines the conditions or rules for measuring adherence.
 
         **Not Applicable**: Indicates the metric is ignored or skipped if the value is not relevant for the conversation. For example, the customer only asked about the fixed deposit rate, but not about the loan rate. 
             
-            !!! Note
+        !!! Note
 
-                If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
+            If **Custom Script** is selected, the system applies the defined logic to validate all mentioned values and selects the most relevant one (for example, final or negotiated value).
 
 12. Click **Create** to save and apply the agent answer metric configuration.
 

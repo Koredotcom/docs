@@ -72,15 +72,7 @@ Steps to generate the Evaluation Form Summary Report:
 
 1. Select **Instant Run** to generate the report immediately.
 
-1. Select **Save** to confirm and activate the schedule.  
-<img src="../images/gen-start-date-and-timezone.png" alt="Save" title="Save" style="border: 1px solid gray; zoom:60%;">
-
-1. The saved report appears in the **Reports > My Reports** dashboard.  
-<img src="../images/sample-report.png" alt="My Reports" title="My Reports" style="border: 1px solid gray; zoom:100%;">
-
-1. Enable scheduling by switching on the **Schedule** toggle.
-
-1. Select **Bulk Run** to generate the report immediately.
+1. Select **Save** to activate the schedule.  
 
 ## Report Fields
 
