@@ -127,7 +127,7 @@ Dynamic Adherence evaluates agent performance based on specific triggers (contex
 
 Provides the following two options to select based on the trigger created by **Agent Utterance** or **Customer Utterance** for evaluation: 
 
-1. **Trigger**: Select and evaluate responses based on triggers created from agent or customer utterances.
+1. Choose a **Trigger** from agent or customer utterances to evaluate responses.
 
     * **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning. For example, customer says `I need a refund`.
         
@@ -140,12 +140,12 @@ Provides the following two options to select based on the trigger created by **A
 
 
 1. Choose a **Trigger Detection Method**.
+    
+    * **GenAI-Based Adherence**: Enter a descriptive prompt to define intent. This enables contextual detection of whether the agent’s response aligns with the intended goal, without relying on predefined samples. This uses LLMs to understand context and intent and don't require sample utterances or thresholds.
 
-   * **GenAI-Based Adherence**: Enter a descriptive prompt to define intent. This enables contextual detection of whether the agent’s response aligns with the intended goal, without relying on predefined samples. This uses LLMs to understand context and intent and don't require sample utterances or thresholds.
+    * **Deterministic Adherence**: This relies on predefined sample utterances and detects adherence based on semantic similarity. 
 
-   * **Deterministic Adherence**: This relies on predefined sample utterances and detects adherence based on semantic similarity. 
-
-   * **Utterance**: Enter sample training utterances to detect adherence and define similarity thresholds accordingly.      
+    * **Utterance**: Enter sample training utterances to detect adherence and define similarity thresholds accordingly.      
    <img src="../images/by-question-trigger-detection-method.png" alt="By Question Utterance" title="By Question Trigger Detection Utterance" style="border: 1px solid gray; zoom:70%;">
 
 ## Enablement of GenAI-Based Features (Pre-requisite)
@@ -203,23 +203,13 @@ Evaluates agent responses based on semantic similarity to predefined reference u
 
 1. Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations:
 
-1. Set the **Similarity** percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold. 
-
-For example, set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it's critical for the user to follow the adherence depending on the use cases.     
-<img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
+1. Set the **Similarity** percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold. For example, use a lower threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher threshold (for example, 100%) for compliance-critical statements (such as Policy, Privacy, or Disclaimer), ensuring agents follow adherence according to the use case.     
+    <img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
         
     !!! Note
 
-        The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations.
- 
+        The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations. 
 
-1. Add language-specific, prompt-based evaluation parameters.
-
-1. Find relevant answers by suggesting different ways to ask the same question. 
-
-1. Get the expected answers that match the meaning of your question, even though asked in different ways. Provides expected answers that match the meaning of your question, even when you phrase it in different ways.
-
-1. Delete unnecessary AI-suggested answers.
 
 ## Count Type Configuration
 
