@@ -175,13 +175,24 @@ You can enhance an agent's capabilities by creating a new tool or importing an e
 
 To add a new tool, click *New Tool* and choose the desired tool type - *Workflow Tool*, *Code Tool* or *MCP Tool*.
 
-For a *Workflow Tool*, enter the tool's *name* and *description*, then click *Create*. The tool will be added to your app. Next, go to the *Agent's Tools* page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool. [Learn More.](tools/configure-a-tool.md)
+For a **Workflow Tool**, enter the tool's *name* and *description*, then click *Create*. The tool will be added to your app. Next, go to the *Agent's Tools* page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool. [Learn More.](tools/configure-a-tool.md)
 
 ![Create App](images/addtool1.png "Agentic App Creation")
 
-To create a *Code tool*, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md){:target="_blank"} for details on creating a new code tool, along with an example. 
+To create a **Code tool**, click on Code Tool and configure the details of the tool. Refer [to this page](tools/create-a-code-tool.md){:target="_blank"} for details on creating a new code tool, along with an example. 
 
 Similarly, to add a new MCP server and use MCP Tool, click on MCP Server and provide the configuration details. [Learn More about MCP Server Configuration](tools/configure-mcp-server.md){:target="_blank"}.
+
+The Tools Assignment page provides a structured view of the available tools, showing their types, statuses, and the total number of tools in the app.
+
+**Key highlights**
+
+* Displays total count categorized under Workflow, Code, and MCP.
+* Displays the Workflow tool status as Draft or Deployed.
+* Provide empty-state CTAs: Import and New Tool for Workflow tools, New Tool for Code tools, New Tool and Connect to MCP Server for MCP tools.
+* MCP tools are grouped by their parent MCP server. Each server provides a search bar to help you find tools within it.
+
+![Tool Assignment page](images/mcptool.png "MCP tool")
 
 ### Import a Tool
 

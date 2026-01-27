@@ -33,7 +33,8 @@ The table below shows the permissions available within the XO Platform and their
 
 !!! Note "Permissions"
 
-    The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    * The Monitor Console permission is restricted to the Queues that the user is assigned to.
+    * The Transfer/Close Multiple Conversations permission is split into three permissions-Change Queue for Conversations, Assign Conversations, and Force Close Conversations for individual or multiple conversations-and their values inherit from the parent permission. Select these permissions as **Yes** or **No** based on your use case.
 
 ### Parent and Child Permissions
 
@@ -331,7 +332,7 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
+  <td><strong>Agent Desktop Console</strong><br>
   Access and use the agent desktop console
   </td>
 </tr>
@@ -413,6 +414,11 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
   <td><strong>Widget Management</strong><br>
   Create and manage custom widgets
@@ -461,8 +467,13 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
+  <td><strong>Monitor Console</strong><br>
   Access to the monitor tab for live interactions
   </td>
 <tr>
@@ -513,8 +524,13 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Edit Disposition from Dashboard</strong><br>
+  <td><strong>Edit Disposition from Dashboard -> Interactions</strong><br>
   Access to edit disposition code after the conversation is completed
   </td>
   <td>Yes</td>
@@ -566,6 +582,11 @@ Allow user roles to be modified
   Manage queue priority to control routing logic
   </td>
   <td>Yes</td>
+</tr>
+<tr>
+  <td>
+  </td>
+  <td></td>
 </tr>
    <td colspan="2" ><strong>System</strong>
    </td>
@@ -728,7 +749,7 @@ Access to agent dashboard
 </tr>
 </table>
 
-App Owners have exclusive access to several high-level administrative features within the application. The following permissions are implicitly granted to App Owners and are not available to any other user roles:
+App Owners have exclusive access to several high-level administrative features within the application. The following permissions are implicitly granted to App Owners and aren't available to any other user roles:
 
 * **Create New User Role**: Only App Owners can access the *Create New User Role* menu. This feature is completely hidden from all other user roles. 
 
@@ -999,10 +1020,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -1082,7 +1102,11 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
-<tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
   <td><strong>Widget Management</strong><br>
   Create and manage custom widgets
   </td>
@@ -1130,11 +1154,15 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -1184,8 +1212,13 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Edit Disposition from Dashboard</strong><br>
+  <td><strong>Edit Disposition from Dashboard -> Interactions</strong><br>
   Access to edit disposition code after the conversation is completed
   </td>
   <td>Yes</td>
@@ -1639,10 +1672,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -1722,6 +1754,11 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
   <td><strong>Widget Management</strong><br>
   Create and manage custom widgets
@@ -1770,11 +1807,15 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -1824,8 +1865,13 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Edit Disposition from Dashboard</strong><br>
+  <td><strong>Edit Disposition from Dashboard -> Interactions</strong><br>
   Access to edit disposition code after the conversation is completed
   </td>
   <td>Yes</td>
@@ -2291,10 +2337,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -2374,6 +2419,11 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
   <td><strong>Widget Management</strong><br>
   Create and manage custom widgets
@@ -2422,11 +2472,15 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -2476,8 +2530,13 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Edit Disposition from Dashboard</strong><br>
+  <td><strong>Edit Disposition from Dashboard -> Interactions</strong><br>
   Access to edit disposition code after the conversation is completed
   </td>
   <td>Yes</td>
@@ -2947,10 +3006,9 @@ Allow user roles to be modified
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
-  <td>Yes</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -3030,6 +3088,11 @@ Allow user roles to be modified
   </td>
   <td>Yes</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
   <td><strong>Widget Management</strong><br>
   Create and manage custom widgets
@@ -3078,11 +3141,15 @@ Allow user roles to be modified
   </td>
   <td>No</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>No</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -3132,8 +3199,13 @@ Allow user roles to be modified
   </td>
   <td>No</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Edit Disposition from Dashboard</strong><br>
+  <td><strong>Edit Disposition from Dashboard -> Interactions</strong><br>
   Access to edit disposition code after the conversation is completed
   </td>
   <td>No</td>
@@ -3718,12 +3790,9 @@ No</td>
    </td>
 </tr>
 <tr>
-  <td><strong>Agent Desktop Console</strong><br>
+  <td colspan="2" ><strong>Agent Desktop Console (Parent)</strong><br>
   Access and use the agent desktop console
   </td>
- <td>Yes
-   <br> 
-No</td>
 </tr>
 <tr>
   <td><strong>Internal Chat</strong><br>
@@ -3829,6 +3898,11 @@ No</td>
    <br> 
 No</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
   <td><strong>Widget Management</strong><br>
   Create and manage custom widgets
@@ -3900,13 +3974,15 @@ No</td>
    <br> 
 No</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Monitor Console</strong><br>
+  <td colspan="2" ><strong>Monitor Console (Parent)</strong><br>
   Access to the monitor tab for live interactions
   </td>
-  <td>Yes
-   <br> 
-No</td>
 </tr>
 <tr>
   <td><strong>Join Conversation</strong><br>
@@ -3971,8 +4047,13 @@ No</td>
    <br> 
 No</td>
 </tr>
+<tr style="  height: 40px;">
+  <td>
+  </td>
+  <td></td>
+</tr>
 <tr>
-  <td><strong>Edit Disposition from Dashboard</strong><br>
+  <td><strong>Edit Disposition from Dashboard -> Interactions</strong><br>
   Access to edit disposition code after the conversation is completed
   </td>
   <td>Yes

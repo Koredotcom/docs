@@ -17,7 +17,6 @@ The following table displays the features and the supported models.
 | Agent Response Rephrasing | ❌ | ❌ | ❌ | ✅ |
 | Conversation Summary | ❌ | GPT-3.5 | ✅ | ❌ |
 |Disposition Prediction for Agent Wrap-Up|GPT-4o and GPT-4o mini|GPT-4o and GPT-4o mini|✅ | ❌ |
-| Post conversation Sentiment analysis | GPT-4o | GPT-4o | ✅ | ❌ |
 | Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ❌ |
 
 
@@ -44,9 +43,7 @@ Generate LLM-based summaries of conversations that have transpired up to that mo
 
 Use an LLM to analyze the full conversation transcript and disposition metadata, then automatically recommend the most appropriate wrap-up code to the agent at the end of a customer conversation. Agents can accept or override the recommendation, which improves accuracy and reduces wrap-up time. [Learn more](../console/interacting-with-customers.md#intelligent-disposition-code-suggestions).
 
-### Post conversation Sentiment analysis
 
-Generate post-interaction sentiment and emotion moment insights for agent conversations from Quality AI using LLMs.
 
 ### Sentiment Analysis
 
