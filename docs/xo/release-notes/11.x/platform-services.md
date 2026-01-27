@@ -24,7 +24,7 @@ The email channel now supports adding To, CC, and BCC recipients mid-conversatio
 
 **Email Channel Session Configuration and Analytics Updates**
 
-Changes to channel-based and thread-based session configurations (enable or disable) are now captured in change logs for improved audit tracking. Email Channel analytics updates are reflected in Generative AI Usage Logs and across public APIs, including Conversation History, Conversation History (Lightweight), and Get Analytics.
+Changes to channel-based and thread-based session configurations (enable or disable) are now captured in change logs for improved audit tracking. Email Channel analytics updates are reflected in Generative AI Usage Logs and Get Analytics API.
 
 **New Channel Integration: Microsoft Copilot**
 

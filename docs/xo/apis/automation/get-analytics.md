@@ -91,33 +91,17 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'content-type: application/json' \
 --data-raw '{
-    "type": "unhandledutterance",
+    "type": "successintent",
     "filters": {
-        "from": "2022-09-11T17:25:09.698Z",
-        "to": "2022-09-25T17:25:09.698Z",
-
-
-
-
-        "channel": [
-            "rtm"
-        ],
-        "isAmbiguous": false,
-        "isDeveloper": false,
-        "trained": false,
-        "userId": [
-            "u-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx"
-        ]
-
-
-
-
+        "from": "2025-12-04T18:30:00.000Z",
+        "to": "2025-12-18T13:50:01.557Z",
+        "channelUIds": ["kstream001@gmail.com"],
+        "useChannelUIdPattern": true
     },
-    "sort":
-        { "order": "asc",
-          "by": "nodeName" },
-
-
+    "sort": {
+        "order": "desc",
+        "by": "timestamp"
+    },
     "limit": 50
 }'
 ```
@@ -191,14 +175,6 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
    <td>String
    </td>   
    <td>The end timestamp for the data retrieval.
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
    </td>
   </tr>
   <tr>
