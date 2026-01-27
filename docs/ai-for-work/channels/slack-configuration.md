@@ -1,6 +1,6 @@
 # Slack Integration - Configuration
 
-This document provides detailed step-by-step instructions for implementing AI for Work integration with Slack. Follow these steps sequentially to ensure proper deployment and functionality.
+This document provides detailed step-by-step instructions to integrate AI for Work platform with Slack. Follow these steps sequentially to ensure proper deployment and functionality.
 
 
 ## Step 1: Configure App Display Settings
@@ -54,7 +54,7 @@ Use the generated manifest to create your Slack application.
 
 **Paste Manifest**
 
-1. In the manifest input field, paste the manifest code you copied from AI for Work.
+1. In the manifest input field, paste the manifest code you copied from the Platform.
 2. Click **Next** to proceed.
 3. Review the app configuration and permissions that appear on the screen.
 4. Click **Create** to finalize app creation.
@@ -89,12 +89,12 @@ Copy the app credentials from Slack Developer Portal and provide them to the pla
 
 **Authorization Process**
 
-When you click **Authorize**, Slack displays a permission request page asking you to authorize AI for Work to access your workspace.
+When you click **Authorize**, Slack displays a permission request page asking you to authorize the Platform to access your workspace.
 
 1. Review the requested permissions.
 2. Click **Allow** to authorize the connection.
 
-Upon successful authorization, you receive a confirmation message, and the system immediately deploys the app to your Slack workspace. The app becomes visible to all users in the workspace who have onboarded to AI for Work.
+Upon successful authorization, you receive a confirmation message, and the system immediately deploys the app to your Slack workspace. The app becomes visible to all users in the workspace who have onboarded to the Platform.
 
 ## Step 5: Customize Welcome Experience
 
@@ -112,7 +112,7 @@ Configure the introduction message and sample prompts that users see when they f
 **Configure Sample Prompts**: Add up to four sample prompts that users can click to quickly start a conversation. For each prompt, configure:
 
 * **Display Message**. The text you show to users in Slack (what they see as the prompt button).
-* **Actual Query**. The complete query you send to AI for Work when users click the prompt.
+* **Actual Query**. The complete query you send to the Platform when users click the prompt.
 
 **Save and Update**
 
@@ -144,7 +144,7 @@ Only users who have onboarded can successfully interact with the Slack app. Befo
 2. Successfully onboard users with appropriate access permissions.
 3. Confirm users exist in both the platform and the target Slack workspace.
 
-Users who are part of the Slack workspace but haven't onboarded to the platform will see the app in Slack. However, when they attempt to send a message, they receive the following error message stating that they dont have access to AI for Work.
+Users who are part of the Slack workspace but haven't onboarded to the platform will see the app in Slack. However, when they attempt to send a message, they receive the following error message stating that they dont have access to the Platform.
 
 
 ## Current Limitations 
@@ -160,4 +160,4 @@ Users who are part of the Slack workspace but haven't onboarded to the platform 
 * Adding the app to channels isn't currently functional.
 * Mentions in public or private channels wont trigger responses.
 
-This integration enables seamless access to AI for Work capabilities within Slack, providing users with powerful AI assistance without leaving their collaboration environment. The app-based architecture ensures secure communication while maintaining compliance with organizational security policies.
+This integration enables seamless access to the Platform capabilities within Slack, providing users with powerful AI assistance without leaving their collaboration environment. The app-based architecture ensures secure communication while maintaining compliance with organizational security policies.
