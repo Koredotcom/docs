@@ -604,6 +604,7 @@ nav:
         - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
         - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
         - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md
+        - Salesforce Email-to-Case: agentai/integration/salesforce-email-to-case/agentai-integration-with-salesforce-email-to-case.md
       - ServiceNow:
         - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md 
       - FIVE9:
