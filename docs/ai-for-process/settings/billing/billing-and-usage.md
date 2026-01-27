@@ -25,6 +25,7 @@ Click the "*three-dots*" icon to view and select from the following options:
 * **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
 * **OCR**: Displays OCR model deployments and their credit consumption, helping you track document-processing usage.
 * **Browser Automation**: Shows the credits consumption and usage trend for browser automation experiment pod deployments.
+    
     <img src="../images/usage-expanded-view.png" alt="Usage expanded list" title="Usage expanded list" style="border: 1px solid gray; zoom:75%;">
 
 ## Best Practices
