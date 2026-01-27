@@ -53,6 +53,8 @@ plugins:
         'ai-agents/agentic-apps/app-settings.md': 'ai-agents/agentic-apps/settings/app-configurations.md'
         'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
         'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
+        'settings/workspaces/workspace-mgmt.md': 'settings/workspaces/workspace-management.md'
+        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'                
 extra:
   version:
     provider: mike
