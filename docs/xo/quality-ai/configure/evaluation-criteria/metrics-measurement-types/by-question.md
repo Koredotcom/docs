@@ -86,29 +86,29 @@ The following are the key trigger components that you can configure:
 
 Static Adherence measures whether agents say the required phrase, regardless of what triggers the conversation. It applies to all calls, without any condition or contextual trigger.
 
-1. Use this adherence when you need a consistent, universal check (for example, mandatory greeting scripts, regulatory disclaimers).
+* Use this adherence when you need a consistent, universal check (for example, mandatory greeting scripts, regulatory disclaimers).
 
-1. Define acceptable utterances for a queue.
+* Define acceptable utterances for a queue.
 
-1. Set a similarity threshold to evaluate whether the agent’s actual response matches the pre‑defined acceptable utterance.
+* Set a similarity threshold to evaluate whether the agent’s actual response matches the pre‑defined acceptable utterance.
   
-1. Configure at least one agent utterance template for this adherence type.
+* Configure at least one agent utterance template for this adherence type.
 
-This option requires no triggers or contextual conditions and is ideal for fixed, non-situational compliance items
+* This requires no triggers or contextual conditions and is ideal for fixed, non-situational compliance items
 
 ### Dynamic Adherence 
 
 Dynamic Adherence evaluates agent performance based on specific triggers (context-sensitive method) instead of reviewing every interaction. It assesses agent behavior when the configured conditions occur.
 
-1. This checks adherence only when it detects a configured trigger, such as an agent or customer utterance.
+* This checks adherence only when it detects a configured trigger, such as an agent or customer utterance.
 
-1. Define at least one trigger (either customer or agent utterances) and one acceptable agent response that activate the adherence check.
+* Define at least one trigger (either customer or agent utterances) and one acceptable agent response that activate the adherence check.
 
-1. Evaluates agent behavior only in the context of the detected trigger. 
+* Evaluates agent behavior only in the context of the detected trigger. 
 
-1. Specify how well the agent’s response must match the predefined response. 
+* Specify how well the agent’s response must match the predefined response. 
 
-1. Adjust adherence similarity based on criticality:
+* Adjust adherence similarity based on criticality:
 
     * **Lower Threshold**: Close to 60% (Yellow) for casual interactions, greetings.
 
@@ -119,24 +119,25 @@ Dynamic Adherence evaluates agent performance based on specific triggers (contex
 
             For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
 
-1. Choose utterance source for **Trigger** (who initiates the trigger).
+* Choose an utterance source for **Trigger** (who initiates the trigger).
 
-1. When the system detects a trigger, it evaluates whether the agent responded with one of the predefined acceptable utterances.
+* When the system detects a trigger, it evaluates whether the agent responded with one of the predefined acceptable utterances.
 
 ## Trigger Configuration
 
-Provides the following two options to select based on the trigger created by **Agent Utterance** or **Customer Utterance** for evaluation. 
+Provides the following two options to select based on the trigger created by **Agent Utterance** or **Customer Utterance** for evaluation: 
 
 1. **Trigger**: Select and evaluate responses based on triggers created from agent or customer utterances.
 
-    * Add multiple trigger utterances for conditional checks (for example, AND/OR conditions) to define the trigger condition or refine activation timing.
+    * **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning. For example, customer says `I need a refund`.
         
-    * You can define a trigger for either a customer or agent utterance and configure the corresponding responses for that scenario.      
-    <img src="../images/by-question-trigger.png" alt="By Question Trigger" title="By Question Trigger" style="border: 1px solid gray; zoom:70%;">
+    * **Agent Utterance**: Configure the Agent Utterance for triggers initiated by the agent. Enter the utterances using generative AI Assistants’ suggestions that have similar utterances with the same meaning. You can add or delete multiple utterances for the Customer and the Agent. For example, agent says `let me transfer you to support`.
 
-1. **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning. For example, customer says “I need a refund”.
+        * You can add multiple trigger utterances for conditional checks (for example, AND/OR conditions) to define the trigger condition or refine activation timing.
         
-1. **Agent Utterance**: Configure the Agent Utterance for triggers initiated by the agent. Enter the utterances using generative AI Assistants’ suggestions that have similar utterances with the same meaning. You can add or delete multiple utterances for the Customer and the Agent. For example, agent says `let me transfer you to support`.
+        * You can define a trigger for either a customer or agent utterance and configure the corresponding responses for that scenario.      
+        <img src="../images/by-question-trigger.png" alt="By Question Trigger" title="By Question Trigger" style="border: 1px solid gray; zoom:70%;">
+
 
 1. Choose a **Trigger Detection Method**.
 
@@ -196,13 +197,21 @@ Uses Generative AI to automatically evaluate agent responses by understanding na
 
 Evaluates agent responses based on semantic similarity to predefined reference utterances or answers.
 
-## Agent Answer Configuration
+## Agent Answer and Similarity Configuration
 
 1. Select **Deterministic Adherence** to assess responses based on similarity to reference answers. Encoder-based mode lets you define expected replies.                
 
 1. Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations:
 
-1. Set a similarity threshold to determine how must the user input must match the expected utterances to return agent answers. 
+1. Set the **Similarity** percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold. 
+
+For example, set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it's critical for the user to follow the adherence depending on the use cases.     
+<img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
+        
+    !!! Note
+
+        The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations.
+ 
 
 1. Add language-specific, prompt-based evaluation parameters.
 
@@ -212,33 +221,16 @@ Evaluates agent responses based on semantic similarity to predefined reference u
 
 1. Delete unnecessary AI-suggested answers.
 
-1. Set the **Similarity** percentage for the metric based on the defined use case and attribute. 
-
-### Similarity Thresholds
-
-Evaluates agent responses based on semantic similarity to predefined sample utterances or answers:
-
-1. Set the Similarity percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold.
-
-1. Set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it's critical for the user to follow the adherence depending on the use cases.     
-    <img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
-        
-    !!! Note
-
-        The **Similarity** threshold option is available only when **Deterministic Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations.
-
-1. Choose a **Count Type** based on the selected **Adherence Type**.
-
 ## Count Type Configuration
 
-The following are the key count types that you can configure:
+Choose a **Count Type** to configure key count types for the selected **Adherence Type**.
 
 * **Entire Conversation**: Full interaction evaluation
 * **Time Bound**: Specific time ranges or message counts
 
 ### Entire Conversation
 
-Evaluates adherence throughout the complete interaction. This lets you to check for adherence at different points of conversation. It doesn't matter where the agent wants to check adherence throughout the conversation.   
+Evaluates adherence throughout the complete interaction. This lets you check for adherence at different points of conversation. It doesn't matter where the agent wants to check adherence throughout the conversation.   
 <img src="../images/entire-conversation.png" alt="Entire Conversation" title="Entire Conversation" style="border: 1px solid gray; zoom:70%;">
 
 ### Time Bound
