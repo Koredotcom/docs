@@ -17,10 +17,15 @@ The Usage page displays the following tabs:
     * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models, guardrails, OCR models, and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
     * **Usage trend**: Visual representation of workflow runs, model credits, custom scripts, and OCR credits consumption over time.
 * **Workflows**: Shows all workflow activities and their operational status.
+
+Click the "*three-dots*" icon to view and select from the following options:
+
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
 * **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
 * **OCR**: Displays OCR model deployments and their credit consumption, helping you track document-processing usage.
+* **Browser Automation**: Shows the credits consumption and usage trend for browser automation experiment pod deployments.
+    <img src="../images/usage-expanded-view.png" alt="Usage expanded list" title="Usage expanded list" style="border: 1px solid gray; zoom:75%;">
 
 ## Best Practices
 
@@ -43,7 +48,7 @@ The **Overview** tab summarizes expenses and usage patterns across your workflow
 
 ## Workflows Usage
 
-The Workflows tab displays a comprehensive list of workflows associated with the account. It includes only those workflows that have been deployed at least once; it does not include ‘In development’ workflows.  
+The **Workflows** tab displays a comprehensive list of workflows associated with the account. It includes only those workflows that have been deployed at least once; it does not include ‘In development’ workflows.  
 
 The following usage information is displayed on the tab:
 
@@ -55,7 +60,7 @@ The following usage information is displayed on the tab:
 * **Last active on**: The date when the workflow was last active.
 * **Status**: The workflow's status - Deployed, Undeployed, or Deleted.
 
- <img src="../images/workflow_usage.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/workflow_usage.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
 
 
 ## Models Usage
@@ -188,7 +193,7 @@ Billing and credit calculation emails for custom scripts notify users about cred
 
 ## OCR Usage
 
-The OCR tab provides a unified view of all OCR-related credit usage across your workspace, allowing you to:
+The **OCR** tab provides a unified view of all OCR-related credit usage across your workspace, allowing you to:
 
 * Review a list of OCR model deployments
 * See how many credits each deployment consumed
