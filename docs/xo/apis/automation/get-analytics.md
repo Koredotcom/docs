@@ -95,8 +95,7 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
     "filters": {
         "from": "2025-12-04T18:30:00.000Z",
         "to": "2025-12-18T13:50:01.557Z",
-        "channelUIds": ["kstream001@gmail.com"],
-        "useChannelUIdPattern": true
+        "channelUIds": ["stream@example.com"],
     },
     "sort": {
         "order": "desc",
@@ -255,6 +254,8 @@ Accepted channels are:
    </td> 
    <td>The end-user’s identity provided by the channel.
    </td>
+  </tr>
+    <tr>
   </tr>
   <tr>
    <td>filters.isAmbiguous
