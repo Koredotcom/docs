@@ -16,10 +16,10 @@ The Usage page displays the following tabs:
     * **Workflow runs**: Shows current workflow run usage against your total allocation.
     * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models, guardrails, OCR models, and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
     * **Usage trend**: Visual representation of workflow runs, model credits, custom scripts, and OCR credits consumption over time.
-* **Workflows**: Shows all workflow activities and their operational status.
 
 Click the "*three-dots*" icon to view and select from the following options:
 
+* **Workflows**: Shows all workflow activities and their operational status.
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
 * **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
