@@ -92,9 +92,9 @@ Static Adherence measures whether agents say the required phrase, regardless of 
 
 1. Set a similarity threshold to evaluate whether the agent’s actual response matches the pre‑defined acceptable utterance.
 
-    * No triggers or contextual conditions needed, which is ideal for fixed and non‑situational compliance items.
-
 1. Configure at least one agent utterance template for this adherence type.
+
+No triggers or contextual conditions needed, which is ideal for fixed and non‑situational compliance items.
 
 ### Dynamic Adherence 
 
