@@ -2,7 +2,7 @@
 
 AI for Work integrates seamlessly with Slack, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by enabling users to perform work-related tasks, query enterprise knowledge sources, and interact with AI agents all within Slack. 
 
-The following guide provides step-by-step instructions for deploying AI for Work as a custom Slack application, covering app manifest generation, credential configuration, and organizational rollout.
+The following guide provides step-by-step instructions to deploy the Platform as a custom Slack application, covering app manifest generation, credential configuration, and organizational rollout.
 
 <img src="../images/slack-config.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
@@ -23,7 +23,7 @@ Before you begin the deployment process, ensure you have:
 
 ## Architecture Overview
 
-The integration between AI for Work and Slack follows an app-based architecture using Slack's Developer Portal and OAuth authentication.
+The integration between the Platform and Slack follows an app-based architecture using Slack's Developer Portal and OAuth authentication.
 
 **[AI for Work Platform]** ↔ **[Slack App Configuration]** ↔ **[Slack Workspace]**
 
@@ -31,10 +31,8 @@ The integration between AI for Work and Slack follows an app-based architecture 
 
 The deployment process is a linear sequence designed for security and ease of setup:
 
-1. **Configuration and Creation:** Administrators start by customizing the app details in the AI for Work Admin Console to generate a specific App Manifest. This manifest is then used to create the application within the Slack Developer Portal.
+1. **Configuration and Creation:** Administrators start by customizing the app details in the the Platform's Admin Console to generate a specific App Manifest. This manifest is then used to create the application within the Slack Developer Portal.
 2. **Connection and Security:** Once created, a Credential Exchange is performed to link the platforms, followed by an Authorization step to grant the necessary permissions.
 3. **Rollout:** Finally, administrators define the Welcome Experience (introductory messages and prompts) before granting User Access to onboarded employees.
 
 For detailed implementation instructions, including step-by-step configuration procedures, credential setup, and deployment guidance, refer to the [Slack Integration Configuration](../channels/slack-configuration.md).
-
-

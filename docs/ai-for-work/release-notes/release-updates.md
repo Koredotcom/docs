@@ -1,6 +1,6 @@
 # AI for Work Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
+This document provides information on the feature updates and enhancements introduced in the recent release of the Platform.
 
 ## v1.13.0 Dec 16, 2025
 
