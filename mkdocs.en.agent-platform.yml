@@ -325,7 +325,7 @@ nav:
       - Test Guardrail: guardrails/test-guardrail.md
   - Administration: 
     - Settings Overview: administration/overview.md
-    - Workspaces Overview: settings/workspaces/workspace-mgmt.md
+    - Workspaces Overview: settings/workspaces/workspace-management.md
     - User Management:
       - User Management Overview: settings/user-management/overview.md
       - Manage Account Users: settings/user-management/users.md
@@ -350,7 +350,7 @@ nav:
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md
-      - Key Management: settings/security-and-control/encryption-key-mgmt.md
+      - Key Management: settings/security-and-control/encryption-key-management.md
       - API Scopes: settings/security-and-control/api-scopes.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
