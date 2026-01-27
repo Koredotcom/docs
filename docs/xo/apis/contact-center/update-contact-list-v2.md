@@ -29,6 +29,7 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 --header 'Content-Type: application/json' \
 --data '{
     "name": "Renewal Due - May/June 2025"
+    "description": "This list contains customers with services expiring in July 2025. It includes contact details and subscription info to help agents provide tailored support during live calls."
 }'
 ```
 
@@ -46,7 +47,6 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 | :---- | :---- | :---- |
 | `name` | Updated name of the contact list. Maximum 48 characters. Used for identification and UI display. | string, optional |
 | `description` | Updated description of the contact list. Maximum 256 characters. Should explain the purpose or content of the list. | string, optional |
-| `allowDuplicates` | Whether to allow duplicate contact entries in the list. If omitted, the previous setting remains unchanged. | boolean, optional |
 
 ## Sample Response
 
@@ -81,6 +81,8 @@ curl --location --request PUT 'https://{{host}}/campaign/api/v2/public/{{streamI
 | `data.contactListId` | Unique identifier of the contact list. | string |
 | `data.body` | Object with updated metadata of the contact list. | object |
 | `data.body.name` | Name of the contact list. | string |
+| `data.body.description` | Description of the contact list. | string |
+| `data.body.scope` | Scope of the contact list. | array |
 | `data.body.orgId` | Unique identifier of the organization. | string |
 | `data.body.iId` | Instance ID associated with the request context. | string |
 | `data.body.listType` | Type of the list (for example, `call`, `sms`). | string |
