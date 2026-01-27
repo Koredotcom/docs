@@ -6,9 +6,9 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release includes new features, enhancements, and general improvements across the platform. The key updates are listed below.
+This release includes new AI-powered browser automation and general improvements across the platform. The key update is summarized below.
 
-**New AI-Powered Browser Automation in AI for Process**
+**New AI-Powered Browser Automation**
 
 AI for Process now supports human-like interactions with websites, converting plain-language goals into automated tasks such as clicks, typing, navigation, and validations. The platform securely handles authentication, dynamic content, and errors, enabling end-to-end process automation across web-only and legacy systems.
 
