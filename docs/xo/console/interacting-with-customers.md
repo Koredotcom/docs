@@ -262,7 +262,7 @@ The Consult option becomes available when you select a queue.
 
 What Happens After You Start the Consult
 
-* If you do not select an agent, the system routes the consult call to an available agent in the selected queue based on skills, availability, and capacity.  
+* If you don't select an agent, the system routes the consult call to an available agent in the selected queue based on skills, availability, and capacity.  
 * If you select an agent, the system connects the consult call directly to the selected agent, following the existing consult behavior.
 
 #### Conference Call
@@ -533,7 +533,7 @@ Steps to initiate co-browse session:
 
 * Native browser and OS-level UI elements aren't captured or controlled, including dialogs, pickers, permission prompts, browser menus, extensions, and system notifications.
 
-* Other browser tabs, windows, desktop applications, and full-screen or OS-level content are out of scope.
+* Other browser tabs, windows, desktop applications, and full-screen or OS-level content aren't available.
 
 * Agent interactions support basic DOM actions, such as clicking, hovering, scrolling, and entering data in HTML form elements.
 
