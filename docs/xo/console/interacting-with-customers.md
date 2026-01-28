@@ -467,8 +467,12 @@ During a session, the agent can access the following toolbar options:
 * **Request Control**: Ask permission to control the customer’s screen. If granted, the agent can navigate or type on behalf of the customer.  
     <img src="../images/request-control.png" alt="Request Control" title="Request Control" style="border: 1px solid gray; zoom:70%;">
 
-* **Reconnect**: Re-establish the session if connectivity issues occur.
+* **Reconnect**: Re-establish the session if connectivity issues occur.  
     <img src="../images/agent-reconnect.png" alt="Reconnect" title="Reconnect" style="border: 1px solid gray; zoom:70%;">
+
+    !!! note 
+     
+        The Reconnect option appears dynamically on the Console when used with the latest external SDK version [v11.21.1](https://github.com/Koredotcom/web-kore-sdk/blob/v3/11.2.1/docs/plugins/proactive-web-campaign/README.md). If an earlier SDK version is in use, this option does not display in the Console.
 
 * **Release Control**: Release control after completing an action.  
     <img src="../images/release-control.png" alt="Release Control" title="Release Control" style="border: 1px solid gray; zoom:70%;">
