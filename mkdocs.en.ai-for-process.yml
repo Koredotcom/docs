@@ -41,7 +41,10 @@ theme:
 plugins:
   - search:
       lang: tr
-  - glightbox   
+  - glightbox
+  - redirects:
+      redirect_maps:
+        'settings/workspaces/workspace-mgmt.md': 'settings/workspaces/workspace-management.md'   
 extra:
   version:
     provider: mike
@@ -217,7 +220,7 @@ nav:
     - More Options on Prompt Studio: prompts/options-prompt-canvas.md
   - Administration: 
     - About Settings: settings/overview.md
-    - About Workspaces: settings/workspaces/workspace-mgmt.md
+    - About Workspaces: settings/workspaces/workspace-management.md
     - User Management:
       - Overview: settings/user-management/overview.md
       - User Management: settings/user-management/users.md
