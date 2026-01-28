@@ -452,7 +452,7 @@ The Co-browse functionality lets agents and customers to collaborate in real tim
 
 3. If accepted, the agent can view the shared screen.
 
-#### Toolbar Options
+### Toolbar Options
 
 **Agent Tools**
 
@@ -466,6 +466,9 @@ During a session, the agent can access the following toolbar options:
 
 * **Request Control**: Ask permission to control the customer’s screen. If granted, the agent can navigate or type on behalf of the customer.  
     <img src="../images/request-control.png" alt="Request Control" title="Request Control" style="border: 1px solid gray; zoom:70%;">
+
+* **Reconnect**: Re-establish the session if connectivity issues occur.
+    <img src="../images/agent-reconnect.png" alt="Reconnect" title="Reconnect" style="border: 1px solid gray; zoom:70%;">
 
 * **Release Control**: Release control after completing an action.  
     <img src="../images/release-control.png" alt="Release Control" title="Release Control" style="border: 1px solid gray; zoom:70%;">
@@ -523,6 +526,18 @@ Steps to initiate co-browse session:
 
     The system initiates a co-browse session .  
         <img src="../images/co-browse-session-initiated.png" alt="Co-Browse Session Initiated" title="Co-Browse Session Initiated" style="border: 1px solid gray; zoom:80%;">
+
+### Co-browse Limitations
+
+* Co-browse operates within the browser’s active tab and displays a reconstructed Document Object Model (DOM) view, not a live screen share.
+
+* Native browser and OS-level UI elements aren't captured or controlled, including dialogs, pickers, permission prompts, browser menus, extensions, and system notifications.
+
+* Other browser tabs, windows, desktop applications, and full-screen or OS-level content are out of scope.
+
+* Agent interactions support basic DOM actions, such as clicking, hovering, scrolling, and entering data in HTML form elements.
+
+* Agent and user views may occasionally fall out of sync due to inherent limitations of the underlying DOM-based technology.
 
 ## Sending Emojis
 
