@@ -467,7 +467,7 @@ During a session, the agent can access the following toolbar options:
 * **Request Control**: Ask permission to control the customer’s screen. If granted, the agent can navigate or type on behalf of the customer.  
     <img src="../images/request-control.png" alt="Request Control" title="Request Control" style="border: 1px solid gray; zoom:70%;">
 
-* **Reconnect**: Re-establish the session if connectivity issues occur.
+* **Reconnect**: Re-establish the session if connectivity issues occur.  
     <img src="../images/agent-reconnect.png" alt="Reconnect" title="Reconnect" style="border: 1px solid gray; zoom:70%;">
 
 * **Release Control**: Release control after completing an action.  
