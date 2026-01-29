@@ -13,16 +13,9 @@ The Marketplace is ideal for professionals seeking rapid prototyping, scalable d
 * **Template Preview**: Review template definitions, integrations, and use cases before deployment.
 * **One-Click Installation**: Deploy immediately with customization options to match your requirements.
 
-| [Install an app](#install-an-app) | [Enhance an Existing App](#enhance-an-existing-app) |
-|----------------|-------------------------|
-| Deploy pre-configured agents and tools in your workspace.| Import only the agents or tools you need.|
-| Customize components to fit your specific requirements.| Add new capabilities to existing workflows.|
-| Leverage proven workflows and integrations.| Mix and match components for optimal functionality.|
-
-
 ## Install an app
 
-Install a pre-built app to get a ready-to-use agentic solution. Browse the Marketplace, select an app that matches your needs, and install it to automatically create agents and tools in your workspace. Customize as needed.
+Install a pre-built app to get a ready-to-use agentic solution. Find an app in the Marketplace that matches your needs, and install it to automatically create agents and tools in your workspace. Customize as needed.
 
 1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"} page or visit the [Marketplace](https://kore.ai/ai-marketplace/){:target="_blank"}.
 
@@ -42,6 +35,7 @@ Install a pre-built app to get a ready-to-use agentic solution. Browse the Marke
 
 ## Enhance an Existing App
 
+Enhance an existing app by selectively importing specific agents or tools to add new capabilities to your current workflows and create an optimal mix of functionality.
 
 1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"}, select an existing app, and choose **Explore Marketplace**. Alternatively, go to the [Marketplace](https://kore.ai/ai-marketplace/){:target="_blank"} and select your existing app.
 
@@ -53,8 +47,6 @@ Install a pre-built app to get a ready-to-use agentic solution. Browse the Marke
 
 3. Choose **Select Tools** > **Install** > **Import**.
 
-    <img src="../images/import-an-agent.png" alt="Agent import" title="Agent import" style="border: 1px solid gray; zoom:30%;">
-
 ## Agent Diagnostics
 
 Use diagnostics to scan the entire app configuration and identify issues that may affect functionality, stability, or deployment readiness. For more information, see [Agentic App Diagnostics](diagnostics-for-agent-platform.md){:target="_blank"}.
@@ -63,8 +55,7 @@ Use diagnostics to scan the entire app configuration and identify issues that ma
 
 ### Simulate and Test
 
-Before deployment, validate agent responses, tool integrations, and real-world scenarios. For more information, see [Simulate and Test the App](app-testing.md){:target="_blank"}. [Simulate and Test the App](app-testing.md){:target="_blank"}.
-
+Before deployment, validate agent responses, tool integrations, and real-world scenarios. For more information, see [Simulate and Test the App](app-testing.md){:target="_blank"}.
 ### Deploy to production
 
 After successful testing, finalize configurations, deploy the app across target environments, and monitor performance and usage. For more information, see [App Deployment Guide](../agentic-apps/deployment/app-deployment.md){:target="_blank"}.
