@@ -57,9 +57,9 @@ To monitor the agents:
 
     Select from the following options:  
 
-        * **Clear** - Clears the selection.  
-        * **Save & Apply** - Saves the filter, and it appears when selected.  
-        * **Apply** - Applied for one instance and not saved.
+    * **Clear** - Clears the selection.  
+    * **Save & Apply** - Saves the filter, and it appears when selected.  
+    * **Apply** - Applied for one instance and not saved.
 4. Select **Save & Apply**.
 
 5. On the pop-up window, enter a name (up to 20 characters) for the filter and select **Save & Apply**.  
