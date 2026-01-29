@@ -99,7 +99,9 @@ curl -X GET \
   <tr>
    <td>identity
    </td>
-   <td>Unique ID associated with the call. For SmartAssist channel , identity = {accountId}/smartassist/{sessionId}
+   <td>Unique ID associated with the call.
+   <br>For SmartAssist channel, identity = {accountId}/smartassist/{sessionId}
+   <br>For korevg channel, identity = {clientId}/channelUId
    </td>
   </tr>
   <tr>
@@ -110,14 +112,14 @@ curl -X GET \
 Accepted channel types are:
 <ul>
 
-<li>rtm
-<li>ivrVoice
 <li>audiocodes
-<li>smartassist
 <li>genericsms
-<li>twiliosms
 <li>genesys
+<li>ivrVoice
 <li>korevg
+<li>rtm
+<li>smartassist
+<li>twiliosms
 </li>
 </ul>
    </td>
