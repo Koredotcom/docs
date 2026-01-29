@@ -113,7 +113,7 @@ The Data Assistant agent requires access to all configured tools. Open its confi
 
 With your application configured, you'll create a deployable version and establish an environment for production use. The versioning system allows you to maintain multiple configurations and roll back if needed.
 
-1. Go to **Deployment** → **Versions** → **Create Version**.
+1. Go to **Deployment** → **Versions** → **New Version**.
 2. Save the version to capture your current configuration.
 <img src="../images/work-agent-version.png" alt="work-agent-version" title="work-agent-version" style="border: 1px solid gray; zoom:70%;">
 
@@ -128,7 +128,7 @@ With your application configured, you'll create a deployable version and establi
 Create the API credentials that the Platform uses to communicate with your deployment.
 
 1. Copy the **deployment cURL** from your environment.
-2. Go to **API Scoping** → **Create Scope**.
+2. Go to **API Scopes** → **New API Scope**.
 <img src="../images/work-agent-api-scope.png" alt="work-agent-api-scope" title="work-agent-api-scope" style="border: 1px solid gray; zoom:70%;">
 
 3. Navigate to **API Keys → Create Key** using your scope.
