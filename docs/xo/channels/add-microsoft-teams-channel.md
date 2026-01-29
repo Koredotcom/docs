@@ -57,7 +57,7 @@ To set up Microsoft Teams & Copilot as a channel, a Bot Channel Service must be 
     * **App ID**: The app ID of your Azure Bot resource.
     * **App Password**: The App password value that you find in the Certificates & Secrets page of the Azure bot.
 3. (Optional) toggle the Proactive Notifications.
-    **Application (Client) ID**: The app ID of your Azure Bot resource.
+    * **Application (Client) ID**: The app ID of your Azure Bot resource.
     * **Client Secret**: The client secret value that you find on the Certificates & Secrets page of the Azure bot.
     * **Delivery (tenant) ID**: The subscription ID that you can find on the Overview page of the Azure bot.
 
@@ -68,7 +68,7 @@ To set up Microsoft Teams & Copilot as a channel, a Bot Channel Service must be 
 
             The platform maintains the conversation context when handling Modal Dialog messages. It forwards these messages with pre-context to the Custom URL for processing, then relays responses back to the user, maintaining a seamless interaction.
 
-3. Click **Save**.
+3. Enable the channel and click **Save**.
 
 
 
