@@ -1,6 +1,6 @@
 # Connect with External Agents
 
-Enterprises often utilize AI agents built on diverse platforms, resulting in a multi-vendor environment. Rebuilding these agents from scratch to work together is costly and inefficient. To solve this, Agent Platform introduces a Proxy Agent Architecture, a central integration layer that enables seamless connectivity between the existing external agents and the platform. 
+Enterprises often utilize AI agents built on diverse platforms, resulting in a multi-vendor environment. Rebuilding these agents from scratch to work together is costly and inefficient. To solve this, the Platform introduces a Proxy Agent Architecture, a central integration layer that enables seamless connectivity between the existing external agents and the platform. 
 
 Proxy Agent acts as an intermediary, seamlessly relaying communication between the platform and external agents. This approach ensures the translation of protocols while maintaining the performance, security, and functional integrity of the existing agent ecosystem.
 

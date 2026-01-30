@@ -6,17 +6,15 @@ The [Marketplace](https://kore.ai/marketplace/) offers **AI for Work**, a centra
 
 ## Key Components
 
-**Types of AI for Work agents Available**
+The marketplace organizes the Platform agents into two primary sections:
 
-The marketplace organizes AI for Work agents into two primary sections:
+* **Apps**: Agentic Apps represent more complex, multi-functional AI solutions. Think of these as comprehensive digital assistants that can handle multiple related tasks. Each Agentic App comprises multiple individual agents working together to provide a complete solution. All created Agentic flows will appear in this section.
 
-Apps: Agentic Apps represent more complex, multi-functional AI solutions. Think of these as comprehensive digital assistants that can handle multiple related tasks. Each Agentic App comprises multiple individual agents working together to provide a complete solution. All created Agentic flows will appear in this section.
+   <img src="../images/Marketplace_2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
 
-<img src="../images/Marketplace_2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+* **Agents**: Agents are the individual AI components that can function independently. The marketplace features **Prompt Agents**, these are straightforward AI assistants that respond to text prompts. They don't connect to any external systems but can provide information, generate content, or answer questions based on their training.
 
-Agents: Agents are the individual AI components that can function independently. The marketplace features **Prompt Agents**, these are straightforward AI assistants that respond to text prompts. They don't connect to any external systems but can provide information, generate content, or answer questions based on their training.
-
-<img src="../images/Marketplace_3.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+   <img src="../images/Marketplace_3.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
 
 ### Finding the Right Agents
 
@@ -44,8 +42,8 @@ To install an agent:
 
 1. Click **Install** on the agent’s details page.
 <img src="../images/Marketplace_4.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
-2. You will be directed to the AI for Work Workspaces area.
-3. If you are logged in, you will be prompted to choose a workspace for the agent.
+2. You will be directed to the the Platform's Workspaces area.
+3. If you are logged in, you are prompted to choose a workspace for the agent.
     * Only workspaces authorized to create that specific agent type will be selectable (active).
     * Workspaces lacking the necessary permissions will be grayed out.
     * Placing your cursor over a grayed-out workspace will display a message such as “creation is not allowed in this workspace".
@@ -75,7 +73,7 @@ A team leader might install an Agentic App that combines multiple agents to hand
 
 ## Benefits of AI for Work in Marketplace
 
-* **Centralized Access**: Discover all available AI for Work agents in a single, searchable platform.
+* **Centralized Access**: Discover all the available Platform agents in a single, searchable interface.
 * **Simplified Search**: Easily find the agents you need using categories and filters.
 * **Transparent Information**: Understand each agent's functionality through detailed descriptions and previews before installing.
 * **Effortless Integration**: Add agents to your workspaces quickly and easily.

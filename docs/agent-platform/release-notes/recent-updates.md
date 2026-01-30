@@ -221,7 +221,7 @@ Customize timing, message frequency, and content to maintain a smooth conversati
 
 Agent Platform has introduced Bring Your Own Keys (BYOK) encryption for public cloud SaaS deployments, enabling enterprises to secure their data while retaining full control and management of their encryption keys. This feature seamlessly integrates with enterprise Key Management Systems (Azure Key Vault and AWS Key Management Service) to help meet compliance and security needs.
 
-[Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-mgmt.md#bring-your-own-key)
+[Learn more :octicons-arrow-right-24:](../settings/security-and-control/encryption-key-management.md#bring-your-own-key)
 
 <font size="4">AI Engineering Tools</font>
 
@@ -258,7 +258,7 @@ The Agent Platform now provides enhanced context handling for conversations with
 
 The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardized output format.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#test-a-workflow-tool)
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#testing-a-tool)
 
 
 <font size="4">AI Engineering Tools</font>
@@ -921,7 +921,7 @@ Users can add empty, inline-editable columns in model evaluations to manually in
 
 The Workspace switcher in the Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.
 
-[Learn more :octicons-arrow-right-24:](../settings/workspaces/workspace-mgmt.md)
+[Learn more :octicons-arrow-right-24:](../settings/workspaces/workspace-management.md)
 
 
 <hr>
