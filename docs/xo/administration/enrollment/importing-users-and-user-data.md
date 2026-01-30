@@ -53,9 +53,9 @@ You can create a file to invite users in your organization to become Kore.ai use
 
     ```
     Email ID, First Name, Last Name, Alternate ID, Work Phone, Title, Department, User Status
-    Kore.aiUser1@kore.com,User1FirstName,User1LastName,User1AlternateID,800-555-1212,President,Executive,New
-    Kore.aiUser2@kore.com,User2FirstName,User2LastName,User2AlternateID,800-555-5555,VicePresident,Executive,New
-    Kore.aiUser3@kore.com,User3FirstName,User1LastName,,,,New
+    user1@example.com,User1FirstName,User1LastName,User1AlternateID,800-555-1212,President,Executive,New
+    user2@example.com,User2FirstName,User2LastName,User2AlternateID,800-555-5555,VicePresident,Executive,New
+    user3@example.com,User3FirstName,User1LastName,,,,New
     ```
 
 our account users.
