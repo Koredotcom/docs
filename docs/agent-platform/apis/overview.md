@@ -1,6 +1,6 @@
 # Tools APIs
 
-Agent Platform provides secured APIs to manage files, tools, models, and guardrails. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs .
+The Platform provides secured APIs to manage files, tools, models, and guardrails. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs .
 
 ## API Key Authentication
 

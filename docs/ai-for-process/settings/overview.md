@@ -206,7 +206,7 @@ The following modules and features are supported on the **Settings** Console:
    </td>
   </tr>
   <tr>
-   <td>[Manage Guardrails](../../agent-platform/guardrails/overview.md){:target="_blank"}</td>
+   <td>[Manage Guardrails](../workflows/guardrails/manage-guardrails.md){:target="_blank"}</td>
    <td>Deploy models to make them available for anomaly scanners in all the workflows. 
    </td>
    <td>
