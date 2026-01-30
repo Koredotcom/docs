@@ -274,6 +274,7 @@ nav:
         - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
         - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
+        - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
         - Other Nodes:
           - About Nodes: automation/use-cases/dialogs/node-types/nodes-transitions.md
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
@@ -290,7 +291,6 @@ nav:
           - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
           - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md
           - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
-          - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
           - Node Connections:
             - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
             - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 

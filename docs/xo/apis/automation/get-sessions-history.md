@@ -72,8 +72,6 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
   <tr>
    <td>containmentType
-<br>
-<strong>(introduced in ver9.0)</strong>
    </td>
    <td>Use to filter the results based on the type of the session, that is, Self-service vs. Drop-off vs. Agent Transfer
 Valid values:
@@ -254,7 +252,6 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
    <td>String
    </td>    
 <br>
-(introduced in v8.0)
    </td>
    <td>Type to filter the conversations – can be:
 <ul>
@@ -274,8 +271,6 @@ For example, 2019-04-01 (or) 2019-04-01 T13:26:05.598Z. If not provided, calcula
    </td>
    <td>
    </td>      
-<br>
-(introduced in v10.1.3)
    </td>
    <td>An array of session IDs to filter the conversations. It can have a maximum of 50 session IDs. (Duplicate session IDs are ignored, but they are counted.)
 <br>
