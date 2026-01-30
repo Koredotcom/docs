@@ -56,7 +56,7 @@ To sign up for a new account on the Platform, follow these steps:
 
         If the email address is already registered, the Platform prompts you to sign in and to enter the password.
   
-3. Enter the required details to create the account and select **Sign up**.  
+3. Enter the required details to create the account and select **Sign up**.
     <img src="../images/create-an-account.png" alt="create-an-account" title="create-an-account" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -243,3 +243,5 @@ Steps to invite users:
 ##### Related Link
 
 * [Accounts or Workspaces](../manage-assistant/plan-and-usage/accounts-or-workspace-overview.md)
+
+* [Password Policy](password-policy.md)
