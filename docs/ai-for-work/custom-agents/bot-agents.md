@@ -29,8 +29,7 @@ To import an existing Bot Agent:
 
 ## Create a Bot Agent
 
-Cwebhook
-more.](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/)
+Create a new Bot agent to assist users in completing various tasks by utilizing the Bot created using the AI for Service Platform. [Learn more](https://docs.kore.ai/xo/getting-started/building-a-virtual-assistant/).
 
 To create a new Bot Agent, follow these steps:
 
