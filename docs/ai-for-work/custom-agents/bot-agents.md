@@ -1,6 +1,6 @@
 # Bot Agents
 
-Administrators creates bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
+Administrators create bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
 
 For complex workflows involving multiple system integrations and logic, users build bots using the AI for Service Platform. Users trigger these bots through conversations using the UI or NLP intent, streamlining the entire process.
 
@@ -39,18 +39,17 @@ To create a new Bot Agent, follow these steps:
 2. On the Bot Agents page, click **+Create Agent**.
     <img src="../images/create-agent.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-3. You must link your Bot built on the AI for Service Platform and create a webhook channel. [Learn
-    more](https://docs.kore.ai/xo/channels/add-webhook-channel/).
+3. You must link your Bot built on the AI for Service Platform and create a webhook channel. [Learn more](https://docs.kore.ai/xo/channels/add-webhook-channel/).
 
 To create a webhook channel on the Bot and complete the integration process, follow these steps:
 
-1. Log in to the **AI for Service Platform**. Open the virtual assistant or bot you want to add the channels to. Navigate to **Deploy** > **Channels** > **Add More** > **Webhook**.
+1. Log in to the AI for Service Platform. Open the virtual assistant or the bot that you want to add the channels to. Navigate to **Deploy** > **Channels** > **Add More** > **Webhook**.
 
-2. Select your required app from the **Webhook** dialog.
-<img src="../images/webhook_select_app.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
+1. Select your required app from the **Webhook** dialog.
+    <img src="../images/webhook_select_app.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 1. Copy the **Bot client ID** and **Bot secret ID** to use in the platform to complete the integration.
-<img src="../images/webhook_botID.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/webhook_botID.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
 1. Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate, enables the channel.
 
@@ -101,7 +100,7 @@ Publish your agent and define access permissions and enablement.
 
 * **Publish To**: Define access permissions:
     * **Everyone in the Account**: Make the agent available to all users.
-    * **Limited Users**: Grant access to specific workspace users or groups added in publish settings of workspace.
+    * **Limited Users**: Grant access to specific workspace users or groups added in the publish settings of the workspace.
 * **Enablement Type**: Configure how users interact with the agent:
     * **Always Enabled**: The agent remains active and cannot be disabled.
     * **Users Choice**: Users enable or disable the agent as needed.
@@ -114,7 +113,7 @@ View this agent in the **Agents list** on the **Agents** page.
 
 !!! note
 
-    On the Agents list page, click the three dots icon corresponding to the agent's name and publish the agent later if necessary.
+    On the Agents list page, click the three dots icon next to the agent's name and publish the agent later if necessary.
 
 
 ## User Interaction
@@ -125,7 +124,7 @@ Interacting with the bot agent simplifies communication and task execution. User
 
 <img src="../images/user-interaction_2.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;">
 
-!!! note
+**Related Resources**
 
-    * See [Alert](./alert-task.md) that allows developers to integrate conversation hold and resume functionality within AI for Service Bots.
-    * See [Notify](./notify-api.md) that allows developers to send interactive notifications to the users.
+* See [Alert API](./alert-task.md) to integrate conversation hold and resume functionality within AI for Service Bots.
+* See [Notify API](./notify-api.md) to send interactive notifications to the users.
