@@ -244,20 +244,23 @@ Lets you authorize users to automate report generation with minimal manual effor
     * Automatically, the system runs the report based on a pre-set schedule.   
     <img src="../images/gen-start-date-and-timezone.png" alt="Pre-set Schedule" title="Pre-set Schedule" style="border: 1px solid gray; zoom:80%;">   
 
-1. Select **Save** to confirm and activate the schedule.   
-<img src="../images/saved-report.png" alt="Activate Schedule" title="Activate Schedule" style="border: 1px solid gray; zoom:80%;">  
+1. Select **Save** to confirm and activate the schedule. The saved report appears in the **Reports > My Reports** dashboard.
 
-The report appears in the **Reports > My Reports** dashboard according to the defined configuration and schedule. 
+    * Enable scheduling by switching on the Schedule toggle. 
+
+    * From the **Actions** column, select **Run** to generate the report immediately.     
+    <img src="./images/saved-report.png" alt="Activate Schedule" title="Activate Schedule" style="border: 1px solid gray; zoom:80%;">  
+    
 
     !!! Note
 
-        * If you select **Run on Demand**, the **Instant Run** button appears, and the scheduling toggle is disabled.
+            * If you select **Run on Demand**, the **Instant Run** button appears, and the scheduling toggle is disabled.
 
-        * If you configure a recurring schedule (for example, Daily or Weekly), the **Instant Run** button is disabled.
+            * If you configure a recurring schedule (for example, Daily or Weekly), the **Instant Run** button is disabled.
 
-        * When a recurring schedule is active, the system automatically runs the report according to that schedule.
+            * When a recurring schedule is active, the system automatically runs the report according to that schedule.
 
-        * When in **Schedule** mode, the scheduling toggle remains enabled, and you can turn the schedule on or off at any time.
+            * When in **Schedule** mode, the scheduling toggle remains enabled, and you can turn the schedule on or off at any time.
 
 ## Mandatory Configuration Fields
 
@@ -389,7 +392,7 @@ To delete a report,
 
 1. On the **Reports** tab, navigate to the **Actions** column.
 
-1. Click the vertical **Ellipsis** (⋮)button.     
+1. Click the vertical **Ellipsis** (⋮) button.     
 
 1. Select **History** to view all generated reports.
 
@@ -413,7 +416,7 @@ Only the CSV format is generated and available for download, with headers transl
 
 !!! Note
 
-    The same three-step process (General > Configuration > Schedule) applies to all report types, with variations in the Configuration step based on the specific report requirements.
+    The same three-step process (**General > Configuration > Schedule**) applies to all report types, with variations in the Configuration step based on the specific report requirements.
 
 ## Email Delivery
 

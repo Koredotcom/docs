@@ -2,7 +2,379 @@
 
 Utilize generative AI features to supercharge your AI Agent with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
 
-## Model Feature Matrix
+## Model Feature Support Matrices
+
+The following sections categorize model features and show feature support across supported models.
+
+(✅ Supported | ❌ Not supported | ✅* - Supported but no default prompt | NA = Not Applicable)
+
+### Answer Generation and Enrichment Features
+
+* For Enrich Chunks with LLM and Transform Documents with LLM features, use the templates in the prompt library to write custom prompts. 
+
+<table>
+  <tr>
+   <td>
+<strong>Model</strong>
+   </td>
+   <td><strong>Answer Generation</strong>
+   </td>
+   <td><strong>Enrich Chunks with LLM</strong>
+   </td>
+   <td><strong>Transform Documents with LLM</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI - GPT 4 Turbo
+   </td>
+   <td>✅
+   </td>
+   <td><strong>✅*</strong>
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI - GPT 4o
+   </td>
+   <td>✅
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI -GPT-4o mini
+   </td>
+   <td>✅<strong>*</strong>
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo
+   </td>
+   <td>✅
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT 4o
+   </td>
+   <td>✅
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT-4o mini*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>Custom LLM
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>XO GPT
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Amazon Bedrock
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+</table>
+
+### Query Processing Features
+
+
+<table>
+  <tr>
+   <td><strong>Model</strong>
+   </td>
+   <td><strong>Metadata Extractor Agent</strong>
+   </td>
+   <td><strong>Query Rephrase (Adv Search)</strong>
+   </td>
+   <td><strong>Query Transformation</strong>
+   </td>
+   <td><strong>Rephrase User Query</strong>
+   </td>
+   <td><strong>Result Type Classification</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI - GPT 4 Turbo
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅*
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI - GPT 4o
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI -GPT-4o mini
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅*
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT 4o
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT-4o mini*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>Custom LLM
+   </td>
+   <td>✅* <p>
+(If underlying LLM is GPT 4o / GPT 4o mini)
+   </td>
+   <td>✅* <p>
+(If underlying LLM is GPT 4o / GPT 4o mini)
+   </td>
+   <td>✅* <p>
+(If underlying LLM is GPT 4o / GPT 4o mini)
+   </td>
+   <td>✅*   </td>
+   <td>✅* <p>
+(If underlying llm is GPT 4o / GPT 4o mini)
+   </td>
+  </tr>
+  <tr>
+   <td>XO GPT
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Amazon Bedrock
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+</table>
+
+### Vector Generation Features 
+
+
+<table>
+  <tr>
+   <td><strong>Model</strong>
+   </td>
+   <td><strong>Vector Generation - Text</strong>
+   </td>
+   <td><strong>Vector Generation - Image</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI - GPT 4 Turbo
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI - GPT 4o
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI -GPT-4o mini
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT 3.5 Turbo, GPT 4, GPT 4 Turbo
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT 4o
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI - GPT-4o mini
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+  <tr>
+   <td>Custom LLM
+   </td>
+   <td>✅*
+   </td>
+   <td>✅*
+   </td>
+  </tr>
+  <tr>
+   <td>XO GPT
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td>Amazon Bedrock
+   </td>
+   <td>NA
+   </td>
+   <td>NA
+   </td>
+  </tr>
+</table>
+
+**Supported Vector Dimensions for Embedding Models for Custom Integrations**
+
+ When integrating an embedding model, it’s crucial to ensure that it aligns with the supported vector dimensions. Below is a list of the vector sizes that we support.
+
+Supported Vector Sizes
+
+
+
+*  128
+*  256
+*  384
+*  512
+*  768
+*  1024
+*  1028
+*  1536
+*  2048
+*  3072
+
+See [how to do custom integration](https://docs.kore.ai/xo/searchai/howto/integrate-custom-embedding-model/). 
+
+
+
+<!--
 
 The following table displays the features and the supported models. 
 
@@ -21,6 +393,8 @@ The following table displays the features and the supported models.
 \* *The OpenAI GPT-4o mini and Azure OpenAI GPT-4o mini don't include system prompts, but they can be used with custom prompts.* 
 
 \** *To use the Provider's New LLM, you must create a custom prompt as system prompts are unavailable.*
+
+-->
 
 ## Answer Generation
 

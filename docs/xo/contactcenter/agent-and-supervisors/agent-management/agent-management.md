@@ -123,7 +123,7 @@ To create a new agent status, follow these steps:
     1. `Status Name`-Enter the status name.
     2. `Status Type`-Select the status type: `Away` or `Busy`.
     3. `Description`-Type in a brief description of the status.
-    4. `Assign to Agent Groups`-Select the agent groups to assign the statuses. The system makes the status available to all agents in the selected groups.
+    4. `Assign to Agent Groups`-Select the agent groups to assign the statuses. The system makes the status available to all agents in the selected groups. It's mandatory to add an agent group while creating a custom agent status.
 3. Select `Add & Exit` to create the status and exit the window or select `Add & Stay` to create the status and continue to a new one.  
 4. The status created successfully success message appears on-screen and the new status adds to the Agent Status list.  
 

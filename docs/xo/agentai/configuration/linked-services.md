@@ -59,6 +59,9 @@ Select this option to use the inbuilt Search AI app linked to your XO 11 sign-in
     5. Select a **channel** in the **Select channel** list.
     6. Refer to the [Knowledge AI](#knowledge-ai) section, and select the options under the **Search Results** and **Control expand behavior of Answers** sections.
     7. Select the **Add Custom Meta Filter Script (Optional)** option under the **Advanced Search API Configuration** section.
+        1. Select **Add Script**.
+        2. Enter your script in the **Define Script** editor.
+        3. Select **Save**.        
 6. Select **Save**.  
 
 !!! note 
@@ -115,7 +118,10 @@ Select this option to configure and enable up to three Search Apps across XO 10 
     2. Select a **channel** in the **Select channel** list.
     3. Refer to the [Knowledge AI](#knowledge-ai) section, and select the options under the **Search Results** and **Control expand behavior of Answers** sections.  
     4. Select the **Add Custom Meta Filter Script (Optional)** option under the **Advanced Search API Configuration** section.  
-        <img src="../answers-configuration-images/knowledge-ai-7.png" alt="knowledge-ai" title="knowledge-ai" style="border: 1px solid gray; zoom:80%;"> 
+        1. Select **Add Script**.
+        2. Enter your script in the **Define Script** editor.
+        3. Select **Save**.   
+    <img src="../answers-configuration-images/knowledge-ai-7.png" alt="knowledge-ai" title="knowledge-ai" style="border: 1px solid gray; zoom:80%;"> 
 
 9. Select **Test Connection & Save** to verify the configuration. The **Connection Established Successfully** message appears, if the connection is successful.
 13. Add more Search AI apps, as required, by following the above steps. 

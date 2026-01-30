@@ -44,7 +44,7 @@ The metric operates through a **question-driven evaluation process** with two ma
 
 * Trigger-based detection using customer or agent utterances.
 
-* Ideal for conditional scenarios where specific responses are required only in certain contexts. 
+* Use this for conditional scenarios that require specific responses in certain contexts.
 
 ## Configure by Question Metric
 
@@ -88,81 +88,82 @@ Static Adherence measures whether agents say the required phrase, regardless of 
 
 * Use this adherence when you need a consistent, universal check (for example, mandatory greeting scripts, regulatory disclaimers).
 
-* You must define acceptable utterances for a queue.
+* Define acceptable utterances for a queue.
 
-* You set a similarity threshold to evaluate whether the agent’s actual response matches the pre‑defined acceptable utterance.
+* Set a similarity threshold to evaluate whether the agent’s actual response matches the pre‑defined acceptable utterance.
+  
+* Configure at least one agent utterance template for this adherence type.
 
-* No triggers or contextual conditions needed, which is ideal for fixed and non‑situational compliance items.
-
-* You must configure at least one agent utterance template for this adherence type.
+* This requires no triggers or contextual conditions and is ideal for fixed, non-situational compliance items
 
 ### Dynamic Adherence 
 
 Dynamic Adherence evaluates agent performance based on specific triggers (context-sensitive method) instead of reviewing every interaction. It assesses agent behavior when the configured conditions occur.
 
-* The system checks adherence only when it detects a configured trigger, such as an agent or customer utterance.
+* This checks adherence only when it detects a configured trigger, such as an agent or customer utterance.
 
-* You must define at least one trigger (either customer or agent utterances) and one acceptable agent response that activate the adherence check.
+* Define at least one trigger (either customer or agent utterances) and one acceptable agent response that activate the adherence check.
 
 * Evaluates agent behavior only in the context of the detected trigger. 
 
-* Determines how closely an agent's response must match a predefined response. 
+* Specify how well the agent’s response must match the predefined response. 
 
-* Adjustable by criticality of the adherence similarity use case: 
+* Adjust adherence similarity based on criticality:
 
-    * **Lower Threshold**: Must close to 60% (Yellow) for casual interactions, greetings.
+    * **Lower Threshold**: Close to 60% (Yellow) for casual interactions, greetings.
 
-    * **Higher Threshold**: Must close to 100% (Green) for critical topics, such as legal disclaimers or privacy policies. 
-        
-    * When the system detects a trigger, it evaluates whether the agent responded with one of the predefined acceptable utterances.   
+    * **Higher Threshold**: Close to 100% (Green) for critical topics, such as legal disclaimers or privacy policies.       
     <img src="../images/by-question-adhere-type1.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
         
         !!! note
 
             For **Dynamic**, configure at least one **Trigger** and one agent **Answer** utterance for the adherence type. 
 
-* Choose utterance source for **Trigger** (who initiates the trigger).
+* Choose an utterance source for **Trigger** (who initiates the trigger).
 
-#### Trigger Configuration
+* When the system detects a trigger, it evaluates whether the agent responded with one of the predefined acceptable utterances.
 
-Provides the following two options to select based on the trigger created by **Agent Utterance** or **Customer Utterance** for evaluation. 
+## Trigger Configuration
 
-    * **Trigger**: Select and evaluate responses based on triggers created from agent or customer utterances.
+Provides the following two options to select based on the trigger created by **Agent Utterance** or **Customer Utterance** for evaluation: 
 
-        * You can add multiple trigger utterances for conditional checks (for example, AND/OR conditions) to serve as the trigger condition or refine when the trigger is activated. 
+1. Choose a **Trigger** from agent or customer utterances to evaluate responses.
+
+    * **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning. For example, customer says `I need a refund`.
+        
+    * **Agent Utterance**: Configure the Agent Utterance for triggers initiated by the agent. Enter the utterances using generative AI Assistants’ suggestions that have similar utterances with the same meaning. You can add or delete multiple utterances for the Customer and the Agent. For example, agent says `let me transfer you to support`.
+
+        * You can add multiple trigger utterances for conditional checks (for example, AND/OR conditions) to define the trigger condition or refine activation timing.
         
         * You can define a trigger for either a customer or agent utterance and configure the corresponding responses for that scenario.      
         <img src="../images/by-question-trigger.png" alt="By Question Trigger" title="By Question Trigger" style="border: 1px solid gray; zoom:70%;">
 
-        * **Customer Utterance**: Configure the Customer Utterance that triggers the adherence check. You can enter more than one utterance using Generative AI Assistants that are similar to utterances with the same meaning. For example, customer says “I need a refund”.
-        
-        * **Agent Utterance**: Configure the Agent Utterance for triggers initiated by the agent. Enter the utterances using generative AI Assistants’ suggestions that have similar utterances with the same meaning. You can add or delete multiple utterances for the Customer and the Agent. For example, agent says “let me transfer you to support”.
 
-* Choose a **Trigger Detection Method**.
+1. Choose a **Trigger Detection Method**.
+    
+    * **GenAI-Based Adherence**: Enter a descriptive prompt to define intent. This enables contextual detection of whether the agent’s response aligns with the intended goal, without relying on predefined samples. This uses LLMs to understand context and intent and don't require sample utterances or thresholds.
 
-   * **GenAI-Based Adherence**: Enter a descriptive prompt to define intent. This allows contextual detection of whether the agent’s response aligns with the intended goal, without relying on predefined samples. This uses LLMs to understand context and intent and do not require sample utterances or thresholds.
+    * **Deterministic Adherence**: This relies on predefined sample utterances and detects adherence based on semantic similarity. 
 
-   * **Deterministic Adherence**: This relies on predefined sample utterances and detects adherence based on semantic similarity. 
-
-   * **Utterance**: Enter sample training utterances to detect adherence and define similarity thresholds accordingly.    
+    * **Utterance**: Enter sample training utterances to detect adherence and define similarity thresholds accordingly.      
    <img src="../images/by-question-trigger-detection-method.png" alt="By Question Utterance" title="By Question Trigger Detection Utterance" style="border: 1px solid gray; zoom:70%;">
 
-#### Enablement of GenAI-Based Features (Pre-requisite)
+## Enablement of GenAI-Based Features (Pre-requisite)
 
-The GenAI-based features are activated only when the following conditions are enabled:
+Enable the following conditions to activate GenAI-based features:
 
-    a. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
+1. Navigate to **Manage**> **Generative AI**> **GenAI Features**.
 
-    b. [Enable](../../../../generative-ai-tools/genai-features.md){:target="_blank"} and [Publish](../../../../deploy/publishing-bot.md#publishing-components){:target="_blank"} the following two features:
+1. [Enable](../../../../generative-ai-tools/genai-features.md){:target="_blank"} and [Publish](../../../../deploy/publishing-bot.md#publishing-components){:target="_blank"} the following two features:
 
-        * **GenAI-based agent answer adherence**
+    * **GenAI-based agent answer adherence**
 
-        * **GenAI-based customer trigger detection**  
-        <img src="../images/gen-ai-based-agent-answer-adherence-with-trigger.png" alt="GenAI-based Features" title="GenAI-based features" style="border: 1px solid gray; zoom:70%;">
+    * **GenAI-based customer trigger detection**    
+    <img src="../images/gen-ai-based-agent-answer-adherence-with-trigger.png" alt="GenAI-based Features" title="GenAI-based features" style="border: 1px solid gray; zoom:70%;">
 
-* Choose an **Agent Answer** adherence type.
+1. Choose an **Agent Answer** adherence type.
 
-#### Agent Answer
+### Agent Answer
 
 * **GenAI-Based Adherence**: Use AI and natural language understanding (LLM) to detect meaning, context, and intent. This evaluates whether the agent's answer fulfills the **intents**, even if phrased differently.
 
@@ -170,18 +171,18 @@ The GenAI-based features are activated only when the following conditions are en
 
 * **Description**: Enter a prompt **Description** to check the agent's intent accuracy, phrasing response, and adherence. 
 
-##### GenAI-Based Adherence
+#### GenAI-Based Adherence
 
 Uses Generative AI to automatically evaluate agent responses by understanding natural language, including intent and context, even when phrased differently.
 
 **Agent Answer**
 
-    a. Select an **Answer Detection Method** to evaluate whether agents respond according to the prompt’s intent. This uses a probabilistic LLM-based method and requires no model training.
+1. Select an **Answer Detection Method** to evaluate whether agents respond according to the prompt’s intent. This uses a probabilistic LLM-based method and requires no model training.
 
-    b. Enable the **GenAI-Based Adherence**. Use a **Large Language Model** (LLM) to detect trigger phrases and evaluate adherence using contextual understanding.
+1. Enable the **GenAI-Based Adherence**. Use a **Large Language Model** (LLM) to detect trigger phrases and evaluate adherence using contextual understanding.
 
-    c. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.   
-    <img src="../images/by-question-agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:70%;">
+1. Enter a prompt **Description** explaining the metric’s intent or details behind the adherence metric. This applies to all selected languages.   
+<img src="../images/by-question-agent-answer.png" alt="Agent Answer" title="Agent Answer" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
             
@@ -192,67 +193,43 @@ Uses Generative AI to automatically evaluate agent responses by understanding na
         * For effective prompts and LLM-based adherence detection, refer to
         [AutoQA - Prompting Guide](autoqa-prompting-guide.md){:target="_blank"}.
 
-##### Deterministic Adherence
+#### Deterministic Adherence
 
 Evaluates agent responses based on semantic similarity to predefined reference utterances or answers.
 
-#### Agent Answer Configuration
+#### Similarity Configuration
 
-    a. Select **Deterministic Adherence** to assess responses based on similarity to reference answers. Encoder-based mode lets you define expected replies.                
+1. Select **Deterministic Adherence** to assess responses based on similarity to reference answers. Encoder-based mode lets you define expected replies.                
 
-    b. Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations:
+1. Define an **Answer** as a set of acceptable utterances for each queue, using **Generative AI** to generate the following automated response variations:
 
-    c. Set a similarity threshold to determine how must the user input must match the expected utterances to return agent answers. 
-
-    d. Add language-specific, prompt-based evaluation parameters.
-
-    e. Find relevant answers by suggesting different ways to ask the same question. 
-
-    f. Get the expected answers that match the meaning of your question, even though asked in different ways. Provides expected answers that match the meaning of your question, even when you phrase it in different ways.
-
-    g. Delete AI-suggested answers that are not required.
-
-    h. Set the **Similarity** percentage for the metric based on the defined use case and attribute. 
-
-##### Similarity Thresholds
-
-Evaluates agent responses based on semantic similarity to predefined sample utterances or answers.
-
-* You can set the Similarity percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold.
-
-* You must set a lower adherence similarity threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher adherence similarity threshold (for example, 100%) for compliance-critical (Policy Privacy or Disclaimer) statements, because it's critical for the user to follow the adherence depending on the use cases.   
-<img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
+1. Set the **Similarity** percentage for the desired evaluation metrics. Whether it's **Static** or **Dynamic**, you can configure the expected Similarity threshold. For example, use a lower threshold (for example, 60%) for soft skills like greetings and etiquette, and a higher threshold (for example, 100%) for compliance-critical statements (such as Policy, Privacy, or Disclaimer), ensuring agents follow adherence according to the use case.     
+    <img src="../images/by-question-agent-answer-similarity.png" alt="Similarity Thresholds" title="Similarity Thresholds" style="border: 1px solid gray; zoom:70%;"> 
         
-    !!! Note
+## Count Type Configuration
 
-        The **Similarity** threshold option is available only when **GenAI-Based Adherence** is enabled. You can configure thresholds for both **Static** and **Dynamic** evaluations.
-
-* Choose a **Count Type** based on the selected **Adherence Type**.
-
-#### Count Type Configuration
-
-The following are the key count types that you can configure:
+Choose a **Count Type** to configure key count types for the selected **Adherence Type**.
 
 * **Entire Conversation**: Full interaction evaluation
 * **Time Bound**: Specific time ranges or message counts
 
-##### Entire Conversation
+### Entire Conversation
 
-Evaluates adherence throughout the complete interaction. This lets you to check for adherence at different points of conversation. It doesn't matter where the agent wants to check adherence throughout the conversation.   
+Evaluates adherence throughout the complete interaction. This lets you check for adherence at different points of conversation. It doesn't matter where the agent wants to check adherence throughout the conversation.   
 <img src="../images/entire-conversation.png" alt="Entire Conversation" title="Entire Conversation" style="border: 1px solid gray; zoom:70%;">
 
-##### Time Bound
+### Time Bound
 
 Focuses on specific timeframes (first or last X seconds or messages). This evaluates adherence within a specific time range or number of messages in the interaction. It can occur at the start or end of the conversation, either for a defined number of seconds or a set number of chat messages.
 
-* **Parameter**: Choose between the **First Part of Conversation** or the **Last Part of Conversation**, and configure the relevant criteria to evaluate the metric. 
+1. **Parameter**: Choose between the **First Part of Conversation** or the **Last Part of Conversation**, and configure the relevant criteria to evaluate the metric. 
 
-* **Voice**: Enter the number of seconds from the start or end of the interaction to evaluate this metric. 
+1. **Voice**: Enter the number of seconds from the start or end of the interaction to evaluate this metric. 
 
-* **Chat**: Enter the number of messages from the start or end of the interaction to evaluate this metric.  
+1. **Chat**: Enter the number of messages from the start or end of the interaction to evaluate this metric.  
 <img src="../images/by-question-time-bound.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:70%;">
 
-* Select **Create** to save and activate the By Question configured adherence metric.
+1. Select **Create** to save and activate the By Question configured adherence metric.
 
 ## Edit or Delete By Question Metric
 
@@ -261,14 +238,13 @@ Steps to edit or delete any existing **By Question** evaluation metrics:
 1. Select a required evaluation metric name given in the **By Question** category.  
     <img src="../images/common-edit-eva-metics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
-2. Choose an option:
+1. Choose an option:
 
     * Select **Edit** to modify the selected metric details.  
-    <img src="../images/by-question-edit-eva-metrics.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
-
+   
     * Select **Delete** to remove the selected metric.  
 
-3. Select **Update** to save the changes.
+1. Select **Update** to save the changes.
 
 ### Language Dependency Warnings
 
@@ -280,7 +256,7 @@ This section outlines the limitations and dependencies associated with modifying
 
 1. Remove the language from all associated evaluation forms and attributes before modifying their language settings.
 
-1. Remove the languages that are not linked to any forms or metrics.  
+1. Remove the languages that aren't linked to any forms or metrics.  
 <img src="../images/by-question-lang-warning.png" alt="language Warning" title="language Warning" style="border: 1px solid gray; zoom:70%;">
 
 #### Delete Warnings
@@ -294,4 +270,4 @@ This section describes the warnings and prerequisites you must address before de
 1. If any attributes link to the metric, assign a different metric to them before deleting the original.
 
 1. The system lets you delete the metric only after resolving all dependencies.  
-<img src="../images/by-question-delete-warning.png" alt="Delete Warnings" title="Delete Warnings" style="border: 1px solid gray; zoom:70%;">
+
