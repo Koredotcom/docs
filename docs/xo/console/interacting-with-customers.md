@@ -47,6 +47,7 @@ Steps to add/remove hyperlinks:
     <img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Add Link** dialog box, do the following:
+
     * Select the **web address** option and enter the URL in the box, for linking a web page.  
         <img src="../images/link-to-web-address.png" alt="Link to Web Address" title="Link to Web Address" style="border: 1px solid gray; zoom:60%;">
 
@@ -61,9 +62,11 @@ Steps to add/remove hyperlinks:
     <img src="../images/hyperlinked.png" alt="Hyperlinked Text" title="Hyperlinked Text" style="border: 1px solid gray; zoom:80%;">
 
 4. Hover over the hyperlinked text to view the following options:
+
     * Open
     * Break Link (icon)
     * Edit
+
 5. Press **Enter** to send the message.  
     <img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
 
@@ -103,19 +106,26 @@ Agents can initiate manual outbound calls from the agent console. Following are 
 **Rules for Outbound Calls**
 
 1. **Initiating Outbound Calls from Any Status**  
+
     * Agents can initiate outbound calls from any status within the agent interface.
     * Exceptions:  
+
         * Agents can't initiate outbound calls when their status is `System Away` for both Chat and Voice interactions.
         * Agents can't initiate outbound calls when their status is `System Busy` for voice interactions.
+
 2. **Outbound Calls During Digital Interactions**
+
     * Agents can initiate an outbound call even when handling digital interactions.
     * If an agent's slots are full and their status is `System Busy`, they can initiate an outbound call.
+
 3. **Inbound Voice Interaction Restriction**
+
     * Agents can't initiate an outbound call if they're handling an existing inbound voice call.
 
 **Outbound Calling**
 
 * The system disables outbound calling:
+
     * When agents are in a status that doesn't permit outbound calls (for example, System Away for both Chat and Voice interactions, System Busy for Voice interactions).
     * When agents are handling an inbound voice call.
     * When agents are handling an outbound call.
@@ -246,7 +256,7 @@ During the consult, the agent can use existing call control features such as Swa
 
 ##### Queue Level Consult Without Selecting an Agent
 
-The platform allows agents to initiate a consult call by selecting a queue without specifying a particular agent. After the agent starts the consult, the system automatically connects the consult to an available agent in the selected queue.
+The platform lets agents to initiate a consult call by selecting a queue without specifying a particular agent. After the agent starts the consult, the system automatically connects the consult to an available agent in the selected queue.
 Use a queue-based consult when you are handling an active interaction and need assistance without knowing which agent to contact. You must have access to one or more consult-enabled queues. This option helps you reduce time spent searching for agents and allows the system to route the consult based on skills, availability, and capacity.
 
 Steps to Initiate a Queue-Based Consult call:
@@ -408,6 +418,7 @@ While interacting with a customer, if an agent needs to seek external consultati
             <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:60%;">
 
 3. The external consult call connects and places the customer on hold. The following options are available with agents during the external consult call:
+
     * **Mute** - Silence the conversation.
     * **Hold** - Place the external consult call on hold.
     * **Keypad** -  To enter DTMF inputs, enabling users to navigate IVR menus to connect external parties to the conference.
@@ -419,6 +430,45 @@ While interacting with a customer, if an agent needs to seek external consultati
 
     The Call History tab contains records of the outbound calls.  
         <img src="../images/call-history-tab.png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
+
+### Apply or Change a Virtual Background During a Video Call
+
+Follow these steps to apply, change, or remove a virtual background during an active video call:
+
+1. Start or join a video call with a customer.
+2. From the active video call interface, open the Virtual Background option.
+3. Preview the available background options in the Virtual Background panel.
+4. Select one of the following background types:
+
+    * A predefined static image background
+    * A blurred background
+
+5. Apply the selected background. The system applies the background immediately without disconnecting or pausing the call. The background updates only the agent’s video feed.  
+    <img src="../images/background-effects.png" alt="Background Effects" title="Background Effects" style="border: 1px solid gray; zoom:60%;">
+6. To change the background during the same call, select a different background from the list. The system switches the background in real-time while the call remains active.
+7. To remove the virtual background, select the option to revert to the original camera feed. The system restores the agent’s live camera view instantly.
+
+    !!! note 
+ 
+        This feature is in Beta and requires you to [contact Support](https://support.kore.ai) for enablement. Safari is not recommended, as video calls may intermittently fail with a Bad Media Description error when the customer uses Safari (WebSDK) and the agent uses Chrome or Safari.
+
+### Agent-to-Customer Screen Sharing
+
+1. Start an interaction that supports video.
+2. Initiate screen sharing from the interface. Review the system-provided disclaimer regarding sensitive information.  
+    <img src="../images/agent-screen-share.png" alt="Agent Screen Share" title="Agent Screen Share" style="border: 1px solid gray; zoom:60%;">
+3. Select the content to share. Choose a specific application window or browser tab.
+4. Manage screen sharing during the interaction.
+
+    * Stop screen sharing when required.
+    * Change the shared content by stopping the current share and selecting a new one.
+
+5. End screen sharing by selecting Stop Screen Sharing or ending the interaction. The system automatically terminates screen sharing when the interaction ends.
+    <img src="../images/stop-screen-sharing.png" alt="Stop Screen Share" title="Stop Screen Share" style="border: 1px solid gray; zoom:60%;">
+    
+    !!! note 
+     
+        The system maintains security, performance, and browser compatibility throughout the session.
 
 ## Co-Browse
 

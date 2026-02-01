@@ -92,7 +92,8 @@ plugins:
         'getting-started/building-a-virtual-assistant.md': 'getting-started/dialoggpt-app-setup-guide.md'
         'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md': 'automation/use-cases/dialogs/dialog-tasks-overview.md'
         'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
-        
+        'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
+
 extra:  
   version:
     provider: mike
@@ -469,7 +470,7 @@ nav:
           - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Email Settings: contactcenter/configurations/settings/email-settings.md
           - Active Console Configuration: contactcenter/configurations/settings/active-console-configuration.md
-          - Queue Level Outbound Numbers or Emails: contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md
+          - Queue Level Settings: contactcenter/configurations/settings/queue-level-settings.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md

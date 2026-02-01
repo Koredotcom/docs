@@ -24,13 +24,15 @@ The following details of the voice campaigns are shown in a table:
 * **Actions** - Play/Pause/Replay, Stop, Edit, Clone campaign.
 * **Priority** - Priority of the campaign from 1 to 5 (1 being the lowest). The default priority is 5.
 * **Status** - Status of the campaign.
+
     * **Ready**: When a manual campaign is saved and ready to run.
     * **Active**: The campaign has started and is running.
     * **Paused**: The campaign is paused.
     * **Rerun**: Rerun the campaign.
     * **Completed**: The campaign has exhausted calling all numbers or the campaign has reached its scheduled end date.
+
 * **Progress** - Progress of the campaign. The count refreshes every 5 seconds.
-* **Contact List** - The call list that will be dialed.
+* **Contact List** - The call list that is dialed.
 * **Connection** - The following details are displayed based on the dialer type:
     * **Agentless dialer**- The Flow name selected while creating or editing a campaign is shown. For example, the default Conversational Input voice Flow.
     * **Progressive dialer** - The Queue name selected while creating or editing a campaign is shown. For example, the default Sales Queue.
@@ -125,20 +127,24 @@ To create a campaign when Preview Dialing Mode is selected:
 
 #### Preview Dialer Call Handling
 
-The agent is presented with one contact with an option for the Agent to Dial the number or Skip. Agents have a default 30-second timer to either dial or skip the call. If the agent dials within 30 seconds, the call is dialed to the contact. If the agent skips within 30 seconds, the interaction is removed from the agent and reassigned. Skipped contacts follow the retry logic based on the maximum attempts configured. The maximum number of skips allowed per agent can be configured for each campaign. Once the skip limit is reached, the skip button will no longer be available for that campaign instance. If the agent neither dials nor skips within the 30-second window, the call will be automatically dialed. The CUSTOMER INFO widget displays the customer's information. The interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name from which the call or contact is generated.  
+The agent is presented with one contact with an option for the Agent to Dial the number or Skip. Agents have a default 30-second timer to either dial or skip the call. If the agent dials within 30 seconds, the call is dialed to the contact. If the agent skips within 30 seconds, the interaction is removed from the agent and reassigned. Skipped contacts follow the retry logic based on the maximum attempts configured. The maximum number of skips allowed per agent can be configured for each campaign. When the system reaches the skip limit, the skip option is no longer be available for that campaign instance. If the agent neither dials nor skips within the 30-second window, the call is automatically dialed. The Customer Info widget displays the customer's information. The interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name from which the call or contact is generated.  
 <img src="../images/preview-call.png" alt="Preview Call" title="Preview Call" style="border: 1px solid gray; zoom:70%;">
 
-Once an agent dials a number, that number becomes unavailable to other agents. When a call is connected, the number is not dialed again for the duration of the campaign. During the call the agent can Mute, place the call on Hold, or end the interaction. All outbound calls are recorded in the same way as inbound calls to ensure quality and compliance.  
+When an agent dials a number, that number becomes unavailable to other agents. When a call is connected, the number isn't dialed again for the duration of the campaign. During the call the agent can Mute, place the call on Hold, or end the interaction. All outbound calls are recorded in the same way as inbound calls to ensure quality and compliance.  
 <img src="../images/call-options.png" alt="Call Options" title="Call Options" style="border: 1px solid gray; zoom:70%;">
 
 Dispositions are displayed to the agent when the call ends.  
 <img src="../images/disposition-and-notes.png" alt="Disposition & Notes" title="Disposition & Notes" style="border: 1px solid gray; zoom:70%;">
 
-A campaign automatically ends once all numbers are connected. If a call isn't connected, the dialing rules, such as retry waiting periods are checked. The number is redialed after all other records have been attempted. The maximum number of attempts for each contact is set. For example, If a contact's max attempt is 1, it won't be retried. If it's 2, the contact is marked as Retry = yes and will be retried as per the configured logic.
+A campaign automatically ends once all numbers are connected. If a call isn't connected, the dialing rules, such as retry waiting periods are checked. The number is redialed after all other records have been attempted. The maximum number of attempts for each contact is set. For example, If a contact's max attempt is 1, it won't be retried. If it's 2, the contact is marked as Retry = yes and is retried as per the configured logic.
 
 !!! Note
 
     For all voice campaigns (agentless, progressive, and preview), experience flows and caller IDs (phone numbers) are decoupled. The phone number used as the caller ID for a campaign does not need to be linked to the attached experience flow. It can be an independent number or a number associated with a different experience flow. To use [phone numbers](../../../channels/voice-gateway/configure-voice-gateway.md#buy-new-phone-number) or [SIP numbers](../../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup) in a campaign, the Outbound option must be enabled for those numbers. All outbound-enabled numbers appear in the campaign configuration drop-down list.
+
+### Redirect Agents to Console
+
+For Preview and Progressive Voice Campaigns, when a call initiates while the allocated agent isn't on the console, the system shows a notification and redirects the agent to the console after 5 seconds.
 
 ### Power Dialer
 
@@ -162,8 +168,7 @@ Campaign Managers can create, duplicate, mark as default, delete and edit filter
 
 Steps to create a filter:
 
-1. Select **Filters**.  
-    <img src="../images/filters-dropdown.png" alt="Filters" title="Filters" style="border: 1px solid gray; zoom:70%;">
+1. Select **Filters**.
 
 2. Select **+ Add New Filter**.
 
@@ -171,6 +176,7 @@ Steps to create a filter:
     <img src="../images/filter-by-voice.png" alt="Filter by" title="Filter by" style="border: 1px solid gray; zoom:70%;">
 
     Select from the available options:  
+
     * **Clear All** - Clears all selections.  
     * **Save & Apply** - Saves the filter, and it appears when selected.  
     * **Apply** - Applied for one instance and not saved.  
@@ -184,10 +190,11 @@ Steps to create a filter:
         <img src="../images/default-view-voice.png" alt="Default View" title="Default View" style="border: 1px solid gray; zoom:70%;"> 
 
 6. Select the **Filters** dropdown to view Saved Filters. Hover over the saved filter to view the following options:
-    1. Duplicate
-    2. Mark as Default
-    3. Delete
-    4. Edit  
+
+    * Duplicate
+    * Mark as Default
+    * Delete
+    * Edit  
         <img src="../images/saved-filters-voice-campaign.png" alt="Saved Filter Options" title="Saved Filter Options" style="border: 1px solid gray; zoom:70%;"> 
 
 #### Duplicate a Filter
@@ -195,7 +202,6 @@ Steps to create a filter:
 Steps to duplicate a Filter:
 
 1. Select **Duplicate**.  
-    <img src="../images/duplicate-voice.png" alt="Duplicate" title="Duplicate" style="border: 1px solid gray; zoom:70%;">
 
 2. Enter a name for the duplicate filter and select **Save**.  
     <img src="../images/rename-filter-voice.png" alt="Rename Filter" title="Rename Filter" style="border: 1px solid gray; zoom:70%;">
@@ -207,11 +213,8 @@ Steps to duplicate a Filter:
 
 Step to mark a filter as default:
 
-1. Select **Mark as Default**.  
-    <img src="../images/mark-as-default-voice.png" alt="Mark as Default" title="Mark as Default" style="border: 1px solid gray; zoom:70%;">
-
-    A notification appears, and marks the filter as default.  
-        <img src="../images/default-voice.png" alt="Default" title="Default" style="border: 1px solid gray; zoom:70%;">
+1. Select **Mark as Default**. A notification appears, and marks the filter as default.  
+    <img src="../images/default-voice.png" alt="Default" title="Default" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
@@ -221,8 +224,7 @@ Step to mark a filter as default:
 
 Steps to delete a filter:
 
-1. Select **Delete**.  
-    <img src="../images/delete-voice.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;">
+1. Select **Delete**.
 
 2. Select **Delete** on the confirmation pop-up.
 
@@ -230,8 +232,7 @@ Steps to delete a filter:
 
 Steps to edit a filter:
 
-1. Select **Edit**.  
-    <img src="../images/edit-voice.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;">
+1. Select **Edit**.
 
 2. Make the necessary changes and select **Save & Apply**. A confirmation appears, and updates the filter.
 
@@ -265,6 +266,7 @@ Steps to create Voice campaigns:
     <img src="../images/choose-contact-voice.png" alt="Choose Contact" title="Choose Contact" style="border: 1px solid gray; zoom:70%;">
 
 5. Under the **Outreach Strategy** tab, enter the following details:
+
     * **Caller ID**: Select the caller ID to display for the campaign.  
     * **Dialing Order**: Choose the order of dialing the phone numbers.  
     * **Max Attempts Per Contact**: Enter the count for the maximum number of attempts by the dialer to call each phone number in the campaign.  
@@ -295,11 +297,7 @@ Steps to schedule a Campaign:
 3. Select the **Time Zone** to dial the campaign.  
     <img src="../images/timezone-dropdown.png" alt="Timezone" title="Timezone" style="border: 1px solid gray; zoom:80%;">
 
-4. Turn on the Recurrence toggle if you want the campaign to recur at defined intervals. You can select from the following options:
-    1. Daily,
-    2. Weekly,
-    3. Monthly,
-    4. Yearly.
+4. Turn on the Recurrence toggle if you want the campaign to recur at defined intervals. You can select Daily, Weekly, Monthly, or Yearly recurrence.
 
     **Every “Enter Value” days** is a subset of what you select, Daily, Weekly, Monthly, or Yearly.
 
@@ -339,7 +337,11 @@ Steps to configure disposition retry logic:
 
 1. Select **+ Add Disposition Retry**.  
 2. Configure the required details, and then select ✓ to save the logic.  
-    <img src="../images/dispositions-tab.png" alt="Dispositions Tab" title="Dispositions Tab" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/map-dispositions.png" alt="Dispositions Tab" title="Dispositions Tab" style="border: 1px solid gray; zoom:70%;">
+
+    !!! note "Map Dispositions to Positive Outcomes"
+     
+        Campaign managers can mark specific dispositions as Positive Final Outcomes. The system saves these selections and uses them in campaign scoring to provide more accurate and meaningful conversion metrics in analytics.
 
 #### Current Disposition Counts
 
