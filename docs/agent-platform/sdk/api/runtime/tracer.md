@@ -292,7 +292,7 @@ Debug output includes:
 
 ### Viewing Traces
 
-Access your application traces through the Platform analytics dashboard. For detailed information on viewing and analyzing traces, sessions, and generations, see the [Application Analytics documentation](https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/app-analytics/).
+Access your application traces through the Platform analytics dashboard. For detailed information on viewing and analyzing traces, sessions, and generations, see the [Application Analytics documentation](../../../ai-agents/agentic-apps/app-analytics.md).
 
 The platform provides:
 

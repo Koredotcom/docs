@@ -169,7 +169,7 @@ Implements other supporting commands & subcommands for configuration management 
 - Built using a custom `Dockerfile` that:
   - Installs gVisor (runsc) as the runtime
   - Sets up Python 3.10.15 environment
-  - Configures a dedicated kore user
+  - Configures a dedicated Platform user
   - Sets up necessary system capabilities
 - Includes:
   - `main.py`: Entry script that triggers `runsc` and the app

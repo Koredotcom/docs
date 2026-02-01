@@ -266,17 +266,17 @@ Create `.env/<env>` files with required variables:
 
 ```bash
 # .env/dev
-KORE_HOST=https://staging-agent-platform.kore.ai
+KORE_HOST=platform_url
 APP_API_KEY=your_dev_api_key_here
 TRACING_ENABLED=True
 
 # .env/staging
-KORE_HOST=https://staging-agent-platform.kore.ai
+KORE_HOST=platform_url
 APP_API_KEY=your_staging_api_key_here
 TRACING_ENABLED=True
 
 # .env/prod
-KORE_HOST=https://agent-platform.kore.ai
+KORE_HOST=platform_url
 APP_API_KEY=your_prod_api_key_here
 TRACING_ENABLED=False
 ```
