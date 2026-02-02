@@ -23,13 +23,9 @@ MS Teams channel analytics now supports the team channel login email ID instead 
 
 **Support for External ID in BYOK Configurations**
 
-
-BYOK AWS configurations now include an auto-populated External ID field for secure cross-account IAM role assumption, in line with AWS best practices.
-
-
+BYOK AWS configurations now include an auto-populated External ID field for secure cross-account IAM role assumption, in line with AWS best practices. [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/byok-aws-integration.md#information-exchange)
 
 <hr>
-
 
 ## v11.21.0 January 17, 2026
 
