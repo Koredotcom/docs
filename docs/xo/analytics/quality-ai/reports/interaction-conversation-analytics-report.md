@@ -15,52 +15,42 @@ Steps to generate the report:
 
 1. Select **Next** to proceed.
 
-1. Complete the **General** section.
+1. Complete the **General** section by following these steps:
 
-    * Enter a unique **Name** for the report.
+    a) Enter a unique **Name** for the report.
 
-    * Provide a clear **Description** of the report's purpose.
+    b) Provide a clear **Description** of the report's purpose.
  
-    * Select **Next**.        
+    c) Select **Next**.        
     <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
 
-1. Configure the **Filters and Options**.
+1. Complete the **Configuration** section (Filters and Options) by following these steps:
 
-    * Select an evaluation form to set the data scope and applicable interactions. 
+    a) Select an evaluation **Form** to set the data scope and applicable interactions.
 
-    * Select a **Date** or date range (for example, Current day, Previous day, Last 7 days).
+    b) Select a Date or date range (for example, Current day, Previous day, Last 7 days).
 
-    * Select a **Timezone** (defaults to the device's local timezone).
+    c) Select a **Timezone** (defaults to the device's local timezone).
 
-    * Select the required **Filter**.
+    d) Select the required **Filter**.
     
         * Select **+Add Filter** to add Channel, Queue, Language, Agents.
 
         * Set values for the selected filters. 
 
-    * Add **Optional Fields** to include additional metrics or attributes in the report.     
+    e) Add **Optional Fields** to include additional metrics or attributes in the report.     
     
         !!! Note
 
-            AI Justification is an optional field available only for Gen AI by question metrics and provides: 
+            AI Justifications, available only for Gen AI by Question metrics, provide AI-generated explanations for each evaluation score. They appear in Interaction Evaluations and Conversation Analytics reports, and are accessible via APIs.  
+            
+    f) Enter one or more recipient emails in **Send Email to** fields to receive automated reports (minimum one required). 
 
-            * AI-generated explanations for each evaluation score.
-
-            * Not available for the Interaction Details Report for Quality AI.
-
-            * Included in the CSV only when:
-
-                * The evaluation form contains Gen AI by question metrics, and
-
-                * AI Justification is explicitly selected under Optional Fields.
-
-    * Enter one or more recipient emails in **Send Email to** receive automated reports (minimum one required). 
-
-    * Select **Next**.  
+    g) Select **Next**.  
 
         <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
-1. Configure the **Schedule**. 
+1. Configure the **Schedule** section by following these steps: 
 
     * Choose **Run on Demand** or **Schedule**.
 
