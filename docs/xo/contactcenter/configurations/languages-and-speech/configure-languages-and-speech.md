@@ -3,14 +3,13 @@
 This feature lets you configure the language and speech settings within Contact Center module, to manage how your contact center uses languages and speech recognition.
 
 Go to **Contact Center AI** > **CONFIGURATIONS** > **Languages & Speech** to access Languages and Speech settings.
-<img src="../images/languages-and-speech-page.png" alt="Languages & Speech Page" title="Languages & Speech Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/languages-and-speech.png" alt="Languages & Speech Page" title="Languages & Speech Page" style="border: 1px solid gray; zoom:80%;">
 
 This section of the Contact Center AI module provides access to the following settings:
 
 * **[Language Supported for Bot & Agent](#list-of-supported-languages-for-ai-agents-bots-and-human-agents)**: Define the languages you want agents and automation to work with.
-* **Voice Preferences**: Choose the engines to use with Contact Center AI for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
-* **List of Supported Dialects**: Choose the supported dialects.
 * **[Hold Audio](#hold-audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
+* [Voice Authentication](#voice-authentication): Voice authentication uses voiceprints to identify and authenticate users for secure access.
 
 ## Language Management
 
@@ -67,14 +66,14 @@ The system supports the following languages for AI Agents (Bots) and Human Agent
 This option helps configure the audio played to a caller while on hold or waiting in the queue.
 
 To configure the **Hold Audio**, go to **Languages & Speech** and select the **Hold Audio** option.  
-<img src="../images/hold-audio.png" alt="Hold Audio" title="Hold Audio" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/hold-audio.png" alt="Hold Audio" title="Hold Audio" style="border: 1px solid gray; zoom:70%;">
 
 ### Add Hold Audio Files
 
 1. In the **Hold Audio** panel, select **Browse** to select and upload your _.WAV_ audio file. Alternatively, you can drag the file to the panel.
 1. After the file uploads, you can adjust the audio file name in the **Rename Audio** text area.
 2. Select **Save** to add the new audio file and it's automatically added to the **Hold Audio** list. The uploaded audio plays to the caller while on hold or waiting in the queue.
-    <img src="../images/configure-hold-tone.gif" alt="Add Hold Audio" title="Add Hold Audio" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/configure-hold-tone.gif" alt="Add Hold Audio" title="Add Hold Audio" style="border: 1px solid gray; zoom:70%;">
 
 ### Delete Hold Audio Files
 
@@ -82,4 +81,19 @@ Follow these steps to delete hold audio files:
 
 1. Delete a file from the saved list by selecting the **Delete** icon next to it. The system asks you to confirm your choice. Re-upload the files deleted from the list if you change your mind.
 2. Remove an uploaded file that hasn't been saved to the list by selecting the **Delete (x)** option on the upper right corner of the upload panel.
-    <img src="../images/delete-audio-file.png" alt="Delete Audio File" title="Delete Audio File" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/delete-audio-file.png" alt="Delete Audio File" title="Delete Audio File" style="border: 1px solid gray; zoom:70%;">
+
+## Voice Authentication
+
+Voice authentication uses voiceprints to identify and authenticate users for secure access.
+
+Follow these steps to configure voice authentication:
+
+1. Go to **Languages & Speech** and select the **Voice Authentication** option.
+
+2. Turn on the toggle to Enable Voice Biometric Authentication and select the Voice Biometric Provider. You can choose between **Illuma** and **ID R&D**.
+    <img src="../images/voice-authentication.png" alt="Voice Authentication" title="Voice Authentication" style="border: 1px solid gray; zoom:60%;">
+
+3. Enter the Host URL and the API key provided by the Voice Biometric Provider.
+
+4. Select **Save** to apply the changes.
