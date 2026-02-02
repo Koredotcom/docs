@@ -91,7 +91,7 @@ Follow these steps to configure voice authentication:
 
 1. Go to **Languages & Speech** and select the **Voice Authentication** option.
 
-2. Turn on the toggle to Enable Voice Biometric Authentication and select the Voice Biometric Provider. You can choose between **Illuma** and **ID R&D**.
+2. Turn on the toggle to Enable Voice Biometric Authentication and select the Voice Biometric Provider. You can choose between **Illuma** and **ID R&D**.  
     <img src="../images/voice-authentication.png" alt="Voice Authentication" title="Voice Authentication" style="border: 1px solid gray; zoom:60%;">
 
 3. Enter the Host URL and the API key provided by the Voice Biometric Provider.
