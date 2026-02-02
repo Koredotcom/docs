@@ -17,49 +17,49 @@ Steps to generate the Agent Performance Report:
 
 1. Configure the **General** section.
 
-    * Enter a unique identifier **Name** for the report.
+    a) Enter a unique identifier **Name** for the report.
 
-    * Enter a meaningful **Description** explaining the report's purpose and intended audience.
+    b) Enter a meaningful **Description** explaining the report's purpose and intended audience.
  
-    * Select **Next** to proceed.        
+    c) Select **Next** to proceed.        
     <img src="../images/agent-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
 
 1. Enter the **Configure** section fields and filters.
 
-    * Select at least one **Agent Scorecard** from the dropdown. 
+    a) Select at least one **Agent Scorecard** from the dropdown. 
 
-        * Determines the data scope and included agents.
+    b) Determines the data scope and included agents.
 
-        * Enables you to select multiple scorecards for comparative analysis.
+    c) Enables you to select multiple scorecards for comparative analysis.
 
-        * Only agents with assigned scorecards appear in the report.
+    d) Only agents with assigned scorecards appear in the report.
 
-    * Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
+    f) Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
 
-    * Select a **Timezone** (defaults to device local timezone) from the dropdown.
+    g) Select a **Timezone** (defaults to device local timezone) from the dropdown.
 
-    * Configure **Filter**.
+    h) Configure the required Filters:
 
-        * Select **+Add Filter** to configure additional filters.
+    * Select **+Add Filter** to configure additional filters.
 
-            * **Channel**: Select communication channel (Chat, Voice).
+        * **Channel**: Select communication channel (Chat, Voice).
 
-            * **Queue**: Select one or more queues.
+        * **Queue**: Select one or more queues.
 
-            * **Language**: Select languages assigned to the scorecard.
+        * **Language**: Select languages assigned to the scorecard.
 
-            * **Agents**: Select specific agents for tracking.
+        * **Agents**: Select specific agents for tracking.
 
-            * **Agent Groups**: Select a team or group of agents.
+        * **Agent Groups**: Select a team or group of agents.
 
-        * Set the values vs. the selected/added filters. 
+    * Set the values vs. the selected/added filters. 
 
-    * Add **Optional Fields** to include additional metrics or attributes.
+    i) Add **Optional Fields** to include additional metrics or attributes.
 
-    * Enter one or more addresses in the **Send Email to** field to send the automated reports (minimum one required). 
+    j)Enter one or more addresses in the **Send Email to** fields to send the automated reports (minimum one required). 
 
-    * Select **Next** to proceed.  
-    <img src="../images/agent-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:60%;">
+    k) Select **Next** to proceed.  
+        <img src="../images/agent-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:60%;">
 
 1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
  
@@ -70,7 +70,6 @@ Steps to generate the Agent Performance Report:
     <img src="../images/agent-schedule.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:60%;">
 
 1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
-<img src="../images/frequency.png" alt="Repeat" title="Repeat" style="border: 1px solid gray; zoom:60%;">
 
 1. Select a **Start Date** to start the schedule.
 

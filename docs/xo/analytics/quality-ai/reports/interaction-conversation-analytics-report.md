@@ -34,41 +34,37 @@ Steps to generate the report:
 
     d) Select the required **Filter**.
     
-        * Select **+Add Filter** to add Channel, Queue, Language, Agents.
+    * Select **+Add Filter** to add Channel, Queue, Language, Agents.
 
-        * Set values for the selected filters. 
+    * Set values for the selected filters. 
 
     e) Add **Optional Fields** to include additional metrics or attributes in the report.     
     
-        !!! Note
+    !!! Note
 
-            AI Justifications, available only for Gen AI by Question metrics, provide AI-generated explanations for each evaluation score. They appear in Interaction Evaluations and Conversation Analytics reports, and are accessible via APIs.  
+        AI Justifications, available only for Gen AI by Question metrics, provide AI-generated explanations for each evaluation score. They appear in Interaction Evaluations and Conversation Analytics reports, and are accessible via APIs.  
             
-    f) Enter one or more recipient emails in **Send Email to** fields to receive automated reports (minimum one required). 
+    f) Enter one or more recipient emails in **Send Email to** fields to send automated reports (minimum one required). 
 
-    g) Select **Next**.  
-
+    g) Select **Next**.    
         <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
 1. Configure the **Schedule** section by following these steps: 
 
-    * Choose **Run on Demand** or **Schedule**.
+    a) Choose **Run on Demand** or **Schedule**.
 
-        * Select **Run on Demand** to generate the report immediately using the current configuration without scheduling.
+    b) Select **Run on Demand** to generate the report immediately using the current configuration without scheduling.
 
-        * Select **Schedule** to automate report generation at regular intervals based on a defined start time and frequency or repeat.         
+    c) Select **Schedule** to automate report generation at regular intervals based on a defined frequency and start time.            
         <img src="../images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
 
-1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
-<img src="../images/interaction-conversation-analytics.png" alt="Repeat" title="Repeat" style="border: 1px solid gray; zoom:50%;">
+    d) Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).      
 
-1. Select a **Start Date** to start the schedule.
+    e) Select a **Start Date** to start the schedule.
 
-1. Select a **Timezone** (defaults to your device's local timezone).
+    f) Select a **Timezone** (defaults to your device's local timezone).
 
-1. Select **Instant Run** to generate the report immediately.
-
-1. Select **Save** to activate the schedule.  
+    g) Select **Save** to activate the schedule.  
 
 ## Report Fields
 
