@@ -2,6 +2,22 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Streaming Support for Search AI Answers</font>
+
+Search AI now streams LLM-generated answers in real-time, displaying responses token-by-token as they're generated. This creates a more interactive experience and reduces wait times for longer answers. To use streaming, use the new default streaming prompt or add streaming options to your custom prompt. Note that streaming is not available for API-based responses and is currently supported only for OpenAI and Azure OpenAI models. 
+
+<font size="4">Webhook-Based Content Updates</font>
+
+Search AI now supports webhooks for near real-time content synchronization with Confluence Server and ServiceNow. Webhooks capture create, update, and delete events directly from these systems, ensuring content stays up to date between scheduled syncs and improving indexing efficiency.
+Note that this update does not support syncing user information for updated content and  Confluence spaces.
+
+<hr>
+
 ## v11.21.0 January 17, 2026
 <u>Minor Release</u>
 

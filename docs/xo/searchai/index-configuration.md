@@ -391,4 +391,4 @@ This configuration is required only when content is extracted using the Image-ba
 **Prompt**: Select the prompt to be used for vector generation of image based content. You can select the existing prompts or create a new prompt from this page. 
 
 !!!note 
-   Any changes made to the prompt for this feature automatically reflect in the Vector Generation - Image feature under the Gen AI page. 
+      Any changes made to the prompt for this feature automatically reflect in the Vector Generation - Image feature under the Gen AI page. 

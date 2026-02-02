@@ -15,68 +15,54 @@ Steps to generate the report:
 
 1. Select **Next** to proceed.
 
-1. Complete the **General** section.
+1. Complete the **General** section by following these steps:
 
-    * Enter a unique **Name** for the report.
+    a) Enter a unique **Name** for the report.
 
-    * Provide a clear **Description** of the report's purpose.
+    b) Provide a clear **Description** of the report's purpose.
  
-    * Select **Next**.        
-    <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
+    c) Select **Next**.        
+            <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
 
-1. Configure the **Filters and Options**.
+1. Complete the **Configuration** section (Filters and Options) by following these steps:
 
-    * Select an evaluation form to set the data scope and applicable interactions. 
+    a) Select an evaluation **Form** to set the data scope and applicable interactions.
 
-    * Select a **Date** or date range (for example, Current day, Previous day, Last 7 days).
+    b) Select a **Date** or date range (for example, Current day, Previous day, Last 7 days).
 
-    * Select a **Timezone** (defaults to the device's local timezone).
+    c) Select a **Timezone** (defaults to the device's local timezone).
 
-    * Select the required **Filter**.
+    d) Select the required **Filter**.
     
-        * Select **+Add Filter** to add Channel, Queue, Language, Agents.
+    * Select **+Add Filter** to add Channel, Queue, Language, and Agents.
 
-        * Set values for the selected filters. 
+    * Set values for the selected filters. 
 
-    * Add **Optional Fields** to include additional metrics or attributes in the report.     
+    e) Add **Optional Fields** to include additional metrics or attributes in the report.     
     
         !!! Note
 
-            AI Justification is an optional field available only for Gen AI by question metrics and provides: 
+            AI Justifications, available only for Gen AI by Question metrics, provide AI-generated explanations for each evaluation score. They appear in Interaction Evaluations and Conversation Analytics reports, and are accessible via APIs.  
+            
+    f) Enter one or more recipient emails in **Send Email to** fields to send automated reports (minimum one required). 
 
-            * AI-generated explanations for each evaluation score.
+    g) Select **Next**.    
+            <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
-            * Not available for the Interaction Details Report for Quality AI.
+1. Configure the **Schedule** section by following these steps: 
 
-            * Included in the CSV only when:
+    a) Choose **Run on Demand** or **Schedule**.
 
-                * The evaluation form contains Gen AI by question metrics, and
+    b) Select Run on Demand to generate the report immediately using the current configuration without scheduling.
 
-                * AI Justification is explicitly selected under Optional Fields.
+    c) Select Schedule to automate report generation at regular intervals based on a defined frequency and start time.            
+        <img src="./images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
 
-    * Enter one or more recipient emails in **Send Email to** receive automated reports (minimum one required). 
+    d) Choose a **Frequency** or **Repeat** to generate report (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).         
 
-    * Select **Next**.  
+    e) Select a **Start Date** to start the schedule.
 
-        <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
-
-1. Configure the **Schedule**. 
-
-    * Choose **Run on Demand** or **Schedule**.
-
-        * Select **Run on Demand** to generate the report immediately using the current configuration without scheduling.
-
-        * Select **Schedule** to automate report generation at regular intervals based on a defined start time and frequency or repeat.         
-        <img src="../images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
-
-1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
-<img src="../images/interaction-conversation-analytics.png" alt="Repeat" title="Repeat" style="border: 1px solid gray; zoom:50%;">
-
-1. Select a **Start Date** to start the schedule.
-
-1. Select a **Timezone** (defaults to your device's local timezone).
-
-1. Select **Instant Run** to generate the report immediately.
+    f) Select a **Timezone** (defaults to your device's local timezone).
 
 1. Select **Save** to activate the schedule.  
 

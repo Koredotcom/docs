@@ -139,7 +139,7 @@ Defines the parameters specific to each report type, including data sources, fil
 
 ##### Configure Filters and Fields
 
-This lets you to add filters when creating a new report or editing an existing report. You can change the following report’s details:
+This lets you add filters when creating a new report or editing an existing report. You can change the following report’s details:
 
 1. Select **+Add Filter** to add more, and add a value vs. the selected filter. 
 
@@ -186,7 +186,7 @@ Lets you authorize users to automate report generation with minimal manual effor
 
     * **Run on Demand**: 
 
-        * Select when you need immediate report generation (a new report or to edit an existing report).
+        * Select this when you need immediate report generation (a new report or to edit an existing report).
 
         * Report executes instantly with the current configuration.
 
@@ -195,7 +195,7 @@ Lets you authorize users to automate report generation with minimal manual effor
 
     * **Schedule**: 
 
-        * Select schedule for automated recurring generation.
+        * Select this for automated recurring generation.
 
         * Modify the schedule based on the chosen frequency.           
 
@@ -242,25 +242,25 @@ Lets you authorize users to automate report generation with minimal manual effor
     * Manually, you can generate the report immediately.
 
     * Automatically, the system runs the report based on a pre-set schedule.   
-    <img src="../images/gen-start-date-and-timezone.png" alt="Pre-set Schedule" title="Pre-set Schedule" style="border: 1px solid gray; zoom:80%;">   
+    <img src="../images/insta-run.png" alt="Instant Run" title="Instant Run" style="border: 1px solid gray; zoom:80%;">   
 
 1. Select **Save** to confirm and activate the schedule. The saved report appears in the **Reports > My Reports** dashboard.
 
     * Enable scheduling by switching on the Schedule toggle. 
 
     * From the **Actions** column, select **Run** to generate the report immediately.     
-    <img src="./images/saved-report.png" alt="Activate Schedule" title="Activate Schedule" style="border: 1px solid gray; zoom:80%;">  
+    <img src="../images/saved-report.png" alt="Activate Schedule" title="Activate Schedule" style="border: 1px solid gray; zoom:80%;">  
     
-
     !!! Note
 
-            * If you select **Run on Demand**, the **Instant Run** button appears, and the scheduling toggle is disabled.
+        * If you configure a recurring schedule (for example, Daily or Weekly), the **Instant Run** button is disabled.
 
-            * If you configure a recurring schedule (for example, Daily or Weekly), the **Instant Run** button is disabled.
+        * When a recurring schedule is active, the system automatically runs the report according to that schedule.
 
-            * When a recurring schedule is active, the system automatically runs the report according to that schedule.
+        * When in **Schedule** mode, the scheduling toggle remains enabled, and you can turn the schedule on or off at any time.
 
-            * When in **Schedule** mode, the scheduling toggle remains enabled, and you can turn the schedule on or off at any time.
+        * When you proceed to disable a report, the system displays displays a pop-up confirmation before updating the report status.  
+        <img src="../images/disable-report.png" alt="Disable A Report" title="Disable A Report" style="border: 1px solid gray; zoom:80%;"> 
 
 ## Mandatory Configuration Fields
 
@@ -287,15 +287,22 @@ Modify the report’s settings, including name, description, data scope, filters
 
 To edit a report,
 
-* Select **Edit** to modify the report settings.
+1. Select **Edit** to modify the report settings.
 
-* Modify the **Name** and **Description**. 
+1. Modify the **Name** and **Description**. 
 
-* Modify the **Evaluation Form**, **Date**, **Timezone**, **Filter**, **Optional Fields**, and **Send Email to** addresses.    
+1. Modify the **Evaluation Form**, **Date**, **Timezone**, **Filter**, **Optional Fields**, and **Send Email to** fields to receive automated reports (minimum one required).     
 
-* Update **Run on Demand** or **Schedule** with the desired frequency details, such as **Hourly, Daily, Weekly, Monthly, Quarterly, Yearly, Start Date, and Time Zone**.
+1. Update **Run on Demand** or **Schedule** with the desired frequency details, such as **Hourly, Daily, Weekly, Monthly, Quarterly, Yearly, Start Date, and Time Zone**.
+
+1. Select **Instant Run** to generate the report immediately.
+    <img src="../images/insta-run.png" alt="History" title="History" style="border: 1px solid gray; zoom:80%;">  
+    
+    !!! Note
+
+        Only visible while you’re configuring or customizing a report in **Edit** mode.
    
-* Select **Save** to activate the changes or reschedule the configuration. 
+1. Select **Save** to activate the changes or reschedule the configuration. 
 
 ## Additional Actions
 

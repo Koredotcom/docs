@@ -192,6 +192,8 @@ The Status icon lets agents to show customers whether they're available for the 
 Selecting View Status Insights displays a pop-up with the time spent for each status. The pop-up displays data only for the selected day. To view detailed insights for custom date ranges, users can select `View Detailed Status Insights`, which redirects them to `My Dashboard`. Each status shows the amount of time the agent spent in that status.  
 <img src="../images/status-insights.png" alt="Agent Status Insights" title="Agent Status Insights" style="border: 1px solid gray; zoom:80%;">
 
+Administrators can configure the Agent Status from [Agent Status Management](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management).
+
 ## Agent Profile
 
 The Agent Profile icon is located on the top-right corner of the console.  

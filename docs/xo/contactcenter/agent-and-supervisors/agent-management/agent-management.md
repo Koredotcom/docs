@@ -120,10 +120,12 @@ To create a new agent status, follow these steps:
 
 1. In the Agent Status section, select `+ New Status`.
 2. In the New Status window, enter the following details:
+
     1. `Status Name`-Enter the status name.
     2. `Status Type`-Select the status type: `Away` or `Busy`.
     3. `Description`-Type in a brief description of the status.
     4. `Assign to Agent Groups`-Select the agent groups to assign the statuses. The system makes the status available to all agents in the selected groups. It's mandatory to add an agent group while creating a custom agent status.
+
 3. Select `Add & Exit` to create the status and exit the window or select `Add & Stay` to create the status and continue to a new one.  
 4. The status created successfully success message appears on-screen and the new status adds to the Agent Status list.  
 
@@ -135,7 +137,12 @@ To edit an existing Agent status entry, follow these steps:
     <img src="../images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:80%;">
 
 2. In the Edit Status window, edit the Status Name, Status Type, and or Description, then select Update.  
-3. The Status updated successfully message appears in the window and the modified values reflect in the Agent Status window.  
+
+    !!! note "Rename Default Agent Status"
+     
+        Administrators can rename default agent status (Available, Away, Busy) to match business terminology, with multilingual support. The system preserves the underlying status behavior and applies the updated labels consistently across the existing and historical data.
+
+3. The Status updated successfully message appears in the window and the modified values reflect in the [Agent Status](../../../console/manage-layout.md#agent-status) widget.  
 
 ### Delete an Agent Status
 

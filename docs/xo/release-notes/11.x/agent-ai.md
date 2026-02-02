@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+
+<u>Patch Release </u>
+
+This update includes only bug fixes. 
+
+<hr>
+
 ## v11.21.0 January 17, 2026
 
 <u>Minor Release</u>
@@ -539,7 +547,7 @@ The Agent AI integration with NICE CX using the Salesforce NICE CX CTI now recei
 
 **Agent AI Integration with NICE Agent Desktop**
 
-Agent AI is integrated with NICE Agent Desktop.  This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md)
+Agent AI is integrated with NICE Agent Desktop. This integration supports all Agent AI features such as Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, and Transcription along with end-of-call summary and Custom Data passing (agent name and ID) to the Agent AI widget. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md)
 
 <font size="4">API Enhancements</font>
 
