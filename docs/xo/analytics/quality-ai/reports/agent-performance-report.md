@@ -40,19 +40,19 @@ Steps to generate the Agent Performance Report:
 
     h) Configure the required Filters:
 
-    * Select **+Add Filter** to configure additional filters.
+        * Select **+Add Filter** to configure additional filters.
 
-        * **Channel**: Select communication channel (Chat, Voice).
+            * **Channel**: Select communication channel (Chat, Voice).
 
-        * **Queue**: Select one or more queues.
+            * **Queue**: Select one or more queues.
 
-        * **Language**: Select languages assigned to the scorecard.
+            * **Language**: Select languages assigned to the scorecard.
 
-        * **Agents**: Select specific agents for tracking.
+            * **Agents**: Select specific agents for tracking.
 
-        * **Agent Groups**: Select a team or group of agents.
+            * **Agent Groups**: Select a team or group of agents.
 
-    * Set the values vs. the selected/added filters. 
+        * Set the values vs. the selected/added filters. 
 
     i) Add **Optional Fields** to include additional metrics or attributes.
 
@@ -63,19 +63,17 @@ Steps to generate the Agent Performance Report:
 
 1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
  
-    * Select **Run on Demand**, and select **Save** to generate the report immediately with the current configuration.  
+    a) Select **Run on Demand**, and select **Save** to generate the report immediately with the current configuration.  
     <img src="../images/agent-run-on-demand.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:60%;">
 
-    * Select **Schedule** to set up automated recurring report generation.  
+    b) Select **Schedule** to set up automated recurring report generation.  
     <img src="../images/agent-schedule.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:60%;">
 
-1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
+    c) Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
 
-1. Select a **Start Date** to start the schedule.
+    d) Select a **Start Date** to start the schedule.
 
-1. Select a **Timezone** (defaults to your device's local timezone).
-
-1. Select **Instant Run** to generate the report immediately.
+    e) Select a **Timezone** (defaults to your device's local timezone).
 
 1. Select **Save** to activate the schedule.  
 

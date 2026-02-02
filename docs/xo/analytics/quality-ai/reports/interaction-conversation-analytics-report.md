@@ -22,49 +22,49 @@ Steps to generate the report:
     b) Provide a clear **Description** of the report's purpose.
  
     c) Select **Next**.        
-    <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
+            <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
 
 1. Complete the **Configuration** section (Filters and Options) by following these steps:
 
     a) Select an evaluation **Form** to set the data scope and applicable interactions.
 
-    b) Select a Date or date range (for example, Current day, Previous day, Last 7 days).
+    b) Select a **Date** or date range (for example, Current day, Previous day, Last 7 days).
 
     c) Select a **Timezone** (defaults to the device's local timezone).
 
     d) Select the required **Filter**.
     
-    * Select **+Add Filter** to add Channel, Queue, Language, Agents.
+    * Select **+Add Filter** to add Channel, Queue, Language, and Agents.
 
     * Set values for the selected filters. 
 
     e) Add **Optional Fields** to include additional metrics or attributes in the report.     
     
-    !!! Note
+        !!! Note
 
-        AI Justifications, available only for Gen AI by Question metrics, provide AI-generated explanations for each evaluation score. They appear in Interaction Evaluations and Conversation Analytics reports, and are accessible via APIs.  
+            AI Justifications, available only for Gen AI by Question metrics, provide AI-generated explanations for each evaluation score. They appear in Interaction Evaluations and Conversation Analytics reports, and are accessible via APIs.  
             
     f) Enter one or more recipient emails in **Send Email to** fields to send automated reports (minimum one required). 
 
     g) Select **Next**.    
-        <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
+            <img src="../images/interactions-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
 1. Configure the **Schedule** section by following these steps: 
 
     a) Choose **Run on Demand** or **Schedule**.
 
-    b) Select **Run on Demand** to generate the report immediately using the current configuration without scheduling.
+    b) Select Run on Demand to generate the report immediately using the current configuration without scheduling.
 
-    c) Select **Schedule** to automate report generation at regular intervals based on a defined frequency and start time.            
-        <img src="../images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
+    c) Select Schedule to automate report generation at regular intervals based on a defined frequency and start time.            
+        <img src="./images/interaction-run-on-demand.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
 
-    d) Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).      
+    d) Choose a **Frequency** or **Repeat** to generate report (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).         
 
     e) Select a **Start Date** to start the schedule.
 
     f) Select a **Timezone** (defaults to your device's local timezone).
 
-    g) Select **Save** to activate the schedule.  
+1. Select **Save** to activate the schedule.  
 
 ## Report Fields
 

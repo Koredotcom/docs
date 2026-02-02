@@ -33,9 +33,8 @@ The Conversation Intelligence dashboard is now split into two specialized dashbo
 
 Legacy widgets, including Contact Center Efficiency, Agent Occupancy, and Agent State Monitor, are now deprecated but remain available via feature flag for existing users.
 
-# Quality AI Release Notes
+<hr>
 
-This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
 ## v11.21.0 January 17, 2026
 

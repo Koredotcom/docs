@@ -34,19 +34,19 @@ Steps to generate the Evaluation Form Summary Report:
 
     d) Configure the required **Filter**.
 
-    * Select **+Add Filter** to configure additional filters.
+        * Select **+Add Filter** to configure additional filters.
 
-        * **Channel**: Select communication channel (Chat, Voice).
+            * **Channel**: Select communication channel (Chat, Voice).
 
-        * **Queue**: Select one or more queues.
+            * **Queue**: Select one or more queues.
 
-        * **Language**: Select languages assigned to the scorecard.
+            * **Language**: Select languages assigned to the scorecard.
 
-        * **Agents**: Select specific agents for tracking.
+            * **Agents**: Select specific agents for tracking.
 
-        * **Agent Groups**: Select a team or group of agents.
+            * **Agent Groups**: Select a team or group of agents.
 
-    * Set the values vs. the selected/added filters.
+        * Set the values vs. the selected/added filters.
 
     e) Add **Optional Fields** to include additional metrics or attributes.
 
@@ -69,7 +69,7 @@ Steps to generate the Evaluation Form Summary Report:
 
     e) Select a **Timezone** (defaults to your device's local timezone).
 
-    f) Select **Save** to activate the schedule.  
+1. Select **Save** to activate the schedule.  
 
 ## Report Fields
 
