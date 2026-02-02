@@ -180,6 +180,25 @@ In this module, you can choose which profile fields (data fields) are visible to
 
 Additionally, you can manage which non-default fields (controlled fields) end users can view and edit. You can manage optional fields here. For example: *District* for address.
 
+### Default Role for New Workspace Users
+
+Authorized administrators can configure a default role (Admin, Member, or Viewer) for workspace users who are added using invite, sync, or API.
+
+By assigning the appropriate access upfront, this setting streamlines onboarding by ensuring users receive the correct permissions to use the required features immediately, eliminating the need for manual role updates after provisioning.
+
+<b>Key Considerations</b>
+
+* This setting applies only to newly added users who do not have a role explicitly assigned to them.
+
+* It does not affect existing users or their roles. 
+
+* *Member* is the recommended default role. 
+
+* If no role is specified when a user is added, the user automatically inherits the workspace’s current default role. 
+
+* You can explicitly assign another role during user invitation or creation (from the **Users** page), which overrides the configured workspace default role.
+
+
 ### Sync Status Email Notifications
 
 For a successful or failed sync, a notification is sent to the registered email.
