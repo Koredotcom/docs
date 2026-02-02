@@ -228,12 +228,11 @@ agent_config = AgentBuilder() \
     .set_tools([inline_tool]) \
     .build()
 
-# Pass custom tools at runtime
-from src.tools import Tools  # Your tools module
+# Tools are automatically registered via @Tool.register decorator
 
 app.start(
     orchestrator_cls=CustomOrchestrator,
-    custom_tools=ToolsRegistry,  # All @Tool.register tools
+
     port=8080
 )
 ```

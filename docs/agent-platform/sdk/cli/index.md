@@ -6,6 +6,7 @@ The AgenticAI SDK provides a comprehensive command-line interface through `run.p
 
 The SDK CLI is a unified interface that handles:
 
+- **Configuration**: Select which environment config to use
 - **Local Development**: Start and test applications locally
 - **Packaging**: Create deployable KAR archives  
 - **Deployment**: Deploy to the AgenticAI platform
@@ -13,7 +14,7 @@ The SDK CLI is a unified interface that handles:
 
 ## CLI Structure
 
-### What is `run.py`?
+### What's `run.py`?
 
 `run.py` is a thin wrapper script that invokes the centralized CLI from `agenticai_core.cli.runner`. It provides a consistent interface across all workspace operations.
 
@@ -31,32 +32,69 @@ if __name__ == '__main__':
 
 ```bash
 # General format
-python run.py [OPTIONS] COMMAND [ARGS]
-
-# With environment configuration
-python run.py -c <env> COMMAND [ARGS]
+python run.py COMMAND [OPTIONS]
 ```
-
-### Global Options
-
-| Option | Description | Example |
-|--------|-------------|---------|
-| `-c, --config` | Environment configuration file to load (from `.env/<env>`) | `-c dev`, `-c staging`, `-c prod` |
-
-Environment configs are loaded from `.env/<env>` files (see [Environment Configuration](#environment-configuration) for details).
 
 ## Available Commands
 
 | Command | Purpose | Key Options | Example |
 |---------|---------|-------------|---------|
-| **`start`** | Start local development server | `--host`, `--port` | `python run.py start --host 0.0.0.0` |
-| **`--archive`** | Package app for deployment | `<project_name>` | `python run.py --archive my-app` |
-| **`deploy`** | Deploy to AgenticAI platform | `-c <env>`, `-f <kar_file>` | `python run.py -c dev deploy -f app.kar` |
-| **`publish`** | Create app environment | `-c <env>`, `--app`, `--name` | `python run.py -c dev publish --app <id> --name dev` |
-| **`status`** | Check environment status | `-c <env>`, `--app`, `--name` | `python run.py -c dev status --app <id> --name dev` |
-| **`test`** | Run end-to-end tests | `-c <env>` | `python run.py -c dev test` |
+| **`config`** | Select which .env config to use | `-u <name>` | `python run.py config -u prod` |
+| **`package`** | Package app for deployment | `-o <name>` | `python run.py package -o my-app` |
+| **`start`** | Start local development server | `-H <host>`, `-P <port>` | `python run.py start -H 0.0.0.0` |
+| **`deploy`** | Deploy to AgenticAI platform | `-f <kar_file>`, `-e <env>`, `--package-only` | `python run.py deploy -f app.kar` |
+| **`publish`** | Create app environment | `-a <appId>`, `-n <name>` | `python run.py publish -a <id> -n dev` |
+| **`status`** | Check environment status | `-a <appId>`, `-n <name>` | `python run.py status -a <id> -n dev` |
+| **`undeploy`** | Undeploy an app environment | `-f <path>` | `python run.py undeploy -f bin/myapp/` |
+| **`test`** | Run end-to-end tests | - | `python run.py test` |
 
 ## Command Details
+
+### Config Command
+
+Select which environment configuration file to use as the default.
+
+```bash
+python run.py config -u <config_name>
+```
+
+**Options:**
+
+- `-u, --use` - Config name to use (for example, `dev`, `staging`, `prod`)
+
+**Example:**
+
+```bash
+python run.py config -u prod
+```
+
+This copies `.env/prod` to `.env/default`, which is then loaded by subsequent commands.
+
+### Package Command
+
+Package your application into a deployable KAR archive file.
+
+```bash
+python run.py package -o <project_name>
+```
+
+**Options:**
+
+- `-o, --output` - Name for the output package (creates `bin/<project_name>/`)
+
+**Output:**
+
+- `bin/<project_name>/application.kar` - Deployable ZIP archive (<1MB target)
+- `bin/<project_name>/application.config.json` - Application configuration
+
+**Example:**
+
+```bash
+python run.py package -o banking-app
+```
+
+!!! tip "Package Size"
+    Target package size is <1MB. If larger, check contents with `unzip -l bin/<project>/application.kar` and ensure `.venv` isn't included.
 
 ### Start Command
 
@@ -68,79 +106,69 @@ python run.py start [OPTIONS]
 
 **Options:**
 
-- `--host` - Server host address (default: `127.0.0.1`)
-- `--port` - Server port (default: `8080`)
+- `-H, --host` - Server host address (default: `localhost`)
+- `-P, --port` - Server port (default: `8080`)
+
+!!! note "Uppercase Flags"
+    The flags use uppercase `-H` and `-P` because lowercase `-h` conflicts with argparse's built-in help flag.
 
 **Example:**
-```bash
-python run.py start --host 0.0.0.0 --port 8080
-```
-
-### Archive Command
-
-Package your application into a deployable KAR archive file.
 
 ```bash
-python run.py --archive <project_name>
+python run.py start -H 0.0.0.0 -P 8080
 ```
-
-**Arguments:**
-
-- `<project_name>` - Name for the archive (creates `bin/<project_name>/`)
-
-**Output:**
-
-- `bin/<project_name>/application.kar` - Deployable ZIP archive (<1MB target)
-- `bin/<project_name>/application.config.json` - Application configuration
-
-**Example:**
-```bash
-python run.py --archive banking-app
-```
-
-!!! tip "Archive Size"
-    Target archive size is <1MB. If larger, check contents with `unzip -l bin/<project>/application.kar` and ensure `.venv` is not included.
 
 ### Deploy Command
 
 Deploy your application to the AgenticAI platform.
 
 ```bash
-python run.py -c <env> deploy -f <kar_file>
+python run.py deploy -f <kar_file> [OPTIONS]
 ```
 
 **Required Options:**
 
-- `-c <env>` - Environment configuration (loads `.env/<env>`)
 - `-f, --kar` - Path to KAR archive file
 
+**Optional:**
+
+- `-e, --env` - Path to .env file to override app variables
+- `--package-only` - Re-deploys only the package; skips app import
+
 **Environment Requirements:**
-Requires in `.env/<env>`:
+Requires in `.env/default` (set via `config` command):
 
 - `KORE_HOST` - Platform endpoint URL
 - `APP_API_KEY` - API authentication key
 
 **Example:**
+
 ```bash
-python run.py -c dev deploy -f bin/banking-app.kar
+# Full deployment
+python run.py deploy -f bin/banking-app/application.kar
+
+# With environment overrides
+python run.py deploy -f bin/banking-app/application.kar -e .env/prod
+
+# Package-only redeployment
+python run.py deploy -f bin/banking-app/application.kar --package-only
 ```
 
 !!! warning "Save Deployment IDs"
     Save the `appId` and `streamId` from deployment output for environment creation and testing.
 
-### Publish Environment Command
+### Publish Command
 
 Create an environment for your deployed application.
 
 ```bash
-python run.py -c <env> publish --app <appId> --name <envName> [OPTIONS]
+python run.py publish -a <appId> -n <envName> [OPTIONS]
 ```
 
 **Required Options:**
 
-- `-c <env>` - Environment configuration file
 - `-a, --app` - Application ID (from deploy output)
-- `-n, --name` - Environment name (e.g., `development`, `staging`, `production`)
+- `-n, --name` - Environment name (for example, `development`, `staging`, `production`)
 
 **Optional:**
 
@@ -148,8 +176,9 @@ python run.py -c <env> publish --app <appId> --name <envName> [OPTIONS]
 - `-e, --env` - Path to .env file to override app variables
 
 **Example:**
+
 ```bash
-python run.py -c dev publish --app app_abc123xyz --name development --desc "Dev environment"
+python run.py publish -a app_abc123xyz -n development -d "Dev environment"
 ```
 
 ### Status Command
@@ -157,18 +186,36 @@ python run.py -c dev publish --app app_abc123xyz --name development --desc "Dev 
 Check the status of a deployed application environment.
 
 ```bash
-python run.py -c <env> status --app <appId> --name <envName>
+python run.py status -a <appId> -n <envName>
 ```
 
 **Required Options:**
 
-- `-c <env>` - Environment configuration
 - `-a, --app` - Application ID
 - `-n, --name` - Environment name
 
 **Example:**
+
 ```bash
-python run.py -c dev status --app app_abc123xyz --name development
+python run.py status -a app_abc123xyz -n development
+```
+
+### Undeploy Command
+
+Undeploy an application environment.
+
+```bash
+python run.py undeploy -f <path>
+```
+
+**Required Options:**
+
+- `-f, --path` - Path to the deployment directory (for example, `bin/myapp/`)
+
+**Example:**
+
+```bash
+python run.py undeploy -f bin/banking-app/
 ```
 
 ### Test Command
@@ -176,16 +223,13 @@ python run.py -c dev status --app app_abc123xyz --name development
 Run end-to-end tests on a deployed application.
 
 ```bash
-python run.py -c <env> test
+python run.py test
 ```
 
-**Required Options:**
-
-- `-c <env>` - Environment configuration
-
 **Example:**
+
 ```bash
-python run.py -c dev test
+python run.py test
 ```
 
 ## Quick Reference
@@ -194,26 +238,38 @@ Complete reference for all `run.py` commands:
 
 ```bash
 # ============================================
+# CONFIGURATION
+# ============================================
+
+# Set which config to use
+python run.py config -u <config_name>
+
+# Examples
+python run.py config -u dev        # Use .env/dev
+python run.py config -u prod       # Use .env/prod
+
+
+# ============================================
 # LOCAL DEVELOPMENT
 # ============================================
 
 # Start local server
-python run.py start [--host HOST] [--port PORT]
+python run.py start [-H HOST] [-P PORT]
 
 # Examples
 python run.py start                          # localhost:8080
-python run.py start --host 0.0.0.0 --port 8080
+python run.py start -H 0.0.0.0 -P 8080
 
 
 # ============================================
 # PACKAGING
 # ============================================
 
-# Create deployable archive
-python run.py --archive <project_name>
+# Create deployable package
+python run.py package -o <project_name>
 
 # Example
-python run.py --archive banking-app
+python run.py package -o banking-app
 ls -lh bin/banking-app/application.kar       # Verify size < 1MB
 
 
@@ -222,11 +278,12 @@ ls -lh bin/banking-app/application.kar       # Verify size < 1MB
 # ============================================
 
 # Deploy to platform
-python run.py -c <env> deploy -f <kar_file>
+python run.py deploy -f <kar_file>
 
 # Examples
-python run.py -c dev deploy -f bin/banking-app.kar
-python run.py -c prod deploy -f bin/banking-app.kar
+python run.py deploy -f bin/banking-app/application.kar
+python run.py deploy -f bin/banking-app/application.kar -e .env/prod
+python run.py deploy -f bin/banking-app/application.kar --package-only
 
 # Save the appId and streamId from output!
 
@@ -236,17 +293,23 @@ python run.py -c prod deploy -f bin/banking-app.kar
 # ============================================
 
 # Create environment
-python run.py -c <env> publish --app <appId> --name <envName> [--desc "Description"]
+python run.py publish -a <appId> -n <envName> [-d "Description"]
 
 # Examples
-python run.py -c dev publish --app app_abc123xyz --name development
-python run.py -c prod publish --app app_abc123xyz --name production --desc "Production env"
+python run.py publish -a app_abc123xyz -n development
+python run.py publish -a app_abc123xyz -n production -d "Production env"
 
 # Check environment status
-python run.py -c <env> status --app <appId> --name <envName>
+python run.py status -a <appId> -n <envName>
 
 # Example
-python run.py -c dev status --app app_abc123xyz --name development
+python run.py status -a app_abc123xyz -n development
+
+# Undeploy environment
+python run.py undeploy -f <path>
+
+# Example
+python run.py undeploy -f bin/banking-app/
 
 
 # ============================================
@@ -254,10 +317,7 @@ python run.py -c dev status --app app_abc123xyz --name development
 # ============================================
 
 # Test deployed application
-python run.py -c <env> test
-
-# Example
-python run.py -c dev test
+python run.py test
 ```
 
 ## Environment Configuration
@@ -266,24 +326,26 @@ Create `.env/<env>` files with required variables:
 
 ```bash
 # .env/dev
-KORE_HOST=platform_url
+KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_dev_api_key_here
 TRACING_ENABLED=True
 
 # .env/staging
-KORE_HOST=platform_url
+KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_staging_api_key_here
 TRACING_ENABLED=True
 
 # .env/prod
-KORE_HOST=platform_url
+KORE_HOST=https://agent-platform.kore.ai
 APP_API_KEY=your_prod_api_key_here
 TRACING_ENABLED=False
 ```
 
-Load configuration:
+Set configuration before running commands:
+
 ```bash
-python run.py -c dev  # Uses .env/dev
+python run.py config -u dev  # Sets .env/dev as .env/default
+python run.py deploy -f ...  # Uses .env/default
 ```
 
 ## Application Lifecycle Workflow
@@ -296,62 +358,64 @@ Complete workflow from development to production:
 # ============================================
 # Define application structure with Design-Time models
 # Implement custom tools and orchestrators
-python run.py start --host localhost --port 8080
+python run.py start -H localhost -P 8080
 # Test with MCP client...
 
 # ============================================
 # 2. PACKAGING PHASE
 # ============================================
-python run.py --archive my-banking-app
+python run.py package -o my-banking-app
 # Verify: ls -lh bin/my-banking-app/application.kar
 
 # ============================================
 # 3. DEPLOYMENT PHASE
 # ============================================
-python run.py -c dev deploy -f bin/my-banking-app.kar
+python run.py config -u dev
+python run.py deploy -f bin/my-banking-app/application.kar
 # Output: App ID: app_abc123xyz, Stream ID: stream_def456uvw (SAVE THESE!)
 
 # Create environment
-python run.py -c dev publish --app app_abc123xyz --name development
+python run.py publish -a app_abc123xyz -n development
 
 # ============================================
 # 4. TESTING PHASE
 # ============================================
-python run.py -c dev test
+python run.py test
 
 # ============================================
 # 5. MONITORING PHASE
 # ============================================
-python run.py -c dev status --app app_abc123xyz --name development
+python run.py status -a app_abc123xyz -n development
 
 # ============================================
 # 6. PRODUCTION DEPLOYMENT (when ready)
 # ============================================
-python run.py -c prod deploy -f bin/my-banking-app.kar
-python run.py -c prod publish --app <new_appId> --name production
-python run.py -c prod test
+python run.py config -u prod
+python run.py deploy -f bin/my-banking-app/application.kar
+python run.py publish -a <new_appId> -n production
+python run.py test
 ```
 
 ## Best Practices
 
 1. **Development**
     - Test locally with `python run.py start` before deploying
-    - Use meaningful project names for archives
-    - Keep archive size minimal (<1MB)
+    - Use meaningful project names for packages
+    - Keep package size minimal (<1MB)
     - Always test with MCP client during development
 
 2. **Deployment**
-    - Use `.venv` for virtual environments (excluded from archives)
+    - Use `.venv` for virtual environments (excluded from packages)
     - Test in staging/dev before production
     - **Save appId and streamId** from deployment output immediately
     - Use separate `.env` files for different environments
-    - Verify archive contents with `unzip -l` if size is large
+    - Verify package contents with `unzip -l` if size is large
 
 3. **Environment Management**
     - Create separate environments for dev/staging/prod
     - Use descriptive environment names and descriptions
     - Document appId and environment names in your project README
-    - Check status regularly with `status` command
+    - Periodically check status with `status` command
 
 4. **Monitoring**
     - Enable distributed tracing in dev/staging environments
@@ -367,10 +431,10 @@ python run.py -c prod test
 
 ## Troubleshooting
 
-### Archive Size Issues
+### Package Size Issues
 
 ```bash
-# Check archive contents
+# Check package contents
 unzip -l bin/myProject/application.kar
 
 # Look for unwanted files
@@ -388,8 +452,9 @@ python -c "import os; print(f'KORE_HOST: {os.getenv(\"KORE_HOST\")}'); print(f'A
 # Check .env file exists
 ls -la .env/
 
-# Verify config is loaded
-python run.py -c dev deploy -f bin/myProject.kar
+# Set config and deploy
+python run.py config -u dev
+python run.py deploy -f bin/myProject/application.kar
 ```
 
 ### Module Import Errors
@@ -407,7 +472,7 @@ cat run.py | grep "app_module"
 
 <hr/>
 
-**Related Resources**
+**Related resources**
 
 - [Getting Started](../getting-started/quickstart.md) - Complete tutorial with CLI usage
 - [Runtime APIs](../api/runtime/index.md) - Runtime context and services

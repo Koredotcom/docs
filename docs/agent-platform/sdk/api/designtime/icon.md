@@ -131,3 +131,4 @@ icon = Icon.from_json(json_str)
 - [Agent](agent.md) - Agents use icons for visual identification
 - [App](app.md) - Applications have app icons
 - [Tool](tool.md) - Tools can have icons
+

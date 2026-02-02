@@ -283,7 +283,6 @@ from src.tools import Tools
 
 app.start(
     orchestrator_cls=CustomOrchestrator,
-    custom_tools=Tools,
     host="0.0.0.0",
     port=8080
 )

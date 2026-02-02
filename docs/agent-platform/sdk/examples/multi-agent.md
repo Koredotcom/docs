@@ -295,9 +295,11 @@ python run.py start
 uv run client.py
 
 # Deploy and test
-python run.py --archive customer-service
-python run.py -c prod deploy -f bin/customer-service.kar
-python run.py -c prod test --app <appId> --env prod
+python run.py package -o customer-service
+python run.py config -u prod
+python run.py deploy -f bin/customer-service/application.kar
+python run.py publish -a <appId> -n prod
+python run.py test
 ```
 
 ## Best Practices

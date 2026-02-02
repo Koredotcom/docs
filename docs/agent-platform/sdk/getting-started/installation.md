@@ -227,3 +227,4 @@ ls -la .env/
 - [:octicons-arrow-right-24: Quick Start](quickstart.md) - Build your first app
 - [:octicons-arrow-right-24: Core Concepts](concepts.md) - Understand the framework
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Explore the API
+

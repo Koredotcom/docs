@@ -12,7 +12,7 @@ Build your app blueprint using declarative models that specify agents, tools, me
 
 [:octicons-arrow-right-24: Design-Time Overview](designtime/index.md)
 
-### ⚡ Runtime APIs  
+### ⚡ Runtime APIs
 
 **Execute and monitor your applications**
 
@@ -22,7 +22,7 @@ Access runtime services during request processing including session context, log
 
 ### 🔧 CLI Tools
 
-**Deploy and manage applications**  
+**Deploy and manage applications**
 
 Command-line interface for packaging, deploying, and managing your applications across environments.
 
@@ -89,8 +89,9 @@ async def my_tool():
 ### Deploy
 
 ```bash
-python run.py --archive my-app
-python run.py -c prod deploy -f bin/my-app.kar
+python run.py package -o my-app
+python run.py config -u prod
+python run.py deploy -f bin/my-app/application.kar
 ```
 
 ## Next Steps

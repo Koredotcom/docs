@@ -50,40 +50,40 @@ A foundational library for configuration (design) and the runtime needs.
 
 ```
 ├── dist
-│   ├── agenticai_core-0.1.0-py3-none-any.whl               -- binary distrubution of this library
-│   └── agenticai_core-0.1.0.tar.gz
+│   ├── agenticai_core-0.1.0-py3-none-any.whl               -- binary distrubution of this library
+│   └── agenticai_core-0.1.0.tar.gz
 ├── docs
-│   ├── architecture.md                                     -- documention
-│   ├── assets/
+│   ├── architecture.md                                     -- documention
+│   ├── assets/
 ├── pyproject.toml
 ├── README.md
 ├── requirements.txt
 ├── setup.sh
 ├── src
-│   └── agenticai_core
-│       ├── api
-│       │   └── kore_client.py                              -- a rest client to create artifacts & perform CI/CD operations on platform
-│       ├── designtime
-│       │   ├── __init__.py
-│       │   └── models
-│       │       ├── agent.py
-│       │       ├── app.py
-│       │       ├── icon.py
-│       │       ├── __init__.py
-│       │       ├── llm_model.py
-│       │       ├── prompt.py
-│       │       └── tool.py
-│       ├── __init__.py
-│       └── runtime
-│           ├── agents
-│           │   ├── agent_message.py
-│           │   ├── agent_request.py
-│           │   ├── agent_response.py
-│           │   ├── agent_runtime.py                        -- implements the server for regsitering & calling custom orchestrators and tools
-│           │   ├── abstract_agent.py                       -- base class that any agent must implement
-│           │   └── abstract_orchestrator.py                -- base class that any custom orchestrator must implement
-│           ├── __init__.py
-│           └── message_item.py
+│   └── agenticai_core
+│       ├── api
+│       │   └── kore_client.py                              -- a rest client to create artifacts & perform CI/CD operations on platform
+│       ├── designtime
+│       │   ├── __init__.py
+│       │   └── models
+│       │       ├── agent.py
+│       │       ├── app.py
+│       │       ├── icon.py
+│       │       ├── __init__.py
+│       │       ├── llm_model.py
+│       │       ├── prompt.py
+│       │       └── tool.py
+│       ├── __init__.py
+│       └── runtime
+│           ├── agents
+│           │   ├── agent_message.py
+│           │   ├── agent_request.py
+│           │   ├── agent_response.py
+│           │   ├── agent_runtime.py                        -- implements the server for regsitering & calling custom orchestrators and tools
+│           │   ├── abstract_agent.py                       -- base class that any agent must implement
+│           │   └── abstract_orchestrator.py                -- base class that any custom orchestrator must implement
+│           ├── __init__.py
+│           └── message_item.py
 └── wheels
     └── kore_api-1.0.0-py3-none-any.whl                     -- depenency binary for implementing kore_client
 ```
@@ -103,59 +103,62 @@ A foundational library for configuration (design) and the runtime needs.
 
 ```bash
 
-usage: run.py [-h] [-r archive] [-c config] {start,test,deploy} ...
+usage: run.py [-h] {config,package,start,test,deploy,publish,status,undeploy} ...
 
 CLI tool to manage agentic entities creation
 
 positional arguments:
-  {start,test,deploy}
+  {config,package,start,test,deploy,publish,status,undeploy}
+    config              Select which .env config file to use as default
+    package             Create a deployable package (.kar) for your app
     start               Start the app
-    test                Test the app
+    test                Test your deployment end to end
     deploy              Deploy the app
+    publish             Create a new environment for your app
+    status              Fetch Status for your app environment
+    undeploy            Undeploy the app
 
 options:
   -h, --help            show this help message and exit
-  -r archive, --archive archive
-                        Specify archive target. Examples: [--archive|-r] myProject
-  -c config, --config config
-                        Specify the .env config file to load: Examples: [--config|-c] prod
 ```
 
 
 | Command    | Description |
 |------------|-------------|
-| -r `--archive`  | Generates a serialized json `application.config.json`, bundles source code into a `.kar` archive. |
-| -c `--config`  | Loads the target environment config file |
-| `start`    | Stads up the MCP server with registered agents (custom orchestrator) & tools (custom tools). |
+| `config -u <name>`  | Selects which .env config file to use as default |
+| `package -o <name>`  | Generates a serialized json `application.config.json`, bundles source code into a `.kar` package. |
+| `start`    | Starts up the MCP server with registered agents (custom orchestrator) & tools (custom tools). |
 | `test`     | Tests the deployed app |
-| `deploy`   | Creates resources on the platform and kicks off the archive deployemnt using gvisor service |
-| ~`undeploy`~ | ~undo the archive deployment via gvisor service~ |
+| `deploy -f <kar>`   | Creates resources on the platform and kicks off the package deployment using gvisor service |
+| `publish -a <appId> -n <name>`   | Creates an environment for the deployed app |
+| `status -a <appId> -n <name>`   | Checks status of an app environment |
+| `undeploy -f <path>` | Undeploys the app environment |
 
 Implements other supporting commands & subcommands for configuration management etc.
 
-### Workspace Structure:
+### Workspace Structure
 
 ```
 ├── bin
-│   ├── application.config.json                         -- serialzed json
-│   └── myproject.kar                                   -- the archive of the source code
+│   ├── application.config.json                         -- serialzed json
+│   └── myproject.kar                                   -- the archive of the source code
 ├── .env
-│   ├── dev                                             -- environment variables for dev-agent env
-│   └── local                                           -- environment variables for local env
+│   ├── dev                                             -- environment variables for dev-agent env
+│   └── local                                           -- environment variables for local env
 ├── lib                                                 -- wheel files that are core dependencies for workspace
-│   ├── agenticai_core-0.1.0-py3-none-any.whl
-│   └── kore_api-1.0.0-py3-none-any.whl
+│   ├── agenticai_core-0.1.0-py3-none-any.whl
+│   └── kore_api-1.0.0-py3-none-any.whl
 ├── README.md
 ├── requirements.txt                                    -- To include dependencies
 ├── run.py                                              -- CLI interface
 └── src
     ├── app.py                                          -- app configuration and setup
     ├── functions
-    │   └── __init__.py
+    │   └── __init__.py
     ├── __init__.py
     ├── orchestrator
-    │   ├── __init__.py
-    │   └── round_robin_orchestrator.py                 -- an example of custom orchestrator
+    │   ├── __init__.py
+    │   └── round_robin_orchestrator.py                 -- an example of custom orchestrator
     └── tools
         ├── add.py                                      -- example of a tool implementation
         ├── greet.py                                    -- example of a tool implementation
@@ -242,15 +245,15 @@ Key Responsibilities:
    - Environment configuration setup (.env files for dev/staging/prod)
 
 2. **Packaging Phase**
-   - Developer archives the project with `archive` command using the workspace CLI
+   - Developer packages the project with `package` command using the workspace CLI
    - Generates `application.config.json` in the `bin` directory
-   - Creates a KAR archive containing all necessary files
+   - Creates a KAR package containing all necessary files
    - Excludes unnecessary files (`.venv`, `__pycache__`, etc.)
 
 3. **Deployment Phase**
-   - Developer deploys the archive with `deploy` command
-   - Platform creates all design-time artifacts from the serialized json and KAR archive
-   - Platform initiates archive deployment using gvisor service
+   - Developer deploys the package with `deploy` command
+   - Platform creates all design-time artifacts from the serialized json and KAR package
+   - Platform initiates package deployment using gvisor service
    - Gvisor service provisions container in Kubernetes
    - Bootstraps the MCP server on the gvisor and returns the service endpoint
 
@@ -300,8 +303,6 @@ The AgenticAI platform provides an MCP (Message Control Protocol) client for loc
 
 ## `TO DOs`
 
-- Add Undeploy CLI command
-
 - Track Deployment Status and provision an API for the CLI:
     ```
     archived | → deployment in progress → deployed
@@ -313,4 +314,5 @@ The AgenticAI platform provides an MCP (Message Control Protocol) client for loc
 
     ```
 - Logging in the Workspace:
-    Any logs should be sent to the Platform for debugging purposes.
+    Any logs should be sent to the platform for debugging purposes.
+
