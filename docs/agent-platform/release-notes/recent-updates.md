@@ -55,16 +55,7 @@ New models include:
 * **Google**: gemini-3-pro-preview, gemini-3-pro-image-preview, gemini-3-flash-preview, gemini-2.5-flash-native-audio-preview-12-2025, gemini-2.5-flash-native-audio-preview-09-2025, gemini-2.5-flash-preview-09-2025, gemini-2.5-flash-lite-preview-09-2025, gemini-2.5-flash-lite, and gemini-2.5-flash-image.
 * **OpenAI**: gpt-realtime-mini-2025-10-06, gpt-audio-mini-2025-10-06, gpt-audio-2025-08-28, gpt-realtime-2025-08-28, gpt-4o-audio-preview-2025-06-03, gpt-4o-realtime-preview-2025-06-03, o3-2025-04-16, o4-mini-2025-04-16, gpt-4o-search-preview-2025-03-11, o3-mini-2025-01-31, gpt-4o-realtime-preview-2024-12-17, gpt-4o-mini-audio-preview-2024-12-17, gpt-4o-audio-preview-2024-12-17, o1-2024-12-17, gpt-4o-2024-11-20, gpt-4o-2024-08-06, gpt-4o-mini-2024-07-18, gpt-4o-2024-05-13, gpt-4-turbo-2024-04-09, gpt-4.1-nano, gpt-4.1-mini, gpt-4.1, gpt-4-turbo, gpt-3.5-turbo-0125, gpt-4o-mini-transcribe, gpt-4o-mini-audio-preview, gpt-4o-audio-preview, gpt-4o-realtime-preview, gpt-audio-mini, gpt-audio, gpt-image-1-mini, gpt-image-1, gpt-realtime-mini, gpt-realtime, o4-mini, o3, and o1.
 
-<font size="4">Other Improvements</font>
 
-**Ability to Configure Default Role for New Users**
-
-Workspace admins can now set a default role for new Platform users added via email, AD sync, or API in *Users Management → Settings*. This streamlines onboarding by assigning the correct permissions immediately, eliminating the need for manual role updates after provisioning. 
-
-This setting applies only to new users. For existing users, change roles in *Users Management → Users*.
-
-
-<hr>
 
 ## v1.5.0 January 17, 2026
 
