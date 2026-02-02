@@ -9,7 +9,7 @@ This section of the Contact Center AI module provides access to the following se
 
 * **[Language Supported for Bot & Agent](#list-of-supported-languages-for-ai-agents-bots-and-human-agents)**: Define the languages you want agents and automation to work with.
 * **[Hold Audio](#hold-audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
-* [Voice Authentication](#voice-authentication): Voice authentication uses voiceprints to identify and authenticate users for secure access.
+* **[Voice Authentication](#voice-authentication)**: Voice authentication uses voiceprints to identify and authenticate users for secure access.
 
 ## Language Management
 
