@@ -22,7 +22,7 @@ For more information, refer to [Product-specific Billing Sessions](../manage-ass
 
 This section displays the history of Orders and Invoices and includes the fields as shown in the image:
 
-<img src="../administration/images/billing-order-invoices.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/billing-order-invoices.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
 
 You have the option to download the Invoice from the invoice field.
 
@@ -50,7 +50,7 @@ Hover over a line item to view the **Manage** option. The **Manage** option disp
 Admin users can access detailed usage information for Apps directly in the Admin Console. For administrators managing multiple apps, it offers consolidated billing insights across all apps within a workspace. 
 
 
-<img src="../administration/images/billing-usage.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/billing-usage.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
 
 
 The dashboard provides a consolidated view of cumulative billing data, including Billing sessions, voice sessions, and agent counts, across all apps within the workspace.
