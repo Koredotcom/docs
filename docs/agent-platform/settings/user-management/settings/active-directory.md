@@ -182,9 +182,9 @@ Additionally, you can manage which non-default fields (controlled fields) end us
 
 ### Default Role for New Workspace Users
 
-Authorized administrators can configure a default role (Admin, Member, or Viewer) for workspace users who are added using invite, sync, or API.
+Authorized administrators can set a default role (Admin, Member, or Viewer) for users added to the workspace via invite, sync, or API by selecting a role from the dropdown and clicking <i>Save</i>.
 
-By assigning the appropriate access upfront, this setting streamlines onboarding by ensuring users receive the correct permissions to use the required features immediately, eliminating the need for manual role updates after provisioning.
+By assigning the appropriate access upfront, this setting streamlines onboarding by ensuring users receive the correct permissions immediately, eliminating the need for manual role updates after provisioning.
 
 <b>Key Considerations</b>
 
@@ -196,8 +196,7 @@ By assigning the appropriate access upfront, this setting streamlines onboarding
 
 * If no role is specified when a user is added, the user automatically inherits the workspace’s current default role. 
 
-* You can explicitly assign another role during user invitation or creation (from the **Users** page), which overrides the configured workspace default role.
-
+* You can explicitly assign another role during user invitation or creation (on the **Users Management** -> **Users** page under the *Account Role* column), which overrides the configured workspace default role and access.
 
 ### Sync Status Email Notifications
 
