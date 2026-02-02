@@ -57,6 +57,9 @@ New models include:
 
 
 
+
+<hr>
+
 ## v1.5.0 January 17, 2026
 
 <u> Minor Release </u>
