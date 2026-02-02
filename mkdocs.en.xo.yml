@@ -295,6 +295,7 @@ nav:
           - Node Connections:
             - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
             - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
+      - Multilingual AI Apps: automation/multi-lingual-app-with-dialoggpt.md
     - Evaluation:
       - Playground: automation/testing/playground.md
       - Batch Testing: automation/testing/batch-testing-dialoggpt.md
