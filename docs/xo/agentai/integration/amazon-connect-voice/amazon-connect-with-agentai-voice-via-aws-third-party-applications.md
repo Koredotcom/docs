@@ -14,7 +14,8 @@ This document describes the integration process of Amazon Connect with Kore Agen
 * Ability to receive voice calls on Amazon Connect agent desktop. 
 * AWS Lambda 
 * An account associated with the AWS Client ID and Secret with Read permissions to Amazon  Kinesis Streams.  
-* Transcription trigger, a microservice that extracts the required parameters from the request body and generates the KVS Processing executable as a separate process with the parameters (like Contact Details, Credentials, and Voice Gateway).  
+* Transcription trigger, a microservice that extracts the required parameters from the request body and generates the KVS Processing executable as a separate process with the parameters (like Contact Details, Credentials, and Voice Gateway).   
+* The **AgentAssist third-party application** created in Amazon Connect using AWS Third-party Applications.  
 
 ## Integration Setup Guide 
 
@@ -27,6 +28,7 @@ This document describes the integration process of Amazon Connect with Kore Agen
       - [First Function: KVS Trigger (Choose any other name)](#first-function-kvs-trigger-choose-any-other-name)
       - [Second Function: IFrame Token Generator (Choose any other name)](#second-function-iframe-token-generator-choose-any-other-name)
     - [AWS Connect Third Party Application Configuration](#aws-connect-third-party-application-configuration)
+  - [Amazon Connect Security Profile Permissions](#amazon-connect-security-profile-permissions)
   - [Amazon Connect](#amazon-connect)
     - [Configuring Amazon Connect Instance](#configuring-amazon-connect-instance)
     - [Configuring Amazon Connect Contact Flow](#configuring-amazon-connect-contact-flow)
@@ -49,70 +51,67 @@ Two configurations are needed from Agent AI:
 
 This function retrieves call stream metadata and AWS credentials from the environment, generates a credential set (SessionToken, AccessKeyId, SecretAccessKey) for KVS access, and triggers the Transcriber to send transcripts to the Kore AI Agent with the current Conversation ID.  
 
-* Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KVS_Trigger.zip){:target="_blank"} and upload to the function you create. 
-* Go to **Create function**. 
-* Enter a name in the **Function name** field. 
+1. Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/KVS_Trigger.zip){:target="_blank"} and upload to the function you create. 
+2. Go to **Create function**. 
+3. Enter a name in the **Function name** field. 
 <img src="../images/create-function-2.png" alt="create-function" title="create-function" style="border: 1px solid gray; zoom:80%;"> 
 
-* Go to **Upload from**. 
+4. Go to **Upload from**. 
 <img src="../images/upload-from-3.png" alt="upload-from" title="upload-from" style="border: 1px solid gray; zoom:80%;">  
 
-    * Upload the **Lambda** zipped file.
-    * Click **Save**.
-* Go to **Runtime settings**.
-* Click **Edit** and change the **Handler** name from **index.handler** to **kvs_trigger.handler**.  
-<img src="../images/runtime-settings-4.png" alt="runtime-settings" title="runtime-settings" style="border: 1px solid gray; zoom:80%;">  
+    1. Upload the **Lambda** zipped file.
+    2. Click **Save**.
+    3. Go to **Runtime settings**.
+    4. Click **Edit** and change the **Handler** name from **index.handler** to **kvs_trigger.handler**.  
+        <img src="../images/runtime-settings-4.png" alt="runtime-settings" title="runtime-settings" style="border: 1px solid gray; zoom:80%;">  
 
-* Go to **Configuration** > **Environment variables**.  
-<img src="../images/general-configuration-5.png" alt="general-configuration" title="general-configuration" style="border: 1px solid gray; zoom:80%;">  
+5. Go to **Configuration** > **Environment variables**.  
+    <img src="../images/general-configuration-5.png" alt="general-configuration" title="general-configuration" style="border: 1px solid gray; zoom:80%;">  
 
-* Create the following environment variables within the Lambda: 
+6. Create the following environment variables within the Lambda: 
     * **kvsAccessKeyId** – AWS Client ID  
     * **kvsSecretAccessKey** – AWS Client Secret 
     * **region** – add your AWS Region 
     * **transcriberURL** – `https://agentassist.kore.ai/integrations/amzn/voice/`
     * For regions other than the **US-prod**, replace the above domain with your Agent AI domain.  
 
-    **Steps to get the AWS Client ID and Secret**
+**Steps to get the AWS Client ID and Secret**
 
-    * Ensure the account associated with the AWS Client ID and Secret has Read permissions to Amazon KVS Kinesis Streams. 
-    * Get your AWS Client ID and Secret from IAM:  
+1. Ensure the account associated with the AWS Client ID and Secret has Read permissions to Amazon KVS Kinesis Streams. 
+2. Get your AWS Client ID and Secret from IAM:  
 
-        1. Go to **IAM** > **Users**.  
-        2. Click **Users** > **Security credentials** tab.  
-        3. Click **Create access key**.  
-        4. Select **Use case** as **Application running on an AWS compute service**.  
-        5. Click **next**.  
-        6. Enter a description tag, and then click **create access key**.   
+    1. Go to **IAM** > **Users**.  
+    2. Click **Users** > **Security credentials** tab.  
+    3. Click **Create access key**.  
+    4. Select **Use case** as **Application running on an AWS compute service**.  
+    5. Click **next**.  
+    6. Enter a description tag, and then click **create access key**.   
+        <img src="../images/retrieve-access-keys-6.png" alt="retrieve-access-keys" title="retrieve-access-keys" style="border: 1px solid gray; zoom:80%;">  
 
-            <img src="../images/retrieve-access-keys-6.png" alt="retrieve-access-keys" title="retrieve-access-keys" style="border: 1px solid gray; zoom:80%;">  
-
-* The final configuration should appear like the following image:  
-<img src="../images/environment-variables-7.png" alt="environment-variables" title="environment-variables" style="border: 1px solid gray; zoom:80%;">  
+3. The final configuration should appear like the following image:  
+    <img src="../images/environment-variables-7.png" alt="environment-variables" title="environment-variables" style="border: 1px solid gray; zoom:80%;">  
 
 #### Second Function: IFrame Token Generator (Choose any other name) 
 
-This function generates the Kore Agent AI IFrame widget token to display properly within the Amazon Connect agent workspace.  
-
-* Download the Lambda [from here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/Kore.ai_Token_Generator.zip) and upload this function on Lambda.  
+This function generates the Kore Agent AI IFrame widget token to display properly within the Amazon Connect agent workspace. Download the Lambda from [here](https://github.com/Koredotcom/korecc-twilio/raw/master/AmazonConnect/lambdas/Kore.ai_Token_Generator.zip) and upload this function on Lambda.  
 
 ### AWS Connect Third Party Application Configuration 
 
 This includes the Kore Agent AI widget that renders within the Amazon Connect Agent Workspace with the context of the current conversation.  
 
 1. Go to **Amazon Connect** > **Third-party applications**.  
-<img src="../images/third-party-applications-8.png" alt="third-party-applications" title="third-party-applications" style="border: 1px solid gray; zoom:80%;">   
+<img src="../images/third-party-applications-8.png" alt="third-party-applications" title="third-party-applications" style="border: 1px solid gray; zoom:60%;">   
 
 2. Click **Add application**.  
-<img src="../images/add-application-9.png" alt="add-application" title="add-application" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/add-application-9.png" alt="add-application" title="add-application" style="border: 1px solid gray; zoom:60%;">  
 
 3. Enter a **Display name** for your app – for example, **Kore.ai AgentAssist Application**.  
-<img src="../images/add-display-name-10.png" alt="add-display-name" title="add-display-name" style="border: 1px solid gray; zoom:80%;">  
+<img src="../images/add-display-name-10.png" alt="add-display-name" title="add-display-name" style="border: 1px solid gray; zoom:60%;">  
 
-4. Enter a **Namespace** for the app – for example, **kore.ai-example-ns**.  
-<img src="../images/name-space-11.png" alt="name-space" title="name-space" style="border: 1px solid gray; zoom:80%;">  
+4. Enter a **Namespace** for the app (for example, **kore.ai-example-ns**).  
+<img src="../images/name-space-11.png" alt="name-space" title="name-space" style="border: 1px solid gray; zoom:60%;">  
 
-5. Enter “[https://agentassist.kore.ai/integrations/amzn/tpa-voice/](https://agentassist.kore.ai/integrations/amzn/tpa-voice/)” in the **Access URL** field.  
+5. Enter [https://agentassist.kore.ai/integrations/amzn/tpa-voice/](https://agentassist.kore.ai/integrations/amzn/tpa-voice/) in the **Access URL** field.  
 <img src="../images/access-url-field-12.png" alt="access-url-field" title="access-url-field" style="border: 1px solid gray; zoom:80%;">  
 
 6. Select all the instances that you want to enable AgentAssist for in the **Instance association – optional** field.  
@@ -124,6 +123,29 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 
 7. Click **Add application**.  
 <img src="../images/add-application-14.png" alt="add-application" title="add-application" style="border: 1px solid gray; zoom:80%;">  
+
+## Amazon Connect Security Profile Permissions
+
+To view and use the Agent AI widget in the Amazon Connect Agent workspace, enable the **AgentAssist** application in the agent’s security profile. If you don’t assign this permission, the widget doesn't load even if the third-party application is created and associated with the Amazon Connect instance. 
+
+### Steps to enable the security profile permissions 
+
+1. Sign in to **Amazon Connect Admin Console**.
+2. Navigate to **Users** > **Security Profiles**.
+3. Open the relevant security profile (for example, **Agent** or **Admin**).
+4. Scroll to the **Agent applications** section.
+5. Ensure the **Agent applications** > **KoreAgentAssist** permission is enabled.
+6. Save the security profile.
+7. Make sure this security profile is assigned to the agent.  
+
+    !!! note 
+
+        Only the users whose security profile includes **KoreAgentAssist** can see the Agent AI widget in the Agent workspace. This permission must be added **per security profile**, not **per user**.  
+
+8. If agents report that the Agent AI widget is not visible, verify the following:
+    * Correct **assigned security profile**
+    * **KoreAgentAssist** is enabled under **Agent applications**
+    * **Agent** or **Admin** roles are assigned, and the required permission is present.  
 
 ## Amazon Connect 
 
@@ -194,14 +216,17 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
 8. Click **Set contact attributes**, and enter the required fields: 
     * **BotID**: Add your Agent AI Bot ID created on Kore UXO Platform.
     * **ClientId**: Add your Agent AI  Client ID created on Kore UXO Platform.
-    * **ClientSecret**: Add your Agent AI Client Secret created on Kore UXO Platform.
+    * **ClientSecret**: Add your Agent AI Client Secret created on Kore UXO Platform. 
+    * **Language**: Agent AI loads in English (en) by default. To load the widget in another language, pass the **Language contact** attribute in the contact flow.  
     * **sipUri**: Add `sip:[XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com](mailto:XXXX@savg-us-prod-sbc-in-nlb-0d9a4c651955ff47.elb.us-east-1.amazonaws.com)` and replace **XXXX** with your SIPREC Configuration of Agent AI.  
-    To get the SIP URI from [Kore](https://platform.kore.ai/){:target="_blank"}: 
+
+        To get the SIP URI from [Kore](https://platform.kore.ai/){:target="_blank"}: 
+        
         1. Go to **Agent AI** > **Flows & Channels** > **Voice Gateway**. 
         2. Click **SIP Numbers** > **Configure SIP Trunk**. 
         3. Select **Agent AI**, under the **Product Selection** section. 
-        4. Enter [172.23.12.0/24,172.23.13.0/24] in the **List of IP Address** field, for the US region. 
-        <img src="../images/configure-sip-trunk.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
+        4. Enter [172.23.12.0/24,172.23.13.0/24] in the **List of IP Address** field, for the US region.  
+            <img src="../images/configure-sip-trunk.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
 
         5. Copy the **SIP URI** and paste inside the **contact attributes sipUri** field inside Amazon Connect flow. 
 
@@ -213,7 +238,7 @@ This includes the Kore Agent AI widget that renders within the Amazon Connect Ag
          3. Click to expand the **JWT App Details** section.  
             <img src="../images/web-mobile-client.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">  
   
-    * **wssUrl**: Add "wss://savg-webserver.kore.ai" 
+    * **wssUrl**: Add **wss://savg-webserver.kore.ai** 
  
         <img src="../images/set-contact-attributes-33.png" alt="set-contact-attributes" title="set-contact-attributes" style="border: 1px solid gray; zoom:80%;">   
 

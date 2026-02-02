@@ -15,7 +15,7 @@ Traditional conversation analytics face real challenges that impact day-to-day o
 
 **Flat Structure**: Real business operations are hierarchical from business lines to product categories to specific issues. Flat topic lists make it hard to analyze at different strategic levels.
 
-## How does Taxonomy Builder help?
+## How does Taxonomy Builder help?  
 
 Taxonomy Builder enables you to:
 
@@ -27,7 +27,7 @@ Taxonomy Builder enables you to:
 
 * Track resolution rates and sentiment for specific customer contact reasons.
 
-## Understanding the Three-Level Hierarchy
+## Understanding the Three-Level Hierarchy   
 
 **Level 1 (L1)**: This represents your highest-level business categorization, typically corresponding to major divisions, lines of business, or service areas that align with executive-level thinking and strategic planning.
 
