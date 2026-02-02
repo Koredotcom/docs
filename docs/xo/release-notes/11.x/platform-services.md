@@ -16,7 +16,7 @@ The WebSDK channel now supports right-to-left (RTL) languages. Responses in Arab
 
 **MS Teams Channel Analytics Enhancement**
 
-MS Teams channel analytics now supports the team channel login email ID instead of the alphanumeric channel ID across the platforms. Enable the toggle "Show email ID instead of channel ID" in the channel integration settings to replace channel user ID with email IDs throughout your analytics dashboards. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md)
+MS Teams channel analytics now supports the team channel login email ID instead of the alphanumeric channel ID across the platforms. Enable the toggle "Show email ID instead of channel ID" in the channel integration settings to replace channel user ID with email IDs throughout your analytics dashboards. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#step-5-publish-your-app-in-platform)
 
 
 <font size="4">Admin Console</font>
