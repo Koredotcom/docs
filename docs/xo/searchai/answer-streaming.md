@@ -2,6 +2,7 @@
 
 Answer Streaming allows Search AI to return generative responses incrementally, token by token, instead of waiting for the full answer to be generated. This creates a faster, more interactive experience by reducing perceived latency, especially for longer answers.
 
+Search AI supports real-time response streaming for conversations on Web/Mobile SDK Channels.
 
 ## Supported Models
 

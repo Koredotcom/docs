@@ -12,7 +12,7 @@ This document provides step-by-step instructions for integrating the Kore.ai Age
 
 * **Provide Studio Script for Outbound Voice**: Kore.ai will assist in provisioning the Studio script to ensure seamless integration with the CXOne platform.
 
-## **Prerequisites**
+## Prerequisites
 
 * NiceCX administrator having access to a NICE CX Account, with privileges to set up the below configurations, and able to  make outbound calls on agent desktop.
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
@@ -21,7 +21,7 @@ This document provides step-by-step instructions for integrating the Kore.ai Age
 * Kore.ai App credentials such as Agent AI Widget URL, Bot ID, Client ID, Client Secret, Account ID and SIP URI. Read [Configure Voice Channel](./../../../channels/voice-gateway/configure-voice-gateway.md){:target="_blank"} and [Chat Channel](./../../../channels/adding-channels-to-your-bot.md){:target="_blank"} for a walkthrough. 
 * Ensure that Voice Interaction Streams are enabled via NICE. 
 
-## **Definitions**
+## Definitions
 
 <table>
   <tr>
@@ -178,8 +178,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 - [Shared Responsibilities](#shared-responsibilities)
   - [NICE CXOne Admin](#nice-cxone-admin)
   - [Kore.ai Admin](#koreai-admin)
-- [**Prerequisites**](#prerequisites)
-- [**Definitions**](#definitions)
+- [Prerequisites](#prerequisites)
+- [Definitions](#definitions)
 - [Configuration Steps](#configuration-steps)
   - [Step 1: Nice CX Integration Hubs \> Add Agent Assist Hub](#step-1-nice-cx-integration-hubs-add-agent-assist-hub)
   - [Step 2: NICE CX Studio \> Import Outbound Voice Script and Configure Parameters](#step-2-nice-cx-studio-import-outbound-voice-script-and-configure-parameters)
