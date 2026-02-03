@@ -1,9 +1,8 @@
 # Connect with External Agents
 
-Enterprises often utilize AI agents built on diverse platforms, resulting in a multi-vendor environment. Rebuilding these agents from scratch to work together is costly and inefficient. To solve this, the Platform introduces a Proxy Agent Architecture, a central integration layer that enables seamless connectivity between the existing external agents and the platform. 
+Many enterprises use AI agents developed across various platforms, resulting in a multi-vendor environment. Rebuilding these agents from scratch to ensure they work together can be costly and inefficient. To address this issue, the platform introduces a Proxy Agent Architecture, which serves as a central integration layer that facilitates seamless connectivity between existing external agents and the platform.
 
-Proxy Agent acts as an intermediary, seamlessly relaying communication between the platform and external agents. This approach ensures the translation of protocols while maintaining the performance, security, and functional integrity of the existing agent ecosystem.
-
+The Proxy Agent functions as an intermediary, effectively relaying communication between the platform and external agents. This approach ensures that protocols are translated while preserving the performance, security, and functional integrity of the existing agent ecosystem.
 
 ## Prerequisites
 
@@ -11,39 +10,57 @@ The External Agents connected to the Platform must adhere to the Agent Protocol.
 
 ## Set Up
 
-* Enable external agents for the app.
-* Configure the external agent in the app. 
+### Agent Profile
 
-### Enabling External Agents
+Agent profile consists of the following fields:
 
-Go to the app's Overview page. Click the edit icon at the top-right of the App Profile section and enable External Agents as shown below. 
+**Name**: Choose a unique name that reflects your agent's core function and persona. **  **
 
-![Enable External Agent](images/externalagents/enable-agent.png "Enable External Agent")
+---
 
-### Configuring the External Agent
+**Description**: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to select the most suitable agent for a specific task.
 
-To configure an external agent, create a new agent in your Agentic app. Go to the newly created agent's Profile page and under Advanced Settings, enable External Agent and click on Connect with External Agent to configure it. 
+---
 
-![Enable External Agent](images/externalagents/enable-connection.png "Enable External Agent")
+**External Platform**: Define the name of the platform this external agent connects to. This acts as an identifier for the external agent.
 
+---
 
-Provide the following configuration details for the external agent and click **Save**.
+**Avatar**: Select an avatar for the agent. This is primarily for visual appeal.
 
-![Configure External Agent](images/externalagents/configure-agent.png "Configure External Agent")
+### Agent Definition
 
-* **External Platform**: Give a unique and identifiable name of the platform to which this external agent connects.
-* **Request Definition**: Define the complete structure and configuration required for the proxy agent to call the external agent via its API. This includes specifying the HTTP method, endpoint URL, headers, request body, and expected response format. 
-    * HTTP Method - Specify the HTTP method used by the API call (for example, GET, POST, PUT, DELETE).
-    * URL - Enter the full endpoint URL to which the request will be sent.
-    * Request Headers - Key-value pairs sent with the request to provide context or authorization.
-    * Request Body - If the method supports or requires a payload (for example, POST, PUT), specify the body structure. Refer to the Request and Response format of the agent below. 
-    * Response - The response from the API is displayed here when the Test is initiated with sample values.
+Use this section to Configure external agent connection details and other properties.
 
-Click on the Test button to initiate a sample request to the external agents and verify the connection and response format. 
+**Request Definition**: Define the complete structure and configuration required for the proxy agent to call the external agent via its API. This includes specifying the HTTP method, endpoint URL, headers, request body, and expected response format.
 
-* **Asynchronous Integration** - This property specifies whether the response expected from the external agent is synchronous or asynchronous. If this field is enabled, the proxy agent shows a URL that can be used as a callback URL from the external agent.
-* **Timeout** - This property specifies the maximum duration (in seconds) the proxy agent will wait for a response from the external agent. If a response isn't received within this specified time, the request is considered to have failed due to a timeout error.
-* **Route Response to User** - When enabled, the response from the external agent is directly presented to the user, bypassing the supervisor. This allows response to be presented in real time. Also, the response is delivered as it's without any modification or enrichment. This is ideal for scenarios where real-time responsiveness is prioritized and the external agent is fully trusted to handle user queries independently.
+* HTTP Method - Specify the HTTP method used by the API call (for example, GET, POST, PUT, DELETE).
+* URL - Enter the full endpoint URL to which the request will be sent.
+* Request Headers - Key-value pairs sent with the request to provide context or authorization.
+* Request Body - If the method supports or requires a payload (for example, POST, PUT), specify the body structure. Refer to the Request and Response format of the agent below.
+* Metadata - 
+* Response - The response from the API is displayed here when the Test is initiated with sample values.
+
+Click on the *Test* button to initiate a sample request to the external agents and verify the connection and response format.
+
+---
+
+**Asynchronous Integration** - This property specifies whether the response expected from the external agent is synchronous or asynchronous. If this field is enabled, the proxy agent shows a URL that can be used as a callback URL from the external agent.
+
+---
+
+**Timeout** - This property specifies the maximum duration (in seconds) the proxy agent will wait for a response from the external agent. If a response isn't received within this specified time, the request is considered to have failed due to a timeout error.
+
+---
+
+**Route Response to User** - When enabled, the response from the external agent is directly presented to the user, bypassing the supervisor. This allows response to be presented in real time. Also, the response is delivered as it's without any modification or enrichment. This is ideal for scenarios where real-time responsiveness is prioritized, and the external agent is fully trusted to handle user queries independently.
+
+---
+### Delegation
+
+If the Adaptive Network orchestration pattern is enabled, add delegation rules for the agent. [Learn More](network-orchestration.md).
+
+Review the changes and *Create*.
 
 ## Key Characteristics of the Proxy Agent
 

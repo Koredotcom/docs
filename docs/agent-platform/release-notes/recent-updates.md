@@ -14,31 +14,39 @@ This release empowers you to build more sophisticated, secure, and flexible AI s
 
 The SDK now supports selective deployment of orchestration changes. Developers can update orchestration logic without overwriting other components, such as agents, tools, and knowledge bases. This allows the developers to work seamlessly across both the UI and SDK, making changes where it's most convenient without creating conflicts.
 
+[Learn more :octicons-arrow-right-24:](../sdk/cli/index.md#deploy-command)
+
 **Enhanced Agent Creation Flow**
 
 Agent creation now supports three paths: building agents from scratch, importing pre-built agents from the Marketplace, or adding externally deployed agents for orchestration. Each path provides a tailored setup flow with agent-specific configurations. This streamlines agent onboarding with guided experiences and eliminates the previous two-step enablement process across apps and agent profiles. 
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md)
+
 
 **AI-Assisted Prompt Refinement**
 
 The prompt editor now includes AI-assisted refinement, enabling users to easily improve and optimize prompts directly within the editor. This feature reduces iteration cycles and improves prompt accuracy through clearer, more effective definitions, making prompt writing faster and easier.
 
-**Enhanced Security for Session Logs**
+<!--**Enhanced Security for Session Logs**
 
 The Secure Logs feature gives workspace admins granular control over access to detailed session logs and sensitive conversation data. When enabled, developers cannot view detailed logs unless administrators explicitly grant them access. Admins can configure access at the role level or apply restrictions across the entire enterprise workspace, ensuring sensitive customer interactions and debugging data remain visible only to authorized personnel. 
 
 This feature applies only to environment-level logs, such as production and UAT, not to logs in draft versions during development.
+-->
 
 <font size="4">No-code & Pro-Code Tools</font>
 
 **Enhanced Access Control for Tool Logs**
 
-Tool log access now offers three permission levels: Detailed Access, View Only, and No Access. Users can view logs only for tools within apps they're authorized to access, and all log access is fully audited. When log sensitization is enabled, temporary access grants from workspace administrators are also honored.
+Tool-level role management has been enhanced with separate permissions for tool log visibility, allowing administrators to control access to the tool log list and detailed execution logs independently. These permissions support three access levels - detailed access, view-only, and no access, providing finer control over log.
 
 **Environment Variable for Workflow Tools in Agentic Apps**
 
 Workflow Tools created within or scoped to Agentic Apps can now use environment variables defined at the app level. Access is managed through namespaces—when you attach a namespace to a tool, all environment variables within that namespace become available for use.
 
 Workflow Tools created outside an Agentic App and not linked to any app cannot access namespaces or app-level environment variables.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/workflow-tools.md#accessing-app-environment-variables-in-workflow-tools)
 
 <font size="4">AI Engineering Tools</font>
 
