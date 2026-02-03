@@ -134,11 +134,11 @@ There are *three types of tools* that agents can use.
 2. **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that can't be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They're the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using *JavaScript or Python* code, allowing seamless integration and automation of complex workflows. \
 
 
- For more information, see [Code Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/code-tools/).
+    For more information, see [Code Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/code-tools/).
 
 3. **MCP Tools**: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform. Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they're centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They're best suited for seamless integration with external APIs, proprietary platforms, or shared tool sets across teams or organizations.
 
- For more information, see [MCP Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/mcp-tools/).
+    For more information, see [MCP Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/mcp-tools/).
 
 ### Adding a Tool to Agent
 
