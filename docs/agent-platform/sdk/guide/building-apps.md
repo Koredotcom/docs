@@ -204,7 +204,6 @@ from agenticai_core.designtime.models.tool import ToolsRegistry
 if __name__ == "__main__":
     app.start(
         orchestrator_cls=CustomerServiceOrchestrator,
-        custom_tools=ToolsRegistry,
         host="0.0.0.0",
         port=8080
     )
@@ -260,7 +259,6 @@ class MyOrchestrator(AbstractOrchestrator):
 if __name__ == "__main__":
     app.start(
         orchestrator_cls=MyOrchestrator,
-        custom_tools=ToolsRegistry,
         port=8080
     )
 ```
@@ -306,5 +304,7 @@ if __name__ == "__main__":
 
 <!--
 - 💬 [GitHub Discussions]
-- 📧 [Support](../index.md#community-and-support)
 -->
+
+- 📧 [Support](../index.md#community-and-support)
+

@@ -517,6 +517,27 @@ Additionally, you can set **custom filters** based on a specific category, event
   </table>
 
   <table>
+    <tr>
+     <td colspan="3" align="center"><strong>Category</strong>: Default Role Configuration</td>
+   </tr>
+      <tr>
+   <td><strong>Event</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Additional Metadata</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Default Role Configured</td>
+   <td>Tracks changes made by admins to the Workspace-level default role for new users.</td>
+   <td>
+<ul>The status message: "<i>Default role for new users changed from 'X' to 'Y'.</i>"</ul>
+   </td>
+  </tr>  
+  </table>
+
+  <table>
       <tr>
      <td colspan="3" align="center"><strong>Category</strong>: Prompts
    </td>

@@ -170,8 +170,7 @@ Start and execute:
 ```python
 # Start MCP server
 app.start(
-    orchestrator_cls=MyOrchestrator,
-    custom_tools=ToolsRegistry
+    orchestrator_cls=MyOrchestrator
 )
 
 # Server handles incoming requests
@@ -242,3 +241,4 @@ sequenceDiagram
 - [:octicons-arrow-right-24: Building Apps](../guide/building-apps.md) - Detailed guide
 - [:octicons-arrow-right-24: API Reference](../api/index.md) - Complete API docs
 - [:octicons-arrow-right-24: Examples](../examples/banking-assistant.md) - Real examples
+

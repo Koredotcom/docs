@@ -283,17 +283,18 @@ uv run client.py
 ### Deploy and Test
 
 ```bash
-# Create archive
-python run.py --archive banking-app
+# Create package
+python run.py package -o banking-app
 
-# Deploy
-python run.py -c prod deploy -f bin/banking-app.kar
+# Set config and deploy
+python run.py config -u prod
+python run.py deploy -f bin/banking-app/application.kar
 
 # Create environment
-python run.py -c prod create-env --app <appId> --env prod
+python run.py publish -a <appId> -n prod
 
 # Test
-python run.py -c prod test --app <appId> --env prod
+python run.py test
 ```
 
 ## Complete Example Structure

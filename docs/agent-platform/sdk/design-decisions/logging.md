@@ -12,15 +12,22 @@ To use the logger in your tools, follow these steps:
 
 1. Import the Logger class:
 
-   ```python
-    from agenticai_core.runtime.sessions.request_context import Logger
-   ```
+```python
+from agenticai_core.runtime.sessions.request_context import Logger
+```
 
-1. Initialize the logger with a name for your tool:
+2. Initialize the logger with a name for your tool:
+```python
+logger = Logger('YourToolName')
+```
 
-   ```python
-    logger = Logger('YourToolName')
-   ```
+3. Use the logger methods to log messages:
+```python
+await logger.debug("Debug message")
+await logger.info("Info message")
+await logger.warning("Warning message")
+await logger.error("Error message")
+```
 
 1. Use the logger methods to log messages:
 
@@ -35,14 +42,14 @@ To use the logger in your tools, follow these steps:
 
 Each log message is automatically structured with the following fields:
 
-   ```json
-   {
-      "timestamp": "ISO-8601 formatted UTC timestamp",
-      "sessionId": "Unique session identifier",
-      "userId": "User identifier",
-      "message": "Your log message content"
-   }
-   ```
+```json
+{
+    "timestamp": "ISO-8601 formatted UTC timestamp",
+    "sessionId": "Unique session identifier",
+    "userId": "User identifier",
+    "message": "Your log message content"
+}
+```
 
 The logger automatically includes:
 
@@ -55,27 +62,27 @@ The logger automatically includes:
 
 Here's a complete example of using the logger in a tool:
 
-   ```python
-   from agenticai_core.designtime.models.tool import Tool
-   from agenticai_core.runtime.sessions.request_context import Logger
+```python
+from agenticai_core.designtime.models.tool import Tool
+from agenticai_core.runtime.sessions.request_context import Logger
 
-   @Tool.register(name="ExampleTool", description="Example tool with logging")
-   async def example_tool(param1: str):
-      logger = Logger('ExampleTool')
-      
-      # Log the start of execution
-      await logger.info(f"########## ExampleTool Called ############# ARGS: {param1}")
-      
-      # Log debug information
-      await logger.debug(f"Processing parameter: {param1}")
-      
-      # Your tool logic here
-      
-      # Log the result
-      await logger.info("Tool execution completed successfully")
-      
-      return "Result"
-   ```
+@Tool.register(name="ExampleTool", description="Example tool with logging")
+async def example_tool(param1: str):
+    logger = Logger('ExampleTool')
+    
+    # Log the start of execution
+    await logger.info(f"########## ExampleTool Called ############# ARGS: {param1}")
+    
+    # Log debug information
+    await logger.debug(f"Processing parameter: {param1}")
+    
+    # Your tool logic here
+    
+    # Log the result
+    await logger.info("Tool execution completed successfully")
+    
+    return "Result"
+```
 
 ## Log Levels
 
