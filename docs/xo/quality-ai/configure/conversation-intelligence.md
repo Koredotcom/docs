@@ -1,6 +1,6 @@
 # Settings
 
-The **Settings** allow you to make app-level changes to **Conversation Intelligence**.
+The **Settings** lets you make app-level changes to **Conversation Intelligence**.
 
 The Settings has the following three sections:
 
@@ -35,9 +35,92 @@ Steps to enable the Conversation Intelligence:
 <img src="../settings/images/converse-intelligence.png" alt="Conversation Intelligence Dashboard" title="Conversation Intelligence Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 2. Enable the **Conversation Intelligence Dashboard** toggle to set the **Script adherence configuration** details.  
-<img src="../settings/images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
+<img src="../settings/conversation-intelligence/images/converse-intelligence-dashboard.png" alt="Conversation Intelligence Dashboard Toggle" title="Conversation Intelligence Dashboard Toggle" style="border: 1px solid gray; zoom:80%;">
 
-By enabling this option, you can view the **Conversation Intelligence** feature displaying under the **Analyze** section.
+    !!! Note
+    
+        By enabling this option, you can view the Conversation Intelligence feature displayed under the Analyze section.
+
+### Interaction Level Resolution Detection Methods
+
+This Setting defines how the system determines contact-level resolution across all conversations. Select the method that aligns with your quality standards and reporting needs. The system controls how resolution is calculated, while Taxonomy Builder defines success and failure criteria for topics.
+
+#### Method 1: Topic-Based Resolution (Strict)
+The Taxonomy Builder integrates with Conversation Intelligence settings at the application level. These settings control conversation analysis and resolution detection. The system evaluates resolution using AND logic across all L3 topics discussed in a conversation. A contact is marked as resolved only when every topic is successfully resolved.
+
+**Use this method when:**
+
+* Weight primary and secondary issues differently.
+* Agent performance based on the main customer need.
+* Prevent minor mentions from affecting resolution metrics.
+* Configure resolution logic in Taxonomy Builder.
+
+**Example**: If the system resolves a customer’s payment issue but not a casual rewards question, it still marks the contact as resolved.
+
+**Configuration Flow**
+
+1. Navigate to **Settings > Conversation Intelligence**.
+1. Select the **Topic-based Resolution (Strict)** radio button.
+1. Select **Save** to apply the setting change.
+
+No Resolution configuration appears in Taxonomy Builder, and no further setup is required.
+
+#### Method 2: Overall Contact Level Resolution (Holistic Resolution Assessment)
+
+The system uses an LLM-based holistic assessment to determine whether it resolved the customer’s primary reason for contact, even if minor secondary issues remain. The system evaluates overall resolution independently of individual topic outcomes.
+
+**Use this method when:**
+
+* Weight primary and secondary issues differently.
+* Reflect agent performance based on the main customer need.
+* Prevent minor mentions from affecting resolution metrics.
+* Configure resolution logic in Taxonomy Builder.
+
+**Example**:
+
+If the system resolves a customer’s payment issue but not a casual rewards question, it marks the contact as resolved.
+
+**Configuration Flow**
+
+1. Navigate to **Settings > Conversation Intelligence**.
+1. Select the **Overall Contact Level Resolution (Holistic Resolution Assessment)** radio button.
+1. Select **Save** to apply the setting change.
+1. The system automatically applies **AND logic** and requires resolution for all L3 topics.
+1. Navigate to **Quality AI > Configure > Taxonomy Builder**.
+1. Navigate to the **Resolution** tab.
+1. Configure the **Successful**, **Unsuccessful**, and **Overall Resolution** descriptions.
+1. **Save** the configuration to apply the custom LLM prompts.
+
+    !!! Note
+
+        * This app-level setting applies to all taxonomies and conversations.
+        * Review each option against your customer experience goals before making a selection.
+        * Changing the resolution method in Settings affects.
+            * All taxonomies in your organization
+            * All queues and agents.
+            * Historical data interpretation (calculations may change for existing conversations).
+            * Real-time dashboards and reports.
+            * Agent performance metrics.
+            * Quality assurance workflows.
+    <img src="../settings/conversation-intelligence/images/interaction-level-resolution-detection-method.png" alt="Interaction Level Detection Method" title="Interaction Level Detection Method" style="border: 1px solid gray; zoom:80%;">
+
+#### Settings vs. Taxonomy Configuration
+
+**Settings (Application Level)**
+
+* Defines the global interaction-level resolution detection method.
+* Applies across the entire organization.
+* Requires administrator permissions.
+* Takes effect immediately and system-wide.
+
+**Taxonomy Builder (Taxonomy Level)**
+
+* Defines individual topic structures and classifications.
+* Configures topic-specific resolution criteria (L3 only).
+* Manages contact-level resolution descriptions (available when Overall Contact Level Resolution is enabled).
+* Supports version-controlled changes.
+
+#### Disable Conversation Intelligence
 
 Steps to disable the Conversation Intelligence dashboard:
 

@@ -1,6 +1,6 @@
 # Taxonomy Builder Setup
 
-This feature defines a process to create, organize, and manage topic hierarchies that categorize and analyze customer conversations in alignment with business structures and analytical needs.
+Taxonomy Builder setup outlines a process for creating, organizing, and managing topic hierarchies to categorize and analyze customer conversations accurately, aligning with business structures and analytical needs.
 
 ## Prerequisites and Access Requirements
 
@@ -12,113 +12,587 @@ Before beginning taxonomy setup, make sure you have:
 
 * **Business Structure Mapping**: A clear understanding of your organizational hierarchy and customer interaction types.
 
+## Access Prerequisites
+
+Before using Taxonomy Builder, make sure that you have the required permissions and system settings:
+
+* Verify your permissions with your system administrator. 
+
+* Confirm that your organization has Advanced Topic Discovery enabled.
+ 
+* Request the necessary access if you require taxonomy configuration capabilities. 
+
+    !!! Note
+
+        * Users with view-only permissions can see configured taxonomies, but can’t modify taxonomies. 
+
+        * Users can't access Taxonomy Builder if they do not meet the prerequisites.
+
 ## Interface Architecture
 
-Navigate the taxonomy builder interface by using the hierarchical tree view and organizational tools. Understanding the layout improves efficiency when creating and managing taxonomies.
+Navigate the taxonomy builder interface by using the hierarchical tree view and organizational tools. Understanding the interface layout ensures improved efficiency when creating and managing taxonomies.
 
-**Navigation Path: Quality AI > Configure > Taxonomy Builder**
+## Access Taxonomy Builder
+
+Navigate to **Quality AI > Configure > Taxonomy Builder**.   
+<img src="../images/taxonomy-builder-overview.png" alt="Taxonomy Builder" title="Taxonomy Builder" style="border: 1px solid gray; zoom:100%;">  
+
+### Main Interface Components
+
+The Taxonomy Builder interface includes the following components:
+
+#### Hierarchy Tree View
+
+* Displays the full taxonomy in a collapsible tree.
+
+* Shows L1, L2, and L3 topics.
+
+* Uses indentation and color to represent relationships.
+
+* Includes expand and collapse controls for parent topics.
+
+#### Action Buttons
+
+* **Add New Topic Level:** Create a new L1 or standalone L2.
+
+* **Add Level 1**: Create a new Level 1 (L1) top-level topic.
+
+* **Add Level 2**: Add a child topic under L1.
+
+* **Add Standalone Level 2**: Create a Standalone Level 2 (L2) topic without assigning a Level 1 parent.
+
+* **Add Level 3**: Add a child topic under L2.
+
+* **Edit**: Update topic name or description.
+
+* **Delete**: Remove a topic from the taxonomy.
+
+#### Topic Information Display
+
+Each topic shows:
+
+* Topic name and level.
+
+* Color coding and indentation.
+
+* Quick actions (edit, delete).
+
+* Number of child topics (if applicable).
+
+
+#### Topic Hierarchy Levels and Visual Representation
+
+Taxonomy Builder uses color coding and indentation to make topic relationships clear at a glance. 
+
+| Level         | Topic Type or Classification      | Color  | Description                                                                                                                   | Parent–Child Relationship                                     |
+| ------------- | --------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Level 1 (L1)  | Strategic Business Classification | Purple | Represents broad business topic areas such as divisions, lines of business, or service areas aligned with executive strategy. | **Parent**: None (top-level topics)<br>**Child**: L2 topics           |
+| Level 2 (L2)  | Product and Service Categories    | Blue   | Organizes products, services, or operational areas within a business domain.                                                  | **Parent**: L1 topic (or standalone)<br>**Child**: Can have L3 topics |
+| Standalone L2 | Product and Service Categories    | Blue   | Provides flexible Level 2 topics without a Level 1 parent for organizations that don’t require a full three-level hierarchy.  | **Parent**: None <br>**Child**: Can have L3 topics                     |
+| Level 3 (L3)  | Customer Contact Reasons          | Grey   | Captures specific customer contact reasons—granular issues that drive day-to-day agent activity and operational decisions.  | Parent: L2 topic <br>**Child**: None (leaf-level topics)           |
+
+**Progressive Indentation**: Child topics nest directly under their parents, reinforcing the hierarchy across all levels without additional steps.
+
+#### Adding Topics and Parent Assignment
+
+Taxonomy Builder automatically assigns the correct parent when you add a topic:
+
+* When you add an L2 topic from L1, the system assigns that L1 as the parent.
+
+* When you add an L3 topic from L2, the system assigns that L2 as the parent.
+
+* You can create standalone L2 topics without assigning a parent.
+
+This ensures consistent hierarchy and faster topic creation.
 
 ### Topics 
 
-Create and organize your conversation topics using a structured three-level hierarchy system. The topic interface provides visual tools to create, edit, and manage complex taxonomical relationships efficiently.
+Create and organize conversation topics using a structured three-level hierarchy. The topic interface provides visual tools to create, edit, and manage complex taxonomical relationships efficiently.
 
-#### Understanding Topic Hierarchy Levels
+#### Topics Hierarchy Levels
 
 The system supports three distinct hierarchical levels for topic organization:
 
-* **L1 (Top Level)**: Parent categories representing broad topic areas.
+* **L1 (Top Level)**: Top-level (Parent) categories representing broad business areas.
 
-* **L2 (Second Level)**: Child categories under L1 parents.
+* **L2 (Second Level)**: Child categories under L1, organizing products, services, or operational areas.
 
-* **L3 (Third Level)**: Sub-child categories under L2 parents.
+* **L3 (Third Level)**: Sub-child categories under L2, capturing specific customer contact reasons. 
 
-**Key Feature**: You can configure L2 nodes independently without requiring an L1 parent, providing flexibility in your taxonomy structure.   
-<img src="../images/topic-hierarchy-level.png" alt="Topic Hierarchy Levels" title="Topic Hierarchy Levels" style="border: 1px solid gray; zoom:100%;">  
+* **Standalone L2**: You can add standalone L2 topics independently without requiring an L1 parent, providing flexibility in your taxonomy structure.
 
-#### Adding New Topic Level
+### Topics Creation	
 
-1. Select the **Add New Topic Level** button in the taxonomy interface.   
+This lets you create topics at different hierarchy levels. When you add a topic from an existing node, the system automatically assigns the correct parent context. It eliminates manual parent selection for the most common workflows.
+
+#### Add New Level 1 Topic
+
+1. Select **Add New Topic Level** in the taxonomy interface.   
 <img src="../images/add-new-topics.png" alt="Add New Topic" title="Add New Topic" style="border: 1px solid gray; zoom:100%;">  
 
-2. Select the appropriate hierarchy level (L1 or L2).   
-<img src="../images/add-new-topic-level.png" alt="Add New Topic Level" title="Add New Topic Level" style="border: 1px solid gray; zoom:60%;">  
+2. Select **Level 1** (L1).   
+<img src="../images/select-a-topic-level.png" alt="Add New Topic Level" title="Add New Topic Level" style="border: 1px solid gray; zoom:60%;">  
 
-3. Complete the required fields:
+3. Enter the required fields:
 
     * **Name**: Required, max 50 characters.
 
     * **Description**: Required, max 250 characters.
 
-5. Select **Create** to add the new level to your taxonomy.
+5. Select **Create** to add the new level to your taxonomy.   
+    <img src="../images/add-new-topic-level.png" alt="Level 1" title="Level 1" style="border: 1px solid gray; zoom:45%;"> 
 
-#### Adding Second Level
+#### Add New Level 2 Topic (L2)
 
-1. Select the + **Add Level 2** under the desired L1 topic.  
-<img src="../images/add-level-2-item.png" alt="Add Level 2" title="Add Level 2" style="border: 1px solid gray; zoom:100%;">  
+1. Select the + **Add Level 2** button under the desired Level 1 (L1) topic.
 
     !!! Note
 
-        When you click from an existing L1 node, the configuration slideout preselects that L1 as the parent category. This streamlines the creation process.
+        When you initiate creation from an existing L1 node, the slide-out automatically preselects that L1 as the parent category to streamline the process.  
 
-2. Complete the required fields:
+2. Enter the following fields:
 
-    * **Name** (required, max 50 characters)
+    * **Name** (required, up to 50 characters)
 
-    * **Description** (required, max 250 characters)
+    * **Description** (required, up to 250 characters)
 
-    * **Parent Category**:
+    * **Parent Category** (choose one):
 
-        * Assign to New Parent Category (Level 1)
+        * Assign to a new Level 1 parent category.
         
-        * Keep the preselected parent (if added from existing L1)
+        * Keep the preselected L1 parent (if created from an existing L1).
 
-        * Set as Standalone Category (Level 2)
+        * Set as Standalone Level 2 category (no L1 parent).
 
-4. Select **Create** to add the topic to your taxonomy.    
-<img src="../images/add-new-topic-second-level.png" alt="Add Level 2" title="Add Level 2" style="border: 1px solid gray; zoom:100%;"> 
+4. Select **Create** to add the new topic to your taxonomy.    
+<img src="../images/add-l2.png" alt="Add Level 2" title="Add Level 2" style="border: 1px solid gray; zoom:70%;"> 
 
-#### Adding Third Level
+#### Add Standalone Level 2 Topic (L2)
 
-1. Select the + **Add Level 3** under the desired L2 topic.    
+1. Select **Add New Topic Level** in the taxonomy interface.
+
+1. Select the **Standalone Level 2**.
+
+1. Enter a name (up to 50 characters).
+
+1. Enter a brief description (up to 250 characters).
+
+1. Select **Create** to save the standalone Level 2 topic.
+
+    !!! Note
+
+        Standalone Level 2 topics support flexible taxonomy structures without requiring a full three-level hierarchy.
+
+#### Add New Level 3 Topic (L3)
+
+1. Select the + **Add Level 3** under the desired L2 (L2) topic.    
 <img src="../images/add-level-3-item.png" alt="Add Level 3" title="Add Level 3" style="border: 1px solid gray; zoom:100%;"> 
 
     !!! Note
 
         The system preselects the L2 parent from which you initiated the action. 
 
-2. Complete the required fields:
+2. Enter the following fields:
 
-    * **Name** (required, max 50 characters)
+    * **Name** (required, up to 50 characters).
 
-    * **Description** (required, max 250 characters)
+    * **Description** (required, up to 250 characters).
 
-3. Check the resolution detection option if you want to track successful/unsuccessful outcomes (enabled by default). 
+3. Check the resolution detection option to track successful or unsuccessful outcomes (enabled by default). 
 
 4. Select **Create** to add the topic to your taxonomy.
 
-#### Editing Existing Level
+### Resolution Tracking
+
+By default, the system enables resolution detection for L3 topics. Disable this option for informational topics that don't require resolution tracking, such as balance inquiries, rate information requests, or general knowledge questions.
+
+#### Edit Existing Topic Level
+
+Edit existing topics to update their names, descriptions, or hierarchy placement within your taxonomy.
 
 1. Locate the level you want to modify in the taxonomy tree.
 
-2. Select the **Edit** option.    
-<img src="../images/edit-existing-level.png" alt="Edit Existing Level" title="Edit Existing Level" style="border: 1px solid gray; zoom:100%;">  
+1. Select the **Edit** option.    
+<img src="../images/edit-topic.png" alt="Edit Existing Topic Level" title="Edit Existing Topic Level" style="border: 1px solid gray; zoom:100%;">  
 
-3. Update the following fields in the modal window:
+1. The **Edit Topic Level** modal displays with the current topic information.
+
+1. Update the following fields in the modal window:
     
-    * Name
+    * **Topic Level**: Read-only field showing the current hierarchy level (Level 1, Level 2, or Level 3).
+
+    * **Name**: Maximum 50 characters. The counter displays current character usage (for example, 23/50).
+
+    **Description**: Maximum 250 characters. The counter displays current character usage (for example, 13/250).
     
-    * Description
+    * **Reorganize Topic**: Move the topic to a new parent category.
 
-    * Reorganise Topic
+    * **Change Level**: Update the topic hierarchy level if needed.
 
-    * Change Level
+1. Select the **Reorganize Topic** checkbox to move the topic to a new parent category.
 
-4. Select the Reorganise Topic checkbox to move topics to new parent categories.
-
-5. Select the options like Standalone Level 2 or Level 1 to update the hierarchy, which automatically moves all your related child topics with the parent topic.   
+1. Choose options like Standalone Level 2 or Level 1 to update the hierarchy. The system automatically moves all related child topics with the parent topic.      
 <img src="../images/edit-reorganise-topic-level.png" alt="Edit Existing Topic Hierarchy" title="Edit Existing Topic Hierarchy" style="border: 1px solid gray; zoom:100%;">  
   
 6. Select **Save** to confirm your changes.
+
+    !!! Note
+
+        Character counters update in real-time as you type. You can’t save the topic if you exceed the character limits. 
+
+#### Reorganize Topics
+
+Use the reorganization feature to move topics to different parent categories or change their hierarchy level.
+
+To reorganize a topic, do the following:
+
+1. In the **Edit Topic Level** modal, check the **Reorganize Topic** checkbox.
+
+1. The **Change Level** dropdown appears with available hierarchy options based on the `What You Can Do` rules.
+
+1. Select the new parent category or hierarchy level from the available options.
+
+1. Review the explanatory text before move: `Choose a new parent category (L1) for the selected item. All the related items are moved and restructured under this new category.`
+
+1. Select **Save** to confirm your changes.
+
+1. Select **Cancel** to discard changes.
+
+    !!! Note 
+       
+        When you reorganize a topic: 
+        
+        * All child topics move automatically with the parent topic.
+        
+        * Parent-child relationships remain intact.
+
+        * The system validates vs. duplicate names in the destination location.
+
+        * The system may ask for confirmation when moving topics that affect multiple items.
+
+Review the impact before reorganizing topics that contain substantial conversation history.
+
+!!! warning
+
+    Reorganizing topics affects your taxonomy structure and may impact:
+
+    * Existing conversation classifications under this topic.
+
+    * Reports and dashboards that reference this topic's hierarchy path.
+
+    * Filters and saved views that use the current topic location.
+
+    * Historical data analysis that depends on topic organization.
+    
+#### Delete Topics
+
+Remove topics from your taxonomy when are no longer needed or create any error. This includes safeguards to prevent accidental data loss and clearly explains the impact of removing topics at different hierarchy levels.
+
+To delete topics, do the following:
+
+1. Type the topic name to confirm deletion (for L1 and L2 deletions in the taxonomy tree). Or,
+
+1. Locate the topic you want to delete. 
+
+1. Select the Delete. 
+
+1. A warning pop-up appears to review the deletion confirmation dialog, including:
+        
+    1. Topic name and level.
+
+    1. The number of child topics deleted (if applicable).
+
+    1. Warning about conversation classification impact.
+    
+1. For L1 and L2 deletions: Type the topic name to confirm deletion.
+
+1. Select **Delete** to proceed, or **Cancel** to abort.
+
+#### Topic Deletion Effects
+
+ When you delete topics at different levels in the taxonomy, the system applies specific behaviors for each level to maintain data integrity and preserve parent–child relationships.
+
+**What Happens in Level 1 (L1) Deletion**:
+
+* Deleting an L1 topic removes the entire branch under it, including all associated L2 and L3 subcategories.
+
+* This action deletes all nested child topics, accurately removing the whole hierarchy under that parent.
+
+* The system removes the entire hierarchy under that parent.
+
+**Example**: Deleting `Retail Banking` (L1) removes all L2 topics, such as `Credit Cards`, `Checking Accounts` and all their L3 subtopics.
+
+!!! warning
+
+    * The system removes this classification from all conversations under this L1 topic and its child topics.
+
+    * The system keeps historical data but removes all references to deleted topics. 
+
+    * Reports and dashboards may display gaps in the historical data.
+
+<img src="../images/topic-level-deletion1.png" alt="Level 1 Topic Deletion" title="Level 1 Topic Deletion" style="border: 1px solid gray; zoom:100%;"> 
+
+
+#### Level 2 (L2) Deletion
+
+* Deleting an L2 topic removes that L2 topic along with all its Level 3 (L3) child subcategories.
+
+* This lets you remove a specific category without affecting broader parent topics. The parent L1 topic remains intact.
+
+* The system removes all references to deleted topics.
+
+* All related reports and dashboards may show gaps in historical data.
+
+**Example**: Deleting `Credit Cards` (L2) under `Retail Banking` (L1) removes `Payment Issues`, `Reward Inquiries` and other L3 topics, but keeps `Checking Accounts` and other L2 siblings.
+
+!!! warning
+
+    * Conversations lose this classification when you delete this L2 topic and its children.
+
+    * L1 parent remains functional with other L2 children.
+
+<img src="../images/topic-level-deletion.png" alt="Level 2 Topic Deletion" title="Level 2 Topic Deletion" style="border: 1px solid gray; zoom:100%;"> 
+
+#### Standalone Level 2 (L2) Deletion
+
+* Deleting a standalone L2 topic removes it along with its child L3 topics.
+
+* Since it has no L1 parent, the parent L1 topic remains intact. Only the standalone 
+
+* Deleting the L2 topic also affects its child topics.
+
+* L1 parent remains functional with other L2 children.
+
+* This supports flexible taxonomy structures without a strict three-level hierarchy.
+
+**Example**: Deleting `Technical Support` (Standalone L2) removes `Password Reset`, `Software Installation` and other L3 topics.
+
+!!! warning
+
+    * L1 parent remains functional with other L2 children.
+
+    * This supports flexible taxonomy structures without a strict three-level hierarchy.    
+<img src="../images/topic-level-deletion4.png" alt="Level 2 Standalone Topic Deletion" title="Level 2 Standalone Topic Deletion" style="border: 1px solid gray; zoom:100%;"> 
+
+#### Level 3 (L3) Deletion
+
+* Deleting an L3 topic removes only the specific subcategory without impacting any parent topics.
+
+* No impact on parent topics (L2 or L1).
+
+* No impact on sibling L3 topics.
+
+**Example**: Deleting `Reward Points Withdrawal` (L3) under `Credit Cards` (L2) removes only that specific topic.
+
+!!! warning
+
+    Minimal taxonomy impact with isolated deletion.
+
+<img src="../images/topic-level-deletion3.png" alt="Level 3 Topic Deletion" title="Level 3 Topic Deletion" style="border: 1px solid gray; zoom:100%;"> 
+
+### Organizing Your Taxonomy
+
+Use the drag or move functionality to restructure topics within your hierarchy while maintaining parent–child relationships and data integrity.
+
+**Drag Functionality**
+
+* Drag intents to new positions within the hierarchy.
+
+* The system highlights drop zones when they're valid.
+
+*Invalid operations are clearly indicated.
+
+* Preview the new structure before confirming.
+
+* Hover over the info (ⓘ) icon for guidance.
+<img src="../images/topics-structure.png" alt="Information Instruction" title="Information Instruction" style="border: 1px solid gray; zoom:100%;"> 
+
+### Interactive Guidance and Movement Rules
+
+Tooltips guide you through the topic reorganization process.
+
+Hover over the Information icon (ⓘ) to view:
+
+* Allowed movements between L1, L2, and L3.
+
+* Restricted actions that protect taxonomy integrity.
+
+* Parent–child relationship constraints.
+
+* Color and indentation legends.
+
+* Valid and invalid drop zone behavior.
+
+#### Permitted Topic Movements (What you can do)
+
+Topic level determines what movements you can perform. 		
+	
+| Topic Level             | You Can Move or Change To                                                                                                             | Example                                                                                                                                                                                                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Level 3 (L3)            | - Move within the same L1 parent to a different L2<br>- Move under a different L1 parent as an L2<br>- Promote to a different Level 2 | **Move within same L1:**<br>L1: Billing → L2: Invoices → L2: Payments<br>**Move under different L1:**<br>Original: L1: Billing → L2: Refunds<br>After the move: L1: Account Management → L2: Refunds                                                                                   |
+| Level 2 (L2)            | - Move under a different Level 1 parent<br>- Promote to Level 1<br>- Change to Standalone Level 2                                     | **Different L1:**<br>Before: Billing (L1) → Refunds (L2)<br>After: Account Management (L1) → Refunds (L2)<br>**Level 1 promotion:**<br>Before: Billing (L1) → Refunds (L2)<br>After: Refunds (L1)<br>**Standalone L2:**<br>Technical Support (Standalone L2) → Password Reset (L3) |
+| Standalone Level 2      | - Exists without a Level 1 parent<br>- Can have L3 child topics                                                                       | **Example:** Technical Support (Standalone L2) → Password Reset (L3)                                                                                                                                                                                                               |
+| Level 2 under a Level 1 | - Standard L2 topic explicitly associated with a Level 1                                                                              | **Example:** Account Management (L1) → Profile Updates (L2)                                                                                                                                                                   |
+
+#### Topic Conversion Options
+
+When you move or promote a topic, you must confirm before converting it to preserve hierarchy integrity.
+
+**Make as L1**
+
+Select a topic to convert it into a Level 1 (L1) topic.
+
+* The topic becomes a top-level business category.
+
+* It no longer has a parent.
+
+* Any existing child topics move with it and remain intact.
+
+**Make Standalone L2**
+
+Select a topic to convert it into a Standalone Level 2 (L2) topic.
+
+* The topic remains a Level 2.
+
+* It doesn't belong to any Level 1.
+
+* Child topics remain unchanged.         
+<img src="../images/l2-topic-conversion.png" alt="Topic Conversation" title="Topic Conversation" style="border: 1px solid gray; zoom:70%;"> 
+
+#### Restricted Topic Movements (What you can’t do)
+
+To maintain structural integrity, Taxonomy Builder prevents you from performing these actions:
+
+| Topic Level        | Restricted Actions                                   |
+| ------------------ | ---------------------------------------------------- |
+| Level 1 (L1)       | You can’t move Level 1 or Level 2 topics to Level 3. |
+| Level 2 (L2)       | You can’t move standalone Level 2 topics to Level 1. |
+| Standalone Level 2 | You can’t move standalone Level 2 topics to Level 3. |
+
+
+#### Important Considerations and Restrictions
+
+**Important Considerations**:
+
+* Moving a parent topic automatically moves all its children.
+
+* The system validates vs. duplicate names in the destination location.
+
+* The system requires confirmation before completing any move operation.
+
+**Moving Parent Topics**:
+
+* When you move a parent topic, all child topics move automatically.
+
+* Moves all L2 topics under an L1 parent and L3 topics under an L2 parent.
+
+* Maintains parent-child relationships.
+
+* Requires confirmation before completing. You can't undo this operation after confirmation, verify the new structure in the preview before confirming.
+
+**Duplicate Names Restriction**:
+
+* The system prevents duplicate topic names within the same hierarchy level and parent.
+
+* If you attempt to move or create a topic with a name that exists in the destination:
+
+    * Displays an error message.
+    
+    * Blocks the operation.
+
+    * Requires you to rename one of the topics before proceeding.
+
+* Make sure that all unique topics names are within each parent category.
+
+    !!! Note 
+
+        When you reorganize a topic:        
+
+        * The system validates against duplicate names in the destination location.
+
+        * You may require a confirmation for moves that affect multiple topics.
+
+#### Confirmation Before Saving Taxonomy Changes
+
+When you save taxonomy changes, a confirmation dialog appears to save the topic level with a new name. 
+
+**Dialog Components**: Provide a descriptive name for the version or update to help track changes in version management.
+
+**Available Actions**
+
+**Discard Changes**: 
+
+* Discards all unsaved changes.
+    
+* Revert to the previous taxonomy state without applying any modifications.
+
+* Use this if you want to review changes again before saving.
+
+**Save and Proceed**: 
+
+* Confirm and save the taxonomy changes, 
+        
+* Apply changes to the system. 
+
+* Create a new version in the version history.
+       
+* Deploy changes for use in conversation analysis.
+
+
+!!! Note
+
+    Changes take effect only after confirmation, ensuring controlled version management.
+
+
+!!! warning
+
+    When you select Save and Proceed:
+
+    * Changes are immediately deployed to production.
+
+    * The system classifies the future conversations using the new taxonomy.
+
+    * You can't undo this action (though you can create another version reverting changes).
+
+    * Historical conversations retain their original classifications.
+<img src="../images/save-taxonomy-changes.png" alt="Taxonomy Changes" title="Taxonomy Changes" style="border: 1px solid gray; zoom:70%;"> 
+
+
+#### Reset or Revert Changes Confirmation Dialog
+
+This confirmation dialog appears when you try to undo unsaved taxonomy changes. It clearly warns you that discarding all recent, unsaved modifications discards those changes and restores the taxonomy to its last saved version, helping you avoid accidental loss of work.
+
+**When It Appears**:
+
+* When you have made changes to your taxonomy (adding, editing, moving, or deleting topics).
+
+* When you attempt to move to another screen or close without saving.
+
+* Making changes to your taxonomy hierarchy enables the **Reset Changes** and **Save Versions** buttons. Saving your changes disables the buttons automatically.
+
+**Actions**:
+
+**Reset Changes**: 
+
+* Select the **Reset Changes** button that triggers a confirmation pop-up titled **Revert Changes**. 
+
+* The warning message states that the action discards all recent changes and restores the taxonomy to its last saved state.
+
+**Save Version**: 
+
+* Select the **Save Version** button to save your current changes and update the taxonomy to the latest version. 
+
+* This action preserves all recent edits so you can continue working from this saved state later.
+
+* **Cancel**: Select **Cancel** to close the pop-up and keep your recent changes.
+
+* **Confirm**: Select **Confirm** to proceed and revert the taxonomy, discarding all unsaved changes.
+
+!!! Note
+
+    This action affects only unsaved changes. Previously saved versions remain unchanged.
+<img src="../images/revert-changes.png" alt="Revert Changes" title="Revert Changes" style="border: 1px solid gray; zoom:70%;"> 
+
 
 ### Resolution Configuration
 
@@ -168,6 +642,8 @@ Available Resolution Types:
 * **Successful**: Positive outcomes for the identified topic.
 
 * **Unsuccessful**: Negative or incomplete outcomes.
+
+* **Overall Resolutions**: Evaluates whether the customer’s primary reason for contact is fully addressed and closed by the end of the interaction, regardless of individual topic outcomes.
 
 Customizing Resolution Definitions:
 
