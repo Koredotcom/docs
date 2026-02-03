@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Improved - CLI Interface (Nov-Dec 2025)
 
-- Fixed CLI command naming: `create-env` ? `publish` for environment creation (Nov 14)
+- Fixed CLI command naming: `create-env` > `publish` for environment creation (Nov 14)
 - Enhanced CLI argument handling with proper option names (Dec 10)
 - Improved error handling and user feedback in CLI commands
 - Better status command with `--name` parameter instead of `--env` (Nov 27)
@@ -66,25 +66,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Filler messages with static and dynamic modes (Oct 23)
 - Dynamic filler messages with LLM generation
 - Static filler message sequences
-
-### Added - Documentation System (Nov 2025)
-
-- Comprehensive MkDocs documentation with Material theme (Nov 5)
-- Google-style `docstrings` for all design-time models
-- API reference documentation with `mkdocstrings-python`
-- Complete CLI interface documentation
-- User guides and tutorials
-- Workspace-focused installation and quickstart guides
-
-### Documentation
-
-- Complete API reference for all design-time models
-- Design-time models: App, Agent, Tool, LLM Model, Prompt, Memory Store, Icon
-- App Namespace and App Variable documentation with examples
-- User guides: Building Apps, Creating Agents, Working with Tools, Memory Stores, Orchestration
-- Runtime APIs: CLI commands, application lifecycle, deployment workflows
-- Examples: Banking Assistant, Multi-Agent Workflow
-- Contributing guidelines and best practices
 
 ## [0.2.0] - 2025-09-29
 
