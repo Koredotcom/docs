@@ -101,7 +101,7 @@ Configure the role to trust Kore.ai's Service Role:
         "Action": "sts:AssumeRole",
         "Condition": {
         "StringEquals": {
-            "sts:ExternalId": "<EXTERNAL-ID-PROVIDED-BY-KORE>"
+            "sts:ExternalId": "<EXTERNAL-ID>"
         }
         }
     }
