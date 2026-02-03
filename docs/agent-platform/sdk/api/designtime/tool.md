@@ -49,8 +49,8 @@ def get_weather(location: str):
 def calculator(expression: str):
     return eval(expression)
 
-# Tools are now in ToolsRegistry and can be used
-app.start(orchestrator_cls=MyOrchestrator, custom_tools=ToolsRegistry)
+# Tools are now in ToolsRegistry and automatically available
+app.start(orchestrator_cls=MyOrchestrator)
 ```
 
 ### Creating Inline Tools
@@ -153,3 +153,4 @@ User-defined tools with custom logic.
 
 - [Agent](agent.md) - Agents use tools to perform actions
 - [App](app.md) - Tools are registered at the application level
+

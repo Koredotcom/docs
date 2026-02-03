@@ -142,7 +142,7 @@ No Body parameters are passed.
     "accountId": "5e8xxxxxxxxxxxxxxxxxxxxx",
     "sharedBy": [],
     "__v": 0,
-    "name": "Asana Sample_botowner@koreai.in_34",
+    "name": "Asana Sample_owner@example.com",
     "keywords": [],
     "originalName": "Asana Sample",
     "icon": "58fxxxxxxxxxxxxxxxxxxxxx",

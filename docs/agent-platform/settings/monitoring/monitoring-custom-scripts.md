@@ -48,7 +48,7 @@
 
     * For **in-progress** runs, logs using **default logging** appear only after the run completes. 
 
-    * With the **custom <code>xxxxlogger</code> library**, logs populate in real-time, with support for structured log levels (e.g., info, debug, error), making it ideal for live monitoring and debugging.
+    * With the **custom <code>korelogger</code> library**, logs populate in real-time, with support for structured log levels (e.g., info, debug, error), making it ideal for live monitoring and debugging.
 
 * Export runs and logs as a dataset in .csv format, based on the applied filters and selected date range for further analysis, editing, and debugging.
 
@@ -325,13 +325,13 @@ The record view offers log-specific insights at the script run level after each 
 
 ## Enhanced Logging for gVisor Monitoring
 
-The Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*xxxxlogger*).
+The Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*korelogger*).
 
 **Key Considerations**
 
 * When using **default logging** (e.g., `print()` in Python or `console.log()` in JavaScript), logs appear in the **Logs** section only after the script execution completes (success or failure).
-* **Custom logging** with the `xxxxlogger` library enables real-time log streaming where logs are populated in the table as they're generated.
-* We recommend using `xxxxlogger` for its log-level control and immediate log visibility, which significantly improves monitoring and debugging efficiency.
+* **Custom logging** with the `korelogger` library enables real-time log streaming where logs are populated in the table as they're generated.
+* We recommend using `korelogger` for its log-level control and immediate log visibility, which significantly improves monitoring and debugging efficiency.
 
 
 ### Option 1: Standard Logging (Simple Setup)
@@ -362,9 +362,9 @@ Checking print function...
 Print function is working!
 ```
 
-### Option 2: Advanced Logging with xxxxlogger (Recommended for Monitoring)
+### Option 2: Advanced Logging with korelogger (Recommended for Monitoring)
 
-The `xxxxlogger` library is provided to users to enable detailed trace capture, supporting enhanced script monitoring and observability.
+The `korelogger` library is provided to users to enable detailed trace capture, supporting enhanced script monitoring and observability.
 
 Additionally, the same logs are also captured in stdout in the following format: 
 
@@ -376,27 +376,27 @@ Additionally, the same logs are also captured in stdout in the following format:
 <p class="admonition-title">Note</p>
 <p>The above log format can be modified as required.</p></div>
 
-A sample script and its output, which uses the `xxxxlogger` library in Python, are given below:
+A sample script and its output, which uses the `korelogger` library in Python, are given below:
 
 **Script**
 
 ```
-import xxxxlogger
+import korelogger
 def call_openai_chat(prompt):
-    xxxxlogger.debug("Debug log using xxxxlogger")
-    xxxxlogger.info("Info log using xxxxlogger")
-    xxxxlogger.warning("Warning log using xxxxlogger")
-    xxxxlogger.error("Error log using xxxxlogger")
+    korelogger.debug("Debug log using korelogger")
+    korelogger.info("Info log using korelogger")
+    korelogger.warning("Warning log using korelogger")
+    korelogger.error("Error log using korelogger")
     return
 ```
 
 **Output captured in** `stdout`
 
 ```
-DEBUG :: Debug log using xxxxlogger
-INFO :: Info log using xxxxlogger
-WARNING :: Warning log using xxxxlogger
-ERROR :: Error log using xxxxlogger
+DEBUG :: Debug log using korelogger
+INFO :: Info log using korelogger
+WARNING :: Warning log using korelogger
+ERROR :: Error log using korelogger
 ```
 
 **Log traces are pushed in the following format:**
@@ -422,10 +422,10 @@ ERROR :: Error log using xxxxlogger
         "deployment_id": "deploy_67890",
         "source": "api_call",
         "source_type": "test",
-        "log.message": "Using xxxxlogger to log",
+        "log.message": "Using korelogger to log",
         "log.level": "INFO",
         "log.trace_id": "00-abcdef12345xxxxxxxxxxxxxxxxxxxx0-12345xxxxxxxxxxf-01",
-        "log.meta.msg": "Using xxxxlogger to log",
+        "log.meta.msg": "Using korelogger to log",
         "log.meta.pid": "41",
         "log.meta.logid": "4XXXXXX5-5XX0-4XX6-bXX8-4XXXXXXXXXX6"
     },

@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+
+<u>Patch Release</u>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.21.0 January 17, 2026
 
 <u>Minor Release</u>
@@ -20,7 +28,7 @@ Provided a Continuous Gather option at the start flow when TTS streaming is enab
 
 **Model Selection for ASR and TTS Providers**
 
-The platform now allows model selection for ASR and TTS providers directly from the app-level and Start Flow-level UIs. The selected model is consistently applied across design-time and runtime voice scenarios, including interactions, transcriptions, and monitoring, without requiring call-control parameters. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences)
+The platform now permits model selection for ASR and TTS providers directly from the app-level and Start Flow-level UIs. The selected model is consistently applied across design-time and runtime voice scenarios, including interactions, transcriptions, and monitoring, without requiring call-control parameters. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences)
 
 **TTS Providers: Required Language Support**
 

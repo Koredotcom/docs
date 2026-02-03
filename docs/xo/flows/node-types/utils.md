@@ -344,6 +344,34 @@ skillGroups: ["6390989f1d00e75d5df4xxxx"],
 })
 ```
 
+### Set Waiting Experience
+
+This function allows flow developers to set or override the waiting experience at runtime.
+
+Syntax
+
+```
+agentUtils.setWaitingExperience(waitingExperienceId);
+```
+
+This function applies the specified waiting experience during the waiting phase. The system determines the effective waiting experience based on a fixed priority order, rather than the sequence in which configurations appear in the flow.
+
+The system applies waiting experiences in the following order of priority (highest to lowest):
+
+1. Waiting experience is overridden at the Agent Transfer node
+2. Waiting experience set using the Agent Utils function in the flow
+3. Waiting experience configured within the dialog
+
+If the flow provides an invalid Waiting Experience ID, the system falls back to the default behavior and logs an error. Flow Builder supports selecting the Waiting Experience ID to avoid manual entry errors.
+
+Example
+
+```
+agentUtils.setWaitingExperience("premium_wait_experience");
+```
+
+In this example, the flow programmatically sets a waiting experience. If the Agent Transfer node specifies a different waiting experience, the system applies the Agent Transfer configuration. If no override exists at the Agent Transfer node, the system uses the value set by the Agent Utils function; otherwise, it falls back to the dialog-level configuration.
+
 ### Recording Control
 
 This function lets you to control the recording of the interactions. You can start, stop, pause, and resume recordings.
@@ -377,9 +405,9 @@ Syntax:
 agentUtils.setAgentTranscribe({transcribe: false});
 ```
 
-* Transcripts will not be accessible to the agent on both the 'Live Interaction' and 'Interactions' pages.
+* Transcripts won't be accessible to the agent on both the 'Live Interaction' and 'Interactions' pages.
 * The following note will appear near the transcripts widget on the 'Interactions' page:  
-“**Note**: Certain parts of this call were not transcribed due to the applied transcription settings”.
+“**Note**: Certain parts of this call weren't transcribed due to the applied transcription settings”.
 
 #### Disabling Recordings
 

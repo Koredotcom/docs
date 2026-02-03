@@ -2,6 +2,22 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+
+<u> Patch Release </u>
+
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Agent Flows</font>
+
+**Search AI Node Response Format Updates**
+
+The response format for the Search AI Node has been updated to simplify processing. Previously, the 'chunk_result' field returned separate arrays for chunks corresponding to generative and extractive answers; it now returns a single array, irrespective of the answer type. Users leveraging the 'chunk_result' structure must update their downstream logic to accommodate this change. [Learn more :octicons-arrow-right-24:](../../apis/searchai/advance-search.md) 
+
+
+<hr>
+
+
 ## v11.21.0 January 17, 2026
 
 <u>Minor Release</u>  

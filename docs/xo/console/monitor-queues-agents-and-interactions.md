@@ -56,9 +56,10 @@ To monitor the agents:
     <img src="../images/filter-options-queues.png" alt="Filter By" title="Filter By" style="border: 1px solid gray; zoom:80%;">  
 
     Select from the following options:  
-        1. **Clear** - Clears the selection.  
-        2. **Save & Apply** - Saves the filter, and it appears when selected.  
-        3. **Apply** - Applied for one instance and not saved.
+
+    * **Clear** - Clears the selection.  
+    * **Save & Apply** - Saves the filter, and it appears when selected.  
+    * **Apply** - Applied for one instance and not saved.
 4. Select **Save & Apply**.
 
 5. On the pop-up window, enter a name (up to 20 characters) for the filter and select **Save & Apply**.  
@@ -557,6 +558,7 @@ In the Assign Conversation pop-up window, select Agent/Queue, select the agent o
         Bot-led interactions don't appear by default, even when bot-led interaction permission is enabled for a role. To view these interactions, supervisors must explicitly select 'Automation' or 'Automation/Agents' from the Participant filter. The default setting remains "Agent" regardless of permission settings to prevent supervisors from being overwhelmed with automation conversations. This keeps automation conversations hidden unless specifically requested while maintaining the flexibility to include them when needed.
 
     Select from the available options:
+
     * **Clear** - Clears the selection.  
     * **Save & Apply** - Saves the filter, and it appears when selected.  
     * **Apply** - Applied for one instance and not saved.  
