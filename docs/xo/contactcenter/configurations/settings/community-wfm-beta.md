@@ -18,7 +18,7 @@ Contact Center AI natively integrates with the Community WFM application.
 
 !!! Note
 
-    This feature is in Beta, and may contain bugs, unfinished work, or rough edges. Our product team is actively working on improving this feature, and we encourage you to try it and share your valuable feedback at support@kore.ai.
+    This feature is in Beta, and may contain bugs, unfinished work, or rough edges. Our product team is actively working on improving this feature, and we encourage you to try it and [contact Support](https://support.kore.ai) to share your valuable feedback.
 
 ### Prerequisite
 

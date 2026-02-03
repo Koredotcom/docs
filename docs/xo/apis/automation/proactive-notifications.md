@@ -100,7 +100,7 @@ curl --location 'https://{{host}}/api/public/bot/{{BotId}}/notify' \
 "val": "Please reset your password."
 },
 "identities": [
-"pxxxxxxn@koredxtai.onmicrosoft.com"
+"pxxxxxxn@example.com"
 ]
 }'
 ```

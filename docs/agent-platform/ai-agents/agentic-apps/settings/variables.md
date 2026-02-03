@@ -10,7 +10,6 @@ Key Benefits
 
 *Environment variables are accessible to both code tools and workflow tools.*
 
-
 ## View Environment Variables
 
 Environment variables are accessible and scoped to an app. Go to the Variables page under Settings to view the available variables for an app. 

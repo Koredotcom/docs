@@ -27,7 +27,7 @@ Key Automation AI updates are summarized below.
     
 * **Advanced AI Capabilities**: The platform has introduced several Advanced AI Capabilities that simplify building agentic experiences. Users can create more natural and personalized agents conversations while streamlining their development workflow.
 
-    * **DialogGPT, an Agentic Orchestration for Intelligent Conversations**: DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. [Learn more :octicons-arrow-right-24:](../generative-ai-tools/dialog-gpt.md)
+    * **DialogGPT, an Agentic Orchestration for Intelligent Conversations**: DialogGPT is an intelligent, agentic orchestration engine that powers natural conversations at scale, providing autonomous orchestration across multiple topics through Dialog Tasks. [Learn more :octicons-arrow-right-24:](../automation/dialog-gpt-based-orchestration.md)
 
     * **Enhanced Agent Node with V2 Prompt and Tool Calling**: Agent Node (previously GenAI Node) has been enhanced to take full advantage of the Tool Calling capability of advanced AI Models. The latest version (v2) orchestrates the Agent Node using the Tool Calling construct to collect entities, instruct business rules, and perform user-defined custom actions. [Learn more :octicons-arrow-right-24:](../automation/agent-node/prompt-setup.md#types-of-prompts)
 
@@ -179,7 +179,7 @@ The key features and experience changes are summarized below.
 
 * Solutions like BankAssist, HR Assist, and IT Assist cannot be upgraded to v11.
 
-* The App language (display language) is available in English, Japanese (Beta), Korean (Beta), and German (Beta).
+* The App language (display language) is available in English, Japanese (Beta), Korean (Beta), Simplified Chinese, and German (Beta).
 
 <hr>
 

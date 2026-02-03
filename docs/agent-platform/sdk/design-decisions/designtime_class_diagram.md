@@ -13,7 +13,7 @@ classDiagram
         +LlmModel ai_model
         +Prompt prompt
         +List~Agent~ agents
-        +start(orchestrator_cls, custom_tools, host, port)
+        +start(orchestrator_cls, host, port)
         +save(filepath, versionInfo, env)
         +to_dict() Dict
         +to_json() String

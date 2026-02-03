@@ -2,7 +2,7 @@
 
 # File Upload API
 
-The API uploads a file to the server for seamless usage in multi modal nodes and across the Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.
+The API uploads a file to the server for seamless usage in multi modal nodes and across the Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.
 
 The following file extensions are currently supported:
 

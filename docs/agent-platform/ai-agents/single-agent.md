@@ -14,27 +14,23 @@ This approach is ideal for applications with one primary capability or a well-de
 
 ## Architecture and Execution Flow
 
-
 In this architecture, the sole agent has the responsibility to manage all the capabilities - intent understanding, knowledge retrieval, tool invocation, llm interactions and response generation. 
 
 ![Single Agent Architecture](images/single-agent/single-agent.png "Single Agent Architecture")
 
-* The user sends a request to the application.
-* The request is routed directly to the agent.
-* The agent:
+1. The user sends a request to the application.
+
+2. The request is routed directly to the agent.
+
+3. The agent:
+
     * Interprets the user intent
     * Retrieves relevant knowledge, if configured
     * Invokes tools or workflows, if required
     * Generates a response using the configured AI model
-* The response is returned to the user without delegation to other agents.
 
-<!--
-## Key Characteristics
+4. The response is returned to the user without delegation to other agents.
 
-* Single point of reasoning - One agent owns the full decision-making process.
-* Simplified orchestration  - Reduced configuration and operational overhead.
-* Direct execution flow - Faster response handling due to minimal orchestration layers.
--->
 
 ## Example Scenario
 
@@ -47,9 +43,9 @@ Since leave management is a well-defined, single-domain capability, all user int
 This example illustrates how a single-agent orchestration pattern manages user requests.
 
 * User: “How many casual leaves do I have left?”
-* Agent(Identifies intent: Leave Balance Inquiry): “I’ll check your current leave balance.” 
+* Agent (Identifies intent: Leave Balance Inquiry): “I’ll check your current leave balance.” 
 
-    [ Agent invokes Leave Balance Tool with parameters- `employeeId = 10234, leaveType = Casual`]
+    [Agent invokes Leave Balance Tool with parameters- `employeeId = 10234, leaveType = Casual`]
 
-* Leave Balance Tool: "4"`
-* Agent(Processes output and formats the response): "You have 4 casual leaves remaining."
+* Leave Balance Tool: "4"
+* Agent (Processes output and formats the response): "You have 4 casual leaves remaining."

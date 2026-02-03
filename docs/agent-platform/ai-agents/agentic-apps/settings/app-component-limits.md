@@ -1,12 +1,12 @@
 # App Component Limits
 
-To optimize performance and manage resources effectively, the following limits apply to Agentic App components. Once a limit is reached, the system displays an error in the UI.
+To optimize performance and manage resources effectively, the following limits apply to Agentic App components. Once a limit is reached, the system displays an error on the UI.
 
-## [App-Level Limits](../create-app.md){:target="_blank"}
+## App-Level Limits
 
-The following limits apply to applications within your workspace.
+The following limits apply to applications in your workspace:
 
-| **Component**              | **Limit** | **Description**                                                                 |
+| Component              | Limit | Description                                                                 |
 |-----------------------------|-----------|---------------------------------------------------------------------------------|
 | Apps per Workspace          | 1,000     | The maximum number of apps you can create in a workspace.|
 | App Versions                | 20        | The maximum number of versions maintained per app.|
@@ -14,9 +14,9 @@ The following limits apply to applications within your workspace.
 | Environments per App        | 5         | Available/defined environments in addition to Draft: for example, Development, Staging, UAT, Production, and Demo.|
 
 
-## [Agent-Level Limits](../../create-agent.md){:target="_blank"}
+## Agent-Level Limits
 
-The following limits apply to agents within an application.
+The following limits apply to agents within an application:
 
 | Component               | Limit | Description                                                                                           |
 |--------------------------|-------|-------------------------------------------------------------------------------------------------------|
@@ -24,9 +24,9 @@ The following limits apply to agents within an application.
 | Agent Versions           | 40    | The maximum number of versions maintained per agent.|
 | Tools Assigned per Agent | 20    | The maximum number of tools, including Workflow Tools, Code Tools, MCP Tools, and Knowledge Tools, that can be linked to an individual agent.|
 
-## [About Tools](../../tools/overview.md){:target="_blank"}
+## Tool-Level Limits
 
-The following limits apply to tools within an application.
+The following limits apply to tools within an application:
 
 | Component                | Limit | Description                                      |
 |---------------------------|-------|--------------------------------------------------|
@@ -35,26 +35,26 @@ The following limits apply to tools within an application.
 | MCP Servers per App       | 10    | The maximum number of MCP servers, regardless of the number of tools.|
 | Knowledge Bases per App   | 20    | The maximum number of SearchAI knowledge base tools.|
 
-## [Code Tool Complexity Limits](../../tools/code-tools.md){:target="_blank"}
+## Code Tool Complexity Limits
 
-The following limits apply to individual code tools.
+The following limits apply to individual code tools:
 
 | Component               | Limit    | Description                                                                 |
 |--------------------------|----------|-----------------------------------------------------------------------------|
 | Parameters per Code Tool | 20       | The maximum number of input parameters for a code tool. |
-| JSON Object Hierarchy    | 5 levels | The maximum number of depth for JSON parameter objects. An error is displayed once the hierarchy exceeds this limit. |
+| JSON Object Hierarchy    | 5 levels | The maximum number of depth for JSON parameter objects. |
 
-## [Memory Stores in Agentic Apps](../memory-stores.md){:target="_blank"}
+## Memory Store Limits
 
-The following limits apply to memory stores within an application.
+The following limits apply to memory stores within an application:
 
 | Component              | Limit | Description                                               |
 |-------------------------|-------|-----------------------------------------------------------|
 | Memory Stores per App   | 15    | The maximum number of memory stores in an application (excluding SessionMeta). |
 
-## [Variables](variables.md){:target="_blank"}
+## Variables
 
-The following limits apply to variables within an application.
+The following limits apply to variables within an application:
 
 | Component            | Limit | Description                              |
 |-----------------------|-------|------------------------------------------|
@@ -62,19 +62,19 @@ The following limits apply to variables within an application.
 | Environment Variables | 50    | The maximum number of environment variables per app.   |
 | Namespaces            | 20    | The maximum number of namespaces per app.    |
 
-## [API Scopes and Keys](../../../apis/agentic-apps/overview.md){:target="_blank"}
+## API Scopes and Keys
 
-The following limits apply to API configuration.
+The following limits apply to API configuration:
 
 | Component   | Limit | Description                     |
 |-------------|-------|---------------------------------|
 | API Scopes  | 20    | The maximum number of API scopes per app.     |
 | API Keys    | 40    | The maximum number of API keys per API scope. |
 
-## [PII & Guardrails](guardrails.md){:target="_blank"}
+## PII and Guardrails
 
-The following limit applies to PII (Personally Identifiable Information) patterns.
+The following limit applies to PII (Personally Identifiable Information) patterns:
 
 | Component    | Limit | Description                    |
 |--------------|-------|--------------------------------|
-| PII Patterns | 20    | The maximum number of PII patterns per app.  |
+| PII Patterns | 20    | The maximum number of PII patterns that can be configured for an app.  |

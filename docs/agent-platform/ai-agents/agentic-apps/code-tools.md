@@ -1,6 +1,6 @@
 # Code Tools
 
-Code tools are specialized functions that process user input based on predefined business logic. They are designed to help agents complete tasks by executing custom scripts as part of their regular operations. This ensures that responses are tailored to the user's specific needs. Code tools primarily utilize JavaScript and Python to process the input data and generate the appropriate output.
+Code tools are specialized functions that process user input based on predefined business logic. They're designed to help agents complete tasks by executing custom scripts as part of their regular operations. This ensures that responses are tailored to the user's specific needs. Code tools primarily utilize JavaScript and Python to process the input data and generate the appropriate output.
 
 **Example**
 

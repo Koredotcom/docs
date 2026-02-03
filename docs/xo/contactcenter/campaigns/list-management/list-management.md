@@ -132,9 +132,11 @@ Steps to pull  the contacts using API Integration:
     <img src="../images/validate.png" alt="Validate" title="Validate" style="border: 1px solid gray; zoom:70%;">
 
 11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
+
     * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John," you would enter "firstName" in the field mapping.
     * Specify the full path to navigate the JSON hierarchy when the data is nested. Use dot notation to access nested objects. For example, if the name data is located as follows:
-        ``` json
+
+        ```json
             {
             "contact": {
             "name": {
@@ -153,6 +155,10 @@ Steps to pull  the contacts using API Integration:
         You can get the API key value from environment variables (plain or encrypted) when adding contacts.
 
 12. Select **Save**. The system fetches the contact-list from the third-party database.
+
+    !!! note "Schema changes for API contact lists"
+ 
+        When a contact list with the source type API Integration is updated, and its schema differs from the previous version, the system displays a warning pop-up if the list is linked to a campaign. Selecting Confirm accepts the latest schema.
 
 #### Accessing Contact List Field Labels and Values
 

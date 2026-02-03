@@ -66,6 +66,7 @@ agent = Agent(
 
 Reasoning + Acting pattern where the agent iteratively:
 
+
 1. Reasons about the task
 2. Selects an action (tool)
 3. Observes the result
@@ -78,6 +79,7 @@ agent = Agent(
     ...
 )
 ```
+
 
 **Best for:**
 

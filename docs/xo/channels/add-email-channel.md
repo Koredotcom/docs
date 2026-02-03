@@ -245,7 +245,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
 
     **DNS Record Format**: <code>[selector]._domainkey.[domain.com]</code>.
 
-    **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com]</code>.
+    **Example**: If your selector is "ses2024" and the domain is "example.com," the DNS record would be: <code>ses2024._domainkey[.example.com]</code>.
     
     <img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
 
@@ -308,7 +308,7 @@ Generate and Configure DKIM for this domain by providing your own private key. T
         **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](http://domain.com)]</code>
 
 
-        **Example**: If your selector is "ses2024" and the domain is "example.com", the DNS record would be: <code>ses2024._domainkey[.example.com](http://.example.com)</code>  
+        **Example**: If your selector is "ses2024" and the domain is "example.com," the DNS record would be: <code>ses2024._domainkey[.example.com](http://.example.com)</code>  
         
         
         <img src="../images/msexchange1.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
@@ -412,7 +412,7 @@ After successful domain verification, follow these steps:
 
 
 1. On the Email Channel page, click **Complete Configuration** for a domain.
-2. On the Configuration tab, enter **Client ID**, **Client Secret Key**, **Tenant ID, **and enable the channel.  
+2. On the Configuration tab, enter **Client ID**, **Client Secret Key**, **Tenant ID**, and enable the channel.  
 <img src="../images/msexchange5.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
 
 

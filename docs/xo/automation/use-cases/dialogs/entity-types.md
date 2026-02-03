@@ -1037,12 +1037,12 @@ Captures statements or paragraphs of text from the user utterance. The value for
 
 ### Email
 
-Captures email address from the utterance. For example, _Send an email to `help@koremessenger.com`_ returns the value of **Email** as a string.
+Captures email address from the utterance. For example, _Send an email to `help@example.com`_ returns the value of **Email** as a string.
 
 ```
 "entities":
 {
-"Email": "help@koremessenger.com"
+"Email": "help@example.com"
 }
 ```
 

@@ -12,10 +12,6 @@ This API allows you to fetch answers to a query from SearchAI corresponding to t
 | **API Scope**     | Answer Generation |
 
 
-
-
-
-
 ## Query Parameters
 
 
@@ -227,6 +223,197 @@ The raclEntityIds parameter takes precedence over any keys configured through th
   </tr>
 </table>
 
+### Sample Response
+
+
+```json
+{
+    "query": "What is RAG?",
+    "requestType": "answer_search",
+    "response": {
+        "answer": "RAG (Retrieval-Augmented Generation) is a technique where a language model retrieves relevant information from external sources and uses it to generate more accurate and context-aware responses. It helps combine up-to-date knowledge with natural language generation.",
+        "isValidAnswer": true,
+        "answer_payload": {
+            "center_panel": {
+                "type": "active_citation_snippet",
+                "data": [
+                    {
+                        "snippet_title": "",
+                        "snippet_content": [
+                            {
+                                "answer_fragment": "RAG (Retrieval-Augmented Generation) is a technique where a language model retrieves relevant information from external sources and uses it to generate more accurate and context-aware responses. It helps combine up-to-date knowledge with natural language generation.",
+                                "sources": [
+                                    {
+                                        "title": "MyFile.pdf",
+                                        "url": "https://domain/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+                                        "chunk_id": "chk-1651c9c2-696e-44aa-bac7-29319c33e308",
+                                        "doc_id": "fc-4f2ef8b5-e05d-555a-8fb9-dc8a1ceb514b",
+                                        "source_id": "fs-bbb11259-a8a4-5863-90c9-179151592cd3",
+                                        "source_type": "googleDrive",
+                                        "image_url": ""
+                                    },
+                                    {
+                                        "title": "Company.pdf",
+                                        "url": "https://host/api/getMediaStream/findly/f-24ba7502-4ad1-51b1-94f4-02e11b56014b.pdf?e=1770012730&n=8912679777&s=IkNDRTQ1VFZkejE1bE5oNkFRMXlyZUlIWWF4QmNSNEV6VXhjdEFtaTFhQkU9Ig%24%24#page=2",
+                                        "chunk_id": "chk-8f6ee241-57c0-4520-a5f5-4a1448534d36",
+                                        "doc_id": "fc-8ebb5fd1-02ee-553b-b455-83afc5ca47c2",
+                                        "source_id": "fs-51067fe5-beab-593b-9bf4-8aca374aaa06",
+                                        "source_type": "file",
+                                        "image_url": [
+                                           ...............
+                                        ]
+                                    },
+                                    {
+                                        "title": "Company.pdf",
+                                        "url": "https://host/api/getMediaStream/findly/f-24ba7502-4ad1-51b1-94f4-02e11b56014b.pdf?e=1770012730&n=8095856058&s=Ik9sRXdBSGE2dEhPYy8reDNVMjNCa3Z2Y2dXZUVHeklLRTlBa1dJcUFvQ3M9Ig%24%24#page=11",
+                                        "chunk_id": "chk-4d8ec29f-f3ff-4d66-acdf-6b245b5e10d6",
+                                        "doc_id": "fc-8ebb5fd1-02ee-553b-b455-83afc5ca47c2",
+                                        "source_id": "fs-51067fe5-beab-593b-9bf4-8aca374aaa06",
+                                        "source_type": "file",
+                                        "image_url": [
+                                          --------
+                                        ]
+                                    },
+                                    {
+                                        "title": "Company.pdf",
+                                        "url": "https://host/api/getMediaStream/findly/f-24ba7502-4ad1-51b1-94f4-02e11b56014b.pdf?e=1770012730&n=9889417899&s=IkptajBZSEtHNEJEZjdJdEhPVnRKSGtUT3BLTTFhaHUrbHFNbWRwckttUXM9Ig%24%24#page=2",
+                                        "chunk_id": "chk-de76cd5c-5542-4c42-a465-a5fe7b069216",
+                                        "doc_id": "fc-8ebb5fd1-02ee-553b-b455-83afc5ca47c2",
+                                        "source_id": "fs-51067fe5-beab-593b-9bf4-8aca374aaa06",
+                                        "source_type": "file",
+                                        "image_url": [
+                                            "https://cxxxxxxxxxxxxxxx/api/getMediaStream/findly/f-9103285c-3999-57b0-b3d4-a5dc42f88b0f.jpg?n=216203261&s=IkN5MVNiVG9RNFVNalJiNVBka2hSejUxY0R2YmRrMWp0bTJFNVBSVW9ZNGs9Ig$$",
+                                        ]
+                                    },
+                                    {
+                                        "title": "MyFile.pdf",
+                                        "url": "https://domain/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+                                        "chunk_id": "chk-ae495f46-ffa3-40a2-8af2-a7b56f3fa420",
+                                        "doc_id": "fc-4f2ef8b5-e05d-555a-8fb9-dc8a1ceb514b",
+                                        "source_id": "fs-bbb11259-a8a4-5863-90c9-179151592cd3",
+                                        "source_type": "googleDrive",
+                                        "image_url": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "snippet_type": "generative_model",
+                        "snippet_model_name": "",
+                        "meta_info": {},
+                        "timeTaken": "5600.00ms",
+                        "message": "Presented Answer",
+                        "isPresentedAnswer": true,
+                        "score": "0.0000%"
+                    }
+                ]
+            }
+        }
+    },
+    "resultType": "Answer",
+    "chunk_result": {
+        "extractive": [],
+        "generative": [
+            {
+                "_index": "answer_index",
+                "_type": "_doc",
+                "_id": "dZ6RS5UBY6hZN8s7a60G",
+                "_score": 0.32623625,
+                "_ignored": [
+                    "chunkText.keyword"
+                ],
+                "_source": {
+                    "sourceId": "fs-bbb11259-a8a4-5863-90c9-179151592cd3",
+                    "pageNumber": 7,
+                    "docId": "fc-4f2ef8b5-e05d-555a-8fb9-dc8a1ceb514b",
+                    "lastSyncAt": "2025-02-04T08:11:30.870Z",
+                    "doc_updated_by_name": "john",
+                    "searchIndexId": "sidx-6dab30f2-450c-5272-8c5f-33ea7d96cc8f",
+                    "type": "pdf",
+                    "chunkId": "chk-1651c9c2-696e-44aa-bac7-29319c33e308",
+                    "createdOn": "2025-02-05T08:35:29.667Z",
+                    "sourceUrl": "https://domain/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+                    "chunkText": "<Content>...............",
+                    "extractionMethodType": "token",
+                    "doc_created_on": "2025-01-10T15:55:08.060Z",
+                    "extractionStrategy": "Strategy3",
+                    "recordTitle": "MyFile.pdf",
+                    "sys_content_type": "googleDrive",
+                    "sys_source_name": "gdrive",
+                    "doc_path": [
+                        "1WwUhdGPqWnQgPgKI_xpa9Ts_pjK1ijOs"
+                    ],
+                    "recordUrl": "https://domain/file/d/1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP/view?usp=drivesdk",
+                    "updatedOn": "2025-02-05T08:35:29.667Z",
+                    "sourceAcl": [
+                        "*"
+                    ],
+                    "chunkType": "Text",
+                    "doc_id": "1vEZTjr9VtQrFePRCJGimfX5cs5y7ITGP",
+                    "doc_updated_on": "2025-01-10T15:55:08.060Z",
+                    "cfs1": "Manasa",
+                    "sys_file_type": "pdf",
+                    "createdBy": "u-fec9538c-98b8-5503-a2ed-679de486e3d9",
+                    "sourceType": "googleDrive",
+                    "extractionMethod": "text",
+                    "sourceName": "gdrive",
+                    "chunkQualified": true,
+                    "score": 0.32623625,
+                    "sentToLLM": true,
+                    "usedInAnswer": true,
+                    "chunk_id": "chk-1651c9c2-696e-44aa-bac7-29319c33e308"
+                }
+            },
+            
+                "_index": "answer_index",
+                "_type": "_doc",
+                "_id": "bj6TS5UBELb8Ef94IhBW",
+                "_score": 0.111074924,
+                "_ignored": [
+                    "chunkText.keyword"
+                ],
+                "_source": {
+                    "sourceId": "fs-51067fe5-beab-593b-9bf4-8aca374aaa06",
+                    "recordTitle": "Company.pdf",
+                    "sys_content_type": "file",
+                    "sys_source_name": "new directory",
+                    "pageNumber": 9,
+                    "docId": "fc-8ebb5fd1-02ee-553b-b455-83afc5ca47c2",
+                    "recordUrl": "https://host/api/getMediaStream/findly/f-24ba7502-4ad1-51b1-94f4-02e11b56014b.pdf?e=1770012730&n=7889409483&s=IndWVERlTWJDc1ppOVRqSWV2dS9SZ25aM2U1ZTZjNExtZS9BeTJZVHgxYlk9Ig%24%24#page=9",
+                    "searchIndexId": "sidx-6dab30f2-450c-5272-8c5f-33ea7d96cc8f",
+                    "updatedOn": "2025-02-28T08:00:35.312Z",
+                    "sourceAcl": [
+                        "*"
+                    ],
+                    "chunkType": "Text",
+                    "chunkId": "chk-fcd7da0c-e3e3-4a41-9c60-00e4253cc0bf",
+                    "createdOn": "2025-02-28T08:00:35.312Z",
+                    "cfs1": "Manasa",
+                    "sys_file_type": "pdf",
+                    "sourceUrl": "https://host/api/getMediaStream/findly/f-24ba7502-4ad1-51b1-94f4-02e11b56014b.pdf?e=1770012730&n=8147623433&s=ImJ6R2tESjdxK09oTzdmVWdtK0xvRFRKZFBMckRwTHUydVpxU2pLakkzNjA9Ig%24%24",
+                    "chunkText": "investment positive for these companies and the Communications Equipment industry.Switching vs Routing Market Share Figures 16 and 17 below show Company’s dominance in terms of market share for both routers and switches, the legacy products of networking infrastructure. The market share data is from Q2 2020.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxng infrastructure and are the same areas where the newer players have focused their R&D expenses, which is an",
+                    "sourceType": "file",
+                    "chunkMeta": {
+                        ....
+                    },
+                    "extractionMethod": "layout",
+                    "extractionMethodType": "general",
+                    "sourceName": "new directory",
+                    "extractionStrategy": "Strategy4",
+                    "chunkQualified": true,
+                    "score": 0.111074924,
+                    "sentToLLM": true,
+                    "usedInAnswer": false,
+                    "chunk_id": "chk-fcd7da0c-e3e3-4a41-9c60-00e4253cc0bf"
+                }
+            }
+        ]
+    },
+    "indexPipelineId": "fip-8918ab9c-522d-5802-add6-1ee06751490f",
+    "searchIndexId": "sidx-6dab30f2-450c-5272-8c5f-33ea7d96cc8f",
+    "searchRequestId": "fsh-ae4d8c24-7098-55ae-8324-3b778ceb76ae",
+    "queryPipelineId": "fqp-2641bfc8-2b02-5c6b-9335-d3076d7fbaf7"
+}
+```
 
 ## Example of Using Custom Data Request parameter
 

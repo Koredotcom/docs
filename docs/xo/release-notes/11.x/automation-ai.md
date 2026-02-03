@@ -2,6 +2,22 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+
+<u> Patch Release </u>
+
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+<font size="4">Agent Flows</font>
+
+**Search AI Node Response Format Updates**
+
+The response format for the Search AI Node has been updated to simplify processing. Previously, the 'chunk_result' field returned separate arrays for chunks corresponding to generative and extractive answers; it now returns a single array, irrespective of the answer type. Users leveraging the 'chunk_result' structure must update their downstream logic to accommodate this change. [Learn more :octicons-arrow-right-24:](../../apis/searchai/advance-search.md) 
+
+
+<hr>
+
+
 ## v11.21.0 January 17, 2026
 
 <u>Minor Release</u>  
@@ -856,7 +872,7 @@ The implementation of DialogGPT is planned in three phases:
 * Phase 2 (future release): Introduces advanced features such as Multi-App Routing support, granular intent identification, custom entity extraction, and new XO GPT models.
 * Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dialog-gpt-based-orchestration.md)
 
 <font size="4">Dialog Builder</font>  
 
@@ -1466,7 +1482,7 @@ Key Benefits
 * Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
 * Improved Customer Experience: assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dialog-gpt-based-orchestration.md)
 
 
 **Enhanced Agent Node with V2 Prompt and Tool Calling**

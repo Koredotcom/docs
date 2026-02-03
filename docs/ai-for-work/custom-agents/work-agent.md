@@ -37,7 +37,7 @@ Agentic Search relies on advanced language models to power its intelligent routi
 
 Access the Models section within your application and initiate the model addition process. The platform supports both OpenAI and Azure OpenAI configurations, giving you flexibility based on your organization's infrastructure and compliance requirements.
 
-1. Navigate to **Models** → **Add Model**.
+1. Navigate to **Models** > **Add Model**.
 2. Add your OpenAI or Azure OpenAI models.
 3. Open **Supervisor** and select your preferred model.
 4. Open **Data Assistant Agent** and select a model.
@@ -52,14 +52,14 @@ MCP tools enable Agentic Search to connect with your enterprise systems. The con
 
 First, retrieve the Server URL from your environment.
 
-1. Navigate to **AI for Work** → **Admin Hub** → **Assistant Configuration**.
-2. Select **MCP Server** → **Default Server**.
+1. Log into the Platform and go to **Admin Hub** > **Assistant Configuration**.
+2. Select **MCP Server** > **Default Server**.
 3. Copy the Server URL displayed.
 <img src="../images/work-agent-url.png" alt="work-agent-url" title="work-agent-url" style="border: 1px solid gray; zoom:70%;">
 
 Now, create the MCP tool in the Agent Platform.
 
-1. Go to **Tools** → **MCP Tools** → **Create Tool**.
+1. Go to **Tools** > **MCP Tools** > **Create Tool**.
 2. Paste the Server URL you copied from the platform.
 3. Add the authentication header:
     * Key: `auth`
@@ -125,7 +125,7 @@ With your application configured, you'll create a deployable version and establi
 
 ## Generate API Credentials
 
-Create the API credentials that platform uses to communicate with your deployment.
+Create the API credentials that the Platform uses to communicate with your deployment.
 
 1. Copy the **deployment cURL** from your environment.
 2. Go to **API Scoping** → **Create Scope**.
@@ -141,9 +141,9 @@ Keep this updated cURL command ready for the next step.
 
 ## Register with AI for Work
 
-The final configuration step connects your deployed Agentic Search instance to the platform, making it available to users through the search interface.
+The final configuration step connects your deployed Agentic Search instance to the Platform, making it available to users through the search interface.
 
-1. Open **AI for Work** → **Knowledge Sources** → **Agentic Apps**.
+1. Log into the Platform and access **Knowledge Sources** > **Agentic Apps**.
 2. Enter a name and description for your application.
 3. Paste your updated cURL command.
 4. Locate the streaming configuration and change:
@@ -195,7 +195,7 @@ Use the following guidelines to ensure Agentic Search operates within its intend
 * **Define Clear Agent Scope and Purpose**: Clearly state the purpose of each agent and explicitly restrict it to Agentic Search–related responses. In the agent instructions, prohibit the use of general AI knowledge or information that does not originate from the configured search applications. This prevents unintended or misleading responses. 
 * **Enforce Mandatory Source Citations**: Configure agents to include source citations in every response. Citations ensure that answers remain grounded in the underlying search applications and improve trust, traceability, and auditability of the results. 
 * **Specify Out-of-Scope Query Handling**: Define how agents should respond to queries that fall outside the supported knowledge domain. Agents must clearly acknowledge limitations and inform users when requested information is unavailable, rather than attempting to infer or generate answers. 
-* **Write Comprehensive Search Application Descriptions**: In **AI for Work** → **Enterprise Knowledge Source settings**, provide detailed descriptions for each search application. Include:
+* **Write Comprehensive Search Application Descriptions**: In **Enterprise Knowledge Source settings** in the Platform, provide detailed descriptions for each search application. Include:
     * The application’s purpose
     * The data sources it covers
     * Explicit scope boundaries
