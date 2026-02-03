@@ -172,7 +172,7 @@ Steps to configure outbound email IDs:
 1. Enter the email IDs or choose from the list.  
 2. Select **Apply** to save the email IDs.
 
-Administrators can turn on the Queue-level Outbound Numbers or Emails feature from [System Settings](../../configurations/settings/queue-level-outbound-numbers-emails.md) to restrict agents to only see the outbound phone numbers or email addresses assigned to their respective queue.
+Administrators can turn on the Queue-level Outbound Numbers or Emails feature from [System Settings](../../configurations/settings/queue-level-settings.md) to restrict agents to only see the outbound phone numbers or email addresses assigned to their respective queue.
 
 ## Edit a Queue
 

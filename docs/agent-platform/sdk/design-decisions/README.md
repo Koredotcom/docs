@@ -58,7 +58,7 @@ This directory contains technical documentation about the AgenticAI Core SDK arc
 
 ### Assets
 
-- **assets** - Diagram images
+- **[assets/](assets/)** - Diagram images
   - `component_interaction.svg` - Component interaction diagram
   - `design_time_classes-1.svg` - Design-time class diagram
   - `designtime_class_diagram-1.svg` - Design-time UML diagram

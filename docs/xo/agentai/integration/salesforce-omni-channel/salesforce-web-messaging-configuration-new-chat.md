@@ -6,6 +6,27 @@ This document provides instructions on connecting your messaging channel to a we
 
 * Developer or a Production Salesforce org
 * Basic knowledge of Salesforce terminology
+* Agent AI configured in your Salesforce app
+
+## Steps to Configure Agent AI in Salesforce
+
+1. Sign in to **Salesforce**.
+2. Select **App Launcher**.
+3. Type **config** in the **search bar**, and select **Kore Agent AI Configuration** from the displayed list.
+4. Select **New** from the top-right corner of the page.  
+    <img src="../images/kore-agentai-configuration.png" alt="kore-agentai-configuration" title="kore-agentai-configuration" style="border: 1px solid gray; zoom:80%;">   
+
+5. Enter the required values in the **Agent AI URL**, **Bot ID**, **Client ID,** **Client Secret**, and **Language (bot language)** fields. To get these values: 
+    1. Sign in to [AI for Service](https://platform.kore.ai/){:target="_blank"}.
+    2. Go to **Agent AI** > **Flows & Channels** > **Digital**.
+    3. Select **Web/Mobile Client** and expand the **JWT App Details** section.
+    4. Select the **copy** buttons against the required fields.  
+        <img src="../images/jwt-app-details-section.png" alt="jwt-app-details-section" title="jwt-app-details-section" style="border: 1px solid gray; zoom:80%;">   
+
+6. Select **Include Einstein Bot and User Messages in Agent AI Context** to share Salesforce Einstein Bot–user conversation data with Agent AI as custom data.  
+
+    Since the Einstein Bot runs natively on Salesforce, Agent AI does not automatically have access to the prior bot conversation. When this option is enabled, the bot–user conversation history is passed to the Agent AI widget, allowing it to maintain context and perform accurate intent recognition. The conversation messages are sent under the `userBotMessages` key. Any forms completed during the Einstein Bot interaction are stored in Salesforce as key–value pairs and are retrieved and included in the custom data. To control which conversation attributes are shared, see [Selecting conversation metadata](../../configuration/linked-services.md/#selecting-conversation-metadata){:target="_blank"}.  
+7. Click **Save**.
 
 ## Enable Omni-Channel
 
@@ -18,12 +39,12 @@ This document provides instructions on connecting your messaging channel to a we
 ## Configure a Messaging Channel for Web Deployment
 
 1. Sign in to your organization–if you are in **Salesforce Classic**, switch to **Lightning Experience**.
-2. Follow this Salesforce documentation to configure your Embedded Service Deployment, [https://help.salesforce.com/configure_web_deployment](https://help.salesforce.com/s/articleView?id=service.miaw_configure_web_deployment_1.htm&type=5){:target="_blank"}.
+2. Follow [Configure an Enhanced Web Chat Deployment](https://help.salesforce.com/s/articleView?id=service.miaw_configure_web_deployment_1.htm&type=5){:target="_blank"} to configure your Embedded Service Deployment.
 
 ## Add the Omni-Channel Utility to your Lightning Application
 
 1. Go to **Lightning Experience** > **Setup**.
-2. Enter “App” in the **quick find** box.
+2. Enter **App** in the **quick find** box.
 3. Select **App Manager**.
 4. Click the **dropdown list** next to the console app that you want to add Omni-Channel to (for example, Service Console), and click **Edit**.
 5. Click **Utility Bar** > **Add**.
@@ -91,6 +112,5 @@ Users must have the following Permissions Set License Agreement to be configured
 
 ## Troubleshooting with Setup
 
-To troubleshoot common issues encountered during this configuration for the first time, follow this link
-
-[https://help.salesforce.com/s/articleView?id=service.miaw_troubleshoot.htm&type=5](https://help.salesforce.com/s/articleView?id=service.miaw_troubleshoot.htm&type=5){:target="_blank"}
+To troubleshoot common issues encountered during this configuration for the first time, follow the
+[Troubleshoot Enhanced Chat Setup](https://help.salesforce.com/s/articleView?id=service.miaw_troubleshoot.htm&type=5){:target="_blank"} document. 

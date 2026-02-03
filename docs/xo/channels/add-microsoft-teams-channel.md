@@ -51,26 +51,27 @@ To set up Microsoft Teams & Copilot as a channel, a Bot Channel Service must be 
 
 
 
-1. On the platform, select the assistant, and then go to the **Channels & Flows** > **Channels** > **Digital** > **All** menu.
+1. On the platform, select the assistant, and then go to the **Channels & Flows** > **Channels** > **Digital** > **All** menu.  
+<img src="../images/teams-channel.png" alt="Configure Microsoft Teams Channel" title="Configure Microsoft Teams Channel" style="border: 1px solid gray; zoom:70%;">
+
 2. On the **Configuration** tab, enter the following details: 
     * **App Tenant ID**: The app tenant ID.
     * **App ID**: The app ID of your Azure Bot resource.
     * **App Password**: The App password value that you find in the Certificates & Secrets page of the Azure bot.
-3. (Optional) toggle the Proactive Notifications.
-    **Application (Client) ID**: The app ID of your Azure Bot resource.
+3. (Optional) toggle the **Proactive Notifications**.
+    * **Application (Client) ID**: The app ID of your Azure Bot resource.
     * **Client Secret**: The client secret value that you find on the Certificates & Secrets page of the Azure bot.
     * **Delivery (tenant) ID**: The subscription ID that you can find on the Overview page of the Azure bot.
 
-4. (Optional) toggle the Modal Dialogs. [Learn more](https://learn.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/action-commands/create-task-module?tabs=dotnet).
+4. (Optional) toggle the **Modal Dialogs**. [Learn more](https://learn.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/how-to/action-commands/create-task-module?tabs=dotnet).
     * Enter the Custom URL to which the platform forwards Modal Dialog messages for processing.
 
         !!! note
 
             The platform maintains the conversation context when handling Modal Dialog messages. It forwards these messages with pre-context to the Custom URL for processing, then relays responses back to the user, maintaining a seamless interaction.
 
-3. Click **Save**.
-
-
+5. (Optional) toggle the **Show email ID instead of channel Id in Analytics**.
+6. Enable the channel and click **Save**.
 
 
 
