@@ -58,7 +58,8 @@ Click on the *Test* button to initiate a sample request to the external agents a
 ---
 ### Delegation
 
-If the Adaptive Network orchestration pattern is enabled, add delegation rules for the agent. Learn More.
+If the Adaptive Network orchestration pattern is enabled, add delegation rules for the agent. [Learn More](network-orchestration.md).
+
 Review the changes and *Create*.
 
 ## Key Characteristics of the Proxy Agent

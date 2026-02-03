@@ -123,13 +123,13 @@ There are *three types of tools* that agents can use.
 
 1. **Workflow Tools**: Workflow Tools provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They're best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.
 
-!!!abstract "Examples"
+    !!!abstract "Examples"
 
     * Weather API: Retrieves live weather updates.
     * Stock Market Tool: Fetches real-time stock prices.
     * Database Query Tool: Accesses structured data from a company’s database.
     
- For more information, see [Workflow Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/workflow-tools/).
+    For more information, see [Workflow Tools](https://docs.kore.ai/agent-platform/ai-agents/tools/workflow-tools/).
 
 2. **Code Tools**: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that can't be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They're the preferred choice when precision engineering and extensibility are required to meet unique business needs. With **code tools**, you can write and execute business logic using *JavaScript or Python* code, allowing seamless integration and automation of complex workflows. \
 
