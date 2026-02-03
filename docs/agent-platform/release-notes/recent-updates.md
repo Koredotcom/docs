@@ -22,17 +22,18 @@ Agent creation now supports three paths: building agents from scratch, importing
 
 The prompt editor now includes AI-assisted refinement, enabling users to easily improve and optimize prompts directly within the editor. This feature reduces iteration cycles and improves prompt accuracy through clearer, more effective definitions, making prompt writing faster and easier.
 
-**Enhanced Security for Session Logs**
+<!--**Enhanced Security for Session Logs**
 
 The Secure Logs feature gives workspace admins granular control over access to detailed session logs and sensitive conversation data. When enabled, developers cannot view detailed logs unless administrators explicitly grant them access. Admins can configure access at the role level or apply restrictions across the entire enterprise workspace, ensuring sensitive customer interactions and debugging data remain visible only to authorized personnel. 
 
 This feature applies only to environment-level logs, such as production and UAT, not to logs in draft versions during development.
+-->
 
 <font size="4">No-code & Pro-Code Tools</font>
 
 **Enhanced Access Control for Tool Logs**
 
-Tool log access now offers three permission levels: Detailed Access, View Only, and No Access. Users can view logs only for tools within apps they're authorized to access, and all log access is fully audited. When log sensitization is enabled, temporary access grants from workspace administrators are also honored.
+Tool-level role management has been enhanced with separate permissions for tool log visibility, allowing administrators to control access to the tool log list and detailed execution logs independently. These permissions support three access levels - detailed access, view-only, and no access—providing finer control over log .
 
 **Environment Variable for Workflow Tools in Agentic Apps**
 
