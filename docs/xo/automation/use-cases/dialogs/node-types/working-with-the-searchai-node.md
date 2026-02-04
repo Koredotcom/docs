@@ -116,8 +116,11 @@ To set up node connection conditions, please follow the steps outlined in [Addin
 2. **End of Dialog:** Ends the current dialog.
 3. **Return to Flow:** Ends the dialog task and resumes the Flow Builder at the next node.
 
-    Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context. There are two deflection types: ‘ Automation’ and ‘Agent Transfer’. Deflect to Chat works only with Voice Gateway Channels (Phone number or SIP Transfer).
+    Enable the **Deflect to Chat** option to create conversation flows that transition from voice to chat-based interactions within the same context. There are two deflection types: ‘ Automation’ and ‘Agent Transfer’. Deflect to Chat works only with Voice Gateway Channels (Phone number or SIP Transfer).  
+    !["Deflect to Chat](images/deflect-to-chat1.png "Deflect to Chat")
 
-!["Deflect to Chat](images/deflect-to-chat1.png "Deflect to Chat")
 
 
+## Related Links
+
+* [Use Agent Node and Search AI to Generate Answers](../../../../how-tos/use-agentnode-and-searchai-to-generate-answers.md)

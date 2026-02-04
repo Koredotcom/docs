@@ -329,6 +329,7 @@ nav:
     - How To:
         - New vs. Returning Users: kb/new-and-returning-users.md
         - Access Original PII Data: how-tos/access-original-pii-data.md
+        - Use Agent Node and Search AI to Generate Answers : how-tos/use-agentnode-and-searchai-to-generate-answers.md
         - Share Metadata from AI for Service to Agent Platform: how-tos/share-metadata-ais-to-agent-platform.md
         - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
         - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md

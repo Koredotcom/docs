@@ -1,3 +1,6 @@
+
+
+
 # Default Standard Responses
 
 On the Platform, you can view the default Natural Language Processing or NLP interpreter responses to user inputs or events.

@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Knowledge Graph
 
 A Knowledge Graph (KG) component helps convert static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs, allowing you to either build an ontology structure or leverage LLM and Generative AI to simplify knowledge organization, maintenance, and training.

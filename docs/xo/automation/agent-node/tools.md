@@ -48,3 +48,8 @@ The Jump-to-Node transition option enables the creation of sophisticated dialog 
 * Ensures full backward compatibility with existing tool configurations.
 
     <img src="../images/genai-node(18).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;">
+
+
+## Related Links
+
+* [Use Agent Node and Search AI to Generate Answers](../../how-tos/use-agentnode-and-searchai-to-generate-answers.md)
