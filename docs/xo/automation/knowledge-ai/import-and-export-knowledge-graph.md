@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Import and Export a Knowledge Graph
 
 You can build a Knowledge Graph in a CSV or JSON file and upload it to an AI Agent. Similarly, you can export the existing Knowledge Graph to CSV or JSON. Exporting a Knowledge Graph helps you edit it in a spreadsheet or import it to another AI Agent.

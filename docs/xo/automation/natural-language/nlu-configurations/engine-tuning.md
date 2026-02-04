@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../../nlp-topics.md)
+
 # Advanced NLP Configurations
 
 You can fine-tune intent detection for each language enabled for your Assistant. To perform this action, follow the steps below:

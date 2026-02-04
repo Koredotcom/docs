@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../../nlp-topics.md)
+
 # Batch Testing - NLP
 
 Once you have built and trained your app, the most important question that arises is how good is your app’s learning model? So, evaluating your app’s performance is important to delineate how good your app understands the user utterances.

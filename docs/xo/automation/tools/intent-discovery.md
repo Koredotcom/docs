@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Intent Discovery
 
 The new Intent Discovery module helps you auto-extract popular intents from previous user conversations. It reduces the time and effort to build a AI Agent and leads to the success of your Conversational AI Agents Journey. This is available only for the English language and Enterprise users.

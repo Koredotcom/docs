@@ -1,3 +1,6 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
+
 # Intelligence Overview
 
 The best, most memorable AI Agent have conversation flows that feel natural and human-like. 

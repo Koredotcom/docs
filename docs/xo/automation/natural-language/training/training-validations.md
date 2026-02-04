@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../../nlp-topics.md)
+
 # Training Validations
 
 NLP models play a significant role in providing natural conversational experiences for your customers and employees. 

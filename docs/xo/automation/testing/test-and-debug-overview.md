@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Test and Debug Overview - NLP
 
 Once you have built and trained your app, it is recommended that you conduct testing, to make sure everything works as expected. Even though it takes additional effort and resources, testing ensures that you are finding and fixing problems before they reach your users. 
