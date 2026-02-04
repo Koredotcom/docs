@@ -17,11 +17,11 @@ Navigate to **Quality AI**> **Analyze**> **CX Insights**.
     
     Enable the **Conversational Intelligence** toggle from **Settings** to unlock performance insights, agent insights, and conversation-level analytics.
 
-# Filters
+## Filters
 
 You can use filters to evaluate Performance Insights data by date range and communication channels selection.
 
-## Date Range Selector
+### Date Range Selector
 
 Use this to filter Performance Insights data for the selected date range (for example, Last 90 Days, Last 28 days, Last 7 days). 
 
@@ -31,7 +31,7 @@ Use this to filter Performance Insights data for the selected date range (for ex
 * Default is **Today**. 
 * Select **Apply** after selection.
 
-## Channel Filter
+### Channel Filter
 
 Use this filter to analyze performance data across all communication channels or limit the view to a specific channel.  
 <img src="../conversation-intelligence/images/channels.png" alt="Channel Filter" title="Channel Filter" style="border: 1px solid gray; zoom:80%;">
@@ -44,11 +44,11 @@ Use this filter to analyze performance data across all communication channels or
 
 Agent Efficacy widgets summarize key communication quality metrics for agents during the selected date range and highlight performance trends compared to the previous period.
 
-# Agent Communication Indicators
+### Agent Communication Indicators
 
 Performance widgets provide a snapshot of key metrics and trends in agent communication for the selected date range.
 
-## Empathy Score
+#### Empathy Score
 
 Measures how accurately agents respond to customers’ emotional needs.
 
@@ -66,7 +66,7 @@ Measures how accurately agents respond to customers’ emotional needs.
 * Provides a quick view of performance trends over time.   
 <img src="../conversation-intelligence/images/channels.png" alt="Channel Filter" title="Channel Filter" style="border: 1px solid gray; zoom:80%;">
 
-## Crutch Word Score
+#### Crutch Word Score
 
 Measures how frequently agents use filler or crutch words during conversations.
 
@@ -88,7 +88,7 @@ Measures how frequently agents use filler or crutch words during conversations.
 * Lower scores indicate clearer, more confident, and professional communication.   
 <img src="../conversation-intelligence/images/crutch-word-score.png" alt="Crutch Word Score" title="Crutch Word Score" style="border: 1px solid gray; zoom:80%;">
 
-# Agent Performance Monitor
+## Agent Performance Monitor
 
 Provides visibility into agent performance and customer interactions, enabling data-driven coaching and process improvements. Visualizes relationships among key metrics, such as Empathy Score, Crutch Word Score, Kore Evaluation Score, CSAT Score, and Sentiment Score to identify trends and correlations.
 
@@ -129,7 +129,7 @@ Provides visibility into agent performance and customer interactions, enabling d
 * **Negative Correlations**: Identify and correct counterproductive behavior.	  
 <img src="../conversation-intelligence/images/performance-insights.png" alt="Performance Insights" title="Performance Insights" style="border: 1px solid gray; zoom:80%;">
 
-# Playbook Adherence
+## Playbook Adherence
 
 Tracks how consistently agents follow predefined scripts during customer interactions. Administrators create and manage playbooks in Agent AI. Playbooks can represent scripted flows, compliance steps, or business-specific conversation stages. Supervisors can monitor agent adherence, identify gaps, and identify coaching opportunities.
 
