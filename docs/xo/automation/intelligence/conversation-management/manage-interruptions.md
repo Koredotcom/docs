@@ -1,3 +1,5 @@
+
+
 # Manage Interruptions
 
 Human conversations are characterized by twists and turns, and no two directions are ever the same. Natural conversations often tend to go beyond linear intent resolution paths defined in AI Agents. Ideally, a user allows the AI Agent to take an intent to its logical conclusion before initiating another, but that is not always the case.

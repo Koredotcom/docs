@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # NLP Settings and Guidelines
 
 This article provides you with some essential guidelines to optimize your workflow with the Platform’s NLP, and thus improve your app’s performance. Please refer to the guidance below before intent naming, ML training, and handling entities, concepts, and synonyms.

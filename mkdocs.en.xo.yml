@@ -93,6 +93,7 @@ plugins:
         'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md': 'automation/use-cases/dialogs/dialog-tasks-overview.md'
         'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
         'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
+        
 
 extra:  
   version:
@@ -328,6 +329,7 @@ nav:
     - How To:
         - New vs. Returning Users: kb/new-and-returning-users.md
         - Access Original PII Data: how-tos/access-original-pii-data.md
+        - Use Agent Node and Search AI to Generate Answers : how-tos/use-agentnode-and-searchai-to-generate-answers.md
         - Share Metadata from AI for Service to Agent Platform: how-tos/share-metadata-ais-to-agent-platform.md
         - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
         - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
@@ -531,7 +533,8 @@ nav:
         - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
         - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
-      - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md            
+      - Performance Insights: quality-ai/analyze/performance-insights.md 
+      - CX Insights: quality-ai/analyze/cx-insights.md           
       - Allocations: 
         - Overview: quality-ai/analyze/conversation-mining-audit-allocations.md
         - Creating Audit Allocations: quality-ai/analyze/creating-audit-allocations.md

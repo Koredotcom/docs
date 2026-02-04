@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Knowledge Graph Analysis
 
 A careful analysis of the Knowledge Graph helps in detecting errors in your questions and the path associated with them that hamper the user experience.

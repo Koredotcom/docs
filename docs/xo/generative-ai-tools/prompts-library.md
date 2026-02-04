@@ -146,7 +146,7 @@ To add a Custom prompt, follow the steps:
 
         * If enabled, ensure to add a stream parameter to the custom prompt, e.g., “stream”: true, to get the streaming response. The saved prompt is displayed with the streaming tag in the prompts library.
         * If enabled, the “exist scenario” field is disabled.
-        * The response streaming applies only to the Agent Node and Prompt Node features using OpenAI and Azure OpenAI models.  
+        * The response streaming applies only to the Agent Node, Prompt Node, and Answer Generation features using OpenAI and Azure OpenAI models.  
 
 
 6. After you type the JSON, the **Sample Context Values** fields are displayed. Fill in the values and click **Test**.
