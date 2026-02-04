@@ -1,3 +1,6 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
+
 # Context Management
 
 Effective context management is important because it allows AI Agents to interact with users in a way that is easier, quicker, more helpful, and less robotic and scripted. Contextual data helps users complete tasks faster and allows you to create more natural, human-like back and forth conversations.

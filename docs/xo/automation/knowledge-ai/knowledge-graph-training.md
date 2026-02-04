@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Knowledge Graph Training
 
 [Training your Assistant](../natural-language/training/nlp-training-overview.md){:target="_blank"} is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.
