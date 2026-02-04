@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release empowers you to build more sophisticated, secure, and flexible AI solutions. Key updates include multi-agent orchestration updates via the SDK, an expanded agent-creation workflow, and AI-assisted prompt refinement. Security enhancements give workspace administrators granular control over session and tool logs and improve access management. The developer experience is significantly enhanced with support for environment variables in workflow tools, improved access control for security, native integration with Google Vertex AI-hosted Gemini models, and the addition of over 40 new models from Google and OpenAI.
+This release empowers you to build more sophisticated, secure, and flexible AI solutions. Key updates include multi-agent orchestration updates via the SDK, an expanded agent-creation workflow, and AI-assisted prompt refinement. Security enhancements give workspace administrators granular control over tool logs and improve access management. The developer experience is significantly enhanced with support for environment variables in workflow tools, improved access control for security, native integration with Google Vertex AI-hosted Gemini models, and the addition of over 40 new models from Google and OpenAI.
 
 <font size="4">Multi-Agent Orchestration</font>
 
