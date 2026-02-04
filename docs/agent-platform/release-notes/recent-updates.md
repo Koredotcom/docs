@@ -54,6 +54,8 @@ Workflow Tools created outside an Agentic App and not linked to any app cannot a
 
 Agent Platform now offers secure connections to Google Vertex AI-hosted Gemini models (2.5 and 3.0 families). You can configure connections manually or via cURL import with automated credential extraction for both AI Studio and Vertex AI formats. A guided setup includes built-in validation, connection testing, and error handling. The platform stores all credentials securely using encryption. This integration works across Agentic Apps, Workflow Tools, and Prompts.
 
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-vertex-ai)
+
 **Expanded Model Support**
 
 The Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
@@ -63,8 +65,7 @@ New models include:
 * **Google**: gemini-3-pro-preview, gemini-3-pro-image-preview, gemini-3-flash-preview, gemini-2.5-flash-native-audio-preview-12-2025, gemini-2.5-flash-native-audio-preview-09-2025, gemini-2.5-flash-preview-09-2025, gemini-2.5-flash-lite-preview-09-2025, gemini-2.5-flash-lite, and gemini-2.5-flash-image.
 * **OpenAI**: gpt-realtime-mini-2025-10-06, gpt-audio-mini-2025-10-06, gpt-audio-2025-08-28, gpt-realtime-2025-08-28, gpt-4o-audio-preview-2025-06-03, gpt-4o-realtime-preview-2025-06-03, o3-2025-04-16, o4-mini-2025-04-16, gpt-4o-search-preview-2025-03-11, o3-mini-2025-01-31, gpt-4o-realtime-preview-2024-12-17, gpt-4o-mini-audio-preview-2024-12-17, gpt-4o-audio-preview-2024-12-17, o1-2024-12-17, gpt-4o-2024-11-20, gpt-4o-2024-08-06, gpt-4o-mini-2024-07-18, gpt-4o-2024-05-13, gpt-4-turbo-2024-04-09, gpt-4.1-nano, gpt-4.1-mini, gpt-4.1, gpt-4-turbo, gpt-3.5-turbo-0125, gpt-4o-mini-transcribe, gpt-4o-mini-audio-preview, gpt-4o-audio-preview, gpt-4o-realtime-preview, gpt-audio-mini, gpt-audio, gpt-image-1-mini, gpt-image-1, gpt-realtime-mini, gpt-realtime, o4-mini, o3, and o1.
 
-
-
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 <hr>
 
