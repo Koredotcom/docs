@@ -1,4 +1,4 @@
-# Intro to Admin Console
+# Intro to New Admin Console
 
 The Admin Console is where AI agents project administrators can manage AI for Service assistants and related tasks, users, security, billing, and more, at an organization level. This article provides an overview of the Admin Console, taking you through prerequisites, access options, and a recommended workflow.
 
@@ -9,7 +9,6 @@ To sign up for an Admin account, you must meet the following requirements:
 * A valid email address.
 * A validated Kore.ai user account. If you do not have a user account, Kore.ai will create a user account for you, and you must validate that account before proceeding.
 * Authorization to control the Admin account. Only one user in an account can be the primary Admin. The Primary Admin can add multiple other users as admins with custom-defined permissions.
-
 
 ## Accessing the Admin Console
 
@@ -31,16 +30,15 @@ AI for Service triggers a session timeout after 15 minutes of idle time to preve
 
 As an Admin, you can enroll users, manage admin and custom roles, define security settings, and manage AI agents in your company. The following illustration is an example of the Admin Console with the **Dashboard** page displayed. [Refer here for more on the Admin Dashboard](dashboard-bac.md){:target="_blank"}.
 
-<img src="../images/adminconsole-img2-bac-dashboard.png" alt="Admin Console Dashboard" title="Admin Console Dashboard" style="border: 1px solid gray;zoom:50%;"/>
-
+<img src="../images/new-adminconsole-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Getting Started as an Admin
 
-When you first start using the AI for Service, using the Admin Console, you should start inviting and adding users to join the AI for Service account for your company, see here.
+When you first start using the AI for Service, using the Admin Console, you should start inviting and adding users to join the AI for Service account for your company.
 
 You can also control access to individual assistants in your enterprise account. For managing access to assistants, [see here](bot-management.md){:target="_blank"}.
 
-If your enterprise has varied departments, with each having individual and separate assistant requirements, it is advisable to segregate the development into Groups. You can create groups of users and assign assistants to the groups as needed. For managing groups, [see here](./user-management/managing-your-groups.md){:target="_blank"}.
+If your enterprise has varied departments, with each having individual and separate assistant requirements, it's advisable to segregate the development into Groups. You can create groups of users and assign assistants to the groups as needed. For managing groups, [see here](./user-management/managing-your-groups.md){:target="_blank"}.
 
 !!! Note
 
