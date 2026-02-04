@@ -6,7 +6,7 @@ Using a custom embedding model can help you leverage domain-specific embeddings 
 
 ## Embedding Model Vector Dimensions for Custom Integrations
 
-When integrating an embedding model, it’s crucial to ensure that it aligns with the supported vector dimensions. Below is a list of the vector sizes that we currently support.
+When integrating an embedding model, it’s crucial to ensure that it aligns with the supported vector dimensions. Below is a list of the vector sizes that we support.
 
 **Supported Vector Sizes**
 

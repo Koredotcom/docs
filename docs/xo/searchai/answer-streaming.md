@@ -6,7 +6,7 @@ Search AI supports real-time response streaming for conversations on Web/Mobile 
 
 ## Supported Models
 
-Streaming is supported for OpenAI models using default prompts that are streaming-enabled. For Azure OpenAI models, streaming is supported only when custom prompts are used and streaming is explicitly enabled. Streaming is not supported for other model providers.
+Streaming is supported for OpenAI models using default prompts that are streaming-enabled. For Azure OpenAI models, streaming is supported only when custom prompts are used. Streaming is not supported for other model providers.
 
 
 ## Enabling Streaming
@@ -16,7 +16,9 @@ Streaming is enabled through prompt configuration.
 
 ### Default Prompts
 
-For OpenAI models, streaming-enabled default prompts are available by default. Selecting one of these prompts automatically enables response streaming.
+For OpenAI models, streaming-enabled prompts are available by default. Selecting one of these prompts automatically enables response streaming.
+
+![Default Streaming Prompts](images/streaming/default-prompts.png "Default Streaming Prompts")
 
 
 ### Custom Prompts
