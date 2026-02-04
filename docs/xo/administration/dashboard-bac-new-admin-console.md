@@ -4,7 +4,7 @@ On accessing the [Admin Console](adminconsole.md){:target="_blank"}, you will be
 
 The **Dashboard** page of the Admin Console provides information related to AI Agent's activity and a user overview of your company account.
 
-<img src="../administration/images/new-adminconsole-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/new-adminconsole-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Dashboard Metrics
 
