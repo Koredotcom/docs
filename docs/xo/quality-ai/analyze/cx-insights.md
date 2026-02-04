@@ -22,9 +22,9 @@ Navigate to **Quality AI**> **Analyze**> **CX Insights**.
 
     Enable the **Conversational Intelligence** toggle from **Configure** > **Settings** to explore customer experience insights and CX trends.
 
-# Filters
+## Filters
 
-## Date and Time Range
+### Date and Time Range
 
 Use this to filter CX Insights data for the selected date range (for example, Last 90 Days, Last 28 days, Last 7 days). 
 
@@ -34,7 +34,7 @@ Use this to filter CX Insights data for the selected date range (for example, La
 * Default is **Today**. 
 * Select **Apply**.
 
-## Channel Filter
+### Channel Filter
 
 Use this to filter CX data by **All**, **Voice**, **Chat**, or **Email**.   
 <img src="../conversation-intelligence/images/channels.png" alt="Channel Filter" title="Channel Filter" style="border: 1px solid gray; zoom:80%;">
@@ -43,13 +43,13 @@ Use this to filter CX data by **All**, **Voice**, **Chat**, or **Email**.
     
     This displays aggregate customer data across all channels.
 
-# Top-Level CX Metrics
+## Top-Level CX Metrics
 
 Summarizes the key customer experience performance indicators that provide a high-level view of service quality and effectiveness.
 
 To view which agents or behaviors influence CX outcomes, refer to [Performance Insights](../analyze/performance-insights.md).
 
-## Average Wait Time
+### Average Wait Time
 
 Displays the average time customers wait before an agent responds. The system calculates this value by dividing the total customer wait time for the selected period by the number of customers served. When no data is available, the value defaults to 0. The metric includes a comparison indicator vs. the previous equivalent period.
 
@@ -85,7 +85,7 @@ Shows the percentage of interactions marked as resolved across all conversations
 
 These widgets provide a visual summary of customer sentiment and churn risk, helping you assess overall customer mood, identify potential churn or escalations, and take targeted actions to improve customer experience.
 
-### Sentiment Category
+### Sentiment 
 
 The Sentiment widget analyzes and classifies it as Positive, Neutral, or Negative. Based on the average sentiment score, it infers the overall customer emotion, such as Happy, Satisfied, or Disappointed. 
 
@@ -108,7 +108,7 @@ The doughnut chart shows how customer interactions distribute across sentiment c
 * Track sentiment shifts over time.   
 <img src="../conversation-intelligence/images/sentiment.png" alt="Sentiment Category" title="Sentiment Category" style="border: 1px solid gray; zoom:80%;">
 
-## Customer Churn Monitor
+### Customer Churn Monitor
 
 The Customer Churn Monitor shows customer churn risk in a pie chart. It compares the churn percentage with total calls and any escalations in the same period. Hovering over a section shows its value, and selecting a section opens the calls linked to that escalation or churn category. The dashboard displays the following details:
 
@@ -140,7 +140,7 @@ The Customer Churn Monitor shows customer churn risk in a pie chart. It compares
 CSAT drivers identify topics that affect customer satisfaction using a driver-impact scoring model based on average sentiment.        
 <img src="../conversation-intelligence/images/csat-drivers.png" alt="CSAT Drivers" title="CSAT Drivers" style="border: 1px solid gray; zoom:80%;"> 
 
-### How Driver Impact is Calculated
+### How Driver Impact is Calculated?
 
 **Driver Impact Score Calculation**:
 Average Sentiment - Baseline Sentiment × Conversation Count
