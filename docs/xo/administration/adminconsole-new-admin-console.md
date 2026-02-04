@@ -12,7 +12,7 @@ To sign up for an Admin account, you must meet the following requirements:
 
 ## Accessing the Admin Console
 
-You can access the Admin Console from the [Platform](https://platform.kore.ai/builder){:target="_blank"} using the **Go To Admin Console** option, under your user account menu.
+You can access the Admin Console from the [AI for Service Platform](https://platform.kore.ai/builder){:target="_blank"} using the **Go To Admin Console** option, under your user account menu.
 
 <img src="../images/adminconsole-img1-access-admin-xo.png" alt="Navigate to Admin Console" title="Navigate to Admin Console" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -20,7 +20,7 @@ You can also access the Admin Console by going directly to: [https://platform.ko
 
 !!! Note
 
-    These options are available only for the XO Platform account Administrator.  
+    These options are available only for the AI for Service account Administrator.  
 
 In case you have access to multiple accounts, the same will be listed for selection.  You can set one as the default account.
 
