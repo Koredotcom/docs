@@ -1,4 +1,4 @@
-# Dashboard-New Admin Console
+# Dashboard - New Admin Console
 
 On accessing the [Admin Console](adminconsole.md){:target="_blank"}, you will be directed to its Dashboard page.
 
@@ -29,10 +29,9 @@ The **Time Periods** you can select are:
 * **Last 24 Hours** – Data aggregated during the preceding 24 hours is displayed. This is the default setting.
 * **Last 7 Days**
 * **Last 90 Days**
-* **Custom**
-
-The **Filters** can be applied to display Metrics for the following:
-        * **conversation session type** (introduced in ver 8.0 – [see here for more details on the conversation sessions](../app-settings/advanced-settings/bot-sessions.md){:target="_blank"}) can be either one or both (default setting) of the following:
+* **Custom Date Range** 
+    * **Filters** can be applied to display Metrics for the following:
+        * **conversation session type** – [see here for more details on the conversation sessions](../app-settings/advanced-settings/bot-sessions.md){:target="_blank"} can be either one or both (default setting) of the following:
             * _interactive sessions_ – the conversation which include one or more messages from the user;
             * _non-interactive sessions_ – conversations where only assistant messages are presented without any message from the user;
         
