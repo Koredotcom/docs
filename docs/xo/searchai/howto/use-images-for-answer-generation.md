@@ -1,4 +1,4 @@
-# Use information in Images to Generate Answers
+# Use Information in Images to Generate Answers
 
 Search AI can extract text from image-based content and use it for retrieval and answer generation. This capability enables the system to deliver precise responses from visual documents such as PDFs, screenshots, and infographics.
 

@@ -445,7 +445,7 @@ nav:
         - User Feedback Handling: searchai/feedback.md
     - How Tos:
         - Integrate Custom Embedding Model: searchai/howto/integrate-custom-embedding-model.md
-        - Use information in Images to Generate Answers: searchai/howto/use-images-for-answer-generation.md
+        - Use Information in Images to Generate Answers: searchai/howto/use-images-for-answer-generation.md
         - Customize Response by Channel Type: searchai/howto/customize-response-by-channel.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
