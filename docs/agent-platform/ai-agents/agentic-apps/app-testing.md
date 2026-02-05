@@ -99,8 +99,7 @@ The system evaluates whether the authorization has already been completed.
 * **If not authorized:** The user is prompted to **authorize access** before the agent can proceed further. A secure redirect URL will be presented for the user to complete the authorization process.
 
 !!!note
-
-   The agent can't execute the required actions until you complete authorization because it lacks access to protected services. In this situation, the tool fails and returns errors. If you need more than one authorization, the interface lists all required authorizations in the table at the beginning of the interaction.
+    The agent can't execute the required actions until you complete authorization because it lacks access to protected services. In this situation, the tool fails and returns errors. If it needs more than one authorization, the interface lists all required authorizations in the table at the beginning of the interaction.
 
 **Example**
 

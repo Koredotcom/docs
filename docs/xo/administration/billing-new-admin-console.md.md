@@ -1,6 +1,6 @@
-# Billing
+# Billing- New Admin Console
 
-The **Billing** section lets the Bot Admins view and track their Invoices and plan details.
+The **Billing** section lets the Admins view and track their Invoices and plan details.
 
 ## Billing Sessions
 
@@ -18,11 +18,11 @@ The Billing sessions are calculated based on
 
 For more information, refer to [Product-specific Billing Sessions](../manage-assistant/plan-and-usage/usage-plans.md#billing-session).
 
-## Orders Invoices
+## Order Invoices
 
 This section displays the history of Orders and Invoices and includes the fields as shown in the image:
 
-<img src="../images/billing-img1.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/billing-order-invoices.png" alt="Download invoices" title="Download invoices" style="border: 1px solid gray;zoom:70%;"/>
 
 You have the option to download the Invoice from the invoice field.
 
@@ -35,22 +35,22 @@ You have the option to download the Invoice from the invoice field.
 
 Admin users can view and manage all plan subscriptions for their account and published apps on the Admin Console. The Plan section displays all the Apps in your account, along with their status and balance. An information icon highlights plan changes, such as downgrade notifications and expiring plans. Click the **Ellipses** icon to change the App Owner.
 
-<img src="../images/billing-img2.png" alt="Plan and Usage information" title="Plan and Usage information" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/billing-plan.png" alt="Plan and Usage information" title="Plan and Usage information" style="border: 1px solid gray;zoom:70%;"/>
 
 Hover over a line item to view the **Manage** option. The **Manage** option displays the current plan based on eligibility and usage details. You can change the plan, add funds, and request for extension of your plan from here.
 
-<img src="../images/billing-img3.png" alt="Plan based eligibility and usage details" title="Plan based eligibility and usage details" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/billing-manage-plan.png" alt="Plan based eligibility and usage details" title="Plan based eligibility and usage details" style="border: 1px solid gray;zoom:70%;"/>
 
 !!! note
 
-    The **Billing** > **Plan** option does not appear on the Admin Console (left menu) for a shared account user..
+    The **Billing** > **Plan** option does not appear on the Admin Console (left menu) for a shared account user.
 
 ## Usage
 
 Admin users can access detailed usage information for Apps directly in the Admin Console. For administrators managing multiple apps, it offers consolidated billing insights across all apps within a workspace. 
 
 
-<img src="../images/admin-console-billing-graph.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/billing-usage.png" alt="admin-console-billing-graph" title="admin-console-billing-graph" style="border: 1px solid gray;zoom:70%;"/>
 
 
 The dashboard provides a consolidated view of cumulative billing data, including Billing sessions, voice sessions, and agent counts, across all apps within the workspace.

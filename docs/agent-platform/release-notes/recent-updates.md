@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Minor Release </u>
 
-This release empowers you to build more sophisticated, secure, and flexible AI solutions. Key updates include multi-agent orchestration updates via the SDK, an expanded agent-creation workflow, and AI-assisted prompt refinement. Security enhancements give workspace administrators granular control over session and tool logs and improve access management. The developer experience is significantly enhanced with support for environment variables in workflow tools, improved access control for security, native integration with Google Vertex AI-hosted Gemini models, and the addition of over 40 new models from Google and OpenAI.
+This release empowers you to build more sophisticated, secure, and flexible AI solutions. Key updates include multi-agent orchestration updates via the SDK, an expanded agent-creation workflow, and AI-assisted prompt refinement. Security enhancements give workspace administrators granular control over tool logs and improve access management. The developer experience is significantly enhanced with support for environment variables in workflow tools, improved access control for security, native integration with Google Vertex AI-hosted Gemini models, and the addition of over 40 new models from Google and OpenAI.
 
 <font size="4">Multi-Agent Orchestration</font>
 
@@ -14,25 +14,31 @@ This release empowers you to build more sophisticated, secure, and flexible AI s
 
 The SDK now supports selective deployment of orchestration changes. Developers can update orchestration logic without overwriting other components, such as agents, tools, and knowledge bases. This allows the developers to work seamlessly across both the UI and SDK, making changes where it's most convenient without creating conflicts.
 
+[Learn more :octicons-arrow-right-24:](../sdk/cli/index.md#deploy-command)
+
 **Enhanced Agent Creation Flow**
 
 Agent creation now supports three paths: building agents from scratch, importing pre-built agents from the Marketplace, or adding externally deployed agents for orchestration. Each path provides a tailored setup flow with agent-specific configurations. This streamlines agent onboarding with guided experiences and eliminates the previous two-step enablement process across apps and agent profiles. 
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md)
+
 
 **AI-Assisted Prompt Refinement**
 
 The prompt editor now includes AI-assisted refinement, enabling users to easily improve and optimize prompts directly within the editor. This feature reduces iteration cycles and improves prompt accuracy through clearer, more effective definitions, making prompt writing faster and easier.
 
-**Enhanced Security for Session Logs**
+<!--**Enhanced Security for Session Logs**
 
 The Secure Logs feature gives workspace admins granular control over access to detailed session logs and sensitive conversation data. When enabled, developers cannot view detailed logs unless administrators explicitly grant them access. Admins can configure access at the role level or apply restrictions across the entire enterprise workspace, ensuring sensitive customer interactions and debugging data remain visible only to authorized personnel. 
 
 This feature applies only to environment-level logs, such as production and UAT, not to logs in draft versions during development.
+-->
 
 <font size="4">No-code & Pro-Code Tools</font>
 
 **Enhanced Access Control for Tool Logs**
 
-Tool log access now offers three permission levels: Detailed Access, View Only, and No Access. Users can view logs only for tools within apps they're authorized to access, and all log access is fully audited. When log sensitization is enabled, temporary access grants from workspace administrators are also honored.
+Tool-level role management has been enhanced with separate permissions for tool log visibility, allowing administrators to control access to the tool log list and detailed execution logs independently. These permissions support three access levels - detailed access, view-only, and no access, providing finer control over log.
 
 **Environment Variable for Workflow Tools in Agentic Apps**
 
@@ -40,11 +46,15 @@ Workflow Tools created within or scoped to Agentic Apps can now use environment 
 
 Workflow Tools created outside an Agentic App and not linked to any app cannot access namespaces or app-level environment variables.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/workflow-tools.md#accessing-app-environment-variables-in-workflow-tools)
+
 <font size="4">AI Engineering Tools</font>
 
 **Vertex AI Model Integration**
 
 Agent Platform now offers secure connections to Google Vertex AI-hosted Gemini models (2.5 and 3.0 families). You can configure connections manually or via cURL import with automated credential extraction for both AI Studio and Vertex AI formats. A guided setup includes built-in validation, connection testing, and error handling. The platform stores all credentials securely using encryption. This integration works across Agentic Apps, Workflow Tools, and Prompts.
+
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-vertex-ai)
 
 **Expanded Model Support**
 
@@ -55,8 +65,7 @@ New models include:
 * **Google**: gemini-3-pro-preview, gemini-3-pro-image-preview, gemini-3-flash-preview, gemini-2.5-flash-native-audio-preview-12-2025, gemini-2.5-flash-native-audio-preview-09-2025, gemini-2.5-flash-preview-09-2025, gemini-2.5-flash-lite-preview-09-2025, gemini-2.5-flash-lite, and gemini-2.5-flash-image.
 * **OpenAI**: gpt-realtime-mini-2025-10-06, gpt-audio-mini-2025-10-06, gpt-audio-2025-08-28, gpt-realtime-2025-08-28, gpt-4o-audio-preview-2025-06-03, gpt-4o-realtime-preview-2025-06-03, o3-2025-04-16, o4-mini-2025-04-16, gpt-4o-search-preview-2025-03-11, o3-mini-2025-01-31, gpt-4o-realtime-preview-2024-12-17, gpt-4o-mini-audio-preview-2024-12-17, gpt-4o-audio-preview-2024-12-17, o1-2024-12-17, gpt-4o-2024-11-20, gpt-4o-2024-08-06, gpt-4o-mini-2024-07-18, gpt-4o-2024-05-13, gpt-4-turbo-2024-04-09, gpt-4.1-nano, gpt-4.1-mini, gpt-4.1, gpt-4-turbo, gpt-3.5-turbo-0125, gpt-4o-mini-transcribe, gpt-4o-mini-audio-preview, gpt-4o-audio-preview, gpt-4o-realtime-preview, gpt-audio-mini, gpt-audio, gpt-image-1-mini, gpt-image-1, gpt-realtime-mini, gpt-realtime, o4-mini, o3, and o1.
 
-
-
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
 
 <hr>
 

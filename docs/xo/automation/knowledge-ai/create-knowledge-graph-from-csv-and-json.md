@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Creating a Knowledge Graph from CSV or JSON Files
 
 The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the AI Agent instead of creating the Knowledge Graph from scratch. [Learn more](import-and-export-knowledge-graph.md).

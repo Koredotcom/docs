@@ -126,3 +126,85 @@ Each option determines how your model communicates with the platform and how res
 * Or, click **Confirm** to finalize and add the model connection.
 
 Once completed, your model appears in the **External Models** tab. You can now reference this model in your **Prompts** and **Tools** across the platform.
+
+## Integrate a Model from Vertex AI
+
+You can easily connect Google Vertex AI models to the Platform using a guided setup flow. This process enables secure access to Gemini models (2.5 and 3.0 families) using your own Google Cloud credentials.
+
+!!! important
+
+    Customers must create an API key within their Google Cloud account with the necessary permissions to access Vertex AI APIs. For Vertex AI endpoint configuration, you'll need to provide the Project ID and Region where your models are deployed.
+
+**How to get your Google Cloud API Key**
+
+Before you can integrate Vertex AI models, you need to obtain an API key from your Google Cloud account.
+
+**For new users or express mode users**
+
+1. Navigate to the [express mode setup page](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview){:target="_blank"}.
+2. Follow the guided setup to automatically generate an API key.
+3. View and manage your API keys at **APIs & Services > Credentials** in the Google Cloud Console.
+
+**For existing Google Cloud users**
+
+Prerequisites
+
+* A Google Cloud project with billing enabled.
+* Vertex AI API is enabled for your project.
+* Organization Policy Administrator role (for policy configuration).
+
+Steps to create an API key
+
+1. Enable Service Account API Key Creation: Navigate to **IAM & Admin** > **Organization policies**, edit `iam.managed.disableServiceAccountApiKeyCreation`, override the parent’s policy, set enforcement to Off, and save.
+
+2. Create a service account: Open **IAM & Admin > Service Accounts**, create a service account named `vertex-ai-runner` with ID `vertexairunner`, assign the **Vertex AI Platform Express User** role, then click continue and done.
+
+3. Create the API key: In **APIs & Services** > **Credentials**, create an API key named `vertexaiapikey`, enable authentication through a service account, link it to `vertex-ai-runner`, click create, and securely store the key.
+
+Steps to add Google Vertex AI models using easy integration:
+
+1. **Start the Integration**:
+    1. Click **Models** in the top navigation bar of the app.
+    2. Go to the **External Models** tab and click **Add a model**.
+    3. Select **Easy integration** > **Vertex AI** and click **Next**.
+    
+    <img src="../images/vertex-ai.png" alt="Existing Provider Structures" title="Existing Provider Structures" style="border: 0px solid gray; zoom:50%;">
+
+2. **Configure the Integration**
+
+In the Add connection dialog, you can choose between two configuration methods:
+
+**Option A: Manual Setup**<br>
+In the **Manual Setup** tab, configure the following:
+
+**Connection Details**:
+
+* **Model**: Select the desired Gemini model from the dropdown. For more information on the list of external models supported, see [Supported AI Models](../supported-models.md){:target="_blank"}.
+* **Connection name**: Enter a custom name to identify this model connection within your workspace.
+
+**Authentication**:
+
+* **API key**: Enter your API key from your Google Vertex AI Console.
+
+**Note**: API keys are validated during entry. If OAuth 2.0 access tokens or unsupported authentication credentials are detected, an error message displays. For more information, see [ Authentication methods at Google.](https://cloud.google.com/docs/authentication){:target="_blank"}
+
+**Advanced Settings** (Optional): Configure additional endpoint settings:
+
+* **Project ID**: Enter your Google Cloud project identifier.
+* **Region**: The Google Cloud region where your models are deployed.
+
+Click **Confirm** to save the configuration.
+
+<img src="../images/manual-setup.png" alt="Manual Setup" title="Manual Setup" style="border: 0px solid gray; zoom:50%;">
+
+**Option B: Import from cURL**
+
+In the **Import from cURL** tab:
+
+1. **Connection name**: Enter a name to identify this model connection within your workspace.
+2. Paste a cURL command in the provided text area.
+3. Click **Fetch** to extract the configuration, and then click **Confirm** to start the integration.
+
+    <img src="../images/import-from-curl.png" alt="Import from cURL" title="Import from cURL" style="border: 0px solid gray; zoom:50%;">
+
+The model is integrated and is listed in the External models list.

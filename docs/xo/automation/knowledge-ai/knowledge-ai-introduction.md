@@ -1,3 +1,6 @@
+
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Knowledge AI
 
 The Knowledge AI or Knowledge Graph (KG) lets you turn static FAQ text into an intelligent, personalized conversational experience. There are two types of knowledge graphs:

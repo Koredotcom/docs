@@ -11,10 +11,15 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 Search AI now streams LLM-generated answers in real-time, displaying responses token-by-token as they're generated. This creates a more interactive experience and reduces wait times for longer answers. To use streaming, use the new default streaming prompt or add streaming options to your custom prompt. Note that streaming is not available for API-based responses and is currently supported only for OpenAI and Azure OpenAI models. 
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/answer-streaming.md)
+
+
 <font size="4">Webhook-Based Content Updates</font>
 
 Search AI now supports webhooks for near real-time content synchronization with Confluence Server and ServiceNow. Webhooks capture create, update, and delete events directly from these systems, ensuring content stays up to date between scheduled syncs and improving indexing efficiency.
-Note that this update does not support syncing user information for updated content and  Confluence spaces.
+Note that this update doesn't support syncing user information for updated content and Confluence spaces.
+
+[Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors/confluence-server.md)
 
 <hr>
 

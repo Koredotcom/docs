@@ -17,22 +17,22 @@ Steps to generate the Evaluation Form Summary Report:
 
 1. Configure the **General** section.
 
-    a) Enter a unique identifier **Name** for the report.
+    1. Enter a unique identifier **Name** for the report.
 
-    b) Enter a meaningful **Description** explaining the report's purpose and intended audience.
+    1. Enter a meaningful **Description** explaining the report's purpose and intended audience.
  
-    c) Select **Next** to proceed.        
-    <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
+    1. Select **Next** to proceed.        
+        <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
 
 1. Enter the **Configure** section fields and filters.
 
-    a) Select one evaluation form to determine data scope and applicable interactions. At least one form selection you must select. 
+    1. Select one evaluation form to determine data scope and applicable interactions. At least one form selection you must select. 
 
-    b) Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
+    1. Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
 
-    c) Select a **Timezone** (defaults to device local timezone) from the dropdown.
+    1. Select a **Timezone** (defaults to device local timezone) from the dropdown.
 
-    d) Configure the required **Filter**.
+    1. Configure the required **Filter**.
 
         * Select **+Add Filter** to configure additional filters.
 
@@ -48,26 +48,26 @@ Steps to generate the Evaluation Form Summary Report:
 
         * Set the values vs. the selected/added filters.
 
-    e) Add **Optional Fields** to include additional metrics or attributes.
+    1. Add **Optional Fields** to include additional metrics or attributes.
 
-    f) Enter one or more addresses in the **Send Email to** fields to send the automated reports (minimum one required). 
+    1. Enter one or more addresses in the **Send Email to** fields to send the automated reports (minimum one required). 
 
-    g) Select **Next** to proceed.  
-    <img src="../images/create-new-report-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
+    1. Select **Next** to proceed.  
+        <img src="../images/create-new-report-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
 1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
  
-    a) Select **Run on Demand**, and Select **Save** to generate the report immediately with the current configuration.  
-    <img src="../images/evaluation-form-run-on-demand.png" alt="Run on Demand" title="Run on Demand" style="border: 1px solid gray; zoom:50%;">
+    1. Select **Run on Demand**, and Select **Save** to generate the report immediately with the current configuration.  
+        <img src="../images/evaluation-form-run-on-demand.png" alt="Run on Demand" title="Run on Demand" style="border: 1px solid gray; zoom:50%;">
 
-    b) Select **Schedule** to set up automated recurring report generation.  
-    <img src="../images/create-new-report-schedule.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
+    1. Select **Schedule** to set up automated recurring report generation.  
+        <img src="../images/create-new-report-schedule.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
 
-    c) Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
+    1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
 
-    d) Select a **Start Date** to start the schedule.
+    1. Select a **Start Date** to start the schedule.
 
-    e) Select a **Timezone** (defaults to your device's local timezone).
+    1. Select a **Timezone** (defaults to your device's local timezone).
 
 1. Select **Save** to activate the schedule.  
 

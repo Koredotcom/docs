@@ -5,7 +5,7 @@ Different channels require different response styles: chat channels typically ne
 By default, the Default-v2 prompt includes this information automatically using the `answer_mode` variable. When creating a custom prompt for the Answer Generation feature in the Prompts Library, make sure to include the `answer_mode` variable in the prompt so the model receives this information.
 
 
-The answer_mode variable supports the following values:
+The `answer_mode` variable supports the following values:
 
 * digital - This is used for all  digital and messaging channels, such as: Cisco Jabber, Cisco Webex Teams, Sinch, Genesys Cloud CX Messaging, Google Assistant, Hangouts Chat, kore.ai, LivePerson, Mattermost, Microsoft Teams, Naver Works, Nice InContact, RCS Business Messaging, RingCentral Engage, RingCentral Glip, Skype For Business, Skype On Premise, Slack, Unblu, WhatsApp Business Messaging, Workplace by Facebook, Yammer, Zoom Contact Center, Facebook Messenger, Instagram, Line, Skype, Telegram, Twitter, WeChat, Agent Assist SDK, Email, SMS, Sunshine Conversations, Syniverse, Twilio SMS, Webhook, Widget SDK. 
 

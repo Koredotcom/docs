@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Knowledge Graph Terminology
 
 This article explains the terminology for [Building a Knowledge Graph](build-a-knowledge-graph.md) within the XO Platform. This terminology applies to both the Few-Shot and the Ontology KG Models unless otherwise specified. [Learn more](knowledge-ai-introduction.md).
