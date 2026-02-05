@@ -1,4 +1,4 @@
-# Security Settings
+# Security Settings - New Admin Console
 
 Apart from the sign-on, and other security settings, you can modify the following default security & control settings for your account:
 
@@ -52,7 +52,7 @@ If your organization handles sensitive or confidential information, you can disa
 
 ## IP Address Restriction
 
-By default, users can access the XO Platform, and the Admin Console from any IP address, as long as they have valid credentials.
+By default, users can access AI for Service, and the Admin Console from any IP address, as long as they have valid credentials.
 
 Additionally, you can restrict access to a specified range of IP addresses. When you specify a list of IP addresses in the IP Address Restriction section, users within your account attempting to access the Platform from any other IP addresses is restricted. 
 
