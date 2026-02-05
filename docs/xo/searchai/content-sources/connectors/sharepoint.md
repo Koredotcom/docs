@@ -15,7 +15,7 @@ Configure the SharePoint connector if you're using SharePoint to manage your con
   <tr>
    <td>Supported Content Type
    </td>
-   <td>Articles and Files
+   <td>Articles(.aspx) and Pages in the following formats: .doc, .docx, .ppt, .pptx, .html, .xhtml, .txt, .pdf
    </td>
   </tr>
   <tr>

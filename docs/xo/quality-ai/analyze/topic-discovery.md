@@ -1,7 +1,8 @@
 # Topic Discovery
 
-Topic Discovery is an advanced analytics dashboard that transforms conversation data into operational insights through intelligent visualization. This feature empowers QA managers, supervisors, business managers, and CX teams to identify conversation trends, analyze performance metrics, and make data-driven decisions for agent coaching and process improvement.   
-<img src="../topic-discovery/images/topic-discovery.png" alt="Topic Discovery" title="Topic Discovery" style="border: 1px solid gray; zoom:100%;">  
+Topic Discovery is an advanced analytics dashboard that transforms conversation data into clear, decision-ready insights through intelligent visualization. It enables QA managers, supervisors, business managers, and CX teams to identify conversation trends, analyze performance metrics, and make data-driven decisions that support agent coaching and process improvement.
+
+The dashboard presents topics as bubbles on an interactive canvas, with each bubble colored by the selected metric—sentiment or resolution—providing a clear view of topic performance across conversations and allowing users to identify high-and low-performing topics.    
 
 ## Why Topic Discovery?
 
@@ -140,12 +141,48 @@ Advanced filtering options provide granular control over your data view, allowin
 
 ### Bubble Visualization Canvas
 
-The central visualization displays topics as interactive bubbles with meaningful visual encoding, providing an at-a-glance view of conversation volumes, performance metrics, and relationships between topics. This intuitive interface lets you explore your conversation data spatially, with visual cues guiding you to areas that need attention.
+The central visualization displays topics as interactive bubbles with meaningful visual encoding, providing an at-a-glance view of conversation volumes, performance metrics, and relationships between topics. This intuitive interface allows you to explore your conversation data spatially, with visual cues guiding you to areas that need attention. 
 
-* **Bubble Size**: Conversation volume (larger = more conversations).
-* **Positioning**: Related topics cluster together.
-* **Labels**: L1 topics labeled outside, L2/L3 inside bubbles.   
-<img src="../topic-discovery/images/bubble-visualization-canvas.png" alt="Bubble Visualization Canvas" title="Bubble Visualization Canvas" style="border: 1px solid gray; zoom:100%;">
+#### Bubble Chart Display
+
+The central visualization displays topics as interactive bubbles, encoding meaningful data visually. 
+
+Each bubble encodes key topic attributes visually:
+
+* **Bubble Size**: Represents conversation volume. Larger bubbles indicate a higher number of conversations.
+
+* **Bubble Color**: Indicates topic performance based on the selected metric (sentiment or resolution).
+
+* **Positioning**: Groups related topics together to reveal patterns and clusters.
+
+* **Labels**: 
+
+    * L1 topics display labels outside the bubbles.
+
+    * L2 and L3 topics display labels inside the bubbles.
+
+You can switch bubble coloring between sentiment and resolution, while continuing to filter topics using both metrics simultaneously (AND logic).        
+    <img src="../topic-discovery/images/bubble-visualization-canvas.png" alt="Bubble Visualization Canvas" title="Bubble Visualization Canvas" style="border: 1px solid gray; zoom:100%;">
+
+#### Sentiment Visualization Across Topic Hierarchy
+
+The system captures customer sentiment at the most granular level (L3) and aggregates it across parent topics (L2 and L1).
+
+Topic Discovery visualizes sentiment using color-coded indicators:
+
+* **Green**: Positive sentiment 
+* **Grey**: Neutral sentiment 
+* **Red**: Poor sentiment
+
+#### Resolution-Based Visualization
+
+When you select resolution for bubble coloring, the system displays topics as:
+
+* **Red**: Low resolution (0–50%)
+* **Grey**: Moderate resolution (50–70%)
+* **Green**: High resolution (70–100%)
+
+Switching the coloring mode affects only the visual representation. Filters for sentiment and resolution remain active together, allowing deeper analysis using combined criteria. These visual indicators help you identify well-performing and underperforming topics across the hierarchy.
 
 ### Hovering Tooltips
 

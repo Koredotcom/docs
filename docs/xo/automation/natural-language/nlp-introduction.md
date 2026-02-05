@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../nlp-topics.md)
+
 # Natural Language Processing
 
 Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for an app to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). [Learn more](../../automation/about-automation-ai.md){:target="_blank"} about how Conversational VAs work and the key components that define their functioning.

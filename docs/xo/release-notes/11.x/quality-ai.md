@@ -12,14 +12,15 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **AI Justifications for Gen AI Question Metrics Extended to Reports and APIs**
 
-AI Justifications for Gen AI by Question metrics are now available in the Interaction Evaluations and Conversation Analytics reports, as well as through APIs. When enabled, the system provides AI-generated explanations for each evaluation score, extending this capability beyond the existing UI. [Learn more :octicons-arrow-right-24:](../../analytics/quality-ai/reports/interaction-conversation-analytics-report.md)
+AI Justifications for Gen AI by Question metrics are now available in the Interaction Evaluations and Conversation Analytics reports, and through APIs. When enabled, the system provides AI-generated explanations for each evaluation score, extending this capability beyond the existing UI. <br> [Learn more :octicons-arrow-right-24:](../../analytics/quality-ai/reports/interaction-conversation-analytics-report.md)
 
 <font size="4">Configure</font>
 
 **Enhanced Taxonomy Builder, Topic Discovery, and Resolution Detection**
 
 Taxonomy Builder and Topic Discovery now offer improved usability with clearer visual hierarchy, contextual tooltips, sentiment and resolution-based bubble coloring, and enhanced filtering and navigation.
-Resolution Detection is now configurable at the app level. You can choose between topic-based detection for strict matching or LLM-based assessment for holistic evaluation. This flexibility helps you accurately classify interaction outcomes based on whether primary issues are resolved.
+Resolution Detection is now configurable at the app level. You can choose between topic-based detection for strict matching or LLM-based assessment for holistic evaluation. This flexibility helps you accurately classify interaction outcomes based on whether primary issues are resolved. <br>
+[Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md)
 
 <font size="4">Analyze</font>
 
@@ -27,9 +28,11 @@ Resolution Detection is now configurable at the app level. You can choose betwee
 
 The Conversation Intelligence dashboard is now split into two specialized dashboards:
 
-* **CX Insights** introduces new widgets to help you understand customer experience, including Resolution Rate tracking and CSAT and DSAT Drivers powered by driver-impact scoring with detailed warnings. 
+* **CX Insights** introduces new widgets to help you understand customer experience, including Resolution Rate tracking and CSAT and DSAT Drivers powered by driver-impact scoring with detailed warnings. <br>
+[Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/cx-insights.md)
 
-* **Performance Insights** enhances agent monitoring with a trendline for the Kore Evaluation Score. 
+* **Performance Insights** enhances agent monitoring with a trendline for the Kore Evaluation Score. <br>
+[Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/performance-insights.md)
 
 Legacy widgets, including Contact Center Efficiency, Agent Occupancy, and Agent State Monitor, are now deprecated but remain available via feature flag for existing users.
 

@@ -1,3 +1,6 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../../nlp-topics.md)
+
+
 # Amend Entities
 
 Time and again, we come across situations wherein the users change their preferences during task execution.

@@ -8,7 +8,7 @@ Key Benefits
 * Secure sensitive data by storing values in an encrypted form.
 * Customize values for each environment during deployment.
 
-*Currently, environment variables are accessible only in the code tools.*
+*Environment variables are accessible to both code tools and workflow tools.*
 
 ## View Environment Variables
 
@@ -57,7 +57,7 @@ A *namespace* is a logical grouping used to organise environment variables. Name
 
 * Organization: Group-related variables such as those used for authentication, deployment configuration, or third-party integrations.
 * Conflict Prevention: Avoid clashes when multiple modules need variables with identical names (for example, `API_KEY`, `BOT_ID`).
-* Scoped Access: By grouping variables within a namespace, only those relevant to a specific task or code tool are accessible.
+* Scoped Access: By grouping variables within a namespace, only those relevant to a specific task or tool are accessible.
 
 Use the Manage Namespaces option on the Variables page or when creating/editing a variable to view, create, or update namespaces.
 
@@ -73,18 +73,18 @@ To update or delete the namespace, go to *Options* and select the appropriate ac
 
 !!!note
     
-    A namespace cannot be deleted if it is currently associated with a code tool. Additionally, all variables within the namespace must be removed before the namespace can be deleted.
+    A namespace cannot be deleted if it is currently associated with a tool. Additionally, all variables within the namespace must be removed before the namespace can be deleted.
 
 
 ## Accessing Environment Variables 
 
-* Currently, Environment Variables are only accessible inside *Code Tools*.  
-* To access variables in Code Tools, the variables must be associated with a namespace. 
+* Environment Variables are accessible to both *Code Tools* and *Workflow Tools*.  
+* To access variables in a tool, the variables must be associated with a namespace. 
 
-To use the variable in a code tool, follow these steps.
+To use the variable in a tool, follow these steps.
 
-1. Go to the specific code tool. Click the options, then select *Manage Namespaces*. 
-2. Associate the namespace to which the variable belongs and click *Save*. This makes all the variables required in the code tool accessible to it. ![Associate Variables with Namespace](images/variables/manage-namespace.png "Associate Variables with Namespace")
+1. Go to the specific tool. Click the options, then select *Manage Namespaces*. 
+2. Associate the namespace to which the variable belongs and click *Save*. This makes all the variables within the namespace accessible to the tool. ![Associate Variables with Namespace](images/variables/manage-namespace.png "Associate Variables with Namespace")
 
 3. Within the script, use the following format to access the variable. 
 
