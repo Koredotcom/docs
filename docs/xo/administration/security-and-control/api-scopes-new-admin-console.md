@@ -18,7 +18,7 @@ To begin using API scopes:
     * Assign scopes based on the features your app needs to access. 
     * Scopes are permission categories that unlock specific platform capabilities.  
 
-<img src="../security-and-control/images/api-scope-new-admin-console.png" alt="API Scopes" title="API-Scopes" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/api-scope-new-admin-console.png" alt="API Scopes" title="API-Scopes" style="border: 1px solid gray;zoom:70%;"/>
 
 ## Supported API Scopes
 
