@@ -142,10 +142,9 @@ Once the connector is successfully configured, navigate to the Webhook Settings 
 1. View Webhook Endpoint URL: The webhook endpoint URL will be displayed. Copy this URL to configure in your Confluence Server webhook settings.
 2. View and Rotate Webhook Secret/Token:
     * The webhook secret/token is displayed in the settings.
-    * Use the Rotate Token button to generate a new secret if needed.
+    * Use the Regenerate button to generate a new secret if needed.
     * Update the Confluence webhook configuration with the new secret after rotation.
-3. Webhook Sync Records: Webhook-triggered syncs are recorded separately from manual syncs in the sync history, allowing you to track real-time updates independently.
-4. Training Pipeline: There is a separate training pipeline for webhook-based syncs compared to manual syncs. This ensures that real-time updates do not interfere with scheduled bulk synchronization processes.
+3. Training Pipeline: There is a separate training pipeline for webhook-based syncs compared to manual syncs. This ensures that real-time updates don't interfere with scheduled bulk synchronization processes.
 
 **How Webhook Sync Works**
 
