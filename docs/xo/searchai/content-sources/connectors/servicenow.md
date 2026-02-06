@@ -1,6 +1,6 @@
 # ServiceNow Connector
 
-You can connect to the ServiceNow application to enable users to fetch query results using the knowledge articles managed by ServiceNow.
+You can connect to the ServiceNow application to enable users to fetch query results using the knowledge articles managed by ServiceNow. The connector now supports real-time synchronization through webhook integration, ensuring your Search AI index stays up-to-date with changes in ServiceNow.
 
 **<span style="text-decoration:underline;">Connector Specifications</span>**
 
@@ -31,6 +31,12 @@ You can connect to the ServiceNow application to enable users to fetch query res
   </tr>
    <tr>
    <td>Content Filtering
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+   <tr>
+   <td>Webhook Support
    </td>
    <td>Yes
    </td>
@@ -66,11 +72,104 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
   * **Password Grant Type**: If you are using this grant type, enter user credentials along with the client ID and client secret, generated in the above step.
 
 * **Host URL**: Host of your ServiceNow instance
+* Click *Connect* button to initiate authorization.
+*  After the connection is established, go to **Configurations** tab and click **Sync Now** to ingest content.
+  * By default, the connector ingests published knowledge articles, incidents, and catalog items.
 
-Click the *Connect* button to initiate authorization with the application. After the connection is established, go to the *Configurations* tab and click *Sync Now* to ingest content to the application. By default, upon sync, the connector ingests *published knowledge articles, incidents and catalog items* from the ServiceNow instance. 
 
 !!!note
   Only the articles within their validity date are ingested. Any article that's expired(beyond its Valid To date) isn't ingested.
+
+## Webhook Integration for Real-Time Sync
+
+Search AI supports webhook-based real-time synchronization with ServiceNow using Business Rules and a shared Script Include. This ensures that any changes in ServiceNow (create, update, or delete operations) are immediately reflected in the Search AI index.
+
+### Webhook Architecture
+
+The ServiceNow webhook integration is implemented using:
+
+1. Script Include: A reusable script that handles webhook POST requests to Search AI.
+2. Business Rules: Separate rules configured per ServiceNow table to trigger webhooks on data changes.
+
+For more information, see [Architecture Components.](https://koreteam.atlassian.net/wiki/spaces/SearchAI/pages/1375698947/ServiceNow+Webhook+Integration+Guide#Architecture-Components)
+
+### Benefits of Webhook Integration
+
+* Real-time synchronization: Changes in ServiceNow are immediately reflected in Search AI.
+* Reduced sync frequency: Eliminates the need for frequent full syncs.
+* Lower system load: Only changed records are processed.
+* Better user experience: Users always see the most current information.
+
+### Configure Webhook Integration in ServiceNow
+
+**Prerequisites**
+
+* Admin access to your ServiceNow instance.
+* Search AI connector successfully configured and connected.
+* Webhook endpoint URL and authentication token from Search AI.
+
+1. View Webhook Configuration in Search AI
+   Once the ServiceNow connector is successfully configured, navigate to the Webhook Settings section:
+   * View Webhook Endpoint URL: Copy this URL for use in ServiceNow configuration.
+   * View and Rotate Webhook Secret/Token: The webhook authentication token is displayed here.
+
+    **Note**: If you rotate the token using the Rotate Token button, you must update the ServiceNow Script Include with the new token.
+   * Webhook Sync Records: Webhook-triggered syncs are recorded separately from manual syncs in the sync logs.
+   * Training Pipeline: A separate training pipeline exists for webhook-based syncs to ensure real-time updates don't interfere with scheduled bulk synchronization.
+
+2. Configure Components in ServiceNow
+
+The integration requires two components in your ServiceNow instance:
+
+**A. Shared Script Include (`SearchAIWebhookHandler`)**
+
+Create a reusable Script Include in **System Definition > Script Includes**:
+
+- **Name:** `SearchAIWebhookHandler`  
+- **Function:** Accepts current record and operation type (insert, update, delete).  
+- **Action:** Sends a POST request to the Search AI webhook endpoint with the auth token.  
+- **Payload:** Builds a payload compatible with Search AI's ServiceNow ingestion schema.
+
+For more information, see [sample script.](https://koreteam.atlassian.net/wiki/spaces/SearchAI/pages/1375698947/ServiceNow+Webhook+Integration+Guide#Script-Include-Code)
+
+**B. Business Rules (Per Table)**
+
+Create separate Business Rules in **System Definition > Business Rules** for each supported table:
+
+- **Knowledge Articles (`kb_knowledge`):**  
+  Triggers on insert, update, delete for published articles within the validity period.  
+
+- **Incidents (`incident`):**  
+  Triggers on insert, update, delete for all incidents.  
+
+- **Catalog Items (`sc_cat_item`):**  
+  Triggers on insert, update, delete for active catalog items.  
+
+**Business Rule Configuration:**
+
+- **When to run:** Advanced rule, executes *After* the database operation.  
+- **Script:** Calls the `SearchAIWebhookHandler` Script Include with the current record and operation type.  
+
+### How Webhook Sync Works
+
+When Search AI receives a webhook POST from ServiceNow:
+
+1. The payload is validated using the authentication token.  
+2. Existing ServiceNow connector credentials are used to fetch the latest content version for the referenced entity.  
+3. Ingestion updates are performed based on the operation:  
+   - **Insert/Update:** Document is created or updated in the index.  
+   - **Delete:** Corresponding content is removed from the index.  
+4. The sync is logged in the webhook sync records.  
+
+### Webhook Payload Schema
+
+The payload includes:
+
+- Table name and operation type (insert, update, delete).  
+- Timestamp of the operation.  
+- Record details (including `sys_id` and table-specific fields).  
+
+**Note:** For delete operations, only the `sys_id` is included.
 
 ## Advanced Filters
 
@@ -262,3 +361,7 @@ The **sys_racl** field for a catalog item includes the following:
    </td>
   </tr>
 </table>
+
+## Limitations
+
+**Webhook User Sync**: Search AI doesn't support user synchronization through webhooks. While document entities are updated in real-time via webhook, the associated users within those entities aren't updated. User permissions and access control updates must be synchronized through the regular incremental or manual sync process.
