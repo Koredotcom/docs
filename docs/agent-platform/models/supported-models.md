@@ -20,34 +20,73 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>OpenAI</td>
    <td>
   <ul>
-    <li>gpt-4o</li>
-    <li>gpt-4o-mini</li>
-    <li>gpt-3.5-turbo</li>
-    <li>gpt-3.5-turbo-1106</li>
-    <li>gpt-4</li>
-    <li>gpt-4-0125-preview</li>
-    <li>gpt-4-1106-preview</li>
-    <li>gpt-4-turbo-preview</li>
-    <li>gpt-4-0613</li>
-    <li>gpt-4.1-2025-04-14</li>
-    <li>gpt-4.1-mini-2025-04-14</li>
-    <li>gpt-4.1-nano-2025-04-14</li>
-    <li>gpt-4.5-preview-2025-02-27</li>
-    <li>o3-mini</li>
-    <li>gpt-5</li>
-    <li>gpt-5-mini</li>
-    <li>gpt-5-nano</li>
+    <li>gpt-5.2-2025-12-11</li>
+    <li>gpt-5.2</li>
+    <li>gpt-5.2-chat-latest</li>
+    <li>gpt-5.1-2025-11-13</li>
+    <li>gpt-5.1</li>
+    <li>gpt-5.1-chat-latest</li>
+    <li>gpt-realtime-mini-2025-10-06</li>
+    <li>gpt-audio-mini-2025-10-06</li>
     <li>gpt-5-2025-08-07</li>
     <li>gpt-5-mini-2025-08-07</li>
     <li>gpt-5-nano-2025-08-07</li>
+    <li>gpt-audio-2025-08-28</li>
+    <li>gpt-realtime-2025-08-28</li>
+    <li>gpt-5</li>
+    <li>gpt-5-mini</li>
+    <li>gpt-5-nano</li>
     <li>gpt-5-chat-latest</li>
-    <li>gpt-5.1</li>
-    <li>gpt-5.1-2025-11-13</li>
-    <li>gpt-5.1-chat-latest</li>
-    <li>gpt-5.2</li>
-    <li>gpt-5.2-2025-12-11</li>
-    <li>gpt-5.2-chat-latest</li>
-  </ul>
+    <li>gpt-4o-audio-preview-2025-06-03</li>
+    <li>gpt-4o-realtime-preview-2025-06-03</li>
+    <li>gpt-4.5-preview-2025-02-27</li>
+    <li>o3-2025-04-16</li>
+    <li>o4-mini-2025-04-16</li>
+    <li>gpt-4.1-2025-04-14</li>
+    <li>gpt-4.1-mini-2025-04-14</li>
+    <li>gpt-4.1-nano-2025-04-14</li>
+    <li>gpt-4o-search-preview-2025-03-11</li>
+    <li>o3-mini-2025-01-31</li>
+    <li>gpt-4o-realtime-preview-2024-12-17</li>
+    <li>gpt-4o-mini-audio-preview-2024-12-17</li>
+    <li>gpt-4o-audio-preview-2024-12-17</li>
+    <li>o1-2024-12-17</li>
+    <li>gpt-4o-2024-11-20</li>
+    <li>gpt-4o-2024-08-06</li>
+    <li>gpt-4o-mini-2024-07-18</li>
+    <li>gpt-4o-2024-05-13</li>
+    <li>gpt-4-turbo-2024-04-09</li>
+    <li>gpt-4-1106-preview</li>
+    <li>gpt-4-0125-preview</li>
+    <li>gpt-4-turbo-preview</li>
+    <li>gpt-4-0613</li>
+    <li>gpt-4o</li>
+    <li>gpt-4o-mini</li>
+    <li>gpt-4</li>
+    <li>gpt-4o-realtime-preview</li>
+    <li>gpt-4o-mini-realtime-preview</li>
+    <li>gpt-4o-search-preview</li>
+    <li>gpt-4.1</li>
+    <li>gpt-4.1-mini</li>
+    <li>gpt-4.1-nano</li>
+    <li>gpt-4-turbo</li>
+    <li>gpt-3.5-turbo-1106</li>
+    <li>gpt-3.5-turbo-0125</li>
+    <li>gpt-3.5-turbo</li>
+    <li>gpt-4o-mini-transcribe</li>
+    <li>gpt-4o-mini-audio-preview</li>
+    <li>gpt-4o-audio-preview</li>
+    <li>gpt-4o-realtime-preview</li>
+    <li>gpt-audio-mini</li>
+    <li>gpt-audio</li>
+    <li>gpt-image-1-mini</li>
+    <li>gpt-image-1</li>
+    <li>gpt-realtime-mini</li>
+    <li>gpt-realtime</li>
+    <li>o4-mini</li>
+    <li>o3</li>
+    <li>o1</li>
+      </ul>
    </td>
   </tr>
   <tr>
@@ -98,12 +137,23 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    </td>
    <td>
    <ul>
-    <li>gemini-1.5-flash-latest</li>
-    <li>gemini-2.0-flash</li>
-    <li>gemini-2.0-flash-lite</li>
-    <li>gemini-2.5-flash-preview-05-20</li>  
+    <li>gemini-2.5-flash-native-audio-preview-12-2025</li>
+    <li>gemini-2.5-flash-native-audio-preview-09-2025</li>
+    <li>gemini-2.5-flash-preview-09-2025</li>
+    <li>gemini-2.5-flash-lite-preview-09-2025</li>
+    <li>gemini-3-pro-preview</li>
+    <li>gemini-3-pro-image-preview</li>
+    <li>gemini-3-flash-preview</li>
+    <li>gemini-2.5-flash-preview-05-20</li>
     <li>gemini-2.5-flash</li>
     <li>gemini-2.5-pro</li>
+    <li>gemini-2.5-flash-lite</li>
+    <li>gemini-2.5-flash-image</li>
+    <li>gemini-2.0-flash</li>
+    <li>gemini-2.0-flash-lite</li>
+    <li>gemini-1.5-flash-latest</li>
+    <li>gemini-1.5-pro</li>
+    <li>gemini-1.0-pro</li>
   </ul>
    </td>
   </tr>
@@ -658,14 +708,23 @@ Here is the list of all the external models supported in the Platform:
    <td>
 <ul>
 
+<li>gemini-2.5-flash-native-audio-preview-12-2025</li>
+<li>gemini-2.5-flash-native-audio-preview-09-2025</li>
+<li>gemini-2.5-flash-preview-09-2025</li>
+<li>gemini-2.5-flash-lite-preview-09-2025</li>
+<li>gemini-3-pro-preview</li>
+<li>gemini-3-pro-image-preview</li>
+<li>gemini-3-flash-preview</li>
+<li>gemini-2.5-flash-preview-05-20</li>
+<li>gemini-2.5-Pro</li>
+<li>gemini-2.5-flash</li>
+<li>gemini-2.5-flash-lite</li>
+<li>gemini-2.5-flash-image</li>
+<li>gemini-2.0-flash</li>
+<li>gemini-2.0-flashlite</li>
 <li>gemini-1.5-flash-latest</li>
 <li>gemini-1.5-pro</li>
 <li>gemini-1.0-pro</li>
-<li>gemini-2.5-Pro</li>
-<li>gemini-2.0-flash</li>
-<li>gemini-2.0-flashlite</li>
-<li>gemini-2.5-flash-preview-05-20</li>
-<li>gemini-2.5-flash</li>
 </ul>
    </td>
   </tr>
@@ -674,45 +733,82 @@ Here is the list of all the external models supported in the Platform:
    <td>
 <ul>
 
-<li> o1-preview</li>
-<li> o1-mini</li>
-<li> o3-mini</li>
-<li> gpt-3.5-turbo</li>
-<li> gpt-3.5-turbo-1106</li>
-<li> gpt-4o</li>
-<li> gpt-4o-mini</li>
-<li> gpt-4-0613</li>
-<li> gpt-4-0125-preview</li>
-<li> gpt-4-turbo-preview</li>
-<li> gpt-4-1106-preview</li>
-<li> gpt-4</li>
-<li> gpt-4o-realtime-preview</li>
-<li> gpt-4o-mini-realtime-preview</li>
-<li> gpt-4o-search-preview</li>
-<li> gpt-4.1-2025-04-14</li>
-<li> gpt-4.1-mini-2025-04-14</li>
-<li> gpt-4.1-nano-2025-04-14</li>
-<li> gpt-4.5-preview-2025-02-27</li>
-<li> gpt-5</li>
-<li> gpt-5-2025-08-07</li>
-<li> gpt-5-nano-2025-08-07</li>
-<li> gpt-5-nano</li>
-<li> gpt-5-mini-2025-08-07</li>
-<li> gpt-5-mini</li>
-<li> gpt-5-chat-latest</li>
-<li> gpt-5.1</li>
-<li> gpt-5.1-2025-11-13</li>
-<li> gpt-5.1-chat-latest</li>
-<li> gpt-5.2</li>
-<li> gpt-5.2-2025-12-11</li>
-<li> gpt-5.2-chat-latest</li>
-<li> whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
-<li> whisper-1</li>
-<li> dall-e-3</li>
-<li> dall-e-2</li>
-<li> text-embedding-3-small</li>
-<li> text-embedding-3-large</li>
-<li> text-embedding-ada-002</li></ul>
+<li>gpt-5.2-2025-12-11</li>
+<li>gpt-5.2</li>
+<li>gpt-5.2-chat-latest</li>
+<li>gpt-5.1-2025-11-13</li>
+<li>gpt-5.1</li>
+<li>gpt-5.1-chat-latest</li>
+<li>gpt-5-2025-08-07</li>
+<li>gpt-5-nano-2025-08-07</li>
+<li>gpt-5-mini-2025-08-07</li>
+<li>gpt-5</li>
+<li>gpt-5-nano</li>
+<li>gpt-5-mini</li>
+<li>gpt-5-chat-latest</li>
+<li>gpt-4.5-preview-2025-02-27</li>
+<li>gpt-4.1-2025-04-14</li>
+<li>gpt-4.1-mini-2025-04-14</li>
+<li>gpt-4.1-nano-2025-04-14</li>
+<li>gpt-realtime-mini-2025-10-06</li>
+<li>gpt-audio-mini-2025-10-06</li>
+<li>gpt-audio-2025-08-28</li>
+<li>gpt-realtime-2025-08-28</li>
+<li>gpt-4o-audio-preview-2025-06-03</li>
+<li>gpt-4o-realtime-preview-2025-06-03</li>
+<li>o3-2025-04-16</li>
+<li>o4-mini-2025-04-16</li>
+<li>gpt-4o-search-preview-2025-03-11</li>
+<li>o3-mini-2025-01-31</li>
+<li>gpt-4o-realtime-preview-2024-12-17</li>
+<li>gpt-4o-mini-audio-preview-2024-12-17</li>
+<li>gpt-4o-audio-preview-2024-12-17</li>
+<li>o1-2024-12-17</li>
+<li>gpt-4o-2024-11-20</li>
+<li>gpt-4o-2024-08-06</li>
+<li>gpt-4o-mini-2024-07-18</li>
+<li>gpt-4o-2024-05-13</li>
+<li>gpt-4-turbo-2024-04-09</li>
+<li>gpt-4-1106-preview</li>
+<li>gpt-4-0125-preview</li>
+<li>gpt-4-turbo-preview</li>
+<li>gpt-4-0613</li>
+<li>gpt-4o</li>
+<li>gpt-4o-mini</li>
+<li>gpt-4</li>
+<li>gpt-4o-realtime-preview</li>
+<li>gpt-4o-mini-realtime-preview</li>
+<li>gpt-4o-search-preview</li>
+<li>gpt-4.1</li>
+<li>gpt-4.1-mini</li>
+<li>gpt-4.1-nano</li>
+<li>gpt-4-turbo</li>
+<li>gpt-3.5-turbo-0125</li>
+<li>gpt-3.5-turbo-1106</li>
+<li>gpt-3.5-turbo</li>
+<li>gpt-4o-mini-transcribe</li>
+<li>gpt-4o-mini-audio-preview</li>
+<li>gpt-4o-audio-preview</li>
+<li>gpt-4o-realtime-preview</li>
+<li>gpt-audio-mini</li>
+<li>gpt-audio</li>
+<li>gpt-image-1-mini</li>
+<li>gpt-image-1</li>
+<li>gpt-realtime-mini</li>
+<li>gpt-realtime</li>
+<li>o4-mini</li>
+<li>o3</li>
+<li>o1-mini</li>
+<li>o1-preview</li>
+<li>o1</li>
+<li>whisper-1</li>
+<li>whisper (Available only for the Audio-to-text node, No Prompt Studio support.)</li>
+<li>dall-e-3</li>
+<li>dall-e-2</li>
+<li>text-embedding-3-large</li>
+<li>text-embedding-3-small</li>
+<li>text-embedding-ada-002</li>
+</ul>
    </td>
   </tr>
 </table>

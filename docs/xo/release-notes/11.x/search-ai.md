@@ -17,7 +17,9 @@ Search AI now streams LLM-generated answers in real-time, displaying responses t
 <font size="4">Webhook-Based Content Updates</font>
 
 Search AI now supports webhooks for near real-time content synchronization with Confluence Server and ServiceNow. Webhooks capture create, update, and delete events directly from these systems, ensuring content stays up to date between scheduled syncs and improving indexing efficiency.
-Note that this update does not support syncing user information for updated content and  Confluence spaces.
+Note that this update doesn't support syncing user information for updated content and Confluence spaces.
+
+[Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors/confluence-server.md)
 
 <hr>
 

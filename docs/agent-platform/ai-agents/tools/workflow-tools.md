@@ -76,11 +76,11 @@ These include the Workflow Tools created directly within an Agentic App, which a
 
 This is ideal for app-specific logic or experimentation. Any updates made to app-scoped tools or imported tools apply only to the local copy and don't impact the corresponding tool in the library. 
 
-**Create a New Tool in App**
+#### Create a New Tool in App
 
 When a new workflow tool is created within an app, it's accessible only to the app and is not available in the Tool Library. 
 
-**Import an Existing Tool in App**
+#### Import an Existing Tool in App
 
 To import an existing tool into the library, the tool must be deployed. When a deployed tool is imported into an Agentic App:
 
@@ -88,11 +88,19 @@ To import an existing tool into the library, the tool must be deployed. When a d
 * The local copy can be customized or extended, as required.
 * Changes made in the app don't affect the original library tool
 
-**PII Handling in Workflow Tools**
+#### PII Handling in Workflow Tools
 
 Workflow Tools inherit the application’s PII protection capabilities, ensuring sensitive data is securely processed while preventing exposure in logs, traces, or model outputs. Before a Workflow Tool starts execution, input fields are automatically scanned for declared PII patterns in the application config. Inputs identified as PII are masked as configured and passed to the tool in redacted form. If the Workflow tools are granted access to the original value in the PII configuration, 
 
 * The tool can securely unredact and use the PII internally for execution.
 * All monitoring, debugging logs, and execution traces continue to display only masked values.
 
-Note: PII handling applies only to workflow tools associated with agentic apps. Tools in the library operate independently and do not apply sensitization to PII inputs.
+!!!note
+    PII handling applies only to workflow tools associated with agentic apps. Tools in the library operate independently and do not apply sensitization to PII inputs.
+
+#### Accessing App Environment Variables in Workflow Tools
+
+Environment variables defined at the application level can be accessed by workflow tools through namespaces. To make a variable available within a workflow tool, add the variable to a namespace and associate that namespace with the workflow agent. Once associated, all variables associated with the namespace can be referenced with the keyword 
+`env.<variable-name>`. 
+
+[Learn More](../agentic-apps/settings/variables.md). 

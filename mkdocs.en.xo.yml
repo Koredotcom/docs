@@ -93,7 +93,7 @@ plugins:
         'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md': 'automation/use-cases/dialogs/dialog-tasks-overview.md'
         'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
         'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
-        
+        'quality-ai/analyze/conversation-intelligence.md': 'quality-ai/analyze/performance-insights.md'
 
 extra:  
   version:
