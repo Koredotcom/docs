@@ -9,7 +9,7 @@
     "groups": [
       {
         "group": "Getting Started",
-        "pages": []
+        "pages": ["xo/getting-started/about-xo-platform.md"]
       }
     ]
   }
