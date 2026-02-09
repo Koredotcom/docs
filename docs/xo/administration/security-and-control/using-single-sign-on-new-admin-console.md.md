@@ -176,20 +176,23 @@ To complete this procedure, you must have already selected *Okta* as a SAML prov
 6. In the **General settings**, provide an *App name* and select **Next**.  
 7. In **Configure SAML**, provide the *Single Sign-On URL.* To obtain this:  
 
-   1. Log in to Kore.ai App Builder Admin Console  
-   2. under **Security & Control** -> **Single Sign on page**  
-   3. after enabling **SAML** and selecting **Okta**  
-   4. **ACS URL for SP Initiated SAML Flow field** would contain the required URL.  
-   5. For on-prem accounts, the ACS URL for SP Initiated SAML Flow is displayed as [*https://idproxy-dev.kore.com/authorize/callback*](https://idproxy-dev.kore.com/authorize/callback). This needs to be updated as “single sign on URL” in Okta platform and [*https://idproxy-dev.kore.com*](https://idproxy-dev.kore.com/) needs to be updated as the “Audience URL”  
-   6. You can provide the **Attribute statements** like emailId, firstName as per your requirement.  
 
-8. To configure the **ACS URL for IDP-Initiated SAML Flow**, copy and paste the complete URL that you get from your admin. In case you are using internal redirection URLs, please reach out to your internal admin/network teams. To get the **ACS URL for IDP Initiated SAML Flow** URL, check “User this Recipient URL and Destination URL”. Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)).  
+    1. Log in to Kore.ai App Builder Admin Console  
+    2. under **Security & Control** -> **Single Sign on page**  
+    3. after enabling **SAML** and selecting **Okta**  
+    4. **ACS URL for SP Initiated SAML Flow field** would contain the required URL.  
+    5. For on-prem accounts, the ACS URL for SP Initiated SAML Flow is displayed as [*https://idproxy-dev.kore.com/authorize/callback*](https://idproxy-dev.kore.com/authorize/callback). This needs to be updated as “single sign on URL” in Okta platform and [*https://idproxy-dev.kore.com*](https://idproxy-dev.kore.com/) needs to be updated as the “Audience URL”  
+    6. You can provide the **Attribute statements** like emailId, firstName as per your requirement.  
 
-!!! Note
 
-    This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organisation's domain requirements. You must copy the final ACS URL again and paste it in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618) community post. 
+8. To configure the **ACS URL for IDP-Initiated SAML Flow**, copy and paste the complete URL that you get from your admin. In case you are using internal redirection URLs, please reach out to your internal admin/network teams. To get the **ACS URL for IDP Initiated SAML Flow** URL, check “User this Recipient URL and Destination URL”. Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)).
 
-9. Select **Finish**.  
+!!! note
+
+    This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organisation's domain requirements. You must copy the final ACS URL again and paste it in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618) community post.
+
+9. Select **Finish**. 
+ 
 10. On the **Sign On** tab, in the **Settings** section, select **View Setup Instructions**. The **How to Configure SAML 2.0 for <app-name> Application** page is displayed.  
 11. Copy the URLs in the:  
     1. **Identity Provider Single Sign-On URL** field to the **Okta Single Sign-On URL** field in Kore.ai.  
