@@ -308,14 +308,14 @@ To complete this procedure, you must have already selected *Bitium* as a SAML pr
 5. On the **Single Sign-On** tab, in the **Select a Single Sign-On Provider** section, select **SAML Authentication**.  
 6. Copy the following URLs from *Bitium* into the Admin Console *Bitium* configuration section:  
 
-  * **Bitium Login URL** field to the Kore.ai **Single Sign-On** field  
-  * **Bitium Logout URL** field to the Kore.ai **Issuer URL** field  
+   * **Bitium Login URL** field to the Kore.ai **Single Sign-On** field  
+   * **Bitium Logout URL** field to the Kore.ai **Issuer URL** field  
 
 7. In the Bitium **X.509 Certificate** field, copy the certificate data, and then paste the data into the Admin Console **Certificate** text box.  
 
-!!! Note  
+   !!! Note
 
-    Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.  
+       Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.  
 
 8. In Kore.ai, select **Save**.
 
