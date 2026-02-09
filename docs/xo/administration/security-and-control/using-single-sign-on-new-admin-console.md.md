@@ -310,8 +310,9 @@ To complete this procedure, you must have already selected *Bitium* as a SAML pr
 5. On the **Single Sign-On** tab, in the **Select a Single Sign-On Provider** section, select **SAML Authentication**.  
 6. Copy the following URLs from *Bitium* into the Admin Console *Bitium* configuration section:  
 
-   * **Bitium Login URL** field to the Kore.ai **Single Sign-On** field  
-   * **Bitium Logout URL** field to the Kore.ai **Issuer URL** field  
+    * **Bitium Login URL** field to the Kore.ai **Single Sign-On** field 
+     
+    * **Bitium Logout URL** field to the Kore.ai **Issuer URL** field  
 
 7. In the Bitium **X.509 Certificate** field, copy the certificate data, and then paste the data into the Admin Console **Certificate** text box.  
 
@@ -354,7 +355,7 @@ The *Identity Provider information successfully updated* message is displayed at
       * **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback.](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)  
       * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/using-single-sign-on/#attributes-for-adfs).  
       * **Identity URL** or **Sign On URL** as [https://idp.kore.com](https://idp.kore.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649) 
-      
+
 
 9. Select **Save**.
 
