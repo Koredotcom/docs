@@ -25,7 +25,7 @@ The following list describes the columns displayed for each Kore.ai user.
   <tr>
    <td>Name
    </td>
-   <td>Displays the Kore.ai username, admin indicator, and selection box.
+   <td>Displays the username and selection box.
    </td>
   </tr>
   <tr>
@@ -35,32 +35,20 @@ The following list describes the columns displayed for each Kore.ai user.
    </td>
   </tr>
   <tr>
-   <td>Bot Builder Access
+   <td>Account Role
    </td>
-   <td>The type of access a user has to Bot Builder. Can be
-<ul>
-
-<li><strong>None</strong> means no access to Bot Builder
-
-<li>Only <strong>Bot Builder Access</strong> or
-
-<li>Bot Builder access along with permission for a <strong>New Bot Creation</strong>
-</li>
-</ul>
+   <td>Displays the role of the user.
    </td>
   </tr>
   <tr>
    <td>Status
    </td>
-   <td>Displays the Kore.ai user status. One of:
+   <td>Displays the user status. One of:
 <ul>
 
-<li><strong>Active</strong> – The user is active and can interact with other Kore.ai users.
+<li><strong>Active</strong> – The user is active and can interact with other platform users.
 
-<li><strong>Not Active</strong> – Users invited by the Admin but have yet to join or accept the invitation.
-
-<li><strong>Suspended</strong> – The user is suspended by an administrator. The user cannot log on to Kore.ai; however, messages can still be sent to the suspended user. The status of a <strong>Suspended </strong>user can be <strong>Activated</strong>.
-
+<li><strong>Inactive</strong> – Users invited by the Admin but are yet to join or accept the invitation.
 <li><strong>Locked</strong> – The user exceeded the maximum number of login attempts. The status of a locked user can be changed to <strong>Unlock</strong>, <strong>Suspend</strong>, or <strong>Deactivate</strong>.
 </li>
 </ul>
