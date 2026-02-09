@@ -185,23 +185,23 @@ To complete this procedure, you must have already selected *Okta* as a SAML prov
     6. You can provide the **Attribute statements** like emailId, firstName as per your requirement.  
 
 
-8. To configure the **ACS URL for IDP-Initiated SAML Flow**, copy and paste the complete URL that you get from your admin. In case you are using internal redirection URLs, please reach out to your internal admin/network teams. To get the **ACS URL for IDP Initiated SAML Flow** URL, check “User this Recipient URL and Destination URL”. Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)).
+8. To configure the **ACS URL for IDP-Initiated SAML Flow**, copy and paste the complete URL that you get from your admin. In case you are using internal redirection URLs, please reach out to your internal admin/network teams. To get the **ACS URL for IDP Initiated SAML Flow**, check “Use this Recipient URL and Destination URL”. Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback)).
 
-!!! note
+    !!! note
+        This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organisation's domain requirements. You must copy the final ACS URL again and paste it in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618) community post.
 
-    This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organisation's domain requirements. You must copy the final ACS URL again and paste it in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618) community post.
+9. Select **Finish**.
 
-9. Select **Finish**. 
- 
 10. On the **Sign On** tab, in the **Settings** section, select **View Setup Instructions**. The **How to Configure SAML 2.0 for <app-name> Application** page is displayed.  
-11. Copy the URLs in the:  
+11. Copy the URLs in the:
+
     1. **Identity Provider Single Sign-On URL** field to the **Okta Single Sign-On URL** field in Kore.ai.  
     2. **Identity Provider Issuer** field to the Kore.ai **Identity Provider Issuer** field  
+
 12. In the Okta **X.509 Certificate** field, copy the certificate data, and then paste the data into the Kore.ai **Certificate** text box. 
 
-!!! Note
-     
-    Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.  
+    !!! note
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai. 
 
 13. In Kore.ai, select **Save**. This will complete the integration of the Okta login.
 
