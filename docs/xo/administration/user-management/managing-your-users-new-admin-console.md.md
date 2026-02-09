@@ -16,10 +16,10 @@ The following list describes the columns displayed for each user.
 
 | COLUMN | DESCRIPTION |
 |--------|-------------|
-| Name | Displays the Kore.ai username, admin indicator, and selection box. |
-| Email Id | Registered email id of the user. |
-| Bot Builder Access | The type of access a user has to Bot Builder. Can be:<br><br>• **None** means no access to Bot Builder<br>• Only **Bot Builder Access** or<br>• Bot Builder access along with permission for a **New Bot Creation** |
-| Status | Displays the Kore.ai user status. One of:<br><br>• **Active** – The user is active and can interact with other Kore.ai users.<br>• **Not Active** – Users invited by the Admin but have yet to join or accept the invitation.<br>• **Suspended** – The user is suspended by an administrator. The user cannot log on to Kore.ai; however, messages can still be sent to the suspended user. The status of a **Suspended** user can be **Activated**.<br>• **Locked** – The user exceeded the maximum number of login attempts. The status of a locked user can be changed to **Unlock**, **Suspend**, or **Deactivate**. |
+| Name | Displays the username and selection box. |
+| Email Id | Registered email ID of the user. |
+| Account Role | Displays the role of the user. |
+| Status | Displays the user status. One of:<br><br>• **Active**: The user is active and can interact with other Kore.ai users.<br>• **Inactive**: Users invited by the Admin but have yet to join or accept the invitation.<br>• **Locked**: The user exceeded the maximum number of login attempts. The status of a locked user can be activated.|
 
 Clicking on a specific User row from the Users page opens the **User Details** page, from where you can modify the following:
 
