@@ -1,4 +1,4 @@
-# Managing Your Users
+# Managing Your Users - New Admin Console
 
 **User Management** involves managing users and user groups.
 
@@ -7,7 +7,7 @@
 
 ## Users
 
-You can manage users in your enterprise network from the Bot Administration page in the **User Management > Users** section.
+You can manage users in your enterprise network from the Admin Console in the **User Management > Users** section.
 
 <img src="../images/bac-users.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
 
