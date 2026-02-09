@@ -258,9 +258,8 @@ To complete this procedure, you must have already selected *OneLogin* as a SAML 
 7. In the **OneLogin X.509 Certificate** field, click View Details. The **Standard Strength Certificate (2048-bit)** page is displayed.  
 8. In the **X.509 Certificate** section, copy the certificate data, and then paste the data into the Kore.ai **X.509 Certificate** text box. 
 
-!!! Note
-
-    Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.  
+    !!! note
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai. 
 
 9. In Kore.ai, select **Save**.
 
@@ -316,9 +315,8 @@ To complete this procedure, you must have already selected *Bitium* as a SAML pr
 
 7. In the Bitium **X.509 Certificate** field, copy the certificate data, and then paste the data into the Admin Console **Certificate** text box.  
 
-   !!! Note
-
-       Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.  
+    !!! note
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai. 
 
 8. In Kore.ai, select **Save**.
 
@@ -356,6 +354,7 @@ The *Identity Provider information successfully updated* message is displayed at
       * **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback.](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)  
       * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/using-single-sign-on/#attributes-for-adfs).  
       * **Identity URL** or **Sign On URL** as [https://idp.kore.com](https://idp.kore.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649) 
+      
 
 9. Select **Save**.
 
