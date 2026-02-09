@@ -204,24 +204,23 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
     <img src="../images/custom-agentassist-endpoints-4.png" alt="custom-agentassist-endpoints" title="custom-agentassist-endpoints" style="border: 1px solid gray; zoom:80%;"> 
 
 8. Add the following settings with config parameters:
-    1. Agent UI Option: Available by default 
-    2. App URL: {<a href="#agentai">[Agent AI URL]</a>}/integrations/nice/iframe/?params={scriptparams}
-    3. App Title: Kore Agent AI (change as needed)
-    4. Participants: Both 
-        <img src="../images/configuration-5.png" alt="configuration" title="configuration" style="border: 1px solid gray; zoom:80%;"> 
+   * Agent UI Option: Available by default 
+   * App URL: {<a href="#agentai">[Agent AI URL]</a>}/integrations/nice/iframe/?params={scriptparams}
+   * App Title: Kore Agent AI (change as needed)
+   * Participants: Both  
+       <img src="../images/configuration-5.png" alt="configuration" title="configuration" style="border: 1px solid gray; zoom:80%;"> 
 
-    5. Audio Relay Endpoint: {<a href="#kvg">[Kore Voice Gateway</a>(KVG)]}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&lt;DNS>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true
-        * **Bot SIP URI**: **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Agent AI** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal. 
-            <img src="../images/configure-sip-trunk_6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
+   * Audio Relay Endpoint: {<a href="#kvg">[Kore Voice Gateway</a>(KVG)]}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&lt;DNS>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true
+     * **Bot SIP URI**: **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Agent AI** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
+       <img src="../images/configure-sip-trunk_6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
 
-        * **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal. 
-            <img src="../images/web-mobile-client_7.png" alt="web-mobile-client" title="free text" style="border: 1px solid gray; zoom:80%;"> 
+     * **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
+       <img src="../images/web-mobile-client_7.png" alt="web-mobile-client" title="free text" style="border: 1px solid gray; zoom:80%;"> 
 
-        * Token: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
-            * Payload: {“appId”: &lt;Bot Client ID>}
-            * Header: {“alg”: “HS256″,”typ”: “JWT”}
-            * Secret: Bot Client Secret. 
-
+     * Token: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
+       * Payload: {“appId”: &lt;Bot Client ID>}
+       * Header: {“alg”: “HS256″,”typ”: “JWT”}
+       * Secret: Bot Client Secret.   
 9. Click **Create**.
 
 ### Step 2: NICE CX Studio > Import Outbound Voice Script and Configure Parameters
