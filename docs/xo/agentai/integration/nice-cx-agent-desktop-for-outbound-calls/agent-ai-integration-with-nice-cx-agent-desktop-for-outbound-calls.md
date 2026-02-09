@@ -210,7 +210,8 @@ This section explains the configuration steps you must complete to integrate Age
         * **Token**: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
             * Payload: {“appId”: &lt;Bot Client ID>}
             * Header: {“alg”: “HS256″,”typ”: “JWT”}
-            * Secret: Bot Client Secret. 
+            * Secret: Bot Client Secret.  
+            
 9. Select **Create**. 
 
 ### Step 2: NICE CX Studio > Import Outbound Voice Script and Configure Parameters
