@@ -48,24 +48,28 @@ Complete the steps in the following procedure to configure Single Sign-On (SSO) 
 2. In the **Select suitable Sign-On Protocol** section, select **WS-Federation**.  
 3. In the **Configure SSO for WS-Federation** section, select an identity provider, and then define the settings for:
 
-   a. **Windows Azure®**  
+   1. **Windows Azure®**  
       * **Azure AD Sign-On End Point URL**: The URL that Kore.ai sends sign-on and sign-off requests using *Azure*. The response for the authentication is sent to the **Reply URL** defined in your *Azure* Active Directory configuration settings.  
       * **Azure AD Federation Metadata Document**: The URL for the federation metadata document used for authentication with *Azure* Active Directory. 
 
-   b. **Other**: Generic WS-Federation identity provider configuration, other than Azure  
+   2. **Other**: Generic WS-Federation identity provider configuration, other than Azure  
       * **AD Sign-On End Point URL**: The URL that the platform sends sign on and sign off requests using your WS-Federation identity provider.  
       * **Identity provider issuer**: The entity that provides the user identities, including the ability to authenticate a user.  
-4. In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between the application and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:  
-   a. **SAML 2.0**  
+
+4. In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between the application and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs: 
+
+   1. **SAML 2.0**  
       * **LDAP Attribute:** nameId  
       * **Claim Attribute:** uri  
 
-   b. **SAML 1.1**  
+   2. **SAML 1.1**  
       * **LDAP Attribute:** nameId  
       * **Claim Attribute:** emailAddress  
 
-   c. **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649).  
+   3. **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649).  
+
 5. In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, [see Attributes for ADFS](https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/using-single-sign-on/#attributes-for-adfs).  
+
 6. Select **Save**.
 
 The *Identity Provider information successfully updated* message is displayed at the top of the page.
@@ -171,17 +175,20 @@ To complete this procedure, you must have already selected *Okta* as a SAML prov
 5. Select **Create application**  
 6. In the **General settings**, provide an *App name* and select **Next**.  
 7. In **Configure SAML**, provide the *Single Sign-On URL.* To obtain this:  
+
    1. Log in to Kore.ai App Builder Admin Console  
-   2. under **Security & Control** \-\> **Single Sign on page**  
+   2. under **Security & Control** -> **Single Sign on page**  
    3. after enabling **SAML** and selecting **Okta**  
    4. **ACS URL for SP Initiated SAML Flow field** would contain the required URL.  
    5. For on-prem accounts, the ACS URL for SP Initiated SAML Flow is displayed as [*https://idproxy-dev.kore.com/authorize/callback*](https://idproxy-dev.kore.com/authorize/callback). This needs to be updated as “single sign on URL” in Okta platform and [*https://idproxy-dev.kore.com*](https://idproxy-dev.kore.com/) needs to be updated as the “Audience URL”  
    6. You can provide the **Attribute statements** like emailId, firstName as per your requirement.  
+
 8. To configure the **ACS URL for IDP-Initiated SAML Flow**, copy and paste the complete URL that you get from your admin. In case you are using internal redirection URLs, please reach out to your internal admin/network teams. To get the **ACS URL for IDP Initiated SAML Flow** URL, check “User this Recipient URL and Destination URL”. Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)).  
 
 !!! Note
 
-    This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organisation's domain requirements. You must copy the final ACS URL again and paste it in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618) community post.  
+    This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organisation's domain requirements. You must copy the final ACS URL again and paste it in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618) community post. 
+
 9. Select **Finish**.  
 10. On the **Sign On** tab, in the **Settings** section, select **View Setup Instructions**. The **How to Configure SAML 2.0 for <app-name> Application** page is displayed.  
 11. Copy the URLs in the:  
@@ -193,7 +200,7 @@ To complete this procedure, you must have already selected *Okta* as a SAML prov
      
     Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.  
 
-13. In Kore.ai, click **Save**. This will complete the integration of the Okta login.
+13. In Kore.ai, select **Save**. This will complete the integration of the Okta login.
 
 The *Identity Provider information successfully updated* message is displayed at the top of the page. To test the configuration, log off the Admin Console and log on again. The Okta portal should be displayed.
 
@@ -300,8 +307,10 @@ To complete this procedure, you must have already selected *Bitium* as a SAML pr
 4. On the **Manage Organization** menu, select **Manage Apps**, and then select **Kore.ai**.  
 5. On the **Single Sign-On** tab, in the **Select a Single Sign-On Provider** section, select **SAML Authentication**.  
 6. Copy the following URLs from *Bitium* into the Admin Console *Bitium* configuration section:  
+
   * **Bitium Login URL** field to the Kore.ai **Single Sign-On** field  
   * **Bitium Logout URL** field to the Kore.ai **Issuer URL** field  
+
 7. In the Bitium **X.509 Certificate** field, copy the certificate data, and then paste the data into the Admin Console **Certificate** text box.  
 
 !!! Note  
