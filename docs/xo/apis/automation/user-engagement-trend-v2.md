@@ -4,7 +4,7 @@
 
 To retrieve comprehensive user analytics, including unique, new, and returning users, with daily or hourly averages over a specified period and configurable time intervals.
 
-| Field          | Value                                                                 |
+| **Field**          | **Value**                                                                 |
 |----------------|-----------------------------------------------------------------------|
 | Method         | POST                                                                  |
 | Endpoint       | `https://{{host}}/api/public/bot/{{streamId}}/v2/userEngagementTrend?aggregation_type={{aggregation_type}}&start_date={{start_date}}&end_date={{end_date}}&conversationType={{conversationType}}&conversationStatus={{conversationStatus}}&timeZoneOffset=Asia%2FKolkata` |
@@ -14,7 +14,7 @@ To retrieve comprehensive user analytics, including unique, new, and returning u
 
 ## Path Parameters
 
-| PARAMETER | REQUIRED/OPTIONAL | DESCRIPTION |
+| **PARAMETER** | **REQUIRED/OPTIONAL** | **DESCRIPTION** |
 |-----------|-------------------|-------------|
 | `host`      | Required          | Environment URL, for example, https://platform.kore.ai |
 | `streamId`    | Required          | Bot ID or Stream ID. You can access it from the General Settings page of the app. |
@@ -22,13 +22,13 @@ To retrieve comprehensive user analytics, including unique, new, and returning u
 
 ## Query Parameters
 
-| PARAMETER | DESCRIPTION | TYPE |
+| **PARAMETER** | **DESCRIPTION** | **TYPE** |
 |---------------|------------------|----------|
 | `aggregation_type` |Specifies the time-based aggregation level for the data. Allowed values are `daily` and `hourly`. If not specified, the aggregation type defaults to `hourly`. | string, optional |
 | `start_date` | Start date for the analytics period, in `YYYY-MM-DD` format. | string, required |
 | `end_date` | End date for the analytics period, in `YYYY-MM-DD` format. | string, required |
-| `conversationType` |  Filters analytics by conversation type. If not specified, the default value is All. Allowed values: `All`, `Interactive`, and `Non Interactive` | string, optional |
-| `conversationStatus` | Filters analytics by conversation status. If not specified, the default value is All. Allowed values: `All`, `Active`, and `Closed` | string, optional |
+| `conversationType` |  Filters analytics by conversation type. If not specified, the default value is All. Allowed values: `All`, `Interactive`, and `Non Interactive`. | string, optional |
+| `conversationStatus` | Filters analytics by conversation status. If not specified, the default value is All. Allowed values: `All`, `Active`, and `Closed`. | string, optional |
 | `timeZoneOffset` | Time zone used to normalize and aggregate date and time values. For example - `Asia/Kolkata`. | string, optional |
 | `channels` | Filters analytics by channels.| string, optional |
 
@@ -139,7 +139,7 @@ curl --location --request POST 'https://{{host}}/api/public/bot/{{streamId}}/v2/
     
 ```
 
-* **when aggregation_type = Hourly or empty or not given**
+* **when aggregation_type = Hourly or empty or not specified**
 
 ```json
     {
