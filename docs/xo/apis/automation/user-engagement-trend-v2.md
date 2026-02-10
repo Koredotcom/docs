@@ -30,7 +30,6 @@ To retrieve comprehensive user analytics, including unique, new, and returning u
 | `conversationType` |  Filters analytics by conversation type. If not specified, the default value is All. Allowed values: `All`, `Interactive`, and `Non Interactive`. | string, optional |
 | `conversationStatus` | Filters analytics by conversation status. If not specified, the default value is All. Allowed values: `All`, `Active`, and `Closed`. | string, optional |
 | `timeZoneOffset` | Time zone used to normalize and aggregate date and time values. For example - `Asia/Kolkata`. | string, optional |
-| `channels` | Filters analytics by channels.| string, optional |
 
 ## Sample Request
 
