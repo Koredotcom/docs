@@ -81,7 +81,7 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
 
 
 !!!note
-  Only the articles within their validity date are ingested. Any article that's expired(beyond its Valid To date) isn't ingested.
+    Only the articles within their validity date are ingested. Any article that's expired (beyond its Valid To date) isn't ingested.
 
 ## Webhook Integration for Real-Time Sync
 
@@ -213,7 +213,7 @@ Search AI enables users to set up advanced filters for content ingestion. Curren
 
    ![Example](images/servicenow/example1.png "Example")
 
-4. Select **Test and Save** to enable the filter. The filter is applied on the next scheduled or manual sync.
+Select **Test and Save** to enable the filter. The filter is applied on the next scheduled or manual sync.
 
 **Filter Rules:**
 
