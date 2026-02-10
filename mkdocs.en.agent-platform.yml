@@ -162,11 +162,7 @@ nav:
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:   
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up AI Agents:
-          - Overview: ai-agents/create-agent.md
-          - Create Agent From Scratch: ai-agents/create-from-scratch.md
-          - Connect External Agents: ai-agents/external-agents.md
-          - Import from Marketplace:  ai-agents/create-from-marketplace.md
+      - Set up AI Agents: ai-agents/create-agent.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
       - Manage Agents: ai-agents/agent-management.md
       - Manage Agentic App:
