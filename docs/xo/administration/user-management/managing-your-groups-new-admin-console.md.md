@@ -13,7 +13,7 @@ The following list describes the columns displayed in the Groups listing.
 |--------|-------------|
 | Group Name | Displays the group name. |
 | Description | Displays the description of the group. This is an optional field. |
-| Source | The source used to create the group. One of:<br><br>Local – The group was created manually from the User Management module.<br>AD – The group was imported or synchronized using Active Directory.<br>System – The group was created as a default group. |
+| Source | The source used to create the group. One of:<br><br>**Local** – The group was created manually from the **User Management** module.<br>**AD** – The group was imported or synchronized using Active Directory.<br>**System** – The group was created as a default group. |
 | Users | Displays the number of group members as users. Click the link to edit the list of users for the selected group. |
 | Groups | Displays the number of groups as child members of the parent group. Click the link to edit the list of child groups for the selected group. |
 
