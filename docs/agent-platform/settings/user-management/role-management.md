@@ -1081,6 +1081,36 @@ The following table summarizes the module-wise permissions and access levels for
    </td>
   </tr>
   <tr>
+   <td>
+   </td>
+   <td>Log list
+   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+  </tr>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>Detailed logs
+   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+   <td><img src="../images/yes-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+   <td><img src="../images/no-icon.png" alt="access role management" title="access role management" style="zoom:5%;">
+   </td>
+  </tr>
+  </tr>
+  <tr>
    <td><strong>Deployment</strong>
    </td>
    <td>Manage Deployment - deploy/undeploy/redeploy
