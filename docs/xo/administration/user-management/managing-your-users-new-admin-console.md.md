@@ -91,8 +91,6 @@ As an admin, you may edit or delete the role of the User for a given App. Note t
 
 You can also select an App and assign an App role to the user. For more information, see [Bot roles](role-management.md#bot-roles){:target="_blank"}.
 
-<img src="../images/bac-manage-bots.png" alt="Manage Bots" title="Manage Bots" style="border: 1px solid gray;"/>
-
 
 ### Other Options
 
@@ -130,6 +128,7 @@ Use the **User Settings** page to manage how users join your account, receive no
 ### Self Sign-Up for Enterprise Users
 
 Define whether new users from your enterprise domain can discover and request to join the account.
+
 You can choose to:
 
 * Block requests from new users.
