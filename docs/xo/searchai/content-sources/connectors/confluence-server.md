@@ -140,9 +140,10 @@ Perform the following steps in your Confluence server to set up the webhook:
 
 ### Content Ingestion
 
-Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes:
-    * **Ingest all content**: Syncs all available content from Confluence.
-    * **Ingest filtered content**: Lets you specify only the content you want to sync.
+Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes:<br>
+
+ * **Ingest all content**: Syncs all available content from Confluence.<br>
+ * **Ingest filtered content**: Lets you specify only the content you want to sync.
 
 To configure filtered ingestion:
 
