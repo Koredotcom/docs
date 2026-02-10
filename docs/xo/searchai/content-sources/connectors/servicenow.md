@@ -120,7 +120,52 @@ Create a reusable Script Include in **System Definition > Script Includes**:
 - **Action:** Sends a POST request to the Search AI webhook endpoint with the auth token.  
 - **Payload:** Builds a payload compatible with Search AI's ServiceNow ingestion schema.
 
-For more information, see [sample script.](https://koreteam.atlassian.net/wiki/spaces/SearchAI/pages/1375698947/ServiceNow+Webhook+Integration+Guide#Script-Include-Code)
+Sample script
+
+```
+var <<CommonWebhookSender>> = Class.create();
+<<CommonWebhookSender>>.prototype = {
+  initialize: function () {},
+
+  send: function (record, action) {
+    try {
+      var endpoint = 'https://<domain>/api/1.1/webhook/<streamId>/connector-Id';
+
+      // 🔐 secret 
+      var TOKEN = 'b59aebc4-xxx-xxx';
+
+      var payload = {
+        source: 'servicenow',
+        object: record.getTableName(),
+        action: action,
+        sys_id: record.sys_id.toString(),
+        number: record.number ? record.number.toString() : '',
+        knowledge_base_name: record.kb_knowledge_base
+          ? record.kb_knowledge_base.getDisplayValue()
+          : ''
+      };
+
+      var r = new sn_ws.RESTMessageV2();
+      r.setHttpMethod('POST');
+      r.setEndpoint(endpoint);
+      r.setRequestHeader('Content-Type', 'application/json');
+
+      // ✅ Authentication header
+      r.setRequestHeader('X-Webhook-Token', TOKEN);
+
+      r.setRequestBody(JSON.stringify(payload));
+
+      var response = r.execute();
+      gs.info('Webhook sent. Status: ' + response.getStatusCode());
+
+    } catch (e) {
+      gs.error('Webhook error: ' + e.message);
+    }
+  },
+
+  type: '<<CommonWebhookSender>>'
+};
+```
 
 **B. Business Rules (Per Table)**
 
@@ -159,16 +204,16 @@ Search AI enables users to set up advanced filters for content ingestion. Curren
 **Configure Advanced Filters:**
 
 1. Go to the **Manage Content** tab and select **Ingest filtered content**.
-2. Click **Edit configuration** to open the **Ingestion Filters** page.
+2. Select **Edit configuration** to open the **Ingestion Filters** page.
 3. Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to [this](https://developer.servicenow.com/dev.do#!/reference) for the complete list of parameters.
 
-![Configuration](images/servicenow/config-tab.png "Configuration")
+   ![Configuration](images/servicenow/config-tab.png "Configuration")
 
-For instance, to ingest articles with a given sys ID, use the filter as shown below:
+   For instance, to ingest articles with a given sys ID, use the filter as shown below:
 
-![Example](images/servicenow/example1.png "Example")
+   ![Example](images/servicenow/example1.png "Example")
 
-4. Click on **Test and Save** to enable the filter. The filter is used on the next scheduled or manual sync with the ServiceNow application. 
+4. Select **Test and Save** to enable the filter. The filter is applied on the next scheduled or manual sync.
 
 **Filter Rules:**
 
