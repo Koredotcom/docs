@@ -27,6 +27,8 @@ Agent creation now supports three paths: building agents from scratch, importing
 
 The prompt editor now includes AI-assisted refinement, enabling users to easily improve and optimize prompts directly within the editor. This feature reduces iteration cycles and improves prompt accuracy through clearer, more effective definitions, making prompt writing faster and easier.
 
+**Note**: This feature is in preview and can be enabled upon request.
+
 <!--**Enhanced Security for Session Logs**
 
 The Secure Logs feature gives workspace admins granular control over access to detailed session logs and sensitive conversation data. When enabled, developers cannot view detailed logs unless administrators explicitly grant them access. Admins can configure access at the role level or apply restrictions across the entire enterprise workspace, ensuring sensitive customer interactions and debugging data remain visible only to authorized personnel. 

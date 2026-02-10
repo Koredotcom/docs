@@ -1,20 +1,17 @@
 # By Speech Metric
 
-The By Speech metric is used to assess agent performance during voice interactions in the contact center. It leverages intelligent speech analytics to drive better conversations, coaching, and outcomes. These metrics enable supervisors and quality analysts to identify coaching opportunities, enhance the customer experience, and ensure compliance with regulatory standards.
+Speech evaluation metrics assess agent performance during voice interactions in the contact center using intelligent speech analytics. These metrics evaluate conversational behaviors such as crosstalk (overlapping speech), dead air (silence), and speaking rate to support effective coaching, making sure about consistent quality evaluations, and maintaining compliance adherence. Evaluators use each speech metric for assessment purposes and assign it to a single agent attribute.
 
 ## Why to Use This Metric
 
 Use speech evaluation metrics to:
 
 * Monitor and evaluate agent behavior based on voice characteristics.
-
 * Detect issues such as dead air, cross talk (overlapping speech), or inappropriate speaking rates (periods of silence).
-
-* Automate scoring in quality evaluations for consistent and unbiased feedback.
-
-* Improve agent training programs and operational efficiency.
-
-* Evaluate agent's speaking rate and conversation sessions per day and comparison analysis.
+* Enable automated and unbiased quality scoring.
+* Identify coaching and training opportunities.
+* Improve customer experience and operational efficiency.
+* Analyze speaking patterns and interaction trends.
 
 ## When to Use This Metric
 
@@ -30,32 +27,25 @@ Use speech evaluation metrics when:
 
 ## Prerequisites
 
-Before you configure speech metrics, ensure that:
+Before you configure speech metrics, make sure that:
 
 * You have admin or configuration permissions.
+* You create agent attribute definitions.
+* You have evaluation forms available or in a draft state.
+* You have speech data available for Quality AI analysis.
 
-* Agent attribute definitions are already created.
-
-* Evaluation forms are available or in draft state.
-
-* Speech data is being captured in the system for Quality AI analysis.
-
-## Access Evaluation Metrics
-
-Access **Evaluation Metrics** by navigating to **Quality AI** > **Configure** > **Evaluation Metrics**.
-
-## Configure By Speech Metric
+## Configure by Speech Metric
 
 1. Navigate to **Quality AI** > **Configure** > **Evaluation Forms** > **Evaluation Metrics**.
 
-2. Click **+ New Evaluation Metric**.
+2. Select **+ New Evaluation Metric**.
 
-3. From the **Evaluation Metrics Measurement Type** dropdown, select **By Playbook Adherence**.  
+3. From the **Evaluation Metrics Measurement Type**, select **By Playbook Adherence**.  
 <img src="../images/by-speech-dropdown.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:100%;">  
 
-4. Enter a descriptive **Name** for the future audit reference.   
+4. Enter a descriptive **Name** for the future audit and reporting purposes.   
 
-* Select one of the following **Speech Type** options from the dropdown.  
+* Select and configure one of the following **Speech Type** options.  
 <img src="../images/by-speech-crosstalk.png" alt="Crosstalk" title="Crosstalk" style="border: 1px solid gray; zoom:60%;"> 
 
     * **Cross Talk**: Set the maximum number of instances. If the count exceeds this limit (the configured count), the metric fails. By default, the crosstalk duration is two seconds, but you can customize both the instance limit and duration.
