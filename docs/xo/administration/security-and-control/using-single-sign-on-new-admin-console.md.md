@@ -10,7 +10,7 @@ If you don't enable SSO, users authenticate through the Kore.ai sign-in process,
 
 Select **Configure** to set up your SSO method.
 
-![][image1]
+<img src="../images/sso-new-admin-console.png" alt="SSO" title="SSO" style="border: 1px solid gray;zoom:70%;"/>
 
 You can configure Single Sign-On (SSO) authentication for your Kore. ai-managed users using the following:
 
@@ -22,7 +22,7 @@ SSO enables easy access to the application using your existing identity provider
 
 For example, using the *WS-Federation* sign-on protocol, you can enable a user to sign on to the Kore.ai application using Microsoft® Active Directory® server credentials.
 
-![][image2]
+<img src="../images/sso-saml-new-admin-console.png" alt="SSO SAML" title="SSO SAML" style="border: 1px solid gray;zoom:70%;"/>
 
 ## Enable or Disable SSO
 
