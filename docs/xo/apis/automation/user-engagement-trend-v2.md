@@ -24,14 +24,13 @@ To retrieve comprehensive user analytics, including unique, new, and returning u
 
 | PARAMETER | DESCRIPTION | TYPE |
 |---------------|------------------|----------|
-| `aggregation_type` | Specifies the time-based aggregation level for the data. Allowed values are `daily` and `hourly`. | string, required |
+| `aggregation_type` |Specifies the time-based aggregation level for the data. Allowed values are `daily` and `hourly`. If not specified, the aggregation type defaults to `hourly`. | string, optional |
 | `start_date` | Start date for the analytics period, in `YYYY-MM-DD` format. | string, required |
 | `end_date` | End date for the analytics period, in `YYYY-MM-DD` format. | string, required |
-| `conversationType` |  Filters analytics by conversation type. Allowed values: `All`, `Interactive`, and `Non Interactive` | string, optional |
-| `conversationStatus` | Filters analytics by conversation status. Allowed values: `All`, `Active`, and `Closed` | string, optional |
+| `conversationType` |  Filters analytics by conversation type. If not specified, the default value is All. Allowed values: `All`, `Interactive`, and `Non Interactive` | string, optional |
+| `conversationStatus` | Filters analytics by conversation status. If not specified, the default value is All. Allowed values: `All`, `Active`, and `Closed` | string, optional |
 | `timeZoneOffset` | Time zone used to normalize and aggregate date and time values. For example - `Asia/Kolkata`. | string, optional |
- 
-
+| `channels` | Filters analytics by channels.| string, optional |
 
 ## Sample Request
 
