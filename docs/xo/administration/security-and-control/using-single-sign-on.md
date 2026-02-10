@@ -1,30 +1,29 @@
 # Using Single Sign-On
 
-On the Kore.ai **Single Sign-On** page, in the **Security & Control** module of the Bots Admin Console, you can configure Single Sign-On (SSO) authentication for your Kore.ai managed users using the following:
+On the Admin Console **Single Sign-On** page, in the **Security & Control** module of the Admin Console, you can configure Single Sign-On (SSO) authentication for your AI for Service managed users using the following:
 
 * OpenID Connect (OIDC)   
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol
 
-SSO enables easy access to the Kore.ai application using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing their Kore.ai application, the same login credentials can be used automatically by the system.
+SSO enables easy access to the AI for Service application using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing their AI for Service application, the same login credentials can be used automatically by the system.
 
-For example, using the _WS-Federation_ sign-on protocol, you can enable a user to sign on to the Kore.ai application using Microsoft® Active Directory® server credentials.
+For example, using the _WS-Federation_ sign-on protocol, you can enable a user to sign on to the AI for Service application using Microsoft® Active Directory® server credentials.
 
-The following illustration shows the **Single Sign-On** page in the Bots Admin Console **Security & Control** module.
+The following illustration shows the **Single Sign-On** page in the Admin Console **Security & Control** module.
 
 <img src="../images/using-single-sign-on-img1.png" alt="Security & Control - Single Sign-on" title="Security & Control - Single Sign-on" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ## Enable or Disable SSO
 
-Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the Kore.ai application.
+Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the AI for Service application.
 
-When you disable SSO or when the SSO authentication validity period expires, users must create and log on using their credentials. If no account specific password policies have been defined, then default Kore.ai password policies are automatically enabled for the users.
+When you disable SSO or when the SSO authentication validity period expires, users must create and log on using their credentials. If no account specific password policies have been defined, then default AI for Service password policies are automatically enabled for the users.
 
 **To enable Single Sign-On**
 
 * In the **Security & Control** module, on the **Single Sign On** page, click **Enable SSO**.
-
 
 **To disable Single Sign-On**
 
@@ -33,32 +32,30 @@ When you disable SSO or when the SSO authentication validity period expires, use
 
 ## OIDC
 
-Complete the steps in the following procedure to configure SSO using OIDC in the **Security & Control** module of the Bots Admin Console. Kore.ai also supports WS-Federation and SAML Connect protocols.
+Complete the steps in the following procedure to configure SSO using OIDC in the **Security & Control** module of the Admin Console. AI for Service also supports WS-Federation and SAML Connect protocols.
 
-1. In the **Security & Control** module on the **Single Sign On** page in the Bots Admin Console, click **Enable SSO**.
+1. In the **Security & Control** module on the **Single Sign On** page in the Admin Console, click **Enable SSO**.
 2. In the **Select suitable Sign-On Protocol** section, select **OpenID Connect**.
 3. In the **Configure SSO for OpenID Connect** section, select an identity provider, for example, **Sign in with Google**.
-4. Click **Save**.
-5. The _Identity Provider information successfully updated_ message is displayed at the top of the page.
-
+4. Click **Create**.
 
 ## WS-Federation
 
-Complete the steps in the following procedure to configure Single Sign-On (SSO) using the WS-Federation protocol in the **Security & Control** module of the Bots Admin Console.
+Complete the steps in the following procedure to configure Single Sign-On (SSO) using the WS-Federation protocol in the **Security & Control** module of the Admin Console.
 
 
 
-1. In the **Security & Control** module on the **Single Sign On** page in the Bots Admin Console, click **Enable SSO**.
+1. In the **Security & Control** module on the **Single Sign On** page in the Admin Console, click **Enable SSO**.
 2. In the **Select suitable Sign-On Protocol** section, select **WS-Federation**.
 3. In the **Configure SSO for WS-Federation** section, select an identity provider, and then define the settings for:
     1. **Windows Azure®**
-        * **Azure AD Sign-On End Point URL** – The URL that Kore.ai sends sign on and sign off requests using _Azure_. The response for the authentication is sent to the **Reply URL** defined in your _Azure_ Active Directory configuration settings.
+        * **Azure AD Sign-On End Point URL** – The URL that AI for Service sends sign on and sign off requests using _Azure_. The response for the authentication is sent to the **Reply URL** defined in your _Azure_ Active Directory configuration settings.
         * **Azure AD Federation Metadata Document** – The URL for the federation metadata document used for authentication with _Azure_ Active Directory.
     2. **Other** – Generic WS-Federation identity provider configuration, other than Azure
-        * **AD Sign-On End Point URL** – The URL that Kore.ai sends sign on and sign off requests using your WS-Federation identity provider.
+        * **AD Sign-On End Point URL** – The URL that AI for Service sends sign on and sign off requests using your WS-Federation identity provider.
         * **AD Federation Metadata Document URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
 
-4. In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between Kore.ai and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:
+4. In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between AI for Service and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:
     1. **SAML 2.0**
         * **LDAP Attribute:** nameId
         * **Claim Attribute:** uri
@@ -70,9 +67,7 @@ Complete the steps in the following procedure to configure Single Sign-On (SSO) 
     3. **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}.
     
 5. In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, [see Attributes for ADFS](#attributes-for-adfs).
-6. Click **Save**.
-
-The _Identity Provider information successfully updated_ message is displayed at the top of the page.
+6. Click **Create**.
 
 
 ## SAML
@@ -98,23 +93,21 @@ Consider the following scenario: A user is logged into a system that acts as an 
 6. The identity of the user is established and the user is provided with app access.
 
 
-### Kore.ai Implementation
+### AI for Service Implementation
 
-There are two ways SAML can be used within XO Platform:
+There are two ways SAML can be used within Platform:
 
 
 
-* For developer authentication to access the Bot Builder,
+* For developer authentication to access the App Builder,
 * For user authentication to access the Bot.
 
 
-#### Use case 1: Bot builder authentication.
+#### Use case 1: App Builder authentication.
 
-Enterprises can set up access to the Bot builder tool using the enterprise SSO. Bot developers and admins can log into bot builder using SSO done by the enterprise identity provider.
+Enterprises can set up access to the App Builder tool using the enterprise SSO. Bot developers and admins can log into App Builder using SSO done by the enterprise identity provider.
 
-**SSO flow from XO Platform**: The following is the flow within the XO Platform once SSO is configured using SAML:
-
-
+**SSO flow from AI for Service Platform**: The following is the flow within the AI for Service once SSO is configured using SAML:
 
 1. The client makes a call to Kore app server (using the login URL) with user details to get identity provider info (SAML).
 2. Kore app server initiates a handshake request with the Kore idproxy server.
@@ -139,12 +132,12 @@ The token information on the client varies depending upon the SSO provider and t
 
 ### Configuring SSO using SAML
 
-Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Kore.ai Admin Console. Kore.ai also supports WS-Federation and OpenID Connect (OIDC) protocols.
+Complete the following steps to configure Single Sign-On (SSO) using Security Assertion Markup Language (SAML) protocol in the Admin Console. AI for Service also supports WS-Federation and OpenID Connect (OIDC) protocols.
 
 
 ### OKTA Configuration
 
-1. In the **Security & Control** module on the **Single Sign On** page in the Bots Admin Console, click **Enable SSO**.
+1. In the **Security & Control** module on the **Single Sign On** page in the Admin Console, click **Enable SSO**.
 2. In the **Select a suitable Sign-On Protocol** section, select **SAML**.
 3. In the **Configure SSO for SAML** section, select an identity provider, and then define the settings for one of:
     1. **Okta Single Sign-On URL** – The SSO URL for _Okta_ this is to enable Service Provider initiated SAML flow.
@@ -152,9 +145,9 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
     3. **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
     4. **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
     5. **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
-    6. **SAML Attribute Mapping** – Enable this option to map SAML Attributes with Kore.ai Group Names or Admin Roles Names. 
+    6. **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. 
     Once enabled, you can:
-        * define how the SAML attributes should be mapped with Kore.ai attributes:
+        * define how the SAML attributes should be mapped with AI for Service attributes:
             1. Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
             2. Inclusion Only – Every time the user signs in, the platform will only assign the new group or roles available in the SAML response. All existing assignments will be retained. New assignments will be added as available in the SAML responses
 
@@ -162,16 +155,16 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
             1. SAML Attribute Name – Name of the SAML attribute as available in the SAML response
             2. SAML Attribute Value – Value associated with the SAML attribute
             3. Attribute Type – Refers to the type of mapping to be associated i.e. Group Name or Role Name
-                * Group Name – Refers to any of the user groups defined in the Kore.ai account
+                * Group Name – Refers to any of the user groups defined in the AI for Service account
                 * Role Name – Refers to the following
-                * Admin Roles defined in the Kore.ai account
-                * Bot Builder Access
+                * Admin Roles defined in the AI for Service account
+                * App Builder Access
                 * New Bot Creation
                 * Manage Data Tables and Views
 
-            4. Kore.ai Attribute – Refers to either Group Name or Role Name. The list should include the following:
+            4. AI for Service Attribute – Refers to either Group Name or Role Name. The list should include the following:
                 * List of all Admin Roles
-                * Bot Builder Access
+                * App Builder Access
                 * New Bot Creation
                 * Manage Data Tables and Views
                 
@@ -180,13 +173,13 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
         
 
 
-#### Okta for Kore.ai SSO
+#### Okta for AI for Service SSO
 
-To configure Single Sign-On in _Okta_ for Kore.ai, you must first add the Kore.ai app to your _Okta_ account, and then copy URLs and the security certificate from _Okta_ into your Kore.ai account. This topic describes how to add the Kore.ai app to your _Okta_ account, and then access the URLs and certificate needed for the Kore.ai configuration for SSO using _Okta_.
+To configure Single Sign-On in _Okta_ for AI for Service, you must first add the AI for Service app to your _Okta_ account, and then copy URLs and the security certificate from _Okta_ into your AI for Service account. This topic describes how to add the AI for Service app to your _Okta_ account, and then access the URLs and certificate needed for the AI for Service configuration for SSO using _Okta_.
 
-To complete this procedure, you must have already selected _Okta_ as a SAML provider on the **Single Sign On** page in the Bots Admin Console.
+To complete this procedure, you must have already selected _Okta_ as a SAML provider on the **Single Sign On** page in the Admin Console.
 
-#### **To add the Kore.ai app to Okta**
+#### **To add the AI for Service app to Okta**
 
 1. Log on to _Okta_.
 2. On the **Home** page, click **Admin**. The **Dashboard** page is displayed.
@@ -195,10 +188,11 @@ To complete this procedure, you must have already selected _Okta_ as a SAML prov
 5. Click **Create application**
 6. In the **General settings**, provide an _App name_ and click **Next**.
 7. In **Configure SAML**, provide the _Single SignOn URL._ To obtain this:
-    1. Login to Kore.ai Bot Builder Admin Console
-    2. under **Security & Control** -> **Single Sign on page**
-    3. after enabling **SAML** and selecting **Okta**
-    4. **ACS URL for SP Initiated SAML Flow field** would contain the required URL.
+    1. Login to Admin Console
+    2. Navigate to **Security & Control** -> **Single Sign on page**
+    3. Enable **SAML** and select **Okta** as the identity provider.
+    4. Locate the **ACS URL for SP Initiated SAML Flow field**.
+        This field contains the required Single Sign-On URL.
     5. For on-prem accounts, the ACS URL for SP Initiated SAML Flow is displayed as [_https://idproxy-dev.kore.com/authorize/callback_](https://idproxy-dev.kore.com/authorize/callback){:target="_blank"}. This needs to be updated as “single sign on URL” in Okta platform and [_https://idproxy-dev.kore.com_](https://idproxy-dev.kore.com){:target="_blank"} needs to be updated as the “Audience URL”
     6. You can provide the **Attribute statements** like emailId, firstName as per your requirement.
 
@@ -208,36 +202,34 @@ Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https:/
     
     !!! Note
             
-        This URL is a temporary URL. Once you add the Kore.ai app in Okta, this URL changes as per your organizations domain requirements. You must copy the final ACS URL again and paste in the field. For more information, read [How to configure Okta SSO in Kore.ai XO Platform ](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618){:target="_blank"}community post.
+        This URL is a temporary URL. Once you add the AI for Service app in Okta, this URL changes as per your organizations domain requirements. You must copy the final ACS URL again and paste in the field. For more information, read [How to configure Okta SSO in AI for Service Platform ](https://community.kore.ai/t/sso-how-to-configure-okta-sso-in-kore-ai-xo-platform/2618){:target="_blank"}community post.
 
 9. Click **Finish**.
 10. On the **Sign On** tab, in the **Settings** section, click **View Setup Instructions**. The **How to Configure SAML 2.0 for &lt;app-name> Application** page is displayed.
 11. Copy the URLs in the:
-    1. **Identity Provider Single Sign-On URL** field to the **Okta Single Sign-On URL** field in Kore.ai.
-    2. **Identity Provider Issuer** field to the Kore.ai **Identity provider issuer** field
+    1. **Identity Provider Single Sign-On URL** field to the **Okta Single Sign-On URL** field in AI for Service.
+    2. **Identity Provider Issuer** field to the AI for Service **Identity provider issuer** field
 
-12. In the Okta **X.509 Certificate** field, copy the certificate data, and then paste the data into the Kore.ai **Certificate** text box.
+12. In the Okta **X.509 Certificate** field, copy the certificate data, and then paste the data into the AI for Service **Certificate** text box.
     
     !!! Note
             
-        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into AI for Service.
 
-13. In Kore.ai, click **Save**. This will complete the integration of Okta login.
-
-The _Identity Provider information successfully updated_ message is displayed at the top of the page. To test the configuration, log off the Kore.ai Bots Admin Console, and log on again. The Okta portal should be displayed.
-
+13. In AI for Service Admin Console, click **Create**. This will complete the integration of Okta login.
+To test the configuration, log off the Admin Console, and log on again. The Okta portal should be displayed.
 
 ### OneLogin Configuration
 
-**OneLogin** – For more information, refer below, or in the _OneLogin_ documentation, see [Configuring SSO for Kore.ai](https://www.onelogin.com/connector/kore){:target="_blank"}.
+**OneLogin** – For more information, refer below, or in the _OneLogin_ documentation, see [Configuring SSO for AI for Service](https://www.onelogin.com/connector/kore){:target="_blank"}.
 
 * **SAML 2.0 Endpoint** – The HTTP SSO endpoint for _OneLogin _to enable Service Provider initiated SAML flow, for example, [https://app.onelogin.com/trust/saml2/http-post/sso/358111](https://app.onelogin.com/trust/saml2/http-post/sso/358111){:target="_blank"}.
 * **Issuer URL** – The URL for the _OneLogin_ issuer, for example, [https://app.onelogin.com/saml/metadata/358111](https://app.onelogin.com/saml/metadata/358111){:target="_blank"}.
 * **X.509 Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
-* **SAML Attribute Mapping** – Enable this option to map SAML Attributes with Kore.ai Group Names or Admin Roles Names. Once enabled, you can:
-    * define how the SAML attributes should be mapped with Kore.ai attributes:
+* **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:
+    * define how the SAML attributes should be mapped with AI for Service attributes:
         * Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
         * Inclusion Only – Every time the user signs in, the platform will only assign the new group or roles available in the SAML response. All existing assignments will be retained. New assignments will be added as available in the SAML responses
     
@@ -245,48 +237,48 @@ The _Identity Provider information successfully updated_ message is displayed at
         * SAML Attribute Name – Name of the SAML attribute as available in the SAML response
         * SAML Attribute Value – Value associated with the SAML attribute
         * Attribute Type – Refers to the type of mapping to be associated i.e. Group Name or Role Name
-            * Group Name – Refers to any of the user groups defined in the Kore.ai account
+            * Group Name – Refers to any of the user groups defined in the AI for Service account
             * Role Name – Refers to the following
-            * Admin Roles defined in the Kore.ai account
-            * Bot Builder Access
+            * Admin Roles defined in the AI for Service account
+            * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
     
-        * Kore.ai Attribute – Refers to either Group Name or Role Name. The list should include the following:
+        * AI for Service Attribute – Refers to either Group Name or Role Name. The list should include the following:
             * List of all Admin Roles
-            * Bot Builder Access
+            * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
 
 * **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
-#### OneLogin for Kore.ai SSO
+#### OneLogin for AI for Service SSO
 
-To configure Single Sign-On in Kore.ai using _OneLogin_, you must first add the Kore.ai app to your _OneLogin_ account, and then copy URLs and the security certificate from _OneLogin_ into your Kore.ai account. This topic describes how to add the Kore.ai app to your _OneLogin_ account, and then access the URLs and certificate needed for the Kore.ai configuration for SSO using _OneLogin_.
+To configure Single Sign-On in AI for Service using _OneLogin_, you must first add the AI for Service app to your _OneLogin_ account, and then copy URLs and the security certificate from _OneLogin_ into your AI for Service account. This topic describes how to add the AI for Service app to your _OneLogin_ account, and then access the URLs and certificate needed for the AI for Service configuration for SSO using _OneLogin_.
 
-To complete this procedure, you must have already selected _OneLogin_ as a SAML provider on the **Single Sign On** page in the Bots Admin Console.
+To complete this procedure, you must have already selected _OneLogin_ as a SAML provider on the **Single Sign On** page in the Admin Console.
 
-#### **To add the Kore.ai app to OneLogin**
+#### **To add the AI for Service app to OneLogin**
 
 * Log on to _OneLogin_.
 * On the **APPS** menu, click **Add Apps**. The **Find Applications** page is displayed.
-* In the **Search** field, enter Kore.ai, and then press **Enter**. The Kore.ai app for _OneLogin_ is displayed.
-* Click the Kore.ai app. The **Add Kore.ai** page is displayed.
-* Optionally, change the display name or the icons displayed to your users in the _OneLogin_ portal, and then click **SAVE**. The Kore.ai app is added to your Company apps for _OneLogin_ and the Kore.ai app page is displayed.
+* In the **Search** field, enter AI for Service, and then press **Enter**. The AI for Service app for _OneLogin_ is displayed.
+* Click the AI for Service app. The **Add AI for Service** page is displayed.
+* Optionally, change the display name or the icons displayed to your users in the _OneLogin_ portal, and then click **SAVE**. The AI for Service app is added to your Company apps for _OneLogin_ and the AI for Service app page is displayed.
 * On the **SSO** tab, in the **Enable SAML2.0** section, copy the URLs in the:
-    * **OneLogin SAML 2.0 Endpoint (HTTP)** field to the Kore.ai **SAML 2.0 Endpoint** field
-    * **OneLogin Issuer URL** field to the Kore.ai **Issuer URL** field
+    * **OneLogin SAML 2.0 Endpoint (HTTP)** field to the AI for Service **SAML 2.0 Endpoint** field
+    * **OneLogin Issuer URL** field to the AI for Service **Issuer URL** field
 
 * In the **OneLogin X.509 Certificate** field, click View Details. The **Standard Strength Certificate (2048-bit)** page is displayed.
-* In the **X.509 Certificate** section, copy the certificate data, and then paste the data into the Kore.ai **X.509 Certificate** text box.
+* In the **X.509 Certificate** section, copy the certificate data, and then paste the data into the AI for Service **X.509 Certificate** text box.
     
     !!!Note
     
-        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into AI for Service.
 
-* In Kore.ai, click **Save**.
+* In AI for Service Admin Console, click **Create**.
 
-The _Identity Provider information successfully updated_ message is displayed at the top of the page. To test the configuration, log off the Kore.ai Bots Admin Console, and log on again. The **OneLogin** portal should be displayed.
+ To test the configuration, log off the Admin Console, and log on again. The **OneLogin** portal should be displayed.
 
 <img src="../images/using-single-sign-on-img4.png" alt="SSO OneLogin" title="SSO OneLogin" style="border: 1px solid gray;zoom:70%;"/>
 
@@ -298,8 +290,8 @@ The _Identity Provider information successfully updated_ message is displayed at
 * **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
-* **SAML Attribute Mapping** – Enable this option to map SAML Attributes with Kore.ai Group Names or Admin Roles Names. Once enabled, you can:
-    * define how the SAML attributes should be mapped with Kore.ai attributes:
+* **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:
+    * define how the SAML attributes should be mapped with AI for Service attributes:
         * Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
         * Inclusion Only – Every time the user signs in, the platform will only assign the new group or roles available in the SAML response. All existing assignments will be retained. New assignments will be added as available in the SAML responses
 
@@ -307,60 +299,60 @@ The _Identity Provider information successfully updated_ message is displayed at
         * SAML Attribute Name – Name of the SAML attribute as available in the SAML response
         * SAML Attribute Value – Value associated with the SAML attribute
         * Attribute Type – Refers to the type of mapping to be associated i.e. Group Name or Role Name
-            * Group Name – Refers to any of the user groups defined in the Kore.ai account
+            * Group Name – Refers to any of the user groups defined in the AI for Service account
             * Role Name – Refers to the following
-            * Admin Roles defined in the Kore.ai account
-            * Bot Builder Access
+            * Admin Roles defined in the AI for Service account
+            * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
 
-        * Kore.ai Attribute – Refers to either Group Name or Role Name. The list should include the following:
+        * AI for Service Attribute – Refers to either Group Name or Role Name. The list should include the following:
             * List of all Admin Roles
-            * Bot Builder Access
+            * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
 
 * **Exclude RequestedAuthnContext in request -** Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
-#### Kore.ai SSO for Bitium
+#### AI for Service SSO for Bitium
 
-To configure Single Sign-On in _Bitium_ for Kore.ai, you must first add the Kore.ai app to your _Bitium_ account, and then copy URLs and the security certificate from _Bitium_ into your Kore.ai account. This topic describes how to add the Kore.ai app to your _Bitium_ account, and then access the URLs and certificate needed for the Kore.ai configuration for SSO using _Bitium_.
+To configure Single Sign-On in _Bitium_ for AI for Service, you must first add the AI for Service app to your _Bitium_ account, and then copy URLs and the security certificate from _Bitium_ into your AI for Service account. This topic describes how to add the AI for Service app to your _Bitium_ account, and then access the URLs and certificate needed for the AI for Service configuration for SSO using _Bitium_.
 
-To complete this procedure, you must have already selected _Bitium_ as a SAML provider on the **Single Sign On** page in the Bots Admin Console.
+To complete this procedure, you must have already selected _Bitium_ as a SAML provider on the **Single Sign On** page in the Admin Console.
 
 
-**To add the Kore.ai app to Bitium**
+**To add the AI for Service app to Bitium**
 
 * Log on to _Bitium_.
 * On the **Manage &lt; _Company Name_ >** menu, click **Manage Apps**, then click **Add an App**. The **Add Apps** dialog is displayed.
-* In the **Search** field, enter Kore.ai, and then press **Enter**. The **Install Kore.ai app for _Bitium_**  dialog is displayed.
-* On the **Manage Organization** menu, click **Manage Apps**, and then click **Kore.ai**.
+* In the **Search** field, enter AI for Service, and then press **Enter**. The **Install AI for Service app for _Bitium_**  dialog is displayed.
+* On the **Manage Organization** menu, click **Manage Apps**, and then click **AI for Service**.
 * On the **Single Sign-On** tab, in the **Select a Single Sign-On Provider** section, select **SAML Authentication**.
-* Copy the following URLs from _Bitium_ into the Bots Admin Console _Bitium_ configuration section:
-    * **Bitium Login URL** field to the Kore.ai **Single Sign-On** field
-    * **Bitium Logout URL** field to the Kore.ai **Issuer URL** field
+* Copy the following URLs from _Bitium_ into the Admin Console _Bitium_ configuration section:
+    * **Bitium Login URL** field to the AI for Service **Single Sign-On** field
+    * **Bitium Logout URL** field to the AI for Service **Issuer URL** field
 
-* In the Bitium **X.509 Certificate** field, copy the certificate data, and then paste the data into the Bots Admin Console **Certificate** text box.
+* In the Bitium **X.509 Certificate** field, copy the certificate data, and then paste the data into the Admin Console **Certificate** text box.
     
     !!! Note
     
-        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into AI for Service.
 
-* In Kore.ai, click **Save**.
+* In AI for Service Admin Console, click **Save**.
 
-The _Identity Provider information successfully updated_ message is displayed at the top of the page. To test the configuration, log off the Kore.ai Bots Admin Console, and log on again. The Bitium portal should be displayed.
+ To test the configuration, log off the AI for Service Admin Console, and log on again. The Bitium portal should be displayed.
 
 <img src="../images/using-single-sign-on-img5.png" alt="Bitium portal" title="Bitium portal" style="border: 1px solid gray;zoom:70%;"/>
 
-**Other** – Generic SAML identity provider configuration. Select this option if you are not using a Kore.ai built-in configuration.
+**Other** – Generic SAML identity provider configuration. Select this option if you are not using a AI for Service built-in configuration.
 
-* **Single Sign-On URL** – The URL that Kore.ai sends sign on and sign off requests using your WS-Federation identity provider. This is to enable Service Provider initiated SAML flow.
+* **Single Sign-On URL** – The URL that AI for Service sends sign on and sign off requests using your WS-Federation identity provider. This is to enable Service Provider initiated SAML flow.
 * **Issuer URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
 * **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
-* **SAML Attribute Mapping** – Enable this option to map SAML Attributes with Kore.ai Group Names or Admin Roles Names. Once enabled, you can:
-    * define how the SAML attributes should be mapped with Kore.ai attributes:
+* **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:
+    * define how the SAML attributes should be mapped with AI for Service attributes:
         * Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
         * Inclusion Only – Every time the user signs in, the platform will only assign the new group or roles available in the SAML response. All existing assignments will be retained. New assignments will be added as available in the SAML responses
 
@@ -368,36 +360,34 @@ The _Identity Provider information successfully updated_ message is displayed at
         * SAML Attribute Name – Name of the SAML attribute as available in the SAML response
         * SAML Attribute Value – Value associated with the SAML attribute
         * Attribute Type – Refers to the type of mapping to be associated i.e. Group Name or Role Name
-            * Group Name – Refers to any of the user groups defined in the Kore.ai account
+            * Group Name – Refers to any of the user groups defined in the AI for Service account
             * Role Name – Refers to the following
-            * Admin Roles defined in the Kore.ai account
-            * Bot Builder Access
+            * Admin Roles defined in the AI for Service account
+            * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
 
-        * Kore.ai Attribute – Refers to either Group Name or Role Name. The list should include the following:
+        * AI for Service Attribute – Refers to either Group Name or Role Name. The list should include the following:
             * List of all Admin Roles
-            * Bot Builder Access
+            * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
 
-    * In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between Kore.ai and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:
+    * In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between AI for Service and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:
         * **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback.](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}
         * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](#attributes-for-adfs).
         * **Identity URL** or **Sign On URL** as [https://idp.kore.com](https://idp.kore.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}
 
-* Click **Save**.
-
-The _Identity Provider information successfully updated_ message is displayed at the top of the page.
+* Click **Create**.
 
 
 #### Attributes for ADFS
 
-When you configure Single Sign-On using LDAP for ADFS, in addition to authentication attributes, your third-party SSO provider can send additional attributes to Kore.ai through the **Assertion Consumer Service (ACS) URL** or **Callback URL**.
+When you configure Single Sign-On using LDAP for ADFS, in addition to authentication attributes, your third-party SSO provider can send additional attributes to AI for Service through the **Assertion Consumer Service (ACS) URL** or **Callback URL**.
 
-If you are using a built-in Kore.ai app for SSO, such as _Windows Azure_ for WS-Federation protocol, or _OneLogin_ for SAML protocol, required attributes are already configured for Kore.ai when you add the Kore.ai app to your SSO provider admin console.
+If you are using a built-in AI for Service app for SSO, such as _Windows Azure_ for WS-Federation protocol, or _OneLogin_ for SAML protocol, required attributes are already configured for AI for Service when you add the AI for Service app to your SSO provider admin console.
 
-The following data is an example of attribute data passed to Kore.ai in the callback URL.
+The following data is an example of attribute data passed to AI for Service in the callback URL.
 
 ```
 <Attribute Name="FirstName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="First Name">
@@ -440,25 +430,25 @@ The attribute values are defined as **Claim Rules** in the **Relying Party Trust
 
 ## Logging On Using Your Admin Password Instead of SSO
 
-As an Bots Admin, you can enable Single Sign-On (SSO) using a third-party security system, for example, _Google_. If for some reason, your SSO security system fails, or you forget your SSO log on credentials for your third-party security system, you can still log on to the Kore.ai Bots Admin Console and bypass SSO.
+As an Bots Admin, you can enable Single Sign-On (SSO) using a third-party security system, for example, _Google_. If for some reason, your SSO security system fails, or you forget your SSO log on credentials for your third-party security system, you can still log on to the AI for Service Admin Console and bypass SSO.
 
-A Bots Admin with a custom admin role can only bypass SSO and use their admin password if custom privileges are enabled for at least one module. To log on to the Kore.ai Directory Agent, the custom admin must have privileges enabled for **Enrollment – Directory Sync**.
+A Bots Admin with a custom admin role can only bypass SSO and use their admin password if custom privileges are enabled for at least one module. To log on to the AI for Service Directory Agent, the custom admin must have privileges enabled for **Enrollment – Directory Sync**.
 
-Before you can enable SSO, the Bots Admin must have logged on the Bots Admin Console using the log on credentials provided when signing up. After the Bots Admin configures and enables SSO, you can still access the Bots Admin Console directly at the following URL:
+Before you can enable SSO, the Admin must have logged on the Admin Console using the log on credentials provided when signing up. After the Admin configures and enables SSO, you can still access the Admin Console directly at the following URL:
 
 [https://bots.kore.ai/admin](https://bots.kore.ai/admin){:target="_blank"}
 
-The following log on page is displayed and using your Bots Admin password credentials, you can log on to the Bots Admin Console and bypass SSO, if enabled.
+The following log on page is displayed and using your Admin password credentials, you can log on to the Admin Console and bypass SSO, if enabled.
 
-<img src="../images/using-single-sign-on-img6.png" alt="Log on to Bots Admin Console" title="Log on to Bots Admin Console" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/using-single-sign-on-img6.png" alt="Log on to Admin Console" title="Log on to Admin Console" style="border: 1px solid gray;zoom:70%;"/>
 
-If you cannot remember your Bots Admin password, enter your email ID, and then click the **Forgot your password?** link shown in the previous image. An email is sent to your Kore.ai email account with instructions on how to reset your Bots Admin password.
+If you cannot remember your Admin password, enter your email ID, and then click the **Forgot your password?** link shown in the previous image. An email is sent to your AI for Service email account with instructions on how to reset your Admin password.
 
 
 ## Logging Off
 
-When you are finished with your session with the Bots Admin Console, you should log off the console and close your session to keep your bots account secure. To log off, click on your user name, and then click **Logout** as shown in the following illustration.
+When you are finished with your session with the Admin Console, you should log off the console and close your session to keep your account secure. To log off, click on your user name, and then click **Logout** as shown in the following illustration.
 
-<img src="../images/using-single-sign-on-img7.png" alt="Log off from Bots Admin Console" title="Log off from Bots Admin Console" style="border: 1px solid gray;zoom:70%;"/>
+<img src="../images/using-single-sign-on-img7.png" alt="Log off from Admin Console" title="Log off from Admin Console" style="border: 1px solid gray;zoom:70%;"/>
 
-If your Bots Admin Console session is idle for more than 15 minutes, your session is automatically terminated, and the next action in the session window will open the Kore.ai web client instead. To start a new session, click the **Bots Admin Console** <img src="../images/using-single-sign-on-img8.png"> icon and log on.
+If your Admin Console session is idle for more than 15 minutes, your session is automatically terminated, and the next action in the session window will open the AI for Service web client instead. To start a new session, click the **Admin Console** <img src="../images/using-single-sign-on-img8.png"> icon and log on.
