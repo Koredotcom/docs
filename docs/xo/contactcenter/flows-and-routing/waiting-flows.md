@@ -66,9 +66,9 @@ Define the configuration rules for the **Skill Group** and **Skill** waiting que
 5. To remove a rule, select the **Delete** (**ⓧ**) icon next to the row. To delete a rule section, select the **Delete** icon next to it.  
     <img src="../images/routing-rules-demo.gif" alt="Routing Rules Demo" title="Routing Rules Demo" style="border: 1px solid gray; zoom:80%;">
 
-The system first filters all Waiting Experiences that match the conversation skills. It then sorts them by the number of routing rules in descending order to select the most specific Waiting Experience. If multiple Waiting Experiences have the same number of rules, the system selects the one created earliest.
+    The system first filters all Waiting Experiences that match the conversation skills. It then sorts them by the number of routing rules in descending order to select the most specific Waiting Experience. If multiple Waiting Experiences have the same number of rules, the system selects the one created earliest.
 
-Example: For a conversation with `Skill A` and `Skill B`, if one Waiting Experience requires only `Skill A` and another requires both `Skill A` and `Skill B`, the system selects the latter because it has more routing rules and provides a more specific match.
+    Example: For a conversation with `Skill A` and `Skill B`, if one Waiting Experience requires only `Skill A` and another requires both `Skill A` and `Skill B`, the system selects the latter because it has more routing rules and provides a more specific match.
 
 ### Call Experience
 
