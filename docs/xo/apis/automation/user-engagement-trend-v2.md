@@ -7,7 +7,7 @@ To retrieve comprehensive user analytics, including unique, new, and returning u
 | **Field**          | **Value**                                                                 |
 |----------------|-----------------------------------------------------------------------|
 | Method         | POST                                                                  |
-| Endpoint       | `https://{{host}}/api/public/bot/{{streamId}}/v2/userEngagementTrend?aggregation_type={{aggregation_type}}&start_date={{start_date}}&end_date={{end_date}}&conversationType={{conversationType}}&conversationStatus={{conversationStatus}}&timeZoneOffset=Asia%2FKolkata` |
+| Endpoint       | `https://{{host}}/api/public/bot/{{streamId}}/v2/userEngagementTrend?aggregation_type={{aggregation_type}}&start_date={{start_date}}&end_date={{end_date}}&conversationType={{conversationType}}&conversationStatus={{conversationStatus}}&timeZoneOffset=Asia/Kolkata` |
 | Content Type   | application/json                                                      |
 | Authorization  | auth: {{JWT}}. <br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token)                                                         |
 | API Scope      | App Builder: User Engagement Trend <br> Admin Console: Not Applicable   |
