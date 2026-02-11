@@ -137,7 +137,57 @@ The main interface displays all enabled conversation sources and their queues.
 
         * Agent assignments made through public APIs may take time to reflect in the Conversation Sources UI. Refresh or re-sync queues to view updated mappings.
     
-#### Chat Script Timestamp Format
+### Queue Management
+
+Configure queues for Agent AI and Quality AI Express sources to route conversations correctly.
+
+#### Add Queue
+
+To map agents to a new queue:
+
+1. Navigate to **Quality AI** > **CONFIGURE** > **Conversation Sources**.   
+
+1. Turn on **Agent AI** or **Quality AI Express**, or both sources.
+
+1. Select **Add Queue** and enter the following details:   
+<img src="../conversation-sources/add-queue.png" alt="Add Queue" title="Add Queue" style="border: 1px solid gray; zoom:80%;">
+
+    * **Name**: Enter a descriptive queue name.
+
+    * **Queue ID**: Provide a unique identifier for the queue.
+
+    * **System Generated Queue ID**: A system-generated Queue ID for internal tracking.
+
+    * **Agents**: Assign agents to the queue using the searchable list. 
+
+1. Select **Save** to start or update conversation ingestion for the queue.    
+<img src="../conversation-sources/add-queue-agent.png" alt="Agent Queue Details" title="Agent Queue Details" style="border: 1px solid gray; zoom:80%;">    
+
+#### Conversation Agent–Queue Mapping
+
+This describes the agent-to-queue mapping for both Quality AI Express queues and Agent AI queues. Using the UI, agents can map directly to Express queues, and the system successfully saves the configuration.
+
+To enable interaction evaluation and Kore score validation, you can attach each mapped queue to the relevant evaluation form. This setup validates scheduled interactions ingested via S3, Public APIs, and Agent AI queues.
+
+The system displays interactions only when all the following conditions apply:
+
+* The queue maps to an evaluation form.
+
+* The agent maps to the queue using the UI.
+
+* The supervisor or agent viewing the data belongs to the same queue.
+
+If any of these conditions fail, the system doesn't display the interactions.   
+    
+!!! note
+
+    * Agent-to-queue mapping through the UI applies only to Agent AI and Quality AI Express sources. 
+        
+    * Contact Center AI (CCAI) queue configuration, routing, and agent assignment remain unchanged.
+
+    * You can assign agents created through platform-level user administration and public APIs. 
+
+### Chat Script Timestamp Format
 
 Chat script timestamp format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. Each chat script includes message-level timestamps. Correct configuration ensures accurate message sequencing, duration calculations, and time-based analytics.
 
@@ -157,7 +207,7 @@ Enables you to configure the timestamp format at the Quality AI Express app leve
 
 Quality AI supports the following Chat script timestamp formats:
 
-**Unix Timestamp (Default)**
+#### Unix Timestamp (Default)
 
 Represents seconds since the Unix epoch. This ingestion process validates start and end times, which can limit flexibility for demo environments and third-party desktop integrations. 
 
@@ -169,7 +219,7 @@ Represents seconds since the Unix epoch. This ingestion process validates start 
 
 * `1735574400.523` (includes milliseconds)
 
-**Offset Timestamp**
+#### Offset Timestamp
 
 Represents seconds from the start or end of the conversation. This ingestion process supports message-level offset timestamps without start or end date validation (used only for reporting and filtering). This change applies only to chat ingestion and doesn't affect voice conversation ingestion.
 
@@ -181,40 +231,13 @@ Represents seconds from the start or end of the conversation. This ingestion pro
 * `45` (45 seconds into the conversation)
 * `120.5` (2 minutes and 0.5 seconds into the conversation)
 
-### Queue Management
+#### Conversation Sources Warnings
 
-Configure queues for Agent AI and Quality AI Express sources to route conversations correctly.
+* **CCAI**: Disabling stops processing CCAI interactions.
 
-#### Add Queue
+* **Agent AI**: Disabling stops processing Agent AI interactions.
 
-To map agents to a new queue:
-
-1. Navigate to **Quality AI** > **CONFIGURE** > **Conversation Sources**.   
-
-1. Turn on **Agent AI** or **Quality AI Express** source.
-
-1. Select **Add Queue** and enter the following details:   
-<img src="../conversation-sources/add-queue.png" alt="Add Queue" title="Add Queue" style="border: 1px solid gray; zoom:80%;">
-
-    * **Name**: Enter a descriptive queue name.
-
-    * **Queue ID**: Provide a unique identifier for the queue.
-
-    * **System Generated Queue ID**: A system-generated Queue ID for internal tracking.
-
-    * **Agents**: Assign agents to the queue using the searchable list. 
-
-1. Select **Save** to start or update conversation ingestion for the queue.        
-<img src="../conversation-sources/add-queue-agent.png" alt="Agent Queue Details" title="Agent Queue Details" style="border: 1px solid gray; zoom:80%;">
-
-    !!! note
-
-        * Agent-to-queue mapping through the UI applies only to Agent AI and Quality AI Express sources. 
-        
-        * Contact Center AI (CCAI) queue configuration, routing, and agent assignment remain unchanged.
-
-        * You can assign agents created through platform-level user administration and public APIs.
-        
+* **Quality AI Express**: Disabling blocks file-based ingestion.
 
 ## Access Control
 

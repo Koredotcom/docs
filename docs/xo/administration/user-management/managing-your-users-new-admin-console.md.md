@@ -1,4 +1,4 @@
-# Managing Your Users
+# Managing Your Users - New Admin Console
 
 **User Management** involves managing users and user groups.
 
@@ -7,19 +7,19 @@
 
 ## Users
 
-You can manage users in your enterprise network from the Bot Administration page in the **User Management > Users** section.
+You can manage users in your enterprise network from the Admin Console in the **User Management > Users** section.
 
-<img src="../images/bac-users.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/manage-users-new-admin-console.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
 
 
 The following list describes the columns displayed for each user.
 
 | COLUMN | DESCRIPTION |
 |--------|-------------|
-| Name | Displays the Kore.ai username, admin indicator, and selection box. |
-| Email Id | Registered email id of the user. |
-| Bot Builder Access | The type of access a user has to Bot Builder. Can be:<br><br>• **None** means no access to Bot Builder<br>• Only **Bot Builder Access** or<br>• Bot Builder access along with permission for a **New Bot Creation** |
-| Status | Displays the Kore.ai user status. One of:<br><br>• **Active** – The user is active and can interact with other Kore.ai users.<br>• **Not Active** – Users invited by the Admin but have yet to join or accept the invitation.<br>• **Suspended** – The user is suspended by an administrator. The user cannot log on to Kore.ai; however, messages can still be sent to the suspended user. The status of a **Suspended** user can be **Activated**.<br>• **Locked** – The user exceeded the maximum number of login attempts. The status of a locked user can be changed to **Unlock**, **Suspend**, or **Deactivate**. |
+| Name | Displays the username and selection box. |
+| Email Id | Registered email ID of the user. |
+| Account Role | Displays the role of the user. |
+| Status | Displays the user status. One of:<br><br>• **Active**: The user is active and can interact with other Kore.ai users.<br>• **Inactive**: Users invited by the Admin but have yet to join or accept the invitation.<br>• **Locked**: The user exceeded the maximum number of login attempts. The status of a locked user can be activated.|
 
 Clicking on a specific User row from the Users page opens the **User Details** page, from where you can modify the following:
 
@@ -31,7 +31,7 @@ Clicking on a specific User row from the Users page opens the **User Details** p
 
 You can modify the user profile information of a specific user in your account, for example, to update their address or title.
 
-<img src="../images/bac-users-profile.png" alt="User Profile" title="User Profile" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/edit-user-new-admin-console.png" alt="User Profile" title="User Profile" style="border: 1px solid gray;zoom:50%;"/>
 
 The following fields are accessible from this page:
 
@@ -56,7 +56,7 @@ You can use the Kill Session button to end a mobile or desktop session for the u
     No confirmation message is displayed, and the session is immediately and abruptly ended for the user.
 
 
-<img src="../images/bac-users-sessions.png" alt="Sessions - User Activity" title="Sessions - User Activity" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/user-session-new-admin-console.png" alt="Sessions - User Activity" title="Sessions - User Activity" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Cross-Workspace Session Management
 
@@ -91,12 +91,10 @@ As an admin, you may edit or delete the role of the User for a given App. Note t
 
 You can also select an App and assign an App role to the user. For more information, see [Bot roles](role-management.md#bot-roles){:target="_blank"}.
 
-<img src="../images/bac-manage-bots.png" alt="Manage Bots" title="Manage Bots" style="border: 1px solid gray;"/>
-
 
 ### Other Options
 
-<img src="../images/bac-users-more.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;"/>
+<img src="../images/more-user-options-new-admin-console.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;"/>
 
 
 #### Reset a User Password
@@ -130,6 +128,7 @@ Use the **User Settings** page to manage how users join your account, receive no
 ### Self Sign-Up for Enterprise Users
 
 Define whether new users from your enterprise domain can discover and request to join the account.
+
 You can choose to:
 
 * Block requests from new users.
@@ -155,7 +154,7 @@ Specify the default permissions assigned to new users:
 
 When you click **Configure** on the **User Settings** page, the **User Profile Field Controls** panel opens. Use this panel to manage which user profile fields are visible to domain users and which fields end users can edit.
 
-<img src="../images/bac-user-settings.png" alt="User Settings" title="User Settings" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/user-settings-new-admin-console.png" alt="User Settings" title="User Settings" style="border: 1px solid gray;zoom:50%;"/>
 
 | **CONTROLS** | **DESCRIPTION** |
 |----------|-------------|

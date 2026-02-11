@@ -70,15 +70,17 @@ This configures a metric based on adherence to the execution of dialog tasks.
 
 Configure the following settings:
 
-1. Select an **Evaluation Metrics Measurement Type** from the dropdown.
-<img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
+1. Navigate to **Quality AI > Configure > Evaluation Forms > Evaluation Metrics**.
+2. Select **+ New Evaluation Metric**.
+1. From the **Evaluation Metrics Measurement Type** dropdown, select **By Dialog Task**.    
+    <img src="../images/by-dialog-task-dropdown.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;"> 
 
-2. Enter a descriptive **Name** for future reference of the metrics.
+1. Enter a descriptive **Name** for future reference of the metrics.
 <img src="../images/add-new-metrics-by-dialog-task.png" alt="Edit Warning" title="Edit Warning" style="border: 1px solid gray; zoom:60%;">    
  
-3. Select a **Dialog Agent** from the dropdown.  
+1. Select a **Dialog Agent** from the dropdown.  
 
-4. Select a **Count Type** from the dropdown. This has the following two options.
+1. Select a **Count Type** from the dropdown. This has the following two options.
 
     * **Entire Conversation**: This lets you check the adherence throughout the entire conversation.
 
@@ -90,7 +92,7 @@ Configure the following settings:
 
         * **Chat**: Enter the number of messages from the start or end of the interaction to evaluate this metric.
 
-5. Select **Create** to save the new metric configuration.
+1. Select **Create** to save the new metric configuration.
 
 ## Managing By Dialog Task Metric
 

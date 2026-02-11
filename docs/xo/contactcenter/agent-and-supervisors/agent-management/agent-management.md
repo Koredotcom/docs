@@ -140,7 +140,7 @@ To edit an existing Agent status entry, follow these steps:
 
     !!! note "Rename Default Agent Status"
      
-        Administrators can rename default agent status (Available, Away, Busy) to match business terminology, with multilingual support. The system preserves the underlying status behavior and applies the updated labels consistently across the existing and historical data.
+        Administrators can rename default agent status (Available, Away, Busy) to match business terminology, with multilingual support. The system preserves the underlying status behavior and applies the updated labels consistently across the existing and historical data. The system uses system status labels as conditional statements across the codebase, and these labels affect multiple areas of the application. As a result, the system prevents users from creating custom statuses with system-reserved labels. The reserved labels are Available, Away, Busy, Offline, System Busy, System Away, and Login Prep.
 
 3. The Status updated successfully message appears in the window and the modified values reflect in the [Agent Status](../../../console/manage-layout.md#agent-status) widget.  
 

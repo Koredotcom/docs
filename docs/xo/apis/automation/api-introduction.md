@@ -31,10 +31,10 @@ Steps to create a JWT Client App from the Platform:
 
     * **Enforce JWE Encryption** (Generating JWT token): To access the Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).  
 
-    * **Enforce Response Payload Encryption**: Provide the public key used by the Platform to encrypt Public API request and response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payloads. Refer [How Request and Response Payload Encryption Works](#how-request-and-response-payload-encryption-works).    
+    * **Enforce Request and Response Payload Encryption**: Provide the symmetric encryption key used by the Platform to encrypt Public API request and response payloads that include Token Introspection and User Information data. Use the same key to decrypt the payloads. Refer [How Request and Response Payload Encryption Works](#how-request-and-response-payload-encryption-works).    
      <img src="../images/create-a-jwt-app.png" alt="Create a new JWT App" title="Create a new JWT App" style="border: 1px solid gray; zoom:50%;">  
 
-5. Click **Next** and **Done**.
+5. Select **Next** and **Done**.
 
 6. Select the app name from the JWT App drop-down list to see the app’s details, such as App name and its ID, client ID and its Secret. 
 
