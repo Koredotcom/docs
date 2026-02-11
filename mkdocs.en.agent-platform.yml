@@ -291,7 +291,7 @@ nav:
       - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
       - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
       - Real-time Voice Interaction between AI for Service and Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
-
+      - Write Effective Instructions: ai-agents/agentic-apps/howto/write-effective-instructions.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
