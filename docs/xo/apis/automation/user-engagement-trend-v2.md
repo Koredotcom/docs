@@ -2,7 +2,7 @@
 
 # User Engagement Trend API - v2
 
-To retrieve comprehensive user analytics, including unique, new, and returning users, with daily or hourly averages over a specified period and configurable time intervals.
+To retrieve comprehensive user analytics, including unique, new, and returning users, along with average counts over a specified period and configurable time intervals (daily or hourly).
 
 | **Field**          | **Value**                                                                 |
 |----------------|-----------------------------------------------------------------------|
@@ -23,13 +23,15 @@ To retrieve comprehensive user analytics, including unique, new, and returning u
 ## Query Parameters
 
 | **PARAMETER** | **DESCRIPTION** | **TYPE** |
-|---------------|------------------|----------|
-| `aggregation_type` |Specifies the time-based aggregation level for the data. Allowed values are `daily` and `hourly`. If not specified, the aggregation type defaults to `hourly`. | string, optional |
-| `start_date` | Start date for the analytics period, in `YYYY-MM-DD` format. | string, required |
-| `end_date` | End date for the analytics period, in `YYYY-MM-DD` format. | string, required |
-| `conversationType` |  Filters analytics by conversation type. If not specified, the default value is All. Allowed values: `All`, `Interactive`, and `Non Interactive`. | string, optional |
-| `conversationStatus` | Filters analytics by conversation status. If not specified, the default value is All. Allowed values: `All`, `Active`, and `Closed`. | string, optional |
-| `timeZoneOffset` | Time zone used to normalize and aggregate date and time values. For example - `Asia/Kolkata`. | string, optional |
+|---------------|-----------------|----------|
+| `aggregation_type` | Specifies the time-based aggregation level for the data. Allowed values are `daily` and `hourly`. If not specified, the aggregation type defaults to `hourly`. | string, optional |
+| `start_date` | Specifies the start date for retrieving analytics data. The value must be in `YYYY-MM-DD` format. | string, required |
+| `end_date` | Specifies the end date for retrieving analytics data. The value must be in `YYYY-MM-DD` format. | string, required |
+| `conversationType` | Filters analytics data by conversation type. If not specified, the default value is `All`. Allowed values are `All`, `Interactive`, and `Non Interactive`. | string, optional |
+| `conversationStatus` | Filters analytics data by conversation status. If not specified, the default value is `All`. Allowed values are `All`, `Active`, and `Closed`. | string, optional |
+| `channels` | Filters analytics data by the specified channel. If not specified, the default value is `All`. | string, optional |
+| `timeZoneOffset` | Time zone used to normalize and aggregate date and time values (for example, `Asia/Kolkata`). | string, optional |
+
 
 ## Sample Request
 
