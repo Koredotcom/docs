@@ -29,7 +29,6 @@ Retrieves analytics data that shows how many users have interacted with a specif
 | `end_date` | Specifies the end date for retrieving analytics data. The value must be in `YYYY-MM-DD` format. | string, required |
 | `conversationType` | Filters analytics data by conversation type. If not specified, the default value is `All`. Allowed values are `All`, `Interactive`, and `Non Interactive`. | string, optional |
 | `conversationStatus` | Filters analytics data by conversation status. If not specified, the default value is `All`. Allowed values are `All`, `Active`, and `Closed`. | string, optional |
-| `channels` | Filters analytics data by the specified channel. If not specified, the default value is `All`. | string, optional |
 | `timeZoneOffset` | Time zone used to normalize and aggregate date and time values (for example, `Asia/Kolkata`). | string, optional |
 
 
