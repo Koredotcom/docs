@@ -28,4 +28,11 @@ Navigate to Contact Center AI > Configurations > Settings > System Settings > Qu
     * Don't replace or switch the HOP configuration assigned to a queue when active or waiting interactions exist.  
     * If operating hours need to change, update the timings within the existing HOP configuration instead of assigning a new HOP configuration.
 
+    Configuration
+
+    1. Turn on the toggle to enable Dynamic Queue Reprioritization.
+
+    1. Select a queue priority between 1 and 10, where 1 represents the highest priority and 10 represents the lowest, and then select Save.
+        <img src="../images/queue-priority-selection.png" alt="Queue Priority Selection" title="Queue Priority Selection" style="border: 1px solid gray; zoom:70%;">
+
 Administrators can configure additional settings from [Queues](../../routing/queues/queue-management.md#additional-configuration).
