@@ -54,7 +54,39 @@ plugins:
         'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
         'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
         'settings/workspaces/workspace-mgmt.md': 'settings/workspaces/workspace-management.md'
-        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'                
+        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'
+        'sdk/getting-started/installation.md': 'home.md'
+        'sdk/getting-started/quickstart.md': 'home.md'
+        'sdk/getting-started/concepts.md': 'home.md'
+        'sdk/guide/building-apps.md': 'home.md'
+        'sdk/guide/creating-agents.md': 'home.md'
+        'sdk/guide/working-with-tools.md': 'home.md'
+        'sdk/guide/memory-stores.md': 'home.md'
+        'sdk/guide/prompts-llm.md': 'home.md'
+        'sdk/guide/orchestration.md': 'home.md'
+        'sdk/api/index.md': 'home.md'
+        'sdk/api/designtime/index.md': 'home.md'
+        'sdk/api/designtime/app.md': 'home.md'
+        'sdk/api/designtime/agent.md': 'home.md'
+        'sdk/api/designtime/tool.md': 'home.md'
+        'sdk/api/designtime/llm_model.md': 'home.md'
+        'sdk/api/designtime/prompt.md': 'home.md'
+        'sdk/api/designtime/memory_store.md': 'home.md'
+        'sdk/api/designtime/app_configuration.md': 'home.md'
+        'sdk/api/designtime/app_namespace.md': 'home.md'
+        'sdk/api/designtime/app_variable.md': 'home.md'
+        'sdk/api/designtime/icon.md': 'home.md'
+        'sdk/api/runtime/index.md': 'home.md'
+        'sdk/api/runtime/request_context.md': 'home.md'
+        'sdk/api/runtime/environment_variables.md': 'home.md'
+        'sdk/api/runtime/memory.md': 'home.md'
+        'sdk/api/runtime/logger.md': 'home.md'
+        'sdk/api/runtime/tracer.md': 'home.md'
+        'sdk/cli/index.md': 'home.md'
+        'sdk/examples/banking-assistant.md': 'home.md'
+        'sdk/examples/multi-agent.md': 'home.md'
+        'sdk/contributing.md': 'home.md'
+        'sdk/changelog.md': 'home.md'
 extra:
   version:
     provider: mike
@@ -360,45 +392,5 @@ nav:
       - About Agentic App APIs: apis/agentic-apps/overview.md
       - About Tools APIs: apis/overview.md
       - APIs List: apis/list-of-apis.md
-  - SDK:
-      - Agent Platform SDK Overview: sdk/index.md
-      - Installation: sdk/getting-started/installation.md
-      - Quick Start: sdk/getting-started/quickstart.md
-      - Core Concepts: sdk/getting-started/concepts.md
-      - User Guide:
-        - Building Applications: sdk/guide/building-apps.md
-        - Creating Agents: sdk/guide/creating-agents.md
-        - Working with Tools: sdk/guide/working-with-tools.md
-        - Memory Stores: sdk/guide/memory-stores.md
-        - Prompts and LLM Config: sdk/guide/prompts-llm.md
-        - Custom Orchestration: sdk/guide/orchestration.md
-      - API Reference:
-        - Overview: sdk/api/index.md
-        - Design-Time Models:
-           - Overview: sdk/api/designtime/index.md
-           - App: sdk/api/designtime/app.md
-           - Agent: sdk/api/designtime/agent.md
-           - Tool: sdk/api/designtime/tool.md
-           - LLM Model: sdk/api/designtime/llm_model.md
-           - Prompt: sdk/api/designtime/prompt.md
-           - Memory Store: sdk/api/designtime/memory_store.md
-           - App Configuration: sdk/api/designtime/app_configuration.md
-           - App Namespace: sdk/api/designtime/app_namespace.md
-           - App Variable: sdk/api/designtime/app_variable.md
-           - Icon: sdk/api/designtime/icon.md
-        - Runtime:
-           - Overview: sdk/api/runtime/index.md
-           - RequestContext: sdk/api/runtime/request_context.md
-           - EnvironmentVariables: sdk/api/runtime/environment_variables.md
-           - Memory: sdk/api/runtime/memory.md
-           - Logger: sdk/api/runtime/logger.md
-           - Tracer: sdk/api/runtime/tracer.md
-      - CLI Reference:
-        - CLI Commands: sdk/cli/index.md
-      - Examples:
-        - Banking Assistant: sdk/examples/banking-assistant.md
-        - Multi-Agent Workflow: sdk/examples/multi-agent.md
-      - Contributing: sdk/contributing.md
-      - Changelog: sdk/changelog.md
   - Marketplace: ai-agents/agentic-apps/marketplace.md
   
