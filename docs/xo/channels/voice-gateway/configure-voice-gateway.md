@@ -38,22 +38,16 @@ Steps to buy a new phone number:
 
 ### Purchasing toll-free numbers
 
-Voice Gateway doesn't support the direct purchase of toll-free numbers. Regional regulations and country-specific documentation requirements restrict automated provisioning through the UI.
+Voice Gateway doesn't support direct toll-free number purchases due to regional regulations and documentation requirements. All toll-free numbers require manual verification and regulatory approval.
 
-Toll-free number provisioning requires manual verification and regulatory approval. Follow these steps to get a toll-free number:
+To purchase a toll-free number:
 
-1. [Contact Support](https://support.kore.ai) and specify the country or region you need the toll-free number for.  
-1. The support team guides you through the required documentation and completes the procurement process through Twilio for the specified region.  
-1. After a successful purchase, configure the [SIP trunk](#steps-to-configure-sip-trunk).  
-1. The number appears in the SIP DID numbers list. [Create Start Flows](../../flows/create-flows.md#create-a-start-flow) and associate them with the new toll-free number.
+1. [Contact Support](https://support.kore.ai) and specify the required country or region.  
+1. Support guides you through the required documentation requirements and completes procurement through Twilio.  
+1. Configure the [SIP trunk](#steps-to-configure-sip-trunk) after purchase.  
+1. The number appears in the SIP DID numbers list-[Create Start Flows](../../flows/create-flows.md#create-a-start-flow) and associate them with the toll-free number.
 
-Many regions enforce strict regulations for toll-free numbers, which prevents this option from being available in the UI. Local authorities may require one or more of the following:
-
-* Business registration documents
-* Proof of address
-* Letters of authorization
-
-For regulatory compliance and successful provisioning, the platform handles toll-free number requests through a manual process.
+Required documentation varies by region and may include business registration documents, proof of address, and letters of authorization. Lead times vary by country based on local regulatory approval timelines.
 
 !!! note 
      

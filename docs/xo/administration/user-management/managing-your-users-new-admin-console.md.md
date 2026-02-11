@@ -9,7 +9,7 @@
 
 You can manage users in your enterprise network from the Admin Console in the **User Management > Users** section.
 
-<img src="../images/bac-users.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/manage-users-new-admin-console.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
 
 
 The following list describes the columns displayed for each user.
@@ -31,7 +31,7 @@ Clicking on a specific User row from the Users page opens the **User Details** p
 
 You can modify the user profile information of a specific user in your account, for example, to update their address or title.
 
-<img src="../images/bac-users-profile.png" alt="User Profile" title="User Profile" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/edit-user-new-admin-console.png" alt="User Profile" title="User Profile" style="border: 1px solid gray;zoom:50%;"/>
 
 The following fields are accessible from this page:
 
@@ -56,7 +56,7 @@ You can use the Kill Session button to end a mobile or desktop session for the u
     No confirmation message is displayed, and the session is immediately and abruptly ended for the user.
 
 
-<img src="../images/bac-users-sessions.png" alt="Sessions - User Activity" title="Sessions - User Activity" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/user-session-new-admin-console.png" alt="Sessions - User Activity" title="Sessions - User Activity" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Cross-Workspace Session Management
 
@@ -94,7 +94,7 @@ You can also select an App and assign an App role to the user. For more informat
 
 ### Other Options
 
-<img src="../images/bac-users-more.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;"/>
+<img src="../images/more-user-options-new-admin-console.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;"/>
 
 
 #### Reset a User Password
@@ -154,7 +154,7 @@ Specify the default permissions assigned to new users:
 
 When you click **Configure** on the **User Settings** page, the **User Profile Field Controls** panel opens. Use this panel to manage which user profile fields are visible to domain users and which fields end users can edit.
 
-<img src="../images/bac-user-settings.png" alt="User Settings" title="User Settings" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/user-settings-new-admin-console.png" alt="User Settings" title="User Settings" style="border: 1px solid gray;zoom:50%;"/>
 
 | **CONTROLS** | **DESCRIPTION** |
 |----------|-------------|
