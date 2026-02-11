@@ -1,6 +1,6 @@
 # Agent AI Chat Integration with ServiceNow
 
-This document provides detailed instructions on integrating the Agent AI widget with ServiceNow Desktop for the Chat channel. The integration supports [all features of Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}. It also includes an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
+This document provides detailed instructions on integrating the Agent AI widget with ServiceNow Desktop for the Chat channel. The integration supports [all Agent AI features](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}. It also includes an end-of-call summary and Custom Data passing, such as agent name and ID, to the Agent AI widget.
 
 ## Prerequisites
 
