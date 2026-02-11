@@ -2,7 +2,7 @@
 
 # User Engagement Trend API - v2
 
-Retrieves analytics data that shows how many users have interacted with a specific app, including unique, new, and returning users, along with average counts over a specified period and configurable time intervals (daily or hourly).
+Retrieves engagement metrics for a specific app in a workspace over a chosen time period, including unique users, new users, returning users, and average user counts.
 
 | **Field**          | **Value**                                                                 |
 |----------------|-----------------------------------------------------------------------|
