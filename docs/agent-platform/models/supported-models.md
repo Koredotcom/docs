@@ -2,7 +2,7 @@
 
 The Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
 
-## Supported AI Models for Agents and Supervisors
+## Supported AI Models for Agentic Apps and Agents
 
 ### External Models
 
@@ -245,13 +245,23 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
 
 ### Custom Model Support in Agentic Apps
 
-Agentic Apps also support integrating with custom third party models via API Integration. 
+Agentic Apps support integration with custom third-party models through API integration.
 
-To use a custom model in Agentic Apps
+To use a custom model in Agentic Apps, the following requirements must be met:
 
-* **Tool Calling Support**: The model must inherently support Tool Calling functionality. For models that support Tool Calling, the feature must be explicitly enabled during model configuration. ![Enable Tool Calling](images/custom-model/enable-tool.png "Enable Tool Calling")
+* Tool Calling Support
+* Compatible API Structure
+
+#### Tool Calling Support(Mandatory)
+
+The model must inherently support Tool Calling functionality. Models that do not support Tool Calling cannot be used in Agentic Apps. 
+
+If the model supports Tool Calling, ensure that the feature is explicitly enabled during model configuration. ![Enable Tool Calling](images/custom-model/enable-tool.png "Enable Tool Calling")
 [Learn how to enable model features](external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).  
-* **Compatible API Structure**: The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+
+#### Compatible API Structure
+
+The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
 
 
 For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).

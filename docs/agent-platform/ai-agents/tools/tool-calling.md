@@ -51,7 +51,7 @@ Agentic Apps support three types of tools:
 
 * **MCP Tools**: Tools exposed via the Model Context Protocol for connecting to remote functions on external servers.
 
-[Learn more](./../create-agent.md#tools).
+[Learn more](./../create-agent.md#adding-tools).
 
 ## Tool Calling in Workflow Tools (AI Nodes)
 
