@@ -17,7 +17,7 @@ Retrieves analytics data that shows how many users have interacted with a specif
 | **PARAMETER** | **REQUIRED/OPTIONAL** | **DESCRIPTION** |
 |-----------|-------------------|-------------|
 | `host`      | Required          | Environment URL, for example, https://platform.kore.ai |
-| `streamId`    | Required          | Bot ID or Stream ID. You can access it from the General Settings page of the app. |
+| `streamId`    | Required          | App ID or Stream ID. You can access it from the General Settings page of the app. |
 
 
 ## Query Parameters
