@@ -48,7 +48,7 @@ Complete the steps in the following procedure to configure Single Sign-On (SSO) 
 3. In the **Configure SSO for WS-Federation** section, select an identity provider, and then define the settings for:
 
    1. **Windows Azure®**  
-      * **Azure AD Sign-On End Point URL**: The URL that AI for Servicesends sign-on and sign-off requests using *Azure*. The response for the authentication is sent to the **Reply URL** defined in your *Azure* Active Directory configuration settings.  
+      * **Azure AD Sign-On End Point URL**: The URL that AI for Services ends sign-on and sign-off requests using *Azure*. The response for the authentication is sent to the **Reply URL** defined in your *Azure* Active Directory configuration settings.  
       * **Azure AD Federation Metadata Document**: The URL for the federation metadata document used for authentication with *Azure* Active Directory. 
 
    2. **Other**: Generic WS-Federation identity provider configuration, other than Azure  
@@ -67,7 +67,7 @@ Complete the steps in the following procedure to configure Single Sign-On (SSO) 
 
    3. **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649).  
 
-5. In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, [see Attributes for ADFS](https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/using-single-sign-on/#attributes-for-adfs).  
+5. In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, [see Attributes for ADFS](#attributes-for-adfs).  
 
 6. Select **Create**.
 
@@ -110,7 +110,7 @@ Enterprises can set up access to the App builder tool using the enterprise SSO. 
 5. Upon verifying the response from the identity provider, AI for Service idproxy server initiates a request to the AI for Service app server.  
 6. On successful authentication of the token from AI for Service idproxy server, AI for Service app server grants access to the user.
 
-Refer below [to configure SSO using SAML](https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/using-single-sign-on/#configuring-sso-using-saml)
+Refer below [to configure SSO using SAML](#configuring-sso-using-saml)
 
 #### **Use case 2: End-user authentication**
 
@@ -159,7 +159,7 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
 
 #### **Okta for AI for ServiceSSO**
 
-To configure Single Sign-On in *Okta* for AI for Service, you must first add the AI for Service app to your *Okta* account, and then copy URLs and the security certificate from *Okta* into your AI for Serviceaccount. This topic describes how to add the AI for Service app to your *Okta* account and then access the URLs and certificate needed for the AI for Service configuration for SSO using *Okta*.
+To configure Single Sign-On in *Okta* for AI for Service, you must first add the AI for Service app to your *Okta* account, and then copy URLs and the security certificate from *Okta* into your AI for Service account. This topic describes how to add the AI for Service app to your *Okta* account and then access the URLs and certificate needed for the AI for Service configuration for SSO using *Okta*.
 
 To complete this procedure, you must have already selected *Okta* as a SAML provider on the **Single Sign On** page in the Admin Console.
 
@@ -320,11 +320,11 @@ To complete this procedure, you must have already selected *Bitium* as a SAML pr
 
 <img src="../images/using-single-sign-on-img5.png" alt="Bitium portal" title="Bitium portal" style="border: 1px solid gray;zoom:70%;"/>
 
-  **Other**: Generic SAML identity provider configuration. Select this option if you are not using a AI for Service built-in configuration.
+  **Other**: Generic SAML identity provider configuration. Select this option if you aren't using a AI for Service built-in configuration.
 
   * **Single Sign-On URL**: The URL that AI for Service sends sign on and sign off requests using your WS-Federation identity provider. This is to enable Service Provider initiated SAML flow.  
   * **Issuer URL**: The URL for the WS-Federation metadata document used for authentication with Active Directory.  
-  * **Certificate**: The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2\) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.  
+  * **Certificate**: The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2\) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it's invalid then the older certificate would be used.  
   * **ACS URL for SP Initiated SAML Flow**: This is the redirect URL for Service Provided initiated SAML flow.  
   * **ACS URL for IDP Initiated SAML Flow**: This is the account-specific URL for Identity Provided initiated SAML flow.  
   * **SAML Attribute Mapping**: Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:  
@@ -348,7 +348,7 @@ To complete this procedure, you must have already selected *Bitium* as a SAML pr
         * Manage Data Tables and Views  
     * In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between AI for Service and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:  
       * **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback.](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649)  
-      * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/using-single-sign-on/#attributes-for-adfs).  
+      * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](#attributes-for-adfs).  
       * **Identity URL** or **Sign On URL** as [https://idp.kore.com](https://idp.kore.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649) 
 
 
