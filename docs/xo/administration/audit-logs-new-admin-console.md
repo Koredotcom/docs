@@ -133,7 +133,7 @@ Set the duration for which the Chat History needs to be retrieved:
 
 * 7 Days.  
 * 24 hours – default setting.  
-* Last 90 Days
+* Last 90 Days.
 
 ##### **Export**
 
