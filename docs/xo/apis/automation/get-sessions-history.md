@@ -563,7 +563,7 @@ It is recommended to programmatically iterate the request by dynamically updatin
    </td>
    <td>String
    </td>    
-   <td>The channel in which the end user is having the conversation: sms, email, rtm, slack, skype, twitter, msteams, api, kore, facebook, or skypeforbusiness.
+   <td>The channel in which the end user is having the conversation: sms, email, rtm, slack, twitter, msteams, api, kore, or facebook.
    </td>
   </tr>
   <tr>

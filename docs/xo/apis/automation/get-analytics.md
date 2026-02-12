@@ -188,7 +188,6 @@ curl --location --request POST 'https://platform.kore.ai/api/public/bot/st-xxxxx
 Accepted channels are:
 <ul>
 
-<li>“skypeforbusiness”
 
 <li>“msteams”
 
@@ -202,7 +201,6 @@ Accepted channels are:
 
 <li>“slack”
 
-<li>“skype”
 
 <li>“kore”
 
