@@ -304,8 +304,7 @@ Key benefits
 
 **Retirement of Skype**
 
-Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform.  
-[Learn more :octicons-arrow-right-24:](../../channels/add-skype-channel.md)
+Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform. 
 
 <font size="4">Rebranding</font>
 
