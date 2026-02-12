@@ -88,11 +88,13 @@ plugins:
         'searchai/workbench.md': 'searchai/workbench/introduction.md'
         'release-notes/11.x/searchai-deprecations.md': 'release-notes/11.x/deprecations.md'
         'quality-ai/analyze/conversation-mining-overview.md': 'quality-ai/analyze/conversation-mining-interactions.md'
-        'automation/use-cases/dialogs/node-types/agent-node-configuration.md' : 'automation/agent-node/working-with-agent-node.md'
-        'getting-started/building-a-virtual-assistant.md' : 'getting-started/dialoggpt-app-setup-guide.md'
-        'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md' : 'automation/use-cases/dialogs/dialog-tasks-overview.md'
-        'analytics/contact-center/interactions.md' : 'analytics/overview/conversations.md'
-        
+        'automation/use-cases/dialogs/node-types/agent-node-configuration.md': 'automation/agent-node/working-with-agent-node.md'
+        'getting-started/building-a-virtual-assistant.md': 'getting-started/dialoggpt-app-setup-guide.md'
+        'automation/intelligence/conversation-management/conversation-driven-dialog-builder.md': 'automation/use-cases/dialogs/dialog-tasks-overview.md'
+        'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
+        'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
+        'quality-ai/analyze/conversation-intelligence.md': 'quality-ai/analyze/performance-insights.md'
+
 extra:  
   version:
     provider: mike
@@ -255,7 +257,8 @@ nav:
           - Build Dialogs: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
           - Manage Components: automation/use-cases/dialogs/managing-dialogs.md 
         - Session Management: automation/use-cases/using-session-and-context-variables.md
-        - Context Management: automation/intelligence/context-object.md 
+        - Context Management: automation/intelligence/context-object.md
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md 
       - AI Agents:
         - Agent Node:
             - About Agent Node: automation/agent-node/working-with-agent-node.md
@@ -269,7 +272,6 @@ nav:
               - Model Configuration: automation/agent-node/tutorials/model-configuration.md
               - Tools in Agent Node: automation/agent-node/tutorials/tools-in-agent-node.md
               - Custom Prompts: automation/agent-node/tutorials/custom-prompts.md
-      - Nodes:
         - Prompt Node: automation/use-cases/dialogs/node-types/genai-prompt.md
         - Search AI Node: automation/use-cases/dialogs/node-types/working-with-the-searchai-node.md
         - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
@@ -294,8 +296,7 @@ nav:
           - Node Connections:
             - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
             - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
-      - Voice Flows:
-        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md
+      - Multilingual AI Apps: automation/multi-lingual-app-with-dialoggpt.md
     - Evaluation:
       - Playground: automation/testing/playground.md
       - Batch Testing: automation/testing/batch-testing-dialoggpt.md
@@ -328,6 +329,7 @@ nav:
     - How To:
         - New vs. Returning Users: kb/new-and-returning-users.md
         - Access Original PII Data: how-tos/access-original-pii-data.md
+        - Use Agent Node and Search AI to Generate Answers : how-tos/use-agentnode-and-searchai-to-generate-answers.md
         - Share Metadata from AI for Service to Agent Platform: how-tos/share-metadata-ais-to-agent-platform.md
         - Customize Notifications API Payload for Teams: kb/proactive-notification-api-interactive-element-ms-teams.md
         - Image in an Outbound Twilio SMS: kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md
@@ -443,7 +445,8 @@ nav:
         - User Feedback Handling: searchai/feedback.md
     - How Tos:
         - Integrate Custom Embedding Model: searchai/howto/integrate-custom-embedding-model.md
-        - Use information in Images to Generate Answers: searchai/howto/customize-response-by-channel.md
+        - Use Information in Images to Generate Answers: searchai/howto/use-images-for-answer-generation.md
+        - Customize Response by Channel Type: searchai/howto/customize-response-by-channel.md
     - Best Practices: 
         - Data Ingestion: searchai/best-practices/data-ingestion.md
         - Chunking Strategy: searchai/best-practices/chunking-strategy.md
@@ -471,7 +474,7 @@ nav:
           - Obscure Customer Info in Analytics - Interactions: contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md
           - Email Settings: contactcenter/configurations/settings/email-settings.md
           - Active Console Configuration: contactcenter/configurations/settings/active-console-configuration.md
-          - Queue Level Outbound Numbers or Emails: contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md
+          - Queue Level Settings: contactcenter/configurations/settings/queue-level-settings.md
         - Advanced Settings:
           - Community WFM [Beta]: contactcenter/configurations/settings/community-wfm-beta.md
           - LLM Based Conversation Summary: contactcenter/configurations/settings/llm-based-conversation-summary.md
@@ -530,7 +533,8 @@ nav:
         - Agent Dashboard: quality-ai/analyze/my-dashboard-agent-view.md
         - Agent Dashboard - Supervisor Evaluation: quality-ai/analyze/agent-dashboard-supervisor-evaluation.md                         
       - Adherence Heatmap: quality-ai/analyze/adherence-heatmap.md
-      - Conversation Intelligence: quality-ai/analyze/conversation-intelligence.md            
+      - Performance Insights: quality-ai/analyze/performance-insights.md 
+      - CX Insights: quality-ai/analyze/cx-insights.md           
       - Allocations: 
         - Overview: quality-ai/analyze/conversation-mining-audit-allocations.md
         - Creating Audit Allocations: quality-ai/analyze/creating-audit-allocations.md
@@ -599,6 +603,7 @@ nav:
         - NICE MAX Desktop (Chat and Voice): agentai/integration/nice-max/nice-max-desktop-chat-and-voice.md
         - NICE MAX Desktop for Outbound Calls: agentai/integration/nice-max-desktop-for-outbound-calls/agent-ai-integration-with-nice-max-desktop-for-outbound-calls.md
         - NICE Agent Desktop Voice: agentai/integration/nice-agent-desktop-voice/nice-agent-desktop-voice.md
+        - NICE CXone Agent Desktop for Outbound Calls: agentai/integration/nice-cx-agent-desktop-for-outbound-calls/agent-ai-integration-with-nice-cx-agent-desktop-for-outbound-calls.md
       - Salesforce NICE CX-CTI:
         - Salesforce NICE CX-CTI: agentai/integration/salesforce-nice-cx-cti/kore-agent-ai-with-salesforce-nice-cx-cti.md
         - Salesforce NICE CX-CTI for Outbound Calls: agentai/integration/salesforce-nice-cx-cti-outbound-calls/salesforce-nice-cx-cti-for-outbound-calls.md
@@ -606,6 +611,7 @@ nav:
         - Salesforce Web Messaging Configuration (New Chat): agentai/integration/salesforce-omni-channel/salesforce-web-messaging-configuration-new-chat.md
         - Salesforce OmniChannel Chat (Messaging): agentai/integration/salesforce-omnichannel-chat-messaging/agentai-configuration-with-salesforce-omnichannel-chat-messaging.md
         - Salesforce Service Cloud Voice (Amazon Connect Telephony): agentai/integration/amazon-connect/agent-ai-integration-with-salesforce-service-cloud-voice-(amazon-connect-telephony).md
+        - Salesforce Email-to-Case: agentai/integration/salesforce-email-to-case/agentai-integration-with-salesforce-email-to-case.md
       - ServiceNow:
         - Chat Integration with ServiceNow: agentai/integration/servicenow/chat-integration-with-servicenow.md 
       - FIVE9:

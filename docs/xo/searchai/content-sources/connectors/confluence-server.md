@@ -1,6 +1,6 @@
 # Confluence Server
 
-If you use Confluence Server to store knowledge content, the Search AI Confluence Server Connector lets you securely index, filter, and search your Confluence data with expanded coverage and improved indexing controls. The connector provides enhanced ingestion capabilities, space-based filters, advanced filtering, and optional incremental sync with webhook-based deletion.
+If you use Confluence Server to store knowledge content, the Search AI Confluence Server Connector lets you securely index, filter, and search your Confluence data with expanded coverage and improved indexing controls. The connector provides enhanced ingestion capabilities, space-based filters, advanced filtering, and webhook-based real-time synchronization.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -25,6 +25,12 @@ If you use Confluence Server to store knowledge content, the Search AI Confluenc
   </tr>
   <tr>
    <td>Content Filtering Support
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  <tr>
+   <td>Webhook Support 
    </td>
    <td>Yes
    </td>
@@ -106,9 +112,57 @@ In Search AI:
 
 Click **Connect** to initiate authorization.
 
+## Webhook Configuration for Real-Time Sync
+
+SearchAI uses Confluence webhook notifications to manage real-time content updates and deletion events. When configured, these callbacks automatically sync content changes and remove deleted content (pages and blog posts) from the SearchAI index.
+
+This ensures search results remain accurate, reduces indexing time, and minimizes system load.
+
+**Configure a Confluence Webhook for SearchAI**
+
+Perform the following steps in your Confluence server to set up the webhook:
+
+1. Go to Settings > General configuration.
+2. In the search field, type Webhook. From the left navigation under Configuration, select Webhooks.
+3. Click Create webhook.
+4. Enter the following details:
+    * Name: SearchAI Webhook Sync
+    * URL: <webhook_endpoint_url> (This will be provided in the Search AI connector configuration)
+    * Secret: <webhook_secret_token> (This will be displayed in the Search AI connector Authentication configuration)
+5. Click Test connection to verify Confluence can reach the endpoint.
+6. From the Events dropdown, select the following subscribed events: page_created, page_updated, page_removed (or page_deleted), blog_created, blog_updated, blog_removed (or blog_deleted).
+7. Ensure Active is selected, then click Save.
+
+For more information about Confluence webhooks, refer to the Atlassian Webhooks Documentation.
+
+### Webhook Sync Configuration
+
+Once the connector is successfully configured, navigate to the Webhook Settings section:
+
+1. View Webhook Endpoint URL: The webhook endpoint URL will be displayed. Copy this URL to configure in your Confluence Server webhook settings.
+2. View and Rotate Webhook Secret/Token:
+    * The webhook secret/token is displayed in the settings.
+    * Use the Regenerate button to generate a new secret if needed.
+    * Update the Confluence webhook configuration with the new secret after rotation.
+3. Training Pipeline: There is a separate training pipeline for webhook-based syncs compared to manual syncs. This ensures that real-time updates don't interfere with scheduled bulk synchronization processes.
+
+**How Webhook Sync Works**
+
+When SearchAI receives a webhook POST from Confluence:
+
+1. The existing Confluence connector credentials/API are used to fetch the latest content version for the entity referenced in the webhook notification.
+2. Based on the fetched content and event type, the following ingestion updates are performed:
+    * Create/Update: If the event is page_created, page_updated, blog_created, or blog_updated, the document is created or updated in the Search AI index.
+    * Delete: If the event type is page_removed, page_deleted, blog_removed, or blog_deleted, the corresponding content is removed from the index.
+3. The sync is logged separately in the webhook sync records for audit and troubleshooting purposes.
+
+
 ### Content Ingestion
 
-Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes: **Ingest all content**, which syncs all available content from Confluence, or **Ingest filtered content**, which lets you specify only the content you want to sync. Select **Ingest filtered** content and click **Edit configuration** to open the **Ingestion Filters** page.
+Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes:
+    * **Ingest all content**: Syncs all available content from Confluence.
+    * **Ingest filtered content**: Lets you specify only the content you want to sync.
+Select **Ingest filtered** content and click **Edit configuration** to open the **Ingestion Filters** page.
 Click **Browse & Select**, then mark the spaces or content types you want to sync. Use the search box to quickly locate spaces, check or uncheck items to include or exclude, and click **View More** to load additional spaces and save the configuration. The connector ingests only the items you select.
 
 ![Content Synchronization](images/confluenceserver/content-synchronization.png "Content Synchronization")
@@ -200,4 +254,5 @@ Pages may inherit permissions from their parent space but can also have their ow
 
 #### Limitation
 
-**Anonymous Access**: SearchAI does **not support anonymous access** to content. If a page is publicly viewable in Confluence (for example, not requiring login), that page will **not be searchable** unless explicitly shared with known users or groups.
+* **Anonymous Access**: SearchAI does **not support anonymous access** to content. If a page is publicly viewable in Confluence (for example, not requiring login), that page will **not be searchable** unless explicitly shared with known users or groups.
+* **Webhook Sync**: SearchAI doesn't support user synchronization through webhooks. Entities for each document/object will be updated through webhook, but associated users within those entities won't be updated through webhook sync. User permissions must be synchronized through the regular incremental or manual sync process.

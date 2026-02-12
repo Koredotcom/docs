@@ -1,3 +1,5 @@
+[ :octicons-arrow-left-24: Back to NLP Topics](../../../nlp-topics.md)
+
 # Model Validation
 
 Once you have built your AI Agent and trained it, the Platform builds an ML model mapping user utterance with intents. [Learn more](../../testing/testing-your-bot-with-nlp.md){:target="_blank"}.

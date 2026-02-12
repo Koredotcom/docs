@@ -2,6 +2,43 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Analytics</font>
+
+**AI Justifications for Gen AI Question Metrics Extended to Reports and APIs**
+
+AI Justifications for Gen AI by Question metrics are now available in the Interaction Evaluations and Conversation Analytics reports, and through APIs. When enabled, the system provides AI-generated explanations for each evaluation score, extending this capability beyond the existing UI. <br> [Learn more :octicons-arrow-right-24:](../../analytics/quality-ai/reports/interaction-conversation-analytics-report.md)
+
+<font size="4">Configure</font>
+
+**Enhanced Taxonomy Builder, Topic Discovery, and Resolution Detection**
+
+Taxonomy Builder and Topic Discovery now offer improved usability with clearer visual hierarchy, contextual tooltips, sentiment and resolution-based bubble coloring, and enhanced filtering and navigation.
+Resolution Detection is now configurable at the app level. You can choose between topic-based detection for strict matching or LLM-based assessment for holistic evaluation. This flexibility helps you accurately classify interaction outcomes based on whether primary issues are resolved. <br>
+[Learn more :octicons-arrow-right-24:](../../quality-ai/configure/taxonomy-builder/overview.md)
+
+<font size="4">Analyze</font>
+
+**Conversation Intelligence Dashboard Updates**
+
+The Conversation Intelligence dashboard is now split into two specialized dashboards:
+
+* **CX Insights** introduces new widgets to help you understand customer experience, including Resolution Rate tracking and CSAT and DSAT Drivers powered by driver-impact scoring with detailed warnings. <br>
+[Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/cx-insights.md)
+
+* **Performance Insights** enhances agent monitoring with a trendline for the Kore Evaluation Score. <br>
+[Learn more :octicons-arrow-right-24:](../../quality-ai/analyze/performance-insights.md)
+
+Legacy widgets, including Contact Center Efficiency, Agent Occupancy, and Agent State Monitor, are now deprecated but remain available via feature flag for existing users.
+
+<hr>
+
+
 ## v11.21.0 January 17, 2026
 
 <u>Minor Release</u>

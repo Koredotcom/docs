@@ -53,6 +53,8 @@ plugins:
         'ai-agents/agentic-apps/app-settings.md': 'ai-agents/agentic-apps/settings/app-configurations.md'
         'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
         'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
+        'settings/workspaces/workspace-mgmt.md': 'settings/workspaces/workspace-management.md'
+        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'                
 extra:
   version:
     provider: mike
@@ -160,8 +162,11 @@ nav:
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:   
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up AI Agents: ai-agents/create-agent.md
-      - Connect External Agents: ai-agents/external-agents.md
+      - Set up AI Agents:
+          - Overview: ai-agents/create-agent.md
+          - Create Agent From Scratch: ai-agents/create-from-scratch.md
+          - Connect External Agents: ai-agents/external-agents.md
+          - Import from Marketplace:  ai-agents/create-from-marketplace.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
       - Manage Agents: ai-agents/agent-management.md
       - Manage Agentic App:
@@ -323,7 +328,7 @@ nav:
       - Test Guardrail: guardrails/test-guardrail.md
   - Administration: 
     - Settings Overview: administration/overview.md
-    - Workspaces Overview: settings/workspaces/workspace-mgmt.md
+    - Workspaces Overview: settings/workspaces/workspace-management.md
     - User Management:
       - User Management Overview: settings/user-management/overview.md
       - Manage Account Users: settings/user-management/users.md
@@ -348,7 +353,7 @@ nav:
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md
-      - Key Management: settings/security-and-control/encryption-key-mgmt.md
+      - Key Management: settings/security-and-control/encryption-key-management.md
       - API Scopes: settings/security-and-control/api-scopes.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md

@@ -18,7 +18,7 @@ The BYOK integration requires coordination between you (the customer) and the Ko
 | Information        | Description and Purpose | Provided By |
 |--------------------|-------------------------|-------------|
 | **Service Role ARN** | The Amazon Resource Name (ARN) of the IAM role in Kore.ai's AWS account. You add this to your IAM role's trust policy to allow Kore.ai's service to assume your role. <br><br> **Service Role ARN for `platform.kore.ai`:** <br>`arn:aws:iam::358587034707:role/SegBots-Servers-Role` <br><br> **Note:** Contact [Kore.ai Support](https://support.kore.ai/){:target="_blank"} if your SaaS instance differs from `platform.kore.ai`. | Kore.ai |
-| **External ID** | A unique identifier (similar to a password) that Kore.ai uses when assuming your IAM role to prevent unauthorized access. <br><br> Raise a [support ticket](https://support.kore.ai/){:target="_blank"} to obtain the External ID. | Kore.ai |
+| **External ID** | A unique identifier (similar to a password) that Kore.ai uses when assuming your IAM role to prevent unauthorized access. <br><br> External ID is auto-populated within the AI for Service Admin Console. Refer to [Configuration Steps](#configuration-steps). | Kore.ai |
 | **Role ARN** | The ARN of the IAM role created in your AWS account. Kore.ai assumes this role to access your KMS key. <br><br> **Example:** <br>`arn:aws:iam::<your-account-id>:role/BYOK_Role` <br><br> Share this with Kore.ai after completing the steps in the [Integration Process](#integration-process) section. | Customer |
 | **CMK ARN** | The ARN of your Customer Managed Key (CMK) in AWS KMS. This key is used by Kore.ai to encrypt and decrypt your data. <br><br> **Example:** <br>`arn:aws:kms:<region>:<your-account-id>:key/<key-id>` <br><br> Follow the steps in the [Integration Process](#integration-process) section to create and share this value. | Customer |
 
@@ -101,7 +101,7 @@ Configure the role to trust Kore.ai's Service Role:
         "Action": "sts:AssumeRole",
         "Condition": {
         "StringEquals": {
-            "sts:ExternalId": "<EXTERNAL-ID-PROVIDED-BY-KORE>"
+            "sts:ExternalId": "<EXTERNAL-ID>"
         }
         }
     }
@@ -230,6 +230,7 @@ You can enable BYOK encryption by configuring it within the AI for Service Admin
 3. Enter AWS Details:
 
     * **Cloud Provider**: Select Amazon Web Services (AWS).
+    * **Assume Role External ID**: Auto-populated.
     * **Provider ARN**: Enter your CMK ARN.
     * **Role ARN**: Enter your Role ARN.
 
@@ -251,7 +252,7 @@ The system will test the connection to your KMS, authentication, and encryption 
 
 ## Validation (Optional)
 
-After the enforcement date, You can verify that encryption is working by using one of the following options:
+After the enforcement date, you can verify that encryption is working by using one of the following options:
 
 ### Option 1: View Analytics
 

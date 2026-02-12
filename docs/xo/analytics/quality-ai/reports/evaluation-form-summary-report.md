@@ -8,79 +8,55 @@ Summarizes evaluation metric adherence using selected forms, providing aggregate
 
 Steps to generate the Evaluation Form Summary Report:
 
-1. On the **Reports** tab, select **New Report**.
+1. **Create the New Report**
+    1. On the **Reports** tab, select **+ New Report**.
 
-1. From the **Create New Report** list, select the **Evaluation Form Summary Report**.  
-<img src="../images/evaluation-form-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
+    1. From the **Create New Report** list, select the **Evaluation Form Summary Report**.  
+        <img src="../images/evaluation-form-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
 
-1. Select **Next** to proceed.
+    1. Select **Next**.
 
-1. Configure the **General** section.
+1. **Configure General Settings**
 
-    * Enter a unique identifier **Name** for the report.
+    1. Enter a unique **Name** for the report.
 
-    * Enter a meaningful **Description** explaining the report's purpose and intended audience.
+    1. Enter a **Description**.
  
-    * Select **Next** to proceed.        
-    <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
+    1. Select **Next**             
+        <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
 
-1. Enter the **Configure** section fields and filters.
+1. **Configure Filters and Options**
 
-    * Select one evaluation form to determine data scope and applicable interactions. At least one form selection you must select. 
+    1. Select an evaluation **Form** to define the data scope (at least one form you must select).
 
-    * Select a **Date** or date range from the dropdown, such as Current day, Previous day, Last 7 days, Last Week, Week to Date.
+    1. Select a **Date** or date range.
 
-    * Select a **Timezone** (defaults to device local timezone) from the dropdown.
+    1. Select a **Timezone**.
 
-    * Configure the required **Filter**.
+    1. Select **+Add Filter** to apply filters and their respective values such as Channel, Queue, Language, Agents, and Agent Groups.        
 
-        * Select **+Add Filter** to configure additional filters.
+    1. Add **Optional Fields** to include additional metrics. 
 
-            * **Channel**: Select communication channel (Chat, Voice).
+    1. Enter one or more recipient emails in **Send Email to** (minimum one required). 
 
-            * **Queue**: Select one or more queues.
+    1. Select **Next**.       
+        <img src="../images/create-new-report-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
 
-            * **Language**: Select languages assigned to the scorecard.
-
-            * **Agents**: Select specific agents for tracking.
-
-            * **Agent Groups**: Select a team or group of agents.
-
-        * Set the values vs. the selected/added filters. 
-
-    * Add **Optional Fields** to include additional metrics or attributes.
-
-    * Enter one or more addresses in the **Send Email to** field to send the automated reports (minimum one required). 
-
-    * Select **Next** to proceed.  
-    <img src="../images/create-new-report-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:50%;">
-
-1. To **schedule** report generation, select either **Run on Demand** and **Schedule**.
+1. **Schedule the Report**
  
-    * Select **Run on Demand**, and Select **Save** to generate the report immediately with the current configuration.  
-    <img src="../images/evaluation-form-run-on-demand.png" alt="Run on Demand" title="Run on Demand" style="border: 1px solid gray; zoom:50%;">
+    1. Choose **Run on Demand** or **Schedule**.
 
-    * Select **Schedule** to set up automated recurring report generation.  
-    <img src="../images/create-new-report-schedule.png" alt="Schedule" title="Schedule" style="border: 1px solid gray; zoom:50%;">
+        1. **Run on Demand**: To generate the report immediately.
+    
+        1. **Schedule**: To generate the report automatically.
+    
+    1. If you select **Schedule**:
 
-1. Choose a **Frequency** or **Repeat** (Hourly/Daily/Weekly/Monthly/Quarterly/Yearly).    
-<img src="../images/reports.png" alt="Repeat" title="Repeat" style="border: 1px solid gray; zoom:70%;">
+    1. Choose a **Frequency or Repeat** (Hourly, Daily, Weekly, Monthly, Quarterly, or Yearly).
 
-8. Select a **Start Date** to start the schedule.
+    1. Select a **Start Date** and **Timezone**.
 
-1. Select a **Timezone** (defaults to your device's local timezone).
-
-1. Select **Instant Run** to generate the report immediately.
-
-1. Select **Save** to confirm and activate the schedule.  
-<img src="../images/gen-start-date-and-timezone.png" alt="Save" title="Save" style="border: 1px solid gray; zoom:60%;">
-
-1. The saved report appears in the **Reports > My Reports** dashboard.  
-<img src="../images/sample-report.png" alt="My Reports" title="My Reports" style="border: 1px solid gray; zoom:100%;">
-
-1. Enable scheduling by switching on the **Schedule** toggle.
-
-1. Select **Bulk Run** to generate the report immediately.
+    1. Select **Save**.   
 
 ## Report Fields
 
@@ -98,15 +74,11 @@ This report summarizes adherence results for evaluation metrics across selected 
 
 ### View and Download the Report
 
-Steps to view and download a report:
+1. On the **Reports** tab, locate the report in the **Actions** column.
 
-1. On the **Reports** tab, navigate to the **Actions** column.
+1. Select More options (⋮), then select **History**. 
 
-1. Select the vertical **Ellipsis** button. 
-
-1. Select **History** to view all generated reports.
-
-1. Select **Download** to save the required reports in CSV format.
+1. Select **Download** to save the report as a CSV file.
 
 ### Report Format
 

@@ -54,13 +54,12 @@ def get_balance(account_id: str):
 
 app.start(
     orchestrator_cls=MyCustomOrchestrator,
-    custom_tools=ToolsRegistry,
     port=8080
 )
 ```
 
 ## Quick Links
- 
+
 <div class="grid cards" markdown>
 
 - :material-clock-fast:{ .lg .middle } __Getting Started__

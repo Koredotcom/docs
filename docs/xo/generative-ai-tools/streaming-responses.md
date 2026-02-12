@@ -6,7 +6,7 @@ Streaming responses in large language models (LLMs) enable real-time, incrementa
 
 The Platform support the voice-based channel [Voice Gateway](../channels/voice-gateway/configure-voice-gateway.md) for GenAI features, including Agent Node, with Deepgram as the supported TTS engine. Additionally, we provide seamless integration with models from OpenAI and Azure OpenAI. Our Custom Prompt capability enables integration with other LLMs, allowing businesses to use non-system models by defining their own prompts, provided the LLM supports streaming.
 
-The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when you select a streaming prompt at the node level, even if the feature-level prompt doesn't use streaming.
+The Platform delivers real-time LLM response streaming for chat conversations on [Web/Mobile SDK](../sdk/bot-sdk-introduction.md) Channels. Agent Node and Prompt Node features deliver AI responses token by token, showing incremental replies to boost engagement and reduce latency. Text streaming activates when you select a streaming prompt at the node level, even if the feature-level prompt doesn't use streaming.
 
 !!! Note "Agent Node Tool Calling and Streaming Support"
 
@@ -38,15 +38,15 @@ Streaming responses unlocks significant benefits across various industries, enha
 | Human Resources   | Streaming detailed explanations of HR policies or benefit packages for employees.                                                     |
 | Marketing         | Streaming in-depth analysis of marketing campaigns and their ROI.                                                                     |
 
-## Enable Streaming for Agent Node
+## Enable Streaming for GenAI Features
 
 ### Select Default Streaming Prompt
 
-The Platform provides Default-Streaming prompts in addition to default (non-streaming) prompts for Agent Node for the OpenAI and Azure OpenAI models.
+The Platform provides Default-Streaming prompts in addition to default (non-streaming) prompts for Agent Node and Prompt Node only for the OpenAI models.
 
-Go to **Generative AI Tools** > **GenAI Features** and select the default-streaming prompt for Agent Node. You can also create custom streaming prompts for this model.  
+Go to **Generative AI Tools** > **GenAI Features** and select the default-streaming prompt for required GenAI feature. You can also create custom streaming prompts for this model.  
 <img src="../images/default-streaming.png" alt="default-streaming" title="Default Streaming Prompt" style="border: 1px solid gray; zoom:70%;">
-automation
+
 
 ### Create Custom Streaming Prompts
 

@@ -29,6 +29,7 @@ The Platform offers the following plans:
 
 
 * Search AI: This is included in Automation AI, and the same billing session is applied. 
+    * Enterprise users can ingest up to 1 GB of data, by default, with an additional 1% allowance. Contract-specific limits, if applicable, override this default.
 * Contact Center AI: It’s billed per the agent seats:
     * Named Seats: Each agent gets a dedicated seat. For example, if 100 agents work across 3 shifts, you will be billed for 100 seats.
     * Concurrent Seats: This is based on the maximum number of simultaneously logged-in agents. For example, if a maximum of 50 agents work per shift across 3 shifts (150 total agents), you will be billed only for 50 seats.  

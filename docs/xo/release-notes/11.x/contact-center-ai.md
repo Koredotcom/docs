@@ -2,6 +2,56 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.1 January 31, 2026
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Enable Virtual Backgrounds for Agent Video Calls**
+
+Agents can now apply, change, or remove virtual backgrounds during live video calls without interrupting the session. The feature supports predefined static and blur backgrounds, provides an in-call preview and selection UI, and works across all supported browsers and devices. Virtual backgrounds affect only the agent’s video stream, helping maintain brand consistency, protect privacy, and ensure a professional customer experience with no impact on call quality. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#apply-or-change-a-virtual-background-during-a-video-call)
+
+**Agent-to-Customer Screen Sharing during Video Calls**
+
+Agents can securely share a selected browser tab or application with customers during live audio or video calls to guide and resolve issues faster. The feature supports in-session start/stop controls, enforces encryption and audit logging, and automatically ends sharing when the call ends. The system controls access through a new Agent Screen Share permission and supports all compatible browsers without impacting call quality. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#agent-to-customer-screen-sharing)
+
+<font size="4">Configuration</font>
+
+**Editable System Agent Status Labels**
+
+Administrators can rename system-provided statuses such as Available, Away, and Busy to match internal terminology without affecting system behavior. Custom labels are supported in English, Korean, Chinese, Japanese, and German, with fallback to default names when translations are missing. Updated labels appear consistently across the Console, dashboards, and reports. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#edit-an-agent-status)
+
+**Priority-Based Queue Routing**
+
+Contact Center AI supports an optional priority-based queue routing model that allows administrators to assign priority levels to queues. When enabled, agents assigned to multiple queues receive conversations from the highest-priority queue first, while maintaining FIFO order within each queue. Controlled by a system-level setting, defaults to existing routing behavior when disabled, and applies changes immediately without impacting active assignments or routing eligibility rules. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/queue-level-settings.md)
+
+**Route Queued Conversations to Out of Business Hours Flow**
+
+An optional system setting now routes queued conversations to the Out of Business Hours (OOBH) flow when OOBH is triggered. When enabled, queued interactions are routed to the configured OOBH flow, while agent-waiting interactions honor the existing wait time. The default behavior remains unchanged when disabled. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/queue-level-settings.md)
+
+**Agent Utils Support for Dynamic Waiting Experience**
+
+Flows now support a new Agent Utils function (`setWaitingExperience`) that lets developers to override the waiting experience at runtime dynamically. The most recently applied waiting experience takes precedence, enabling flows to override skill-based or earlier configurations without duplicating queues or logic. If an invalid waiting experience is provided, the system gracefully falls back to the default behavior without affecting the interaction. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-waiting-experience)
+
+<font size="4">Campaigns</font>
+
+**API Integration: Contact List Schema Change Handling**
+
+When an API Integration contact list schema change affects linked campaigns, the system replaces existing columns and displays a warning listing the affected campaigns. Campaign filters are now read-only while a campaign is active, preventing changes during execution. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration)
+
+**Campaign Dispositions: Map Positive Outcomes**
+
+Campaign creation now lets users to mark specific dispositions as Positive Final Outcomes from the Dispositions tab. These selections persist and used in campaign scoring to produce more accurate, meaningful conversion metrics in analytics. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#dispositions)
+
+**Redirect Agents to Console for Preview and Progressive Voice Campaigns**
+
+For Preview and Progressive Voice Campaigns, when a call initiates while the allocated agent isn't logged in to the console, the system displays a notification dialog. It automatically redirects the agent to the console after 5 seconds. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#redirect-agents-to-console)
+
+<hr>
+
 ## v11.21.0 January 17, 2026
 
 <u>Minor Release</u>
@@ -130,7 +180,7 @@ Snooze settings now support custom date-and-time durations alongside quick optio
 
 **Queue-level Phone Number and Email Mapping**
 
-Phone numbers and email addresses can now be configured at the queue level to give agents a focused, relevant selection during outbound actions. This enhancement improves efficiency by showing only queue-mapped options while still supporting access to the full list when permitted. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md)
+Phone numbers and email addresses can now be configured at the queue level to give agents a focused, relevant selection during outbound actions. This enhancement improves efficiency by showing only queue-mapped options while still supporting access to the full list when permitted. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/queue-level-settings.md)
 
 <font size="4">Flows</font>
 
