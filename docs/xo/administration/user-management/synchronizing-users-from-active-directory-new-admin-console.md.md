@@ -1,4 +1,4 @@
-# Synchronizing Users from Active Directory
+# Synchronizing Users from Active Directory - New Admin Console
 
 Use this section to synchronise and import user information, mailing lists, and groups from your organization’s directory. The sync can be automated to ensure seamless and up-to-date integration.
 
@@ -20,55 +20,73 @@ Configure a cloud-based connector to access your Active Directory (AD) server se
 
 To configure Active Directory, log on to the Admin Console and complete the following steps to access the configuration settings for your company's Active Directory sync.
 
-1. In the User Management module, on the Directory Sync page, select Configure.
+1. In the User Management module, on the Directory Sync page, select **Configure**.
+
+    <img src="../images/sync-with-company-directory.png"
+        alt="Run manual sync"
+        title="Run manual sync"
+        style="border: 1px solid gray; zoom:70%;" />
+
 2. The Cloud-Based Connector dialog is displayed. Follow the steps given here to proceed.
-3. On the Connection tab, define the following fields:
 
-   a. **Host Name**: The name of the domain host, for example, `www.example.org` or `10.12.6.151`.
+3. On the **Connection** tab, define the following fields:
 
-   b. **Server Port**: The port number for the domain host, for example, 10042.
+    <img src="../images/cloud-based-connectors.png"
+        alt="Run manual sync"
+        title="Run manual sync"
+        style="border: 1px solid gray; zoom:70%" />
 
-   c. **Base DN**: The server location for users and groups in a domain, for example, dc=kore,dc=com.
 
-   d. **User ID**: The username for authentication to connect to the domain controller.
+    a.   **Host Name**: The name of the domain host, for example, `www.example.org` or `10.12.6.151`.
 
-   e. **Password**: The password for authentication to connect to the domain controller.
+    b.   **Server Port**: The port number for the domain host, for example, 10042.
 
-   f. **SSL**: Select to enable SSL for HTTPS.
+    c. **Base DN**: The server location for users and groups in a domain, for example, dc=kore,dc=com.
 
-   g. **Test Connection**: Click to test the authentication and Host configuration settings.
-   
-   h. Click **Save** and next to continue.
+    d. **User ID**: The username for authentication to connect to the domain controller.
+
+    e. **Password**: The password for authentication to connect to the domain controller.
+
+    f. **SSL**: Select to enable SSL for HTTPS.
+
+    g. **Test Connection**: Click to test the authentication and Host configuration settings.
+
+    h. Select **Save & Next** to continue.
+
 
 4. Optionally, on the Organization Units tab, you can define the Org Units that need to be imported from your company directory. Groups and sub-groups from the selected OU will be synchronized into the platform and the hierarchy of groups as present in the AD Server will be maintained in the platform.
 
-   a. You can choose to: <br><br> * Import all Organization Units, <br> * Not Import any unit, or <br> * Import specific units.
-   b. Click Save and next to continue.
+      a. You can choose to: <br><br> ● Import all Organization Units, <br> ● Not Import any unit, or <br> ● Import specific units.
+
+      b. Click **Save and next** to continue.
 
 5. On the **Users** tab, you can define the desired User Attributes (profile fields) that need to be imported from your company directory. You can set import criteria, inclusion rules, and exclusion rules to control the information that you want to import from your organization.
 
-   a. On the **User Attributes** child tab you can import the user profile information
+      a. On the **User Attributes** child tab you can import the user profile information
 
-    * using predefined Default mapping of Kore.ai user profile fields to relevant LDAP attributes or
+      * using predefined Default mapping of Kore.ai user profile fields to relevant LDAP attributes or
 
-    * create your own custom mapping with the Customer Attribute name and values.
+      * create your own custom mapping with the Customer Attribute name and values.
 
-   b. On the **Inclusion Rules**, you can sync select users from your AD Server by defining the sync criteria or filters using the profile parameters. You can write the rules using the LDAP filter syntax, [refer here for more](https://learn.microsoft.com/en-us/archive/technet-wiki/5392.active-directory-ldap-syntax-filters).
+      b. On the **Inclusion Rules**, you can sync select users from your AD Server by defining the sync criteria or filters using the profile parameters. You can write the rules using the LDAP filter syntax, [refer here for more](https://learn.microsoft.com/en-us/archive/technet-wiki/5392.active-directory-ldap-syntax-filters).
 
-   c. On the **Exclusion Rules** child tab, you can create rules to limit incoming user records for the user (default and custom) data.
+      c. On the **Exclusion Rules** child tab, you can create rules to limit incoming user records for the user (default and custom) data.
 
 6. Optionally, on the Exclusions tab, you can define exclusions for synchronization to prevent Active Directory from replacing specific users (default and custom), distribution lists, or organizational groups.
 
 7. On the **Schedule** tab, enable and define the synchronization schedule with the Active Directory as shown in the following illustration.
 
-   a. Enable Synchronization – Click to enable or disable a synchronization schedule.
+      a. Enable Synchronization – Click to enable or disable a synchronization schedule.
 
-   b. Synchronization Frequency – Select one of:
+      b. Synchronization Frequency – Select one of:
 
-     * **Daily** – Specify the Start Synchronization date and time to begin the daily sync.
-     * **Weekly** – Specify the day of the week to synchronize and the Start Synchronization date and time to begin the weekly sync.
-     * **Monthly** – Specify the day of the month to synchronize and the Start Synchronization date and time to begin the monthly sync.
-     * **Other** – Specify the number of DAY(S) or WEEK(S) to synchronize and the Start Synchronization date and time to begin the sync.
+      * **Daily**: Specify the Start Synchronization date and time to begin the daily sync.
+
+      * **Weekly**: Specify the day of the week to synchronize and the Start Synchronization date and time to begin the weekly sync.
+
+      * **Monthly**: Specify the day of the month to synchronize and the Start Synchronization date and time to begin the monthly sync.
+
+      * **Other**: Specify the number of DAY(S) or WEEK(S) to synchronize and the Start Synchronization date and time to begin the sync.
 
 8. Click **Save** to save the synchronization settings and close the Configure Synchronization with your Company Directory dialog.
 
@@ -80,11 +98,11 @@ Notes regarding deleted users:
 * The user record will be retained in the database for any cross-reference and audit purposes
 * Any login attempts by such users will be blocked by the system
 * Deletion would be against a specific Account to which the user belongs to i.e. if the user is part of multiple accounts, then the user will be able to access any other accounts in which the user is still an active state
-* The following user cannot be deleted from the account
+* The following user can't be deleted from the account
     * User is Bot Owner for one or more bots
     * User is Account Owner
 
-    Such users will not be deleted from the account during the AD Sync process. The AD Sync logs will contain the list of such users who could not be deleted along with the reason.
+    Such users won't be deleted from the account during the AD Sync process. The AD Sync logs will contain the list of such users who couldn't be deleted along with the reason.
 
 
 ## Manual Sync
@@ -106,7 +124,7 @@ The _Directory Synchronization is in-progress_ message is displayed at the top o
 
 ## View Report
 
-After you configure and run an Active Directory sync for your account, you should review the results of the sync. This topic describes how to access and view a report for the current Active Directory sync.
+After you configure and run an Active Directory sync for your account, you must review the results of the sync. This topic describes how to access and view a report for the current Active Directory sync.
 
 How you access the last run results for your Active Directory sync runs depends on which type of connector you are using. Complete one of the following procedures to access the last run results for Kore.ai Active Directory sync.
 
