@@ -56,7 +56,7 @@ To configure Active Directory, log on to the Admin Console and complete the foll
 
 4. Optionally, on the Organization Units tab, you can define the Org Units that need to be imported from your company directory. Groups and sub-groups from the selected OU will be synchronized into the platform and the hierarchy of groups as present in the AD Server will be maintained in the platform.
 
-      a. You can choose to: <br><br> ● Import all Organization Units, <br> ● Not Import any unit, or <br> ● Import specific units.
+      a. You can choose to: <br> ● Import all Organization Units, <br> ● Not Import any unit, or <br> ● Import specific units.
 
       b. Click **Save and next** to continue.
 
