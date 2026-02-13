@@ -150,7 +150,7 @@ Sample v2 URL: https://<domain-name\>.kore.ai
 
 This step is required if the chat client is routed through the XO AI Agent builder, and post agent transfer, it lands into the ServiceNow Agent workspace. For more information, refer to [Configuring the ServiceNow Agent – Utah and Higher versions](../../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md){:target=”_blank”}.
 
-For passing the language code dynamically from XO to the Agent AI widget inside ServiceNow, add the following javascript code inside a script node of XO dialog task before the Agent Transfer node of ServiceNow. Without this script node, the language code will not be automatically sent to the Agent AI widget.
+For passing the language code dynamically from XO to the Agent AI widget inside ServiceNow, add the following javascript code inside a script node of XO dialog task before the Agent Transfer node of ServiceNow. Without this script node, the language code won't be automatically sent to the Agent AI widget.
 
 
 ``` json
