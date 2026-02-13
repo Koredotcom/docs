@@ -531,7 +531,7 @@ Follow the steps to securely configure and use your credentials.
 
 The platform manages custom provider onboarding through a controlled support process to protect sensitive API keys.
 
-1. [contact Support](https://support.kore.ai) and request a Custom Provider Configuration.
+1. [Contact Support](https://support.kore.ai) and request a Custom Provider Configuration.
 
 1. Provide your credentials using one of the following methods:
 
