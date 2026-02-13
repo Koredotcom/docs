@@ -27,7 +27,40 @@ The execution behavior depends on the tool’s endpoint configuration:
 
 Built-in mechanisms handle timeouts, duplicate or late responses, and delivery failures to ensure the workflow progresses as configured. This provides visibility and traceability into decisions through the Debug Panel without disrupting the overall flow.
 
-<img src="../images/human_node.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
+<hr>
+
+``` mermaid
+sequenceDiagram
+    autonumber
+
+    participant WF as Workflow Engine
+    participant HN as Human Node
+    participant EP as Configured Endpoint
+    participant RV as Human Reviewer
+
+    WF ->>+ HN: Workflow reaches Human Node
+    HN ->> HN: Build payload<br/>(Input Fields + Reviewer Note)
+    HN ->>+ EP: POST request<br/>(Payload, CallbackURL, Token)
+    EP ->> RV: Deliver review request<br/>(Subject, Message, Input Fields)
+
+    Note over HN, RV: Workflow pauses —<br/>waiting for reviewer response
+
+    alt On Success
+        RV ->> EP: Submit response<br/>(e.g., Approval, Comments)
+        EP ->>- HN: Return response via CallbackURL
+        HN ->> HN: Store response in<br/>context.steps.NodeName.output
+        HN ->>- WF: Continue → Success path
+
+    else On Timeout
+        Note over HN: No response within configured time
+        HN ->> WF: Continue → Terminate or Skip & Continue
+
+    else On Failure
+        EP --x HN: Request delivery error
+        HN ->> WF: Continue → Failure path
+    end
+```
+<hr>
 
 In this document, you’ll learn how to add a Human node to your canvas, configure custom input requests, define reviewer fields, and customize timeout and error-handling behavior.
 

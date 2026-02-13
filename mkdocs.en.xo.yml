@@ -94,6 +94,8 @@ plugins:
         'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
         'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
         'quality-ai/analyze/conversation-intelligence.md': 'quality-ai/analyze/performance-insights.md'
+        'channels/add-skype-channel.md': 'channels/adding-channels-to-your-bot.md'
+        'channels/add-skype-business-channel.md': 'channels/adding-channels-to-your-bot.md'
 
 extra:  
   version:

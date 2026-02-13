@@ -47,11 +47,11 @@ This document provides detailed instructions on the integration process of the A
    <td>
 <ul>
 
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target=" blank">https://agentassist.kore.ai</a></li>
+<li>If it's legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target=" blank">https://agentassist.kore.ai</a></li>
 
-<li>If it is UXO, URL is <a href="https://platform.kore.ai" target=" blank">https://platform.kore.ai</a></li>
+<li>If it's UXO, URL is <a href="https://platform.kore.ai" target=" blank">https://platform.kore.ai</a></li>
 
-<li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
+<li>If it's on-prem, the URL is the origin where your Agent AI is hosted.</li>
 </ul>
    </td>
   </tr>
@@ -257,7 +257,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
             2. `customdata.agentID="1234"`
 
-    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **ht<span>tps://</span>home-abc.nice-incontact.com**, then the API URL would be **ht<span>tps://</span>api-abc.nice-incontact.com**. Also, it is necessary to use the URLs without the trailing slash.
+    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **ht<span>tps://</span>home-abc.nice-incontact.com**, then the API URL would be **ht<span>tps://</span>api-abc.nice-incontact.com**. Also, it's necessary to use the URLs without the trailing slash.
         1. NICE CX API Access Key
         2. NICE CX API Access Key Secret
         3. NICE CX API URL

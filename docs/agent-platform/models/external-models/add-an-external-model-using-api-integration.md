@@ -77,7 +77,7 @@ This prevents customers from utilizing these models for advanced scenarios, such
 This feature removes that limitation by:
 
 * Allowing users to provide complete request/response definitions through the UI or OpenAPI specifications. 
-* Supporting commonly known request/response schemas (e.g., OpenAI Completions, Anthropic Messages, Google Gemini).
+* Supporting commonly known request/response schemas (such as, OpenAI Completions, Anthropic Messages, Google Gemini).
 
 With the Default option, you must manually define the request payload variables, including the model’s static and dynamic body parameters, and generate the response for the configured LLM. In this section, however, you can enable the required features and choose an LLM provider to automatically map the request and response schemas to their standard API format.
 
@@ -91,8 +91,13 @@ With the Default option, you must manually define the request payload variables,
   * **Structured response**: Specifies that the model supports the generation of a structured response. Enabling this flag allows the model to be used for generating a structured output within [Prompts](../../prompts/using-prompt-studio.md#add-prompts){:target="_blank"} and [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
   * **Data generation**: Specifies that the model can be used for synthetic data generation for text-based tasks. Turning this flag on allows the model to be used for prompt generation in [Prompts Studio](../../prompts/using-prompt-studio.md#add-prompts){:target="_blank"}.
   * **Streaming**: Specifies that the model supports real-time, token-by-token generation for faster AI responses. Turning this flag on allows the model to be used for generating streaming responses within Agentic Apps.
-  * **Tool calling**: Specifies that the model supports tool calling. Enabling this flag allows the model to be used within Agentic Apps and for tool calls within the AI Text-to-text node in workflow tools.  
-  * **Support Tools**: Specifies if the model supports simple tool calling.  Dynamic function or API calling by the LLM to perform actions or retrieve real-time data during generation.
+  * **Tool calling**: Indicates whether the model supports tool calling. 
+  
+!!! note 
+   
+      This feature must be enabled for the model to be used in Agentic Apps. If tool calling is not enabled, the model cannot be used within Agentic Apps or for executing tool calls in the AI Text-to-Text node in workflow tools. 
+  
+  * **Support Tools**: Specifies if the model supports simple tool calling. Dynamic function or API calling by the LLM to perform actions or retrieve real-time data during generation.
   * **Parallel Tool Calling**: Specifies if the model handles parallel tool calls emanating from a single user request. 
   * **Modalities Support**: Specifies the modalities supported by the model. Enabling this flag allows the model to run Text-to-Text, Text-to-Image, Image-to-Text, and Audio-to-Text tasks for seamless downstream integration within the [Tools Flow](../../ai-agents/tools/tool-flows/flows-overview.md){:target="_blank"}.
   <img src="../images/model-features-list.png" alt="model features" title="model features" style="border: 1px solid gray; zoom:75%;">

@@ -15,9 +15,9 @@ Using the filters on the **Audit Report** page, you can select event categories,
 ### Search and Filters
 
 * Use the **Search** field to find records by entering **at least three characters**.  
-* Click **"Filters" to refine your results** by **User/App, Event Category, and Event Name**.  
-* Use the **Date Picker** to filter events by a selected date range.   
-* Click the **Export** icon to download the filtered audit report.
+* Select **"Filters" to refine your results** by **User/App, Event Category, and Event Name**.  
+* Use the **Date Picker** to filter events by a selected date range.
+* Select the **Export** icon to download the filtered audit report.
 
 <img src="../images/analytics-img2.png" alt="Event filter options" title="Event filter options" style="border: 1px solid gray;zoom:70%;"/>
 
@@ -94,7 +94,7 @@ You can view Chat History for all deployed apps from the **App Chat History** se
 
 <img src="../images/analytics-img5.png" alt="Analytics - Bot Chat History" title="Analytics - Bot Chat History" style="border: 1px solid gray;zoom:70%;"/>
 
-Click a specific chat to display the chat conversation or history. You can jump to the specific user’s previous and next conversation sessions if available.
+Select a specific chat to display the chat conversation or history. You can jump to the specific user’s previous and next conversation sessions if available.
 
 ### App Chat History Page Columns
 
@@ -103,7 +103,7 @@ The following list describes the columns displayed in the admin console table.
 | COLUMN | DESCRIPTION |
 | :---- | :---- |
 | App Name | Name of the App in chat. |
-| Timestamp | The date and time of the chat. It is displayed in the selected Time Zone. |
+| Timestamp | The date and time of the chat. It's displayed in the selected Time Zone. |
 | Channel | Channel on which the Chat occurred. |
 | Language | Language of the Chat. |
 | User ID | The User ID who initiated the chat can be either one of the following: AI for Service generated a user ID assigned to every unique visitor who has interacted with the app. Unique user identities as provided by the respective channels are enabled for a bot. |
@@ -121,9 +121,9 @@ The time against the chat history would be displayed in the **Time Zone** select
 
 The list of entries in an admin console table can be very large, depending on the size of your company, for example, a list of users. To find one or more specific users or groups, enter at least three characters in the Search field to begin find-as-you-type.
 
-**Note**
+!!! note
 
-The number of search terms in a search query is unlimited; however, no more than the first 20 characters of each search term are used to return search results.
+    The number of search terms in a search query is unlimited; however, no more than the first 20 characters of each search term are used to return search results.
 
 To view all entries, clear the search field and then press the **Enter** key.
 
@@ -133,7 +133,7 @@ Set the duration for which the Chat History needs to be retrieved:
 
 * 7 Days.  
 * 24 hours – default setting.  
-* Last 90 Days
+* Last 90 Days.
 
 ##### **Export**
 
@@ -145,8 +145,8 @@ Filter based on:
 
 * The **Apps** you want to track, you can select multiple bots.  
 * **Conversation types** can be either one or both of the following:  
-  * *interactive sessions* – conversations that include one or more messages from the user.  
-  * *non-interactive sessions* – conversations that do not include any message from the user.  
+  * *interactive sessions*: conversations that include one or more messages from the user.  
+  * *non-interactive sessions*: conversations that don't include any message from the user.  
 * **Channel** of interaction  
 * **Language** of interaction
 
@@ -170,22 +170,22 @@ The Trace ID is retained in the logs for 30 days. Once the Trace ID is expired, 
 
 ‘`Trace Id: Trace records for this message are not available`‘.
 
-Click on any chat history to see these options. The following are the user information details provided:
+Select on any chat history to see these options. The following are the user information details provided:
 
 | FUNCTIONALITY | ATTRIBUTE | DESCRIPTION |
 | :---- | :---- | :---- |
 | User Profile | Kore User ID | User id assigned by the platform. |
-|  | Channel Data | Data received from the channel, i.e., the information that is available in the User Context. |
+|  | Channel Data | Data received from the channel, i.e., the information that's available in the User Context. |
 |  | User Meta Tags | The total number of meta tags associated with the user and key-value pairs for the most recent ones. |
 |  | Latest Interaction | Last time the user interacted with the bot. |
 |  | Total Conversation Sessions | The total number of interactive and non-interactive sessions registered by the user from the beginning of time. |
 |  | Total Conversation Sessions in Last 30 Days | The total number of interactive and non-interactive sessions registered by the user in the last 30 days. |
-|  | \*The next few attributes will not be displayed if there is no interaction by the user in the last 30 days |  |
+|  | \*The next few attributes won't be displayed if there is no interaction by the user in the last 30 days |  |
 |  | Last 30 Days’ Intent Detection Rate | (Total identified intents / (Total identified intents \+ unidentified utterances)) \* 100 for the utterances over the last 30 days. |
-|  | Intents Requested | Total identified intents \+ unidentified utterances. |
+|  | Intents Requested | Total identified intents + unidentified utterances. |
 |  | Intents Identified | Total intents identified. |
 |  | Last 30 Days Goal Completion Rate | (Total success tasks / (Total success tasks \+ total failed tasks) ) \* 100 for the tasks over the last 30 days. |
-|  | Tasks Initiated | Total success tasks \+ total failed tasks. |
+|  | Tasks Initiated | Total success tasks + total failed tasks. |
 |  | Tasks Completed | Tasks successfully completed. |
 |  | Recent Conversation Flows | Top 10 popular conversation flows executed by the user in the last 30 days. Popular flows are determined by the number of instances that the flow was executed. |
 | User Conversation Sessions | **Session Attributes** |  |
