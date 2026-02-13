@@ -521,6 +521,43 @@ The following languages and dialects are supported:
 | English (Kenya)        | English (United Kingdom)  |
 | English (New Zealand)  | English (United States)   |
 
+### Use Custom ASR and TTS Credentials (BYOK)
+
+Integrate your own Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) licenses with the Voice Gateway instead of using the default providers.
+
+Follow the steps to securely configure and use your credentials.
+
+#### Initiation and Security
+
+The platform manages custom provider onboarding through a controlled support process to protect sensitive API keys.
+
+1. [contact Support](https://support.kore.ai) and request a Custom Provider Configuration.
+
+1. Provide your credentials using one of the following methods:
+
+    * Send the credentials to your assigned support representative.
+
+    * Schedule a session with the technical team and share the credentials.
+
+#### Provider Labeling
+
+After Support receives your credentials, the system maps them to a unique identifier in the Voice Gateway.
+
+Label Creation: The system generates a unique label name (for example, Custom_Nuance_V2) for your account.
+
+Activation Confirmation: Support sends a confirmation email after activating the label.
+
+#### Implement in Call Flows
+
+To use your custom ASR or TTS provider in a call or session, pass the assigned label in the call control parameters of your API request or dialog task.
+
+| Parameter   | Description                                           | Example Value    |
+| :---------- | :---------------------------------------------------- | :--------------- |
+| `sttLabel`  | Unique label for your custom Speech-to-Text provider  | `"MyAzureSTT"`   |
+| `ttsLabel`  | Unique label for your custom Text-to-Speech provider  | `"MyGoogleTTS"`  |
+
+When you include these parameters, the system routes speech processing through your configured provider instead of the platform default.
+
 ### Best Practices
 
 #### Multi-Language App Setup
