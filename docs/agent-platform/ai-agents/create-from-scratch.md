@@ -27,8 +27,7 @@ Agent profile consists of the following fields:
 
 ---
 
-**Avatar**: Select an avatar for the agent. This is primarily for visual appeal. 
-
+**Avatar**: Select an avatar for the agent. This image represents the agent in the user interface and is primarily used for visual identification. Choose from the available list of logos, avatars, and icons.
 ---
 
 **AI Model**: Select the AI model and connection that the agent will use to perform its tasks. The model helps an Agent in the following:
@@ -72,7 +71,7 @@ An agent operates based on a set of directives or rules that dictate how it shou
             * Outstanding Balance Inquiry: Provide details on the outstanding bills and information on recent transactions.
             * Bill Payments: Facilitate secure payment of outstanding credit card bills.
         * Behavioral Guidelines: Setting the tone of the conversation.
-            * Respond in a professional and empathetic tone when handling refund-related queries. \
+            * Respond in a professional and empathetic tone when handling refund-related queries.
     * Order Manager: You are an AI agent responsible for enabling users to access real-time order updates and manage their orders independently. 
         * Key responsibilities are:
             * Order Status Inquiry: Provide updates on the order status.
@@ -89,6 +88,8 @@ The Agent Definition editor provides a structured workspace to define an agent�
 For example, you can reference a memory field such as `{{memory.sessionMeta.metadata.FLAG}}` to conditionally guide execution based on runtime context.
 
 The editor also offers AI-assisted authoring to help generate, refine, and organize agent definitions. Using AI guidance, you can quickly create clear, well-structured instructions, improve consistency, and ensure agent behavior remains aligned with application objectives. This helps reduce manual efforts and setup time.
+
+
 
 ## Knowledge
 
@@ -174,7 +175,7 @@ You can easily **import an existing workflow tool** into your Agentic app to acc
 
 * A **new instance** of the tool is created, specifically scoped to the app.
 * This instance of the tool is independent of the original, and can be customized without affecting the source tool or its use in other apps.
-* You can use it as it's if it already meets your needs, or modify it to align with your app’s specific use cases.
+* You can use it as-is if it already meets your needs, or modify it to align with your app’s specific use cases.
 
 Tools can be imported via:
 
@@ -198,3 +199,62 @@ To test a tool:
 * Use the Test interface on the tool details page to run the tool and review its behavior and responses.
 
 For step-by-step instructions and example, refer to [this](test-a-workflow-tool.md){:target="_blank"}.
+
+## Delegation
+
+Delegation is available only in Agentic applications that use the *Adaptive Network orchestration pattern*.
+
+In this pattern, each agent includes a dedicated Delegation section where you define routing rules to enable smooth handoffs and uninterrupted workflows between agents.
+
+![Delegation Rules](images/network/delegation-page.png "Delegation Rules")
+
+Configure the delegation rules for all the agents in the app: 
+
+1. **Direct Responses**: Toggle Direct Responses to control how the current agent interacts with users
+    * Enabled: The agent can send responses directly to the user.
+    * Disabled: The agent passes responses to another agent for analysis and reply.
+2. **Task Delegation**: Configure rules for handing off tasks to specialized agents
+    * Click *Add Delegation*. 
+    * From the *Delegate To* list, select the agent you want to route tasks to.
+    * Define the condition under which the handoff should occur. 
+    
+Add all the delegation rules in this section that the given agent can use for routing. 
+    
+**Example**:  The following agent can delegate tasks to three specialized agents—Finance Assistant, HR Assistant, and IT Assistant, depending on the nature of the task. Routing occurs dynamically based on request intent, context, or configured conditions.
+
+![Delegation Rules](images/network/example.png "Delegation Rules")
+
+<!-----
+
+
+
+Conversion time: 1.146 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs™ to Markdown version 2.0β2
+* Mon Feb 09 2026 23:10:37 GMT-0800 (Pacific Standard Time)
+* Source doc: Create an Agent From Scratch
+* This is a partial selection. Check to make sure intra-doc links work.
+----->
+
+
+
+### Event-based Delegation: 
+
+If a delegation rule is triggered by an *event*, subsequent handling follows the configuration of that event. For example, if an agent handoff event is configured to escalate to a human agent via AI for Service, the delegation triggers the agent handoff process.
+
+
+### Passing Information Between Agents
+
+When the control passes from one agent to another in Adaptive Network delegation, the application saves the data, including the context info, summary, and pending tasks, to the `sessionMeta` memory under the `delegationContext` field. The next agent can use this field to get the required information.
+
+Additionally, agents can use *custom memory stores* to save information as needed. This ensures that task-specific data is easily shared during handoffs.

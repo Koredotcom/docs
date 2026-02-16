@@ -324,7 +324,7 @@ Similarly, if
 <p>
 <code> "sys_content_type": "file",</code>
 <p>
-<code> "title": "my file",</code>
+<code> "title": "my file"</code>
 <p>
 }, all the files with title equal to ‘my file’ are returned in the response. 
    </td>
@@ -346,10 +346,9 @@ Similarly, if
 ```json
 {
   "query": {  //title and sys_content_type fields
-       "title": "title name",
-       "sys_content_type": "file",
-   },
-   "nextCursor": "2024-10-04T13:38:47.762Z"
+       "title": "title of the file",
+       "sys_content_type": "file"
+   }
 }
 ```
 
@@ -357,19 +356,68 @@ Similarly, if
 
 ```json
 {
-
-    data: [
-     {
-      "_id": "fc-4ab1b017-fea6-4cd7-a3e9-ffe4792b9eff",
-      "extractionType": "web",
-      "_meta": {
-        "state": "approved",
-        "isDeleted": false,
-        "updateAvailable": false,
-        "contentSource": "web"
-      }
-    }
-  ],
- nextCursor": null
+    "data": [
+        {
+            "_id": "fc-d19666d5-234b-587c-a197-40efa2ec9d3d",
+            "searchIndexId": "sidx-d8d728ad-1ddd-57f0-aa98-895efa328898",
+            "streamId": "st-86b7aeda-c010-504d-ac5e-f01df1407ec6",
+            "createdBy": "u-1e066081-f25d-5b7b-99d5-1b873ea50b09",
+            "lModBy": "u-1e066081-f25d-5b7b-99d5-1b873ea50b09",
+            "createdOn": "2025-11-04T05:37:21.694Z",
+            "lMod": "2025-11-04T05:37:21.000Z",
+            "extractionType": "file",
+            "extractionSourceId": "fs-9a3feb4e-d97f-5bfc-84cd-c999f62dc6fa",
+            "jobId": "fj-75b384de-e38c-5b85-b152-6d45aa5a042d",
+            "_meta": {
+                "state": "approved",
+                "isDeleted": false,
+                "contentSource": "file",
+                "size": 1322647,
+                "updateAvailable": false,
+                "recordsCount": 4,
+                "file_url": "https://host/api/getMediaStream/findly/f-c65e029e-e553-59bd-83e2-0b230ba88deb.pdf?n=5029663591&s=IklCTXJhUUE2REprdElBbi83Q2VPdnV3Q3FkZ3Z2cGRXbzYyUVFIY2k5eFE9Ig$$"
+            },
+            "_source": {
+                "file_title": "Company.ai_Conversational_AI_Solutions_Brief.pdf",
+                "file_content": <file content>,
+                "file_content_type": "application/pdf",
+                "file_url": "https://host/api/getMediaStream/findly/f-c65e029e-e553-59bd-83e2-0b230ba88deb.pdf?n=5029663591&s=IklCTXJhUUE2REprdElBbi83Q2VPdnV3Q3FkZ3Z2cGRXbzYyUVFIY2k5eFE9Ig$$",
+                "file_image_url": "https:/staging-smartassist.Company.ai/searchassist/assets/images/directory/fileuploadTypes/pdf.svg",
+                "file_preview": ... <preview text>,
+                "sys_racl": [
+                    "*"
+                ],
+                "sys_content_type": "file",
+                "sys_source_name": "Default Directory",
+                "file_content_obj": [
+                    {
+                        "page_text": <page-text>,
+                        "page_no": 1,
+                        "page_url": "https://host/api/getMediaStream/findly/f-c65e029e-e553-59bd-83e2-0b230ba88deb.pdf?n=5029663591&s=IklCTXJhUUE2REprdElBbi83Q2VPdnV3Q3FkZ3Z2cGRXbzYyUVFIY2k5eFE9Ig$$#page=1"
+                    },
+                    {
+                        "page_text": <page-text>,
+                        "page_no": 2,
+                        "page_url": "https://host/api/getMediaStream/findly/f-c65e029e-e553-59bd-83e2-0b230ba88deb.pdf?n=5029663591&s=IklCTXJhUUE2REprdElBbi83Q2VPdnV3Q3FkZ3Z2cGRXbzYyUVFIY2k5eFE9Ig$$#page=2"
+                    },
+                    {
+                        "page_text":<page-text>,
+                        "page_no": 3,
+                        "page_url": "https://host/api/getMediaStream/findly/f-c65e029e-e553-59bd-83e2-0b230ba88deb.pdf?n=5029663591&s=IklCTXJhUUE2REprdElBbi83Q2VPdnV3Q3FkZ3Z2cGRXbzYyUVFIY2k5eFE9Ig$$#page=3"
+                    },
+                    {
+                        "page_text": <page-text>,
+                        "page_no": 4,
+                        "page_url": "https://host/api/getMediaStream/findly/f-c65e029e-e553-59bd-83e2-0b230ba88deb.pdf?n=5029663591&s=IklCTXJhUUE2REprdElBbi83Q2VPdnV3Q3FkZ3Z2cGRXbzYyUVFIY2k5eFE9Ig$$#page=4"
+                    }
+                ],
+                "type": "application/pdf",
+                "sys_file_type": "pdf"
+            },
+            "__v": 0
+        }
+    ],
+    "nextCursor": null,
+    "prevCursor": "fc-d19666d5-234b-587c-a197-40efa2ec9d3d"
 }
 ```

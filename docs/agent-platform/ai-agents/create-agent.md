@@ -3,6 +3,7 @@
 An AI Agent is a configurable, goal-driven component that can understand user input, reason using context, and take actions by invoking tools or delegating tasks. Setting up an agent involves defining its intended purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the agent's boundaries to govern its actions within those boundaries.
 
 **Components of an Agent**
+
 <img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 1px solid gray; zoom:65%;">
 
 <!-- ## Agents Page
@@ -21,6 +22,15 @@ Key highlights
 
 ## Agent Setup Overview
 
+### Prerequisites
+
+Before setting up an agent, ensure the following: 
+
+* [Create an Agentic App](agentic-apps/create-app.md) to add the agent to. Agents must be associated with an app and cannot exist independently.
+* Configure at least one AI Model with tool-calling support. The platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI. [See Add an External Model](../models/external-models/add-an-external-model-using-easy-integration.md).
+* Verify you have the App Owner or App Developer role in the workspace. Users with Viewer access can't create agents. 
+* Review the [App Component Limits](agentic-apps/settings/app-component-limits.md) to confirm that the app hasn't reached the maximum number of agents allowed. 
+
 ### Choosing How to Create an Agent
 
 The first step in setting up an agent is deciding how it will be created. Depending on your use case, you may:
@@ -32,11 +42,11 @@ The first step in setting up an agent is deciding how it will be created. Depend
 <table>
   <tr>
    <td>
-Option
+<b>Option</b>
    </td>
-   <td>When to use
+   <td><b>When to use</b>
    </td>
-   <td>What you configure
+   <td><b>What you configure</b>
    </td>
   </tr>
    <tr>
@@ -80,8 +90,7 @@ The agent profile establishes the agent’s identity and purpose. It specifies t
 
 ## Configuring Agent Definition
 
-This defines how the agent should behave. It outlines the agent's role and the tasks it can perform to support decision-making. It defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. It establishes what the agent can do and how it should operate, ensuring that the goals are effectively aligned.
-Well-structured instructions ensure the agent responds consistently and follows expected workflows.
+The Agent Definition is the system prompt for the agent. Write clear, scoped instructions that describe the agent's role and capabilities, the tasks it can perform to support decision-making. It establishes what the agent can do and how it should operate, ensuring that the goals are effectively aligned. Well-structured instructions ensure the agent responds consistently and follows expected workflows.
 
 ---
 
@@ -109,4 +118,10 @@ Each tool expands the agent’s capabilities and allows it to interact with othe
 
 ## Adding Delegation Logic
 
-If the agentic app follows the Adaptive Network pattern for orchestration, additionally provide the delegation rules that define how the agent delegates the query to another agent in the app. Clear delegation logic ensures predictable and reliable agent behavior.
+Delegation logic is applicable only when the agentic application uses the *Adaptive Network orchestration pattern*.
+
+For this pattern, you must configure delegation rules that define how an agent routes or hands off a user query to another agent within the application. These rules determine which agent is best suited to handle specific intents, tasks, or contexts.
+
+Clear delegation logic ensures predictable and reliable agent behavior.
+
+Note: If your application uses any orchestration pattern other than Adaptive Network, delegation configuration isn't required and this option won't be available.
