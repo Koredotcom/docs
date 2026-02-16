@@ -113,7 +113,7 @@ Steps to resolve the error:
 
 Application Name: **Agent AI by kore.ai**
 
-This section outlines the steps configure the Agent AI app. With the multibot solution in ServiceNow, you can configure multiple Agent AI bots. The system renders the appropriate bot when a chat enters a specific ServiceNow queue.
+This section outlines the steps to configure the Agent AI app. With the multibot solution in ServiceNow, you can configure multiple Agent AI bots. The system renders the appropriate bot when a chat enters a specific ServiceNow queue.
 
 #### Add Agent configuration in the ServiceNow Custom Table
 
@@ -197,6 +197,8 @@ agentUtils.setMetaInfo("ServiceNowMetaData", JSON.stringify(metaData));
 !!! note
 
     If a Language Code is sent from XO to ServiceNow, then the Agent AI widget will load according to that language code. So, the XO language code will always take precedence over the language code set inside the ServiceNow custom table in Step 2. 
+
+### Step 5: Using the Agent AI widget
 
 From the integration perspective, along with all the features and capabilities of Agent AI [Introduction to Agent AI](./../../agent-experience/agent-assist-widget-v3.md){:target=”_blank”}, agents on ServiceNow have the flexibility to use the following additional features:
 
