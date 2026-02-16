@@ -92,6 +92,8 @@ Agents are ranked based on these parameters. The best agent is selected from thi
 
 You can implement percentage-based routing within the flow by using a Script node to generate a random value and route calls based on predefined ranges.
 
+Example:
+
 To distribute 60 percent of calls to Destination A and 40 percent to Destination B, configure the flow as follows:
 
 1. Add a [Script node](../../flows/node-types/script-task.md) that generates a random integer between 0 and 9.
