@@ -42,7 +42,7 @@ Any updates to this variable automatically propagate across modules that referen
 
 ## Delete an Existing Variable
 
-Deleting a variable removes it from the app permanently, and references to the variable won't be resolved. 
+Deleting a variable removes it from the app permanently, and references to the variable won't be resolved. Note that if a variable is associated with a namespace, it cannot be deleted unless the namespace is deleted.
 
 1. Open the options menu of the variable to be deleted.
 2. Click Delete.
@@ -50,7 +50,7 @@ Deleting a variable removes it from the app permanently, and references to the v
 
 ## Namespaces
 
-A *namespace* is a logical grouping used to organise environment variables. Namespaces help keep variables cleanly separated, prevent naming collisions, and allow different modules to use variables with the same name independently.
+A *namespace* is a logical grouping used to organize environment variables. Namespaces help keep variables cleanly separated, prevent naming collisions, and allow different modules to use variables with the same name independently.
 
 
 ### Key Benefits
