@@ -24,7 +24,7 @@ Import environment and content (locale) variables into a bot.
 ## Sample Request
 
 ```json
-curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{streamId}}/variables/import' \
+curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables/import' \
 --header 'Content-Type: application/json' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --data '[
