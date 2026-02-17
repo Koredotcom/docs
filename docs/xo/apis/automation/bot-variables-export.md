@@ -24,7 +24,7 @@ Export environment and locale (content) variables from a bot. The endpoint retri
 ## Sample Request
 
 ```json
-curl --location --request POST 'https://{{host}}/api/1.1/public/builder/stream/{{streamId}}/variables/export' \
+curl --location --request POST 'https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables/export' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}'
 ```
 
