@@ -137,14 +137,9 @@ How you access the last run results for your Active Directory sync runs depends 
 
 * In the Bots Admin Console **Enrollment** module, on the **Directory Sync** page, click _here_ as shown in the following illustration.
 
-<img src="../images/synchronizing-users-from-active-directory-img7.png" alt="View last run report" title="View last run report" style="border: 1px solid gray;zoom:70%;"/>
-
-
 ### Viewing the Last Run Report
 
 The **Report on Active Directory Sync** dialog is displayed as shown in the following illustration.
-
-<img src="../images/synchronizing-users-from-active-directory-img8.png" alt="Report on active directory sync" title="Report on active directory sync" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ## View History
@@ -157,11 +152,8 @@ How you access the history for your Active Directory sync runs depends which typ
 **To view historical reports for Active Directory sync using the cloud-based connector**
 
 * In the Bots Admin Console **Enrollment** module, on the **Directory Sync** page, in the **Current Settings** section, click  **Sync History**  as shown in the following illustration.  
-<img src="../images/synchronizing-users-from-active-directory-img9.png" alt="Historical synchronization report" title="Historical synchronization report" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ### Viewing a Report
 
-In the **History of Active Directory Synchronization Runs** dialog, to view the results of an import, in the **Report** column for the import that you want to view, click **Sync Results**. 
-
-<img src="../images/synchronizing-users-from-active-directory-img10.png" alt="View report" title="View report" style="border: 1px solid gray;zoom:70%;"/>
+In the **History of Active Directory Synchronization Runs** dialog, to view the results of an import, in the **Report** column for the import that you want to view, click **Sync Results**.

@@ -32,7 +32,7 @@ Before transferring a conversation:
 
 ### Transfer Workflow
 
-Once the transfer is initiated, Contact Center AI employs two primary routing strategies:
+When the transfer is initiated, Contact Center AI employs two primary routing strategies:
 
 1. **Standard Routing (V2)**: Matches conversations with agents based on skill and language eligibility.
 2. **Advanced Routing (V2)**: Adds layers of complexity, such as:
@@ -86,7 +86,25 @@ Agents are ranked based on these parameters. The best agent is selected from thi
 
 !!! Note
 
-    If an agent is marked as a preferred agent, the interaction will wait until the preferred agent’s timeout period expires before routing to standard agents.
+    If an agent is marked as a preferred agent, the interaction waits until the preferred agent’s timeout period expires before routing to standard agents.
+
+### Percentage-Based Call Routing
+
+You can implement percentage-based routing within the flow by using a Script node to generate a random value and route calls based on predefined ranges.
+
+Example:
+
+To distribute 60 percent of calls to Destination A and 40 percent to Destination B, configure the flow as follows:
+
+1. Add a [Script node](../../flows/node-types/script-task.md) that generates a random integer between 0 and 9.
+
+1. Treat values 0-5 as 60 percent of the distribution and map them to Destination A.
+
+1. Treat values 6-9 as 40 percent of the distribution and map them to Destination B.
+
+1. Add a [Split node](../../flows/node-types/split.md) (If-Else) to evaluate the generated number.
+
+Route the call to the appropriate call center based on the evaluated condition.
 
 ## Key Benefits
 
