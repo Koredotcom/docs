@@ -7,7 +7,7 @@ Import environment and content (locale) variables into a bot.
 | Field          | Value                                                                 |
 |----------------|-----------------------------------------------------------------------|
 | **Method**     | POST                                                                  |
-| **Endpoint**   | `https://{{host}}/api/{{version}}/public/builder/bot/{{BotID}}/variables/import` |
+| **Endpoint**   | `https://{{host}}/api/{{version}}/public/builder/bot/{{botId}}/variables/import` |
 | **Content Type** | `application/json`                                                   |
 | **Authorization** | `auth: {{JWT}}`<br/>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**  | App Builder: Import Variables <br/> Admin Console: Not Applicable       |
@@ -18,12 +18,8 @@ Import environment and content (locale) variables into a bot.
 | Parameter | Required | Description                                                                 |
 |-----------|----------|-----------------------------------------------------------------------------|
 | `host`      | Required | The environment URL (for example, `https://platform.kore.ai`)               |
-| `BotID/streamId `    | Required | pp ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app.     |
+| `botId/streamId `    | Required | App ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app.     |
 | `version`    | Required          | API version (For example, 1.1). |
-
-## Authentication
-
-This API requires authentication with appropriate Bot Builder API credentials and the Import Variables scope.
 
 ## Sample Request
 
@@ -58,7 +54,7 @@ curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{streamId}}/variab
 
 ```
 
-## Body Parameters
+### Body Parameters
 
 | **PARAMETER**      | **REQUIRED** | **DESCRIPTION** |
 |---------------|----------|-------------|
@@ -232,7 +228,7 @@ curl -X POST \
 !!! note
     The `botCollections` and `botCollectionVariables` fields are required only when importing bot collection variables.
 
-## Body Parameters (Applicable When Importing Collection Variables)
+### Body Parameters
 
 | **PARAMETER** | **TYPE** | **DESCRIPTION** |
 |----------|------|-------------|
@@ -270,3 +266,5 @@ curl -X POST \
 {
   "message": "2 Variables imported/updated successfully."
 }
+
+```

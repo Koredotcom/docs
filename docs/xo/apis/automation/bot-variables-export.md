@@ -2,12 +2,12 @@
 
 # Bot Variables Export API
 
-Export environment and locale (Content) variables from a bot. The endpoint retrieves all configured variables, including their values, types, scopes, and namespace associations.
+Export environment and locale (content) variables from a bot. The endpoint retrieves all configured variables, including their values, types, scopes, and namespace associations.
 
 | **Field**          | **Value**                                                                 |
 |----------------|-----------------------------------------------------------------------|
 | Method         | POST                                                                  |
-| Endpoint       | `https://{{host}}/api/{{version}}/public/builder/stream/{{streamId}}/variables/export` |
+| Endpoint       | `https://{{host}}/api/{{version}}/public/builder/bot/{{botId}}/variables/export` |
 | Content Type   | application/json                                                      |
 | Authorization  | auth: {{JWT}}. <br> See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token)                                                         |
 | API Scope      | App Builder: Export Variables <br> Admin Console: Not Applicable   |
@@ -18,13 +18,8 @@ Export environment and locale (Content) variables from a bot. The endpoint retri
 | **PARAMETER** | **REQUIRED/OPTIONAL** | **DESCRIPTION** |
 |-----------|-------------------|-------------|
 | `host`      | Required          | Environment URL, for example, https://platform.kore.ai |
-| `botId`    | Required          | App ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app. |
+| `botId/streamId`    | Required          | App ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app. |
 | `version`    | Required          | API version (For example, 1.1). |
-
-
-## Authentication
-
-This API requires authentication with appropriate Bot Builder API credentials and the Export Variables scope.
 
 ## Sample Request
 
