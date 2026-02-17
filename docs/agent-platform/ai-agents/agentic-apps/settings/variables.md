@@ -73,7 +73,7 @@ To update or delete the namespace, go to *Options* and select the appropriate ac
 
 !!!note
     
-    A namespace cannot be deleted if it is currently associated with a tool. Additionally, all variables within the namespace must be removed before the namespace can be deleted.
+    A namespace cannot be deleted if it is associated with a tool. Additionally, all variables within the namespace must be removed before the namespace can be deleted.
 
 
 ## Accessing Environment Variables 

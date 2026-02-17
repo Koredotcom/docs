@@ -21,14 +21,14 @@ Creating an Agentic App consists of the following steps:
 
 3. Enter the following details. ![Create App](images/createapp/create-app.png "Agentic App Creation")
 
-    * **Name**: Provide a name for the app that reflects its core function.
-    * **Icon**: Select an icon for the app.
-    * **Description**: Write a clear description of the app's purpose, features, and goals. A well-defined description helps set the scope and context of the app, allowing the AI model to stay focused on its designated function rather than relying on general pre-trained knowledge.
-    * **AI Model**: Choose an appropriate model and connection for the application.
+    * *Name*: Provide a name for the app that reflects its core function.
+    * *Icon*: Select an icon for the app.
+    * *Description*: Write a clear description of the app's purpose, features, and goals. A well-defined description helps set the scope and context of the app, allowing the AI model to stay focused on its designated function rather than relying on general pre-trained knowledge.
+    * *AI Model*: Choose an appropriate model and connection for the application.
 
-4. Click **Create App**.  
+4. Click *Create App*.  
 
-After the app is created, the app overview is displayed. The Overview section provides a structured summary of the app, including linked agents, tools, and knowledge bases. 
+After you create the app, you can view a structured summary of the app, including linked agents, tools, and knowledge bases, on the Overview page.
 
 | Section | Description |
 |---------|-------------|
@@ -45,15 +45,16 @@ After the app is created, the app overview is displayed. The Overview section pr
 
 Your Agentic App is created. Complete the following steps to continue building your app and bring it into action. 
 
-### 1. Set Up Orchestration Pattern
+### Set Up Orchestration Pattern
+
 An orchestration pattern defines how the agents collaborate with each other to answer user queries. See [App Orchestrator](orchestrator.md) for supported orchestration patterns and configuration details. 
 
-### 2. Set Up Agents
+### Set Up Agents
 
 Configure one or more agents with appropriate roles and responsibilities within the application.  
 See [How to set up an agent](./../create-agent.md) for detailed instructions.
 
-### Step 3: Test and Validate the App
+### Test and Validate the App
 
 Testing the app involves two steps - running diagnostics and simulating the app behavior.   
 
@@ -61,7 +62,7 @@ Use the *Diagnostics Tool* to comprehensively validate the readiness of the app.
 
 Next, run simulations in the *Playground* to test how the app responds to different user queries and scenarios. See [Simulate and Test the App](./../agentic-apps/app-testing.md).
 
-### Step 4: Deploy the App
+### Deploy the App
 
 Finalize configurations and deploy the app for end users. See [App Deployment](./deployment/app-deployment.md).
 
