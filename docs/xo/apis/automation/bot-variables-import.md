@@ -232,7 +232,7 @@ curl -X POST \
 !!! note
     The `botCollections` and `botCollectionVariables` fields are required only when importing bot collection variables.
 
-## Body Parameters (Required Only When Collection Variables Are Included)
+## Body Parameters (Applicable When Importing Collection Variables)
 
 | **PARAMETER** | **TYPE** | **DESCRIPTION** |
 |----------|------|-------------|
