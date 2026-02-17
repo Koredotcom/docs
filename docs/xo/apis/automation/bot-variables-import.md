@@ -74,7 +74,7 @@ curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables
 
 ```json
 curl -X POST \
-  https://{{host}}/api/1.1/public/builder/bot/{{BotId}}/variables/import \
+  https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables/import \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
