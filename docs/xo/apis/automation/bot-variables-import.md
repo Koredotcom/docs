@@ -239,21 +239,21 @@ curl -X POST \
 | `botVariables.audioTag` | string | Optional audio tag associated with the variable (used for voice experiences). |
 | `botVariables.variableType` | string | Type of variable. Supported values:<br>- `env` (environment variable)<br>- `locale` (content variable) |
 | `botVariables.scope` | string | Scope of the variable. Supported values:<br>- `prePopulated`<br>- `askOnInstall`<br>- `hidden` |
-| `botVariables.localeData` | object | **Applicable only when `variableType = locale`.** Contains language-specific values and metadata for the variable. |
-| `botVariables.localeData.localeCode` | object | **Applicable only when `variableType = locale`.** Locale identifier (for example, `en`, `fr`, `ja`, `zh_cn`). |
-| `botVariables.localeData.localeCode.value` | string | **Applicable only when `variableType = locale`.** Localized value for the variable. |
-| `botVariables.localeData.localeCode.hint` | string | **Applicable only when `variableType = locale`.** Optional hint for the localized value. |
-| `botVariables.localeData.localeCode.audioTag` | string | **Applicable only when `variableType = locale`.** Optional audio tag for the localized value. |
+| `botVariables.localeData` | object | Applicable only when `variableType = locale`. Contains language-specific values and metadata for the variable. |
+| `botVariables.localeData.localeCode` | object | Applicable only when `variableType = locale`. Locale identifier (for example, `en`, `fr`, `ja`, `zh_cn`). |
+| `botVariables.localeData.localeCode.value` | string | Applicable only when `variableType = locale`. Localized value for the variable. |
+| `botVariables.localeData.localeCode.hint` | string | Applicable only when `variableType = locale`. Optional hint for the localized value. |
+| `botVariables.localeData.localeCode.audioTag` | string | Applicable only when `variableType = locale`. Optional audio tag for the localized value. |
 | `botVariables.group` | string | Logical grouping for the variable (if applicable). |
 | `botVariables.propagateValue` | boolean | Indicates whether the variable value should be propagated across environments or namespaces. |
 | `botVariables.vNameSpace` | array | Namespace mapping for the variable. |
 | `botVariables.vNameSpace.name` | string | Name of the namespace (for example, `default`). |
 | `botVariables.vNameSpace.refId` | string | Unique identifier of the namespace. |
-| `botCollections` | array | **Required only when importing bot collection variables.** Defines available bot collections. |
+| `botCollections` | array | Required only when importing bot collection variables. Defines available bot collections. |
 | `botCollections.name` | string | Name of the bot collection (for example, `Default`, `Staging`). |
 | `botCollections.description` | string | Description of the bot collection. |
 | `botCollections.refId` | string | Unique identifier of the bot collection. Used to map variables to collections. |
-| `botCollectionVariables` | array | **Required only when importing bot collection variables.** Defines collection-specific variable values. |
+| `botCollectionVariables` | array | Required only when importing bot collection variables. Defines collection-specific variable values. |
 | `botCollectionVariables.key` | string | Name of the variable within the bot collection. Must match a variable defined in `botVariables`. |
 | `botCollectionVariables.value` | string | Value assigned to the variable for the specified bot collection. |
 | `botCollectionVariables.audioTag` | string | Optional audio tag associated with the collection-specific variable value. |
