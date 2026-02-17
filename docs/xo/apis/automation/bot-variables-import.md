@@ -69,7 +69,7 @@ curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{streamId}}/variab
 | `localeData.localeCode.value`    | Required   | Applicable only when `variableType = locale`. Localized message or text for the locale. |
 
 
-## Sample Request when Collections are enabled
+## Sample Request When Collections Are Enabled
 
 
 ```json
