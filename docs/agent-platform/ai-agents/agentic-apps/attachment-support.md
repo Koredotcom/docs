@@ -19,8 +19,7 @@ For selected file types, the platform extracts the content and uses it as contex
 
 
 !!!abstract "Examples"
-
-  When applying for a job through an HR Assistant agent, users can simply upload their resume instead of manually entering personal and professional details. The assistant automatically extracts the necessary information and uses it in the conversation.
+    When applying for a job through an HR Assistant agent, users can simply upload their resume instead of manually entering personal and professional details. The assistant automatically extracts the necessary information and uses it in the conversation.
 
 ## File Metadata extraction
 
@@ -188,9 +187,9 @@ This allows you to upload the files. Refer to [this for file limits](settings/ap
 
 ## File State Management
 
-Each file has an associated state with it that indicates whether the content extracted from the uploaded file should be used in the current conversation or not. 
+Each file is assigned a state that determines whether the content extracted from the uploaded file is available for use in the current conversation.
 
-* **Active state**: By default, when a file is uploaded, it is in *active* state. This means the content of the file is eligible for use in the current conversation. 
+* **Active state**: By default, when a file is uploaded, it's in *active* state. This means the content of the file is eligible for use in the current conversation. 
 * **Inactive state**: Uncheck the file in the attachment list to make it *inactive*, which means that the content extracted from the document shouldn't be used for the current conversation. Setting a file to inactive doesn't delete or remove it. The file remains available and can be checked again when required.  
 
 For example, if a user uploads multiple documents but only wants the agent to refer to one of them, he can uncheck the irrelevant files, ensuring only the intended file is used for that interaction.
