@@ -17,9 +17,9 @@ Export environment and locale (content) variables from a bot. The endpoint retri
 
 | **PARAMETER** | **REQUIRED/OPTIONAL** | **DESCRIPTION** |
 |-----------|-------------------|-------------|
-| `host`      | Required          | Environment URL, for example, https://platform.kore.ai |
+| `host`      | Required          | Environment URL, for example: https://platform.kore.ai. |
 | `botId/streamId`    | Required          | App ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app. |
-| `version`    | Required          | API version (For example, 1.1). |
+| `version`    | Required          | API version, for example: 1.1. |
 
 ## Sample Request
 
