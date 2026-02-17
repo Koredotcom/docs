@@ -796,7 +796,6 @@ Here is the list of all the external models supported in the Platform:
 <li>gpt-4o-mini-transcribe</li>
 <li>gpt-4o-mini-audio-preview</li>
 <li>gpt-4o-audio-preview</li>
-<li>gpt-4o-realtime-preview</li>
 <li>gpt-audio-mini</li>
 <li>gpt-audio</li>
 <li>gpt-image-1-mini</li>
