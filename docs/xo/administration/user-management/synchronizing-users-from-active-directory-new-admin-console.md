@@ -121,8 +121,6 @@ How you access the Active Directory Sync configuration depends which type of con
 
 * In the **Enrollment > Directory Sync** page, in the **Current Settings** section, click **Run Now** as shown in the following illustration.  
 
-<img src="../images/synchronizing-users-from-active-directory-img6.png" alt="Run manual sync" title="Run manual sync" style="border: 1px solid gray;zoom:70%;"/>
-
 The _Directory Synchronization is in-progress_ message is displayed at the top of the page.
 
 
