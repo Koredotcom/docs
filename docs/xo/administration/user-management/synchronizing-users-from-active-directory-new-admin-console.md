@@ -66,7 +66,7 @@ To configure Active Directory, log on to the Admin Console and complete the foll
 
       a. On the **User Attributes** child tab you can import the user profile information
 
-      * using predefined Default mapping of Kore.ai user profile fields to relevant LDAP attributes or
+      * using predefined Default mapping of AI for Service user profile fields to relevant LDAP attributes or
 
       * create your own custom mapping with the Customer Attribute name and values.
 
@@ -101,7 +101,7 @@ You may want to view the results of Active Directory sync, [see here](#view-repo
 * Any login attempts by such users will be blocked by the system
 * Deletion would be against a specific Account to which the user belongs to. For example, if the user is part of multiple accounts, then the user will be able to access any other accounts in which the user is still an active state
 * The following user can't be deleted from the account
-    * User is Bot Owner for one or more bots
+    * User is the Owner for one or more apps.
     * User is Account Owner
 
     Such users won't be deleted from the account during the AD Sync process. The AD Sync logs will contain the list of such users who couldn't be deleted along with the reason.
@@ -111,12 +111,12 @@ You may want to view the results of Active Directory sync, [see here](#view-repo
 
 After you configure and run an Active Directory sync for your account, you must review the results of the sync. This topic describes how to access and view a report for the current Active Directory sync.
 
-How you access the last run results for your Active Directory sync runs depends on which type of connector you are using. Complete one of the following procedures to access the last run results for Kore.ai Active Directory sync.
+How you access the last run results for your Active Directory sync runs depends on which type of connector you are using. Complete one of the following procedures to access the last run results for  Active Directory sync.
 
 
 **To view the last run report for an Active Directory sync using the cloud-based connector**
 
-* In the Bots Admin Console **Enrollment** module, on the **Directory Sync** page, click _here_ as shown in the following illustration.
+* In theAdmin Console **User Management** module, on the **Directory Sync** page, click _here_ as shown in the following illustration.
 
 ### Viewing the Last Run Report
 
@@ -127,12 +127,12 @@ The **Report on Active Directory Sync** dialog is displayed as shown in the foll
 
 You can review all historical Active Directory sync operations along with the results of that sync. This topic describes how to access the report and how to retrieve details about the synchronization.
 
-How you access the history for your Active Directory sync runs depends which type of connector you are using. Complete one of the following procedures to access the history results for Kore.ai Active Directory sync.
+How you access the history for your Active Directory sync runs depends which type of connector you are using. Complete one of the following procedures to access the history results for Active Directory sync.
 
 
 **To view historical reports for Active Directory sync using the cloud-based connector**
 
-* In the Bots Admin Console **Enrollment** module, on the **Directory Sync** page, in the **Current Settings** section, click  **Sync History**  as shown in the following illustration.  
+* In the Admin Console **User Management** module, on the **Directory Sync** page, in the **Current Settings** section, click  **Sync History**  as shown in the following illustration.  
 
 
 ### Viewing a Report
