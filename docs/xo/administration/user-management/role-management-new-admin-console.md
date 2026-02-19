@@ -2,17 +2,17 @@
 
 Roles and Permissions help in organizing the developer community based on the scope of their work.
 
-* By default the roles of **Master Admin**, **Bot Owner**, **Bot Developer** and **Bot Tester** are created by the system.
+* By default the roles of **Master Admin**, **App Owner**, **App Developer** and **App Tester** are created by the system.
 * Each role has set of permissions allowed.
-* You can edit the permission settings for Bot Developer and Bot Tester but not for Master Admin and Bot Owner roles.
-* Users can be assigned to these roles, except Bot Owner which gets assigned when a User creates a Bot.
+* You can edit the permission settings for App Developer and App Tester but not for Master Admin and App Owner roles.
+* Users can be assigned to these roles, except App Owner which gets assigned when a User creates an App.
 
 Apart from these the role of **Primary Master Admin** is created and assigned to the creator of the account.
 
 These roles can be classified into:
 
 * **[Admin Roles](#admin-roles)** which help in account management, and
-* **[Bot Roles](#bot-roles)** which help in bot development.
+* **[App Roles](#app-roles)** which help in app development.
 
 
 ## Admin Roles
@@ -34,11 +34,11 @@ By default, a Master Admin role is created and this role can be assigned to any 
 | Manage Groups                 | Edit         |
 | Manage Custom Admin Roles     | Yes          |
 | Manage Built-In Admin Roles   | Yes          |
-| Manage Bot Roles              | Yes          |
+| Manage App Roles              | Yes          |
 | Manage Deployment             | Yes          |
-| Enterprise Bots               | Yes          |
-| Consumer Bots                 | Yes          |
-| Smart Bots                    | Yes          |
+| Enterprise Apps               | Yes          |
+| Consumer Apps                 | Yes          |
+| Smart Apps                    | Yes          |
 | Preferences                   | Yes          |
 | Single Sign On                | Yes          |
 | Kore.ai Connector             | Yes          |
@@ -76,11 +76,11 @@ The Master Admin can create custom Admin roles and assign the same to users. The
 
 #### Creating an Admin role
 
-1. Open the Bots Admin Console.
-2. On the Admin menu, select **User Management > Role Management**.
-3. On the top right corner of the Role Management window, select **New Role**.
+1. Open the Admin Console.
+2. On the Admin menu, select **User Management > Roles**.
+3. On the top right corner of the Role Management window, select **+Add New**.
 4. Enter **Role Name** and **Role Description**.
-5. Under Select Role Type, select **Admin Role** and select the necessary permissions for the role.
+5. Under **Role Type**, select **Admin Role** and select the necessary permissions for the role.
 6. You can retain the default permission settings or modify them as per your requirements.
 7. Select **Save**.
 
@@ -89,7 +89,7 @@ Once created, you can assign roles to individual users or to user groups. You ca
 
 #### Assigning Admin role
 
-1. Open the Bots Admin Console.
+1. Open the Admin Console.
 2. On the Admin menu, select **User Management > Users**.
 3. Select a user’s record for which you want to add a bot role. The user’s profile slides open.
 4. Under the **Profile** tab, **edit Admin Role.**
@@ -113,11 +113,11 @@ Once created, you can assign roles to individual users or to user groups. You ca
     The default Master Admin role can be assigned to users (not groups) by the Primary Master Admin.
 
 
-## Bot Roles
+## App Roles
 
 This section illustrates various Bot Roles, their permissions, steps to create custom Bot role and assign users to the same.
 
-**Bot Roles** can be used to define permissions for accessing various components of a bot. These permissions include the ability to create tasks, train the bot, enable channels, enable extensions via SDKs, publish the bot and view usage analytics.
+**App Roles** can be used to define permissions for accessing various components of a bot. These permissions include the ability to create tasks, train the bot, enable channels, enable extensions via SDKs, publish the bot and view usage analytics.
 
 **Bot Owner**, **Bot Developer**, and **Bot Tester** are the three in-built bot roles that are available for all accounts. Creators of bots are automatically assigned to the _Bot Owner_ role.
 

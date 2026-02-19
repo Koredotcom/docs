@@ -35,9 +35,9 @@ To configure Active Directory, log on to the Admin Console and complete the foll
         style="border: 1px solid gray; zoom:70%" />
 
 
-    a.   **Host Name**: The name of the domain host, for example, `www.example.org` or `10.12.6.151`.
+    a.  **Host Name**: The name of the domain host, for example, `www.example.org` or `10.12.6.151`.
 
-    b.   **Server Port**: The port number for the domain host, for example, 10042.
+    b.  **Server Port**: The port number for the domain host, for example, 10042.
 
     c. **Base DN**: The server location for users and groups in a domain, for example, dc=kore,dc=com.
 
