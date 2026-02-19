@@ -16,8 +16,6 @@ AI for Service offers a wizard-based approach that will take you through the pro
 
 Configure a cloud-based connector to access your Active Directory (AD) server securely over the internet.
 
-## Configuration
-
 To configure Active Directory, log on to the Admin Console and complete the following steps to access the configuration settings for your company's Active Directory sync.
 
 1. In the User Management module, on the Directory Sync page, select **Configure**.
@@ -96,32 +94,17 @@ To configure Active Directory, log on to the Admin Console and complete the foll
 
 You may want to view the results of Active Directory sync, [see here](#view-report).
 
-Notes regarding deleted users:
+!!! Notes "Deleted users":
 
-* Users who are deleted or marked as deleted in the AD Server will be deleted from the Bots Platform as well and will be not available in the list of users during AD sync process
+* Users who are deleted or marked as deleted in the AD Server will be deleted from the Platform as well and will be not available in the list of users during AD sync process
 * The user record will be retained in the database for any cross-reference and audit purposes
 * Any login attempts by such users will be blocked by the system
-* Deletion would be against a specific Account to which the user belongs to i.e. if the user is part of multiple accounts, then the user will be able to access any other accounts in which the user is still an active state
+* Deletion would be against a specific Account to which the user belongs to. For example, if the user is part of multiple accounts, then the user will be able to access any other accounts in which the user is still an active state
 * The following user can't be deleted from the account
     * User is Bot Owner for one or more bots
     * User is Account Owner
 
     Such users won't be deleted from the account during the AD Sync process. The AD Sync logs will contain the list of such users who couldn't be deleted along with the reason.
-
-
-## Manual Sync
-
-You may want to initiate manual sync with your Active Directory to update when there are many changes between scheduled syncs.
-To complete this procedure, you must have already defined synchronization settings for your account.
-
-How you access the Active Directory Sync configuration depends which type of connector you are using. Complete one of the following procedures to access the Kore.ai Active Directory configuration dialog.
-
-
-**To manually start an Active Directory sync using the cloud-based connector**
-
-* In the **Enrollment > Directory Sync** page, in the **Current Settings** section, click **Run Now** as shown in the following illustration.  
-
-The _Directory Synchronization is in-progress_ message is displayed at the top of the page.
 
 
 ## View Report
