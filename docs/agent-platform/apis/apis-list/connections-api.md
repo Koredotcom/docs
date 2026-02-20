@@ -871,3 +871,241 @@ curl --location --request PATCH 'https://{{host}}/api/public/connections/{{conne
   "modifiedOn": "2024-01-16T14:45:00.000Z"
 }
 ```
+
+## Custom API Connection
+
+Custom API connections let you integrate external models by configuring your own API endpoint. You control the endpoint URL, authentication, request payload, and response mappings. This functionality applies only when the provider type is set to API.
+
+### Connection Types
+
+Custom API connections come in two types:
+
+**Default Provider**
+
+* You define the complete request structure from scratch.
+* Full control over payload format, variable placeholders, and response parsing.
+* Use when integrating with a custom or proprietary API that doesn't follow standard LLM provider formats.
+
+**Existing Provider**
+
+* Uses an existing provider's request/response format such as OpenAI, Anthropic, Cohere, or Gemini.
+* You only specify the endpoint and which provider format to use.
+* Use when integrating with OpenAI-compatible APIs (like Groq, Together AI) or other providers that follow standard formats.
+
+**Endpoint**
+
+| Method | Endpoint | Update Type | Description |
+|--------|----------|-------------|-------------|
+| `PATCH` | `https://{{host}}/api/public/connections/{connectionId}` | Partial | Modifies only specified fields; preserves everything else. |
+| `PUT` | `https://{{host}}/api/public/connections/{connectionId}` | Full | Replaces the entire config. Requires all mandatory fields. |
+
+---
+
+**Path Parameters**
+
+| Parameter | Required | Type | Description |
+|-----------|----------|------|-------------|
+| `connectionId` | Yes | String | The unique identifier of the Custom API connection |
+
+---
+
+### Partial Update (PATCH)
+
+Use `PATCH` for quick changes, such as rotating an API key or updating a model name, without sending the entire configuration object. Only the fields you include in the request will be updated.
+
+#### Sample Request: Default Provider (Updating Endpoint and Headers)
+
+This example shows how to update connections where you define the complete request structure.
+
+```bash
+curl --request PATCH 'https://{{host}}/api/public/connections/{connectionId}' \
+  --header 'x-api-key: {{apiKey}}' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "connectionName": "Updated Custom Provider",
+    "endpointUrl": "https://api.example.com/v2",
+    "headers": [{"key": "x-api-key", "value": "new-key-123"}],
+    "outputPath": "result.text"
+  }'
+```
+
+**Body Parameters**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `connectionName` | String | Display name for the connection |
+| `model` | String | Model identifier |
+| `endpointUrl` | String | API endpoint URL |
+| `headers` | Array | HTTP headers to include in requests |
+| `status` | String | Connection status: `DRAFT` or `FINALIZED` |
+
+**API Fields**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `promptVars` | array | Variable definitions for prompts |
+| `customVars` | array | Custom variable definitions |
+| `payload` | object | Request body template with variable placeholders |
+| `outputPath` | string | JSONPath to extract response text |
+| `inputTokensPath` | string | JSONPath to extract input token count |
+| `outputTokensPath` | string | JSONPath to extract output token count |
+
+---
+
+#### Sample Request: Existing Provider (Updating Features)
+
+This example shows how to update connections that use standard provider formats (OpenAI, Anthropic, etc.).
+
+```bash
+curl --request PATCH 'https://{{host}}/api/public/connections/{connectionId}' \
+  --header 'x-api-key: {{apiKey}}' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "connectionName": "Groq LLaMA Updated",
+    "model": "llama3-8b-8192",
+    "llmFeatures": {
+      "toolCalling": true,
+      "streaming": true,
+      "supportTools": true,
+      "parallelToolCalling": false,
+      "structuredResponse": false,
+      "dataGeneration": false
+    }
+  }'
+```
+
+**Body Parameters**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `connectionName` | String | Display name for the connection |
+| `model` | String | Model identifier |
+| `endpointUrl` | String | API endpoint URL |
+| `headers` | Array | HTTP headers to include in requests |
+| `status` | String | Connection status: `DRAFT` or `FINALIZED` |
+
+**API Fields**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `mapProvider` | String | Tells the system which template to use: `openAIModel` or `anthropicModel`. |
+| `llmFeatures` | Object | A set of boolean flags (e.g., `streaming: true`, `toolCalling: true`). |
+| `IOMappings` | Array | List of supported modalities (e.g., `["textToText", "imageToText"]`). |
+| `idp` | string | Identity provider setting; usually set to `"none"`. |
+
+---
+
+### Full Replace (PUT)
+
+Use `PUT` when you need to completely reconfigure a connection or when moving a connection status from `DRAFT` to `FINALIZED`. You must provide all mandatory fields for the connection type.
+
+#### Sample Request: Default Provider (Full Payload)
+
+This example shows how to use `PUT` for a Default Provider connection. You must include the complete configuration, including all prompt variables, payload structure, and output paths.
+
+```bash
+curl --request PUT 'https://{{host}}/api/public/connections/{connectionId}' \
+  --header 'x-api-key: {{apiKey}}' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "model": "CustomProvider-v2",
+    "connectionName": "Fully Updated Custom Provider",
+    "endpointUrl": "https://api.newprovider.com/v1/completions",
+    "headers": [
+      {"key": "Authorization", "value": "Bearer new-secret-key"},
+      {"key": "Content-Type", "value": "application/json"}
+    ],
+    "promptVars": [
+      {"name": "prompt", "displayName": "Prompt", "status": true, "dataType": "String", "elementType": "textBox", "defaultValue": "", "required": true},
+      {"name": "system_prompt", "displayName": "System Prompt", "status": true, "dataType": "String", "elementType": "textBox", "defaultValue": "You are a helpful assistant", "required": false},
+      {"name": "examples", "displayName": "Examples", "status": false, "dataType": "String", "elementType": "textBox", "examples": true, "defaultValue": "", "required": false}
+    ],
+    "customVars": [],
+    "payload": {
+      "model": "gpt-4-turbo",
+      "max_tokens": 4096,
+      "temperature": 0.8,
+      "messages": [
+        {"role": "system", "content": "{{system_prompt}}"},
+        {"role": "user", "content": "{{prompt}}"}
+      ]
+    },
+    "outputPath": "choices[0].message.content",
+    "inputTokensPath": "usage.prompt_tokens",
+    "outputTokensPath": "usage.completion_tokens",
+    "status": "FINALIZED"
+  }'
+```
+
+**Body Parameters**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `connectionName` | String | Display name for the connection |
+| `model` | String | Model identifier |
+| `endpointUrl` | String | API endpoint URL |
+| `headers` | Array | HTTP headers to include in requests |
+| `status` | String | Connection status: `DRAFT` or `FINALIZED` |
+
+**API Fields**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `promptVars` | array | Variable definitions for prompts |
+| `customVars` | array | Custom variable definitions |
+| `payload` | object | Request body template with variable placeholders |
+| `outputPath` | string | JSONPath to extract response text |
+| `inputTokensPath` | string | JSONPath to extract input token count |
+| `outputTokensPath` | string | JSONPath to extract output token count |
+
+---
+
+#### Sample Request: Existing Provider (Full Payload)
+
+This example shows how to use `PUT` for an Existing Provider connection. You must specify the provider format to use and the LLM capabilities.
+
+```bash
+curl --request PUT 'https://{{host}}/api/public/connections/{connectionId}' \
+  --header 'x-api-key: {{apiKey}}' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "model": "llama3-70b-8192-updated",
+    "connectionName": "Groq LLaMA Full Update",
+    "endpointUrl": "https://api.groq.com/openai/v1/chat/completions",
+    "headers": [
+      {"key": "Authorization", "value": "Bearer gsk_newkey12345"},
+      {"key": "Content-Type", "value": "application/json"}
+    ],
+    "mapProvider": "openAIModel",
+    "llmFeatures": {
+      "toolCalling": true,
+      "supportTools": true,
+      "parallelToolCalling": true,
+      "structuredResponse": true,
+      "dataGeneration": false,
+      "streaming": true
+    },
+    "IOMappings": ["textToText", "imageToText"],
+    "status": "FINALIZED",
+    "idp": "none"
+  }'
+```
+
+**Body Parameters**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `connectionName` | String | Display name for the connection |
+| `model` | String | Model identifier |
+| `endpointUrl` | String | API endpoint URL |
+| `headers` | Array | HTTP headers to include in requests |
+| `status` | String | Connection status: `DRAFT` or `FINALIZED` |
+
+**API Fields**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `mapProvider` | String | Tells the system which template to use: `openAIModel` or `anthropicModel`. |
+| `llmFeatures` | Object | A set of boolean flags (for example: `streaming: true`, `toolCalling: true`). |
+| `IOMappings` | Array | List of supported modalities (for example: `["textToText", "imageToText"]`). |
+| `idp` | string | Identity provider setting; usually set to `"none"`. |

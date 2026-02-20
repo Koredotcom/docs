@@ -26,19 +26,16 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-5.1-2025-11-13</li>
     <li>gpt-5.1</li>
     <li>gpt-5.1-chat-latest</li>
-    <li>gpt-realtime-mini-2025-10-06</li>
     <li>gpt-audio-mini-2025-10-06</li>
     <li>gpt-5-2025-08-07</li>
     <li>gpt-5-mini-2025-08-07</li>
     <li>gpt-5-nano-2025-08-07</li>
     <li>gpt-audio-2025-08-28</li>
-    <li>gpt-realtime-2025-08-28</li>
     <li>gpt-5</li>
     <li>gpt-5-mini</li>
     <li>gpt-5-nano</li>
     <li>gpt-5-chat-latest</li>
     <li>gpt-4o-audio-preview-2025-06-03</li>
-    <li>gpt-4o-realtime-preview-2025-06-03</li>
     <li>gpt-4.5-preview-2025-02-27</li>
     <li>o3-2025-04-16</li>
     <li>o4-mini-2025-04-16</li>
@@ -47,7 +44,6 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4.1-nano-2025-04-14</li>
     <li>gpt-4o-search-preview-2025-03-11</li>
     <li>o3-mini-2025-01-31</li>
-    <li>gpt-4o-realtime-preview-2024-12-17</li>
     <li>gpt-4o-mini-audio-preview-2024-12-17</li>
     <li>gpt-4o-audio-preview-2024-12-17</li>
     <li>o1-2024-12-17</li>
@@ -63,8 +59,6 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4o</li>
     <li>gpt-4o-mini</li>
     <li>gpt-4</li>
-    <li>gpt-4o-realtime-preview</li>
-    <li>gpt-4o-mini-realtime-preview</li>
     <li>gpt-4o-search-preview</li>
     <li>gpt-4.1</li>
     <li>gpt-4.1-mini</li>
@@ -76,13 +70,10 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4o-mini-transcribe</li>
     <li>gpt-4o-mini-audio-preview</li>
     <li>gpt-4o-audio-preview</li>
-    <li>gpt-4o-realtime-preview</li>
     <li>gpt-audio-mini</li>
     <li>gpt-audio</li>
     <li>gpt-image-1-mini</li>
     <li>gpt-image-1</li>
-    <li>gpt-realtime-mini</li>
-    <li>gpt-realtime</li>
     <li>o4-mini</li>
     <li>o3</li>
     <li>o1</li>
@@ -226,8 +217,14 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
    </td>
    <td >
     <ul>
-    <li>open ai-gpt-4o-realtime-preview</li>
-    <li>open ai-gpt-4o-mini-realtime-preview</li>
+    <li>gpt-4o-realtime-preview</li>
+    <li>gpt-4o-mini-realtime-preview</li>
+    <li>gpt-realtime-mini-2025-10-06</li>
+    <li>gpt-realtime-2025-08-28</li>
+    <li>gpt-4o-realtime-preview-2025-06-03</li>
+    <li>gpt-4o-realtime-preview-2024-12-17</li>
+    <li>gpt-realtime-mini</li>
+    <li>gpt-realtime</li>
     </ul>
    </td>
   </tr>
@@ -799,7 +796,6 @@ Here is the list of all the external models supported in the Platform:
 <li>gpt-4o-mini-transcribe</li>
 <li>gpt-4o-mini-audio-preview</li>
 <li>gpt-4o-audio-preview</li>
-<li>gpt-4o-realtime-preview</li>
 <li>gpt-audio-mini</li>
 <li>gpt-audio</li>
 <li>gpt-image-1-mini</li>
