@@ -18,7 +18,7 @@ You can define the following app responses for a task:
 
     You can create a mixture of data from the response object along with your own inputs, a set of **Variable Keys** derived from the Kore.ai system, custom variables, and the response sample. The response is displayed as a message, usually as a well-formed HTML message that contains one or more variables, such as the ID number or subject, from the requested object data.
 
-* **Channel-specific response**: You can also customize a response message for specific channels, for example, Facebook Messenger, Skype, SMS, or Web/Mobile SDK, along with applying predefined message templates (tables, lists, graphs, etc.) for selected channels.
+* **Channel-specific response**: You can also customize a response message for specific channels, for example, Facebook Messenger, SMS, or Web/Mobile SDK, along with applying predefined message templates (tables, lists, graphs, etc.) for selected channels.
 
 ## Message Definition Editor Features
 

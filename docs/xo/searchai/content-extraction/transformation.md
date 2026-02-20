@@ -1,12 +1,10 @@
 # Content Transformation
 
-## Overview
-
 SearchAI's content transformation process transforms raw extracted text into high-quality data that ensures better searchability, understanding, and usability. This enrichment occurs after the extraction phase, allowing users to enhance the data while maintaining the structural and contextual integrity of the original content. The raw ingested content often requires further processing to make the data accurate, contextual, and useful. Issues such as incomplete metadata, formatting inconsistencies, or missing context can hinder the effectiveness of search and retrieval systems. This process addresses these issues by refining the extracted content.
 
 Content Transformations, immediately after extraction, ensure that the noise and irrelevant information from raw data are removed, and the input to vectorization is clean and optimized for retrieval and analysis. This vectorized data is then given to the AI models for processing, resulting in optimum and accurate results. 
 
-Search AI allows you to add multiple different types of stages to the transformation process to input content. The stages are processed in sequence such that the output of one is the input of the next. The following types of transformation stages are currently offered via Document Workbench. 
+Search AI allows you to add multiple different types of stages to the transformation process to input content. The stages are processed in sequence such that the output of one is the input of the next. The following types of transformation stages are offered via Document Workbench. 
  
 
 1. Field Mapping 
@@ -48,17 +46,17 @@ Currently, Search AI offers following types of stages for transformation at this
 
 ### Field Mapping Stage
 
-This stage is used to add, update, or delete specific fields from the input content.  For instance, if some pages are missing a title, you can use this stage to add a relevant title to such pages based on predefined rules or extracted content. This ensures uniformity across all pages, making the content more structured and improving its discoverability during search operations.
+This stage is used to add, update, or delete specific fields from the input content. For instance, if some pages are missing a title, you can use this stage to add a relevant title to such pages based on predefined rules or extracted content. This ensures uniformity across all pages, making the content more structured and improving its discoverability during search operations.
 
 To add this stage, provide the following details.
 
    * **Name**:  Provide a unique name for stage identification.
    * **Type**: Set it to Field Mapping. 
    * **Description**: Describe the purpose of adding this stage. 
-   * **Condition**: The rules or criteria for selecting the content on which the transformation is to be performed. You can add one or more rules to filter specific content. There are two ways of defining the condition for the mapping: **Basic** and **Script**. When using the Script, you can provide a custom script to add the condition for filtering content for transformation. When using the Basic method, you can define a condition using the following two properties.
+   * **Condition**: Define the rules or criteria used to select the content on which the transformation will be applied. The Primary Condition is automatically inherited from the conditions configured during extraction. You can refine this further by adding one or more sub-conditions to filter and target specific content. To define a sub-condition using the following properties.
        * Field Name: Fields of ingested content on which the rule is applied.
-       * Operator: Condition to be applied on the selected field.
-       * Value: Depending on the operator, this field is used to specify the value of the field. 	
+       * Operator: Determines the condition to evaluate on the selected field (for example, equals, contains, greater than).
+       * Value: Specifies the comparison value for the selected field, based on the chosen operator. 	
    * **Outcome**: The transformation to be performed on the content selected using the above conditions.
        * Action: Action to be taken if the above condition is true. This can take the following values:
            * Set - Sets the given value as the value of the target field.
@@ -74,31 +72,36 @@ Use the following properties to configure this stage.
 
 * **Stage Type:** Set this field to Custom Script
 * **Stage Name**: Provide a unique name for the stage.
-* **Condition**: Define a condition for selecting the content using Painless Scripts. For example, if you want to process only file content, use the following script as the condition.
+* **Description**: Describe the purpose of adding this stage. 
+* **Condition**: The primary condition used while extraction is automatically applied for enrichment. 
+* **Outcome**: Define the outcome of the stage using script. 
 
-  ```javascript 
-    if(ctx.sys_content_type.equals("file"))
-        { 
-        return true;
-        }
-    else 
-        {
-        return false;
-        }
-    ```
-* **Outcome**: Define the outcome of the stage using the Painless script. For example, if you want the count of the total number of pages in a given file and add it as another field, you can write a script as shown below.
+For Custom Script stage, include the sub-conditions, if any and the outcome in the same script.
+
+Examples:
 
 ```javascript
+    // count of the total number of pages in a given file and add it as another field
     int temp_total_pages = 0;
-    if(ctx.file_content_obj != null){
-        for (def item: ctx.file_content_obj) {
+    if(context.file_content_obj != null){
+        for (def item: context.file_content_obj) {
             if (item!="") {
                 temp_total_pages = temp_total_pages+1;
                 }
         }
     }
-    ctx.total_pages = temp_total_pages;
+    context.total_pages = temp_total_pages;
 ```
+
+```javascript
+  // Only work on the Web pages and remove the ratings related section from the html page
+
+  if (context.sys_content_type == "web") { // sub-condition
+  context.page_html = context.page_html.replace( /<div[^>]*class=["'][^"']*rating-wrapper[^"']*["'][^>]*>[\s\S]*?<\/div>/gi,'' );
+}
+```
+
+
 
 ### Exclude Documents Stage
 

@@ -1,6 +1,6 @@
 # Conversations
 
-Conversations store the AI Agents Conversations. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
+Conversations provides insights into the AI Agents Conversations. You can use the logs to review your AI Agent’s performance and troubleshoot issues with conversations.
 
 To view the Conversations dashboard, follow the steps:
 

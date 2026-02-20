@@ -37,7 +37,8 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Proactive Notification Status V2](./proactive-notification-status-v2.md) | To fetch the status of a proactive notification triggered via the async webhook channel. | NA  | Channel Management > Proactive Messages |
 | [Publish Bot](./publish-bot.md) | To initiate a bot publish request. | NA  | Bot Publish > Publish |
 | [Bot Publish Status](./bot-publish-status.md) | Gets the publish status of the current application or the last completed status request of the agent. | NA  | Bot Publish > Publish |
-| [Bot Variables Import](./bot-variables-import.md) | To import global and content variables into the agent. | Import Variables | NA  |
+| [Bot Variables Import](./bot-variables-import.md) | To import global and content variables into a bot. | Import Variables | NA  |
+| [Bot Variables Export](./bot-variables-export.md) | To export all global, content (locale), and collection variables from a bot.| Export Variables | NA  |
 | [Batch Test Execution](./batch-test-execution.md) | To invoke the execution of a Batch Test suite. | Batch Tests Execution | NA  |
 | [Batch Test Execution Status](./batch-test-execution-status.md) | To know the status of the execution against a unique Test Request Id. | Batch Tests Execution | NA  |
 | [Get Batch Test Suites](./get-batch-test-suites.md) | To get the list of Batch Test Suites available. | Batch Tests Management | Batch Tests Management |
@@ -95,6 +96,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Get Analytics](./get-analytics.md) | To extract the metrics data related to the intent detection and task performance using API | Metrics | NA  |
 | [Task Execution-based Containment Report](./task-execution-based-containment-report.md) | To extract task execution details (including success and failure status) across all the conversation sessions of the AI Agent in the selected timeframe for Drop-off, Self-service, and Agent Hand-off containment types using API. | Metrics | NA  |
 | [User Engagement Trend](./user-engagement-trend.md) | To provide the number of users who have interacted with the AI Agent in a given period across different time intervals. | User Engagement Trend | NA  |
+| [User Engagement Trend (v2)](./user-engagement-trend-v2.md) | To retrieve engagement metrics for a specific app in a workspace over a chosen time period, including unique users, new users, returning users, and average user counts. | User Engagement Trend | NA  |
 | [Conversation Details and Summary](./conversation-details-and-summary.md) | To fetch the conversational details and summary between the bot and the user. | Conversation History | NA  |
 | [LLM and Generative AI Usage Logs API](./llm-usage-logs-api.md) | To fetch the LLM & Generative AI usage logs. | Gen AI and LLM Usage Logs | API Scopes > Gen AI and LLM Usage Logs |
 

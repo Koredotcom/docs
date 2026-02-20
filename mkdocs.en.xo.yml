@@ -94,6 +94,13 @@ plugins:
         'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
         'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
         'quality-ai/analyze/conversation-intelligence.md': 'quality-ai/analyze/performance-insights.md'
+        'channels/add-skype-channel.md': 'channels/adding-channels-to-your-bot.md'
+        'channels/add-skype-business-channel.md': 'channels/adding-channels-to-your-bot.md'
+        'administration/user-management/managing-your-groups-new-admin-console.md.md': 'administration/user-management/managing-your-groups-new-admin-console.md'
+        'administration/user-management/managing-your-users-new-admin-console.md.md': 'administration/user-management/managing-your-users-new-admin-console.md'
+        'administration/security-and-control/using-single-sign-on-new-admin-console.md.md': 'administration/security-and-control/using-single-sign-on-new-admin-console.md'
+        'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md.md': 'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md'
+
 
 extra:  
   version:
@@ -440,6 +447,7 @@ nav:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
         - Toolkit: searchai/toolkit.md
     - FAQs:
+        - Document-Level Processing: searchai/document-level-processing.md
         - Application Training: searchai/application-training.md
         - Multilingual Support: searchai/language-support.md
         - User Feedback Handling: searchai/feedback.md

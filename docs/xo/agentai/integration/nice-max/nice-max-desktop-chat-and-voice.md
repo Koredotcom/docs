@@ -1,6 +1,6 @@
 # NICE MAX Desktop Chat and Voice
 
-This document provides detailed instructions on the integration process of the Kore.ai Agent AI widget into the NICE MAX Desktop environment. It offers step-by-step guidance to ensure a smooth and efficient setup process, covering all necessary aspects of integration from start to finish. This integration will support all outstanding features of Agent AI such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/){:target="_blank"}, [Agent Coaching](../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Transcription](../../agent-experience/agent-assist-widget-v3.md#transcript-tab){:target="_blank"} along with end of call summary and Custom Data passing such as agent name, ID etc to Agent AI widget.
+This document provides detailed instructions on the integration process of the Agent AI widget into the NICE MAX Desktop environment. It offers step-by-step guidance to ensure a smooth and efficient setup process, covering all necessary aspects of integration from start to finish. This integration will support all outstanding features of Agent AI such as [Automation](https://docs.kore.ai/agentassist/onboarding/conversation-automation/){:target="_blank"}, [Agent Coaching](../../agent-experience/agent-realtime-coaching.md){:target="_blank"}, [Agent Playbook](../../agent-experience/playbook.md){:target="_blank"}, [Sentiment Analysis](../../agent-experience/agent-assist-widget-v3.md){:target="_blank"}, [Transcription](../../agent-experience/agent-assist-widget-v3.md#transcript-tab){:target="_blank"} along with end of call summary and Custom Data passing such as agent name, ID etc to Agent AI widget.
 
 ## Shared Responsibilities
 
@@ -17,7 +17,7 @@ This document provides detailed instructions on the integration process of the K
 
 ## Prerequisites
 
-* NiceCX administrator having access to a NICE CX Account and with privileges to set up the below configurations and able to receive calls and chats on agent desktop.
+* NiceCX administrator having access to a NICE CX Account and with privileges to set up the following configurations and able to receive calls and chats on agent desktop.
 * [NICE CX Studio](https://help.nice-incontact.com/content/studio/studio.htm){:target="_blank"} installed on your windows device.
 * Agent Assist Hub enabled for your account. Contact your NICE CX representative. Note this requires an extra license cost.
 * Access to Kore AgentAssist application and familiarity with creating and configuring a Kore AI Agent.
@@ -47,11 +47,11 @@ This document provides detailed instructions on the integration process of the K
    <td>
 <ul>
 
-<li>If it is legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target=" blank">https://agentassist.kore.ai</a></li>
+<li>If it's legacy Agent AI, URL is <a href="https://agentassist.kore.ai" target=" blank">https://agentassist.kore.ai</a></li>
 
-<li>If it is UXO, URL is <a href="https://platform.kore.ai" target=" blank">https://platform.kore.ai</a></li>
+<li>If it's UXO, URL is <a href="https://platform.kore.ai" target=" blank">https://platform.kore.ai</a></li>
 
-<li>If it is on-prem, the URL is the origin where your Agent AI is hosted.</li>
+<li>If it's on-prem, the URL is the origin where your Agent AI is hosted.</li>
 </ul>
    </td>
   </tr>
@@ -248,8 +248,8 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
         2. Bot Client Secret
         3. Bot ID
         4. Agent AI Widget URL
-        5. Bot Language Code - “en” is set as the default language. Refer to this [doc](../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent's language.  
-    2. Custom Data: The “customdata” object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent. Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. 
+        5. Bot Language Code - **en** is set as the default language. Refer to [Supported Languages](../../agent-experience/supported-languages.md){:target="_blank"} to provide the language code for your AI Agent's language.  
+    2. Custom Data: The **customdata** object in the script can be used to pass information to the Kore AI Agent. During runtime, this custom data will be accessible in the UserContext of the AI Agent. Refer to [Access Custom Data in Agent AI Bot](../../agent-experience/access-custom-data-in-agent-ai.md){:target="_blank"} for instructions on how to access custom data in the AI Agent. 
  
         Include your data in the customdata object (one key-value pair per line). For example: 
 
@@ -257,7 +257,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
             2. `customdata.agentID="1234"`
 
-    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **ht<span>tps://</span>home-abc.nice-incontact.com**, then the API URL would be **ht<span>tps://</span>api-abc.nice-incontact.com**. Also, it is necessary to use the URLs without the trailing slash.
+    3. NICE CX Credentials: Base region URL is the Host URL of the login page. If the URL for ACD is **ht<span>tps://</span>home-abc.nice-incontact.com**, then the API URL would be **ht<span>tps://</span>api-abc.nice-incontact.com**. Also, it's necessary to use the URLs without the trailing slash.
         1. NICE CX API Access Key
         2. NICE CX API Access Key Secret
         3. NICE CX API URL
@@ -276,7 +276,7 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
 
 10. After selecting **Agent Assist**, click the **Close** button on the bottom-right corner of the page. 
 !!! note
-    Do not click the “X” button to close the window as this will not save the changes. 
+    Don't click the **X** button to close the window as this doesn't save the changes. 
 
 ## NICE CX Setup > Attach Point of Contact with Chat/Voice Script
 

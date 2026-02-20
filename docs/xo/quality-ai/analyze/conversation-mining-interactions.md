@@ -1,20 +1,22 @@
-# Conversation Mining
+# Conversation Mining - Interactions
 
-The Conversation Mining feature lets you focus on interactions of interest or those with the greatest potential for improvement, removing guesswork from manual evaluations and allowing you to concentrate on the most critical interactions.
+The Interactions feature enables supervisors to review and filter scored interactions within their assigned queues. It provides insights into conversation quality, agent performance, and customer experience at both the conversation and agent levels. With Conversation Mining, supervisors can identify and prioritize interactions that require coaching or improvement, eliminating guesswork from manual evaluations.
 
-## Access Conversation Mining
+## Access Conversation Mining - Interactions
 
-Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining**.  
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.     
 
 <img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
 The **Conversation Mining** includes the following sections:
 
-* **Interactions**: Enables you to view the scored interactions and applied filters for targeted reviews. [Learn more](./conversation-mining-interactions.md){:target=”_blank”}.
+* **Interactions**: Enables you to view scored interactions and applied filters for targeted reviews. [Learn more](./conversation-mining-interactions.md)
 
-* **Audit Allocations**: Lets you create and assign allocations for auditors to perform manual quality scoring. [Learn more](../analyze/conversation-mining-audit-allocations.md){:target=”_blank”}.
+* **CX Insights**: For more insights on how agent actions affect customer satisfaction and sentiment. [Learn more](../analyze/cx-insights.md).
 
-## Conversation Mining - Interactions
+* **Performance Insights**: For more insights on which agents or behaviors influence CX outcomes. [Learn more](../analyze/performance-insights.md).
+
+## Interactions Interface Elements
 
 This feature enables supervisors to review and filter scored interactions within their assigned queues, making it easier to identify conversations that need coaching or attention. It delivers clear insights into conversation quality, agent performance, and customer experience at the conversation level and agent level.
 
@@ -70,7 +72,7 @@ The **Interactions** dashboard includes the following items:
 
 * **Queues**: Shows the queue where the system terminated during the interaction.
 
-    !!!Note
+    !!! Note
 
         The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction. 
 
@@ -78,7 +80,8 @@ The **Interactions** dashboard includes the following items:
 
 * **Sentiment Score**: Displays the system-generated sentiment score for the interaction based on the customer's words.
 
-* **Supervisor Auditor Score**: Shows the supervisor-audited score when a supervisor has manually evaluated the interaction.
+* **Supervisor Auditor Score**: Shows the supervisor-assigned score for audited or manually evaluated interactions and highlights Manual Evaluation metrics with a distinct indicator.   
+<img src="./conversation-mining/images/manual-audit-indicator.png" alt="Manual Audit Indicator" title="Manual Audit Indicator" style="border: 1px solid gray; zoom:80%;">
 
 * **Start Time**: Displays conversation's start time in a specified format in the Interaction listing page (for example, 24 May 2024, 1:17:10 PM).
 
@@ -294,11 +297,7 @@ This shows the automated QA score for an interaction, based on the evaluation fo
 
 #### Saved Filters Customization Options
 
-<<<<<<< Updated upstream
 When you save filters, the system provides the following customization options:
-=======
-When filters are saved, the following customization options are available:  
->>>>>>> Stashed changes
 
 * **Copy**: Creates a duplicate of the saved filter.
 
