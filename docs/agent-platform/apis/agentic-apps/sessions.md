@@ -243,13 +243,13 @@ Lists sessions for the selected app and environment. Supports optional filters s
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>POST
+   <td>GET
    </td>
   </tr>
    <tr>
    <td><strong>Base URL</strong>
    </td>
-   <td>https://&lt;agent-platform-env>.&lt;domain>.com/api/v1/
+   <td>https://&lt;agent-platform-env>.&lt;domain>.com/aaa/api/v1/
    </td>
   </tr>
   <tr>
@@ -300,7 +300,7 @@ Lists sessions for the selected app and environment. Supports optional filters s
 
 
 
-### Request Parameters
+### Query Parameters
 
 
 <table>
@@ -313,57 +313,28 @@ Lists sessions for the selected app and environment. Supports optional filters s
    </td>
   </tr>
   <tr>
-   <td>sessionId
-   </td>
-   <td>To filter sessions by a specific session ID, provide the unique session ID. 
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>userReference
-   </td>
-   <td>To Filter sessions by user reference, provide the userReference string. 
+   <td>startDate</td>
+   <td> Specifies the beginning of the date range for which sessions should be retrieved.
    </td>
    <td>No
    </td>
   </tr>
   <tr>
-   <td>date
-   </td>
-   <td>To filter the sessions by date, provide the start and end dates. 
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>filters
-   </td>
-   <td><p>An array of filter objects used to restrict the list of sessions returned by the API. Each filter defines a field, a comparison operator, and a value to apply when selecting sessions.</p>
-   Filter object fields:<p>
-    <ul>
-    <li>key: The session field to filter on (for example, source).</li>
-    <li>operator: The comparison operation to apply (for example, contains)</li>
-    <li>value: The value to match against the specified field.</li>
-    </ul>
-    <p>Example</p>
-    <p>To retrieve all sessions originating from a specific source (for example, AP), include the following filter:</p>
-    <code>"filters": [ 
-        "key": "source",
-        "value": "AP",
-        "operator": "contains"
-        }
-    ]
-    </code>
-    </td>
+   <td>endDate </td>
+   <td>Defines the end of the date range for sessions retrieval. </td>
    <td>No
    </td>
   </tr>
   <tr>
    <td>offset
    </td>
-   <td>Number of records to skip (for pagination).
+   <td>Indicates the number of records to skip before starting to return results. This field is primarily used for pagination. </td>
+   <td>No
    </td>
+  </tr>
+  <tr>
+   <td>limit </td>
+   <td>Specifies the maximum number of records to return in a single response.  </td>
    <td>No
    </td>
   </tr>
