@@ -17,14 +17,14 @@ Export environment and locale (content) variables from a bot. The endpoint retri
 
 | **PARAMETER** | **REQUIRED/OPTIONAL** | **DESCRIPTION** |
 |-----------|-------------------|-------------|
-| `host`      | Required          | Environment URL, for example, https://platform.kore.ai |
+| `host`      | Required          | Environment URL, for example: https://platform.kore.ai. |
 | `botId/streamId`    | Required          | App ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app. |
-| `version`    | Required          | API version (For example, 1.1). |
+| `version`    | Required          | API version, for example: 1.1. |
 
 ## Sample Request
 
 ```json
-curl --location --request POST 'https://{{host}}/api/1.1/public/builder/stream/{{streamId}}/variables/export' \
+curl --location --request POST 'https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables/export' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}'
 ```
 
@@ -264,20 +264,20 @@ Returns an array of variable objects containing the exported bot variables. Each
 
 | **PARAMETER**                     | **TYPE**    | **DESCRIPTION**                                                                 |
 |---------------------------|---------|-----------------------------------------------------------------------------|
-| `key`                       | string  | The unique identifier or name of the variable                                |
-| `value`                     | string  | The value assigned to the variable                                           |
-| `hint`                      | string  | Optional description or hint text for the variable                           |
-| `variableType`              | string  | Type of variable (for example, `env` for environment variables)              |
-| `scope`                    | string  | Scope of the variable (for example, `prePopulated`)                          |
-| `group`                     | string  | Optional group name for organizing related variables                         |
-| `propagateValue`            | boolean | Indicates whether the variable value should be propagated                    |
-| `vNameSpace`                | array   | Array of namespace objects where this variable is available                  |
-| `vNameSpace[].name`         | string  | Name of the namespace                                                        |
-| `vNameSpace[].refId`        | string  | Reference ID of the namespace                                                |
-| `isSecured`                 | boolean | Indicates whether the variable contains sensitive or encrypted data          |
-| `audioTag`                  | string  | Audio tag associated with the variable (primarily for locale variables)     |
-| `localeData`                | object  | Contains locale-specific values; present only when `variableType` is `locale`|
-| `localeData.localeCode`     | string  | Locale identifier (for example, `en`, `fr`, `ja`, `zh_cn`)                    |
-| `localeData.localeCode.audioTag`       | string  | Audio tag for text-to-speech or voice use cases                               |
-| `localeData.localeCode.hint`           | string  | Optional hint for the localized value                                        |
-| `localeData.localeCode.value`          | string  | Localized message or text for the locale                                     |
+| `key`                       | string  | The unique identifier or name of the variable.                                |
+| `value`                     | string  | The value assigned to the variable.                                           |
+| `hint`                      | string  | Optional description or hint text for the variable.                           |
+| `variableType`              | string  | Type of variable (for example, `env` for environment variables).              |
+| `scope`                    | string  | Scope of the variable (for example, `prePopulated`).                          |
+| `group`                     | string  | Optional group name for organizing related variables.                         |
+| `propagateValue`            | boolean | Indicates whether the variable value should be propagated.                    |
+| `vNameSpace`                | array   | Array of namespace objects where this variable is available.                  |
+| `vNameSpace[].name`         | string  | Name of the namespace.                                                        |
+| `vNameSpace[].refId`        | string  | Reference ID of the namespace.                                                |
+| `isSecured`                 | boolean | Indicates whether the variable contains sensitive or encrypted data.          |
+| `audioTag`                  | string  | Audio tag associated with the variable (primarily for locale variables).     |
+| `localeData`                | object  | Contains locale-specific values; present only when `variableType` is `locale`.|
+| `localeData.localeCode`     | string  | Locale identifier (for example, `en`, `fr`, `ja`, `zh_cn`).                    |
+| `localeData.localeCode.audioTag`       | string  | Audio tag for text-to-speech or voice use cases.                               |
+| `localeData.localeCode.hint`           | string  | Optional hint for the localized value.                                        |
+| `localeData.localeCode.value`          | string  | Localized message or text for the locale.                                     |

@@ -17,14 +17,14 @@ Import environment and content (locale) variables into a bot.
 
 | Parameter | Required | Description                                                                 |
 |-----------|----------|-----------------------------------------------------------------------------|
-| `host`      | Required | The environment URL (for example, `https://platform.kore.ai`)               |
+| `host`      | Required | The environment URL, for example: `https://platform.kore.ai`.              |
 | `botId/streamId `    | Required | App ID or Bot ID. You can access it by navigating to **App Settings** → **App Profile** in the app.     |
-| `version`    | Required          | API version (For example, 1.1). |
+| `version`    | Required          | API version, for example: 1.1. |
 
 ## Sample Request
 
 ```json
-curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{streamId}}/variables/import' \
+curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables/import' \
 --header 'Content-Type: application/json' \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --data '[
@@ -74,7 +74,7 @@ curl --location 'https://{{host}}/api/1.1/public/builder/bot/{{streamId}}/variab
 
 ```json
 curl -X POST \
-  https://{{host}}/api/1.1/public/builder/bot/{{BotId}}/variables/import \
+  https://{{host}}/api/1.1/public/builder/bot/{{botId}}/variables/import \
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
