@@ -109,8 +109,13 @@ In Search AI:
     * For Basic Auth, provide the connector name, username, password, and Confluence Data Center host URL.
     * For OAuth 2.0 Authentication, enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence Data Center base URL and domain name.
     * Header Based Authorization fields: Header, Token, and Host URL. Click Connect to initiate authorization.
+1. **Real-Time Sync**: Toggle to enable/disable automatic syncing of content changes in real-time using source notifications.
+1. **Webhook Client Secret**: Generated automatically (with option to regenerate).
+1. **Webhook URL**: Copy the provided webhook URL for configuration in Confluence.
+1. Click **Connect** to initiate authorization.
 
-Click **Connect** to initiate authorization.
+!!! note
+    Webhook sync updates document entities only. Associated users and permissions within those entities must be synchronized through the regular incremental or manual sync.
 
 ## Webhook Configuration for Real-Time Sync
 
@@ -131,39 +136,28 @@ Perform the following steps in your Confluence server to set up the webhook:
     * Secret: <webhook_secret_token> (This will be displayed in the Search AI connector Authentication configuration)
 5. Click Test connection to verify Confluence can reach the endpoint.
 6. From the Events dropdown, select the following subscribed events: page_created, page_updated, page_removed (or page_deleted), blog_created, blog_updated, blog_removed (or blog_deleted).
-7. Ensure Active is selected, then click Save.
-
-For more information about Confluence webhooks, refer to the Atlassian Webhooks Documentation.
-
-### Webhook Sync Configuration
-
-Once the connector is successfully configured, navigate to the Webhook Settings section:
-
-1. View Webhook Endpoint URL: The webhook endpoint URL will be displayed. Copy this URL to configure in your Confluence Server webhook settings.
-2. View and Rotate Webhook Secret/Token:
-    * The webhook secret/token is displayed in the settings.
-    * Use the Regenerate button to generate a new secret if needed.
-    * Update the Confluence webhook configuration with the new secret after rotation.
-3. Training Pipeline: There is a separate training pipeline for webhook-based syncs compared to manual syncs. This ensures that real-time updates don't interfere with scheduled bulk synchronization processes.
-
-**How Webhook Sync Works**
-
-When SearchAI receives a webhook POST from Confluence:
-
-1. The existing Confluence connector credentials/API are used to fetch the latest content version for the entity referenced in the webhook notification.
-2. Based on the fetched content and event type, the following ingestion updates are performed:
-    * Create/Update: If the event is page_created, page_updated, blog_created, or blog_updated, the document is created or updated in the Search AI index.
-    * Delete: If the event type is page_removed, page_deleted, blog_removed, or blog_deleted, the corresponding content is removed from the index.
-3. The sync is logged separately in the webhook sync records for audit and troubleshooting purposes.
-
+7. Ensure **Active** is selected, then click **Save**.
 
 ### Content Ingestion
 
-Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes:
-    * **Ingest all content**: Syncs all available content from Confluence.
-    * **Ingest filtered content**: Lets you specify only the content you want to sync.
-Select **Ingest filtered** content and click **Edit configuration** to open the **Ingestion Filters** page.
-Click **Browse & Select**, then mark the spaces or content types you want to sync. Use the search box to quickly locate spaces, check or uncheck items to include or exclude, and click **View More** to load additional spaces and save the configuration. The connector ingests only the items you select.
+Go to the **Manage Content** tab in the Confluence Data Center connector in Search AI to define how much content should be ingested. You can choose between two modes:<br>
+
+ * **Ingest all content**: Syncs all available content from Confluence.<br>
+ * **Ingest filtered content**: Lets you specify only the content you want to sync.
+
+To configure filtered ingestion:
+
+1. Select **Ingest filtered content** and click **Edit configuration** to open the **Ingestion Filters** page.
+2. Click **Browse & Select**, then mark the spaces or content types you want to sync.
+3. Use the search box to quickly locate spaces, check or uncheck items to include or exclude, and click **View More** to load additional spaces.
+4. Save the configuration.
+
+**Real-Time Sync via Webhooks:**
+
+When Real-Time Sync is enabled and Search AI receives a webhook POST from Confluence, content updates are processed automatically:
+
+* **Create/Update**: For events like `page_created`, `page_updated`, `blog_created`, or `blog_updated`, the document is created or updated in the Search AI index.
+* **Delete**: For events like `page_removed`, `page_deleted`, `blog_removed`, or `blog_deleted`, the corresponding content is removed from the index.
 
 ![Content Synchronization](images/confluenceserver/content-synchronization.png "Content Synchronization")
 

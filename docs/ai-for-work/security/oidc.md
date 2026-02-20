@@ -165,7 +165,7 @@ To set up the application in your Microsoft Entra ID (formerly Azure AD) environ
     * Go to **API permissions**.
     * Click **Add a permission**.
     * Select **Microsoft Graph**.
-    * Add required permissions (e.g., User. Read, email, openid, profile).
+    * Add required permissions (User.Read, email, openid, profile).
     * Click **Grant admin consent** for your organization.
 5. **Copy Configuration Details**:
     * From the app overview page, note the following:

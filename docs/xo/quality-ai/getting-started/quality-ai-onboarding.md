@@ -112,7 +112,7 @@ Quality AI supports multiple languages. English is the default language.
     
 1. Toggle a language off to remove it from the default list.   
 
-    !!! warning "Default Language Removal"
+    !!! warning Default Language Removal
 
         When you remove the default language, the system stops scoring interactions in that language but continues to display AI-generated insights in the default language.
 
@@ -136,13 +136,7 @@ Configure conversation sources based on your deployment type.
 
 ### Queue Configuration
 
-Queue configuration appears only for **Agent AI** or **Quality AI Express** deployments.
-
-* Add queue names and Queue IDs.  
-
-    !!! note
-
-        Include unique agent email IDs and Queue IDs from the source system. Duplicate values can cause routing or processing issues.
+Configure queues for Agent AI and Quality AI Express sources to route conversations correctly. Queue configuration appears only for **Agent AI** or **Quality AI Express** deployments.
 
 #### Add a Queue
 
@@ -161,20 +155,54 @@ Queue configuration appears only for **Agent AI** or **Quality AI Express** depl
 
     * **Agents**: Assign agents to the queue using the searchable list.
 
+    !!! note
+
+        Include unique agent email IDs and Queue IDs from the source system. Duplicate values can cause routing or processing issues.
+
 1. Select **Save** to start or update conversation ingestion.     
 <img src="../Onboarding/images/add-queue-agent.png" alt="Agent Queue Details" title="Agent Queue Details" style="border: 1px solid gray; zoom:80%;">
 
-#### Chat Script Timestamp Format
+#### Conversation Agent–Queue Mapping
 
-The Chat Script Timestamp Format defines how Quality AI Express parses timestamps in chat files during ingestion. Chat scripts can include multiple timestamps per message. Correct configuration preserves message order, duration calculations, and time-based analytics.
+This describes the agent-to-queue mapping for both Quality AI Express queues and Agent AI queues. Using the UI, agents can map directly to Express queues, and the system successfully saves the configuration.
 
-##### Supported Timestamp Formats
 
-**Unix Timestamp (Default)**
+To enable interaction evaluation and Kore score validation, you can attach each mapped queue to the relevant evaluation form. This setup validates scheduled interactions ingested via S3, Public APIs, and Agent AI queues.
 
-Supports start and end time validation, which limits flexibility for third-party desktops. Quality AI Express provides an app-level setting to select the chat script timestamp format.
+The system displays interactions only when all the following conditions apply:
 
-**Format**: Integer or decimal (seconds).
+* The queue maps to an evaluation form.
+* The agent maps to the queue using the UI.
+* The supervisor or agent viewing the data belongs to the same queue.
+
+If any of these conditions fail, the system doesn't display the interactions.
+
+
+### Chat Script Timestamp Format
+
+Chat script timestamp format controls how Quality AI Express parses timestamps in chat conversation files during ingestion. Each chat script includes message-level timestamps. Correct configuration ensures accurate message sequencing, duration calculations, and time-based analytics.
+
+Enables you to configure the timestamp format at the Quality AI Express app level. The selected format applies to all ingested chat files, persists across sessions, and displays consistently in the **Conversation Sources** tab.
+
+**Why Timestamp Format Matters**
+
+* Order messages chronologically.
+
+* Calculate conversation duration and response times.
+
+* Identify hold periods and transfer events.
+
+* Generate time-based analytics and reports.
+
+* Incorrect timestamp parsing causes sequencing errors and inaccurate metrics.
+
+Quality AI supports the following Chat script timestamp formats:
+
+#### Unix Timestamp (Default)
+
+Represents seconds since the Unix epoch. This ingestion process validates start and end times, which can limit flexibility for demo environments and third-party desktop integrations. 
+
+**Format**: Integer or decimal number.
 
 **Examples**: 
 
@@ -182,27 +210,17 @@ Supports start and end time validation, which limits flexibility for third-party
 
 * `1735574400.523` (includes milliseconds)
 
-**Offset Timestamp**
+#### Offset Timestamp
 
-Supports message-level offsets without start or end date validation. 
+Represents seconds from the start or end of the conversation. This ingestion process supports message-level offset timestamps without start or end date validation (used only for reporting and filtering). This change applies only to chat ingestion and doesn't affect voice conversation ingestion.
 
-**Format**: Integer or decimal number representing seconds from conversation start or end.
+**Format**: Integer or decimal number.
 
 **Examples**: 
 
 * `0` (conversation start)
-
 * `45` (45 seconds into the conversation)
-
 * `120.5` (2 minutes and 0.5 seconds into the conversation)
-
-#### Conversation Sources Warnings
-
-* **CCAI**: Disabling stops processing CCAI interactions.
-
-* **Agent AI**: Disabling stops processing Agent AI interactions.
-
-* **Quality AI Express**: Disabling blocks file-based ingestion.
 
 ### Set Application Usage Permissions
 

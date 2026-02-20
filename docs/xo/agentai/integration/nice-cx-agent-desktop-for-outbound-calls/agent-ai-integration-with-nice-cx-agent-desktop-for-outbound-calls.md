@@ -201,16 +201,17 @@ This section explains the configuration steps you must complete to integrate Age
     <img src="../images/config-parameters-4.png" alt="config-parameters" title="config-parameters" style="border: 1px solid gray; zoom:80%;">  
 
     * **Audio Relay Endpoint**: {<a href="#kvg">[Kore Voice Gateway</a>(KVG)]}</a>/audiosocket/nice?sipuri=&lt;Bot SIP URI>&lt;DNS>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true
-        * **Bot SIP URI**: Flows & Channels > Channels > Voice Gateway > SIP Numbers > Configure SIP Trunk > Agent AI section of the **[Agent AI](https://platform.kore.ai/)** configuration portal. 
+        * **Bot SIP URI**: Flows & Channels > Channels > Voice Gateway > SIP Numbers > Configure SIP Trunk > Agent AI section of the **[Agent AI](https://platform.kore.ai/)** configuration portal.  
             <img src="../images/configure-sip-trunk-5.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;">  
 
-        * **Bot ID and Account ID**: Flows & Channels > Channels > Digital > Web/Mobile Client > JWT App Details section of the **[Agent AI]**(https://platform.kore.ai/){:target="_blank"} configuration portal. 
+        * **Bot ID and Account ID**: Flows & Channels > Channels > Digital > Web/Mobile Client > JWT App Details section of the **[Agent AI](https://platform.kore.ai/){:target="_blank"}** configuration portal.  
             <img src="../images/web-mobile-client-6.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:70%;">  
 
         * **Token**: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
             * Payload: {“appId”: &lt;Bot Client ID>}
             * Header: {“alg”: “HS256″,”typ”: “JWT”}
-            * Secret: Bot Client Secret. 
+            * Secret: Bot Client Secret.  
+            
 9. Select **Create**. 
 
 ### Step 2: NICE CX Studio > Import Outbound Voice Script and Configure Parameters

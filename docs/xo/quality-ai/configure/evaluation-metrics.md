@@ -246,6 +246,9 @@ The process of managing evaluation metrics includes the following sections:
 
 Steps to edit or delete existing evaluation metrics types:
 
+1. Search and select evaluation metrics.
+ 
+
 1. Select any existing **Evaluation Metrics Type**.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric.png" alt="Edit Metric" title="Edit Metric" style="border: 1px solid gray; zoom:70%;">
 
@@ -253,3 +256,20 @@ Steps to edit or delete existing evaluation metrics types:
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Edit Metric Fields" title="Edit Metric Fields" style="border: 1px solid gray; zoom:70%;">
 
 3. Select **Update** to save changes.
+
+#### Speech Metric Errors
+
+**Crosstalk Warning** 
+
+An error message displays when you attempt to add a duplicate Crosstalk metric.       
+<img src="../evaluation-criteria/evaluation-forms/images/crosstalk-error.png" alt="Crosstalk Warning" title="Crosstalk Warning" style="border: 1px solid gray; zoom:80%;">   
+
+**Dead Air Warning**   
+
+An error message displays when you attempt to add a duplicate Dead Air metric.   
+<img src="../evaluation-criteria/evaluation-forms/images/deadair-error.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:80%;">   
+
+**Speaking Rate** **Warning**   
+
+An error message displays when you attempt to add a duplicate Speaking Rate metric.    
+<img src="../evaluation-criteria/evaluation-forms/images/speech-rate-error.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:80%;">   

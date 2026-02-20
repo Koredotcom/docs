@@ -666,7 +666,7 @@ The Salesforce package now includes a language parameter to support AgentAssist'
 
 **Multi-bot Support for Agent AI Integration with ServiceNow**
 
-Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md#multibot-solution-with-servicenow)
+Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. 
 
 <hr>
 
