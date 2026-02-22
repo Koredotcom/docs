@@ -1,4 +1,4 @@
-# AgenticAI SDK Architecture Documentation
+﻿# AgenticAI SDK Architecture Documentation
 
 This document outlines the architecture of our Agentic AI SDK, detailing the components, their interactions, and dependencies.
 
@@ -89,7 +89,7 @@ A foundational library for configuration (design) and the runtime needs.
 ```
 
 
-## 2. **Workspace (Dev CLI + Custom Logic)**
+## 2. Workspace (Dev CLI + Custom Logic)
 
 - Provides a skeleton workspace to help developers quickly bootstrap new projects.
 - Includes example code to demonstrate usage patterns and integrations:
@@ -166,7 +166,7 @@ Implements other supporting commands & subcommands for configuration management 
 ```
 
 
-## 3. **Dockerized gVisor Image**
+## 3. Dockerized gVisor Image
 
 - Provides a containerized gVisor-based environment for running the Workspace application securely in user space.
 - Built using a custom `Dockerfile` that:
@@ -183,7 +183,7 @@ Implements other supporting commands & subcommands for configuration management 
 - Uses gVisor's security features for process isolation and system call filtering
 
 
-## 4. **Platform Integration**
+## 4. Platform Integration
 
 The Platform manages app deployment and its lifecycle through a unified API interface and provides integration with the MCP server.
 
