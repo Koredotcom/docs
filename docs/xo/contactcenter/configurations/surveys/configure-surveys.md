@@ -46,11 +46,14 @@ The Chat, Call, and Email Experience tabs provide access to the following featur
 
         Email message can be written in plain text or HTML/CSS code.
 
-1. Set the Survey Frequency by configuring the following options:
+1. Set the Survey Frequency by configuring one of the following options:
 
-    * **Show to Everyone** - Select this option to make the survey visible to all the customers.
-    * **Show to Every nth User** - Select this option to make the survey visible to every _nth_ user. For example, if you enter 2 in the input textbox, the survey appears to every second customer.
-    * **Agents can Trigger** - This lets the agents trigger the survey. When you select Auto Trigger Survey, the system sends surveys automatically, and agents can turn them off if needed.
+    | Option                 | Description                                                                              |
+    | :--------------------- | :--------------------------------------------------------------------------------------- |
+    | Show to Everyone       | Makes the survey visible to all customers.                                                                                                          |
+    | Show to Every nth User | Makes the survey visible to every nth customer. For example, if you enter `2`, the survey appears for every second customer.                                |
+    | Agents can Trigger     | Lets agents to trigger the survey. When Auto Trigger Survey is enabled, the system sends surveys automatically, and agents can turn them off if required. |
+
 
 1. Advanced Survey Conditions
 
