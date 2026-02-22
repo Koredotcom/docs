@@ -20,13 +20,9 @@ The submitted rating reflects in the Dashboard, under the Queues and Agents view
 The Surveys section lets you create a survey or view and edit an existing one. You can find the following information:
 
 * **Survey Name**: The name given to your survey.
-* **Actions**: An Edit action is available under this column, allowing you to make changes to an existing survey. This action only displays if there is a survey created.
 * **Description**: The description provided for the survey.
 * **Experience Enabled For**: The system lists the survey enabled channels.
-* **Frequency**: The frequency with which the survey goes out: 
-    * **None**: The survey displays to everyone,
-    * **Show to every nth user**: The survey displays once every set number of customers,
-    * **Agents can trigger**: The survey only displays to customers to whom agents choose to send it.
+* **Frequency**: The frequency with which the survey goes out.
 * **Status**: Enabled or Disabled.
 
 ## General Information
@@ -35,7 +31,7 @@ Under General Information, provide information for the following mandatory field
 
 * Survey Name: The name by which to identify the survey.
 * Description: A short description of the survey.
-<img src="../images/general-information.png" alt="General Information Section" title="General Information Section" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/general-information.png" alt="General Information Section" title="General Information Section" style="border: 1px solid gray; zoom:60%;">
 
 ## Chat, Call, and Email Experience
 
@@ -45,7 +41,7 @@ The Chat, Call, and Email Experience tabs provide access to the following featur
 * Enable the **Chat Experience**, **Call Experience**, or **Email Experience** to request customers to take the survey.
 * Configure the **Request Message** and add a **Gratitude Message** that appears to customers before and after they take the survey.
     * Choose the message language, type the message in, then select **Done**.  
-    <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:60%;">
 
 !!! Note
 
@@ -61,7 +57,7 @@ The Chat, Call, and Email Experience tabs provide access to the following featur
     * Trigger CSAT for agent-closed conversations: Triggers CSAT survey for conversations closed by agents.
 * Turn on the toggle to verify the survey is active.
 * Select **Done** to begin sending it to customers. If you don't want to do so, leave the survey disabled.  
-<img src="../images/auto-trigger-survey.png" alt="Configure Experience" title="Configure Experience" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/auto-trigger-survey.png" alt="Configure Experience" title="Configure Experience" style="border: 1px solid gray; zoom:60%;">
 
 ## Edit a Survey
 
