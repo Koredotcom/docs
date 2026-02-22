@@ -63,7 +63,7 @@ The **Interactions** dashboard includes the following elements:
 * **Sentiment Score**: Displays the system-generated sentiment score for the interaction based on the customer's words.
 
 * **Supervisor Auditor Score**: Shows the supervisor-assigned score for audited or manually evaluated interactions and highlights Manual Evaluation metrics with a distinct indicator.   
-<img src="./conversation-mining/images/manual-audit-indicator.png" alt="Manual Audit Indicator" title="Manual Audit Indicator" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/manual-audit-indicator.png" alt="Manual Audit Indicator" title="Manual Audit Indicator" style="border: 1px solid gray; zoom:80%;">
 
 * **Start Time**: Displays conversation's start time in a specified format in the Interaction listing page (for example, 24 May 2024, 1:17:10 PM).
 
