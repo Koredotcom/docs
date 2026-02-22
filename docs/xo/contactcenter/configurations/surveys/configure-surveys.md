@@ -37,26 +37,29 @@ Under General Information, provide information for the following mandatory field
 
 The Chat, Call, and Email Experience tabs provide access to the following features:
 
-* Select the **Chat Experience**, **Call Experience**, or **Email Experience** tabs.
-* Enable the **Chat Experience**, **Call Experience**, or **Email Experience** to request customers to take the survey.
-* Configure the **Request Message** and add a **Gratitude Message** that appears to customers before and after they take the survey.
-    * Choose the message language, type the message in, then select **Done**.  
-        <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:60%;">
+1. Select the **Chat Experience**, **Call Experience**, or **Email Experience** tabs.
+1. Enable the **Chat Experience**, **Call Experience**, or **Email Experience** to request customers to take the survey.
+1. Configure the **Request Message** and add a **Gratitude Message** that appears to customers before and after they take the survey. Choose the message language, type the message in, then select **Done**.  
+    <img src="../images/edit-message.png" alt="Request Messages" title="Request Messages" style="border: 1px solid gray; zoom:60%;">
 
-!!! Note
+    !!! Note
 
-    Email message can be written in plain text or HTML/CSS code.
+        Email message can be written in plain text or HTML/CSS code.
 
-* Set the Survey Frequency by configuring the following options:
+1. Set the Survey Frequency by configuring the following options:
+
     * **Show to Everyone** - Select this option to make the survey visible to all the customers.
     * **Show to Every nth User** - Select this option to make the survey visible to every _nth_ user. For example, if you enter 2 in the input textbox, the survey appears to every second customer.
     * **Agents can Trigger** - This lets the agents trigger the survey. When you select Auto Trigger Survey, the system sends surveys automatically, and agents can turn them off if needed.
-* Advanced Survey Conditions
+
+1. Advanced Survey Conditions
+
     * Trigger the Customer Satisfaction (CSAT) survey when no agents are available: Triggers a CSAT survey when agent transfer isn't initiated.
     * Trigger the CSAT survey outside business hours: Triggers a CSAT survey outside business hours when no agents are available.
     * Trigger CSAT for agent-closed conversations: Triggers CSAT survey for conversations closed by agents.
-* Turn on the toggle to verify the survey is active.
-* Select **Done** to begin sending it to customers. If you don't want to do so, leave the survey disabled.  
+
+1. Turn on the toggle to verify the survey is active.
+1. Select **Done** to begin sending it to customers. If you don't want to do so, leave the survey disabled.  
     <img src="../images/auto-trigger-survey.png" alt="Configure Experience" title="Configure Experience" style="border: 1px solid gray; zoom:60%;">
 
 ## Edit a Survey
