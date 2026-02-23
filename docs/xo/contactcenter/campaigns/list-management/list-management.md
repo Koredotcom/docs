@@ -191,35 +191,31 @@ You can use the extracted labels to access specific contact list fields within y
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
 2. In the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) or [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md), add the following JavaScript function to retrieve campaign user details:
 
-```
-const campaignUserInfo = context.session.UserSession.campaignUserInfo;
-```
+    ```
+    const campaignUserInfo = context.session.UserSession.campaignUserInfo;
 
-// Accessing all fields, including mapped and unmapped ones
+
+    // Accessing all fields, including mapped and unmapped ones
+    ```
 
 3. After retrieving the user information, implement custom logic as needed. In this example, the script extracts the user’s phone number and stores it in the context for use in future flows.
 
-```
-const number = campaignUserInfo.phoneNumber;
-```
+    ```
+    const number = campaignUserInfo.phoneNumber;
 
-// Extracting the user’s phone number and assigning to a  variable
+    // Extracting the user’s phone number and assigning to a  variable
 
-```
-context.campaignUserInfoNumber=number;
-```
+    context.campaignUserInfoNumber=number;
 
-// Storing the number in context for later use 
+    // Storing the number in context for later use 
 
-
-```
-    if (number === "+919876543210") {
-     context.testingNumberValue="John"
-} else 
-	{
-    context.testingNumberValue="other"
-    }
-```
+        if (number === "+919876543210") {
+        context.testingNumberValue="John"
+    } else 
+	    {
+        context.testingNumberValue="other"
+        }
+    ```
 
 **Example 2**: Accessing Fields in a Confirmation Node (Dialog Task)
 
