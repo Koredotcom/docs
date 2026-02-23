@@ -70,35 +70,6 @@ Steps to add/remove hyperlinks:
 5. Press **Enter** to send the message.  
     <img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
 
-### Message Formatting Guidelines
-
-The system automatically removes unsupported formatting to maintain message security and reduce security risks. If a message appears as an empty bubble in the chat, the message likely contains unsupported formatting.
-
-Use only the supported options listed below to ensure the system displays your messages correctly for both you and your customers.
-
-✅ Supported Formatting
-
-| What It Does      | How to Write It                    |
-| :---------------- | :--------------------------------- |
-| Plain text        | Type normally                 |
-| Bold text         | `*bold*`                           |
-| Italic text       | `~italics~` or `_italics_`         |
-| Hyperlinks        | `[Link text](https://example.com)` |
-| Bullet list       | `* Item`                           |
-| Numbered list     | `1. Item`                          |
-| Preformatted text | `` `text` ``                       |
-
-❌ Not Supported
-
-Don't use any of the following items because the system removes them and may display your message as blank:
-
-* Angle brackets (for example, &lt;hello>)
-* Custom HTML tags
-* Script tags
-* HTML event handlers (for example, onclick)
-* Embedded content (for example, iframes)
-* Inline CSS styling
-
 ## Viewing New Messages in the Console
 
 When agents are reviewing earlier parts of a conversation, and a new message arrives while you are at the top of the live interaction pane, a New Message icon appears at the bottom of the conversation thread. The icon also displays the number of unread messages. To view the latest message, select the New Message icon. The most recent message appears.  
