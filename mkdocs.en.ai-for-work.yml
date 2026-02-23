@@ -163,11 +163,7 @@ nav:
       - Notify API: custom-agents/notify-api.md
       - Schedule Trigger: custom-agents/schedule-trigger.md
   - Pre-built Agents:
-    - About Pre-built Agents: pre-built-agents/overview.md
-  - Pre-built Solutions:
-    - About Pre-built Solution: pre-built-solutions/overview.md
-    - IT Assist: pre-built-solutions/itassist.md
-    - HR Assist: pre-built-solutions/hrassist.md    
+    - About Pre-built Agents: pre-built-agents/overview.md    
   - Analytics: 
     - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
