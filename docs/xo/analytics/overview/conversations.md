@@ -144,18 +144,18 @@ Steps to Preview and Download Events:
     <img src="../images/export-completed.png" alt="Export Completed" title="Export Completed" style="border: 1px solid gray; zoom:80%;">  
 
     The system exports the following events and their timestamps for chat and voice conversations.  
-    * Routing Initiation  
-    * Conversation Acceptance  
-    * Conversation Rejection  
-    * Conversation Transfer  
-    * Transfer Failures  
-    * Agent join  
-    * Agent left  
-    * Agent Consultation  
-    * Skill Change  
-    * Disposition Updates  
-    * After-Call Work (ACW)  
-    * Conversation Closure  
+     * Routing Initiation  
+     * Conversation Acceptance  
+     * Conversation Rejection  
+     * Conversation Transfer  
+     * Transfer Failures  
+     * Agent join  
+     * Agent left  
+     * Agent Consultation  
+     * Skill Change  
+     * Disposition Updates  
+     * After-Call Work (ACW)  
+     * Conversation Closure  
 
 ## Latency Metrics (Beta)
 
