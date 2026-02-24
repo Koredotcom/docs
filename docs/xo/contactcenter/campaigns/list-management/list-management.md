@@ -265,13 +265,12 @@ Steps to delete a contact list from the local drive:
 Steps to delete an API-integrated contact list:
 
 1. Select the Edit icon beside the contact list name and select the Delete icon at the left corner of the edit window.  
-    <img src="../images/delete-api-list.png" alt="Delete Contact List" title="Delete Contact List" style="border: 1px solid gray; zoom:80%;">
 
-2. A confirmation message displays. Select **Delete**.
+2. A confirmation message displays. Select*Delete.
 
 ## DNC Lists
 
-To view the Do Not Call (DNC) Lists, select the **DNC Lists** tab.
+To view the Do Not Call (DNC) Lists, select the DNC Lists tab.
 
 The system displays the following details:
 
@@ -417,16 +416,7 @@ Users can search for records using the following:
 * Description
 * Status
 
-The date filter enables users to filter the logs based on the selected dates and time. The following options are available:  
-
-* Today (default selection)
-* Yesterday
-* Last 7 Days
-* Last 28 Days
-* Last 90 Days
-* Custom Range
-
-You can set a time duration filter for the selected dates to retrieve records within the specified period.
+The date filter enables users to filter the logs based on the selected dates and time. You can set a time duration filter for the selected dates to retrieve records within the specified period.
 
 ## Refresh Logs
 

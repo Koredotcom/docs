@@ -1253,11 +1253,11 @@ The sentiment indicator (positive, negative, or neutral) reflects the overall se
 
 When agents select the sentiment indicator, a graph appears, visually representing emotional fluctuations per message. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses, leading to improved empathy and more effective issue resolution.
 
-Negative:  
-<img src="../images/negative-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">   
-
 Positive:  
-<img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:80%;">
+
+Negative:  
+<img src="../images/negative-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">    
 
 Neutral:  
 <img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:80%;">  
