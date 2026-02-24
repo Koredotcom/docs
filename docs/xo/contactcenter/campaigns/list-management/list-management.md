@@ -146,8 +146,9 @@ Steps to pull  the contacts using API Integration:
               }
             }
         ```
-        You would enter "contact.name.first" and "contact.name.last" in the First Name and Last Name fields.  
-            <img src="../images/field-mapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
+        You would enter `"contact.name.first"` and `"contact.name.last"` in the First Name and Last Name fields.  
+            <img src="../images/field-mapping.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">  
+    
     * Ensure that the phone numbers are in E.164 format with Country Code, Area Code, Subscriber Number, and within double inverted quotes.
 
     !!! Note
@@ -162,7 +163,7 @@ Steps to pull  the contacts using API Integration:
 
 #### Accessing Contact List Field Labels and Values
 
-Advanced SMS and Agentless Dialer Campaigns can use mapped and unmapped contact fields for enhanced personalization. The `UserSession` [context object](../../../automation/intelligence/context-object.md) provides access to all mapped and unmapped fields from Contact List records within Dialog Tasks and Experience Flows, ensuring seamless integration across workflows. Campaign managers can use these fields to build more effective SMS campaigns.
+Advanced SMS and Agentless Dialer Campaigns can use mapped and unmapped contact fields for enhanced personalization. The `UserSession` [context object](../../../automation/intelligence/context-object.md) provides access to all mapped and unmapped fields from Contact List records within Dialog Tasks and Experience Flows, ensuring seamless integration across workflows. Campaign managers can use these fields to create effective SMS campaigns.
 
 #### Extracting Contact List Field Labels
 
@@ -179,14 +180,14 @@ Steps to retrieve the label names of all available fields in a contact record:
 4. Run the campaign associated with the contact list for which you need the field label names.  
     <img src="../images/run-campaign.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:80%;">
 
-5. On the **Interactions** page, click the desired Campaign's record to view transcriptions and access the string representation of all fields.  
+5. On the **Interactions** page, select the desired Campaign's record to view transcriptions and access the string representation of all fields.  
     <img src="../images/insights-to-logs (2).png" alt="Insights to Logs" title="Insights to Logs" style="border: 1px solid gray; zoom:80%;">
 
 #### Accessing the Contact List Fields Through Their Labels
 
 You can use the extracted labels to access specific contact list fields within your flow.
 
-**Example 1**: Using a Script Node (Experience Flow & Dialog Task)
+Example 1: Using a Script Node (Experience Flow & Dialog Task)
 
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
 2. In the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) or [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md), add the following JavaScript function to retrieve campaign user details:
@@ -217,11 +218,12 @@ You can use the extracted labels to access specific contact list fields within y
         }
     ```
 
-**Example 2**: Accessing Fields in a Confirmation Node (Dialog Task)
+Example 2: Accessing Fields in a Confirmation Node (Dialog Task)
 
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
+
 2. Use the extracted field labels to define logic in a [Confirmation Node](../../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md). For example, you can validate the user’s response based on a specific contact field.  
-<img src="../images/confirmation-node.png" alt="Confirmation Node" title="Confirmation Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/confirmation-node.png" alt="Confirmation Node" title="Confirmation Node" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Contact List
 
@@ -244,7 +246,7 @@ Steps to edit a contact list from the local drive:
 Steps to  edit an API-integrated contact list:
 
 1. Select the **Edit** icon beside the contact list name.  
-    <img src="../images/edit-api.png" alt="Edit Contact List Button" title="Edit Contact List Button" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/edit-api.png" alt="Edit Contact List" title="Edit Contact List" style="border: 1px solid gray; zoom:80%;">
 
 2. Select the 🖉 at the right corner of the URL.  
     <img src="../images/edit-api-new-list.png" alt="API Integration" title="API Integration" style="border: 1px solid gray; zoom:80%;">
@@ -292,7 +294,7 @@ The system displays the following details:
 * **Contacts** - Shows the total count of contacts in the list. For example, 288.
 * **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
 * **Last Updated** - Shows the date when the list was last updated. The system sorts the lists by this date by default.
-* **Actions** - Allows you to view, edit, delete, or mark a list as global.
+* **Actions** - Lets you to view, edit, delete, or mark a list as global.
 
 ### Create a DNC List
 
@@ -443,5 +445,5 @@ You can set a time duration filter for the selected dates to retrieve records wi
 
 ## Refresh Logs
 
-When you click the refresh button, the data updates based on the current search phrase and time filters.  
+When you select refresh, the data updates based on the current search phrase and time filters.  
 <img src="../images/refresh.png" alt="Logs Tab" title="Logs Tab" style="border: 1px solid gray; zoom:80%;">
