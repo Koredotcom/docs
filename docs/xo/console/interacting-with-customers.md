@@ -14,10 +14,10 @@ Agents can type their responses in the text editor and send the message by selec
 
     You can press **Enter** to send messages. Pressing (ctrl+enter or shift+enter) on Windows and (ctrl+return or shift+return) on Mac creates a new line.
 
-Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
+Agents can send a standard response to the customer from a pre-configured library. Press / in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
-Pressing **Escape** after typing “**/**” closes the standard response window.
+Pressing Escape after typing / closes the standard response window.
 
 **Translation enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
 
@@ -39,9 +39,9 @@ This option rephrases the draft response to make it more friendly and informal. 
 
 ### Add/Delete Hyperlinks in the Text Editor
 
-Agents can add/delete hyperlinks in the text editor while responding to the messages.
+Agents can add or delete hyperlinks in the text editor while responding to the messages.
 
-Steps to add/remove hyperlinks:
+Steps to add or remove hyperlinks:
 
 1. Highlight the text that you want to hyperlink and select the **Add Link** icon.  
     <img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
@@ -257,7 +257,7 @@ During the consult, the agent can use existing call control features such as Swa
 ##### Queue Level Consult Without Selecting an Agent
 
 The platform lets agents to initiate a consult call by selecting a queue without specifying a particular agent. After the agent starts the consult, the system automatically connects the consult to an available agent in the selected queue.
-Use a queue-based consult when you are handling an active interaction and need assistance without knowing which agent to contact. You must have access to one or more consult-enabled queues. This option helps you reduce time spent searching for agents and allows the system to route the consult based on skills, availability, and capacity.
+Use a queue-based consult when you are handling an active interaction and need assistance without knowing which agent to contact. You must have access to one or more consult-enabled queues. This option helps you reduce time spent searching for agents and lets the system route the consult based on skills, availability, and capacity.
 
 Steps to Initiate a Queue-Based Consult call:
 
