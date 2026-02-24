@@ -129,7 +129,7 @@ Steps to pull  the contacts using API Integration:
 
 11. Select the **Mapping Fields**. For each field you want to map (First Name, Last Name, etc.), identify the corresponding key name in the API response:
 
-    * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains "firstName":"John," you would enter "firstName" in the field mapping.
+    * If the data is at the root level of the JSON, simply use the key name as is. For example, if the JSON contains `"firstName":"John,"` you would enter `"firstName"` in the field mapping.
     * Specify the full path to navigate the JSON hierarchy when the data is nested. Use dot notation to access nested objects. For example, if the name data is located as follows:
 
         ```json
