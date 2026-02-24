@@ -54,8 +54,7 @@ Before you configure speech metrics, make sure that you:
 
     * **Dead Air**: This defines the period of silence during a contact center interaction when neither the customer nor the agent is speaking. By default, the minimum dead air time is 30 seconds, and the maximum is 300 seconds. It lets you customize the instance limit and dead air duration.
 
-    * **Dead Air Time (Metric Qualification)**
-
+    * **Dead Air Time (Metric Qualification)**: 
     The system qualifies the metric when dead air instances stay within the configured limit. If instances exceed the limit, the system marks the interaction as a failure for the dead air metric. The system counts an instance as dead air when it exceeds the specified duration.         
     <img src="../images/by-speech-dead-air.png" alt="Dead air" title="Dead air" style="border: 1px solid gray; zoom:60%;"> 
 
