@@ -1246,19 +1246,21 @@ Steps to request supervisor assistance:
 
 ## Real Time Sentiment Capture
 
-Agents can view customers' real-time sentiments during conversations (Chat, Voice, and Email) on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).
+Agents can view customer sentiment during Chat, Voice, and Email interactions from the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and Live Interactions pane. Administrators can enable this capability. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).
 
-**Chat**:  
-<img src="../images/console-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">  
+The sentiment indicator (positive, negative, or neutral) reflects the overall sentiment of the entire conversation, not only the most recent message.  
+<img src="../images/console-sentiment.png" alt="Overall Sentiment" title="Overall Sentiment" style="border: 1px solid gray; zoom:80%;">  
 
-**Voice**:  
+When agents select the sentiment indicator, a graph appears, visually representing emotional fluctuations per message. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses, leading to improved empathy and more effective issue resolution.
+
+Negative:  
+<img src="../images/negative-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">   
+
+Positive:  
 <img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:80%;"> 
 
-**Email**:  
-<img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:80%;"> 
-
-When agents select the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  
-<img src="../images/sentiment-analysis-graph.png" alt="Sentiment Graph" title="Sentiment Graph" style="border: 1px solid gray; zoom:80%;"> 
+Neutral:  
+<img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:80%;">  
 
 ## Stacked Messages, Timestamp, and Read Status
 
