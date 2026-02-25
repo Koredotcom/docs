@@ -1328,7 +1328,7 @@ For existing accounts, the existing routing logic is applicable. For accounts wa
 
 The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
 
-CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#create-a-survey):
+CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md):
 
 * **Show to Everyone**: When administrators configure this scenario, the system automatically triggers a survey for every completed interaction between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: When administrators configure this scenario, the system automatically triggers a survey for every completed nth interaction between an agent and a customer on digital or voice channels. For example: If the set frequency is 2, then the system triggers the survey for every second customer.

@@ -784,6 +784,7 @@ nav:
         - SDK Introduction: sdk/bot-sdk-introduction.md
         - Web SDK:
           - How the Web SDK Works: sdk/how-web-sdk-works.md
+          - Web SDK Accessibility: sdk/web-sdk-accessibility.md
           - SDK Security: sdk/sdk-security.md
           - SDK Registration: sdk/app-registration.md
           - SDK Configurations: sdk/sdk-configuration.md
