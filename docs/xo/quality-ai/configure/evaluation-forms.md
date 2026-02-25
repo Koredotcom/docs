@@ -1,35 +1,45 @@
 # Evaluation Overview
 
-The Evaluation phase of Quality AI improves the customer experience by enabling QA managers to define tailored evaluation criteria for agents that align with each contact centre's operational structure. It supports structured performance assessments across Voice and Chat interactions.
+The Evaluation phase in Quality AI enables QA Managers to create standardized assessments for Voice and Chat interactions. Evaluation forms align scoring with operational goals and promote consistent, compliant evaluations.
 
-QA managers can configure evaluation forms that collect weighted metrics totalling 100% to assess agent performance. They assign these forms to specific channels and queues for audits, with each queue supporting only one evaluation form. This process provides performance insights, auditing, and Auto QA scoring, aligning evaluations with operational needs to enhance the customer experience.
+Each queue supports one Evaluation Form per channel. Manual Evaluation lets QA Managers mark specific metrics for manual scoring and exclude them from agent attributes and scorecard calculations.
 
-## Evaluation Forms Structure
-
-To handle the evaluation criteria more accurately, this evaluation stage includes the following two sections:
-
-* **Evaluation Forms**: Weighted configuration of evaluation metrics that define conversation-level scoring criteria.
-
-* **Evaluation Metrics**: Individual measurement parameters used for quality assessment.
-
-### Key Features
+## Key Features and Capabilities
 
 * **Multi-language Support**: Delivers evaluations to different languages with relevant, localized metrics for accurate global team assessments.
+
+* **Flexible Scoring Types**: Supports percentage-based scoring for simpler forms and points-based scoring for complex evaluations.
 
 * **Advanced Scoring Options**: Enables negative scoring, fatal criteria, and pass-score thresholds to refine evaluations and highlight critical issues.
 
 * **Channel-Specific Configuration**: Supports customization of evaluation settings for Voice and Chat channels.
+Queue and Channel Assignment: Assigns evaluation forms to specific queues and channels.
 
-* **Form Scoring Types**: Supports percentage-based scoring for simpler forms and points-based scoring for complex evaluations.
+* **AutoQA and Manual Audits**: Enables AutoQA scoring alongside manual audit-based assessments for comprehensive coverage.
+
+## Evaluation Forms Structure
+
+Quality AI divides evaluation configuration into two core components: 
+
+* **Evaluation Forms**: Defines the overall scoring structure, scoring type, language, channel, pass threshold, and queue assignments.
+
+* **Evaluation Metrics**: Defines the individual quality parameters used to measure agent performance.
+
+### How It Works 
+
+QA Managers create evaluation forms with weighted metrics totaling 100% to measure agent performance objectively. The system assigns these forms to specific queues and channels for auditing and AutoQA scoring.
+
+This alignment ensures consistent audits, clear insights, and improved customer experience.
+
 
 ## Access Evaluation Forms
 
 Navigate to **Quality AI** > **CONFIGURE** > **Evaluation Forms** to view and manage evaluation forms.    
 <img src="../evaluation-criteria/evaluation-forms/images/evaluation-forms.png" alt="Evaluation Forms Tab" title="Evaluation Forms Tab" style="border: 1px solid gray; zoom:80%;">
 
-## Evaluation Forms Interface 
+## Evaluation Forms Elements 
 
-The Evaluation Forms Interface displays the following elements:
+The Evaluation Forms displays the following elements:
 
 * **Name**: Shows the name of the evaluation form.
 
@@ -41,9 +51,9 @@ The Evaluation Forms Interface displays the following elements:
 
 * **Created By**: Shows the form creator's name.
 
-* **Pass Score**: Shows the set pass score percentage for the specified assigned forms and channels. The pass score is the minimum score that an agent needs to pass. 
+* **Pass Score**: Shows the minimum score that an agent needs to pass for the specified assigned forms and channels. 
 
-* **Status**: Enables or disables scoring for the individual Evaluation Form. Note that you must enable this form to start scoring. 
+* **Status**: Enables or disables scoring for the individual Evaluation Form (You must enable the form to start scoring). 
 
 * **Search**: Provides a quick search option to view and update the Evaluation Forms by name. 
 
@@ -57,27 +67,25 @@ Steps to create a new evaluation form:
 
 1. Select the **Evaluation Forms** tab.   
 
-2. Select the **+ New Evaluation Form** displayed in the upper-right corner.    
+2. Select the **+ New Evaluation Forms** displayed in the upper-right corner.    
    <img src="../evaluation-criteria/evaluation-forms/images/new-eva-form-selection.png" alt="New Evaluation Forms" title="New Evaluation Forms" style="border: 1px solid gray; zoom:80%;">
 
 ### General Settings Configuration
 
-This section configures the general settings for the new evaluation form to add and update evaluation metrics relevant to the selected language and channel. 
+This section configures the general settings for the New Evaluation Form. 
 
 Steps to configure general settings:
 
-1. Enter a **Name**.
+1. Enter a **Name** and **Description** (optional).
 
-2. Enter a short **Description** (optional).
-
-3. Select a **Language**.     
-<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms1.png" alt="General Settings Page1" title="General Settings Page1" style="border: 1px solid gray; zoom:50%;">
+3. Select a **Language** and a **Channel** type (**Voice** or **Chat**).  
   
-4. Select a **Channel** type. The selected channel determines which metrics are available (Voice or Chat-specific).  
+The selected channel determines which metrics are available (Voice or Chat-specific).  
 
    * **Chat**: Displays only **Chat-relevant** metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
-   * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.
+   * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.    
+    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:50%;">
 
 5. Choose a **Scoring Type**: 
 
@@ -88,7 +96,7 @@ Steps to configure general settings:
 6. Set the minimum **Pass Score** percentage for the agent.    
 
  6. Select **Next**.   
-     <img src="./evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
+     <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
 
     
     !!! Note
@@ -113,33 +121,33 @@ Steps to configure assignments:
 <img src="../evaluation-criteria/evaluation-forms/images/queue-selection.png" alt="Queues Selection" title="Queues Selection" style="border: 1px solid gray; zoom:60%;">
 3. Add or remove the listed queue assignments if required.
 
-   **Queue Metrics by Source**
+**Queue Metrics by Source**
 
-      * **CCAI**: Ingests conversation data from CCAI.
+   * **CCAI**: Ingests conversation data from CCAI.
 
-      * **Agent AI**: Processes interactions from Agent AI.    
-       <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
+   * **Agent AI**: Processes interactions from Agent AI.    
+      <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
 
 
-   **Form Assignments Rules**
+**Form Assignments Rules**
    
-   * Each queue can have only one Evaluation Form per channel (Voice or Chat).
+* Each queue can have only one Evaluation Form per channel (Voice or Chat).
 
-   * The system automatically scores interactions when agents handle customer conversations.
+* The system automatically scores interactions when agents handle customer conversations.
 
-   * Calculates scores based on metric outcomes and configured weights.
+* Calculates scores based on metric outcomes and configured weights.
 
-   * You must enable the form to start scoring.
+* You must enable the form to start scoring.
 
-      !!! Note
+    !!! Note
 
-         You can assign only one evaluation form to each queue in the **Chat** and **Voice** channels.
+        You can assign only one evaluation form to each queue in the **Chat** and **Voice** channels.
    
     
 ### Evaluation Metrics Configuration
 
 This section lets you add and create evaluation metrics for each attribute configured and assigned to evaluation forms for the queue, interactions, and agents.    
-<img src="./evaluation-criteria/evaluation-forms/images/eva-settings-metrics.png" alt="Evaluation Metrics Configuration" title="Evaluation Metrics Configuration" style="border: 1px solid gray; zoom:60%;">
+<img src="../evaluation-criteria/evaluation-forms/images/eva-settings-metrics.png" alt="Evaluation Metrics Configuration" title="Evaluation Metrics Configuration" style="border: 1px solid gray; zoom:70%;">
 
  Steps to configure evaluation metrics:
 
@@ -161,9 +169,9 @@ This section lets you add and create evaluation metrics for each attribute confi
 
 * Enables reordering of metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
 
-   !!! Note
+!!! Note
 
-      The metrics list displays only metrics configured for all selected form languages or chosen channels.
+    The metrics list displays only metrics configured for all selected form languages or chosen channels.
 
 4. Choose the **Correct Response** to identify the correct answer for validation. 
 
@@ -302,7 +310,7 @@ Steps to edit the existing evaluation forms:
       <img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:80%;">
 
 3. Modify the required fields.   
-   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Form" title="Modify Evaluation Form" style="border: 1px solid gray; zoom:50%;">
+   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Form" title="Modify Evaluation Form" style="border: 1px solid gray; zoom:70%;">
 
 4. Select **Next** to update the required evaluation metrics fields.
 
@@ -370,7 +378,7 @@ To resolve this, do the following:
     * You must update the remaining metrics and adjust their corresponding weights to correct proper evaluation.
     
     * Select **Update** to save the evaluation form after you complete all changes.       
-      <img src="../evaluation-criteria/evaluation-forms/images/channel-update-error.png" alt="Channel Update Error" title="Channel Update Error" style="border: 1px solid gray; zoom:50%;">   
+      <img src="../evaluation-criteria/evaluation-forms/images/channel-update-error.png" alt="Channel Update Error" title="Channel Update Error" style="border: 1px solid gray; zoom:70%;">   
 
 #### Speech Metric Addition Limitation
 
