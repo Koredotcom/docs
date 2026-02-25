@@ -51,9 +51,7 @@ For more details, refer to the official [WCAG 2.2 documentation](https://www.w3.
 
 ### Screen Reader Support
 
-The Kore.ai Web SDK is designed to be fully compatible with screen readers. 
-
-The Web SDK offers extensive customization options. While a base level of accessibility is provided, it's crucial to ensure that any customizations made also adhere to WCAG 2.2 Level AA standards. You can customize the SDK to best suit your specific accessibility requirements.
+The Kore.ai Web SDK is designed to be fully compatible with screen readers. It offers extensive customization options, while a base level of accessibility is provided, it's crucial to ensure that any customizations made also adhere to WCAG 2.2 Level AA standards. You can customize the SDK to best suit your specific accessibility requirements.
 
 For detailed information on how to customize the SDK, please refer to our [Customization Documentation](https://github.com/Koredotcom/web-kore-sdk/blob/v3/dev/docs/customizations).
 

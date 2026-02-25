@@ -6,7 +6,7 @@ This tutorial is an end-to-end walkthrough for setting up and running an instanc
 
 ## Web SDK Tutorial Overview
 
-In this tutorial, you will configure a Kore.ai sample app, a test web application to integrate the Web SDK, and then a JSON Web Token (JWT) generation web service using your local host server to communicate between the bot on your local server and the Kore.ai Platform. The following list describes the general steps you will take to install and configure the Web SDK.
+In this tutorial, you will configure a Kore.ai sample app, a test web application to integrate the Web SDK, and then a JSON Web Token (JWT) generation web service using your local host server to communicate between the chwt window on your computer and the Kore.ai Platform. The following list describes the general steps you will take to install and configure the Web SDK.
 
 
 
