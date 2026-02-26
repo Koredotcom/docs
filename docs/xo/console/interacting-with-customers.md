@@ -1328,12 +1328,12 @@ For existing accounts, the existing routing logic is applicable. For accounts wa
 
 The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
 
-CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md):
+CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#general-information):
 
 * **Show to Everyone**: When administrators configure this scenario, the system automatically triggers a survey for every completed interaction between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: When administrators configure this scenario, the system automatically triggers a survey for every completed nth interaction between an agent and a customer on digital or voice channels. For example: If the set frequency is 2, then the system triggers the survey for every second customer.
 * **Agents can trigger**: When administrators configure this scenario, agents can trigger a survey at any point during the interaction:
-    * Select **Send Survey** on the right corner. Th s highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
+    * Select **Send Survey** on the right corner. This highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
         <img src="../images/csat-button.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:70%;">
 
     * The system triggers the survey to the customer when the agent selects End with the survey selected.
@@ -1353,8 +1353,8 @@ For these scenarios, the system assigns the CSAT scores to the interaction.
 
 ### Supported scenarios for CSAT in voice channels
 
-| **Scenario** | **Description** |
-|---------|-------------|
+| Scenario | Description  |
+|:---------|:-------------|
 | Inbound and outbound calls | The system triggers CSAT at the end of any standard inbound or outbound voice interaction. |
 | Inbound or outbound calls + internal agent transfer | When agents transfer a call internally, the system presents the CSAT survey after the final agent interaction. |
 | Inbound or outbound calls + callback triggered by agent | If an agent initiates a callback and the interaction completes, the system triggers a CSAT survey afterward. |
