@@ -689,7 +689,7 @@ Steps to snooze a conversation:
 2. On the **Snooze Conversation Until** pop-up window, select the snooze duration from the available options or select a custom snooze duration. To select a custom snooze duration, turn on the Custom Snooze toggle and configure the required duration. Agents can choose Today, Tomorrow, or Day After as quick snooze options, or define a custom Date and Time. You can set the maximum snooze date up to 30 days in advance.  
     <img src="../images/custom-snooze-without-note.png" alt="Snooze without note" title="Snooze without note" style="border: 1px solid gray; zoom:70%;">  
 
-    If Administrators turn on Make Snooze Notes Mandatory in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze), the Reason for Snoozing dialog box appears. Enter the message to display.  
+    If Administrators turn on Make Snooze Notes Mandatory in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze), the Reason for Snoozing dialog box appears. After the agent adds snooze notes, the agent can view them in the Notes section.  
     <img src="../images/reason-for-snoozing.png" alt="Reason for snooze" title="Reason for snooze" style="border: 1px solid gray; zoom:70%;">  
 
 3. To select a custom snooze duration, turn on the **Custom Snooze** toggle, configure your required snooze duration, and set the snooze duration.  
