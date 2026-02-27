@@ -848,77 +848,54 @@ The bottom bar chart visualizes call metrics over time. The x-axis shows timesta
 
 ### Agents
 
-The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of Conversations and assists with troubleshooting issues. The following data points are shown on this tab:  
-<img src="../images/mos-jitter.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
+The Agents tab provides a per-agent view of participation and call quality metrics for a specific interaction. It helps you identify which agents joined the interaction, view their join and exit timestamps, understand how the call ended, and analyze call quality for each agent.
+<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
 
-<table>
-  <tr>
-   <td>Field Name
-   </td>
-   <td>Description
-   </td>
-  </tr>
-  <tr>
-   <td>Participant Name
-   </td>
-   <td>Name identifier of the person involved in the call. External Agents are marked with an "External Agent" tag.
-   </td>
-  </tr>
-  <tr>
-   <td>Call Status
-   </td>
-   <td>Indicates whether the participant is currently "In-Call" or has "Left" the call.
-   </td>
-  </tr>
-  <tr>
-   <td>Start Timestamp
-   </td>
-   <td>Date and time when the participant joined the call.
-   </td>
-  </tr>
-  <tr>
-   <td>End Timestamp
-   </td>
-   <td>Date and time when the participant left the call. Displays "NA" for participants currently in the call.
-   </td>
-  </tr>
-  <tr>
-   <td>Average MOS (Mean Operating Score)
-   </td>
-   <td>MOScore average value represents the participant's overall call quality.
-   </td>
-  </tr>
-  <tr>
-   <td>Call Exit Reason
-   </td>
-   <td>Categorized reason why the participant left the call (for example, `Disconnected`, `Transfer`, `Call Ended`).
-   </td>
-  </tr>
-  <tr>
-   <td>Call Exit Description
-   </td>
-   <td>Detailed explanation providing additional context about why the participant exited the call.
-   </td>
-  </tr>
-  <tr>
-   <td>MOS (min, max, average)
-   </td>
-   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call. Hovering over the tooltip displays the industry standard value.
-   </td>
-  </tr>
-  <tr>
-   <td>Jitter (min, max, average)
-   </td>
-   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing. Hovering over the tooltip displays the industry standard value.
-   </td>
-  </tr>
-  <tr>
-   <td>Packets Lost (min, max, average)
-   </td>
-   <td>The minimum, maximum, and average count of data packets that failed to reach their destination.
-   </td>
-  </tr>
-</table>
+Each section represents one agent join event.
+
+The system creates a record only when an agent accepts a call invitation (inbound or consult) or joins the interaction, including supervisor join.
+
+The system doesn't create a record for routing attempts, ringing duration, rejected invitations, or supervisor listen or whisper sessions.
+
+If an agent leaves and rejoins, the system creates multiple rows, one for each join instance.
+
+#### Field Descriptions
+
+Agent Details
+
+| Field             | Description                                              |
+| :---------------- | :------------------------------------------------------- |
+| Agent Name        | Identifies the agent who participated in the interaction |
+| Status            | Indicates whether the agent left the interaction         |
+| Start Time        | Shows when the agent accepted and joined the call        |
+| End Time          | Shows when the agent exited the call                     |
+
+The time between Start and End reflects the agent’s actual call handling duration.
+
+Call Exit Details
+
+| Field                 | Description                                                                |
+| :-------------------- | :------------------------------------------------------------------------- |
+| Call Exit Reason      | High-level termination status (for example, Terminated)                    |
+| Call Exit Description | Specific termination reason (for example, Agent Hangup or Customer Hangup) |
+
+Use these fields to determine how the agent session ended.
+
+Call Quality Metrics (Per Agent session)
+
+The system calculates quality metrics separately for each agent participation instance.
+
+| Metric                       | Description                                                                  |
+| :--------------------------- | :--------------------------------------------------------------------------- |
+| MOS (Min, Max, Avg)          | Indicates perceived audio quality. Scale: 1 = Poor, 5 = Excellent.           |
+| Jitter (Min, Max, Avg)       | Measures variation in packet timing. Higher values can affect audio clarity. |
+| Packets Lost (Min, Max, Avg) | Indicates the number of audio packets lost during the session.               |
+
+These metrics reflect only the agent’s session duration and not the entire call.
+
+!!! note "Session Visibility and Join Behavior"
+ 
+    The view displays only actual joined sessions and excludes routing attempts. If an agent appears multiple times, it indicates multiple join instances.
 
 ### Export
 
