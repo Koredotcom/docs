@@ -443,7 +443,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     ]
                 },
                 {
-                    "agentId": "u-3ea001b4-664a-58b6-8108-b8bca375xxxx",
+                    "agentId": "u-3ea001b4-664a-58b6-8108-b8bca37xxxxx",
                     "agentNotes": [
                         "The customer requested to connect with an agent. The bot acknowledged the request and initiated the transfer process, asking the customer to hold."
                     ],
