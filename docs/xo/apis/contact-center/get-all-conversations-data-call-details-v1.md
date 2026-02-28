@@ -604,7 +604,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             },
             "sessionStartTime": "2025-10-01T02:02:10",
             "sessionEndTime": "2025-10-01T02:03:49",
-            "userId": "u-9e13de55-bba4-5052-8055-137b5955xxxx",
+            "userId": "u-9e13de55-bba4-5052-8055-137b595xxxxx",
             "destinations": [
                 {
                     "destinationType": "QueueEntry",
@@ -678,7 +678,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "automationBotId": "st-8e0bc152-9cfc-5b48-b8b0-41e4d2axxxxx"
                 },
                 "ipAddress": "115.114.88.222",
-                "hostDomain": "https://{{host}}",
+                "hostDomain": "{{hostDomain}}",
                 "os": "Windows"
             },
             "customerinfo": {
@@ -773,7 +773,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "automationBotId": "st-8e0bc152-9cfc-5b48-b8b0-41e4d2axxxxx"
                 },
                 "ipAddress": "115.114.88.222",
-                "hostDomain": "https://{{host}}",
+                "hostDomain": "{{hostDomain}}",
                 "os": "Windows"
             },
             "customerinfo": {
@@ -851,7 +851,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "automationBotId": "st-8e0bc152-9cfc-5b48-b8b0-41e4d2axxxxx"
                 },
                 "ipAddress": "115.114.88.222",
-                "hostDomain": "https://{{host}}",
+                "hostDomain": "{{hostDomain}}",
                 "os": "Windows"
             },
             "customerinfo": {
@@ -897,9 +897,9 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             "metaInfo": {
                 "caller": "+132136xxxxx",
                 "callee": "+147890xxxxx",
-                "callerHost": "54.172.60.2",
+                "callerHost": "54.xxx.xx.2",
                 "userId": "u-c1dce3f7-863c-5b1f-a80e-daa27cfxxxxx",
-                "dialedNumber": "+14789003540",
+                "dialedNumber": "+147890xxxxx",
                 "agentTransferConfig": {
                     "skillsIds": [],
                     "overrideAgents": false,
@@ -990,7 +990,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 },
                 {
                     "name": "callerNumber",
-                    "value": "+13213643492"
+                    "value": "+132136xxxxx"
                 },
                 {
                     "name": "voiceAgentTransferStart",
