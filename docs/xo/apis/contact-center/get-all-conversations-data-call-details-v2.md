@@ -560,7 +560,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "_id": "u-1e92130e-a3f2-55ae-9472-52a1f02xxxxx",
                 "identities": [
                     {
-                        "val": "cs-325638a4-3312-5624-b19a-bbbc150f7a2a/89a479d9-b927-42aa-bd0d-af97c6eceec2a3c64dff-1501-4fcd-955d-a69239cxxxxx",
+                        "val": "cs-325638a4-3312-5624-b19a-bbbc150xxxxx/89a479d9-b927-42aa-bd0d-af97c6eceec2a3c64dff-1501-4fcd-955d-a69239cxxxxx",
                         "type": "mapped"
                     }
                 ],
@@ -589,7 +589,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
             },
             "sessionStartTime": "2026-02-23T15:20:04",
             "sessionEndTime": "2026-02-23T15:21:36",
-            "channelSpecificUserId": "cs-325638a4-3312-5624-b19a-bbbc150f7a2a/89a479d9-b927-42aa-bd0d-af97c6eceec2a3c64dff-1501-4fcd-955d-a69239cxxxxx",
+            "channelSpecificUserId": "cs-325638a4-3312-5624-b19a-bbbc150xxxxx/89a479d9-b927-42aa-bd0d-af97c6eceec2a3c64dff-1501-4fcd-955d-a69239cxxxxx",
             "userId": "u-1e92130e-a3f2-55ae-9472-52a1f02xxxxx",
             "destinations": [
                 {
