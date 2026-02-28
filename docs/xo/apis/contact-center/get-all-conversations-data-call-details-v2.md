@@ -522,7 +522,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                     "WANTED JAN23"
                 ]
             },
-            "channelSpecificUserId": "cs-517d4422-a33f-50f7-a67d-d826b5f7209c/df922694-9d08-4026-8414-aef1d74xxxxx"
+            "channelSpecificUserId": "cs-517d4422-a33f-50f7-a67d-d826b5fxxxxx/df922694-9d08-4026-8414-aef1d74xxxxx"
         },
      {
             "conversationId": "c-b807a56-5346-467a-b835-404d244xxxxx",
