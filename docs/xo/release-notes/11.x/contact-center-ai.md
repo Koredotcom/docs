@@ -2,6 +2,93 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.22.0 February 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Persistent Virtual Backgrounds for Video Calls**
+
+Agents no longer need to reselect a virtual background before every call. Once set, the background stays active across page reloads and logout/login sessions in the same browser, and is automatically applied to subsequent calls. Agents can still change the background during a live call. The system also preloads required assets to reduce preview delays and improve performance.
+
+**Collapsible Email Threading**
+
+Email replies and forwards now show only the latest message by default, with older messages collapsed behind an ellipsis. Users can expand the full thread when needed. The system preserves complete email context, maintains correct chronological order, and strictly enforces CC/BCC visibility rules.
+
+**Work Bin (Email Parking Lot)**
+
+Agents can now park email conversations in a Work Bin without closing them, freeing up slots immediately while excluding parked time from Average Handle Time (AHT). When a customer replies, the conversation is reassigned to the last handling agent if available, or routed normally if not. Admins can configure wait duration and rerouting rules, and supervisors can manually reassign parked conversations.
+
+**Proactive Connection Monitoring and Agent Alerts**
+
+Agent Desktop now monitors connection quality during live calls and alerts agents in real time when thresholds — such as high round-trip time or poor network quality — are exceeded. Agents see visual indicators and notifications, and can view insights and recommendations. The Diagnostics view displays live round-trip metrics, highlights threshold breaches, and lets agents report issues directly from the alert for easier troubleshooting.
+
+<font size="4">Configuration</font>
+
+**MetaTag Support for Start Flows**
+
+Developers can now add MetaTags in Start Flows using Utils functions within Script Nodes. User, session, and message-level tags can be set at flow entry and reused across automation, conditional, and exit flows.
+
+**CSAT and Feedback Status Visibility in Interactions**
+
+The Interactions tab now shows a visual indicator for each conversation's survey status — whether a CSAT or Feedback survey was triggered and submitted, triggered but not submitted, or not triggered at all. New filters let you sort conversations by survey status, making it easier to audit and validate feedback workflows across supported channels.
+
+**Unified Feedback Support (CSAT, NPS, Like/Dislike)**
+
+CSAT, NPS, and Like/Dislike surveys are now managed under a single Feedback framework. Administrators can configure one feedback type per channel. Contact Center–only customers use default dialogs, while Automation-enabled customers can customize survey flows. The Interactions page displays a unified Feedback status and consistently tracks triggered and submitted surveys across channels.
+
+**Outbound Email Support in All Agent Statuses**
+
+Agents can now send outbound emails regardless of their current status — Available, Busy, Away, or custom — as long as they have the required permission. This feature is controlled by a system setting and is disabled by default. When enabled, agents can initiate outbound emails even when their slot capacity is full, without affecting inbound routing or queue prioritization.
+
+**Add Agent and Customer Names to Chat Transcripts**
+
+A new ‘Show Customer and Agent Names in Transcript’ toggle is added under Obscure Customer Info. When enabled, transcript exports include a new ‘NameOfUser’ column displaying the agent name, customer name, email, or phone number — in order of availability. This improves clarity, compliance review, and audit readiness.
+
+**Out-of-Hours: Queue Override and Loop Protection**
+
+Out-of-hours handling supports a Route to Queue option that transfers conversations directly to a selected target queue, bypassing the trigger flow when enabled. The system tracks out-of-hours transfers at the conversation level and enforces a configurable maximum limit. If the limit is exceeded, the conversation closes automatically to prevent infinite queue looping.
+
+<font size="4">Analytics</font>
+
+
+**Analytics for Email Handling**
+
+Email Average Handle Time (AHT) is now calculated from agent acceptance to the earlier of transfer to Work Bin or ACW completion. A conversation is now counted as ‘Answered’ only when the agent replies, not when it's accepted. Dashboards and reports now include Closed, Answered, Closed/hr, and Answered/hr metrics.
+
+**Interactions Dashboard: Recent Search History**
+
+The Interactions search bar now works as an editable dropdown, showing the last 10 search phrases for the current user. Users can select a previous search or type a new one. Each new search moves to the top of the list, and duplicates are automatically removed.
+
+**Abandon Rate Update**
+
+The Abandon Rate calculation has been updated to follow industry standard: abandoned-in-queue divided by offered calls, excluding calls abandoned while already with an agent. This definition applies across queue reports, dashboards, wallboards, and SLA calculations. Abandoned counts reflect only queue abandonments, while existing breakdown views remain unchanged.
+
+<font size="4">Campaigns</font>
+
+
+**Handle Disconnect and Transfer Errors during Agent Handoff**
+
+The system now assigns a defined status and disposition for power dialing handoff failures. If a user disconnects before connecting to an agent, the status is set to ‘Completed’ with the disposition ‘User Immediately Disconnected’. If an agent transfer error occurs, the status is set to ‘Error’ with the disposition ‘Agent Transfer Error’. These values are reflected in dashboards, retry logic, exports, and campaign reports.
+
+**Campaign-Linked Disposition Sets**
+
+A new toggle lets you mark a Disposition Set as campaign-linked. Each queue can have only one linked set, and campaigns can only connect to queues with exactly one linked set. For campaign calls, only the linked Disposition Set appears in ACW and syncs to Campaigns.
+
+<font size="4">API</font>
+
+**Enhanced InteractionDetails API v2**
+
+The InteractionDetails v2 API now supports a direction filter — Inbound, Outbound, or Both (default) — to return conversations by call type. It also includes an optional ‘campaigninfo’ field in selectedFields. When included, the response returns campaign metadata for campaign-originated sessions; when omitted, no campaign data is returned.
+
+
+<hr>
+
+
+
 ## v11.21.1 January 31, 2026
 
 <u>Patch Release</u>
