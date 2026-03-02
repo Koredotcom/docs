@@ -171,7 +171,16 @@ If the internet connection is lost, a message appears at the top of the agent co
 <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
 
 The system automatically attempts to reconnect to the network. If it fails after several tries, a message instructs you to reload the page.  
-<img src="../images/error-message.png" alt="Error" title="Error" style="border: 1px solid gray; zoom:60%;">
+
+## Proactive Network Monitoring
+
+The system monitors Agent Desktop network performance during active calls. If packet loss, network strength, speed, or MOS score exceeds the 300 ms threshold, the system displays a warning banner on the Console and Monitor pages.
+
+<img src="../images/proactive-network-monitoring.png" alt="Proactive Network Monitoring" title="Proactive Network Monitoring" style="border: 1px solid gray; zoom:80%;">
+
+Select Know More to view the last five minutes of data with the 300 ms threshold highlighted. Hover over the graph to compare recommended and actual values. Select Report to submit the issue, which captures additional connection logs for analysis.
+
+
 
 ## Features
 

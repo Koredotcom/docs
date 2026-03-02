@@ -274,6 +274,41 @@ Selecting SMS will display all the phone numbers configured in the channels sect
 
         Only flows that have been published will be available for selection in the dropdowns.
 
+### Use MetaTags in Start Flows
+
+You can use MetaTags in Start Flows to tag users, sessions, or messages at the beginning of an interaction and reuse those tags throughout the contact center lifecycle.
+
+    !!! Note
+
+        Ensure that your flow supports Script Nodes, as you configure MetaTags using Utils APIs within a Script Node.
+
+To add MetaTags in a Start Flow:
+
+1. Open the Start Flow in Flow Builder.
+2. Add a Script node at the required point in the flow (for example, immediately after flow entry).
+3. Use one or more of the following Utils functions:
+    - `tags.addUserLevelTag("tagname","tagvalue");`
+    - `tags.addSessionLevelTag("tagname","tagvalue");`
+    - `tags.addMessageLevelTag("tagname","tagvalue");`
+
+#### Tag Scope
+
+| Tag level       | Scope of persistence                              |
+|-----------------|---------------------------------------------------|
+| User-level      | Persists across multiple sessions                 |
+| Session-level   | Persists for the duration of the session          |
+| Message-level   | Applies only to the current message               |
+
+#### Use Tags in Downstream Flows
+
+| Flow Type        | Tags Support        |
+| ---------------- | ------------------- |
+| Start Flow       | Tags can be set     |
+| Automation Flow  | Tags are accessible |
+| Conditional Flow | Tags are accessible |
+| Exit Flow        | Tags are accessible |
+
+
 ## Edit a Start Flow
 
 Steps to edit a start flow:

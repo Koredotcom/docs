@@ -246,16 +246,16 @@ Follow this step only if you use the HR Agent Workspace to receive incoming chat
            * Type **[@context](https://github.com/context).props.sysId** (you get an auto suggestion).  
             <img src="../images/data-binding-9.png" alt="data-binding" title="data-binding" style="border: 1px solid gray; zoom:80%;"> 
 
-        !!! note
-        
-            You must complete this step to dynamically send the **sysid** of the current interaction to the Agent AI UI component. Although the solution includes a fallback method, you should not skip the Data Binding step. If you skip it, concurrent chats handled by a single agent can lose context during page reloads or network latency.
+            !!! note
+            
+                You must complete this step to dynamically send the **sysid** of the current interaction to the Agent AI UI component. Although the solution includes a fallback method, you should not skip the Data Binding step. If you skip it, concurrent chats handled by a single agent can lose context during page reloads or network latency.
 
     8. Once the changes are done, click **Save**.  
 
 ### Widget Configuration and Scope Requirements
 
 * **Widget icon:** ServiceNow doesn’t automatically add the widget icon. You must configure it manually due to a ServiceNow limitation.
-* **Widget scope:** Use the **Agent AI by[Kore.ai](http://Kore.ai)** scope to ensure safer upgrades. Although the **Global** scope works, it doesn’t support long-term maintainability. 
+* **Widget scope:** Use the **Agent AI by [Kore.ai](http://Kore.ai)** scope to ensure safer upgrades. Although the **Global** scope works, it doesn’t support long-term maintainability. 
 * **Per-workspace requirement:** Each workspace requires its own widget/icon configuration.
 
 ### No Widget for Inactive Conversation
