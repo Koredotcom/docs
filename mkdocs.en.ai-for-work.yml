@@ -196,7 +196,6 @@ nav:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
-      - Enterprise Directory: user-management/enterprise-directory.md
     - Workspace Management:
       - Account Workspace: workspace-management/account-workspace.md
       - Personal Workspace: workspace-management/personal-workspace.md
