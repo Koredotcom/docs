@@ -19,14 +19,16 @@ Change Logs will track the entire prompt lifecycle, including creation, updates,
 
 **Enhanced User Engagement Trend API (v2)**
 
-The User Engagement Trend API now delivers all user engagement metrics through a single endpoint. This includes counts for unique, new, and returning users, along with daily or hourly averages for each category. 
+The User Engagement Trend API now delivers all user engagement metrics through a single endpoint. This includes counts for unique, new, and returning users, along with daily or hourly averages for each category. [Learn more :octicons-arrow-right-24:](../../apis/automation/user-engagement-trend-v2.md)
+
 
 <font size="4">App Settings</font>
 
 
 **Auto-Token Regeneration for OAuth2 Password Grant Type**
 
-The Platform now automatically regenerates Auth and Refresh tokens for the OAuth 2.0 Password Grant Type using stored credentials, ensuring uninterrupted service when tokens expire. 
+The Platform now automatically regenerates Auth and Refresh tokens for the OAuth 2.0 Password Grant Type using stored credentials, ensuring uninterrupted service when tokens expire. [Learn more :octicons-arrow-right-24:](../../app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2-password-grant.md#selecting-authorization-mode)
+
 
 **End-to-End Payload Encryption Extended to Additional APIs**
 
