@@ -11,7 +11,7 @@ The Attachment Settings page displays all configuration options for managing att
 
 **Enable Uploading Attachments in Compose Bar**
 
-Use the **Enable Uploading Attachments in Compose Bar** toggle to control whether end users can upload files when asking queries.
+Use the **Enable Uploading Attachments** in Compose Bar toggle to control whether end users can upload files when asking queries.
 
 * **On** — End users see the attachment option in the compose bar and can upload files alongside their queries.
 * **Off** — The platform hides the attachment option from the compose bar for all end users.

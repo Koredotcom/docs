@@ -1,4 +1,4 @@
-# Scheduler
+# Schedulers
 
 The Schedulers feature provides a centralized location to create, manage, and monitor automated schedules for agents, flows, and platform modes. You can access all your schedulers from a single tab instead of navigating to individual agent detail pages.
 

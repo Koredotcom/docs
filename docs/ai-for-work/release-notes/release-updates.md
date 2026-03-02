@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of the Platform.
 
-## v1.14.0 March 02, 2026
+## v1.14.0 March 2, 2026
 
 <u>Major Release</u>
 
@@ -45,7 +45,7 @@ The Enterprise Directory now supports **Service Accounts (Microsoft, LDAP)** as 
 <hr>
 
 
-# v1.13.0 Dec 16, 2025
+## v1.13.0 December 16, 2025
 
 <u>Major Release</u>
 
@@ -102,7 +102,7 @@ The HubSpot connector in Work - Agentic Search is optimized for improved query p
 
 <hr>
 
-## v1.12.0 Nov 13, 2025
+## v1.12.0 November 13, 2025
 
 <u>Major Release</u>
 
@@ -142,7 +142,7 @@ Onboard partner domains without creating an enterprise account of their own. Thi
 
 <hr>
 
-## v1.11.0 Sept 24, 2025
+## v1.11.0 September 24, 2025
 
 <u>Major Release</u>
 
@@ -192,7 +192,7 @@ Enhanced Personal Workspace support agent sharing across all published users. Sh
 <hr>
 
 
-## v1.10.0 Sept 8, 2025
+## v1.10.0 September 8, 2025
 
 <u>Major Release</u>
 
