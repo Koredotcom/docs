@@ -32,7 +32,7 @@ The Platform now automatically regenerates Auth and Refresh tokens for the OAuth
 
 **End-to-End Payload Encryption Extended to Additional APIs**
 
-Payload encryption is now supported for the LLM and Generative AI Usage Logs API and the Conversation Details and Summary API. When the ‘Enforce Request and Response Payload Encryption’ setting is enabled in the JWT application, and the relevant scopes — Gen AI and LLM Usage Logs and Chat History — are selected, request and response payloads are automatically encrypted and decrypted using the symmetric key associated with those scopes. 
+Payload encryption is now supported for the LLM and Generative AI Usage Logs API and the Conversation Details and Summary API. When the ‘Enforce Request and Response Payload Encryption’ setting is enabled in the JWT application, and the relevant scopes — Gen AI and LLM Usage Logs and Chat History — are selected, request and response payloads are automatically encrypted and decrypted using the symmetric key associated with those scopes. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#how-request-and-response-payload-encryption-works)
 
 
 <font size="4">Channels</font>
