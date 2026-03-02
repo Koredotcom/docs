@@ -48,7 +48,7 @@ In the user attributes window, configure the following:
 
 This section helps configure general settings.
 
-In the General Settings section, You can enable the **Allow agent permissions** toggle to set the following:
+In the General Settings section, You can enable the **Allow Contact Center Permissions** toggle to set the following:
 
 * Set the Agent Console as the default in Contact Center AI - Enable this option to set **Agent Console** as the default landing page. This Dynamic Navigation Control feature determines the appropriate landing page based on user permissions rather than hardcoded role names. 
 * Group
