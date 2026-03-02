@@ -734,6 +734,19 @@ Agents can view and respond to emails on the console. The emails appear on the c
 
 Admins can configure this from [Agent settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings).
 
+**Collapsible Thread View for Reply, Reply All, and Forward**: The system displays email conversations in a collapsible format during Reply, Reply All, and Forward actions to improve readability while preserving full context and enforcing visibility rules.
+
+Every outgoing email includes the original email, all subsequent replies, and any additional messages in the thread, subject to CC/BCC visibility rules. The system does not drop, modify, duplicate, or reorder content. Thread continuity persists even if recipients are removed and later re-added.
+
+By default, the system shows only the latest email content. Older emails remain collapsed behind an ellipsis.
+
+<img src="../images/collasbile-thread-save.png" alt="collasbile-thread-save" title="Collapsible Email Tiles" style="border: 1px solid gray; zoom:70%;">
+
+When users expand the chain, the system displays all eligible previous emails in chronological order, including sender, recipients (To/CC/BCC as applicable), timestamp, and message content.
+
+<img src="../images/collasible-thread-draft.png" alt="collasible-thread-draft" title="Collapsible Email Tiles" style="border: 1px solid gray; zoom:70%;">
+
+
 **Reply and Reply All**: Agents can select **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
 
@@ -921,6 +934,67 @@ Steps to send an outbound email:
         <img src="../images/delete-button.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:80%;">
 
     A confirmation message displays. Select **Delete**. 
+
+## Email Work Bin
+
+Administrators enable and control the Work Bin capability at the system level. [Learn more](../contactcenter/configurations/settings/email-settings.md).
+
+When the administrator turns on the Work Bin setting:
+
+* The system displays the Work Bin icon in the Live Interaction pane.
+* The system makes Work Bin related controls available in the email interaction header.
+
+**Agent Actions**
+
+* The agent selects Work Bin in the email interaction header to park the conversation.
+* The system removes the conversation from the agent’s active tray.
+* The system releases the agent’s slot immediately.
+* The system stores the last handling agent on the conversation.
+
+If the agent sends an email without selecting Work Bin, the system keeps the conversation active with the agent.  
+<img src="../images/agent-actions.png" alt="Agent Actions" title="Agent Actions" style="border: 1px solid gray; zoom:80%;">
+
+
+**Customer Reply Handling**
+
+When a customer replies:
+
+
+
+* The system attempts to assign the conversation to the last handling agent.
+* If the agent is available, the system routes the conversation to that agent.
+* If the agent is unavailable and wait behavior is configured, the system waits for the defined duration.
+* If the agent remains unavailable after the wait duration, the system routes the conversation to the queue.  
+<img src="../images/customer-reply.png" alt="Customer Reply Handling" title="Customer Reply Handling" style="border: 1px solid gray; zoom:80%;">
+
+
+* If wait behavior is not configured, the system immediately applies standard queue routing. 
+
+
+**Supervisor Intervention**
+
+While the conversation remains in Work Bin:
+
+
+
+* A supervisor can assign the conversation directly to an agent.
+* A supervisor can transfer the conversation to a queue.
+
+When a supervisor transfers the conversation to a queue, the system does not wait for the initial handling agent.
+
+**Out-of-Hours (OOH) Handling**
+
+If OOH begins while the conversation remains in the Work Bin:
+
+
+
+* The system does not move the conversation to the OOH flow during the wait period.
+* When the customer sends a new reply, the system applies routing logic based on configured OOH rules.
+
+The Work Bin capability ensures that agents release capacity immediately, supervisors retain operational control, and routing logic remains configurable and consistent with existing system behavior.
+
+
+
 
 ## Color Codes
 

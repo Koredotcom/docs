@@ -78,9 +78,7 @@ Steps to configure general settings:
 
 1. Enter a **Name** and **Description** (optional).
 
-3. Select a **Language** and a **Channel** type (**Voice** or **Chat**).  
-  
-The selected channel determines which metrics are available (Voice or Chat-specific).  
+3. Select a **Language** and a **Channel** type (**Voice** or **Chat**). The selected channel determines which metrics are available (Voice or Chat-specific).  
 
    * **Chat**: Displays only **Chat-relevant** metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
