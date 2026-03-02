@@ -38,10 +38,8 @@ The Platform is designed to provide a unified and flexible framework for impleme
 2. **Universal Orchestrator**: This is the central intelligence layer that coordinates and manages interactions between different components of the platform.    
     
 3. **AI Agents**:
-
-    * Pre-built Solutions: Ready-to-use AI solutions that can be quickly deployed for common department needs, such as IT support automation, HR service management, and Recruitment process automation.
     
-    * Pre-built Agents: the Platform includes a set of pre-configured AI agents that can be easily customized and integrated into workflows.
+    * Pre-built Agents: the Platform includes a set of pre-configured AI agents that can be customized and integrated into workflows.
     
     * Custom Agents: Enterprises can develop their own custom AI agents tailored to their specific requirements.
 
