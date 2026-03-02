@@ -33,7 +33,7 @@ Steps to configure Inline Email ID Suggestions:
 Steps to configure the Email Work Bin:
 
 * Enable the option to let customer replies wait for the last handling agent before rerouting.
-* Define the wait duration for the system to hold the conversation before applying queue routing. If the administrator does not enable the wait option, the system applies standard queue routing when the last handling agent is unavailable.
+* Define the wait duration for the system to hold the conversation before applying queue routing. If the administrator does not enable the wait option, the system applies standard queue routing when the last handling agent is unavailable.  
 <img src="../images/email-bin.png" alt="Email Work Bin" title="Email Work Bin" style="border: 1px solid gray; zoom:70%;"> 
 
 The configuration controls whether replies prioritize the last handling agent or immediately follow existing routing rules.

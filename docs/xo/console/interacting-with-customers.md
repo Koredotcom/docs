@@ -935,7 +935,7 @@ Steps to send an outbound email:
 
     A confirmation message displays. Select **Delete**. 
 
-## Email Work Bin
+#### Email Work Bin
 
 Administrators enable and control the Work Bin capability at the system level. [Learn more](../contactcenter/configurations/settings/email-settings.md).
 

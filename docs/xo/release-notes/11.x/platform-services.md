@@ -39,11 +39,11 @@ Payload encryption is now supported for the LLM and Generative AI Usage Logs API
 
 **Typing Indicator Support for MS Teams**
 
-The platform now shows typing indicators in MS Teams, providing users with real-time visual feedback as an AI or human agent composes a response. This keeps users informed during the interaction and makes conversations feel more natural. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#ms-teams-chat-features)
+The platform now shows typing indicators in MS Teams, providing users with real-time visual feedback as an AI or human agent composes a response. This keeps users informed during the interaction and makes conversations feel more natural. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#typing-indicator)
 
 **Proactive Welcome Message for MS Teams Validation**
 
-The MS Teams Channel Adapter now automatically sends a welcome message when the app is installed in the personal scope. This ensures compliance with  Microsoft Teams Marketplace validation and certification requirements. As a result, the app distribution process is smoother. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#ms-teams-chat-features)
+The MS Teams Channel Adapter now automatically sends a welcome message when the app is installed in the personal scope. This ensures compliance with  Microsoft Teams Marketplace validation and certification requirements. As a result, the app distribution process is smoother. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#proactive-welcome-message-for-ms-teams-validation)
 
 
 
