@@ -55,6 +55,7 @@ plugins:
         'assistant-configuration/mcp-server.md': 'assist-configuration/mcp-server.md'
         'channels/ms-teams/microsoft-teams-config.md': 'channels/microsoft-teams-config.md'
         'channels/ms-teams/microsoft-teams.md': 'channels/microsoft-teams.md'
+        'user-management/enterprise-directory.md': 'employees/directory-configuration.md'
 extra:
   version:
     provider: mike
@@ -187,6 +188,10 @@ nav:
       - Orchestration Settings: assist-configuration/orchestration-settings.md
       - Rate Limit: assist-configuration/rate-limit.md
       - Scheduler Settings: assist-configuration/scheduler-settings.md
+      - Attachment Settings: assist-configuration/attachment-settings.md
+    - Employees:
+      - Directory Configuration: employees/directory-configuration.md
+      - Lookup Settings: employees/lookup-settings.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md

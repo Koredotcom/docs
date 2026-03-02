@@ -1,6 +1,6 @@
 # Pre-Built API Agents
 
-AI for Work includes a set of pre-configured AI agents that can be customized and integrated into workflows. These agents help streamline operations and enhance productivity.
+Deploy pre-configured, customizable AI agents that integrate into your workflows to streamline operations and enhance productivity.
 
 Currently, platform offers the following prebuilt agents:
 
@@ -78,7 +78,7 @@ For agents that use OAuth, the Auth Settings screen presents two options:
 * **Redirect URL** (read-only): Displays the redirect URL that you must register in your OAuth application. Use the copy icon to copy this value.
 * **Scopes** (read-only): Displays the required OAuth scopes. Use the copy icon to copy these values.
 
-Once you enter valid values for Client ID and Client Secret, the **Save** button enables.
+The **Save** button enables after you enter valid values for Client ID and Client Secret.
 
 **Google Agents Restriction**
 
