@@ -20,6 +20,17 @@ DialogGPT-based apps now support handling interruptions across linked apps using
 
 The context object is now supported in pre-processor and post-processor scripts within Agent Node custom prompts. Previously, these scripts only supported static content. With this update, developers can render templates dynamically using real-time context data, enabling greater flexibility across pre- and post-processor features. 
 
+<font size="4">API</font> 
+
+**Enhanced User Engagement Trend API (v2)** 
+
+The User Engagement Trend API now delivers all user engagement metrics through a single endpoint. This includes counts for unique, new, and returning users, along with daily or hourly averages for each category. [Learn more :octicons-arrow-right-24:](../../apis/automation/user-engagement-trend-v2.md)
+
+<font size="4">App Settings</font> 
+
+**End-to-End Payload Encryption Extended to Additional APIs**
+
+Payload encryption is now supported for the LLM and Generative AI Usage Logs API and the Conversation Details and Summary API. When the ‘Enforce Request and Response Payload Encryption’ setting is enabled in the JWT application, and the relevant scopes — Gen AI and LLM Usage Logs and Chat History — are selected, request and response payloads are automatically encrypted and decrypted using the symmetric key associated with those scopes. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#how-request-and-response-payload-encryption-works)
 
 <hr>
 
