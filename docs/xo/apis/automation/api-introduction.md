@@ -88,6 +88,7 @@ The request and response payload encryption option is supported only for the fol
 * [Update User](../../apis/automation/update-user.md)
 * [Update User Access](../../apis/automation/update-user-access.md)
 * [Delete Users](../../apis/automation/delete-users.md)
+* [LLM and Generative AI Usage Logs API](../../apis/automation/llm-usage-logs-api.md)
 * [Conversation Details and Summary API](../../apis/automation/conversation-details-and-summary.md)
 
 ## Data Tables
