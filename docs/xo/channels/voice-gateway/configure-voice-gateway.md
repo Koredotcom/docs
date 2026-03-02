@@ -132,9 +132,17 @@ Agent AI supports real-time audio streaming through two primary methods:
             Example:
 
             Map the DID numbers `7896*` and `789654*` to Experience Flow 1 and Experience Flow 2, and dial `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
+        
+            !!! note "Duplicate DID Handling"
+         
+                When configuring a SIP Trunk with a duplicate DID, the system behavior depends on the account and app context. For the same DID with a different IP/FQDN in the same account and app, the system prompts the user to update the existing trunk or proceed with a mandatory label. For identical DID and IP/FQDN combinations within the same account, the system blocks the configuration with an error message.
+        
         * **DTMF (Dual-Tone Multi-Frequency) Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
+        
         * Select an option from the list for **SIP Transport Type**. This field sets a protocol to route SIP traffic to servers and other endpoints. The available options are *TCP*, *UDF*, and *TLS*.
+        
         * (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
+        
         * Under **SIP Termination URI**, enter the **IP Address**/**Domain Name**.
 
         !!! note "Termination URL"
@@ -158,11 +166,11 @@ Agent AI supports real-time audio streaming through two primary methods:
 
                 The caller number specified in the [Script Task](../../flows/node-types/script-task.md) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
 
-        <span id="agentai">If you select **Agent AI**</span>: 
+        <span id="agentai">If you select Agent AI</span>: 
 
         **Select the SIP Trunk connection method**: Select the method based on your third-party vendor’s requirements (<a href="#siprec">SIPREC</a> or <a href="#websocket">WebSocket</a>). 
 
-        * <span id="siprec">If you select **SIPREC**</span>:
+        * <span id="siprec">If you select SIPREC</span>:
             * **SIP URI**: This is a pre-configured field. A copy option lets you to copy the SIP URIs.
             * **Network**: To configure the Network, you can select one of the following:
                 * Under **List of IP Address**, type the values for **Incoming IP Address** in the textbox.

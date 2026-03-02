@@ -96,6 +96,11 @@ plugins:
         'quality-ai/analyze/conversation-intelligence.md': 'quality-ai/analyze/performance-insights.md'
         'channels/add-skype-channel.md': 'channels/adding-channels-to-your-bot.md'
         'channels/add-skype-business-channel.md': 'channels/adding-channels-to-your-bot.md'
+        'administration/user-management/managing-your-groups-new-admin-console.md.md': 'administration/user-management/managing-your-groups-new-admin-console.md'
+        'administration/user-management/managing-your-users-new-admin-console.md.md': 'administration/user-management/managing-your-users-new-admin-console.md'
+        'administration/security-and-control/using-single-sign-on-new-admin-console.md.md': 'administration/security-and-control/using-single-sign-on-new-admin-console.md'
+        'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md.md': 'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md'
+
 
 extra:  
   version:
@@ -779,13 +784,15 @@ nav:
         - SDK Introduction: sdk/bot-sdk-introduction.md
         - Web SDK:
           - How the Web SDK Works: sdk/how-web-sdk-works.md
+          - SDK Accessibility: sdk/web-sdk-accessibility.md
           - SDK Security: sdk/sdk-security.md
           - SDK Registration: sdk/app-registration.md
-          - SDK Configurations: sdk/sdk-configuration.md
+          - SDK Tutorial: sdk/tutorials/web-sdk.md
           - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md         
         - BotKit SDK:
           - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
           - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
+          - Botkit SDK Configurations: sdk/sdk-configuration.md
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md

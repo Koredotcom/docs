@@ -14,10 +14,10 @@ Agents can type their responses in the text editor and send the message by selec
 
     You can press **Enter** to send messages. Pressing (ctrl+enter or shift+enter) on Windows and (ctrl+return or shift+return) on Mac creates a new line.
 
-Agents can send a standard response to the customer from a pre-configured library. Press **/** in the text editor to display the standard response templates window.  
+Agents can send a standard response to the customer from a pre-configured library. Press / in the text editor to display the standard response templates window.  
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
-Pressing **Escape** after typing “**/**” closes the standard response window.
+Pressing Escape after typing / closes the standard response window.
 
 **Translation enabled**: Responses appear in the agent’s selected target language in both the text editor shortcut command and the response widget.
 
@@ -39,9 +39,9 @@ This option rephrases the draft response to make it more friendly and informal. 
 
 ### Add/Delete Hyperlinks in the Text Editor
 
-Agents can add/delete hyperlinks in the text editor while responding to the messages.
+Agents can add or delete hyperlinks in the text editor while responding to the messages.
 
-Steps to add/remove hyperlinks:
+Steps to add or remove hyperlinks:
 
 1. Highlight the text that you want to hyperlink and select the **Add Link** icon.  
     <img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
@@ -257,7 +257,7 @@ During the consult, the agent can use existing call control features such as Swa
 ##### Queue Level Consult Without Selecting an Agent
 
 The platform lets agents to initiate a consult call by selecting a queue without specifying a particular agent. After the agent starts the consult, the system automatically connects the consult to an available agent in the selected queue.
-Use a queue-based consult when you are handling an active interaction and need assistance without knowing which agent to contact. You must have access to one or more consult-enabled queues. This option helps you reduce time spent searching for agents and allows the system to route the consult based on skills, availability, and capacity.
+Use a queue-based consult when you are handling an active interaction and need assistance without knowing which agent to contact. You must have access to one or more consult-enabled queues. This option helps you reduce time spent searching for agents and lets the system route the consult based on skills, availability, and capacity.
 
 Steps to Initiate a Queue-Based Consult call:
 
@@ -689,7 +689,7 @@ Steps to snooze a conversation:
 2. On the **Snooze Conversation Until** pop-up window, select the snooze duration from the available options or select a custom snooze duration. To select a custom snooze duration, turn on the Custom Snooze toggle and configure the required duration. Agents can choose Today, Tomorrow, or Day After as quick snooze options, or define a custom Date and Time. You can set the maximum snooze date up to 30 days in advance.  
     <img src="../images/custom-snooze-without-note.png" alt="Snooze without note" title="Snooze without note" style="border: 1px solid gray; zoom:70%;">  
 
-    If Administrators turn on Make Snooze Notes Mandatory in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze), the Reason for Snoozing dialog box appears. Enter the message to display.  
+    If Administrators turn on Make Snooze Notes Mandatory in [Agent Settings](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze), the Reason for Snoozing dialog box appears. After the agent adds snooze notes, the agent can view them in the Notes section.  
     <img src="../images/reason-for-snoozing.png" alt="Reason for snooze" title="Reason for snooze" style="border: 1px solid gray; zoom:70%;">  
 
 3. To select a custom snooze duration, turn on the **Custom Snooze** toggle, configure your required snooze duration, and set the snooze duration.  
@@ -1246,19 +1246,21 @@ Steps to request supervisor assistance:
 
 ## Real Time Sentiment Capture
 
-Agents can view customers' real-time sentiments during conversations (Chat, Voice, and Email) on the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and the Live Interactions pane. Administrators can enable the real-time sentiment capture functionality. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).
+Agents can view customer sentiment during Chat, Voice, and Email interactions from the [Conversation Tray](../console/conversation-tray.md#customer-sentiment) and Live Interactions pane. Administrators can enable this capability. [Learn more](../contactcenter/configurations/settings/real-time-sentiment-analysis.md).
 
-**Chat**:  
-<img src="../images/console-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:80%;">  
+The sentiment indicator (positive, negative, or neutral) reflects the overall sentiment of the entire conversation, not only the most recent message.  
+<img src="../images/console-sentiment.png" alt="Overall Sentiment" title="Overall Sentiment" style="border: 1px solid gray; zoom:70%;">  
 
-**Voice**:  
-<img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:80%;"> 
+When agents select the sentiment indicator, a graph appears, visually representing emotional fluctuations per message. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses, leading to improved empathy and more effective issue resolution.
 
-**Email**:  
-<img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:80%;"> 
+Positive:  
+<img src="../images/sentiment-voice.png" alt="Voice Sentiment" title="Voice Sentiment" style="border: 1px solid gray; zoom:70%;">
 
-When agents select the sentiment indicator, a graph appears, visually representing emotional fluctuations throughout the interaction. Agents gain immediate insight into customer emotions. This insight helps them adjust their tone, approach, and responses, leading to improved empathy and more effective issue resolution. Agents can also customize the graph to focus on specific timeframes or sentiment ranges, allowing deeper analysis when needed.  
-<img src="../images/sentiment-analysis-graph.png" alt="Sentiment Graph" title="Sentiment Graph" style="border: 1px solid gray; zoom:80%;"> 
+Negative:  
+<img src="../images/negative-sentiment.png" alt="Chat Sentiment" title="Chat Sentiment" style="border: 1px solid gray; zoom:70%;">    
+
+Neutral:  
+<img src="../images/sentiment-email.png" alt="Email Sentiment" title="Email Sentiment" style="border: 1px solid gray; zoom:70%;">  
 
 ## Stacked Messages, Timestamp, and Read Status
 
@@ -1326,12 +1328,12 @@ For existing accounts, the existing routing logic is applicable. For accounts wa
 
 The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
 
-CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#create-a-survey):
+CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#general-information):
 
 * **Show to Everyone**: When administrators configure this scenario, the system automatically triggers a survey for every completed interaction between an agent and a customer on digital or voice channels.
 * **Show to Every nth User**: When administrators configure this scenario, the system automatically triggers a survey for every completed nth interaction between an agent and a customer on digital or voice channels. For example: If the set frequency is 2, then the system triggers the survey for every second customer.
 * **Agents can trigger**: When administrators configure this scenario, agents can trigger a survey at any point during the interaction:
-    * Select **Send Survey** on the right corner. Th s highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
+    * Select **Send Survey** on the right corner. This highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
         <img src="../images/csat-button.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:70%;">
 
     * The system triggers the survey to the customer when the agent selects End with the survey selected.
@@ -1351,8 +1353,8 @@ For these scenarios, the system assigns the CSAT scores to the interaction.
 
 ### Supported scenarios for CSAT in voice channels
 
-| **Scenario** | **Description** |
-|---------|-------------|
+| Scenario | Description  |
+|:---------|:-------------|
 | Inbound and outbound calls | The system triggers CSAT at the end of any standard inbound or outbound voice interaction. |
 | Inbound or outbound calls + internal agent transfer | When agents transfer a call internally, the system presents the CSAT survey after the final agent interaction. |
 | Inbound or outbound calls + callback triggered by agent | If an agent initiates a callback and the interaction completes, the system triggers a CSAT survey afterward. |
