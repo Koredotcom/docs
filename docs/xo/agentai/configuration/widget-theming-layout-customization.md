@@ -129,11 +129,16 @@ This section lets you control how search results appear in the widget. You can u
 
 ## Assist Action Menu Layout
 
-This section lets you enable, disable, and customize the placement of the action buttons in the Assist tab. You can use the toggles to enable or disable the buttons and the drag-and-drop action to shuffle their positions. The following screenshot shows all enabled action buttons:  
+This section lets you turn on, turn off, and customize the placement of the action buttons in the Assist tab. You can use the toggles to turn the buttons on or off and drag and drop the buttons to reorder them.   
 <img src="../widget-theming-layout-customization/assist-action-menu-layout.jpg" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
 
-To shuffle these action buttons, drag-and-drop their names under the **Assist Action Menu Layout > Icons Displayed** section. The following screenshot shows shuffling of the **Sentiment** button with the **Restart** button:  
-<img src="../widget-theming-layout-customization/assist-action-menu-shuffling.jpg" alt="assist-action-menu-shuffling" title="assist-action-menu-shuffling" style="border: 1px solid gray; zoom:80%;">
+* To reorder these action buttons, drag-and-drop their names under the **Assist Action Menu Layout > Icons Displayed** section. 
+* **Generate Summary**: By default, you can generate the intermittent summary up to two times per agent. You can configure this limit to allow up to 20 summaries per agent. To do that:
+    * Turn on the **Generate Summary** toggle.
+    * Click the edit icon next to the **Generate Summary** value.
+    * Increase or decrease the value by using the up or down arrow keys next to the **Set Summary re-generation threshold per agent** section.
+    * Click the **tickmark** to save.   
+    <img src="../widget-theming-layout-customization/generate-summary-configuration.png" alt="generate-summary-configuration" title="generate-summary-configuration" style="border: 1px solid gray; zoom:80%;">
 
 ## Dialog Task Layout
 
