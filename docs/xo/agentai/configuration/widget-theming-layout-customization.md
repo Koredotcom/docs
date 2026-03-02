@@ -130,7 +130,7 @@ This section lets you control how search results appear in the widget. You can u
 ## Assist Action Menu Layout
 
 This section lets you turn on, turn off, and customize the placement of the action buttons in the Assist tab. You can use the toggles to turn the buttons on or off and drag and drop the buttons to reorder them.   
-<img src="../widget-theming-layout-customization/assist-action-menu-layout.jpg" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
+<img src="../widget-theming-layout-customization/assist-action-menu-layout.png" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
 
 * To reorder these action buttons, drag-and-drop their names under the **Assist Action Menu Layout > Icons Displayed** section. 
 * **Generate Summary**: By default, you can generate the intermittent summary up to two times per agent. You can configure this limit to allow up to 20 summaries per agent. To do that:
