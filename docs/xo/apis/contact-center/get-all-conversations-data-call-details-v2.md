@@ -911,7 +911,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `destinations.respondingAgent.afterCallWorkEndTime` | YYYY-MM-DDTHH SS | The time when this agent completed post-call work. | 2023-01-10 2:25:54 |
 | `destinations.respondingAgent.ConsultingAgents` | array of objects | Contains details of the internal/external agent to whom the call has been transferred by the primary agent. |  |
 | `destinations.respondingAgent.ConsultingAgents.isMerged` | Boolean | Indicates whether the agent’s record is merged with another. | True or False |
-| `destinations.respondingAgent.ConsultingAgents.name` | string | The name or phone number of the external agent | +919876543210 |
+| `destinations.respondingAgent.ConsultingAgents.name` | string | The name or phone number of the external agent | +9198765xxxxx |
 | `destinations.respondingAgent.ConsultingAgents.acceptedTime` | String (ISO 8601 datetime) | The timestamp when the external agent accepted the call. | 2025-09-30T12:05:45 |
 | `destinations.respondingAgent.ConsultingAgents.assignedAt` | String (ISO 8601 datetime) | The timestamp when the call was assigned to the external agent. | 2025-09-30T12:05:36 |
 | `destinations.respondingAgent.ConsultingAgents.consultingEndTime` | String (ISO 8601 datetime) | The timestamp when the call ended. | 2025-09-30T12:05:58 |
