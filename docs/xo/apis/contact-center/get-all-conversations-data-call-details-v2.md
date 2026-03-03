@@ -863,11 +863,11 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `metaInfo.agentTransferConfig.lastIntentName` | string | The last intent posted to the bot by the user | Pay Bill |
 | `metaInfo.agentTransferConfig.lastIntentuserInput` | string | The user posted by the user | Can you please pay my bill? |
 | `metaInfo.agentTransferConfig.dialog_tone` | array | Collection of detected conversational tone attributes associated with the interaction. |  |
-| `metaInfo.ipAddress` | string | IP address from which the user accessed the session. | 123.456.789.876 |
+| `metaInfo.ipAddress` | string | IP address from which the user accessed the session. | 123.xxx.xxx.876 |
 | `metaInfo.hostDomain` | string | Domain of the platform instance handling the interaction. |  |
 | `metaInfo.os` | string | Operating system of the user’s device. | Windows |
 | `metaInfo.customerinfo` | Object | Contains customer details captured during the session. |  |
-| `metaInfo.customerinfo.CustomerPhone` | string | Customer’s phone number. | +19876543210 |
+| `metaInfo.customerinfo.CustomerPhone` | string | Customer’s phone number. | +198765xxxxx |
 | `metaInfo.customerinfo.CenterPhone` | string | Contact number of the service center |  |
 | `metaInfo.customerinfo.CustomerFirstName` | string | Customer’s first name. | John |
 | `metaInfo.customerinfo.CustomerLastName` | string | Customer’s last name | Doe |
