@@ -11,14 +11,11 @@ Contact Center AI > Configurations > Settings > System Settings > Email Settings
 * The Inline Email ID Suggestions setting displays contact suggestions while agents type. 
 
 * Turning on Send Confirmation for Emails displays a pop-up when agents select Send on any email.  
-    
 
 * The Email Work Bin setting lets agents park email conversations without ending them. Turning on this setting enables agents to set aside email interactions and resume them later temporarily.
 
 * The Allow Outbound Emails in All Agent Statuses setting lets agents send outbound emails regardless of their current status or email capacity. Turning on this setting enables outbound email sending even when agents are in non-available statuses or at full email capacity.  
 <img src="../images/email-settings-options.png" alt="Edit Distribution" title="Edit Distribution" style="border: 1px solid gray; zoom:70%;"> 
-
-
 
 Steps to configure Inline Email ID Suggestions:
 

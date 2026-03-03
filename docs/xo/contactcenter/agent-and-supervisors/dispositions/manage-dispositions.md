@@ -51,6 +51,7 @@ In the General tab, you can configure the main settings for the Disposition Set.
 
 1. **Name** the Disposition Set.
 2. **Description**: Enter a short description of the set.
+3. **Campaign-Linked Set**: Turn on the toggle to mark the disposition set as capturing outcomes of campaign calls.  
 3. **Display**: This field lets you specify how to display the disposition code selection options. Choose between _Dropdown_ and _Button_, both allowing single selection.
 4. **Is Required**: Choose whether the Disposition Set is required at the end of a conversation. You can select _Yes_ or _No_. If you select _Yes_, agents must select a disposition code within this set when ending interactions that are part of the queues assigned to the set or if the agent is part of a group assigned to the set.
 5. Under the **Assignment** section, you can assign the Disposition Set to either queues or agent groups, as follows:

@@ -444,7 +444,11 @@ Follow these steps to apply, change, or remove a virtual background during an ac
     * A blurred background
 
 5. Apply the selected background. The system applies the background immediately without disconnecting or pausing the call. The background updates only the agent’s video feed.  
-    <img src="../images/background-effects.png" alt="Background Effects" title="Background Effects" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/background-effects.png" alt="Background Effects" title="Background Effects" style="border: 1px solid gray; zoom:60%;">  
+
+    !!! note 
+        The system saves the selected video background at the browser level and reuses it for future calls, including after reload or logout and login in the same browser. The system skips the preview step, allows changes during live calls, and does not sync backgrounds across browsers.  
+
 6. To change the background during the same call, select a different background from the list. The system switches the background in real-time while the call remains active.
 7. To remove the virtual background, select the option to revert to the original camera feed. The system restores the agent’s live camera view instantly.
 
@@ -935,14 +939,54 @@ Steps to send an outbound email:
 
     A confirmation message displays. Select **Delete**. 
 
-#### Email Work Bin
+### Email Work Bin
 
-Administrators enable and control the Work Bin capability at the system level. [Learn more](../contactcenter/configurations/settings/email-settings.md).
+Administrators enable and control the Work Bin capability at the system level. [Learn more](./../console/interacting-with-customers.md/#send-outbound-email).
 
 When the administrator turns on the Work Bin setting:
 
 * The system displays the Work Bin icon in the Live Interaction pane.
 * The system makes Work Bin related controls available in the email interaction header.
+
+Agent Actions
+
+* The agent selects Work Bin in the email interaction header to park the conversation.
+* The system removes the conversation from the agent’s active tray.
+* The system releases the agent’s slot immediately.
+* The system stores the last handling agent on the conversation.
+
+If the agent sends an email without selecting Work Bin, the system keeps the conversation active with the agent.  
+<img src="../images/move-to-workbin.png" alt="move-to-workbin" title="move-to-workbin" style="border: 1px solid gray; zoom:80%;">   
+
+Customer Reply Handling
+
+When a customer replies:  
+
+* The system attempts to assign the conversation to the last handling agent.
+* If the agent is available, the system routes the conversation to that agent.
+* If the agent is unavailable and wait behavior is configured, the system waits for the defined duration.
+* If the agent remains unavailable after the wait duration, the system routes the conversation to the queue.  
+    <img src="../images/workbin-conversation.png" alt="workbin-conversation" title="workbin-conversation" style="border: 1px solid gray; zoom:80%;">   
+
+* If wait behavior is not configured, the system immediately applies standard queue routing. \
+
+**Supervisor Intervention**
+
+While the conversation remains in Work Bin:
+
+* A supervisor can assign the conversation directly to an agent.
+* A supervisor can transfer the conversation to a queue.
+
+When a supervisor transfers the conversation to a queue, the system does not wait for the initial handling agent.
+
+**Out-of-Hours (OOH) Handling**
+
+If OOH begins while the conversation remains in Work Bin:
+
+* The system does not move the conversation to the OOH flow during the wait period.
+* When the customer sends a new reply, the system applies routing logic based on configured OOH rules.
+
+The Work Bin capability ensures that agents release capacity immediately, supervisors retain operational control, and routing logic remains configurable and consistent with existing system behavior.  
 
 **Agent Actions**
 
@@ -970,12 +1014,9 @@ When a customer replies:
 
 * If wait behavior is not configured, the system immediately applies standard queue routing. 
 
-
 **Supervisor Intervention**
 
 While the conversation remains in Work Bin:
-
-
 
 * A supervisor can assign the conversation directly to an agent.
 * A supervisor can transfer the conversation to a queue.
@@ -986,15 +1027,10 @@ When a supervisor transfers the conversation to a queue, the system does not wai
 
 If OOH begins while the conversation remains in the Work Bin:
 
-
-
 * The system does not move the conversation to the OOH flow during the wait period.
 * When the customer sends a new reply, the system applies routing logic based on configured OOH rules.
 
 The Work Bin capability ensures that agents release capacity immediately, supervisors retain operational control, and routing logic remains configurable and consistent with existing system behavior.
-
-
-
 
 ## Color Codes
 
@@ -1398,32 +1434,24 @@ The system keeps conversations in the queue until they reach the queue’s maxim
 After the queue’s maximum wait time expires, the system triggers the [No Agents Available](../contactcenter/flows-and-routing/conditional-flows.md#no-agents-available-flow)" flow. The system enables this behavior at the account level for new accounts, and it applies to all channels.
 For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Support.
 
-## CSAT Survey
+## Feedback Surveys
 
-The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
+The platform supports a Feedback framework to capture customer sentiment after interactions. You can configure feedback as CSAT, NPS, or Like or Dislike. You activate only one feedback type per channel at a time.
 
-CSAT surveys trigger based on the scenarios configured by administrators/supervisors while [Creating a Survey](../contactcenter/configurations/surveys/configure-surveys.md#general-information):
+Supported Feedback Types: 
 
-* **Show to Everyone**: When administrators configure this scenario, the system automatically triggers a survey for every completed interaction between an agent and a customer on digital or voice channels.
-* **Show to Every nth User**: When administrators configure this scenario, the system automatically triggers a survey for every completed nth interaction between an agent and a customer on digital or voice channels. For example: If the set frequency is 2, then the system triggers the survey for every second customer.
-* **Agents can trigger**: When administrators configure this scenario, agents can trigger a survey at any point during the interaction:
-    * Select **Send Survey** on the right corner. This highlights the send survey and a survey icon appears on the **End** icon in the live interaction pane.  
-        <img src="../images/csat-button.png" alt="CSAT" title="CSAT" style="border: 1px solid gray; zoom:70%;">
+* **CSAT (Customer Satisfaction)** – Rating scale from 1 (extremely poor) to 5 (extremely good).
+* **NPS (Net Promoter Score)** – Rating scale from 0 to 10. The system classifies responses as Detractors (0–6), Passives (7–8), or Promoters (9–10).
+* **Like or Dislike** – Binary response (1 = Like, 0 = Dislike). 
 
-    * The system triggers the survey to the customer when the agent selects End with the survey selected.
+### Feedback Triggering and Assignment
 
-    * When you select Auto Trigger Survey, the system keeps the option disabled by default. Agents must explicitly disable it to trigger surveys automatically, and they can turn it off when needed.
+The system triggers feedback based on the configured rules and supported interaction scenarios. Feedback applies to both digital and voice interactions, including standard calls and eligible internal transfers or consults.
 
-For scenarios where the agent actively participates in interactions and the interactions end, the feedback from surveys contributes to their CSAT scores.
+Select **Send Survey** in the bottom right corner. This highlights the send survey, and a survey icon appears on the End icon in the live interaction pane.  
+<img src="../images/end-icon.png" alt="end-icon" title="end-icon" style="border: 1px solid gray; zoom:70%;">  
 
-The system also triggers CSAT surveys in scenarios when there are no active participants:
-
-* Outside hours of operation
-* No Agents Available flow
-* Agent/Customer side terminations or system terminations due to user inactivity
-* Sub-flows (No agents flow/Out of hours flow)
-
-For these scenarios, the system assigns the CSAT scores to the interaction.
+If feedback is triggered after an interaction without active agent participation (for example, outside business hours or in no-agent scenarios), the system assigns the feedback score to the interaction.
 
 ### Supported scenarios for CSAT in voice channels
 
@@ -1440,19 +1468,19 @@ For these scenarios, the system assigns the CSAT scores to the interaction.
  
     CSAT surveys do not apply to inbound or outbound calls when the customer interacts with external agents or when an external consult occurs during the call. Only interactions handled fully within the internal agent ecosystem qualify for CSAT.
 
-### Viewing CSAT scores submitted by users
+### Viewing feedback scores submitted by users
 
-When callers complete CSAT surveys, the system automatically captures and stores their feedback and scores for review.
+When callers complete feedback surveys, the system automatically captures and stores their feedback and scores for review.
 
-How to view CSAT scores
+Steps to view feedback scores:
 
-1. Navigate to the [Interactions Dashboard](../analytics/overview/conversations.md).
+1. Navigate to the [Conversations Dashboard](../analytics/overview/conversations.md).
 
-2. Open the interaction for which you want to view CSAT details.
+2. Open the interaction you want to view the feedback details for.
 
-3. Select the Details tab to view all interaction information.
+3. Select the **Details** tab to view all interaction information.
 
-4. If the caller completed a CSAT survey, the CSAT Score field appears in the Details tab, as shown in the example.  
+4. If the caller completed a feedback survey, the **Feedback** field (CSAT/NPS/Like/Dislike) appears in the **Details** tab, as shown in the example:  
     <img src="../images/insights-to-logs-csat.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:70%;">
 
 This view enables supervisors and administrators to assess caller satisfaction and evaluate agent performance.
