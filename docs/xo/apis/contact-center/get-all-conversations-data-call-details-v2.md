@@ -848,11 +848,11 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `dispositions` | array of strings | Disposition assigned to the conversation. | [ “Requires Supervisor Attention” ] |
 | dispositionRemarks` | array of strings | Remarks or notes related to the disposition from the agent. | [” CUSTOMER needs help with Products and Sales. AGENT will connect her with an agent.”] |
 | `metaInfo` | object | Contains custom information, set by the automation |  |
-| `metaInfo.caller` | string | Phone number of the caller. | +11234567890 |
-| `metaInfo.callee` | string | Phone number of the person receiving the call | +11234567890 |
-| `metaInfo.callerHost` | string | IP address of the caller. | 12.345.67.8 |
+| `metaInfo.caller` | string | Phone number of the caller. | +112345xxxxx |
+| `metaInfo.callee` | string | Phone number of the person receiving the call | +112345xxxxx |
+| `metaInfo.callerHost` | string | IP address of the caller. | 12.xxx.67.8 |
 | `metaInfo.userId` | string | Unique identifier of the user. | u-4245d01e-6124-587a-85b2-939fe3cfxxxx |
-| `metaInfo.dialedNumber` | string | Number dialed by the caller. | +11234567890 |
+| `metaInfo.dialedNumber` | string | Number dialed by the caller. | +112345xxxxx |
 | `metaInfo.agentTransferConfig` | object | Contains configuration for agent transfer including skills, bot, and last intent. |  |
 | `metaInfo.agentTransferConfig.skillsIds` | array | ID of each skill of the agent handling this conversation | "6834045b2e9b90fa31c8xxxx", "6834045b2e9b90fa31c8xxxx" |
 | `metaInfo.agentTransferConfig.overrideAgents` | boolean | Indicates whether the default agent selection logic is overridden. | false |
