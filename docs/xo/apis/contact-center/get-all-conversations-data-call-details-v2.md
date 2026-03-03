@@ -898,7 +898,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `destinations.CallbackOptedTime` | String (ISO 8601 datetime) | Timestamp when the customer opted for the callback. Displayed only if CallbackOpted = true | 2025-09-30T06:34:48.810Z |
 | `destinations.userCallbackAcceptTime` | String (ISO 8601 datetime) | Timestamp when the customer accepted the callback initiated by the agent. Displayed only if CallbackOpted = true | 2025-09-30T06:35:00.589Z |
 | `destinations.EnterTime` | String (ISO 8601 datetime) | Time at which this conversation entered this queue | 2023-01-10 2:25:54 |
-| `destinations.respondingAgent` | object | Details of the responding agent. Note: When an agent responds to a conversation after it has been handed over, their details are captured in the respondingAgent object. However, if the initially assigned agent does not respond and the conversation is reassigned to another agent, details of both the non-responding and responding agents are included in the nonRespondingAgent array of objects. |  |
+| `destinations.respondingAgent` | object | Details of the responding agent. Note: When an agent responds to a conversation after it has been handed over, their details are captured in the respondingAgent object. However, if the initially assigned agent doesn't respond and the conversation is reassigned to another agent, details of both the non-responding and responding agents are included in the nonRespondingAgent array of objects. |  |
 | `destinations.respondingAgent.agentId` | type-prefixed-guid | SmartAssist’s internal ID for the agent | u-f3a11f62-57d7-5a9f-a071-787650b1xxxx |
 | `destinations.respondingAgent.agentNotes` | array of strings | Notes provided by the agent. | [“CUSTOMER has a problem with Products and Sales. She needs an agent to help her.”] |
 | `destinations.respondingAgent.destinationType` | string | Type of agent destination. | AgentSegment |
@@ -934,8 +934,8 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
 | `surveyType` | string | Type of post-call survey associated with the call. For CSAT surveys, the value is `csat`, `likeDislike`, `nps` | csat |
 | `csatFeedback` | string | Optional textual feedback provided by the customer as part of the CSAT survey. Displayed only when the survey type is csat. |  |
 | services |  |  |  |
-| `userleveltags` | array of tag objects | All user-level tags associated with this session | {“name”: “accountnum”,”value”: “121413243141234132” } |
-| `sessionleveltags` | array of tag objects | All session-level tags associated with this session | {                    "name": "audioCodesCallDisconnect",                    "value": "1"                } |
+| `userleveltags` | array of tag objects | All user-level tags associated with this session | {“name”: “accountnum”,”value”: “1214132431412xxxxx” } |
+| `sessionleveltags` | array of tag objects | All session-level tags associated with this session | { "name": audioCodesCallDisconnect",                    "value": "1"                } |
 | `campaigninfo` | object | Contains metadata of outbound campaigns associated with a specific session or conversation. |  |
 | `campaigninfo.campaignName` | string | The name of the outbound campaign associated with the interaction. | Jan 23 hotfix check (Copy) |
 | `campaigninfo.campaignId` | string | The name of the outbound campaign associated with the interaction. | cd-3e9169e-9b3a-4415-bdcd-4700a44xxxxx |
