@@ -66,7 +66,7 @@ Steps to perform supervisor actions:
 
 You can use the search field on the top right of the Conversations tab to locate specific conversations and content. The system supports keyword search across chats, call transcripts, agent notes, and disposition notes. It ignores common words and ranks results by relevance by default. You can sort results by Start Time when required.
 
-Recent Searches
+### Recent Searches
 
 The system stores up to the last ten search phrases for the current user and displays them in the dropdown.
 

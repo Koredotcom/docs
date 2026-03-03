@@ -276,10 +276,9 @@ Selecting SMS will display all the phone numbers configured in the channels sect
 
 ### Use MetaTags in Start Flows
 
-You can use MetaTags in Start Flows to tag users, sessions, or messages at the beginning of an interaction and reuse those tags throughout the contact center lifecycle.
-
-    !!! Note
-
+You can use MetaTags in Start Flows to tag users, sessions, or messages at the beginning of an interaction and reuse those tags throughout the contact center lifecycle.  
+    !!! note
+    
         Ensure that your flow supports Script Nodes, as you configure MetaTags using Utils APIs within a Script Node.
 
 To add MetaTags in a Start Flow:

@@ -447,8 +447,7 @@ Follow these steps to apply, change, or remove a virtual background during an ac
     <img src="../images/background-effects.png" alt="Background Effects" title="Background Effects" style="border: 1px solid gray; zoom:60%;">  
 
     !!! note 
-
-    The system saves the selected video background at the browser level and reuses it for future calls, including after reload or logout and login in the same browser. The system skips the preview step, allows changes during live calls, and does not sync backgrounds across browsers.  
+        The system saves the selected video background at the browser level and reuses it for future calls, including after reload or logout and login in the same browser. The system skips the preview step, allows changes during live calls, and does not sync backgrounds across browsers.  
 
 6. To change the background during the same call, select a different background from the list. The system switches the background in real-time while the call remains active.
 7. To remove the virtual background, select the option to revert to the original camera feed. The system restores the agent’s live camera view instantly.
@@ -987,16 +986,7 @@ If OOH begins while the conversation remains in Work Bin:
 * The system does not move the conversation to the OOH flow during the wait period.
 * When the customer sends a new reply, the system applies routing logic based on configured OOH rules.
 
-The Work Bin capability ensures that agents release capacity immediately, supervisors retain operational control, and routing logic remains configurable and consistent with existing system behavior.
-
-#### Email Work Bin
-
-Administrators enable and control the Work Bin capability at the system level. [Learn more](../contactcenter/configurations/settings/email-settings.md).
-
-When the administrator turns on the Work Bin setting:
-
-* The system displays the Work Bin icon in the Live Interaction pane.
-* The system makes Work Bin related controls available in the email interaction header.
+The Work Bin capability ensures that agents release capacity immediately, supervisors retain operational control, and routing logic remains configurable and consistent with existing system behavior.  
 
 **Agent Actions**
 
