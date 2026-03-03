@@ -133,7 +133,7 @@ This section lets you turn on, turn off, and customize the placement of the acti
 <img src="../widget-theming-layout-customization/assist-action-menu-layout.png" alt="widget-menu-layout" title="widget-menu-layout" style="border: 1px solid gray; zoom:80%;">
 
 * To reorder these action buttons, drag-and-drop their names under the **Assist Action Menu Layout > Icons Displayed** section. 
-* **Generate Summary**: By default, you can generate the intermittent summary up to two times per agent. You can configure this limit to allow up to 20 summaries per agent. To do that:
+* **Generate Summary**: You can configure the intermittent summary generation limit to a maximum of 20 times per agent. To do that:
     * Turn on the **Generate Summary** toggle.
     * Click the edit icon next to the **Generate Summary** value.
     * Increase or decrease the value by using the up or down arrow keys next to the **Set Summary re-generation threshold per agent** section.
