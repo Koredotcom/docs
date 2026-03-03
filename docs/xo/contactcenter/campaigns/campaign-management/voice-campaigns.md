@@ -350,7 +350,15 @@ Steps to configure disposition retry logic:
 * Shows counts for:  
     * The active campaign, or  
     * The last run when viewing a completed campaign.  
-        <img src="../images/dispositions-table.png" alt="Dispositions Table" title="Dispositions Table" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/dispositions-table.png" alt="Dispositions Table" title="Dispositions Table" style="border: 1px solid gray; zoom:80%;">  
+
+    !!! note
+        **Campaign–Disposition Set Association Enforcement**
+
+        The system enforces a one-to-one relationship between Campaigns and Disposition Sets. Admins must enable the toggle while creating a Disposition Set to mark it as Campaign-linked. The Disposition Set must be single-select. Each queue can have only one Campaign-linked Disposition Set. Campaigns can link only to queues that have exactly one [Campaign-linked](./../../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md/#add-a-disposition-set) Disposition Set.
+
+        For campaign calls, the Agent Desktop displays only the linked Disposition Set during ACW. Only its codes are sent to the Campaigns module. For existing Voice Campaign accounts, the system validates and auto-corrects configurations. If duplicate Campaign-linked associations exist, the system displays a validation error modal.
+
 
 ### Edit a Voice Campaign
 

@@ -174,6 +174,15 @@ Steps to configure outbound email IDs:
 
 Administrators can turn on the Queue-level Outbound Numbers or Emails feature from [System Settings](../../configurations/settings/queue-level-settings.md) to restrict agents to only see the outbound phone numbers or email addresses assigned to their respective queue.
 
+## Route to Queue Override for Out-of-Hours
+
+Turn on the **Route to Queue** toggle to transfer conversations to a specified target queue when a queue enters out-of-hours. The system routes the conversation directly to the selected queue. The target queue selection is mandatory. The transfer behaves as a standard queue transfer and preserves routing logic, metrics, and history.
+
+To prevent queue bouncing across time zones, the system maintains an Out-of-Hours Count at the conversation level. The system increments the count each time it performs an out-of-hours transfer.
+
+Administrators configure a Max Out-of-Hours Transfer Limit (default: 10) at the environment level. If the count exceeds this limit, the system closes the conversation gracefully.
+
+
 ## Edit a Queue
 
 1. Select the **Edit** icon corresponding to the queue you want to edit.
