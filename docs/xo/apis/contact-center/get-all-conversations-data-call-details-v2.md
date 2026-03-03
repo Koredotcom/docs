@@ -411,7 +411,7 @@ curl --location 'https://{{host}}/agentassist/api/public/analytics/account/{{acc
                 "os": "Windows"
             },
             "customerinfo": {
-                "CustomerPhone": "1234567890",
+                "CustomerPhone": "12345xxxxx",
                 "CenterPhone": "",
                 "CustomerFirstName": "Jane",
                 "CustomerLastName": "Doe",
