@@ -18,15 +18,17 @@ App Developers and App Testers can now access Quality AI through their default r
 
 **Configurable Crosstalk Evaluation for By Speech Metrics**
 
-The Crosstalk metric now detects simultaneous speech between the agent and customer, including customer interruptions. The Dynamic By Question metric supports speaker selection and sub-weight assignment for agent-triggered adherence, and answer detection can now be extended beyond the agent — enabling use cases such as customer confirmation and verification. 
+The Crosstalk metric now detects simultaneous speech between the agent and customer, including customer interruptions. The Dynamic By Question metric supports speaker selection and sub-weight assignment for agent-triggered adherence, and answer detection can now be extended beyond the agent — enabling use cases such as customer confirmation and verification. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-speech.md)
+
 
 **Points-Based Scoring for Complex Evaluation Forms**
 
-Evaluation forms can now use points-based scoring, making it easier to build and manage complex forms with more than 20 metrics. QAs can assign weights by points rather than percentages, and all points-based forms include audit tracking for score changes and a full record of updates. 
+Evaluation forms can now use points-based scoring, making it easier to build and manage complex forms with more than 20 metrics. QAs can assign weights by points rather than percentages, and all points-based forms include audit tracking for score changes and a full record of updates. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-forms.md/#scoring-type-selection)
+
 
 **GenAI Logs Enhancement in Audit Screen**
 
-The Audit Screen now displays detailed GenAI call logs at the conversation level for easier debugging. Logs are organized by GenAI feature in expandable dropdowns that show only enabled features, and can be filtered by Success or Failure status. Each log entry includes date and time, GenAI feature name, language, model name, integration type, prompt name, token usage, response duration, and full request and response payloads. 
+The Audit Screen now displays detailed GenAI call logs at the conversation level for easier debugging. Logs are organized by GenAI feature in expandable dropdowns that show only enabled features, and can be filtered by Success or Failure status. Each log entry includes date and time, GenAI feature name, language, model name, integration type, prompt name, token usage, response duration, and full request and response payloads. [Learn more :octicons-arrow-right-24:](../../quality-ai/ai-assisted-manual-audit.md/#audit-logs-tab)
 
 <hr>
 
