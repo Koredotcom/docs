@@ -68,66 +68,110 @@ Steps to create a new evaluation form:
 
 1. Select the **Evaluation Forms** tab.   
 
-2. Select the **+ New Evaluation Forms** displayed in the upper-right corner.    
+2. Select the **+ New Evaluation Forms** displayed in the upper-right corner.  
+
+The form creation process includes three sections:
+
+* General Settings
+
+* Assignments
+
+* Evaluation Metrics
 
 ### General Settings Configuration
 
-This section configures the general settings for the New Evaluation Form. 
+This section defines the basic details of the evaluation form.
 
 Steps to configure general settings:
 
 1. Enter a **Name** and **Description** (optional).
 
-2. Select a **Language** and a **Channel** type (**Voice** or **Chat**). The selected channel determines which metrics are available (Voice or Chat-specific).  
+1. Select the required Language.
 
-   * **Chat**: Displays only **Chat-relevant** metrics. Excludes speech-based and Voice-specific Playbook metrics.
+1. Select a Channel type:
 
-   * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.    
+   * **Chat**: Displays only Chat-relevant metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
-3. Select a **Scoring Type** (**Percentage** or **Points**). 
+   * **Voice**: Displays all applicable Voice-related metrics, including speech and Playbook metrics.
+
+The selected channel determines which metrics are available for configuration.
+
+1. Select a **Scoring Type** (**Percentage** or **Points**). 
  
-6. Set the minimum **Pass Score** percentage for the agent, regardless of the scoring system, to maintain consistent evaluation standards across all forms.     
-<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Configuration" title="General Settings Configuration" style="border: 1px solid gray; zoom:70%;">
+1. Set a minimum Pass Score required for agents.
 
-7. Select **Next**.  
+This maintains consistent evaluation standards, regardless of the scoring type you select.         
+
+7. Select **Next**.    
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Configuration" title="General Settings Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ### Assignments Configuration
 
-This section lets you assign available queues to an evaluation form.
+This section enables you to assign queues to the evaluation form. 
 
-1. Use the **Search** bar to find the queues that you want to assign.
+#### Queues and Conversation Source Configuration
+
+You can assign available queues and define the conversation source for evaluation.
+
+Steps to configure assignments:
+
+1. Use the Search bar to find available queues.
+
 1. Select the required queues.
+
 1. Select **Add Queues** to assign them to the evaluation form.
-1. You can add or remove assignments at any time as needed.  
-   <img src="../configure/evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:60%;">
 
-1. Select **Next**.  
+1. Add or remove the listed queue assignments if required. 
 
-    !!! Note
+1. Select **Next**.    
+   <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:50%;">
 
-         You can assign only one evaluation form to each queue in the **Chat** and **Voice** channels.   
-    
+#### Conversation Source Options
+
+* **CCAI Integration**: Configures Quality AI to ingest conversation data from CCAI.
+
+* **Agent AI Integration**: Enables Quality AI to process interactions received from Agent AI.
+
+**Queue Assignment Rules**
+
+* Each queue can have only one form associated with a single channel. 
+
+* The search list displays only queues accessible to the user.
+
+**Metric Configuration Rules**
+
+* Metric availability is validated based on the selected conversation source, language, and channel.
+
+* You can reorder metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
+
+* The metrics list displays only those configured for all selected form languages and the chosen channel.
+  
 ### Evaluation Metrics Configuration
 
-Use this section to add and configure evaluation metrics for the selected evaluation form. The system applies the same configuration flow for both Percentage-Based and Points-Based scoring. Only the weight type (percentage or points) differs. The system displays only metrics supported for the selected languages and channel.        
+This section allows you to add and configure evaluation metrics for the form. The configuration flow is the same for both Percentage-based and Points-based scoring. Only the weight type differs. The system displays only metrics supported for the selected languages and channel.      
 
  Steps to configure evaluation metrics:
 
-1. Use the Search bar to find and add the available evaluation metrics that you want to include in the form.    
+1. Use the Search bar to find the available evaluation metrics.    
+
+1. Add the selected metrics to the form. 
 
 1. Select **Edit** to configure each metric.
 
 1. Choose the correct **Response** that defines what constitutes a match for this metric.
 
-1. Assign a metric **Weightage** for according to the form’s scoring type selected.
+1. Assign a metric **Weightage** based on the selected scoring type:
     
-    * **Percentage**: Enter a percentage weight.   
-    <img src="../configure/evaluation-criteria/evaluation-forms/images/percentage-scoring.png" alt="Percentage Metrics" title="Percentage Metrics" style="border: 1px solid gray; zoom:50%;">
+    * **Percentage**: Enter a percentage value.   
+    <img src="../evaluation-criteria/evaluation-forms/images/percentage-scoring.png" alt="Percentage Metrics" title="Percentage Metrics" style="border: 1px solid gray; zoom:40%;">
 
     * **Points**: Enter a points value.   
-    <img src="../configure/evaluation-criteria/evaluation-forms/images/points-scoring.png" alt="Points Metrics" title="Points Metrics" style="border: 1px solid gray; zoom:100%;">
+    <img src="../evaluation-criteria/evaluation-forms/images/points-scoring.png" alt="Points Metrics" title="Points Metrics" style="border: 1px solid gray; zoom:100%;">
 
-    * **Outcome** (Percentage or Points): A matching agent response (such as greeting a customer) earns positive weight; a non-matching response earns zero or negative weight.
+
+#### Outcome Configuration
+
+For each metric, define the outcomes (for example, **Yes** or **No**) and assign a positive, zero, or negative weight based on the expected response. A matching response receives positive weight, while a non-matching response receives zero or negative weight (if configured).
 
 1. Toggle on **Fatal Error** for this metric if it is compliance-critical (optional).
 
@@ -148,8 +192,7 @@ Use this section to add and configure evaluation metrics for the selected evalua
       * Metric weights as points with no upper limit on total positive points. 
       * Total negative points can’t exceed total positive points.
       * Recommended for complex forms (20+ metrics; ideal for 40+).
-      * Supports Manual Evaluation metrics.
-        
+      * Supports Manual Evaluation metrics.        
       
 Whenever you try to switch from an existing scoring type, the system shows a warning pop-up to confirm the following: 
 
@@ -187,14 +230,18 @@ Calculate the conversation score using the selected type: **Percentage** (weight
 
 ### Scoring Rules Comparison
 
-| **Category**                  | **Percentage‑Based Configuration**                                                                                                                                        | **Points‑Based Configuration**                                                                                                                                                                   |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Configuration Type**        | Assign weights as percentages.                                                                                                                                            | Assign weights as points.                                                                                                                                                                        |
-| **Weight Assignment**         | Enter percentage values for **Yes** and **No** outcomes.                                                                                                                  | Enter point values for **Yes** and **No** outcomes.                                                                                                                                              |
-| **Weight Validation Rules**   | If Correct Response = Yes →<br> Only positive percentages are allowed for Yes; zero or negative percentages are allowed for No. <br>If Correct Response = No → Only positive percentages are allowed for No; zero or negative percentages are allowed for Yes.                        | If Correct Response = Yes → positive points for Yes; zero/negative points for No. <br> If Correct Response = No → positive points for No; zero/negative points for Yes.                            |
-| **Validation Requirements**   | Total positive weight must equal 100%.<br>Negative weight allowed within 100% structure.<br>Only metrics valid for selected language & channel appear.                    | No fixed maximum on total positive points.<br>Total negative points ≤ total positive points.<br>Only metrics valid for selected language & channel appear.<br>Manual Evaluation metrics allowed. |
-| **Outcome Logic**             | Matching correct response earns assigned percentage; incorrect earns zero/negative; final score 0–100%.                                                                   | Matching correct response earns assigned points; incorrect earns zero/negative; points normalized to 0–100.                                                                                      |
-| **Fatal Error Configuration** | Works identically for both scoring systems: if a fatal metric fails, the final score becomes 0, other metric scores are ignored, and the interaction fails automatically. |                                                                                                                                                                                                  |
+| **Category**                  | **Percentage-Based Configuration**                                                                                                                                                                                                                                                            | **Points-Based Configuration**                                                                                                                                                                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Configuration Type**        | Assign weights as percentages.                                                                                                                                                                                                                                                                | Assign weights as points.                                                                                                                                                                                                       |
+| **Weight Assignment**         | Enter percentage values for **Yes** and **No** outcomes.                                                                                                                                                                                                                                      | Enter point values for **Yes** and **No** outcomes.                                                                                                                                                                             |
+| **Weight Validation Rules**   | • If **Correct Response = Yes** →<br>  • Only positive percentages allowed for **Yes**<br>  • Zero or negative percentages allowed for **No**<br>• If **Correct Response = No** →<br>  • Only positive percentages allowed for **No**<br>  • Zero or negative percentages allowed for **Yes** | • If **Correct Response = Yes** →<br>  • Positive points for **Yes**<br>  • Zero or negative points for **No**<br>• If **Correct Response = No** →<br>  • Positive points for **No**<br>  • Zero or negative points for **Yes** |
+| **Validation Requirements**   | Total positive weight must equal 100%.<br>Negative weight allowed within the 100% structure.<br>Only metrics valid for the selected language and channel appear.                                                                                                                              | No fixed maximum on total positive points.<br>Total negative points ≤ total positive points.<br>Only metrics valid for the selected language and channel appear.<br>Manual Evaluation metrics allowed.                          |
+| **Outcome Logic**             | Matching correct response earns the assigned percentage; incorrect earns zero or negative; final score ranges from 0–100%.                                                                                                                                                                    | Matching correct response earns assigned points; incorrect earns zero or negative; points are normalized to 0–100.                                                                                                              |
+| **Fatal Error Configuration** | **Works identically for both scoring systems:** If a fatal metric fails, the final score becomes 0. Other metric scores are ignored, and the interaction fails automatically.  |  —| 
+
+
+
+
 
 ### Scoring Systems Comparison
 
@@ -203,8 +250,8 @@ Calculate the conversation score using the selected type: **Percentage** (weight
 | **Best For**                 | Smaller forms (fewer than ~20 metrics)                        | Larger forms (20+ metrics)                                                |
 | **Total Weight / Scale**     | Must equal 100%                                               | No fixed maximum                                                          |
 | **Scalability**              | Limited distribution due to 100% cap                          | High flexibility regardless of number of metrics                          |
-| **Weight per Metric**        | Decreases as metrics increase (for example, 40 metrics ~ ~2.5% each) | Assign any point value based on importance                                |
-| **Weight Precision**         | May require fractional values (for example, 2.5%)                    | Uses whole‑number allocations (e.g., 50 points for critical, 5 for minor) |
+| **Weight per Metric**        | Decreases as metrics increase (for example, 40 metrics ~2.5% each) | Assign any point value based on importance                                |
+| **Weight Precision**         | May require fractional values (for example, 2.5%)                    | Uses whole‑number allocations (for example, 50 points for critical, 5 for minor) |
 | **Negative Scoring Control** | Managed within 100% structure                                 | Negative points allowed but can’t exceed total positive points            |
 | **Flexibility**              | Fixed distribution (restricted by 100%)                       | Highly flexible distribution                                              |
 | **Final Evaluation Score**   | Direct percentage (0–100)                                     | Normalized to percentage (0–100)                                          |

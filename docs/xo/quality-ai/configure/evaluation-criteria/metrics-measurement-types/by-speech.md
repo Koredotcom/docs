@@ -46,13 +46,13 @@ Use speech evaluation metrics when:
 * Select and configure one of the following **Speech Type** options.  
 
     * **Crosstalk**: Tracks simultaneous agent–customer speech. Configure overlap duration, maximum instances, and instance control (agent-only or both). The metric qualifies when instances stay within the set limit; exceeding the limit fails the metric.      
-    <img src="../images/by-speech-crosstalk.png" alt="Crosstalk" title="Crosstalk" style="border: 1px solid gray; zoom:60%;"> 
+    <img src="../images/by-speech-crosstalk.png" alt="Crosstalk" title="Crosstalk" style="border: 1px solid gray; zoom:100%;"> 
 
     * **Dead Air**: Tracks silence periods. Set minimum and maximum duration and allowed instances. The metric fails if silence exceeds the configured limits.              
-    <img src="../images/by-speech-dead-air.png" alt="Dead air" title="Dead air" style="border: 1px solid gray; zoom:60%;"> 
+    <img src="../images/by-speech-dead-air.png" alt="Dead air" title="Dead air" style="border: 1px solid gray; zoom:50%;"> 
 
     * **No. of Instances**: Monitors the agent's speaking rate using Word Per Minute (WPM). The metric fails if the rate falls outside the defined range.         
-    <img src="../images/by-speech-speaking-rate-violation.png" alt="Speaking Rate" title="Speaking Rate" style="border: 1px solid gray; zoom:60%;"> 
+    <img src="../images/by-speech-speaking-rate-violation.png" alt="Speaking Rate" title="Speaking Rate" style="border: 1px solid gray; zoom:50%;"> 
 
 5. Select **Create** to save the Speech metric.
 

@@ -742,8 +742,8 @@ This tab provides contextual information about the interaction and helps supervi
 * **Agent Conversation ID**: c-358c3b1-d472-4c2a-89bd-eebcca3dxxxx
 * **User ID**: u-e481d17b-aba0-5110-9377-05bc36f0xxxx
 
-This tab displays metadata and structural details that don't appear in the transcript, enabling a complete review of the interaction context.    
-<img src="../quality-ai/ai-assist-manual-edit/images/conversation-details.png" alt="Conversation Details" title="Conversation Details" style="border: 1px solid gray; zoom:80%;">
+This tab displays metadata and structural details that don't appear in the transcript, enabling a complete review of the interaction context.       
+<img src="../ai-assist-manual-edit/images/conversation-details.png" alt="Conversation Details" title="Conversation Details" style="border: 1px solid gray; zoom:80%;">
 
 ## Audit Logs Tab
 
@@ -771,7 +771,7 @@ This audit log tab includes the following details:
 * **Track status and status history**: Tracks status and status history (for example, Success or Failed) and enables filtering by status.
 
 * **Payload Visibility and Debug Support**: Shows Request and Response payloads with options to format, compact, copy, and maximize for easier debugging and analysis.  
-<img src="../quality-ai/ai-assist-manual-edit/images/audit-logs-payload-request-respond.png" alt="Payload Request and Respond" title="Payload Request and Respond" style="border: 1px solid gray; zoom:80%;">
+<img src="../ai-assist-manual-edit/images/audit-logs-payload-request-respond.png" alt="Payload Request and Respond" title="Payload Request and Respond" style="border: 1px solid gray; zoom:80%;">
 
 * **Assign to me**: Select this option to assign the log entry to yourself for audit. The system records who assign the audit and when, and displays the assigned user in the header and audit history.   
 
