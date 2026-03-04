@@ -12,15 +12,15 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Persistent Virtual Backgrounds for Video Calls**
 
-Agents no longer need to reselect a virtual background before each call. After an agent sets a background, the system retains it across page reloads and sign-in sessions in the same browser and automatically applies it to future calls. Agents can still change the background during a live call. The system now also preloads background assets to reduce preview delays and improve overall performance.
+Agents no longer need to reselect a virtual background before each call. After an agent sets a background, the system retains it across page reloads and sign-in sessions in the same browser and automatically applies it to future calls. Agents can still change the background during a live call. The system now also preloads background assets to reduce preview delays and improve overall performance. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#apply-or-change-a-virtual-background-during-a-video-call)
 
 **Collapsible Email Threading**
 
-Email replies and forwards now display the most recent message by default. Earlier messages are collapsed behind an ellipsis and can be expanded to view the full thread. The system preserves the complete conversation context, maintains correct chronological order, and enforces CC and BCC visibility rules.
+Email replies and forwards now display the most recent message by default. Earlier messages are collapsed behind an ellipsis and can be expanded to view the full thread. The system preserves the complete conversation context, maintains correct chronological order, and enforces CC and BCC visibility rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#emails)
 
 **Work Bin (Email Parking Lot)**
 
-Agents can park email conversations in a work bin without closing them. This action immediately frees capacity and excludes parked time from Average Handle Time (AHT). When a customer replies, the conversation is reassigned to the last handling agent if available, or routed normally if not. Administrators configure wait times and rerouting rules, while supervisors can manually reassign parked conversations.
+Agents can park email conversations in a work bin without closing them. This action immediately frees capacity and excludes parked time from Average Handle Time (AHT). When a customer replies, the conversation is reassigned to the last handling agent if available, or routed normally if not. Administrators configure wait times and rerouting rules, while supervisors can manually reassign parked conversations. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#email-work-bin)
 
 **Proactive Connection Monitoring and Agent Alerts**
 
@@ -30,7 +30,7 @@ Agent Desktop now continuously monitors network quality during live calls. It de
 
 **MetaTag Support for Start Flows**
 
-You can now define MetaTags in Start Flows by using utility functions in Script nodes. Set user-, session-, and message-level tags at flow entry and reuse them across automation, conditional, and exit flows for consistent context handling.
+You can now define MetaTags in Start Flows by using utility functions in Script nodes. Set user-, session-, and message-level tags at flow entry and reuse them across automation, conditional, and exit flows for consistent context handling. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md/#use-metatags-in-start-flows)
 
 **CSAT and Feedback Status Visibility in Interactions**
 
