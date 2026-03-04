@@ -2,6 +2,60 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.22.0 February 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">Widget Enhancements</font>
+
+**Feedback for Agentic Copilot Next Best Action Suggestions**
+
+Agents can now give ‘Thumbs Up’ or ‘Thumbs Down’ feedback on Agentic Copilot Next Best Action (NBA) suggestions directly in the Agent AI widget. For negative feedback, agents can select from multiple configurable reasons and add optional comments. Admins can manage the available reasons in Feedback Settings. All feedback is logged and accessible through the Raw Data API to support performance analysis and continuous improvement. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/feedback-settings.md).
+
+**Configurable Summary Sharing for Cold Transfers**
+
+Admins can now choose which conversation summary is shared during cold transfers — either only the latest transferring agent's intermittent summary, or the full conversation, including bot and all participants. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/conversation-events.md).
+
+**Extended Session Closure for Exit Event Workflows**
+
+Agent AI now supports delaying session closure beyond the End of Conversation event, giving agents time to complete workflows configured in Agentic Platform Exit Events before the session closes.
+
+**Configurable Intermittent Summary Generation Limit**
+
+Admins can now configure how many intermittent summaries are generated per agent, up to a maximum of 20. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#assist-action-menu-layout).
+
+<font size="4">API Enhancements</font>
+
+**Enhanced Raw Data API for Agent Coaching and Playbooks Data**
+
+The Raw Data API now includes additional Agent Coaching and Playbook data, such as playbook type (primary and dynamic), stage and step details, scenario completion status, configuration-based triggers, step execution order, and step adherence validation. It also captures triggered coaching events, actions, and details on action adherence. This enables customers to build custom metrics, create external dashboards, and audit Playbook analytics. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md).
+
+**Conversation Termination API**
+
+Agent AI uses the Hooks API to notify the system when a conversation terminates, enabling reliable execution of configured post-conversation actions. Invoke this API once at the final termination of the call—whether it ends normally or unexpectedly—to ensure accurate event handling and prevent duplicate processing.
+
+<font size="4">Integration Enhancements</font>
+
+**Direct OAuth Configuration for Email-to-Case Summary Enrichment**
+
+Agent AI administrators can now configure external API access for Email-to-Case summary enrichment using direct OAuth credentials (Client ID and Client Secret), instead of Salesforce Named Credentials. This simplifies setup and removes Salesforce dependencies by enabling OAuth configuration directly within Agent AI. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-email-to-case/agentai-integration-with-salesforce-email-to-case.md/#external-api-configuration-for-summary-generation).
+
+**Runtime Bot/App Context Metadata Support for Advanced Search Filtering**
+
+Agent AI now provides runtime access to the full Bot/App context object—including direct context variables, BotUserSession, and app context attributes—and supports passing these values to the Advanced Search API as metaFilters. This enables context-aware and more accurate search results. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md/#step-4-xo-configuration-optional).
+
+**Real-Time Transcription Support for NICE CXone Softphone in Salesforce**
+
+Agent AI now supports real-time call context initialization and voice transcription for agents using the NICE CXone softphone in Salesforce. When a call is accepted, the widget automatically initializes, retrieves the session identifier, and starts live transcription — enabling real-time assistance and accurate post-call summaries.
+
+**Unified Refresh for Email and Sprout Social Cases in Salesforce**
+
+Enhanced Agent AI “Refresh / Next Best Action” button functionality on Salesforce Case pages now supports both Email- and Sprout Social-originated cases with a single unified refresh action. This improvement ensures that agents receive accurate, context-aware recommendations within the Agent AI widget, regardless of the originating channel.
+
+<hr>
+
 ## v11.21.1 January 31, 2026
 
 <u>Patch Release </u>

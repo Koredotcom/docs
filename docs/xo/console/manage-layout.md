@@ -171,18 +171,26 @@ If the internet connection is lost, a message appears at the top of the agent co
 <img src="../images/connection-lost.png" alt="Connection Lost" title="Connection Lost" style="border: 1px solid gray; zoom:80%;">
 
 The system automatically attempts to reconnect to the network. If it fails after several tries, a message instructs you to reload the page.  
-<img src="../images/error-message.png" alt="Error" title="Error" style="border: 1px solid gray; zoom:60%;">
 
-## Features
+## Proactive Network Monitoring
 
-The three monitoring icons, CSAT, Completed, and Average Response, provide details on the completed tasks, in-progress conversations, response time, and customer feedback.
+The system monitors Agent Desktop network performance during active calls. If packet loss, network strength, speed, or MOS score exceeds the 300 ms threshold, the system displays a warning banner on the Console and Monitor pages.
 
-CSAT (Customer Satisfaction) triggers under the following conditions:
+<img src="../images/proactive-network-monitoring.png" alt="Proactive Network Monitoring" title="Proactive Network Monitoring" style="border: 1px solid gray; zoom:80%;">
 
-* In all digital and voice channels, both for user-side and agent-side chat termination:
-* Out of Hours of Operation: CSAT triggers when a conversation occurs outside of the designated hours of operation.
-* Queue Max Timeout: CSAT triggers when a conversation remains unaccepted or unassigned to any subsequent agents due to reaching the maximum queue timeout.  
-<img src="../images/csat.png" alt="Features" title="Features" style="border: 1px solid gray; zoom:80%;">
+Select Know More to view the last five minutes of data with the 300 ms threshold highlighted. Hover over the graph to compare recommended and actual values. Select Report to submit the issue, which captures additional connection logs for analysis.
+
+## Analytics 
+
+This section shows essential metrics necessary for the agent.
+
+* Feedback Survey: Selecting this enables agents to see the feedback survey scores.  
+    <img src="../images/feedback-survey-scores.png" alt="feedback-survey-scores" title="feedback-survey-scores" style="border: 1px solid gray; zoom:80%;">  
+
+* This shows the average of conversations completed, transferred, and abandoned with the Agent.  
+    <img src="../images/average-completed-transferred-abandoned.png" alt="average-completed-transferred-abandoned" title="average-completed-transferred-abandoned" style="border: 1px solid gray; zoom:80%;">
+* This shows the average first response and the average response time of conversations handled by the agent.   
+    <img src="../images/average-first-response.png" alt="average-first-response" title="average-first-response" style="border: 1px solid gray; zoom:80%;">  
 
 ## Agent Status
 

@@ -7,13 +7,13 @@ To access surveys, go to **Contact Center AI** > **CONFIGURATIONS** > **Surveys*
 
 ## How Surveys Work
 
-The Surveys feature lets you get customer satisfaction ratings after conversations. You can only create one survey, which you can assign to voice, chat, or both.
-survey configuration window
-The system sends the survey according to a frequency that you can customize. After a customer conversation ends, the system or agent can ask the customer to provide feedback using a survey form.  
+The Feedback framework captures customer sentiment after a conversation ends. You can configure feedback at the channel level and select one feedback type per channel. The system supports CSAT, Net Promoter Score (NPS), and Like or Dislike surveys under a unified framework.
 
-When selecting the Feedback option, customers see a short survey through which they can rate the conversation on a scale from 1 to 5 (1 is extremely poor, while 5 is extremely good).  
+Customers receive the configured survey based on the defined frequency. The survey format depends on the selected feedback type:
 
-The submitted rating reflects in the Dashboard, under the Queues and Agents view, as the _Average Satisfaction Rating_ and _Customer Satisfaction by Channel._
+* **Customer Satisfaction (CSAT)**: Rating scale from 1 (extremely poor) to 5 (extremely good).
+* **Net Promoter Score (NPS)**: Rating scale from 0 to 10, categorized as Detractors (0–6), Passives (7–8), and Promoters (9–10).
+* **Like or Dislike**: Binary response (Thumbs up=Satisfied, Thumbs down = Unsatisfied). 
 
 ## The Surveys Live Board
 
@@ -22,8 +22,10 @@ The Surveys section lets you create a survey or view and edit an existing one. Y
 * **Survey Name**: The name given to your survey.
 * **Description**: The description provided for the survey.
 * **Experience Enabled For**: The system lists the survey enabled channels.
+* **Survey Type**: Select CSAT, NPS, Like or Dislike.
 * **Frequency**: The frequency with which the survey goes out.
 * **Status**: Enabled or Disabled.
+* The 🖊 icon lets administrators modify a survey.
 
 ## General Information
 
@@ -57,9 +59,11 @@ The Chat, Call, and Email Experience tabs provide access to the following featur
 
 1. Advanced Survey Conditions
 
-    * Trigger the Customer Satisfaction (CSAT) survey when no agents are available: Triggers a CSAT survey when agent transfer isn't initiated.
-    * Trigger the CSAT survey outside business hours: Triggers a CSAT survey outside business hours when no agents are available.
-    * Trigger CSAT for agent-closed conversations: Triggers CSAT survey for conversations closed by agents.
+| Option                                                     | Description                                                                 |
+|------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Trigger the feedback survey when no agents are available  | Sends the feedback survey when the agent transfer does not occur due to unavailability. |
+| Trigger the feedback survey outside business hours        | Sends the feedback survey when conversations occur outside business hours and agents are unavailable. |
+| Trigger feedback survey for agent-closed conversations    | Sends the feedback survey only for conversations that agents close. |
 
 1. Turn on the toggle to verify the survey is active.
 1. Select **Done** to begin sending it to customers. If you don't want to do so, leave the survey disabled.  

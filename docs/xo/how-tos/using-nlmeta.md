@@ -27,19 +27,19 @@ The *nlMeta* is an object that can be used to pass information on to the AI Agen
 The following is a sample of how the *nlMeta* object needs to be populated:
 
 ``` json
-     "nlMeta" :{
+"nlMeta" :{
                    "intent": "Login",
                    "childBotName":"NL Meta_Test_1",
                    "entities":{
                     "Password":456
 
-                   
+                    
                    },
                    "hr": {
                  "h": 4,
                  "r": 1,
                 "nn":false
-      
+                 
                  
                 }
                }

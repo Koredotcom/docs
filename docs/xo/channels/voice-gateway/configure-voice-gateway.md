@@ -129,9 +129,7 @@ Agent AI supports real-time audio streaming through two primary methods:
 
         * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) that route calls to your existing telephone lines. You can configure SIP trunks by entering DID numbers using wildcard patterns (for example, `123*`) to automatically handle multiple similar DIDs without listing each one individually. On configuring two wildcard patterns for different experience flows within an application, and a caller dials a number that matches both patterns, the system triggers the experience flow associated with the pattern that matches the most digits.  
         
-            Example:
-
-            Map the DID numbers `7896*` and `789654*` to Experience Flow 1 and Experience Flow 2, and dial `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
+            Example: Map the DID numbers `7896*` and `789654*` to Experience Flow 1 and Experience Flow 2, and dial `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
         
             !!! note "Duplicate DID Handling"
          
@@ -145,9 +143,9 @@ Agent AI supports real-time audio streaming through two primary methods:
         
         * Under **SIP Termination URI**, enter the **IP Address**/**Domain Name**.
 
-        !!! note "Termination URL"
+            !!! note "Termination URL"
 
-            Configure the termination URL on your SIP trunk to enable outbound calls.
+                Configure the termination URL on your SIP trunk to enable outbound calls.
 
         * **Option Ping**: When selected, the system verifies access to the IP addresses. The system selects this option by default.   
 
