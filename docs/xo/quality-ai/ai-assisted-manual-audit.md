@@ -747,31 +747,33 @@ This tab displays metadata and structural details that don't appear in the trans
 
 ## Audit Logs Tab
 
-This tab shows a complete audit trail of the interaction evaluation process by recording system and user actions, executing GenAI-based metric evaluations, tracking status changes, and displaying audit evaluation progress for transparency and compliance.
+This tab provides a complete audit trail of the interaction evaluation process by recording system and user actions, executing GenAI-based metric evaluations, tracking status changes, and displaying audit progress for transparency and compliance.
 
 This audit log tab includes the following details:
 
-* **Log creation and updates**: Logs audit creation and updates, including user ID, display name, and timestamps of every action.
+* **Log creation and updates**: Records audit creation and updates, including user ID, display name, and timestamps for every action.
 
-* **Record supervisor and reviewer changes**: Tracks supervisor and reviewer changes, capturing who made each change, when, and what changed.
+* **Record supervisor and reviewer changes**: Tracks supervisor and reviewer updates, capturing who made each change, when the change occurred, and what modified.
 
-* **Capture AI model execution data**: Logs AI execution details, including model version, execution duration, request and response token counts, and enabled GenAI features. Provides filters for GenAI Feature and Status (Success or Failure). Each log entry includes:
+* **Capture AI model execution data**: Logs AI execution details, including model version, execution duration, request and response token counts, and enabled GenAI features.
 
-    * Date & Time of execution
+Each execution log entry includes:
+
+    * Date and Time of execution
     * GenAI Feature Name (for example, By Hold Adherence)
     * Language
     * Model Name (for example, GPT-4o)
-    * Integration Type (System/Custom)
-    * Prompt Type (Default/Custom)
+    * Integration Type (System or Custom)
+    * Prompt Name and Type (Default or Custom)
     * Request Token Count
     * Response Token Count
     * Response Duration
-    * Execution Status
+    * Execution Status (Success or Failure)
 
-* **Track status and status history**: Tracks status and status history (for example, Success or Failed) and enables filtering by status.
+* **Track status and status history**: Tracks execution status and status history (for example, Success or Failed) and provides filtering by status and GenAI feature.
 
-* **Payload Visibility and Debug Support**: Shows Request and Response payloads with options to format, compact, copy, and maximize for easier debugging and analysis.  
+* **Payload Visibility and Debug Support**: Displays the Request and Response payloads with options to expand or collapse the view, format or compact the content, copy it to the clipboard, and open it in full-screen mode. These capabilities support detailed debugging and analysis without navigating away from the audit log.         
 <img src="../ai-assist-manual-edit/images/audit-logs-payload-request-respond.png" alt="Payload Request and Respond" title="Payload Request and Respond" style="border: 1px solid gray; zoom:80%;">
 
-* **Assign to me**: Select this option to assign the log entry to yourself for audit. The system records who assign the audit and when, and displays the assigned user in the header and audit history.   
+* **Assign to me**: Select this option to assign the log entry to yourself for audit. The system records who assigns the audit and when, and displays the assigned user in the header and audit history. 
 
