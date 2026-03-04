@@ -135,15 +135,19 @@ Steps to configure assignments:
 
 * **Agent AI Integration**: Enables Quality AI to process interactions received from Agent AI.
 
+   !!! Note
+
+      If you assign CCAI or AgentAI queues together with QualityAI Express queues in the same evaluation form, the system makes By Playbook and By Dialog metrics unavailable for selection.
+
 **Queue Assignment Rules**
 
 * Each queue can have only one form associated with a single channel. 
 
-* The search list displays only queues accessible to the user.
+* The search list displays only queues assigned to the user.
 
 **Metric Configuration Rules**
 
-* Metric availability is validated based on the selected conversation source, language, and channel.
+* The system validates metric availability based on the selected conversation source, language, and channel.
 
 * You can reorder metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
 
@@ -214,7 +218,7 @@ Whenever you try to switch from an existing scoring type, the system shows a war
 
 * Evaluation forms support multi-language selection. 
 * The system displays only **By-Question** metrics configured for all selected languages. 
-* The system applies an **AND** condition across selected languages. For example, if **English** and **Dutch** are selected, the dropdown shows only metrics available in both languages.
+* The system applies an **AND** condition across selected languages. For example, if you select **English** and **Dutch**, the dropdown displays only metrics available in both languages.
 
 
 ### Points-Based Scoring Formula  
@@ -239,8 +243,8 @@ Calculate the conversation score using the selected type: **Percentage** (weight
 | **Weight Assignment**         | Enter percentage values for **Yes** and **No** outcomes.                                                                                                                                                                                                                                      | Enter point values for **Yes** and **No** outcomes.                                                                                                                                                                             |
 | **Weight Validation Rules**   | • If **Correct Response = Yes** →<br>  • Only positive percentages allowed for **Yes**<br>  • Zero or negative percentages allowed for **No**<br>• If **Correct Response = No** →<br>  • Only positive percentages allowed for **No**<br>  • Zero or negative percentages allowed for **Yes** | • If **Correct Response = Yes** →<br>  • Positive points for **Yes**<br>  • Zero or negative points for **No**<br>• If **Correct Response = No** →<br>  • Positive points for **No**<br>  • Zero or negative points for **Yes** |
 | **Validation Requirements**   | Total positive weight must equal 100%.<br>Negative weight allowed within the 100% structure.<br>Only metrics valid for the selected language and channel appear.                                                                                                                              | No fixed maximum on total positive points.<br>Total negative points ≤ total positive points.<br>Only metrics valid for the selected language and channel appear.<br>Manual Evaluation metrics allowed.                          |
-| **Outcome Logic**             | Matching correct response earns the assigned percentage; incorrect earns zero or negative; final score ranges from 0–100%.                                                                                                                                                                    | Matching correct response earns assigned points; incorrect earns zero or negative; points are normalized to 0–100.                                                                                                              |
-| **Fatal Error Configuration** | **Works identically for both scoring systems:** If a fatal metric fails, the final score becomes 0. Other metric scores are ignored, and the interaction fails automatically.  |  —| 
+| **Outcome Logic**             | Matching correct response earns the assigned percentage; incorrect earns zero or negative; final score ranges from 0–100%.                                                                                                                                                                    | Matching correct response earns assigned points; incorrect earns zero or negative; The system then normalizes the total points to a 0–100 scale.                                                                                                              |
+| **Fatal Error Configuration** | **Works identically for both scoring systems:** If a fatal metric fails, the final score becomes 0. Ignores all other metric scores, and automatically marks the interaction as failed.  |  —| 
 
 
 
@@ -282,12 +286,15 @@ Changes to language settings can affect speech recognition accuracy and metric r
 
 #### Metric Deletion Warnings
 
-This section explains the warnings and prerequisites before deleting a metric. If the metric is used in any evaluation form, the system displays a warning that must be resolved before deletion.
+This section explains the warnings and prerequisites the system enforces before deleting a metric.
 
-* If the metric is used in any evaluation form, the system displays a warning message.
+* If any evaluation form uses the metric, the system displays a warning message.
+
 * Remove the metric from all associated evaluation forms before deletion.
-* If any attributes are linked to the metric, assign those attributes to a different metric before deleting it.
-* The system allows you to delete the metric only after you resolve all dependencies.
+
+* If the metric links to any attributes, reassign those attributes to a different metric before you delete it.
+
+* The system enables you to delete the metric only after you resolve all dependencies.
 
 #### Unsupported Language Error (Form-Level)
 
