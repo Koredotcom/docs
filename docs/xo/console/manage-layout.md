@@ -180,18 +180,17 @@ The system monitors Agent Desktop network performance during active calls. If pa
 
 Select Know More to view the last five minutes of data with the 300 ms threshold highlighted. Hover over the graph to compare recommended and actual values. Select Report to submit the issue, which captures additional connection logs for analysis.
 
+## Analytics 
 
+This section shows essential metrics necessary for the agent.
 
-## Features
+* Feedback Survey: Selecting this enables agents to see the feedback survey scores.  
+    <img src="../images/feedback-survey-scores.png" alt="feedback-survey-scores" title="feedback-survey-scores" style="border: 1px solid gray; zoom:80%;">  
 
-The three monitoring icons, CSAT, Completed, and Average Response, provide details on the completed tasks, in-progress conversations, response time, and customer feedback.
-
-CSAT (Customer Satisfaction) triggers under the following conditions:
-
-* In all digital and voice channels, both for user-side and agent-side chat termination:
-* Out of Hours of Operation: CSAT triggers when a conversation occurs outside of the designated hours of operation.
-* Queue Max Timeout: CSAT triggers when a conversation remains unaccepted or unassigned to any subsequent agents due to reaching the maximum queue timeout.  
-<img src="../images/csat.png" alt="Features" title="Features" style="border: 1px solid gray; zoom:80%;">
+* This shows the average of conversations completed, transferred, and abandoned with the Agent.  
+    <img src="../images/average-completed-transferred-abandoned.png" alt="average-completed-transferred-abandoned" title="average-completed-transferred-abandoned" style="border: 1px solid gray; zoom:80%;">
+* This shows the average first response and the average response time of conversations handled by the agent.   
+    <img src="../images/average-first-response.png" alt="average-first-response" title="average-first-response" style="border: 1px solid gray; zoom:80%;">  
 
 ## Agent Status
 

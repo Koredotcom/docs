@@ -12,45 +12,45 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Persistent Virtual Backgrounds for Video Calls**
 
-Agents no longer need to reselect a virtual background before each call. After an agent sets a background, the system retains it across page reloads and sign-in sessions in the same browser and automatically applies it to future calls. Agents can still change the background during a live call. The system now also preloads background assets to reduce preview delays and improve overall performance.
+Agents no longer need to reselect a virtual background before each call. After an agent sets a background, the system retains it across page reloads and sign-in sessions in the same browser and automatically applies it to future calls. Agents can still change the background during a live call. The system now also preloads background assets to reduce preview delays and improve overall performance. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#apply-or-change-a-virtual-background-during-a-video-call)
 
 **Collapsible Email Threading**
 
-Email replies and forwards now display the most recent message by default. Earlier messages are collapsed behind an ellipsis and can be expanded to view the full thread. The system preserves the complete conversation context, maintains correct chronological order, and enforces CC and BCC visibility rules.
+Email replies and forwards now display the most recent message by default. Earlier messages are collapsed behind an ellipsis and can be expanded to view the full thread. The system preserves the complete conversation context, maintains correct chronological order, and enforces CC and BCC visibility rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#emails)
 
 **Work Bin (Email Parking Lot)**
 
-Agents can park email conversations in a work bin without closing them. This action immediately frees capacity and excludes parked time from Average Handle Time (AHT). When a customer replies, the conversation is reassigned to the last handling agent if available, or routed normally if not. Administrators configure wait times and rerouting rules, while supervisors can manually reassign parked conversations.
+Agents can park email conversations in a work bin without closing them. This action immediately frees capacity and excludes parked time from Average Handle Time (AHT). When a customer replies, the conversation is reassigned to the last handling agent if available, or routed normally if not. Administrators configure wait times and rerouting rules, while supervisors can manually reassign parked conversations. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#email-work-bin)
 
 **Proactive Connection Monitoring and Agent Alerts**
 
-Agent Desktop now continuously monitors network quality during live calls. It detects threshold breaches—such as high round-trip time or degraded performance—and alerts agents in real time through clear visual indicators and notifications. Each alert includes actionable insights and recommended next steps. The Diagnostics view displays live round-trip metrics, highlights threshold violations, and enables agents to report issues directly from the alert, helping streamline troubleshooting and reduce call disruption.
+Agent Desktop now continuously monitors network quality during live calls. It detects threshold breaches—such as high round-trip time or degraded performance—and alerts agents in real time through clear visual indicators and notifications. Each alert includes actionable insights and recommended next steps. The Diagnostics view displays live round-trip metrics, highlights threshold violations, and enables agents to report issues directly from the alert, helping streamline troubleshooting and reduce call disruption. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md/#proactive-network-monitoring) 
 
 <font size="4">Configuration</font>
 
 **MetaTag Support for Start Flows**
 
-You can now define MetaTags in Start Flows by using utility functions in Script nodes. Set user-, session-, and message-level tags at flow entry and reuse them across automation, conditional, and exit flows for consistent context handling.
+You can now define MetaTags in Start Flows by using utility functions in Script nodes. Set user-, session-, and message-level tags at flow entry and reuse them across automation, conditional, and exit flows for consistent context handling. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md/#use-metatags-in-start-flows)
 
 **CSAT and Feedback Status Visibility in Interactions**
 
-The Interactions tab now displays a clear visual indicator for each conversation’s survey status, indicating whether a CSAT or Feedback survey was submitted, triggered but not submitted, or not triggered. You can also filter conversations by survey status to quickly audit and validate feedback workflows across supported channels.
+The Interactions tab now displays a clear visual indicator for each conversation’s survey status, indicating whether a CSAT or Feedback survey was submitted, triggered but not submitted, or not triggered. You can also filter conversations by survey status to quickly audit and validate feedback workflows across supported channels. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#viewing-feedback-scores-submitted-by-users)
 
 **Unified Feedback Support (CSAT, NPS, Like/Dislike)**
 
-The platform now consolidates CSAT, NPS, and Like/Dislike surveys into a single Feedback framework. Administrators can configure one feedback type per channel. Contact Center–only customers use default survey dialogs, while Automation-enabled customers can customize survey flows. The Interactions page provides a unified Feedback status and consistently tracks survey triggers and submissions across all channels.
+The platform now consolidates CSAT, NPS, and Like/Dislike surveys into a single Feedback framework. Administrators can configure one feedback type per channel. Contact Center–only customers use default survey dialogs, while Automation-enabled customers can customize survey flows. The Interactions page provides a unified Feedback status and consistently tracks survey triggers and submissions across all channels. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#feedback-surveys)
 
 **Outbound Email Support in All Agent Statuses**
 
-Agents can now send outbound emails in any status—Available, Busy, Away, or custom—when they have the required permissions. A system setting controls this capability and is disabled by default. When enabled, agents can initiate outbound emails even at full capacity, without impacting inbound routing or queue prioritization.
+Agents can now send outbound emails in any status—Available, Busy, Away, or custom—when they have the required permissions. A system setting controls this capability and is disabled by default. When enabled, agents can initiate outbound emails even at full capacity, without impacting inbound routing or queue prioritization. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/email-settings.md)
 
 **Add Agent and Customer Names to Chat Transcripts**
 
-Added a 'Show customer and agent names in transcript' toggle under Obscure customer info. When enabled, transcript exports include a new NameOfUser column that displays the agent name, customer name, email address, or phone number—based on availability. This update improves transcript clarity and supports compliance reviews and audits.
+Added a 'Show customer and agent names in transcript' toggle under Obscure customer info. When enabled, transcript exports include a new NameOfUser column that displays the agent name, customer name, email address, or phone number—based on availability. This update improves transcript clarity and supports compliance reviews and audits. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md)
 
 **Out-of-Hours: Queue Override and Loop Protection**
 
-Out-of-hours handling now supports a Route to Queue option that transfers conversations directly to a selected target queue when enabled, bypassing the trigger flow. The system tracks out-of-hours transfers at the conversation level and enforces a configurable maximum. When the limit is reached, the system automatically closes the conversation to prevent repeated queue routing.
+Out-of-hours handling now supports a Route to Queue option that transfers conversations directly to a selected target queue when enabled, bypassing the trigger flow. The system tracks out-of-hours transfers at the conversation level and enforces a configurable maximum. When the limit is reached, the system automatically closes the conversation to prevent repeated queue routing. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md/#route-to-queue-override-for-out-of-hours)
 
 <font size="4">Analytics</font>
 
@@ -61,7 +61,7 @@ Average Handle Time (AHT) is now calculated from agent acceptance to the earlier
 
 **Interactions Dashboard: Recent Search History**
 
-The Interactions search bar now includes an editable dropdown that displays the last 10 search phrases for the current user. You can select a previous search or enter a new one. The system moves new searches to the top of the list and automatically removes duplicates.
+The Interactions search bar now includes an editable dropdown that displays the last 10 search phrases for the current user. You can select a previous search or enter a new one. The system moves new searches to the top of the list and automatically removes duplicates. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md/#search-conversations)  
 
 **Abandon Rate Update**
 
@@ -76,14 +76,13 @@ The system now applies standardized statuses and dispositions for power dialing 
 
 **Campaign-Linked Disposition Sets**
 
-You can now mark a disposition set as campaign-linked by using a new toggle. Each queue supports only one campaign-linked disposition set, and campaigns can connect only to queues that have exactly one linked set. During campaign calls, the system shows only the linked disposition set in after-call work (ACW) and synchronizes it with Campaigns.
+You can now mark a disposition set as campaign-linked by using a new toggle. Each queue supports only one campaign-linked disposition set, and campaigns can connect only to queues that have exactly one linked set. During campaign calls, the system shows only the linked disposition set in after-call work (ACW) and synchronizes it with Campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md/#add-a-disposition-set)  
 
 <font size="4">API</font>
 
 **Enhanced InteractionDetails API v2**
 
-The InteractionDetails v2 API now supports a direction filter to retrieve conversations by call type: Inbound, Outbound, or Both (default). The API also adds an optional campaignInfo field to selectedFields. When you include this field, the response returns campaign metadata for campaign-originated sessions. If you omit it, the response excludes campaign data.
-
+The InteractionDetails v2 API now supports a direction filter to retrieve conversations by call type: Inbound, Outbound, or Both (default). The API also adds an optional campaignInfo field to selectedFields. When you include this field, the response returns campaign metadata for campaign-originated sessions. If you omit it, the response excludes campaign data. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md) 
 
 <hr>
 

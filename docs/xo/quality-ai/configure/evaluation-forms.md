@@ -13,7 +13,8 @@ Each queue supports one Evaluation Form per channel. Manual Evaluation lets QA M
 * **Advanced Scoring Options**: Enables negative scoring, fatal criteria, and pass-score thresholds to refine evaluations and highlight critical issues.
 
 * **Channel-Specific Configuration**: Supports customization of evaluation settings for Voice and Chat channels.
-Queue and Channel Assignment: Assigns evaluation forms to specific queues and channels.
+
+* **Queue and Channel Assignment**: Assigns evaluation forms to specific queues and channels.
 
 * **AutoQA and Manual Audits**: Enables AutoQA scoring alongside manual audit-based assessments for comprehensive coverage.
 
@@ -67,324 +68,260 @@ Steps to create a new evaluation form:
 
 1. Select the **Evaluation Forms** tab.   
 
-2. Select the **+ New Evaluation Forms** displayed in the upper-right corner.    
-   <img src="../evaluation-criteria/evaluation-forms/images/new-eva-form-selection.png" alt="New Evaluation Forms" title="New Evaluation Forms" style="border: 1px solid gray; zoom:80%;">
+2. Select the **+ New Evaluation Forms** displayed in the upper-right corner.  
+
+The form creation process includes three sections:
+
+* General Settings
+
+* Assignments
+
+* Evaluation Metrics
 
 ### General Settings Configuration
 
-This section configures the general settings for the New Evaluation Form. 
+This section defines the basic details of the evaluation form.
 
 Steps to configure general settings:
 
 1. Enter a **Name** and **Description** (optional).
 
-3. Select a **Language** and a **Channel** type (**Voice** or **Chat**). The selected channel determines which metrics are available (Voice or Chat-specific).  
+1. Select the required Language.
 
-   * **Chat**: Displays only **Chat-relevant** metrics. Excludes speech-based and Voice-specific Playbook metrics.
+1. Select a **Channel** type. 
 
-   * **Voice**: Displays all applicable **Voice-related** metrics, including speech and Playbook metrics.    
-    <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:50%;">
+    * **Chat**: Displays only Chat-relevant metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
-5. Choose a **Scoring Type**: 
+    * **Voice**: Displays all applicable Voice-related metrics, including speech and Playbook metrics.
 
-    **Percentage-Based Scoring**: Use the traditional weighted scoring, with metrics totaling 100%. Best for forms with fewer than 20 metrics.
+    The selected channel determines which metrics are available for configuration.
 
-    **Points-Based Scoring**: Use the flexible point allocation with no upper limit on positive points. Ideal for complex forms with 20+ metrics, avoiding fractional weights (for example, 2.5%) across numerous criteria.
+1. Select a **Scoring Type** (Percentage or Points). 
  
-6. Set the minimum **Pass Score** percentage for the agent.    
+1. Set a minimum **Pass Score** required for agents.
 
- 6. Select **Next**.   
-     <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Page2" title="General Settings Page2" style="border: 1px solid gray; zoom:50%;">
+This maintains consistent evaluation standards, regardless of the scoring type you select.         
 
-    
-    !!! Note
-
-        To view **Agent Scorecards** and **Agent Attributes**, you must enable the **Agent Scorecards** toggle in **Quality AI** >**Settings**. 
-        
-        * Supports multi-language selection for evaluation forms. 
-        
-        * Shows only **By‑Question** metrics that are configured for all selected languages. 
-        
-        * Applies an **AND** condition across selected languages, ensuring that only metrics supporting every configured language appear in the dropdown (for example, when **English** and **Dutch** are selected, only metrics available in both languages are shown).
+7. Select **Next**.    
+<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Configuration" title="General Settings Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ### Assignments Configuration
 
-This section lets you select available queues to assign them to the evaluation form.       
+This section enables you to assign queues to the evaluation form. 
+
+#### Queues and Conversation Source Configuration
+
+You can assign available queues and define the conversation source for evaluation.
 
 Steps to configure assignments:
 
-1. From the search list, select a queue available for assignment.
+1. Use the Search bar to find available queues.
 
-2. Select the required queues, then select **Add Queues** to assign the assignment.
-<img src="../evaluation-criteria/evaluation-forms/images/queue-selection.png" alt="Queues Selection" title="Queues Selection" style="border: 1px solid gray; zoom:60%;">
-3. Add or remove the listed queue assignments if required.
+1. Select the required queues.
 
-**Queue Metrics by Source**
+1. Select **Add Queues** to assign them to the evaluation form.
 
-   * **CCAI**: Ingests conversation data from CCAI.
+1. Add or remove the listed queue assignments if required. 
 
-   * **Agent AI**: Processes interactions from Agent AI.    
-      <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Add Queues" title="Add Queues" style="border: 1px solid gray; zoom:60%;">
+1. Select **Next**.    
+   <img src="../evaluation-criteria/evaluation-forms/images/config-queues.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:50%;">
 
+#### Conversation Source Options
 
-**Form Assignments Rules**
-   
-* Each queue can have only one Evaluation Form per channel (Voice or Chat).
+* **Quality AI Express**: Enables Quality AI Express-based interaction processing.
 
-* The system automatically scores interactions when agents handle customer conversations.
+* **CCAI Integration**: Configures Quality AI to ingest conversation data from CCAI.
 
-* Calculates scores based on metric outcomes and configured weights.
-
-* You must enable the form to start scoring.
+* **Agent AI Integration**: Enables Quality AI to process interactions received from Agent AI.
 
     !!! Note
 
-        You can assign only one evaluation form to each queue in the **Chat** and **Voice** channels.
-   
-    
+        If you assign CCAI or AgentAI queues together with QualityAI Express queues in the same evaluation form, the system makes By Playbook and By Dialog metrics unavailable for selection.
+
+**Queue Assignment Rules**
+
+* Each queue can have only one form associated with a single channel. 
+
+* The search list displays only queues assigned to the user.
+
+**Metric Configuration Rules**
+
+* The system validates metric availability based on the selected conversation source, language, and channel.
+
+* You can reorder metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
+
+* The metrics list displays only those configured for all selected form languages and the chosen channel.
+  
 ### Evaluation Metrics Configuration
 
-This section lets you add and create evaluation metrics for each attribute configured and assigned to evaluation forms for the queue, interactions, and agents.    
-<img src="../evaluation-criteria/evaluation-forms/images/eva-settings-metrics.png" alt="Evaluation Metrics Configuration" title="Evaluation Metrics Configuration" style="border: 1px solid gray; zoom:70%;">
+This section enables you to add and configure evaluation metrics for the form. The configuration flow is the same for both Percentage-based and Points-based scoring. Only the weight type differs. The system displays only metrics supported for the selected languages and channel.      
 
  Steps to configure evaluation metrics:
 
-1. Using the **Search** option, select the required evaluation metrics from the available options.   
-   <img src="../evaluation-criteria/evaluation-forms/images/forms-search-metrics.png" alt="Search Metrics" title="Search Metrics" style="border: 1px solid gray; zoom:80%;">
+1. Use the Search bar to find the available evaluation metrics.    
 
-2. Choose the **Evaluation Metrics** to assign to the corresponding queues and sources:
+1. Add the selected metrics to the form. 
 
-* For **CCAI** and **Agent AI** queues, all metrics are available. 
+1. Select **Edit** to configure each metric.
 
-* The system supports only **By Question** and **By Speech** metrics for **Quality AI Express** queues, whether used alone or with CCAI or Agent AI.
+1. Choose the correct **Response** that defines what constitutes a match for this metric.
 
-3. Select **Edit** to assign weight to each agent attribute based on importance.    
-<img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-edit.png" alt="Edit Metrics" title="Edit Metrics" style="border: 1px solid gray; zoom:80%;">
+1. Assign a metric **Weightage** based on the selected scoring type:
+    
+    * **Percentage**: Enter a percentage value.   
+    <img src="../evaluation-criteria/evaluation-forms/images/percentage-scoring.png" alt="Percentage Metrics" title="Percentage Metrics" style="border: 1px solid gray; zoom:40%;">
 
-**Metric Type Validations by Conversation Source**
+    * **Points**: Enter a points value.   
+    <img src="../evaluation-criteria/evaluation-forms/images/points-scoring.png" alt="Points Metrics" title="Points Metrics" style="border: 1px solid gray; zoom:100%;">
 
-* Enables evaluation forms to include queue assignments and validate metric types for the selected conversation source.
 
-* Enables reordering of metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
+#### Outcome Configuration
 
-!!! Note
+For each metric, define the outcomes (for example, **Yes** or **No**) and assign a positive, zero, or negative weight based on the expected response. A matching response receives positive weight, while a non-matching response receives zero or negative weight (if configured).
 
-    The metrics list displays only metrics configured for all selected form languages or chosen channels.
+1. Toggle on **Fatal Error** for this metric if it's compliance-critical (optional).
 
-4. Choose the **Correct Response** to identify the correct answer for validation. 
+1. Select **Create** to finalize the form creation. 
 
-   * Enable validation of assigned weight based on the expected response:
+### Scoring Type Selection
 
-      * If **Yes** is the correct response; use positive weight.
+   This scoring type selection determines how you assign weights, percentage or points to evaluation metrics. 
+
+   * **Percentage-Based**: 
+
+      * Assign metric weights as percentages.
+      * Metric weight must equal 100%.
+      * Best for smaller forms (fewer than 20 metrics).
+
+   * **Points-Based**: 
+
+      * Metric weights as points with no upper limit on total positive points. 
+      * Total negative points can’t exceed total positive points.
+      * Recommended for complex forms (20+ metrics; ideal for 40+).
+      * Supports Manual Evaluation metrics.        
       
-      * If **No** is the correct response; use zero or negative weight.    
-      <img src="../evaluation-criteria/evaluation-forms/images/outcome-weight-response.png" alt="Correct Response" title="Correct Response" style="border: 1px solid gray; zoom:80%;">
+Whenever you try to switch from an existing scoring type, the system shows a warning pop-up to confirm the following: 
 
-5. Assign the **Weightage** percentage based on the correct response validation.
+   * Changing the scoring type requires reconfiguring all metric weights. 
+   * If metrics exist, you must provide a complete new configuration.
 
-   * **Total Positive Weightage**: The sum of all positive metric weight. 
+### Language Selection Behavior
 
-   * **Total Negative Weightage**: The sum of all negative metric weight. 
+* Evaluation forms support multi-language selection.  
 
-6. Indicates whether the agent’s response or behavior matches the expected standard defined by each metric. 
+* The system displays only **By-Question** metrics configured for all selected languages. 
 
-    * **Outcome**:
+* The system applies an **AND** condition across the selected languages. For example, if you select **English** and **Dutch**, the dropdown shows only metrics available in both languages.
 
-        * **Yes**: When the agent’s response (such as greeting a customer) matches the correct response, the system assigns positive weight to that metric. 
+### Language Selection Behavior
 
-        * **No**: When the agent’s response (such as a rude response) doesn't match the correct response, the system assigns zero or negative weight accordingly.	
+* Evaluation forms support multi-language selection. 
+* The system displays only **By-Question** metrics configured for all selected languages. 
+* The system applies an **AND** condition across selected languages. For example, if you select **English** and **Dutch**, the dropdown displays only metrics available in both languages.
 
-7. Toggle the **Fatal Error** if the metric is fatal and considered a critical failure in the response.    
-   <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms-fatal-error.png" alt="Fatal Error" title="Fatal Error" style="border: 1px solid gray; zoom:80%;">
-       
-8. Select **Create** to finalize the form creation. 
 
-## Advanced Configuration
+### Points-Based Scoring Formula  
 
-### Scoring Logic     
+**Kore Evaluation Score** = [∑(Myi × Wyi) - ∑(Mni × Wni) / ∑(Wyi)] × 100
 
-The system evaluates forms using the weighted metrics assigned to agents. If the total score meets or exceeds the configured pass percentage, the form receives a Pass status. Otherwise, it receives a Fail status. The system calculates the pass score based on the weighted metrics and the priority level assigned to each form by the supervisor.
+Where: 
 
-### Configuration Logic 
+* **Myi, Wyi** = Adhered metrics and positive points.
+* **Mni, Wni** = Non-adhered metrics and negative points.
 
-The form-level configuration logic determines how the system applies weight validation. It supports both training-based and generation-based adherence detection methods, and the system enforces validation automatically based on the designated Correct Response.
 
-#### Logic Rules
+### Scoring Logic
 
-**Positive Metrics** (**Correct Response** = **Yes**)
+Calculate the conversation score using the selected type: **Percentage** (weighted average) or **Points** (normalized), cap at –100 if negatives exceed positives, and compare to the Pass Score (≥ Pass = Pass, &lt; Pass = Fail). A fatal error sets the score to 0.
 
-* **Yes**: Used for metrics where **Yes** represents successful adherence
+### Scoring Rules Comparison
 
-* **Example**: Did the agent greet the customer?
+| **Category**                  | **Percentage-Based Configuration**                                                                                                                                                                                                                                                            | **Points-Based Configuration**                                                                                                                                                                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Configuration Type**        | Assign weights as percentages.                                                                                                                                                                                                                                                                | Assign weights as points.                                                                                                                                                                                                       |
+| **Weight Assignment**         | Enter percentage values for **Yes** and **No** outcomes.                                                                                                                                                                                                                                      | Enter point values for **Yes** and **No** outcomes.                                                                                                                                                                             |
+| **Weight Validation Rules**   | • If **Correct Response = Yes** →<br>  • Only positive percentages allowed for **Yes**<br>  • Zero or negative percentages allowed for **No**<br>• If **Correct Response = No** →<br>  • Only positive percentages allowed for **No**<br>  • Zero or negative percentages allowed for **Yes** | • If **Correct Response = Yes** →<br>  • Positive points for **Yes**<br>  • Zero or negative points for **No**<br>• If **Correct Response = No** →<br>  • Positive points for **No**<br>  • Zero or negative points for **Yes** |
+| **Validation Requirements**   | Total positive weight must equal 100%.<br>Negative weight allowed within the 100% structure.<br>Only metrics valid for the selected language and channel appear.                                                                                                                              | No fixed maximum on total positive points.<br>Total negative points ≤ total positive points.<br>Only metrics valid for the selected language and channel appear.<br>Manual Evaluation metrics allowed.                          |
+| **Outcome Logic**             | Matching correct response earns the assigned percentage; incorrect earns zero or negative; final score ranges from 0–100%.                                                                                                                                                                    | Matching correct response earns assigned points; incorrect earns zero or negative; The system then normalizes the total points to a 0–100 scale.                                                                                                              |
+| **Fatal Error Configuration** | **Works identically for both scoring systems:** If a fatal metric fails, the final score becomes 0. Ignores all other metric scores, and automatically marks the interaction as failed.  |  —| 
 
-* **Validation**: Only positive weights allowed for "Yes" responses
 
-* **Scoring**: When agent greets customer = positive contribution to score
 
-**Negative Metrics** (**Correct Response** = **No**)
 
-* **No**: Used for metrics where **No** represents the desired behavior
 
-* **Example**: Was the agent rude to the customer?
+### Scoring Systems Comparison
 
-* **Validation**: Only positive weights allowed for **No** responses; zero or negative weights for **Yes** responses
+| **Feature**                  | **Percentage‑Based (Restrictive)**                            | **Points‑Based (Flexible)**                                               |
+| ---------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Best For**                 | Smaller forms (fewer than ~20 metrics)                        | Larger forms (20+ metrics)                                                |
+| **Total Weight / Scale**     | Must equal 100%                                               | No fixed maximum                                                          |
+| **Scalability**              | Limited distribution due to 100% cap                          | High flexibility regardless of number of metrics                          |
+| **Weight per Metric**        | Decreases as metrics increase (for example, 40 metrics ~2.5% each) | Assign any point value based on importance                                |
+| **Weight Precision**         | May require fractional values (for example, 2.5%)                    | Uses whole‑number allocations (for example, 50 points for critical, 5 for minor) |
+| **Negative Scoring Control** | Managed within 100% structure                                 | Negative points allowed but can’t exceed total positive points            |
+| **Flexibility**              | Fixed distribution (restricted by 100%)                       | Highly flexible distribution                                              |
+| **Final Evaluation Score**   | Direct percentage (0–100)                                     | Normalized to percentage (0–100)                                          |
 
-* **Scoring**: When agent isn't rude = positive contribution to score
 
-#### Correct Response
+### Managing Evaluation Forms
 
-The Correct Response configuration specifies the expected outcome for each metric and determines how the system validates and applies weights. It supports both positive and negative metrics, enabling flexible scoring logic.
-
-**Purpose**: The system uses Correct Response to validate adherence in training-based scenarios. This ensures scoring aligns with business goals, whether tracking desired or undesired behaviors.
-
-### Weightage Validation Rules
-
-* If **Correct Response** = **Yes**: You can only assign positive weights to **Yes** outcomes, zero or negative weights to **No** outcomes.
-   
-* If **Correct Response** = **No**: You can only assign positive weights to **No** outcomes, zero or negative weights to **Yes** outcomes.
-
-#### Weightage Configuration
-
-When editing evaluation metrics, assign weights using either percentage-based or points-based scoring. The scoring system, selected during form creation, determines how the system calculates metric importance.
-
-**Positive Weightage Requirements**
-
-* Total positive weights across all metrics must equal 100%.
-
-* Individual metrics can have positive values up to 100%.
-
-* Distributed based on metric importance to overall evaluation.
-
-**Negative Weightage Guidelines**
-
-* No upper limit validation for negative weightages in configuration.
-
-* Individual metrics can exceed 100 in setup. 
-
-* Negative weights can collectively exceed 100 across all metrics.
-
-* Final conversation scores are automatically capped at 100 minimum.
-
-#### Scoring Calculation
-
-The system calculates conversation scores using weighted metrics. If a score goes less than 100, the system caps at 100 to keep scoring consistent.
-
-## Error Handling and Logic Enforcement
-
-### Fatal Error Configuration
-
-Fatal Error configuration identifies metrics that are crucial to compliance or functional requirements. When enabled, these metrics can override the entire conversation score regardless of other metric performance.
-
-#### Fatal Error Criteria 
-
-The system marks a conversation as a fatal error if any of the following conditions occur:
-
-* The agent fails to follow the configured process throughout the conversation.
-
-* The agent behaves harshly or unprofessionally during the entire interaction.
-
-* The agent skips any safety-critical or mandatory steps.
-
-* The agent fails to meet a metric designated as a fatal error.
-
-Example: Did the agent provide the mandatory disclaimer in the conversation?
-
-If a required disclaimer is missing, the system marks the chosen metric as a fatal error (No) and flags the entire conversation as a fatal error. The conversation score becomes zero, even if all other evaluation metrics pass.
-
-**Use Cases**: Compliance requirements, disclaimer delivery, critical functional requirements.
-
-### Managing Existing Evaluation Forms
-
-This section guides you through the process of updating (editing or deleting) an existing evaluation form.
+This section guides you through editing and updating the existing evaluation forms.
 
 #### Edit Existing Evaluation Forms
 
 Steps to edit the existing evaluation forms:
 
-1. Select a target evaluation form, and choose any existing forms.   
-   <img src="../evaluation-criteria/evaluation-forms/images/update-evaluation-form.png" alt="Update Evaluation Form" title="Update Evaluation Form" style="border: 1px solid gray; zoom:80%;">
+1. Select the three-dot (⋮) menu to Edit or Delete to update the required details.
 
-2. Select **Edit** to modify the selected form details.   
-      <img src="../evaluation-criteria/evaluation-forms/images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:80%;">
+1. Select **Update**. 
 
-3. Modify the required fields.   
-   <img src="../evaluation-criteria/evaluation-forms/images/edit-eva-form-field-details.png" alt="Modify Evaluation Form" title="Modify Evaluation Form" style="border: 1px solid gray; zoom:70%;">
+### Switching Scoring Systems 
 
-4. Select **Next** to update the required evaluation metrics fields.
-
-5. Select **Next** to update the required assignments fields.
-
-6. Select **Update** to save the modified fields.
-
-#### Deleting Existing Evaluation Metrics
-
-Steps to delete an evaluation metric:
-
-1. Search and select evaluation metrics.    
-   <img src="../evaluation-criteria/evaluation-forms/images/eva-metrics-delete.png" alt="Dead Air Warning" title="Dead Air Warning" style="border: 1px solid gray; zoom:50%;">   
-
-2. Select **Delete** to display a warning dialog box prompting you to update the weights for the remaining metrics.     
-   <img src="../evaluation-criteria/evaluation-forms/images/delete-eva-metric.png" alt="Delete Metrics" title="Delete Metrics" style="border: 1px solid gray; zoom:80%;">
-
-3. Update the required metric weights as prompted.
-
-4. Select **Next**.
-
-    !!! Note
-
-        Deleting a form results in the irreversible loss of all associated data.
-
-## Warnings and Error Messages
+Changing the scoring type clears all existing weights and requires you to reconfigure metrics. Make sure the percentage totals 100% and points meet validation rules.
 
 ### Language Configuration Warnings
 
-This section describes the rules, warnings, and error messages related to adding or removing any languages in the evaluation form based on their metric and form level configurations.
+Changes to language settings can affect speech recognition accuracy and metric results.
+
+#### Metric Deletion Warnings
+
+This section explains the warnings and prerequisites the system enforces before deleting a metric.
+
+* If any evaluation form uses the metric, the system displays a warning message.
+
+* Remove the metric from all associated evaluation forms before deletion.
+
+* If the metric links to any attributes, reassign those attributes to a different metric before you delete it.
+
+* The system enables you to delete the metric only after you resolve all dependencies.
 
 #### Unsupported Language Error (Form-Level)
 
-* If a form supports English and Dutch, and its associated metrics support only these languages, adding Hindi triggers a warning. This occurs because the child (By-Question) metrics don't support Hindi. Before adding a new language, make sure that all metrics in the form support it.
+This error occurs when you add a new language to a form, but some metrics in the form don't support that language. The system blocks the update because the associated metrics (for example, By Question metrics) don't include the selected language. For example, if a form supports English and **Dutch**, and its metrics support only these languages, adding **Hindi** triggers a warning.
 
 To resolve this, perform the following actions:
 
-* Review the metric-level configuration for the new language (for example, Hindi). 
+1. Review the language configuration for each metric used in the form.
+2. Update each metric to support the new language (for example, Hindi).
+3. Verify that all required metrics support the language.
+4. Add the language to the form after updating all metrics.
 
-* Update all metrics used in the form to support the new language.
+#### Metric-Level Language Limitation
 
-* Add the new language to each metric used in the form.
+This warning appears when you try to use metrics within a form that doesn't support a language configured at the form level. For example, a form includes a language, such as Hindi, but some updated metrics aren't configured to support Hindi. 
 
-* After all metrics support the language, add the language to the form.    
-   <img src="../evaluation-criteria/evaluation-forms/images/edit-lang-config.png" alt="Language Configuration Error" title="Language Configuration Error" style="border: 1px solid gray; zoom:80%;">
+To resolve this, perform the following actions:
 
-#### Language Limitation on Adding New Language 
+1. Configure the required language (for example, Hindi) and update the metric in the form.
+2. Choose a metric that supports all languages configured in the form.
 
-* This warning appears when you use metrics in a form that don't support a language configured at the form level. For example, the form includes Hindi, but some metrics added or updated don't support Hindi.
-
-To resolve this, do the following:
-
-* **Option 1**: Configure the required language (for example, Hindi) for the selected metrics at the metric level.
-
-* **Option 2**: Choose metrics that support the required language. 
-
-### Channel Mode Change Warning
+#### Channel Mode Change Warning
 
 * When you switch to any existing or preconfigured channel modes between **Voice** and **Chat**, a warning message appears related to the specific channel's associated metrics.
+* The system automatically deletes speech-based metrics when you switch the channel from Voice to Chat or Chat to Voice. 
 
-* The system automatically deletes speech-based metrics when you switch the channel from **Voice** to **Chat** or **Chat to Voice**. 
+    To resolve this, perform the following action:
 
-    To resolve this, perform the following actions:
+    * You must update the remaining metrics and adjust their corresponding weights to support proper evaluation. 
 
-    * You must update the remaining metrics and adjust their corresponding weights to correct proper evaluation.
-    
-    * Select **Update** to save the evaluation form after you complete all changes.       
-      <img src="../evaluation-criteria/evaluation-forms/images/channel-update-error.png" alt="Channel Update Error" title="Channel Update Error" style="border: 1px solid gray; zoom:70%;">   
-
-#### Speech Metric Addition Limitation
-
-Evaluation forms support only one speech metric per subtype: **Crosstalk**, **Dead Air**, and **Speaking Rate**. Selecting a duplicate subtype in the Evaluation Metrics checkbox triggers an error message. 
-
-!!! Note
-
-    * Only one metric of each type you can add at a time.  
-        
-    * You must remove or delete the existing metric of that type to proceed.
-
+    * Select **Update** to save the changes once all updates are complete**.

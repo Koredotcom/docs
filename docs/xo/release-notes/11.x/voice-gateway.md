@@ -35,7 +35,7 @@ The system no longer plays default music when the Agentic App makes a tool call 
 
 **SIP Trunk Configuration: Same DID Handling**
 
-If a SIP trunk uses the same DID with a different IP/FQDN, the system allows it across different accounts or apps, but prompts for confirmation within the same account and app. If both the DID and IP/FQDN match an existing entry, the system blocks creation and displays an error message. 
+If a SIP trunk uses the same DID with a different IP/FQDN, the system allows it across different accounts or apps, but prompts for confirmation within the same account and app. If both the DID and IP/FQDN match an existing entry, the system blocks creation and displays an error message. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md/#steps-to-configure-sip-trunk)
 
 
 <hr>

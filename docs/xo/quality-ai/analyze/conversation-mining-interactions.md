@@ -43,10 +43,8 @@ The **Interactions** dashboard includes the following elements:
     * **Pass**: Shows a green icon when all processes succeed and the system captures metric adherence.
 
     * **Failed**: Shows a red icon when any process fails and the system doesn't capture metric adherence.  
-<img src="../conversation-mining/images/processing-status.png" alt="Processing Status" title="Processing Status" style="border: 1px solid gray; zoom:80%;">
 
 * **Actions**: Lets you assign the interaction to a bookmark for future reference.    
-<img src="../conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -76,10 +74,10 @@ The **Interactions** dashboard includes the following elements:
     * **Violation**: Speech-based violations that occurred.
 
     * **Omission**: Metrics not met, including playbook steps, dialog tasks, and by-question metrics. Select an interaction to open the conversation history and view Moment metrics in the AI-Assisted Manual Audit page. [Learn more](../ai-assisted-manual-audit.md){:target=”_blank”}.  
-    <img src="../conversation-mining/images/moments.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">    
 
 * **Sentiment Trend**: Shows the distribution of positive, negative, and neutral tones; tracks sentiment changes throughout the call; highlights the resolution tone; and summarizes overall sentiment.
-Emotions: Shows customer emotional states or tracked emotions during a conversation.
+
+* **Emotions**: Shows customer emotional states or tracked emotions during a conversation.
 
 * **Conversation ID**: Displays the user-defined identifier for custom tracking.
 
@@ -241,68 +239,35 @@ This shows the automated QA score for an interaction, based on the evaluation fo
 
 #### Filter by Keywords
 
-This enables you to search, filter, and review conversations using specific keywords or phrases. You can filter by included or excluded keywords and by speaker, with results linked directly to the QA audit screen.  
+This lets you search, filter, and review conversations using specific keywords or phrases. You can filter by included or excluded keywords and by speaker, with results linked directly to the QA audit screen.    
 <img src="../conversation-mining/images/keyword-filter.png" alt="Filter by Keywords" title="Filter by Keywords" style="border: 1px solid gray; zoom:80%;">  
 
 The following table explains the keyword inclusion, exclusion, and filtering options for Conversation Mining.
 
 | Category                            | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Select Conditions (AND/OR)**      | Choose how multiple keywords in the Include section are combined:<br> **AND**: All specified keywords must appear in the conversation (conversation-level). <br>**Example**: <br> – **Include**: Billing **AND** frustrated (Both speakers). <br> – **Exclude**: Resolved (Both speakers).<br> **OR**: At least one of the specified keywords must appear somewhere in the conversation.<br>**Example**:<br> – **Include**: Refund **OR** “money back” (Customer only). <br> – **Exclude**: Processed (Agent only), completed (Both speakers). |
-| **Conversation Including Keywords** | Search conversations for specific keywords or exact phrases, with optional speaker filters.<br> **Keyword Input**: Enter a keyword or exact phrase.<br> – **Speaker Filter**: Select who mentioned the keyword:<br> – **Agent only**: Count only agent mentions.<br> - **Customer only**: Count only customer mentions.<br> - **Both**: Count mentions by either speaker.<br>**+Add Keyword**: Add up to 8 keywords using the +Add Keyword button.                                                        |
-| **Conversation Excluding Keywords** | Enter keywords or phrases that must **not** appear in the conversation.<br> – **Speaker Filter**: Choose who must not mention the keyword (Agent only, Customer only, Both).<br> – **Add Exclusion**: Add up to 5 exclusion keywords using the +Add Exclude Keyword button.<br>**Note**: <br> – All exclusions use **AND NOT** logic. If any exclusion keyword appears, the conversation is excluded. <br> – Each row includes a Remove button to delete an exclusion keyword.                                 |
-| **Audit Navigation & Filtering**    | – Enables quick filtering and navigation by keyword or QA question.<br>– Supports transcript auto-scroll and match relevance filtering.                                                                                                                                                                                                                                                                                                                                                    |
+| **Select Conditions (AND/OR)**      | Select how the system combines multiple keywords in the Include section:<br> **AND**: All specified keywords must appear in the conversation (conversation-level). <br>**Example**: <br> – **Include**: Billing **AND** frustrated (Both speakers). <br> – **Exclude**: Resolved (Both speakers).<br> **OR**: At least one of the specified keywords must appear somewhere in the conversation.<br>**Example**:<br> – **Include**: Refund **OR** “money back” (Customer only). <br> – **Exclude**: Processed (Agent only), completed (Both speakers). |
+| **Conversation Including Keywords** | Search conversations for specific keywords or exact phrases, with optional speaker filters.<br> **Keyword Input**: Enter a keyword or exact phrase.<br> – **Speaker Filter**: Select who mentioned the keyword:<br> – **Agent only**: Count only agent mentions.<br> - **Customer only**: Count only customer mentions.<br> - **Both**: Count mentions by either speaker.<br>**+Add Keyword**: Add up to eight keywords by selecting the +Add Keyword.                                                        |
+| **Conversation Excluding Keywords** | Enter keywords or phrases that must not appear in the conversation.<br> – **Speaker Filter**: Choose who must not mention the keyword (Agent only, Customer only, Both).<br> – **Add Exclusion**: Add up to five exclusion keywords by selecting +Add Exclude Keyword. <br>**Note**: <br> – All exclusions use **AND NOT** logic. If any exclusion keyword appears, the system excludes the conversation. <br> – Each row includes a Remove option to delete an exclusion keyword.                                 |
+| **Audit Navigation & Filtering**    | – Enables quick filtering and navigation by keyword or QA question.<br>– Supports transcript autoscroll and match relevance filtering.                                                                                                                                                                                                                                                                                                                                                    |
 | **Apply Keywords Action**           | – Select **Apply Keywords** to activate the filters and display the selected keywords.<br> – Select **Apply** to run the search and view results based on all active filters.                                                                                                                                                                                                                                                                                                                 |
-| **Filtered Keywords Interactions**  | Displays the count of filtered interactions containing the selected keywords after filters are applied (for example, "Filtered Interactions: 22").                                                                                                                                                                                                                                                                                                                                            |
-
+| **Filtered Keywords Interactions**  | The system displays the count of filtered interactions that contain the selected keywords after applying the filters (for example, "Filtered Interactions: 22").                                                                                                                                                                                                                                                                                                                                            |
 
 
 ## Manage Saved Filters
 
-### Apply Filters
+Use the following options to efficiently apply, save, and manage filters on the Conversation Mining dashboard.
 
-* Select **Apply** to save the filter settings. 
-
-* The system stores the applied settings as an **Unsaved Filter** on the **Conversation Mining** dashboard page, even when you select a category filter.   
- <img src="../conversation-mining/images/conversation-mining-unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:50%;"> 
+* **Apply Filters**: Stores the current settings as an Unsaved Filter on the Conversation Mining dashboard. Use Save & Apply to save and name filters for audit allocation.
 
     !!! Note
 
-        If interactions are not used for audit allocation, you can apply filters without saving. To assign audit allocations, save and name filters for easy reference in future audits.
+        If interactions are not used for audit allocation, you can apply filters without saving.
+        Save Filters: Lets you name a filter and optionally set it as the default on the Interactions dashboard.
 
-### Save Filters
+* **View Saved Filters**: Shows all saved and their associated unsaved filters. 
 
-* Select **Save & Apply** to save the selected filter category details and proceed.  
- <img src="../conversation-mining/images/interactions-save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:50%;"> 
+* **Filtered Interactions**: Displays a real-time count of matching conversations. 
 
-* In the **Save Filter** window, enter the Filter Name.
-
-* Enable the **Make this the default view** toggle if required.  
- <img src="../conversation-mining/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:50%;"> 
-
-* Select **Save & Apply** in the **Save Filter** window to set the **Unsaved Filter** as the default view filter in the **Interactions** dashboard.  
- <img src="../conversation-mining/images/default-view-in-dashboard.png" alt="Default View Filter" title="Default View Filter" style="border: 1px solid gray; zoom:50%;"> 
-
-### View Saved Filters
-
-* Select the set default view filter or any Unsaved Filter dropdown to view all created **Saved Filters**.  
-
-* The system displays all the **Unsaved Filters** and their associated Saved Filters.  
-
-### View Filtered Interactions
-
-* Select **Filtered Interactions** to view the real-time count of conversation interactions based on your filter criteria. The system updates this count dynamically whenever you apply or remove filters.      
-<img src="../conversation-mining/images/filtered-interactions.png" alt="Filtered Interactions" title="Filtered Interactions" style="border: 1px solid gray; zoom:80%;"> 
-
-#### Saved Filters Customization Options
-
-When you save filters, the system provides the following customization options:
-
-* **Copy**: Creates a duplicate of the saved filter.
-
-* **Mark as default**: Sets the selected filter as the default each time you open the Call Mining tab.
-
-* **Edit Filter**: Lets you modify the details of a saved filter.
-
-* **Delete Filter**: Removes the selected saved filter permanently.  
-    <img src="../conversation-mining/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
+* **Customization Options**: Includes Copy, Mark as Default, Edit, and Delete filters.
+    
