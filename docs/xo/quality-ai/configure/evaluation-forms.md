@@ -88,14 +88,13 @@ Steps to configure general settings:
 
 1. Select the required Language.
 
-1. Select a Channel type:
+1. Select a **Channel** type. 
 
+    * **Chat**: Displays only Chat-relevant metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
-   * **Chat**: Displays only Chat-relevant metrics. Excludes speech-based and Voice-specific Playbook metrics.
+    * **Voice**: Displays all applicable Voice-related metrics, including speech and Playbook metrics.
 
-   * **Voice**: Displays all applicable Voice-related metrics, including speech and Playbook metrics.
-
-The selected channel determines which metrics are available for configuration.
+    The selected channel determines which metrics are available for configuration.
 
 1. Select a **Scoring Type** (Percentage or Points). 
  
@@ -135,9 +134,9 @@ Steps to configure assignments:
 
 * **Agent AI Integration**: Enables Quality AI to process interactions received from Agent AI.
 
-   !!! Note
+    !!! Note
 
-      If you assign CCAI or AgentAI queues together with QualityAI Express queues in the same evaluation form, the system makes By Playbook and By Dialog metrics unavailable for selection.
+        If you assign CCAI or AgentAI queues together with QualityAI Express queues in the same evaluation form, the system makes By Playbook and By Dialog metrics unavailable for selection.
 
 **Queue Assignment Rules**
 
