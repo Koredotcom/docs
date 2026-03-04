@@ -307,7 +307,7 @@ Uses a weighted scoring algorithm that prioritizes final customer sentiment to b
 
 * Similarity < threshold (Not Adhered)
 
-* Trigger not detected ( N/A)
+* Trigger not detected (N/A)
 
 Example: 
 
@@ -327,7 +327,7 @@ This uses AI to give supervisors quick overviews of customer interactions by sum
 
 * **Agent Talk Ratio**: Percentage of total call duration agent is speaking.
 
-* **Silence Percentage**: Call time where neither party speaks (excludes hold time).
+* **Silence Percentage**: Call time in which neither party speaks (excludes hold time).
 
 * **Speaking Rate**: Agent's speech speed (Words Per Minute - WPM calculation).   
 <img src="../ai-assist-manual-edit/images/conversation-insights.png" alt="Audit Screen" title="Audit Screen" style="border: 1px solid gray; zoom:80%;">
