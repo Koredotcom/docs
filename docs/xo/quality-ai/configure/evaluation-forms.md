@@ -90,15 +90,16 @@ Steps to configure general settings:
 
 1. Select a Channel type:
 
+
    * **Chat**: Displays only Chat-relevant metrics. Excludes speech-based and Voice-specific Playbook metrics.
 
    * **Voice**: Displays all applicable Voice-related metrics, including speech and Playbook metrics.
 
 The selected channel determines which metrics are available for configuration.
 
-1. Select a **Scoring Type** (**Percentage** or **Points**). 
+1. Select a **Scoring Type** (Percentage or Points). 
  
-1. Set a minimum Pass Score required for agents.
+1. Set a minimum **Pass Score** required for agents.
 
 This maintains consistent evaluation standards, regardless of the scoring type you select.         
 
@@ -128,6 +129,8 @@ Steps to configure assignments:
 
 #### Conversation Source Options
 
+* **Quality AI Express**: Enables Quality AI Express-based interaction processing.
+
 * **CCAI Integration**: Configures Quality AI to ingest conversation data from CCAI.
 
 * **Agent AI Integration**: Enables Quality AI to process interactions received from Agent AI.
@@ -148,7 +151,7 @@ Steps to configure assignments:
   
 ### Evaluation Metrics Configuration
 
-This section allows you to add and configure evaluation metrics for the form. The configuration flow is the same for both Percentage-based and Points-based scoring. Only the weight type differs. The system displays only metrics supported for the selected languages and channel.      
+This section enables you to add and configure evaluation metrics for the form. The configuration flow is the same for both Percentage-based and Points-based scoring. Only the weight type differs. The system displays only metrics supported for the selected languages and channel.      
 
  Steps to configure evaluation metrics:
 
@@ -173,7 +176,7 @@ This section allows you to add and configure evaluation metrics for the form. Th
 
 For each metric, define the outcomes (for example, **Yes** or **No**) and assign a positive, zero, or negative weight based on the expected response. A matching response receives positive weight, while a non-matching response receives zero or negative weight (if configured).
 
-1. Toggle on **Fatal Error** for this metric if it is compliance-critical (optional).
+1. Toggle on **Fatal Error** for this metric if it's compliance-critical (optional).
 
 1. Select **Create** to finalize the form creation. 
 
@@ -265,8 +268,9 @@ This section guides you through editing and updating the existing evaluation for
 
 Steps to edit the existing evaluation forms:
 
-1. Click the three-dot (⋮) menu to Edit or Delete to update the required details.
-1. Select Update. 
+1. Select the three-dot (⋮) menu to Edit or Delete to update the required details.
+
+1. Select **Update**. 
 
 ### Switching Scoring Systems 
 
@@ -287,7 +291,7 @@ This section explains the warnings and prerequisites before deleting a metric. I
 
 #### Unsupported Language Error (Form-Level)
 
-This error occurs when you add a new language to a form, but some metrics in the form do not support that language. The system blocks the update because the associated metrics (for example, By Question metrics) do not include the selected language. For example, if a form supports English and **Dutch**, and its metrics support only these languages, adding **Hindi** triggers a warning.
+This error occurs when you add a new language to a form, but some metrics in the form don't support that language. The system blocks the update because the associated metrics (for example, By Question metrics) don't include the selected language. For example, if a form supports English and **Dutch**, and its metrics support only these languages, adding **Hindi** triggers a warning.
 
 To resolve this, perform the following actions:
 
@@ -298,12 +302,12 @@ To resolve this, perform the following actions:
 
 #### Metric-Level Language Limitation
 
-This warning appears when you try to use metrics within a form that does not support a language already configured at the form level. For example, the form already includes a language, such as Hindi, but some metrics being added or updated are not configured to support Hindi. 
+This warning appears when you try to use metrics within a form that doesn't support a language configured at the form level. For example, a form includes a language, such as Hindi, but some updated metrics aren't configured to support Hindi. 
 
 To resolve this, perform the following actions:
 
 1. Configure the required language (for example, Hindi) and update the metric in the form.
-2. Choose a metric that already supports all languages configured in the form.
+2. Choose a metric that supports all languages configured in the form.
 
 #### Channel Mode Change Warning
 
