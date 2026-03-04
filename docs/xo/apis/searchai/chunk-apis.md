@@ -292,11 +292,9 @@ It is mandatory to pass the whole of this chunk info in the request body. The fi
 }
 ```
 
-## Delete Chunks by Condition API
+## Delete Chunks by ID API
 
-The **Delete Chunks by Condition API** enables targeted deletion of indexed content without requiring a full re-index. Using this API, you can remove specific chunks from the Search Index by providing either:
-
-* A list of **chunk IDs**: Identifies chunks with the given IDs and deletes them.
+This API enables targeted deletion of indexed content without requiring a full re-index. You can remove specific chunks from the Search Index by providing a list of *chunk IDs*, which the system uses to identify and delete the corresponding chunks.
 
 This is useful for incremental cleanup, partial refresh scenarios, and lifecycle management of structured uploads.
 
