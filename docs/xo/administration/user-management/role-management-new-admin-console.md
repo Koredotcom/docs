@@ -76,34 +76,29 @@ The Master Admin can create custom Admin roles and assign the same to users. The
 
 #### Creating an Admin role
 
-1. Open the Admin Console.
-2. On the Admin menu, select **User Management > Roles**.
-3. On the top right corner of the Role Management window, select **+Add New**.
+3. On the upper-right corner of the Roles window, select **+Add New**.
 4. Enter **Role Name** and **Role Description**.
 5. Under **Role Type**, select **Admin Role** and select the necessary permissions for the role.
 6. You can retain the default permission settings or modify them as per your requirements.
 7. Select **Save**.
 
-Once created, you can assign roles to individual users or to user groups. You can edit the roles from the Admin Console.
-
+Once created, you can assign roles to individual users or to user groups. You can edit the roles from the Admin Console.    
 
 #### Assigning Admin role
 
-1. Open the Admin Console.
-2. On the Admin menu, select **User Management > Users**.
-3. Select a user’s record for which you want to add a bot role. The user’s profile slides open.
+1. Open the Admin Console, select **User Management > Users**.
+3. Select a user’s record for which you want to add an app role. The user’s profile slides opens.
 4. Under the **Profile** tab, **edit Admin Role.**
     1. Select the appropriate Admin role from the dropdown with the available roles.
     2. You can assign multiple admin roles to the selected user.
 
-    <img src="../images/custom-role-admin.png" alt="Assign admin role" title="Assign admin role" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/create-admin-role.png" alt="assign admin role" title="assign admin role" style="border: 1px solid gray;zoom:50%;"/>
 
 #### Assigning Admin Role to a User Group
 
-1. Open the Bots Admin Console.
-2. On the Admin menu, select **User Management > Role Management**.
-3. Hover over a role record from the list and then select the **Edit** icon. The Manage Role window slides open.
-4. Select the **Assignments > Assign Role**.
+1. Open the Admin Console, select **User Management > Roles**.
+3. Locate the required role from the list, click the three-dot menu (⋮) at the right end of the row, and select Edit Role.
+4. Select **Assignments > Assign Role**.
 5. Open the **Select Groups** drop-down list and select all the groups for which you want to assign the bot role, one after another.
 6. You can assign users also from this dialog from the **Select Users** type ahead input box.
 7. Select **Save**.
@@ -115,11 +110,11 @@ Once created, you can assign roles to individual users or to user groups. You ca
 
 ## App Roles
 
-This section illustrates various Bot Roles, their permissions, steps to create custom Bot role and assign users to the same.
+This section illustrates various App Roles, their permissions, steps to create custom App role and assign users to the same.
 
 **App Roles** can be used to define permissions for accessing various components of a bot. These permissions include the ability to create tasks, train the bot, enable channels, enable extensions via SDKs, publish the bot and view usage analytics.
 
-**Bot Owner**, **Bot Developer**, and **Bot Tester** are the three in-built bot roles that are available for all accounts. Creators of bots are automatically assigned to the _Bot Owner_ role.
+**App Owner**, **App Developer**, and **App Tester** are the three in-built bot roles that are available for all accounts. Creators of bots are automatically assigned to the _App Owner_ role.
 
 You may create additional custom bot roles to meet your specific requirements. You can assign bot roles to bot developers either from Bot Builder or from the Admin Console.
 
@@ -143,7 +138,7 @@ Following is the list of permissions that can be assigned to a Bot role:
 | Bot Analytics | Yes, No | View bot analytics. |
 
 
-### Built-in Bot Roles
+### Built-in App Roles
 
 The following Bot roles are created by default. These roles are applicable for standard bots, sample, and smart bots. 
 
@@ -163,19 +158,18 @@ The following Bot roles are created by default. These roles are applicable for s
 | Dashboard | Yes | Yes | Yes |
 | Bot Analytics | Yes | Yes | Yes |
 
-### Custom Bot Roles
+### Custom App Roles
 
-Admin can create custom Bot roles and set the bot permissions to these roles.
+Admin can create custom App roles and set the App permissions to these roles.
 
 
-#### Creating custom Bot role
+#### Creating custom App role
 
-1. Open the Bots Admin Console.
-2. On the Admin menu, select **User Management > Role Management**.
-3. On the top-right corner of the Role Management window, select **New Role**.
+3. On the upper-right corner of the Roles window, select **+Add New**.
 4. Enter **Role Name** and **Role Description**.
-5. Under Select Role Type, select **Bot Role** and select the necessary permissions for the role.  
-<img src="../images/new-role.png" alt="Creating custom Bot role" title="Creating custom Bot role" style="border: 1px solid gray;zoom:50%;"/> 
+5. Under Select Role Type, select **App Role** and select the necessary permissions for the role.  
+
+<img src="../images/create-app-role.png" alt="Creating custom App role" title="Creating custom app role" style="border: 1px solid gray;zoom:50%;"/> 
 
 6. You can retain the default **permission** settings or modify them as per your requirements.
 7. Select **Save**.
@@ -183,44 +177,17 @@ Admin can create custom Bot roles and set the bot permissions to these roles.
 After creating a custom role, you can access more information about that role, change its name and description, add permissions to it, or assign this role to specific users.
 
 
-#### Assigning Bot Role
+#### Assigning App Role
 
-You can assign roles to individual users or to user groups. You can add and edit the roles from the Admin Console. Also, you can assign a bot role to a user while sharing the bot with them from the Bots Platform.
-
-
-**Assign Bot Role to a User from the Bots Admin Console**
-
-1. Open the Bots Admin Console.
-2. On the Admin menu, select **User Management > Users**.
-3. Select a user’s record for which you want to add a bot role. The user’s profile slides open.
-4. Select **Manage Bots** and do the following:
-    1. From the first drop-down list select a bot.
-    2. From the second drop-down list, select the bot role you want to assign the user for the selected bot.
-5. Select **Add**. The bot name and bot role appear below the drop-down list as a row. You can edit the bot assignment anytime later by hovering over the record and clicking the Edit icon.  
-<img src="../images/user-assignment.png" alt="Assign Bot Role to a User from the Bots Admin Console" title="Assign Bot Role to a User from the Bots Admin Console" style="border: 1px solid gray;zoom:50%;"/> 
+You can assign roles to individual users or to user groups. You can add and edit the roles from the Admin Console. Also, you can assign an App role to a user while sharing the app with them from the Platform.
 
 
-**Assign Bot Role to a User Group**
+**Assign App Role to a User from the Admin Console**
 
-1. Open the Bots Admin Console.
-2. On the Admin menu, select **User Management > Role Management**.
-3. Hover over a role record from the list and then click the **Edit** icon. The Manage Role window slides open.
-4. Click the **Assignments > Assign Role**.
-5. Open the **Select Groups** drop-down list and select all the groups for which you want to assign the bot role, one after another.
-6. You can also add users from the **Select User** type ahead box.
-7. Click **Save**.  
-<img src="../images/user-groups.png" alt="Assign Bot Role to a User Group" title="Assign Bot Role to a User Group" style="border: 1px solid gray;zoom:50%;"/> 
-
-
-**Assign Bot Role from the Bot Builder**
-
-1. On the Bot Builder top menu, select **Manage** tab
-2. From the left menu, select **Team**
-3. On the top-right corner of the Team page, select **Invite**.
-4. Do one of the following:
-    1. To assign the role to a user, type the name of the user in the **Users** text box and select the user’s name from the suggestion list.  
-    -or-
-    2. To assign the role to a group, select the name of the group from the **Select Groups** drop-down list.
-    3. Select a role from the **Role** drop-down list.
-
-5. Select **Save**.
+1. 1. Open the Admin Console, select **User Management > Users**.
+3. Select a user’s record for which you want to add an app role. The user’s profile slides opens.
+4. Select **Manage Product Access** and do the following:
+    1. From the first drop-down list select an App.
+    2. From the second drop-down list, select the role you want to assign the user for the selected app.
+5. Select **Add +**. The app name and app role appears below. 
+<img src="../images/assign-app-role.png" alt="Assign App Role to a User from the Admin Console" title="Assign App Role to a User from the Bots Admin Console" style="border: 1px solid gray;zoom:50%;"/> 

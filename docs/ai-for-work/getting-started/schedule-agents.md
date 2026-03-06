@@ -1,51 +1,57 @@
-# Scheduled Agents 
+# Schedulers
 
-The Schedule Agents feature enables you to automate agent execution at predefined intervals. You can configure schedulers to run agents automatically without manual intervention, streamlining recurring tasks and workflows.
+The Schedulers feature provides a centralized location to create, manage, and monitor automated schedules for agents, flows, and platform modes. You can access all your schedulers from a single tab instead of navigating to individual agent detail pages.
 
-## Configuration for End Users
 
-Access from **Agents and Flows**: Navigate to the **Agents and Flows** section to view all available agents. Each agent provides access to the scheduler configuration through its settings.
+## Accessing Schedulers
 
-<img src="../images/scheduled-agents-1.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+1. On the homepage, click **Agents and Flows**.
+2. Navigate to the **Schedulers** tab.
 
-### Configure Individual Agent Settings
+The Schedulers tab displays all schedulers you have created, along with any admin-enforced schedulers assigned to you.
+<img src="../images/scheduler-1.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
 
-Open an individual agent to access its dedicated scheduler settings. The agent settings panel displays scheduler configuration options specific to that agent.
-<img src="../images/scheduled-agents-2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+## Creating a Scheduler
 
-### Manage Scheduled Trigger
+1. On the **Schedulers** tab, click **Create**.
+2. The platform opens the **Scheduler configuration pop-up**.
+<img src="../images/scheduler-2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
 
-You can enable or disable using the toggle, to schedule, click the edit button, which will take you to the agent’s scheduling details open, allowing the user to change:
+1. In the **Agent** selection field, choose one of the following:
+    * An agent you have access to
+    * A flow you have access to
+    * A mode: **Work**, **Web**, or **AI Model**
+2. Configure the schedule timing and frequency (Once, Hourly, Daily, Weekly, Monthly, Custom, or Cron). The scheduling configuration options remain the same as the existing schedule trigger setup.
+3. In the **Trigger Query** field, enter the instructions that describe what the agent or flow should execute during each scheduled run.
+4. Select an **Execution Mode**:
+     * **Ask before running**: The platform sends a notification when the scheduled time arrives and runs the agent only after you approve the execution.
+     * **Run automatically**: The platform runs the agent on schedule without waiting for approval and sends a notification when the execution completes.
+1. Click **Save**.
 
-1. **Allow Schedule Trigger for Agent**: Enable or disable the ability to schedule this agent.
-2. **Default Schedule**: Update the frequency and timing (Once, Hourly, Daily, Weekly, Monthly, Custom, or Cron).
-3. **Instructions to Agent**: Edit what the agent should execute when the schedule runs.
-4. **Behavior**: Configure notification to control how the system communicates with users about scheduled executions.
-<img src="../images/scheduled-agents-3.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+On successful save, the platform enables the scheduler by default.
 
-### Consolidated Scheduler Management
+## Managing Schedulers
 
-The platform provides a centralized view for managing all schedulers across your agents and workflows. Navigate to the **Scheduler Agents** section to view, edit, and monitor all configured schedulers in one location.
-<img src="../images/scheduled-agents-4.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+You can toggle any scheduler on or off at any time. Changes take effect immediately. 
 
-This consolidated view allows you to:
+**Edit a Scheduler**
 
-* Review all active and inactive schedulers.
-* Modify scheduler configurations.
-* Monitor scheduler execution history.
-* Manage multiple schedulers efficiently.
+Click on an existing scheduler to open its configuration. Update the agent/flow selection, schedule timing, or query as needed, and save your changes. Edits take effect immediately.
 
-### View and Modify Existing Schedules
+**Delete a Scheduler**
 
-To update an agent's schedule configuration:
+Select the scheduler you want to remove and click **Delete**. The platform removes the scheduler immediately.
 
-1. Select the agent from the **Schedule Agents** list.
-2. The agent's scheduling details panel opens.
-<img src="../images/scheduled-agents-5.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+**Use the Same Agent Across Multiple Schedulers**
 
-3. Modify any of the following settings:
-    - Schedule trigger status (enable/disable)
-    - Schedule frequency and timing
-    - Agent instructions
-    - Notification preferences
-4. Save your changes.
+You can assign the same agent to different schedulers. Each scheduler operates independently with its own timing, frequency, and query.
+
+
+## Admin-Enforced Schedulers
+
+Your administrator can create and assign schedulers that appear automatically in your Schedulers tab. Administrators configure this from the Admin Console under **Assist Configuration > Scheduler Settings**. In Scheduler Settings, admins can enable the Scheduler feature for the workspace, set a scheduling limit per user (such as 5, 10, 20, or 30 schedulers), and enable Workspace Owner Scheduler Permissions to allow workspace owners to publish agents with pre-configured schedules that run automatically for end users. When Workspace Owner Scheduler Permissions are enabled, workspace owners can add schedulers during agent creation and publish agents with active schedules. These admin-enforced schedulers follow specific rules:
+
+* If you have available capacity within your scheduling limit, the platform enables admin-enforced schedulers by default. If you have reached your limit, they appear in a disabled state.
+* You can enable or disable admin-enforced schedulers.
+* You cannot edit the schedule configuration of admin-enforced schedulers. They appear in a view-only state.
+* You cannot delete admin-enforced schedulers.

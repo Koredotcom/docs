@@ -38,6 +38,9 @@ To view the Conversations dashboard, follow the steps:
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
     * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the AI Agent completes the task and ends the call, and the AI Agents ends the conversation.
     * Completed: Completed refers to a chat conversation where the AI Agent completes the task and ends the conversation.
+    * CSAT: The system displays the CSAT survey score assigned to the conversation. If a score appears next to CSAT, the survey was triggered, and the user submitted a response. A gray CSAT icon indicates that the survey was triggered, but the user did not submit a response.
+    * NPS: The system displays the NPS score assigned to the conversation. If a score appears next to NPS, the survey was triggered, and the user submitted a response. A gray CSAT icon indicates that the survey was triggered, but the user did not submit a response.
+    * Like/Dislike: The system displays the Like or Dislike selected for the conversation. If the Like or Dislike icon appears highlighted, the survey was triggered, and the user submitted a response. A gray Like or Dislike icon indicates that the survey was triggered, but the user did not submit a response.
 
 ## Supervisor Actions
 
@@ -61,37 +64,13 @@ Steps to perform supervisor actions:
 
 ## Search Conversations
 
-You can find the search field on the top right side of the Conversations tab.  
-<img src="../images/search-interactions.png" alt="Search Conversations" title="Search Conversations" style="border: 1px solid gray; zoom:80%;">
+You can use the search field on the top right of the Conversations tab to locate specific conversations and content. The system supports keyword search across chats, call transcripts, agent notes, and disposition notes. It ignores common words and ranks results by relevance by default. You can sort results by Start Time when required.
 
-The search feature on Conversations lets supervisors to do the following:
+### Recent Searches
 
-* Search for keywords in both chats and call transcripts.
-* Search the Agent and Disposition notes.
-* Exclude Agent AI Logs when searching the Transcripts.
-* Search on Partial and Full Matches of Words and Phrases: The search function works for partial and complete matches of individual words and phrases.
-    * Complete matches receive the highest rank in the search results.
-    * Results that match all single words of a phrase receive the next priority.
-    * Results that receive the last priority are those where only a few words of a phrase match.
-* The search also provides an option to sort results by timestamp. By default, search results appear in order of relevance, with the most relevant results listed first. You can select the Start Time column to sort results by timestamp in either ascending or descending order.  
-* Ignore common words like Articles, Pronouns, and Prepositions while matching.
+The system stores up to the last ten search phrases for the current user and displays them in the dropdown.
 
-How it works:
-
-1. Enter a word or phrase in the search field and search the **Search** icon.
-
-2. The count of search results appears.  
-    <img src="../images/search-interactions-1.png" alt="Search Conversations 1" title="Search Conversations 1" style="border: 1px solid gray; zoom:80%;">
-
-3. When you select a conversation, the Insights to Logs window appears. Enter the word or phrase in the search field to prompt the system to search for it in the conversation.  
-    <img src="../images/search-interactions-2.png" alt="Search Conversations 2" title="Search Conversations 2" style="border: 1px solid gray; zoom:80%;">
-
-4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
-    <img src="../images/search-interactions-3.png" alt="Search Conversations 3" title="Search Conversations 3" style="border: 1px solid gray; zoom:80%;">
-
-!!! Note
-
-    The search button works in two ways. By default, OpenSearch is enabled in all standard cloud deployments. However, if your deployment is on a Virtual Private Cloud (VPC) or a custom setup, OpenSearch must be deployed separately. When OpenSearch is available, you can use the full search functionality. If OpenSearch is not deployed, the search works, but it supports only ID-based searches.
+You can select a previously used phrase to retrieve results, or enter a new phrase manually. After each search, the system saves the phrase as the most recent entry. If the phrase already exists in the list, the system removes the earlier instance and updates its position.  
 
 ## Export/Download Recording, Transcripts, Latency Report, and Events
 
@@ -144,18 +123,19 @@ Steps to Preview and Download Events:
     <img src="../images/export-completed.png" alt="Export Completed" title="Export Completed" style="border: 1px solid gray; zoom:80%;">  
 
     The system exports the following events and their timestamps for chat and voice conversations.  
-    * Routing Initiation  
-    * Conversation Acceptance  
-    * Conversation Rejection  
-    * Conversation Transfer  
-    * Transfer Failures  
-    * Agent join  
-    * Agent left  
-    * Agent Consultation  
-    * Skill Change  
-    * Disposition Updates  
-    * After-Call Work (ACW)  
-    * Conversation Closure  
+        
+     * Routing Initiation  
+     * Conversation Acceptance  
+     * Conversation Rejection  
+     * Conversation Transfer  
+     * Transfer Failures  
+     * Agent join  
+     * Agent left  
+     * Agent Consultation  
+     * Skill Change  
+     * Disposition Updates  
+     * After-Call Work (ACW)  
+     * Conversation Closure  
 
 ## Latency Metrics (Beta)
 
@@ -847,77 +827,54 @@ The bottom bar chart visualizes call metrics over time. The x-axis shows timesta
 
 ### Agents
 
-The Agents tab provides comprehensive call information for agents and supervisors, displaying detailed metrics for all participants on a call. This enables a better understanding of Conversations and assists with troubleshooting issues. The following data points are shown on this tab:  
-<img src="../images/mos-jitter.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
+The Agents tab provides a per-agent view of participation and call quality metrics for a specific interaction. It helps you identify which agents joined the interaction, view their join and exit timestamps, understand how the call ended, and analyze call quality for each agent.
+<img src="../images/agents-tab.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:70%;">  
 
-<table>
-  <tr>
-   <td>Field Name
-   </td>
-   <td>Description
-   </td>
-  </tr>
-  <tr>
-   <td>Participant Name
-   </td>
-   <td>Name identifier of the person involved in the call. External Agents are marked with an "External Agent" tag.
-   </td>
-  </tr>
-  <tr>
-   <td>Call Status
-   </td>
-   <td>Indicates whether the participant is currently "In-Call" or has "Left" the call.
-   </td>
-  </tr>
-  <tr>
-   <td>Start Timestamp
-   </td>
-   <td>Date and time when the participant joined the call.
-   </td>
-  </tr>
-  <tr>
-   <td>End Timestamp
-   </td>
-   <td>Date and time when the participant left the call. Displays "NA" for participants currently in the call.
-   </td>
-  </tr>
-  <tr>
-   <td>Average MOS (Mean Operating Score)
-   </td>
-   <td>MOScore average value represents the participant's overall call quality.
-   </td>
-  </tr>
-  <tr>
-   <td>Call Exit Reason
-   </td>
-   <td>Categorized reason why the participant left the call (for example, `Disconnected`, `Transfer`, `Call Ended`).
-   </td>
-  </tr>
-  <tr>
-   <td>Call Exit Description
-   </td>
-   <td>Detailed explanation providing additional context about why the participant exited the call.
-   </td>
-  </tr>
-  <tr>
-   <td>MOS (min, max, average)
-   </td>
-   <td>Minimum, maximum, and average MOScore values measuring voice quality during the call. Hovering over the tooltip displays the industry standard value.
-   </td>
-  </tr>
-  <tr>
-   <td>Jitter (min, max, average)
-   </td>
-   <td>The minimum, maximum, and average jitter measurements indicate variations in packet delivery timing. Hovering over the tooltip displays the industry standard value.
-   </td>
-  </tr>
-  <tr>
-   <td>Packets Lost (min, max, average)
-   </td>
-   <td>The minimum, maximum, and average count of data packets that failed to reach their destination.
-   </td>
-  </tr>
-</table>
+Each section represents one agent join event.
+
+The system creates a record only when an agent accepts a call invitation (inbound or consult) or joins the interaction, including supervisor join.
+
+The system doesn't create a record for routing attempts, ringing duration, rejected invitations, or supervisor listen or whisper sessions.
+
+If an agent leaves and rejoins, the system creates multiple rows, one for each join instance.
+
+#### Field Descriptions
+
+Agent Details
+
+| Field             | Description                                              |
+| :---------------- | :------------------------------------------------------- |
+| Agent Name        | Identifies the agent who participated in the interaction |
+| Status            | Indicates whether the agent left the interaction         |
+| Start Time        | Shows when the agent accepted and joined the call        |
+| End Time          | Shows when the agent exited the call                     |
+
+The time between Start and End reflects the agent’s actual call handling duration.
+
+Call Exit Details
+
+| Field                 | Description                                                                |
+| :-------------------- | :------------------------------------------------------------------------- |
+| Call Exit Reason      | High-level termination status (for example, Terminated)                    |
+| Call Exit Description | Specific termination reason (for example, Agent Hangup or Customer Hangup) |
+
+Use these fields to determine how the agent session ended.
+
+Call Quality Metrics (Per Agent session)
+
+The system calculates quality metrics separately for each agent participation instance.
+
+| Metric                       | Description                                                                  |
+| :--------------------------- | :--------------------------------------------------------------------------- |
+| MOS (Min, Max, Avg)          | Indicates perceived audio quality. Scale: 1 = Poor, 5 = Excellent.           |
+| Jitter (Min, Max, Avg)       | Measures variation in packet timing. Higher values can affect audio clarity. |
+| Packets Lost (Min, Max, Avg) | Indicates the number of audio packets lost during the session.               |
+
+These metrics reflect only the agent’s session duration and not the entire call.
+
+!!! note "Session Visibility and Join Behavior"
+ 
+    The view displays only actual joined sessions and excludes routing attempts. If an agent appears multiple times, it indicates multiple join instances.
 
 ### Export
 
