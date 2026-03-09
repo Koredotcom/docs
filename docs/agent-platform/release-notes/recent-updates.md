@@ -67,10 +67,13 @@ The platform now supports additional AI models, giving users greater flexibility
 * **OpenAI**: gpt-image-1.5
 * **Anthropic**: claude-opus-4.6
 
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
+
 **Integration with Microsoft Foundry Model Catalog**
 
 The platform now supports direct integration with the Microsoft Foundry model catalog, enabling users to discover and use models deployed there. Model setup is simplified with a single Target URI and Service Principal–based authentication. Users can browse available projects, view deployed models, and add them as external models without manual API configuration. A new External Credentials section in Settings centralizes authentication details to streamline access and management.
 
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-microsoft-foundry)
 
 <font size="4">Other Improvements</font>
 
@@ -79,6 +82,8 @@ The platform now supports direct integration with the Microsoft Foundry model ca
 Authentication settings now include a unified interface for configuring Single Sign-On (SSO) and Multi-Factor Authentication (MFA) at the organization level. Administrators can enable or disable SSO, select supported protocols and providers, and exclude specific users from SSO requirements to maintain fallback access.
 
 MFA policies are now context-aware. When SSO is enabled, MFA applies only to excluded users, with SSO users managed by the identity provider. When SSO is disabled, MFA can be enforced organization-wide. Supported MFA methods include authenticator apps (TOTP), SMS, and email.
+
+[Learn more :octicons-arrow-right-24:](../settings/security-and-control/single-sign-on.md)
 
 **Favorite Workspaces for Quick Access**
 
