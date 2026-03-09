@@ -52,9 +52,9 @@ Tool versions are now automatically created and deployed as part of the app vers
 
 Key updates:
 
-* **Automatic Version Snapshots**: When users create an app version, the workflow tools used in that app are automatically versioned. This captures the complete tool configuration at that moment.
-* **Run Multiple Versions**: Users can run multiple versions of the same tool simultaneously. For example, v1.0 and v2.0 of a tool can run side by side in different app versions.
-* **Keep Apps Independent**: Different app versions automatically use their corresponding tool versions. A production app can remain on a stable version while a beta app uses the latest updates.
+* Automatic Version Snapshots: When users create an app version, the workflow tools used in that app are automatically versioned. This captures the complete tool configuration at that moment.
+* Run Multiple Versions: Users can run multiple versions of the same tool simultaneously. For example, v1.0 and v2.0 of a tool can run side by side in different app versions.
+* Keep Apps Independent: Different app versions automatically use their corresponding tool versions. A production app can remain on a stable version while a beta app uses the latest updates.
 
 
 <font size="4">AI Engineering Tools</font>
