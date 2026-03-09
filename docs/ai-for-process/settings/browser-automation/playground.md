@@ -84,7 +84,7 @@ Prerequisites:
 
 * An external model connection.
 * The automation pod you want to assign must be in the *Deployed* status (under **Browser Automation** -> **Deployment**).
-* If no deployments exist, click **Create Deployment** in the **Create Automation** form. You’ll be redirected to the **Deployment** page to deploy a new or existing pod. Learn more.
+* If no deployments exist, click **Create Deployment** in the **Create Automation** form. You’ll be redirected to the **Deployment** page to deploy a new or existing pod.
 * Sufficient credit balance to run and publish the automation.
 * Clear, concise, and logical LLM instructions to run the simulation.
 
