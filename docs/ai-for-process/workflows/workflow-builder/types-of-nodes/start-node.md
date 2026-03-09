@@ -167,6 +167,3 @@ Steps to configure the node:
     * Re-deploy the workflow to refresh connections.
     * Retest the auth profile in **Settings → Security & Control → Authorization profiles**.
     * Ensure the trigger is active before running the workflow.
-
-
-
