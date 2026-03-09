@@ -147,6 +147,7 @@ nav:
           - Audio to Text Node: workflows/workflow-builder/types-of-nodes/audio-to-text-node.md
           - Image to Text Node: workflows/workflow-builder/types-of-nodes/image-to-text-node.md
         - Integration Node: workflows/workflow-builder/types-of-nodes/integration-node.md
+        - Browser Node: workflows/workflow-builder/types-of-nodes/browser-node.md
         - API Node: workflows/workflow-builder/types-of-nodes/api-node.md
         - Function Node: workflows/workflow-builder/types-of-nodes/function-node.md
         - Condition Node: workflows/workflow-builder/types-of-nodes/condition-node.md
@@ -235,7 +236,10 @@ nav:
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
     - Manage Models:
-      - Manage OCR Models: settings/manage-models/manage-ocr.md   
+      - Manage OCR Models: settings/manage-models/manage-ocr.md 
+    - Browser Automation:
+      - Deployment: settings/browser-automation/deployment.md
+      - Playground: settings/browser-automation/playground.md      
     - Monitoring: 
       - About Monitoring: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
