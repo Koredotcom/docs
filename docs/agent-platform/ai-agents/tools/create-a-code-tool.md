@@ -30,13 +30,6 @@ The LLM uses this description to determine when to invoke the tool.
 
 ---
 
-**Include Tool Response in Artifacts**
-
-When enabled, the response returned by the tool is included in the artifacts field of the Execute API response payload.
-This setting affects only the API response and doesn't change tool execution behavior, playground simulations, or other agent and tool functionalities.
-
----
-
 ## Input Parameters
 
 Define the input parameters required by the tool to perform its task. For each parameter, specify:
@@ -113,6 +106,33 @@ When defining an object-type parameter:
     }
     ```
 
+## Output Parameters
+
+The Output Parameters section allows you to define how the response returned by the external agent is processed and made available to the application. You can choose one of the following modes:
+
+**Use Complete Tool Output**
+Select this option to return the entire response received from the tool as response. without modification. This is the default option and is recommended when the tool returns responses in the required format. 
+
+*Include Tool Response in Artifacts* : When enabled, the response returned by the tool is included in the artifacts field of the Execute API response payload. This setting affects only the API response and doesn't change tool execution behavior, playground simulations, or other agent and tool functionalities.
+
+
+**Define Custom Parameters** 
+Select this option to extract specific values from the tool’s response and map them as structured outputs. It gives control over which parts of the response are passed to the agent or stored as artifacts.
+
+When this option is selected, you can configure one or more output parameters. Each output parameter defines how a specific value from the response is extracted. Provide a name for the output parameter. This name is used to reference the extracted value. Select the data type of the output parameter and specify the path to the value in the response payload. The platform uses this path to locate and extract the required data.
+
+Example:
+To extract the message field from the response, add name as *Status*, set type as *string* and set the path like *tool.output.status.message*. 
+
+You can click *+ Add* to define multiple output parameters if the response contains several values that need to be used by the agent.
+
+Output Routing : Once the output is extracted, you can define where the value should be routed.
+
+* Agent: Routes the extracted value to the agent so it can be used in reasoning, decision-making, or subsequent steps.
+* Artifacts: Stores the extracted value in the artifacts section of the response payload. This allows the value to be accessed programmatically through the API response.
+
+
+---
 
 ## Tool Definition
 
