@@ -31,10 +31,10 @@ Select the LLM that provides optimal performance for your specific use case.
 
 | Provider        | Available Models |
 |-----------------|------------------|
-| Gemini          | gemini-2.5-flash<br>gemini-2.0-flash |
-| Anthropic       | claude-sonnet-4-5 |
-| OpenAI (GPT)    | gpt-4o<br>gpt-4o-mini<br>gpt-5 |
-| Azure OpenAI    | gpt-4o<br>gpt-5 |
+| Gemini          | gemini-2.5-flash<br>gemini-2.0-flash<br>gemini-2.5-pro<br>gemini-2.5-flash-lite |
+| Anthropic       | claude-sonnet-4-20250514<br>claude-sonnet-4-5-20250929<br>claude-haiku-4-5-20251001 |
+| OpenAI (GPT)    | gpt-4o<br>gpt-4o-mini<br>gpt-4.1<br>gpt-5 |
+
 
 ## How it works
 
