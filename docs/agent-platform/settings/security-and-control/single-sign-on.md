@@ -1,90 +1,105 @@
-# Manage Single Sign On for Account Sign In
+# Authentication Settings
 
-The Platform provides users with a default sign-in flow as the standard authentication method. However, for organizations seeking enhanced security and convenience, administrators can enable **Single Sign-On (SSO)** through the **Settings** console.
-
-By activating SSO, users can access their Platform accounts using a single set of secure credentials managed by an external Identity Provider (IDP). This setup streamlines the login process and integrates users into a unified authentication framework.
-
-SSO is a powerful option for organizations looking to balance convenience and security in user authentication. It offers the following key benefits:
-
-* **Secure Access**: It reduces password fatigue and the risk of phishing or weak passwords by focusing on one strong password.
-* **Simplified User Management**: Administrators can manage access centrally, making it easier to grant or revoke access across various accounts.
-* **Improved User Experience**: Reduces the need for multiple logins into an account.
-* **Centralized Access Control**: Admins can monitor and enforce security policies across all applications more efficiently.
+Authentication Settings lets administrators configure how users sign in to the Platform. You can enable Single Sign-On (SSO) to authenticate users through your organization's identity provider, and Multi-Factor Authentication (MFA) to add a second layer of verification for email/password sign-ins.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only account owners and admins can enable/disable SSO from the <b>Settings</b> console.</p></div>
+<p>Only account owners and admins can configure Authentication Settings.</p></div>
 
-The Platform supports SSO for the following protocols and providers:
-<table>
-  <tr>
-   <td><strong>Protocol</strong>
-   </td>
-   <td><strong>Provider</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<a href="#saml" target="_blank">SAML</a>
-   </td>
-   <td>
-<ul>
-<li><a href="#okta-configuration" target="_blank">Okta</a></li>
-<li><a href="#onelogin-configuration" target="_blank">OneLogin</a></li>
-<li><a href="#other-configuration" target="_blank">Other</a></li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="#ws-federation" target="_blank">WS-Federation</a>
-   </td>
-   <td>
-<ul>
-<li><a href="#windows-azure-configuration" target="_blank">Windows Azure</a></li>
-<li><a href="#other-configuration_1" target="_blank">Other</a></li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="#openid-connect-configuration" target="_blank">OpenID Connect</a>
-   </td>
-   <td>
-<ul>
-<li><a href="#google-configuration" target="_blank">Google account</a></li>
-</ul>
-   </td>
-  </tr>
-</table>
+## How SSO and MFA Work Together
 
-## How SSO Works
+The Platform supports two authentication paths, and MFA scope adjusts automatically based on which path is active:
 
-1. **User Initiates Login**: A user attempts to access his account.
-2. **Redirect to IDP**: The Service Provider (SP) redirects the user to an IDP login page for authentication.
-3. **User Authenticates**: The user provides their credentials to the IDP.
-4. **Authentication Tokens**: If successful, the IDP issues an authentication token.
-5. **Token Exchange**: The SP uses this token to grant the user access to the application.
-6. **Access Granted**: Once authenticated, the user can access the allowed account(s) without logging in again during the same session.
+| **Authentication State** | **Who Signs In Via Email/Password** | **MFA Managed By** |
+|---------------------------|-------------------------------------|--------------------|
+| SSO Disabled              | All users                          | Platform (applies organization-wide) |
+| SSO Enabled               | SSO-excluded users only             | Platform (applies to excluded users only); the Identity Provider (IdP) manages all other users' MFA |
 
-## Access Single Sign-on
+### Access Authentication Settings
 
-To access the SSO feature, follow the steps below:
+1. Log in to your account and click **Settings** on the top navigation bar.
+2. In the left menu, go to **Security & Control** > **Authentication Settings**.
 
-1. Log in to your account and click **Autonomous Agents** from the list of modules.
-2. Click **Settings** on the top navigation bar.
-3. Go to **Security & Control** > **Single Sign On** on the left menu.
+The page is divided into two sections: 
 
-   If you’re using this feature for the first time, the following screen appears.
-     <img src="../images/access-single-sign-on.png" alt="access sso" title="access sso" style="border: 1px solid gray; zoom:75%;">
+* Single Sign-On (SSO) Configuration
+* Multi-Factor Authentication (MFA).
 
-If SSO is already configured, the **Single sign-on** setup page is displayed.
+## Single Sign-On (SSO)
 
-## Enable SSO
+SSO allows users to access their Platform accounts using credentials managed by an external IdP. Once authenticated with the IdP, users can access the Platform without a separate login.
 
-Depending on your company's security requirements, you can enable SSO for your account users. Enabling SSO includes selecting the protocol and IDP and providing the [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} to integrate with the IDP service.
+**Key benefits:**
 
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>If you already have the required parameters for Okta, move directly to Step 18.</p></div>
+* **Secure Access** — Reduces password fatigue and the risk of phishing or weak passwords.
+* **Simplified User Management** — Centrally grant or revoke access across all users.
+* **Improved User Experience** — Eliminates repeated logins within the same session.
+* **Centralized Access Control** — Enforce and monitor security policies across all applications from one place.
+
+**Supported SSO Protocols and Providers**
+
+| **Protocol**       | **Providers**                          |
+|---------------------|----------------------------------------|
+| [SAML 2.0](#saml-20)           | Okta, OneLogin, Other Provider          |
+| [WS-Federation](#ws-federation)      | Windows Azure, Other Provider           |
+| [OpenID Connect ](#other-configuration-1)    | Google                                  |
+
+### How SSO Works
+
+1. A user attempts to access their Platform account.
+2. The Service Provider (SP) redirects the user to the IdP login page.
+3. The user provides their credentials to the IdP.
+4. On successful authentication, the IdP issues an authentication token.
+5. The SP uses the token to grant the user access.
+6. The user can access all permitted accounts for the remainder of the session without needing to log in again.
+
+### SSO Status
+
+The **SSO Status** toggle at the top of the SSO Configuration section controls whether SSO is active for your organization.
+
+| **Toggle State**          | **Behavior**                                                                |
+|----------------------------|------------------------------------------------------------------------------|
+| SSO Disabled (default)     | All users authenticate via email and password. The SSO Protocol, Identity Provider, and SSO-Excluded Users sections are hidden. |
+| SSO Enabled                | Users authenticate through the configured identity provider. The SSO Protocol, Identity Provider, and SSO-Excluded Users sections appear. |
+
+### Enable SSO
+
+1. Go to **Security & Control** > **Authentication Settings**.
+2. Under **SSO Status**, toggle **SSO Enabled**.
+3. Under **SSO Protocol**, select one of the following: SAML 2.0, WS-Federation, or OpenID Connect
+4. Under **Identity Provider**, select your provider: Okta, OneLogin, or Other Provider.
+5. Configure the [parameters](#configuration-parameters) for your selected protocol and provider.
+6. Add at least one SSO-excluded user (see [SSO-Excluded Users](#sso-excluded-users)).
+7. Select **Save**.
+
+### Disable SSO
+
+Disabling SSO collapses the SSO Protocol, Identity Provider, and SSO-Excluded Users sections, and reverts all users to email/password authentication. The MFA section updates automatically to reflect organization-wide scope.
+
+**Steps:**
+
+1. Go to **Security & Control** > **Authentication Settings**.
+2. Under **SSO Status**, toggle off **SSO Enabled** (it will show **SSO Disabled**).
+3. In the confirmation dialog, select **Yes** to confirm.
+
+**Note:** Previously configured SSO parameters are retained and visible if you re-enable SSO.
+
+### SSO-Excluded Users
+
+When SSO is enabled, all users must sign in through the configured IdP by default. Use this section to designate specific users who can bypass SSO and sign in via email/password instead — useful when the SSO provider is unavailable, misconfigured, or the certificate has expired.
+
+**Note:** The account owner is excluded by default. It is strongly recommended to exclude at least one additional admin user as a fallback.
+
+### Add an Excluded User
+
+1. Enter a valid email address in the **Add User Email** field.
+2. Click **Add User**. The user appears as a chip in the **Excluded Users** list.
+3. Click **Save**.
+
+**Sign-In Flow for Excluded Users**
+
+Excluded users can sign in via email/password even when SSO is enabled. If MFA is configured, they are prompted to complete verification before access is granted.
+
 
 ### Configuration Parameters
 
@@ -94,7 +109,7 @@ The following parameters should be configured on the Platform based on the proto
   <tr>
    <td><strong>Protocol</strong>
    </td>
-   <td><strong>IDP</strong>
+   <td><strong>Provider</strong>
    </td>
    <td><strong>Parameters</strong>
    </td>
@@ -186,30 +201,36 @@ No additional configuration is required. Your users will be authenticated based 
   </tr>
 </table>
 
-### Steps to Enable SSO
+**Note:** Multiple certificates: When multiple certificates are added, the system uses the most recently added one. If that certificate is invalid, it automatically falls back to the next available certificate.
 
-To enable SSO on the **Settings** console, follow the steps below:
+## Multi-Factor Authentication (MFA)
 
-1. Access the **Single sign on** page.
-2. If no SSO is enabled, click **Enable SSO**.
-3. If SSO is already enabled for a provider, click the **Enable SSO** tab and do one of the following:
+MFA adds a second layer of verification during sign-in for users who authenticate via email/password. The Platform supports the following MFA methods: Email Verification, Authenticator App (TOTP), and SMS.
 
-    * Change and save the existing [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} for the enabled SSO provider.
-    * Disable the enabled SSO and set up a new configuration.
-    * Select a different protocol/provider and complete the configuration.
+### Enable MFA
 
-4. Select the required protocol and SP. The default selections are **SAML** and **Okta**.
-5. Configure the [parameters](../security-and-control/single-sign-on.md#configuration-parameters){:target="_blank"} for one of the following SSO protocols and providers:
+1. Go to Security & Control > Authentication Settings.
+2. Under MFA Status, toggle MFA Required.
+3. Under Allowed MFA Methods, select the methods to enable — Email Verification, Authenticator App, or SMS.
+4. Click Save.
 
-<ul><li><b>SAML</b>: <a href="#okta-configuration" target="_blank">Okta</a>, <a href="#onelogin-configuration" target="_blank">Onelogin</a>, or <a href="#other-configuration" target="_blank">Other</a>. <a href="#saml" target="_blank">Learn more</a>.</li>
-<li><b>WS-Federation</b>: <a href="#windows-azure-configuration" target="_blank">Windows Azure</a> or <a href="#other-configuration" target="_blank">Other</a>. <a href="#ws-federation" target="_blank">Learn more</a>.</li>
-<li><b>OpenId connect</b>: <a href="#google-configuration" target="_blank">Google</a>. <a href="#openid-connect-configuration" target="_blank">Learn more</a></li></ul>
+### Disable MFA
 
-<ol start="9"><li>Click <b>Save</b>.</li></ol>
+1. Under MFA Status, toggle off MFA Required (it will show MFA Disabled).
+2. Click Save.
 
-A success message is displayed once the SSO setup is complete along with the timestamp of when you enabled SSO.
+### MFA for Users (First Login)
 
-## SAML
+When MFA is enabled and a user signs in for the first time:
+
+1. The user enters their email address and password.
+2. The Platform prompts the user to set up an MFA method.
+3. On subsequent logins, the user is prompted to enter their MFA verification code.
+4. On successful verification, access is granted.
+
+## SSO Protocol Reference
+
+### SAML 2.0
 
 Security Assertion Markup Language (SAML) is a protocol for web-based SSO that uses secure tokens instead of passwords. It allows IDPs and SPs to operate separately. When a user logs into a SAML-enabled app, the service provider requests authorization from the IDP, which authenticates the user and grants access to the application.
 
@@ -434,72 +455,6 @@ To configure SSO using OpenId Connect and Google, follow the steps below:
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>No further configuration is needed. Users will be authenticated using their Google account’s username and password.</p></div>
-
-## Disable SSO
-
-Disabling SSO resets the protocol and provider selections you made when SSO was enabled. This removes the current configuration and reverts your account to the default sign-in flow. SSO-based account access using the configured provider is disabled with this feature.
-
-However, you can still view the previously configured SSO parameters for a specific protocol and provider by clicking the **Enable SSO** tab.
-
-## Steps to Disable SSO
-
-1. [Access](../security-and-control/single-sign-on.md#access-single-sign-on){:target="_blank"} the **Single sign on** page.
-2. Click the **Disable SSO** tab.
-3. In the confirmation window, click **Yes**.
-
-You can enable SSO again by clicking the **Enable SSO** button.
-
-## Exclude Users from the SSO Requirement
-
-The **Manage Users** feature on the **Single Sign-On** page allows the account owner to exclude specific users from the mandatory SSO flow. This enables selected users to access their Platform account through either the default sign-in flow or SSO service, which is helpful in the following situations:
-
-* An error occurs during the SSO provider configuration, and the system prevents the user from logging in.
-* The user wants to bypass log-in via the configured SSO provider.
-* Technical issues arise with the SSO provider.
-* The SSO configuration profile has expired.
-* Business policy changes at the provider prevent the configured SSO from functioning.
-
-**Key Considerations**
-
-* By default, the account owner is excluded from the SSO requirement and can choose between the SSO flow or the default sign-in flow during login. Additionally, it is recommended to exclude at least one more account user.
-* Excluded users can instantly switch to another account without signing in through SSO, if SSO is enabled.
-* For users who are not excluded:
-* If SSO is enabled for the account, they must sign in via SSO.
-* If SSO is disabled, they can switch accounts directly without additional sign-in.
-
-**Steps**
-
-To exclude a user from the SSO requirement, follow the steps below:
-
-1. [Navigate](../security-and-control/single-sign-on.md#access-single-sign-on){:target="_blank"} to the **Single Sign-on** page.
-2. Type and add an email address or select from the dropdown in the **Manage Users** textbox. You can add multiple users by entering an email address and pressing Tab.
-3. Click <b>Save</b>.
-
-A success message is displayed, and the SSO sign-in is made optional for the user.
-
-### Sign-In Flow for the Excluded User
-
-During sign-in, the following screen is displayed for the excluded user. 
-<img src="../images/screen-for-excluded-user.png" alt="screen for excluded user" title="screen for excluded user" style="border: 1px solid gray; zoom:75%;">
-
-When the user clicks **Continue**, one of the following happens:
-
-When **SSO is enabled**, the following page is displayed.
-<img src="../images/login-with-sso.png" alt="login with sso" title="login with sso" style="border: 1px solid gray; zoom:75%;">
-
-The user can do one of the following:
-
-* Click **Continue** to log in using the configured SSO provider service's sign-in page.
-
-* Click “**Having trouble logging in with SSO?**” to sign in using the default option (email and password, Google, Windows, etc.) set during Platform sign-up.
-
-When **SSO is disabled**, the user is taken through the default sign-in flow (email and password, Google, Windows, etc.).
-
-## Default Sign-in Flow 
-
-As a Platform admin, you can enable Single Sign-On (SSO) using a third-party provider. However, if your SSO security system fails or you forget your SSO credentials for your IDP, you can log into the Platform using either email sign-in or your default SSO provider. 
-
-<hr/> 
 
 **Related resource**
 
