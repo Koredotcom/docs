@@ -250,7 +250,6 @@ optional for POST
 Accepted channel types are:
 <ul>
 
-<li>“skypeforbusiness”,
 
 <li>“msteams”,
 
@@ -264,7 +263,6 @@ Accepted channel types are:
 
 <li>“slack”,
 
-<li>“skype”,
 
 <li>“kore”,
 

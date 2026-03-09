@@ -55,6 +55,7 @@ plugins:
         'assistant-configuration/mcp-server.md': 'assist-configuration/mcp-server.md'
         'channels/ms-teams/microsoft-teams-config.md': 'channels/microsoft-teams-config.md'
         'channels/ms-teams/microsoft-teams.md': 'channels/microsoft-teams.md'
+        'user-management/enterprise-directory.md': 'employees/directory-configuration.md'
 extra:
   version:
     provider: mike
@@ -163,11 +164,7 @@ nav:
       - Notify API: custom-agents/notify-api.md
       - Schedule Trigger: custom-agents/schedule-trigger.md
   - Pre-built Agents:
-    - About Pre-built Agents: pre-built-agents/overview.md
-  - Pre-built Solutions:
-    - About Pre-built Solution: pre-built-solutions/overview.md
-    - IT Assist: pre-built-solutions/itassist.md
-    - HR Assist: pre-built-solutions/hrassist.md    
+    - About Pre-built Agents: pre-built-agents/overview.md    
   - Analytics: 
     - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
@@ -191,11 +188,14 @@ nav:
       - Orchestration Settings: assist-configuration/orchestration-settings.md
       - Rate Limit: assist-configuration/rate-limit.md
       - Scheduler Settings: assist-configuration/scheduler-settings.md
+      - Attachment Settings: assist-configuration/attachment-settings.md
+    - Employees:
+      - Directory Configuration: employees/directory-configuration.md
+      - Lookup Settings: employees/lookup-settings.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
-      - Enterprise Directory: user-management/enterprise-directory.md
     - Workspace Management:
       - Account Workspace: workspace-management/account-workspace.md
       - Personal Workspace: workspace-management/personal-workspace.md

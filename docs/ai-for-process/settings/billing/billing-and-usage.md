@@ -16,11 +16,17 @@ The Usage page displays the following tabs:
     * **Workflow runs**: Shows current workflow run usage against your total allocation.
     * **Credits**: Displays the number of credits consumed out of the total available credits, along with the corresponding percentage. A dynamic pie chart visually represents this data, showing the distribution of total credits, including usage by models, guardrails, OCR models, and custom script deployments. Each metric is color-coded and identified through a legend for easy reference. Hover over the chart to view the actual values for each usage type.
     * **Usage trend**: Visual representation of workflow runs, model credits, custom scripts, and OCR credits consumption over time.
+
+Click the "*three-dots*" icon to view and select from the following options:
+
 * **Workflows**: Shows all workflow activities and their operational status.
 * **Models**: Shows the computational costs linked to specific models.
 * **Guardrails**: Shows overall guardrail statistics and credit consumption costs.
 * **Custom Scripts**: Gives a comprehensive view of all the deployed custom scripts’ statistics, including the credits usage trends.
 * **OCR**: Displays OCR model deployments and their credit consumption, helping you track document-processing usage.
+* **Browser Automation**: Shows the credits consumption and usage trend for browser automation experiment pod deployments.
+    
+    <img src="../images/usage-expanded-view.png" alt="Usage expanded list" title="Usage expanded list" style="border: 1px solid gray; zoom:75%;">
 
 ## Best Practices
 
@@ -43,7 +49,7 @@ The **Overview** tab summarizes expenses and usage patterns across your workflow
 
 ## Workflows Usage
 
-The Workflows tab displays a comprehensive list of workflows associated with the account. It includes only those workflows that have been deployed at least once; it does not include ‘In development’ workflows.  
+The **Workflows** tab displays a comprehensive list of workflows associated with the account. It includes only those workflows that have been deployed at least once; it does not include ‘In development’ workflows.  
 
 The following usage information is displayed on the tab:
 
@@ -55,7 +61,7 @@ The following usage information is displayed on the tab:
 * **Last active on**: The date when the workflow was last active.
 * **Status**: The workflow's status - Deployed, Undeployed, or Deleted.
 
- <img src="../images/workflow_usage.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/workflow_usage.png" alt="Billing Tools tab" title="Billing Tools tab" style="border: 1px solid gray; zoom:80%;">
 
 
 ## Models Usage
@@ -93,7 +99,7 @@ The following information is displayed:
 * **Last updated on**: The date when the deployment was last done.
 * **Status**: The current deployment status: *Deployed*, *Undeployed*, or *Deleted*.
 
-<img src="../images/models-usage-drill-down.png" alt="drill down view" title="drill down view" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/models-usage-drill-down.png" alt="drill down view" title="drill down view" style="border: 1px solid gray; zoom:80%;">
 
 ## Guardrails Usage
 
@@ -101,7 +107,7 @@ The **Guardrails** tab displays the list of guardrails used and the charges rela
 
 The guardrail usage is deducted from the Model credits shown in the Overview tab, indicating that the available credits for the model will decrease based on the cost of using the guardrails.
 
-<img src="../images/guardrails-tab.png" alt="Guardrails tab" title="Guardrails tab" style="border: 1px solid gray; zoom:60%;">
+ <img src="../images/guardrails-tab.png" alt="Guardrails tab" title="Guardrails tab" style="border: 1px solid gray; zoom:60%;">
 
 The following usage information is displayed on the Guardrails tab:
 
@@ -127,7 +133,7 @@ Clicking each row on the Guardrail tab opens a panel on the right that displays 
      * Further deployments are disabled. 
      * All ongoing deployments are disrupted once the negative credit limit is reached, and the message “*You've used all your available credits. Please add more credits to your account to continue.*” appears.
 
-<img src="../images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
+      <img src="../images/guardrails_right_panel.png" alt="Guardrails detailed information" title="Guardrails detailed information" style="border: 1px solid gray; zoom:80%;">
 
 
 The following information is displayed:
@@ -157,7 +163,7 @@ The **Custom Scripts** tab displays the list of custom scripts added to your acc
     *  Users will not be able to deploy imported projects. Deployment actions get disabled for the scripts.
     *  If the negative credit limit is crossed during deployment, the process will be stopped, and a failure message will be displayed.
 
-<img src="../images/cs-usage-data.png" alt="cs usage data" title="cs usage data" style="border: 1px solid gray; zoom:80%;">
+       <img src="../images/cs-usage-data.png" alt="cs usage data" title="cs usage data" style="border: 1px solid gray; zoom:80%;">
 
 The following usage information is displayed:
 
@@ -179,7 +185,7 @@ Clicking each row on the **Custom scripts** tab opens a panel on the right that 
 * Credits consumed by the components. Refer to the table [here](../manage-custom-scripts/custom-scripts.md#step-3-resource-allocation){:target="_blank"} for pricing.
 * **Total** which represents the aggregate of all the credit components (when multiple components are involved).
 
-<img src="../images/custom-script-usage.png" alt="cs usage" title="cs usage" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/custom-script-usage.png" alt="cs usage" title="cs usage" style="border: 1px solid gray; zoom:80%;">
 
 ### Email Notifications
 
@@ -188,26 +194,42 @@ Billing and credit calculation emails for custom scripts notify users about cred
 
 ## OCR Usage
 
-The OCR tab provides a unified view of all OCR-related credit usage across your workspace, allowing you to:
+The **OCR** tab provides a unified view of all OCR-related credit usage across your workspace, allowing you to do the following:
 
 * Review a list of OCR model deployments
 * See how many credits each deployment consumed
 * Check deployment status and usage history
 
-<img src="../images/ocr_billing_details.png" alt="OCR billing" title="OCR billing" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/ocr_billing_details.png" alt="OCR billing" title="OCR billing" style="border: 1px solid gray; zoom:80%;">
 
 ### Viewing Detailed OCR Information
 
-Clicking a row in the OCR tab opens a panel on the right that provides detailed information about the selected OCR deployment, including:
+Clicking a row in the **OCR** tab opens a panel on the right that provides detailed information about the selected OCR deployment, including:
 
 * **Hosting infrastructure:** The compute resources used by the deployment (for example, model configuration or allocated hardware).
 * **Hosting time:** Total time the deployment has been active, shown in hours and minutes.
 * **Credits consumed:** The number of OCR credits used by the deployment.
 * **Total:** The aggregated credit usage across all contributing components for that deployment.
 
-<img src="../images/ocr_billing_detailed.png" alt="OCR billing" title="OCR billing" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/ocr_billing_detailed.png" alt="OCR billing" title="OCR billing" style="border: 1px solid gray; zoom:80%;">
 
+## Browser Automation Usage
 
+The **Browser Automation** tab provides a unified view of browser-automation credit usage across your workspace, allowing you to do the following:
 
+* Review a list of pod deployments for browser automation scripts
+* See deployment-level credits consumption
+* Check deployment status and usage history
 
+    <img src="../images/browser-automation-usage.png" alt="browser automation usage" title="browser automation usage" style="border: 1px solid gray; zoom:80%;">
 
+### Viewing Detailed Browser Automation Information
+
+Clicking a row in the **Browser Automation** tab opens a right-side panel that displays detailed information about the selected OCR deployment, including:
+
+* **Hosting infrastructure:** The compute resources or allocated hardware used by the deployment.
+* **Hosting time:** Total time the deployment has been active, shown in hours and minutes.
+* **Credits consumed:** The number of browser automation credits used by the deployment.
+* **Total:** The aggregated credit usage across all contributing components for that deployment.
+
+    <img src="../images/browser_automation_billing_detailed.png" alt="browser automation detailed billing" title="browser automation detailed billing" style="border: 1px solid gray; zoom:80%;">

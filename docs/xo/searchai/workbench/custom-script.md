@@ -11,7 +11,9 @@ Use the following properties to configure this stage.
 
 * Stage Type: Set this field to Custom Script
 * Stage Name: Set a unique name for the stage.
-* Condition: Define a condition for selecting the documents. Use the basic or script mode to define the condition. You can define any number of conditions with the `AND` operator between the conditions to find the exact set of data to be excluded. For example, if you want to process only file content, use the following script as the condition.
+* Outcome: Write the custom Javascript to filter and enrich chunks. Use this script to add custom fields, modify content, or conditionally process chunks based on your specific requirements.
+
+Example1: Filtering of content - process only chunks from uploaded files.
 
 ```javascript
 if(context.sys_content_type.equals("file"))
@@ -24,17 +26,21 @@ else
 }
 ```
 
-* Outcome: Define the outcome of the stage using the Painless script. For example, if you want the count of the total number of pages in a given file, you can write a script as shown below.
-
+Example 2: Split the content as sentences.
 
 ```javascript
-int temp_total_pages = 0;
-if(context.file_content_obj != null){
-  for (def item: context.file_content_obj) {
-    if (item!="") {
-       temp_total_pages = temp_total_pages+1;
-      }
-  }
-}
-context.total_pages = temp_total_pages;
+context.cfs2 = context.chunkText.split( /[.!?]+[ ]/);
 ```
+
+Example 3: Remove unnecessary content from web pages.
+
+```javascript
+if (context.chunkText) {
+    // Remove header/footer page numbers (e.g., "Page 5 of 20")
+    context.chunkText = context.chunkText.replace(/Page\s+\d+\s+of\s+\d+/gi, '');
+    
+    //Remove social sharing text, if any.
+    context.chunkText = context.chunkText.split(/Share\s*Twitter/i)[0].trim();
+}
+```
+

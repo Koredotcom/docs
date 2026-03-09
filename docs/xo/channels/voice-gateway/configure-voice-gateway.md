@@ -36,6 +36,23 @@ Steps to buy a new phone number:
 
     This feature is only available when using our Twilio account. It's not supported for SIP trunk setups.
 
+### Purchasing toll-free numbers
+
+Voice Gateway doesn't support direct toll-free number purchases due to regional regulations and documentation requirements. All toll-free numbers require manual verification and regulatory approval.
+
+To purchase a toll-free number:
+
+1. [Contact Support](https://support.kore.ai) and specify the required country or region.  
+1. Support guides you through the required documentation requirements and completes procurement through Twilio.  
+1. Configure the [SIP trunk](#steps-to-configure-sip-trunk) after purchase.  
+1. The number appears in the SIP DID numbers list-[Create Start Flows](../../flows/create-flows.md#create-a-start-flow) and associate them with the toll-free number.
+
+Required documentation varies by region and may include business registration documents, proof of address, and letters of authorization. Lead times vary by country based on local regulatory approval timelines.
+
+!!! note 
+     
+    Lead times vary by country and depend on local regulatory approval timelines.
+
 ### Attach Flow
 
 Steps to attach a flow to the phone number:
@@ -112,17 +129,23 @@ Agent AI supports real-time audio streaming through two primary methods:
 
         * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) that route calls to your existing telephone lines. You can configure SIP trunks by entering DID numbers using wildcard patterns (for example, `123*`) to automatically handle multiple similar DIDs without listing each one individually. On configuring two wildcard patterns for different experience flows within an application, and a caller dials a number that matches both patterns, the system triggers the experience flow associated with the pattern that matches the most digits.  
         
-            Example:
-
-            Map the DID numbers `7896*` and `789654*` to Experience Flow 1 and Experience Flow 2, and dial `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
+            Example: Map the DID numbers `7896*` and `789654*` to Experience Flow 1 and Experience Flow 2, and dial `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
+        
+            !!! note "Duplicate DID Handling"
+         
+                When configuring a SIP Trunk with a duplicate DID, the system behavior depends on the account and app context. For the same DID with a different IP/FQDN in the same account and app, the system prompts the user to update the existing trunk or proceed with a mandatory label. For identical DID and IP/FQDN combinations within the same account, the system blocks the configuration with an error message.
+        
         * **DTMF (Dual-Tone Multi-Frequency) Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
+        
         * Select an option from the list for **SIP Transport Type**. This field sets a protocol to route SIP traffic to servers and other endpoints. The available options are *TCP*, *UDF*, and *TLS*.
+        
         * (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
+        
         * Under **SIP Termination URI**, enter the **IP Address**/**Domain Name**.
 
-        !!! note "Termination URL"
+            !!! note "Termination URL"
 
-            Configure the termination URL on your SIP trunk to enable outbound calls.
+                Configure the termination URL on your SIP trunk to enable outbound calls.
 
         * **Option Ping**: When selected, the system verifies access to the IP addresses. The system selects this option by default.   
 
@@ -141,11 +164,11 @@ Agent AI supports real-time audio streaming through two primary methods:
 
                 The caller number specified in the [Script Task](../../flows/node-types/script-task.md) is passed through the SIP headers when a third-party desktop application transfers the call to an agent. 
 
-        <span id="agentai">If you select **Agent AI**</span>: 
+        <span id="agentai">If you select Agent AI</span>: 
 
         **Select the SIP Trunk connection method**: Select the method based on your third-party vendor’s requirements (<a href="#siprec">SIPREC</a> or <a href="#websocket">WebSocket</a>). 
 
-        * <span id="siprec">If you select **SIPREC**</span>:
+        * <span id="siprec">If you select SIPREC</span>:
             * **SIP URI**: This is a pre-configured field. A copy option lets you to copy the SIP URIs.
             * **Network**: To configure the Network, you can select one of the following:
                 * Under **List of IP Address**, type the values for **Incoming IP Address** in the textbox.
@@ -504,6 +527,43 @@ The following languages and dialects are supported:
 | English (Kenya)        | English (United Kingdom)  |
 | English (New Zealand)  | English (United States)   |
 
+### Use Custom ASR and TTS Credentials (BYOK)
+
+Integrate your own Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) licenses with the Voice Gateway instead of using the default providers.
+
+Follow the steps to securely configure and use your credentials.
+
+#### Initiation and Security
+
+The platform manages custom provider onboarding through a controlled support process to protect sensitive API keys.
+
+1. [Contact Support](https://support.kore.ai) and request a Custom Provider Configuration.
+
+1. Provide your credentials using one of the following methods:
+
+    * Send the credentials to your assigned support representative.
+
+    * Schedule a session with the technical team and share the credentials.
+
+#### Provider Labeling
+
+After Support receives your credentials, the system maps them to a unique identifier in the Voice Gateway.
+
+Label Creation: The system generates a unique label name (for example, Custom_Nuance_V2) for your account.
+
+Activation Confirmation: Support sends a confirmation email after activating the label.
+
+#### Implement in Call Flows
+
+To use your custom ASR or TTS provider in a call or session, pass the assigned label in the call control parameters of your API request or dialog task.
+
+| Parameter   | Description                                           | Example Value    |
+| :---------- | :---------------------------------------------------- | :--------------- |
+| `sttLabel`  | Unique label for your custom Speech-to-Text provider  | `"MyAzureSTT"`   |
+| `ttsLabel`  | Unique label for your custom Text-to-Speech provider  | `"MyGoogleTTS"`  |
+
+When you include these parameters, the system routes speech processing through your configured provider instead of the platform default.
+
 ### Best Practices
 
 #### Multi-Language App Setup
@@ -520,7 +580,7 @@ Steps to configure a Multilingual App:
 
 Before you can use a language in an App, you need to enable it on the platform.
 
-1. Log to AI for Service and select the **Product Switcher**.
+1. Sign in to AI for Service and select the **Product Switcher**.
 2. Go to **Settings** > **Language Management**.
 3. Select **+ Add Language** and select the languages your AI Agent supports, such as English, Hindi, and Telugu.  
 
@@ -535,10 +595,10 @@ The most common way to let a caller choose a language is through an **Interactiv
 1. Create a new Flow.
 2. After the Start node, drag an [IVR Menu](../../flows/node-types/ivr-menu.md) node.
 3. In the IVR Menu node, create prompts for each language option (for example, "Press 1 for English," "Press 2 for Hindi," "Press 3 for Telugu").  
-    <img src="../images/ivr-menu.png" alt="IVR Menu" title="IVR Menu" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/ivr-menu.png" alt="IVR Menu" title="IVR Menu" style="border: 1px solid gray; zoom:60%;">
 
 4. For each language option, connect the number key (for example, "1") to a new [Script node](../../flows/node-types/script-task.md). This is the key step where the language is set.  
-    <img src="../images/ivr-digit.png" alt="IVR Digit Input" title="IVR Digit Input" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/ivr-digit.png" alt="IVR Digit Input" title="IVR Digit Input" style="border: 1px solid gray; zoom:60%;">
 
 5. For each Script node:
     * Assign a name, such as 'Set Language to English'.
@@ -551,7 +611,7 @@ The most common way to let a caller choose a language is through an **Interactiv
         * Example for Hindi: `agentUtils.setBotLanguage("hi");`
         * Example for Telugu: `agentUtils.setBotLanguage("te");`
 
-    <img src="../images/script-node.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:70%;">  
+    <img src="../images/script-node.png" alt="Script Node" title="Script Node" style="border: 1px solid gray; zoom:60%;">  
 
 !!! Note
 
@@ -563,25 +623,25 @@ The most common way to let a caller choose a language is through an **Interactiv
 
     * Under Automation AI options, select Run a specific Dialog.  
     * Choose the Dialog Flow you've built for your AI Agent.  
-        <img src="../images/run-specific-dialog.png" alt="Run Specific Dialog" title="Run Specific Dialog" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/run-specific-dialog.png" alt="Run Specific Dialog" title="Run Specific Dialog" style="border: 1px solid gray; zoom:60%;">
 
     * Configure ‘Agent Transfer’ under ‘Connection Rules’.  
     * Reference configuration of the entire flow.  
-        <img src="../images/reference-config.png" alt="Reference Config" title="Reference Config" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/reference-config.png" alt="Reference Config" title="Reference Config" style="border: 1px solid gray; zoom:60%;">
 
 **Step 3: Configure the Dialog Flow**
 
-The Dialog Flow is the AI Agent's conversation logic. Ensure the AI Agent's responses are in the correct language.
+The Dialog Flow is the AI Agent's conversation logic. Verify that the AI Agent's responses are in the correct language.
 
 1. Open the Dialog Flow you connected in the previous step.
 2. The platform enables you to configure different languages within the same flow. Look for a **language selector** on the app header.  
-    <img src="../images/language-selector.png" alt="Language Selector" title="Language Selector" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/language-selector.png" alt="Language Selector" title="Language Selector" style="border: 1px solid gray; zoom:60%;">
 
 3. Select a language (for example, Hindi) from the dropdown. Now, any text you add to nodes associate with this language.
 4. For each node (like a **Message** node or **Entity** node), enter the text in the selected language.
 
     **Example:** For a Message node, if you've selected Hindi, you'll enter the Hindi text in the "Bot Response" box.  
-    <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:60%;">
 
 5. Repeat this process for every language that the AI Agent supports. Switch the language selector and add the corresponding text for each node. This makes it easy to manage a single flow with all language variations.
 
@@ -593,10 +653,10 @@ For more precise control, you can customize the Automatic Speech Recognition (AS
 2. You can set specific call control parameters that override the default settings. This is useful for:  
 
     * Using a different TTS provider or voice in a particular language.  
-        <img src="../images/tts-provider.png" alt="TTS Provider" title="TTS Provider" style="border: 1px solid gray; zoom:70%;">  
+        <img src="../images/tts-provider.png" alt="TTS Provider" title="TTS Provider" style="border: 1px solid gray; zoom:60%;">  
 
     * Choosing a different ASR provider that's better at understanding a particular accent or language.  
-        <img src="../images/asr-provider.png" alt="ASR Provider" title="ASR Provider" style="border: 1px solid gray; zoom:70%;">  
+        <img src="../images/asr-provider.png" alt="ASR Provider" title="ASR Provider" style="border: 1px solid gray; zoom:60%;">  
 
 For more details on these advanced settings, refer to the [Call Control Parameters](../voice-gateway/speech-customization.md#supported-call-control-parameters).
 
@@ -609,6 +669,62 @@ After configuring the Flow and Dialogs, publish the flows and perform thorough t
     Double-check that the language codes are in lowercase in the script node and that you've configured both the IVR and the Run Automation nodes correctly.
 
 The multi-lingual behavior is also achieved with **Automatic Language Detection** based on the caller's speech.
+
+#### Audio Tags (ElevenLabs v3)
+
+The ElevenLabs V3 model supports Audio Tags, which are short text commands enclosed in square brackets (for example, `[excited]`, `[whispers]`). The TTS engine interprets these tags as stage directions and adjusts emotional tone, delivery style, and non-verbal cues in the generated audio.
+
+This capability is available only with the ElevenLabs v3 (`eleven_v3`) model.
+
+You can insert audio tags anywhere in a script to modify delivery in real time. Use a single tag or combine multiple tags to create complex emotional transitions within the same prompt.
+
+Audio tag categories and examples
+
+| Category        | Example Tags                                                       | Example Usage                            |
+| :-------------- | :----------------------------------------------------------------- | :--------------------------------------- |
+| Emotions        | `[excited]`, `[sad]`, `[angry]`, `[calm]`, `[dramatic]`, `[eager]` | `[excited] Your order has been shipped!` |
+| Delivery Style  | `[whispers]`, `[shouts]`, `[rushed]`, `[slowly]`                   | `[whispers] Please stay quiet.`          |
+| Human Reactions | `[laughs]`, `[sighs]`, `[clears throat]`, `[gulps]`                | `[sighs] I'm sorry to hear that.`        |
+| Accents         | `[British accent]`, `[American accent]`                            | `[British accent] Hello, how are you?`   |
+
+Best practices
+
+* **Match context and voice**: Audio tags work best when they align with the natural personality of the selected voice.  
+* **Use punctuation intentionally**: The V3 model interprets punctuation as delivery cues. Ellipses (`...`) introduce pauses, and capitalization increases emphasis.  
+* **Confirm model selection**: Configure voice settings to use the `eleven_v3` model. Audio tags don't work with earlier models.  
+* **Ignore tag casing**: Audio tags are case-insensitive. `[HAPPY]` and `[happy]` behave the same way.
+
+Add audio tags in nodes
+
+You can add audio tags anywhere you configure user prompts or bot responses.
+
+1. Open the [Dialog Task](../../automation/use-cases/dialogs/navigating-dialog-tasks.md) and select a [Message Node](../../automation/use-cases/dialogs/node-types/nodes-transitions.md#message-or-bot-response-node), [Entity Node](../../automation/use-cases/dialogs/node-types/nodes-transitions.md#entity-node), or [Confirmation Node](../../automation/use-cases/dialogs/node-types/nodes-transitions.md#confirmation-node).  
+1. Navigate to User Prompts or Bot Responses and select the Plain Text tab. If you use dynamic responses, open the JavaScript editor.  
+1. Add bracketed tags at the exact point where the delivery changes.
+
+    Example: `[warmly] Hello! [pause] How can I assist you today?`
+
+1. Save the node. Voice Gateway sends the tagged text to ElevenLabs for processing.
+
+Behavior by connection mode
+
+Voice Gateway applies audio tags differently based on the connection mode configured in the Start Flow.
+
+Non-streaming mode
+
+* **Behavior**: The platform sends the entire tagged prompt to ElevenLabs in a single request.
+* **Audio generation**: The TTS engine generates the full audio output and applies emotions sequentially based on the tags.
+* **Recommended use**: Short responses where minimal latency is acceptable.
+
+Streaming mode
+
+Audio tags aren't supported in streaming scenarios.
+
+Troubleshooting and limitations
+
+* Feature maturity: Audio tags are an Alpha feature. Sometimes, the model may read tags aloud or ignore them if the selected voice doesn't support the requested emotion.
+* Character limit: ElevenLabs V3 supports approximately 5,000 characters per request.
+* Voice compatibility: Professional Voice Clones (PVCs) aren't completely optimized for V3. Use Instant Voice Clones (IVCs) or prebuilt voices for best results.
 
 ## Voice Call Properties (Account Level)
 

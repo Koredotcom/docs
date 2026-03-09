@@ -193,34 +193,34 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
     <img src="../images/app-launcher-1.png" alt="app-launcher" title="app-launcher" style="border: 1px solid gray; zoom:80%;"> 
 
 3. A menu opens from the left side of the page. Click **OTHERS** > **Automation & AI**.  
-    <img src="../images/automation-ai-2.png" alt="automation-ai" title="automation-ai" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/automation-ai-2.png" alt="automation-ai" title="automation-ai" style="border: 1px solid gray; zoom:60%;"> 
 
 4. Click **Agent Assist Hub** > **Add Agent Assist App**.  
-    <img src="../images/add-agentassist-app-3.png" alt="add-agentassist-app" title="add-agentassist-app" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/add-agentassist-app-3.png" alt="add-agentassist-app" title="add-agentassist-app" style="border: 1px solid gray; zoom:60%;"> 
 
 5. Enter the name of the **Agent Assist App** in the **AGENT ASSIST APP NAME** field.
 6. Select **Custom Agent Assist Endpoints**.
 7. Click **Next**.  
     <img src="../images/custom-agentassist-endpoints-4.png" alt="custom-agentassist-endpoints" title="custom-agentassist-endpoints" style="border: 1px solid gray; zoom:80%;"> 
 
-8. Add the following settings with config parameters:
-    1. Agent UI Option: Available by default 
-    2. App URL: {<a href="#agentai">[Agent AI URL]</a>}/integrations/nice/iframe/?params={scriptparams}
-    3. App Title: Kore Agent AI (change as needed)
-    4. Participants: Both 
-        <img src="../images/configuration-5.png" alt="configuration" title="configuration" style="border: 1px solid gray; zoom:80%;"> 
+8. Add the following settings with config parameters:  
+    * Agent UI Option: Available by default 
+    * App URL: {<a href="#agentai">[Agent AI URL]</a>}/integrations/nice/iframe/?params={scriptparams}
+    * App Title: Kore Agent AI (change as needed)
+    * Participants: Both  
+       <img src="../images/configuration-5.png" alt="configuration" title="configuration" style="border: 1px solid gray; zoom:80%;"> 
 
-    5. Audio Relay Endpoint: {<a href="#kvg">[Kore Voice Gateway</a>(KVG)]}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&lt;DNS>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true
-        * **Bot SIP URI**: **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Agent AI** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal. 
-            <img src="../images/configure-sip-trunk_6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
+    * Audio Relay Endpoint: {<a href="#kvg">[Kore Voice Gateway</a>(KVG)]}/audiosocket/nice?sipuri=&lt;Bot SIP URI>&lt;DNS>&token=&lt;Token>&botId=&lt;Bot ID>&accountId=&lt;Account ID>&agentassist=true
+      * **Bot SIP URI**: **Flows & Channels** > **Channels** > **Voice Gateway** > **SIP Numbers** > **Configure SIP Trunk** > **Agent AI** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
+       <img src="../images/configure-sip-trunk_6.png" alt="configure-sip-trunk" title="configure-sip-trunk" style="border: 1px solid gray; zoom:80%;"> 
 
-        * **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal. 
-            <img src="../images/web-mobile-client_7.png" alt="web-mobile-client" title="free text" style="border: 1px solid gray; zoom:80%;"> 
+      * **Bot ID and Account ID**: **Flows & Channels** > **Channels** > **Digital** > **Web/Mobile Client** > **JWT App Details** section of the **[Agent AI](https://agentassist.kore.ai/){:target="_blank"}** configuration portal.  
+       <img src="../images/web-mobile-client_7.png" alt="web-mobile-client" title="free text" style="border: 1px solid gray; zoom:80%;"> 
 
-        * Token: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
-            * Payload: {“appId”: &lt;Bot Client ID>}
-            * Header: {“alg”: “HS256″,”typ”: “JWT”}
-            * Secret: Bot Client Secret. 
+      * Token: Create a **JSON Web Token** on [jwt.io](https://www.jwt.io/){:target="_blank"} with the following details:
+        * Payload: {“appId”: &lt;Bot Client ID>}
+        * Header: {“alg”: “HS256″,”typ”: “JWT”}
+        * Secret: Bot Client Secret.  
 
 9. Click **Create**.
 
@@ -262,38 +262,39 @@ This section explains the configuration steps needed to integrate Kore Agent AI 
     <img src="../images/agent-assist-instance-11.png" alt="agent-assist-instance" title="agent-assist-instance" style="border: 1px solid gray; zoom:80%;"> 
 
 9. Click **Yes**.  
-    <img src="../images/agent-assist-app-12.png" alt="agent-assist-app" title="agent-assist-app" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/agent-assist-app-12.png" alt="agent-assist-app" title="agent-assist-app" style="border: 1px solid gray; zoom:60%;"> 
 
 10. After selecting **Agent Assist**, click the **Close** button on the bottom-right corner of the page.  
 
-!!! note
-    Do not click the “X” button to close the window as this will not save the changes.  
+    !!! note
+
+        Don't click the **X** button to close the window as this doesn't save the changes.  
 
 ### Step 3: NICE CX Account Setup for Outbound Call
 
 On the **NICE Incontact** home page, click the **application launcher** button, and select **ACD**.
 
-**Create a Campaign** 
+**Create a Campaign**  
 <img src="../images/create-a-campaign-13.png" alt="create-a-campaign" title="create-a-campaign" style="border: 1px solid gray; zoom:80%;"> 
 
-**Create a Skill** 
-<img src="../images/create-a-skill-14.png" alt="create-a-skill" title="create-a-skill" style="border: 1px solid gray; zoom:80%;"> 
+**Create a Skill**   
+<img src="../images/create-a-skill-14.png" alt="create-a-skill" title="create-a-skill" style="border: 1px solid gray; zoom:60%;"> 
 
 For Custom Script, select the NICE Studio Script created in the previous step.
 
-**Create a Disposition** 
+**Create a Disposition**  
 <img src="../images/create-a-disposition-15.png" alt="create-a-disposition" title="create-a-disposition" style="border: 1px solid gray; zoom:80%;"> 
 
 ## Outbound Call Simulation
 
 1. Go to the **NICE** home page.
 2. Click **Application Launcher** > **MAX**.  
-    <img src="../images/integrated-softphone-16.png" alt="integrated-softphone" title="integrated-softphone" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/integrated-softphone-16.png" alt="integrated-softphone" title="integrated-softphone" style="border: 1px solid gray; zoom:60%;"> 
 3. Select **Integrated Softphone**, and click **Connect**. 
 4. Change the status to **Available**.  
-    <img src="../images/available-status-17.png" alt="available-status" title="available-status" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/available-status-17.png" alt="available-status" title="available-status" style="border: 1px solid gray; zoom:60%;"> 
 
-5. Click on **New** at the bottom left of the screen.  
+5. Click **New** at the bottom-left of the screen.  
     <img src="../images/new-contact-18.png" alt="new-contact" title="new-contact" style="border: 1px solid gray; zoom:80%;"> 
 
 6. Enter the number in the search bar and click on **Call** and select the outbound skill created in the previous step.  
@@ -309,5 +310,5 @@ For Custom Script, select the NICE Studio Script created in the previous step.
 
 9. Click **Hang Up** again to confirm disconnection of the call.
     1. The Call **summary** pop-up gets triggered at the end of the call session.
-10. Select the **disposition,** and click **Save & Close**. 
+10. Select the **disposition,** and click **Save & Close**.  
     <img src="../images/summary-23.png" alt="summary" title="summary" style="border: 1px solid gray; zoom:80%;"> 

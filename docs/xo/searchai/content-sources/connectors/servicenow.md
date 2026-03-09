@@ -1,4 +1,4 @@
-# ServiceNow Connector
+﻿# ServiceNow Connector
 
 You can connect to the ServiceNow application to enable users to fetch query results using the knowledge articles managed by ServiceNow. The connector now supports real-time synchronization through webhook integration, ensuring your Search AI index stays up-to-date with changes in ServiceNow.
 
@@ -50,7 +50,7 @@ You can connect to the ServiceNow application to enable users to fetch query res
 To configure the ServiceNow connector, follow the steps listed below.
 
 
-## **Step 1: Configure an OAuth endpoint in ServiceNow**
+## Step 1: Configure an OAuth endpoint in ServiceNow
 
 If you are using **Basic authentication**, you can skip this step. To use **OAuth 2.0** for authentication, set up an OAuth endpoint in your ServiceNow instance. Refer to[ this documentation](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/administer/security/task/t_CreateEndpointforExternalClients.html) for step-by-step instructions to do the same. Use one of the following Redirect URLs as per your region and deployment.
 
@@ -58,7 +58,7 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
 * DE Region Callback URL: [https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
 * Prod Callback URL: [https://idp.kore.com/workflows/callback](https://idp.kore.com/workflows/callback)
 
-## **Step 2: Configure the ServiceNow connector in Search AI**
+## Step 2: Configure the ServiceNow connector in Search AI
 
 * Select the ServiceNow connector from the list of available connectors. 
 * Go to the **Authorization** tab and enter the following details:
@@ -71,14 +71,17 @@ If you are using **Basic authentication**, you can skip this step. To use **OAut
   * **Authorization Code**: If you are using this grant type, enter the client ID and client secret, generated in the above step.
   * **Password Grant Type**: If you are using this grant type, enter user credentials along with the client ID and client secret, generated in the above step.
 
-* **Host URL**: Host of your ServiceNow instance
-* Click *Connect* button to initiate authorization.
+* **Host URL**: Host of your ServiceNow instance.
+* **Real-Time Sync**: Toggle to enable/disable automatic syncing of content changes in real-time using source notifications.
+* **Webhook Client Secret**: Generated automatically (with option to regenerate).
+* **Webhook URL**: Copy the provided webhook URL for configuration in ServiceNow.
+* Click **Connect** to initiate authorization.
 *  After the connection is established, go to **Configurations** tab and click **Sync Now** to ingest content.
   * By default, the connector ingests published knowledge articles, incidents, and catalog items.
 
 
 !!!note
-  Only the articles within their validity date are ingested. Any article that's expired(beyond its Valid To date) isn't ingested.
+    Only the articles within their validity date are ingested. Any article that's expired (beyond its Valid To date) isn't ingested.
 
 ## Webhook Integration for Real-Time Sync
 
@@ -90,8 +93,6 @@ The ServiceNow webhook integration is implemented using:
 
 1. Script Include: A reusable script that handles webhook POST requests to Search AI.
 2. Business Rules: Separate rules configured per ServiceNow table to trigger webhooks on data changes.
-
-For more information, see [Architecture Components.](https://koreteam.atlassian.net/wiki/spaces/SearchAI/pages/1375698947/ServiceNow+Webhook+Integration+Guide#Architecture-Components)
 
 ### Benefits of Webhook Integration
 
@@ -108,17 +109,6 @@ For more information, see [Architecture Components.](https://koreteam.atlassian.
 * Search AI connector successfully configured and connected.
 * Webhook endpoint URL and authentication token from Search AI.
 
-1. View Webhook Configuration in Search AI
-   Once the ServiceNow connector is successfully configured, navigate to the Webhook Settings section:
-   * View Webhook Endpoint URL: Copy this URL for use in ServiceNow configuration.
-   * View and Rotate Webhook Secret/Token: The webhook authentication token is displayed here.
-
-    **Note**: If you rotate the token using the Rotate Token button, you must update the ServiceNow Script Include with the new token.
-   * Webhook Sync Records: Webhook-triggered syncs are recorded separately from manual syncs in the sync logs.
-   * Training Pipeline: A separate training pipeline exists for webhook-based syncs to ensure real-time updates don't interfere with scheduled bulk synchronization.
-
-2. Configure Components in ServiceNow
-
 The integration requires two components in your ServiceNow instance:
 
 **A. Shared Script Include (`SearchAIWebhookHandler`)**
@@ -130,7 +120,52 @@ Create a reusable Script Include in **System Definition > Script Includes**:
 - **Action:** Sends a POST request to the Search AI webhook endpoint with the auth token.  
 - **Payload:** Builds a payload compatible with Search AI's ServiceNow ingestion schema.
 
-For more information, see [sample script.](https://koreteam.atlassian.net/wiki/spaces/SearchAI/pages/1375698947/ServiceNow+Webhook+Integration+Guide#Script-Include-Code)
+Sample script
+
+```
+var <<CommonWebhookSender>> = Class.create();
+<<CommonWebhookSender>>.prototype = {
+  initialize: function () {},
+
+  send: function (record, action) {
+    try {
+      var endpoint = 'https://<domain>/api/1.1/webhook/<streamId>/connector-Id';
+
+      // 🔐 secret 
+      var TOKEN = 'b59aebc4-xxx-xxx';
+
+      var payload = {
+        source: 'servicenow',
+        object: record.getTableName(),
+        action: action,
+        sys_id: record.sys_id.toString(),
+        number: record.number ? record.number.toString() : '',
+        knowledge_base_name: record.kb_knowledge_base
+          ? record.kb_knowledge_base.getDisplayValue()
+          : ''
+      };
+
+      var r = new sn_ws.RESTMessageV2();
+      r.setHttpMethod('POST');
+      r.setEndpoint(endpoint);
+      r.setRequestHeader('Content-Type', 'application/json');
+
+      // ✅ Authentication header
+      r.setRequestHeader('X-Webhook-Token', TOKEN);
+
+      r.setRequestBody(JSON.stringify(payload));
+
+      var response = r.execute();
+      gs.info('Webhook sent. Status: ' + response.getStatusCode());
+
+    } catch (e) {
+      gs.error('Webhook error: ' + e.message);
+    }
+  },
+
+  type: '<<CommonWebhookSender>>'
+};
+```
 
 **B. Business Rules (Per Table)**
 
@@ -161,34 +196,45 @@ When Search AI receives a webhook POST from ServiceNow:
    - **Delete:** Corresponding content is removed from the index.  
 4. The sync is logged in the webhook sync records.  
 
-### Webhook Payload Schema
-
-The payload includes:
-
-- Table name and operation type (insert, update, delete).  
-- Timestamp of the operation.  
-- Record details (including `sys_id` and table-specific fields).  
-
-**Note:** For delete operations, only the `sys_id` is included.
 
 ## Advanced Filters
 
-Search AI enables users to set up advanced filters for content ingestion. Currently, filtering is supported exclusively for Knowledge Articles. You can selectively ingest content by using various properties of knowledge articles, such as status, type, number, knowledge base, and source. To set up advanced filtering, go to the **Configuration** tab, select **Sync Specific Content,** and click the **Configure** link.  
+Search AI enables users to set up advanced filters for content ingestion. Currently, filtering is supported exclusively for Knowledge Articles. You can selectively ingest content by using various properties of knowledge articles, such as status, type, number, knowledge base, and source.
 
-![Configuration](images/servicenow/config-tab.png "Configuration")
+**Configure Advanced Filters:**
 
-Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to [this ](https://developer.servicenow.com/dev.do#!/reference)for the complete list of parameters. 
-For instance, to ingest articles with a given sys ID, use the filter as shown below. 
+1. Go to the **Manage Content** tab and select **Ingest filtered content**.
+2. Select **Edit configuration** to open the **Ingestion Filters** page.
+3. Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to [this](https://developer.servicenow.com/dev.do#!/reference) for the complete list of parameters.
 
-![Example](images/servicenow/example1.png "Example")
+   ![Configuration](images/servicenow/config-tab.png "Configuration")
 
-Click on **Test and Save** to enable the filter. The filter is used on the next scheduled or manual sync with the ServiceNow application. 
+   For instance, to ingest articles with a given sys ID, use the filter as shown below:
 
-Note:
+   ![Example](images/servicenow/example1.png "Example")
 
-* You can define one or more rules to create a filter. Content that satisfies any one of the rules in the filter is selected for ingestion. For instance, the following filter can be used to select articles where sys ID is either of the list. ![Example](images/servicenow/example2.png "Example")
+Select **Test and Save** to enable the filter. The filter is applied on the next scheduled or manual sync.
 
-* Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied. For instance, the following filter can be used to select published articles with a given Sys Id. ![Example](images/servicenow/example3.png "Example")
+**Filter Rules:**
+
+* **Multiple Rules**: You can define one or more rules to create a filter. Content that satisfies any one of the rules is selected for ingestion (logical OR). 
+  
+  Example: Select articles where sys ID is any from a specified list:
+  
+  ![Example](images/servicenow/example2.png "Example")
+
+* **Multiple Conditions**: Every rule can have one or more conditions linked with a logical AND. Content is selected only when all conditions in the rule are satisfied.
+  
+  Example: Select published articles with a given sys ID:
+  
+  ![Example](images/servicenow/example3.png "Example")
+
+**Real-Time Sync via Webhooks:**
+
+When Real-Time Sync is enabled and Search AI receives a webhook POST from ServiceNow, content updates are processed automatically:
+
+* **Insert/Update**: For record creation or update events, the document is created or updated in the Search AI index.
+* **Delete**: For record deletion events, the corresponding content is removed from the index.
 
 ## RACL Support
 

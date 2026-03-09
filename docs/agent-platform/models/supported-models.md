@@ -74,6 +74,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-audio</li>
     <li>gpt-image-1-mini</li>
     <li>gpt-image-1</li>
+    <li>gpt-image-1.5</li>
     <li>o4-mini</li>
     <li>o3</li>
     <li>o1</li>
@@ -99,6 +100,10 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>GPT-5-Mini</li>
     <li>GPT-5-Nano</li>
     <li>GPT-5-Chat</li>
+    <li>GPT-5.1</li>
+    <li>GPT-5.1-Chat</li>
+    <li>GPT-5.2</li>
+    <li>GPT-5.2-Chat</li>
   </ul>
    </td>
   </tr>
@@ -119,6 +124,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>claude-opus-4-20250514</li>
     <li>claude-opus-4-1-20250805</li>
     <li>claude-opus-4-5-20251101</li>
+    <li>claude-opus-4-6</li>
   </ul>
    </td>
   </tr>
@@ -235,6 +241,16 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
     <ul>
     <li>gemini-live-2.5-flash-preview</li>
     <li>gemini-2.0-flash-live-001</li>
+    </ul>
+   </td>
+  </tr>
+    <tr>
+   <td >Azure OpenAI
+   </td>
+   <td >
+    <ul>
+    <li>GPT-Realtime</li>
+    <li>GPT-Realtime-Mini</li>
     </ul>
    </td>
   </tr>
@@ -664,6 +680,8 @@ Here is the list of all the external models supported in the Platform:
 
 <li>claude-sonnet-4-5-20250929</li>
 
+<li>claude-opus-4-6</li>
+
 <li>Claude Sonnet Vision (Available only for the Image-to-text node, No Prompt Studio support.)</li>
 </ul>
    </td>
@@ -690,6 +708,10 @@ Here is the list of all the external models supported in the Platform:
 <li>GPT-5-Mini</li>
 <li>GPT-5-Nano</li>
 <li>GPT-5-Chat</li>
+<li>GPT-5.1</li>
+<li>GPT-5.1-Chat</li>
+<li>GPT-5.2</li>
+<li>GPT-5.2-Chat</li>
 </ul>
    </td>
   </tr>
@@ -800,6 +822,7 @@ Here is the list of all the external models supported in the Platform:
 <li>gpt-audio</li>
 <li>gpt-image-1-mini</li>
 <li>gpt-image-1</li>
+<li>gpt-image-1.5</li>
 <li>gpt-realtime-mini</li>
 <li>gpt-realtime</li>
 <li>o4-mini</li>
