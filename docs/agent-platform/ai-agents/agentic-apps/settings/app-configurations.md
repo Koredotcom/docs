@@ -75,24 +75,82 @@ Enable this setting to allow real-time streaming of the response in Playground, 
 
 ### Error Handling
 
-The Platform provides an error-handling framework to handle failures that occur when an agent’s underlying AI model is invoked. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
+Agent Platform provides an error-handling framework that defines how the system responds when an agent’s underlying AI model requests fail or guardrail violations happen. It allows administrators to configure timeouts, retries, fallback models, and fallback behaviors so that user experiences remain predictable and graceful even when model calls fail or are delayed.
 
-* This configuration applies specifically to agent model invocation failures such as timeouts, provider errors, or transient network issues. 
-* All agents within the app inherit this configuration.
+All agents within the app inherit these configurations.
 
-Click on *Modify Configuration* to update the timeout and retry behavior. 
+#### Model Errors
 
-* Model Call Timeout: Defines the maximum time (in seconds) the system waits for a model response before marking the model call as failed. If the model doesn't respond within the configured timeout, the call is treated as failed and the retry mechanism kicks in.
-* Retry Handling: Defines how the system behaves when a model call times out. There are two options to follow in this situation. 
-    * Retry with the same model: When enabled, the system will retry the request with the same AI model. Configure the maximum number of retries using the *UPTO* field. This can be used to handle transient provider issues or network issues, giving the primary model a few attempts before switching to a backup model.
-    * Retry with a different model: When enabled, the system will retry the failed request with an alternate AI model after all retries with the first option have been exhausted. Select the alternate model from the drop-down, and specify the maximum number of retries for this model. To skip this step, select *Do not retry with a different model*. This can be used to maintain continuity if the primary model is temporarily unavailable. 
-* Fallback Behavior: This config defines what happens when the model request fails after all retry attempts (if any) have been exhausted.
-    * Send Message: Display a custom message to the user that describes the issue and the next steps. 
-    * Invoke Tool: Allows invoking a tool directly. Select the tool and provide the tool parameters. Provide fixed values for the fields or use memory variables to provide values for the fields. Administrators can provide fixed key–value pairs for the tool parameters or use memory variables to dynamically populate values at runtime. This is useful for actions such as:
+These configurations apply specifically to agent model invocation failures such as timeouts, provider errors, or transient network issues. 
+
+**Model Call Timeout**: Defines the maximum time (in seconds) the system waits for a model response before marking the model call as failed. If the model doesn't respond within the configured timeout, the call is treated as failed, and the retry mechanism kicks in.
+
+**Retry Handling**: Defines how the system behaves when a model call times out. There are two options to follow in this situation. 
+
+* **Retry with the same model**: When enabled, the system will retry the request with the same AI model. Configure the maximum number of retries using the *UPTO* field. This can be used to handle transient provider issues or network issues, giving the primary model a few attempts before switching to a backup model.
+* **Retry with a different model**: When enabled, the system will retry the failed request with an alternate AI model after all retries with the first option have been exhausted. Select the alternate model from the drop-down, and specify the maximum number of retries for this model. To skip this step, select *Do not retry with a different model*. This can be used to maintain continuity if the primary model is temporarily unavailable. 
+
+**Fallback Behavior**: This config defines what happens when the model request fails after all retry attempts (if any) have been exhausted.
+
+* **Fallback Action**: Specifies whether the system should trigger an automated recovery step. It can take the following actions. 
+    * None - No automated action is taken.
+    * Invoke an event: Executes the configured event. You can select Agent Handoff or the end-of-conversation event.  
+    * Invoke a tool: Executes the selected code tool or workflow tool. Select the tool and provide the tool parameters. Administrators can provide fixed key–value pairs for the tool parameters or use memory variables to dynamically populate values at runtime. This is useful for actions such as:
         * Triggering a notification or email.
-        * Logging failure details.
-        * Initiating a fallback recovery workflow.
-        * Informing support systems when repeated model calls fail.
+* Logging failure details.
+* Initiating a fallback recovery workflow.
+* Informing support systems when repeated model calls fail.
+* **Fallback Message**: Controls the message shown to end users when all retry attempts fail.
+    * Send Message: Display a custom message to the user that describes the issue and the next steps. 
+    * Do not send a message: No message is shown.
+
+
+#### Guardrail Errors Tab
+
+Use this tab to configure handling for guardrail violations (such as safety, policy, or validation failures). Configure how the system behaves when a guardrail check fails, times out, or detects a policy breach. These settings help maintain safety while ensuring a good user experience.
+
+##### Points to Note
+
+* Guardrail failure and guardrail breach are handled separately.
+* Retry settings apply only to guardrail call failures, not breaches.
+* Fallback actions run after retries are exhausted.
+* Proper configuration improves both safety and user experience.
+
+Guardrail handling is evaluated in two scenarios:
+
+* Guardrail call fails or times out
+* Guardrail detects a policy breach
+
+##### If Guardrails Call Fails
+
+Configure the following to handle cases when the guardrail call fails.
+
+**Timeout Configuration**: Specifies how long (in seconds) the system waits for the guardrail response before marking the call as failed. If the guardrail responds within this time period, normal execution continues; otherwise, retry handling begins.
+
+**Retry Handling**: Defines how the system retries when a guardrail call fails or times out. The system retries the guardrail call up to the configured count. If a retry succeeds, normal flow resumes. If all retries fail, fallback behavior executes. \
+
+**Fallback Behaviour**: Executed when the guardrail call fails even after all retries.
+
+* **Fallback Action**: Specifies the action to trigger as a fallback, like running a remediation workflow, logging an incident, or initiating an alert operation. Configure one of the following actions. 
+    * None - No additional action is taken.
+    * Invoke an event - Executes Agent Handoff or End of Conversation event. 
+    * Invoke a tool - Executes a configured tool. Select the tool and provide the required tool parameters. You can assign static values to parameters or provide dynamic values using memory variables. 
+* **Fallback Message**: Controls the message displayed to users after a guardrail call fails. You can display a custom message.
+
+
+##### If Guardrail Is Breached
+
+The following fields define the behavior when the guardrail successfully evaluates the request and detects a policy violation.
+
+**Breach Handling**: Triggered when user input or model output violates configured safety or policy rules.
+
+**Fallback Action**: Specifies the automated step to execute when a breach is detected, such as compliance logging, security alerts, or running moderation workflows.
+
+* None - No additional automation.
+* Invoke event or tool - Executes a defined failure event or workflow tool. 
+
+
+**Fallback Message**: Defines the message shown to the user when a guardrail breach occurs.
 
 
 ### Delete Agentic App
