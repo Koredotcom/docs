@@ -25,7 +25,7 @@ The page is divided into two sections:
 * Single Sign-On (SSO) Configuration
 * Multi-Factor Authentication (MFA).
 
-### Single Sign-On (SSO)
+## Single Sign-On (SSO)
 
 SSO allows users to access their Platform accounts using credentials managed by an external IdP. Once authenticated with the IdP, users can access the Platform without a separate login.
 
@@ -40,9 +40,9 @@ SSO allows users to access their Platform accounts using credentials managed by 
 
 | **Protocol**       | **Providers**                          |
 |---------------------|----------------------------------------|
-| SAML 2.0           | Okta, OneLogin, Other Provider          |
-| WS-Federation      | Windows Azure, Other Provider           |
-| OpenID Connect     | Google                                  |
+| [SAML 2.0](#saml-20)           | Okta, OneLogin, Other Provider          |
+| [WS-Federation](#ws-federation)      | Windows Azure, Other Provider           |
+| [OpenID Connect ](#other-configuration-1)    | Google                                  |
 
 ### How SSO Works
 
@@ -203,7 +203,34 @@ No additional configuration is required. Your users will be authenticated based 
 
 **Note:** Multiple certificates: When multiple certificates are added, the system uses the most recently added one. If that certificate is invalid, it automatically falls back to the next available certificate.
 
-## SAML
+## Multi-Factor Authentication (MFA)
+
+MFA adds a second layer of verification during sign-in for users who authenticate via email/password. The Platform supports the following MFA methods: Email Verification, Authenticator App (TOTP), and SMS.
+
+### Enable MFA
+
+1. Go to Security & Control > Authentication Settings.
+2. Under MFA Status, toggle MFA Required.
+3. Under Allowed MFA Methods, select the methods to enable — Email Verification, Authenticator App, or SMS.
+4. Click Save.
+
+### Disable MFA
+
+1. Under MFA Status, toggle off MFA Required (it will show MFA Disabled).
+2. Click Save.
+
+### MFA for Users (First Login)
+
+When MFA is enabled and a user signs in for the first time:
+
+1. The user enters their email address and password.
+2. The Platform prompts the user to set up an MFA method.
+3. On subsequent logins, the user is prompted to enter their MFA verification code.
+4. On successful verification, access is granted.
+
+## SSO Protocol Reference
+
+### SAML 2.0
 
 Security Assertion Markup Language (SAML) is a protocol for web-based SSO that uses secure tokens instead of passwords. It allows IDPs and SPs to operate separately. When a user logs into a SAML-enabled app, the service provider requests authorization from the IDP, which authenticates the user and grants access to the application.
 
