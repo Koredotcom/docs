@@ -12,11 +12,15 @@ This update includes new features and enhancements summarized below.
 
 **Enhanced App Creation Journey**
 
-A new AI-assisted App Creation wizard walks users through building an application in a few simple steps. Users can build from scratch, import from the Marketplace, or provide a few instructions and let AI generate the complete app definition for review. This reduces time-to-value and makes onboarding easier for new users.
+A new AI-assisted App Creation wizard walks users through building an application in a few simple steps. Users can build from scratch, import from the Marketplace, or provide a few instructions and let AI generate the complete app definition for review. This reduces time-to-value and makes onboarding easier for new users. 
+
+**Note**: This feature is in preview and can be enabled upon request.
 
 **A2A Protocol Support**
 
-Agent Platform now supports the A2A (Agent-to-Agent) Protocol, enabling agentic apps to connect with external A2A-compliant agents without custom adapters. Developers can connect external agents using an A2A server URL. The platform automatically retrieves their details and handles communication translation. External agents can be included in workflows and managed by supervisors just like native agents.
+Agent Platform now supports the A2A (Agent-to-Agent) Protocol, enabling agentic apps to connect with external A2A-compliant agents without custom adapters. Developers can connect external agents using an A2A server URL. The platform automatically retrieves their details and handles communication translation. External agents can be included in workflows and managed by supervisors like native agents.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/external-agents.md#connect-through-a2a-protocol)
 
 **MCP Enhancements**
 
@@ -27,21 +31,35 @@ MCP integration now adds another layer of security in this update:
 * Consistent Tool Naming: MCP tools now keep their original server-defined names in Agent Platform without prefixing with the MCP Server Name. A prefix is added when duplicate tool names are identified across all the tools, including MCP Servers.
 * Enum Parameter Support: Agentic apps now support enums as parameters for MCP tools.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/configure-mcp-server.md)
+
+
 **Namespace Enhancements**
 
 A default namespace is now automatically associated with every variable. Variables remain part of the default namespace context even when custom namespaces are used, ensuring consistent access and simpler scope management.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/variables.md)
+
 **Selective Tool Response Configuration**
 
-Developers can now extract specific values from tool responses using simple path notation, while still retaining the option to send the complete tool response. This provides greater control over outputs while maintaining backward compatibility. 
+Developers can now extract specific values from tool responses using simple path notation, while still retaining the option to send the complete tool response. This provides greater control over outputs while maintaining backward compatibility.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md#output-parameters)
+
 
 **Event Configuration Enhancements**
 
 Developers now have greater control over system event messages during agent interactions. Event messages for ‘End of Conversation’ and ‘Agent Handoff’ are now optional, and AI-generated message prompts can be edited directly in the UI. Content, memory, and environment variables are now supported in both custom messages and AI prompts, resolved dynamically at runtime for greater flexibility and personalization.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/events.md)
+
+
 **Agent Activation Control**
 
 Agents can now be temporarily disabled without deleting them. Disabled agents are excluded from runtime orchestration but remain fully editable, with their configuration preserved across versions and environments.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agent-management.md)
+
 
 
 <font size="4">No-Code & Pro-Code Tools</font>
@@ -67,10 +85,13 @@ The platform now supports additional AI models, giving users greater flexibility
 * **OpenAI**: gpt-image-1.5
 * **Anthropic**: claude-opus-4.6
 
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
+
 **Integration with Microsoft Foundry Model Catalog**
 
 The platform now supports direct integration with the Microsoft Foundry model catalog, enabling users to discover and use models deployed there. Model setup is simplified with a single Target URI and Service Principal–based authentication. Users can browse available projects, view deployed models, and add them as external models without manual API configuration. A new External Credentials section in Settings centralizes authentication details to streamline access and management.
 
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-microsoft-foundry)
 
 <font size="4">Other Improvements</font>
 
@@ -79,6 +100,8 @@ The platform now supports direct integration with the Microsoft Foundry model ca
 Authentication settings now include a unified interface for configuring Single Sign-On (SSO) and Multi-Factor Authentication (MFA) at the organization level. Administrators can enable or disable SSO, select supported protocols and providers, and exclude specific users from SSO requirements to maintain fallback access.
 
 MFA policies are now context-aware. When SSO is enabled, MFA applies only to excluded users, with SSO users managed by the identity provider. When SSO is disabled, MFA can be enforced organization-wide. Supported MFA methods include authenticator apps (TOTP), SMS, and email.
+
+[Learn more :octicons-arrow-right-24:](../settings/security-and-control/single-sign-on.md)
 
 **Favorite Workspaces for Quick Access**
 

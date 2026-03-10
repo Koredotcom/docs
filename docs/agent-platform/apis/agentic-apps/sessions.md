@@ -9,7 +9,9 @@ Endpoints for managing conversational sessions with your Agentic App.
 
 Establishes a new conversation session for a specific user with the Agentic App. 
 
-*Note: This is the starting point for any new interaction.*
+!!! note 
+ 
+    This is the starting point for any new interaction.
 
 
 <table>
@@ -192,7 +194,9 @@ Returns details of the newly created session, which are required for managing an
   }
 }
 ```
-**Note**: When a new session is initiated, and the application requires permissions for OAuth authorization from the user, the API response includes a special event of type `IDP_Redirect`. This event provides a URL that the user must visit to complete the authorization process. If the required authorization isn't completed, the associated tools will return an error upon invocation.
+!!! note 
+ 
+    When a new session is initiated, and the application requires permissions for OAuth authorization from the user, the API response includes a special event of type `IDP_Redirect`. This event provides a URL that the user must visit to complete the authorization process. If the required authorization isn't completed, the associated tools will return an error upon invocation.
 
 ```json
 {
@@ -233,7 +237,7 @@ Returns details of the newly created session, which are required for managing an
 ```
 
 
-
+<!-- 
 ## List Sessions
 
 Lists sessions for the selected app and environment. Supports optional filters such as session ID, user reference, and date range.
@@ -413,6 +417,7 @@ Lists sessions for the selected app and environment. Supports optional filters s
   }
 }
 ```
+-->
 
 ## Get Session
 
@@ -506,9 +511,9 @@ Fetches the details of a given session. You must provide either a *sessionId* or
   </tr>
 </table>
 
-
-!!!note
-  Either sessionId or sessionReference must be provided to identify the session. 
+!!! note 
+ 
+    Either sessionId or sessionReference must be provided to identify the session. 
 
 
 ### Sample Response

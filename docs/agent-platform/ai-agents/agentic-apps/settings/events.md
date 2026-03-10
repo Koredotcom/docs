@@ -20,7 +20,14 @@ By default, the event is in the Disabled state.
 To enable and configure the Welcome event, follow these steps:
 
 * Click on the edit icon and enable the event status.  
-* Under Actions, configure the greeting message using the **Send Message to User** option that users see when a new session starts. You can either use AI to generate the message or provide a custom message. You can also include data from the memory stores as part of the custom messages. 
+* Under Actions, configure the greeting message using the **Send Message to User** option that users see when a new session starts. 
+
+You can either use AI to generate the message or provide a custom message. 
+
+When using AI to generate a message, use Customize AI-Generated Message to instruct the AI on how to generate the message. For example, use it to specify tone, length of the message. 
+
+In custom messages, you can also include data from the memory stores as part of the custom messages. 
+
 ![Welcome Event](images/events/welcome-event.png "Welcome Event")
 
 
@@ -35,9 +42,9 @@ The Platform supports agent handoff only via the AI for Service Platform. When t
 * **LLM Collected Event Parameters**: Define one or more fields to capture key details from the conversation when this event is triggered. This feature leverages the LLM to extract relevant information from the conversation context and populate the defined fields. These fields can then be passed to an agent during handoff. For example, you might configure a field to capture an interaction summary, which the agent can use for context during live support. To configure these parameters, specify the parameter name and describe the expected content in the field. The application uses the LLM to infer and fill in these fields based on the ongoing conversation.
 * **System Defined Parameters**: Use this option to define fields that capture specific details from the conversation, which must be passed to an external system. Unlike LLM-collected parameters, these don't rely on the LLM. Instead, they're directly retrieved from the existing context or memory.
 These fields are useful for passing data, such as user IDs, user choices, etc, that's already available during the conversation. To  configure system-defined parameters, provide the key (field name), which identifies the parameter in the external system and set the value, which can be:
-  * A static string, or
-  * A dynamic reference using memory or context variables, such as `{{user.country}}`. The application resolves these values at runtime and sends them to the external system. 
-* **Send Message to User**: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. 
+    * A static string, or
+    * A dynamic reference using memory or context variables, such as `{{user.country}}`. The application resolves these values at runtime and sends them to the external system. 
+* **Send Message to User**: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. When disabled, no closing message is sent, and the conversation ends without any additional response. When using AI to generate a message, use Customize AI-Generated Message to instruct the AI on how to generate the message.
 * **Session Management**: Specify how the session should be handled after the event occurs, during a human handoff.
     * **Keep Alive**: Maintain the current session even after this event.
     * **Terminate Session**: End the session once the event is triggered. 
@@ -59,7 +66,7 @@ To enable and configure the event,
     * **System Defined Parameters**: Use this option to define fields that capture specific details from the conversation, which must be passed to an external system. Unlike LLM-collected parameters, these don't rely on the LLM. Instead, they're directly retrieved from the existing context or memory. These fields are useful for passing structured values, such as user IDs, user choices, etc, that are already available during the conversation. To  configure system-defined parameters, provide the key (field name), which identifies the parameter in the external system and set the value, which can be:
          * A static string, or
          * A dynamic reference using memory or context variables, such as `{{user.country}}`. The application resolves these values at runtime and sends them to the external system. 
-    * **Send Message to User**: Use this field to set the message that the users see when a session ends. You can either use AI to generate the message or provide a custom message. You can also use memory store data as part of your custom messages. 
+    * **Send Message to User**: Use this field to set the message that the users see when a session ends. When disabled, no closing message is sent, and the conversation ends without any additional response. You can either use AI to generate the message or provide a custom message. You can also use memory store data as part of your custom messages. When using AI to generate a message, use Customize AI-Generated Message to instruct the AI on how to generate the message. For example, use it to specify tone, length of the message.  
     * **Session Management**: Specify how the session should be handled after the event occurs.
         * **Keep Alive**: Maintain the current session even after this event.
         * **Terminate Session**: End the session once the event is triggered.
