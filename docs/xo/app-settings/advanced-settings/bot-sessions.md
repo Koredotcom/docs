@@ -51,7 +51,9 @@ The following details explain the options available on the page, to define the c
 
             The minimum value that can be set here is **5 min** and the maximum value is **20160 min** (14 days). These values can be configured at the application level through Koreconfig.
 
-* **Session Closure Behavior** – You can choose to close the session without informing the user or inform the user about the session closure by sending out a message. This message can be customized using the **Manage response** link. You can click **Add Response**, if you want to add a new response.  
+* **Session Closure Behavior** – You can choose to close the session without informing the user or inform the user about the session closure by sending out a message. This message can be customized using the **Manage response** link. You can click **Add Response**, if you want to add a new response. <br>
+To exclude specific channels from receiving the session closure message, use the **Additional Settings** option, which becomes available only when the **Send a Message** toggle is enabled. This option opens a side sheet where you can select the channels to exclude from receiving the closure message.<br>
+For new apps, the email channel is excluded by default to prevent unnecessary notifications. Any newly added channels are also excluded from receiving session closure messages by default.
 <img src="../images/bot-sessions-img2.png" alt="Customize message using Manage Response" title="Customize message using Manage Response" style="border: 1px solid gray;zoom:50%;"/>
 
 * **Clear Auth Profile** – You can enable the **Clear Auth Profiles** option to clear all authorization tokens and session variables associated with a particular session. Once you enable this setting, you are required to provide the authorization profile details again to re-authorize the session.  
