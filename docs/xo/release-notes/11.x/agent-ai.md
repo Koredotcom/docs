@@ -2,7 +2,7 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
-## v11.22.1 March 14, 2025
+## v11.22.1 March 14, 2026
 
 <u>Patch Release </u> 
 
