@@ -2,6 +2,35 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.22.1 March 14, 2026
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Configuration</font>
+
+**Expose Queue Array in InQueuesFlow**
+
+The system now exposes a QueuesArray in the InQueuesFlow context to track queue traversal during conversation transfers. The array maintains chronological order and identifies the current target queue. Flows can use this to dynamically override skills based on the destination queue, enabling flexible, intent-based routing. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#queues-array-in-inqueuesflow)
+
+**Custom Translation Update for Lara**
+
+The custom translation engine now supports the laratranslate.com domain to maintain compatibility with the updated Lara translation service. The system also normalizes the multi-utterance separator by converting `&lt;&gt;` to `<>`, ensuring translations are correctly parsed and mapped without affecting existing configurations.
+
+**Queue-Level Automatic Email Acknowledgments**
+
+Queues now support automatic email acknowledgments, configurable under Optional Settings for the Email channel. When enabled, the system sends confirmation emails after receiving a customer message, based on a configurable interval. Acknowledgments are triggered only when a new message arrives, and the interval has elapsed, preventing duplicates. The message editor supports rich text and HTML customization. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#optional-configuration)
+
+<font size="4">Analytics</font>
+
+**Center-Wide Wallboard-Abandons**
+
+A new Center-Wide Wallboard-Abandons displays conversation-abandonment and queue-activity metrics across all queues. It opens in a new tab, uses a fixed layout, and refreshes every 30 seconds. The wallboard shows center-level and queue-level metrics-including Waiting, With Agent, Abandoned, Timed Out, ACR, Agents, Offered, Answered, Load, and Longest Wait-based on the selected filters. 
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md#center-wide-abandoned)
+
+<hr>
+
 ## v11.22.0 February 28, 2026
 
 <u>Minor Release</u>
@@ -85,8 +114,6 @@ You can now mark a disposition set as campaign-linked by using a new toggle. Eac
 The InteractionDetails v2 API now supports a direction filter to retrieve conversations by call type: Inbound, Outbound, or Both (default). The API also adds an optional campaignInfo field to selectedFields. When you include this field, the response returns campaign metadata for campaign-originated sessions. If you omit it, the response excludes campaign data. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md) 
 
 <hr>
-
-
 
 ## v11.21.1 January 31, 2026
 
@@ -244,7 +271,7 @@ The Agent Console now includes a confirmation step before sending predefined ema
 
 **Default post-contact Survey Trigger**
 
-The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey) 
+The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md) 
 
 **Call History Tab Personalization**
 

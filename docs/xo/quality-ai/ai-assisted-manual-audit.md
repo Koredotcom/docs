@@ -702,7 +702,7 @@ The form is evaluated based on the agent's performance and actions taken during 
 
 * The action is taken, but not adequate (close to but not fully meeting the standard).
 
-* Required information is not provided or incomplete.
+* Required information isn't provided or incomplete.
 
 * Example: Agent didn't ask for mobile number at all → NO.
 
@@ -755,9 +755,7 @@ This audit log tab includes the following details:
 
 * **Record supervisor and reviewer changes**: Tracks supervisor and reviewer updates, capturing who made each change, when the change occurred, and what modified.
 
-* **Capture AI model execution data**: Logs AI execution details, including model version, execution duration, request and response token counts, and enabled GenAI features.
-
-Each execution log entry includes:
+* **Capture AI model execution data**: Logs AI execution details, including model version, execution duration, request and response token counts, and enabled GenAI features. Each execution log entry includes:
 
     * Date and Time of execution
     * GenAI Feature Name (for example, By Hold Adherence)
@@ -775,5 +773,5 @@ Each execution log entry includes:
 * **Payload Visibility and Debug Support**: Displays the Request and Response payloads with options to expand or collapse the view, format or compact the content, copy it to the clipboard, and open it in full-screen mode. These capabilities support detailed debugging and analysis without navigating away from the audit log.         
 <img src="../ai-assist-manual-edit/images/audit-logs-payload-request-respond.png" alt="Payload Request and Respond" title="Payload Request and Respond" style="border: 1px solid gray; zoom:80%;">
 
-* **Assign to me**: Select this option to assign the log entry to yourself for audit. The system records who assigns the audit and when, and displays the assigned user in the header and audit history. 
+* **Assign to Me**: Select this option to assign the log entry to yourself for audit. The system records who assigns the audit and when, and displays the assigned user in the header and audit history. 
 

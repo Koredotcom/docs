@@ -226,7 +226,7 @@ For each document, you can do the following.
 
 You can also **schedule an automatic sync operation** for a future time. Automatic Sync ensures that the data stays up-to-date and also reduces the administrative overhead of performing manual sync regularly. 
 
-The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event. 
+The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event.
 
 ![Enable scheduler](images/schedule-sync.png "Enable Scheduler")
 
@@ -236,6 +236,28 @@ To set up a recurring sync schedule, provide the synchronization frequency along
 ![Recurring Sync](images/connectors/recurrent-sync.PNG "Recurring Sync")
 
 To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
+
+**Downloading the Synced Document List**
+
+Search AI allows you to export the list of successfully synced documents from a connector as a CSV file. This is useful for auditing sync status, tracking document lifecycle, generating reports, and troubleshooting ingestion issues without manually compiling information from multiple sources.
+
+How to Download
+
+1. Navigate to the Content tab of the connector.
+2. Click the Download icon in the top-right corner of the content list.
+3. A CSV file is generated and the download starts automatically. Stay on the page until the download begins, as generation may take a moment depending on the number of synced documents.
+
+The following fields are included in the exported CSV:
+
+| CSV Field       | Description                                                   |
+|-----------------|---------------------------------------------------------------|
+| File Title      | The name of the synced document                               |
+| Doc Number      | Document number (applicable for Salesforce connector)         |
+| File Size       | Size of the document in MB                                    |
+| File Updated On | Timestamp of the last update to the document in the source system |
+
+!!!Note
+    The downloaded document list is RACL-enforced. Only documents that the logged-in user has access to will be included in the export.
 
 ### Enabling/Disabling Connectors
 

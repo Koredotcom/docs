@@ -2,6 +2,81 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.22.1 March 14, 2026
+
+<u> Patch Release </u>
+
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+
+<font size="4">Security & Control</font>
+
+
+**SSO Enhancements: Onboarding and Login Controls**
+
+
+AI for Service supports both Identity Provider (IdP)-Initiated and Service Provider (SP)-Initiated SSO. In the IdP-initiated flow, authentication begins at the IdP, which sends a SAML response to the platform for validation. In the SP-initiated flow, authentication begins at the platform, which redirects the user for authentication before creating a session.
+
+This enhancement adds the following capabilities:
+
+
+* Restrict Auto-Onboarding: By default, new users are automatically onboarded during IdP-initiated login. When this toggle is enabled, automatic onboarding is disabled, keeping user provisioning fully controlled by your external system.
+* Skip 2FA During First-Time Login: Administrators can now skip OTP-based authentication for first-time logins, providing flexibility to align the login experience with your organization's security policies especially where authentication is already enforced at the IdP level.
+
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md)
+
+
+<font size="4">Channels</font>
+
+
+**Email Channel Enhancements**
+
+
+
+**DKIM Configuration**
+
+DomainKeys Identified Mail (DKIM) is now available as a standalone module, allowing users to verify a domain independently before setting up an email channel and reuse it across multiple channels — eliminating repeated verification.
+
+
+* Advanced Email Channels: DKIM verification is mandatory for the channel setup. The platform checks for a verified DKIM record and requires completed verification before proceeding.
+
+* Microsoft Exchange: DKIM signing is optional and off by default. Without it, the platform sends emails through the Microsoft Graph API using Microsoft's native delivery. To enable DKIM signing, you must verify a DKIM record before completing the channel setup.
+
+
+**Manual Email Configuration for Microsoft Exchange**
+
+Exchange channels now support manually adding email IDs, in addition to configuring them through a Microsoft 365 Group. Manually added email IDs default to Outbound usage, allowing agents to use them for outbound conversations. 
+
+**User Identity Source**
+
+The platform now supports using the Reply-To address for user and session identification, rather than the From address. This is useful when an intermediary email aggregator is in use, where multiple conversations share the same From address but have distinct Reply-To values. This option is off by default.
+
+**Improved HTML Email Processing**
+
+The Email channel now efficiently handles large HTML emails. Raw text is extracted for processing while the full HTML structure — including lists, hyperlinks, and text alignment — is preserved for accurate display in Agent Desktop.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
+
+<font size="4">Analytics</font>
+
+**Task Execution Logs Enhancement**
+
+Task Execution Logs now capture execution details for Agent, Prompt, and SearchAI nodes, including LLM calls and any associated pre- or post-processor scripts. These details appear in the API Calls and Script Execution sections, making it easier to analyze execution flow and debug AI agent behavior.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/automation/task-execution-logs.md)
+
+<font size="4">App Settings</font>
+
+**Channel-Level Control for Session Closure Messages**
+
+Specific channels can now be excluded from receiving session closure messages via the Additional Settings option in the Session Closure Behavior section. When the Send a Message toggle is enabled, users can select which channels should not receive these messages. Email is excluded by default for new apps to avoid unnecessary inbox notifications. For newly added channels, session closure messages remain enabled by default. 
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/bot-sessions.md/#manage-sessions)
+
+
+<hr>
+
+
 ## v11.22.0 February 28, 2026
 
 <u>Minor Release</u>  
@@ -91,7 +166,7 @@ The Prompts Library will display "In Use" and "Not in Use" statuses for custom p
 
 **Email Thread Continuity When Adding Recipients**
 
-The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
 **Email Channel Session Configuration and Analytics Updates**
 
@@ -153,7 +228,7 @@ The Email Channel now supports more accurate session handling through two new ap
 
 * Thread-Based Sessions: Creates a new session based on the email thread's Reference ID. Replies within the same thread continue the session, while new threads start new sessions. Available only when Channel-Based Sessions are enabled.
 
-[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
 
 <font size="4">App Settings</font>

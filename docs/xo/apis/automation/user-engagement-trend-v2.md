@@ -17,7 +17,7 @@ Retrieves engagement metrics for a specific app in a workspace over a chosen tim
 | **PARAMETER** | **REQUIRED/OPTIONAL** | **DESCRIPTION** |
 |-----------|-------------------|-------------|
 | `host`      | Required          | Environment URL, for example, https://platform.kore.ai |
-| `streamId`    | Required          | App ID or Stream ID. You can access it from the General Settings page of the app. |
+| `streamId`    | Required          | App ID or Stream ID. You can access it from the App Settings page of the app. |
 
 
 ## Query Parameters
