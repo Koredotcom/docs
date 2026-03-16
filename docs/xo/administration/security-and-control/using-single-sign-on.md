@@ -384,11 +384,12 @@ To complete this procedure, you must have already selected _Bitium_ as a SAML pr
             * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
-    * **Restrict Auto - Onboarding**: Enable this option to restrict automatic user onboarding during IdP-initiated login for users who don't exist in the Kore platform.
     * In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between AI for Service and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:
         * **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback.](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}
         * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](#attributes-for-adfs).
         * **Identity URL** or **Sign On URL** as [https://idp.kore.com](https://idp.kore.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}
+  * **Restrict Auto - Onboarding** - Enable this option to restrict automatic user onboarding during IdP-initiated login for users who don't exist in the Kore platform.
+  * **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
 * Click **Create**.
 
