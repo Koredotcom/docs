@@ -26,7 +26,8 @@ Queues now support automatic email acknowledgments, configurable under Optional 
 
 **Center-Wide Wallboard-Abandons**
 
-A new Center-Wide Wallboard-Abandons displays conversation-abandonment and queue-activity metrics across all queues. It opens in a new tab, uses a fixed layout, and refreshes every 30 seconds. The wallboard shows center-level and queue-level metrics-including Waiting, With Agent, Abandoned, Timed Out, ACR, Agents, Offered, Answered, Load, and Longest Wait-based on the selected filters. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md#center-wide-abandoned)
+A new Center-Wide Wallboard-Abandons displays conversation-abandonment and queue-activity metrics across all queues. It opens in a new tab, uses a fixed layout, and refreshes every 30 seconds. The wallboard shows center-level and queue-level metrics-including Waiting, With Agent, Abandoned, Timed Out, ACR, Agents, Offered, Answered, Load, and Longest Wait-based on the selected filters. 
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md#center-wide-abandoned)
 
 <hr>
 
