@@ -23,6 +23,8 @@ This enhancement adds the following capabilities:
 * Restrict Auto-Onboarding: By default, new users are automatically onboarded during IdP-initiated login. When this toggle is enabled, automatic onboarding is disabled, keeping user provisioning fully controlled by your external system.
 * Skip 2FA During First-Time Login: Administrators can now skip OTP-based authentication for first-time logins, providing flexibility to align the login experience with your organization's security policies especially where authentication is already enforced at the IdP level.
 
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md)
+
 
 <font size="4">Channels</font>
 
@@ -68,6 +70,8 @@ Task Execution Logs now capture execution details for Agent, Prompt, and SearchA
 **Channel-Level Control for Session Closure Messages**
 
 Specific channels can now be excluded from receiving session closure messages via the Additional Settings option in the Session Closure Behavior section. When the Send a Message toggle is enabled, users can select which channels should not receive these messages. Email is excluded by default for new apps to avoid unnecessary inbox notifications. For newly added channels, session closure messages remain enabled by default. 
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/bot-sessions.md/#manage-sessions)
 
 
 <hr>
