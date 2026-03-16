@@ -32,6 +32,8 @@ The Dynamic By Question metric now supports speaker-based answer adherence. Admi
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
+<font size="4">Configuration</font>
+
 **Configurable Crosstalk Evaluation for By Speech Metrics**
 
 The Crosstalk metric now detects simultaneous speech between the agent and customer, including customer interruptions. The Dynamic By Question metric supports speaker selection and sub-weight assignment for agent-triggered adherence, and answer detection can now be extended beyond the agent — enabling use cases such as customer confirmation and verification. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-speech.md)
