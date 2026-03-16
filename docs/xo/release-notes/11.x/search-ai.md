@@ -9,7 +9,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Download Documents Synced Via Connectors</font>
 
-Users can now download a CSV of synced documents from their connectors. This helps the users audit sync status, analyze metadata, and troubleshoot issues. The Download Document List option exports the filtered document list, with RACL enforcement ensuring users can only download documents they are authorized to access. Learn more.
+Users can now download a CSV of synced documents from their connectors. This helps the users audit sync status, analyze metadata, and troubleshoot issues. The Download Document List option exports the filtered document list, with RACL enforcement ensuring users can only download documents they are authorized to access. [Learn More](../../searchai/content-sources/connectors.md).
 
 <hr>
 

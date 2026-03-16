@@ -228,6 +228,15 @@ You can also **schedule an automatic sync operation** for a future time. Automat
 
 The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event.
 
+![Enable scheduler](images/schedule-sync.png "Enable Scheduler")
+
+
+To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation. Once set, the scheduler automatically ingests content using the connector at regular intervals. 
+
+![Recurring Sync](images/connectors/recurrent-sync.PNG "Recurring Sync")
+
+To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
+
 **Downloading the Synced Document List**
 
 Search AI allows you to export the list of successfully synced documents from a connector as a CSV file. This is useful for auditing sync status, tracking document lifecycle, generating reports, and troubleshooting ingestion issues without manually compiling information from multiple sources.
@@ -249,15 +258,6 @@ The following fields are included in the exported CSV:
 
 !!!Note
     The downloaded document list is RACL-enforced. Only documents that the logged-in user has access to will be included in the export.
-
-![Enable scheduler](images/schedule-sync.png "Enable Scheduler")
-
-
-To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation. Once set, the scheduler automatically ingests content using the connector at regular intervals. 
-
-![Recurring Sync](images/connectors/recurrent-sync.PNG "Recurring Sync")
-
-To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
 
 ### Enabling/Disabling Connectors
 
