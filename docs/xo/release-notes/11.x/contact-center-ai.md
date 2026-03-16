@@ -244,7 +244,7 @@ The Agent Console now includes a confirmation step before sending predefined ema
 
 **Default post-contact Survey Trigger**
 
-The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey) 
+The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md) 
 
 **Call History Tab Personalization**
 

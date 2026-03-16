@@ -91,7 +91,7 @@ The Prompts Library will display "In Use" and "Not in Use" statuses for custom p
 
 **Email Thread Continuity When Adding Recipients**
 
-The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
 **Email Channel Session Configuration and Analytics Updates**
 
