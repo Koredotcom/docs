@@ -2,6 +2,17 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.22.1 March 15, 2026
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Download Documents Synced Via Connectors</font>
+
+Users can now download a CSV of synced documents from their connectors. This helps the users audit sync status, analyze metadata, and troubleshoot issues. The Download Document List option exports the filtered document list, with RACL enforcement ensuring users can only download documents they are authorized to access. Learn more.
+
+<hr>
+
 ## v11.22.0 February 28, 2026
 <u>Minor Release</u>
 
