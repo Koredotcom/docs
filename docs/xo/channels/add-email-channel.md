@@ -48,7 +48,7 @@ Configure DKIM and session settings under More Options.
 
 ## DKIM Configuration
 
-DKIM supports configuration through a standalone module, allowing users to verify domains before configuring email channels. This approach lets teams prepare the required DNS infrastructure in advance and reuse the verified domain across multiple channels without repeating the verification process.
+DomainKeys Identified Mail (DKIM) supports configuration through a standalone module, allowing users to verify domains before configuring email channels. This approach lets teams prepare the required DNS infrastructure in advance and reuse the verified domain across multiple channels without repeating the verification process.
 
 **Advanced Custom Email Domain**
 
@@ -280,7 +280,6 @@ Steps to Configure Email Blocklist:
 AI for Service now enhances custom domains with advanced capabilities, including email forwarding, domain setup, DKIM, and Flow mapping to improve scalability and brand alignment in enterprise email automation.
 
 Key enhancements:
-
 
 
 * Email Forwarding: Centralize email processing by forwarding emails from enterprise domains to a single Kore.ai mailbox.
