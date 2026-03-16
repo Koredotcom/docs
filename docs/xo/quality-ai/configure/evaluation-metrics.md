@@ -185,6 +185,5 @@ This section summarizes the system's supported measurement types, including core
 
 1. Update the required metric weights as prompted if any warning prompt appears.
 
-1. Select **Update** to save changes.
+1. Select **Update** to save changes.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Crosstalk Warning" title="Crosstalk Warning" style="border: 1px solid gray; zoom:70%;">  
-#### Speech Metric Errors
