@@ -19,7 +19,7 @@ Navigate to Contact Center AI > Configurations > Settings > System Settings > Qu
     * The HOP Config ID determines the Hours of Operation rules that apply to the conversation.  
     * The system doesn't automatically update the HOP Config ID after assignment.
 
-    Important limitations
+    Important limitation
 
     * Updating a queue to use a different HOP configuration doesn't affect interactions that are active or waiting in that queue.
 
@@ -35,4 +35,4 @@ Navigate to Contact Center AI > Configurations > Settings > System Settings > Qu
     1. Select a queue priority between 1 and 10, where 1 represents the highest priority and 10 represents the lowest, and then select Save.
         <img src="../images/queue-priority-selection.png" alt="Queue Priority Selection" title="Queue Priority Selection" style="border: 1px solid gray; zoom:70%;">
 
-Administrators can configure additional settings from [Queues](../../routing/queues/queue-management.md#additional-configuration).
+Administrators can configure optional settings from [Queues](../../routing/queues/queue-management.md#optional-configuration).
