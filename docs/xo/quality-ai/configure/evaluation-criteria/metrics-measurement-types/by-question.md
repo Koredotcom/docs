@@ -250,7 +250,7 @@ This enables use cases such as:
 
         If the trigger speaker is set to Customer, you can’t select Customer as the answer speaker. You can’t answer both the trigger and the answer to the customer without any agent contribution. The system enforces this restriction automatically.
 
-Gen AI-Based Adherence
+#### Gen AI-Based Adherence
 
 Use Generative AI to automatically evaluate agent responses by understanding natural language, including intent and context, even when phrased differently.
 
@@ -434,7 +434,7 @@ Evaluates agent responses based on semantic similarity to predefined sample utte
 
 * Add language-specific, prompt-based evaluation parameters. 	
 
-*Delete AI-suggested answers that are not required.
+* Delete AI-suggested answers that are not required.
 
 ##### Description
 
@@ -447,7 +447,7 @@ The system uses this description as a reference to evaluate whether the response
 
 ### Save the Metric
 
-Select Create to save and activate the configured metric.
+Select **Create** to save and activate the configured metric.
 
 
 ## Managing Evaluation Metrics
