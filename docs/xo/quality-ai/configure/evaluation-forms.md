@@ -1,4 +1,4 @@
-# Evaluation Overview
+# Evaluation Forms
 
 The Evaluation phase in Quality AI enables QA Managers to create standardized assessments for Voice and Chat interactions. Evaluation forms align scoring with operational goals and promote consistent, compliant evaluations.
 
@@ -102,7 +102,7 @@ Steps to configure general settings:
 
 This maintains consistent evaluation standards, regardless of the scoring type you select.         
 
-7. Select **Next**.    
+6. Select **Next**.    
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Configuration" title="General Settings Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ### Assignments Configuration
@@ -251,12 +251,6 @@ Whenever you try to switch from an existing scoring type, the system shows a war
 * The system displays only **By-Question** metrics configured for all selected languages. 
 
 * The system applies an **AND** condition across the selected languages. For example, if you select **English** and **Dutch**, the dropdown shows only metrics available in both languages.
-
-### Language Selection Behavior
-
-* Evaluation forms support multi-language selection. 
-* The system displays only **By-Question** metrics configured for all selected languages. 
-* The system applies an **AND** condition across selected languages. For example, if you select **English** and **Dutch**, the dropdown displays only metrics available in both languages.
 
 ### Points-Based Scoring Formula  
 

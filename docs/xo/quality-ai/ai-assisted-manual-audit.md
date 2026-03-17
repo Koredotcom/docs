@@ -199,7 +199,7 @@ This panel presents the complete conversation for detailed review and verificati
 
     * Keyword highlighting for matched terms.
 
-    * Comment icons indicating auditor notes.
+    * peicons indicating auditor notes.
 
     * Clickable timestamps sync audio playback
 
@@ -453,7 +453,7 @@ The By Question metrics features include the following:
 
 * **Audit Progress Bar**
 
-  * Located at the top right of the panel.
+  * Located at the top-right of the panel.
 
   * Shows completion percentage based on answered audit questions (completion status).
 
@@ -472,9 +472,8 @@ The By Manual Evaluation metrics include:
 
 * **Interactive Response Options**: Auditors select answers (for example, Yes, No, N/A) and add comments for manual metrics.
 
-* **Audit Progress Bar**: Displays the completion percentage at the top right based on the number of questions answered, including manual evaluations. If the conversation isn't started, unaudited metrics remain blank, indicating there is no AutoQA response for these metrics.    
+* **Audit Progress Bar**: Displays the completion percentage at the top-right based on the number of questions answered, including manual evaluations. If the conversation isn't started, unaudited metrics remain blank, indicating there is no AutoQA response for these metrics.    
 <img src="../ai-assist-manual-edit/images/manual-evaluation-metric-assign.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
-
 
 
 #### Omission
@@ -614,33 +613,47 @@ This section displays all feedback provided by auditors during the evaluation pr
 
 **Message-Level Comments**
 
-At the message level, users with QA functionality access permissions can view a comment icon when hovering over individual messages.
+Users with QA permissions can add comments directly to messages in the Transcript.
 
-**Commenting on Interactions**
+**Add a Message Comment**
 
-1. Click the **Assign to Me** button to add your comment during the conversation.
+1. Select **Assign to Me** to enable commenting during the conversation.
 
-2. Upon clicking the comment icon, a **Comment** icon appears when hovering over any message in the **Transcript** section.  
+2. In the **Transcript** section, hover over a message to display the **Comment** icon.   
 <img src="../ai-assist-manual-edit/images/comment-icon-selection.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
-3. Click the **Comment** icon to add a comment title **(Name)** and **Comment** text (both are mandatory).    
 
-4. Users can add or delete their submitted comments before submission.
+3. Select the **Comment** icon to open the comment panel.
 
-5. Click **Send** to publish the added comment.  
-<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+4. Enter the **Name** (title) and **Comment** (both required).    
 
-6. After submitting a comment, a **success message** appears.
+5. Select **Send** to publish the comment.  
 
-Once submitted, message-level comments are displayed:
+6. Before submitting the audit, you can edit or delete your comments.    
 
-* Inline within the **Transcript**, linked to the corresponding message.
+**After submission** 
 
-* In the **Comments** tab, there are both the comment title and text, along with the commenter's details (visibility based on privacy settings).  
+Message comments appear:
+
+* Inline in the **Transcript**, attached to the corresponding message.
+
+* In the message **Comments** tab within the Comments panel.
+
+Each comment displays the title, comment text, commenter details, and supports click-through navigation to the added message.   
+<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">  
+
+**Metric Comments (from Comments Panel)**
+
+* In the Comments panel, use **+ Add Comment** to add metric-level feedback.
+
+* Enter your comment and select **Save**.
+
+* You can **Edit** or **Delete** metric comments before submission.       
 <img src="../ai-assist-manual-edit/images/click-though-navigation.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
         Auditors or supervisors can add their comments in the **By Question**, **By Value**, and in the **By AI Agents** question metrics, when they are self-assigning the audit to themselves. 
+
 
 **Comment Types**:
 
@@ -648,16 +661,7 @@ Auditors or reviewers can provide two types of comments during the audit process
 
 * **Metric Comments**
 
-These are added to specific evaluation criteria, for the **By Question**, **By Value**, or **By AI Agent** metrics, once the audit is self-assigned to them.
-
-1. Click the **Assign to Me** button to enable or add your review comment during the conversation.
-
-2. Click the **+ Add Comment**, a Comment box opens to enter your comment.  
-
-3. Click the **Edit** or **Delete** your added Comment.  
-
-4. Click **save** to save submitted comments.     
-<img src="../ai-assist-manual-edit/images/add-new-metric-level-comment.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+Comments are associated with specific evaluation metrics (such as By Question, By Value, or By AI Agent).
 
 * **Message Comments**: These are contextual comments added at the message level within the **Transcript** section of the **Audit** page. These comments support click-through navigation for quick review.  
 <img src="../ai-assist-manual-edit/images/view-chat.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
