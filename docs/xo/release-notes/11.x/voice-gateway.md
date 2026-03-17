@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.22.1 March 14, 2026
+
+<u>Patch Release</u>
+
+This update includes only bug fixes.
+
+<hr>
+
 ## v11.22.0 February 28, 2026
 
 <u>Minor Release</u>
@@ -21,7 +29,7 @@ Voice Gateway now supports Azure TTS text streaming, enabling progressive speech
 
 **Deepgram ASR: Flux Model Integration**
 
-Voice Gateway now supports the Deepgram Flux ASR model, delivering improved turn detection, lower latency, and better transcription quality. The ASR selection dropdown includes Deepgram ASR – Flux, supporting English across all accents.
+Voice Gateway now supports the Deepgram Flux ASR model, delivering improved turn detection, lower latency, and better transcription quality. The ASR selection dropdown includes Deepgram ASR-Flux, supporting English across all accents.
 
 <font size="4">Agentic Apps</font>
 

@@ -110,11 +110,46 @@ The following widgets on the wallboard show data related to the KPIs of the cont
     | Status Duration  | How long the agent has been in the current status (format: NNNh NNm NNs).                                                                                          |
     | Avg. FRT         | Average First Response Time of the agent.                                                                                                                          |
     | Closed           | The number of conversations properly closed by the agent.                                                                                                          |
-    | Occupancy Rate   | The percentage of an agent's logged-in time that is spent actively handling conversations.<br><br>**Formula:**<br>(time agent was actively working [talk + hold + snooze + mute + ACW]) × 100.0 / (time spent logged in) |
+    | Occupancy Rate   | The percentage of an agent's logged-in time that's spent actively handling conversations.<br><br>**Formula:**<br>(time agent was actively working [talk + hold + snooze + mute + ACW]) × 100.0 / (time spent logged in) |
     | Avg. CSAT        | Average CSAT of the agent.                                                                                                                                         |
 
 If the enable scroll text toggle is turned on, the configured text displays at the bottom of the page at the selected speed.  
 <img src="../images/ccai-marquee-text.gif" alt="Marquee Text" title="Marquee Text" style="border: 1px solid gray; zoom:80%;">
+
+#### Center Wide Abandoned
+
+The wallboard name appears at the top of the wallboard.  
+<img src="../images/wallboard-abandoned-name.png" alt="Wallboard Name" title="Wallboard Name" style="border: 1px solid gray; zoom:80%;">
+
+The top section of the wallboard shows the following widgets:  
+<img src="../images/wallboard-top-section.png" alt="Top Section" title="Top Section" style="border: 1px solid gray; zoom:80%;">
+
+| Name                 | Live / Time-Based | Description                                                                                    |
+| :-------------------- | :----------------- | :---------------------------------------------------------------------------------------------- |
+| Waiting              | Live              | Count of all conversations waiting in all queues.                                              |
+| With Agent           | Live              | Count of all conversations currently handled by agents.                                        |
+| Longest Waiting Time | Live              | Duration of the longest wait for any conversation currently in the waiting state.              |
+| Overdue              | Live              | Count of all conversations currently overdue with agents.                                      |
+| ACR                  | Time-Based        | Percentage of conversations abandoned in queue or timed out, divided by offered conversations. |
+| Agents               | Live              | Number of agents currently logged in.                                                          |
+| Abandoned            | Time-Based        | Count of conversations abandoned by users in queues.                                           |
+| Timed Out            | Time-Based        | Number of conversations that timed out while waiting in the queue.                             |
+
+The bottom section of the wallboard displays the following queue data.  
+<img src="../images/wallboard-bottom-section.png" alt="Bottom Section" title="Bottom Section" style="border: 1px solid gray; zoom:80%;">
+
+| Name                 | Live / Time-Based | Description                                                                                                                  |
+| :-------------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| Offered              | Time-Based        | Count of all conversations offered.                                                                                          |
+| Waiting              | Live              | Count of all conversations currently waiting in the queue.                                                                   |
+| Answered             | Time-Based        | Count of all conversations accepted by any agent.                                                                            |
+| Timed Out            | Time-Based        | Count of all conversations timed out while waiting in the queue.                                                             |
+| Abandoned            | Time-Based        | Count of all conversations abandoned in the queue.                                                                           |
+| Transferred          | Time-Based        | Count of all conversations transferred from this queue.                                                                      |
+| ACR                  | Time-Based        | Percentage of conversations abandoned in queue or timed out divided by offered conversations.                                |
+| Agents               | Live              | Count of all available or system-busy agents assigned to the queue with the required skill combination.                      |
+| Load                 | Live              | Queue load calculated using the queue load formula from the Queues and Agents dashboard. Skills are ignored for this metric. |
+| Longest Waiting Time | Live              | Duration of the longest wait for any conversation currently waiting in the queue with the skill.                             |
 
 ##### Related Link
 
