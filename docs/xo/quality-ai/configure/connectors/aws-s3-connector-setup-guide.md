@@ -56,6 +56,10 @@ Complete the following checklist before starting the configuration:
 * CSV files contain all required metadata fields.
 * Create `test.csv` file with sample data.
 
+    !!! note
+
+        Filenames should not contain any spaces as a best practice. 
+
 ## Quick Reference
 
 ### Supported Recording Types

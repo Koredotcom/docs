@@ -12,17 +12,17 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Update of Quality AI Permissions for Default Roles**
 
-App Developers and App Testers can now access Quality AI through their default roles, without needing custom roles. This update revises default role permissions to give developers and testers appropriate access while maintaining the right level of control. 
+App Developers and App Testers can now access Quality AI through their default roles, without needing custom roles. This update revises default role permissions to give developers and testers appropriate access while maintaining the right level of control. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md/#permissions)
 
 <font size="4">Configuration</font>
 
 **Manual Evaluation Metric**
 
-A new Manual Evaluation metric type is now available for QA-only assessment of complex and nuanced scenarios. This metric is supported only in points-based evaluation forms and is excluded from AutoQA, Agent Attributes, and Agent Scorecards. Manual metrics are clearly labeled in reports and APIs, and unaudited conversations show no AutoQA response for these metrics. 
+A new Manual Evaluation metric type is now available for QA-only assessment of complex and nuanced scenarios. This metric is supported only in points-based evaluation forms and is excluded from AutoQA, Agent Attributes, and Agent Scorecards. Manual metrics are clearly labeled in reports and APIs, and unaudited conversations show no AutoQA response for these metrics. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-manual-evaluation.md)
 
 **Dynamic By Question (Speaker-Based Adherence)**
 
-The Dynamic By Question metric now supports speaker-based answer adherence. Admins can configure the answer detection speaker — Agent or Customer — based on trigger rules. When the trigger speaker is an Agent, an optional scoring setting enables sub-weightages and partial scoring for both trigger and answer adherence, and auditors can manually evaluate both in the Audit Screen. Conversation Mining now includes a Not Applicable filter for Dynamic metrics, and reporting and heatmap logic treat trigger absence as Not Adhered when the scoring option is enabled.  
+The Dynamic By Question metric now supports speaker-based answer adherence. Admins can configure the answer detection speaker — Agent or Customer — based on trigger rules. When the trigger speaker is an Agent, an optional scoring setting enables sub-weightages and partial scoring for both trigger and answer adherence, and auditors can manually evaluate both in the Audit Screen. Conversation Mining now includes a Not Applicable filter for Dynamic metrics, and reporting and heatmap logic treat trigger absence as Not Adhered when the scoring option is enabled. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-question.md)
 
 <hr>
 

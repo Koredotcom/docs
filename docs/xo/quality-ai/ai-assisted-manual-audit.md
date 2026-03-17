@@ -51,6 +51,57 @@ This Audit screen contains three tabs:
 
 * **Audit Logs**: Track audit trail and user activity records.
 
+### Introduction to the By Question Panel
+
+The Audit screen displays By Question metric evaluations in the By Question panel on the right side of the screen. Each metric card shows the evaluation question, the AutoQA-determined outcome, and manual override controls.
+
+#### By Question Panel (Standard View)
+
+Describes the default behavior when trigger scoring isn't involved.
+
+For each By Question metric, the panel displays:
+
+* **Evaluation Question**: The metric question text.
+
+* **Outcome**: The AutoQA result (for example, Adhered (70%) or Not Applicable).
+
+* **View Chat**: A link that navigates to the relevant part of the transcript.
+
+* **Add Comment**: A link for adding metric-level feedback.
+
+* **AI Justification**: A dropdown showing the model’s reasoning for the AutoQA result.
+
+#### Manual Evaluation with Trigger Scoring Enabled
+
+When you enable Score Agent Trigger for a metric, the audit screen displays separate evaluation controls for the Trigger and Answer within the metric card. Auditors must evaluate both sections before submitting the audit.
+
+Each section displays:
+
+* Yes, No, or N/A radio buttons.
+
+* AutoQA label showing the system’s automatic evaluation result.
+
+* AI Justification dropdown.
+
+* View Chat and Add Comment links.
+
+The system calculates the supervisor audit score using the same sub-weight formula used for AutoQA. Selecting N/A excludes that component from the score calculation.     
+<img src="../ai-assist-manual-edit/images/manual-evaluation-trigger-based-scoring.png" alt="AI Assisted Manual Audit Page" title="AI Assisted Manual Audit Page" style="border: 1px solid gray; zoom:80%;">
+
+#### Trigger Not Present Behavior
+
+If the system does not detect the configured trigger and trigger scoring is enabled, the system automatically marks the trigger outcome as Not Applicable.
+
+This status appears in:
+
+* The Audit screen
+
+* Standard and custom reports
+
+* Reporting APIs
+
+* The Adherence Heatmap
+
 
 ### Primary Interface Tabs
 
@@ -84,7 +135,7 @@ This Audit screen comprises three primary tabs:
 
     * Detailed activity logs including system events, user actions, outcome status, and evaluation progress.  
 
-## Audit
+## Audit Tab
 
 The audit screen is divided into three main sections: 
 
@@ -130,7 +181,32 @@ Captures customer purpose and desired outcomes.
 
 ### Transcript
 
-The Transcript section presents a unified timeline spanning the duration of both chat and voice interactions, visualizing both agents’ and customers' behavior events and their emotions. It supports real-time navigation to relevant audio with transcript details. 
+The Transcript section displays a unified timeline for chat and voice interactions, capturing agent and customer events and emotions. It enables navigation to specific audio segments with corresponding transcript details. Review the full interaction with synchronized playback (voice only).
+
+This panel presents the complete conversation for detailed review and verification. 
+
+**Key Features**:
+
+* **Multi-lane Timeline Visualization**:
+
+     Shows a unified timeline that spans both chat and voice interactions, visualizing agent and customer behaviors, emotions, and adherence metrics.
+
+* **Full Conversation Transcript**:
+
+    * Clear speaker labels (Agent, Customer).
+
+    * Precise timestamps for each utterance.
+
+    * Keyword highlighting for matched terms.
+
+    * peicons indicating auditor notes.
+
+    * Clickable timestamps sync audio playback
+
+
+* **Integrated Audio Playback Controls**
+
+     The system places the audio player directly beneath the timeline to enable seamless playback while you review the transcript and metrics.
 
 #### Decision Process
 
@@ -377,12 +453,28 @@ The By Question metrics features include the following:
 
 * **Audit Progress Bar**
 
-  * Located at the top right of the panel.
+  * Located at the top-right of the panel.
 
   * Shows completion percentage based on answered audit questions (completion status).
 
   * Reflects the total number of By Question metrics configured in a form.  
   <img src="../ai-assist-manual-edit/images/audit-progress-bar.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+
+#### By Manual Evaluation
+
+The Manual Evaluation section lets QA auditors and managers manually assess specific metrics within an interaction. It displays these metrics in a separate tab with clear visual indicators, enabling quick identification and focused review. 
+
+The By Manual Evaluation metrics include:
+
+* **Separate Manual Evaluation Tab**: The system groups manual evaluation metrics under their own tab in the audit interface, clearly separating them from automated scoring metrics.
+
+* **Visual Indicators**: The system marks each manual metric with a distinct visual cue, helping auditors to spot which metrics require manual input.
+
+* **Interactive Response Options**: Auditors select answers (for example, Yes, No, N/A) and add comments for manual metrics.
+
+* **Audit Progress Bar**: Displays the completion percentage at the top-right based on the number of questions answered, including manual evaluations. If the conversation isn't started, unaudited metrics remain blank, indicating there is no AutoQA response for these metrics.    
+<img src="../ai-assist-manual-edit/images/manual-evaluation-metric-assign.png" alt="Audit Progress Bar" title="Audit Progress Bar" style="border: 1px solid gray; zoom:80%;">
+
 
 #### Omission
 
@@ -392,7 +484,7 @@ This section highlights instances where the agent failed to follow configured or
 * Omitted dialog tasks (for dialog metrics)
 * Only shown if relevant metrics exist
 
-If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section is not displayed. It helps evaluators quickly identify critical steps or tasks that were missed during the customer interaction.
+If no playbook or task-type metrics are configured for the interaction and evaluation form, the omissions section is not displayed. It helps evaluators identify critical steps or tasks that were missed during the customer interaction.
 
 **Violations**
 
@@ -521,33 +613,47 @@ This section displays all feedback provided by auditors during the evaluation pr
 
 **Message-Level Comments**
 
-At the message level, users with QA functionality access permissions can view a comment icon when hovering over individual messages.
+Users with QA permissions can add comments directly to messages in the Transcript.
 
-**Commenting on Interactions**
+**Add a Message Comment**
 
-1. Click the **Assign to Me** button to add your comment during the conversation.
+1. Select **Assign to Me** to enable commenting during the conversation.
 
-2. Upon clicking the comment icon, a **Comment** icon appears when hovering over any message in the **Transcript** section.  
+2. In the **Transcript** section, hover over a message to display the **Comment** icon.   
 <img src="../ai-assist-manual-edit/images/comment-icon-selection.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
-3. Click the **Comment** icon to add a comment title **(Name)** and **Comment** text (both are mandatory).    
 
-4. Users can add or delete their submitted comments before submission.
+3. Select the **Comment** icon to open the comment panel.
 
-5. Click **Send** to publish the added comment.  
-<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+4. Enter the **Name** (title) and **Comment** (both required).    
 
-6. After submitting a comment, a **success message** appears.
+5. Select **Send** to publish the comment.  
 
-Once submitted, message-level comments are displayed:
+6. Before submitting the audit, you can edit or delete your comments.    
 
-* Inline within the **Transcript**, linked to the corresponding message.
+**After submission** 
 
-* In the **Comments** tab, there are both the comment title and text, along with the commenter's details (visibility based on privacy settings).  
+Message comments appear:
+
+* Inline in the **Transcript**, attached to the corresponding message.
+
+* In the message **Comments** tab within the Comments panel.
+
+Each comment displays the title, comment text, commenter details, and supports click-through navigation to the added message.   
+<img src="../ai-assist-manual-edit/images/adding-comments-for-agents.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">  
+
+**Metric Comments (from Comments Panel)**
+
+* In the Comments panel, use **+ Add Comment** to add metric-level feedback.
+
+* Enter your comment and select **Save**.
+
+* You can **Edit** or **Delete** metric comments before submission.       
 <img src="../ai-assist-manual-edit/images/click-though-navigation.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
         Auditors or supervisors can add their comments in the **By Question**, **By Value**, and in the **By AI Agents** question metrics, when they are self-assigning the audit to themselves. 
+
 
 **Comment Types**:
 
@@ -555,16 +661,7 @@ Auditors or reviewers can provide two types of comments during the audit process
 
 * **Metric Comments**
 
-These are added to specific evaluation criteria, for the **By Question**, **By Value**, or **By AI Agent** metrics, once the audit is self-assigned to them.
-
-1. Click the **Assign to Me** button to enable or add your review comment during the conversation.
-
-2. Click the **+ Add Comment**, a Comment box opens to enter your comment.  
-
-3. Click the **Edit** or **Delete** your added Comment.  
-
-4. Click **save** to save submitted comments.     
-<img src="../ai-assist-manual-edit/images/add-new-metric-level-comment.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">
+Comments are associated with specific evaluation metrics (such as By Question, By Value, or By AI Agent).
 
 * **Message Comments**: These are contextual comments added at the message level within the **Transcript** section of the **Audit** page. These comments support click-through navigation for quick review.  
 <img src="../ai-assist-manual-edit/images/view-chat.png" alt="Hide Auditor Details" title="Hide Auditor Details" style="border: 1px solid gray; zoom:80%;">

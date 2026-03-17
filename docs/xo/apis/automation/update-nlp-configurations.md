@@ -100,13 +100,13 @@ for Multiple ML Model
 
 ```json
 curl --location -g --request POST 'https://{{host}}/api/public/bot/{{bot-id}}/configurations?language={{languageCode}}' \
-  --header 'auth: YOUR_JWT_ACCESS_TOKEN' \
-  --header 'content-type: application/json' \
-  --data-raw '{
+--header 'auth: YOUR_JWT_ACCESS_TOKEN' \
+--header 'content-type: application/json' \
+--data-raw '{
     "advancedNLPSettings": [
         {
-            "configurationKeyName": "NoneIntent",
-            "configurationValue": true,
+            "configurationKeyName": "network",
+            "configurationValue": "Few-shot Model (Kore.ai Hosted Embeddings)",
             "nlpEngine": "ML"
         }
     ],
@@ -136,6 +136,9 @@ curl --location -g --request POST 'https://{{host}}/api/public/bot/{{bot-id}}/co
                 "seqLength": 3,
                 "maxSkipDistance": 2
             }
+        },
+        "mlConfigurations": {
+            "NoneIntent": false
         }
     },
     "nlSettings": {
@@ -143,6 +146,7 @@ curl --location -g --request POST 'https://{{host}}/api/public/bot/{{bot-id}}/co
         "enableNegativePatterns": true
     }
 }'
+
 ```
 
 
