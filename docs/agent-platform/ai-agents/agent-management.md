@@ -1,5 +1,30 @@
 # Agent Management
 
+## Agent Status
+
+Agent status allows you to enable or disable an agent without deleting it. Disabled agents remain fully editable but are excluded from runtime execution. The runtime behavior depends on the orchestration pattern used.
+
+**Points to Note**
+
+* Agent status affects runtime behavior only.
+* Disabled agents remain fully editable and configurable.
+* Re-enabling the agent immediately restores normal routing.
+
+
+### When an Agent is Disabled in the Supervisor Pattern
+
+* Disabled agents are invisible to the supervisor.
+* They're excluded from the available agents list during orchestration. The supervisor doesn't route requests to disabled agents.
+
+### When an Agent is Disabled in the Network Adapter Pattern
+
+* If the initial agent is disabled, the app returns an error to the user.
+* If a delegated agent is disabled, the delegation attempt fails. Any agents that are reachable only through the disabled agent are also excluded from the execution flow.
+
+### When an Agent is Disabled in the Single-Agent Apps
+
+* If the only agent in the app is disabled, the app returns an error to the user. 
+
 ## Agent Pre-Processor
 
 The Agent Pre-Processor allows developers to run custom scripts before an agent is invoked. These scripts can access system memory and context variables to perform data transformation, validation, context preparation, and state preparation. The configured script runs automatically every time the agent's run is initiated, ensuring consistent preprocessing of the agent’s input state.

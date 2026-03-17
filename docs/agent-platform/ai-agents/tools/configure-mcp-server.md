@@ -8,12 +8,16 @@ To integrate tools from an MCP server into an agent, follow these steps:
 2. Provide the MCP server configuration on the following page.![MCP Config](images/mcp/mcp-config.png "MCP Config")
     1. **Name**- Provide a unique name for the MCP server.
     2. **Description**- Provide a description of the capabilities/tools offered by the server. 
-    3. **Request Definition** - Define how the platform sends a request to the MCP server to fetch available tools. Click Configure and provide the MCP server configuration details. ![MCP Config](images/mcp/mcp-config-type.png "MCP Config")
+    3. **Namespace** - Choose the namespace that contains the variables to be shared with this MCP Server.
+    4. **Request Definition** - Define how the platform sends a request to the MCP server to fetch available tools. Click Configure and provide the MCP server configuration details. ![MCP Config](images/mcp/mcp-config-type.png "MCP Config")
         1. Select the MCP server configuration type - HTTP or SSE. 
         2. URL: Endpoint that returns tool definitions.
-        3. Headers:  Any required headers like Authorization tokens.
-
-3. Click the Test button to fetch tool metadata from the MCP server. 
+        3. Auth Profiles: Select the authorization profile required to access the MCP server. If the MCP server doesn't require authentication, choose None. The selected profile is used to include the required authentication details when sending requests to the server. If the MCP server requires OAuth authentication, configure the OAuth settings in an Auth Profile and select that profile here. The platform will use the configured OAuth flow to obtain an access token and include it in requests sent to the MCP server.
+        
+        You can optionally configure request and response behavior using the following tabs:
+        4. Headers:  Use this section to add header-based authentication or custom headers required by the MCP server. For example, to pass API keys, etc.
+        5. Body: Define the request payload if the server requires additional parameters. 
+3. Click the Test button to fetch tool metadata from the MCP server. The response from the server is shown in the Response tab.
 4. Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click *Add Selected* to add the tools to the agent. 
 
 ## Tool Preview
@@ -26,14 +30,28 @@ To access the Tool Preview:
 2. Open the MCP tab to see all tools configured for the app, grouped by MCP server.
 3. Click on any tool to view its details.
 
-The preview displays the tool’s metadata, including its description, input parameters, and sample responses. You can also enable the ‘**Include Tool Response in Artifacts**’ flag here. 
+The preview displays the following information. 
 
-This flag is used to add the response of a tool in the `artifacts` field of the Execute API response payload. This allows programmatic access to individual tool outputs in the API response. Note that this setting affects only the API response payload. Tool execution behavior, playground simulations, and other agent or tool functionalities remain unchanged.
+1. Tool’s metadata  - Name and description of the tool.
+2. Input parameters - The inputs field along with their data types.
+3. Output Parameters - Output Parameters to define how the response returned by the external agent is processed and made available to the application. You can choose one of the following modes:
 
+* **Use Complete Tool Output** - Select this option to return the entire response received from the tool as response. without modification. This is the default option. When enabled, you can choose to return the tool response in the artifacts field of the response payload of the Execute API using *Include Tool Response in Artifacts* field. This setting affects only the API response and doesn't change tool execution behavior, playground simulations, or other agent and tool functionalities.
+
+* **Define Custom Parameters** - Select this option to extract specific values from the tool’s response and map them as structured outputs. It gives control over which parts of the response are passed to the agent or stored as artifacts. When this option is selected, you can configure one or more output parameters. Provide a name for the output parameter, select the data type of the output parameter and specify the path to the value in the response payload. 
+    
+You can click *+ Add* to define multiple output parameters if the response contains several values that need to be used by the agent.
+
+Output Routing : Once the output is extracted, you can define how to use the value. 
+        
+   * Agent: Routes the extracted value to the agent so it can be used in subsequent processing.
+   * Artifacts: Stores the extracted value in the artifacts section of the response payload. This allows the value to be accessed programmatically through the API response.
 
 ## Tool Naming Convention
 
-To avoid naming conflicts and help identify the source, imported tool names are automatically **prefixed with the MCP server name**. 
+By default, tools imported from an MCP server retain the original tool name exposed by the server when they're added to the Agentic app.
+
+However, if a tool with the same name already exists, the system automatically prefixes the MCP server name to avoid naming conflicts and help identify the source.
 
 Format: 
 ```
@@ -59,18 +77,40 @@ To test a tool,
 4. The request is sent to the MCP server, and the resulting output is displayed in the *Sample Response* section.
 
 
-## Updating/Reconfiguring the MCP server
+## Refreshing the MCP server
 
-Whenever there are any updates to the tools hosted via the MCP server, reconfigure the MCP server in the Agentic App for the changes to reflect. 
+If tools exposed by the MCP server are added, removed, or updated, you can refresh the MCP server configuration to synchronize the latest tool definitions. On refresh, the platform intelligently evaluates the changes and updates the configuration accordingly. Tool comparison is based on tool names. When refreshing or updating an MCP server configuration, the platform takes the following actions:
+
+* Compares the latest tools returned by the server with the tools configured in the agent. 
+* If all the MCP tools assigned to the agent exist on the MCP server, the update happens automatically without affecting the agent configuration.
+* If any tools used by the agent are no longer available on the MCP server, the platform displays a message indicating the tools that are removed. Upon confirmation, the unavailable tools are automatically unlinked from the agent and the MCP server configuration is updated with the latest available tools.
+
 
 Use the *refresh* icon to fetch updated content from the MCP server. 
 
 ![Refresh MCP](images/mcp/refresh.png "Refresh MCP")
 
+## Reconfiguring the MCP server
 
-To edit the MCP server configuration, select the More options menu in the top-right corner of the MCP server card, and then select Edit Server. Make the required changes and Save.
+You can modify an existing MCP server configuration if there are changes to the server details such as the server name, endpoint URL, or other configuration settings.
+
+To edit the MCP server configuration:
+
+* Navigate to the Tools section of the app.
+* Locate the MCP server card you want to update.
+* Click the More options menu in the top-right corner of the MCP server card.
+* Select Edit Server.
+* Update the required configuration fields.
+* Click Save to apply the changes.
 
 ![MCP Config](images/mcp/edit-mcp.png "Modify MCP Config")
+
+When key configuration values such as the server name or server URL are updated, the platform automatically retrieves the latest tool definitions from the MCP server and compares them with the tools configured in the app.
+
+Based on this comparison, the platform performs one of the following actions:
+
+* If all tools linked to the app are available on the MCP server, the update is applied automatically without affecting the existing tool configuration.
+* If some tools used in the app are no longer available on the MCP server, the platform displays a message indicating the affected tools. On confirmation by the user, the affected tools are automatically unlinked from the app.
 
 ## Security Considerations
 
