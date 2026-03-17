@@ -100,25 +100,51 @@ for Multiple ML Model
 
 ```json
 curl --location -g --request POST 'https://{{host}}/api/public/bot/{{bot-id}}/configurations?language={{languageCode}}' \
-  --header 'auth: YOUR_JWT_ACCESS_TOKEN' \
-  --header 'content-type: application/json' \
-  --data-raw '{
-   "advancedNLPSettings": [
-       {
-           "configurationKeyName": "network",
-           "configurationValue": "Few-shot Model",
-           "nlpEngine": "ML"
-       }
-   ],
-   "mlParams": {
-       "mlConfigurations":{
-           "NoneIntent": false
-       }
-   },
-   "nlSettings": {
-       "enableAutoUtteranceAddition": false,
-       "enableNegativePatterns": true
-   }
+--header 'auth: YOUR_JWT_ACCESS_TOKEN' \
+--header 'content-type: application/json' \
+--data-raw '{
+    "advancedNLPSettings": [
+        {
+            "configurationKeyName": "network",
+            "configurationValue": "Few-shot Model (Kore.ai Hosted Embeddings)",
+            "nlpEngine": "ML"
+        }
+    ],
+    "configurations": [
+        {
+            "mode": "ml",
+            "exactMatchThreshold": 85,
+            "useDependencyParser": true,
+            "minThreshold": 0.2
+        },
+        {
+            "mode": "faq",
+            "useBotSynonyms": true,
+            "searchInAnswer": {
+                "enabled": true,
+                "notifyUser": false,
+                "responseType": "relevantWithReadMore",
+                "customReadMoreURL": "aa",
+                "useCustomReadMoreURL": true
+            }
+        }
+    ],
+    "mlParams": {
+        "intentParams": {
+            "features": "skip_gram",
+            "skip_gram": {
+                "seqLength": 3,
+                "maxSkipDistance": 2
+            }
+        },
+        "mlConfigurations": {
+            "NoneIntent": false
+        }
+    },
+    "nlSettings": {
+        "enableAutoUtteranceAddition": false,
+        "enableNegativePatterns": true
+    }
 }'
 
 ```
