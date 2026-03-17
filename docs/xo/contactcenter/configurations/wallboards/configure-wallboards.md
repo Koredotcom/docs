@@ -26,18 +26,7 @@ Steps to create a wallboard:
 2. **Queues**: Select the queues for which the data displays. If you don't select any queues, all queues display by default.
 3. **Channels**: Select the channels for which the data displays. If you don't select any channels, the system selects all channels by default.
 4. **Time Period**: Select the duration to display data from the dropdown options.
-    1. Last 15 minutes,
-    2. Last 30 minutes,
-    3. Last 1 hour,
-    4. Last 2 hours,
-    5. Last 8 hours,
-    6. Last 12 hours,
-    7. Today.
-5. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed from the following options:  
-    1. Slow,
-    2. Medium,  
-    3. Fast.  
-
+5. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed. 
 6. Select **Create**. A confirmation message displays, and creates the wallboard.  
     <img src="../images/add-wallboard.png" alt="Create Center Wide Wallboard" title="Create Center Wide Wallboard" style="border: 1px solid gray; zoom:80%;">
 
@@ -59,20 +48,23 @@ Steps to create a wallboard:
 3. **Queues**: Select the queues for which the data displays. If you don't select any queues, all queues appear by default.
 4. **Channels**: Select the channels for which the data displays. If you don't select any channels, the system selects all channels by default.
 5. **Time Period**: Select the duration to display data from the dropdown options.
-    1. Last 15 minutes,
-    2. Last 30 minutes,
-    3. Last 1 hour,
-    4. Last 2 hours,
-    5. Last 8 hours,
-    6. Last 12 hours,
-    7. Today.
-6. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed from the following options:  
-    1. Slow,
-    2. Medium,  
-    3. Fast.  
-
+6. **Enable Scroll Text** (Optional): Turn on the Enable Scroll Text toggle to add text that scrolls horizontally at the bottom of the wallboard page. Enter the text in the Message dialog box and select the Scroll Speed. 
 7. Select **Create**. A confirmation message displays, and creates the wallboard.  
     <img src="../images/create-queue-specific-wallboard.png" alt="Create Queue Specific Wallboard" title="Create Queue Specific Wallboard" style="border: 1px solid gray; zoom:80%;">
+
+### Center Wide Abandoned
+
+Shows aggregated data across all queues. This is a built in wallboard and not customizable.  
+<img src="../images/centerwide-abandoned.png" alt="Create Center wide Abandoned Wallboard" title="Create Center Wide Abandoned Wallboard" style="border: 1px solid gray; zoom:80%;">
+
+| Setting             | Description                                                                                                                   |
+| :------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| Display to          | Defines the queues that can view the wallboard.                                                                               |
+| Queues              | Specifies the queues to include in the data. Defaults to all queues if none are selected.                                     |
+| Choose Metrics From | Specifies the queues from which metrics are collected.                                                                        |
+| Channels            | Specifies the channels to include. Defaults to all channels if none are selected.                                             |
+| Time Period         | Defines the reporting window: Last 15 min, 30 min, 1 hr, 2 hr, 8 hr, 12 hr, or Today.                                         |
+| Enable Scroll Text  | Optional. Displays horizontally scrolling text at the bottom. Configure the message and scroll speed (Slow, Medium, or Fast). |
 
 ## Edit a Wallboard
 

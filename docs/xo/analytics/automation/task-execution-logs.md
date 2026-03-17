@@ -671,9 +671,19 @@ The following matrix shows the availability of fields on each tab of the Task Ex
   <tr>
    <td>Channel
    </td>
-   <td>X
+   <td>✔
    </td>
-   <td>X
+   <td>✔
+   </td>
+   <td>✔
+   </td>
+   <td>✔
+   </td>
+   <td>✔
+   </td>
+  </tr>
+  <tr>
+   <td>GenAI Features*
    </td>
    <td>X
    </td>
@@ -681,5 +691,13 @@ The following matrix shows the availability of fields on each tab of the Task Ex
    </td>
    <td>✔
    </td>
+   <td>X
+   </td>
+   <td>X
+   </td>
   </tr>
 </table>
+
+
+
+\* GenAI features include Answer Generation, Zero-Shot Model, Rephrase User Query, and Rephrase Responses.

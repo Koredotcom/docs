@@ -4,9 +4,10 @@ Environment variables are configuration values, such as API keys, endpoint URLs,
 
 Key Benefits
 
-* Centralize and reuse values across the app instead of hard-coding them.
-* Secure sensitive data by storing values in an encrypted form.
-* Customize values for each environment during deployment.
+* Centralise and reuse configuration values across the app, eliminating the need to hard-code them in scripts.
+* Protect sensitive data such as API keys and tokens by storing them in an encrypted form.
+* Customise values for each environment during deployment.
+
 
 *Environment variables are accessible to both code tools and workflow tools.*
 
@@ -25,9 +26,12 @@ Environment variables are accessible and scoped to an app. Go to the Variables p
     * Description: Add a short explanation of what the variable is used for.
     * Default Value: Provide a default value for the variable. This value is used unless overridden during deployment.
     * Encryption: Enable or disable encryption. When enabled, the variable is encrypted and is hidden in the UI.
-    * Namespace: A logical unit or collection for grouping variables. They can be used to define the context in which specific variables are defined and can be accessed. Select an existing namespace or create a new one to group related variables.
+    * Namespace: A logical unit or collection for grouping variables. They can be used to define the context in which specific variables are defined and can be accessed. Select an existing namespace or create a new one to group related variables. A *Default* namespace is automatically available for every app. All environment variables are associated with the Default namespace by default.
 * Click Create to save the variable.
 
+!!! note 
+ 
+    Refer to [this](app-component-limits.md) for the maximum number of variables that can be created in an app.
 
 
 ## Edit an Existing Variable
@@ -59,7 +63,13 @@ A *namespace* is a logical grouping used to organize environment variables. Name
 * Conflict Prevention: Avoid clashes when multiple modules need variables with identical names (for example, `API_KEY`, `BOT_ID`).
 * Scoped Access: By grouping variables within a namespace, only those relevant to a specific task or tool are accessible.
 
-Use the Manage Namespaces option on the Variables page or when creating/editing a variable to view, create, or update namespaces.
+### Points to Note
+
+* A *Default namespace* is available out of the box for every app.
+* New variables are automatically assigned to the Default namespace.
+* You can easily create and assign custom namespaces when needed.
+
+Use the *Manage Namespaces* option on the Variables page or when creating/editing a variable to view, create, or update namespaces.
 
 
 ### Create and Manage a Namespace
@@ -85,15 +95,15 @@ To use the variable in a tool, follow these steps.
 
 1. Go to the specific tool. Click the options, then select *Manage Namespaces*. 
 2. Associate the namespace to which the variable belongs and click *Save*. This makes all the variables within the namespace accessible to the tool. ![Associate Variables with Namespace](images/variables/manage-namespace.png "Associate Variables with Namespace")
-
-3. Within the script, use the following format to access the variable. 
+3. Alternatively, you can also edit the tool and enter the namespace names with which the tool is to be associated. 
+4. Within the script, use the following format to access the variable. 
 
     ```
      env.<variable-name>
     ```
     Note that env is a reserved keyword. 
 
-4. To use the variable in other fields, use the following format. 
+5. To use the variable in other fields, use the following format. 
 
     ```
     {{env.<variable-name>}}

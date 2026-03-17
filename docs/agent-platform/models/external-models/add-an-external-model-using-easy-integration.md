@@ -208,3 +208,80 @@ In the **Import from cURL** tab:
     <img src="../images/import-from-curl.png" alt="Import from cURL" title="Import from cURL" style="border: 0px solid gray; zoom:50%;">
 
 The model is integrated and is listed in the External models list.
+
+## Integrate a Model from Microsoft Foundry
+
+You can easily connect Microsoft Foundry models to the Platform using a guided setup flow. Two authentication methods are supported: entering credentials manually or authenticating via an Azure Active Directory Service Principal.
+
+**1. Start the Integration**
+
+Go to **Models** > **External Models** > **Add a model** > **Easy integration** > **Microsoft Foundry** and click **Next**.
+
+**2. Configure the Integration**
+
+Select one of the following authentication methods:
+
+**Option A: Enter Manually**
+
+Directly provide credentials from your model's Details page in Microsoft Foundry.
+
+- **Connection name:** A unique name to identify this model connection in the Platform.
+- **Target URI:** The endpoint URI from your model's Details page in Microsoft Foundry.
+- **Key:** The API key from your model's Details page in Microsoft Foundry.
+- **Deployment name:** The deployment name as defined in Microsoft Foundry.
+
+**Option B: Use Service Principal**
+
+Authenticate through an Azure Active Directory Service Principal. A pre-configured Microsoft Foundry connection is required.
+
+- **Connection name:** A unique name to identify this model connection in the Platform.
+
+**Note:** If no Microsoft Foundry connection is configured, click **Configure Service Principal** and complete the steps below before proceeding.
+
+**Create a Service Principal in Azure**
+
+1. Open the Azure Portal: [https://portal.azure.com](https://portal.azure.com).
+2. Go to **App registrations** and click **+ New registration**. Enter a name, select the account type, leave Redirect URI empty, and click **Register**.
+3. Copy the **Application (Client) ID** and **Directory (Tenant) ID** from the app's Overview page.
+4. Go to **Certificates & secrets** > **+ New client secret**. Add a description, set an expiry, and copy the **Value** immediately.
+5. Navigate to the resource group that contains your Foundry project. Go to **Access control (IAM)** > **Add role assignment**. Assign a role (e.g., **Contributor**) and select your registered app as the assignee.
+
+**Register the Connection in the Platform**
+
+1. Click **Configure Service Principal**. The **Microsoft Foundry** connection panel opens.
+2. Enter a **Connection name**.
+3. Under **Authorization Details**, enter: Tenant (Directory) ID, Application (Client) ID, Client Secret, and Subscription ID.
+4. Click **Test** to verify, then click **Save**.
+
+**Note:** After saving, the connection becomes available in the **Use Service Principal** option on the model configuration page.
+
+**3. Configure Model Settings**
+
+In **Model configurations**, define the model settings and enable or disable the following capabilities under **Model features**:
+
+- **Structured response:** Returns outputs in predefined JSON formats for machine-readable, downstream-ready integration.
+- **Data generation:** Enables synthetic data generation for text-based tasks. Also enables data in the prompt playground.
+- **Streaming:** Enables real-time, token-by-token generation for faster, interactive responses.
+- **Tool calling:** Indicates whether the model supports tool calling.
+- **Support tools:** Specifies if the model supports simple tool calling. Enables the LLM to dynamically invoke functions or APIs to perform actions or retrieve real-time data during generation.
+- **Parallel tool calling:** Specifies if the model handles parallel tool calls emanating from a single user request.
+
+**Note:** This feature must be enabled for the model to be used in Agentic Apps. If tool calling is not enabled, the model cannot be used within Agentic Apps or for executing tool calls in the AI Text-to-Text node in workflow tools.
+
+- **Modalities supported:** Specifies the modalities the model supports. Enabling this allows the model to run Text-to-Text, Text-to-Image, Image-to-Text, and Audio-to-Text tasks for seamless downstream integration within the Tools Flow.
+  - **Text to text:** Enables natural language understanding and generation by transforming input text into coherent, contextually relevant output.
+  - **Text to image:** Supports generating high-quality images from natural language prompts using LLMs.
+  - **Image to text:** Supports image-to-text generation by interpreting visual inputs and producing descriptive or structured text outputs.
+  - **Audio to text:** Supports audio-to-text transcription using integrated speech recognition within the LLM pipeline.
+
+**Body:** Specify the model name to be included in the request body and select a provider to set the API reference. The platform uses this mapping to resolve the model's request-response structure.
+
+- **Anthropic (Messages):** The selected model follows the request-response structure similar to [Anthropic's Messages API](https://platform.claude.com/docs/en/api/messages).
+- **OpenAI (Chat Completions):** The selected model follows the request-response structure similar to [OpenAI's Chat Completions API](https://developers.openai.com/api/reference/resources/chat).
+
+**4. Save or Confirm**
+
+- Click **Save as draft** to store the configuration without activating the model.
+- Click **Confirm** to finalize and add the model.
+
+The model is integrated and listed in the **External Models** tab. You can now reference it in **Prompts**, **Tools**, and **Agentic Apps** across the Platform.

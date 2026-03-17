@@ -18,6 +18,7 @@ A key difference is in platform integration. While SearchAssist is a standalone 
 With the use of the latest technology, many configurations and manual settings required in SearchAssist are now automatically handled by Search AI, simplifying the setup process.
 
 
+
 ### Architecture at a Glance
 
 Search AI introduces a modernized architecture compared to SearchAssist, with several improvements that provide greater flexibility, transparency, and control over how search and answers are generated. The new design moves away from rigid, predefined workflows to a modular and configurable framework.
@@ -28,7 +29,7 @@ Key Changes
 * Chunk Workbench: Search AI provides a Chunk Workbench to review and refine how ingested content is split before indexing. This ensures higher-quality chunks and improves downstream results.
 * Extraction Techniques & advanced Vector generation models: Search AI introduces an Extraction Module that supports multiple strategies and advanced vector generation techniques, producing more accurate, context-aware results.
 * Agentic RAG: Search AI leverages Agentic Retrieval-Augmented Generation to enhance user queries with contextual information, improving the precision and naturalness of answers.
-* The role-based access control feature offered for content ingested via connectors is enhanced to automatically fetch and store the users associated with a group or permission entity. This removes the need to associate users with permission entities via APIs manually.  Learn More. 
+* The role-based access control feature offered for content ingested via connectors is enhanced to automatically fetch and store the users associated with a group or permission entity. This removes the need to associate users with permission entities via APIs manually. [Learn More](../searchai/content-sources/racl-support.md). 
 
 The diagram below shows the architectural components of Search AI. 
 
@@ -36,87 +37,133 @@ The diagram below shows the architectural components of Search AI.
 
 ## Scope of Automatic Migration
 
-Automatic migration replicates selected SearchAssist components in Search AI while preserving their behavior and configuration.
-Some features are partially migrated due to platform differences that require adjustments. Certain elements aren't transferred and require manual configuration in Search AI.
+During automatic migration, specific SearchAssist components are fully replicated in Search AI, preserving their behavior and configuration. Some features are only partially migrated, due to platform differences that require adjustments. A few elements may not be transferred and need to be recreated or configured manually in Search AI.
 
 
 ### Ingestion Configurations
 
-During migration, content from web pages, documents, and connectors in SearchAssist is automatically transferred to Search AI. Structured data is only partially migrated, and FAQs must be manually configured after migration.
+During migration, content from web pages, documents, and connectors is automatically transferred from SearchAssist to Search AI. Structured data is partially migrated, and FAQs must be configured manually after migration.
 
-* **Web pages**
-    * All existing web crawl configurations are fully replicated, including the web crawl setup directly, via a CSV file. 
-    * But the crawl needs to be manually triggered. 
-    * Any scheduled crawls do not run automatically.
-    * Training the application with newly ingested content must be done manually in Search AI to generate chunks from the ingested content.
-* **Documents** 
-    * All document pages are automatically uploaded, and the original directory structure is preserved.
-    * Manual training is required after migration.
-* **Connectors**
-    * All connectors are automatically reconfigured during migration.
-    * You must re-enter the credentials to re-sync the content.
-    * The existing SearchAssist content is automatically migrated to Search AI. 
-    * If filters are set in SearchAssist, they're automatically configured in Search AI as well.
-    *  Any existing permissions data ( in sys_racl) in the content is automatically applied to the content upon training. The RACL feature in Search AI is more advanced than SearchAssist. Learn more about RACL in Search AI. 
-    * Scheduler configuration from the connectors isn't replicated into Search AI and must be manually configured. 
-* **Structured Data**
-    * Structured data is partially replicated. Only the content in the title, content, and URL fields is replicated as-is during migration. Content in other fields is migrated as custom fields. Manually review the fields and map them into corresponding fields in Search AI. 
-    * Manually, structured data can be imported into Search AI using the [JSON connector](../searchai/content-sources/connectors/json.md). This connector enables ingestion and indexing of structured data in JSON format. Use the sample file to prepare the structured data in the expected format and then upload the file. 
-    * Alternatively, structured data can also be imported via APIs. Refer to [this for details](../apis/searchai/ingest-data.md). 
-    * Manually train the app to view the chunks from the structured data. 
-* **FAQs**
-    * FAQs aren't automatically migrated. 
-    * You can manage FAQs using the [Knowledge Module](../automation/knowledge-ai/manage-faqs.md) under Automation AI. 
-    * You can [export the existing FAQs](https://docs.kore.ai/searchassist/manage-content-sources/managing-faqs/#Exporting_FAQs) from SearchAssist and import them into Automation AI as part of its Knowledge Graph.
-    * You can also manually add FAQs or [extract them from unstructured web pages or files ](../automation/knowledge-ai/knowledge-extraction.md)into the application. 
-    * Alternatively, use the [JSON connector](../searchai/content-sources/connectors/json.md) to add FAQs by saving the question as chunkTitle and the answer as chunkText.
+#### Web pages
+
+All web crawl configurations are fully replicated, including setups done directly or via CSV file. Existing web page content is also synchronized. 
+    
+Note the following post-migration behavior:
+   
+* The crawl must be manually triggered to use the new crawler. 
+* Scheduled recrawls are migrated and run automatically. However, Search AI does not support the **custom schedule** and **every weekday** options, these configurations are not migrated.
+* If the crawl is initiated manually, the application is automatically trained on the crawled content. If existing content is used instead, training must be manually initiated in Search AI to generate chunks.
+
+#### Documents
+
+* All document pages are automatically uploaded, and the original directory structure is preserved.
+* Manual training is required after migration.
+
+#### Connectors
+
+* All connectors are automatically reconfigured during migration.
+* Credentials must be re-entered to re-sync content. 
+* Existing SearchAssist content is automatically migrated to Search AI. 
+* If filters are configured in SearchAssist, they are automatically applied in Search AI. 
+* Any existing permissions data (`sys_racl`) in the content is automatically applied upon training. Note that the RACL feature in Search AI is more advanced than in SearchAssist. [Learn more about RACL in Search AI](../searchai/content-sources/racl-support.md). 
+* Connector scheduler configurations aren't migrated and must be manually reconfigured in Search AI. 
+* Custom connectors must be manually migrated.
+
+#### Structured Data
+
+* Structured data is partially replicated. Only the content in the title, content, and URL fields is replicated as-is during migration.  Of these, the title and content fields are mandatory, but the URL field is optional. Content in other fields is migrated as custom fields. Manually review the fields and map them into corresponding fields in Search AI.
+* Structured data can be manually imported into Search AI using the [JSON connector](../searchai/content-sources/connectors/json.md). This connector enables ingestion and indexing of structured data in JSON format. Use the sample file to prepare the structured data in the expected format and then upload the file. 
+* Alternatively, structured data can also be imported via APIs. Refer to [this for details](../apis/searchai/ingest-data.md). 
+* Manually train the app to view the chunks from the structured data. 
+
+#### FAQs
+
+FAQs aren't automatically migrated. 
+
+* You can manage FAQs using the [Knowledge Module](../automation/knowledge-ai/manage-faqs.md) under Automation AI. 
+* You can [export the existing FAQs](https://docs.kore.ai/searchassist/manage-content-sources/managing-faqs/#Exporting_FAQs) from SearchAssist and import them into Automation AI as part of its Knowledge Graph.
+* You can also manually add FAQs or [extract them from unstructured web pages or files ](../automation/knowledge-ai/knowledge-extraction.md)into the application. 
+* Alternatively, use the [JSON connector](../searchai/content-sources/connectors/json.md) to add FAQs by saving the question as chunkTitle and the answer as chunkText.
 
 ### Indexing Configurations
 
-Index fields are fully replicated, but traits aren't replicated. There is no longer a need for index settings, as multilingual capabilities are now integrated. Workbench stages are partially replicated in Search AI. 
-
+Index fields are fully replicated, but traits are not. There is no longer a need for index settings, as multilingual capabilities are now integrated. Some workbench stages are be replicated if they're relevant to Search AI, while others are modified for compatibility.
 
 #### Index Fields
 
-Index fields are fully replicated and mapped to corresponding fields in Search AI. The custom fields in SearchAssist are automatically mapped to the corresponding fields in Search AI. [Learn more](../searchai/content-sources/connectors/unified-schema.md). 
+Index fields
+Index fields are fully replicated and mapped to corresponding fields in Search AI. The custom fields in SearchAssist are automatically mapped to the corresponding fields in Search AI. [Learn more](../searchai/content-sources/connectors/unified-schema.md).
+
+When custom fields are migrated from SearchAssist, their original SearchAssist names are retained as display names in Search AI to make them easy to identify. These display names can be used across the platform in UI-based configurations.
+
+However, the underlying schema uses fixed backend field names (for example, `csf1`). These are visible when viewing the chunk or document schema directly.
+
+When referencing these fields, note the following:
+
+* APIs must use the backend field name (for example, `csf1`).
+* UI configurations, including Transform and Enrich stages and Business Rules, can use the display name.
 
 
 #### Index Configurations
 
 Index Configurations must be reconfigured manually after migration. For more details, refer to [this](../searchai/index-configuration.md). 
 
-In Search AI, the BGE-M3 vector model is selected by default for generating embeddings. You can also set up a custom embedding model. 
+!!!note
+     In Search AI, the BGE-M3 vector model is selected by default for generating embeddings. You can also set up a custom embedding model. 
 
 
 #### Workbench
 
-In SearchAssist, the Document Workbench helps you process and enrich documents as they're ingested. 
+
+
+In SearchAssist, the Document Workbench helps you process and enrich documents as they are ingested. 
 
 In Search AI, this is expanded with two separate workbenches: 
+
+
 
 * Document Workbench that lets you apply transformations during extraction.
 * Chunk Workbench that enables you to enrich or refine content after it's split into chunks, giving you greater flexibility and control.
 
-During migration, the following stages from the SearchAssist Document Workbench are automatically replicated in Search AI:
+**Migrated Stages**
 
-* Field Mapping
-* Exclude Content
-
-The following stages are not migrated and require manual configuration or are no longer supported:
+The following stages from the SearchAssist Document Workbench are partially migrated to Search AI:
 
 
+<table>
+  <tr>
+   <td>Document Workbench Stages
+   </td>
+   <td>What is Migrated
+   </td>
+  </tr>
+  <tr>
+   <td>Field Mapping
+   </td>
+   <td>Basic conditions only. Script-based conditions must be reconfigured manually.
+   </td>
+  </tr>
+  <tr>
+   <td>Exclude Document
+   </td>
+   <td>Basic conditions only. Script-based conditions must be reconfigured manually.
+   </td>
+  </tr>
+  <tr>
+   <td>Custom Script
+   </td>
+   <td>Search AI uses a single script editor for both conditions and outcomes, unlike SearchAssist which has separate editors. Any script-based conditions from SearchAssist are moved into this combined script editor during migration. Basic conditions are not supported and must be manually incorporated into the script.
+   </td>
+  </tr>
+</table>
 
-* LLM Prompt - Must be reconfigured manually using the LLM Stage in Search AI.
-* Entity Extraction, Traits Extraction, Keyword Extraction, and Semantic Meaning - These stages are deprecated and aren't carried over.
 
-For custom script stage, Search AI only supports the script editor for outcomes, not for conditions. As a result, any custom script stage that uses script-based conditions is migrated by moving those conditions into the outcome script editor.
+Note: All custom scripts are automatically converted from Painless to JavaScript during migration.
 
-Note 
+The following stages aren't migrated and require manual configuration or are no longer supported:
 
-
-
-1. in Search AI stages, basic conditions aren't supported. Therefore any stage that has basic conditions is partially migrated. Enhance the custom script manually in those cases to address the basic conditions. 
-2. All custom scripts are automatically converted from Painless to JavaScript during migration.
+* LLM Prompt: Must be reconfigured manually using the LLM Stage in Search AI.
+* Entity Extraction, Traits Extraction, Keyword Extraction, and Semantic Meaning: These stages are deprecated and are not carried over.
 
 Additionally, you can also configure the Chunk Workbench manually in Search AI to apply additional processing on extracted chunks. [Learn More](../searchai/workbench/introduction.md). 
 
@@ -138,7 +185,9 @@ Since Search AI uses semantic embeddings for search and doesn't rely on traditio
 
 #### Answer Snippets
 
-The Answer Snippet Configurations are replicated to Answer Generation. However, you must configure the Answer Generation Model again in the case of the Generative Answers. [Learn More](../generative-ai-tools/configure-llm-integration.md). 
+Answer Snippet configurations are partially migrated. The similarity score configuration is carried over to Answer Generation. However, you must configure the Answer Generation Model again in the case of the Generative Answers. 
+
+[Learn More](../generative-ai-tools/configure-llm-integration.md). 
 
 
 #### Business Rules
@@ -152,7 +201,7 @@ In Search AI, semantic search has replaced traditional keyword-based search, so 
 
 #### Custom Configurations
 
-Some custom configurations are replicated as Advanced Configurations in Search AI, some configurations have been productized, and some custom configurations are not replicated. 
+Some custom configurations are replicated as Advanced Configurations in Search AI, some configurations have been productized, and some custom configurations are not replicated as they are no longer relevant. 
 
 
 <table>
@@ -167,9 +216,9 @@ Some custom configurations are replicated as Advanced Configurations in Search A
   <tr>
    <td>Chunk Extraction Method
    </td>
-   <td>
+   <td>Yes
    </td>
-   <td>
+   <td>If the extraction type is “layout,” then a new extraction strategy with layout is created. 
    </td>
   </tr>
   <tr>
@@ -191,7 +240,7 @@ Some custom configurations are replicated as Advanced Configurations in Search A
   <tr>
    <td>Number Of Chunks
    </td>
-   <td>Yes
+   <td>No
    </td>
    <td>Instead of setting the number of chunks, you can set the token budget. This allows the application to dynamically calculate the number of chunks based on the selected LLM and extraction strategies. This is available as part of <a href="https://docs.kore.ai/xo/searchai/answer-generation/">Answer Configuration</a>. 
    </td>
@@ -201,7 +250,7 @@ Some custom configurations are replicated as Advanced Configurations in Search A
    </td>
    <td>No
    </td>
-   <td>This feature has been enhanced. Search AI offers two ways to implement this. <p>
+   <td>This feature has been enhanced. Search AI offers two ways to implement this.  \
 1. <a href="https://docs.kore.ai/xo/searchai/rag-agents/#query-rephrase-agent">Query Rephrase for Advanced Search API</a> - This is implemented via Agentic RAG. Queries can be dynamically enhanced with contextual information through APIs.
 <p>
 2.<a href="https://docs.kore.ai/xo/generative-ai-tools/genai-features-searchai/#rephrase-user-query"> Rephrase User Query</a> - This is implemented by the platform to enhance or reconstruct incomplete or ambiguous user inputs using the conversation context. 
@@ -240,7 +289,7 @@ By default, the hybrid retrieval strategy is used. However, if the “Enable Vec
    </td>
    <td>Yes
    </td>
-   <td>This is available as an <a href="https://docs.kore.ai/xo/searchai/advanced-configurations/advanced-configurations/">advanced configuration</a>. 
+   <td>This is available as an <a href="https://platform.kore.ai/builder/app/advanceConfiguration">advanced configuration</a>. 
    </td>
   </tr>
   <tr>
@@ -248,7 +297,7 @@ By default, the hybrid retrieval strategy is used. However, if the “Enable Vec
    </td>
    <td>Yes
    </td>
-   <td>This is available as an <a href="https://docs.kore.ai/xo/searchai/advanced-configurations/advanced-configurations/">advanced configuration</a>. 
+   <td>This is available as an <a href="https://platform.kore.ai/builder/app/advanceConfiguration">advanced configuration</a>. 
    </td>
   </tr>
   <tr>
@@ -256,7 +305,7 @@ By default, the hybrid retrieval strategy is used. However, if the “Enable Vec
    </td>
    <td>Yes
    </td>
-   <td>This is available as an <a href="https://docs.kore.ai/xo/searchai/advanced-configurations/advanced-configurations/">advanced configuration</a>. 
+   <td>This is available as an <a href="https://platform.kore.ai/builder/app/advanceConfiguration">advanced configuration</a>. 
    </td>
   </tr>
   <tr>
@@ -264,7 +313,7 @@ By default, the hybrid retrieval strategy is used. However, if the “Enable Vec
    </td>
    <td>Yes
    </td>
-   <td>This is available as a config field in the <a href="https://docs.kore.ai/xo/searchai/answer-generation/">Answer Configuration</a> page.
+   <td>This is available as a config field in the <a href="https://platform.kore.ai/builder/app/answergeneration">Answer Configuration</a> page.
    </td>
   </tr>
   <tr>
@@ -286,11 +335,9 @@ By default, the hybrid retrieval strategy is used. However, if the “Enable Vec
   <tr>
    <td>Max Token Size
    </td>
-   <td>Yes
+   <td>No
    </td>
-   <td>This can be implemented using the Token Budget field in Answer Generation. <p>
-   <p>
-Max Token Size in SearchAssist is used to define the total number of tokens sent to the LLM (including the prompt, the chunks, and the model’s output). The Token Budget field, on the other hand, specifies the number of tokens allocated only for the retrieved chunks. It excludes tokens used by the system prompt and the LLM’s output, which are automatically accounted for. 
+   <td>This can be implemented using the Token Budget field in Answer Generation. Max Token Size in SearchAssist is used to define the total number of tokens sent to the LLM (including the prompt, the chunks, and the model’s output). The Token Budget field, on the other hand, specifies the number of tokens allocated only for the retrieved chunks. It excludes tokens used by the system prompt and the LLM’s output, which are automatically accounted for. 
 <p>
 <a href="https://docs.kore.ai/xo/searchai/answer-generation/#answer-configuration">Learn More.</a> 
    </td>
@@ -301,7 +348,7 @@ Max Token Size in SearchAssist is used to define the total number of tokens sent
    <td>No
    </td>
    <td>In SearchAssist, this field was specific to OpenAI. <p>
-In SearchAI, you can configure this for every LLM that supports it.  <p> <p>
+In SearchAI, you can configure this for every LLM that supports it. <p>
 
 You can configure this by navigating to Generative AI Tools > GenAI Features. Open Advanced Settings using the gear icon for the feature. The Advanced Settings dialog box appears, where you can configure the Temperature for the model associated with Answer Generation. <a href="https://docs.kore.ai/xo/generative-ai-tools/genai-features/#change-settings-for-a-model">Learn More</a>
    </td>
@@ -309,7 +356,7 @@ You can configure this by navigating to Generative AI Tools > GenAI Features. Op
   <tr>
    <td>Response Size
    </td>
-   <td>
+   <td>No
    </td>
    <td>This can be implemented using the Response Length parameter in Answer Configuration(Generative Answers). 
    </td>
@@ -317,7 +364,7 @@ You can configure this by navigating to Generative AI Tools > GenAI Features. Op
   <tr>
    <td>Answer Response Length
    </td>
-   <td>Yes
+   <td>No
    </td>
    <td>This can be implemented using the Response Length parameter in Answer Configuration (Extractive Answers).
    </td>
@@ -327,7 +374,7 @@ You can configure this by navigating to Generative AI Tools > GenAI Features. Op
    </td>
    <td>Yes
    </td>
-   <td>Enable this feature via the Automatic Cleaning option in web crawl configuration.  \
+   <td>Enable this feature via the Automatic Cleaning option in web crawl configuration.  <p>
 To do this, navigate to the <em>Advanced Crawl Configurations</em> for a web crawl and select <em>Automatic Cleaning</em> under <em>Processing Options</em>. 
    </td>
   </tr>
@@ -355,13 +402,36 @@ To do this, navigate to the <em>Advanced Crawl Configurations</em> for a web cra
    <td>To set this, navigate to the <em>Advanced Crawl Configurations</em> for a web crawl and set the value for <em>Crawl Delay</em>. This field is applicable only when the JavaScript Rendered option is enabled.
    </td>
   </tr>
+  <tr>
+   <td>Chunk Types
+   </td>
+   <td>Yes
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Enable exact KNN match
+   </td>
+   <td>Yes
+   </td>
+   <td>Manage this setting using the ’Enable Exact KNN Match` field under Advanced Configuration Settings.
+   </td>
+  </tr>
+  <tr>
+   <td>Single Use URL
+   </td>
+   <td>Yes
+   </td>
+   <td>Manage this setting using the ‘Signed URL for File Upload’ option in the Advanced Configuration settings.
+   </td>
+  </tr>
 </table>
 
 
 
+
 #### Search Settings
-
-
 
 * The following settings have been deprecated, as the Search AI processing pipeline leverages semantic similarity and enhanced retrieval methods, removing the need for traditional keyword-based search configurations.
     * Weights
@@ -386,6 +456,15 @@ Custom interfaces can be built using [Search AI’s public APIs](../apis/searcha
 
 This must be manually set up after migration completes. 
 
+### APIs and API Scope
+
+APIs and API Scope configurations are not migrated and must be reconfigured manually in Search AI. The APIs in Search AI are more advanced and offer enhanced functionality compared to SearchAssist. Refer to the Search AI API documentation for the full list of available APIs and to take advantage of the advanced capabilities. [Learn More](../apis/searchai/api-list.md).
+
+
+### SDK
+
+If your SearchAssist implementation uses the SearchAssist SDK to render the search interface, you must switch to the Search AI SDK after migration. Refer to the Search AI SDK documentation to set up and configure the SDK for your application. [Learn More](../sdk/bot-sdk-introduction.md).
+
 
 ## Initiating the Migration Process
 
@@ -403,6 +482,8 @@ This must be manually set up after migration completes.
 After the migration is complete, the new app's name appears in Search AI. Download the logs to see the details of the migration process. 
 
 ![Migration Success](images/searchai/migration/success.png "Migration Success")
+
+If you are not on an Enterprise plan, the Search AI app is created during migration but access to certain features may be restricted. Contact Support to enable full access.
 
 
 Next Steps: 

@@ -122,7 +122,7 @@ Refer below [to configure SSO using SAML](#configuring-sso-using-saml)
 #### Use case 2: End-user authentication
 
 In this scenario, the bot chat interface is embedded on the customer portal or Mobile app that requires user authentication via SSO.  
-The Bot access is automatically limited to authenticated users.  If the task requires API invocation that requires SSO based authentication the developer can follow the below steps
+The Bot access is automatically limited to authenticated users. If the task requires API invocation that requires SSO based authentication the developer can follow the below steps
 
 * On the client, developer needs to retrieve SSO token of the logged in user and pass it to the bot using the **_secureCustomPayload_** parameter in the Bot SDK API.
 * In the dialog task, Bot developer can write custom logic to read this token and add it as API headers for secure API calls made using service node or webhook node.
@@ -145,7 +145,10 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
     3. **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
     4. **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
     5. **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
-    6. **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. 
+    6. **Skip 2FA Authentication** – This setting lets administrators determine whether users must complete two-factor authentication (2FA) during their first login. The 2FA step can be skipped at the Service Provider (SP) level, the Identity Provider (IdP) level, or at both levels, based on the configuration.
+        * Select the **IdP (Identity Provider)** checkbox to skip 2FA enforcement at the identity provider during first-time authentication.
+        * Select the **SP** checkbox to skip 2FA enforcement at the service provider during first-time authentication.
+    7. **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. 
     Once enabled, you can:
         * define how the SAML attributes should be mapped with AI for Service attributes:
             1. Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
@@ -167,12 +170,10 @@ Complete the following steps to configure Single Sign-On (SSO) using Security As
                 * App Builder Access
                 * New Bot Creation
                 * Manage Data Tables and Views
-                
-    7. **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests. 
+
+    8. **Restrict Auto - Onboarding** - Enable this option to restrict automatic user onboarding during IdP-initiated login for users who don't exist in the Kore platform.
+    9. **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
     
-        
-
-
 #### Okta for AI for Service SSO
 
 To configure Single Sign-On in _Okta_ for AI for Service, you must first add the AI for Service app to your _Okta_ account, and then copy URLs and the security certificate from _Okta_ into your AI for Service account. This topic describes how to add the AI for Service app to your _Okta_ account, and then access the URLs and certificate needed for the AI for Service configuration for SSO using _Okta_.
@@ -228,6 +229,9 @@ To test the configuration, log off the Admin Console, and log on again. The Okta
 * **X.509 Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
+* **Skip 2FA Authentication** – This setting lets administrators determine whether users must complete two-factor authentication (2FA) during their first login. The 2FA step can be skipped at the Service Provider (SP) level, the Identity Provider (IdP) level, or at both levels, based on the configuration.
+    * Select the **IdP (Identity Provider)** checkbox to skip 2FA enforcement at the identity provider during first-time authentication.
+    * Select the **SP** checkbox to skip 2FA enforcement at the service provider during first-time authentication.
 * **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:
     * define how the SAML attributes should be mapped with AI for Service attributes:
         * Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
@@ -250,6 +254,7 @@ To test the configuration, log off the Admin Console, and log on again. The Okta
             * New Bot Creation
             * Manage Data Tables and Views
 
+* **Restrict Auto - Onboarding** - Enable this option to restrict automatic user onboarding during IdP-initiated login for users who don't exist in the Kore platform.
 * **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
 #### OneLogin for AI for Service SSO
@@ -290,6 +295,9 @@ To complete this procedure, you must have already selected _OneLogin_ as a SAML 
 * **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
+* **Skip 2FA Authentication** – This setting lets administrators determine whether users must complete two-factor authentication (2FA) during their first login. The 2FA step can be skipped at the Service Provider (SP) level, the Identity Provider (IdP) level, or at both levels, based on the configuration.
+    * Select the **IdP (Identity Provider)** checkbox to skip 2FA enforcement at the identity provider during first-time authentication.
+    * Select the **SP** checkbox to skip 2FA enforcement at the service provider during first-time authentication.
 * **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:
     * define how the SAML attributes should be mapped with AI for Service attributes:
         * Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
@@ -312,6 +320,7 @@ To complete this procedure, you must have already selected _OneLogin_ as a SAML 
             * New Bot Creation
             * Manage Data Tables and Views
 
+* **Restrict Auto - Onboarding**: Enable this option to restrict automatic user onboarding during IdP-initiated login for users who don't exist in the Kore platform.
 * **Exclude RequestedAuthnContext in request -** Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 
 #### AI for Service SSO for Bitium
@@ -348,9 +357,12 @@ To complete this procedure, you must have already selected _Bitium_ as a SAML pr
 
 * **Single Sign-On URL** – The URL that AI for Service sends sign on and sign off requests using your WS-Federation identity provider. This is to enable Service Provider initiated SAML flow.
 * **Issuer URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
-* **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
+* **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it's invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
+* **Skip 2FA Authentication** – This setting lets administrators determine whether users must complete two-factor authentication (2FA) during their first login. The 2FA step can be skipped at the Service Provider (SP) level, the Identity Provider (IdP) level, or at both levels, based on the configuration.
+    * Select the **IdP (Identity Provider)** checkbox to skip 2FA enforcement at the identity provider during first-time authentication.
+    * Select the **SP** checkbox to skip 2FA enforcement at the service provider during first-time authentication.
 * **SAML Attribute Mapping** – Enable this option to map SAML Attributes with AI for Service Group Names or Admin Roles Names. Once enabled, you can:
     * define how the SAML attributes should be mapped with AI for Service attributes:
         * Full Sync – Every time the user signs in, the platform will update the user’s Group and Role assignments based on the SAML Attributes present in the response. All existing assignments will be removed. Only the new group or role assignments as available in the SAML response will be assigned
@@ -372,12 +384,13 @@ To complete this procedure, you must have already selected _Bitium_ as a SAML pr
             * App Builder Access
             * New Bot Creation
             * Manage Data Tables and Views
-
     * In the administrative console for your Single Sign-On provider, you will also need to define the URLs that are used to exchange data between AI for Service and your SSO provider. While the URL names may vary by SSO provider, you will need to define these URLs:
         * **Assertion Consumer Service (ACS) URL** or **Callback URL** as [https://idp.kore.com/authorize/callback.](https://idp.kore.com/authorize/callback?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}
         * In addition to authentication values, you must pass the email address of the user as an LDAP attribute from Active Directory when using ADFS. For more information, see [Attributes for ADFS](#attributes-for-adfs).
         * **Identity URL** or **Sign On URL** as [https://idp.kore.com](https://idp.kore.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1701937564529.1701950143315.124&__hssc=59894770.1.1701950143315&__hsfp=4271746649){:target="_blank"}
 
+* **Restrict Auto - Onboarding** - Enable this option to restrict automatic user onboarding during IdP-initiated login for users who don't exist in the Kore platform.
+* **Exclude RequestedAuthnContext in request** - Enable this option to remove RequestedAuthnContext from SAML authentication requests.
 * Click **Create**.
 
 

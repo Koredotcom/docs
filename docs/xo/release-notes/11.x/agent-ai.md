@@ -2,6 +2,33 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.22.1 March 14, 2026
+
+<u>Patch Release </u> 
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">Integration Enhancements</font>
+
+**Open Knowledge Base Articles Within the Salesforce Workspace**
+The Agent AI widget in Salesforce now allows agents to access knowledge base (KB) articles directly from the Search tab within a workspace subtab of the current browser session. This keeps agents in the active session, preventing reauthentication prompts or interruptions to the customer interaction.
+
+**Automatic Conversation Summary After Einstein Bot Handoff in Salesforce**
+
+The Agent AI widget in Salesforce now automatically generates a conversation summary when a customer interaction is handed off from Einstein Bot to a live agent. The summary is displayed in the Assist tab, giving agents quick context on the customer's issue and actions already taken — without reviewing the full chat transcript. The summary is also stored in interaction metadata for downstream use.
+
+**Automatic Summary Updates for Email-to-Case in Salesforce**
+
+The Agent AI widget for the Email-to-Case channel in Salesforce now keeps the Assist tab summary up to date with the latest email conversation. When the widget loads, it displays a summary of the existing email thread. As new emails arrive or agents generate or submit a summary, the Assist tab updates to reflect the latest context.
+
+<font size="4">UI Enhancement</font>
+
+**Expand and Collapse Controls for Customer Messages and Agentic NBA Suggestions**
+
+In the Agent AI widget's Assist tab, customer messages and Agentic Next Best Action (NBA) suggestions now include expand and collapse buttons that appear on hover. By default, the messages and the previous suggestions (sent or unsent) are collapsed, while the latest suggestion appears expanded. This prevents messages from automatically collapsing while agents copy suggestion content. 
+
+<hr>
+
 ## v11.22.0 February 28, 2026
 
 <u>Minor Release</u>
