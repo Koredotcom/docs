@@ -108,7 +108,7 @@ Configure the following fields:
 | Add Utterance        | Add multiple response variations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Similarity Threshold | Define how closely phrases must match to activate the trigger. Adjust the similarity threshold based on criticality: <br>**Lower Threshold (~60%, Yellow):** Appropriate for casual interactions and greetings. <br>**Middle Threshold (~80%, Amber):** Standard procedural responses where moderate deviation is acceptable. <br>**Higher Threshold (~100%, Green):** Required for critical topics such as legal disclaimers or privacy policies. <br>This similarity threshold appears only when you select Deterministic mode. |
 
-<img src="./metrics-measurement-types/images/static-adherence-type.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../metrics-measurement-types/images/static-adherence-type.png" alt="Question and Adherence Type" title="Question and Adherence Type" style="border: 1px solid gray; zoom:70%;"> 
 
 #### Count Type
 
