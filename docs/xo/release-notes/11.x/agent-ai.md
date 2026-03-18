@@ -156,7 +156,7 @@ The Raw Data API now displays Custom tab details in addition to Assist tab detai
 
 **Enhanced Hooks API for Internal Transfers**
 
-The Hooks API now maintains accurate agent context—interaction ID, agent identity, and session continuity—during internal call transfers (cold and warm) across all supported third-party desktops, and no valid agent data appears under ‘Anonymous Agent’. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
+The Hooks API now maintains accurate agent context—interaction ID, agent identity, and session continuity—during internal call transfers (cold and warm) across all supported third-party desktops, and no valid agent data appears under ‘Anonymous Agent’. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/webhook-api-for-conversation-events.md)
 
 <font size="4">Integration Enhancements</font>
 
@@ -304,7 +304,7 @@ Amazon Connect’s External Voice Connector now routes inbound voice calls throu
 
 **Hooks API for Internal Transfers**
 
-Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
+Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/webhook-api-for-conversation-events.md)
 
 <hr>
 
