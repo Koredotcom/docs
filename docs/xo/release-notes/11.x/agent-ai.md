@@ -1055,7 +1055,7 @@ Key updates:
 
 Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API.
 
-[Learn more :octicons-arrow-right-24:](../../apis/agent-ai/conversation-summary-trigger-api.md){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../apis/agent-ai/webhook-api-for-conversation-events.md){:target="_blank"}
 
 <font size="4">Introduction of Additional languages for Agent AI</font>
 
