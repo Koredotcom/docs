@@ -25,7 +25,8 @@ Send all events to the same endpoint using the appropriate event name and payloa
 
 ## Request Body
 
-```{
+```
+{
 
  "conversationId": "string",
 
@@ -52,6 +53,7 @@ The following fields are mandatory in case of user/agent message events:
   "sendAgentMessage": false,
 
   "language": "en"
+
   ```
 
 Consider the following field for events such as internal transfer, end of conversation, or trigger summary.
@@ -316,7 +318,8 @@ INTERNAL_TRANSFER_EVENT
 
 #### Event Structure
 
-```{
+```
+{
 
  "name": "INTERNAL_TRANSFER_EVENT",
 
@@ -351,6 +354,7 @@ INTERNAL_TRANSFER_EVENT
  }
 
 }
+
 ```
 
 #### Field Description
@@ -431,6 +435,7 @@ TRIGGER_SUMMARY_EVENT
  }
 
 }
+
 ```
 
 #### Field Description
@@ -485,6 +490,7 @@ END_OF_CONVERSATION
  }
 
 }
+
 ```
 
 #### Field Description
@@ -500,6 +506,7 @@ END_OF_CONVERSATION
 #### Sample Request
 
 ```
+
 curl --location 'https://platform.kore.ai/agentassist/api/v1/hooks/st-XXXX' \
 
 --header 'Content-Type: application/json' \
@@ -541,11 +548,12 @@ curl --location 'https://platform.kore.ai/agentassist/api/v1/hooks/st-XXXX' \
  ]
 
 }'
+
 ```
 
 #### Responses
 
-**Success**: ```200 OK```
+**Success**: ` 200 OK `
 
 or
 
@@ -555,6 +563,7 @@ or
  "STATUS": "OK"
 
 }
+
 ```
 
 **Error (Invalid botId):**
@@ -567,4 +576,5 @@ or
  "message": "Linked bot details could not be found. Please verify that the botId provided in the request body is correct."
 
 }
+
 ```
