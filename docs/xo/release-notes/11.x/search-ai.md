@@ -2,6 +2,18 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.22.1 March 14, 2026
+
+<u>Patch Release</u>
+
+This update includes an enhancement and bug fixes. The enhancement included in this release is summarized below.
+
+<font size="4">Download Documents Synced Via Connectors</font>
+
+Users can now download a CSV of synced documents from their connectors. This helps the users audit sync status, analyze metadata, and troubleshoot issues. The Download Document List option exports the filtered document list, with RACL enforcement ensuring users can only download documents they're authorized to access. [Learn more  :octicons-arrow-right-24:](../../searchai/content-sources/connectors.md).
+
+<hr>
+
 ## v11.22.0 February 28, 2026
 <u>Minor Release</u>
 
@@ -9,11 +21,11 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Chunk-Level Deletion Support</font>
 
-Search AI now supports a Delete Chunks by Condition API, letting you remove individual chunks from the search index without deleting the parent document. The API filters chunks based on specified conditions and returns clear validation or partial success responses when inputs are invalid or conditions are only partially met. [Learn More](../../apis/searchai/chunk-apis.md).
+Search AI now supports a Delete Chunks by Condition API, letting you remove individual chunks from the search index without deleting the parent document. The API filters chunks based on specified conditions and returns clear validation or partial success responses when inputs are invalid or conditions are only partially met. [Learn more  :octicons-arrow-right-24:](../../apis/searchai/chunk-apis.md).
 
 <font size="4">Batch Processing for Custom Embeddings</font>
 
-Search AI now supports batching for custom embedding models, grouping multiple inputs into a single request to improve ingestion speed and throughput. The feature automatically manages token limits, tokens-per-minute, and rate limits, so you get optimized performance without running into throttling errors. [Learn More](../../searchai/howto/batch-processing-vector-generation.md).
+Search AI now supports batching for custom embedding models, grouping multiple inputs into a single request to improve ingestion speed and throughput. The feature automatically manages token limits, tokens-per-minute, and rate limits, so you get optimized performance without running into throttling errors. [Learn more  :octicons-arrow-right-24:](../../searchai/howto/batch-processing-vector-generation.md).
 
 <hr>
 

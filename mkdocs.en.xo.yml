@@ -103,6 +103,7 @@ plugins:
         'administration/user-management/managing-your-users-new-admin-console.md.md': 'administration/user-management/managing-your-users-new-admin-console.md'
         'administration/security-and-control/using-single-sign-on-new-admin-console.md.md': 'administration/security-and-control/using-single-sign-on-new-admin-console.md'
         'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md.md': 'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md'
+        'searchai/auto-migration.md': 'getting-started/searchassist-to-searchai-migration.md'
 
 
 extra:  
@@ -571,7 +572,8 @@ nav:
             - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md
             - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md
             - By Hold: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md 
-            - By Transfer: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md             
+            - By Transfer: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md
+            - By Manual: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-manual-evaluation.md             
       - Agent Scorecards: quality-ai/configure/agent-scorecards.md
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md

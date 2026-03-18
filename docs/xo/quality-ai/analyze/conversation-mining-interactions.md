@@ -1,6 +1,6 @@
 # Conversation Mining - Interactions
 
-The Interactions feature enables supervisors to review and filter scored interactions within their assigned queues. It provides insights into conversation quality, agent performance, and customer experience at both the conversation and agent levels. With Conversation Mining, supervisors can identify and prioritize interactions that require coaching or improvement, eliminating guesswork from manual evaluations.
+The Interactions feature enables supervisors to review and filter scored interactions within their assigned queues. It provides insights into conversation quality, agent performance, and customer experience at both the conversation and agent levels. Using Conversation Mining filters, supervisors can refine interaction results by selecting specific evaluation metrics and their qualification outcomes. This helps supervisors identify and prioritize interactions that require coaching or improvement, reducing guesswork in manual evaluations.
 
 ## Key Capabilities
 
@@ -40,10 +40,6 @@ The **Interactions** dashboard includes the following elements:
 
 * **Processing Status**: Displays a green icon when all processes succeed and a red icon when any process fails.
 
-    * **Pass**: Shows a green icon when all processes succeed and the system captures metric adherence.
-
-    * **Failed**: Shows a red icon when any process fails and the system doesn't capture metric adherence.  
-
 * **Actions**: Lets you assign the interaction to a bookmark for future reference.    
 
     !!! Note
@@ -60,8 +56,7 @@ The **Interactions** dashboard includes the following elements:
 
 * **Sentiment Score**: Displays the system-generated sentiment score for the interaction based on the customer's words.
 
-* **Supervisor Auditor Score**: Shows the supervisor-assigned score for audited or manually evaluated interactions and highlights Manual Evaluation metrics with a distinct indicator.   
-<img src="../conversation-mining/images/manual-audit-indicator.png" alt="Manual Audit Indicator" title="Manual Audit Indicator" style="border: 1px solid gray; zoom:80%;">
+* **Supervisor Auditor Score**: Displays the supervisor-assigned score for audited or manually evaluated interactions and highlights manual evaluation metrics with a distinct, consistent visual indicator across the platform.
 
 * **Start Time**: Displays conversation's start time in a specified format in the Interaction listing page (for example, 24 May 2024, 1:17:10 PM).
 
@@ -109,7 +104,7 @@ Provides the option to select the date range for the conversation interactions. 
 
 ## Filters
 
-This helps you to pinpoint high-value interactions, streamline audits, and narrow results to conversations that need attention. You can add filters from the Filters dropdown and refine results using multiple category panels.
+This helps you to pinpoint high-value interactions, streamline audits, and narrow results to conversations that need attention. You can add filters from the Filters list and refine results using multiple category panels.
 
 ## Add New Filter
 
@@ -125,7 +120,7 @@ Steps to Add New Filter:
 
 ## Filter Categories
 
-This Filter categories panel lets you refine and analyze interaction data based on various parameters configured, such as efficiency, experience, behavior, and keywords.
+This Filter categories panel lets you refine and analyze interaction data using configured parameters.
 
 ### Filter by Efficiency
 
@@ -145,14 +140,10 @@ To filter by Efficiency,
 
 1. From **Agent Groups**, select the group linked to the chosen queue. You can filter only groups associated with the selected queues.
 
-1. From **Agents**, select the agent assigned to the chosen queue. The list shows only agents who have interactions in that queue.
+1. From **Agents**, select the agent assigned to the chosen queue. The system filters agents based on interactions within that queue.
 
-1. Enable the required filter options: 
-
-    * Filter by handling time
-    * Filter by deviation from AHT
-    * Deviation (%)
-    * Number of Transfers
+1. Enable the required filter options.
+   
 
 ### Filter by Experience
 
@@ -211,11 +202,21 @@ This category analyzes interaction dynamics and conduct between agents and custo
 
 #### Metric Name
 
-This filter enables supervisors to view interactions by specific evaluation metrics. Use radio buttons to filter by Pass or Failed and select a metric from the drop-down list to refine results.  
+Select a metric from the dropdown list to filter interactions evaluated for that specific metric. You can select only one metric at a time. After selection, the metric appears as a tag in the input field. Metrics configured for manual evaluation display a distinct visual indicator to help supervisors identify them for audit allocation.
 
 #### Metric Qualification
 
-The selected evaluation metric appears as a tag under the input field, and you can clear it by selecting **X**. When you open the page from the Adherence Heatmap, the system automatically applies the filters. If you select queues, the list shows only metrics from the forms in those queues. The filter retrieves interactions where the metric applies, allowing you to view failed or adhered interactions using the radio buttons.
+The selected evaluation metric appears as a tag under the input field, and you can clear it by selecting **X**. When you open the page from the Adherence Heatmap, the system automatically applies the filters. If you select queues, the list shows only metrics from the forms in those queues. The filter retrieves interactions where the metric applies, allowing you to view failed or adhered interactions using the radio options.
+
+* **Pass**: Conversations where the trigger was present, and the answer matched the expected utterance (Adhered outcome).
+
+* **Fail**: Conversations where the trigger was present, but the answer didn't match (Not Adhered outcome).
+
+* **N/A**: Conversations where the trigger wasn't detected, making answer evaluation not applicable. Available only for the Dynamic By Question metric type.
+
+    !!! Note
+
+        The N/A option in Metric Qualification appears only when you select a Dynamic By Question metric. It is not available for Static metric types or other metric measurement types.
 
 #### Language
 
@@ -223,7 +224,7 @@ Select the languages to add from the dropdown list.
 
 #### Empathy Score
 
-This measures how well the agent understands and responds to the customer’s situation. It shows the extent of negative sentiment, such as frustration or displeasure, expressed by the customer. A higher score indicates a more empathetic interaction.
+This measures the level of understanding and compassion the agent shows towards the customer’s situation. Provides the extent of empathy, like frustration or displeasure, that a customer has shown (negative sentiment). A higher score indicates a more empathetic interaction.
 
 #### Crutch Word Score
 
@@ -231,7 +232,7 @@ This shows how often the agent uses filler words (for example, umm, uh, and simi
 
 #### Agent Playbook Adherence 
 
-This shows the Agent AI playbook adherence percentage for that interaction.   
+This shows the Agent AI playbook adherence percentage for an interaction.   
 
 #### Kore Evaluation Score
 
@@ -264,6 +265,8 @@ Use the following options to efficiently apply, save, and manage filters on the 
 
         If interactions are not used for audit allocation, you can apply filters without saving.
         Save Filters: Lets you name a filter and optionally set it as the default on the Interactions dashboard.
+
+* **Save Filters**: Lets you name a filter and optionally set it as the default on the Interactions dashboard.
 
 * **View Saved Filters**: Shows all saved and their associated unsaved filters. 
 
