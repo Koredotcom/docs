@@ -21,7 +21,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Chunk-Level Deletion Support</font>
 
-Search AI now supports a Delete Chunks by ID API, letting you remove individual chunks from the search index without deleting the parent document. The API targets chunks using specified IDs and returns clear validation or partial success responses when inputs are invalid or only some IDs are matched. [Learn more  :octicons-arrow-right-24:](../../apis/searchai/chunk-apis.md#delete-chunks-by-id-api).
+Search AI now supports a Delete Chunks by ID API, letting you remove individual chunks from the search index without deleting the parent document. The API filters chunks based on given chunk Ids , deletes them and returns clear validation or partial success responses based on the status of deletion of the individual chunks. [Learn more  :octicons-arrow-right-24:](../../apis/searchai/chunk-apis.md#delete-chunks-by-id-api).
 
 <font size="4">Batch Processing for Custom Embeddings</font>
 

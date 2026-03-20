@@ -397,7 +397,7 @@ This is useful for incremental cleanup, partial refresh scenarios, and lifecycle
 **Example: Delete by chunkId**
 
 ```json
-curl --location 'https://<HOST>/api/public/bot/<BOT_ID>/search/delete-chunks-by-cond' \
+curl --location 'https://<HOST>/api/public/bot/<BOT_ID>/search/deleteChunksById' \
 --header 'auth: <JWT_TOKEN>' \
 --header 'Content-Type: application/json' \
 --data '{
