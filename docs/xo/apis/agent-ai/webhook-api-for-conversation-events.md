@@ -53,8 +53,7 @@ The following fields are mandatory in case of user/agent message events:
   "sendAgentMessage": false,
 
   "language": "en"
-
-  ```
+```
 
 Consider the following field for events such as internal transfer, end of conversation, or trigger summary.
 
@@ -354,7 +353,6 @@ INTERNAL_TRANSFER_EVENT
  }
 
 }
-
 ```
 
 #### Field Description
@@ -435,7 +433,6 @@ TRIGGER_SUMMARY_EVENT
  }
 
 }
-
 ```
 
 #### Field Description
@@ -490,7 +487,6 @@ END_OF_CONVERSATION
  }
 
 }
-
 ```
 
 #### Field Description
@@ -506,7 +502,6 @@ END_OF_CONVERSATION
 #### Sample Request
 
 ```
-
 curl --location 'https://platform.kore.ai/agentassist/api/v1/hooks/st-XXXX' \
 
 --header 'Content-Type: application/json' \
@@ -548,7 +543,6 @@ curl --location 'https://platform.kore.ai/agentassist/api/v1/hooks/st-XXXX' \
  ]
 
 }'
-
 ```
 
 #### Responses
@@ -563,10 +557,9 @@ or
  "STATUS": "OK"
 
 }
-
 ```
 
-**Error (Invalid botId):**
+**Error (Invalid botId)**:
 
 ```
 {
