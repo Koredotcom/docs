@@ -65,7 +65,209 @@ Consider the following field for events such as internal transfer, end of conver
 |----------|----------|--------------|-----------------|
 | conversationId | String | Yes | Unique identifier of the conversation. Must remain the same throughout the lifecycle. |
 | botId | String | Yes | AI Agent (Stream) ID. |
-| events | Array | Yes | List of event objects. |
+| query | String | Conditional | User or agent message content. Required for user/agent message events. |
+| agentId | String | Conditional | Unique identifier of the agent sending or associated with the message. Required for message events. |
+| experience | String | Conditional | Interaction type (for example, `chat` or `voice`). Required for message events. |
+| author.type | String | Conditional | Indicates the message origin. Use `USER` or `AGENT`. Required for message events. |
+| source | String | Conditional | Source platform of the message (for example, `genesys`). Required for message events. |
+| sendUserMessage | Boolean | Conditional | Set to `true` to send user messages to Agent AI. |
+| sendAgentMessage | Boolean | Conditional | Set to `true` to send agent messages to Agent AI. |
+| language | String | Conditional | Language of the message or conversation (for example, `en`). |
+| events | Array | Conditional | List of event objects. Required for event-driven scenarios such as internal transfer, summary trigger, or end of conversation. |
+
+## Supported Events
+
+### Internal Transfer Event
+
+Tracks agent join and exit actions, including cold and warm transfers.
+
+#### Event Name
+
+INTERNAL_TRANSFER_EVENT
+
+#### Event Structure
+
+```
+{
+
+ "name": "INTERNAL_TRANSFER_EVENT",
+
+ "transfertype": "NA | COLD | WARM",
+
+ "transition": "entry | exit",
+
+ "isExtAD": true,
+
+ "language": "en",
+
+ "experience": "chat | voice",
+
+ "participant": {
+
+   "identity": "string",
+
+   "name": "string",
+
+   "type": "agent",
+
+   "customFields": {
+
+     "agentEmail": "string",
+
+     "queueId": "string",
+
+     "queueName": "string"
+
+   }
+
+ }
+
+}
+```
+
+#### Field Description
+
+| **Field** | **Required** | **Description** |
+|----------|--------------|-----------------|
+| transfertype | Yes | Transfer type: `NA`, `COLD`, or `WARM`. |
+| transition | Yes | `entry` when agent joins, `exit` when agent leaves. |
+| isExtAD | Yes | Indicates whether an external directory is used. |
+| language | No | Conversation language. |
+| experience | Yes | Interaction type (`chat` or `voice`). |
+| participant | Yes | Agent details. |
+| participant.customFields | No | Required only when using the Quality Module for post-call analysis. |
+
+#### Transfer Types
+
+| **Type** | **When to Use** |
+|----------|-----------------|
+| NA | First agent entry and final agent exit. |
+| COLD | One agent replaces another. Only one active agent at a time. |
+| WARM | Multiple agents participate simultaneously. |
+
+### Transfer Flow Scenarios
+
+#### Cold Transfer Flow
+
+In this scenario, Agent-1 accepts the call and redirects it to Agent-2, and later Agent-3 gets the call.
+
+* Customer connects to Agent 1 → `NA` + `entry`
+* Agent 1 exits the conversation → `cold` + `exit`
+* Agent 2 accepts the conversation→ `cold` + `entry`
+* Agent 2 exits the conversation → `cold` + `exit`
+* Agent 3 accepts the conversation→ `cold` + `entry`
+* Conversation ends → Last agent → `NA` + `exit`
+
+#### Warm Transfer Flow
+
+* Customer connects to Agent 1 → `NA` + `entry`
+* Agent 1 invites Agent 2 as a consultant
+* Agent 2 joins → `warm` + `entry`
+* Agent 1 invites Agent 3 as a consultant
+* Agent 3 joins → `warm` + `entry`
+* Agent 2 leaves → `warm` + `exit`
+* Agent 3 leaves → `warm` + `exit`
+* Conversation ends → Agent 1 exits → `NA` + `exit`
+
+#### Redial Scenario
+
+* Customer connects to Agent 1 → `NA` + `entry`
+    * Conversation drops unexpectedly
+* Agent reconnects to the same conversation → `redial` + `entry`
+    * Conversation continues without creating a new segment
+* Conversation ends → Agent 1 exits → `NA` + `exit`
+
+### Trigger Summary Event
+
+Triggers the generation of a conversation summary.
+
+#### Event Name
+
+TRIGGER_SUMMARY_EVENT
+
+#### Event Structure
+
+```
+{
+
+ "name": "TRIGGER_SUMMARY_EVENT",
+
+ "data": {
+
+   "language": "English",
+
+   "locale": "en",
+
+   "type": "post"
+
+ }
+
+}
+```
+
+#### Field Description
+
+| **Field** | **Required** | **Description** |
+|----------|--------------|-----------------|
+| data.language | Yes | Summary language (for example, English). |
+| data.locale | Yes | Locale code (for example, en). |
+| data.type | Yes | Summary type (for example, `post`). |
+
+### End of Conversation Event
+
+Notifies Agent AI that the conversation has terminated.
+
+#### Event Name
+
+END_OF_CONVERSATION
+
+**Important**: Invoke this event **only once**, at the final termination of the conversation—whether normal or unexpected—to prevent duplicate processing.
+
+#### Event Structure
+
+```
+{
+
+ "name": "END_OF_CONVERSATION",
+
+ "reason": "agent_initiated",
+
+ "language": "en",
+
+ "experience": "voice",
+
+ "participant": {
+
+   "identity": "string",
+
+   "name": "string",
+
+   "type": "agent",
+
+   "customFields": {
+
+     "agentEmail": "string",
+
+     "queueId": "string",
+
+     "queueName": "string"
+
+   }
+
+ }
+
+}
+```
+
+#### Field Description
+
+| **Field** | **Required** | **Description** |
+|----------|--------------|-----------------|
+| reason | Yes | Reason for termination (for example, `agent_initiated`). |
+| language | Yes | Conversation language. |
+| experience | Yes | Interaction type (`chat` or `voice`). |
+| participant | Yes | Agent responsible for termination. |
+| participant.customFields | No | Optional metadata. |
 
 ## Event Payload Examples
 
@@ -305,201 +507,7 @@ When a conversation drops unexpectedly (for example, due to a network failure or
 
     In a redial scenario, keep the **conversationId** the same as the original dropped call. This ensures the system treats the session as a continuation, not a new conversation, and preserves the full interaction history for analytics.
 
-## Supported Events
-
-### Internal Transfer Event
-
-Tracks agent join and exit actions, including cold and warm transfers.
-
-#### Event Name
-
-INTERNAL_TRANSFER_EVENT
-
-#### Event Structure
-
-```
-{
-
- "name": "INTERNAL_TRANSFER_EVENT",
-
- "transfertype": "NA | COLD | WARM",
-
- "transition": "entry | exit",
-
- "isExtAD": true,
-
- "language": "en",
-
- "experience": "chat | voice",
-
- "participant": {
-
-   "identity": "string",
-
-   "name": "string",
-
-   "type": "agent",
-
-   "customFields": {
-
-     "agentEmail": "string",
-
-     "queueId": "string",
-
-     "queueName": "string"
-
-   }
-
- }
-
-}
-```
-
-#### Field Description
-
-| **Field** | **Required** | **Description** |
-|----------|--------------|-----------------|
-| transfertype | Yes | Transfer type: `NA`, `COLD`, or `WARM`. |
-| transition | Yes | `entry` when agent joins, `exit` when agent leaves. |
-| isExtAD | Yes | Indicates whether an external directory is used. |
-| language | No | Conversation language. |
-| experience | Yes | Interaction type (`chat` or `voice`). |
-| participant | Yes | Agent details. |
-| participant.customFields | No | Required only when using the Quality Module for post-call analysis. |
-
-#### Transfer Types
-
-| **Type** | **When to Use** |
-|----------|-----------------|
-| NA | First agent entry and final agent exit. |
-| COLD | One agent replaces another. Only one active agent at a time. |
-| WARM | Multiple agents participate simultaneously. |
-
-### Transfer Flow Scenarios
-
-#### Cold Transfer Flow
-
-In this scenario, Agent-1 accepts the call and redirects it to Agent-2, and later Agent-3 gets the call.
-
-* Customer connects to Agent 1 → `NA` + `entry`
-* Agent 1 exits the conversation → `cold` + `exit`
-* Agent 2 accepts the conversation→ `cold` + `entry`
-* Agent 2 exits the conversation → `cold` + `exit`
-* Agent 3 accepts the conversation→ `cold` + `entry`
-* Conversation ends → Last agent → `NA` + `exit`
-
-#### Warm Transfer Flow
-
-* Customer connects to Agent 1 → `NA` + `entry`
-* Agent 1 invites Agent 2 as a consultant
-* Agent 2 joins → `warm` + `entry`
-* Agent 1 invites Agent 3 as a consultant
-* Agent 3 joins → `warm` + `entry`
-* Agent 2 leaves → `warm` + `exit`
-* Agent 3 leaves → `warm` + `exit`
-* Conversation ends → Agent 1 exits → `NA` + `exit`
-
-#### Redial Scenario
-
-* Customer connects to Agent 1 → `NA` + `entry`
-    * Conversation drops unexpectedly
-* Agent reconnects to the same conversation → `redial` + `entry`
-    * Conversation continues without creating a new segment
-* Conversation ends → Agent 1 exits → `NA` + `exit`
-
-### Trigger Summary Event
-
-Triggers the generation of a conversation summary.
-
-#### Event Name
-
-TRIGGER_SUMMARY_EVENT
-
-#### Event Structure
-
-```
-{
-
- "name": "TRIGGER_SUMMARY_EVENT",
-
- "data": {
-
-   "language": "English",
-
-   "locale": "en",
-
-   "type": "post"
-
- }
-
-}
-```
-
-#### Field Description
-
-| **Field** | **Required** | **Description** |
-|----------|--------------|-----------------|
-| data.language | Yes | Summary language (for example, English). |
-| data.locale | Yes | Locale code (for example, en). |
-| data.type | Yes | Summary type (for example, `post`). |
-
-### End of Conversation Event
-
-Notifies Agent AI that the conversation has terminated.
-
-#### Event Name
-
-END_OF_CONVERSATION
-
-**Important**: Invoke this event **only once**, at the final termination of the conversation—whether normal or unexpected—to prevent duplicate processing.
-
-#### Event Structure
-
-```
-{
-
- "name": "END_OF_CONVERSATION",
-
- "reason": "agent_initiated",
-
- "language": "en",
-
- "experience": "voice",
-
- "participant": {
-
-   "identity": "string",
-
-   "name": "string",
-
-   "type": "agent",
-
-   "customFields": {
-
-     "agentEmail": "string",
-
-     "queueId": "string",
-
-     "queueName": "string"
-
-   }
-
- }
-
-}
-```
-
-#### Field Description
-
-| **Field** | **Required** | **Description** |
-|----------|--------------|-----------------|
-| reason | Yes | Reason for termination (for example, `agent_initiated`). |
-| language | Yes | Conversation language. |
-| experience | Yes | Interaction type (`chat` or `voice`). |
-| participant | Yes | Agent responsible for termination. |
-| participant.customFields | No | Optional metadata. |
-
-#### Sample Request
+## Sample Request
 
 ```
 curl --location 'https://platform.kore.ai/agentassist/api/v1/hooks/st-XXXX' \
@@ -545,7 +553,7 @@ curl --location 'https://platform.kore.ai/agentassist/api/v1/hooks/st-XXXX' \
 }'
 ```
 
-#### Responses
+## Responses
 
 **Success**: ` 200 OK `
 
