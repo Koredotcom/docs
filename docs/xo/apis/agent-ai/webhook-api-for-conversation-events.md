@@ -53,13 +53,13 @@ The following fields are mandatory in case of user/agent message events:
   "sendAgentMessage": false,
 
   "language": "en"
-```
 
 Consider the following field for events such as internal transfer, end of conversation, or trigger summary.
 
  "events": [ { ... } ]
 
 }
+```
 
 | **Field** | **Type** | **Required** | **Description** |
 |----------|----------|--------------|-----------------|
