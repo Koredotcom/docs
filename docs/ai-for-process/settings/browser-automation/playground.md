@@ -152,6 +152,10 @@ You can modify draft automation flows by updating the LLM instructions or model 
 
 The LLM runs the automation by processing the modified instructions.
 
+!!! note
+
+    The Playground uses an automatic editing lock. Only one user can edit an automation at a time. Additional users are placed in view-only mode and cannot make changes. The lock is released when the active user exits or after one hour of inactivity.
+
 ## Delete an Automation Experiment
 
 To delete an automation, follow the steps below:
