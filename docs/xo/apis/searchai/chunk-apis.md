@@ -315,7 +315,7 @@ This is useful for incremental cleanup, partial refresh scenarios, and lifecycle
   <tr>
    <td><strong>URL</strong>
    </td>
-   <td><code>/api/public/bot/{AppId}/search/delete-chunks-by-cond</code>
+   <td><code>/api/public/bot/{AppId}/search/deleteChunksById</code>
    </td>
   </tr>
   <tr>
