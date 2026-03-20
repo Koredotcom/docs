@@ -74,6 +74,8 @@ Key updates:
 * Run Multiple Versions: Users can run multiple versions of the same tool simultaneously. For example, v1.0 and v2.0 of a tool can run side by side in different app versions.
 * Keep Apps Independent: Different app versions automatically use their corresponding tool versions. A production app can remain on a stable version while a beta app uses the latest updates.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/versions.md)
+
 
 <font size="4">AI Engineering Tools</font>
 

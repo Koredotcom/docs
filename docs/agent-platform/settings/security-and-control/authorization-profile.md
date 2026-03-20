@@ -44,6 +44,29 @@ OAuth 2.0 (OAuth2) is a standard authorization framework that enables applicatio
 
 * **Third-Party & Scalable Integration** – Widely adopted for API authentication, allowing secure third-party access (e.g., "*Sign in with Google*").
 
+#### Add Authorization Profile
+
+To add a new Auth profile, you must first set up the required auth fields with the steps below: 
+
+1. [Navigate](../security-and-control/authorization-profile.md#access-authorization-profile){:target="_blank"} to the **Authorization Profile** feature.
+2. Click **Create Authorization Profile** if this is your first auth profile.
+   <img src="../images/click-create-auth-profile.png" alt="create auth profile" title="create auth profile" style="border: 1px solid gray; zoom:75%;">
+   <br>Otherwise, click **Add new auth**.
+   <img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
+
+3. In the **New Authorization Mechanism** dialog, select **oauth v2** from the Authorization Type dropdown. 
+   <br><img src="../images/select-oauthv2.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
+
+4. Provide values for the required fields. For field descriptions, refer to the <a href="#define-authorization-fields" target="_blank">Define Authorization Fields</a>.
+
+5. (Optional) Click **+ Add Additional Field** to add additional fields for authorization. See the <a href="#add-additional-field" target="_blank">Add Additional Field</a> section.
+
+6. Click **Save new Auth**.
+
+   <img src="../images/identity-provider.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:80%;"></li>
+
+A success message is displayed, and the new auth profile is added to the **Authorization Profile** page.
+
 ### OAuth V2 Client Credential
 
 The Client Credentials flow is one of the OAuth 2.0 authorization grant types. It is primarily used in Machine-to-Machine (M2M) scenarios, where an application needs to access resources or perform operations on its own behalf — without user interaction.
@@ -64,38 +87,26 @@ The Client Credentials flow is one of the OAuth 2.0 authorization grant types. I
 * **Resource Access**: The client uses the acquired access token to interact with the resource server and access protected resources. 
 * **Access Token**: The authorization server issues an access token, a short-lived credential that allows the client to access specific resources. 
 
-## Add Authorization Profile
+#### Add Authorization Profile
 
 To add a new Auth profile, you must first set up the required auth fields with the steps below: 
 
 1. [Navigate](../security-and-control/authorization-profile.md#access-authorization-profile){:target="_blank"} to the **Authorization Profile** feature.
 2. Click **Create Authorization Profile** if this is your first auth profile.
-<img src="../images/click-create-auth-profile.png" alt="create auth profile" title="create auth profile" style="border: 1px solid gray; zoom:75%;">  
+   <img src="../images/click-create-auth-profile.png" alt="create auth profile" title="create auth profile" style="border: 1px solid gray; zoom:75%;">  
+   <br>Otherwise, click **Add new auth**.
+   <img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
 
-Otherwise, click **Add new auth**.
-<img src="../images/add-new-auth-profile.png" alt="add new auth profile" title="add new auth profile" style="border: 1px solid gray; zoom:75%;">  
+3. In the **New Authorization Mechanism** dialog, select **oauth v2 client credential** from the Authorization Type dropdown.
 
-<ol start="3"><li>In the <b>New Authorization Mechanism</b> dialog, select the required option for <b>Authorization Type</b>.</li> 
-<img src="../images/select-oauthv2.png" alt="select oauth v2" title="select oauth v2" style="border: 1px solid gray; zoom:75%;"></ol>  
-<ol start="4"><li>In the <b>Identity Provider Name</b> field, enter a name for the authorization type, which is mandatory.
-<img src="../images/identity-provider.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Provide the values for the mandatory authorization fields. For details, refer to the <a href="#define-authorization-fields" target="_blank">Define Authorization Fields</a> section. 
+4. Provide values for the required fields. For field descriptions, refer to the <a href="#define-authorization-fields" target="_blank">Define Authorization Fields</a>.
 
-If the mandatory fields are left blank, validation error messages appear, as shown below.
+5. Click **Save new Auth**.
 
-<img src="../images/form-validation-errors.png" alt="validation errors" title="validation errors" style="border: 1px solid gray; zoom:75%;"></li>
-<li>(Optional) Click <b>+ Add Additional Field</b> to add additional fields for authorization. See the <a href="#add-additional-field" target="_blank">Add Additional Field</a> section.</li></ol>
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If the default <b>Username</b> and <b>Password</b> fields do not meet your authorization requirements, you can add <b>custom fields</b> using additional fields or authorization IDP form fields to the authorization process. For example, if a <b>PIN code</b> is required in addition to the standard login fields, you can include it as an extra input for the end user.</p>
-</div>
-    
-<ol start="7"><li>(Optional step to be executed only when you select <b><i>OAuth V2</i></b> as the Authorization type) Click <b>+ Add Authorization Field</b> to add additional auth fields to your profile. This is required For more information, see the <a href="#add-authorization-field" target="_blank">Add Authorization Field</a> section.</li>
-<li>Click <b>Save new Auth</b>.</li>
-<img src="../images/save-new-auth.png" alt="save new auth" title="save new auth" style="border: 1px solid gray; zoom:75%;"></ol>
+   <img src="../images/save-new-auth.png" alt="identity provider" title="identity provider" style="border: 1px solid gray; zoom:80%;"></li>
 
 A success message is displayed, and the new auth profile is added to the **Authorization Profile** page.
+
 
 ## Define Authorization Fields
 

@@ -80,6 +80,9 @@ Use this feature to revert to a known working state after experimentation, undo 
 Delete an app version to remove it permanently. Before deletion, it performs dependency checks to ensure no linked agents or tools are removed.  
    <img src="../images/delete-version.png" alt="Delete version" title="Delete version" style="border: 1px solid gray; zoom:70%;">
 
+For information about workflow tool versions and app versions, see [Workflow tools and App versioning](../../tools/workflow-tools-and-app-version.md).
+
+
 ## Environment Configuration and Management
 
 The Environments feature enables users to configure separate deployment environments for different needs. The Platform supports multiple environments. Each environment has its own isolated configuration, allowing you to configure it without affecting the app logic.
