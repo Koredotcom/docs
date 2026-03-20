@@ -100,6 +100,7 @@ plugins:
         'administration/user-management/managing-your-users-new-admin-console.md.md': 'administration/user-management/managing-your-users-new-admin-console.md'
         'administration/security-and-control/using-single-sign-on-new-admin-console.md.md': 'administration/security-and-control/using-single-sign-on-new-admin-console.md'
         'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md.md': 'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md'
+        'searchai/auto-migration.md': 'getting-started/searchassist-to-searchai-migration.md'
 
 
 extra:  

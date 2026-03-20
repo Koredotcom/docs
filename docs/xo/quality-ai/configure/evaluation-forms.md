@@ -1,4 +1,4 @@
-# Evaluation Overview
+# Evaluation Forms
 
 The Evaluation phase in Quality AI enables QA Managers to create standardized assessments for Voice and Chat interactions. Evaluation forms align scoring with operational goals and promote consistent, compliant evaluations.
 
@@ -102,7 +102,7 @@ Steps to configure general settings:
 
 This maintains consistent evaluation standards, regardless of the scoring type you select.         
 
-7. Select **Next**.    
+6. Select **Next**.    
 <img src="../evaluation-criteria/evaluation-forms/images/add-new-eva-forms2.png" alt="General Settings Configuration" title="General Settings Configuration" style="border: 1px solid gray; zoom:80%;">
 
 ### Assignments Configuration
@@ -151,12 +151,18 @@ Steps to configure assignments:
 * You can reorder metrics after addition to control their display sequence in the **AI-Assisted Manual Audit** screen.
 
 * The metrics list displays only those configured for all selected form languages and the chosen channel.
+
+* The Metric Name quick filter used for custom audit allocation doesn't permit users to select Manual Evaluation metrics.
   
 ### Evaluation Metrics Configuration
 
-This section enables you to add and configure evaluation metrics for the form. The configuration flow is the same for both Percentage-based and Points-based scoring. Only the weight type differs. The system displays only metrics supported for the selected languages and channel.      
+Manual Evaluation metrics are human-scored criteria that QA auditors use to evaluate qualitative aspects of agent performance, such as tone, empathy, and judgment-based decisions, after reviewing a conversation.
 
- Steps to configure evaluation metrics:
+#### Evaluation Form Assignment
+
+When you add evaluation metrics to a form, the system lists them in the Evaluation Metrics section. Each metric represents a quality parameter used to evaluate agent performance during audits or AutoQA scoring.
+
+Steps to configure evaluation metrics:
 
 1. Use the Search bar to find the available evaluation metrics.    
 
@@ -169,11 +175,17 @@ This section enables you to add and configure evaluation metrics for the form. T
 1. Assign a metric **Weightage** based on the selected scoring type:
     
     * **Percentage**: Enter a percentage value.   
-    <img src="../evaluation-criteria/evaluation-forms/images/percentage-scoring.png" alt="Percentage Metrics" title="Percentage Metrics" style="border: 1px solid gray; zoom:40%;">
+    
+    * **Points**: Enter a points value. 
 
-    * **Points**: Enter a points value.   
-    <img src="../evaluation-criteria/evaluation-forms/images/points-scoring.png" alt="Points Metrics" title="Points Metrics" style="border: 1px solid gray; zoom:100%;">
+1. Choose the correct **Response** and **Outcome** scoring that defines what constitutes a match for this metric.
 
+1. Reorder metrics to control their display sequence in the audit interface.
+
+1. Remove metrics that are no longer required.   
+
+The system automatically calculates and displays the total positive and negative points configured for the evaluation form.   
+<img src="../evaluation-criteria/evaluation-forms/images/points-scoring.png" alt="Points Metrics" title="Points Metrics" style="border: 1px solid gray; zoom:100%;">
 
 #### Outcome Configuration
 
@@ -182,6 +194,33 @@ For each metric, define the outcomes (for example, **Yes** or **No**) and assign
 1. Toggle on **Fatal Error** for this metric if it's compliance-critical (optional).
 
 1. Select **Create** to finalize the form creation. 
+
+#### Metric Card (Trigger Scoring Disabled)
+
+When trigger scoring is off, the metric card displays a single Weightage field. There are no Yes or No sub-weight rows. The following controls are available on the card:
+
+* **Weightage**: Enter a numeric percentage for the metric's contribution to the form's total score.
+
+* **Fatal Error Toggle**: Mark this outcome as a fatal error, which fails the entire evaluation if the metric isn't adhered to.
+
+##### Metric Card (Trigger Scoring Enabled)
+
+When trigger scoring is on, the metric card expands to show outcome-level sub-weight controls. The following controls are available:
+
+* **Outcome**: Yes and No for each with a Weightage input field. 	
+
+* **Correct Response**: Available on specific outcome rows to mark the expected correct response. 	
+
+* **Fatal Error Toggle**: Available to mark a non-adherent outcome as a fatal error.
+
+    !!! Note
+
+        Negative weightage cannot be assigned at the form level when trigger scoring is enabled. Configure all negative scoring in the sub-weight fields within the metric itself.
+
+#### Outcome Configuration
+
+For each metric, define the outcomes (for example, Yes or No) and assign a positive, zero, or negative weight based on the expected response. A matching response receives positive weight, while a non-matching response receives zero or negative weight (if configured).	
+
 
 ### Scoring Type Selection
 
@@ -213,13 +252,6 @@ Whenever you try to switch from an existing scoring type, the system shows a war
 
 * The system applies an **AND** condition across the selected languages. For example, if you select **English** and **Dutch**, the dropdown shows only metrics available in both languages.
 
-### Language Selection Behavior
-
-* Evaluation forms support multi-language selection. 
-* The system displays only **By-Question** metrics configured for all selected languages. 
-* The system applies an **AND** condition across selected languages. For example, if you select **English** and **Dutch**, the dropdown displays only metrics available in both languages.
-
-
 ### Points-Based Scoring Formula  
 
 **Kore Evaluation Score** = [∑(Myi × Wyi) - ∑(Mni × Wni) / ∑(Wyi)] × 100
@@ -244,8 +276,6 @@ Calculate the conversation score using the selected type: **Percentage** (weight
 | **Validation Requirements**   | Total positive weight must equal 100%.<br>Negative weight allowed within the 100% structure.<br>Only metrics valid for the selected language and channel appear.                                                                                                                              | No fixed maximum on total positive points.<br>Total negative points ≤ total positive points.<br>Only metrics valid for the selected language and channel appear.<br>Manual Evaluation metrics allowed.                          |
 | **Outcome Logic**             | Matching correct response earns the assigned percentage; incorrect earns zero or negative; final score ranges from 0–100%.                                                                                                                                                                    | Matching correct response earns assigned points; incorrect earns zero or negative; The system then normalizes the total points to a 0–100 scale.                                                                                                              |
 | **Fatal Error Configuration** | **Works identically for both scoring systems:** If a fatal metric fails, the final score becomes 0. Ignores all other metric scores, and automatically marks the interaction as failed.  |  —| 
-
-
 
 
 
@@ -324,4 +354,4 @@ To resolve this, perform the following actions:
 
     * You must update the remaining metrics and adjust their corresponding weights to support proper evaluation. 
 
-    * Select **Update** to save the changes once all updates are complete**.
+    * Select **Update** to save the changes once all updates are complete.
