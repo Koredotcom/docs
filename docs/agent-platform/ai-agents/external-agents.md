@@ -85,12 +85,9 @@ This setting controls authentication for the task invocation requests only.
   - When **Use same auth as Request Definition** is enabled, the platform uses the same authentication profile configured in the *Request Definition* section for task invocation requests as well.
   - When disabled, configure a separate authentication profile here for task invocation requests. Provide the auth details based on the authentication methods supported by the external agent.
 
-4. **Metadata**: The Metadata section allows you to pass additional contextual information to the external A2A agent during each request. Metadata is provided as key-value pairs. You can include:
-  
-    * Static values
-    * Dynamic variables from context or memory. Example: 
-      * Key: userId
-      * Value: `{{user.value}}` 
+4. **Metadata**: The Metadata section allows you to pass additional contextual information to the external A2A agent during each request. Metadata is provided as key-value pairs. Example: 
+      * Key: `region`
+      * Value: `us-east` 
 
 
 #### Testing the Agent
@@ -108,15 +105,15 @@ Enter the test query, provide the values of metadata fields and validate the res
 1. The Agent Platform can invoke external agents using the A2A protocol, but external agents can't directly invoke native agents created within the platform.
 2. The platform communicates with A2A agents only via REST endpoints.
  Communication through JSON-RPC or gRPC methods isn't supported.
-3. In the Adaptive Network orchestration pattern, an external A2A agent can only be configured as the last node in the workflow.
-4. Streaming responses are supported when the external A2A agent supports streaming. If streaming is enabled for the application but the external agent doesn't support it, the response will be returned as a non-streamed response.
+3. In the Adaptive Network orchestration pattern, an external A2A agent can only be configured as the last node in the workflow. External agents cannot further delegate tasks.
+4. Streaming responses are supported when the external A2A agent supports streaming. If streaming is enabled for the application but the external agent doesn't support it, the response is returned as a non-streamed response.
 5. The Agent Platform uses a sessionId to track conversations internally. When interacting with external A2A agents, the platform maps this sessionId to the context_id returned by the external agent, which represents the conversation context as defined by the A2A protocol. Additionally, the task_id returned by the external agent is used to track the lifecycle of a specific task. The platform stores and manages both context_id and task_id during the interaction and includes them in subsequent requests as required by the A2A protocol. However, when the task reaches a terminal state (such as `completed` or `failed`), the Agent Platform clears the stored task_id and doesn't include it in subsequent requests, allowing the external agent to initiate a new task if required.
 
 ---
 
 ### Connect through Kore Agent Protocol
 
-The Kore Agent Protocol enables the Agent Platform to integrate with external agents that do not support the A2A standard. This approach uses a Proxy Agent architecture, in which the proxy agent acts as an intermediary that communicates with the external agent via a configurable API.
+The Kore Agent Protocol enables the Agent Platform to integrate with external agents that don't support the A2A standard. This approach uses a Proxy Agent architecture, in which the proxy agent acts as an intermediary that communicates with the external agent via a configurable API.
 The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it's recommended to create an adapter that processes the request from the Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the Kore Agent Protocol. 
 
 This method is particularly useful when integrating with existing AI services or custom agents that expose REST APIs but do not follow a standardized agent communication protocol.
