@@ -157,6 +157,7 @@ nav:
         - Agentic App Node: workflows/workflow-builder/types-of-nodes/agentic-app-node.md
         - Doc Intelligence Node: workflows/workflow-builder/types-of-nodes/doc-intelligence-node.md       
         - End Node: workflows/workflow-builder/types-of-nodes/end-node.md 
+        - Delay Node: workflows/workflow-builder/types-of-nodes/delay-node.md         
       - Workflow Change Log: workflows/workflow-builder/workflow-canvas-change-log.md    
     - Sharing & Permissions: 
       - Manage User Roles and Permissions: workflows/manage-user-roles-and-permissions.md

@@ -83,7 +83,7 @@ Open your workflow and add the Browser node to the canvas. [Learn more about add
 
 Click the node to open its properties dialog box. You can rename the node to provide context.
 
-**1. Select an Automation**
+### 1. Select an Automation
 
 * In **Automation name**, choose from the list of deployed browser automations available in your workspace.
 * Only one automation can be selected per node.
@@ -104,6 +104,8 @@ Depending on your automation, additional configuration options may appear:
 * **Model**: Displays the model used by the automation. This is fixed and cannot be changed at run time.
 * **Connection**: Shows the model connection configured during the automation’s design. You can change only the connection name for the model, not the model itself. The model configured at design time must be used at run time.
 * **Disable Cache**: Turns off cached agent state to ensure the automation runs with a fresh session. Use this option when the automation depends on a clean browser state, updated credentials, or a full login flow.
+* **Auto-Healing**: Uses the LLM to repair failed UI actions when a page changes. Enable this option to let the automation automatically identify and correct broken steps during execution.
+
 
 ### 4. Store Outputs and Access via Context Variables
 
