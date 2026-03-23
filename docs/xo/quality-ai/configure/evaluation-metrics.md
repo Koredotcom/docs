@@ -166,6 +166,25 @@ This section summarizes the system's supported measurement types, including core
 
     For full configuration details, see [By AI Agent](../configure/evaluation-criteria/metrics-measurement-types/by-ai-agent.md).
 
+1. **By Manual Evaluation**
+
+    Manual Evaluation metrics enable QA teams to assess agent performance through human-led reviews, especially in scenarios where automated detection is less reliable. QA managers configure these metrics in the form with a weight assigned only in points.
+
+
+    **Key Features**:
+
+    * **Complex Analysis**: Multi-step reasoning connecting conversation elements.
+
+    * **Domain Expertise**: Supports specialized evaluation contexts (for example, compliance, technical support).
+
+    * **Contextual Understanding**: Nuanced evaluation requiring full conversation context.
+
+    * **Advanced Decision-Making**: Goes beyond pattern matches for judgment calls.
+
+
+    **Use Cases**: Manual Evaluation is ideal for assessing complex soft skills (such as tone, empathy, and negotiation), regulatory scenarios requiring human judgment, dispute handling quality, escalation decisions, and high-risk or edge-case interactions.  
+
+    For full configuration details, see [By Manual Evaluation](../configure/evaluation-criteria/metrics-measurement-types/by-manual-evaluation.md).
 
 ### Edit or Delete Evaluation Metrics
 
@@ -185,6 +204,5 @@ This section summarizes the system's supported measurement types, including core
 
 1. Update the required metric weights as prompted if any warning prompt appears.
 
-1. Select **Update** to save changes.
+1. Select **Update** to save changes.    
 <img src="../evaluation-criteria/evaluation-metrics/images/edit-metric-fields.png" alt="Crosstalk Warning" title="Crosstalk Warning" style="border: 1px solid gray; zoom:70%;">  
-#### Speech Metric Errors

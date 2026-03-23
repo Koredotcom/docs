@@ -18,12 +18,23 @@ You can use the Kore.ai Email domain or create your custom Email Domain to confi
 To configure the email domains, go to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.  
 <img src="../images/email-digital-page.png" alt="Email Icon" title="Email Icon" style="border: 1px solid gray; zoom:80%;">
 
-To manage the channel session settings, click settings (gear icon) on the Email channel page.  
+
+Configure DKIM and session settings under More Options.  
 <img src="../images/email-settings.png" alt="Email Settings" title="Email Settings" style="border: 1px solid gray; zoom:80%;">
 
 
 
-## Session Creation Settings
+
+
+## Session Identity and Grouping
+
+### User Identify Source
+
+**Use Reply-To for User Identity**: When enabled, the platform uses the Reply-To address for user and session identification rather than the From address. This is useful when multiple emails share the same From address but have different Reply-To values. This toggle is off by default.
+
+
+### Session Grouping
+
 
 
 **Channel-Based Sessions**: When enabled, the platform creates a new session for each unique "To" email address. Emails sent to the same address continue the existing session, while emails sent to different addresses automatically start new sessions. This keeps issues organized and separate.
@@ -31,6 +42,67 @@ To manage the channel session settings, click settings (gear icon) on the Email 
 **Thread-Based Sessions**: When enabled, the platform creates sessions based on email thread reference headers. Replies within the same thread continue the existing session, while new threads always start fresh sessions. When users or agents add recipients mid-thread, the platform maintains the existing email thread and preserves conversation context. This option is only available when Channel-Based Sessions is enabled.  
 
 <img src="../images/email-session-settings.png" alt="Email Settings" title="Email Settings" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+## DKIM Configuration
+
+DomainKeys Identified Mail (DKIM) supports configuration through a standalone module, allowing users to verify domains before configuring email channels. This approach lets teams prepare the required DNS infrastructure in advance and reuse the verified domain across multiple channels without repeating the verification process.
+
+**Advanced Custom Email Domain**
+
+DKIM verification is mandatory for Advanced email channels. During channel configuration, the platform checks whether the provided domain has a Verified DKIM record. If a verified domain is provided by the user, the platform allows the configuration to continue. If the domain is not verified, the user must complete the DKIM verification before proceeding with the channel setup. 
+
+**Microsoft Exchange**
+
+DKIM signing is optional and controlled by a toggle(disabled by default). When disabled, the platform sends emails through the Microsoft Graph API, letting Microsoft handle outbound email delivery.
+
+When enabled, the platform checks whether the provided domain has a verified DKIM record. If the domain is verified, the platform applies it and allows the channel setup to continue. If the domain is not yet verified, the user must complete DKIM verification before proceeding.
+
+### Step 1: Generate DKIM
+
+Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer[ Generating DKIM keys using OpenSSL](generate-dkim.md).
+
+
+1. Generate RSA key pair (2048-bit recommended).
+2. Extract the public key in the proper format.
+3. Enter the private key in the DKIM Key field in the Verification screen.
+4. Configure the public key in DNS.
+
+
+### Step 2: Domain Verification
+
+
+
+1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email** > **More Options** > **DKIM Configuration**.
+.
+2. Click **+ Add**.
+3. Enter the following details and then click  **Verify Domain**.
+    * Select the domain type as either Custom Domain or Microsoft Exchange.
+    * **Domain Name**: This is the domain for which you want to subscribe to the mailboxes using the Graph API.
+    * **DKIM Private Key**: The DKIM key generated before.
+    * **Selector Name**: A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
+        
+        **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](http://domain.com)]</code>
+        
+        **Example**: If your selector is "ses2024" and the domain is "example.com," the DNS record would be: <code>ses2024._domainkey[.example.com](http://.example.com)</code>  
+
+        <img src="../images/new-dkim.png" alt="New DKIM" title="New DKIM" style="border: 1px solid gray; zoom:80%;">
+
+
+
+
+4. The Verification in Progress message is displayed.  
+<img src="../images/msexchange2.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+
+5. Click **Confirm**. You can navigate to the DKIM Configuration page to check the latest status. This might take up to 72 hours. The status can be one of the following:
+    * **Pending**: DNS records not yet detected.
+    * **Success**: DKIM successfully verified.
+    * **Failed**: DNS records are incorrect or missing.
+    * **Temporary Failure**: DNS issues, will retry automatically.  
+    <img src="../images/msexchange3.png" alt="Domain Verification" title="Domain Verification" style="border: 1px solid gray; zoom:80%;">
+
 
 
 
@@ -49,10 +121,9 @@ Whenever the customer responds to the email thread, it is directed back to the c
 
 Steps to create an email address in the Kore domain:
 
-1. Click the **+ New Email Address**.  
-    <img src="../images/new-kore-email.png" alt="+ New Email Address" title="+ New Email Address" style="border: 1px solid gray; zoom:80%;">
+1. The Kore.ai domain is created by default. Click the **+ New Email ID** for it to add the email ID.
 
-2. Enter the following details.
+2. On the Email Configuration tab, enter the following details.
     1. Email Address
     2. Display Name
     3. Choose whether to use the custom email for inbound, outbound, or both under **Additional Settings**.
@@ -107,14 +178,14 @@ Follow these steps to set up a standard custom domain and add an email ID to it.
 
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
 2. Click **+ New Domain** and select **Custom Domain**.
-3. Enter the **Domain Name**. Select the domain type as Standard, and click **Create**.  
-<img src="../images/email-stddomain.png" alt="Standard Custom Domain" title="Standard Custom Domain" style="border: 1px solid gray; zoom:80%;">
+3. Review the instructions and click **Next** to proceed to the **Configuration** tab.
+4. Select the domain type as **Standard**, enter the **Domain Name**, and click **Save**.
 
 4. The domain created a success message is displayed.
 
 #### Step 2: Create a Custom Email Address
 
-1. On the Email Channel page, click **+ New Email ID**.
+1. On the Email Channel page, click **+ New Email ID** for the standard custom domain saved in the previous step. 
 2. On the email configuration tab, enter the following details.
     1. Email Address
     2. Display Name
@@ -211,130 +282,49 @@ AI for Service now enhances custom domains with advanced capabilities, including
 Key enhancements:
 
 
-
 * Email Forwarding: Centralize email processing by forwarding emails from enterprise domains to a single Kore.ai mailbox.
 * Advanced Custom Domain Setup: This new option, in addition to the existing Standard setup, supports up to 50 custom domains and 50 email addresses per domain.
 * DomainKeys Identified Mail (DKIM) Support: Secure email authentication is now provided for each advanced custom email domain.
 * Flow Mapping by Email ID: Route incoming emails accurately by linking custom domain email addresses to specific Flows.
 
-Follow these steps to set up a standard custom domain and add an email ID to it.
-
-
-#### Step 1: Generate DKIM
-
-Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer [Generating DKIM keys using OpenSSL](generate-dkim.md). 
-
-1. Generate RSA key pair (2048-bit recommended).
-2. Extract the public key in the proper format.
-3. Enter the private key in the DKIM Key field in the Verification screen.
-4. Configure public key in DNS.
 
 
 
-#### Step 2: DKIM Verification
 
-1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
-2. Click **+ New Domain** and select **Custom Domain**.
-3. Enter the **Domain Name**. Select the domain type Advanced, then click **Create**.  
-<img src="../images/email-advdomain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
+#### Complete Configuration
 
-4. On the verification tab, enter the **DKIM Private Key**, **Selector Name**, and click **Verify Domain**.
-
-
-    A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
-
-    **DNS Record Format**: <code>[selector]._domainkey.[domain.com]</code>.
-
-    **Example**: If your selector is "ses2024" and the domain is "example.com," the DNS record would be: <code>ses2024._domainkey[.example.com]</code>.
-    
-    <img src="../images/email-custom-dkim.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
-
-5. The Verification in Progress message is displayed.  
-<img src="../images/email-vip.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
-
-6. Click **Confirm**. You can navigate to the Email Channels page to check the latest status. This might take up to 72 hours. The status can be one of the following: 
-    * **Pending**: DNS records not yet detected.
-    * **Success**: DKIM successfully verified.
-    * **Failed**: DNS records incorrect or missing.
-    * **Temporary Failure**: DNS issues, will retry automatically.  
-    <img src="../images/email-domain.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
-
-#### Step 3: Complete Configuration
-
-After successful DKIM verification, follow these steps:
+Complete the configuration steps to set up an advanced custom domain and add an email ID to it.
+Ensure that the DKIM verification is successful.
 
 
 
-1. On the Email Channel page, click **Complete Configuration** for a domain.  
-<img src="../images/email-custom-config-new.png" alt="Advanced Custom Domain" title="Advanced Custom Domain" style="border: 1px solid gray; zoom:80%;">
-
-2. Click **+ New Email ID** to add an email to the domain. 
-3. Enter the **Display Name**, add the **Email ID**  from which emails have to be forwarded or sent, and select the **Usage**.
+1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email.**
+2. Click **+ New Email ID** for the Advanced domain to add an email to it.
+3. Enter the **Display Name**, add the **Email ID** from which emails have to be forwarded or sent, and select the **Usage**.
 4. Click **Save**. The configuration saved message is displayed.
-
-
 
 
 
 
 ## Microsoft Exchange
 
+
+The platform supports configuring email IDs for sending and receiving emails, either manually or via Microsoft 365 Groups. The email IDs marked as Inbound Only or Inbound & Outbound can be attached to flows, while Outbound Only are available for agents to send outbound emails.
+
+**Add a Microsoft 365 Group**: Adding a Microsoft 365 Group automatically retrieves and configures all associated email IDs.
+
+**Add Email IDs Manually**: Email IDs can be added manually with a defined usage (default: Outbound). Manually added IDs must be unique and must not belong to an existing 365 Group, as the platform will reject duplicates.
+If a manually added email ID is later found in a synced group, the group configuration takes precedence, and the email ID is automatically removed from the manual list to prevent duplication.
+
+
+
 Follow these steps to set up a Custom Microsoft Exchange domain and add an email ID to it.
 
 
-### Step 1: Generate DKIM
-
-Generate and Configure DKIM for this domain by providing your own private key. The Private key must use 1024-bit to 2048-bit RSA encryption, and be PEM-encoded. Refer[ Generating DKIM keys using OpenSSL](generate-dkim.md).
-
-
-
-1. Generate RSA key pair (2048-bit recommended).
-2. Extract the public key in the proper format.
-3. Enter the private key in the DKIM Key field in the Verification screen.
-4. Configure the public key in DNS.
-
-
-### Step 2: Domain Verification
-
-
-
-1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
-2. Click **+ New Domain** and select **Microsoft Exchange**.
-3. On the verification tab, enter the following details and then click  **Verify Domain**.
-    * **Domain Name**: This is the domain for which you want to subscribe to the mailboxes using the Graph API.
-    * **DKIM Private Key**: The DKIM key generated before.
-    * **Selector Name**: A DKIM selector is a string that identifies which DKIM public key to use for signature verification. It's part of the DKIM DNS record structure.
-
-        **DNS Record Format**: <code>[selector]._domainkey.[[domain.com](http://domain.com)]</code>
-
-
-        **Example**: If your selector is "ses2024" and the domain is "example.com," the DNS record would be: <code>ses2024._domainkey[.example.com](http://.example.com)</code>  
-        
-        
-        <img src="../images/msexchange1.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
-
-
-
-
-4. The Verification in Progress message is displayed.  
-<img src="../images/msexchange2.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
-
-5. Click **Confirm**. You can navigate to the Email Channels page to check the latest status. This might take up to 72 hours. The status can be one of the following:
-    * **Pending**: DNS records not yet detected.
-    * **Success**: DKIM successfully verified.
-    * **Failed**: DNS records are incorrect or missing.
-    * **Temporary Failure**: DNS issues, will retry automatically.  
-    <img src="../images/msexchange3.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
-
-
-
-
-### Step 3: Microsoft 365 Setup Instructions for Integration
+### Step 1: Microsoft 365 Setup Instructions for Integration
 
 
 **1: Create a Microsoft 365 Group**
-
-
 
 1. Sign in to the[ Microsoft 365 Admin Center](https://admin.microsoft.com).
 2. Navigate to **Groups > Active groups**.
@@ -405,33 +395,24 @@ After completing the setup, you'll need the following values to complete the set
 * **Tenant ID** 
 
 
-### Step 4: Complete Configuration and Subscribe to Groups
+### Step 2: Complete Configuration and Subscribe to Groups
 
 After successful domain verification, follow these steps:
 
 
 
-1. On the Email Channel page, click **Complete Configuration** for a domain.
-2. On the Configuration tab, enter **Client ID**, **Client Secret Key**, **Tenant ID**, and enable the channel.  
-<img src="../images/msexchange5.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **All** > **Email**.
+2. Click **+ New Domain** and select **Microsoft Exchange**.
+3. Review the instructions and click **Next** to proceed to the **Configuration** tab.  
+<img src="../images/ms-configuration.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
 
-
-
-
-3. Click **+New Group** and enter the **Group Name** that you would like to subscribe to via the Graph API. You can add up to 50 domains and 50 email addresses per domain.  
-<img src="../images/msexchange6.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
-
-
-4. Click **Sync** to fetch all the email id of the group.  
-<img src="../images/msexchange7.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
-
-
-5. Click **Save**. The configuration saved message is displayed.  
-<img src="../images/msexchange8.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
-
-
-6. Click **Edit** to sync up the emails of a group or to add.  
-<img src="../images/msexchange9.png" alt="Microsoft Exchange" title="Microsoft Exchange" style="border: 1px solid gray; zoom:80%;">
+4. Enter the **Domain Name**.
+5. Toggle the **DKIM Setting** as required (disabled by default).
+6. Enter **Client ID**, **Client Secret Key**, **Tenant ID**, and enable the channel.
+7. Click **+ Add Group** and enter the Group Name to subscribe via the Graph API. You can add up to 50 domains and 50 email addresses per domain.
+8. Optionally, click **+ Add Email** to add individual email IDs manually. The default usage for manually added emails is Outbound.
+9. Click **Sync** to fetch all email IDs associated with the group.
+10. Click **Save**. 
 
 
 

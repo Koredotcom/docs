@@ -24,7 +24,7 @@ Workflow Tools support both synchronous and asynchronous execution modes. This m
 
 **Deployment & Tool Endpoints**
 
-Once a tool is built and tested, it can be deployed. Deployment generates a public API endpoint that Agentic Apps or external systems can use to access the workflow. [Learn more](./deploy-a-tool.md).
+Once a tool is built and tested, it can be deployed. Deployment generates a public API endpoint that Agentic Apps or external systems can use to access the workflow. 
 
 **Security and Permissions**
 

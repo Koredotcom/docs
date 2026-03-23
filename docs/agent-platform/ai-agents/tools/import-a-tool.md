@@ -83,6 +83,4 @@ You can also import a tool as a version of the parent tool to create and test di
 
 * [Create a Tool](../tools/create-a-new-tool.md){:target="_blank"}- Create a new tool and configure its flow.
 * [Export a Tool](../tools/export-a-tool.md){:target="_blank"}- Export the set configurations of a tool for data sharing and preservation.
-* [Deploy a Tool](../tools/deploy-a-tool.md){:target="_blank"}- Explore synchronous and asynchronous deployment methods for tool integration.
-* [Configure a Tool](../tools/configure-a-tool.md){:target="_blank"}- Modify the tool's details, configure settings, or undeploy and delete it if unused.
 * [Import a tool as a version](../tools/import-a-tool-as-a-version.md){:target="_blank"}- Create multiple versions of the same tool for testing multiple use cases.
