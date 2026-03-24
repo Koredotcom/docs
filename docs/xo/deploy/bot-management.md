@@ -23,7 +23,7 @@ You can import tasks and configurations of a specific agent into a new or existi
         
        * **Conditional flows (Contact Center AI)**: Conditional flows from the source agent or application are imported into the target agent. If a flow with the same name already exists in the target agent, it's replaced by the source flow. Conditional flows that exist only in the target agent and aren't present in the source are retained.
 
-Additionally, the webhook channel in the target agent is retained even if it's not included in the imported agent definition.
+    Additionally, the webhook channel in the target agent is retained even if it's not included in the imported agent definition.
 
     !!! note
 
