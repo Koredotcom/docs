@@ -17,7 +17,13 @@ This feature is particularly helpful to test various versions of your agent at d
 
 You can import tasks and configurations of a specific agent into a new or existing agent using one of these import types:
 
-* **Full import**: Replaces the existing agent with the imported configurations. The system deletes any additional configurations in the target agent that aren't present in the import definition. The system retains the webhook channel even if it's not present in the import agent definition.
+* **Full import**: During a full import, the existing agent components and configurations in Automation AI are replaced with those from the imported file. Any configurations in the target agent that aren't included in the imported file are removed.<br><br>For the Contact Center AI, only conditional flows are added from the imported file. Other Contact Center–related configurations aren't included in the import process and remain unchanged in the target application.<br><br> However, certain flows are handled differently during a full import:
+
+       * **Start and exit flows (Automation AI)**: These flows from the source agent or application are imported into the target agent. If a flow with the same name already exists in the target agent, it's replaced by the source flow. Any additional start or exit flows that exist only in the target agent and aren't present in the source are retained.
+        
+       * **Conditional flows (Contact Center AI)**: Conditional flows from the source agent or application are imported into the target agent. If a flow with the same name already exists in the target agent, it's replaced by the source flow. Conditional flows that exist only in the target agent and aren't present in the source are retained.
+
+    Additionally, the webhook channel in the target agent is retained even if it's not included in the imported agent definition.
 
     !!! note
 
