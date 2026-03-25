@@ -855,7 +855,78 @@ Additionally, you can set **custom filters** based on a specific category, event
 </table>
 
 
+<table>
+  <tr>
+    <td colspan="3" align="center"><strong>Category</strong>: Browser Automation</td>
+  </tr>
 
+  <tr>
+    <td colspan="3">
+      <b>Metadata</b>: All node-level events record standard metadata, including user ID, IP address, Agent ID, node name, node ID, and node type.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Event</strong></td>
+    <td><strong>Description</strong></td>
+    <td><strong>Additional Metadata</strong></td>
+  </tr>
+
+  <tr>
+    <td>Node name edited</td>
+    <td>Tracks when a node’s name is edited.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Node deleted</td>
+    <td>Tracks when a node is deleted.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Description added</td>
+    <td>Tracks when a description is added to a node.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Description edited</td>
+    <td>Tracks when a node’s description is modified.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Automation added</td>
+    <td>Tracks when a new automation is created.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Automation edited</td>
+    <td>Tracks when an existing automation is modified.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Connection added</td>
+    <td>Tracks when a connection name is added to a node.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Connection modified</td>
+    <td>Tracks when a connection name is modified.</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td>Variable edited</td>
+    <td>Tracks when a variable in a node is modified.</td>
+    <td align="center">-</td>
+  </tr>
+
+</table>
 
 
 ## Workflow-Level Audit Logs
@@ -1189,6 +1260,63 @@ Additionally, you can set **custom filters** based on a specific category, event
    </td>
   </tr>
 </table>
+
+
+<table>
+  <tr>
+    <td colspan="3" align="center"><strong>Category</strong>: Browser Automation</td>
+  </tr>
+
+  <tr>
+    <td colspan="3">
+      <b>Metadata</b>: All events record standard metadata, including user ID, user name (if available), and IP address.
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Event</strong></td>
+    <td><strong>Description</strong></td>
+    <td><strong>Additional Metadata</strong></td>
+  </tr>
+
+  <tr>
+    <td>Pod deployed</td>
+    <td>Tracks when a user deploys pod(s).</td>
+    <td align="center">connection name, connection ID, hardware type</td>
+  </tr>
+
+  <tr>
+    <td>Pod undeployed</td>
+    <td>Tracks when a user undeploys pod(s).</td>
+    <td align="center">connection name, connection ID, hardware type</td>
+  </tr>
+
+  <tr>
+    <td>Pod deleted</td>
+    <td>Tracks when a user deletes pod(s).</td>
+    <td align="center">connection name, connection ID, hardware type</td>
+  </tr>
+
+  <tr>
+    <td>Automation published</td>
+    <td>Tracks when a user publishes an automation.</td>
+    <td align="center">automation name</td>
+  </tr>
+
+  <tr>
+    <td>Automation deleted</td>
+    <td>Tracks when a user deletes an automation.</td>
+    <td align="center">automation name</td>
+  </tr>
+
+  <tr>
+    <td>Automation saved as draft</td>
+    <td>Tracks when a user saves an automation as a draft.</td>
+    <td align="center">automation name</td>
+  </tr>
+
+</table>
+
 
 
 
