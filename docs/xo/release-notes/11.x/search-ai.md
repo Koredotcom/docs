@@ -14,9 +14,8 @@ Users can now download a CSV of synced documents from their connectors. This hel
 
 <font size="4">New Connector Support in Search AI </font>
 
-Search AI extends support for four new connectors, enabling seamless content ingestion and retrieval from new applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
+Search AI extends support for three new connectors, enabling seamless content ingestion and retrieval from new applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
 
-* **BigTinCan (Brainshark)**
 * **Invision Community**
 * **Wolken Service Desk**
 * **YouTube**
