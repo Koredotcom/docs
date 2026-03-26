@@ -32,12 +32,12 @@ The following details of the voice campaigns are shown in a table:
     * **Completed**: The campaign has exhausted calling all numbers or the campaign has reached its scheduled end date.
 
 * **Progress** - Progress of the campaign. The count refreshes every 5 seconds.
-* **Contact List** - The call list that is dialed.
-* **Connection** - The following details are displayed based on the dialer type:
-    * **Agentless dialer**- The Flow name selected while creating or editing a campaign is shown. For example, the default Conversational Input voice Flow.
-    * **Progressive dialer** - The Queue name selected while creating or editing a campaign is shown. For example, the default Sales Queue.
+* **Contact List** - The call list that's dialed.
+* **Connection** - The system displays the following details based on the dialer type:
+    * **Agentless dialer**- The Flow name selected while creating or editing a campaign. For example, the default Conversational Input voice Flow.
+    * **Progressive dialer** - The Queue name selected while creating or editing a campaign. For example, the default Sales Queue.
     * **Preview dialer** - Displays the Queue name selected for the campaign. Agents receive call records based on idle time and can review customer details before starting the call.
-* **Last Run** - The date when the campaign was run last.
+* **Last Run** - The date when the campaign was last run.
 * **Last updated** - Date when the campaign was last updated.
 
     !!! Note
