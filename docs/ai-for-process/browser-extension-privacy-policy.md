@@ -108,5 +108,5 @@ We may update this privacy policy from time to time. The date of change to this 
 
 For questions about this privacy policy or the Extension's data practices, contact us at:
 
-* [Email](mailto:support@kore.ai).
-* [Website](https://kore.ai/).
+* [Email: support@kore.ai](mailto:support@kore.com)
+* [Website: https://www.kore.ai/contact-us](https://www.kore.ai/contact-us)
