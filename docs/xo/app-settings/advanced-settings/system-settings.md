@@ -48,3 +48,15 @@ Steps to configure the data retention period.
     <img src="../images/define-data-retention-period.png" alt="Define Data Retention Period" title="Define Data Retention Period" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save** to apply the changes.
+
+## Conversation Time Display Format
+
+Choose how time appears in call recording transcripts. The system displays either actual timestamps or elapsed duration from the start of the call. [Learn More](../../analytics/overview/conversations.md#conversation-time-display-format)
+
+### Configure Time Display Format
+
+1. Open Conversation Time Display Format.
+2. Select Standard Timestamps or Duration Markers.
+3. Select Save.  
+
+    <img src="../images/conversation-time-display-format.png" alt="Conversation Time Display Format" title="Conversation Time Display Format" style="border: 1px solid gray; zoom:70%;">

@@ -109,7 +109,7 @@ Steps to pull  the contacts using API Integration:
 2. On the **New Contact List** pop-up window, enter the **Name**, **Description**, and select **API Integration** from the Source dropdown.
 
 3. Select **API Integration** to configure the API and add records to the contact list. 
-4. Select the Method and enter the URL.  
+4. Select the Method (GET or POST) and enter the URL.  
 
 5. Select the **Data Sync Interval** from the dropdown. The system uses the interval to automatically update contact lists with database changes, eliminating the need for a manual refresh. You can choose an interval of up to 24 hours.
 
@@ -123,7 +123,8 @@ Steps to pull  the contacts using API Integration:
 
 8. If you select Header in the Add to field, go to the Headers tab and select **Click here to add headers**.
 
-9. Enter the **Key-Value** pairs and select **Next**.  
+9. Body (Applicable for POST Method): Enter the request payload in application/json, application/x-www-form-urlencoded, application/xml, or Custom format. If you select application/x-www-form-urlencoded, application/xml, enter the Key-Value pairs.  
+    <img src="../images/api-integration-post.png" alt="POST Method" title="POST Method" style="border: 1px solid gray; zoom:80%;">
 
 10. Select **Validate**. The response displays. 
 

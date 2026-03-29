@@ -513,14 +513,26 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Assign Conversations</strong><br>
+  <td><strong>Assign Individual or Multiple Conversations</strong><br>
   Allow user to assign individual or multiple conversations to an agent
   </td>
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Force Close Conversations</strong><br>
+  <td><strong>Force Close Individual or Multiple Conversations</strong><br>
   Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Profile</strong><br>
+  Allow user to edit another user's profile details in the monitor.
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Mark Offline</strong><br>
+  Allow user to mark another user as offline.
   </td>
   <td>Yes</td>
 </tr>
@@ -1201,14 +1213,26 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Assign Conversations</strong><br>
+  <td><strong>Assign Individual or Multiple Conversations</strong><br>
   Allow user to assign individual or multiple conversations to an agent
   </td>
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Force Close Conversations</strong><br>
+  <td><strong>Force Close Individual or Multiple Conversations</strong><br>
   Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Profile</strong><br>
+  Allow user to edit another user's profile details in the monitor.
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Mark Offline</strong><br>
+  Allow user to mark another user as offline.
   </td>
   <td>Yes</td>
 </tr>
@@ -1878,14 +1902,26 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Assign Conversations</strong><br>
+  <td><strong>Assign Individual or Multiple Conversations</strong><br>
   Allow user to assign individual or multiple conversations to an agent
   </td>
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Force Close Conversations</strong><br>
+  <td><strong>Force Close Individual or Multiple Conversations</strong><br>
   Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Profile</strong><br>
+  Allow user to edit another user's profile details in the monitor.
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Mark Offline</strong><br>
+  Allow user to mark another user as offline.
   </td>
   <td>Yes</td>
 </tr>
@@ -2563,14 +2599,26 @@ Allow user roles to be modified
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Assign Conversations</strong><br>
+  <td><strong>Assign Individual or Multiple Conversations</strong><br>
   Allow user to assign individual or multiple conversations to an agent
   </td>
   <td>Yes</td>
 </tr>
 <tr>
-  <td><strong>Force Close Conversations</strong><br>
+  <td><strong>Force Close Individual or Multiple Conversations</strong><br>
   Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Profile</strong><br>
+  Allow user to edit another user's profile details in the monitor.
+  </td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Mark Offline</strong><br>
+  Allow user to mark another user as offline.
   </td>
   <td>Yes</td>
 </tr>
@@ -3232,14 +3280,26 @@ Allow user roles to be modified
   <td>No</td>
 </tr>
 <tr>
-  <td><strong>Assign Conversations</strong><br>
+  <td><strong>Assign Individual or Multiple Conversations</strong><br>
   Allow user to assign individual or multiple conversations to an agent
   </td>
   <td>No</td>
 </tr>
 <tr>
-  <td><strong>Force Close Conversations</strong><br>
+  <td><strong>Force Close Individual or Multiple Conversations</strong><br>
   Allow user to force close individual or multiple conversations
+  </td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Profile</strong><br>
+  Allow user to edit another user's profile details in the monitor.
+  </td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Mark Offline</strong><br>
+  Allow user to mark another user as offline.
   </td>
   <td>No</td>
 </tr>
@@ -4076,7 +4136,7 @@ No</td>
 No</td>
 </tr>
 <tr>
-  <td><strong>Assign Conversations</strong><br>
+  <td><strong>Assign Individual or Multiple Conversations</strong><br>
   Allow user to assign individual or multiple conversations to an agent
   </td>
   <td>Yes
@@ -4084,8 +4144,24 @@ No</td>
 No</td>
 </tr>
 <tr>
-  <td><strong>Force Close Conversations</strong><br>
+  <td><strong>Force Close Individual or Multiple Conversations</strong><br>
   Allow user to force close individual or multiple conversations
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Profile</strong><br>
+  Allow user to edit another user's profile details in the monitor.
+  </td>
+  <td>Yes
+   <br> 
+No</td>
+</tr>
+<tr>
+  <td><strong>Mark Offline</strong><br>
+  Allow user to mark another user as offline.
   </td>
   <td>Yes
    <br> 

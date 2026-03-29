@@ -38,9 +38,9 @@ To view the Conversations dashboard, follow the steps:
     * Completed (User Hangup): Completed (User Hangup) refers to a voice call where the user ends the conversation.
     * Completed (AI Agents Hangup): Completed (AI Agents Hangup) refers to a voice call where the AI Agent completes the task and ends the call, and the AI Agents ends the conversation.
     * Completed: Completed refers to a chat conversation where the AI Agent completes the task and ends the conversation.
-    * CSAT: The system displays the CSAT survey score assigned to the conversation. If a score appears next to CSAT, the survey was triggered, and the user submitted a response. A gray CSAT icon indicates that the survey was triggered, but the user did not submit a response.
-    * NPS: The system displays the NPS score assigned to the conversation. If a score appears next to NPS, the survey was triggered, and the user submitted a response. A gray CSAT icon indicates that the survey was triggered, but the user did not submit a response.
-    * Like/Dislike: The system displays the Like or Dislike selected for the conversation. If the Like or Dislike icon appears highlighted, the survey was triggered, and the user submitted a response. A gray Like or Dislike icon indicates that the survey was triggered, but the user did not submit a response.
+    * CSAT: The system displays the CSAT survey score assigned to the conversation. If a score appears next to CSAT, the survey was triggered, and the user submitted a response. A gray CSAT icon indicates that the survey was triggered, but the user didn't submit a response.
+    * NPS: The system displays the NPS score assigned to the conversation. If a score appears next to NPS, the survey was triggered, and the user submitted a response. A gray CSAT icon indicates that the survey was triggered, but the user didn't submit a response.
+    * Like/Dislike: The system displays the Like or Dislike selected for the conversation. If the Like or Dislike icon appears highlighted, the survey was triggered, and the user submitted a response. A gray Like or Dislike icon indicates that the survey was triggered, but the user didn't submit a response.
 
 ## Supervisor Actions
 
@@ -485,6 +485,18 @@ List of recording status and messages:
 | `initial_fetch_failed` | We couldn’t load the call recording. Please try again. |
 | `retry_failed`        | Still unable to fetch the recording. Please try again after 15 minutes.  |
 | `24hr_retry_failed`  | We couldn’t generate the call recording due to a technical issue. Please contact your administrator for assistance. |
+
+#### Conversation Time Display Format
+
+Administrators can configure Standard Timestamps or Duration Markers for call recordings. [Learn more](../../app-settings/advanced-settings/system-settings.md#configure-time-display-format).
+
+The system displays recordings based on the selected option.
+
+**Standard Timestamps**: The system displays transcripts with exact date and time (for example, Fri Jun 14 2026, 4:52:31 PM) to support precise tracking.  
+<img src="../images/duration-timestamp.png" alt="Standard Timestamps" title="Standard Timestamps" style="border: 1px solid gray; zoom:80%;"> 
+
+**Duration Markers**: The system displays elapsed time (for example, 00:01) to enable quick navigation and improve contextual understanding.  
+<img src="../images/call-recording-duration.png" alt="Duration Marker" title="Duration Marker" style="border: 1px solid gray; zoom:80%;"> 
 
 ### Troubleshooting
 

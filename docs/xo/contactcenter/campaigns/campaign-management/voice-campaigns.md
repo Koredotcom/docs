@@ -72,6 +72,16 @@ To create a campaign when Agentless Dialing Mode is selected:
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
+Agentless Campaign Dispositions
+
+Agentless Voice campaigns support disposition codes to define call outcomes. You can configure a predefined set of disposition values (for example, Confirmed, Refused, Ignored) and use them for goal tracking and analytics.
+
+* Configure disposition codes during campaign design by going to Campaigns > Proactive Outreach > Agentless Dispositions > + Add Agentless Disposition.
+* At runtime, the system assigns one disposition per call and stores it in the session tag KoreAgentlessDisposition.
+* The system displays the disposition as a call outcome in the campaign’s Latest View.
+* The session tag is available in the Conversations Dashboard.
+* Disposition retry isn't supported for Agentless campaigns.
+
 ### Progressive Dialer
 
 A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it initiates 10 calls simultaneously.
