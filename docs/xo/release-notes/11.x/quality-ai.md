@@ -2,6 +2,26 @@
 
 This document provides information on the feature updates and enhancements introduced in **Quality AI** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Generative AI Features</font>
+
+**Gemini Model Support (Configuration Only)**
+
+Quality AI now supports Gemini models for custom prompt configuration. Supported models are Gemini 2.5 Pro, Gemini 2.5 Flash, Gemini 2.5 Flash-Lite, and Gemini 3 Flash Preview. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features.md/#quality-ai---genai-features)
+
+<font size="4">Analyze and Configure</font>
+
+**Minimum Duration Threshold for AutoQA and Scorecards**
+
+You can now set a minimum interaction duration threshold in evaluation forms and agent scorecards to ensure that AutoQA evaluates only the meaningful conversations. Before scoring, the system checks each interaction's duration and excludes short or incomplete ones from quality metrics. Contacts excluded from scoring and quality calculations remain visible.
+
+<hr>
+
 ## v11.22.1 March 14, 2026
 
 <u>Patch Release</u>
