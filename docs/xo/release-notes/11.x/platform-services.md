@@ -17,7 +17,8 @@ AI for Service now supports Google Gemini as an out-of-the-box (OOB) integration
 
 
 * Simple Integration Setup: Configure the integration using an API key.
-* Supported models: Gemini 3 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite.
+* Supported models: Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite. 
+
 
 <font size="4">Channels</font>
 
