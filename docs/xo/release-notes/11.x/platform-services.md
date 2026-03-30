@@ -2,6 +2,61 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">LLM & Generative AI</font>
+
+
+**Google Gemini Integration**
+
+AI for Service now supports Google Gemini as an out-of-the-box (OOB) integration, allowing platform users to access Google Gemini models directly within the Platform across all GenAI features. Users must create and manage their own prompts for their use cases.
+
+
+* Simple Integration Setup: Configure the integration using an API key.
+* Supported models: Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite. 
+
+
+<font size="4">Channels</font>
+
+
+**Session Isolation by Inbound Number for WhatsApp (Infobip)**
+
+The channel-based session is a new setting in WhatsApp channel configurations that prevents unintended session merging when users interact with multiple inbound numbers in the same app. It uniquely identifies sessions based on inbound numbers, considering each number as an independent channel associated with a specific flow.
+
+Note: When you enable it for an existing app, it may disrupt ongoing sessions if the inbound numbers are linked to experience flows.
+
+**Support for Multiple WhatsApp Infobip Accounts**
+
+The Platform now supports configuring up to 10 Infobip accounts for the WhatsApp infobip channel, enabling organizations with multiple business units to manage their WhatsApp operations independently. You can map each account to one or more inbound numbers, which are treated as distinct channels at runtime to ensure accurate session handling, flow execution, and response routing.
+
+<font size="4">App Language</font>
+
+**Spanish Language Support**
+
+Support for Spanish (Beta) as a new App language is now available via profile menu > app language.
+
+<font size="4">Security & Control</font>
+
+
+**SSO Login for Service Account**
+
+Service accounts now use a proxy email address during SSO-based authentication with identity providers such as Security Assertion Markup Language (SAML) or OpenID Connect (OIDC), replacing the native service account email in the authentication handshake. This update applies to both the new and legacy Admin experiences.
+
+<font size="4">Web SDK</font>
+
+**Token expiry handling**
+
+The Platform now monitors token expiry for `secureCustomData` event when the token includes an exp claim. When the token expires, the system triggers a `secureCustomData_expired` event, clears the token from the user context, and notifies the SDK. To maintain session continuity, users must provide a refreshed token from the external authentication system and update `secureCustomData`.
+
+
+
+<hr>
+
+
 ## v11.22.1 March 14, 2026
 
 <u> Patch Release </u>

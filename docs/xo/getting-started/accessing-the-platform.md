@@ -95,13 +95,18 @@ With Single Sign-on (SSO), you can sign in securely (after authentication) by us
 
 After you sign in, the landing page loads. From this page you can access the following product offerings:
 
-* **Apps and Related Options**: Lists of all the available apps. You can filter pinned app, shared app, or your apps.   
+* **Apps and Related Options**: Lists of all the available apps. You can filter pinned app, shared app, or your apps.
 * **Data**: Define Data Tables, Table Views, and manipulate them from your agents and Process Apps. It helps you attend to your data needs, without depending on external services.
 * **Invite Users**: You can invite members to collaborate on the app creation journey.
 * **Help**: Find useful resources and support methods to help you develop your app.
 * **Account Switcher**: If you are part of more than one organization, you can switch between the orgs.
 * **Profile**: Your profile details, set the Platform’s language and log out options.
+    * **Manage Profile**: View and edit your profile.
+    * **App Language**: Switch between supported languages like English, Japanese, Korean, German, and Spanish for all user interface elements and content.
+    * **Admin Console**: Access the Admin Console only if you are an Administrator. This is where you can manage your account and associated assets.
+    * **Logout**: Logout the app.
 * **New App**: Create an app or import an app.
+
 
 <img src="../images/xo-home.png" alt="Platform Homepage" title="Platform Homepage" style="border: 1px solid gray; zoom:80%;">
 
