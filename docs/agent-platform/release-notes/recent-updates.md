@@ -2,6 +2,50 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.8.0 March 29, 2026
+
+<u> Minor Release </u>
+
+This update includes new features and enhancements summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Session Customization in Playground**
+
+Agent Platform now introduces session-level customization in the Playground, letting users to start a new session, continue a previous session, or create a custom session. Users can configure metadata and runtime settings (such as streaming and artifacts), with configurations saved per session and automatically restored when resuming. This enhances flexibility, visibility, and control over testing and debugging workflows.
+
+**Complete App Export and Import**
+
+Agent Platform now supports complete application export. It packages all components, including the workflow tools, in a single file for seamless migration across environments.
+The import process includes upfront validation before execution and automatic rollback on failure, thereby preventing partial imports and unstable apps.
+
+**Pre-Processor Execution Control**
+
+Agent Platform now introduces execution control for pre-processors, allowing users to configure whether they run once per session or on every agent invocation. This reduces latency and avoids redundant processing. Existing configurations default to Always Run, ensuring backward compatibility.
+
+**Response Processors for Output Transformation**
+
+Agent Platform now introduces an application-level Response Processor that enables server-side transformation of agent responses before they are delivered to users. Developers can apply custom formatting, enrichment, and business logic using code, with access to the full response context, including inputs, outputs, and artifacts. This ensures consistent responses across channels and provides greater control over the final output delivery.
+
+**Voice-to-Voice Support for Adaptive Network**
+
+Agent Platform now supports voice-to-voice models in the Adaptive Network, enabling seamless processing of spoken input and generation of spoken responses. This enhances conversational experiences by enabling more natural, real-time voice interactions.
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**Native mTLS Support for OAuth 2.0 Client Credential Auth Profiles**
+
+Users can now securely connect to systems that require mutual TLS (mTLS) without relying on external tools or custom workarounds. OAuth 2.0 Client Credential auth profiles now support mTLS natively, enabling seamless authentication and improving integration reliability. The Platform can present a client certificate for both token requests and API calls, ensuring compatibility with enterprise systems that enforce mTLS.
+
+**Expanded Model Support**
+
+The Platform now supports additional AI models, including:
+
+* OpenAI: gpt-5.3-chat-latest
+* Anthropic: claude-sonnet-4-6
+* Grok Realtime (Available via custom integration)
+
+
 ## v1.7.0 March 8, 2026
 
 <u> Minor Release </u>
