@@ -12,6 +12,17 @@ This update includes an enhancement and bug fixes. The enhancement included in t
 
 Users can now download a CSV of synced documents from their connectors. This helps the users audit sync status, analyze metadata, and troubleshoot issues. The Download Document List option exports the filtered document list, with RACL enforcement ensuring users can only download documents they're authorized to access. [Learn more  :octicons-arrow-right-24:](../../searchai/content-sources/connectors.md).
 
+<font size="4">New Connector Support in Search AI </font>
+
+Search AI extends support for four new connectors, enabling seamless content ingestion and retrieval from new applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
+
+* **BigTinCan (Brainshark)**
+* **Invision Community**
+* **Wolken Service Desk**
+* **YouTube**
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/connector-directory.md)
+
 <hr>
 
 ## v11.22.0 February 28, 2026

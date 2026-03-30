@@ -98,8 +98,6 @@ curl --location --request GET \
 
 #### Response Parameters
 
-In this case, the API provides the following meta of the configurations.
-
 | **PARAMETER** | **DATA TYPE** | **DESCRIPTION** |
 |---|---|---|
 | `ACS IDP URL` | String | ACS URL for IDP Initiated SAML Flow. |
@@ -133,8 +131,6 @@ In this case, the API provides the following meta of the configurations.
 
 ### Sample Response (If SSO is Disabled)
 
-In this case, the API provides the following meta required to enable the app at the identity provider application.
-
 ```json
 {
     "ACS_IDP_URL": "https://sit-xx.xxxx.ai/api/sso/login/callback?c=e-92d9c14543721ecc925c33986d6e012d0efc2ab1309684d5ebaacf79b2xxxxx&redirect_url=https%3A%2F%2Fsit-xo.kore.ai%2Fbuilder%2F%3Fquery%3D1",
@@ -165,7 +161,7 @@ This API enables the SSO configuration for an account.
 | **PARAMETER** | **DESCRIPTION** | **REQUIRED/OPTIONAL** |
 |---|---|---|
 | host | The environment URL. For example, https://platform.kore.ai | Required |
-| BotId | The *Bot ID* or *Stream ID*. You can access it by navigating to **App Settings** → **App Profile** in the app builder. | Required |
+| BotId | The *Bot ID* or *Stream ID*. You can access it by navigating to **App Settings** → **App Profile** in the App Builder. | Required |
 
 ### Sample Request
 
@@ -229,7 +225,7 @@ curl --location 'https://{{host}}/api/public/ssoconfig' \
 
 ### Sample Response
 
-```bash
+```json
 {
     "method": "saml",
     "name": "john.doe@example.com",

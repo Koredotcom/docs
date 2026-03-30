@@ -10,9 +10,9 @@ This article takes you through the general context within which multilingual AI 
 If you want to build a Multilingual AI Agent, there are a few points to keep in mind:
 
   1. There is a set of basic building blocks to a multilingual AI Agent: the language in which it talks to users, the language in which you train it, and the process through which it detects and selects which languages to use. Please continue reading this article to learn more.
-  2. You can create a new AI Agent or add new languages to an existing one. Read more about managing languages [here](managing-languages-for-multilingual-vas.md){:target="_blank"}.
-  3. Multilingual AI Agents have language-specific components and some features exhibit different behaviors compared to single language assistants. Read more about this [here](multilingual-vas-components-feature-support.md){:target="_blank"}.
-  4. Translation can be automated using pre-built translation services from providers such as Microsoft or Google; or custom services, including any that you may build in-house. Read [here](managing-translation-services.md){:target="_blank"} to learn more.
+  2. You can create a new AI Agent or add new languages to an existing one. Read more about managing languages [here](managing-languages-for-multilingual-vas.md).
+  3. Multilingual AI Agents have language-specific components and some features exhibit different behaviors compared to single language assistants. Read more about this [here](multilingual-vas-components-feature-support.md).
+  4. Translation can be automated using pre-built translation services from providers such as Microsoft or Google; or custom services, including any that you may build in-house. Read [here](managing-translation-services.md) to learn more.
 
 
 ## The Conversation (AI Agent) Language
@@ -21,7 +21,7 @@ Enabling a language requires you to train the model to understand the user’s i
 
 Conversation Language is the one that users use to interact with the assistant. You can choose any of the over 100 languages as the Conversation Language. You can define the responses (prompts, messages. etc.,) in the Conversation Language. 
 
-You can also use the automatic response translation feature when you or your team does not have expertise in the user’s language. You can write the responses in your preferred language and the platform will automatically translate them to the user’s language during the conversation. 
+You can also use the automatic response translation feature when you or your team doesn't have expertise in the user’s language. You can write the responses in your preferred language and the platform will automatically translate them to the user’s language during the conversation. 
 
 
 ### Supported AI Agent Languages
