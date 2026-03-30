@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Gemini Model Support (Configuration Only)**
 
-Quality AI now supports Gemini models for custom prompt configuration. Supported models are Gemini 2.5 Pro, Gemini 2.5 Flash, Gemini 2.5 Flash-Lite, and Gemini 3 Flash Preview. 
+Quality AI now supports Gemini models for custom prompt configuration. Supported models are Gemini 2.5 Pro, Gemini 2.5 Flash, Gemini 2.5 Flash-Lite, Gemini 3 Flash Preview, and Gemini 3.1 Pro Preview. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/genai-features-qualityai.md) 
 
 <font size="4">Analyze and Configure</font>
 
