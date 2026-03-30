@@ -1,6 +1,6 @@
 # Deprecation Notice
 
-## Generative AI and LLM Uupdates
+## Generative AI and LLM
 
 ### Azure OpenAI
 
@@ -60,7 +60,7 @@ Microsoft updates your deployment after their model retirement. Your model runs 
 
 See [Microsoft AI Foundry Model Retirements](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements?tabs=text).
 
-### NLP Model Deprecation Notice
+## NLP Model Deprecation Notice
 
 The platform displays a notice for NLP-based apps to inform you about upcoming retirements. It identifies the network types and embedding models scheduled for retirement. Supported network types include Standard, Multi-lingual, Zero-shot, and Few-shot. Supported embeddings include Pre-trained MPNet and BGE M3.
 
