@@ -43,29 +43,37 @@ Steps to configure **Infobip**:
 <img src="../images/whatsapp5.png" alt="deploy infobip" title="deploy infobip " style="border: 1px solid gray; zoom:70%;">
 
 7. Next, to add Infobip’s **Base URL**, follow these steps:
-   
 
     * On the Platform, go to **Channels and Flows** > **Channels** > **Digital** > **All** and click **WhatsApp Business Messaging**.
-    * On the **WhatsApp Business Messaging** panel, click the **Configurations** tab and provide inputs for the following fields:
+    * On the **WhatsApp Business Messaging** panel, select the **Configurations** tab and provide inputs for the following fields:
         * **Messaging Partner**: Select **Infobip** from the dropdown list.
-        * **Phone Number**: Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same AI Agent. The AI Agent responds to only the source number from which it receives the message rather than a common phone number. [Learn more](whatsapp-support-for-multiple-phone-numbers.md).
-        * **Base URL**: Copy the Base URL from this page. Use this URL sends messages when the **WhatsApp Business Messaging** channel is enabled.
-        <img src="../images/whatsapp7.png" alt="infobip messaging partner" title="infobip messaging partner" style="border: 1px solid gray; zoom:70%;">
+        * **Infobip API**: Select the type of Infobip API used for communication purposes. Available options are **WhatsApp Outbound API** and **Omni Failover API**.
+        * **Channel-based Sessions**: Enable this toggle to treat each inbound number as an independent channel. Conversations with the same number continue within the existing session, while interactions with a different number start a new session. This toggle is available only for Infobip. 
 
+        !!! note
+            When the Channel-based Sessions toggle is enabled for existing apps, it disrupts ongoing sessions if inbound numbers are already linked to experience flows.
 
-        * **Username and Password**: The username and password of the **Infobip** account holder. Infobip’s API requires authentication and uses the basic authorization for sending and receiving messages over the API with these values.
         * **Webhook URL**: Copy the webhook URL provided in the configuration tab and update the same on the **Infobip developer portal** for Infobip to send the received messages from the subscriber (WhatsApp Business Messaging).
         <img src="../images/whatsapp8.png" alt="infobip API" title="infobip API" style="border: 1px solid gray; zoom:70%;">  
 
-        * Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
+        *  Within the Accounts section, configure Infobip account details (the platform supports the addition of up to 10 Infobip accounts) as follows:
 
-        * Select **Yes** to enable the **WhatsApp Business Messaging** channel.
-    * Click **Save** to complete the integration setup.
-    <img src="../images/whatsapp9.png" alt="save infobip configuration" title="save infobip configuration" style="border: 1px solid gray; zoom:70%;">
+            * **Name**: The name of the Infobip account.
+            * **Phone Number**: Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same AI Agent. The AI Agent responds to only the source number from which it receives the message rather than a common phone number. [Learn more](whatsapp-support-for-multiple-phone-numbers.md).
+            * **Base URL**: Copy the Base URL from this page. Use this URL sends messages when the **WhatsApp Business Messaging** channel is enabled.
+            <img src="../images/whatsapp7.png" alt="infobip messaging partner" title="infobip messaging partner" style="border: 1px solid gray; zoom:70%;">
 
-    !!! note
 
-          If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format '[Keyword on infobip][User input]' For example, “Platform Hi”.
+            * **Username and Password**: The username and password of the **Infobip** account holder. Infobip’s API requires authentication and uses the basic authorization for sending and receiving messages over the API with these values.
+
+            * Enable **Proactive Notifications** to send relevant updates to the users without requiring them to initiate interaction with the app first.
+
+            * Select **Save** to complete the integration setup. To add another account, select **+ Add** and follow the same steps again. Each account can have multiple inbound numbers. You can disable or delete any account using the icons next to it. If you disable an account and its inbound numbers are being used in active experience flows, it may affect ongoing sessions.
+
+                <img src="../images/whatsapp9.png" alt="save infobip configuration" title="save infobip configuration" style="border: 1px solid gray; zoom:70%;">
+
+            !!! note
+                  If you’re using the development sandbox on Infobip, once the channel is enabled and published, you will need to send messages in the format '[Keyword on infobip][User input]'. For example, “Platform Hi”.
 
 
 

@@ -9,7 +9,6 @@ This document provides information on the feature updates and enhancements intro
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 
-
 <font size="4">Analyze and Configure</font>
 
 **Minimum Duration Threshold for AutoQA and Scorecards**

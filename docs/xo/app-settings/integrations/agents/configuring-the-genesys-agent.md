@@ -116,16 +116,18 @@ To configure the agent, follow these steps:
         <img src="../images/genesys-at.png" alt="Enter Genesys agent credentials" title="Enter Genesys agent credentials" style="border: 1px solid gray;"> 
 
 
-5. If you want to make Genesys the default agent, enable the **Default Agent System for all bot channels** option. 
+5. If you want to suppress the session closure message after an agent conversation ends, enable the **Disable End Conversation Message** option.
+
+6. If you want to make Genesys the default agent, enable the **Default Agent System for all bot channels** option. 
  Note:  This option is available only when you have multiple agents configured for your AI Agent. 
  
 
-6. You can customize the channel mapping by clicking the **Manage** link. 
+7. You can customize the channel mapping by clicking the **Manage** link. 
 
-7. Once you click **Manage**, you can map the channels you want the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md).
-8. After mapping channels, click **Done**.
-9. Click **Save** to enable the Genesys agent.
-10. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
+8. Once you click **Manage**, you can map the channels you want the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your app](../../../channels/adding-channels-to-your-bot.md).
+9. After mapping channels, click **Done**.
+10. Click **Save** to enable the Genesys agent.
+11. Publish the App. For more information, see [Publishing App](../../../deploy/publishing-bot.md){:target="_blank"}.
 
 
 ## Execution
