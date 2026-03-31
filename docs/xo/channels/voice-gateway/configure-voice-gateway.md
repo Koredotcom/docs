@@ -458,7 +458,6 @@ Steps to configure Voice Preferences:
             * AWS Amazon Polly,
             * ElevenLabs,
             * OpenAI TTS,
-            * PlayHT,
             * Deepgram Text-to-speech.
         2. Voice
     4. Voice Preview
