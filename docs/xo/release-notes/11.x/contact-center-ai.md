@@ -46,7 +46,7 @@ The Insights to Logs panel now includes a compact recording overview widget, an 
 
 **Add Payload Input for API-Integrated Contact List**
 
-POST-based API-integrated contact lists now support request payload input. The payload field accepts .json file, raw text, or URL-encoded data, with existing validation rules applied. This enables flexible data exchange with external systems without affecting current API configurations. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration-1)
+POST-based API-integrated contact lists now support request payload input. The payload field accepts .json file, raw text, or URL-encoded data, with existing validation rules applied. This enables flexible data exchange with external systems without affecting current API configurations. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#create-a-contact-list)
 
 **Agentless Dialers: Disposition Support**
 
