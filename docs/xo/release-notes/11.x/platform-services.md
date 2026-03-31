@@ -25,13 +25,13 @@ AI for Service now supports Google Gemini as an out-of-the-box (OOB) integration
 
 **Session Isolation by Inbound Number for WhatsApp (Infobip)**
 
-The channel-based session is a new setting in WhatsApp channel configurations that prevents unintended session merging when users interact with multiple inbound numbers in the same app. It uniquely identifies sessions based on inbound numbers, considering each number as an independent channel associated with a specific flow.
+The channel-based session is a new setting in WhatsApp channel configurations that prevents unintended session merging when users interact with multiple inbound numbers in the same app. It uniquely identifies sessions based on inbound numbers, considering each number as an independent channel associated with a specific flow. [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md/#adding-the-whatsapp-channel-using-infobip-application)
 
-Note: When you enable it for an existing app, it may disrupt ongoing sessions if the inbound numbers are linked to experience flows.
+Note: When you enable it for an existing app, it may disrupt ongoing sessions if the inbound numbers are linked to experience flows. 
 
 **Support for Multiple WhatsApp Infobip Accounts**
 
-The Platform now supports configuring up to 10 Infobip accounts for the WhatsApp infobip channel, enabling organizations with multiple business units to manage their WhatsApp operations independently. You can map each account to one or more inbound numbers, which are treated as distinct channels at runtime to ensure accurate session handling, flow execution, and response routing.
+The Platform now supports configuring up to 10 Infobip accounts for the WhatsApp infobip channel, enabling organizations with multiple business units to manage their WhatsApp operations independently. You can map each account to one or more inbound numbers, which are treated as distinct channels at runtime to ensure accurate session handling, flow execution, and response routing. [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md/#adding-the-whatsapp-channel-using-infobip-application)
 
 <font size="4">App Language</font>
 

@@ -13,14 +13,14 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Conversation History Length Doubled in the Agent Node and DialogGPT**
 
-The conversation history now supports up to 50 messages. It improves retention for custom prompts and prevents mid-conversation restarts, context loss, and repeated questions. You can configure the limit independently of the DialogGPT and Agent Node features.
+The conversation history now supports up to 50 messages. It improves retention for custom prompts and prevents mid-conversation restarts, context loss, and repeated questions. You can configure the limit independently of the DialogGPT and Agent Node features.[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md)
 
 
 <font size="4">Agent Transfer</font>
 
 **Control Session Closure Message for Genesys**
 
-A new Disable End Conversation Message setting in Genesys configurations allows administrators to control whether users see a session closure message after an agent conversation ends. Its default state in the Platform is disabled.
+A new Disable End Conversation Message setting in Genesys configurations allows administrators to control whether users see a session closure message after an agent conversation ends. Its default state in the Platform is disabled. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md) 
 
 **Genesys Agent Message ID Available via Context Variable** 
 
