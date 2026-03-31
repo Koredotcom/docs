@@ -12,7 +12,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Pass Metadata Support in Search AI Configuration**
 
-In the newly available Pass Metadata configuration section, you can select Landing Summary, Agent-Customer Chat History, and User Context to pass as metadata. This improves response relevance, personalization, and accuracy without requiring manual query rephrasing.
+In the newly available Pass Metadata configuration section, you can select Landing Summary, Agent-Customer Chat History, and User Context to pass as metadata. This improves response relevance, personalization, and accuracy without requiring manual query rephrasing. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/linked-services.md/#knowledge-ai).
 
 **Spanish Support for the Agent AI UXO App Language**
 
