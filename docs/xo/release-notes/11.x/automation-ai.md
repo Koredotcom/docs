@@ -13,7 +13,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Conversation History Length Doubled in the Agent Node and DialogGPT**
 
-The conversation history now supports up to 50 messages. It improves retention for custom prompts and prevents mid-conversation restarts, context loss, and repeated questions. You can configure the limit independently of the DialogGPT and Agent Node features.[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md/#model-configuration_1)
+The conversation history now supports up to 50 messages. It improves retention for custom prompts and prevents mid-conversation restarts, context loss, and repeated questions. You can configure the limit independently of the DialogGPT and Agent Node features.  [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md/#model-configuration_1)
 
 
 <font size="4">Agent Transfer</font>
