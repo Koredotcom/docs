@@ -110,7 +110,7 @@ Random allocation uses statistical sampling to guarantee impartial selection of 
 #### Custom Allocation
 
 Custom allocation gives you precise control over interaction selection by applying specific filters to target particular scenarios, topics, sentiment ranges, or performance metrics. This method works well for focused evaluations that target known issues or validate Auto QA accuracy in specific situations.   
-<img src="../allocations/images/custom-allocation.png" alt="Custom Allocation" title="Custom Allocation" style="border: 1px solid gray; zoom:80%;">
+<img src="../allocations/images/custom-allocation .png" alt="Custom Allocation" title="Custom Allocation" style="border: 1px solid gray; zoom:80%;">
 
 **Configure Custom Allocation**
 

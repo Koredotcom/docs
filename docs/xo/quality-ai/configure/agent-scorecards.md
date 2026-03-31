@@ -189,7 +189,7 @@ The system versions threshold settings per scorecard. Updates apply only to cont
 
 Each scorecard displays the following:
 
-*** **Name: Displays the name of the agent or agent group.
+* **Name**: Displays the name of the agent or agent group.
 
 * **Agent Attributes**: Displays the name of the selected agent attributes.
 
@@ -245,8 +245,6 @@ A warning appears if a new language isn't configured for existing metrics or att
 #### Deleting Languages
 
 You can’t remove any languages linked to active scorecards or attributes until you clear those links. The system allows language modification only for attributes configured for the selected languages.
-
-
 
 
 ## Agent Attributes
@@ -357,7 +355,7 @@ A warning appears if the new language isn’t configured for the current by-ques
 
 The system displays a warning if the language is in use in other scorecards. Remove the language configuration from all associated scorecards before deleting it. The system blocks deletion if the language is in use.
 
- !!! note
+!!! note
             
     Only scorecards for the selected languages appear. You can remove or delete languages not linked to any scorecards.
 
