@@ -144,7 +144,7 @@ To verify the data exchange between Kore.ai’s AI Agent and Genesys agent, foll
 3. Click the **Talk to Bot** icon to launch the AI Agent and enter **Help**.
 4. When a user initiates the chat from the AI Agent, it transfers the conversation to the Genesys agent and sends a message to the user.
 5. Agent receives a notification about this on Genesys.
-6. Now, the connection between the Genesys agent and the user has been established, and the conversation continues.
+6. Now, the connection between the Genesys agent and the user has been established, and the conversation continues. When the agent begins interacting with the user, the system generates a message ID. The system exposes this message ID as a context variable `{{context.session.BotUserSession.agentHandoffMeta.messageId}}`. You can pass this message ID as a parameter in the service node to retrieve details of the agent who handled the conversation.
 
     <img src="../images/configuring-the-genesys-agent-img5.png" alt="Connection established between Genesys agent and user" title="Connection established between Genesys agent and user" style="border: 1px solid gray;">
 
