@@ -226,16 +226,17 @@ The Platform supports Google Gemini as an out-of-the-box (OOB) integration, allo
 Steps to configure a Google Gemini:
 
 1. Navigate to **Generative AI Tools** > **Models Library** > **Configure Now** for Google Gemini, then click **Next**.
-2. Complete the [Authorization](../generative-ai-tools/models-library.md#authorization).
+2. Complete the [Authorization](models-library.md#authorization).
 3. For the model section, enable the toggle on the required model.
-4. In the model section, click **+Add** to configure [Provider's New LLM](../generative-ai-tools/configure-llm-integration.md#providers-new-llm). This step is optional.
+4. In the model section, click **+Add** to configure [Provider's New LLM](#providers-new-llm). This step is optional.
 5. Read the Policy Guidelines, select the checkbox, and click **Save**.
 6. The Connection Status pop-up is displayed.
     * If a connection is successful, click **Next**.
     * If it fails, hover over the warning icon to review the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
-    * Enable Token Usage Limit toggle to track [LLM Usage Limit](../generative-ai-tools/models-library.md#manage-usage-limit). You can set the limit later from the More options menu. This step is optional.
-    * Click **Save**. The confirmation pop-up is displayed.
-    * Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](../generative-ai-tools/genai-features.md).
+
+7. Enable Token Usage Limit toggle to track [LLM Usage Limit](models-library.md#manage-usage-limit). You can set the limit later from the More options menu. This step is optional.
+8. Click **Save**. The confirmation pop-up is displayed.
+9. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](genai-features.md).
 
 ### Provider's New LLM
 

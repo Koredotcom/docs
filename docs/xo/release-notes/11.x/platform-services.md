@@ -22,7 +22,7 @@ AI for Service now supports Google Gemini as an out-of-the-box (OOB) integration
 
 <font size="4">Channels</font>
 
-**Session Isolation by Inbound Number for WhatsApp (Infobip)**
+**Session Isolation by Inbound Number for WhatsApp Infobip Channel**
 
 The channel-based session is a new setting in WhatsApp channel configurations that prevents unintended session merging when users interact with multiple inbound numbers in the same app. It uniquely identifies sessions based on inbound numbers, considering each number as an independent channel associated with a specific flow. [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md/#adding-the-whatsapp-channel-using-infobip-application)
 
