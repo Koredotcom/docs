@@ -61,7 +61,7 @@ A dedicated dashboard for proactive campaigns is now available, with filters for
 
 **Time-Based Queue Reprioritization**
 
-A new public API lets you dynamically update queue priorities, enabling time-based automation via external schedulers. Updates apply immediately, override UI-configured priorities, and influence routing without reassigning active conversations.
+A new public API lets you dynamically update queue priorities, enabling time-based automation via external schedulers. Updates apply immediately, override UI-configured priorities, and influence routing without reassigning active conversations. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/update-queue-priority.md).
 
 <hr>
 
