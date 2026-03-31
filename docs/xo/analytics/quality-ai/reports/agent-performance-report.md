@@ -81,7 +81,7 @@ This report provides a comprehensive view of individual agent performance, inclu
     1. Enter one or more addresses in the **Send Email to** fields to send the automated reports (minimum one required). 
 
     1. Select **Next**.    
-        <img src="../images/agent-config.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/agent-configuration.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:60%;">
 
 1. Configure the **Schedule** section.  
  
