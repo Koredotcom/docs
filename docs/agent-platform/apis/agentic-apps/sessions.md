@@ -236,8 +236,7 @@ Returns details of the newly created session, which are required for managing an
 }
 ```
 
-
-<!-- 
+<!--
 ## List Sessions
 
 Lists sessions for the selected app and environment. Supports optional filters such as session ID, user reference, and date range.
@@ -247,19 +246,13 @@ Lists sessions for the selected app and environment. Supports optional filters s
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>GET
-   </td>
-  </tr>
-   <tr>
-   <td><strong>Base URL</strong>
-   </td>
-   <td>https://&lt;agent-platform-env>.&lt;domain>.com/aaa/api/v1/
+   <td>POST
    </td>
   </tr>
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td>/apps/&lt;AppID>/environments/&lt;EnvName>/sessions/list
+   <td>/apps/&lt;AppID>/sessions/list
    </td>
   </tr>
   <tr>
@@ -272,6 +265,12 @@ Lists sessions for the selected app and environment. Supports optional filters s
    <td><strong>Authorization Header</strong>
    </td>
    <td>x-api-key: &lt;API-KEY>
+   </td>
+  </tr>
+   <tr>
+   <td><strong>API Scope</strong>
+   </td>
+   <td>Session List
    </td>
   </tr>
 </table>
@@ -302,73 +301,70 @@ Lists sessions for the selected app and environment. Supports optional filters s
   </tr>
 </table>
 
+### Request body
 
+All fields are optional.
 
-### Query Parameters
+| Field | Type | Validation / Behavior |
+|---|---|---|
+| `start_time` | string | ISO 8601 timestamp. If missing, defaults to `(end_time - 24h)` |
+| `end_time` | string | ISO 8601 timestamp. If missing, defaults to current time |
+| `user_reference_id` | string | Filters sessions by owner user reference |
+| `env_name` | string | Environment name (case-insensitive). If missing, defaults to `production` |
+| `offset` | number | Integer, minimum `0`, default `0` |
+| `limit` | number | Integer, min `1`, max `100`, default `20` |
 
+### Successful response
 
-<table>
-  <tr>
-   <td><strong>Fields</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-   <td>Mandatory
-   </td>
-  </tr>
-  <tr>
-   <td>startDate</td>
-   <td> Specifies the beginning of the date range for which sessions should be retrieved.
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>endDate </td>
-   <td>Defines the end of the date range for sessions retrieval. </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>offset
-   </td>
-   <td>Indicates the number of records to skip before starting to return results. This field is primarily used for pagination. </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>limit </td>
-   <td>Specifies the maximum number of records to return in a single response.  </td>
-   <td>No
-   </td>
-  </tr>
-</table>
+Returns an array of all valid sessions and their details along with the total number of sessions in the response.
 
-
-
-#### Sample Request
-
-
-```
+```json
 {
-  "sessionId": "string",               
-  "userReference": "string",           
-  "date": {                           
-    "start": "string",
-    "end": "string"
-  },
-  "filters": [                        // For future use
+  "sessions": [
     {
-      "key": "string",
-      "value": "string",
-      "operator": "string"
+      "session_id": "session_xxx",
+      "user_reference_id": "user_123",
+      "env_name": "production",
+      "start_time": "2026-03-27T05:10:00.000Z",
+      "end_time": null,
+      "last_activity_at": "2026-03-27T05:20:00.000Z",
+      "source": "AP"
     }
   ],
-  "offset": "number"
+  "total_count": 1,
+  "offset": 0,
+  "limit": 20
 }
 ```
+**Examples**
 
+1. **Filter by user reference**
 
+```bash
+curl -X POST "$BASE_URL/api/v2/apps/$APP_ID/sessions/list" \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: $API_KEY" \
+  -d "{
+    \"user_reference_id\": \"$USER_REF\"
+  }"
+```
+
+Returns all the sessions with given user reference id. 
+
+2. **Filter by explicit time range**
+
+```bash
+curl -X POST "$BASE_URL/api/v2/apps/$APP_ID/sessions/list" \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: $API_KEY" \
+  -d "{
+    \"start_time\": \"$START_TIME\",
+    \"end_time\": \"$END_TIME\",
+    \"offset\": 0,
+    \"limit\": 10
+  }"
+```
+Returns all the sessions within the given time limits.
 
 ### Response Parameters
 

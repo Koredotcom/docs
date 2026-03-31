@@ -93,14 +93,83 @@ TTS services also use a selected voice (for example, female or male) to respond.
 }
 ```
 
-| **Parameter**       | **Type** | **Supported STT/TTS** | **Description**                                                                                                                             | **Example**                                                                                                                                                                |
-| ------------------- | -------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sttProvider`       | String   | All                   | Sets the speech-to-text engine. You can change the provider dynamically during a call.                                                      | `"sttProvider": "google"`                                                                                                                                                  |
-| `sttLanguage`       | String   | All                   | Sets the STT language. The transcript language matches this value.                                                                          | `"sttLanguage": "en-US"`                                                                                                                                                   |
-| `ttsProvider`       | String   | All                   | Sets the text-to-speech provider, similar to `sttProvider`.                                                                                 | `"ttsProvider": "microsoft"`                                                                                                                                               |
-| `ttsLanguage`       | String   | All                   | Sets the language used for TTS. Ensure it matches the `voiceName`.                                                                          | `"ttsLanguage": "en-US"`                                                                                                                                                   |
-| `voiceName`         | String   | All                   | Required for TTS output. The voice must align with `ttsLanguage`.                                                                           | `"voiceName": "en-AU-NatashaNeural"`<br>Example:<br>`json<br>{<br>  "ttsProvider": "microsoft",<br>  "ttsLanguage": "en-AU",<br>  "voiceName": "en-AU-NatashaNeural"<br>}` |
-| `enableSpeechInput` | Boolean  | All                   | When set to `false`, disables speech input and lets only DTMF input. Default is `true`. Use this only through the Call Control Parameter. | `"enableSpeechInput": false`                                                                                                                                               |
+| **Parameter**               | **Type** | **Description**                                                                                  | **Example Values**             |
+| --------------------------- | -------- | ------------------------------------------------------------------------------------------------ | ------------------------------ |
+| `sttLabel`                  | String   | Identifies the ASR engine configured in Voice Gateway.                                            | `my_azure-US`                 |
+| `sttFallbackLabel`          | String   | Defines the fallback ASR label used when the primary engine fails.                                | `my_azure_Europe`             |
+| `sttFallbackProvider`       | String   | Specifies the fallback ASR provider.                                                              | `microsoft`                   |
+| `sttFallbackLanguage`       | String   | Specifies the fallback ASR language.                                                              | `en-US`                       |
+| `ttsLabel`                  | String   | Identifies the TTS engine configured in Voice Gateway.                                            | `my_azure-US`                 |
+| `ttsFallbackLabel`          | String   | Defines the fallback TTS label used when the primary engine fails.                                | `my_azure_Europe`             |
+| `ttsFallbackProvider`       | String   | Specifies the fallback TTS provider.                                                              | `microsoft`                   |
+| `ttsFallbackLanguage`       | String   | Specifies the fallback TTS language.                                                              | `en-US`                       |
+| `ttsFallbackVoiceName`      | String   | Specifies the fallback voice used for TTS output.                                                 | `en-US-AmberNeural`           |
+| `enableTTSChunking`         | Boolean  | Splits long responses into sentence-level chunks to reduce perceived audio latency.              | `true`                        |
+| `preflightThreshold`        | Number   | Sets the confidence threshold for early speech detection before full turn completion.            | `0.6`                         |
+| `eotThreshold`              | Number   | Defines the confidence score required to trigger an End-of-Turn event.                           | `0.8`                         |
+| `eagerEotThreshold`         | Number   | Sets the threshold for early End-of-Turn detection to start response generation sooner.          | `0.5`                         |
+| `eotTimeoutMs`              | Number   | Specifies the maximum silence duration before forcing an End-of-Turn event.                      | `3000`                        |
+| `mipOptOut`                 | Boolean  | Disables participation in model improvement programs using audio and transcripts.                | `true`                        |
+| `entityPrompt`              | String   | Provides contextual hints to improve recognition of domain-specific terms.                       | `"flight number, booking reference"` |
+| `node.alternativeLanguages` | Array    | Defines alternate languages, providers, and voices for dynamic switching during conversations.   | `See example below`           |
+| `azureAudioLogging`         | Boolean  | Enables or disables audio logging for Azure Speech services.                                     | `true`                        |
+| `notifySttLatency`         | Boolean  | Enables capturing the STT Latency Values.                                     | `true`                        |
+
+
+Example for node.alternativeLanguages
+
+```
+node.alternativeLanguages: [
+  {
+    "language": "es-ES",
+    "voiceName": "es-ES-ArabellaMultilingualNeural"
+  },
+  {
+    "language": "en-IN",
+    "voiceName": "en-IN-PrabhatNeural",
+    "ttsLabel": "microsoft2",
+    "ttsProvider": "microsoft",
+    "sttProvider": "microsoft2"
+  }
+]
+```
+
+### Use Cases and Benefits
+
+**Reduce Voice Bot Response Latency**
+
+**Parameter:** `enableTTSChunking`
+Enables chunking of long bot responses so the system starts audio playback before processing the full text. This improves time-to-first-audio and creates a smoother conversational flow.
+
+**Improve Turn Detection in Voice Conversations**
+
+**Parameters:** `eotThreshold`, `eagerEotThreshold`, `eotTimeoutMs`
+Controls how the system detects when a user finishes speaking. Fine-tune these values to reduce interruptions, avoid delays, and prevent overlapping speech.
+
+**Enable Faster AI Response Generation**
+
+**Parameter:** `eagerEotThreshold`
+Allows the system to begin generating a response before the user fully stops speaking, improving responsiveness and real-time interaction.
+
+**Improve Speech Recognition for Domain Terms**
+
+**Parameter:** `entityPrompt`
+Provides hints for domain-specific terms (such as order IDs or product names) to improve speech recognition accuracy.
+
+**Enable Multi-Language Voice Bots**
+
+**Parameter:** `node.alternativeLanguages`
+Allows the system to switch languages and voices dynamically during a conversation based on user input.
+
+**Privacy and Compliance Control**
+
+**Parameter:** `mipOptOut`
+Prevents the system from using customer audio data for model training.
+
+**Debugging and Quality Monitoring**
+
+**Parameter:** `azureAudioLogging`
+Enables logging to help analyze recognition errors, audio quality, and language detection issues during testing and troubleshooting.
 
 ### Labels and Fallback Provider Related Parameters
 
@@ -174,18 +243,6 @@ Examples:
     * If the current provider fails, Voice Gateway switches to the fallback provider.
     * Fallback properties are applied at the session level.
 
-| **Parameter**          |**Type**| **Description**                                                                        | **Example Values**  |
-| ---------------------- | ------ | -------------------------------------------------------------------------------------- | ------------------- |
-| `sttLabel`             | String | Uniquely identifies the ASR engine in Voice Gateway.                                   | `my_azure-US`       |
-| `sttFallbackLabel`     | String | Fallback label for ASR; switch happens on error. Prefer same vendor, different region. | `my_azure_Europe`   |
-| `sttFallbackProvider`  | String | Specifies fallback STT provider.                                                       | `microsoft`         |
-| `sttFallbackLanguage`  | String | Specifies fallback STT language.                                                       | `en-US`             |
-| `ttsLabel`             | String | Uniquely identifies the TTS engine in Voice Gateway.                                   | `my_azure-US`       |
-| `ttsFallbackLabel`     | String | Fallback label for TTS.                                                                | `my_azure_Europe`   |
-| `ttsFallbackProvider`  | String | Specifies fallback TTS provider.                                                       | `microsoft`         |
-| `ttsFallbackLanguage`  | String | Specifies fallback TTS language.                                                       | `en-US`             |
-| `ttsFallbackVoiceName` | String | Specifies fallback voice name for TTS.                                                 | `en-US-AmberNeural` |
-
 ### Continuous ASR Related Parameters
 
 Continuous ASR (Automatic Speech Recognition) lets the speech-to-text engine to handle user inputs like phone numbers or customer IDs that may include pauses between utterances. This improves recognition accuracy for digit or character strings.
@@ -249,6 +306,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `hints` with `hintsBoost`    | Array + Number       | Google, Microsoft, Nvidia        | Instead of boosting each phrase individually, apply a single boost value to the entire array of hints.                                                        | `"hints": ["benign", "malignant", "biopsy"], "hintsBoost": 50` |
 | `sttDisablePunctuation`      | Boolean              | Google, Microsoft                | Controls punctuation in ASR output. `false` enables punctuation (default); `true` disables it.                                                                | `"sttDisablePunctuation": true` |
 | `vadEnable`                  | Boolean              | All                              | If `true`, the system delays connecting to cloud recognizer until voice activity is detected.                                                             | `"vadEnable": true` |
+| `vadVendor`                  | String              | All STT engines (when `vadEnable` is true)                              | Specifies the Voice Activity Detection (VAD) engine to be used for detecting speech before sending audio to the STT service. This parameter works only when `vadEnable` is set to `true`.                                                             | `"vadVendor": "silero"` |
 | `vadVoiceMS`                 | Number (milliseconds)| All                              | Specifies how many milliseconds of detected speech are required before connecting to cloud recognizer. Only applies if `vadEnable` is `true`.             | `"vadVoiceMS": 500` |
 | `vadMode`                    | Number (0–3)         | All                              | Determines the sensitivity of the voice activity detector. Lower values make it more sensitive. Only applies if `vadEnable` is `true`.                        | `"vadMode": 2` |
 
@@ -363,7 +421,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `ttsGender`        | String (Male, Female, Neutral) | Google                                |                                                                                                                                                                                                                                   |   `"ttsGender": "FEMALE"`                                             |
 | `ttsLoop`          | Number / String      | All                                   | Use the `ttsLoop` parameter in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message plays multiple times in a loop.       |`"ttsLoop": 2` |
 | `earlyMedia`       | Boolean              | All                                   | Use the **Early Media** parameter in TTS (Text-to-Speech) to control the playback of audio prompts or messages before a call connects.                                                                             |        `"earlyMedia": true`                                        |
-| `ttsOptions`       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It's used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
+| `ttsOptions`       | Object               | Deepgram, ElevenLabs, Whisper | It's used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
 
 ### TTS Options in Voice Gateway
 
@@ -382,22 +440,6 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
 * `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/creative-platform/playground/text-to-speech#voice-settings).
 * `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values less < 1 slow down the speech, while values > 1 speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
-
-#### PlayHT
-
-* `quality`: Sets the quality of the audio output.
-* `speed`: Controls the playback speed.
-* `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Let further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
-* `Voice_engine`: The voice engine used to synthesize the voice. It defaults to PlayDialog.
-
-!!! Note
-
-    Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
-
-    `ttsProvider = playht`  
-    `ttsLanguage = en-US`  
-    `ttsOptions = {"voice_engine": "PlayDialog"}`  
-    `voiceName = <respective voice name>` 
 
 #### Deepgram
 

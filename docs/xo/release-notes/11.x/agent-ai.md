@@ -2,6 +2,40 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">UI Enhancements</font>
+
+**Pass Metadata Support in Search AI Configuration**
+
+In the newly available Pass Metadata configuration section, you can select Landing Summary, Agent-Customer Chat History, and User Context to pass as metadata. This improves response relevance, personalization, and accuracy without requiring manual query rephrasing. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/linked-services.md/#knowledge-ai).
+
+**Spanish Support for the Agent AI UXO App Language**
+
+Support for Spanish as an App Language is now available via profile menu > app language.
+
+<font size="4">Integration Enhancements</font>
+
+**Custom Field Support for Salesforce Email Channel**
+
+Agent AI integration with the Salesforce Email Channel now supports custom field objects. Salesforce admins can configure custom data in the Agent AI Configuration page by mapping payload keys to Case field API names using a .json file. The system resolves these fields at runtime and sends case data to the Agent AI widget.
+
+**Agent AI integration with Five9 Voice**
+
+Agent AI integration with Five9 Voice supports Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, Transcription, end-of-call summary, and Custom Data. It also supports Secure Custom Data transfer, such as agent name and ID, to the Agent AI widget.
+
+<font size="4">SDK Enhancement</font>
+
+**Headless SDK for Cross-Platform Integration**
+
+The new headless SDK for browser and Node.js environments, with support for standard loading methods, enables message handling, internal transfers, summary generation, and conversation closure through a unified API. It removes UI dependencies and simplifies integrations.
+
+<hr>
+
 ## v11.22.1 March 14, 2026
 
 <u>Patch Release </u> 
@@ -11,6 +45,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 <font size="4">Integration Enhancements</font>
 
 **Open Knowledge Base Articles Within the Salesforce Workspace**
+
 The Agent AI widget in Salesforce now allows agents to access knowledge base (KB) articles directly from the Search tab within a workspace subtab of the current browser session. This keeps agents in the active session, preventing reauthentication prompts or interruptions to the customer interaction.
 
 **Automatic Conversation Summary After Einstein Bot Handoff in Salesforce**

@@ -13,7 +13,7 @@ The following details related to campaigns appears on the dashboard:
 4. **Status** - Ready, Active, Paused, Rerun, or Completed.
 5. **Campaign Start Date and Time** - Date and Time when the campaign started. For example: Started on Sep 29, 2023 11:03 AM
 
-Clicking any campaign displays detailed information related to the selected campaign.
+Selecting any campaign displays detailed information related to the selected campaign.
 
 ### Voice Campaigns
 
@@ -192,6 +192,61 @@ Hovering over the hours/days shows the count of messages delivered and the deliv
 | Filtering  | - Disposition<br>- Priority<br>- Date-to-date range | - Date-to-date range | Filtering applies before search. |
 | Search     | - Phone Number<br>- Last Name<br>- First Name | - Phone Number<br>- Last Name<br>- First Name | Search functions within the current filter. |
 | Sorting    | - Initial sort by Start Time (most recent first)<br>- Sort by Priority<br>- Sort by Disposition | - Initial sort by Start Time (most recent first)<br>- Sort by Priority<br>- Sort by Disposition | Sorting applies after filtering and searching. |
+
+### Proactive Web Campaigns
+
+The Proactive Web Campaigns Dashboard provides metrics based on website visitor behavior. It supports filtering by campaign executions and date range for analysis.  
+
+<img src="../images/proactive-campaign-dashboard.png" alt="Proactive Web Campaign Dashboard" title="Proactive Web Campaign Dashboard" style="border: 1px solid gray; zoom:80%;"> 
+
+Proactive Web Campaigns- Insights
+
+Filters
+
+* Select up to 10 campaign executions (Campaign Name: Date of Run).
+* Default date range: full duration of the latest execution.
+* After filter change: last 28 days (maximum 92 days).  
+    <img src="../images/web-campaign-filter.png" alt="Filters" title="Filters" style="border: 1px solid gray; zoom:80%;"> 
+
+Metrics
+
+* Impressions–Number of times the campaign template is shown.
+* Clicks–Number of user clicks on buttons or chat actions.
+* Unique Visitors–Number of distinct visitors.
+* Anonymous Visitors–Visitors without identifiable data.
+* Logged-in Visitors–Visitors with identifiable data.
+* Conversations–Conversations initiated by the visitor.
+* Dismissal Rate–Templates closed without further interaction.
+
+Visualizations
+
+Time Trends
+
+* Displays daily trends for selected metrics.
+* X-axis: campaign duration.
+* Y-axis: metric count.
+* Supports multi-select metrics.  
+    <img src="../images/time-trends.png" alt="Time Trends" title="Time Trends" style="border: 1px solid gray; zoom:80%;">
+
+Campaigns Suppressed
+
+* Doughnut chart showing total suppressed campaigns.
+* Displays reason-based distribution.
+* Counts each campaign once based on the first applicable reason:
+    * Outside Operating Hours
+    * Already Chatting
+    * Chat Window Open
+    * Campaign Template Active
+    * Cooldown
+
+Contained Conversations
+
+* Doughnut chart showing total conversations.
+* Displays Agent vs Bot distribution.  
+    <img src="../images/contained-suppressed.png" alt="Contained Conversations" title="Contained Conversations" style="border: 1px solid gray; zoom:80%;">
+
+Dispositions: Horizontal bar chart showing distribution based on the latest outcome.  
+<img src="../images/web-campaign-dispositions.png" alt="Web Campaign Dispositions" title="Web Campaign Dispositions" style="border: 1px solid gray; zoom:80%;">
 
 Related Link
 

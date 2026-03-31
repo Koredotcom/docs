@@ -76,7 +76,7 @@ The embeddings model settings applies only to Dialogs and FAQs. For Knowledge fr
 5. (Optional) click Show Advanced Settings to view and adjust the Similarity Threshold and Proximity Threshold. In most cases, the default settings work fine.
 6. (Only if Knowledge from Search AI is selected in step no 2 ) Define the maximum number of chunks to be shortlisted from Search AI. These chunks are send to the LLM for answer generation. The default value is 5. Click "Go to Search AI" to access the Search AI retrieval settings.
 7. In the **Model Configuration** section, select the  **Conversation Management** **Model** and the **Prompt**, which determines the user intent and the execution plan.
-7. (Optional) click Show Advanced Settings to view and set the Temperature, Max Tokens, and Conversation History Length. In most cases, the default settings work fine.
+7. (Optional) click Show Advanced Settings to view and set the Temperature, Max Tokens, and Conversation History Length  (with a maximum limit of 50). In most cases, the default settings work fine.
 8. Click **Enable DialogGPT**. The DialogGPT home page is displayed.  
 <img src="../images/gpt4.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"> 
 9. To disable DialogGPT, click the **More** icon (three dots) in the top right corner and then click Disable DialogGPT. The Disable DialogGPT pop-up is displayed.  

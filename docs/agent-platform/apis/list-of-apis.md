@@ -10,6 +10,8 @@ The following APIs let users interact with agents and manage sessions.
 |  Send user input to an agent within a session and receive the agent's response.      |  [Runs API](agentic-apps/execute.md){:target="_blank"} |
 |  Upload or delete attachments to a conversation. You can reference these attachments as context during an agent run.   |   [File Attachment APIs](agentic-apps/upload.md){:target="_blank"}       |
 |    Create a new Agentic App.    |  [Create App API](agentic-apps/create-app.md){:target="_blank"}   |
+|    Create and Manage API Keys and Scopes    |  [API Key Management](agentic-apps/api-key-mgmt.md){:target="_blank"}   |
+
 
 ## File Management API
 
