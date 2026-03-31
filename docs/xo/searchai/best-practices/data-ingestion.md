@@ -13,7 +13,7 @@ Supported content types and formats vary across these sources.
 
 Search AI supports document ingestion in the following formats:
 
-✅ **PDF, DOCX, PPTX, and TXT**
+✅ **PDF, DOCX, PPTX, XLSX and TXT**
 
 Refer to the guidelines below for the optimum ingestion of content from documents. 
 
@@ -21,8 +21,6 @@ Refer to the guidelines below for the optimum ingestion of content from document
 ### Document Quality & Structure
 
 For optimal processing and search accuracy, documents should:
-
-
 
 * Be **system-generated** (digitally created) rather than scanned or handwritten.
 * Maintain a **consistent layout** across all pages.
@@ -33,8 +31,6 @@ For optimal processing and search accuracy, documents should:
 
 ### Formatting & Layout Considerations
 
-
-
 * **Single-column documents** provide the highest retrieval accuracy.
 * **Multi-column layouts** may reduce search precision and require fine-tuning.
 * Documents should have **clear section headers and logical content organization** for improved readability and search effectiveness.
@@ -43,8 +39,6 @@ For optimal processing and search accuracy, documents should:
 ### Content & File Restrictions
 
 To prevent data loss and ensure optimal retrieval:
-
-
 
 * **Avoid Compressed PDFs**, which can cause data distortion.
 * **Avoid Multi-page tables**, as they are challenging to process accurately.
@@ -56,20 +50,18 @@ To prevent data loss and ensure optimal retrieval:
 
 Search AI supports image and table extraction using a **layout-aware model**, but **only text is extracted by default**. To improve retrieval accuracy:
 
-
-
 * **Provide text descriptions** for any key information in images.
 * **Include contextual summaries** before or after tables and images.
 * **Label images and tables with meaningful titles** for easier indexing and searchability.
 * **Update extraction strategies** when working with documents containing significant visual elements.
 
+### Handling Spreadsheets
+
+Search AI enables extraction from xlsx files via Markdown Extraction strategy. Refer to [this for more details and best practices on the structure and layout of the spreadsheets](../content-extraction/spreadsheet-ingestion.md) for effective extraction.
 
 ## Webpages/HTML Content
 
-
 ### Optimizing Web Page Structure
-
-
 
 * **Follow schema.org rules** to standardize metadata and improve content extraction.
 * If **schema.org is not used**, ensure **consistent logic** is applied for structuring headings, subheadings, and content. This enables using the document workbench for custom processing of content. 

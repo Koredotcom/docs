@@ -449,6 +449,7 @@ nav:
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+        - Email Notifications: searchai/email-notifications.md
         - Toolkit: searchai/toolkit.md
     - FAQs:
         - Document-Level Processing: searchai/document-level-processing.md
