@@ -4,7 +4,7 @@ To use LLM and Generative AI features, you must configure the integration with a
 
 Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
-<img src="../images/models-library-home.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/model-library.png" alt="model-library" title="model-library" style="border: 1px solid gray; zoom:70%;">
 
 ## Prebuilt Model Integrations
 
@@ -17,7 +17,7 @@ The Platform offers seamless integration with leading AI services like Azure Ope
 
 ###	Azure OpenAI Integration
 
-The Platform now provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform doesn't provide system prompts or templates, so you must use custom prompts.
+The Platform provides Azure OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access Azure OpenAI models directly from the Platform. You can authorize all models using variables and integrate language models into the OOB integration. For models, the Platform doesn't provide system prompts or templates, so you must use custom prompts.
 
 
 !!! note "Integrating the Latest Models"
@@ -46,7 +46,7 @@ Steps to configure an Azure OpenAI:
 
 ###	OpenAI Integration
 
-The Platform now provides OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access OpenAI models directly from the Platform. You can authorize all models using variables and integrate newly launched language models into the OOB integration. For newly launched models, the Platform doesn't provide system prompts or templates, so you must use custom prompts.
+The Platform provides OpenAI as an out-of-the-box (OOB) integration. This integration enables users to access OpenAI models directly from the Platform. You can authorize all models using variables and integrate language models into the OOB integration. For models, the Platform doesn't provide system prompts or templates, so you must use custom prompts.
 
 !!! note "Integrating the Latest Models"
  
@@ -70,7 +70,7 @@ Steps to configure an OpenAI:
 
 ###	Anthropic Integration
 
-The Platform now provides Anthropic as an out-of-the-box (OOB) integration. This integration enables users to access newly launched Anthropic models directly from the Platform. You can authorize models using variables. The Platform doesn't provide system prompts or templates for these models, so you must use custom prompts.
+The Platform provides Anthropic as an out-of-the-box (OOB) integration. This integration enables users to access Anthropic models directly from the Platform. You can authorize models using variables. The Platform doesn't provide system prompts or templates for these models, so you must use custom prompts.
 
 !!! note "Integrating the Latest Models"
  
@@ -94,9 +94,7 @@ Steps to configure an Anthropic:
 
 ###	Amazon Bedrock Integration
 
-The Platform now offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
-
-
+The Platform offers Amazon Bedrock as an out-of-box (OOB) integration. This integration lets platform users access Amazon Bedrock's models directly from the Platform. The users can create custom prompts for their specific use cases and use the connected models across GenAI features. While Amazon Bedrock is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
 
 **Prerequisite**
 
@@ -222,6 +220,23 @@ Steps to integrate an Amazon Bedrock:
 7. Click **Save**. The confirmation pop-up is displayed.
 8. Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to add[ Prompts](prompts-library.md).
 
+### Google Gemini Integration
+
+The Platform supports Google Gemini as an out-of-the-box (OOB) integration, allowing platform users to access Google Gemini models directly within the Platform. You can authorize all models using variables and integrate language models into the OOB integration. While Google Gemini is available as an OOB integration, the Platform doesn't provide any system prompts or templates. Users can only use the model with the help of custom prompts.
+
+Steps to configure a Google Gemini:
+
+1. Navigate to **Generative AI Tools** > **Models Library** > **Configure Now** for Google Gemini, then click **Next**.
+2. Complete the [Authorization](../generative-ai-tools/models-library.md#authorization).
+3. For the model section, enable the toggle on the required model.
+4. In the model section, click **+Add** to configure [Provider's New LLM](../generative-ai-tools/configure-llm-integration.md#providers-new-llm). This step is optional.
+5. Read the Policy Guidelines, select the checkbox, and click **Save**.
+6. The Connection Status pop-up is displayed.
+    * If a connection is successful, click **Next**.
+    * If it fails, hover over the warning icon to review the error. Click **Cancel** to update the details or **Next** to save the failed configuration.
+    * Enable Token Usage Limit toggle to track [LLM Usage Limit](../generative-ai-tools/models-library.md#manage-usage-limit). You can set the limit later from the More options menu. This step is optional.
+    * Click **Save**. The confirmation pop-up is displayed.
+    * Click **Confirm & Save**. The configured model is listed in the Models Library. The next step is to enable [GenAI Features](../generative-ai-tools/genai-features.md).
 
 ### Provider's New LLM
 
@@ -229,12 +244,11 @@ Steps to integrate an Amazon Bedrock:
  
     The Provider's New LLM integration is available only for Automation AI and Search AI.
 
-The Platform enables you to integrate newly launched language models into the out-of-box integration framework (OpenAI, Azure OpenAI, and Anthropic) with the required authentication. This ensures that newly launched models are immediately available without waiting for the platform to add them. Initially, these models don't include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
-
+The Platform enables you to integrate language models into the out-of-box integration framework (OpenAI, Azure OpenAI, Anthropic, and Google Gemini) with the required authentication. This ensures that models are immediately available without waiting for the platform to add them. Initially, these models don't include a pre-built/system prompt template, but you must create custom prompts for immediate use. Over time, the platform adds system prompts and templates while maintaining security and ensuring seamless adoption.
 
 **Key Benefits**
 
-* **Immediate Access to New Models**: Quickly access and utilize newly launched language models without waiting for platform-specific prompt development.
+* **Immediate Access to New Models**: Quickly access and utilize language models without waiting for platform-specific prompt development.
 * **Custom Prompt Support**: Create custom prompts for new models, ensuring immediate usability while the platform gradually develops system prompts over time.
 * **Security & Compliance**: Maintain platform security and authentication standards while eliminating integration delays.  
 
@@ -252,7 +266,7 @@ For example, Azure OpenAI. On the authorization tab, go to the **Models** sectio
 
 ## Custom LLM Integration 
 
-The Platform now enables enterprises to power up their AI Agent with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves. It allows the creation of custom prompts that are optimized for their specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the platform, enabling enterprises to use the authentication mechanism of their choice.
+The Platform enables enterprises to power up their AI Agent with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves. It allows the creation of custom prompts that are optimized for their specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the platform, enabling enterprises to use the authentication mechanism of their choice.
 
 !!! note
 
@@ -296,7 +310,7 @@ Steps to Integrate a Custom LLM:
 
 ##	Kore.ai XO GPT Integration 
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI Agents. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation, Answer Generation, and DialogGPT - Conversation Orchestration.
+The XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI Agents. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation, Answer Generation, and DialogGPT - Conversation Orchestration.
 
 
 **Enable Kore.ai XO GPT Integration**
@@ -311,7 +325,7 @@ Steps to enable Kore.ai XO GPT Models.
 4. Read the Policy Guidelines, select the checkbox, and click **Save**.
 5. The Configuration successful message is displayed, and the XO GPT is listed in the Models Library. 
 
-6. You can now use these models in [GenAI Features](genai-features.md).
+6. You can use these models in [GenAI Features](genai-features.md).
 
 
 
@@ -329,22 +343,13 @@ When you reset/delete the integration, the system does the following:
 
 !!! note
 
-    This change impacts only the in-development copy of the app. The changes will apply to the published version when you later publish the app with NLP configurations.
+    This change impacts only the in-development copy of the app. The changes apply to the published version when you later publish the app with NLP configurations.
 
 **Reset/Delete LLM Integration**
 
 Follow these steps:
 
-1. Go to **Generative AI Tools** > **Models Library**.
+1. Navigate to **Generative AI Tools** > **Models Library**.
 2. Click three dots (more icons) for the LLM Integration and then click the **Reset Configuration/Delete** you using-session-and-context-variables/ant to reset/delete.  
 3. Click **Reset/Delete** in the confirmation dialog.  
 4. The success message is displayed.
-
-
-
-
-
-
-
-
-

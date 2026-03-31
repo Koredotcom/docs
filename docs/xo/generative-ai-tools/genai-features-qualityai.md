@@ -10,28 +10,23 @@ The following table displays the features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
-| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Gemini Model(s) | Custom LLM |
+| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Gemini Model(Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview)| Custom LLM |
 |--------|-----------------------|-----------------|-----------------|------------|
-| Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Agent Empathy Identification | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| By Value Adherence validation for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| By Value metric extraction for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| By Hold Adherence | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| By Transfer Adherence | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Churn & Escalation Identification | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Conversation Phase Identification | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Crutch Word Usage Detection | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Default Script Adherence | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| GenAI-based agent answer adherence and customer trigger detection | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ❌ |
-| Post Conversation Sentiment Analysis | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Sentiment Analysis | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-| Topic Modelling | GPT-4o | GPT-4o | Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview | ✅ |
-
-
-!!! Note
-
-    Gemini models support all Quality AI features. You must configure custom prompts for each feature. Default prompts are not supported.
+| Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection | GPT-4o | GPT-4o | ✅ | ✅ |
+| Agent Empathy Identification | GPT-4o | GPT-4o | ✅ | ✅ |
+| By Value Adherence validation for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| By Value metric extraction for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| By Hold Adherence | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| By Transfer Adherence | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ | ✅ |
+| Conversation Phase Identification | GPT-4o | GPT-4o | ❌ | ✅ |
+| Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ | ✅ |
+| Default Script Adherence | GPT-4o | GPT-4o | ✅ | ✅ |
+| GenAI-based agent answer adherence and customer trigger detection | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | ✅ | ❌ |
+| Post Conversation Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ✅ |
+| Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ✅ |
+| Topic Modelling | GPT-4o | GPT-4o | ✅ | ✅ |
 
 
 ### Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection

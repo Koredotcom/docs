@@ -4,10 +4,10 @@ The AI for Service offers a comprehensive solution for integrating Generative AI
 
 **Pre-built Integrations**
 
-The Platform seamlessly integrates with leading AI services, including OpenAI, Azure OpenAI, and Anthropic.
+The Platform seamlessly integrates with leading AI services, including Azure OpenAI, OpenAI, Anthropic, Amazon Bedrock, and Google Gemini.
 These pre-built integrations come with pre-configured prompt templates, allowing users to quickly access their core capabilities while maintaining a standardized structure. Users can also create custom prompts tailored to their specific needs.
 
-The pre-built integration framework also supports newly launched language models with required authentication, ensuring immediate availability. Users can integrate the models and create custom prompts for immediate use.
+The pre-built integration framework also supports language models with required authentication, ensuring immediate availability. Users can integrate the models and create custom prompts for immediate use.
 
 **Bring Your Own (BYO) Model Framework**
 
@@ -22,7 +22,7 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 
 To configure Generative AI and LLM, go to **Product Switcher** > **Generative AI Tools** or click the Generative AI Tools icon in the left-side menu.
 
-<img src="../images/genai-home.png" alt="Models-Library" title="Models-Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/model-library.png" alt="model-library" title="model-library" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -63,11 +63,11 @@ All these features benefit an AI Agent developers, NLP developers, and testers a
 
 ### Language Support
 
-LLMs can now generate responses in app languages that LLMs also support. To learn more about managing languages for an AI Agents, click [here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+LLMs can generate responses in app languages that LLMs also support. To learn more about managing languages for an AI Agents, click [here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
 
 ### Data Sharing
 
-LLM and Generative AI features involve data sharing with third-party LLM providers, such as OpenAI, Azure OpenAI, Claude, and others.
+LLM and Generative AI features involve data sharing with third-party LLM providers, such as OpenAI, Azure OpenAI, Anthropic, and others.
 
 ## Next Steps
 
