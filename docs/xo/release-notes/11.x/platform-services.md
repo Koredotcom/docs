@@ -10,18 +10,17 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">LLM & Generative AI</font>
 
-
 **Google Gemini Integration**
 
 AI for Service now supports Google Gemini as an out-of-the-box (OOB) integration, allowing platform users to access Google Gemini models directly within the Platform across all GenAI features. Users must create and manage their own prompts for their use cases.
 
-
 * Simple Integration Setup: Configure the integration using an API key.
 * Supported models: Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite. 
 
+ [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/configure-llm-integration.md#google-gemini-integration) 
+
 
 <font size="4">Channels</font>
-
 
 **Session Isolation by Inbound Number for WhatsApp (Infobip)**
 
@@ -37,20 +36,8 @@ The Platform now supports configuring up to 10 Infobip accounts for the WhatsApp
 
 **Spanish Language Support**
 
-Support for Spanish (Beta) as a new App language is now available via profile menu > app language.
+Support for Spanish (Beta) as a new App language is now available via profile menu > app language. [Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
 
-<font size="4">Security & Control</font>
-
-
-**SSO Login for Service Account**
-
-Service accounts now use a proxy email address during SSO-based authentication with identity providers such as Security Assertion Markup Language (SAML) or OpenID Connect (OIDC), replacing the native service account email in the authentication handshake. This update applies to both the new and legacy Admin experiences.
-
-<font size="4">Web SDK</font>
-
-**Token expiry handling**
-
-The Platform now monitors token expiry for `secureCustomData` event when the token includes an exp claim. When the token expires, the system triggers a `secureCustomData_expired` event, clears the token from the user context, and notifies the SDK. To maintain session continuity, users must provide a refreshed token from the external authentication system and update `secureCustomData`.
 
 
 

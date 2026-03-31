@@ -4,7 +4,6 @@ To use LLM and Generative AI features, you must configure the integration with a
 
 Review the model and feature support matrix for the [GenAI Features](genai-features.md).
 
-<img src="../images/model-library.png" alt="model-library" title="model-library" style="border: 1px solid gray; zoom:70%;">
 
 ## Prebuilt Model Integrations
 
