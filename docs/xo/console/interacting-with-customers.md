@@ -740,7 +740,7 @@ Admins can configure this from [Agent settings](../contactcenter/agent-and-super
 
 **Collapsible Thread View for Reply, Reply All, and Forward**: The system displays email conversations in a collapsible format during Reply, Reply All, and Forward actions to improve readability while preserving full context and enforcing visibility rules.
 
-Every outgoing email includes the original email, all subsequent replies, and any additional messages in the thread, subject to CC/BCC visibility rules. The system does not drop, modify, duplicate, or reorder content. Thread continuity persists even if recipients are removed and later re-added.
+Every outgoing email includes the original email, all subsequent replies, and any additional messages in the thread, subject to CC/BCC visibility rules. The system doesn't drop, modify, duplicate, or reorder content. Thread continuity persists even if recipients are removed and later re-added.
 
 By default, the system shows only the latest email content. Older emails remain collapsed behind an ellipsis.
 
@@ -753,6 +753,25 @@ When users expand the chain, the system displays all eligible previous emails in
 
 **Reply and Reply All**: Agents can select **Reply** to open a response window addressed only to the most recent sender. Clicking **Reply All** opens a response window addressed to all participants in the email thread, including the original sender and all CC’ed recipients.  
 <img src="../images/reply-all-email.png" alt="Reply and Reply All" title="Reply and Reply All" style="border: 1px solid gray; zoom:70%;">
+
+**Change From Address in Email Replies**: Agents can select a different From address while replying to inbound emails. This lets responses to be sent from the correct support mailbox.
+
+* The system displays a From address dropdown with all configured email addresses.
+* When the agent selects a different address and sends the email:
+    * The system closes the current session.
+    * The system creates a new session under the selected address.
+    * The agent console reloads and opens the new session.
+
+Conversation Handling
+
+* The system preserves the full conversation history across sessions.
+* The agent thread and History tab display the complete interaction context.
+* The system reflects the new session in monitoring and reporting views.
+
+Reply Handling
+
+* If the user replies to the old email thread, the system creates a new session.
+* If the user replies to the new email, the system continues the active session.
 
 **Resend Emails**: The Email Resend feature lets agents and supervisors to resend email interactions directly from the Agent Console. It supports two scenarios:
 
@@ -1440,9 +1459,9 @@ The platform supports a Feedback framework to capture customer sentiment after i
 
 Supported Feedback Types: 
 
-* **CSAT (Customer Satisfaction)** – Rating scale from 1 (extremely poor) to 5 (extremely good).
-* **NPS (Net Promoter Score)** – Rating scale from 0 to 10. The system classifies responses as Detractors (0–6), Passives (7–8), or Promoters (9–10).
-* **Like or Dislike** – Binary response (1 = Like, 0 = Dislike). 
+* **CSAT (Customer Satisfaction)**–Rating scale from 1 (extremely poor) to 5 (extremely good).
+* **NPS (Net Promoter Score)**–Rating scale from 0 to 10. The system classifies responses as Detractors (0–6), Passives (7–8), or Promoters (9–10).
+* **Like or Dislike**–Binary response (1 = Like, 0 = Dislike). 
 
 ### Feedback Triggering and Assignment
 
@@ -1484,3 +1503,12 @@ Steps to view feedback scores:
     <img src="../images/insights-to-logs-csat.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:70%;">
 
 This view enables supervisors and administrators to assess caller satisfaction and evaluate agent performance.
+
+### Call Status During Agent–Customer Interaction with CSAT
+
+| Scenario                    | Condition                                        | Status    | Mode         |
+| :-------------------------- | :----------------------------------------------- | :-------- | :----------- |
+| User hangup before CSAT     | User disconnects before CSAT is initiated        | Completed | User Hangup  |
+| User hangup during CSAT     | User disconnects while CSAT is in progress       | Completed | User Hangup  |
+| User hangup after CSAT      | User disconnects after submitting CSAT           | Completed | User Hangup  |
+| System ends call after CSAT | System terminates the call after CSAT submission | Completed | Agent Hangup |
