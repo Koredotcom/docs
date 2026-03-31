@@ -10,26 +10,24 @@ This update includes new features and enhancements summarized below.
 
 <font size="4">Multi-Agent Orchestration</font>
 
-**Session Customization in Playground**
+**Voice-to-Voice Support for Adaptive Network**
 
-Agent Platform now introduces session-level customization in the Playground, letting users to start a new session, continue a previous session, or create a custom session. Users can configure metadata and runtime settings (such as streaming and artifacts), with configurations saved per session and automatically restored when resuming. This enhances flexibility, visibility, and control over testing and debugging workflows.
+Voice-to-voice models are now supported in the Adaptive Network, enabling seamless processing of spoken input and generation of spoken responses. This enhances conversational experiences by enabling more natural, real-time voice interactions.
 
 **Complete App Export and Import**
 
-Agent Platform now supports complete application export. It packages all components, including the workflow tools, in a single file for seamless migration across environments.
-The import process includes upfront validation before execution and automatic rollback on failure, thereby preventing partial imports and unstable apps.
+Agent Platform now supports full application export, packaging all components — including workflow tools — into a single file for seamless migration across environments.
+
+The import process includes upfront validation before execution and automatic rollback on failure, ensuring imports either complete fully or not at all. This eliminates the risk of partial or inconsistent application states after a failed import.
 
 **Pre-Processor Execution Control**
 
-Agent Platform now introduces execution control for pre-processors, allowing users to configure whether they run once per session or on every agent invocation. This reduces latency and avoids redundant processing. Existing configurations default to Always Run, ensuring backward compatibility.
+Users can configure execution control for pre-processors, choosing whether they run once per session or on every agent invocation. This reduces latency and avoids redundant processing. Existing configurations default to Always Run, ensuring backward compatibility.
 
 **Response Processors for Output Transformation**
 
-Agent Platform now introduces an application-level Response Processor that enables server-side transformation of agent responses before they are delivered to users. Developers can apply custom formatting, enrichment, and business logic using code, with access to the full response context, including inputs, outputs, and artifacts. This ensures consistent responses across channels and provides greater control over the final output delivery.
+Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context — including inputs, outputs, and artifacts — all without changing the underlying logic.
 
-**Voice-to-Voice Support for Adaptive Network**
-
-Agent Platform now supports voice-to-voice models in the Adaptive Network, enabling seamless processing of spoken input and generation of spoken responses. This enhances conversational experiences by enabling more natural, real-time voice interactions.
 
 <font size="4">AI Safety, Security, and Governance</font>
 
