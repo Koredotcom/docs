@@ -33,7 +33,8 @@ The AutoQA Score Reporting API provides interaction-level reporting, including A
 ## Sample Request
 
 ```
-curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/scorereporting' \
+curl --location 
+'https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata' \
 --header 'accountId: {{accountId}}' \
 --header 'auth: {{authToken}}' \
 --header 'Content-Type: application/json' \
@@ -248,7 +249,7 @@ curl --location https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{
 | `Metric Name`              | Display the metric name as configured in the evaluation form.                                                                                                     | `string`           |
 | `Metric Weight`            | Positive weightage assigned to the metric.                                                                                                                        | `number`           |
 | `Metric Negative Weight`    | Negative weightage assigned to the metric. Returns 0 when no negative weight is configured.                                                                       | number           |
-| `Qualification`            | Agent's outcome for this metric (YES/NO/NA). Present only for contacts with duration_status: evaluated. Absent for `below_threshold` and `duration_unavailable`.     | `String (Enum)`    |
+| `Qualification`            | Agent's outcome for this metric (YES/NO/NA). Present only for contacts with `duration_status`: evaluated. Absent for `below_threshold` and `duration_unavailable`.     | `String (Enum)`    |
 | `isFatalError`             | Indicates whether this metric is configured as fatal and isn't met. When `true`, `koreEvaluationScore` is set to 0 for the conversation.                             | `boolean`          |
 | `customConversationId`     | Custom identifier for the conversation (optional).                                                                                                               | `string`           |
 | `duration_status`          | Evaluation eligibility status based on the configured minimum duration threshold.                                                                                 | `string (enum)`    |

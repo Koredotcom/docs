@@ -35,7 +35,8 @@ The Raw Data API provides interaction-level data for Quality AI and Conversation
 ## Sample Request
 
 ```
-curl --location `https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata` \
+curl --location 
+`https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/{{streamId}}/rawdata` \
   --header 'accountId: {{accountId}}' \
   --header 'auth: {{JWT_TOKEN}}' \
   --header 'Content-Type: application/json' \
@@ -243,7 +244,7 @@ curl --location `https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/
 | `Agents`                  | A list of agents who have participated in the conversation. A conversation can include more than one agent.                                                      | `array`            |
 | `Agent ID`                | Unique identifier for the agent.                                                                                                                                  | `string`           |
 | `Agent Name`              | Name of the agent.                                                                                                                                                 | `string`           |
-| `koreEvaluationScore`     | Auto QA evaluation score of the conversation. Range: −100 to 100. Returns null for contacts with `duration_status` of `below_threshold` or `duration_unavailable`.      | `Number` or `null`  |
+| `koreEvaluationScore`     | Auto QA evaluation score of the conversation. Range: −100 to 100. Returns `null` for contacts with `duration_status` of `below_threshold` or `duration_unavailable`.      | `Number` or `null`  |
 | `fatalErrorCount`         | Number of fatal metric failures recorded for the conversation. Returns 0 when no fatal errors are present. When a fatal error occurs, `koreEvaluationScore` is 0.  | `integer`          |
 | `Language`                | Conversation language.                                                                                                                                             | `string`           |
 | `Metrics`                 | List of evaluation metric objects applied to the conversation. For example, weights and qualification outcomes.                                                  | `array`            |
@@ -251,7 +252,7 @@ curl --location `https://{{host}}/qualityai/api/v1/public/qualitymanagement/app/
 | `Metric Name`             | Display the metric name as configured in the evaluation form.                                                                                                     | `string`           |
 | `Metric Weight`           | Positive weightage assigned to the metric.                                                                                                                        | `number`           |
 | `Metric Negative Weight`  | Negative weightage assigned to the metric. Returns 0 when no negative weight is configured.                                                                       | `number`           |
-| `Qualification`           | Agent's outcome for this metric (YES/NO/NA). Present only for contacts with duration_status: evaluated. Absent for `below_threshold` and `duration_unavailable`.     | `String (Enum)`    |
+| `Qualification`           | Agent's outcome for this metric (YES/NO/NA). Present only for contacts with `duration_status`: evaluated. Absent for `below_threshold` and `duration_unavailable`.     | `String (Enum)`    |
 | `isFatalError`            | Indicates whether this metric is configured as fatal and isn't met. When `true`, `koreEvaluationScore` is set to 0 for the conversation.                             | `boolean`          |
 | `customConversationId`    | Custom identifier for the conversation (optional).                                                                                                               | `string`           |
 | `duration_status`         | Evaluation eligibility status based on the configured minimum duration threshold.                                                                                 | `string (enum)`    |
