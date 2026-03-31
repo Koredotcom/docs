@@ -1,185 +1,382 @@
 # Agent Scorecards
 
-Agent scorecards enable you to define evaluation criteria at the individual agent level by focusing on configured performance areas such as salesmanship and product knowledge. You define attributes by integrating relevant evaluation metrics. During each call transfer, the system evaluates agents using all assigned scorecards, allowing multiple scorecards per agent. Before creating scorecards, you must create agent attributes.
+Agent Scorecards provide individualized performance evaluations for agents, focusing on critical areas such as sales proficiency and product expertise. Each scorecard uses predefined attributes linked to relevant performance metrics and supports negative weight penalties and fatal criteria scoring. Both scorecards and attributes support multilingual evaluations, enabling accurate and consistent assessments across different languages.
 
-!!! note
+You can also set a minimum duration threshold on a scorecard to prevent short, incomplete, or abandoned contacts from entering AutoQA scoring. Contacts that fall below this threshold are excluded from evaluation and quality metrics.
 
-    To view **Agent Scorecards** and **Agent Attributes**, you must enable the **Agent Scorecards** toggle in **Quality AI > Settings**. 
 
-A Supervisor has the following types of permissions for the agent scorecards:
+## Key Capabilities
 
-* Full access, to edit, and create agent scorecards and attributes
-* No access, to edit, and create agent scorecards and attributes
-* Only view access for the existing agent scorecards and attributes.
+* **Individual Assessment**: Each agent receives evaluations based on applicable scorecards during call transfers.
 
-## Access Agent Score Cards
+* **Multiple Evaluations**: The system assesses agents using multiple scorecards per interaction.
+
+* **Multilingual Support**: Attributes and scorecards support multilingual evaluations for diverse interactions.
+
+* **Negative Weight Scoring**: Apply negative weights to key metric results to highlight their significance and impact on agent scores.
+
+* **Fatal Criteria Parameters**: Mark non-compliance metrics as fatal, resulting in a zero score for the interaction.
+
+* **Enterprise Quality Monitoring**: Supports advanced scoring models for enterprise-level quality assurance requirements.
+
+## Access and Permissions
 
 Navigate to **Quality AI** > **CONFIGURE** > **Agent Score Cards**.  
 <img src="../agent-scorecards/images/agent-scorecard-landing-page.png" alt="Agent Score Card" title="Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
+
+## Agent Scorecard Elements
+
+The agent scorecard displays the following list of elements:
+
+* **Name**: Name of the agent scorecard.
+
+* **Agent Attribute**: Display a list of performance attributes assigned to the scorecard.
+
+* **Assignee**: Show the agents or agent groups assigned to the scorecard.
+
+* **Created By**: Display the name of the user who created the scorecard.
+
+* **Pass Score**: Show the minimum score threshold required for an agent to pass.
+
+* **Status**: Indicate whether the scorecard is Active or Inactive.
+
+* **Search**: Find agent scorecard by name.
+
+## Permission Types
+
+A Supervisor has the following permission types for the agent scorecards:
+
+  | **Permission**     | **Access level**                                              |
+|-------------------|--------------------------------------------------------------|
+| **Full Access**   | Create and edit agent scorecards and attributes.             |
+| **View-only Access** | View existing agent scorecards and attributes.           |
+| **No Access**     | No permissions to create or edit agent scorecards and attributes. |
+
+!!! note
+
+    Define agent attributes before creating scorecards, and enable the Agent Scorecards toggle in Quality AI Configuration Settings to access Agent Scorecards and Agent Attributes.
+
+
 ## Create a New Agent Scorecard
 
-Steps to create **New Agent Score Card**:
+Creating an agent scorecard involves three steps:
 
-1. Select the **+New Agent Score Card**.  
+1. General Settings
+
+1. Agent Attributes
+
+1. Assignments
+
+### Configure General Settings
+
+Configure the basic details and evaluation criteria for the scorecard.
+
+1. Select **+ New Agent Score Card** displayed in the top-right corner. The General Settings tab opens by default.   
     <img src="../agent-scorecards/images/agent-scorecard-default-page.png" alt="New Agent Score Card" title="New Agent Score Card" style="border: 1px solid gray; zoom:70%;">
 
-### Settings
+1. Enter the **Name** of the agent scorecard.
 
-2. Select **Settings** from the following **Add New Agent Score Card** window.  
+1. Enter a short **Description** of the scorecard (Optional).
+
+1. Select the required Languages from the drop-down to load the associated evaluation metrics and attributes.
+
+1. (Optional) Toggle on to **Set the minimum duration required to complete evaluations**.
+
+1. Enter a threshold value in minutes (**MIN**) and seconds (**SEC**). 
+
+1. Set the minimum **Pass Score** required for agents.
+
+1. Select **Next**.  
     <img src="../agent-scorecards/images/add-new-agent-score-card-settings.png" alt="Agent Scorecards Settings" title="Agent Scorecards Settings" style="border: 1px solid gray; zoom:70%;">
 
-3. In the **Name** field, enter the name of the agent scorecard.
-
-4. Enter a short **Description** (optional) for the new agent scorecard created.
-
-5. Enable the **Mark as Default** toggle to assign the scorecard to all agents. By default, the system enables this toggle for the first scorecard you create. Configure the pass score (default: 40).
-
     !!! note
 
-        There must be an active default scorecard. The first scorecard created must be a mandatory default scorecard, which is assigned to all agents. Suppose you try to enable the default scorecard toggle view. In that case, the following warning pop-up window appears, stating that you cannot disable the default scorecard unless another scorecard is replaced with the default.   
+        * Language selection controls which attributes and metrics are available.
 
-    <img src="../agent-scorecards/images/default-scorecard-alert.png" alt="default scorecard" title="default scorecard" style="border: 1px solid gray; zoom:100%;">  
+        * Leave the duration toggle off to evaluate all contacts.
+        
+        * Default scorecards apply automatically to all agents.
 
-    !!! note
 
-        When there is an existing default scorecard, and you try to disable the default scorecard toggle status, you get the following warning pop-up window stating that the default scorecard cannot be disabled; you must assign another scorecard as default before disabling.   
-         
-    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Default" title="Enable Default" style="border: 1px solid gray; zoom:100%;">  
+### Configure Agent Attributes
 
-### Agent Attributes
+Select and configure attributes that define agent performance scoring.
 
-1. Select **Agent Attributes**, the following screen appears.     
-    <img src="../agent-scorecards/images/agent-attributes.png" alt="Add Agent Attributes" title="Add Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
 
-7. In the **Agent Attributes**, search and add more than one agent attribute.
-8. Select **Add Agent Attributes** to add to an agent scorecard. The following screen appears.  
+1. Search for the relevant agent attributes name. 
+
+1. Select **Add Agent Attributes** to add them to the scorecard.     
+<img src="../agent-scorecards/images/agent-attributes.png" alt="Add Agent Attributes" title="Add Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
+
+1. Assign a **Weightage** to each attribute individually. 
+
+1. Select **Next**.    
     <img src="../agent-scorecards/images/add-agent-attributes-weight.png" alt="Add Agent Attributes Weight" title="Add Agent Attributes Weight" style="border: 1px solid gray; zoom:70%;"> 
     
-9. Assign a **Weight** for the agent attribute selected.
-
     !!! note
 
-        If a scorecard is set as the default, the agent leaderboard and agent dashboard display scores based on that scorecard.
+        * Only attributes matching the selected languages appear.
 
-### Assignments
+        * Each attribute contributes proportionally to the final score.
 
-10. Select **Assignments**, the following screen appears.  
-    <img src="../agent-scorecards/images/assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:70%;"> 
+        * The **Next** button activates only when the total weightage across all selected attributes equals 100%.
 
-11. In the **Agents**, assign scorecards across the required agent by searching an **Agents** name, and select **Add Agents** to add agent names.  
+
+### Configure Assignments
+
+1. Assign the scorecard to agents and agent groups.
+
+1. Select **Add Agents** and **Add Groups** as needed.
+<img src="../agent-scorecards/images/assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:70%;"> 
+
+1. Select Add Groups to include them.     
+  <img src="../agent-scorecards/images/add-agent-group.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
+
+1. Select **Create** to assign both the agent and the agent group to a relevant queue.  
     <img src="../agent-scorecards/images/add-agents.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
 
-12. In the Agent Groups, assign scorecards at an agent group level, search for an **Agent Group** name to add the agent group to a queue.  
-13. Select **Add Groups** to add the agent groups to a queue.  
-    <img src="../agent-scorecards/images/add-agent-group.png" alt="Add Agents" title="Add Agents" style="border: 1px solid gray; zoom:70%;"> 
-
-14. Select **Create**. The system adds the new scorecards created for the agent or agent group. Enable the status toggle to start agent-level scoring based on that scorecard.       
-    <img src="../agent-scorecards/images/newly-created-scorecard.png" alt="Newly Added Scorecard" title="Newly Added Scorecard" style="border: 1px solid gray; zoom:70%;"> 
-
-The Agent scorecards include the following:
-
-* **Name**: This shows the name of the agent or agent group.
-* **Agent Attributes**: This shows the agent attribute name.
-* **Assignee**: This shows the assignee name who has assigned the scorecard to the agent.
-* **Created By**: This shows the user's name who has created the agent scorecard.
-* **Pass Score**: This shows the minimum pass score that the agent has to attain.
-* **Status**: This shows the status of the scorecard whether it's active or inactive.
-
     !!! note
 
-        If an agent scorecard is marked as default, the system hides the Assignments section in the creation modal and automatically assigns the scorecard to all agents in the user’s queues.
+        Toggle the Scorecard Status to Active to begin agent-level scoring.        
+    <img src="../agent-scorecards/images/newly-created-scorecard.png" alt="Newly Added Scorecard" title="Newly Added Scorecard" style="border: 1px solid gray; zoom:70%;"> 
 
-## Edit Agent Scorecard
 
-Steps to edit or update the agent scorecard:
+### How Minimum Duration Threshold Works
 
-1. Select an agent scorecard, then select the vertical ellipsis button.            
+The minimum duration threshold determines the shortest interaction that qualifies for AutoQA scoring.
+
+| Contact Duration         | Status Assigned     | Result                                       |
+|--------------------------|------------------|---------------------------------------------|
+| Meets or exceeds threshold | —                | Evaluated normally.                         |
+| Falls below threshold     | Below Threshold   | Excluded from scoring and quality metrics. |
+| Duration Unresolved       | Duration unavailable | Excluded from evaluation.                 |
+
+### Duration Calculation By Channel
+
+| Channel                 | Duration Measured As                                |
+|-------------------------|----------------------------------------------------|
+| Voice                   | Full call duration, including hold time.          |
+| Chat                    | Time between the first and last message timestamps. |
+| Quality AI Express (FTP)| Based on the `start_time` and `end_time` fields. |
+
+!!! note
+
+    * Threshold changes apply only to new contacts ingested after the scorecard is saved.
+    
+    * Disabling the threshold evaluates all contacts as before.
+
+
+### Manual Override
+
+Supervisors with the appropriate permissions can manually evaluate contacts flagged as Below Threshold or Duration Unavailable. The system includes these manually evaluated contacts in quality metrics as normal
+
+#### Versioning Behavior
+
+The system versions threshold settings per scorecard. Updates apply only to contacts ingested after saving the scorecard. Historical contacts continue to use the previous threshold configuration.
+
+#### Pass Score Logic
+
+* Score ≥ Pass Score: Pass.
+
+* Score < Pass Score: Fail.
+
+* Total attribute weight must equal 100%.
+
+## Manage Agent Scorecards
+
+### View Scorecards
+
+Each scorecard displays the following:
+
+*** **Name: Displays the name of the agent or agent group.
+
+* **Agent Attributes**: Displays the name of the selected agent attributes.
+
+* **Assignee**: Shows the user name who assigned the scorecard.
+
+* **Created By**: Displays the scorecard creator’s name.
+
+* **Pass Score**: Displays the minimum score required to pass the evaluation.
+
+* **Status**: Shows whether the scorecard status is Active or Inactive.
+
+### Edit Agent Scorecards
+
+Steps to edit the agent scorecard:
+
+1. Select the vertical ellipse (⋮) on any existing scorecard.               
     <img src="../agent-scorecards/images/vertical-ellipsis-edit-button.png" alt="Vertical Ellipsis Edit Button" title="Vertical Ellipsis Edit Button" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Select **Edit** to update the existing agent scorecard details.  
-   <img src="../agent-scorecards/images/edit-agent-scorecard.png" alt="Quality AI Dashboard" title="Quality AI Dashboard" style="border: 1px solid gray; zoom:70%;"> 
 
-3. Modify the required details in the **Settings**, **Agent Attributes**, and **Assignments**.  
-   <img src="../agent-scorecards/images/update-agent-scorecard.png" alt="Quality AI Dashboard" title="Quality AI Dashboard" style="border: 1px solid gray; zoom:70%;"> 
+3. Modify the required details.  
 
-    !!! Note 
+4. Select **Delete** only unassigned attributes or remove the scorecards before deletion.
 
-        If you want to assign a different scorecard as default, then the following warning pop-up window is displayed stating that the existing default scorecard is replaced by the new one, and upon confirming, the new scorecard gets applied or replaced as default. 
-        
-    <img src="../agent-scorecards/images/enable-default-scorecard.png" alt="Enable Default" title="Enable Default" style="border: 1px solid gray; zoom:85%;">  
+5. Select **Update**.
 
-4. Select **Update** to save the changes.
 
-## Delete Agent Scorecard
+### Delete Agent Scorecards
 
 Steps to delete the agent scorecard:
 
-1. Select any of the agent scorecards, and select the vertical ellipsis button.    
-    <img src="../agent-scorecards/images/edit and delete-agent-scorecard.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;"> 
+1. Select the vertical ellipse (⋮) on any existing scorecard.               
 
-2. Select **Delete**. The following warning popup window appears.    
-    <img src="../agent-scorecards/images/delete-agent-scorecard.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:70%;"> 
+1. Select Delete to remove the selected agent scorecard.
+
+
+#### Scorecard Deletion 
+
+**Deleting Agent Scorecard** 
+
+When you delete an agent scorecard, you permanently lose all data linked to that scorecard, and you can't recover it. 
+
+**Deleting Default Scorecard**
+
+You can't delete the default scorecard directly. Before deleting any default scorecard, you must assign another scorecard as the default before deleting the current scorecard. Otherwise, the system displays a warning dialog.
     
-    !!! note
+### Language Configuration Warnings
 
-        When a user tries to delete the default scorecard, the system displays a warning dialog stating that they cannot delete it. The user must first assign another scorecard as the default. Deleting a scorecard also deletes all data associated with it.
+#### Adding Languages
+
+A warning appears if a new language isn't configured for existing metrics or attributes. You must configure metrics for that language first.
+
+#### Deleting Languages
+
+You can’t remove any languages linked to active scorecards or attributes until you clear those links. The system allows language modification only for attributes configured for the selected languages.
+
+
+
 
 ## Agent Attributes
 
-This feature enables the creation of agent attributes by combining existing evaluation metrics. This calculates the Agent Attribute Score using data from evaluation metric results. Agent attributes are specific areas of performance relevant to an agent's role like Professionalism, Product Knowledge, Problem-solving skills, and Customer service skills. 
+This feature generates agent attributes by aggregating evaluation metrics to calculate an Agent Attribute Score, which highlights critical performance areas such as Professionalism and Product Knowledge. The system derives the score from evaluation metric data and filters the displayed attributes according to the scorecard’s language.
 
-Users can view **Agent Attributes** by navigating to **Quality AI** > **Configure** > **Agent Attributes**. 
+### Access Agent Attributes 
+
+Navigate to **Quality AI** > **Configure** > **Agent Attributes**. 
 <img src="../agent-scorecards/images/agent-attributes-default-screen.png" alt="Agent Attributes" title="Agent Attributes" style="border: 1px solid gray; zoom:70%;"> 
 
-### Create a New Agent Attribute
+### Manage Agent Attributes
+
+
+#### View Agent Attributes
+
+Each agent attribute displays the following:
+
+* **Name**: Shows the name of the agent attribute.
+
+* **Description**: Shows the optional description added for the agent attribute.
+
+* **Scorecard**: Shows the status of all scorecards.
+
+#### Create a New Agent Attribute
+
+Steps to create a new agent attribute:
+
 
 Steps to create **New Agent Attribute**:
 
-1. From the **Agent Score Cards**, select the **Agent Attributes** > **+New Agent Attribute**.      
+1. Navigate to the Agent Scorecards tab on the Agent Scorecards page.
+
+1. Select **+ New Agent Attribute** displayed in the top-right corner.         
     <img src="../agent-scorecards/images/new-agent-attribute1.png" alt="New Agent Attribute" title="New Agent Attribute" style="border: 1px solid gray; zoom:70%;">
 
-2. Upon selecting the **+New Agent Attribute**, the following **Add New Agent Attribute** screen appears.   
-<img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Add New Agent Attribute" title="Add New Agent Attribute" style="border: 1px solid gray; zoom:70%;"> 
+1. Enter the **Name** of the agent attribute.
 
-    * In the **Name** field, enter the name of the agent attribute.
-    * Enter a short **Description** (optional) for the new agent attribute created.
-    * In the **Add Evaluation Metrics**, search for the required evaluation metrics to add. 
-    * Select the **Add Evaluation Metrics** to select an option. The following screen appears with the selected evaluation metrics.  
+1. Enter a short **Description** (optional).
+
+1. Select a target **Language** to load the associated evaluation metrics and attributes. 
+
+1. Search for relevant evaluation metrics and select the required ones.
 <img src="../agent-scorecards/images/add-new-agent-attribute.png" alt="Add Evaluation Metrics" title="Add Evaluation Metrics" style="border: 1px solid gray; zoom:70%;"> 
 
-3. Select **Create**. The following screen shows the new agent attribute added.   
-<img src="../agent-scorecards/images/added-new-attributes.png" alt="Updated Attributes List" title="Updated Attributes List" style="border: 1px solid gray; zoom:70%;"> 
+1. Select **Add Evaluation Metrics** to assign them. 
 
-The Agent Attributes include the following:
+1. Select each metric and configure the following:
 
-* **Name**: This shows the name of the agent attribute.
-* **Description**: This shows the optional description added for the agent attribute.
-* **Score Card**: This shows the status of all scorecards.
 
-### Edit Agent Attributes
+1. Select **Edit** to configure the following:
+
+
+| Setting              | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| Weightage            | Percentage contribution based on the metric's importance.                  |
+| Correct Response     | Expected response that defines achieved behavior.                          |
+| Outcome              | Specific outcomes (Yes / No / NA) with corresponding weight assignments.   |
+| Negative Weight      | Negative weight applied to critical metric outcomes.                       |
+| Fatal Criteria toggle| Marks the metric as fatal. A failed fatal metric sets the interaction score to zero. |
+
+
+1. Verify that the total positive weightage equals 100%. 
+
+1. Select **Create**. 
+
+
+#### Metrics Weightage Reference
+
+| Weightage type           | Description                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|
+| Total Positive Weightage  | Sum of all positive metric weightages. Example: Professional greeting (+5%), Problem resolution (+15%). |
+| Total Negative Weightage  | Sum of all negative metric weightages. Example: Policy violation (−10%), Missed compliance step (−15%). |
+| Individual Weightage      | Percentage contribution of each metric for the corresponding evaluation form. |
+| Total Weightage           | Must equal 100% across all metrics.                                        |
+
+#### Metric Configuration Rules
+
+| Rule                     | Detail                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
+| By Question Metrics      | Define with Yes / No / NA outcomes and assign positive or negative weights based on the metric type. |
+| Channel-specific Display | If the selected channel is Chat, only Chat-relevant metrics appear. Speech and Playbook metrics configured for Voice are not shown. |
+| Fatal Criteria           | Interactions that meet the fatal criteria are scored zero and flagged for identification across features. A form can include multiple fatal criteria. |
+| Negative Weight Limit    | The total negative points can’t exceed the total positive points.      |
+
+
+### Manage Agent Attributes
+
+#### Edit Agent Attributes
 
 Steps to edit or update the agent attributes:
 
-1. Select an agent scorecard, then select the vertical ellipsis button. The following screen appears.  
-    <img src="../agent-scorecards/images/edit-attribute-list.png" alt="Edit Agent Attribute" title="Edit Agent Attribute" style="border: 1px solid gray; zoom:70%;">   
+1. Select the three-dot (⋮) menu on the attribute you want to edit.      
 
 2. Select **Edit**. The following screen appears to update existing agent attribute details.  
-    <img src="../agent-scorecards/images/edit-attribute-option.png" alt="Edit" title="Edit" style="border: 1px solid gray; zoom:70%;"> 
-
-3. Modify the required field details in the **Add Evaluation Metrics**.
-4. Select **Update** to assign and update the evaluation metrics for the new added attribute.
-
-### Delete Agent Attribute
-
-Steps to delete the agent scorecard:
-
-1. Select an agent scorecard, then select the vertical ellipsis button. The following screen appears.  
-    <img src="../agent-scorecards/images/edit-attribute-list.png" alt="Delete Agent Attribute" title="Delete Agent Attribute" style="border: 1px solid gray; zoom:70%;"> 
     
-2. Select **Delete**. The following warning popup window appears.  
-    <img src="../agent-scorecards/images/delete-agent-attribute.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:70%;"> 
+3. Modify the required field details.
 
-    !!! note
+1. Select **Update**.
+
+#### Language Update Warnings
+
+##### Adding A New Language
+
+A warning appears if the new language isn’t configured for the current by-question metrics. Configure the new language on the listed metrics or select a language that supports the metrics.
+
+##### Deleting A Language
+
+The system displays a warning if the language is in use in other scorecards. Remove the language configuration from all associated scorecards before deleting it. The system blocks deletion if the language is in use.
+
+ !!! note
             
-        Agents cannot delete any attributes already assigned to a scorecard. To delete an attribute, the agent must first remove it from the assigned scorecard. Only unassigned attributes can be deleted. Deleting an attribute also removes all data associated with it.
+    Only scorecards for the selected languages appear. You can remove or delete languages not linked to any scorecards.
+
+#### Delete An Agent Attribute
+
+1. Select the three-dot (⋮) menu on the attribute you want to delete.
+
+1. Select **Delete**, and confirm the action in the warning dialog.
+
+### Agent Attribute Deletion Warnings
+
+| Scenario                     | Behavior                                                                 |
+|------------------------------|-------------------------------------------------------------------------|
+| Deleting any attribute       | The system permanently deletes all data linked to the attribute and does not allow recovery. |
+| Deleting an assigned attribute | You can’t delete an attribute assigned to a scorecard. Remove it from the scorecard first. |
+| Eligible for deletion        | You can delete only unassigned agent attributes.                       |
+
+
+   
+    
+
+
