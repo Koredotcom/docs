@@ -116,7 +116,7 @@ To configure the agent, follow these steps:
         <img src="../images/genesys-at.png" alt="Enter Genesys agent credentials" title="Enter Genesys agent credentials" style="border: 1px solid gray;"> 
 
 
-5. If you want to suppress the session closure message after an agent conversation ends, enable the **Disable End Conversation Message** option.
+5. If you don't want to display the session closure message after an agent conversation ends, enable the **Disable End Conversation Message** option.
 
 6. If you want to make Genesys the default agent, enable the **Default Agent System for all bot channels** option. 
  Note:  This option is available only when you have multiple agents configured for your AI Agent. 

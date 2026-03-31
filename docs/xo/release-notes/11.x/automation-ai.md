@@ -25,7 +25,7 @@ A new Disable End Conversation Message setting in Genesys configurations allows 
 **Genesys Agent Message ID Available via Context Variable** 
 
 
-When an agent responds in Genesys, after an agent handoff, a message ID is now exposed via a context variable and recorded in debug logs for traceability. This message ID helps trace the agent who handled the conversation.
+When an agent responds in Genesys, after an agent handoff, a message ID is now exposed via a context variable and recorded in debug logs for traceability. This message ID helps trace the agent who handled the conversation. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md) 
 
 
 
