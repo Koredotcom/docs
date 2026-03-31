@@ -29,9 +29,6 @@ Agent status allows you to enable or disable an agent without deleting it. Disab
 
 The Agent Pre-Processor allows developers to run custom scripts before an agent is invoked. These scripts can access system memory and context variables to perform data transformation, validation, context preparation, and state preparation. The configured script runs automatically every time the agent's run is initiated, ensuring consistent preprocessing of the agent’s input state.
 
-!!!note
-    Currently, this feature is enabled on request.
-
 ### Common Use Cases
 
 Some of the common use cases where agent pre-processor scripts can be useful are listed below.
@@ -52,10 +49,11 @@ Click on *Add Script* to add a new pre-processor script. Write custom scripts in
 
 After writing the script, use the *Test Execution* option to verify its behavior. Once the test is complete, click *Create* to save the script. 
 
-Note: There is no execution timeout for the script. Ensure that the script doesn't introduce unnecessary delays. 
+!!! note 
+ 
+    There is no execution timeout for the script. Ensure that the script doesn't introduce unnecessary delays. 
 
-
-### Sample script 
+**Sample script** 
 
 The following example updates the agent prompt with HR-specific guidance and appends a timestamp to the task input.
 
@@ -83,6 +81,28 @@ return {
     input: input
 };
 ```
+
+### Execution Mode
+
+Once a script is added, configure when the pre-processor should run during an agent session. Two modes are available:
+
+<table>
+  <tr>
+   <td>Mode</td>
+   <td>Behaviour</td>
+  </tr>
+  <tr>
+   <td>Always Run </td>
+   <td>The script runs every time the agent is invoked, regardless of whether it has run before in the same session. Use this for validations or transformations that must apply to every agent call.</td>
+  </tr>
+  <tr>
+   <td>Run Once  </td>
+   <td>The script runs only on the first agent call in a session. Subsequent calls within the same session skip the pre-processor. Use this for one-time setup tasks such as loading user context or initialising session state.
+   </td>
+  </tr>
+</table>
+
+To change the mode, select the appropriate option and save.
 
 ## Delete Agent
 

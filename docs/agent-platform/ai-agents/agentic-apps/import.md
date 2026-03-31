@@ -25,14 +25,15 @@ To import apps or agents into an Agentic app, follow these steps.
 
 * Review the app components before importing. Upon uploading the file, the page shows a summary of all the Agentic app components in the JSON file:
     * Agentic App Summary - Name and Description of the app. 
-    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page help differentiate between the three types of tools. Note that the workflow tools aren't exported with the app exports. You must export the workflow tools individually. Workflow tools must be explicitly linked to the corresponding tools after they're imported.
-    * Tools - List of tools not associated with any of the agents. 
+    * Agents - A list of agents, along with their descriptions and the tools associated with each agent. External agents are clearly marked for easy identification. Visual cues on this page help differentiate between the three types of tools. 
+    * Code Tools and Workflow Tools - List of tools. 
     * Knowledge tools associated with an app.
     * MCP servers: Servers configured in the app. 
     * Events configured in the app.
     * User-defined Memory store configurations. 
     * Environment variables and namespaces.
     * Content Variables
+    * Processors
 
 ![alt_text](images/import/import.png "image_tooltip")
 
@@ -40,13 +41,6 @@ To import apps or agents into an Agentic app, follow these steps.
 * You can view the status of the import under the Import tab. 
 * Review and validate the imported apps and their components.
 * If the system detects missing configurations in the uploaded file, it highlights them in red. Correct these errors before importing the application. 
-
-![alt_text](images/import/import-errors.png "image_tooltip")
-
-* If there are any linked workflow tools, you need to manually import them to the new app first. Then, during the app import process, link the workflow tools in the app to the already imported tools. 
-
-![alt_text](images/import/link.png "image_tooltip")
-
 
 ## Key Considerations for Import
 
@@ -56,4 +50,4 @@ To import apps or agents into an Agentic app, follow these steps.
 * The config file can't exceed 5MB in size.
 * If valid, the platform creates the application with all components.
 * If invalid, the platform displays appropriate error messages. Resolve the errors to continue the import.
-* Partial imports aren't supported.
+* Partial imports aren't supported. In case of errors, import fails.
