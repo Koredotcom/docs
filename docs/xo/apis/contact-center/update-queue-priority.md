@@ -4,6 +4,9 @@
 
 To update the queue priorities on a scale of 1 to 10.
 
+!!! note
+    The Dynamic Queue Reprioritization toggle must be enabled at the UI level to update queue priorities through the Update Queue Priority API. If this toggle is disabled, any priority updates made through the API aren't reflected.
+
 
 | **METHOD**          | **PUT**                                               |
 |-----------------|------------------------------------------------------|
