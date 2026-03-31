@@ -12,31 +12,31 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **From Address Selection in Email Reply**
 
-The system lets agents select a different From address when replying to emails from a configured list. Upon sending the email, the Platform closes the existing session and creates a new session for the selected email address, and preserves the conversation history. It supports threading, reporting, and admin controls. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails).
+The system lets agents select a different From address when replying to emails from a configured list. Upon sending the email, the Platform closes the existing session and creates a new session for the selected email address, and preserves the conversation history. It supports threading, reporting, and admin controls. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
 
 <font size="4">Configuration</font>
 
 **Separate Wait Time Controls for Post-Transfer Conversations**
 
-Conversations now use separate queue wait time controls before and after agent transfer. On the first entry, the initial wait time applies. After a transfer, a dedicated post-transfer timer activates and resets with each subsequent transfer. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#settings).
+Conversations now use separate queue wait time controls before and after agent transfer. On the first entry, the initial wait time applies. After a transfer, a dedicated post-transfer timer activates and resets with each subsequent transfer. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#settings)
 
 **Parent and Child Grouping of Permissions**
 
-Two new permissions, in the Monitor Tab, are Profile and Mark Offline. These improve role-based access control and will be enabled by default for all roles except Agent and Custom. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions).
+Two new permissions, in the Monitor Tab, are Profile and Mark Offline. These improve role-based access control and will be enabled by default for all roles except Agent and Custom. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 **Channel-Based Last Agent (Affinity) Routing**
 
-Last Agent Routing is now available per channel (Voice, Chat, and Email), routing interactions to the last handling agent when available. An optional wait duration holds the interaction before falling back to standard routing; if no wait duration is set, fallback occurs immediately. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration).
+Last Agent Routing is now available per channel (Voice, Chat, and Email), routing interactions to the last handling agent when available. An optional wait duration holds the interaction before falling back to standard routing; if no wait duration is set, fallback occurs immediately. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
 
 <font size="4">Analytics</font>
 
 **Correct Call Status for Agent Interactions with CSAT**
 
-The system now records accurate call-termination status during agent–customer interactions, including CSAT. Calls are marked as User Hangup or Agent Hangup, preventing incorrect classification as Bot Hangup. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#call-status-during-agentcustomer-interaction-with-csat).
+The system now records accurate call-termination status during agent–customer interactions, including CSAT. Calls are marked as User Hangup or Agent Hangup, preventing incorrect classification as Bot Hangup. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#call-status-during-agentcustomer-interaction-with-csat)
 
 **Show Duration Markers in Recordings**
 
-A new account-level setting lets you display either timestamps or elapsed call duration for transcript segments. When duration is selected, each segment shows time relative to the call start instead of the date and time. Timestamps remain the default, and the setting applies to all recordings on reload. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#conversation-time-display-format).
+A new account-level setting lets you display either timestamps or elapsed call duration for transcript segments. When duration is selected, each segment shows time relative to the call start instead of the date and time. Timestamps remain the default, and the setting applies to all recordings on reload. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#conversation-time-display-format)
 
 **Usability Enhancement to View and Navigate Recordings**
 
@@ -46,22 +46,22 @@ The Insights to Logs panel now includes a compact recording overview widget, an 
 
 **Add Payload Input for API-Integrated Contact List**
 
-POST-based API-integrated contact lists now support request payload input. The payload field accepts .json file, raw text, or URL-encoded data, with existing validation rules applied. This enables flexible data exchange with external systems without affecting current API configurations. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#api-integration).
+POST-based API-integrated contact lists now support request payload input. The payload field accepts .json file, raw text, or URL-encoded data, with existing validation rules applied. This enables flexible data exchange with external systems without affecting current API configurations. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#create-a-contact-list)
 
 **Agentless Dialers: Disposition Support**
 
 Agentless voice campaigns now support predefined disposition codes for tracking and analytics. The system attaches the selected disposition to the session as a tag and displays it in campaign outcomes and interactions.
- [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#agentless-dialer).
+ [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#agentless-dialer)
 
 **New Dashboard for Proactive Web Campaigns**
 
-A dedicated dashboard for proactive campaigns is now available, with filters for campaign executions and date ranges. Key metrics include impressions, clicks, visitors (unique, anonymous, and logged-in), conversations, and dismissal rate. Visualizations cover time trends, reasons for suppression, conversation split (agent vs. bot), and disposition distribution. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/dashboard/campaign-dashboard.md#proactive-web-campaigns).
+A dedicated dashboard for proactive campaigns is now available, with filters for campaign executions and date ranges. Key metrics include impressions, clicks, visitors (unique, anonymous, and logged-in), conversations, and dismissal rate. Visualizations cover time trends, reasons for suppression, conversation split (agent vs. bot), and disposition distribution. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/dashboard/campaign-dashboard.md#proactive-web-campaigns)
 
 <font size="4">API</font>
 
 **Time-Based Queue Reprioritization**
 
-A new public API lets you dynamically update queue priorities, enabling time-based automation via external schedulers. Updates apply immediately, override UI-configured priorities, and influence routing without reassigning active conversations.
+A new public API lets you dynamically update queue priorities, enabling time-based automation via external schedulers. Updates apply immediately, override UI-configured priorities, and influence routing without reassigning active conversations. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/update-queue-priority.md)
 
 <hr>
 

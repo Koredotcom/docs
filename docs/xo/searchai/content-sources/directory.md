@@ -5,7 +5,7 @@ Business information is available in a variety of formats and at various locatio
 Search AI allows you to **upload one or more files or directories from the local device or a given URL**. The uploaded files are organized into directories in the application. A default directory is always present to store files. Once a file is successfully uploaded to the application, it is automatically indexed, and the file data is readily available to answer user queries.
 
 !!!note
-    Search AI supports files in various formats: PDF, DOCX, PPT, and TXT. However, scanned PDFs and password-protected files are not currently supported.  
+    Search AI supports files in various formats: PDF, DOCX, PPT, TXT and XLSX. However, scanned PDFs and password-protected files are not currently supported. Learn more about [ingestion from spreadsheets](../content-extraction/spreadsheet-ingestion.md).
 
 ## Viewing Files and Directories
 
@@ -51,7 +51,7 @@ By default, the application has the following limits for file uploads:
 * You can upload up to 40 files at once. 
 * When uploading a directory, it can contain a maximum of 20 files, with each file not exceeding 15MB.
 
-If you need to increase these limits to meet your specific requirements, please [contact our Support Team for assistance](https://kore.ai/support/).
+If you need to increase these limits to meet your specific requirements, [contact our Support Team for assistance](https://kore.ai/support/).
 
 ## Deleting Files and Directories
 

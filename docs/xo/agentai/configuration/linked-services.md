@@ -9,15 +9,15 @@ The **Linked Services** section lets you integrate Agent AI with external servic
 
 Search AI provides an intelligent, contextual, and personalized search experience in every interaction across web and mobile channels. In this section, you can define how Agent AI performs search operations. 
 
-### How Does It Work?
+### How Does It Work
 
 1. **Set up Search AI Apps**: Add all the segregated information sources (internal information, external information, and auto-suggestions) the targeted agents might need in their searches, like web pages, data, documents, and content from apps like ServiceNow and Confluence.
 2. **Link Search AI with Agent AI**: Administrators can link up to three Search AI applications with Agent AI, as explained in this document. Once linked, Search AI content is automatically available for Agent AI as a service in runtime.
 3. **View Search AI data in Agent AI**: In the Agent AI widget, agents can view relevant snippets and articles from the Search AI application, and Dialog Tasks and FAQs from the XO Platform or the Use Cases of the Agent AI application. 
 
-### How Does It Help Agents?
+### How Does It Help Agents
 
-When Agent AI is integrated with Search AI, data from all the sources configured in the Search AI application are accessible to agents via the **Agent AI widget** > **Search** tab. In the search results, Snippets and Articles are shown from the Search AI application, and Dialog Tasks and FAQs are shown from the Use Cases of the Agent AI application. Agents can quickly review the search results and share relevant information with the customers. This feature also enables sending internal notes to agents with important, agent-only information that can’t be sent or copied to customers.  
+Integrating Agent AI with Search AI lets agents access data from all configured sources in the **Agent AI widget** > **Search** tab. The search results display **Snippets** and **Articles** from the Search AI application, and **Dialog Tasks** and **FAQs** from Agent AI use cases. Agents can review results and share relevant information with customers. This feature also supports **internal notes** that provide agent-only information, and agents can't copy or share with customers.
 
 ### How to Link Search AI with Agent AI?
 
@@ -126,22 +126,24 @@ Select this option to configure and enable up to three Search Apps across XO 10 
 #### Configuration Rules
 
 * Choose either **Internal Information** or **External Information** with **Auto-Suggestions**.
-* **Internal** **Information** and **External Information** can’t be combined in one app.
-* **Auto-Suggestions** can be configured only for XO 10 app.
+* You can't combine **Internal Information** and **External Information** in one app.
+* You can configure **Auto-Suggestions** only for the XO 10 app.
 * **Knowledge AI settings** are available only if you select either Internal Information or External Information. 
 
 #### Knowledge AI
-
-This section lets you gain access to the **Knowledge AI** features within the Agent AI widget during customer interactions. Here, you can set channel-specific display of Knowledge AI search results. It has the following sub-sections:
 
 This section allows you to access the Knowledge AI features within the Agent AI widget during customer interactions. You can configure how Knowledge AI search results appear for each channel. It includes the following options: 
 
 * **Search Results**: Controls how the Knowledge AI search results appear. Agents can select **Always Show**, **Show with XO results**, or **Show as a Fallback event**.
     * **Always Show**: Shows all results of Knowledge AI, regardless of bot intents. This is the default selection.
     * **Show with XO results**: Shows results of Knowledge AI only when relevant bot events, such as Dialog Tasks or FAQs, are detected.
-    * **Show as a Fallback event**: Shows results of Knowledge AI as a fallback, only when no bot events are detected.
-* **Advanced Search API Configuration**: It lets you optimize your search experience with the advanced Knowledge AI API configuration. Select this option to use your own API and configure how Knowledge AI should behave.
-* **Control expand behavior of Answers**: It lets you set how many answers appear in the Agent AI widget. For example, if you select **3**, only three answers appear. The default is **4**, and the minimum is **2**.   
+    * **Show as a Fallback event**: Shows results of Knowledge AI as a fallback, only when no bot events are detected.  
+* **Pass Meta Data**: Lets you add metadata to pass to the Search AI app. 
+    * **Landing Summary**: Select it to pass the landing summary and enable context-aware search results.  
+    * **Agent-Customer Chat History**: Select it to pass the conversation history between the human agent and customer up to the latest message.    
+    * **User Context**: Select it to pass the user context data to the Search AI app.  
+* **Advanced Search API Configuration**: Lets you optimize your search experience with the advanced Knowledge AI API configuration. Select this option to use your own API and configure how Knowledge AI should behave.
+* **Control expand behavior of Answers**: Lets you set how many answers appear in the Agent AI widget. For example, if you select **3**, only three answers appear. The default is **4**, and the minimum is **2**.   
 
 ## Agentic Configurations
 
@@ -161,7 +163,7 @@ Configuring an Agentic Copilot app is a three-step process:
 
 The first step in configuring an Agentic Copilot app is to enter the details of the app. Use the following details: 
 
-* **App Name**: Enter a **name** for the new app. For example, Travel Agent. The character limit is set to 50.
+* **App Name**: Enter a **name** for the new app. For example, Travel Agent. The character limit is 50.
 * **Domain URL**: Enter the Agentic platform’s **host URL**. For example, [agent-platform.kore.ai](https://agent-platform.kore.ai/){:target="_blank"}. 
 * **Environment**: Enter the **environment name** as configured in the **Environment** section of the Agentic Platform.
 * **App ID**: Enter the **Agentic app ID** in use.
@@ -171,7 +173,7 @@ The first step in configuring an Agentic Copilot app is to enter the details of 
 
 In this section, you can select from the available conversation metadata to pass to the Agentic Copilot app. This preserves context during conversation transfers from automation to human agents and enables Agentic Copilot to deliver relevant, context-aware responses. The following metadata is available to select: 
 
-* **Landing Summary**: To pass the summary of the customer-bot conversation before the conversation is transferred to a human agent.
+* **Landing Summary**: To pass the summary of the customer-bot conversation before the conversation transfers to a human agent.
 * **Agent-Customer Chat History**: To pass the conversation history of customer-human agent until the latest message.
 * **Custom Data**: To pass the collected custom data.
 * **Intermittent Summary**: To pass the agent-generated intermittent or mid conversation summary. 
@@ -192,13 +194,13 @@ Follow these steps to configure an Agentic Copilot app:
     <img src="../answers-configuration-images/choose-metadata-to-pass.png" alt="choose-metadata-to-pass" title="choose-metadata-to-pass" style="border: 1px solid gray; zoom:80%;">  
 6. Expand the **Add Custom Metadata** section, and enter your custom metadata script in the code editor. You can enlarge the editor page or copy the script using the corresponding buttons.  
     <img src="../answers-configuration-images/add-custom-metadata.png" alt="add-custom-metadata" title="add-custom-metadata" style="border: 1px solid gray; zoom:80%;">  
-7. Select **Test Connection & Save**. The configured app is saved and gets connected.  
+7. Select **Test Connection & Save**.  
 
 ### Deleting an Agentic Copilot app
 
 This section lets you delete a preconfigured Agentic Copilot app. When deleted, the connected apps automatically get disabled from the Agent AI widget. Follow these steps to delete a configured app:
 
-1. Select the **delete** button against a saved app.
+1. Select the **delete** button next to a saved app.
 2. Select **Delete** on the confirmation screen.   
 
     !!! note
