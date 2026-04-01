@@ -67,6 +67,18 @@ You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/a
 * Document Management
 * Facets
 
+#### Scoping Sources
+
+After successful authentication, the platform displays all available sources from the linked Search AI app, organised across three tabs: **Websites**, **File Uploads**, and **Connectors**. By default, all sources are selected.
+
+You can deselect specific sources within each tab to limit the Search Agent to only the relevant content for this agent's purpose. Click **Done** to confirm your selection. The configuration screen then shows the linked Search AI app with only the scoped sources applied.
+
+To make changes after setup:
+
+* Click **Edit Credentials** to return to the App Credentials screen.
+* Click **Edit Sources** to return to the Sources tab with your previous selections retained.
+* Click **Delete** to remove the linked Search AI app entirely and reset the configuration to its initial state.
+
 
 #### Option 2: [Amazon Q](../integration/amazon-q.md)
 

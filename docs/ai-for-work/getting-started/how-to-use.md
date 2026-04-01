@@ -20,11 +20,24 @@ Files uploaded through the Assistant chat interface are stored in managed cloud 
 * Documents processed through Search AI functionality.
 
 !!!note
-    Files uploaded during chat sessions are stored in the platform's cloud infrastructure.  
-
+    Files uploaded during chat sessions are stored in the platform's cloud infrastructure.
+  
 **Data Security**
 
 All files stored in the platform's managed storage infrastructure are protected with industry-standard encryption measures to ensure data confidentiality and integrity.
+
+### Uploading Files
+
+You can attach files to your conversation either by clicking the attachment icon in the compose bar or by dragging and dropping a file directly into the chat interface.
+
+To upload using drag and drop:
+
+1. Drag a file from your local system over the chat window.
+2. The drop zone highlights that the file can be released.
+3. Drop the file. The upload initiates automatically.
+
+The upload progress indicator displays consistently for both drag-and-drop and manual uploads. For information on supported file types and storage, see File Storage and Data Handling.
+
 
 ## Agentic Flow Example
 
