@@ -6,12 +6,14 @@ Exports detailed conversation data based on selected evaluation forms, with cust
 
 ## Generate the Report
 
-1. **Create the New Report**
-    1. On the **Reports** tab, Select **+ New Report**. 
-    1. From the **Create New Report** list, select the **Interaction Evaluations and Conversation Analytics Report**.  
-        <img src="../images/interaction-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
+Steps to generate the Interaction Evaluation and Conversation Analytics Report:
 
-    1. Select **Next**.
+1. On the **Reports** tab, Select **+ New Report**. 
+
+1. From the **Create New Report** list, select the **Interaction Evaluations and Conversation Analytics Report**.  
+<img src="../images/interaction-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
+
+1. Select **Next**.
 
 1. Configure the **General** settings section.
     1. Enter a unique **Name** for the report.
@@ -21,7 +23,7 @@ Exports detailed conversation data based on selected evaluation forms, with cust
     1. Select **Next**.         
         <img src="../images/interactions-eva-report.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
 
-1. Configure the **Filters** and **Options** in the **Configure** section.
+1. Configure the **Filters** and **Optional Fields** in the **Configure** section.
 
     1. Select an evaluation **Form** to define the data scope (at least one form you must select).
 
