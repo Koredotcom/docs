@@ -20,6 +20,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>OpenAI</td>
    <td>
   <ul>
+    <li>gpt-5.3-chat-latest</li>
     <li>gpt-5.2-2025-12-11</li>
     <li>gpt-5.2</li>
     <li>gpt-5.2-chat-latest</li>
@@ -111,6 +112,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>Anthropic</td>
    <td>
     <ul>
+    <li>claude-sonnet-4-6</li>
     <li>claude-3-5-sonnet</li>
     <li>claude-3-haiku</li>
     <li>claude-3-sonnet</li>
@@ -274,7 +276,7 @@ If the model supports Tool Calling, ensure that the feature is explicitly enable
 
 #### Compatible API Structure
 
-The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+The request and response structure must follow the API reference of Anthropic (Messages), OpenAI (Chat Completions), or Google (Gemini).
 
 
 For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).
@@ -650,6 +652,8 @@ Here is the list of all the external models supported in the Platform:
    <td>
 <ul>
 
+<li>claude-sonnet-4-6</li>
+
 <li>claude-3-5-sonnet-20240620</li>
 
 <li>claude-3-haiku-20240307</li>
@@ -762,6 +766,7 @@ Here is the list of all the external models supported in the Platform:
    <td>
 <ul>
 
+<li>gpt-5.3-chat-latest</li>
 <li>gpt-5.2-2025-12-11</li>
 <li>gpt-5.2</li>
 <li>gpt-5.2-chat-latest</li>

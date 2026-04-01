@@ -14,20 +14,29 @@ This update includes new features and enhancements summarized below.
 
 Voice-to-voice models are now supported in the Adaptive Network, enabling seamless processing of spoken input and generation of spoken responses. This enhances conversational experiences by enabling more natural, real-time voice interactions.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md#orchestrator-configuration)
+
 **Complete App Export and Import**
 
-Agent Platform now supports full application export, packaging all components — including workflow tools — into a single file for seamless migration across environments.
+Agent Platform now supports full application export, packaging all components, including workflow tools, into a single file for seamless migration across environments.
 
 The import process includes upfront validation before execution and automatic rollback on failure, ensuring imports either complete fully or not at all. This eliminates the risk of partial or inconsistent application states after a failed import.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/import.md)
+
 
 **Pre-Processor Execution Control**
 
 Users can configure execution control for pre-processors, choosing whether they run once per session or on every agent invocation. This reduces latency and avoids redundant processing. Existing configurations default to Always Run, ensuring backward compatibility.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agent-management.md#execution-mode)
+
+
 **Response Processors for Output Transformation**
 
-Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context — including inputs, outputs, and artifacts — all without changing the underlying logic.
+Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context, including inputs, outputs, and artifacts, all without changing the underlying logic.
 
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md#response-processor)
 
 <font size="4">AI Safety, Security, and Governance</font>
 
