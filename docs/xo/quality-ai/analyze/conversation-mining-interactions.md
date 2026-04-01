@@ -31,7 +31,7 @@ By using these new capabilities, supervisors can:
 
 Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.     
 
-<img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
+<img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Interactions Dashboard Elements
 

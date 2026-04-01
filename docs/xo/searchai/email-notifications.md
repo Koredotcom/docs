@@ -4,18 +4,17 @@ The Notifications feature allows you to subscribe to email alerts for long-runni
 
 When enabled, you can:
 
-    •  Choose which event types trigger notifications
-    •  Add one or more team members as email recipients
-    •  Receive alerts for both manually triggered and scheduled jobs
+* Choose which event types trigger notifications
+* Add one or more team members as email recipients
+* Receive alerts for both manually triggered and scheduled jobs
 
 ## How to enable notifications
 
-
-    1.     On the Websites or Connectors page, click the email icon to open the Notification Settings in Search AI.
-    2.     Toggle the Enable switch on.
-    3.     Select one or more event types you want to be notified about.
-    4.     In the Send to users field, type an email address and press Enter. Repeat for each recipient.
-    5.     Click Save.
+1. On the Websites or Connectors page, click the email icon to open the Notification Settings in Search AI.
+2. Toggle the Enable switch on.
+3. Select one or more event types you want to be notified about.
+4. In the Send to users field, type an email address and press Enter. Repeat for each recipient.
+5. Click Save.
 
 
 !!! note 

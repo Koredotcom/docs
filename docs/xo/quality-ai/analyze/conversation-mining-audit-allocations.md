@@ -1,8 +1,12 @@
 # Audit Allocations Overview
 
-Audit Allocations streamlines the manual quality assurance workflow by enabling QA managers and supervisors to systematically assign interactions to auditors for evaluation. This feature addresses the critical need for manual oversight in automated quality assurance systems, allowing teams to validate Auto QA accuracy, provide targeted agent feedback, and maintain consistent quality standards across all customer interactions.
+Audit Allocations enables QA managers and supervisors to assign interactions to auditors for manual evaluation, complementing AutoQA with structured oversight and consistent quality standards.
 
-The Audit Allocations interface adapts to your permission level, displaying either management or auditor views based on your role.
+When you configure a Minimum Duration Threshold for Evaluation, the system excludes Below Threshold and Duration Unavailable contacts from automated scoring and, by default, from audit allocation batches. Use the Include below-threshold contacts toggle to optionally include these flagged contacts for targeted review, with a Below Threshold badge clearly shown on the audit screen.
+
+!!!Note
+
+    The Minimum Duration Threshold for Evaluation applies only to new contacts from Native CCAI, Agent AI, and Express (FTP) sources; it does not affect existing or past contacts.
 
 ## Access Audit Allocations
 
@@ -11,7 +15,7 @@ Navigate to **Quality AI** > **ANALYZE** > **Allocations**.
 
 ## Why Audit Allocations?
 
-Even with robust Auto QA systems, contact centers rely on manual evaluations to improve accuracy and deliver meaningful agent coaching. Traditional audit allocation methods create several operational challenges, which Audit Allocations directly addresses.
+Manual audits remain essential even with AutoQA in place. Traditional allocation methods introduce operational friction that affects evaluation consistency and auditor productivity.
 
 * **Allocation Visibility Gaps**: Tracking which interactions you've assigned to auditors and monitoring completion progress across your team.
 
@@ -38,4 +42,8 @@ Audit Allocations delivers value through several key capabilities that enhance y
 * **Controlled Distribution**: Specify exact interaction counts or percentages per agent, giving you precise control over evaluation workload across your auditor team.
 
 * **Dual Assignment Methods**: Choose between random sampling for unbiased coverage or custom filters for targeted evaluations based on specific criteria.
+
+* **Threshold-aware Allocation**: Configure each allocation rule to include or exclude below-threshold contacts, enabling both standard audit workflows and targeted reviews of flagged interactions.
+
+
 
