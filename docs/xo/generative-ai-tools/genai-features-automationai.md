@@ -18,9 +18,10 @@ The following table displays the features and the supported models.
     |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI–<br>GPT-4 Turbo, GPT-4o, and GPT-4o mini|✅|✅|❌|✅|✅|✅|
     |OpenAI–<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, and GPT-4o mini|✅|✅|✅|✅|✅|✅|
+    |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
+    |Google Gemini–<br>Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite|✅|✅|✅|✅|✅|✅|
     |Provider's New LLM|✅|✅|❌|✅|✅|✅|
     |Custom LLM|✅|✅|❌|✅|✅|✅|
-    |Amazon Bedrock|✅|✅|❌|✅|❌|❌|
     |Kore.ai XO GPT|❌|❌|❌|✅|✅|❌|
 
 
@@ -30,9 +31,10 @@ The following table displays the features and the supported models.
     |:----:|:----:|:----:|:----:|:----:|:----:|
     |Azure OpenAI–<br>GPT-4 Turbo, GPT-4o, and GPT-4o mini|✅|✅|❌|✅|✅|
     |OpenAI–<br>GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, GPT-4o, and GPT-4o mini |✅|✅|❌|✅|✅|
+    |Amazon Bedrock|✅|✅|❌|✅|✅|
+    |Google Gemini–<br>Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite|✅|✅|❌|✅|✅|
     |Provider's New LLM|✅|✅|❌|✅|✅|
     |Custom LLM|✅|✅|✅|✅|✅|
-    |Amazon Bedrock|✅|✅|❌|✅|✅|
     |Kore.ai XO GPT|❌|❌|✅|❌|❌|
 
 
@@ -44,7 +46,7 @@ The following table displays the features and the supported models.
 The Platform does not provide system prompts in the following cases, so you must create a custom prompt:
 
 * When using OpenAI GPT-4o mini or Azure OpenAI GPT-4o mini.
-* When using Provider's New LLM.
+* When using Amazon Bedrock, Google Gemini, Provider's New LLM,  and Custom models.
 * For the Rephrase User Query feature with OpenAI or Azure OpenAI models.
 
 

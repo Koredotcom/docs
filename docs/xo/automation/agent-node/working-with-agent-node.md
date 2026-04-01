@@ -64,7 +64,7 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 
 * **Model**: The selected model for which the settings are displayed.
 * **Prompt/Instructions or Context**: Add feature/use case-specific instructions or context to guide the model.
-* **Conversation History Length**: This setting allows you to specify the number of recent messages sent to the LLM as context. These messages include both user messages and AI Agent messages. The default value is 10. This conversation history can be seen from the debug logs. 
+* **Conversation History Length**: This setting allows you to specify the number of recent messages sent to the LLM as context, , with a maximum limit of 50. These messages include both user messages and AI Agent messages. The default value is 10. This conversation history can be seen from the debug logs. 
 **Note**: Applicable only if you are using a custom prompt. 
 * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
 * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.

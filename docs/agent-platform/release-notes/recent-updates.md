@@ -2,6 +2,48 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.8.0 March 29, 2026
+
+<u> Minor Release </u>
+
+This update includes new features and enhancements summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Voice-to-Voice Support for Adaptive Network**
+
+Voice-to-voice models are now supported in the Adaptive Network, enabling seamless processing of spoken input and generation of spoken responses. This enhances conversational experiences by enabling more natural, real-time voice interactions.
+
+**Complete App Export and Import**
+
+Agent Platform now supports full application export, packaging all components — including workflow tools — into a single file for seamless migration across environments.
+
+The import process includes upfront validation before execution and automatic rollback on failure, ensuring imports either complete fully or not at all. This eliminates the risk of partial or inconsistent application states after a failed import.
+
+**Pre-Processor Execution Control**
+
+Users can configure execution control for pre-processors, choosing whether they run once per session or on every agent invocation. This reduces latency and avoids redundant processing. Existing configurations default to Always Run, ensuring backward compatibility.
+
+**Response Processors for Output Transformation**
+
+Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context — including inputs, outputs, and artifacts — all without changing the underlying logic.
+
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**Native mTLS Support for OAuth 2.0 Client Credential Auth Profiles**
+
+Users can now securely connect to systems that require mutual TLS (mTLS) without relying on external tools or custom workarounds. OAuth 2.0 Client Credential auth profiles now support mTLS natively, enabling seamless authentication and improving integration reliability. The Platform can present a client certificate for both token requests and API calls, ensuring compatibility with enterprise systems that enforce mTLS.
+
+**Expanded Model Support**
+
+The Platform now supports additional AI models, including:
+
+* OpenAI: gpt-5.3-chat-latest
+* Anthropic: claude-sonnet-4-6
+* Grok Realtime (Available via custom integration)
+
+
 ## v1.7.0 March 8, 2026
 
 <u> Minor Release </u>

@@ -32,12 +32,12 @@ The following details of the voice campaigns are shown in a table:
     * **Completed**: The campaign has exhausted calling all numbers or the campaign has reached its scheduled end date.
 
 * **Progress** - Progress of the campaign. The count refreshes every 5 seconds.
-* **Contact List** - The call list that is dialed.
-* **Connection** - The following details are displayed based on the dialer type:
-    * **Agentless dialer**- The Flow name selected while creating or editing a campaign is shown. For example, the default Conversational Input voice Flow.
-    * **Progressive dialer** - The Queue name selected while creating or editing a campaign is shown. For example, the default Sales Queue.
+* **Contact List** - The call list that's dialed.
+* **Connection** - The system displays the following details based on the dialer type:
+    * **Agentless dialer**- The Flow name selected while creating or editing a campaign. For example, the default Conversational Input voice Flow.
+    * **Progressive dialer** - The Queue name selected while creating or editing a campaign. For example, the default Sales Queue.
     * **Preview dialer** - Displays the Queue name selected for the campaign. Agents receive call records based on idle time and can review customer details before starting the call.
-* **Last Run** - The date when the campaign was run last.
+* **Last Run** - The date when the campaign was last run.
 * **Last updated** - Date when the campaign was last updated.
 
     !!! Note
@@ -71,6 +71,16 @@ To create a campaign when Agentless Dialing Mode is selected:
         * You can turn on Answering Machine Detection toggle if you want the system to determine whether the outbound call was received by an answering machine.
 
         * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
+
+Agentless Campaign Dispositions
+
+Agentless Voice campaigns support disposition codes to define call outcomes. You can configure a predefined set of disposition values (for example, Confirmed, Refused, Ignored) and use them for goal tracking and analytics.
+
+* Configure disposition codes during campaign design by going to Campaigns > Proactive Outreach > Agentless Dispositions > + Add Agentless Disposition.
+* At runtime, the system assigns one disposition per call and stores it in the session tag KoreAgentlessDisposition.
+* The system displays the disposition as a call outcome in the campaign’s Latest View.
+* The session tag is available in the Conversations Dashboard.
+* Disposition retry isn't supported for Agentless campaigns.
 
 ### Progressive Dialer
 

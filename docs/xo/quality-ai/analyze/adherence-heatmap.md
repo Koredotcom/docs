@@ -27,15 +27,7 @@ This section explains how the system displays and calculates adherence metrics f
 
     * For dynamic metrics (by question), the system applies the metric only when it detects the relevant trigger. If the trigger is missing, the system doesn't apply the metric.
 
-* **Color Coding & Display**: The system displays heatmap tile colors based on the calculated adherence percentage. It colors each tile according to the adherence value:
-
-* Red indicates 0%.
-
-* Green indicates 100%.
-
-* The color transitions in 10% increments between red and green.
-
-* Gray indicates that the adherence percentage doesn't apply.
+* **Color Coding & Display**: Heatmap tile colors reflect the calculated adherence percentage. The system assigns each tile a color based on its adherence value: red represents 0%, green represents 100%, and intermediate colors progress in 10% increments between red and green. It uses gray when the adherence percentage isn’t applicable, including cases where no evaluated interactions match the selected metric and filters.
 
 
 * **Failed Interactions and Fatal Errors**: When an interaction fails, the system applies the following two conditions:: 
@@ -49,9 +41,16 @@ This section explains how the system displays and calculates adherence metrics f
 * **Hover Tooltip**: This displays the adherence percentage and number of interactions for each selected date range. If no interactions exist for a range or filter, it displays nothing.      
 <img src="../adherence-heatmap/images/no-interaction.png" alt="No Interaction" title="No Interaction" style="border: 1px solid gray; zoom:100%;">
 
-* **Adherence Percentage Calculation**: The system calculates adherence by dividing the number of interactions where the agent meets the metric by the number of interactions where the metric applies. 
+    !!! Note
 
-The system calculates the percentage adherence for each tile (box) in the heatmap based on the selected evaluation form, agent, and date range.
+        Interactions flagged as Below Threshold or Duration Unavailable are excluded from the interaction count.
+
+* **Adherence Percentage Calculation**: Take the number of evaluated interactions that adhere to the metric and divide it by the number of evaluated interactions where the metric applies.
+
+The system calculates the percentage adherence for each tile (box) in the heatmap based on the evaluation form, agent, and date range.
+
+* **Evaluation Eligibility**: Consider only evaluated interactions for metric applicability. Include manually evaluated interactions. Determine metric applicability only from evaluated interactions.
+
 
 ## Filters
 
@@ -78,13 +77,13 @@ You can select from three views (Daily, Weekly, and a Custom range):
 
 **Evaluation Form**: Select forms across assigned queues and set a default that persists across sessions (both on the Heatmap page and the QA dashboard). Selecting a new default replaces the previous one and highlights fatal metrics with visual indicators.      
 
-**Agent**:By default, the system displays all agents in the selected queues, including those assigned to the queues linked to the selected form. You can search and multi-select them, and update the heatmap to show adherence for their completed interactions. Only adherence tiles for the selected date range, agent, and language remain active; others grayed out and don’t appear on the map.   
+**Agent**: By default, the system displays all agents in the selected queues, including those assigned to the queues linked to the selected form. You can search and multi-select them, and update the heatmap to show adherence for their completed interactions. Only adherence tiles for the selected date range, agent, and language remain active; others grayed out and don’t appear on the map.   
 
 * **All Languages**: This enables multi-selection of languages from the All Languages drop-down menu on the Adherence Heatmap page, corresponding to the languages selected in the evaluation form.   
 
-!!! Note
+    !!! Note
 
-    When the language filter is applied, only metrics configured for the selected languages appear under the All Languages drop-down menu. 
+        When the language filter is applied, only metrics configured for the selected languages appear under the All Languages drop-down menu. 
 
 ## Clickable Functionality
 
@@ -99,7 +98,7 @@ The clickable date range tiles (each box is a metric) display the interactions f
 * **Heatmap Interaction**: Select a date range tile in the heatmap to open a window, which displays agent-wise adherence for the selected metric, ordered from least to most adherence. This displays the percentage count of adherence interactions.      
 <img src="../adherence-heatmap/images/adherence-percentage-count.png" alt="Heatmap Interaction" title="Heatmap Interaction" style="border: 1px solid gray; zoom:100%;"> 
 
-* **View Interactions**: Select the **View Interactions** option, which directs you to the [Conversation Mining](../analyze/conversation-mining-interactions.md){:target="_blank"} page, where you can view failed interactions of all agents. The applied filters (as **Unsaved**) include the evaluation metric name or metric used with queues, and metric qualification or the number of failed interactions (pass/fail).  
+* **View Interactions**: Select View Interactions to open the [Conversation Mining](../analyze/conversation-mining-interactions.md){:target="_blank"} page and view evaluated failed interactions for the selected agents. The system excludes interactions flagged as Below Threshold or Duration Unavailable unless users evaluate them manually. The system applies unsaved filters for the evaluation metric, queues, metric qualification, and failed interaction count.   
 <img src="../adherence-heatmap/images/conversation-mining-failed-interactions.png" alt="View Interactions" title="View Interactions" style="border: 1px solid gray; zoom:100%;"> 
 
 **View Interactions Filter Parameters**
@@ -114,10 +113,10 @@ The following describes the filter parameters for View Interactions:
 
     !!!Note
 
-        * Click the **View Interaction** button to view the **Conversation Mining** page, where you can view all failed interactions see the tags explaining the filtering criteria based on the metric you clicked. 
+        * Click the **View Interaction** button to view the **Conversation Mining** page, where you can view all failed interactions and see the tags explaining the filtering criteria based on the metric you clicked. 
 
         * Notification tags are shown only when navigating to the **Conversation Mining** from **Adherence Heatmap**, and not when accessing the **Conversation Mining** page directly.      
-    <img src="../adherence-heatmap/images/conversation-mining-interaction-notification-tag.png" alt="No Interactions" title="No Interactions" style="border: 1px solid gray; zoom:100%;"> 
+
 
 **Action Filters**
 
@@ -126,4 +125,10 @@ The following describes the filter parameters for View Interactions:
 
 * **View Failed Interactions in Conversation Mining**: Selecting the agent interaction icon opens the Interactions page in Conversation Mining to view the agent’s failed interactions.
 
-**QA or Supervisor Dashboard**: This dashboard shows a simplified Adherence Heatmap with data from the last 7 days, a default evaluation form, and no clickable functionality. You can select and set an evaluation form as the default from the dropdown. For more information, see [Supervisor Dashboard](../analyze/dashboard.md). 
+**QA or Supervisor Dashboard**: This dashboard displays a simplified Adherence Heatmap with data from the last 7 days, uses a default evaluation form, and doesn't include clickable functionality. You can select and set a default evaluation form from the dropdown. The heatmap includes only evaluated interactions. The system excludes contacts flagged as Below Threshold or Duration Unavailable from all aggregates. For more information, see [Supervisor Dashboard](../analyze/dashboard.md). 
+
+
+!!!Note
+
+    Interactions flagged as Below Threshold or Duration Unavailable are excluded from all heatmap calculations, interaction totals, and adherence metrics. Manually evaluated interactions are included as normal. Excluded interactions remain accessible in [Conversation Mining](../analyze/conversation-mining-interactions.md){:target="_blank"} and [Reports](../../analytics/quality-ai/reports/scheduled-reports.md){:target="_blank"}.
+

@@ -2,6 +2,36 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Agent Flow</font>
+
+
+**Conversation History Length Doubled in the Agent Node and DialogGPT**
+
+The conversation history now supports up to 50 messages. It improves retention for custom prompts and prevents mid-conversation restarts, context loss, and repeated questions. You can configure the limit independently of the DialogGPT and Agent Node features.  [Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md/#model-configuration_1)
+
+
+<font size="4">Agent Transfer</font>
+
+**Control Session Closure Message for Genesys**
+
+A new Disable End Conversation Message setting in Genesys configurations allows administrators to control whether users see a session closure message after an agent conversation ends. Its default state in the Platform is disabled. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md/#step-7-enable-the-genesys-agent) 
+
+**Genesys Agent Message ID Available via Context Variable** 
+
+
+When an agent responds in Genesys, after an agent handoff, a message ID is now exposed via a context variable and recorded in debug logs for traceability. This message ID helps trace the agent who handled the conversation. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-genesys-agent.md/#execution) 
+
+
+
+<hr>
+
+
 ## v11.22.1 March 14, 2026
 
 <u> Patch Release </u>

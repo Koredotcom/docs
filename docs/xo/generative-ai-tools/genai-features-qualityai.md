@@ -1,9 +1,7 @@
 
 # Generative AI Features - Quality AI
 
-
-
-Utilize generative AI features to supercharge your AI Agent with powerful tools that enhance productivity, enable natural conversations, improve intent detection, analyze customer sentiment, and support agent performance, all working together to create seamless end-user experiences through intuitive design.
+Quality AI uses generative AI models to analyze agent–customer conversations in real time and post-conversation. It extracts insights, detects behavioral patterns, and evaluates agent performance to improve productivity, strengthen intent detection, support sentiment analysis, and deliver seamless end-user experiences.
 
 ### Model Feature Matrix
 
@@ -12,24 +10,23 @@ The following table displays the features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
-
-| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Custom LLM |
-|:--|:--|:--|:--:|
-| Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection|GPT-4o | GPT-4o | ✅|
-| Agent Empathy Identification | GPT-4o | GPT-4o | ✅ |
-| By Value Adherence validation for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
-| By Value metric extraction for Quality AI | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
-| By Hold Adherence| GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
-| By Transfer Adherence| GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
-| Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ |
-| Conversation Phase Identification | GPT-4o | GPT-4o | ✅ |
-| Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ |
-| Default Script Adherence | GPT-4o | GPT-4o | ✅ |
-| GenAI-based agent answer adherence and customer trigger detection | GPT-4o and GPT-4o mini | GPT-4o and GPT-4o mini | ✅ |
-| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | ❌ |
-|Post Conversation Sentiment Analysis|GPT-4o | GPT-4o | ✅ |
-| Sentiment Analysis | GPT-4o | GPT-4o | ✅ |
-| Topic Modelling | GPT-4o | GPT-4o | ✅ |
+| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Gemini Model<br/>Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3 Flash Preview, Gemini 3.1 Pro Preview| Custom LLM |
+|--------|-----------------------|-----------------|:-----------------:|:------------:|
+| Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection | GPT-4o | GPT-4o | ✅ | ✅ |
+| Agent Empathy Identification | GPT-4o | GPT-4o | ✅ | ✅ |
+| By Value Adherence validation for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| By Value metric extraction for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| By Hold Adherence | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| By Transfer Adherence | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| Churn & Escalation Identification | GPT-4o | GPT-4o | ✅ | ✅ |
+| Conversation Phase Identification | GPT-4o | GPT-4o | ❌ | ✅ |
+| Crutch Word Usage Detection | GPT-4o | GPT-4o | ✅ | ✅ |
+| Default Script Adherence | GPT-4o | GPT-4o | ✅ | ✅ |
+| GenAI-based agent answer adherence and customer trigger detection | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |
+| Generating Similar QM Utterance Suggestions | GPT-3.5 Turbo | GPT-3.5 | ✅ | ❌ |
+| Post Conversation Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ✅ |
+| Sentiment Analysis | GPT-4o | GPT-4o | ✅ | ✅ |
+| Topic Modelling | GPT-4o | GPT-4o | ✅ | ✅ |
 
 
 ### Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection

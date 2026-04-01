@@ -5,7 +5,7 @@ The **Translation Configuration** feature leverages CCAI’s real-time translati
 Steps to configure translation:
 
 1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Settings** > **Advanced Settings** > **Translation Configurations**.  
-    <img src="../images/translation-configurations.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/translate.png" alt="Translation Configurations" title="Translation Configurations" style="border: 1px solid gray; zoom:70%;">
 
 2. Enable translations by turning on the toggle (if disabled). Administrators can then select one of the following options:
 

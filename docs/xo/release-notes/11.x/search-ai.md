@@ -2,6 +2,33 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Automated Email Notifications Support</font>
+
+Search AI now supports email notifications for running jobs, providing visibility into web crawls, connector syncs, and training operations. Configure notification recipients to receive alerts for job start, success, and failure, along with direct links to the application. This reduces manual monitoring and improves coordination across teams.
+
+<font size="4">Ingestion from Spreadsheets</font>
+
+Search AI now supports ingestion of .xlsx and .csv files. It converts spreadsheets into structured and searchable content using the Markdown extraction model. It supports multi-sheet extraction, table handling, and formula results. It doesn't support pivot tables, charts, cell formatting, aggregations, and .xls files.
+
+<font size="4">Connector Enhancements</font>
+
+**New Connector for Bigtincan**
+
+Search AI now supports Bigtincan connector that lets you ingest training and sales content, including documents and presentations. This expands the supported content ecosystem and improves the discoverability of sales knowledge.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-sources/connectors/bigtincan.md)
+
+**SharePoint Enhancements**
+
+Search AI now supports folder-level syncing in the SharePoint connector. A new All option, introduced in the Advanced Filters, lets you apply a single filter rule across multiple objects, allowing for granular content ingestion.
+
+<hr>
+
 ## v11.22.1 March 14, 2026
 
 <u>Patch Release</u>
@@ -14,9 +41,8 @@ Users can now download a CSV of synced documents from their connectors. This hel
 
 <font size="4">New Connector Support in Search AI </font>
 
-Search AI extends support for four new connectors, enabling seamless content ingestion and retrieval from new applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
+Search AI extends support for three new connectors, enabling seamless content ingestion and retrieval from new applications. These connectors enhance enterprise search by integrating knowledge from these platforms. The connectors also enable access control for the content that is ingested from the applications.
 
-* **BigTinCan (Brainshark)**
 * **Invision Community**
 * **Wolken Service Desk**
 * **YouTube**

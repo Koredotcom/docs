@@ -418,7 +418,24 @@ Administrators can select from the following routing options that complement exi
 `Omit Language in Routing`: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
 
 When disabled (Default), the system includes language as a routing criterion along with skill, proficiency, availability, and other parameters.  
-<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Additional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+
+`Last Agent Routing`: Enable Last Agent Routing to route interactions to the last handling agent for a selected channel.
+
+Channels: Voice, Chat, Email
+
+* When enabled, the system assigns the interaction to the last available handling agent.
+* If no last agent exists or the agent is unavailable, the system applies standard routing.
+
+Wait for Last Agent Availability (Optional)
+
+* Configure a wait duration (in seconds) per channel.
+* The system waits for the last agent to become available within the configured time.
+* If the agent remains unavailable, the system applies standard routing.  
+<img src="../images/additional-routing-configuration.png" alt="Additional Routing Configuration" title="Additional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    Named agent transfers, flow transfers, and advanced/CGR routing override this setting.
 
 ## Enable Dial Tone Until Agent Connects
 

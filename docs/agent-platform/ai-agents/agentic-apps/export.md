@@ -10,12 +10,13 @@ When exporting, choose one of the following options:
     * Application metadata
     * Application orchestration details
     * All configured agents and their metadata
-    * Tools and their configurations
+    * Tools and their configurations, including workflow tools and code tools
     * Application-level configurations
     * MCP server configurations
     * Custom memory store definitions
     * Environment Variables and Namespaces
     * Content Variables
+    * Processors
 * Export one or more individual agents- This exports only the selected agents and includes all details required to replicate or transfer each agent’s functionality. It includes:
     * Agent metadata and configuration
     * Tools used by the agent
@@ -23,7 +24,7 @@ When exporting, choose one of the following options:
     
 !!! note
 
-    The tool configurations are part of the app-level export. 
+    The tool configurations are part of the app-level export. Agent export does not export configuration related to the tools. 
 
 
 ## Export App and Agents
@@ -46,7 +47,13 @@ To export an Agentic app or an agent, follow these steps:
 
 **Exported File Details**
 
-Exporting an app or an agent downloads all configurations as a JSON file to your local system. You can use this exported file to import the same configuration into another environment or restore it in the same environment to recreate the app setup. Follow the naming conventions below when saving the downloaded file:
+Exporting an app or agent downloads the configuration as a JSON file to your local system. Use this file to import the configuration into another environment or restore it in the same environment.
 
-* App export filename: app-&lt;app-name>-&lt;date-time>.json
+**App export** - downloads a zip file containing individual files for the app, including any workflow tools that are part of it.
+
+**Agent export** -exports one or more agents as a single JSON file.
+
+File naming conventions:
+
+* App export filename: &lt;app-name>-export-&lt;date-time>.zip
 * Agent export file: agents-&lt;app-name>-&lt;date-time>.json

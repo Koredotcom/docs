@@ -78,8 +78,8 @@ Steps to create a Start Flow:
     <img src="../images/area-code.png" alt="Pricing" title="Pricing" style="border: 1px solid gray; zoom:100%;">
 
 3. Configure an available number with the following steps:
-    * Select **Get Number**n.
-    * Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and click **Done**. A success confirmation message is displayed, and the phone number is added.
+    * Select **Get Number**.
+    * Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and select **Done**. A success confirmation message is displayed, and the phone number is added.
     <img src="../images/forward-to-phone-number.png" alt="Reserve Phone Number" title="Reserve Phone Number" style="border: 1px solid gray; zoom:80%;">
 
     * You can now use this number for your Start Flow.
@@ -102,13 +102,12 @@ Steps to create a Start Flow:
     * AWS Amazon Polly,
     * ElevenLabs,
     * Whisper,
-    * PlayHT,
     * Deepgram Text-to-speech.  
     <img src="../images/text-to-speech-engine.png" alt="Text to Speech Engine" title="Text to Speech Engine" style="border: 1px solid gray; zoom:80%;">
 
 7. Select a **Language** for text-to-speech, then select a **Voice**.
 
-8. Add text to the **Voice Preview** field. Click **Sample Text**, then click Play to hear a preview of the voice to be implemented into your flow.
+8. Add text to the **Voice Preview** field. Select **Sample Text**, then select Play to hear a preview of the voice to be implemented into your flow.
 
 #### Show Advanced Settings
 
@@ -117,7 +116,7 @@ Enter the Primary and Fallback TTS Configuration.
 
 #### Bot No Input
 
-To handle situations where there are delays in backend operations or unexpected system failures, administrators can configure Bot No Input to provide users with appropriate responses or cues. This prevents users from experiencing dead air during such occurrences. The following configurations allow pre-programmed instructions for such scenarios.  
+To handle situations where there are delays in backend operations or unexpected system failures, administrators can configure Bot No Input to provide users with appropriate responses or cues. This prevents users from experiencing dead air during such occurrences. The following configurations let pre-programmed instructions for such scenarios.  
 <img src="../images/bot-no-input.png" alt="Bot No Input Toggle" title="Bot No Input Toggle" style="border: 1px solid gray; zoom:80%;">
 
 * When enabled, the below configurations are applied.
@@ -184,7 +183,7 @@ The following options are available:
 
 * The bot will play the message "Please wait while the bot responds" every 10 seconds.
 * This will continue until the bot responds, the retries (15) are exhausted, or the give-up timeout (120 seconds) is reached.
-* After 120 seconds, if the bot still does not respond, the bot will say the configured end-call message "Bot not responding ending the call" and disconnect the call.
+* After 120 seconds, if the bot still doesn't respond, the bot will say the configured end-call message "Bot not responding ending the call" and disconnect the call.
 
 This configuration ensures that user interactions remain seamless and informative, even during unexpected system delays or failures.
 
@@ -311,20 +310,20 @@ To add MetaTags in a Start Flow:
 
 Steps to edit a start flow:
 
-1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
+1. Select the (**⋮**) beside the Description and select **Update**.
     <img src="../images/update-start-flow.png" alt="Update Start Flow" title="Update Start Flow" style="border: 1px solid gray; zoom:80%;">
 
-2. Make the changes and click **Update**.
-    <img src="../images/edit-flow-experience.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
+2. Make the changes and select **Update**.
+    <img src="../images/edit-flow-experience.png" alt="Update" title="Update" style="border: 1px solid gray; zoom:80%;">
 
 ## Delete a Start Flow
 
 Steps to delete a start flow:
 
-1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
-    <img src="../images/delete-start-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+1. Select the Ellipsis (**⋮**) beside the Description and select **Delete**.
+    <img src="../images/delete-start-flow.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:80%;">
 
-2. A confirmation is displayed. Click **Delete**.
+2. A confirmation is displayed. Select **Delete**.
     <img src="../images/confirm-delete.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
@@ -337,7 +336,7 @@ Steps to delete a start flow:
 Steps to create an Exit Flow:
 
 1. In the left navigation, go to **Flows & Channels** > **FLOWS**.
-2. Click **+ New Exit Flow**.
+2. Select **+ New Exit Flow**.
     <img src="../images/new-exit-flow.png" alt="New Exit Flow" title="New Exit Flow" style="border: 1px solid gray; zoom:80%;">
 
 3. In the New Exit Flow window, provide inputs for the following fields:
@@ -346,27 +345,25 @@ Steps to create an Exit Flow:
     3. **Attach a Channel**: Select either voice or chat to integrate with this flow.
     <img src="../images/exit-flow-fields.png" alt="Exit Flow Fields" title="Exit Flow Fields" style="border: 1px solid gray; zoom:80%;">
 
-4. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the flow.
+4. Select **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the flow.
 
 ## Edit an Exit Flow
 
 Steps to edit an exit flow:
 
-1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
+1. Select (**⋮**) beside the Description and select **Update**.
     <img src="../images/update-exit-flow.png" alt="Update Exit Flow" title="Update Exit Flow" style="border: 1px solid gray; zoom:80%;">
 
-2. Make the changes and click **Update**.
-    <img src="../images/update-button-exit-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:80%;">
+2. Make the changes and select **Update**.
 
 ## Delete an Exit Flow
 
 Steps to delete an exit flow:
 
-1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
-    <img src="../images/delete-exit-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+1. Select (**⋮**) beside the Description and select **Delete**.
+    <img src="../images/delete-exit-flow.png" alt="Delete" title="Delete" style="border: 1px solid gray; zoom:80%;">
 
-2. A confirmation is displayed. Click **Delete**.
-    <img src="../images/confirm-delete-exit-flow.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:80%;">
+2. A confirmation is displayed. Select **Delete**.
 
 ## Navigate the Flow Designer
 

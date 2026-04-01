@@ -100,7 +100,16 @@ This section is available in `Simple` and `Advanced Routing` modes and enables y
 
         If the customer ends the chat before the completion of a transfer, then the transfer is dropped, and the interaction isn't assigned to any queue or agent. This feature only applies to chat conversations and is available if you are using WebSDK v1.0.
 
-5. **Maximum Wait Time**: Specify the maximum time a conversation waits in the queue before the default `No available agent` flow handles it.
+5. **Maximum Wait Time**: Configure how long a conversation can wait in the queue before fallback handling is triggered.
+
+    * **Before Agent Transfer**: Specifies the maximum wait time for conversations when they first enter the queue.
+    * **After Agent Transfer**: Specifies the maximum wait time for conversations that re-enter the queue after an agent transfer. The system resets the wait timer at the point of transfer.  
+    <img src="../images/max-wait-time.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
+
+If you don't configure the After Agent Transfer value, the system uses the Before Agent Transfer value by default. When the configured wait time is exceeded, the system triggers the applicable fallback flow (for example, No Agent Available or OOBH).
+
+The supported range is 1 minute to 43,200 minutes (30 days).
+
 6. **After Call Work (ACW)** You can enable or disable ACW.
 
     **ACW Enabled**

@@ -35,16 +35,28 @@ Steps to enable Answer Call on First Bot/AI Agent Response:
 
 ## Data Retention Period
 
-The Data Retention Period feature allows administrators to configure how long voice call recordings are retained. Users can select retention periods ranging from 1 day to 7 years using a dropdown, with default values set by customer type. The feature includes email notifications for deletion reminders (optional, disabled if retention is less than 1 month) and mandatory deletion acknowledgements. All changes to retention settings and email preferences are recorded in audit logs, along with counts of successful or failed recording deletions. By default, new customers and applications have a retention period of 3 months, while existing customers retain recordings for 7 years. Only App Owners or Supervisors can modify these settings.
+The Data Retention Period feature lets administrators to configure how long voice call recordings are retained. Users can select retention periods ranging from 1 day to 7 years using a dropdown, with default values set by customer type. The feature includes email notifications for deletion reminders (optional, disabled if retention is less than 1 month) and mandatory deletion acknowledgements. The system records changes to the  retention settings and email preferences in audit logs, along with counts of successful or failed recording deletions. By default, new customers and applications have a retention period of 3 months, while existing customers retain recordings for 7 years. Only App Owners or Supervisors can modify these settings.
 
 Steps to configure the data retention period.
 
-1. Click **Data Retention Period**.  
+1. Select **Data Retention Period**.  
     <img src="../images/data-retention-period-option.png" alt="Data Retention Period" title="Data Retention Period" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the required duration for data retention.
     
- Select the check box (optional) to enable email notifications, 5 days before deletion of voice call recordings. Email subscription is available only for retention periods above 30 days.  
-    <img src="../images/define-data-retention-period.png" alt="Define Data Retention Period" title="Define Data Retention Period" style="border: 1px solid gray; zoom:70%;">
+    Select the check box (optional) to enable email notifications, 5 days before deletion of voice call recordings. Email subscription is available only for retention periods above 30 days.  
+        <img src="../images/define-data-retention-period.png" alt="Define Data Retention Period" title="Define Data Retention Period" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Save** to apply the changes.
+3. Select **Save** to apply the changes.
+
+## Conversation Time Display Format
+
+Choose how time appears in call recording transcripts. The system displays either actual timestamps or elapsed duration from the start of the call. [Learn More](../../analytics/overview/conversations.md#conversation-time-display-format)
+
+### Configure Time Display Format
+
+1. Open Conversation Time Display Format.
+2. Select Standard Timestamps or Duration Markers.
+3. Select Save.  
+
+    <img src="../images/conversation-time-display-format.png" alt="Conversation Time Display Format" title="Conversation Time Display Format" style="border: 1px solid gray; zoom:70%;">

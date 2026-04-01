@@ -113,6 +113,7 @@ TTS services also use a selected voice (for example, female or male) to respond.
 | `entityPrompt`              | String   | Provides contextual hints to improve recognition of domain-specific terms.                       | `"flight number, booking reference"` |
 | `node.alternativeLanguages` | Array    | Defines alternate languages, providers, and voices for dynamic switching during conversations.   | `See example below`           |
 | `azureAudioLogging`         | Boolean  | Enables or disables audio logging for Azure Speech services.                                     | `true`                        |
+| `notifySttLatency`         | Boolean  | Enables capturing the STT Latency Values.                                     | `true`                        |
 
 
 Example for node.alternativeLanguages
@@ -305,6 +306,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `hints` with `hintsBoost`    | Array + Number       | Google, Microsoft, Nvidia        | Instead of boosting each phrase individually, apply a single boost value to the entire array of hints.                                                        | `"hints": ["benign", "malignant", "biopsy"], "hintsBoost": 50` |
 | `sttDisablePunctuation`      | Boolean              | Google, Microsoft                | Controls punctuation in ASR output. `false` enables punctuation (default); `true` disables it.                                                                | `"sttDisablePunctuation": true` |
 | `vadEnable`                  | Boolean              | All                              | If `true`, the system delays connecting to cloud recognizer until voice activity is detected.                                                             | `"vadEnable": true` |
+| `vadVendor`                  | String              | All STT engines (when `vadEnable` is true)                              | Specifies the Voice Activity Detection (VAD) engine to be used for detecting speech before sending audio to the STT service. This parameter works only when `vadEnable` is set to `true`.                                                             | `"vadVendor": "silero"` |
 | `vadVoiceMS`                 | Number (milliseconds)| All                              | Specifies how many milliseconds of detected speech are required before connecting to cloud recognizer. Only applies if `vadEnable` is `true`.             | `"vadVoiceMS": 500` |
 | `vadMode`                    | Number (0–3)         | All                              | Determines the sensitivity of the voice activity detector. Lower values make it more sensitive. Only applies if `vadEnable` is `true`.                        | `"vadMode": 2` |
 
@@ -419,7 +421,7 @@ These parameters control how long the Voice Gateway waits for user input (speech
 | `ttsGender`        | String (Male, Female, Neutral) | Google                                |                                                                                                                                                                                                                                   |   `"ttsGender": "FEMALE"`                                             |
 | `ttsLoop`          | Number / String      | All                                   | Use the `ttsLoop` parameter in Text-to-Speech (TTS) systems to control the repeated playback of a TTS-generated message. When `ttsLoop` is enabled, the specified TTS message plays multiple times in a loop.       |`"ttsLoop": 2` |
 | `earlyMedia`       | Boolean              | All                                   | Use the **Early Media** parameter in TTS (Text-to-Speech) to control the playback of audio prompts or messages before a call connects.                                                                             |        `"earlyMedia": true`                                        |
-| `ttsOptions`       | Object               | PlayHT, Deepgram, ElevenLabs, Whisper | It's used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
+| `ttsOptions`       | Object               | Deepgram, ElevenLabs, Whisper | It's used to tune the TTS.|                                 `"ttsOptions": {"stability": 0.7, "style": "conversational"}`               |
 
 ### TTS Options in Voice Gateway
 
@@ -438,22 +440,6 @@ The `ttsOptions` object contains provider-specific settings in a key-value forma
 * `optimize_streaming_latency`: Adjusts the latency during streaming.
 * `voice_settings`: Includes various voice customization options like `stability`, `similarity_boost`, and `use_speaker_boost`. [Learn more](https://elevenlabs.io/docs/creative-platform/playground/text-to-speech#voice-settings).
 * `speed`: Controls the speed of the generated speech. The default value is 1, and the allowable values are >=0.7 and <=1.2. Values less < 1 slow down the speech, while values > 1 speed it up. [Learn more](https://elevenlabs.io/docs/conversational-ai/customization/voice/speed-control).
-
-#### PlayHT
-
-* `quality`: Sets the quality of the audio output.
-* `speed`: Controls the playback speed.
-* `emotion`, `voice_guidance`, `style_guidance`, and `text_guidance`: Let further customization of the voice's emotional tone and style. [Learn more](https://docs.play.ht/reference/api-generate-tts-audio-stream).
-* `Voice_engine`: The voice engine used to synthesize the voice. It defaults to PlayDialog.
-
-!!! Note
-
-    Use the play-dialog model from PlayHT instead of the old models, as the old models are returning errors. Set the following parameters:
-
-    `ttsProvider = playht`  
-    `ttsLanguage = en-US`  
-    `ttsOptions = {"voice_engine": "PlayDialog"}`  
-    `voiceName = <respective voice name>` 
 
 #### Deepgram
 

@@ -46,7 +46,7 @@ The **Drop-off Rate** widget displays the percentage and the total number of dro
 
 ## Agent Transfer Rate
 
-Some conversations may require human assistance as the users can’t finish the tasks using the AI Agents. In such cases, the session is handed over to a human agent for help. When the conversation reaches the point where it’s transferred to an agent – the dialog reaches the agent transfer node, the platform considers this as an Agent Transfer session.
+Some conversations may require human assistance as the users can’t finish the tasks using the AI Agents. In such cases, the session is handed over to a human agent for help. When the conversation reaches the point where it’s transferred to an agent–the dialog reaches the agent transfer node, the platform considers this as an Agent Transfer session.
 
 The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](#metrics-table) section in this document.as
 

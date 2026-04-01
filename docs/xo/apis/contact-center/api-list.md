@@ -121,6 +121,7 @@ The following tables list the APIs available for Contact Center AI, grouped by t
 | [Get a Specific Queue](../contact-center/get-a-specific-queue.md)                                                   | To get a specific queue with the given streamId and queueId.                                                 | Configuration        |
 | [Update a Specific Queue](../contact-center/update-a-specific-queue.md)                                             | To update a specific queue with the given streamId and queueId.                                               | Configuration        |
 | [Delete a Queue](../contact-center/delete-a-queue.md)                                                               | To delete a specific queue with the given streamId and queueId.                                               | Configuration        |
+| [Update Queue Priority](../contact-center/update-queue-priority.md)                                                               | To update the queue priorities on a scale of 1 to 10.                                               | Configuration        |
 
 ### WFM APIs
 
