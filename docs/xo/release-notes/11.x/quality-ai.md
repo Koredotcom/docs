@@ -13,7 +13,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Minimum Duration Threshold for AutoQA and Scorecards**
 
-You can now set a minimum interaction duration threshold in evaluation forms and agent scorecards to ensure that AutoQA evaluates only the meaningful conversations. Before scoring, the system checks each interaction's duration and excludes short or incomplete ones from quality metrics. Contacts excluded from scoring and quality calculations remain visible.
+You can now set a minimum interaction duration threshold in evaluation forms and agent scorecards to ensure that AutoQA evaluates only the meaningful conversations. Before scoring, the system checks each interaction's duration and excludes short or incomplete ones from quality metrics. Contacts excluded from scoring and quality calculations remain visible. [Learn more :octicons-arrow-right-24:](../../quality-ai/configure/evaluation-forms.md) 
 
 <hr>
 

@@ -10,8 +10,8 @@ The following table displays the features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
-| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Gemini Model(Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3.1 Pro Preview, Gemini 3 Flash Preview)| Custom LLM |
-|--------|-----------------------|-----------------|-----------------|------------|
+| Feature | Azure OpenAI Model(s) | OpenAI Model(s) | Gemini Model<br/>Gemini 2.5 (Pro/Flash/Flash-Lite), Gemini 3 Flash Preview, Gemini 3.1 Pro Preview| Custom LLM |
+|--------|-----------------------|-----------------|:-----------------:|:------------:|
 | Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection | GPT-4o | GPT-4o | ✅ | ✅ |
 | Agent Empathy Identification | GPT-4o | GPT-4o | ✅ | ✅ |
 | By Value Adherence validation for Quality AI | GPT-4o, GPT-4o mini | GPT-4o, GPT-4o mini | ✅ | ✅ |

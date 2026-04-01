@@ -1,12 +1,12 @@
 # Scheduled Reports
 
-The Quality AI scheduled reports feature provides a structured framework for monitoring, evaluating, and improving agent performance. It enables the tracking of agent productivity, adherence to quality standards, and interaction effectiveness, while providing insights into operational efficiency and compliance with evaluation metrics. Scheduled reports help teams identify coaching opportunities, align performance with organizational goals, and drive continuous improvement. 
+Scheduled Reporting in Quality AI enables supervisors to generate, automate, and analyze reports to monitor agent performance, interaction quality, and adherence to evaluation metrics. It supports data-driven coaching and continuous improvement.
 
 ## Reports Tab
 
 The Reports tab consists of a list of generated reports. You can generate an instance of a new report, download reports, edit, view, and delete reports.
 
-## Reports Access 
+## Access Reports  
 
 * **Navigation**: **Quality AI** > **Analytics** > **Reports**.
 
@@ -28,7 +28,7 @@ On the **Reports** page, you can view all your reports organized by type.
 | **Favorites**  | This shows reports created by any user that the current user has marked as favorites. |  
  
 
-### Reports Columns List
+### Reports List Columns 
 
 | Column          | Description |
 |-----------------|-------------|
@@ -168,7 +168,18 @@ This lets you add filters when creating a new report or editing an existing repo
         * Defaults to the application's default language.
            
 
-1. Select the required **Optional Fields**.  
+    * **Duration Status**: Select the filtered interactions based on evaluation eligibility—Evaluated, Below Threshold.
+
+        !!! Note
+
+            * Reports exclude Below Threshold interactions by default.
+            
+            * Select these values explicitly to include them in the report.
+            
+            * Manually evaluated interactions are always included.
+
+
+1. Add **Optional Fields** as required.  
   
 
 1. Enter recipient addresses in **Send Email to** send the automated reports in the selected language. You must add at least one recipient email address.  
@@ -273,6 +284,20 @@ The following table describes the common mandatory fields for all three report t
 | **Date Range**                             | Selection of the reporting period.                                     | Default                       |
 | **Timezone**                               | Time zone for date and time values.                                    | Device local time zone        |
 | **Email Recipients**                       | At least one recipient from users with the required permissions.       | Default                       |
+
+
+## Report Behavior (Evaluation Scope)
+
+* Reports calculate metrics using evaluated interactions only.
+
+* Interactions excluded due to duration thresholds:
+
+    * Do not contribute to scores, adherence, or aggregates.
+
+    * Appear in reports only when you include below-threshold interactions using the Duration Status filter.
+
+* Manually evaluated interactions are treated as evaluated.
+
 
 ## Report Actions
 

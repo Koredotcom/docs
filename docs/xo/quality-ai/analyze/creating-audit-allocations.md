@@ -67,7 +67,7 @@ Random allocation uses statistical sampling to guarantee impartial selection of 
 
 1. Select the **Random** option.
 
-1. Enable channels for evaluation:
+1. Enable the **Channel Type** for evaluation:
 
     * **Voice**: Toggle on to include phone interactions.
 
@@ -95,10 +95,22 @@ Random allocation uses statistical sampling to guarantee impartial selection of 
 
     * **Total Interactions**: Updates in real-time to show the total number of interactions selected by this configuration.
 
+1. Enter the **Minimum Duration Threshold** under the Random Allocation. 
+
+    The Random Allocation configuration panel includes an **Include interactions below duration threshold** toggle per allocation rule. When included, these interactions display a below-threshold badge during audit.
+
+    * **Excluded (default)**: The system excludes below-threshold interactions from random sampling.
+
+    * **Included**: The system makes flagged interactions available for selection alongside evaluated contacts.
+
+        !!! Note
+
+            This setting is configurable per queue, agent, or channel, allowing independent sampling behavior across allocation rules.
+
 #### Custom Allocation
 
 Custom allocation gives you precise control over interaction selection by applying specific filters to target particular scenarios, topics, sentiment ranges, or performance metrics. This method works well for focused evaluations that target known issues or validate Auto QA accuracy in specific situations.   
-<img src="../allocations/images/custom-allocation.png" alt="Custom Allocation" title="Custom Allocation" style="border: 1px solid gray; zoom:80%;">
+<img src="../allocations/images/custom-allocation .png" alt="Custom Allocation" title="Custom Allocation" style="border: 1px solid gray; zoom:80%;">
 
 **Configure Custom Allocation**
 
