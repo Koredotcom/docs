@@ -56,9 +56,9 @@ curl --location
 | PARAMETER               | DESCRIPTION                                                                                      | TYPE               |
 |-------------------------|--------------------------------------------------------------------------------------------------|------------------|
 | `offset`                  | Number of records to skip. Maximum: 100.                                                        | `integer`, optional |
-| `startDate`               | The start date from which records are retrieved.<br>`Format: yyyy-mm-dd HH24:mm:ss`.<br>Example: 2026-03-23 10:17:54. | `DateTime`, required |
-| `endDate`                 | The end date up to which records are retrieved.<br>Format: `yyyy-mm-dd HH24:mm:ss`.<br>Example: 2026-03-23 23:00:35. | `DateTime`, required |
-| `include_below_threshold` | When true, includes contacts marked Below Threshold in the response. Default: false.            | `boolean`, optional |
+| `startDate`               | The start date from which records are retrieved.<br>`Format: yyyy-mm-dd HH24:mm:ss`.<br>Example: `2026-03-23 10:17:54`. | `DateTime`, required |
+| `endDate`                 | The end date up to which records are retrieved.<br>Format: `yyyy-mm-dd HH24:mm:ss`.<br>Example: `2026-03-23 23:00:35`. | `DateTime`, required |
+| `include_below_threshold` | When `true`, includes contacts marked Below Threshold in the response. Default: `false`.            | `boolean`, optional |
 | `limit`                   | Number of records to retrieve per page (maximum 100).                                           | `integer`, optional |
 
 
@@ -258,7 +258,7 @@ curl --location
 | `duration_status`         | Evaluation eligibility status based on the configured minimum duration threshold.                                                                                 | `string (enum)`    |
 | `totalResults`            | Total number of conversation records matching the request.                                                                                                        | `integer`          |
 | `totalPages`              | Total number of pages available based on the page size.                                                                                                          | `integer`          |
-| `hasMore`                 | Indicates whether additional pages exist. True if more pages are available; false if this is the last page.                                                     | `boolean`          |
+| `hasMore`                 | Indicates whether additional pages exist. `true` if more pages are available; `false` if this is the last page.                                                     | `boolean`          |
 | `results`                 | A list of conversation objects.                                                                                                                                   | `array`            |
 
 **Note:** Contacts ingested before the minimum duration threshold feature is enabled return null for `duration_status`.

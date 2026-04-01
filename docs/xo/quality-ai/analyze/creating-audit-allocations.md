@@ -5,7 +5,7 @@ The allocation creation process follows a three-step workflow that provides prec
 ## Access My Allocations
 
 Navigate to **Quality AI** > **ANALYZE** > **My Allocations**.  
-<img src="../allocations/images/create-allocations.png" alt="Create Allocations" title="Create Allocations" style="border: 1px solid gray; zoom:80%;">
+<img src="../allocations/images/audit-allocations.png" alt="Create Allocations" title="Create Allocations" style="border: 1px solid gray; zoom:80%;">
 
 ### Step 1: Settings
 
@@ -56,12 +56,11 @@ The interaction count updates automatically as you adjust your selections, showi
 ### Step 2: Allocation Type
 
 The Allocation step determines how you select interactions from your filtered pool. Choose between Random for unbiased sampling or Custom for targeted evaluations based on specific criteria.   
-<img src="../allocations/images/allocation-type.png" alt="Allocation Type" title="Allocation Type" style="border: 1px solid gray; zoom:80%;">
 
 #### Random Allocation
 
 Random allocation uses statistical sampling to guarantee impartial selection of interactions among your filtered agents. This technique ensures representative coverage while giving you control over the sample size through two different assignment strategies.   
-<img src="../allocations/images/random-allocation.png" alt="Random Allocation" title="Random Allocation" style="border: 1px solid gray; zoom:80%;">
+<img src="../allocations/images/allocation-type.png" alt="Allocation Type" title="Allocation Type" style="border: 1px solid gray; zoom:80%;">
 
 **Configure Random Sampling**
 

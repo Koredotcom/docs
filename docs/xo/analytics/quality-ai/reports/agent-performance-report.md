@@ -6,16 +6,23 @@ This report provides a comprehensive view of individual agent performance, inclu
 
 ## Generate the Agent Performance Report
 
-1. **Create the New Report**
-
-    1. On the **Reports** tab, select **+ New Report**.    
+Steps to generate the Agent Performance Report:
+   
+1. On the **Reports** tab, select **+ New Report**.    
     
-    1. From the **Create New Report** list, select the **Agent Performance Report**.     
-        <img src="../images/general-report-selection.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
+1. From the **Create New Report** list, select the **Agent Performance Report**.     
+    <img src="../images/general-report-selection.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
 
-    1. Select **Next**.
+1. Select **Next**.
+    <img src="../images/agent-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">  
 
-1. Configure **Filters** and **Options** in the **Configure** section.
+1. Configure the **General** section.
+
+    1. Enter the **Report Name**.
+
+    1. Enter a **Description**.
+
+1. Configure the **Filters** and **Optional Fields** in the **Configure** section.
 
     1. Select at least one **Agent Scorecard** from the dropdown. 
     
@@ -40,48 +47,11 @@ This report provides a comprehensive view of individual agent performance, inclu
     * Enter one or more addresses in the **Send Email to** field to send the automated reports (minimum one required). 
 
     * Select **Next** to proceed.     
-        <img src="../images/agent-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">   
+     <img src="../images/agent-performance-report-configuration.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;"> 
 
         !!! Note
 
             Each scorecard determines eligibility for evaluation. Threshold configuration can evaluate an interaction for one scorecard and exclude it from another. 
-
-1. Configure **Filters** and **Options**
-
-    1. Select an **Agent Scorecard** to define the data scope (at least one form you must select). 
-
-    1. Select a **Date** or date range.
-
-    1. Select a **Timezone**.
-
-    1. Select **+Add Filter** to apply filters and their respective values such as Channel, Queue, Language, Agents, and Agent Groups. 
-    
-    1. Add **Optional Fields** to include additional metrics. 
-
-    1. Enter one or more recipient emails in **Send Email to** (minimum one required). 
-
-    1. Configure the required Filters:
-
-        * Select **+Add Filter** to configure additional filters.
-
-            * **Channel**: Select communication channel (Chat, Voice).
-
-            * **Queue**: Select one or more queues.
-
-            * **Language**: Select languages assigned to the scorecard.
-
-            * **Agents**: Select specific agents for tracking.
-
-             * **Agent Groups**: Select a team or group of agents.
-
-         * Set the values vs. the selected/added filters. 
-
-    1. Add **Optional Fields** to include additional metrics or attributes.
-
-    1. Enter one or more addresses in the **Send Email to** fields to send the automated reports (minimum one required). 
-
-    1. Select **Next**.    
-        <img src="../images/agent-configuration.png" alt="Configure" title="Configure" style="border: 1px solid gray; zoom:60%;">
 
 1. Configure the **Schedule** section.  
  

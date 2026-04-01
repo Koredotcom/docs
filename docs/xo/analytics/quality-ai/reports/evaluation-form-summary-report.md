@@ -8,24 +8,23 @@ Summarizes evaluation metric adherence using selected forms, providing aggregate
 
 Steps to generate the Evaluation Form Summary Report:
 
-1. **Create the New Report**
-    1. On the **Reports** tab, select **+ New Report**.
+ 1. On the **Reports** tab, select **+ New Report**.
 
-    1. From the **Create New Report** list, select the **Evaluation Form Summary Report**.  
-        <img src="../images/evaluation-form-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
+1. From the **Create New Report** list, select the **Evaluation Form Summary Report**.  
+    <img src="../images/evaluation-form-report.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">
 
-    1. Select **Next**.
+1. Select **Next**.
 
-1. Configure the **General** settings section.
+1. Configure the **General** section.
 
-    1. Enter a unique **Name** for the report.
+    1. Enter the **Report Name**.
 
     1. Enter a **Description**.
  
     1. Select **Next**             
-        <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
+        <img src="./images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
 
-1. Configure the **Filters** and **Options in the **Configure** section.
+1. Configure the **Filters** and **Optional Fields** in the **Configure** section.
 
     1. Select an evaluation **Form** to define the data scope (at least one form you must select).
 
