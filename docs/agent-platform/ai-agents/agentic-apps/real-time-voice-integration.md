@@ -4,14 +4,10 @@ Agent Platform supports real-time voice interaction powered by advanced Voice AI
 
 ## Enabling Voice Support
 
-Navigate to the Agentic app’s Configuration and enable Realtime Voice. This feature uses AI models to perform voice tasks. Select the appropriate model to be used for this integration. 
-
-   <img src="../images/enabling-voice-support.png" alt="Enabling Voice Support" title="Enabling Voice Support" style="border: 1px solid gray; zoom:80%;">
+Navigate to the Agentic app’s orchestrator page and enable Voice-to-Voice Interactions. This feature uses AI models to perform voice tasks. Select the appropriate model to be used for this integration. This model is responsible for interpreting user queries and generating spoken responses. The Platform supports various models. See [how to add an external model to the Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
 
 Click the settings icon to customize the configuration of the AI model. 
 
-* Voice AI Model: This model is responsible for interpreting user queries and generating spoken responses. See [how to add an external model to the Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
-* The Platform supports various models. See [how to add an external model to the Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
 * Temperature: This config controls the randomness and creativity of the responses. The value for this field can range from 0 to 1.2
     * Lower values (for example, 0.2–0.6) produce more focused, deterministic answers.
     * Higher values (for example, 1–1.2) make responses more creative and varied.
@@ -26,4 +22,4 @@ Click the settings icon to customize the configuration of the AI model.
     * Silence Duration: Duration of silence before the application considers the user’s message has ended
     * Type: Select the type of voice activity detection to use
 
-When an Agentic app is integrated with an AI for Service application through the Automation Node and is configured for voice channels, the Voice Gateway utilizes the voice capabilities of the model set up in the Agentic app. For more information on integrating AI for Service app with the Platform app, please refer to [this documentation](https://docs.kore.ai/xo/flows/node-types/automation/#full-autonomy).
+When an Agentic app is integrated with an AI for Service application through the Automation Node and is configured for voice channels, the Voice Gateway utilizes the voice capabilities of the model set up in the Agentic app. For more information on integrating AI for Service app with the Platform app, refer to [this documentation](https://docs.kore.ai/xo/flows/node-types/automation/#full-autonomy).
