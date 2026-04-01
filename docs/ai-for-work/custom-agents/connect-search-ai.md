@@ -15,6 +15,7 @@ To connect Search AI complete the following instructions:
     * **Client ID**: Client credentials generated in Search AI for interaction with the RAG Agent.
     * **Client Secret ID**: A secret key generated for secure interaction.
     * **Search ID**: Unique identifier of the client generated in Search AI.
+5. After authentication, the platform displays all available sources from the connected Search AI app across three tabs: Websites, File Uploads, and Connectors. Select or deselect sources within each tab to scope what this Enterprise Knowledge source draws from. Click **Done** to confirm. The configuration screen reflects only the sources you have selected. To modify the configuration later, use Edit Credentials to update app credentials, or Edit Sources to adjust the source selection with your previous choices retained. Selecting Delete removes the linked app and resets the configuration.
 
 You need to associate four [API Scope](https://docs.kore.ai/xo/apis/automation/api-introduction/) in your AI for Service platforms App's channel:
 
