@@ -3,6 +3,7 @@
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
 
 ## v11.23.0 March 28, 2026
+
 <u>Minor Release</u>
 
 This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
@@ -11,9 +12,14 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 Search AI now supports email notifications for running jobs, providing visibility into web crawls, connector syncs, and training operations. Configure notification recipients to receive alerts for job start, success, and failure, along with direct links to the application. This reduces manual monitoring and improves coordination across teams.
 
+[Learn more :octicons-arrow-right-24:](./../../searchai/email-notifications.md)
+
 <font size="4">Ingestion from Spreadsheets</font>
 
 Search AI now supports ingestion of .xlsx and .csv files. It converts spreadsheets into structured and searchable content using the Markdown extraction model. It supports multi-sheet extraction, table handling, and formula results. It doesn't support pivot tables, charts, cell formatting, aggregations, and .xls files.
+
+[Learn more :octicons-arrow-right-24:](./../../searchai/content-extraction/spreadsheet-ingestion.md)
+
 
 <font size="4">Connector Enhancements</font>
 
