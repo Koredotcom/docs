@@ -6,9 +6,11 @@ This report provides a comprehensive view of individual agent performance, inclu
 
 ## Generate the Agent Performance Report
 
+
 Steps to generate the Agent Performance Report:
+
    
-1. On the **Reports** tab, select **+ New Report**.    
+1. On the **Reports** tab, select **+ New Report**.  
     
 1. From the **Create New Report** list, select the **Agent Performance Report**.     
     <img src="../images/general-report-selection.png" alt="Report Selection" title="Report Selection" style="border: 1px solid gray; zoom:50%;">

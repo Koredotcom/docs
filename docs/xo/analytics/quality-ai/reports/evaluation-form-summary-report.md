@@ -22,7 +22,7 @@ Steps to generate the Evaluation Form Summary Report:
     1. Enter a **Description**.
  
     1. Select **Next**             
-        <img src="./images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
+        <img src="../images/create-new-report-general.png" alt="General" title="General" style="border: 1px solid gray; zoom:50%;">    
 
 1. Configure the **Filters** and **Optional Fields** in the **Configure** section.
 
