@@ -2,6 +2,56 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of the Platform.
 
+## v1.15.0 March 30, 2026
+
+<u>Major Release</u>
+
+This update includes new features and feature enhancements summarized below.
+
+</font></p><font size="4">New Feature</font>
+
+**Employee Organization Chart**
+
+The Employee Directory now includes an **Organization Chart** tab that displays the organizational hierarchy visually. Expand employee cards to view direct and indirect reports, apply filters, and search for specific employees. The chart automatically focuses and expands to the matched user. Open the full profile view from any card. Zoom, fit preview, collapse, and full-screen controls are also available.
+
+[Learn more :octicons-arrow-right-24:](../employees/organization-chart.md)
+
+**Feedback Management and Email Notifications**
+
+Introducing a dedicated **Feedback** page under **Usage** in the Admin Console. Administrators can now view, filter, and drill into user feedback across all agents and workspaces, with access scoped by role. Account-level admins see all feedback across the account, Workspace Owners see feedback within their workspace, and agent-level access scopes feedback to that specific agent.
+
+End users can now choose from an expanded set of feedback categories when submitting upvote or downvote feedback, including Forgot previous context, Outdated, Wrong formatting, and Other, also to the existing options.
+
+[Learn more :octicons-arrow-right-24:](../analytics/feedback.md)
+
+**UI Localization and Language Support**
+
+AI for Work now supports multi-language localization. On first login, users can select their preferred language from the language selection module. All static and dynamic UI text updates are applied across the application immediately. Users can change their language preference at any time through the profile icon.
+
+Arabic includes full RTL layout support. All UI elements, including the history panel, response area, menus, and icons, realign to RTL automatically.
+
+[Learn more :octicons-arrow-right-24:](../assist-configuration/language-settings.md)
+
+<font size="4">Feature Enhancement</font>
+
+**Drag-and-Drop File Upload**
+
+Users can now drag and drop files directly into the AI for Work chat interface, in addition to the existing attachment icon workflow. The drop zone highlights on hover, and the upload initiates automatically once a file is dropped.
+
+[Learn more :octicons-arrow-right-24:](../getting-started/how-to-use.md)
+
+**Scoped Source Selection for Search Agents**
+
+After authentication, users can now select or deselect specific sources, including websites, file uploads, and connectors, in the linked Search AI app when configuring a Search Agent or adding a Search App to Enterprise Knowledge. Previously, all available sources were connected by default. Previously selected sources are retained when editing credentials or sources.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/search-agents.md/#scoping-sources)
+
+**Search Filters**
+
+Users can now filter search results in the search results panel by Timeline, Created By, and File Type. The Timeline filter supports predefined ranges and a custom date picker. Created By supports multi-user selection with a searchable pop-up, and File Type options populate dynamically based on the current result set.
+
+<hr>
+
 ## v1.14.0 March 2, 2026
 
 <u>Major Release</u>

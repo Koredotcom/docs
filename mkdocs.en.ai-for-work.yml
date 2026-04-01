@@ -169,6 +169,7 @@ nav:
     - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
     - Data View: analytics/data-view.md
+    - Feedback: analytics/feedback.md
   - Administration:
     - Admin Console Overview: Administration/overview.md
     - Workspace: Administration/workspace.md
@@ -188,9 +189,11 @@ nav:
       - Orchestration Settings: assist-configuration/orchestration-settings.md
       - Rate Limit: assist-configuration/rate-limit.md
       - Scheduler Settings: assist-configuration/scheduler-settings.md
+      - Language Settings: assist-configuration/language-settings.md
       - Attachment Settings: assist-configuration/attachment-settings.md
     - Employees:
       - Directory Configuration: employees/directory-configuration.md
+      - Organization Chart: employees/organization-chart.md
       - Lookup Settings: employees/lookup-settings.md
     - User Management:
       - User Enrollments: user-management/user-enrollments.md
